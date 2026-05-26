@@ -569,7 +569,10 @@ function renderModes() {
             <div><dt>时间备注</dt><dd>${escapeHtml(mode.launchNote || "待确认")}</dd></div>
           </dl>
         </div>
-        <div class="card-foot">设计观察：${escapeHtml(mode.designObservation)}</div>
+        <div class="card-foot">
+          <blockquote>${escapeHtml(mode.designObservation)}</blockquote>
+          <cite>&mdash; 集成农业 AI · DeepSeek-V4-Pro（深度求索）</cite>
+        </div>
         <div class="card-source">
           <span class="source-label">来源</span>
           <a href="${escapeHtml(mode.sourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(mode.sourceUrl)}</a>
