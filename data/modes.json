@@ -1,0 +1,309 @@
+[
+  {
+    "id": "fortnite-zero-build-2022",
+    "game": "Fortnite",
+    "modeName": "Zero Build",
+    "year": "2022",
+    "date": "2022",
+    "tags": [
+      "core"
+    ],
+    "type": [
+      "核心模式",
+      "去建造",
+      "护盾补偿"
+    ],
+    "oneLineRule": "无建造 Battle Royale：玩家不能临场搭板防御，胜负更多取决于武器、道具、跑酷机动和天然掩体利用。",
+    "mechanicChange": "官方把 Zero Build 定位为纯粹考验 weapon、item 和 traversal ability 的模式；所有玩家获得可恢复的 Overshield 作为第一层防线，并通过 Ascender、Mantling、Sprint 等移动手段争夺高点和掩体。",
+    "tempoImpact": "失去建造后，遭遇战更依赖开枪窗口、转点路线和地形预判；玩家必须在掩体之间冲刺，利用气球/升降索/翻越等移动系统处理高低差，整体门槛比建造 BR 更低但地图读法更重要。",
+    "designObservation": "移除核心防御系统时，必须补一个可感知的生存缓冲和移动补偿；否则玩家会觉得暴露、脆弱，战斗容错过低。",
+    "sourceUrl": "https://www.fortnite.com/news/fortnite-zero-build-take-the-offensive-in-this-no-build-battle-royale?lang=en-US",
+    "imageUrl": "https://cdn2.unrealengine.com/20br-zerobuild-social-newsheader-1900x600-1900x600-3d89347b22fd.jpg",
+    "imageSource": "官方公告头图",
+    "launchDate": "2022-03-29",
+    "launchLabel": "2022年3月29日",
+    "launchNote": "官方 Zero Build 公告发布并上线为无建造 Battle Royale 模式。"
+  },
+  {
+    "id": "fortnite-reload-2024",
+    "game": "Fortnite",
+    "modeName": "Reload",
+    "year": "2024",
+    "date": "2024-06-22",
+    "tags": [
+      "core"
+    ],
+    "type": [
+      "40 人",
+      "小地图",
+      "自动复活"
+    ],
+    "oneLineRule": "40 人小地图 Squad/多排快节奏 BR：只要队伍还有一人存活，被淘汰队友就会按计时器自动回归。",
+    "mechanicChange": "Reload 使用更紧凑的地图和经典地点/武器；个人被淘汰后启动 reboot timer，初始约 30 秒，后期提高到 40 秒；队友击倒、淘汰或团灭敌队可缩短倒计时，终局阶段复活停止。",
+    "tempoImpact": "鼓励主动交火，因为进攻能加速队友回归；同时保留“最后一名队友必须活着”的强压力。无载具、紧凑 POI、经典武器和高密度掉落，让搜索时间减少，战斗循环更频繁。",
+    "designObservation": "自动复活能把 BR 的失败惩罚从“单次死亡”改成“团灭”，很适合小地图快局；关键是让孤狼存活、击杀减 CD、复活停止这些节点形成清晰节奏。",
+    "sourceUrl": "https://www.fortnite.com/news/squad-up-for-fortnite-reload?lang=pt-BR",
+    "imageUrl": "https://cdn2.unrealengine.com/fortnite-reload-1900x600-ca6fc5841a26.jpg",
+    "imageSource": "官方公告头图",
+    "launchDate": "2024-06-22",
+    "launchLabel": "2024年6月22日，美东时间约 2 PM 后",
+    "launchNote": "官方 Reload 公告写明于 6月22日周六 2 PM ET 后上线。"
+  },
+  {
+    "id": "fortnite-blitz-royale-2025",
+    "game": "Fortnite",
+    "modeName": "Blitz Royale",
+    "year": "2025",
+    "date": "2025",
+    "tags": [
+      "core",
+      "power",
+      "space"
+    ],
+    "type": [
+      "32 人",
+      "5 分钟局",
+      "高强度掉落"
+    ],
+    "oneLineRule": "32 人、五分钟以内的极速 BR：小地图、随机开局优势、升级奖励和每周轮换事件共同压缩整场体验。",
+    "mechanicChange": "所有人开局获得同一个随机 Medallion 或独特武器，保证优势对称；通过淘汰和存活 Storm 圈提升 Blitz Level，获得更强武器/增益；Golden Chest、Golden Supply Drop 提供更多 power-up 和 Medallion。",
+    "tempoImpact": "一局在五分钟内结束，适合移动端和碎片时间；随机强力道具、周更事件、Avatar/Boss/TMNT 等主题轮换让每周都像小型规则实验。Medallion 不暴露位置，也不会从敌人身上掉落，减少传统 Medallion 的追猎压力。",
+    "designObservation": "短局允许更激进的随机性和强道具；只要开局公平、失败成本低，玩家更愿意接受每周一次的玩法变体。",
+    "sourceUrl": "https://www.fortnite.com/news/fortnite-blitz-royale-full-throttle-phone-ready?lang=en-US",
+    "imageUrl": "https://cdn2.unrealengine.com/fortnite-blitz-royale-1920x1080-9946411a3a9f.jpg",
+    "imageSource": "官方公告头图",
+    "launchDate": "2025-06-18",
+    "launchLabel": "2025年6月18日",
+    "launchNote": "官方 Blitz Royale 公告于 6月17日发布，活动排期标注 Week 1 - Launch Week 为 6月18日。"
+  },
+  {
+    "id": "fortnite-horde-rush-2019",
+    "game": "Fortnite",
+    "modeName": "Horde Rush",
+    "year": "2019",
+    "date": "2019-06-12",
+    "tags": [
+      "pve"
+    ],
+    "type": [
+      "4 人合作",
+      "阶段防守",
+      "计分"
+    ],
+    "oneLineRule": "4 人合作 PvE LTM：队伍跨阶段搜刮、守点、转移、刷分，最终击败 Boss Fiend 和它的怪潮获胜。",
+    "mechanicChange": "官方规则把模式拆成多阶段 Squad 流程：先搜索武器、道具和材料并搭建防线；通过消灭 Fiends、收集隐藏分数倍率、摧毁 Fiend Spawner 累积分数；战后恢复并继续转移到下一个防守点。",
+    "tempoImpact": "比赛不是单点防守，而是“准备 - 防守 - 恢复 - 迁移 - 再防守 - 最终 Boss”的循环。复活在最后阶段前可用，终局则要求队伍真正顶住 Boss 和小怪压力。特殊宝箱既给强武器，也给计分奖励。",
+    "designObservation": "PvE 化 BR 要把怪潮压力、转移路线、补给窗口和最终 Boss 串成阶段节奏；分数倍率和刷怪点能让玩家在防守时也有主动目标。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v9-21%26?lang=en-US",
+    "imageUrl": "https://cdn2.unrealengine.com/fortnite-horde-rush-1920x1080-d06bc1f806d8.jpg",
+    "imageSource": "官方公告图（Fortnitemares 2024 Horde Rush）",
+    "launchDate": "2019-06-13",
+    "launchLabel": "2019年6月13日（v9.21 后上线）",
+    "launchNote": "v9.21 补丁在 6月12日发布，Horde Rush 模式记录为 6月13日上线。"
+  },
+  {
+    "id": "fortnite-storm-king-2019",
+    "game": "Fortnite",
+    "modeName": "Storm King",
+    "year": "2019",
+    "date": "2019-10-29",
+    "tags": [
+      "pve",
+      "power"
+    ],
+    "type": [
+      "Fortnitemares",
+      "大型 Boss",
+      "奖励伞"
+    ],
+    "oneLineRule": "Fortnitemares 2019 的大型 Boss LTM：小队进入 Storm King 挑战，击败古老邪恶并获取 Storm Sail 奖励伞。",
+    "mechanicChange": "Fortnitemares 把 BR 岛包装成怪物入侵事件：Ghoulish creatures 占领岛屿，Storm King 作为视觉中心和最终挑战登场；玩家不是彼此争夺第一，而是排队进入 Boss LTM 接受挑战。",
+    "tempoImpact": "玩法记忆点集中在大型 Boss、节日挑战和奖励伞上。和 Horde Rush 相比，它更像一个强事件副本：战斗目标单一、视觉中心明确、奖励驱动清晰。",
+    "designObservation": "节日 Boss 模式最需要“全场看得懂的巨大威胁”和专属奖励；玩家愿意为一次明确挑战进入非传统 BR 节奏。",
+    "sourceUrl": "https://www.fortnite.com/news/fortnitemares-2019?lang=en-US",
+    "imageUrl": "https://cdn2.unrealengine.com/Fortnite/blog/fortnitemares-2019/11BR_StormKing_1920x1080-1920x1080-f1c0ebaed0908d8e90ed548c4b4d66e07043555f.jpg",
+    "imageSource": "官方公告图",
+    "launchDate": "2019-10-29",
+    "launchLabel": "2019年10月29日",
+    "launchNote": "Fortnitemares 2019 官方公告日，Storm King LTM 随活动开放。"
+  },
+  {
+    "id": "fortnite-the-getaway-2018",
+    "game": "Fortnite",
+    "modeName": "The Getaway",
+    "year": "2018 / 2025",
+    "date": "2018-09-06",
+    "tags": [
+      "objective"
+    ],
+    "type": [
+      "夺宝撤离",
+      "可见目标",
+      "多胜利路径"
+    ],
+    "oneLineRule": "夺宝撤离 LTM：找到或抢到 Jewel，把它带到半空中的 Getaway Van 交互撤离，即可获得 Victory Royale。",
+    "mechanicChange": "Jewels 出现在第一圈边缘的特殊 Supply Drop Safe 中，开保险箱耗时很长；地图始终保持 4 个 Jewel 在场，丢进风暴或成功撤离后会补新的。携带 Jewel 会回血回盾，但移动速度降低 10%，拾取后 30 秒内全图可见。",
+    "tempoImpact": "撤离车一共 4 辆，3 辆早期到场，1 辆后期出现；车在空中，携带者要搭建上去交互。安全箱、撤离车会常驻地图可见，开箱点、追击路线、撤离高点自然成为冲突热点。Grappler 只来自追击补给，也强化了抢夺/逃跑。",
+    "designObservation": "目标物必须同时给收益和负担：回血回盾让人想拿，减速和暴露让人愿意追。撤离点放在半空中，则把“护送目标”转成搭建、架枪、断后和最后交互的团队剧本。",
+    "sourceUrl": "https://www.epicgames.com/fortnite/en-US/news/high-stakes",
+    "imageUrl": "https://cdn2.unrealengine.com/Fortnite/blog/highstakes/BR05_News_Featured_16_9_HighStakes_Screen-1920x1080-cc7384ff21c561996d03e656612e3094e627df17.jpg",
+    "imageSource": "官方 High Stakes 活动头图",
+    "launchDate": "2018-09-06",
+    "launchLabel": "2018年9月6日",
+    "launchNote": "High Stakes / v5.40 活动更新上线，The Getaway LTM 随活动推出。"
+  },
+  {
+    "id": "fortnite-floor-is-lava-2019",
+    "game": "Fortnite",
+    "modeName": "Floor is Lava",
+    "year": "2019 / 2024",
+    "date": "2019-03-27",
+    "tags": [
+      "space"
+    ],
+    "type": [
+      "地形压力",
+      "高地争夺",
+      "简单规则"
+    ],
+    "oneLineRule": "地形压迫 LTM：岩浆从地图最低处逐渐上涨，玩家必须快速搜刮、收集材料并抢占高地。",
+    "mechanicChange": "比赛开始数分钟后岩浆上升，并以稳定速度覆盖整张地图；接触岩浆会直接扣生命并把玩家弹到空中；玩家可以在岩浆上建造，系统也会每秒给少量材料，帮助处理整张地图都着火的终局。",
+    "tempoImpact": "玩家从开局就知道低地会失效，因此搜刮路线、高地控制、材料管理和垂直移动优先级大幅提升。岩浆的持续推进减少蹲守，让建筑和转点成为生存核心。",
+    "designObservation": "“一句话规则”越简单，越适合 LTM；但它必须持续改变玩家行动路线，而不是只在终局制造伤害。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v8-20?lang=en-US",
+    "imageUrl": "https://cdn2.unrealengine.com/Fortnite/patch-notes/v8-20/br-header-v8-20/08BR_LTM_FloorIsLava_Social-1920x1080-7e029fcc1963d69b47cac55a46c4d19335edfa3a.jpg",
+    "imageSource": "官方公告图",
+    "launchDate": "2019-03-27",
+    "launchLabel": "2019年3月27日",
+    "launchNote": "v8.20 更新上线，The Floor is Lava LTM 随补丁加入。"
+  },
+  {
+    "id": "fortnite-air-royale-2019",
+    "game": "Fortnite",
+    "modeName": "Air Royale",
+    "year": "2019",
+    "date": "2019-04-17",
+    "tags": [
+      "space",
+      "objective"
+    ],
+    "type": [
+      "空战",
+      "载具生命",
+      "双人协作"
+    ],
+    "oneLineRule": "Duos 空战 LTM：全队驾驶 X-4 Stormwing，在空中争夺最后一架还能飞的飞机。",
+    "mechanicChange": "Air Royale 是双人专属模式，每架飞机有 3 条命，飞机命耗尽前玩家可复活；触地会立刻淘汰，停在地面几秒会让飞机爆炸；劫持敌方飞机会把那架飞机的生命转移给自己队伍。",
+    "tempoImpact": "风暴有逐渐降低的天花板，后期不能飞太高；空中掉落 5 种稀有度宝箱，穿过即可升级武器或临时强化飞机武器；维修包则回复飞机耐久和玩家血盾。整局围绕飞行路线、空中拾取、驾驶配合展开。",
+    "designObservation": "载具型 BR 不是简单加一辆车，而是把生命、复活、战利品、边界和队友职责都绑定到载具上，才能真正改写比赛。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v8-40%3Flang%3Den-US",
+    "imageUrl": "https://cdn2.unrealengine.com/Fortnite/patch-notes/v8-40/br-header-v8-40/EN_08BR_AirRoyale_Announce_Keyart_Social-1912x1084-ed3ded33ae420a4411c229442769a7e7c0f58ef9.jpg",
+    "imageSource": "官方公告图",
+    "launchDate": "2019-04-17",
+    "launchLabel": "2019年4月17日",
+    "launchNote": "v8.40 更新上线，Air Royale LTM 随补丁加入。"
+  },
+  {
+    "id": "fortnite-endgame-2019",
+    "game": "Fortnite",
+    "modeName": "Endgame",
+    "year": "2019",
+    "date": "2019-04-25",
+    "tags": [
+      "power",
+      "pve"
+    ],
+    "type": [
+      "非对称阵营",
+      "神话道具",
+      "复活规则"
+    ],
+    "oneLineRule": "Marvel 非对称阵营 LTM：一方寻找 Avengers 道具对抗 Thanos，另一方作为 Thanos 和 Chitauri 入侵岛屿寻找六颗 Infinity Stones。",
+    "mechanicChange": "官方包装为 Thanos 与 Chitauri 入侵 Fortnite Battle Royale 岛；玩家需要取得散落地图的 Avengers: Endgame 物品并反击。模式还绑定挑战奖励，包括喷漆、旗帜和 Avengers Quinjet Glider。",
+    "tempoImpact": "战局由“谁掌握关键神器/关键角色”驱动，普通 BR 的装备曲线被超级英雄道具和阵营目标替代。Chitauri 阵营推进 Infinity Stones，英雄阵营则围绕强力道具形成局部反击。",
+    "designObservation": "联动 LTM 的重点不只是皮肤，而是让 IP 能力直接改变胜负目标和角色职责；非对称阵营需要双方都有可理解的终局压力。",
+    "sourceUrl": "https://www.fortnite.com/news/fortnite-endgame?lang=en-US",
+    "imageUrl": "https://cdn2.unrealengine.com/Fortnite/blog/fortnite-endgame/EN_08BR_LTM_Endgame_Social_Blog-Header-1920x1080-4a3a12ad115acc2cc3da432c0c6583d15b6c5567.jpg",
+    "imageSource": "官方公告头图",
+    "launchDate": "2019-04-25",
+    "launchLabel": "2019年4月25日",
+    "launchNote": "官方 Fortnite Endgame 公告日，Endgame LTM 开放挑战与联动奖励。"
+  },
+  {
+    "id": "fortnite-wicks-bounty-2019",
+    "game": "Fortnite",
+    "modeName": "Wick's Bounty / Bounty",
+    "year": "2019",
+    "date": "2019",
+    "tags": [
+      "objective",
+      "power"
+    ],
+    "type": [
+      "悬赏",
+      "硬币",
+      "高价值目标"
+    ],
+    "oneLineRule": "悬赏积分 LTM：通过淘汰其他赏金猎人收集 gold tokens，最先完成订单的人获胜，但领先者会变成全场目标。",
+    "mechanicChange": "官方描述强调“Stay alive and collect gold tokens by eliminating other bounty hunters”；目标不是简单吃鸡，而是率先满足代币数量。领先越多，越会被其他队伍追猎。",
+    "tempoImpact": "击杀收益被显性化，强队不再只是滚雪球，而是会因为领先暴露成高价值目标；落后玩家有明确翻盘对象，节奏围绕榜首追猎、偷分和反追击展开。",
+    "designObservation": "把领先者公开化可以把积分制变成追猎剧本，避免“强者越强但没人知道该追谁”的问题。",
+    "sourceUrl": "https://www.fortnite.com/news/everyone-wants-wick",
+    "imageUrl": "https://cdn2.unrealengine.com/Fortnite/blog/everyone-wants-wick/09BR_Social_LTM_WicksBounty_Announce_BlogHeader-1920x1080-8b51023568e0cec03cdd7e484cc453d1206aa715.jpg",
+    "imageSource": "官方公告头图",
+    "launchDate": "2019-05-16",
+    "launchLabel": "2019年5月16日",
+    "launchNote": "官方 Everyone Wants Wick 公告日，Wick’s Bounty LTM 已可进入。"
+  },
+  {
+    "id": "fortnite-rally-royale-2020",
+    "game": "Fortnite",
+    "modeName": "Rally Royale",
+    "year": "2020",
+    "date": "2020",
+    "tags": [
+      "objective",
+      "space"
+    ],
+    "type": [
+      "竞速",
+      "票券收集",
+      "载具优先"
+    ],
+    "oneLineRule": "竞速收集 LTM：从补给中收集足够 golden tickets，然后冲过路线终点赢得比赛。",
+    "mechanicChange": "Golden tickets 从天上的 Supply Drops 中出现；玩家要先攒够票，再去终点冲线。模式提供 Choppas、Motorboats、汽车和快速转移道具，让玩家可以开车、飞行、走水路或徒步竞速。",
+    "tempoImpact": "胜利压力从淘汰转为路线规划和节奏执行，但攻击道具仍然存在，玩家可以清路、拦截、干扰其他赛车手。它不是单纯竞速，而是带战斗干扰的 BR 地图路线赛。",
+    "designObservation": "竞速式 BR 要同时给“跑法”和“打断跑法”的空间；如果只有终点没有干扰，它会变成直线跑图。",
+    "sourceUrl": "https://www.fortnite.com/news/ticket-to-win-it-in-the-rally-royale-ltm",
+    "imageUrl": "https://cdn2.unrealengine.com/14br-rallyroyaleltm-newsheader-1920x1080-268309582.jpg",
+    "imageSource": "官方公告头图",
+    "launchDate": "2020-10-15",
+    "launchLabel": "2020年10月15日",
+    "launchNote": "官方 Rally Royale LTM 公告日。"
+  },
+  {
+    "id": "fortnite-spy-games-2020",
+    "game": "Fortnite",
+    "modeName": "Spy Games",
+    "year": "2020",
+    "date": "2020",
+    "tags": [
+      "power"
+    ],
+    "type": [
+      "赛季内系统",
+      "科技解锁",
+      "多 LTM 轮换"
+    ],
+    "oneLineRule": "赛季型轮换 LTM 系统：通过 Operation: Dropzone / Knockout 等任务获取 Intel，解锁只在 Spy Games 中使用的 Tech 能力和装备。",
+    "mechanicChange": "Dropzone 是 20v20，在更小风暴圈中抢 150 次淘汰并争夺 Intel；Knockout 是 Squad/Duo 单挑锦标赛，胜者获得更多 Intel。Intel 用来解锁 Tech，包括 Jetpack、Double Jump、Strong Resolve 等能力。",
+    "tempoImpact": "模式不只是单局规则，而是和整季进度绑定；玩家的 Tech 解锁会贯穿整个 Season，后续还会持续新增，让 LTM 具备成长线和回访动机。",
+    "designObservation": "局外成长线可以把 LTM 从一次性玩法变成赛季系统；但能力池必须清楚限制在活动内，避免破坏主 BR 平衡。",
+    "sourceUrl": "https://www.fortnite.com/news/fortnite-spy-games-limited-time-modes?lang=en-US",
+    "imageUrl": "https://cdn2.unrealengine.com/Fortnite/blog/fortnite-spy-games-limited-time-modes/12BR_Spy_Games_Tech_Promote_NewsHeader-1920x1080-1e4887b49c4b43fa39e885f66e10c6cbfc6b00b3.jpg",
+    "imageSource": "官方公告头图",
+    "launchDate": "2020-03-17",
+    "launchLabel": "2020年3月17日（Spy Games 首批 Operation）",
+    "launchNote": "Operation: Dropzone 与 Spy Games 挑战在 3月17日推出；官方 LTM 汇总文章发布于 4月15日。"
+  }
+]

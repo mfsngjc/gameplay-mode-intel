@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>玩法情报工作台 v0.1 | Fortnite BR 案例库</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header>
+      <div class="hero">
+        <div class="eyebrow"><span class="spark" aria-hidden="true"></span>玩法情报工作台 v0.1 · Fortnite BR 案例库</div>
+        <h1>可采集的 BR 玩法情报库</h1>
+        <p>把 Fortnite 过往 BR / LTM 玩法整理成可筛选、可采集、可导出的设计素材。案例库和万圣节创意分开，后续可接同步脚本自动更新。</p>
+        <div class="hero-meta" aria-label="资料概览">
+          <span class="meta-pill" id="caseCount">12 个代表案例</span>
+          <span class="meta-pill">本地收藏</span>
+          <span class="meta-pill">Markdown / Canvas 导出</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="section" aria-labelledby="takeaways">
+          <div class="section-head">
+            <h2 id="takeaways">先看结论</h2>
+            <p>Fortnite 做“新 BR 玩法”时，很少只是换皮。它通常会明确改动一个核心压力源：胜利条件、队伍复活、移动空间、PvE 威胁或特殊能力。下面先单独整理过往案例，万圣节方向放到后面的独立章节。</p>
+          </div>
+          <div class="insight-grid">
+            <article class="insight">
+              <strong>目标从吃鸡变成争夺</strong>
+              <span>The Getaway、Rally Royale 证明：把胜利绑定到可见目标物，会天然制造追击、埋伏、转移路线和团队分工。</span>
+            </article>
+            <article class="insight">
+              <strong>PvE 可以重写节奏</strong>
+              <span>Horde Rush、Storm King 把玩家注意力从纯 PvP 拉到阶段防守、Boss、资源补给，适合万圣节怪潮。</span>
+            </article>
+            <article class="insight">
+              <strong>小地图 + 快局更利于主题周</strong>
+              <span>Reload、Blitz Royale 用更短回合降低试错成本，让强规则变体更容易被接受。</span>
+            </article>
+            <article class="insight">
+              <strong>单一规则要足够可感知</strong>
+              <span>Floor is Lava、Zero Build 都是“一句话能懂”的规则变体，适合作为活动入口和传播标题。</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="cases">
+          <div class="section-head">
+            <h2 id="cases">玩法案例</h2>
+            <p>按玩法母题筛选。每张卡片只整理案例本身：核心机制、节奏影响和可复用的通用设计观察；采集后会保存到当前浏览器本地。</p>
+          </div>
+
+          <div class="toolbar" aria-label="案例筛选与导出">
+            <div class="toolbar-row">
+              <div class="filters">
+                <button type="button" data-filter="all" aria-pressed="true">全部</button>
+                <button type="button" data-filter="core" aria-pressed="false">长期/核心模式</button>
+                <button type="button" data-filter="objective" aria-pressed="false">目标争夺</button>
+                <button type="button" data-filter="pve" aria-pressed="false">PvE / Boss</button>
+                <button type="button" data-filter="space" aria-pressed="false">空间规则</button>
+                <button type="button" data-filter="power" aria-pressed="false">特殊能力</button>
+                <button type="button" data-filter="collected" aria-pressed="false">已采集</button>
+              </div>
+              <div class="actions">
+                <button type="button" id="exportCanvas">导出 Canvas</button>
+                <button type="button" id="exportCollected">导出采集 MD</button>
+              </div>
+            </div>
+            <div class="status-line" id="statusLine">正在加载玩法数据...</div>
+          </div>
+
+          <div class="mode-grid" id="modeGrid" aria-live="polite"></div>
+        </section>
+
+        <section class="section" aria-labelledby="halloween">
+          <div class="section-head">
+            <h2 id="halloween">万圣节玩法思路</h2>
+            <p>这一章单独做创意推导，不混在案例卡片里。每个方向都保留一句话规则、核心体验和参考案例，方便继续扩成完整玩法案。</p>
+          </div>
+          <div class="playbook">
+            <article class="playbook-item">
+              <b>幽魂回魂 Royale</b>
+              <p>一句话规则：队友阵亡后变成幽魂，存活者守住灵火即可倒计时复活；幽魂可侦查但不能造成伤害。</p>
+              <span>参考案例：Reload</span>
+            </article>
+            <article class="playbook-item">
+              <b>诅咒南瓜撤离</b>
+              <p>一句话规则：地图刷新 4 个南瓜遗物，携带者回血并暴露，带到移动祭坛撤离即可获胜。</p>
+              <span>参考案例：The Getaway</span>
+            </article>
+            <article class="playbook-item">
+              <b>午夜怪潮</b>
+              <p>一句话规则：每次缩圈都会有鬼潮袭击最近 POI，击碎刷怪祭坛可获得强力但带诅咒的道具。</p>
+              <span>参考案例：Horde Rush</span>
+            </article>
+            <article class="playbook-item">
+              <b>血月终局 Boss</b>
+              <p>一句话规则：最后两圈生成 Boss，击败它给全队短时神话能力，但开打会暴露位置。</p>
+              <span>参考案例：Storm King / Endgame</span>
+            </article>
+            <article class="playbook-item">
+              <b>黑雾爬升</b>
+              <p>一句话规则：不是单纯缩圈，而是低地黑雾上涨，高地、屋顶、塔楼、移动道具价值暴增。</p>
+              <span>参考案例：Floor is Lava</span>
+            </article>
+            <article class="playbook-item">
+              <b>怪谈快局</b>
+              <p>一句话规则：32 人 6 分钟，每局随机一条怪谈规则，例如“镜中人复制枪声”“灯灭后怪物苏醒”。</p>
+              <span>参考案例：Blitz Royale</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="sources">
+          <div class="section-head">
+            <h2 id="sources">主要来源</h2>
+            <p>资料以 Epic/Fortnite 官方新闻与补丁说明为主，Wiki 用于补充模式归类和历史列表。卡片图片优先使用官方公告图；没有抓到时使用当前项目的原创占位图。</p>
+          </div>
+          <ul class="source-list" id="sourceList"></ul>
+          <footer>最后整理：2026-05-26。当前版本是本地 MVP，可继续接入同步脚本与服务器部署。</footer>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <div class="share-modal" id="shareModal" hidden>
+    <div class="share-backdrop" data-share-close></div>
+    <section class="share-panel" role="dialog" aria-modal="true" aria-labelledby="shareTitle">
+      <div class="share-head">
+        <div>
+          <span>玩法块预览</span>
+          <h2 id="shareTitle">分享</h2>
+        </div>
+        <button type="button" class="icon-close" data-share-close aria-label="关闭分享预览">×</button>
+      </div>
+      <div class="share-preview">
+        <img id="sharePreviewImage" alt="玩法块分享预览图">
+      </div>
+      <div class="share-actions">
+        <button type="button" id="downloadShareImage">下载图片</button>
+        <button type="button" id="copyShareMarkdown">复制 MD</button>
+        <button type="button" id="downloadShareMarkdown">下载 MD</button>
+      </div>
+      <p class="share-hint">也可以直接右键或长按上方预览图，手动复制或保存这张玩法块图片。</p>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

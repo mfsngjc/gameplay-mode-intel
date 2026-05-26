@@ -1,0 +1,54 @@
+{
+  "generatedBy": "scripts/sync_fortnite.py",
+  "drafts": [],
+  "errors": [
+    {
+      "sourceUrl": "https://fortnite.fandom.com/wiki/Fortnite:_Zero_Build",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "sourceUrl": "https://www.fortnite.com/news/fortnite-blitz-royale-full-throttle-phone-ready?lang=en-US",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "sourceUrl": "https://www.fortnite.com/news/fortnitemares-2019?lang=en-US",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "sourceUrl": "https://www.fortnite.com/news/spy-games",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "sourceUrl": "https://www.fortnite.com/news/squad-up-for-fortnite-reload?lang=pt-BR",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "sourceUrl": "https://www.fortnite.com/news/ticket-to-win-it-in-the-rally-royale-ltm",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "sourceUrl": "https://www.fortnite.com/news/wicks-bounty",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "sourceUrl": "https://www.fortnite.com/patch-notes/v5-40?lang=en-US",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "sourceUrl": "https://www.fortnite.com/patch-notes/v8-20%26title%3Depicgames.com?lang=en-US",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "sourceUrl": "https://www.fortnite.com/patch-notes/v8-40%3Flang%3Den-US",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "sourceUrl": "https://www.fortnite.com/patch-notes/v8-50%26xid%3D17259%2C15700023%2C15700043%2C15700186%2C15700191%2C15700256%2C15700259%2C15700262?lang=en-US",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "sourceUrl": "https://www.fortnite.com/patch-notes/v9-21%26?lang=en-US",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
