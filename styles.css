@@ -415,9 +415,15 @@ dd {
   margin: 20px 22px 0;
   padding: 14px 0 0;
   border-top: 1px solid var(--line);
+}
+
+.card-foot h4 {
+  margin: 0 0 6px;
   color: #2b6d3c;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .04em;
 }
 
 .card-foot blockquote {

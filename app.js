@@ -570,6 +570,7 @@ function renderModes() {
           </dl>
         </div>
         <div class="card-foot">
+          <h4>设计观察</h4>
           <blockquote>${escapeHtml(mode.designObservation)}</blockquote>
           <cite>&mdash; 集成农业 AI · DeepSeek-V4-Pro（深度求索）</cite>
         </div>
