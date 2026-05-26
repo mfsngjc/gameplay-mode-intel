@@ -7,7 +7,6 @@ const state = {
 
 const modeGrid = document.querySelector("#modeGrid");
 const statusLine = document.querySelector("#statusLine");
-const sourceList = document.querySelector("#sourceList");
 const caseCount = document.querySelector("#caseCount");
 const toast = document.querySelector("#toast");
 const shareModal = document.querySelector("#shareModal");
@@ -613,16 +612,6 @@ function renderFilters() {
   filtersContainer.insertAdjacentHTML("beforeend", collectedBtn.outerHTML);
 }
 
-function renderSources() {
-  const filteredModes = state.gameFilter !== "all"
-    ? state.modes.filter((mode) => mode.game === state.gameFilter)
-    : state.modes;
-  const uniqueSources = [...new Map(filteredModes.map((mode) => [mode.sourceUrl, mode])).values()];
-  sourceList.innerHTML = uniqueSources.map((mode) => `
-    <li><a href="${escapeHtml(mode.sourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(mode.game)}：${escapeHtml(mode.modeName)} 来源</a></li>
-  `).join("");
-}
-
 function bindEvents() {
   document.querySelectorAll("[data-game]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -633,7 +622,6 @@ function bindEvents() {
       });
       renderFilters();
       renderModes();
-      renderSources();
     });
   });
 
@@ -679,7 +667,6 @@ async function init() {
     state.modes = await response.json();
     renderFilters();
     renderModes();
-    renderSources();
     bindEvents();
   } catch (error) {
     statusLine.textContent = `加载失败：${error.message}`;

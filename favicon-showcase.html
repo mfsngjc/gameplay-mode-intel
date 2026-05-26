@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>终末地风格 Favicon 方案 × 10</title>
+<style>
+  :root { --bg:#0d0d10; --ink:#e0e0e6; --muted:#6b6b75; --accent:#2468e6; --line:rgba(255,255,255,.06); }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:"SF Pro Display","PingFang SC",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;padding:48px 32px 100px}
+  h1{font-size:32px;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+  .sub{color:var(--muted);font-size:15px;margin-bottom:8px}
+  .principles{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 44px}
+  .principles span{padding:5px 12px;border:1px solid var(--line);border-radius:6px;font-size:13px;color:var(--muted);font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;max-width:1200px}
+  .card{border:1px solid var(--line);border-radius:12px;padding:28px 20px 22px;background:rgba(255,255,255,.02);text-align:center;transition:border-color .2s,background .2s}
+  .card:hover{border-color:rgba(36,104,230,.3);background:rgba(36,104,230,.04)}
+  .card svg{width:80px;height:80px;margin-bottom:16px}
+  .card h3{font-size:14px;font-weight:700;margin-bottom:4px}
+  .card p{font-size:12px;color:var(--muted);line-height:1.4}
+  .card code{display:block;margin-top:10px;font-size:11px;color:rgba(255,255,255,.25);word-break:break-all;line-height:1.3}
+  .legend{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);display:flex;gap:32px;flex-wrap:wrap}
+  .legend-item{font-size:12px;color:var(--muted)}
+  .legend-item b{color:var(--ink)}
+  @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:500px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<h1>终末地风格 Favicon 方案</h1>
+<p class="sub">10 个方向 · 统一工业植感 · 极简克制</p>
+
+<div class="principles">
+  <span>单/双色</span><span>锐角斜切</span><span>几何精线</span><span>大面积留白</span><span>无渐变</span><span>无圆角</span>
+</div>
+
+<div class="grid">
+
+<!-- 1. 单线苗 -->
+<div class="card">
+<svg viewBox="0 0 64 64"><polyline points="32,52 32,34 32,18" fill="none" stroke="#e0e0e6" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"/><polyline points="32,34 20,26 14,12" fill="none" stroke="#e0e0e6" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"/><polyline points="32,28 44,20 50,6" fill="none" stroke="#e0e0e6" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"/></svg>
+<h3>1. 单线苗</h3>
+<p>纯白单线 · 折角苗 · 最极简</p>
+<code>#e0e0e6</code>
+</div>
+
+<!-- 2. 蓝核苗 -->
+<div class="card">
+<svg viewBox="0 0 64 64"><polyline points="32,52 32,36 32,22" fill="none" stroke="#c8c8d0" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/><polyline points="32,32 18,22 10,10" fill="none" stroke="#c8c8d0" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/><polyline points="32,28 46,20 54,8" fill="none" stroke="#c8c8d0" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/><circle cx="32" cy="28" r="3.5" fill="#2468e6"/></svg>
+<h3>2. 蓝核苗</h3>
+<p>灰线苗 + 蓝色核心点</p>
+<code>#c8c8d0 + #2468e6</code>
+</div>
+
+<!-- 3. 菱种 -->
+<div class="card">
+<svg viewBox="0 0 64 64"><polygon points="32,54 20,40 32,26 44,40" fill="none" stroke="#c8c8d0" stroke-width="2" stroke-linejoin="miter"/><polygon points="32,26 26,34 32,42 38,34" fill="#2468e6"/><line x1="32" y1="42" x2="32" y2="54" stroke="#c8c8d0" stroke-width="1.5"/></svg>
+<h3>3. 菱种</h3>
+<p>菱形种子 · 土中萌发</p>
+<code>#c8c8d0 + #2468e6</code>
+</div>
+
+<!-- 4. 工叶 -->
+<div class="card">
+<svg viewBox="0 0 64 64"><polygon points="32,8 48,24 54,18 42,4" fill="none" stroke="#e0e0e6" stroke-width="2.5" stroke-linejoin="miter"/><polygon points="32,8 16,24 10,18 22,4" fill="none" stroke="#2468e6" stroke-width="2.5" stroke-linejoin="miter"/><line x1="32" y1="8" x2="32" y2="54" stroke="#e0e0e6" stroke-width="2.5" stroke-linecap="square"/><circle cx="32" cy="8" r="2" fill="#2468e6"/></svg>
+<h3>4. 工叶</h3>
+<p>左蓝右白工业双叶 · 对称机械</p>
+<code>#e0e0e6 + #2468e6</code>
+</div>
+
+<!-- 5. 晶芽 -->
+<div class="card">
+<svg viewBox="0 0 64 64"><polygon points="32,6 40,26 56,30 40,38 32,56 24,38 8,30 24,26" fill="none" stroke="#c8c8d0" stroke-width="1.5" stroke-linejoin="miter"/><polygon points="32,18 36,28 46,30 36,34 32,42 28,34 18,30 28,28" fill="#2468e6"/></svg>
+<h3>5. 晶芽</h3>
+<p>八角晶体 · 芯蓝 · 矿脉感</p>
+<code>#c8c8d0 + #2468e6</code>
+</div>
+
+<!-- 6. 脉叶 -->
+<div class="card">
+<svg viewBox="0 0 64 64"><polyline points="32,54 32,38 32,26" fill="none" stroke="#c8c8d0" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"/><polygon points="32,26 16,16 8,4 24,18" fill="none" stroke="#c8c8d0" stroke-width="1.5" stroke-linejoin="miter"/><polygon points="32,26 48,16 56,4 40,18" fill="none" stroke="#c8c8d0" stroke-width="1.5" stroke-linejoin="miter"/><line x1="32" y1="26" x2="12" y2="10" stroke="#2468e6" stroke-width="1" stroke-linecap="square"/><line x1="32" y1="26" x2="52" y2="10" stroke="#2468e6" stroke-width="1" stroke-linecap="square"/><circle cx="32" cy="26" r="2" fill="#2468e6"/></svg>
+<h3>6. 脉叶</h3>
+<p>几何叶脉 · 蓝线数据流</p>
+<code>#c8c8d0 + #2468e6</code>
+</div>
+
+<!-- 7. 双色苗 -->
+<div class="card">
+<svg viewBox="0 0 64 64"><polyline points="32,50 32,36 32,20" fill="none" stroke="#c8c8d0" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/><polyline points="32,36 20,26 12,14" fill="none" stroke="#c8c8d0" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/><polyline points="32,30 44,22 52,10" fill="none" stroke="#2468e6" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/></svg>
+<h3>7. 双色苗</h3>
+<p>茎灰 · 右叶蓝 · 不对称</p>
+<code>#c8c8d0 + #2468e6</code>
+</div>
+
+<!-- 8. 环种 -->
+<div class="card">
+<svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="24" fill="none" stroke="#3d3d48" stroke-width="1.5"/><circle cx="32" cy="32" r="16" fill="none" stroke="#3d3d48" stroke-width="1"/><polygon points="32,20 38,26 38,34 32,40 26,34 26,26" fill="none" stroke="#c8c8d0" stroke-width="2" stroke-linejoin="miter"/><circle cx="32" cy="30" r="3" fill="#2468e6"/></svg>
+<h3>8. 环种</h3>
+<p>同心环 + 六角芯 · 雷达种植舱</p>
+<code>#3d3d48 #c8c8d0 #2468e6</code>
+</div>
+
+<!-- 9. 单色菱 -->
+<div class="card">
+<svg viewBox="0 0 64 64" fill="none" stroke="#e0e0e6" stroke-width="2.5" stroke-linejoin="miter"><polygon points="32,4 48,28 32,52 16,28" fill="none"/><polygon points="32,16 38,26 32,36 26,26" fill="#e0e0e6"/><line x1="32" y1="4" x2="32" y2="16" stroke-width="1.5"/><line x1="32" y1="36" x2="32" y2="52" stroke-width="1.5"/></svg>
+<h3>9. 单色菱</h3>
+<p>全白单色 · 菱形种子 · 最克制</p>
+<code>#e0e0e6 only</code>
+</div>
+
+<!-- 10. 标叶 -->
+<div class="card">
+<svg viewBox="0 0 64 64"><polygon points="14,6 50,6 56,30 32,58 8,30" fill="none" stroke="#3d3d48" stroke-width="1.5" stroke-linejoin="miter"/><polygon points="20,14 44,14 48,30 32,48 16,30" fill="none" stroke="#c8c8d0" stroke-width="1.5" stroke-linejoin="miter"/><polygon points="26,22 38,22 40,30 32,40 24,30" fill="none" stroke="#2468e6" stroke-width="1.5" stroke-linejoin="miter"/><circle cx="32" cy="30" r="2.5" fill="#2468e6"/></svg>
+<h3>10. 标叶</h3>
+<p>三层嵌套六边形 · 工业标靶</p>
+<code>#3d3d48 #c8c8d0 #2468e6</code>
+</div>
+
+</div>
+
+<div class="legend">
+  <div class="legend-item"><b>终末地设计原则</b></div>
+  <div class="legend-item">色板：<b style="color:#e0e0e6">#e0e0e6</b> 亮灰 · <b style="color:#c8c8d0">#c8c8d0</b> 中灰 · <b style="color:#3d3d48">#3d3d48</b> 深灰 · <b style="color:#2468e6">#2468e6</b> 蓝</div>
+  <div class="legend-item">语言：锐角 · 细线 · 留白 · 几何 · 克制 · 无圆角 · 无渐变 · 无阴影</div>
+</div>
+
+</body>
+</html>

@@ -134,15 +134,43 @@ data/modes.json
   - `gp.qq.com/gicp/news/` — 官方公告页面（文章通常为纯文字，配图可能 JS 动态加载）
 
 - **Apex Legends / EA**：
-  - `apexlegends.wiki.gg/images/` — **wiki.gg 官方 Apex Wiki CDN**（首选！EA 定期删除官方公告链接，wiki 图片稳定存在）
-  - `drop-assets.ea.com` — EA 官方 Key Art CDN（可能被清理）
-  - `media.contentapi.ea.com` — EA Content API 图片（可能被清理）
+  - `drop-assets.ea.com` — EA 官方 Key Art / News CDN，支持 CORS（当前 Apex 默认图来源）
+  - `shared.akamai.steamstatic.com` — Steam 商店截图（通用游戏画面，非模式专属）
+  - ~~`apexlegends.wiki.gg/images/`~~ — 已不可用：2026 年 5 月起 Cloudflare 返回 403 + `cross-origin-resource-policy: same-origin`，浏览器无法加载
+  - ~~`apexlegends.fandom.com`~~ — 同样受 Cloudflare 保护，且 Gamepedia 迁移后图片路径全部失效
 
-> **Apex 特殊说明**：EA 官方公告页面会定期下线或删除配图，因此 Apex 模式图片**优先从 wiki.gg CDN 获取**。可以通过 wiki.gg API (`api.php?action=query&prop=imageinfo&iiprop=url`) 查询文件 URL，无需访问受 Cloudflare 保护的 HTML 页面。
+> **Apex 图片现状（2026-05）**：wiki.gg / Fandom / EA 官方新闻页均无法获取各模式的专属图标或头图。当前 18 个 Apex 模式统一使用 EA drop-assets.ea.com 的 Generic Keyart（16:9），图片源标注 `"EA Official — Apex Legends Generic Keyart"`。若后续发现可访问的模式专属图源，再逐一替换。
 
 ### 同步脚本
 
 `scripts/sync_fortnite.py` 是本地同步脚本雏形，用于辅助抓取 Fortnite 官方公告信息。GitHub Pages 不会运行这个脚本，数据更新后需要重新提交到仓库。
+
+---
+
+## 后续规划
+
+### 玩法排期图（Mode Release Timeline）
+
+基于各个游戏的玩法上线节奏，输出一张可视化排期图：
+
+- **横轴**：时间（按年份/季度/月度），覆盖每款游戏从首发到当前版本的完整生命周期
+- **纵轴**：按游戏分轨（Fortnite / PUBG / 和平精英 / Apex Legends）
+- **节点大小**：玩法规模权重 — 核心模式（常驻 BR 变体）> 大型 LTM（独立规则 + 专属地图/资产）> 小型活动（参数微调 / 限时返场）
+- **节点颜色/形状**：玩法母题分类（复活规则 / 胜利条件 / PvE 威胁 / 移动空间 / 特殊能力 / 联动活动）
+
+目标：一眼看出每款游戏在什么时间点做了什么类型的玩法、全年节奏是否有「玩法空缺」、哪些季度是集中爆发期 vs 维护静默期。
+
+### 年度玩法运营复盘
+
+对每款游戏按年份拉片分析：
+
+- **玩法产出量**：每年新上线模式数量 vs 返场复用数量
+- **母题分布**：这一年主攻了哪几类设计方向（比如今年重点搞复活变体、明年开始大量 PvE）
+- **复用策略**：哪些模式从 LTM 升格为常驻？哪些直接放弃？哪些每年固定返场形成「赛季传统」？
+- **覆盖逻辑**：全年 12 个月是否有玩法空白期？节假日/赛季末/过渡期靠什么内容填坑？
+- **可持续思路**：观察每款游戏的「玩法工具体系」— 是否建立了可组合的玩法组件（Fortnite 的 UEFN 编辑器、Apex 的 Mixtape 轮换框架），还是每次从零搭一个新模式
+
+这份复盘的目标是提炼一套**泛 BR 游戏玩法运营方法论**：如何用有限的母题组合 + 参数调校，持续产出差异化的玩法内容，覆盖全年不同时间段的玩家活跃需求。
 
 ---
 
