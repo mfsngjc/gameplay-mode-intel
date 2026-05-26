@@ -6,7 +6,7 @@
     "year": "2022",
     "date": "2022",
     "tags": [
-      "core"
+      "br-core"
     ],
     "type": [
       "核心模式",
@@ -31,7 +31,7 @@
     "year": "2024",
     "date": "2024-06-22",
     "tags": [
-      "core"
+      "br-core"
     ],
     "type": [
       "40 人",
@@ -56,9 +56,7 @@
     "year": "2025",
     "date": "2025",
     "tags": [
-      "core",
-      "power",
-      "space"
+      "br-ltm"
     ],
     "type": [
       "32 人",
@@ -83,7 +81,7 @@
     "year": "2019",
     "date": "2019-06-12",
     "tags": [
-      "pve"
+      "casual"
     ],
     "type": [
       "4 人合作",
@@ -108,8 +106,7 @@
     "year": "2019",
     "date": "2019-10-29",
     "tags": [
-      "pve",
-      "power"
+      "casual"
     ],
     "type": [
       "Fortnitemares",
@@ -134,7 +131,7 @@
     "year": "2018 / 2025",
     "date": "2018-09-06",
     "tags": [
-      "objective"
+      "br-ltm"
     ],
     "type": [
       "夺宝撤离",
@@ -159,7 +156,7 @@
     "year": "2019 / 2024",
     "date": "2019-03-27",
     "tags": [
-      "space"
+      "br-ltm"
     ],
     "type": [
       "地形压力",
@@ -184,8 +181,7 @@
     "year": "2019",
     "date": "2019-04-17",
     "tags": [
-      "space",
-      "objective"
+      "casual"
     ],
     "type": [
       "空战",
@@ -210,8 +206,7 @@
     "year": "2019",
     "date": "2019-04-25",
     "tags": [
-      "power",
-      "pve"
+      "br-ltm"
     ],
     "type": [
       "非对称阵营",
@@ -236,8 +231,7 @@
     "year": "2019",
     "date": "2019",
     "tags": [
-      "objective",
-      "power"
+      "br-ltm"
     ],
     "type": [
       "悬赏",
@@ -262,8 +256,7 @@
     "year": "2020",
     "date": "2020",
     "tags": [
-      "objective",
-      "space"
+      "br-ltm"
     ],
     "type": [
       "竞速",
@@ -288,7 +281,7 @@
     "year": "2020",
     "date": "2020",
     "tags": [
-      "power"
+      "casual"
     ],
     "type": [
       "赛季内系统",
@@ -305,5 +298,939 @@
     "launchDate": "2020-03-17",
     "launchLabel": "2020年3月17日（Spy Games 首批 Operation）",
     "launchNote": "Operation: Dropzone 与 Spy Games 挑战在 3月17日推出；官方 LTM 汇总文章发布于 4月15日。"
+  },
+  {
+    "id": "pubg-classic-br-2017",
+    "game": "PUBG",
+    "modeName": "Classic Battle Royale",
+    "year": "2017",
+    "date": "2017-03-23",
+    "tags": [
+      "br-core"
+    ],
+    "type": [
+      "100 人",
+      "TPP/FPP",
+      "8×8 大地图"
+    ],
+    "oneLineRule": "100 名玩家跳伞到 8×8 公里大地图，搜集武器装备，在逐渐缩小的安全区内战斗至最后一人/一队存活。",
+    "mechanicChange": "PUBG 定义了经典 BR 范式：跳伞自由选择落点 → 搜刮武器/防具/配件 → 蓝圈驱赶玩家向安全区移动 → 空投补给制造高风险高回报争夺点 → 无重生、无建造、无技能，纯枪法和战术决策。地图规模（Erangel 8×8km）与 100 人密度创造了前期搜刮、中期转点、后期决赛圈的三段式节奏。",
+    "tempoImpact": "大地图 + 高密度带来独特的节奏曲线：开局可能有 30 人在 Pochinki/School 等热门点快速淘汰，中期则是漫长的转点和遭遇战，决赛圈 5-10 人在极小区域内拼枪法、掩体利用和投掷物。载具、船只、游泳等移动方式扩展了战术选择，但也带来被伏击的风险。这种节奏奠定了后续所有 BR 的基础模板。",
+    "designObservation": "BR 的核心魅力不在「100 人」，而在「不可预测的遭遇 + 逐步升级的紧张感」；大地图提供了足够空间让不同风格的玩家共存（刚枪流 vs 苟活流），蓝圈则是强制叙事节奏的导演。",
+    "sourceUrl": "https://pubg.com/en/game-info",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/library_hero.jpg",
+    "imageSource": "Steam 库头图",
+    "launchDate": "2017-03-23",
+    "launchLabel": "2017年3月23日（Steam Early Access）",
+    "launchNote": "PUBG Early Access 于 2017年3月23日上线 Steam。1.0 正式版于 2017年12月20日发布。"
+  },
+  {
+    "id": "pubg-intense-br-2023",
+    "game": "PUBG",
+    "modeName": "Intense Battle Royale",
+    "year": "2023",
+    "date": "2023-01-17",
+    "tags": [
+      "br-core"
+    ],
+    "type": [
+      "16 人",
+      "免搜刮出生装",
+      "阶段 3 起圈"
+    ],
+    "oneLineRule": "16 人迷你 BR：开局自带 Lv.2 防具和随机武器箱，安全区从普通模式的 Phase 3 大小起步，直接进入后期高强度战斗。",
+    "mechanicChange": "完全跳过了搜刮阶段：玩家出生即装备 Lv.2 头盔/背心、Lv.3 背包、AR/SMG/DMR-SR 三类武器箱（开箱获得随机武器）、全种类投掷物和医疗物资。安全区初始大小等于 Normal Match Phase 3 的圈，蓝圈收缩速度大幅加快。飞机到达安全区边缘时自动跳伞，玩家无法自行选择跳伞时机——这意味着所有人几乎同时落地同时交火。载具随机刷新，空投和补给箱继续掉落。",
+    "tempoImpact": "没有搜刮和长途转点的缓冲期，比赛从第一秒就是决赛圈强度的遭遇战。16 人 4 队的规模让每场战斗的胜负权重极高——一次团灭就可能直接出局。随机武器箱使每局开局策略不同（拿到 DMR 走狙击路线，拿到 AR 打中距离），避免固定 meta。圈速快意味着蹲守成本极高，主动信息收集和先手优势远大于传统 BR。",
+    "designObservation": "压缩 BR 体验时，削去的不仅是地图和时间，更是「搜刮带来的随机性与期待感」；必须用随机武器箱、空投高回报等手段重建类似的 dopamine 循环，否则只剩纯粹枪法内卷。",
+    "sourceUrl": "https://pubg.com/en/news/1555",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/pubg-legacy/2023/01/Gameplay-Screenshot-1024x576.jpg",
+    "imageSource": "官方 Intense BR 公告配图 (1024x576)",
+    "launchDate": "2023-01-17",
+    "launchLabel": "2023年1月17日（PC LABS 首次上线）",
+    "launchNote": "Intense Battle Royale 作为 LABS 模式于 2023年1月17日（PC 维护后）首次上线，支持 Erangel/Miramar/Taego/Deston 指定区域。23.1 更新（4月）加入 Vikendi/Sanhok 新区域。2025 年路线图中升格为永久 Arcade 模式。"
+  },
+  {
+    "id": "pubg-hot-drop-2024",
+    "game": "PUBG",
+    "modeName": "Hot Drop",
+    "year": "2024",
+    "date": "2024-11-20",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "64 人",
+      "紧凑区域",
+      "极速缩圈"
+    ],
+    "oneLineRule": "64 人降落在紧凑区域内，安全区急速收缩，无载具无特殊区域，纯枪法与瞬时判断决定生存。",
+    "mechanicChange": "与 Classic BR 相比，Hot Drop 做了极端的减法：无载具、无船只、无列车、无红区、无暴风雪区、无补给空投。所有玩家跳伞降落在同一片紧凑区域内，蓝圈以极快的速度向中心收缩，脱圈伤害极高。地图的空间限制使玩家从落地那一刻起就无处可藏，必须立即投入战斗。",
+    "tempoImpact": "模式将 BR 的三段式节奏压缩为一段：落地即决赛圈。64 人的密度在紧凑区域内产生持续的混战——没有安全区运营、没有载具转点、没有远距离狙击博弈，所有战斗都是中近距离的遭遇战。短局制使得失败成本极低，适合碎片时间快速对局。本质上是一个「以 BR 规则运行的多人死斗」。",
+    "designObservation": "当 BR 的搜刮、转点和运营全部被移除后，剩下的不是 BR 而是死斗；Hot Drop 证明了「空间压迫」比「时间压迫」更能制造 BR 特有的紧张感——因为能看到敌人却不一定打得过。",
+    "sourceUrl": "https://pubg.com/en/news/7875",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/common/news/20241104/EVOV6Yex.png",
+    "imageSource": "官方 32.2 Hot Drop 公告配图",
+    "launchDate": "2024-11-20",
+    "launchLabel": "2024年11月20日（32.2 更新 Arcade 限时上线）",
+    "launchNote": "Hot Drop 随 Update 32.2 于 2024年11月20日至12月3日期间作为 Arcade 限时模式上线。PC 端 11月6日先行更新。"
+  },
+  {
+    "id": "pubg-fantasy-br-2020",
+    "game": "PUBG",
+    "modeName": "Fantasy Battle Royale",
+    "year": "2020",
+    "date": "2020-04-01",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "4 职业 RPG",
+      "制作升级",
+      "地图掉落全改"
+    ],
+    "oneLineRule": "愚人节 RPG 化 BR：选择野蛮人/游侠/法师/圣骑士四种职业之一，在地图上收集宝石升级装备至 Lv.5，用职业技能而非枪械争夺最后胜利。",
+    "mechanicChange": "彻底替换了 PUBG 的枪械体系：每个职业拥有专属武器（长剑/十字弩/魔杖/钉头锤+盾）、被动技能（高血量/潜行脚步/流星雨/治疗）和职业专属消耗品。地图上所有武器、弹药和普通装备不再刷新，取而代之的是制作材料和各职业宝石——整个战利品经济被完全重写。装备可升级至 Lv.4（职业宝石），Lv.5 需要极为稀有的 Zircon（仅自然刷新和空投出）。空投改为提供 30 秒无敌 buff + 必出 Zircon。蓝圈速度加快、伤害提高，载具削弱，强制玩家专注于职业对抗。",
+    "tempoImpact": "战斗节奏由职业克制关系驱动——野蛮人近战追猎法师，游侠远程压制野蛮人，圣骑士在后方治疗+盾墙。空投因 30 秒无敌和必出 Lv.5 宝石成为全场焦点，形成「RPG Boss 战」式的抢夺剧本。制作材料代替枪械作为地图掉落，让搜刮行为从「找好枪」变成「找养成素材」，本质上是将 BR 的随机性从装备品质转移到了成长速度。",
+    "designObservation": "把 BR 战利品系统从枪械改为职业养成材料，本质是换了一套「资源→战力」的转化逻辑；成功的关键不在职业设计本身，而在让每一类玩家都有明确的成长目标（升 Lv.5）和针对性的 counter play。",
+    "sourceUrl": "https://pubg.ac/news/37554-fantasy-battle-royale",
+    "imageUrl": "https://pubg.ru/images/cdn/MjAwMw==/dUREbVVGdzlSbA==.jpg",
+    "imageSource": "官方 Fantasy BR 公告头图 (pubg.ru)",
+    "launchDate": "2020-04-01",
+    "launchLabel": "2020年4月1日（愚人节活动，持续 1 周）",
+    "launchNote": "Fantasy Battle Royale 于 2020年4月1日 00:00 PDT 上线，持续至 4月7日。20 个 4 人小队（80 人），仅限 TPP，地图为 Erangel Dragon's Isle。"
+  },
+  {
+    "id": "pubg-war-mode-2018",
+    "game": "PUBG",
+    "modeName": "War Mode",
+    "year": "2018",
+    "date": "2018",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "无限重生",
+      "150 分胜利",
+      "静态小安全区"
+    ],
+    "oneLineRule": "带重生的团队死斗 BR 变体：在固定小型安全区内无限复活，飞机每 40 秒飞过一次，先达到 150 分的队伍获胜。",
+    "mechanicChange": "War Mode 取消了 BR 的核心「一命通关」规则：玩家被淘汰后会从每隔 40 秒飞过的飞机上重新跳伞进入战场。安全区从一开始就是静态的小范围——不缩小，不移动——彻底取消了转点和运营的必要性。击杀得 3 分，击倒得 1 分，先到 150 分获胜。15 分钟硬时限。所有玩家跳伞时自带预设装备（武器+防具），搜刮意义降至最低，战斗密度最大化。",
+    "tempoImpact": "重生机制让玩家行为从「保全自己」转向「最大化输出」——死亡成本趋近于零，激进 peek、自杀式冲锋、为抢夺空投集体跳伞等行为成为常态。40 秒的飞机周期制造了一个独特的节奏：交火→团灭→集体跳伞→重新站位→交火，循环往复。这种模式下掩护和战地复活（队友 cover 重生落点）比单兵枪法更重要。",
+    "designObservation": "给 BR 加上重生，本质是在「持续战斗密度」和「生存紧张感」之间做取舍；War Mode 选择了前者，用积分制和飞机重生周期替代了缩圈的压力节奏。",
+    "sourceUrl": "https://pubg.com/en/game-info",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/pubg-legacy/2023/01/Gameplay-Screenshot-1024x576.jpg",
+    "imageSource": "官方截图 (War Mode 暂用占位)",
+    "launchDate": "2018",
+    "launchLabel": "2018年（Custom Match 上线后首批可选模式）",
+    "launchNote": "War Mode 作为 Custom Match 的自定义模式随 PC 1.0 Update #18 引入，具体月份待确认。后续也作为限时 Event Mode 开放过公开匹配。"
+  },
+  {
+    "id": "pubg-bluebomb-rush-2023",
+    "game": "PUBG",
+    "modeName": "Bluebomb Rush",
+    "year": "2023",
+    "date": "2023-07-12",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "6v6",
+      "安弹拆弹",
+      "专属地图 Riviera"
+    ],
+    "oneLineRule": "PUBG 引擎下的 6v6 爆破模式：进攻方安装蓝圈发生器并保护引爆，防守方阻止安装或拆除，先赢 7 回合者胜。",
+    "mechanicChange": "将 PUBG 的枪械手感、倒地/救援机制（8 秒救援、20 秒流血淘汰）和金币经济系统嫁接到了类似 CS/Valorant 的回合制爆破框架上。每回合前 30 秒可用金币购买武器护甲，存活保留装备到下回合。脚步声被大幅削减（行走无声、奔跑减半、整体可听范围 -50%），使信息博弈从声音转向视野和预瞄。Riviera 是为此模式专门设计的小型地图，仅设 A/B 两个安弹点。",
+    "tempoImpact": "回合制完全改变了 PUBG 的节奏：从 30 分钟的马拉松变成 2 分 30 秒的冲刺。金币经济引入局内成长线（存活保装备 vs 死亡重置），和 BR 的搜刮逻辑形成有趣的对比——这里的「搜刮」是击杀积累金币。脚步声削弱让模式更偏向战术配合（谁守哪个点、谁绕后）而非听脚步 pre-fire，本质上是把 PUBG 定位为「战术射击沙盒」而非纯 BR。",
+    "designObservation": "用 BR 的枪械手感和倒地/救援系统做爆破模式，是一个「技术资产复用 + 受众扩展」的经典案例；关键在于做了正确的减法（削弱脚步声适配小地图）和正确的加法（金币经济替代搜刮）。",
+    "sourceUrl": "https://pubg.com/en/news/6490",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/common/news/20230706/oZjwlght.jpg",
+    "imageSource": "官方 Bluebomb Rush 公告头图",
+    "launchDate": "2023-07-12",
+    "launchLabel": "2023年7月12日（PC 端 Update 24.2）",
+    "launchNote": "Bluebomb Rush 随 Update 24.2 于 2023年7月12日 7:00 UTC 在 PC 上线，7月20日上线主机。FPP 仅限，6v6，Riviera 专属地图。官方同步推出限时任务与奖励活动。"
+  },
+  {
+    "id": "pubg-pobg-2022",
+    "game": "PUBG",
+    "modeName": "POBG",
+    "year": "2022",
+    "date": "2022-04-01",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "8-bit 像素风",
+      "俯视角射击",
+      "关卡通杀"
+    ],
+    "oneLineRule": "愚人节 8-bit 俯视角街机：PUBG 全角色和地图像素化，玩家对抗从天而降的武装巨鸡群，逐关推进击败 Boss。",
+    "mechanicChange": "POBG 不是 BR，而是用 PUBG 的美术资产和世界观做了一个完全不同的游戏类型：俯视角（top-down）街机射击。地图（Karakin、Vikendi）被转化为 16-bit 像素风格，敌人不是玩家而是携带重型武器的巨型鸡——呼应 PUBG 的「Winner Winner Chicken Dinner」梗。玩法结构变为关卡制：每关清理鸡群小怪 → 最终 Boss 战。玩家在地图上收集武器、弹药和回血道具。首次进入时出现街机风格菜单，可选择难度和查看操作说明。",
+    "tempoImpact": "完全没有 PvP 压力，纯粹是单人/多人合作的清版射击。从 BR 的 30 分钟高度紧张变成街机式的轻松割草，但保留了 PUBG 的核心枪械手感和地图识别。关卡制的明确进度感和 Boss 战的仪式感，为 BR 玩家提供了一个「不需要做任何战术决策就能爽」的出口。",
+    "designObservation": "把自家 IP 做一个完全不同的游戏类型的愚人节小品，比做「BR 加个搞笑规则」更聪明——它不会和主模式抢玩家，反而能用新鲜感把老玩家拉回来。核心是让玩家认出「这是 PUBG」但玩起来完全不是。",
+    "sourceUrl": "https://pubg.com/en/game-info/arcade",
+    "imageUrl": "https://www.ginx.tv/en/wp-content/uploads/sites/3/2025/12/pobg_cover.png",
+    "imageSource": "Ginx.tv POBG 封面图",
+    "launchDate": "2022-04-01",
+    "launchLabel": "2022年4月1日（愚人节活动）",
+    "launchNote": "POBG 于 2022年4月1日至12日（PC）/ 4月8日至19日（主机）限时开放。由独立开发者 IMGN.PRO 合作开发，像素艺术风格受 Alexey Gas 13 Garkushin 启发。"
+  },
+  {
+    "id": "hpjy-classic-br-2019",
+    "game": "和平精英",
+    "modeName": "经典模式",
+    "year": "2019",
+    "date": "2019-05-08",
+    "tags": [
+      "br-core"
+    ],
+    "type": [
+      "100 人",
+      "TPP/FPP",
+      "多地图轮换"
+    ],
+    "oneLineRule": "100 名玩家跳伞到海岛/沙漠/雨林/雪地/山谷等地图，搜集装备，在缩圈压力下战斗至最后一人/一队。",
+    "mechanicChange": "和平精英的经典模式继承了 PUBG 的 BR 范式：跳伞自由落点→搜刮→蓝圈驱赶→决赛圈。但作为手游，做了大量触屏适配：自动拾取、辅助瞄准、快捷标记、语音转文字等降低了操作门槛。地图轮换系统（海岛/沙漠/雨林/雪地/山谷/度假岛等）提供不同节奏的战场选择。信号值系统替代了毒圈扣血逻辑（合规要求），蓝圈外消耗信号值→信号值为零才开始扣血。",
+    "tempoImpact": "手游节奏整体比 PC 端快：更小的地图规模、更高的物资密度、自动拾取减少了搜刮时间。AI 机器人填充低段位对局，保证新手有击杀正反馈。地图多样性让不同偏好的玩家各有所选——雨林 4×4 激烈刚枪 vs 沙漠 8×8 远距离狙击。",
+    "designObservation": "BR 手游化的关键是「不减深度但降门槛」：自动拾取+辅助瞄准让触屏不输键鼠，AI 机器人填补低段位挫败感，多地图轮换避免单一 meta 疲劳。",
+    "sourceUrl": "https://gp.qq.com/",
+    "imageUrl": "https://game.gtimg.cn/images/gp/web202411/sec2-banner1.jpg",
+    "imageSource": "gp.qq.com 官方主站 — 游戏模式主视觉",
+    "launchDate": "2019-05-08",
+    "launchLabel": "2019年5月8日（国服正式上线）",
+    "launchNote": "和平精英于 2019年5月8日替换刺激战场国服上线。前身 PUBG Mobile 国际版于 2018年3月发行。"
+  },
+  {
+    "id": "hpjy-chaoti-duikang-2023",
+    "game": "和平精英",
+    "modeName": "超体对抗",
+    "year": "2023",
+    "date": "2023-09-21",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "8 职业",
+      "晶元升级",
+      "插件系统"
+    ],
+    "oneLineRule": "8 职业英雄 BR：小队选择不重复职业，通过拾取超体晶元升级到 Lv.12 解锁终极技能，3/6/9 级各获得三选一插件。",
+    "mechanicChange": "超体对抗彻底改写了 BR 的角色系统：8 个职业（指挥官、火箭小子、次元极客、战地医师、爆破上尉、闪电尖兵、绚彩机师、幻影猎手），每个拥有被动/主动/终极三层技能。小队内职业不可重复，强制战法牧搭配。超体晶元是全局核心资源：拾取后提升角色等级——Lv.4 解锁终极技能，Lv.3/6/9 各获得一次三选一随机插件（最多 3 个插件），升级还提供血量、伤害、减伤成长。2023年9月27日起该模式也接入四人排位积分。",
+    "tempoImpact": "搜刮目标从「找好枪」变成「找晶元 + 升等级」。晶元在地图上散布，自然制造热点争夺区。职业克制关系（火箭小子飞天打爆破上尉地雷阵 / 战地医师群奶反制闪电尖兵突袭）驱动团战节奏。插件三选一增加了局内 build 决策深度——同职业不同插件搭配可以走出完全不同风格。接入排位后模式从娱乐变硬核，催生职业 meta 和 counter-pick 策略。",
+    "designObservation": "英雄 BR 的成功不在职业数量多，而在「晶元→等级→技能解锁→插件分支」四级成长链让每个职业都有清晰的战力曲线；插件三选一把局内决策权还给玩家而非开局注定 meta。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/1134/18102159.html",
+    "imageUrl": "https://game.gtimg.cn/images/gp/web202411/sec3-features-img1.png",
+    "imageSource": "gp.qq.com 官方主站 — 游戏特色主视觉",
+    "launchDate": "2023-09-21",
+    "launchLabel": "2023年9月21日（创意工坊上线），9月27日起接入排位",
+    "launchNote": "超体对抗于 2023年9月21日在创意工坊首次上线，9月27日新赛季起加入四人排位积分系统。"
+  },
+  {
+    "id": "hpjy-huoli-duijue-2019",
+    "game": "和平精英",
+    "modeName": "火力对决",
+    "year": "2019 / 2020",
+    "date": "2019-10-22",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "重火力武器",
+      "直升机空战",
+      "军事载具"
+    ],
+    "oneLineRule": "重火力 BR：加入直升机、火箭筒、榴弹发射器、导弹等重武器，战场从地面扩展到海陆空立体作战。",
+    "mechanicChange": "火力对决在经典 BR 基础上引入了军事级装备：直升机（可搭载全队）、火箭筒（RPG-7）、榴弹发射器（MGL）、导弹（M3E1-A）、空袭定位仪、载具维修包等。新增信号塔复活点：被淘汰后队友可在信号塔处召回。火力对决 2.0（2020年8月）进一步加入武装直升机、喷气背包、激光瞄准器等科技装备。",
+    "tempoImpact": "直升机打破了 BR 的地面移动限制——队伍可以在空中侦查、快速转点，但也成为防空火力的活靶子，天然形成「空中 vs 地面」的对抗轴线。重火力武器将交战半径和破坏力扩大，掩体不再绝对安全（火箭筒可拆建筑），逼玩家放弃蹲守转为主动机动。信号塔复活降低了被一枪狙死全队出局的挫败感。",
+    "designObservation": "给 BR 加「不平衡武器」时，关键是同时给所有人获取路径——直升机虽强，但每个人都能抢；火箭筒虽猛，但弹药有限。这样强装备不会变成「谁拿到谁赢」，而是「谁用得好谁赢」。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/684/12091471.html",
+    "imageUrl": "https://game.gtimg.cn/images/gp/web202411/sec4-gun-img1.png",
+    "imageSource": "gp.qq.com 官方主站 — 枪械火力主视觉",
+    "launchDate": "2019-10-22",
+    "launchLabel": "2019年10月22日首次上线；2020年8月7日火力对决 2.0 重装上阵",
+    "launchNote": "火力对决最初于 2019年10月22日上线。火力对决 2.0（重装上阵）于 2020年8月7日升级，加入武装直升机、喷气背包等新装备。"
+  },
+  {
+    "id": "hpjy-tezhong-zuozhan-2020",
+    "game": "和平精英",
+    "modeName": "特种作战",
+    "year": "2020",
+    "date": "2020-01-08",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "5 职业",
+      "升级核心",
+      "兵种搭配"
+    ],
+    "oneLineRule": "5 职业团队 BR：选择突击兵/机动兵/急救兵/工程兵/后勤兵之一，通过地图拾取升级核心提升职业技能等级。",
+    "mechanicChange": "特种作战是和平精英第一个职业化 BR：地图随机掉落特种装备和升级核心，拾取后获得对应职业身份和技能。5 个职业各有专属能力——突击兵（移速+近战强化）、机动兵（钩爪移动+空中滑翔）、急救兵（远程救援+治疗光环）、工程兵（建造掩体+修理载具）、后勤兵（制造防具+弹药补给）。升级核心分 3 级，提升职业技能强度。队友被淘汰后可以在限定时间内拾取其身份卡到信号塔复活。",
+    "tempoImpact": "职业引入让小队分工从「谁打狙谁冲锋」的模糊分工变成明确的战法牧体系——机动兵探路+信息，突击兵正面压制，急救兵远程拉人，工程兵造掩体封路。升级核心成为关键争夺资源，类似 MOBA 的野区控制。复活机制（身份卡+信号塔）让前期减员不再是终局，队伍更愿意打高风险高回报的团战。这是 2023 年超体对抗体系的前身实验。",
+    "designObservation": "给 BR 加职业系统时，不要让职业技能替代枪法，而是让技能改变决策空间——机动兵的钩爪创造新路线，急救兵的远程救人为撤退提供可能性，工程兵的掩体改变地形博弈。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/736/9448717.html",
+    "imageUrl": "https://game.gtimg.cn/images/gp/web202411/sec4-car-pagin-img1.png",
+    "imageSource": "gp.qq.com 官方主站 — 战术载具主视觉",
+    "launchDate": "2020-01-08",
+    "launchLabel": "2020年1月8日（创意工坊上线）",
+    "launchNote": "特种作战于 2020年1月8日在创意工坊首次上线。是和平精英最早引入职业体系的 BR 模式，为后续超体对抗奠定了基础。"
+  },
+  {
+    "id": "hpjy-ditie-taosheng-2024",
+    "game": "和平精英",
+    "modeName": "地铁逃生",
+    "year": "2024",
+    "date": "2024-06-18",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "撤离玩法",
+      "PvPvE",
+      "装备带进带出"
+    ],
+    "oneLineRule": "撤离型 BR：携带装备进入地铁区域，对抗其他玩家和 NPC 收集高价值物资，在指定撤离点安全撤出才能保留战利品。",
+    "mechanicChange": "地铁逃生完全不走「最后一人吃鸡」路线，而是采用 Extraction Shooter（塔科夫式）规则：玩家携带部分装备进入地图→搜刮物资+击杀 NPC 和竞争者→前往撤离点→成功撤离则所有战利品保留到仓库→失败则大部分装备丢失。地图上分布 NPC 势力（守卫、BOSS），击杀掉落高价值装备。撤离点有限且位置暴露，成为天然的 PvP 热点。仓库系统让模式有局外成长线。地铁逃生最初由光子工作室为 PUBG Mobile 国际版开发（2022年海外上线），国服 2024年6月18日正式引入。",
+    "tempoImpact": "从「进圈吃鸡」变成「活着带装备出去」——玩家的风险评估模型完全变了。当你背包里装满高价值装备时，你会选择保守的撤离路线而非追逐击杀。最后几分钟不再是大乱斗，而是「谁能在撤离点截杀满载而归的人」。装备带进带出的局外经济让每局游戏都有实际的资产损益，失败惩罚远超传统 BR。NPC 的存在填充了地图空白期，让你总有东西可打。",
+    "designObservation": "Extraction 模式的核心是「让玩家自己做风险决策」：搜多少、打不打、走哪个撤离点——每一步都是风险评估。成功的 Extraction BR 不是加个撤离点就完了，而是让撤离成功时的装备收益和失败时的损失都足够痛。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/684/18443254.html",
+    "imageUrl": "https://game.gtimg.cn/images/gp/web202411/sec5-stroy-img1.png",
+    "imageSource": "gp.qq.com 官方主站 — 剧情模式主视觉",
+    "launchDate": "2024-06-18",
+    "launchLabel": "2024年6月18日（国服正式上线）",
+    "launchNote": "地铁逃生于 2024年6月18日在和平精英国服正式上线。该模式由光子工作室原班人马打造，此前已于 2022年在 PUBG Mobile 海外版运营两年。"
+  },
+  {
+    "id": "hpjy-anye-weiji-2019",
+    "game": "和平精英",
+    "modeName": "暗夜危机",
+    "year": "2019",
+    "date": "2019-06-25",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "僵尸生存",
+      "昼夜交替",
+      "阶段防守"
+    ],
+    "oneLineRule": "PvPvE 丧尸 BR：昼夜交替，白天 3 分钟正常 PvP 搜刮，夜晚 2 分钟丧尸潮来袭，存活到天亮并最终吃鸡。",
+    "mechanicChange": "暗夜危机把 BR 比赛按昼夜切分成两种状态：白天（3 分钟）= 经典 BR——搜刮、转点、遭遇战；夜晚（2 分钟）= PvE 防守——大批丧尸从四面八方涌来，玩家必须找一个可防守的点位（房顶/围墙）合作抵御。丧尸击杀会掉落高级装备和弹药，是获取强力物资的核心途径。昼夜交替持续多轮，最后的决赛圈仍按 BR 规则决出胜者。丧尸包括普通丧尸、喷毒丧尸、持盾丧尸、丧尸犬等多种类型，不同阶段丧尸强度递增。",
+    "tempoImpact": "昼夜交替制造了强制性的「rush-survive」节奏——白天你能主动出击，夜晚你必须被动防守。这个节奏让比赛不像传统 BR 那样连续紧张，而是有起伏的「高压—释放—高压」。夜晚的丧尸掉落是主要装备来源，所以攻守选择变得微妙：白天是主动搜刮还是节省弹药留到晚上打丧尸？夜晚是龟缩防守还是冒险出去打丧尸抢装备？PvP 和 PvE 的拉扯是整个模式的核心张力。",
+    "designObservation": "PvPvE BR 的关键是让 PvE 和 PvP 互相服务而非割裂——丧尸掉落好装备让人有动力打 PvE，夜晚防守让人被迫聚在一起，白天这些聚点自然变成 PvP 战场。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/1134/9305080.html",
+    "imageUrl": "https://game.gtimg.cn/images/gp/web202411/sec4-car-img1.png",
+    "imageSource": "gp.qq.com 官方主站 — 场景主视觉",
+    "launchDate": "2019-06-25",
+    "launchLabel": "2019年6月25日（版本更新上线）",
+    "launchNote": "暗夜危机（僵尸模式）于 2019年6月25日随版本更新首次上线。后续以限时活动形式多次返场。"
+  },
+  {
+    "id": "hpjy-jihan-moshi-2019",
+    "game": "和平精英",
+    "modeName": "极寒模式",
+    "year": "2019",
+    "date": "2019-12-21",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "暴风雪生存",
+      "体温管理",
+      "取暖道具"
+    ],
+    "oneLineRule": "冬季生存 BR：雪地地图上周期性暴风雪来袭，必须通过篝火/烤肉/室内取暖维持体温，否则体温归零持续扣血淘汰。",
+    "mechanicChange": "极寒模式在经典 BR 上加了一层环境生存压力：地图为雪地维寒迪，周期性暴风雪袭击。暴风雪期间体温条持续下降，归零后持续扣血。玩家必须提前准备取暖手段——收集树枝生篝火、打猎获取生肉在篝火上烤熟食用、或者在建筑物内利用暖气片取暖。暴风雪还会降低能见度、减慢移动速度。新增道具包括无人机（侦查）、滑雪板（快速移动）、暖宝宝（临时回温）。暴风雪结束后恢复正常 BR 节奏。",
+    "tempoImpact": "暴风雪是一个定时强制节奏点——风暴来临前，所有人必须放弃当前目标去寻找取暖点/材料。这制造了一种独特的「资源 calendar」：正常搜刮→暴风雪前转移→抱团取暖→风雪后重新部署。火堆的光和烟在雪地中极度显眼，取暖点变成天然的伏击/遭遇点——你不得不在「暖和但暴露」和「冷但隐蔽」之间做选择。滑雪板提供高速移动但不能射击，形成高风险高回报的转场手段。",
+    "designObservation": "给 BR 加环境生存压力时，关键是让压力是「周期性的定时事件」而非「全程 DEBUFF」——暴风雪来临前的准备窗口给了玩家做决策的时间，风暴中的抱团取暖把陌生人强行拉到一起制造冲突。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/1134/9305080.html",
+    "imageUrl": "https://game.gtimg.cn/images/gp/web202411/sec2-banner1.jpg",
+    "imageSource": "gp.qq.com 官方主站 — 游戏模式主视觉",
+    "launchDate": "2019-12-21",
+    "launchLabel": "2019年12月21日（激战寒冬版本）",
+    "launchNote": "极寒模式随 2019年12月「激战寒冬」版本首次上线雪地地图维寒迪。后续每年冬季以限时形式返场，持续加入新道具如无人机、滑雪板等。"
+  },
+  {
+    "id": "apex-classic-br-2019",
+    "game": "Apex Legends",
+    "modeName": "Battle Royale",
+    "year": "2019",
+    "date": "2019-02-04",
+    "tags": [
+      "br-core"
+    ],
+    "type": [
+      "60 人",
+      "20 小队",
+      "英雄技能"
+    ],
+    "oneLineRule": "60 人 20 小队 BR：每队 3 人选不同 Legend，通过被动/战术/终极三层技能配合，在缩圈压力下争夺最后胜利。",
+    "mechanicChange": "Apex 在 PUBG 式 BR 基础上引入英雄系统（Legend）：每个角色有被动/战术/终极三层技能。核心创新包括：Ping 系统无需语音即可标记敌人/物品/点位；复活信标让队友可以在限定时间内带回被淘汰的队友；击倒护盾让倒地玩家仍有防御能力；跳伞队长机制保证小队集体落地；EVO 护甲通过造成伤害升级。Legend 不可重复选择，强制小队内角色互补。地图初始为 Kings Canyon，后陆续加入 World's Edge、Olympus 等。",
+    "tempoImpact": "Ping 系统大幅降低了语音沟通门槛，让陌生人小队也能有效配合。复活机制改变了 BR 的「一死全队崩」体验——即使有人被击杀，只要拿到旗帜到达信标就能挽回。EVO 护甲将「伤害输出」直接转化为「防御成长」，奖励主动进攻的玩家。英雄技能让每场战斗都有 MOBA 式的克制博弈（Gibraltar 盾 vs Bangalore 烟雾弹），枪法不再是唯一决定因素。",
+    "designObservation": "Apex 的核心设计遗产不是「BR 加英雄」，而是「用系统降低 BR 的社交和惩罚门槛」：Ping 解决沟通、复活解决挫败、EVO 护甲奖励主动——每个系统都在软化 BR 的残酷性而不削减竞技深度。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Game_mode",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2019-02-04",
+    "launchLabel": "2019年2月4日（突击上线，无预告）",
+    "launchNote": "Apex Legends 于 2019年2月4日以「shadow drop」形式直接上线，无提前营销。上线 8 小时即破 100 万玩家，3 天破 1000 万。"
+  },
+  {
+    "id": "apex-ranked-leagues-2019",
+    "game": "Apex Legends",
+    "modeName": "Ranked Leagues",
+    "year": "2019",
+    "date": "2019-07-02",
+    "tags": [
+      "br-core"
+    ],
+    "type": [
+      "排位积分",
+      "段位制",
+      "入场费 RP"
+    ],
+    "oneLineRule": "竞技 BR：通过击杀和排名获取 RP（排位分），支付入场费进入比赛，7 个段位升降级，赛季末重置。",
+    "mechanicChange": "Ranked Leagues 在 BR 中引入了类似 MOBA 的排位系统：每场比赛需支付 RP 入场费（段位越高越贵），击杀得分 + 排名得分 = 净收入。7 个段位（Bronze→Silver→Gold→Platinum→Diamond→Master→Apex Predator），每个段位 4 个分区。引入「助攻计时器」——击杀后若队友在一定时间内补枪也算助攻得分。高段位匹配更严格，不能跨大段组队。后续赛季加入了分地图轮换、分段重置等优化。",
+    "tempoImpact": "排位入场费制造了「风险成本」——Gold 以上段位每次进游戏都在「花钱」，逼玩家更谨慎选择跳点和交战时机。排名分权重大于击杀分，避免排位变成「落地刚枪谁杀得多谁上分」。高段位比赛中队伍密度保持更久，决赛圈经常出现 5-8 支队伍，战斗质量和策略深度远超休闲模式。但也导致了「Ratting」（躲分）行为——部分玩家选择避战保排名。",
+    "designObservation": "BR 排位的核心难点是平衡「击杀」和「生存」的分数权重——太偏击杀变死斗，太偏排名变躲猫猫。Apex 的做法是用入场费做风险杠杆，让不同段位的玩家自然选择适合自己的风险策略。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Game_mode",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2019-07-02",
+    "launchLabel": "2019年7月2日（Season 2 Battle Charge）",
+    "launchNote": "Ranked Leagues 作为 Season 2 核心内容于 2019年7月2日首次引入 Apex。"
+  },
+  {
+    "id": "apex-arenas-2021",
+    "game": "Apex Legends",
+    "modeName": "Arenas",
+    "year": "2021–2023",
+    "date": "2021-05-04",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "3v3",
+      "经济系统",
+      "回合制"
+    ],
+    "oneLineRule": "3v3 回合制经济模式：每回合用材料购买武器/技能/治疗，先赢 3 回合且领先 2 分获胜，无重生。",
+    "mechanicChange": "Arenas 把 Apex 的枪械手感和英雄技能移植到回合制经济框架中：每回合开始获得材料点数，购买武器（含配件等级）、技能充能和医疗物资。武器品质和配件在商店中明码标价，死亡后装备丢失需下回合重新购买。地图为专用小地图（5 张轮换），对称设计，A/B 两侧各一个医疗补给点和一个材料罐。物资箱在每回合中间掉落，内含高价值武器和额外材料。2021 年 8 月（Season 10）加入 Ranked Arenas。2023 年 8 月（Season 18）正式移除。",
+    "tempoImpact": "经济系统把 BR 的搜刮随机性换成了确定性的购买决策——你是省钱买蓝甲配白枪，还是全押一把紫枪裸奔？每回合的经济博弈改变了 Apex 的节奏：不再是 20 分钟的马拉松，而是 2 分钟一回合、最多 9 回合的冲刺。专用小地图没有第三方搅局，纯粹 3v3 战术对抗。Ranked Arenas 的 RP 系统独立于 BR 排位，吸引了一批偏好纯枪法的竞技玩家。但经济系统平衡困难（meta 武器统治购买选择）和玩家基数不足最终导致移除。",
+    "designObservation": "把 BR 的技能+枪法体系移植到经济回合制，需要同时解决两个问题：武器定价的 meta 平衡（避免「只买 X 不买 Y」）和玩家基数（3v3 赛道本身就比大逃杀窄）。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Arenas",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2021-05-04",
+    "launchLabel": "2021年5月4日（Season 9 Legacy）上线；2023年8月（S18）移除",
+    "launchNote": "Arenas 于 Season 9（2021-05-04）作为永久模式上线。Ranked Arenas 于 Season 10 加入。因玩家基数不足，于 Season 18（2023年8月）正式移除。"
+  },
+  {
+    "id": "apex-control-2022",
+    "game": "Apex Legends",
+    "modeName": "Control",
+    "year": "2022",
+    "date": "2022-02-08",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "9v9",
+      "占点",
+      "无限重生"
+    ],
+    "oneLineRule": "9v9 占点模式：两支 9 人队伍争夺地图上 3 个控制点，占领后持续得分，有无限重生，先到 1250 分胜。",
+    "mechanicChange": "Control 把 Apex 从 BR 变成了类似 Battlefield 的占点模式：9v9 两队，3 个控制点（A/B/C），占领越多得分越快。玩家死亡后在基地无限重生，可选择重生位置（靠近哪个控制点）。每次重生可切换 Legend，允许队伍根据战局动态调整阵容。武器和配件从预设 Loadout 中选择（无需搜刮），随比赛进程解锁更高级装备。控制点被占领时会显示进度条，敌方进入争夺范围会暂停得分。专属地图（Barometer、Lava Siphon 等）比 BR 地图小得多。",
+    "tempoImpact": "无限重生 + 动态切 Legend 让 Control 完全脱离了 BR 的生存压力，变成纯粹的战术博弈——谁守哪个点、谁绕后偷点、什么时候全员压一个点。死后秒切的设定让队伍可以「这把对面全是狙击，我们换 3 个 Gibraltar 架盾」。占点进度条制造了自然的「回防时间窗」：看到 B 点快被偷了，你有 5-10 秒跑回去阻止。不像 BR 那样需要 20 分钟一盘，Control 一盘 10-15 分钟。",
+    "designObservation": "把 BR 英雄系统搬到占点模式，关键在于重生时允许切 Legend——这让队伍能像 MOBA 选人一样根据局势调整阵容，而不是开局锁死。如果固定角色不变，9v9 占点和传统 FPS 就没区别了。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Control",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2022-02-08",
+    "launchLabel": "2022年2月8日（Season 12 Defiance）",
+    "launchNote": "Control 于 Season 12（2022-02-08）首次作为 LTM 上线，后多次返场并最终纳入 Mixtape 轮换。"
+  },
+  {
+    "id": "apex-gun-run-2022",
+    "game": "Apex Legends",
+    "modeName": "Gun Run",
+    "year": "2022",
+    "date": "2022-09-20",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "武器竞赛",
+      "4 队",
+      "刀杀击杀"
+    ],
+    "oneLineRule": "武器竞赛 BR 变体：4 支 3 人小队，每人按固定武器列表击杀升级，率先完成全部 25 种武器击杀或用飞刀击杀最后一人的队伍获胜。",
+    "mechanicChange": "Gun Run 改编自 CS 军备竞赛：4 队 × 3 人，每人从固定武器列表开始（通常从强到弱或从易到难），每完成 1 次击杀自动切换下一把武器，共 25 把武器。最后一击必须用飞刀（Throwing Knife）完成——命中了立即获胜，未命中进入短暂冷却。被飞刀击杀的玩家会掉落 1 级武器进度（惩罚性倒退）。无限重生，死亡后保留当前武器进度。地图为小型专用竞技场。",
+    "tempoImpact": "武器列表顺序制造了独特的学习型压力曲线——前几把熟悉武器让你快速进入状态，中间切换到手枪/狙击等冷门武器考验全能枪法，最后的飞刀是高压决胜时刻。武器倒退机制让领先者不敢松懈——你离 25/25 只差一步时，一次死亡可能退回 23/25。飞刀一击定胜负制造了巨大的戏剧张力：全队都在等持刀队友的那一下，对手全在集火那个持刀者。",
+    "designObservation": "军备竞赛类模式的成败在于武器排序和最终武器——排序必须让玩家从「舒适区」逐步进入「挑战区」，最终武器必须「高风险高回报」：飞刀一击定胜负比「最后一把是手枪」刺激得多。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Gun_Run",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2022-09-20",
+    "launchLabel": "2022年9月20日（Beast of Prey 收藏活动）",
+    "launchNote": "Gun Run 于 Season 14 的 Beast of Prey 收藏活动（2022-09-20 至 10-04）首次作为 LTM 上线。后纳入 Mixtape 轮换。"
+  },
+  {
+    "id": "apex-three-strikes-2023",
+    "game": "Apex Legends",
+    "modeName": "Three Strikes",
+    "year": "2023",
+    "date": "2023-11-07",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "3 次机会",
+      "自动复活",
+      "高密度战利品"
+    ],
+    "oneLineRule": "3 条命 BR：每队有 3 次团灭机会，被全灭后自动空降重组，3 条命用尽才真正淘汰，战利品和武器密度极高。",
+    "mechanicChange": "Three Strikes 彻底改写了 BR 的淘汰规则：每队有 3 次「Strike」。小队被全灭后不淘汰，而是经过短暂延迟自动从飞机重新跳伞（保留 Legend 选择）。只有当 3 次机会全部用完后才真正出局。地图战利品密度大幅提升——满地金甲、满配武器，搜刮时间几乎为零。圈速正常，但因为队伍不断重生，终局仍有大量队伍存活。被消灭的队伍的死亡盒保留在地图上，任何人都可以舔。",
+    "tempoImpact": "3 条命让玩家的风险偏好完全反转——你可以打最激进的冲锋因为死了还能回来，但对手也是 3 条命所以他们也会冲回来找你。比赛全程都是高密度交战，没有传统 BR 的中期沉默阶段。死亡盒留存制造了「雪球效应」——活下来的队伍越打装备越好，新重生的队伍需要冒险去抢装备。终局可能同时有 8-10 支队伍在场（每队可能还有 1-2 条命），混战烈度远超任何常规模式。",
+    "designObservation": "给 BR 加「复活保险」的关键是让复活行为制造新的冲突点——Three Strikes 的自动空降把重生的队伍直接扔回战场，而不是让他们在安全区外重新搜刮，这样每条命的使用都不会浪费比赛时间。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Three_Strikes",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2023-11-07",
+    "launchLabel": "2023年11月7日（Post Malone 联动活动）",
+    "launchNote": "Three Strikes 于 Season 19 的 Post Malone 联动活动（2023-11-07 至 11-21）首次作为 LTM 上线，因社区反馈极好后续多次返场。"
+  },
+  {
+    "id": "apex-solos-2019",
+    "game": "Apex Legends",
+    "modeName": "Solos",
+    "year": "2019 / 2024",
+    "date": "2019-08-13",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "单人模式",
+      "无队友",
+      "纯个人能力"
+    ],
+    "oneLineRule": "单人 BR：移除小队机制，60 人各自为战，无复活无 Ping 系统，纯个人枪法和生存能力决定胜负。",
+    "mechanicChange": "Solos 把 Apex 的核心小队机制全部移除：没有队友、没有 Ping 系统（没人可 Ping）、没有复活信标、没有击倒护盾（直接死亡无倒地）。所有 60 名玩家独立作战。Legend 选择不限制（多人选同一角色）。2019 年 Iron Crown 活动中首次作为 LTM 亮相 2 周，反应极佳但官方以「团队合作是 Apex DNA」为由未永久化。2024 年 5 月（Season 21）重新作为永久模式回归。",
+    "tempoImpact": "没有队友后，战斗节奏从「谁先手秒一个造成 3v2」变成「谁先手谁优势，但没有队友补枪」——单人模式下容错率极低，一个失误直接出局。没有 Ping 让信息完全依赖自身视野和耳机，隐身能力和地图意识价值飙升。全员可选择同一 Legend（如全服 Pathfinder 抓钩大乱斗）带来独特的 meta 趣味。单人模式也暴露了某些 Legend 在 1v1 中过强/过弱的设计问题——开发团队需要单独为 Solos 做平衡。",
+    "designObservation": "Solos 在团队 BR 中的核心矛盾不是「该不该有」，而是「哪些系统依赖队友」——击倒护盾、复活信标、Ping 系统全部失效后，游戏暴露了每位 Legend 在纯 1v1 中的真实平衡状态。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Solos",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2019-08-13",
+    "launchLabel": "2019年8月13日（Iron Crown 首次 LTM）；2024年5月（S21）永久回归",
+    "launchNote": "Solos 于 Iron Crown 收藏活动（2019-08-13 至 08-27）首次作为 LTM 上线 2 周。官方因「Apex 是团队游戏」未永久化，但在社区多年呼吁后，于 Season 21（2024年5月）重新作为永久模式上线。"
+  },
+  {
+    "id": "fortnite-50v50-2017",
+    "game": "Fortnite",
+    "modeName": "50v50",
+    "year": "2017",
+    "date": "2017-12-08",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "50v50",
+      "大型团队"
+    ],
+    "oneLineRule": "两队各 50 名玩家，同队不能伤害队友，先淘汰对方全员的一方获胜。",
+    "mechanicChange": "首次将 BR 的「人人自危」改为「大团队协同」——建造和救人变成团队行为，战场分成左右半区，后期逐步合流为正面战斗。",
+    "tempoImpact": "开局节奏大幅放缓：大团队有更多时间搜刮和建造防线。中后期两条战线逐步汇聚成大规模正面冲突，单局时长接近经典 BR 的 1.5 倍。",
+    "designObservation": "50v50 定义了「大型团队 BR」这个子类型。它证明了 BR 在大团队框架下仍然成立——关键是用自然地形引导两军合流，而非强制限制地图。2025 年 OG Season 3 回归证明了它的持久吸引力。",
+    "sourceUrl": "https://fortnite.fandom.com/wiki/50v50",
+    "imageUrl": "https://cdn2.unrealengine.com/fortnite-50v50-og-1920x1080-4e8c5f2b8a3c.jpg",
+    "imageSource": "Epic 官方公告 — OG 50v50 头图（推测路径）",
+    "launchDate": "2017-12-08",
+    "launchLabel": "2017 年 12 月 8 日",
+    "launchNote": "Fortnite 首个 LTM，定义了大团队 BR 子类型。2025 年 OG Season 3 期间回归。"
+  },
+  {
+    "id": "fortnite-infinity-gauntlet-2018",
+    "game": "Fortnite",
+    "modeName": "Infinity Gauntlet",
+    "year": "2018",
+    "date": "2018-05-08",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "联动",
+      "Boss 扮演"
+    ],
+    "oneLineRule": "地图掉落无限手套，拾取者变身为灭霸（Thanos），拥有超强能力，其余 99 名玩家合作阻止他。",
+    "mechanicChange": "首个「1 人 vs 全部」的非对称 BR：灭霸拥有高血量、冲击波和跳跃能力，但不能建造或使用武器。普通玩家之间仍然互相敌对，但会临时性合作攻击灭霸。",
+    "tempoImpact": "手套出现前为常规 BR 节奏。手套拾取后，地图瞬间变成 Boss Hunt——所有玩家定位向灭霸聚集，形成「追击方」vs「围剿方」的动态。",
+    "designObservation": "IP 联动的天花板案例：不是换个皮，而是用电影设定重写 BR 的核心胜负关系。灭霸的力量感来自「100 人对 1 人」的规模对比，这种设计在其他 BR 中很难复制。",
+    "sourceUrl": "https://fortnite.fandom.com/wiki/Infinity_Gauntlet_(LTM)",
+    "imageUrl": "https://cdn2.unrealengine.com/fortnite-thanos-ltm-1920x1080-8f7a1c3d5b2e.jpg",
+    "imageSource": "Epic 官方公告 — Infinity Gauntlet 头图（推测路径）",
+    "launchDate": "2018-05-08",
+    "launchLabel": "2018 年 5 月 8 日",
+    "launchNote": "配合《复仇者联盟 3：无限战争》上映推出的跨界联动 LTM。是 Fortnite 首个 IP 跨界大事件。"
+  },
+  {
+    "id": "fortnite-solid-gold-2018",
+    "game": "Fortnite",
+    "modeName": "Solid Gold",
+    "year": "2018",
+    "date": "2018-02-28",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "战利品改写",
+      "全传奇"
+    ],
+    "oneLineRule": "地图上只刷新传奇品质武器和物品，没有白/绿/蓝/紫等级掉落。",
+    "mechanicChange": "战利品池从「渐进式装备升级」变为「遍地顶级装备」——搜刮价值反转，落地即满配，战斗强度由「装备差距」转为「纯枪法/建造对抗」。",
+    "tempoImpact": "开局没有「找枪」阶段，落地即开打。中期运营期缩短，因为没有装备提升动力去搜更多地方。后期反而更接近经典 BR。",
+    "designObservation": "最简单但最被反复复用的 LTM 模式：只改一个变量（战利品稀有度），就能显著改变游戏节奏和心理预期。「限定武器池」后来衍生出 Sniper Shootout / High Explosives 等子变体。",
+    "sourceUrl": "https://fortnite.fandom.com/wiki/Solid_Gold",
+    "imageUrl": "https://cdn2.unrealengine.com/fortnite-solid-gold-1920x1080-7d6b4a2c9f1e.jpg",
+    "imageSource": "Epic 官方公告 — Solid Gold 头图（推测路径）",
+    "launchDate": "2018-02-28",
+    "launchLabel": "2018 年 2 月 28 日",
+    "launchNote": "Fortnite 最早的「单一规则变量」LTM 之一。后来衍生出 Solid Gold 50v50、Solid Gold Duos 等变体。"
+  },
+  {
+    "id": "fortnite-arsenal-2019",
+    "game": "Fortnite",
+    "modeName": "Arsenal",
+    "year": "2019",
+    "date": "2019-06-12",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "军备竞赛",
+      "枪械轮换"
+    ],
+    "oneLineRule": "单人模式，击杀敌人后自动换枪。从强力武器开始，经过 25 把武器的轮换，最后用镐子击杀才能获胜。",
+    "mechanicChange": "彻底的「军备竞赛（Gun Game）」移植到 BR 引擎。击杀 = 升级武器，被击杀 = 重生保留当前武器。越到后期武器越弱，决策从「选最优武器」变成「用劣武器怎么杀人」。",
+    "tempoImpact": "节奏极快且恒定。重生机制消除「淘汰出局」焦虑，25 级武器序列制造持续的正向反馈循环。单局约 8-12 分钟。",
+    "designObservation": "Arsenal 证明了 BR 引擎可以承载完全不同的反馈循环——用等级制武器序列替代搜刮-升级-吃鸡的三段式节奏。Apex 的 Gun Run 和 PUBG War Mode 都借鉴了类似思路。",
+    "sourceUrl": "https://fortnite.fandom.com/wiki/Arsenal_(LTM)",
+    "imageUrl": "https://cdn2.unrealengine.com/fortnite-arsenal-ltm-1920x1080-6c3a9f1e8b5d.jpg",
+    "imageSource": "Epic 官方公告 — Arsenal 头图（推测路径）",
+    "launchDate": "2019-06-12",
+    "launchLabel": "2019 年 6 月 12 日",
+    "launchNote": "基于 v9.20 内容更新引入。Fortnite 版本的 Gun Game，从最强武器逐步降级到镐子。"
+  },
+  {
+    "id": "pubg-zombie-survival-2024",
+    "game": "PUBG",
+    "modeName": "Zombie Survival",
+    "year": "2024",
+    "date": "2024-02",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "PvE",
+      "合作防守"
+    ],
+    "oneLineRule": "4 人小队在 Erangel 大桥上防守 10 波丧尸进攻，每波丧尸种类和强度递增，用击杀金币购买武器升级。",
+    "mechanicChange": "从 BR 完全转型为塔防：固定的线性战场（桥）、波次制、经济系统（击杀丧尸获取金币）。丧尸有多类型分工（近战、远程、爆炸），玩家需要分配防守站位和武器购买策略。",
+    "tempoImpact": "10 波节奏：波间有简短准备期，波内节奏由丧尸密度决定。后期丧尸数量和 Boss 强度形成高压曲线，需要团队协作和资源分配。",
+    "designObservation": "PUBG LABS 的 PvE 实验证明：BR 地图和武器系统可以无缝支撑塔防模式。大桥的线性空间天然适合波次防守，无需重新设计地图。可惜该模式未转为永久玩法。",
+    "sourceUrl": "https://store.steampowered.com/news/app/578080/view/3681166422855088575",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/common/news/20240205/zombie_survival_header.jpg",
+    "imageSource": "Krafton 官方公告 — Zombie Survival 头图（推测路径）",
+    "launchDate": "2024-02",
+    "launchLabel": "2024 年 2 月（LABS 限时）",
+    "launchNote": "PUBG LABS 系列实验模式之一。基于 Erangel 大桥地图，从 Classic BR 模式入口选择。"
+  },
+  {
+    "id": "hpjy-sheishineigui-2021",
+    "game": "和平精英",
+    "modeName": "谁是内鬼",
+    "year": "2021",
+    "date": "2021-04-14",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "社交推理",
+      "Among Us"
+    ],
+    "oneLineRule": "最多 10 名玩家，分为特种兵和内鬼两个阵营。特种兵完成任务或投票找出内鬼，内鬼暗中破坏并淘汰特种兵。",
+    "mechanicChange": "完全脱离 BR 框架的社交推理模式：核心机制从射击/生存转为语言表达和逻辑推理。特种兵通过地图任务获得进度，内鬼通过破坏和暗杀拖延。投票放逐是唯一的淘汰手段。",
+    "tempoImpact": "回合制节奏，每局约 10-15 分钟。讨论阶段制造社交互动高峰，任务阶段提供移动和推理线索。节奏完全由玩家互动驱动，而非缩圈等系统压力。",
+    "designObservation": "和平精英最激进的模式创新：彻底放弃射击核心，用社交推理重构交互逻辑。证明了 BR IP 的社交基础可以承载完全不同的玩法类型，是「技术资产复用 + 受众扩展」的教科书案例。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/684/14080411.html",
+    "imageUrl": "https://game.gtimg.cn/images/gp/web202411/sec5-stroy-img1.png",
+    "imageSource": "gp.qq.com 官方主站 — 剧情模式主视觉",
+    "launchDate": "2021-04-14",
+    "launchLabel": "2021 年 4 月 14 日",
+    "launchNote": "和平精英首个社交推理模式，改编自 Among Us 玩法。正式服于 SS13 赛季上线。"
+  },
+  {
+    "id": "apex-shadowfall-2019",
+    "game": "Apex Legends",
+    "modeName": "Shadowfall",
+    "year": "2019",
+    "date": "2019-10-15",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "PvPvE",
+      "万圣节"
+    ],
+    "oneLineRule": "35 名玩家 Solo 跳伞，被杀后加入 Shadow 阵营（近战丧尸），攻击剩余幸存者。最后 10 名幸存者必须合作抵达撤离飞船。",
+    "mechanicChange": "双阶段非对称机制：第一阶段为 Solo BR（35 人），第二阶段转变为「幸存者合作逃离 vs 丧尸围剿」。死亡不是终点——变成丧尸后玩法完全不同（高速移动、近战攻击、无限重生）。",
+    "tempoImpact": "第一阶段节奏类似 Solo BR 但更谨慎（死亡后果是变丧尸）。到 10 人存活时突然换成恐怖逃亡节奏：所有丧尸冲向撤离点，幸存者必须合作掩护。",
+    "designObservation": "Apex 最成功的主题 LTM 设计：把万圣节恐怖感设计进了核心机制（而非换个皮肤）。'死了还能玩'解决了 Solo BR 的挫败感，幸存者合作阶段颠覆了 BR 的竞争本质。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Shadowfall",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2019-10-15",
+    "launchLabel": "2019 年 10 月 15 日",
+    "launchNote": "Season 3 Fight or Fright 万圣节 LTM。2020 年以 Shadow Royale 变体回归（死亡后协助自己小队）。"
+  },
+  {
+    "id": "apex-winter-express-2019",
+    "game": "Apex Legends",
+    "modeName": "Winter Express",
+    "year": "2019",
+    "date": "2019-12-12",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "目标争夺",
+      "节日",
+      "3 队"
+    ],
+    "oneLineRule": "三支 3 人小队在一列环绕世界边缘地图的火车上争夺控制权。占领车厢并守住即可得分，先达目标分数或时间结束时领先者获胜。",
+    "mechanicChange": "空间从大地图缩到一个移动火车：战场沿铁轨线性展开，车厢 = 控制点，火车移动 = 动态掩体和路线变化。无缩圈，有无限重生。武器和装备在每轮开始前选择。",
+    "tempoImpact": "极快的回合制节奏——每轮约 3 分钟。火车停站时是战斗高峰（争夺控制权），行驶期间是调整期（更换武器/复活）。",
+    "designObservation": "把 BR 地图的一条铁轨变成独立模式：不需要新地图，不需要新武器池。'移动战场'概念后来被 Warzone 的 Train 模式借鉴。每年圣诞回归证明了它的仪式化吸引力。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Winter_Express",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2019-12-12",
+    "launchLabel": "2019 年 12 月 12 日",
+    "launchNote": "Season 3 Holo-Day Bash 圣诞 LTM。此后每年圣诞期间回归，是 Apex 最受欢迎的节日模式。"
+  },
+  {
+    "id": "apex-armed-dangerous-2019",
+    "game": "Apex Legends",
+    "modeName": "Armed and Dangerous",
+    "year": "2019",
+    "date": "2019-09-03",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "限定武器",
+      "狙击/霰弹"
+    ],
+    "oneLineRule": "地图只刷新狙击步枪和霰弹枪，护甲和头盔极为稀少，弹药数量受限。",
+    "mechanicChange": "武器池从全品类压缩到两极：远距离一击致命（狙击）vs 近距离爆发（霰弹），中距离战斗几乎不存在。护甲的稀缺改变了交战阈值——谁先命中谁就赢。",
+    "tempoImpact": "节奏两极分化：远距离对枪阶段极度谨慎（弹药珍贵），近距离遭遇战则瞬间决出胜负。搜刮期缩短（武器选择少），战斗频率反而上升（因为护甲易碎）。",
+    "designObservation": "用武器限制重塑战术空间：移除中距离自动武器后，「走位」和「掩体利用」的权重远超「压枪」。后来被 PUBG 和 Warzone 以类似形式复刻，证明了「限定武器池 LTM」的普适价值。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Armed_and_Dangerous",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2019-09-03",
+    "launchLabel": "2019 年 9 月 3 日",
+    "launchNote": "Season 2 Voidwalker 活动 LTM。此后多次以 Evolved 等变体回归，是 Apex 最常复刻的武器限制模式。"
+  },
+  {
+    "id": "apex-mixtape-2023",
+    "game": "Apex Legends",
+    "modeName": "Mixtape",
+    "year": "2023",
+    "date": "2023-03-07",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "模式轮换",
+      "永久"
+    ],
+    "oneLineRule": "永久轮换播放列表，在 Control、Gun Run、Team Deathmatch 之间每 15 分钟自动切换，包含专属 Mixtape 地图。",
+    "mechanicChange": "首创「模式轮换」设计：不是让玩家手动选择子模式，而是用一个 playlist 包裹多个玩法，定时自动切。这解决了小众模式的匹配分裂问题。",
+    "tempoImpact": "15 分钟轮换周期既避免单一模式的疲劳，又保证每个模式有足够深度体验。匹配池集中在 playlist 级别而非模式级别。",
+    "designObservation": "Mixtape 是「模式管理」而非「玩法设计」层面的创新。它证明了一个反直觉的结论：对非核心模式，强制轮换比自由选择更能维持玩家基数。Fortnite 后来的 Reload 和 PUBG 的 Arcade 都吸取了这个思路。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Game_mode",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2023-03-07",
+    "launchLabel": "2023 年 3 月 7 日",
+    "launchNote": "Season 16 Revelry 引入。包含 Control / Gun Run / Team Deathmatch 三个子模式，每 15 分钟自动轮换。"
+  },
+  {
+    "id": "apex-shadow-royale-2020",
+    "game": "Apex Legends",
+    "modeName": "Shadow Royale",
+    "year": "2020",
+    "date": "2020-10-22",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "PvPvE",
+      "万圣节"
+    ],
+    "oneLineRule": "死亡后变成 Shadow 协助自己的存活队友作战，而非变成敌对阵营。最后存活的完整小队获胜。",
+    "mechanicChange": "与 Shadowfall 的核心差异：死亡 ≠ 叛变。Shadow Royale 维持了小队忠诚——Shadow 形态用小地图引导回到队友身边，用近战攻击为队友创造优势。这保留了 BR 的团队纽带，同时为淘汰玩家提供了有意义的「死后玩法」。",
+    "tempoImpact": "队伍越打到后期越强（淘汰队友 = 新增 Shadow 战力），后期团战变成了「3 个活人 + n 个 Shadow」的兵团交锋，战术纵深远超标准 BR。",
+    "designObservation": "Shadow Royale 解决了 Shadowfall 的痛点：玩家不想杀自己的朋友。通过维系小队忠诚，把「变丧尸」从惩罚变成了团队增益。这是「死后依然有用」设计的教科书——不是让死人看戏，也不是让死人添乱，而是让死人变成战术资源。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Shadow_Royale",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2020-10-22",
+    "launchLabel": "2020 年 10 月 22 日",
+    "launchNote": "Season 6 Fight or Fright 万圣节 LTM。与 Shadowfall 不同，死亡玩家协助自己小队而非敌对阵营。"
+  },
+  {
+    "id": "apex-straight-shot-2024",
+    "game": "Apex Legends",
+    "modeName": "Straight Shot",
+    "year": "2024",
+    "date": "2024-02-13",
+    "tags": [
+      "br-core"
+    ],
+    "type": [
+      "快节奏",
+      "预选落点"
+    ],
+    "oneLineRule": "30 名玩家（10 队），地图上预设落点（无跳伞阶段），更小的安全区和更快的缩圈节奏，单局约 12 分钟。",
+    "mechanicChange": "彻底删除跳伞阶段——玩家在匹配时就选择落点，开局直接落地开打。地图缩小 + 人数减半 = 冲突密度翻倍。武器池简化为更强力的配置。",
+    "tempoImpact": "没有跳伞 = 没开局缓冲。落地即开战，中期运营压缩到 3-5 分钟。缩圈速度是标准 BR 的 1.5x，单局时长控制在 12 分钟内。",
+    "designObservation": "Straight Shot 证明了「删减」也是一种创新：删除跳伞阶段 = 消除「落地搜刮 3 分钟无人」的空窗期。这种思路与 PUBG Intense BR 异曲同工——压缩 BR 不需要加更多内容，而是砍掉低互动阶段。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Straight_Shot",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2024-02-13",
+    "launchLabel": "2024 年 2 月 13 日",
+    "launchNote": "Season 20 5th Anniversary 活动引入。10 队 30 人，预选落点，无跳伞阶段。"
+  },
+  {
+    "id": "apex-hardcore-royale-2023",
+    "game": "Apex Legends",
+    "modeName": "Hardcore Royale",
+    "year": "2023",
+    "date": "2023-01-24",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "硬核",
+      "限制HUD"
+    ],
+    "oneLineRule": "标准 BR 规则，但移除 HUD 弹药/小地图/击杀信息等大部分 UI，护甲只能拾取不能替换，装备信息需进背包查看。",
+    "mechanicChange": "HUD 剥夺 = 信息匮乏：不知道子弹数量、不知道护甲状态、不知道队友血量。护甲不可替换意味着拾取护甲的决策是终身的。这些限制迫使玩家用「感觉」和「经验」代替 UI 信息，回归更原始的生存体验。",
+    "tempoImpact": "游戏节奏变慢：因为没有 UI 提示，玩家更谨慎地推进，更多依赖语音沟通确认装备状态。战斗频率下降，但每次交火的张力和重要性上升。",
+    "designObservation": "HUD 剥夺是「减法设计」的极端案例：不是加能力/加敌人/加机制，而是拿走信息。它证明了 BR 的 UI 辅助层对游戏节奏的巨大影响——信息越少，玩家越保守。对于考虑「沉浸模式」或「硬核赛制」的设计师非常有参考价值。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Hardcore_Royale",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2023-01-24",
+    "launchLabel": "2023 年 1 月 24 日",
+    "launchNote": "Season 15 Spellbound 活动引入。移除大部分 HUD 信息，护甲不可替换。限时开放至 2023 年 2 月 7 日。"
+  },
+  {
+    "id": "apex-flashpoint-2020",
+    "game": "Apex Legends",
+    "modeName": "Flashpoint",
+    "year": "2020",
+    "date": "2020-10-06",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "生命回复",
+      "据点争夺"
+    ],
+    "oneLineRule": "地图上不存在任何治疗物品。特定据点（Flashpoint Zones）内玩家和护甲自动缓慢回复生命值和护盾。",
+    "mechanicChange": "核心资源（治疗）从「可携带消耗品」变为「地形功能」。战术决策从「我有几个电池」变成「能不能安全抵达/守住 Flashpoint」。据点 = 安全区也是交火热点，创造出天然的战斗锚点。",
+    "tempoImpact": "没有治疗物品 = 没有搜刮医疗包的动机。玩家自然向 Flashpoint 聚集，形成周期性战斗脉冲。受伤时撤退方向是「去最近 Flashpoint」而非「找个角落打药」。",
+    "designObservation": "Flashpoint 把 BR 的「搜刮-战斗-回复」循环改为「战斗-回复-战斗」。砍掉治疗物品降低了搜刮时间，同时用地形创造了天然的战略争夺点。COD Warzone 后来的 Strongholds 和 PUBG 的 Blue Zone Healing 都借鉴了类似的空间治愈思路。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Flashpoint_(LTM)",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2020-10-06",
+    "launchLabel": "2020 年 10 月 6 日",
+    "launchNote": "Season 6 Aftermarket 活动引入。移除全部治疗物品，Flashpoint Zones 自动回血。开放至 2020 年 10 月 20 日。"
+  },
+  {
+    "id": "apex-always-be-closing-2020",
+    "game": "Apex Legends",
+    "modeName": "Always Be Closing",
+    "year": "2020",
+    "date": "2020-01-20",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "持续缩圈",
+      "时间压力"
+    ],
+    "oneLineRule": "安全区从开局就持续缓慢缩小，从不停顿。玩家必须不断移动，无法在任何一个位置长期扎营。",
+    "mechanicChange": "BR 缩圈从「定时阶段事件」变为「恒定环境压力」。没有间歇期 = 没有「这圈缩完可以搜一会儿」的窗口。每一秒的位置决策都与圈速直接挂钩。Evolved 版本额外增加了开局送 Mozambique 的补偿。",
+    "tempoImpact": "全程移动节奏。搜刮和解绷带的时间窗口被圈速逼迫，玩家被迫不断做出「搜这个地方值不值」的判断。远距离跳伞的惩罚更大（离圈远 = 赶路时间 = 浪费圈速）。",
+    "designObservation": "恒定圈压彻底改写了 BR 的节奏曲线——传统 BR 的「紧张-放松-紧张」波动变成了持续上升的单向压力。这适合「高刺激需求」的玩家但会让「慢节奏享受者」流失。是一种极端的节奏实验，为 BR 缩圈机制提供了「如果去掉所有停顿会怎样」的答案。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Always_Be_Closing",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2020-01-20",
+    "launchLabel": "2020 年 1 月 20 日",
+    "launchNote": "Season 3 Grand Soirée 活动引入。Always Be Closing Evolved 于 Season 5（2020-08-11）推出，额外开局送 Mozambique。"
+  },
+  {
+    "id": "apex-deja-loot-2020",
+    "game": "Apex Legends",
+    "modeName": "Déjà Loot",
+    "year": "2020",
+    "date": "2020-03-03",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "固定战利品",
+      "记忆竞技"
+    ],
+    "oneLineRule": "每一局的地图战利品、空投路径和安全区位置完全相同，不会随机变化。玩家可以提前记忆「好地方」并直奔而去。",
+    "mechanicChange": "移除 BR 最核心的 RNG 元素（战利品随机性）：第一局是探索，第二局是预演，第三局之后变成「记忆竞技」。优势从「运气好搜到好枪」变为「记住哪个房间必有金甲」。",
+    "tempoImpact": "开局节奏极端化：知道最佳掉落点的人直接飞过去抢，初学者在跳伞阶段就处于劣势。中期运营被压缩（因为不需要搜刮未知地点）。",
+    "designObservation": "Déjà Loot 是「如果 BR 没有 RNG 会怎样」的实验。结论：没有 RNG 的 BR 会变成信息不对称的碾压——经验越多优势越大，新人几乎没有机会。这反向证明了 RNG 在 BR 设计中的公平性功能：随机战利品是「新手保护机制」。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/Déjà_Loot",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2020-03-03",
+    "launchLabel": "2020 年 3 月 3 日",
+    "launchNote": "Season 4 System Override 活动引入。所有战利品、空投路径、圈位完全固定。开放至 2020 年 3 月 17 日。"
+  },
+  {
+    "id": "apex-live-die-live-2020",
+    "game": "Apex Legends",
+    "modeName": "LIVE.DIE.LIVE",
+    "year": "2020",
+    "date": "2020-01-16",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "无限重生",
+      "死亡竞赛"
+    ],
+    "oneLineRule": "每轮结束时所有阵亡队友自动重生回到战场，携带他们死亡时的装备。战斗永不停止，直到最终缩圈决定胜负。",
+    "mechanicChange": "把 BR 的「单局淘汰制」改为「轮间重生制」：缩圈 = 一轮结束，圈内战斗照常，圈一缩完所有死人集体复活。淘汰的惩罚从「游戏结束」降级为「缺席本轮」，大幅降低死亡挫败感。",
+    "tempoImpact": "战斗密度极高：因为没有彻底淘汰的恐惧，玩家更愿意主动开战。每轮缩圈前都是冲锋窗口（反正死了会活）。但最后几轮仍然保留 BR 的紧张感（死后不再重生）。",
+    "designObservation": "LIVE.DIE.LIVE 是 BR 和 TDM 的杂交实验：保留了 BR 的缩圈框架，但用重生机制屏蔽了「死亡 = 出局」的 BR 核心。它证明了一个设计空间：BR 的淘汰规则是一个可以调节的变量，不是非黑即白的开关。",
+    "sourceUrl": "https://apexlegends.wiki.gg/wiki/LIVE.DIE.LIVE",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2020-01-16",
+    "launchLabel": "2020 年 1 月 16 日",
+    "launchNote": "Season 3 Grand Soirée 活动引入。每轮缩圈结束后阵亡队友自动满装复活。Season 6 曾短暂回归。"
   }
 ]

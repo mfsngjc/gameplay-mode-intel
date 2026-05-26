@@ -193,6 +193,50 @@ h2 {
   align-items: center;
 }
 
+/* ── Game Tab Bar ── */
+.game-tabbar {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--line);
+  width: 100%;
+}
+
+.game-tabbar button {
+  min-height: 40px;
+  padding: 8px 22px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color .18s ease, border-color .18s ease;
+}
+
+.game-tabbar button:hover {
+  color: var(--ink);
+  transform: none;
+  box-shadow: none;
+}
+
+.game-tabbar button[aria-pressed="true"] {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  background: transparent;
+}
+
+.game-tabbar button[aria-pressed="true"]:hover {
+  color: var(--accent);
+}
+
+/* Tab bar row needs extra breathing room above tag filters */
+.toolbar-row + .toolbar-row {
+  margin-top: 18px;
+}
+
 button {
   min-height: 42px;
   padding: 8px 14px;
@@ -376,6 +420,42 @@ dd {
   font-weight: 700;
 }
 
+.card-source {
+  margin: 14px 22px 0;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fafafa;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.source-label {
+  flex: 0 0 auto;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.card-source a {
+  color: var(--muted);
+  text-decoration: none;
+  word-break: break-all;
+  transition: color .15s;
+}
+
+.card-source a:hover {
+  color: var(--accent);
+}
+
 .card-actions {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -522,78 +602,206 @@ dd {
 
 .share-panel {
   position: relative;
-  width: min(900px, 100%);
-  max-height: min(900px, calc(100dvh - 44px));
+  width: min(640px, 100%);
+  max-height: calc(100dvh - 44px);
   overflow: auto;
-  border: 1px solid rgba(255, 255, 255, .6);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, .92);
-  box-shadow: var(--shadow);
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, .12);
 }
 
+/* ── Header ── */
 .share-head {
-  position: sticky;
-  top: 0;
-  z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 18px 20px 14px;
-  border-bottom: 1px solid var(--line);
-  background: rgba(255, 255, 255, .9);
-  backdrop-filter: blur(18px);
+  gap: 10px;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, .06);
 }
 
-.share-head span {
-  color: var(--quiet);
-  font-size: 13px;
-  font-weight: 800;
+.share-head-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.share-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #30d158;
+  flex-shrink: 0;
 }
 
 .share-head h2 {
-  margin-top: 3px;
-  font-size: 26px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: #1d1d1f;
+}
+
+.share-tag {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, .04);
 }
 
 .icon-close {
-  width: 44px;
-  height: 44px;
+  width: 34px;
+  height: 34px;
   padding: 0;
-  border-radius: 50%;
-  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, .05);
+  color: rgba(0, 0, 0, .4);
+  font-size: 18px;
   line-height: 1;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background .15s, color .15s;
+}
+.icon-close:hover {
+  background: rgba(0, 0, 0, .1);
+  color: rgba(0, 0, 0, .6);
 }
 
+/* ── Preview ── */
 .share-preview {
   display: grid;
   place-items: center;
-  padding: 24px;
-  background: #f5f5f7;
+  padding: 20px;
+  background: #fafafa;
 }
 
 .share-preview img {
-  width: min(460px, 100%);
-  max-height: 64dvh;
+  width: 100%;
+  max-height: 60dvh;
   object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 18px 46px rgba(0, 0, 0, .14);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, .10);
 }
 
+/* ── Actions ── */
 .share-actions {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-  padding: 16px 20px 0;
+  display: flex;
+  gap: 8px;
+  padding: 14px 20px 18px;
 }
 
-.share-actions button { border-radius: 8px; }
+.share-actions button {
+  flex: 1;
+  padding: 10px 0;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 10px;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1d1d1f;
+  cursor: pointer;
+  text-align: center;
+  transition: background .15s;
+}
+.share-actions button:hover {
+  background: #f5f5f7;
+}
+.share-actions button.btn-primary {
+  background: #30d158;
+  color: #000;
+  border-color: #30d158;
+  font-weight: 700;
+}
+.share-actions button.btn-primary:hover {
+  background: #34e05e;
+}
 
 .share-hint {
   margin: 0;
-  padding: 12px 20px 18px;
+  padding: 0 20px 16px;
   color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ── Skeleton Loading ── */
+.share-skeleton {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px 4px;
+}
+
+.share-skeleton[hidden] { display: none; }
+
+.sk-block {
+  height: 16px;
+  border-radius: 6px;
+  background: #e8e8ed;
+  position: relative;
+  overflow: hidden;
+}
+
+.sk-block::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.55) 50%, transparent 100%);
+  animation: skShimmer 1.6s ease-in-out infinite;
+}
+
+.sk-block.sk-img {
+  height: 140px;
+  border-radius: 10px;
+}
+
+.sk-block.sk-w50 { width: 50%; }
+.sk-block.sk-w75 { width: 75%; }
+.sk-block.sk-w35 { width: 35%; }
+.sk-block.sk-w90 { width: 90%; }
+.sk-block.sk-w80 { width: 80%; }
+.sk-block.sk-w55 { width: 55%; }
+
+.sk-row {
+  display: flex;
+  gap: 10px;
+}
+.sk-row .sk-block {
+  flex: 1;
+}
+
+@keyframes skShimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* ── Source Link ── */
+.share-source {
+  padding: 6px 20px 14px;
+  text-align: center;
+}
+
+.share-source[hidden] { display: none; }
+
+.share-source a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity .15s;
+}
+.share-source a:hover {
+  opacity: .75;
 }
 
 footer {

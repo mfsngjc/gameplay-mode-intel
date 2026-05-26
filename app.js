@@ -1,6 +1,7 @@
 const state = {
   modes: [],
   filter: "all",
+  gameFilter: "all",
   collected: new Set(JSON.parse(localStorage.getItem("br-mode-collected") || "[]"))
 };
 
@@ -12,6 +13,10 @@ const toast = document.querySelector("#toast");
 const shareModal = document.querySelector("#shareModal");
 const sharePreviewImage = document.querySelector("#sharePreviewImage");
 const shareTitle = document.querySelector("#shareTitle");
+const shareSkeleton = document.querySelector("#shareSkeleton");
+const shareSource = document.querySelector("#shareSource");
+const shareSourceLink = document.querySelector("#shareSourceLink");
+const shareSourceName = document.querySelector("#shareSourceName");
 
 let activeShare = {
   mode: null,
@@ -21,13 +26,20 @@ let activeShare = {
 
 const tagLabels = {
   all: "全部",
-  core: "长期/核心模式",
-  objective: "目标争夺",
-  pve: "PvE / Boss",
-  space: "空间规则",
-  power: "特殊能力",
+  "br-core": "BR常驻",
+  "br-ltm": "BR限时",
+  casual: "娱乐玩法",
   collected: "已采集"
 };
+
+function getAvailableTags() {
+  const modes = state.gameFilter === "all"
+    ? state.modes
+    : state.modes.filter((m) => m.game === state.gameFilter);
+  const tags = new Set();
+  modes.forEach((m) => m.tags.forEach((t) => tags.add(t)));
+  return [...tags].sort();
+}
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -50,6 +62,7 @@ function saveCollected() {
 
 function getFilteredModes() {
   return state.modes.filter((mode) => {
+    if (state.gameFilter !== "all" && mode.game !== state.gameFilter) return false;
     if (state.filter === "all") return true;
     if (state.filter === "collected") return state.collected.has(mode.id);
     return mode.tags.includes(state.filter);
@@ -152,20 +165,34 @@ async function openShareModal(mode) {
 
   shareTitle.textContent = mode.modeName;
   sharePreviewImage.removeAttribute("src");
+  sharePreviewImage.hidden = true;
   sharePreviewImage.alt = `${mode.modeName} 玩法块分享预览图`;
+
+  shareSkeleton.hidden = false;
+  shareSource.hidden = true;
+
   shareModal.hidden = false;
   document.body.classList.add("modal-open");
-  showToast("正在生成玩法块预览图...");
 
   const blob = await renderModeBlockPng(mode);
   activeShare.blob = blob;
   activeShare.objectUrl = URL.createObjectURL(blob);
+
+  shareSkeleton.hidden = true;
   sharePreviewImage.src = activeShare.objectUrl;
-  showToast("玩法块预览图已生成");
+  sharePreviewImage.hidden = false;
+
+  if (mode.sourceUrl) {
+    shareSourceLink.href = mode.sourceUrl;
+    shareSourceName.textContent = mode.modeName;
+    shareSource.hidden = false;
+  }
 }
 
 function closeShareModal() {
   shareModal.hidden = true;
+  shareSkeleton.hidden = true;
+  shareSource.hidden = true;
   document.body.classList.remove("modal-open");
 }
 
@@ -207,18 +234,20 @@ async function renderModeBlockPng(mode) {
 
   drawCardBackground(ctx, width, height);
 
-  let y = layout.margin;
+  let y = layout.contentY;
+
+  /* ── Banner image (inset, rounded) ── */
   if (layout.image) {
-    drawCoverImage(ctx, layout.image, layout.margin, y, layout.contentWidth, layout.imageHeight);
-    y += layout.imageHeight + 34;
+    drawCoverImageRounded(ctx, layout.image, layout.imageMargin, layout.imageMargin, layout.imageWidth, layout.imageHeight, 18);
   }
 
-  ctx.fillStyle = "#e8f5ec";
+  /* ── Badge row: game + date ── */
+  ctx.fillStyle = "#fff0db";
   roundRect(ctx, layout.margin, y, 116, 32, 16);
   ctx.fill();
-  ctx.strokeStyle = "rgba(48, 209, 88, .28)";
+  ctx.strokeStyle = "rgba(255, 159, 10, .4)";
   ctx.stroke();
-  ctx.fillStyle = "#17692c";
+  ctx.fillStyle = "#7c4a00";
   ctx.font = "700 18px Inter, PingFang SC, sans-serif";
   ctx.fillText(mode.game, layout.margin + 20, y + 22);
 
@@ -227,14 +256,17 @@ async function renderModeBlockPng(mode) {
   const dateText = mode.date || mode.year;
   ctx.fillText(dateText, width - layout.margin - ctx.measureText(dateText).width, y + 22);
 
+  /* ── Title: badge bottom + 10px visual gap ── */
   ctx.fillStyle = "#1d1d1f";
   ctx.font = "800 50px Inter, PingFang SC, sans-serif";
-  y = drawWrappedLines(ctx, layout.lines.title, layout.margin, y + 94, 58);
+  y = drawWrappedLines(ctx, layout.lines.title, layout.margin, y + 88, 58);
 
-  y += 18;
+  /* ── Tags: title bottom + 14px gap ── */
+  y = y - 32;
   y = drawTagRow(ctx, mode.type, layout.margin, y, layout.contentWidth);
 
-  y += 26;
+  /* ── Launch time: tags bottom + 20px ── */
+  y += 20;
   ctx.fillStyle = "#f5f5f7";
   roundRect(ctx, layout.margin, y, layout.contentWidth, 46, 14);
   ctx.fill();
@@ -247,21 +279,12 @@ async function renderModeBlockPng(mode) {
   ctx.font = "700 18px Inter, PingFang SC, sans-serif";
   ctx.fillText(mode.launchLabel || mode.date || mode.year, layout.margin + 108, y + 30);
 
-  y += 74;
+  /* ── Sections: launch bottom + 24px ── */
+  y += 70;
   y = drawShareSection(ctx, "一句话规则", layout.lines.rule, layout.margin, y, layout.contentWidth, "#424245");
-  y = drawShareSection(ctx, "机制变化", layout.lines.mechanic, layout.margin, y + 18, layout.contentWidth, "#6e6e73");
-  y = drawShareSection(ctx, "节奏影响", layout.lines.tempo, layout.margin, y + 18, layout.contentWidth, "#6e6e73");
-  y = drawShareSection(ctx, "设计观察", layout.lines.observation, layout.margin, y + 18, layout.contentWidth, "#2b6d3c");
-
-  ctx.strokeStyle = "rgba(0, 0, 0, .1)";
-  ctx.beginPath();
-  ctx.moveTo(layout.margin, height - 94);
-  ctx.lineTo(width - layout.margin, height - 94);
-  ctx.stroke();
-
-  ctx.fillStyle = "#86868b";
-  ctx.font = "500 17px Inter, PingFang SC, sans-serif";
-  drawWrappedLines(ctx, layout.lines.source, layout.margin, height - 58, 22);
+  y = drawShareSection(ctx, "机制变化", layout.lines.mechanic, layout.margin, y + 12, layout.contentWidth, "#6e6e73");
+  y = drawShareSection(ctx, "节奏影响", layout.lines.tempo, layout.margin, y + 12, layout.contentWidth, "#6e6e73");
+  y = drawShareSection(ctx, "设计观察", layout.lines.observation, layout.margin, y + 12, layout.contentWidth, "#2b6d3c");
 
   return new Promise((resolve, reject) => {
     canvas.toBlob((blob) => blob ? resolve(blob) : reject(new Error("canvas export failed")), "image/png");
@@ -273,8 +296,16 @@ async function buildShareLayout(mode, width) {
   const ctx = measureCanvas.getContext("2d");
   const margin = 48;
   const contentWidth = width - margin * 2;
+  const imageMargin = 24;
+  const imageWidth = width - imageMargin * 2;
   const image = mode.imageUrl ? await loadImageForCanvas(mode.imageUrl).catch(() => null) : null;
-  const imageHeight = image ? 250 : 0;
+  let imageHeight = 0;
+  if (image) {
+    const naturalRatio = image.naturalWidth / image.naturalHeight;
+    const rawHeight = imageWidth / naturalRatio;
+    imageHeight = Math.round(Math.max(180, Math.min(350, rawHeight)));
+  }
+  const contentY = image ? imageMargin + imageHeight + 34 : margin;
 
   ctx.font = "800 50px Inter, PingFang SC, sans-serif";
   const title = measureCanvasLines(ctx, mode.modeName, contentWidth, 3);
@@ -284,8 +315,6 @@ async function buildShareLayout(mode, width) {
   const mechanic = measureCanvasLines(ctx, mode.mechanicChange, contentWidth - 40, 6);
   const tempo = measureCanvasLines(ctx, mode.tempoImpact, contentWidth - 40, 6);
   const observation = measureCanvasLines(ctx, mode.designObservation, contentWidth - 40, 5);
-  ctx.font = "500 17px Inter, PingFang SC, sans-serif";
-  const source = measureCanvasLines(ctx, `来源：${mode.sourceUrl}`, contentWidth, 2);
 
   const tagRows = countTagRows(ctx, mode.type, contentWidth);
   const sectionsHeight =
@@ -293,25 +322,25 @@ async function buildShareLayout(mode, width) {
     shareSectionHeight(mechanic.length, 32) +
     shareSectionHeight(tempo.length, 32) +
     shareSectionHeight(observation.length, 32) +
-    18 * 3;
+    12 * 3;
   const height =
-    margin +
-    (image ? imageHeight + 34 : 0) +
-    32 + 62 +
-    title.length * 58 +
-    18 +
-    tagRows * 42 +
-    74 +
-    sectionsHeight +
-    128;
+    contentY +
+    32 + 56 +
+    title.length * 58 - 32 +
+    tagRows * 24 +
+    20 + 46 + 24 +
+    sectionsHeight + 40;
 
   return {
     margin,
     contentWidth,
+    imageMargin,
+    imageWidth,
     image,
     imageHeight,
+    contentY,
     height: Math.ceil(height),
-    lines: { title, rule, mechanic, tempo, observation, source }
+    lines: { title, rule, mechanic, tempo, observation }
   };
 }
 
@@ -328,19 +357,13 @@ function loadImageForCanvas(src) {
 }
 
 function drawCardBackground(ctx, width, height) {
-  ctx.fillStyle = "#f5f5f7";
-  ctx.fillRect(0, 0, width, height);
   ctx.fillStyle = "#ffffff";
-  roundRect(ctx, 24, 24, width - 48, height - 48, 22);
-  ctx.fill();
-  ctx.strokeStyle = "rgba(0, 0, 0, .08)";
-  ctx.lineWidth = 2;
-  ctx.stroke();
+  ctx.fillRect(0, 0, width, height);
 }
 
-function drawCoverImage(ctx, image, x, y, width, height) {
+function drawCoverImageRounded(ctx, image, x, y, width, height, radius) {
   ctx.save();
-  roundRect(ctx, x, y, width, height, 18);
+  roundRect(ctx, x, y, width, height, radius);
   ctx.clip();
   const imageRatio = image.naturalWidth / image.naturalHeight;
   const boxRatio = width / height;
@@ -390,10 +413,10 @@ function drawTagRow(ctx, tags, x, y, maxWidth) {
       cursorX = x;
       cursorY += 42;
     }
-    ctx.fillStyle = "#f5f5f7";
+    ctx.fillStyle = "#f3efe7";
     roundRect(ctx, cursorX, cursorY, tagWidth, 32, 16);
     ctx.fill();
-    ctx.strokeStyle = "rgba(0, 0, 0, .08)";
+    ctx.strokeStyle = "rgba(0, 0, 0, .06)";
     ctx.stroke();
     ctx.fillStyle = "#515154";
     ctx.fillText(tag, cursorX + 15, cursorY + 22);
@@ -548,37 +571,84 @@ function renderModes() {
           </dl>
         </div>
         <div class="card-foot">设计观察：${escapeHtml(mode.designObservation)}</div>
+        <div class="card-source">
+          <span class="source-label">来源</span>
+          <a href="${escapeHtml(mode.sourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(mode.sourceUrl)}</a>
+        </div>
         <div class="card-actions compact-actions">
           <button type="button" class="${collected ? "collected" : "primary-action"}" data-action="collect" data-id="${escapeHtml(mode.id)}" aria-label="${collected ? "取消采集" : "采集"} ${escapeHtml(mode.modeName)}" title="${collected ? "已采集" : "采集"}">${iconSvg(collected ? "collected" : "collect")}<span>${collected ? "已采集" : "采集"}</span></button>
           <button type="button" data-action="share" data-id="${escapeHtml(mode.id)}" aria-label="分享 ${escapeHtml(mode.modeName)}" title="分享">${iconSvg("share")}<span>分享</span></button>
-          <a href="${escapeHtml(mode.sourceUrl)}" target="_blank" rel="noreferrer" aria-label="打开 ${escapeHtml(mode.modeName)} 来源" title="来源">${iconSvg("source")}<span>来源</span></a>
+          <button type="button" data-action="copy" data-id="${escapeHtml(mode.id)}" aria-label="复制 ${escapeHtml(mode.modeName)} MD" title="复制 MD">${iconSvg("copy")}<span>复制 MD</span></button>
         </div>
       </article>
     `;
   }).join("");
 
   const collectedCount = state.collected.size;
-  statusLine.textContent = `当前显示 ${modes.length} / ${state.modes.length} 个玩法，已采集 ${collectedCount} 个。筛选：${tagLabels[state.filter] || state.filter}`;
+  const gameLabel = state.gameFilter === "all" ? "" : ` · ${state.gameFilter}`;
+  const currentLabel = tagLabels[state.filter] || state.filter;
+  statusLine.textContent = `当前显示 ${modes.length} / ${state.modes.length} 个玩法${gameLabel}，已采集 ${collectedCount} 个。筛选：${currentLabel}`;
   caseCount.textContent = `${state.modes.length} 个玩法案例`;
 }
 
+function renderFilters() {
+  const filtersContainer = document.querySelector("#filterButtons");
+  if (!filtersContainer) return;
+
+  const availableTags = getAvailableTags();
+  const tagsToShow = ["all", ...availableTags];
+
+  filtersContainer.innerHTML = tagsToShow.map((tag) => {
+    const label = tagLabels[tag] || tag;
+    const pressed = state.filter === tag;
+    return `<button type="button" data-filter="${tag}" aria-pressed="${pressed}">${label}</button>`;
+  }).join("");
+
+  // Always show collected button
+  const collectedBtn = document.createElement("button");
+  collectedBtn.type = "button";
+  collectedBtn.dataset.filter = "collected";
+  collectedBtn.setAttribute("aria-pressed", String(state.filter === "collected"));
+  collectedBtn.textContent = tagLabels.collected;
+  filtersContainer.insertAdjacentHTML("beforeend", collectedBtn.outerHTML);
+}
+
 function renderSources() {
-  const uniqueSources = [...new Map(state.modes.map((mode) => [mode.sourceUrl, mode])).values()];
+  const filteredModes = state.gameFilter !== "all"
+    ? state.modes.filter((mode) => mode.game === state.gameFilter)
+    : state.modes;
+  const uniqueSources = [...new Map(filteredModes.map((mode) => [mode.sourceUrl, mode])).values()];
   sourceList.innerHTML = uniqueSources.map((mode) => `
     <li><a href="${escapeHtml(mode.sourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(mode.game)}：${escapeHtml(mode.modeName)} 来源</a></li>
   `).join("");
 }
 
 function bindEvents() {
-  document.querySelectorAll("[data-filter]").forEach((button) => {
+  document.querySelectorAll("[data-game]").forEach((button) => {
     button.addEventListener("click", () => {
-      state.filter = button.dataset.filter;
-      document.querySelectorAll("[data-filter]").forEach((item) => {
+      state.gameFilter = button.dataset.game;
+      state.filter = "all"; // reset tag filter when switching games
+      document.querySelectorAll("[data-game]").forEach((item) => {
         item.setAttribute("aria-pressed", String(item === button));
+      });
+      renderFilters();
+      renderModes();
+      renderSources();
+    });
+  });
+
+  const filtersContainer = document.querySelector("#filterButtons");
+  if (filtersContainer) {
+    filtersContainer.addEventListener("click", (event) => {
+      const btn = event.target.closest("[data-filter]");
+      if (!btn) return;
+      state.filter = btn.dataset.filter;
+      document.querySelectorAll("[data-filter]").forEach((item) => {
+        item.setAttribute("aria-pressed", String(item === btn));
       });
       renderModes();
     });
-  });
+  }
 
   modeGrid.addEventListener("click", (event) => {
     const target = event.target.closest("[data-action]");
@@ -588,6 +658,7 @@ function bindEvents() {
 
     if (target.dataset.action === "collect") toggleCollect(mode.id);
     if (target.dataset.action === "share") openShareModal(mode);
+    if (target.dataset.action === "copy") copyModeMarkdown(mode);
   });
 
   document.querySelector("#exportCanvas").addEventListener("click", exportCurrentCanvas);
@@ -606,6 +677,7 @@ async function init() {
     const response = await fetch("data/modes.json");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     state.modes = await response.json();
+    renderFilters();
     renderModes();
     renderSources();
     bindEvents();

@@ -10,9 +10,9 @@
   <div class="page-shell">
     <header>
       <div class="hero">
-        <div class="eyebrow"><span class="spark" aria-hidden="true"></span>玩法情报采集站 · Fortnite BR 案例库</div>
+        <div class="eyebrow"><span class="spark" aria-hidden="true"></span>玩法情报采集站 · BR 设计素材库</div>
         <h1>玩法情报采集站</h1>
-        <p>把 Fortnite 过往 BR / LTM 玩法整理成可筛选、可采集、可导出的设计素材。后续可接同步脚本自动更新。</p>
+        <p>把 Fortnite / PUBG / 和平精英 / Apex 过往 BR &amp; LTM 玩法整理成可筛选、可采集、可导出的设计素材。后续可接同步脚本自动更新。</p>
         <div class="hero-meta" aria-label="资料概览">
           <span class="meta-pill" id="caseCount">12 个代表案例</span>
           <span class="meta-pill">本地收藏</span>
@@ -26,7 +26,7 @@
         <section class="section" aria-labelledby="takeaways">
           <div class="section-head">
             <h2 id="takeaways">设计思路参考</h2>
-            <p>Fortnite 做“新 BR 玩法”时，很少只是换皮。它通常会明确改动一个核心压力源：胜利条件、队伍复活、移动空间、PvE 威胁或特殊能力。下面先单独整理过往案例。</p>
+            <p>Fortnite / PUBG / 和平精英做"新 BR 玩法"时，很少只是换皮。通常会明确改动一个核心压力源：胜利条件、队伍复活、移动空间、PvE 威胁或特殊能力。下面先单独整理过往案例。</p>
           </div>
           <div class="insight-grid">
             <article class="insight">
@@ -35,15 +35,15 @@
             </article>
             <article class="insight">
               <strong>PvE 可以重写节奏</strong>
-              <span>Horde Rush、Storm King 把玩家注意力从纯 PvP 拉到阶段防守、Boss、资源补给，适合万圣节怪潮。</span>
+              <span>Horde Rush、Storm King、暗夜危机把玩家注意力从纯 PvP 拉到阶段防守、Boss、资源补给。</span>
             </article>
             <article class="insight">
-              <strong>小地图 + 快局更利于主题周</strong>
-              <span>Reload、Blitz Royale 用更短回合降低试错成本，让强规则变体更容易被接受。</span>
+              <strong>环境压力是隐形导演</strong>
+              <span>极寒模式的暴风雪、Hot Drop 的急速缩圈证明：周期性环境威胁比全程 DEBUFF 更能制造不重复的紧张曲线。</span>
             </article>
             <article class="insight">
-              <strong>单一规则要足够可感知</strong>
-              <span>Floor is Lava、Zero Build 都是“一句话能懂”的规则变体，适合作为活动入口和传播标题。</span>
+              <strong>撤离改写胜利条件</strong>
+              <span>地铁逃生把「吃鸡」变成「活着带装备出去」，玩家的风险决策模型完全不同，每一步都是成本收益计算。</span>
             </article>
           </div>
         </section>
@@ -56,14 +56,17 @@
 
           <div class="toolbar" aria-label="案例筛选与导出">
             <div class="toolbar-row">
-              <div class="filters">
-                <button type="button" data-filter="all" aria-pressed="true">全部</button>
-                <button type="button" data-filter="core" aria-pressed="false">长期/核心模式</button>
-                <button type="button" data-filter="objective" aria-pressed="false">目标争夺</button>
-                <button type="button" data-filter="pve" aria-pressed="false">PvE / Boss</button>
-                <button type="button" data-filter="space" aria-pressed="false">空间规则</button>
-                <button type="button" data-filter="power" aria-pressed="false">特殊能力</button>
-                <button type="button" data-filter="collected" aria-pressed="false">已采集</button>
+              <div class="game-tabbar">
+                <button type="button" data-game="all" aria-pressed="true">全部游戏</button>
+                <button type="button" data-game="Fortnite" aria-pressed="false">Fortnite</button>
+                <button type="button" data-game="PUBG" aria-pressed="false">PUBG</button>
+                <button type="button" data-game="和平精英" aria-pressed="false">和平精英</button>
+                <button type="button" data-game="Apex Legends" aria-pressed="false">Apex</button>
+              </div>
+            </div>
+            <div class="toolbar-row">
+              <div class="filters" id="filterButtons">
+                <!-- Dynamic filter buttons rendered by app.js -->
               </div>
               <div class="actions">
                 <button type="button" id="exportCanvas">导出 Canvas</button>
@@ -79,7 +82,7 @@
         <section class="section" aria-labelledby="sources">
           <div class="section-head">
             <h2 id="sources">主要来源</h2>
-            <p>资料以 Epic/Fortnite 官方新闻与补丁说明为主，Wiki 用于补充模式归类和历史列表。卡片图片优先使用官方公告图；没有抓到时使用当前项目的原创占位图。</p>
+            <p>资料以各游戏官方新闻与补丁说明为主，Wiki 用于补充模式归类和历史列表。卡片图片优先使用官方公告图；没有抓到时使用当前项目的原创占位图。</p>
           </div>
           <ul class="source-list" id="sourceList"></ul>
           <footer>最后整理：2026-05-26。当前版本是本地 MVP，可继续接入同步脚本与服务器部署。</footer>
@@ -92,21 +95,39 @@
     <div class="share-backdrop" data-share-close></div>
     <section class="share-panel" role="dialog" aria-modal="true" aria-labelledby="shareTitle">
       <div class="share-head">
-        <div>
-          <span>玩法块预览</span>
+        <div class="share-head-left">
+          <span class="share-dot" aria-hidden="true"></span>
           <h2 id="shareTitle">分享</h2>
         </div>
-        <button type="button" class="icon-close" data-share-close aria-label="关闭分享预览">×</button>
+        <span class="share-tag">玩法块</span>
+        <button type="button" class="icon-close" data-share-close aria-label="关闭">×</button>
       </div>
       <div class="share-preview">
-        <img id="sharePreviewImage" alt="玩法块分享预览图">
+        <div class="share-skeleton" id="shareSkeleton">
+          <div class="sk-block sk-img"></div>
+          <div class="sk-block sk-w50"></div>
+          <div class="sk-block sk-w75"></div>
+          <div class="sk-block sk-w35"></div>
+          <div class="sk-block sk-w90"></div>
+          <div class="sk-row">
+            <div class="sk-block"></div>
+            <div class="sk-block"></div>
+            <div class="sk-block"></div>
+          </div>
+          <div class="sk-block sk-w80"></div>
+          <div class="sk-block sk-w55"></div>
+        </div>
+        <img id="sharePreviewImage" alt="玩法块分享预览图" hidden>
+      </div>
+      <div class="share-source" id="shareSource" hidden>
+        <a id="shareSourceLink" target="_blank" rel="noopener">「<span id="shareSourceName"></span>」原文地址 ↗</a>
       </div>
       <div class="share-actions">
-        <button type="button" id="downloadShareImage">下载图片</button>
+        <button type="button" id="downloadShareImage" class="btn-primary">下载图片</button>
         <button type="button" id="copyShareMarkdown">复制 MD</button>
         <button type="button" id="downloadShareMarkdown">下载 MD</button>
       </div>
-      <p class="share-hint">也可以直接右键或长按上方预览图，手动复制或保存这张玩法块图片。</p>
+      <p class="share-hint">也可右键或长按预览图直接保存</p>
     </section>
   </div>
 
