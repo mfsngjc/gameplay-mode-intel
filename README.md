@@ -2,13 +2,14 @@
 
 一个用于整理、采集和复盘游戏玩法案例的静态资料站。
 
-当前版本收录 Fortnite、PUBG、和平精英、Apex Legends 过往 Battle Royale / LTM / 活动模式案例，用来观察这些玩法如何改变胜利目标、战斗节奏、复活规则、地图空间、PvE 压力和特殊能力。
+当前版本收录 Fortnite、PUBG、和平精英、Apex Legends、三角洲行动过往核心模式、限时变体与活动玩法案例，用来观察这些玩法如何改变胜利目标、战斗节奏、复活规则、地图空间、撤离收益、PvE 压力和特殊能力。
 
 ## 功能
 
-- 以卡片形式展示玩法案例，按游戏切换（全部 / Fortnite / PUBG / 和平精英 / Apex）
-- 按玩法类型筛选：BR常驻、BR限时、娱乐玩法（切游戏时标签自动适配）
+- 以卡片形式展示玩法案例，按游戏切换（全部 / Fortnite / PUBG / 和平精英 / Apex / 三角洲行动）
+- 按玩法类型筛选：核心玩法、限时/变体、特殊玩法（切游戏时标签自动适配）
 - 游戏筛选（Tab Bar）与类型筛选（胶囊标签）可叠加使用
+- 支持游戏级玩法时间画板；当前先启用三角洲行动玩法更新节点
 - 展示玩法上线时间、官方图、核心规则、机制变化、节奏影响和设计观察
 - 支持本地采集玩法卡片、生成分享图、导出 Markdown 和 Canvas
 
@@ -57,7 +58,7 @@ data/modes.json
 | 字段 | 类型 | 必填 | 说明 |
 |------|------|:--:|------|
 | `id` | string | ✅ | 唯一标识，格式 `{game}-{mode-kebab-case}-{year}`，如 `pubg-intense-br-2023` |
-| `game` | string | ✅ | 游戏名，用于游戏筛选。当前值为 `"Fortnite"` 或 `"PUBG"` |
+| `game` | string | ✅ | 游戏名，用于游戏筛选，如 `"Fortnite"`、`"PUBG"`、`"和平精英"`、`"Apex Legends"`、`"三角洲行动"` |
 | `modeName` | string | ✅ | 模式/玩法名称，作为卡片标题 |
 | `year` | string | ✅ | 年份标注，显示在卡片右上角绿色徽章 |
 | `date` | string | ✅ | 简化日期，用于分享图日期显示 |
@@ -67,6 +68,7 @@ data/modes.json
 | `mechanicChange` | string | ✅ | 详细说明玩法机制上的改动 |
 | `tempoImpact` | string | ✅ | 对游戏节奏的改变 |
 | `designObservation` | string | ✅ | 通用可复用的设计洞见（最核心字段） |
+| `aiCommentator` | string |  | 可选，设计观察署名；未填写时页面使用默认 AI 评论署名 |
 | `sourceUrl` | string | ✅ | 官方来源链接，卡片底部「来源」按钮 |
 | `imageUrl` | string | ✅ | 卡片顶部封面图 URL，优先使用官方公告头图 |
 | `imageSource` | string | ✅ | 图片来源标注，显示在图片左下角，格式如 `"官方公告头图"` |
@@ -80,9 +82,9 @@ data/modes.json
 
 | tag 值 | 中文名称 | 含义 |
 |--------|---------|------|
-| `br-core` | BR常驻 | 永久可玩的经典/变体 Battle Royale |
-| `br-ltm` | BR限时 | 限时开放的 BR 规则变体（仍然遵循吃鸡框架） |
-| `casual` | 娱乐玩法 | 非 BR 标准玩法（PvE、死斗、撤离、派对游戏、特殊联动） |
+| `br-core` | 核心玩法 | 永久可玩的经典/核心模式，或长期作为游戏主轴存在的变体 |
+| `br-ltm` | 限时/变体 | 限时开放、赛季化开放，或在核心框架上改变目标/资源/节奏的玩法变体 |
+| `casual` | 特殊玩法 | 非标准对局框架（PvE、死斗、撤离、派对游戏、特殊联动、战役等） |
 
 **动态筛选机制**：切游戏时，标签按钮自动更新——只显示当前游戏实际拥有的分类。「全部游戏」模式显示所有分类的并集。
 
@@ -92,7 +94,7 @@ data/modes.json
 
 **筛选器层级**：游戏筛选 + 类型筛选，双层叠加。
 
-- **游戏筛选**：使用 **Tab Bar**（下划线指示器），选中态 = 蓝色文字 + 蓝色底线，无背景填充。三个 Tab：全部游戏 / Fortnite / PUBG。对应 CSS class `.game-tabbar`，与下方的类型筛选保持 ≥18px 间距。
+- **游戏筛选**：使用 **Tab Bar**（下划线指示器），选中态 = 蓝色文字 + 蓝色底线，无背景填充。对应 CSS class `.game-tabbar`，与下方的类型筛选保持 ≥18px 间距。
 - **类型筛选**：使用 **胶囊按钮**（`border-radius: 999px`），选中态 = 黑色背景 + 白色文字。对应 CSS class `.filters button[data-filter]`。
 
 **设计语言区分原则**：两个筛选器必须使用**不同的视觉语言**—— Tab Bar 是「线性轻量」风格（底线表达状态），胶囊标签是「实体重量」风格（填充表达状态）。禁止两者使用相同的选中文案/填充方案。
@@ -133,6 +135,11 @@ data/modes.json
   - `static.gametalk.qq.com/image/` — GameTalk CMS CDN（官方内容图）
   - `gp.qq.com/gicp/news/` — 官方公告页面（文章通常为纯文字，配图可能 JS 动态加载）
 
+- **三角洲行动 / 腾讯**：
+  - `df.qq.com` — 官方主站与玩法介绍页
+  - `game.gtimg.cn/images/dfm/` — df.qq.com 官方玩法区图片 CDN
+  - `steamcommunity.com/app/2507950` / `steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/` — Delta Force 官方 Steam 公告流（海外版本玩法更新、活动模式规则与配图）
+
 - **Apex Legends / EA**：
   - `drop-assets.ea.com` — EA 官方 Key Art / News CDN，支持 CORS（当前 Apex 默认图来源）
   - `shared.akamai.steamstatic.com` — Steam 商店截图（通用游戏画面，非模式专属）
@@ -154,7 +161,7 @@ data/modes.json
 基于各个游戏的玩法上线节奏，输出一张可视化排期图：
 
 - **横轴**：时间（按年份/季度/月度），覆盖每款游戏从首发到当前版本的完整生命周期
-- **纵轴**：按游戏分轨（Fortnite / PUBG / 和平精英 / Apex Legends）
+- **纵轴**：按游戏分轨（Fortnite / PUBG / 和平精英 / Apex Legends / 三角洲行动）
 - **节点大小**：玩法规模权重 — 核心模式（常驻 BR 变体）> 大型 LTM（独立规则 + 专属地图/资产）> 小型活动（参数微调 / 限时返场）
 - **节点颜色/形状**：玩法母题分类（复活规则 / 胜利条件 / PvE 威胁 / 移动空间 / 特殊能力 / 联动活动）
 

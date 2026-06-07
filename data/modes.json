@@ -1232,5 +1232,577 @@
     "launchDate": "2020-01-16",
     "launchLabel": "2020 年 1 月 16 日",
     "launchNote": "Season 3 Grand Soirée 活动引入。每轮缩圈结束后阵亡队友自动满装复活。Season 6 曾短暂回归。"
+  },
+  {
+    "id": "delta-force-operations-2024",
+    "game": "三角洲行动",
+    "modeName": "烽火地带",
+    "year": "2024",
+    "date": "2024-09-26",
+    "tags": [
+      "br-core"
+    ],
+    "type": [
+      "搜打撤",
+      "3人小队",
+      "高价值物资"
+    ],
+    "oneLineRule": "3人小队带装进入战区，搜索情报与物资、争夺曼德尔砖，最终活着抵达撤离点并把物资带出。",
+    "mechanicChange": "官网把烽火地带拆成兵种搭配、曼德尔砖和安全撤离三条主轴：玩家可用四大经典兵种组成3人小队；曼德尔砖需要争夺并破译，成功后有机会获得稀有物品；携带曼德尔砖会向所有小队暴露位置；撤离点和特殊撤离方式决定最终收益能否带出。",
+    "tempoImpact": "模式节奏不是单纯清场，而是围绕「搜刮收益 - 曼德尔砖暴露 - 撤离窗口」不断抬高风险。拿到高价值物资会把队伍从隐蔽搜索推向公开被追击，撤离路线和撤离方式成为后半局的主要博弈。",
+    "designObservation": "搜打撤的关键不是只给高价值战利品，而是让战利品变成会暴露位置的移动目标；奖励越诱人，携带者越需要队友分工、路线规划和撤离判断来消化风险。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://df.qq.com/index.shtml",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3-main1.jpg",
+    "imageSource": "df.qq.com 官方玩法区 — 烽火地带实机演示图",
+    "launchDate": "2024-09-26",
+    "launchLabel": "2024年9月26日（国服正式上线期核心玩法）",
+    "launchNote": "官网玩法区当前收录为核心模式；首发日期按《三角洲行动》国服上线期整理，后续可补更精确的官方首发公告直链。"
+  },
+  {
+    "id": "delta-force-warfare-2024",
+    "game": "三角洲行动",
+    "modeName": "全面战场",
+    "year": "2024",
+    "date": "2024-09-26",
+    "tags": [
+      "br-core"
+    ],
+    "type": [
+      "大战场",
+      "载具作战",
+      "海陆空攻防"
+    ],
+    "oneLineRule": "在超大地图中进行多人双边攻防，步兵与载具协同争夺战线推进和据点控制。",
+    "mechanicChange": "官网强调全面战场传承《三角洲特种部队》经典模式，包含1:1复刻经典地图；攻击艇、主战坦克、黑鹰重型直升机、武装装甲车、重型全地形车等近10款载具参与作战；第一视角呈现海陆空全栖双边攻防。",
+    "tempoImpact": "大战场节奏由步兵推进、载具火力和据点攻防共同驱动。载具不是单纯移动工具，而是战线突破、压制和反载具目标的节奏核心，玩家会在前线推进、侧翼穿插和防空反甲之间不断切换职责。",
+    "designObservation": "大规模战场要让载具、地图尺度和胜利目标彼此绑定：载具提供突破力，超大地图提供机动空间，据点攻防提供清晰压力点，三者缺一就容易变成无方向的远距离混战。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://df.qq.com/index.shtml",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3-main2.jpg",
+    "imageSource": "df.qq.com 官方玩法区 — 全面战场实机演示图",
+    "launchDate": "2024-09-26",
+    "launchLabel": "2024年9月26日（国服正式上线期核心玩法）",
+    "launchNote": "官网玩法区当前收录为核心模式；首发日期按《三角洲行动》国服上线期整理，后续可补更精确的官方首发公告直链。"
+  },
+  {
+    "id": "delta-force-fire-challenge-2026",
+    "game": "三角洲行动",
+    "modeName": "烽火挑战",
+    "year": "2026",
+    "date": "2026-04-30",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "独立经济",
+      "7轮对决",
+      "夺砖晋级"
+    ],
+    "oneLineRule": "使用专属物资参加至多7局连续对战，围绕烽火挑战砖争夺、破译和晋级，获取胜点与玩法奖励。",
+    "mechanicChange": "官网描述该模式使用独立仓库、独立货币和专属物资备战，降低常规仓库损耗；比赛至多7局，核心目标是争夺并破译烽火挑战砖，不断晋级并累积胜点。",
+    "tempoImpact": "独立经济把玩家从主仓库损失压力中释放出来，让注意力转向连续局制下的装备购买、状态延续和夺砖决策。7轮结构让单局胜负服务于整轮挑战，队伍需要在短期激战和长期资源管理之间取舍。",
+    "designObservation": "给高风险撤离玩法加竞技化变体时，独立经济是重要缓冲层；它保留搜打撤的夺砖紧张感，同时避免主仓库损耗压垮玩家试错意愿。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://df.qq.com/index.shtml",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img6.jpg",
+    "imageSource": "df.qq.com 官方玩法区 — 烽火挑战模式图",
+    "launchDate": "2026-04-30",
+    "launchLabel": "2026年4月30日（待补官方公告直链）",
+    "launchNote": "官网玩法区当前收录该模式并说明独立经济、至多7局和夺砖晋级规则；具体首发日根据同名赛季玩法资讯整理，待进一步补官方公告直链。"
+  },
+  {
+    "id": "delta-force-black-hawk-down-2025",
+    "game": "三角洲行动",
+    "modeName": "黑鹰坠落",
+    "year": "2025",
+    "date": "2025-02-21",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "PvE战役",
+      "4人协作",
+      "电影改编"
+    ],
+    "oneLineRule": "基于电影《黑鹰坠落》改编的战役模式，玩家组成小队在UE5电影级场景中完成高难度挑战任务。",
+    "mechanicChange": "官网说明黑鹰坠落包含7个免费章节，复刻经典战役名场面，包括载具护送、坚守待援、曙光长跑等，并要求4人小队面对成群敌人进行信息沟通、火力掩护和战术执行。",
+    "tempoImpact": "它把在线射击的对抗节奏切换成分章节、任务式 PvE 压力：敌人波次、护送目标和坚守节点让团队火力分配比单兵击杀更重要，失败点也更集中在沟通和配合。",
+    "designObservation": "战役模式最适合承接IP记忆点：通过免费章节、电影场景和合作任务，把原本偏竞技的服务型游戏扩展成一次可组队体验的叙事副本。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://df.qq.com/index.shtml",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img3.jpg",
+    "imageSource": "df.qq.com 官方玩法区 — 黑鹰坠落模式图",
+    "launchDate": "2025-02-21",
+    "launchLabel": "2025年2月21日（待补官方公告直链）",
+    "launchNote": "官网玩法区当前收录该战役并说明7个免费章节、4人小队和高难协作；具体上线日待补官方公告直链。"
+  },
+  {
+    "id": "delta-force-red-mouse-arena-2025",
+    "game": "三角洲行动",
+    "modeName": "红鼠窝竞技场 / Hot Zone",
+    "year": "2025",
+    "date": "2025-01-15",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "3V3V3",
+      "小场景混战",
+      "装备不掉落"
+    ],
+    "oneLineRule": "三支3人小队在小型竞技场轮番混战，夺取并破译曼德尔单元，或击败其他队伍全部玩家赢得回合。",
+    "mechanicChange": "官网明确红鼠窝竞技场范围有限，强调小地图混战；海外官方 Hot Zone 公告进一步写明三支3人小队在紧凑地图争夺并上传 MandelCell，或清除所有敌方干员取胜；每回合约2分钟，先赢3回合的队伍获得最终胜利。模式不会消耗仓库资产，回合前可用积分兑换装备预设。",
+    "tempoImpact": "3V3V3结构让冲突密度远高于常规撤离图，装备不掉落又降低了开战顾虑。积分购装把回合内表现转化成下一轮优势，形成短周期滚雪球和反抢点节奏。",
+    "designObservation": "把撤离玩法的高价值目标移植到小竞技场时，必须去掉长期资产惩罚；这样玩家才会愿意围绕夺砖点反复硬碰硬，而不是像常规搜打撤那样保守避战。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1797820624585007",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img4.jpg",
+    "imageSource": "df.qq.com 官方玩法区 — 红鼠窝竞技场模式图",
+    "launchDate": "2025-01-15",
+    "launchLabel": "2025年1月15日（待补官方公告直链）",
+    "launchNote": "官网玩法区当前收录红鼠窝竞技场；Steam 官方 2025年4月28日公告以 Hot Zone 名称说明其 3v3v3、MandelCell、约2分钟回合和先赢3回合规则。"
+  },
+  {
+    "id": "delta-force-king-of-the-hill-2025",
+    "game": "三角洲行动",
+    "modeName": "胜者为王 / Victory Unite",
+    "year": "2025",
+    "date": "2025-04-17",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "20v20",
+      "指挥官",
+      "团队协同"
+    ],
+    "oneLineRule": "全面战场限时变体：20v20 阵营对抗中选出指挥官，由指挥官统筹战场信息、资源部署和集火目标，带领队伍协同制胜。",
+    "mechanicChange": "官网描述胜者为王提供巅峰对决、策略部署和专属频道：全员票选指挥官，指挥官把控战争节奏；战场信息实时交互，可规划资源、标记高威胁单位并组织集火；Steam 官方 Victory Unite 公告补充其为 20v20 限时模式，指挥官和小队长可使用阵营频道、战术标记与专属呼叫支援。",
+    "tempoImpact": "模式把全面战场的分散小队行为收束到指挥链上，减少各打各的随机性。战斗节奏更依赖指挥官何时调动资源、标记威胁和组织集火，队员的执行力也成为胜负变量。",
+    "designObservation": "大规模战场常见问题是信息过载和目标分散；引入票选指挥官和阵营频道，可以把宏观策略变成可听见、可响应、可问责的团队机制。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1797185861705151",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img5.jpg",
+    "imageSource": "df.qq.com 官方玩法区 — 胜者为王模式图",
+    "launchDate": "2025-04-17",
+    "launchLabel": "2025年4月17日（国服玩法资讯）；海外官方公告写明 2025年5月30日开放 Victory Unite",
+    "launchNote": "官网玩法区当前收录胜者为王并说明指挥官、策略部署和专属频道；Steam 官方全球上线公告将 Victory Unite 描述为 20v20 限时模式并写明 2025年5月30日开放。"
+  },
+  {
+    "id": "delta-force-master-trace-2026",
+    "game": "三角洲行动",
+    "modeName": "阿萨拉传说：大师遗踪",
+    "year": "2026",
+    "date": "2026-04-21",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "烽火地带",
+      "跑酷挑战",
+      "限时排行榜"
+    ],
+    "oneLineRule": "烽火地带局内限时跑酷挑战：在地图固定点触发大师留下的脑机/记录板，沿路线穿越障碍并冲击记录。",
+    "mechanicChange": "官方 Echo 赛季公告把 Legend of Ahsarah: Master's Trace 列为 Operations 新模式；地图内会出现传奇大师留下的跑酷涂鸦与排行榜板，玩家进入对局后在固定点触发挑战，按指定路线完成移动与障碍穿越。",
+    "tempoImpact": "它把搜打撤局内的“搜物资/打架/撤离”插入一段短时技能挑战，队伍需要判断是否为跑酷奖励暴露路线、占用时间，并在 PvPvE 压力中完成非射击目标。",
+    "designObservation": "在撤离玩法里加入跑酷挑战，可以把地图熟练度转化为局内收益；关键是让挑战点固定可学，同时让进入挑战本身保留暴露和时间成本。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830163047262256",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img1.jpg",
+    "imageSource": "df.qq.com 官方玩法区通用图",
+    "launchDate": "2026-04-21",
+    "launchLabel": "2026年4月21日，Echo 赛季上线",
+    "launchNote": "Steam 官方 Echo 赛季前瞻将 Treasure Hunt 与 Legend of Ahsarah: Master's Trace 列为 Operations 新模式，并说明大师遗踪的跑酷涂鸦与排行榜板会出现在多张地图固定位置。"
+  },
+  {
+    "id": "delta-force-treasure-hunt-2026",
+    "game": "三角洲行动",
+    "modeName": "埋宝赠礼 / Treasure Hunt",
+    "year": "2026",
+    "date": "2026-04-21",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "烽火地带",
+      "挖宝",
+      "玩家留言"
+    ],
+    "oneLineRule": "烽火地带局内挖宝与埋宝系统：玩家可挖出他人埋藏的物品/留言，也可把自己的物资与留言埋给后来者。",
+    "mechanicChange": "官方 Echo 赛季公告把 Treasure Hunt 列为 Operations 新模式；后续猛攻节主播活动说明了埋宝玩法：找到宝藏土壤后可以挖掘，获得别人埋下的物品或留言，也可以埋入自己的宝物与留言供后续玩家发现。",
+    "tempoImpact": "挖宝让撤离地图多了一个低确定性、高叙事性的互动目标。玩家会在“继续赶撤离/战斗”与“停下来挖一个未知收益点”之间权衡，地图上的藏宝点也会制造临时停留和遭遇。",
+    "designObservation": "撤离玩法的社交感不一定来自聊天系统；把玩家物资和留言异步留在地图里，可以让不同局的玩家产生轻量连接，同时把风险收益变成带情绪的故事。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1831432155566977",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img6.jpg",
+    "imageSource": "df.qq.com 官方玩法区通用图",
+    "launchDate": "2026-04-21",
+    "launchLabel": "2026年4月21日，Echo 赛季上线",
+    "launchNote": "Steam 官方 Echo 赛季前瞻列为 Operations 新模式；4月30日官方猛攻节主播活动进一步说明了埋宝、留言、挖出他人物资的玩法细节。"
+  },
+  {
+    "id": "delta-force-operation-gold-2026",
+    "game": "三角洲行动",
+    "modeName": "标杆行动：硬通货 / Operation Gold",
+    "year": "2026",
+    "date": "2026-04-22",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "零号大坝",
+      "金库任务链",
+      "贪婪计时"
+    ],
+    "oneLineRule": "零号大坝任务链：进入金库后在有限安全时间内搜刮，逾时会被氢气伤害逼迫撤出。",
+    "mechanicChange": "官方开发者说明把 Operation Gold 描述为 Raven 在零号大坝开启金库的新任务链；进入金库后，玩家面对明面上的大量战利品，但安全窗口有限，超过时间会触发氢气并受到不断升级的伤害；该任务与 Operation Wall Breaker 互斥。",
+    "tempoImpact": "硬通货把撤离玩法中最经典的“贪不贪”做成一个房间级决策。队伍需要在安全收益和极限搜刮之间现场选择，越拖越危险，撤离前的心理压力被集中放大。",
+    "designObservation": "高价值房间如果只是堆物资，很快会变成固定路线；加入递增环境伤害和互斥任务线，可以让每次进金库都产生真正的止损决策。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830797770230938",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img6.jpg",
+    "imageSource": "df.qq.com 官方玩法区通用图",
+    "launchDate": "2026-04-22",
+    "launchLabel": "2026年4月22日，官方开发者说明发布",
+    "launchNote": "Steam 官方开发者说明称 Season Echo 已上线，并详细解释 Operation Gold 的金库、安全窗口、氢气伤害与任务互斥。"
+  },
+  {
+    "id": "delta-force-vanguard-2026",
+    "game": "三角洲行动",
+    "modeName": "先遣部队 / Vanguard",
+    "year": "2026",
+    "date": "2026-04-21",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "全面战场",
+      "快节奏攻防",
+      "跳过战区"
+    ],
+    "oneLineRule": "全面战场攻防变体：跳过部分作战区域，限制载具投放，让队伍更快建立桥头堡并推进。",
+    "mechanicChange": "官方 Echo 赛季公告称 Vanguard 是新的 Attack/Defense 模式，会跳过部分战斗区域；可部署与空投载具数量受限，部分区域可用分数部署空中载具，首批地图包括 Trench Lines 与 Cyclone。",
+    "tempoImpact": "先遣部队压缩了传统攻防的前置推进，把战线更快送到关键交火点。载具数量和空中载具调用条件被控制后，步兵推进、桥头堡建立和局部火力窗口更突出。",
+    "designObservation": "大战场快节奏变体不一定要缩小地图；跳过低互动战区、限制载具投放，也能把玩家密度和决策压力集中到更早的战线节点。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830163047262256",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3-main2.jpg",
+    "imageSource": "df.qq.com 官方玩法区通用图",
+    "launchDate": "2026-04-21",
+    "launchLabel": "2026年4月21日，Echo 赛季上线",
+    "launchNote": "Steam 官方 Echo 赛季公告将 Vanguard 列为全面战场新的 Attack/Defense 模式，并说明跳过部分战区、限制载具和首批可用地图。"
+  },
+  {
+    "id": "delta-force-overload-2026",
+    "game": "三角洲行动",
+    "modeName": "超载 / Overload",
+    "year": "2026",
+    "date": "2026-04-21",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "团队死斗",
+      "连杀奖励",
+      "强化状态"
+    ],
+    "oneLineRule": "团队死斗变体：连续击败触发 Overload 超载状态，连杀越高，移动速度、武器操控等增益越强。",
+    "mechanicChange": "官方 Echo 赛季公告称 Team Deathmatch 新增 Overload Mode，引入连续击败奖励；4月28日猛攻节公告进一步说明，连杀会触发超载状态，提供移动速度、武器操控等强力增益，且更高连杀会解锁更强超载效果。",
+    "tempoImpact": "超载把 TDM 的击杀节奏推向滚雪球。强玩家会被鼓励继续压迫，但连杀者也自然变成高价值目标；场上节奏从均匀消耗转向围绕超载玩家的追猎与反追猎。",
+    "designObservation": "死斗模式的连杀奖励最怕只变成单向碾压；把增益做得显性且可被追踪，可以把个人高光转化为全场都能理解的风险目标。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830797770245753",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img5.jpg",
+    "imageSource": "df.qq.com 官方玩法区通用图",
+    "launchDate": "2026-04-21",
+    "launchLabel": "2026年4月21日，Echo 赛季引入；5月1日猛攻节活动开放",
+    "launchNote": "Steam 官方 Echo 赛季公告提到 Team Deathmatch 新增 Overload Mode；4月28日猛攻节公告写明 5月1日-5月21日开放 Burst Fest Overload 活动。"
+  },
+  {
+    "id": "delta-force-hill-of-iron-2026",
+    "game": "三角洲行动",
+    "modeName": "钢铁洪流 / Hill of Iron",
+    "year": "2026",
+    "date": "2026-03-06",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "全面战场",
+      "载具大战",
+      "据点变体"
+    ],
+    "oneLineRule": "全面战场载具主题变体：围绕重载具、据点和载具伤害展开，鼓励用装甲火力争夺战场节奏。",
+    "mechanicChange": "官方中期更新将 Hill of Iron 2.0（Armored Lion）称为新的载具模式；后续猛攻节公告称 Hill of Iron 模式完成优化，并在 Hill of Iron - Monument 上开放任务，玩家通过击败、游玩时长与造成载具伤害获取活动货币，凸显载具对局中的主要贡献。",
+    "tempoImpact": "钢铁洪流把普通步兵据点战推向载具主导，战线推进更依赖装甲火力、反载具压力和车辆再部署。步兵不再只是抢点单位，也要围绕载具威胁选择路线和掩体。",
+    "designObservation": "载具模式要把奖励目标也绑定到载具行为上；否则玩家会继续按普通步兵 TDM 的方式刷分，无法形成真正的装甲战场。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826362059920758",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3-main3.jpg",
+    "imageSource": "df.qq.com 官方玩法区通用图",
+    "launchDate": "2026-03-06",
+    "launchLabel": "2026年3月6日，Hill of Iron 2.0（Armored Lion）开放；5月1日 Monument 优化活动开放",
+    "launchNote": "Steam 官方 3月5日中期更新写明 3月6日-3月26日开放新的载具模式 Hill of Iron 2.0（Armored Lion）；4月28日猛攻节公告又说明 Hill of Iron - Monument 与载具伤害活动货币规则。"
+  },
+  {
+    "id": "delta-force-4v4-tactical-2026",
+    "game": "三角洲行动",
+    "modeName": "4v4 战术模式",
+    "year": "2026",
+    "date": "2026-05-15",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "4v4",
+      "小队对抗",
+      "快节奏"
+    ],
+    "oneLineRule": "限时 4v4 小队对抗池，在 Tactical Flashpoint 与 Tactical Team Deathmatch 之间提供更短、更密集的全面战场小队战。",
+    "mechanicChange": "官方 5月14日公告把 Flashpoint Combat 描述为 4v4 Squad combat、Speedrun style，并说明玩家可进入当季限时 4v4 模式，包括 Tactical Flashpoint 与 Tactical Team Deathmatch。",
+    "tempoImpact": "4v4 把全面战场从大规模前线压缩成小队级对抗，复活、补枪、站位和道具配合的反馈更快；玩家能在更短循环里练习微观协同，而不是被大战场宏观噪音淹没。",
+    "designObservation": "大型射击游戏需要小规模训练场式玩法承接不同心流：当玩家不想打长局大图时，4v4 可以提供低等待、高交火、强反馈的技术磨练空间。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1832700592788878",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img2.jpg",
+    "imageSource": "df.qq.com 官方玩法区通用图",
+    "launchDate": "2026-05-15",
+    "launchLabel": "2026年5月15日",
+    "launchNote": "Steam 官方 5月14日公告写明 Flashpoint Combat 于 5月15日-6月4日开放，包含 Tactical Flashpoint 与 Tactical Team Deathmatch 两个限时 4v4 模式。"
+  },
+  {
+    "id": "delta-force-capture-the-flag-2026",
+    "game": "三角洲行动",
+    "modeName": "夺旗 / Capture the Flag",
+    "year": "2026",
+    "date": "2026-05-22",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "全面战场",
+      "8v8",
+      "抢旗护旗"
+    ],
+    "oneLineRule": "8v8 抢旗对抗：围绕夺旗、护旗和回防展开，用小规模攻守轮转换取胜。",
+    "mechanicChange": "官方 5月20日中文公告写明“夺旗回归”：参与 8v8 夺旗模式，核心动作是抢旗、护旗、制胜；6月3日英文公告又以 Tactical Capture the Flag 回归描述该模式，强调进攻、防守与团队决策。",
+    "tempoImpact": "夺旗把击杀从终点变成护送目标的手段。队伍需要分配突击手、护旗手和拦截手，战斗热点会围绕旗帜路线不断移动，而不是固定在单一据点。",
+    "designObservation": "夺旗类模式的好处是天然制造“带球者”与追击者；只要地图路线足够清晰，玩家会自发形成进攻、护送、断后、回防的团队脚本。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamcommunity.com/app/2507950/allnews/?l=schinese",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img5.jpg",
+    "imageSource": "df.qq.com 官方玩法区通用图",
+    "launchDate": "2026-05-22",
+    "launchLabel": "2026年5月22日，夺旗回归活动开放",
+    "launchNote": "Steam 官方中文公告写明 5月22日-6月11日开放 8v8 夺旗回归；6月3日公告继续以 Tactical Capture the Flag 描述该模式回归。"
+  },
+  {
+    "id": "delta-force-soccer-frenzy-2026",
+    "game": "三角洲行动",
+    "modeName": "阿萨拉绿茵场 / Soccer Frenzy",
+    "year": "2026",
+    "date": "2026-06-05",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "烽火地带",
+      "足球互动",
+      "局内挑战"
+    ],
+    "oneLineRule": "烽火地带足球事件：地图中发现不同稀有度足球，放置并互动踢射，完成传球、突破和射门挑战获得代币。",
+    "mechanicChange": "官方 6月3日公告写明 Soccer Frenzy 于 6月5日开启：玩家探索地图时可能发现不同稀有度足球，足球可作为战利品带出，也可放到地面互动踢出；Soccer Basics 要求局内寻找、放置并互动足球，Soccer Master 要求通过精准传球或小队突破完成射门。",
+    "tempoImpact": "足球互动把战区短暂变成运动场，鼓励队友在高压撤离局里做非战斗配合。它降低了活动目标的理解门槛，但仍把风险留在真实对局里，因为停下来传球/射门会占用路线与视野。",
+    "designObservation": "节日玩法不一定要脱离主模式；把轻松目标塞进原有高压地图，可以制造反差感，让玩家在同一局里从战斗紧绷切到社交娱乐。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1834602721184632",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3-main1.jpg",
+    "imageSource": "df.qq.com 官方玩法区通用图",
+    "launchDate": "2026-06-05",
+    "launchLabel": "2026年6月5日",
+    "launchNote": "Steam 官方 6月3日更新公告写明 Soccer Frenzy、Soccer Basics 与 Soccer Master 均于 6月5日开启，并说明足球可带出、放置、互动踢射与完成传球射门挑战。"
+  },
+  {
+    "id": "delta-force-knife-mode-2025",
+    "game": "三角洲行动",
+    "modeName": "刀战 / Knife Mode",
+    "year": "2025",
+    "date": "2025-04-01",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "愚人节玩法",
+      "全模式刀战",
+      "禁用枪械技能"
+    ],
+    "oneLineRule": "愚人节近战限定：全模式地图只允许近战交锋，枪械和技能都被禁用。",
+    "mechanicChange": "官方 Saeed Invasion 公告写明 Knife-only mode 在 Warfare 与 Operations 全部地图开放，Firearms and skills are off-limits，玩家只能依靠 melee 近战能力完成战斗。",
+    "tempoImpact": "刀战把远距离火力、载具压制和技能控场全部拿掉，地图节奏被迫贴近掩体、转角和冲刺距离。原本的枪线优势让位给路线预判、贴脸时机和团队包夹。",
+    "designObservation": "节日模式最有效的方式之一，是临时删除玩家已经习惯的核心工具；限制越清楚，玩家越容易立刻理解这局该用完全不同的身体距离来玩。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1795283637963453",
+    "imageUrl": "https://clan.akamai.steamstatic.com/images/45050610/46f855e2f7015c5cdef6193b68445005a5305cb8.png",
+    "imageSource": "Steam 官方公告图 — April Fools / Knife Mode",
+    "launchDate": "2025-04-01",
+    "launchLabel": "2025年4月1日，愚人节玩法开放",
+    "launchNote": "Steam 官方 Saeed Invasion 公告写明 4月1日开放 Knife Mode，并说明枪械与技能禁用、只依靠近战。"
+  },
+  {
+    "id": "delta-force-player-voted-ctf-siege-2025",
+    "game": "三角洲行动",
+    "modeName": "玩家票选模式：夺旗 / 攻城",
+    "year": "2025",
+    "date": "2025-04-04",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "全面战场",
+      "夺旗",
+      "攻城轮换"
+    ],
+    "oneLineRule": "玩家票选轮换池：Ascension 与 Trench Lines 进入夺旗，随后 Trench Lines 与 Cracked 进入攻城。",
+    "mechanicChange": "官方 4月3日更新公告写明 Player-Voted Mode 于 4月4日-4月20日开放：4月4日-7日 Ascension 夺旗，4月8日-11日 Trench Lines 夺旗，4月12日-15日 Trench Lines 攻城，4月16日-20日 Cracked 攻城。",
+    "tempoImpact": "票选轮换把同一批大战场地图短时间切换成不同目标结构，玩家需要在抢旗护送和攻城推进之间调整队伍分工。它也给后续夺旗回归提供了早期验证窗口。",
+    "designObservation": "对大型多人射击来说，玩家票选模式是低成本玩法实验：让社区选择地图/规则组合，再用限时任务观察哪些目标结构更能带动参与。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1795917897307487",
+    "imageUrl": "https://clan.akamai.steamstatic.com/images/45050610/26dd4bc7394e04c18cc86cd319c3cd57121ea3e7.png",
+    "imageSource": "Steam 官方公告图 — Player-Voted Mode",
+    "launchDate": "2025-04-04",
+    "launchLabel": "2025年4月4日-4月20日",
+    "launchNote": "Steam 官方 4月3日更新公告列出夺旗与攻城的地图排期。"
+  },
+  {
+    "id": "delta-force-night-battle-2025",
+    "game": "三角洲行动",
+    "modeName": "夜战：战壕夜战 / 断电行动",
+    "year": "2025",
+    "date": "2025-04-21",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "夜间地图",
+      "全面战场/烽火地带",
+      "低能见度"
+    ],
+    "oneLineRule": "夜间战场变体：Trench Lines 与 Zero Dam 进入低能见度夜战，玩家围绕夜视、视野控制和任务路线重新决策。",
+    "mechanicChange": "官方 4月21日赛季内容公告写明 Trench Lines Night 会在 A/D 与 King of the Hill 中开放；Operation Blackout 则让 Zero Dam 进入夜间模式。全球上线公告还提到夜间 Call-in Attack 道具 Night Vision Device（NVD）。",
+    "tempoImpact": "夜战不改变核心胜利目标，却重写了交战距离和信息可见性。伏击、侧绕、照明/夜视资源与路线熟悉度的权重上升，正面拉枪优势被压低。",
+    "designObservation": "地图变体不必重做整套规则；改变能见度和侦察工具，就足以让同一张地图产生新的路线风险、埋伏点和推进节奏。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1797185861752052",
+    "imageUrl": "https://clan.akamai.steamstatic.com/images/45050610/5acaf647950c259383b03d0e96ac7b85c5e91c39.png",
+    "imageSource": "Steam 官方公告图 — Trench Lines Night / Operation Blackout",
+    "launchDate": "2025-04-21",
+    "launchLabel": "2025年4月21日，夜战模式开放",
+    "launchNote": "Steam 官方 4月21日赛季内容公告写明 Trench Lines Night 与 Operation Blackout 同步开放；4月19日全球上线公告补充了 Night Vision Device。"
+  },
+  {
+    "id": "delta-force-spooky-masquerade-2025",
+    "game": "三角洲行动",
+    "modeName": "诡夜假面挑战 / Spooky Masquerade",
+    "year": "2025",
+    "date": "2025-10-23",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "万圣节玩法",
+      "三周轮换",
+      "限定武器类型"
+    ],
+    "oneLineRule": "万圣节三周活动模式：每周限定一种武器类型，依次围绕近战、霰弹枪和狙击枪组织对抗。",
+    "mechanicChange": "官方 10月23日中期更新公告写明 Spooky Masquerade Challenge 会连续三周开放活动模式，每周指定一种武器类型：melee、shotgun、sniper；10月23日-29日前3场不掉分，10月25日-26日前3场还有双倍积分。",
+    "tempoImpact": "三周武器轮换让玩家持续面对不同交战距离：近战强调贴脸和绕后，霰弹枪强调室内控角，狙击枪强调视野和长线压制。免掉分与双倍积分降低了试错压力。",
+    "designObservation": "活动模式如果要持续三周，需要有阶段性规则差异；用武器类型轮换可以让同一奖励线每周都产生新的学习重点。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1814309641439983",
+    "imageUrl": "https://clan.akamai.steamstatic.com/images/45050610/1bc0693b9170a83ab9c9d8a395f9e2575d985bd8.png",
+    "imageSource": "Steam 官方公告图 — Spooky Masquerade Challenge",
+    "launchDate": "2025-10-23",
+    "launchLabel": "2025年10月23日-11月17日",
+    "launchNote": "Steam 官方 10月23日中期更新公告写明三周 event modes 及 melee、shotgun、sniper 武器类型轮换。"
+  },
+  {
+    "id": "delta-force-new-year-arcade-2026",
+    "game": "三角洲行动",
+    "modeName": "新年街机 / New Year Arcade",
+    "year": "2026",
+    "date": "2026-01-09",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "街机训练",
+      "限时任务",
+      "限定配置"
+    ],
+    "oneLineRule": "冬季街机训练：通过 Arcade 模式任务和限定活动配置获取冬季代币。",
+    "mechanicChange": "官方 12月18日中期更新称 Winter Training 会开放 special activity modes，使用 limited operators and weapons；1月8日更新又写明 New Year Arcade 于 1月9日-1月15日开放，玩家完成 Arcade mode missions 获取 Winter Tokens。",
+    "tempoImpact": "街机训练把长局大战场拆成更轻的活动任务框架，用限定干员/武器迫使玩家临时学习非惯用配置。奖励目标明确，适合承接节日低压游玩。",
+    "designObservation": "服务型射击在节庆期需要低承诺入口；街机任务用短周期和限定配置制造新鲜感，同时不会破坏核心模式的长期平衡。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821288646578502",
+    "imageUrl": "https://clan.akamai.steamstatic.com/images/45050610/b7da3bae45a7072739a2005b3d8780da07f91cee.jpg",
+    "imageSource": "Steam 官方公告图 — New Year Arcade",
+    "launchDate": "2026-01-09",
+    "launchLabel": "2026年1月9日-1月15日",
+    "launchNote": "Steam 官方 1月8日更新公告写明 New Year Arcade 时间和 Arcade mode missions；12月18日中期更新补充冬季特训会使用限定干员与武器。"
+  },
+  {
+    "id": "delta-force-air-superiority-2026",
+    "game": "三角洲行动",
+    "modeName": "空中优势 / Air Superiority",
+    "year": "2026",
+    "date": "2026-04-10",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "胜者为王变体",
+      "空地协同",
+      "载具压制"
+    ],
+    "oneLineRule": "据点/胜者为王体系的空地协同变体：用更高强度的航空载具与地面部队配合争夺战场。",
+    "mechanicChange": "官方 4月9日更新公告写明 Air Superiority 于 4月10日-4月16日开放，并描述为 King of the Hill mode with a new level of aircraft and ground forces coordination。玩家参与该模式完成活动任务、获取 Spring Tokens。",
+    "tempoImpact": "空优把据点压力从地面争夺抬升为空地一体，防空、空袭窗口、载具保护和地面占点需要同步。步兵如果不处理空中威胁，会被载具节奏持续压制。",
+    "designObservation": "当一个据点模式需要变体时，可以不改占点目标，而是改变主导火力层级；空地协同会自然迫使团队分出制空、防空和推进角色。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821306436",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3-main2.jpg",
+    "imageSource": "df.qq.com 官方玩法区通用图",
+    "launchDate": "2026-04-10",
+    "launchLabel": "2026年4月10日-4月16日",
+    "launchNote": "Steam 官方 4月9日更新公告写明 Air Superiority 开放时间，并说明它是强调 aircraft and ground forces coordination 的 King of the Hill 变体。"
+  },
+  {
+    "id": "delta-force-wild-red-envelopes-2026",
+    "game": "三角洲行动",
+    "modeName": "漫天红包 / Wild Red Envelopes",
+    "year": "2026",
+    "date": "2026-05-22",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "粽子节玩法",
+      "纯近战",
+      "战场拾取"
+    ],
+    "oneLineRule": "端午/中期活动近战变体：纯近战混战中争夺散落在战场的 Rice Dumplings，用近距离对抗完成活动目标。",
+    "mechanicChange": "官方 No Half-Time 中期更新写明 Wild Red Envelopes 于 5月22日-6月4日开放，规则为 Pure melee combat；战场上会散落 Rice Dumplings，官方提示它们可能成为胜利关键，具体细则以游戏内说明为准。",
+    "tempoImpact": "它与刀战同样移除远程火力，但加入了可拾取节日物件，让近战冲突不只是追人砍，而是围绕掉落点形成局部争夺。短期目标比纯击杀更能制造移动热点。",
+    "designObservation": "重复使用近战限制时，需要加一个新的局内资源或目标；否则节日玩法会退化成同一套刀战换皮。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833334318568663",
+    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img5.jpg",
+    "imageSource": "df.qq.com 官方玩法区通用图",
+    "launchDate": "2026-05-22",
+    "launchLabel": "2026年5月22日-6月4日",
+    "launchNote": "Steam 官方 No Half-Time 中期更新将 Wild Red Envelopes 列入 Warfare Events，并写明 Pure melee combat 与 Rice Dumplings 战场散落。"
   }
 ]

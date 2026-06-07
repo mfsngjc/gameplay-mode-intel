@@ -6,6 +6,7 @@ const state = {
 };
 
 const modeGrid = document.querySelector("#modeGrid");
+const gameTimeline = document.querySelector("#gameTimeline");
 const statusLine = document.querySelector("#statusLine");
 const caseCount = document.querySelector("#caseCount");
 const toast = document.querySelector("#toast");
@@ -25,10 +26,18 @@ let activeShare = {
 
 const tagLabels = {
   all: "全部",
-  "br-core": "BR常驻",
-  "br-ltm": "BR限时",
-  casual: "娱乐玩法",
+  "br-core": "核心玩法",
+  "br-ltm": "限时/变体",
+  casual: "特殊玩法",
   collected: "已采集"
+};
+
+const defaultAiCommentator = "集成农业 AI · DeepSeek-V4-Pro（深度求索）";
+const timelineEnabledGames = new Set(["三角洲行动"]);
+
+const deltaFamilyMatchers = {
+  warfare: /全面战场|大战场|Warfare|胜者|Victory|Vanguard|先遣|夺旗|攻城|Capture the Flag|Siege|King of the Hill|Hill of Iron|钢铁洪流|Air Superiority|空中优势|4v4|团队死斗|Overload|超载|载具|攻防|战壕|Trench Lines|A\/D/i,
+  operations: /烽火地带|搜打撤|撤离|Operations|零号大坝|Zero Dam|红鼠窝|Hot Zone|MandelCell|曼德尔|金库|硬通货|Operation Gold|夺砖|破译|烽火挑战/i
 };
 
 function getAvailableTags() {
@@ -38,6 +47,10 @@ function getAvailableTags() {
   const tags = new Set();
   modes.forEach((m) => m.tags.forEach((t) => tags.add(t)));
   return [...tags].sort();
+}
+
+function getAiCommentator(mode) {
+  return mode.aiCommentator || defaultAiCommentator;
 }
 
 function escapeHtml(value) {
@@ -68,14 +81,234 @@ function getFilteredModes() {
   });
 }
 
+function getModeFamily(mode) {
+  if (mode.game !== "三角洲行动" || !mode.tags.includes("br-ltm")) return null;
+
+  const sourceText = [
+    mode.modeName,
+    ...(mode.type || []),
+    mode.oneLineRule,
+    mode.mechanicChange,
+    mode.tempoImpact,
+    mode.launchNote
+  ].join(" ");
+  const hasWarfare = deltaFamilyMatchers.warfare.test(sourceText);
+  const hasOperations = deltaFamilyMatchers.operations.test(sourceText);
+
+  if (hasWarfare && hasOperations) {
+    return {
+      className: "is-hybrid",
+      label: "限时·双模式",
+      shortLabel: "双模式",
+      tagLabel: "限时·双模式类",
+      laneKey: "限时·双模式"
+    };
+  }
+  if (hasOperations) {
+    return {
+      className: "is-operations",
+      label: "限时·搜打撤",
+      shortLabel: "搜打撤",
+      tagLabel: "限时·搜打撤类",
+      laneKey: "限时·搜打撤"
+    };
+  }
+  return {
+    className: "is-warfare",
+    label: "限时·大战场",
+    shortLabel: "大战场",
+    tagLabel: "限时·大战场类",
+    laneKey: "限时·大战场"
+  };
+}
+
+function getTimelineModes() {
+  if (!timelineEnabledGames.has(state.gameFilter)) return [];
+  return state.modes
+    .map((mode, index) => ({ mode, index }))
+    .filter((item) => item.mode.game === state.gameFilter)
+    .sort((a, b) => {
+      const dateA = a.mode.launchDate || a.mode.date || a.mode.year || "";
+      const dateB = b.mode.launchDate || b.mode.date || b.mode.year || "";
+      return dateA.localeCompare(dateB, "zh-CN") || a.index - b.index;
+    })
+    .map((item) => item.mode);
+}
+
+function getTimelineDateLabel(mode) {
+  if (mode.launchDate && /^\d{4}-\d{2}-\d{2}$/.test(mode.launchDate)) {
+    const [year, month, day] = mode.launchDate.split("-");
+    return `${Number(year)}年${Number(month)}月${Number(day)}日`;
+  }
+  return mode.launchLabel || mode.date || mode.year || "待确认";
+}
+
+function getTimelineMeta(mode) {
+  if (mode.tags.includes("br-core")) {
+    return { className: "is-core", label: "核心", shortLabel: "核心", laneKey: "核心" };
+  }
+  if (mode.tags.includes("br-ltm")) {
+    const family = getModeFamily(mode);
+    return {
+      className: `is-variant ${family?.className || ""}`.trim(),
+      label: family?.label || "限时/变体",
+      shortLabel: family?.shortLabel || "变体",
+      laneKey: family?.laneKey || "限时/变体"
+    };
+  }
+  return { className: "is-special", label: "特殊", shortLabel: "特殊", laneKey: "特殊" };
+}
+
+function getTimelineShortDate(mode) {
+  if (mode.launchDate && /^\d{4}-\d{2}-\d{2}$/.test(mode.launchDate)) {
+    const [year, month, day] = mode.launchDate.split("-");
+    return `${year.slice(2)}.${Number(month)}.${Number(day)}`;
+  }
+  return String(mode.year || mode.date || "待定");
+}
+
+function getTimelineNodeLabel(mode) {
+  const [name] = mode.modeName.split("/");
+  const normalized = name
+    .replace("玩家票选模式：", "票选")
+    .replace("夜战：", "")
+    .trim();
+  const chars = [...normalized];
+  return chars.length > 7 ? `${chars.slice(0, 7).join("")}…` : normalized;
+}
+
+function renderTimelineCanvas(modes, filteredIds) {
+  const width = Math.max(1040, 96 + Math.max(0, modes.length - 1) * 86);
+  const height = 470;
+  const lanes = {
+    "核心": { y: 64, label: "核心玩法" },
+    "限时·大战场": { y: 142, label: "限时·大战场类" },
+    "限时·搜打撤": { y: 220, label: "限时·搜打撤类" },
+    "限时·双模式": { y: 298, label: "限时·双模式类" },
+    "特殊": { y: 376, label: "特殊玩法" }
+  };
+  const points = modes.map((mode, index) => {
+    const meta = getTimelineMeta(mode);
+    return {
+      mode,
+      meta,
+      x: 70 + index * 86,
+      y: lanes[meta.laneKey].y
+    };
+  });
+  const flowPath = points
+    .map((point, index) => `${index ? "L" : "M"} ${point.x} ${point.y}`)
+    .join(" ");
+
+  return `
+    <div class="timeline-canvas-wrap" tabindex="0" aria-label="${escapeHtml(state.gameFilter)}玩法更新时间画板">
+      <svg class="timeline-canvas-svg" viewBox="0 0 ${width} ${height}" style="width:${width}px;min-width:${width}px" role="img" aria-label="${escapeHtml(state.gameFilter)}玩法更新时间画板">
+        <g class="canvas-lanes" aria-hidden="true">
+          ${Object.entries(lanes).map(([key, lane]) => `
+            <line x1="48" y1="${lane.y}" x2="${width - 34}" y2="${lane.y}"></line>
+            <text x="18" y="${lane.y + 5}">${escapeHtml(lane.label)}</text>
+          `).join("")}
+        </g>
+        <path class="canvas-flow" d="${flowPath}"></path>
+        ${points.map((point) => {
+          const isDimmed = state.filter !== "all" && !filteredIds.has(point.mode.id);
+          const typeText = point.mode.type.slice(0, 2).join(" / ");
+          return `
+            <g class="canvas-node ${point.meta.className} ${isDimmed ? "is-dimmed" : ""}" transform="translate(${point.x} ${point.y})">
+              <title>${escapeHtml(getTimelineDateLabel(point.mode))} · ${escapeHtml(point.meta.label)} · ${escapeHtml(point.mode.modeName)} · ${escapeHtml(typeText)}</title>
+              <circle r="14"></circle>
+              <text class="canvas-node-date" y="-24">${escapeHtml(getTimelineShortDate(point.mode))}</text>
+              <text class="canvas-node-label" y="36">${escapeHtml(getTimelineNodeLabel(point.mode))}</text>
+              <text class="canvas-node-family" y="53">${escapeHtml(point.meta.shortLabel)}</text>
+            </g>
+          `;
+        }).join("")}
+      </svg>
+    </div>
+  `;
+}
+
+function renderTimeline() {
+  if (!gameTimeline) return;
+
+  const modes = getTimelineModes();
+  if (!modes.length) {
+    gameTimeline.hidden = true;
+    gameTimeline.innerHTML = "";
+    return;
+  }
+
+  const filteredIds = new Set(getFilteredModes().map((mode) => mode.id));
+  const activeFilterLabel = state.filter === "all" ? "全部玩法" : (tagLabels[state.filter] || state.filter);
+  const counts = modes.reduce((acc, mode) => {
+    const key = getTimelineMeta(mode).laneKey;
+    acc[key] = (acc[key] || 0) + 1;
+    return acc;
+  }, {});
+  const latestMode = modes[modes.length - 1];
+
+  gameTimeline.hidden = false;
+  gameTimeline.innerHTML = `
+    <div class="timeline-head">
+      <div>
+        <span class="timeline-kicker">玩法时间画板</span>
+        <h3>${escapeHtml(state.gameFilter)}</h3>
+      </div>
+      <div class="timeline-stats" aria-label="玩法时间线摘要">
+        <span><b>${modes.length}</b> 节点</span>
+        <span><b>${counts["核心"] || 0}</b> 核心</span>
+        <span><b>${counts["限时·大战场"] || 0}</b> 大战场类</span>
+        <span><b>${counts["限时·搜打撤"] || 0}</b> 搜打撤类</span>
+        <span><b>${counts["限时·双模式"] || 0}</b> 双模式类</span>
+        <span><b>${counts["特殊"] || 0}</b> 特殊</span>
+      </div>
+    </div>
+    <div class="timeline-board">
+      <div class="timeline-board-head">
+        <p>${escapeHtml(activeFilterLabel)} · 最新节点：${escapeHtml(getTimelineDateLabel(latestMode))} ${escapeHtml(latestMode.modeName)}</p>
+        <div class="timeline-legend" aria-label="节点类型图例">
+          <span><i class="legend-dot is-core" aria-hidden="true"></i>核心玩法</span>
+          <span><i class="legend-dot is-warfare" aria-hidden="true"></i>限时·大战场类</span>
+          <span><i class="legend-dot is-operations" aria-hidden="true"></i>限时·搜打撤类</span>
+          <span><i class="legend-dot is-hybrid" aria-hidden="true"></i>限时·双模式类</span>
+          <span><i class="legend-dot is-special" aria-hidden="true"></i>特殊玩法</span>
+        </div>
+      </div>
+      ${renderTimelineCanvas(modes, filteredIds)}
+      <ol class="timeline-list">
+        ${modes.map((mode) => {
+          const isDimmed = state.filter !== "all" && !filteredIds.has(mode.id);
+          const meta = getTimelineMeta(mode);
+          const typeText = mode.type.slice(0, 3).join(" / ");
+          return `
+            <li class="timeline-node ${meta.className} ${isDimmed ? "is-dimmed" : ""}">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-date-row">
+                <time datetime="${escapeHtml(mode.launchDate || mode.date || mode.year)}">${escapeHtml(getTimelineDateLabel(mode))}</time>
+                <span>${escapeHtml(meta.label)}</span>
+              </div>
+              <div class="timeline-event">
+                <strong>${escapeHtml(mode.modeName)}</strong>
+                <span>${escapeHtml(typeText)}</span>
+              </div>
+            </li>
+          `;
+        }).join("")}
+      </ol>
+    </div>
+  `;
+}
+
 function modeToMarkdown(mode) {
   return `# ${mode.modeName}
 
 - 游戏：${mode.game}
 - 上线时间：${mode.launchLabel || mode.date || mode.year}
+- 玩法线：${getModeFamily(mode)?.tagLabel || "未单独标注"}
 - 类型：${mode.type.join(" / ")}
 - 来源：${mode.sourceUrl}
 - 图片来源：${mode.imageSource || "待确认"}
+- AI评论：${getAiCommentator(mode)}
 
 ## 一句话规则
 
@@ -512,6 +745,17 @@ function buildCanvas(modes) {
   };
 }
 
+function getModeTypeChips(mode) {
+  const family = getModeFamily(mode);
+  const familyChip = family
+    ? [{ label: family.tagLabel, className: `tag family-tag ${family.className}` }]
+    : [];
+  return [
+    ...familyChip,
+    ...mode.type.map((tag) => ({ label: tag, className: "tag" }))
+  ];
+}
+
 function exportCurrentCanvas() {
   const modes = getFilteredModes();
   if (!modes.length) {
@@ -543,6 +787,7 @@ function renderModes() {
   const modes = getFilteredModes();
   modeGrid.innerHTML = modes.map((mode) => {
     const collected = state.collected.has(mode.id);
+    const typeChips = getModeTypeChips(mode);
     const imageBlock = mode.imageUrl ? `
       <div class="card-image">
         <img src="${escapeHtml(mode.imageUrl)}" alt="${escapeHtml(mode.modeName)} 官方公告图" loading="lazy">
@@ -557,7 +802,7 @@ function renderModes() {
             <h3>${escapeHtml(mode.modeName)}</h3>
             <span class="year">${escapeHtml(mode.year)}</span>
           </div>
-          <div class="tag-row">${mode.type.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>
+          <div class="tag-row">${typeChips.map((chip) => `<span class="${escapeHtml(chip.className)}">${escapeHtml(chip.label)}</span>`).join("")}</div>
           <div class="launch-row">
             <span>上线时间</span>
             <strong>${escapeHtml(mode.launchLabel || mode.date || mode.year)}</strong>
@@ -572,7 +817,7 @@ function renderModes() {
         <div class="card-foot">
           <h4>设计观察</h4>
           <blockquote>${escapeHtml(mode.designObservation)}</blockquote>
-          <cite>&mdash; 集成农业 AI · DeepSeek-V4-Pro（深度求索）</cite>
+          <cite>&mdash; ${escapeHtml(getAiCommentator(mode))}</cite>
         </div>
         <div class="card-source">
           <span class="source-label">来源</span>
@@ -592,6 +837,7 @@ function renderModes() {
   const currentLabel = tagLabels[state.filter] || state.filter;
   statusLine.textContent = `当前显示 ${modes.length} / ${state.modes.length} 个玩法${gameLabel}，已采集 ${collectedCount} 个。筛选：${currentLabel}`;
   caseCount.textContent = `${state.modes.length} 个玩法案例`;
+  renderTimeline();
 }
 
 function renderFilters() {

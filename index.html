@@ -6,15 +6,15 @@
   <title>集成农业 · 玩法情报采集点</title>
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=delta-board-space-20260605">
 </head>
 <body>
   <div class="page-shell">
     <header>
       <div class="hero">
-        <div class="eyebrow"><span class="spark" aria-hidden="true"></span>集成农业 · BR 设计采集点</div>
+        <div class="eyebrow"><span class="spark" aria-hidden="true"></span>集成农业 · 玩法设计采集点</div>
         <h1>集成农业</h1>
-        <p>把 Fortnite / PUBG / 和平精英 / Apex 过往 BR &amp; LTM 玩法整理成可筛选、可采集、可导出的设计素材。后续可接同步脚本自动更新。</p>
+        <p>把 Fortnite / PUBG / 和平精英 / Apex / 三角洲行动的核心模式、限时变体和活动玩法整理成可筛选、可采集、可导出的设计素材。后续可接同步脚本自动更新。</p>
         <div class="hero-meta" aria-label="资料概览">
           <span class="meta-pill" id="caseCount">12 个代表案例</span>
           <span class="meta-pill">本地收藏</span>
@@ -28,7 +28,7 @@
         <section class="section" aria-labelledby="takeaways">
           <div class="section-head">
             <h2 id="takeaways">设计思路参考</h2>
-            <p>Fortnite / PUBG / 和平精英做"新 BR 玩法"时，通常会明确改动一个核心压力源：胜利条件、队伍复活、移动空间、PvE 威胁或特殊能力。下面先单独整理过往案例。</p>
+            <p>这些射击游戏做新玩法时，通常会明确改动一个核心压力源：胜利条件、队伍复活、移动空间、撤离收益、PvE 威胁或特殊能力。下面先单独整理过往案例。</p>
           </div>
           <div class="insight-grid">
             <article class="insight">
@@ -64,6 +64,7 @@
                 <button type="button" data-game="PUBG" aria-pressed="false">PUBG</button>
                 <button type="button" data-game="和平精英" aria-pressed="false">和平精英</button>
                 <button type="button" data-game="Apex Legends" aria-pressed="false">Apex</button>
+                <button type="button" data-game="三角洲行动" aria-pressed="false">三角洲行动</button>
               </div>
             </div>
             <div class="toolbar-row">
@@ -78,13 +79,15 @@
             <div class="status-line" id="statusLine">正在加载玩法数据...</div>
           </div>
 
+          <section class="game-timeline" id="gameTimeline" aria-live="polite" hidden></section>
+
           <div class="mode-grid" id="modeGrid" aria-live="polite"></div>
         </section>
 
         <section class="section" aria-labelledby="sources" style="max-width:640px">
           <h2 id="sources">数据来源</h2>
-          <p class="note">资料来自各游戏官方公告、补丁说明与社区 Wiki。每个玩法卡片底部标注了具体来源链接。</p>
-          <footer>最后整理：2026-05-26。当前版本是本地 MVP，可继续接入同步脚本与服务器部署。</footer>
+          <p class="note">资料来自各游戏官方公告、补丁说明、官网玩法页与社区 Wiki。每个玩法卡片底部标注了具体来源链接。</p>
+          <footer>最后整理：2026-06-04。当前版本是本地 MVP，可继续接入同步脚本与服务器部署。</footer>
         </section>
       </div>
     </main>
@@ -131,6 +134,6 @@
   </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
+  <script src="app.js?v=delta-board-space-20260605"></script>
 </body>
 </html>
