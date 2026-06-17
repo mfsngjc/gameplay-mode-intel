@@ -1804,5 +1804,256 @@
     "launchDate": "2026-05-22",
     "launchLabel": "2026年5月22日-6月4日",
     "launchNote": "Steam 官方 No Half-Time 中期更新将 Wild Red Envelopes 列入 Warfare Events，并写明 Pure melee combat 与 Rice Dumplings 战场散落。"
+  },
+  {
+    "id": "delta-force-arrow-clash-2026",
+    "game": "三角洲行动",
+    "modeName": "箭矢冲突 / Arrow Clash",
+    "year": "2026",
+    "date": "2026-06-05",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "全面战场",
+      "限时模式",
+      "复合弓"
+    ],
+    "oneLineRule": "全面战场短期变体：突击与侦察干员组队，用复合弓为核心武器完成对抗与局内任务。",
+    "mechanicChange": "官方 6月3日更新公告写明 Arrow Clash 于 6月5日-6月11日开放，玩家加入限时 Arrow Clash mode，使用 Assault 与 Recon Operators 搭配 compound bows，并通过局内任务领取活动奖励。",
+    "tempoImpact": "复合弓把常规火力节奏从连续压制改成蓄力、预判和偷袭窗口，迫使玩家更重视侧翼角度与开火时机。干员限定也压缩了技能池，让短期玩法更容易形成清晰记忆点。",
+    "designObservation": "限时武器变体最有效的不是单纯换枪，而是把武器节奏、可选职业和任务目标同时收窄，让玩家在几局内就感到规则不同。",
+    "aiCommentator": "集成农业 AI · Codex（GPT-5）",
+    "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1834602721184632",
+    "imageUrl": "https://clan.fastly.steamstatic.com/images/45050610/fb49ead4fdbbe373968497cdcf595a41ca92bfbc.png",
+    "imageSource": "Steam 官方公告图 — Arrow Clash",
+    "launchDate": "2026-06-05",
+    "launchLabel": "2026年6月5日-6月11日",
+    "launchNote": "Steam 官方 6月3日更新公告列出 Arrow Clash 的开放时间、干员范围和 compound bows 规则。"
+  },
+  {
+    "id": "pubg-ally-duo-2026",
+    "game": "PUBG",
+    "modeName": "Ally Duo",
+    "year": "2026",
+    "date": "2026-06-17",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "Arcade",
+      "AI 队友",
+      "Sanhok"
+    ],
+    "oneLineRule": "单人进入 Sanhok 后与 AI 队友 Ella 组成双排，在最多 64 名玩家/Ella/Bot 混合战局中争夺胜利。",
+    "mechanicChange": "Update 42.1 写明 Ally Duo 入口为 Play > Arcade > Ally Duo，PC 端 6月17日维护后至7月1日 07:00 UTC 开放 beta。模式地图为 Sanhok、TPP、Duo，玩家单人匹配后与 Ella 组队；上限 64，语音仅能与 Ella 沟通，死亡或离开时 Ella 也离开，观战、死亡回放、重连关闭，且需要 NVIDIA RTX GPU 等硬件条件。",
+    "tempoImpact": "它把双排协作压力从真人沟通转成 AI 指令与响应测试，降低找队友成本，同时把风险暴露在真实 BR 对局里。由于语音频道被锁定为只和 Ella 沟通，玩家的信息流更集中，但也失去真人临场 improvisation。",
+    "designObservation": "AI 队友模式不是训练场替代品，而是把真人队伍协作拆成可控实验：语音输入、AI跟随、撤离/战斗决策都可以在真实地图里被验证。",
+    "sourceUrl": "https://pubg.com/en/news/10179",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/common/news/20260612/kr5RhL8D.jpg",
+    "imageSource": "PUBG 42.1 官方公告配图 — Ally Duo",
+    "launchDate": "2026-06-17",
+    "launchLabel": "2026年6月17日（PC，UTC 维护后）",
+    "launchNote": "PUBG Update 42.1 公告写明 Ally Duo PC 服务期为 2026年6月17日维护后至7月1日 07:00 UTC，且标注为 limited-time beta mode。"
+  },
+  {
+    "id": "pubg-blue-zone-rondo-2026",
+    "game": "PUBG",
+    "modeName": "New Blue Zone Ruleset: Rondo",
+    "year": "2026",
+    "date": "2026-07-01",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "Arcade LABS",
+      "Rondo",
+      "高速缩圈"
+    ],
+    "oneLineRule": "Rondo 专属 Arcade LABS 规则：缩短比赛时间线并启用新蓝圈规则，把大地图压成更高密度、更快交战的 BR。",
+    "mechanicChange": "Update 42.1 写明 New Blue Zone Ruleset: Rondo 将于 PC 7月1日 07:00-7月15日 00:00 UTC、主机 7月9日 07:00-7月23日 01:00 UTC 开放。官方描述为 shortened match timeline 和 new Blue Zone ruleset，目标是让 Rondo 的广阔地形产生更密集的战斗。",
+    "tempoImpact": "Rondo 原本强调大空间运营和长距离转点，蓝圈实验会提前把玩家推向交火热点，减少中盘空窗。它适合测试大地图在不改地形的情况下，是否能通过圈速和时间线获得更紧凑的短局体验。",
+    "designObservation": "大地图不一定要靠缩小地图来提速；直接改蓝圈时间线，可以保留地标尺度，同时把玩家密度和遭遇频率拉到活动模式需要的强度。",
+    "sourceUrl": "https://pubg.com/en/news/10179",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/common/news/20260612/9TxbiSZ5.jpg",
+    "imageSource": "PUBG 42.1 官方公告配图 — Rondo",
+    "launchDate": "2026-07-01",
+    "launchLabel": "2026年7月1日（PC，UTC 07:00）；主机 7月9日",
+    "launchNote": "PUBG Update 42.1 公告提前列出 Rondo 蓝圈实验的 PC 与主机服务期；截至 2026年6月17日，该玩法仍是已公布但未上线的后续 LABS。"
+  },
+  {
+    "id": "pubg-blue-zone-revamp-2026",
+    "game": "PUBG",
+    "modeName": "Blue Zone Revamp",
+    "year": "2026",
+    "date": "2026-06-17",
+    "tags": [
+      "br-core"
+    ],
+    "type": [
+      "核心系统",
+      "蓝圈节奏",
+      "时间伤害"
+    ],
+    "oneLineRule": "重做蓝圈时间与伤害模型：普通、排位、电竞与自定义模式分别调整圈速、圈形和蓝圈伤害增长方式。",
+    "mechanicChange": "Update 42.1 将蓝圈伤害从按距离增长改为按停留时间增长，并移除 Sanhok、Karakin 普通赛中按剩余人数动态变化的蓝圈。普通赛从 Phase 2 起缩短预警、延长收缩，比赛总时长仍为 28分50秒；排位/电竞早期与最终阶段缩短，总时长从 32分50秒降至 30分10秒，安全区整体缩小，陆地优先修正被移除。",
+    "tempoImpact": "普通赛被调成更平滑的后期交战，排位/电竞则更早压缩空间、减少拖沓阶段。按时间叠加蓝圈伤害会明显削弱长期吃毒、绕后和靠药硬顶的打法，让脱圈决策更直觉也更危险。",
+    "designObservation": "圈机制是 BR 的隐形导演。把伤害从距离尺度改成停留时间尺度，会把玩家从“离圈多远”重新训练成“我还能在圈外待多久”。",
+    "sourceUrl": "https://www.pubg.com/en/news/10280",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/common/content/news/20260615/ygo8jiBl_thumb.jpg",
+    "imageSource": "PUBG 官方 Dev Letter 头图",
+    "launchDate": "2026-06-17",
+    "launchLabel": "2026年6月17日（PC 42.1）；主机 6月25日",
+    "launchNote": "42.1 补丁与 Blue Zone Revamp 开发者信共同说明：PC 维护为 6月17日 00:00-08:30 UTC，主机维护为 6月25日 01:00-09:00 UTC。"
+  },
+  {
+    "id": "apex-power-trip-2026",
+    "game": "Apex Legends",
+    "modeName": "Wildcard: Power Trip",
+    "year": "2026",
+    "date": "2026-06-02",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "Wildcard",
+      "回合修饰器",
+      "地图轮换"
+    ],
+    "oneLineRule": "Wildcard 活动变体：每回合随机全局修饰器改变所有传奇规则，地图每 15 分钟在 Kings Canyon、Olympus 与 Broken Moon 间轮换。",
+    "mechanicChange": "Power Trip 活动于 6月2日-6月23日开放。官方列出 9 个 round modifiers：Featherweight、Armored Up、Red Handed、Crouching Camo、Small Fry、Blind Box、Adrenaline Rush、Explosive、Blank Slate，覆盖高跳/二段跳、红甲、全 Mythic 武器、蹲伏隐身、缩小体型、统一随机武器、墙跑加速、无限手雷并死亡自爆、禁用效果等规则。",
+    "tempoImpact": "每回合规则变动把 Wildcard 推向 roguelite 式短周期适应，玩家不能只依赖固定枪线和固定身位。15 分钟地图轮换进一步压缩熟练路线的优势，让活动保持高新鲜度。",
+    "designObservation": "当一个街机模式已经足够快，下一步不是继续加速，而是让“读懂本回合规则”成为开局第一目标；规则识别本身就能变成玩法。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/power-trip-event",
+    "imageUrl": "https://drop-assets.ea.com/images/7fXNa0FSxNSKEkZ5a9je0v/3896f08119a72f6057951060bfc0e120/Apex_S29_Power_Trip_Event__Trailer_Thumbnails_3840x2160.jpg",
+    "imageSource": "EA 官方 Power Trip 活动图",
+    "launchDate": "2026-06-02",
+    "launchLabel": "2026年6月2日-6月23日",
+    "launchNote": "EA 官方 Power Trip Event 公告写明活动时间为 June 2-23，并列出 Wildcard round modifiers 与 15 分钟地图轮换。"
+  },
+  {
+    "id": "apex-deathbox-respawns-2026",
+    "game": "Apex Legends",
+    "modeName": "Deathbox Respawns",
+    "year": "2026",
+    "date": "2026-05-04",
+    "tags": [
+      "br-core"
+    ],
+    "type": [
+      "核心机制",
+      "死亡盒复活",
+      "高风险回补"
+    ],
+    "oneLineRule": "队友死亡后可直接在其死亡盒旁复活，过程缓慢、明显且有声音提示，但能更快把清场后的队伍拉回满编。",
+    "mechanicChange": "Overclocked 赛季加入 Deathbox Respawns：玩家可直接从死亡队友的 Deathbox 复活，对附近敌人可见且有声，过程约 7 秒；若死亡盒内仍有武器和装备，队友复活后会自动带回未被拿走的装备。连续死亡会叠加 lockout timer，暂时禁止再次使用死亡盒复活。",
+    "tempoImpact": "复活不再只依赖信标和飞船，清赢一波的队伍可以就地冒险回补人数，从而提高战斗后的续航。但明显的复活信号也会吸引第三方，迫使队伍在“立刻补人”和“先转安全区”之间做高压选择。",
+    "designObservation": "复活机制的重点不是让死亡惩罚变轻，而是把“战后控场”变成奖励。敢在死亡盒边复活，说明你已经赢下局部空间，但仍要为暴露信息付代价。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/overclocked-patch-notes",
+    "imageUrl": "https://drop-assets.ea.com/images/2Om9qyPT0IxXJ7KRNF2T8p/f89efb214d728779e11bffff9bd1f975/Apex_S29-Season_Deathbox-Respawns_Gameplay-16x9.jpg",
+    "imageSource": "EA 官方 Overclocked 公告图",
+    "launchDate": "2026-05-04",
+    "launchLabel": "2026年5月4日补丁说明发布（Overclocked 赛季）",
+    "launchNote": "EA 官方 Overclocked Patch Notes 于 5月4日发布并详细列出 Deathbox Respawns 规则；官方 4月30日赛季前瞻也将其列为 Overclocked 新机制。"
+  },
+  {
+    "id": "fortnite-arenas-2026",
+    "game": "Fortnite",
+    "modeName": "Fortnite Arenas",
+    "year": "2026",
+    "date": "2026-04-09",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "Ranked",
+      "1v1/2v2",
+      "连续回合"
+    ],
+    "oneLineRule": "16 人 Solo 或 8 队 Duos 的连续小场对抗，1v1/2v2 回合打完即排下一轮，用更快完成战斗争取更多得分机会。",
+    "mechanicChange": "官方 4月7日公告写明 Fortnite Arenas 于 4月9日上线：Solo 为 16 名玩家，Duos 为 8 支队伍，连续进行 1v1 或 2v2 回合。Solo 首个赢下 20 场战斗的玩家获胜，Duos 首个赢下 15 场的队伍获胜；也支持向 Showdown Leaderboards 上的玩家发起 Unranked solo challenge，先到 7 次淘汰获胜。",
+    "tempoImpact": "Arenas 把 BR 的搜刮和转点剥离，只保留近距离建造/枪法决斗，并用连续排轮次惩罚拖延。越快结束当前战斗，越能进入更多回合拿分，天然鼓励主动压迫。",
+    "designObservation": "把竞技练习做成 Ranked 模式时，关键是让“练得快”与“赢得多”对齐；连续回合制比单场淘汰更适合训练高频对枪。",
+    "sourceUrl": "https://www.fortnite.com/news/chase-greatness-in-fortnite-arenas",
+    "imageUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmnngoupulagy07oei29h5i6e",
+    "imageSource": "Epic 官方公告图",
+    "launchDate": "2026-04-09",
+    "launchLabel": "2026年4月9日",
+    "launchNote": "Epic 官方 4月7日公告写明 A new Ranked mode drops April 9: Fortnite Arenas，并给出 Solo/Duos 胜利条件。"
+  },
+  {
+    "id": "fortnite-reload-elite-stronghold-2026",
+    "game": "Fortnite",
+    "modeName": "Reload: Elite Stronghold",
+    "year": "2026",
+    "date": "2026-04-20",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "Reload 地图",
+      "新武器池",
+      "排位重置"
+    ],
+    "oneLineRule": "Reload 新地图 Elite Stronghold 上线，围绕 Elite Armory、Chiseled Cubes、Hostile Hold 等 POI 与 Cube 系列武器池重构短局战斗。",
+    "mechanicChange": "官方 4月20日公告写明 Elite Stronghold 是 Reload 新地图，新增 POI 包括 Elite Armory、Chiseled Cubes、Hostile Hold；武器池加入 Cube Rifle，Cube Splitter 在 v40.30 后续加入，并解禁 Gatekeeper Shotgun、Holo-Twister Assault Rifle、Seven Power Gloves 等。Elite Stronghold 在 4月30日前为唯一 Reload 地图，之后与 Venture、Slurp Rush 一起轮换。",
+    "tempoImpact": "Reload 的复活短局本来就鼓励频繁交火，新地图和 Cube 武器把热点从熟悉路线重新洗牌。先单地图独占再进入轮换，是一种让玩家集中学习地图后再扩大选择池的运营方式。",
+    "designObservation": "短局模式更新地图时，先独占一段时间比直接丢进轮换更有效；它让玩家形成共同学习窗口，也让新 POI 的战斗节奏被快速验证。",
+    "sourceUrl": "https://www.fortnite.com/news/join-the-elites-in-fortnite-reload-elite-stronghold",
+    "imageUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmo338rj5am2g07n1sfyize2v",
+    "imageSource": "Epic 官方公告图",
+    "launchDate": "2026-04-20",
+    "launchLabel": "2026年4月20日；4月30日进入地图轮换",
+    "launchNote": "Epic 官方公告写明 Elite Stronghold 已上线，并在 4月30日前作为唯一 Reload 地图，之后加入 Venture 与 Slurp Rush 轮换。"
+  },
+  {
+    "id": "hpjy-gumu-mitu-2026",
+    "game": "和平精英",
+    "modeName": "古墓迷途",
+    "year": "2026",
+    "date": "2026-01-27",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "搜打撤",
+      "探墓摸金",
+      "四职业"
+    ],
+    "oneLineRule": "探墓摸金搜打撤新模式：玩家化身护宝精英进入古墓遗址，探索文物、对抗盗墓组织和怪物，并设法安全带出收益。",
+    "mechanicChange": "官方 1月9日公告宣布古墓迷途将于 1月27日重磅登场，提供特战先锋、道法传人、轩辕游侠、驱傩巫医四大职业选择；模式以古墓遗址、文物保护、怪物与敌对组织对抗为核心，并与洛阳古墓博物馆合作，将馆藏文物和洛阳铲等元素转化为模式内容。",
+    "tempoImpact": "它把和平精英的撤离玩法从现代地铁战区扩展到中式探墓题材，降低写实军事压力，同时保留“搜集高价值物、判断是否撤离”的风险曲线。职业与 PvE 怪物使小队分工更接近副本式探索。",
+    "designObservation": "撤离玩法的主题迁移空间很大，只要保留“进入未知区域-拿到高价值物-带得出去才算赢”的核心闭环，题材可以从战术军事转向文化探险。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/684/18719523.html",
+    "imageUrl": "https://static.gametalk.qq.com/image/182/1767959916_4a47a0db6e60853dedfcfdf08a5ca249.png",
+    "imageSource": "GameTalk CMS 官方内容图",
+    "launchDate": "2026-01-27",
+    "launchLabel": "2026年1月27日",
+    "launchNote": "和平精英官方 1月9日公告标题写明“古墓迷途”新模式 1月27日登场，并在正文介绍四职业与探墓摸金搜打撤定位。"
+  },
+  {
+    "id": "hpjy-7th-arcade-carnival-2026",
+    "game": "和平精英",
+    "modeName": "电玩嘉年华 / 7周年电玩城",
+    "year": "2026",
+    "date": "2026-04-14",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "主题海岛",
+      "周年活动",
+      "趣味道具"
+    ],
+    "oneLineRule": "7 周年主题海岛变体：主城区变为电玩城，四个互动分城区与呆呆篮球等趣味道具改变移动、打卡和局部交战节奏。",
+    "mechanicChange": "官方 4月14日《和平精英7周年》版本更新公告列出电玩嘉年华模式：主城区为 7周年电玩城，中心主楼有灯箱点亮事件、光子鸡游戏大厂和周年蛋糕；新增四大游戏互动分城区，篮球赛场可与好友打卡；新增呆呆篮球，手持可运球快速移动，使用“扣篮”技能快速位移。",
+    "tempoImpact": "周年主题把海岛局部热点从纯资源争夺改成可拍照、可互动、可位移的活动场，玩家会在主城与分城区之间形成更强的社交停留和短距离追逐。移动道具也提高了城区混战的突进与逃生频率。",
+    "designObservation": "大型周年主题不只是在地图上摆装饰，而是要给玩家一个能被操作的节日玩具；可移动、可互动、可打卡的道具更容易把社交流量转回对局节奏。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/684/18766972.html",
+    "imageUrl": "https://static.gametalk.qq.com/image/182/1781061650_63ecf06af6df00ade3b0883442be6cb6.jpg",
+    "imageSource": "GameTalk CMS 官方内容图",
+    "launchDate": "2026-04-14",
+    "launchLabel": "2026年4月14日版本更新",
+    "launchNote": "和平精英官方 7周年版本更新公告写明 4月14日已更新版本，并将电玩嘉年华列为本次模式适配的主要更新内容。"
   }
 ]
