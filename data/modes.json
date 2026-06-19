@@ -2055,5 +2055,1005 @@
     "launchDate": "2026-04-14",
     "launchLabel": "2026年4月14日版本更新",
     "launchNote": "和平精英官方 7周年版本更新公告写明 4月14日已更新版本，并将电玩嘉年华列为本次模式适配的主要更新内容。"
+  },
+  {
+    "id": "fortnite-playground-2018",
+    "game": "Fortnite",
+    "modeName": "Playground",
+    "year": "2018",
+    "date": "2018-06-27",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "训练沙盒",
+      "好友对战",
+      "高资源"
+    ],
+    "oneLineRule": "低压力 BR 沙盒：小队进入 Battle Royale 地图自由建造、练枪、互相对战和探索，一局拥有长时间训练窗口。",
+    "mechanicChange": "v4.5 官方说明 Playground 提供 1 小时游玩时间，好友小队进入 BR 地图，开启友伤，除风暴击倒外可复活；风暴 55 分钟后才开始收缩，资源采集为 10 倍，地图生成 100 个补给羊驼，宝箱与弹药箱 100% 生成。",
+    "tempoImpact": "它把 BR 从淘汰压力中抽离出来，变成练习、实验和社交空间；玩家可以安全学习建筑、武器、道具和地形，而不是每次失败都被送回大厅。",
+    "designObservation": "竞技游戏需要“无排名后果的实验室”：当核心玩法学习成本很高时，官方训练沙盒能把新手教学、创作者玩法和朋友局自然串起来。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v4-5?lang=en-US",
+    "imageUrl": "",
+    "imageSource": "官方补丁页未提供稳定可直链模式图",
+    "launchDate": "2018-06-27",
+    "launchLabel": "2018年6月27日（v4.5）",
+    "launchNote": "Fortnite v4.5 官方补丁说明列出 Playground 的规则与一小时沙盒设定。"
+  },
+  {
+    "id": "fortnite-final-fight-teams-12-2018",
+    "game": "Fortnite",
+    "modeName": "Final Fight Teams of 12",
+    "year": "2018",
+    "date": "2018-06-27",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "12 人队伍",
+      "终圈倒计时",
+      "人数胜利"
+    ],
+    "oneLineRule": "标准 BR 变体：风暴不会完全收到底，最终倒计时结束时，剩余人数最多的队伍获胜。",
+    "mechanicChange": "v4.5 官方说明 Final Fight 类似标准 BR，但安全区缩到一部分后停止；Final Countdown 结束时按照各队剩余玩家数判定胜利，若人数相同则并列队伍获胜。",
+    "tempoImpact": "它把终局目标从“杀到最后一个人”改成“保存队伍人数优势”，会让队伍更重视中后期减员控制、抱团防守和最后倒计时阶段的风险管理。",
+    "designObservation": "只改终局判定就能重写战术优先级：人数优势成为资源后，逃生、防守和拖时间会和击杀一样有价值。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v4-5?lang=en-US",
+    "imageUrl": "",
+    "imageSource": "官方补丁页未提供稳定可直链模式图",
+    "launchDate": "2018-06-27",
+    "launchLabel": "2018年6月27日（v4.5）",
+    "launchNote": "Fortnite v4.5 官方补丁说明列出 Final Fight Teams of 12 规则。"
+  },
+  {
+    "id": "fortnite-disco-domination-2018",
+    "game": "Fortnite",
+    "modeName": "Disco Domination",
+    "year": "2018",
+    "date": "2018-10-10",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "占点",
+      "跳舞交互",
+      "双队伍"
+    ],
+    "oneLineRule": "双队占点 LTM：地图上出现舞池，清空敌人后在舞池跳舞抬起迪斯科球，占点并填满团队进度条获胜。",
+    "mechanicChange": "v6.02 官方说明该模式为两队对抗，复活开启到第三个也是最后一个风暴圈；非风暴移动期间会出现 5 个舞池，友方玩家在无敌人舞池内跳舞可更快占领，团队舞蹈条先到 100% 获胜，舞池区域不能直接建造覆盖。",
+    "tempoImpact": "它把“站点控制”包装成强可读的跳舞互动，迫使玩家轮转多个公开目标；复活机制降低单次死亡惩罚，使冲点和反打更频繁。",
+    "designObservation": "占点玩法适合用主题化交互降低理解门槛：玩家一眼知道要在舞池跳舞，复杂的控制权、进度条和复活节奏就被自然接受。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v6-02?lang=en-US",
+    "imageUrl": "",
+    "imageSource": "官方补丁页图片为页面内素材，未留稳定直链",
+    "launchDate": "2018-10-10",
+    "launchLabel": "2018年10月10日（v6.02）",
+    "launchNote": "Fortnite v6.02 官方补丁说明列出 Disco Domination 的舞池、复活和 100% 进度条规则。"
+  },
+  {
+    "id": "fortnite-food-fight-2018",
+    "game": "Fortnite",
+    "modeName": "Food Fight",
+    "year": "2018",
+    "date": "2018-11-14",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "基地攻防",
+      "队伍目标",
+      "复活"
+    ],
+    "oneLineRule": "Durrr Burger 对 Pizza Pit 的攻防 LTM：两队先围绕己方巨型吉祥物搭防线，屏障落下后摧毁敌方吉祥物获胜。",
+    "mechanicChange": "v6.30 官方说明地图中央前几分钟存在不可通过屏障；每队在中心附近有一个在建餐厅和代表队伍的巨型吉祥物头，屏障落下后互攻目标。玩家被淘汰 7 秒后复活并保留物品，开局特殊红色空投提供武器、弹药、消耗品、陷阱和金属材料。",
+    "tempoImpact": "前半段是集体筑防，后半段变成明确的目标摧毁战，节奏比普通 BR 更像 MOBA/攻城；复活让前线持续拉扯而不是一次交火决定整局。",
+    "designObservation": "给大队伍模式加入“可被摧毁的基地核心”，能把松散混战收束成攻防剧本；准备期和进攻期分离会让玩家自然产生分工。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v6-30?lang=en-US",
+    "imageUrl": "",
+    "imageSource": "官方补丁页图片为页面内素材，未留稳定直链",
+    "launchDate": "2018-11-14",
+    "launchLabel": "2018年11月14日（v6.30）",
+    "launchNote": "Fortnite v6.30 官方补丁说明列出 Food Fight LTM 的屏障、吉祥物核心与 7 秒复活规则。"
+  },
+  {
+    "id": "fortnite-one-shot-2019",
+    "game": "Fortnite",
+    "modeName": "One Shot",
+    "year": "2019",
+    "date": "2019-01-15",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "低重力",
+      "狙击限定",
+      "50 生命"
+    ],
+    "oneLineRule": "极限狙击 LTM：低重力、全员 50 生命、只有 Hunting Rifle 和 Sniper Rifle，治疗只靠绷带。",
+    "mechanicChange": "v7.20 官方说明 One Shot 将重力设为低于常规，所有阶段风暴等待时间大幅缩短；武器池只保留猎枪和狙击枪，玩家以 50 生命出生，只有找到绷带才能治疗。",
+    "tempoImpact": "它把战斗压成“高跳跃位移 + 单发命中”的爽局，缩圈加速减少消极蹲守，低生命值让每次露头都具有高风险。",
+    "designObservation": "当玩法只保留一种武器表达时，移动规则和生命值必须同步服务它；低重力给狙击提供表演空间，50 血则让命中反馈足够干脆。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v7-20?lang=en-US",
+    "imageUrl": "",
+    "imageSource": "官方补丁页未提供模式专属稳定直链图",
+    "launchDate": "2019-01-15",
+    "launchLabel": "2019年1月15日（v7.20）",
+    "launchNote": "Fortnite v7.20 官方补丁说明列出 One Shot 的低重力、50 生命和狙击限定规则。"
+  },
+  {
+    "id": "pubg-team-deathmatch-2020",
+    "game": "PUBG",
+    "modeName": "Team Deathmatch",
+    "year": "2020",
+    "date": "2020-02-19",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "Arcade",
+      "团队死斗",
+      "快速复活"
+    ],
+    "oneLineRule": "PUBG Arcade 里的团队死斗训练线：玩家脱离完整 BR 搜刮流程，在小型战斗区域连续复活、练枪和争夺击杀优势。",
+    "mechanicChange": "PUBG 官方 Arcade 页面将 TDM 作为独立 Arcade 入口；后续补丁持续为 Team Deathmatch 调整地图和通知表现，说明它已成为长期保留的练枪/短局模式线。",
+    "tempoImpact": "TDM 把 PUBG 的长搜刮、长转移压缩成高频对枪循环，给玩家提供低成本热身、枪械熟悉和团队交火训练。",
+    "designObservation": "硬核 BR 需要一个不消耗整局时间的“枪感入口”；团队死斗能让新老玩家在进入正赛前先完成热手和枪械校准。",
+    "sourceUrl": "https://pubg.com/en/game-info/arcade/tdm",
+    "imageUrl": "https://wstatic-prod.pubg.com/web/live/static/og/img-og-pubg.jpg",
+    "imageSource": "PUBG 官方 Arcade 页面通用 OG 图",
+    "launchDate": "2020-02-19",
+    "launchLabel": "2020年2月，Update 6.2 后作为 Arcade 玩法线推出",
+    "launchNote": "PUBG 官方 Arcade 页面当前保留 TDM 入口；补丁页持续更新 Team Deathmatch 地图与体验。"
+  },
+  {
+    "id": "pubg-racing-mode-2021",
+    "game": "PUBG",
+    "modeName": "Racing Mode",
+    "year": "2021",
+    "date": "2021-06-03",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "LABS",
+      "载具竞速",
+      "武装赛车"
+    ],
+    "oneLineRule": "Miramar 武装竞速 LABS：玩家选择载具，在固定赛道穿越检查点、拾取加速和弹药，率先冲线为小队赢得比赛。",
+    "mechanicChange": "官方说明 Racing Mode 开局可选 Motorcycle、Buggy、Coupe RB、Dirt Bike、Mirado，每辆车配不同武器；比赛开始前不能移动或攻击，开局有 10 秒无敌，死亡后按检查点复活并保留满加速槽；PC 最多 20 人、Console 最多 16 人，限时 10 分钟。",
+    "tempoImpact": "它把 PUBG 从步战搜刮改成赛道控制、载具操控和移动射击，玩家关注点从“如何进圈”变成“如何保持路线、补给和速度”。",
+    "designObservation": "载具玩法要成立，不能只把车放进地图；赛道、检查点、复活、加速箱和弹药箱必须一起构成独立胜利循环。",
+    "sourceUrl": "https://www.pubg.com/en/news/1708",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/pubg-legacy/2021/05/1.Racing-mode_Header.jpg",
+    "imageSource": "KRAFTON 官方公告头图",
+    "launchDate": "2021-06-03",
+    "launchLabel": "2021年6月3日，PC Squad 周期开启",
+    "launchNote": "PUBG 官方公告写明 Racing Mode PC Week 1 Squads 为 6月3日 11:00 KST 至 6月7日。"
+  },
+  {
+    "id": "pubg-monster-chicken-royale-2022",
+    "game": "PUBG",
+    "modeName": "Monster Chicken Royale",
+    "year": "2022",
+    "date": "2022-04-01",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "LABS",
+      "Boss 乱入",
+      "Karakin"
+    ],
+    "oneLineRule": "Karakin Boss 乱入 BR：常规吃鸡规则中加入 50 米高 Monster Chicken，玩家可击败 Boss 或成为最后生还者获胜。",
+    "mechanicChange": "官方说明 Monster Chicken 会在开局后生成并移动，拥有全局可见地图图标和血条，会随阶段变化攻击模式；胜利条件为击空 Monster Chicken 血量或照常淘汰其他玩家。模式限定 Karakin、TPP/Squad，最少 12 人、最多 32 人。",
+    "tempoImpact": "Boss 作为移动公共目标，会不断改变安全区和玩家视线焦点；玩家既要处理 PvP，又要判断是否集火 Boss、借 Boss 压力逼迫其他队伍。",
+    "designObservation": "PvE Boss 插入 BR 时最重要的是让 Boss 既是威胁也是胜利路径；它必须公开可追踪，才能把全局玩家吸引到同一条风险线上。",
+    "sourceUrl": "https://www.pubg.com/en/news/1588",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/pubg-legacy/2022/04/header.jpeg",
+    "imageSource": "KRAFTON 官方公告头图",
+    "launchDate": "2022-04-01",
+    "launchLabel": "2022年4月1日，PC/Console 同期开启",
+    "launchNote": "PUBG 官方公告写明 Monster Chicken Royale 服务期从 4月1日开始。"
+  },
+  {
+    "id": "pubg-zone-tag-2023",
+    "game": "PUBG",
+    "modeName": "Zone Tag",
+    "year": "2023",
+    "date": "2023-06-14",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "LABS",
+      "蓝圈跟随",
+      "持球追逐"
+    ],
+    "oneLineRule": "蓝圈追逐 BR：随机玩家持有 Ball，蓝圈中心跟随 Ball 移动，持球者被全场追逐并承担区域控制压力。",
+    "mechanicChange": "官方说明 Zone Tag 在 Vikendi/Deston 随机地图、TPP Squad 中进行，24-100 人；开局随机玩家获得 Ball，Ball 会控制蓝圈移动并用光柱标出持有者。持有者被击倒、死亡或进入限制区时掉落，Phase 6 后 Ball 消失并锁定蓝圈中心；模式提高载具数量，载具免疫武器伤害且车内换弹不消耗弹药。",
+    "tempoImpact": "它把安全区从系统压力改成玩家携带的移动热点，所有路线围绕持球者展开；载具无伤和速度回血又把追逐从步战拉向高速机动。",
+    "designObservation": "把圈权交给玩家，会把地图压力人格化：被标记的玩家既有权力也有负担，其他队伍获得清晰追击目标。",
+    "sourceUrl": "https://pubg.com/en/news/6366",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/common/content/news/20230607/8o2BgdyR.jpg",
+    "imageSource": "KRAFTON 官方公告头图",
+    "launchDate": "2023-06-14",
+    "launchLabel": "2023年6月14日，PC 维护后开启",
+    "launchNote": "PUBG 官方公告写明 Zone Tag PC 服务期从 6月14日 live server maintenance 后开始。"
+  },
+  {
+    "id": "pubg-survivors-left-behind-2023",
+    "game": "PUBG",
+    "modeName": "Survivors Left Behind",
+    "year": "2023",
+    "date": "2023-10-20",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "Arcade",
+      "4 人 PvE",
+      "撤离生存"
+    ],
+    "oneLineRule": "4 人 Haven PvE 生存撤离：小队在多阶段场景中搜刮、制作、完成任务、对抗 Hungers，并启动发电机寻找出口逃离。",
+    "mechanicChange": "官方说明 4 人小队进入后先投票选择关卡，关卡难度递增；玩家通过售货机获取基础武器，跟随任务路线战斗，给发电机加油并供电打开出口。模式包含 Hunger Meter，饥饿会造成不能奔跑、手抖影响瞄准、视野模糊等效果；每场最多 3 次 Recall，可用黄 PC 终端复活队友。",
+    "tempoImpact": "它把 PUBG 变成合作撤离副本：路线推进、资源制作、饥饿管理和复活终端共同构成压力，而不是只围绕缩圈和 PvP 决策。",
+    "designObservation": "BR 枪械系统可以复用到 PvE 撤离，只要补上任务链、状态压力和有限复活，就能从竞技对局转成合作生存剧本。",
+    "sourceUrl": "https://pubg.com/en/news/6774",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/common/content/news/20231013/Gk4R9gRB.jpg",
+    "imageSource": "KRAFTON 官方公告头图",
+    "launchDate": "2023-10-20",
+    "launchLabel": "2023年10月20日 7 AM UTC 开启",
+    "launchNote": "PUBG 官方公告写明 PC & Console 服务期为 10月20日 7 AM 至 11月6日 7 AM UTC。"
+  },
+  {
+    "id": "apex-second-chance-2021",
+    "game": "Apex Legends",
+    "modeName": "Second Chance",
+    "year": "2021",
+    "date": "2021-04-13",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "War Games",
+      "免费复活",
+      "单次容错"
+    ],
+    "oneLineRule": "War Games 接管变体：每名传奇每局获得一次免费复活，首次死亡后从当前位置重新投入战斗。",
+    "mechanicChange": "EA 官方 War Games 公告写明 Second Chance 中每名 Legend 有一个 Respawn Token；死亡后消耗 Token，保留武器和装备，短暂延迟后从高空重新跳伞回战局。",
+    "tempoImpact": "单次免费复活会显著提高前中期试探和强开意愿，队伍可以接受一次失误，但第二次死亡仍会回到标准 BR 压力。",
+    "designObservation": "给每名玩家一次明确、可预期的复活权，比随机救援更适合测试激进节奏；它降低失败恐惧，却不完全取消终局淘汰。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/news/war-games",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2021-04-13",
+    "launchLabel": "2021年4月13日，War Games 首个接管模式",
+    "launchNote": "EA 官方公告列出 Second Chance 排期为 4月13日至 4月15日。"
+  },
+  {
+    "id": "apex-ultra-zones-2021",
+    "game": "Apex Legends",
+    "modeName": "Ultra Zones",
+    "year": "2021",
+    "date": "2021-04-15",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "War Games",
+      "多热点",
+      "Flash Point"
+    ],
+    "oneLineRule": "多热点 BR 变体：一张图中出现多个 Hot Zone，热点内有更高品质战利品，并被 Flash Point 治疗泡包围。",
+    "mechanicChange": "EA 官方公告说明 Ultra Zones 引入多个 Hot Zone，提供更多史诗级战利品和金色物品；每个 Hot Zone 被 Flash Point 包裹，玩家站在巨大泡泡中会恢复生命和护盾，普通消耗品仍保留在战利品池。",
+    "tempoImpact": "多个高价值热点会分散开局跳点压力，同时 Flash Point 让热点区持续具备回复优势，鼓励队伍反复争夺而不是落地拿完即走。",
+    "designObservation": "热点如果只给高 loot，很快会被消耗；叠加区域回复后，热点从“开局资源点”变成中期仍有价值的战斗据点。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/news/war-games",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2021-04-15",
+    "launchLabel": "2021年4月15日，War Games 第二个接管模式",
+    "launchNote": "EA 官方公告列出 Ultra Zones 排期为 4月15日至 4月19日。"
+  },
+  {
+    "id": "apex-auto-banners-2021",
+    "game": "Apex Legends",
+    "modeName": "Auto Banners",
+    "year": "2021",
+    "date": "2021-04-19",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "War Games",
+      "自动拾旗",
+      "复活信标"
+    ],
+    "oneLineRule": "队友 Banner 自动回收变体：队友阵亡后无需摸死亡箱，直接前往复活信标即可尝试召回。",
+    "mechanicChange": "EA 官方公告说明 Auto Banners 会自动取回队友 Banner Cards，不需要从 Death Box 拾取；同时战利品池中加入更多 Mobile Respawn Beacons。",
+    "tempoImpact": "它把复活链条中最危险的“回盒子取牌”删除，降低救援失败率，让队伍更愿意先撤离、再组织复活反打。",
+    "designObservation": "复活系统的风险可以拆分：拿牌、找信标、读条三个环节各自可调。只移除拿牌风险，就能显著改变败者回归节奏。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/news/war-games",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2021-04-19",
+    "launchLabel": "2021年4月19日，War Games 第三个接管模式",
+    "launchNote": "EA 官方公告列出 Auto Banners 排期为 4月19日至 4月21日。"
+  },
+  {
+    "id": "apex-killing-time-2021",
+    "game": "Apex Legends",
+    "modeName": "Killing Time",
+    "year": "2021",
+    "date": "2021-04-21",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "War Games",
+      "击杀缩短回合",
+      "加速缩圈"
+    ],
+    "oneLineRule": "死亡会压缩回合时间的 BR 变体：场上每有传奇死亡，当前回合时间都会减少，戒圈更快闭合。",
+    "mechanicChange": "EA 官方公告说明 Killing Time 会在每个 Legend 死亡时缩短 round time；如果某一轮大量玩家死亡，ring 会非常快地开始收缩，玩家需要持续关注回合计时器和戒圈。",
+    "tempoImpact": "击杀不只减少敌人，还直接加快地图压力；全局死亡速度越快，剩余队伍越难慢搜和龟缩。",
+    "designObservation": "把淘汰事件接到缩圈时钟上，可以让玩家行为反过来驱动系统节奏；战局越血腥，地图越快进入高压阶段。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/news/war-games",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2021-04-21",
+    "launchLabel": "2021年4月21日，War Games 第四个接管模式",
+    "launchNote": "EA 官方公告列出 Killing Time 排期为 4月21日至 4月23日。"
+  },
+  {
+    "id": "apex-armor-regen-2021",
+    "game": "Apex Legends",
+    "modeName": "Armor Regen",
+    "year": "2021",
+    "date": "2021-04-23",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "War Games",
+      "护甲自回",
+      "无小电"
+    ],
+    "oneLineRule": "护甲自动恢复变体：护甲会以固定速率自动回复，战利品池移除 Shield Cells。",
+    "mechanicChange": "EA 官方公告说明 Armor Regen 中护甲以每秒 12 点恢复；受伤后 8 秒开始恢复，如果护甲被打碎则延迟翻倍为 16 秒；该模式没有 Shield Cells。",
+    "tempoImpact": "自动回甲让短暂停火和拉扯更有价值，玩家可以少依赖小电补给；但破甲后的 16 秒延迟保留了集火追击窗口。",
+    "designObservation": "资源消耗型防御可以被时间型防御替代，但必须保留“破防惩罚”，否则拉扯会变成无限重置。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/news/war-games",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2021-04-23",
+    "launchLabel": "2021年4月23日，War Games 最后一个接管模式",
+    "launchNote": "EA 官方公告列出 Armor Regen 排期为 4月23日至 4月27日。"
+  },
+  {
+    "id": "hpjy-team-deathmatch-2019",
+    "game": "和平精英",
+    "modeName": "团队竞技",
+    "year": "2019",
+    "date": "2019-06-28",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "创意工坊",
+      "团队死斗",
+      "刚枪训练"
+    ],
+    "oneLineRule": "创意工坊里的快速刚枪模式：玩家脱离经典 BR 搜刮流程，围绕小地图和团队击杀进行高频交火。",
+    "mechanicChange": "和平精英官方攻略页围绕“团队竞技”优化介绍爽快刚枪体验，确认该玩法作为创意工坊内的团队对抗模式线存在。模式重点是更短路径、更密集遭遇和连续交火。",
+    "tempoImpact": "它为移动端 BR 提供了热身入口，玩家不用经历跳伞、搜刮和长转移，就能快速练枪、熟悉武器后坐和团队配合。",
+    "designObservation": "移动端射击尤其需要短循环练习场；团队竞技把“每局十几分钟的学习成本”压成连续数秒级反馈。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/684/7354921.html",
+    "imageUrl": "",
+    "imageSource": "官方攻略页未提供可稳定直链模式图",
+    "launchDate": "2019-06-28",
+    "launchLabel": "2019年6月28日官方攻略页确认",
+    "launchNote": "和平精英官方 2019年6月28日攻略页介绍团队竞技优化与刚枪体验。"
+  },
+  {
+    "id": "hpjy-circle-in-circle-2020",
+    "game": "和平精英",
+    "modeName": "圈中圈模式",
+    "year": "2020",
+    "date": "2020-04-16",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "信号接收区",
+      "双圈压力",
+      "路线预判"
+    ],
+    "oneLineRule": "经典 BR 圈规则变体：玩家能提前知晓下一阶段信号接收区，在当前圈内围绕未来安全位置进行抢点。",
+    "mechanicChange": "和平精英官方页面以“信号接收区提前知晓”介绍圈中圈模式，核心变化是把未来安全区信息前置，让玩家在当前阶段就围绕下一圈作出路线和站位决策。",
+    "tempoImpact": "提前暴露下一圈会减少纯随机跑圈感，放大抢点、卡边和提前转移；队伍更容易围绕信息优势形成主动战术。",
+    "designObservation": "安全区信息可以被设计成策略资源：提前给一点未来信息，会把被动进圈改成主动规划。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/684/10128525.html",
+    "imageUrl": "",
+    "imageSource": "官方页面未提供可稳定直链模式图",
+    "launchDate": "2020-04-16",
+    "launchLabel": "2020年4月16日官方页面确认",
+    "launchNote": "和平精英官方 2020年4月16日页面介绍“信号接收区”与圈中圈模式。"
+  },
+  {
+    "id": "hpjy-hide-and-seek-2021",
+    "game": "和平精英",
+    "modeName": "躲猫猫大乱斗",
+    "year": "2021",
+    "date": "2021-09-26",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "非对称",
+      "伪装",
+      "搜寻"
+    ],
+    "oneLineRule": "非对称休闲玩法：一方伪装成场景物件躲藏，另一方通过观察和排查找出伪装者。",
+    "mechanicChange": "和平精英官方页面标题写明“9月26日‘躲猫猫’大乱斗，火眼金睛辨真假”，确认该模式围绕伪装真假识别展开。核心机制从枪战淘汰转向观察、伪装和反侦察。",
+    "tempoImpact": "躲藏方的紧张来自暴露风险，搜寻方的紧张来自有限时间内辨别异常；它把射击游戏节奏改成心理博弈和环境阅读。",
+    "designObservation": "强枪战产品也可以用非对称伪装玩法扩宽人群：保留地图熟悉度，但把胜负能力从枪法转移到观察和表演。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/684/15032347.html",
+    "imageUrl": "",
+    "imageSource": "官方页面未提供可稳定直链模式图",
+    "launchDate": "2021-09-26",
+    "launchLabel": "2021年9月26日官方页面确认",
+    "launchNote": "和平精英官方 2021年9月26日页面确认“躲猫猫”大乱斗主题。"
+  },
+  {
+    "id": "hpjy-oasis-qiyuan-2022",
+    "game": "和平精英",
+    "modeName": "绿洲启元",
+    "year": "2022",
+    "date": "2022-08-26",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "创意玩法平台",
+      "多玩法合集",
+      "UGC 倾向"
+    ],
+    "oneLineRule": "和平精英内的创意玩法入口：集合多款轻量玩法，让玩家在经典 BR 外进入更短、更主题化的规则体验。",
+    "mechanicChange": "和平精英官方页面写明“绿洲启元全新升级，多款创意玩法等你体验”，确认它不是单一局内道具，而是承载多种创意玩法的模式入口。",
+    "tempoImpact": "绿洲启元把玩家从经典海岛节奏中分流到短局和主题体验，适合承接娱乐、社交、训练和活动型规则实验。",
+    "designObservation": "当玩法实验数量增加，单个 LTM 列表会变得不够用；需要一个平台化入口承载短局、UGC 和主题规则的持续轮换。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/684/18090722.html",
+    "imageUrl": "",
+    "imageSource": "官方页面未提供可稳定直链模式图",
+    "launchDate": "2022-08-26",
+    "launchLabel": "2022年8月26日官方升级页确认",
+    "launchNote": "和平精英官方 2022年8月26日页面介绍绿洲启元全新升级与多款创意玩法。"
+  },
+  {
+    "id": "delta-force-team-deathmatch-2025",
+    "game": "三角洲行动",
+    "modeName": "团队死斗 / Team Deathmatch",
+    "year": "2025",
+    "date": "2025-09-15",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "快速战斗",
+      "重新部署",
+      "步战训练"
+    ],
+    "oneLineRule": "三角洲行动的快速步战模式：去掉长线推进和倒地救援负担，围绕更快重新部署和更密集交火展开。",
+    "mechanicChange": "官方新闻搜索结果确认“新模式团队死斗开放”，并描述其拥有更快速的重新部署、更简化的 UI；后续官方新闻继续提到团队死斗新增断层与金字塔地图，说明该玩法线持续迭代。",
+    "tempoImpact": "团队死斗把三角洲的大地图推进压成连续步战反馈，适合练枪、熟悉干员和武器，也给全面战场之外提供更轻量的对抗入口。",
+    "designObservation": "战术射击产品可以用团队死斗承接“短时长、高反馈”的需求：它不是主模式替代品，而是降低回流门槛的热身层。",
+    "sourceUrl": "https://df.qq.com/cp/a20240906main/newsdetail.html?id=11829496586981425697",
+    "imageUrl": "",
+    "imageSource": "官方新闻页未提供可稳定直链模式图",
+    "launchDate": "2025-09-15",
+    "launchLabel": "2025年9月官方新闻确认新模式开放",
+    "launchNote": "三角洲行动官方新闻搜索结果提到新模式团队死斗开放，并描述更快速重新部署与更简化 UI。"
+  },
+  {
+    "id": "fortnite-teams-of-20-2018",
+    "game": "Fortnite",
+    "modeName": "Teams of 20",
+    "year": "2018",
+    "date": "2018-03-08",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "20 人队伍",
+      "大队伍",
+      "BR 变体"
+    ],
+    "oneLineRule": "5 支 20 人队伍同场吃鸡，大幅放大队伍推进、集结和团战规模。",
+    "mechanicChange": "该 LTM 将普通百人 BR 拆成 5 个大队伍，每队约 20 人，玩家从开局就拥有大规模友军阵线而不是 4 人小队。",
+    "tempoImpact": "落点和中期推进更像阵线冲突，个人操作让位于队伍位置、火力覆盖和救援密度。",
+    "designObservation": "大队伍 BR 的关键不是单纯提高队伍人数，而是把“随机个人遭遇”改成“群体阵线遭遇”，让玩家获得战争规模感。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v3-2?lang=en-US",
+    "imageUrl": "",
+    "imageSource": "旧官方补丁页未提供稳定模式图",
+    "launchDate": "2018-03-08",
+    "launchLabel": "2018年3月8日（v3.2）",
+    "launchNote": "Fortnite v3.2 时期推出 Teams of 20；旧官方补丁页可访问性不稳定，后续仍建议复核官方归档。"
+  },
+  {
+    "id": "fortnite-fly-explosives-2018",
+    "game": "Fortnite",
+    "modeName": "Fly Explosives",
+    "year": "2018",
+    "date": "2018-08-01",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "喷气背包",
+      "爆炸武器",
+      "空中机动"
+    ],
+    "oneLineRule": "爆炸物 + Jetpack 的高空 LTM：玩家用喷气背包控制高度，用爆炸武器解决空中和地面目标。",
+    "mechanicChange": "v5.10 Content Update 将 Fly Explosives 作为 LTM 推出，武器池围绕爆炸武器和 Jetpack 组合，强化垂直移动和范围伤害。",
+    "tempoImpact": "对枪节奏从掩体 peek 变成高度、弹道预判和爆炸半径控制；玩家更频繁利用空中位移脱离或强开。",
+    "designObservation": "强机动道具最好搭配低精度范围武器，否则空中目标过难命中；Jetpack 与爆炸武器是一组互相补偿的规则组合。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v5-10-content-update?lang=en-US",
+    "imageUrl": "",
+    "imageSource": "官方补丁页未提供稳定模式图",
+    "launchDate": "2018-08-01",
+    "launchLabel": "2018年8月1日（v5.10 Content Update）",
+    "launchNote": "Fortnite v5.10 Content Update 官方补丁列出 Fly Explosives LTM。"
+  },
+  {
+    "id": "fortnite-close-encounters-2018",
+    "game": "Fortnite",
+    "modeName": "Close Encounters",
+    "year": "2018",
+    "date": "2018-09-19",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "霰弹枪限定",
+      "喷气背包",
+      "近距离"
+    ],
+    "oneLineRule": "近距离 LTM：战斗围绕霰弹枪和 Jetpack 展开，玩家必须贴近、跃迁、快速终结。",
+    "mechanicChange": "v5.41 官方补丁列出 Close Encounters，核心是近战距离武器池与 Jetpack 机动组合。",
+    "tempoImpact": "中远距离消耗被削弱，玩家更快进入跳跃、贴脸和高爆发交换；地形高差和进场时机比枪线压制更重要。",
+    "designObservation": "限制武器射程会自然压缩战斗空间；再给垂直位移工具，可以把“贴脸”变成可控的高机动表演。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v5-41?lang=en-US",
+    "imageUrl": "",
+    "imageSource": "官方补丁页未提供稳定模式图",
+    "launchDate": "2018-09-19",
+    "launchLabel": "2018年9月19日（v5.41）",
+    "launchNote": "Fortnite v5.41 官方补丁列出 Close Encounters LTM。"
+  },
+  {
+    "id": "fortnite-soaring-solos-2018",
+    "game": "Fortnite",
+    "modeName": "Soaring Solos",
+    "year": "2018",
+    "date": "2018-09-19",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "单排",
+      "滑翔重部署",
+      "空中转点"
+    ],
+    "oneLineRule": "单排滑翔重部署变体：玩家在高处下落时可再次打开滑翔伞，获得更高频的空中转点机会。",
+    "mechanicChange": "v5.41 官方补丁列出 Soaring Solos，围绕 Soaring/Glider Redeploy 规则重写单排转移。",
+    "tempoImpact": "高地不再只是防守优势，也变成二次转点发射台；追击、逃生和第三方插入都更快。",
+    "designObservation": "给单排加入重部署会显著提高地图流动性，但也会削弱位置承诺，因此适合 LTM 测试而不是贸然常驻。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v5-41?lang=en-US",
+    "imageUrl": "",
+    "imageSource": "官方补丁页未提供稳定模式图",
+    "launchDate": "2018-09-19",
+    "launchLabel": "2018年9月19日（v5.41）",
+    "launchNote": "Fortnite v5.41 官方补丁列出 Soaring Solos LTM。"
+  },
+  {
+    "id": "fortnite-driftin-2019",
+    "game": "Fortnite",
+    "modeName": "Driftin’",
+    "year": "2019",
+    "date": "2019-02-19",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "漂移板",
+      "高机动",
+      "大队伍"
+    ],
+    "oneLineRule": "围绕 Driftboard 的高机动 LTM：玩家用漂移板快速转点、追击和表演式交火。",
+    "mechanicChange": "v7.40 Content Update 将 Driftin’ 作为 LTM 推出，配合 Driftboard 上线，把载具机动作为整局核心规则。",
+    "tempoImpact": "地图转移速度大幅提升，遭遇战更容易从固定阵地转成滑行追逐，玩家的路线规划变得更弹性。",
+    "designObservation": "新载具上线时，专属 LTM 是最有效的学习场；让所有人都围绕同一载具玩，能快速暴露手感和地图适配问题。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v7-40-content-update?lang=en-US",
+    "imageUrl": "",
+    "imageSource": "官方补丁页未提供稳定模式图",
+    "launchDate": "2019-02-19",
+    "launchLabel": "2019年2月19日（v7.40 Content Update）",
+    "launchNote": "Fortnite v7.40 Content Update 官方补丁列出 Driftin’ LTM。"
+  },
+  {
+    "id": "fortnite-catch-2019",
+    "game": "Fortnite",
+    "modeName": "Catch!",
+    "year": "2019",
+    "date": "2019-02-26",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "投掷物限定",
+      "无枪械",
+      "道具战"
+    ],
+    "oneLineRule": "无枪械投掷物 LTM：玩家只依靠手雷、冲击物和其他可投掷道具造成伤害与控制。",
+    "mechanicChange": "v7.40 Content Update 期间 Catch! 作为 LTM 轮换出现，核心是用投掷物替代常规枪械战斗。",
+    "tempoImpact": "瞄准与压枪压力下降，空间预判、投掷角度、逼位和资源消耗成为主要技能。",
+    "designObservation": "把枪械完全拿掉，可以测试射击游戏里“空间控制道具”本身是否足够有趣；它也能给低枪法玩家一个更轻松的入口。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v7-40-content-update?lang=en-US",
+    "imageUrl": "",
+    "imageSource": "官方补丁页未提供稳定模式图",
+    "launchDate": "2019-02-26",
+    "launchLabel": "2019年2月下旬（v7.40 Content Update 轮换）",
+    "launchNote": "Fortnite v7.40 Content Update 官方补丁列出 Catch! LTM。"
+  },
+  {
+    "id": "pubg-bizarre-battle-royale-2023",
+    "game": "PUBG",
+    "modeName": "Bizarre Battle Royale",
+    "year": "2023",
+    "date": "2023-03-30",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "LABS",
+      "愚人节",
+      "怪诞 BR"
+    ],
+    "oneLineRule": "愚人节怪诞 BR：在 PUBG 框架中加入夸张规则、特殊敌人与非严肃战斗元素。",
+    "mechanicChange": "PUBG 官方 LABS 公告以 Bizarre Battle Royale 为主题，作为愚人节期间的限时实验玩法回归，强调非常规规则与怪诞战场体验。",
+    "tempoImpact": "它把 PUBG 的写实军事压力转成节日玩笑和规则惊喜，让玩家以低心理负担体验非标准战斗。",
+    "designObservation": "严肃战术产品也需要周期性的“破格事件”，用节日语境承载荒诞规则，可以不损伤主模式气质。",
+    "sourceUrl": "https://www.pubg.com/en/news/5023",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/PUBG_OFFICIAL/20230330/2YCuQD44.png",
+    "imageSource": "KRAFTON 官方公告头图",
+    "launchDate": "2023-03-30",
+    "launchLabel": "2023年3月30日官方 LABS 公告发布",
+    "launchNote": "PUBG 官方公告《LABS: Bizarre Battle Royale》于 2023年3月30日发布。"
+  },
+  {
+    "id": "pubg-halloween-battle-royale-2023",
+    "game": "PUBG",
+    "modeName": "Halloween Battle Royale",
+    "year": "2023",
+    "date": "2023-09-27",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "Arcade",
+      "万圣节",
+      "职业合作"
+    ],
+    "oneLineRule": "万圣节主题 Arcade：玩家进入职业化奇幻战斗，用节日职业和合作规则替代常规 PUBG 对局。",
+    "mechanicChange": "PUBG 官方 Arcade 公告写明 Halloween Battle Royale 回归，作为万圣节主题 Arcade 玩法开放。",
+    "tempoImpact": "职业和节日包装让队伍分工更清晰，战斗从写实枪战转向派对化合作，适合活动期回流。",
+    "designObservation": "节日模式如果能提供职业职责，而不只是换皮，就能让玩家记住一套独立的协作节奏。",
+    "sourceUrl": "https://pubg.com/en/news/6674",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/common/content/news/20230927/OLPwxvNs.jpg",
+    "imageSource": "KRAFTON 官方公告头图",
+    "launchDate": "2023-09-27",
+    "launchLabel": "2023年9月27日官方公告发布",
+    "launchNote": "PUBG 官方公告《Arcade: Halloween Battle Royale》于 2023年9月27日发布。"
+  },
+  {
+    "id": "apex-gold-rush-duos-2020",
+    "game": "Apex Legends",
+    "modeName": "Gold Rush Duos",
+    "year": "2020",
+    "date": "2020-01-14",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "Grand Soirée",
+      "双排",
+      "金枪限定"
+    ],
+    "oneLineRule": "双排金枪 LTM：地图战利品池聚焦全金武器，让队伍更快进入高强度交火。",
+    "mechanicChange": "Grand Soirée 活动将 Gold Rush Duos 列为轮换模式之一，核心是 Duos 队伍和 Gold Weapon 规则。",
+    "tempoImpact": "高品质武器前置会压缩搜刮曲线，让开局更快进入成型战斗；双排也强化个人配合而不是三人技能组合。",
+    "designObservation": "把顶级装备普发给所有人，能临时跳过养成曲线，测试纯战斗决策和小队默契。",
+    "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/grand-soir%C3%A9e-patch-notes/9460557",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2020-01-14",
+    "launchLabel": "2020年1月14日，Grand Soirée 轮换活动开启",
+    "launchNote": "EA 官方论坛 Grand Soirée Patch Notes 列出 Gold Rush Duos 活动轮换。"
+  },
+  {
+    "id": "apex-third-person-mode-2020",
+    "game": "Apex Legends",
+    "modeName": "Third-Person Mode",
+    "year": "2020",
+    "date": "2020-01-18",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "Grand Soirée",
+      "第三人称",
+      "视角实验"
+    ],
+    "oneLineRule": "第三人称 Apex：保留 BR 框架和传奇能力，但把视角从第一人称切到第三人称。",
+    "mechanicChange": "Grand Soirée 活动轮换包含 Third-Person Mode，核心变化是视角规则而非地图或武器池。",
+    "tempoImpact": "第三人称改变掩体观察、身位暴露和近距离追踪，玩家能获得更多拐角信息，也会改变突入和架枪节奏。",
+    "designObservation": "视角是射击游戏最底层的规则之一；短期 LTM 是测试第三人称可读性和公平性的安全方式。",
+    "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/grand-soir%C3%A9e-patch-notes/9460557",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2020-01-18",
+    "launchLabel": "2020年1月18日，Grand Soirée 轮换模式",
+    "launchNote": "EA 官方论坛 Grand Soirée Patch Notes 列出 Third-Person Mode 轮换。"
+  },
+  {
+    "id": "apex-dummies-big-day-2020",
+    "game": "Apex Legends",
+    "modeName": "DUMMIE's Big Day",
+    "year": "2020",
+    "date": "2020-01-26",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "Grand Soirée",
+      "假人传奇",
+      "随机能力"
+    ],
+    "oneLineRule": "假人日 LTM：所有玩家使用训练场 DUMMIE 外观，围绕非常规随机能力展开战斗。",
+    "mechanicChange": "Grand Soirée 活动轮换包含 DUMMIE’s Big Day，玩家不再使用常规传奇身份，而是进入特殊假人规则实验。",
+    "tempoImpact": "传奇身份被统一后，队伍组合压力降低，战局记忆点转向随机技能和荒诞表现。",
+    "designObservation": "统一角色身份可以短期移除阵容 meta，让设计者观察纯规则和随机技能本身的趣味性。",
+    "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/grand-soir%C3%A9e-patch-notes/9460557",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2020-01-26",
+    "launchLabel": "2020年1月26日，Grand Soirée 轮换模式",
+    "launchNote": "EA 官方论坛 Grand Soirée Patch Notes 列出 DUMMIE’s Big Day。"
+  },
+  {
+    "id": "apex-team-deathmatch-2023",
+    "game": "Apex Legends",
+    "modeName": "Team Deathmatch",
+    "year": "2023",
+    "date": "2023-02-14",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "Revelry",
+      "6v6",
+      "Mixtape 基础"
+    ],
+    "oneLineRule": "Apex 6v6 团队死斗：两队在小地图上连续复活，以击杀目标替代 BR 生存目标。",
+    "mechanicChange": "Revelry Patch Notes 宣布 Team Deathmatch 随赛季上线，作为 Apex 非 BR 轮换体系的重要组成，后来与 Control、Gun Run 共同进入 Mixtape。",
+    "tempoImpact": "它把 Apex 的移动和枪感从大地图生存中抽出来，提供高频练枪、热身和英雄能力实战入口。",
+    "designObservation": "英雄 BR 的常驻健康度需要短局练习层；TDM 能降低回流门槛，也让玩家快速尝试角色和武器。",
+    "sourceUrl": "https://forums.ea.com/discussions/apex-legends-general-discussion-en/revelry---patch-notes-discussion/5701100",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2023-02-14",
+    "launchLabel": "2023年2月14日，Revelry 赛季上线",
+    "launchNote": "EA 官方论坛 Revelry Patch Notes 宣布 Team Deathmatch。"
+  },
+  {
+    "id": "hpjy-summer-mode-2019",
+    "game": "和平精英",
+    "modeName": "夏日模式",
+    "year": "2019",
+    "date": "2019-07-25",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "主题海岛",
+      "海上资源点",
+      "休闲互动"
+    ],
+    "oneLineRule": "夏日主题海岛变体：在经典对局中加入爱心岛屿等海上主题区域，改变玩家落点和中期探索路线。",
+    "mechanicChange": "和平精英官方攻略页《夏日模式玩法介绍》确认夏日模式围绕爱心岛屿、海上冠军等主题内容展开。",
+    "tempoImpact": "主题岛屿把一部分玩家从传统陆地资源点吸引到海上热点，形成更强打卡和局部争夺。",
+    "designObservation": "季节主题模式最有效的做法是给地图增加可被争夺的主题空间，而不只是换天空盒和装饰。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/684/7624328.html",
+    "imageUrl": "",
+    "imageSource": "官方攻略页未提供可稳定直链模式图",
+    "launchDate": "2019-07-25",
+    "launchLabel": "2019年7月25日官方攻略页确认",
+    "launchNote": "和平精英官方 2019年7月25日攻略页介绍夏日模式玩法。"
+  },
+  {
+    "id": "hpjy-scientific-wheel-2022",
+    "game": "和平精英",
+    "modeName": "科学之轮",
+    "year": "2022",
+    "date": "2022-06-30",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "版本主题",
+      "科技机制",
+      "主题海岛"
+    ],
+    "oneLineRule": "科技主题海岛版本：在经典对局内加入科学之轮相关区域、装置和主题交互，改变资源热点与转点节奏。",
+    "mechanicChange": "和平精英官方《科学之轮》版本更新公告确认该主题版本上线，作为海岛主题玩法线的一次大版本更新。",
+    "tempoImpact": "科技主题装置让地图热点不只依赖资源密度，也依赖玩家是否愿意争夺新交互和主题收益。",
+    "designObservation": "主题版本要想留下玩法记忆，需要把主题转成可操作机制，而不是只换视觉包装。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/684/17461905.html",
+    "imageUrl": "",
+    "imageSource": "官方公告页未提供可稳定直链模式图",
+    "launchDate": "2022-06-30",
+    "launchLabel": "2022年6月30日版本更新公告",
+    "launchNote": "和平精英官方《科学之轮》版本更新公告页面日期为 2022年6月30日。"
+  },
+  {
+    "id": "hpjy-sky-island-2024",
+    "game": "和平精英",
+    "modeName": "空岛集结",
+    "year": "2024",
+    "date": "2024-03-20",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "主题海岛",
+      "空中区域",
+      "版本玩法"
+    ],
+    "oneLineRule": "空岛主题海岛版本：把新的空中区域和集结玩法放入经典对局，形成垂直空间与主题热点。",
+    "mechanicChange": "和平精英官方《空岛集结》版本更新公告确认该主题版本上线，核心是围绕空岛与集结形成新的局内体验。",
+    "tempoImpact": "空中区域会改变开局落点、垂直转移和中期争夺，玩家必须判断是否投入到高曝光但高收益的主题空间。",
+    "designObservation": "垂直地图热点能给老地图制造新鲜路线，但必须配合清晰入口、收益和撤离路径。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/684/18406448.html",
+    "imageUrl": "",
+    "imageSource": "官方公告页未提供可稳定直链模式图",
+    "launchDate": "2024-03-20",
+    "launchLabel": "2024年3月20日版本更新公告",
+    "launchNote": "和平精英官方《空岛集结》版本更新公告页面日期为 2024年3月20日。"
+  },
+  {
+    "id": "hpjy-animal-jungle-2024",
+    "game": "和平精英",
+    "modeName": "动物丛林",
+    "year": "2024",
+    "date": "2024-08-23",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "主题海岛",
+      "战斗伙伴",
+      "扫描召唤"
+    ],
+    "oneLineRule": "动物伙伴主题海岛：玩家通过扫描召唤战斗伙伴，把地图探索和宠物/伙伴协作带进经典对局。",
+    "mechanicChange": "和平精英官方页面标题写明“扫描召唤全新战斗伙伴，海岛‘动物丛林’主题玩法上线”，确认该主题围绕扫描召唤与战斗伙伴展开。",
+    "tempoImpact": "战斗伙伴会让玩家在资源搜索之外增加“找伙伴、用伙伴、围绕伙伴打架”的路线目标。",
+    "designObservation": "伙伴系统进入 BR 时，最好通过扫描/召唤这类主动动作绑定到地图探索，让新系统自然嵌入跑图节奏。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/684/18482886.html",
+    "imageUrl": "",
+    "imageSource": "官方页面未提供可稳定直链模式图",
+    "launchDate": "2024-08-23",
+    "launchLabel": "2024年8月23日官方页面确认",
+    "launchNote": "和平精英官方 2024年8月23日页面确认动物丛林主题玩法上线。"
+  },
+  {
+    "id": "delta-force-blitz-2024",
+    "game": "三角洲行动",
+    "modeName": "闪击玩法 / Blitz",
+    "year": "2024",
+    "date": "2024-10-17",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "限时活动",
+      "快速对局",
+      "战场变体"
+    ],
+    "oneLineRule": "限时闪击变体：把三角洲的大模式节奏压缩成更快进入交火和目标推进的活动玩法。",
+    "mechanicChange": "三角洲行动官方 10月17日更新公告提到闪击玩法限时开启，作为活动期玩法变体加入。",
+    "tempoImpact": "闪击类规则通常减少等待和铺垫，让玩家更快进入冲突点，适合短时段回流和活动任务。",
+    "designObservation": "大体量战术模式需要周期性快节奏版本，帮助玩家在没有完整长局时间时也能进入核心爽点。",
+    "sourceUrl": "https://df.qq.com/cp/a20240906main/newsdetail.html?id=11829496586981425697",
+    "imageUrl": "",
+    "imageSource": "官方新闻页未提供可稳定直链模式图",
+    "launchDate": "2024-10-17",
+    "launchLabel": "2024年10月17日官方更新提及限时开启",
+    "launchNote": "三角洲行动官方更新信息提到闪击玩法限时开启；细则仍需后续官方详情页补强。"
+  },
+  {
+    "id": "delta-force-solo-ops-2024",
+    "game": "三角洲行动",
+    "modeName": "独侠行动",
+    "year": "2024",
+    "date": "2024-09-27",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "烽火地带",
+      "单人匹配",
+      "撤离变体"
+    ],
+    "oneLineRule": "烽火地带单人向变体：玩家以独狼身份进入撤离战场，不再依赖固定小队分工。",
+    "mechanicChange": "三角洲行动官方信息提到“独侠行动”与“烽火地带机密行动单人匹配”相关活动，确认撤离线存在单人向规则实验。",
+    "tempoImpact": "单人撤离会放大听声、避战、背包收益和撤离判断，团队救援容错消失，风险决策更个人化。",
+    "designObservation": "搜打撤模式的单人化不是简单关掉队友，而是把所有信息判断和收益风险压回一个人身上，适合测试硬核玩家需求。",
+    "sourceUrl": "https://df.qq.com/cp/a20240906main/newsdetail.html?id=11829496586981425697",
+    "imageUrl": "",
+    "imageSource": "官方新闻页未提供可稳定直链模式图",
+    "launchDate": "2024-09-27",
+    "launchLabel": "2024年9月下旬官方活动信息确认",
+    "launchNote": "官方新闻搜索结果提到独侠行动与机密行动单人匹配；规则细节需后续官方详情页复核。"
+  },
+  {
+    "id": "delta-force-threshold-attack-defense-2024",
+    "game": "三角洲行动",
+    "modeName": "临界点攻防",
+    "year": "2024",
+    "date": "2024-10-10",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "攻防变体",
+      "全面战场",
+      "阶段推进"
+    ],
+    "oneLineRule": "临界点攻防变体：围绕固定战线和阶段目标组织攻守，突出阵地推进与防守压力。",
+    "mechanicChange": "三角洲行动官方活动信息提到“临界点攻防模式”，说明全面战场线存在面向攻防推进的限时规则。",
+    "tempoImpact": "攻防模式会减少开放式游走，把玩家压到明确战线，制造更稳定的火力密度和突破压力。",
+    "designObservation": "大地图射击需要攻防型规则来制造清晰前线；它能让玩家知道该去哪、该守哪、突破是否成功。",
+    "sourceUrl": "https://df.qq.com/cp/a20240906main/newsdetail.html?id=11829496586981425697",
+    "imageUrl": "",
+    "imageSource": "官方新闻页未提供可稳定直链模式图",
+    "launchDate": "2024-10-10",
+    "launchLabel": "2024年10月官方活动信息确认",
+    "launchNote": "官方活动信息提到临界点攻防模式；目前缺少更完整的静态详情页，后续需补规则数字。"
+  },
+  {
+    "id": "apex-ring-fury-2021",
+    "game": "Apex Legends",
+    "modeName": "Ring Fury",
+    "year": "2021",
+    "date": "2021-03-09",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "Chaos Theory",
+      "Ring Flares",
+      "Heat Shield"
+    ],
+    "oneLineRule": "Chaos Theory 接管变体：地图内生成多个 Ring Flare 危险区，玩家需要使用 Heat Shield 在圈伤压力下转移和作战。",
+    "mechanicChange": "EA/Respawn 官方 Steam 公告写明 Chaos Theory Collection Event 带来 Ring Fury Escalation Takeover、新 Heat Shield 道具和 Survival Slot；Ring Fury 在常规戒圈之外制造额外 Ring Flare 区域。",
+    "tempoImpact": "额外圈伤区让安全路线不再只由一个外圈决定，玩家必须随时判断是否绕行、硬穿或用 Heat Shield 争取补给和救援时间。",
+    "designObservation": "环境压力可以从单一大圈拆成多个局部危险区；再配套一次性防护道具，能把跑圈从被动承受变成资源决策。",
+    "sourceUrl": "https://store.steampowered.com/news/posts/?appids=1172470&enddate=1616181217&feed=steam_community_announcements",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA Official — Apex Legends Generic Keyart",
+    "launchDate": "2021-03-09",
+    "launchLabel": "2021年3月9日，Chaos Theory Collection Event 开启",
+    "launchNote": "Respawn 官方 Steam 公告写明 Chaos Theory Collection Event 于 2021年3月9日至 3月23日开启，并包含 Ring Fury Escalation Takeover、Heat Shield 和 Survival Slot。"
   }
 ]

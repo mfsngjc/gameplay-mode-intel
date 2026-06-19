@@ -1,11 +1,16 @@
 const state = {
   modes: [],
   filter: "all",
+  feedFilter: "all",
   gameFilter: "all",
   collected: new Set(JSON.parse(localStorage.getItem("br-mode-collected") || "[]"))
 };
 
 const modeGrid = document.querySelector("#modeGrid");
+const activityFeed = document.querySelector("#activityFeed");
+const activityStats = document.querySelector("#activityStats");
+const latestCount = document.querySelector("#latestCount");
+const gameCount = document.querySelector("#gameCount");
 const gameTimeline = document.querySelector("#gameTimeline");
 const statusLine = document.querySelector("#statusLine");
 const caseCount = document.querySelector("#caseCount");
@@ -32,8 +37,29 @@ const tagLabels = {
   collected: "已采集"
 };
 
+const feedLabels = {
+  all: "全部动态",
+  recent: "最近更新",
+  upcoming: "即将上线",
+  ltm: "玩法变体"
+};
+
 const defaultAiCommentator = "集成农业 AI · DeepSeek-V4-Pro（深度求索）";
-const timelineEnabledGames = new Set(["三角洲行动"]);
+const deltaTimelineGame = "三角洲行动";
+
+const defaultTimelineLaneDefinitions = [
+  { key: "核心", label: "核心玩法", statLabel: "核心", dotClass: "is-core" },
+  { key: "限时/变体", label: "限时/变体", statLabel: "变体", dotClass: "is-variant" },
+  { key: "特殊", label: "特殊玩法", statLabel: "特殊", dotClass: "is-special" }
+];
+
+const deltaTimelineLaneDefinitions = [
+  { key: "核心", label: "核心玩法", statLabel: "核心", dotClass: "is-core" },
+  { key: "限时·大战场", label: "限时·大战场类", statLabel: "大战场类", dotClass: "is-warfare" },
+  { key: "限时·搜打撤", label: "限时·搜打撤类", statLabel: "搜打撤类", dotClass: "is-operations" },
+  { key: "限时·双模式", label: "限时·双模式类", statLabel: "双模式类", dotClass: "is-hybrid" },
+  { key: "特殊", label: "特殊玩法", statLabel: "特殊", dotClass: "is-special" }
+];
 
 const deltaFamilyMatchers = {
   warfare: /全面战场|大战场|Warfare|胜者|Victory|Vanguard|先遣|夺旗|攻城|Capture the Flag|Siege|King of the Hill|Hill of Iron|钢铁洪流|Air Superiority|空中优势|4v4|团队死斗|Overload|超载|载具|攻防|战壕|Trench Lines|A\/D/i,
@@ -70,6 +96,149 @@ function showToast(message) {
 
 function saveCollected() {
   localStorage.setItem("br-mode-collected", JSON.stringify([...state.collected]));
+}
+
+function getTodayStart() {
+  const now = new Date();
+  return new Date(now.getFullYear(), now.getMonth(), now.getDate());
+}
+
+function getModeDateValue(mode) {
+  const value = mode.launchDate || mode.date || mode.year || "";
+  const match = String(value).match(/\d{4}(?:-\d{2}-\d{2})?/);
+  return match ? match[0] : "";
+}
+
+function parseModeDate(mode) {
+  const value = getModeDateValue(mode);
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+    const [year, month, day] = value.split("-").map(Number);
+    return new Date(year, month - 1, day);
+  }
+  if (/^\d{4}$/.test(value)) return new Date(Number(value), 0, 1);
+  return null;
+}
+
+function getDateSortValue(mode) {
+  const date = parseModeDate(mode);
+  return date ? date.getTime() : 0;
+}
+
+function getDayDelta(mode) {
+  const date = parseModeDate(mode);
+  if (!date) return null;
+  return Math.round((date.getTime() - getTodayStart().getTime()) / 86400000);
+}
+
+function getActivityState(mode) {
+  const delta = getDayDelta(mode);
+  if (delta === null) return { className: "is-unknown", label: "待确认" };
+  if (delta > 0) return { className: "is-upcoming", label: "即将上线" };
+  if (delta === 0) return { className: "is-today", label: "今天更新" };
+  if (delta >= -30) return { className: "is-recent", label: "最近更新" };
+  return { className: "is-archive", label: "历史收录" };
+}
+
+function formatActivityDate(mode) {
+  const date = parseModeDate(mode);
+  if (!date) return mode.launchLabel || mode.date || mode.year || "待确认";
+  return `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, "0")}.${String(date.getDate()).padStart(2, "0")}`;
+}
+
+function getSortedModesDescending(modes = state.modes) {
+  return [...modes].sort((a, b) => (
+    getDateSortValue(b) - getDateSortValue(a)
+    || String(b.modeName).localeCompare(String(a.modeName), "zh-CN")
+  ));
+}
+
+function getActivityModes() {
+  const today = getTodayStart().getTime();
+  const modes = getSortedModesDescending();
+
+  if (state.feedFilter === "upcoming") {
+    return modes
+      .filter((mode) => getDateSortValue(mode) > today)
+      .sort((a, b) => getDateSortValue(a) - getDateSortValue(b))
+      .slice(0, 8);
+  }
+
+  if (state.feedFilter === "recent") {
+    return modes
+      .filter((mode) => {
+        const delta = getDayDelta(mode);
+        return delta !== null && delta <= 0;
+      })
+      .slice(0, 10);
+  }
+
+  if (state.feedFilter === "ltm") {
+    return modes
+      .filter((mode) => mode.tags.includes("br-ltm"))
+      .slice(0, 10);
+  }
+
+  return modes.slice(0, 10);
+}
+
+function getActivitySummary() {
+  const today = getTodayStart().getTime();
+  const recentCount = state.modes.filter((mode) => {
+    const delta = getDayDelta(mode);
+    return delta !== null && delta <= 0 && delta >= -30;
+  }).length;
+  const upcomingCount = state.modes.filter((mode) => getDateSortValue(mode) > today).length;
+  const gameTotal = new Set(state.modes.map((mode) => mode.game)).size;
+  const newestPast = getSortedModesDescending().find((mode) => getDateSortValue(mode) <= today);
+
+  return { recentCount, upcomingCount, gameTotal, newestPast };
+}
+
+function renderActivityFeed() {
+  if (!activityFeed || !activityStats) return;
+
+  const modes = getActivityModes();
+  const summary = getActivitySummary();
+  const feedLabel = feedLabels[state.feedFilter] || "全部动态";
+
+  if (latestCount) {
+    latestCount.textContent = summary.newestPast
+      ? `最新收录 ${formatActivityDate(summary.newestPast)}`
+      : "最新收录待确认";
+  }
+  if (gameCount) gameCount.textContent = `${summary.gameTotal} 个游戏信号`;
+
+  activityStats.textContent = `${feedLabel} · 近 30 天 ${summary.recentCount} 条 · 即将上线 ${summary.upcomingCount} 条`;
+
+  if (!modes.length) {
+    activityFeed.innerHTML = `<p class="note">这个筛选下暂时没有动态。切回「全部动态」可以查看当前库内最近收录。</p>`;
+    return;
+  }
+
+  activityFeed.innerHTML = modes.map((mode) => {
+    const status = getActivityState(mode);
+    const tagText = mode.type.slice(0, 3).join(" / ");
+    return `
+      <article class="activity-card ${escapeHtml(status.className)}">
+        <div class="activity-date">
+          <time datetime="${escapeHtml(getModeDateValue(mode))}">${escapeHtml(formatActivityDate(mode))}</time>
+          <span>${escapeHtml(status.label)}</span>
+        </div>
+        <div class="activity-main">
+          <div class="activity-title-row">
+            <span class="activity-game">${escapeHtml(mode.game)}</span>
+            <h3>${escapeHtml(mode.modeName)}</h3>
+          </div>
+          <p>${escapeHtml(mode.oneLineRule)}</p>
+          <div class="activity-tags">${escapeHtml(tagText)}</div>
+        </div>
+        <div class="activity-actions">
+          <button type="button" data-action="open-mode" data-id="${escapeHtml(mode.id)}">查看拆解</button>
+          <a href="${escapeHtml(mode.sourceUrl)}" target="_blank" rel="noreferrer" aria-label="打开 ${escapeHtml(mode.modeName)} 来源">${iconSvg("source")}<span>来源</span></a>
+        </div>
+      </article>
+    `;
+  }).join("");
 }
 
 function getFilteredModes() {
@@ -123,7 +292,7 @@ function getModeFamily(mode) {
 }
 
 function getTimelineModes() {
-  if (!timelineEnabledGames.has(state.gameFilter)) return [];
+  if (state.gameFilter === "all") return [];
   return state.modes
     .map((mode, index) => ({ mode, index }))
     .filter((item) => item.mode.game === state.gameFilter)
@@ -133,6 +302,28 @@ function getTimelineModes() {
       return dateA.localeCompare(dateB, "zh-CN") || a.index - b.index;
     })
     .map((item) => item.mode);
+}
+
+function getTimelineLaneDefinitions(game = state.gameFilter) {
+  return game === deltaTimelineGame
+    ? deltaTimelineLaneDefinitions
+    : defaultTimelineLaneDefinitions;
+}
+
+function getTimelineLaneLayout(game = state.gameFilter) {
+  const definitions = getTimelineLaneDefinitions(game);
+  const laneGap = 78;
+  const firstY = 64;
+  const lanes = definitions.reduce((acc, lane, index) => {
+    acc[lane.key] = { ...lane, y: firstY + index * laneGap };
+    return acc;
+  }, {});
+  const lastY = firstY + Math.max(0, definitions.length - 1) * laneGap;
+  return {
+    definitions,
+    lanes,
+    height: lastY + 94
+  };
 }
 
 function getTimelineDateLabel(mode) {
@@ -179,21 +370,15 @@ function getTimelineNodeLabel(mode) {
 
 function renderTimelineCanvas(modes, filteredIds) {
   const width = Math.max(1040, 96 + Math.max(0, modes.length - 1) * 86);
-  const height = 470;
-  const lanes = {
-    "核心": { y: 64, label: "核心玩法" },
-    "限时·大战场": { y: 142, label: "限时·大战场类" },
-    "限时·搜打撤": { y: 220, label: "限时·搜打撤类" },
-    "限时·双模式": { y: 298, label: "限时·双模式类" },
-    "特殊": { y: 376, label: "特殊玩法" }
-  };
+  const { definitions, lanes, height } = getTimelineLaneLayout();
   const points = modes.map((mode, index) => {
     const meta = getTimelineMeta(mode);
+    const lane = lanes[meta.laneKey] || lanes["限时/变体"] || lanes["特殊"] || definitions[0];
     return {
       mode,
       meta,
       x: 70 + index * 86,
-      y: lanes[meta.laneKey].y
+      y: lane.y
     };
   });
   const flowPath = points
@@ -204,10 +389,13 @@ function renderTimelineCanvas(modes, filteredIds) {
     <div class="timeline-canvas-wrap" tabindex="0" aria-label="${escapeHtml(state.gameFilter)}玩法更新时间画板">
       <svg class="timeline-canvas-svg" viewBox="0 0 ${width} ${height}" style="width:${width}px;min-width:${width}px" role="img" aria-label="${escapeHtml(state.gameFilter)}玩法更新时间画板">
         <g class="canvas-lanes" aria-hidden="true">
-          ${Object.entries(lanes).map(([key, lane]) => `
+          ${definitions.map((definition) => {
+            const lane = lanes[definition.key];
+            return `
             <line x1="48" y1="${lane.y}" x2="${width - 34}" y2="${lane.y}"></line>
             <text x="18" y="${lane.y + 5}">${escapeHtml(lane.label)}</text>
-          `).join("")}
+          `;
+          }).join("")}
         </g>
         <path class="canvas-flow" d="${flowPath}"></path>
         ${points.map((point) => {
@@ -240,6 +428,7 @@ function renderTimeline() {
 
   const filteredIds = new Set(getFilteredModes().map((mode) => mode.id));
   const activeFilterLabel = state.filter === "all" ? "全部玩法" : (tagLabels[state.filter] || state.filter);
+  const laneDefinitions = getTimelineLaneDefinitions();
   const counts = modes.reduce((acc, mode) => {
     const key = getTimelineMeta(mode).laneKey;
     acc[key] = (acc[key] || 0) + 1;
@@ -256,22 +445,14 @@ function renderTimeline() {
       </div>
       <div class="timeline-stats" aria-label="玩法时间线摘要">
         <span><b>${modes.length}</b> 节点</span>
-        <span><b>${counts["核心"] || 0}</b> 核心</span>
-        <span><b>${counts["限时·大战场"] || 0}</b> 大战场类</span>
-        <span><b>${counts["限时·搜打撤"] || 0}</b> 搜打撤类</span>
-        <span><b>${counts["限时·双模式"] || 0}</b> 双模式类</span>
-        <span><b>${counts["特殊"] || 0}</b> 特殊</span>
+        ${laneDefinitions.map((lane) => `<span><b>${counts[lane.key] || 0}</b> ${escapeHtml(lane.statLabel)}</span>`).join("")}
       </div>
     </div>
     <div class="timeline-board">
       <div class="timeline-board-head">
         <p>${escapeHtml(activeFilterLabel)} · 最新节点：${escapeHtml(getTimelineDateLabel(latestMode))} ${escapeHtml(latestMode.modeName)}</p>
         <div class="timeline-legend" aria-label="节点类型图例">
-          <span><i class="legend-dot is-core" aria-hidden="true"></i>核心玩法</span>
-          <span><i class="legend-dot is-warfare" aria-hidden="true"></i>限时·大战场类</span>
-          <span><i class="legend-dot is-operations" aria-hidden="true"></i>限时·搜打撤类</span>
-          <span><i class="legend-dot is-hybrid" aria-hidden="true"></i>限时·双模式类</span>
-          <span><i class="legend-dot is-special" aria-hidden="true"></i>特殊玩法</span>
+          ${laneDefinitions.map((lane) => `<span><i class="legend-dot ${escapeHtml(lane.dotClass)}" aria-hidden="true"></i>${escapeHtml(lane.label)}</span>`).join("")}
         </div>
       </div>
       ${renderTimelineCanvas(modes, filteredIds)}
@@ -727,6 +908,27 @@ function toggleCollect(modeId) {
   renderModes();
 }
 
+function updateGameTabs() {
+  document.querySelectorAll("[data-game]").forEach((item) => {
+    item.setAttribute("aria-pressed", String(item.dataset.game === state.gameFilter));
+  });
+}
+
+function showModeInCases(modeId) {
+  state.gameFilter = "all";
+  state.filter = "all";
+  updateGameTabs();
+  renderFilters();
+  renderModes();
+
+  const card = [...document.querySelectorAll(".mode-card")].find((item) => item.dataset.id === modeId);
+  if (!card) return;
+
+  card.scrollIntoView({ behavior: "smooth", block: "start" });
+  card.classList.add("is-pulsed");
+  window.setTimeout(() => card.classList.remove("is-pulsed"), 1400);
+}
+
 function buildCanvas(modes) {
   const nodes = modes.map((mode, index) => ({
     id: mode.id,
@@ -837,6 +1039,7 @@ function renderModes() {
   const currentLabel = tagLabels[state.filter] || state.filter;
   statusLine.textContent = `当前显示 ${modes.length} / ${state.modes.length} 个玩法${gameLabel}，已采集 ${collectedCount} 个。筛选：${currentLabel}`;
   caseCount.textContent = `${state.modes.length} 个玩法案例`;
+  renderActivityFeed();
   renderTimeline();
 }
 
@@ -867,12 +1070,26 @@ function bindEvents() {
     button.addEventListener("click", () => {
       state.gameFilter = button.dataset.game;
       state.filter = "all"; // reset tag filter when switching games
-      document.querySelectorAll("[data-game]").forEach((item) => {
-        item.setAttribute("aria-pressed", String(item === button));
-      });
+      updateGameTabs();
       renderFilters();
       renderModes();
     });
+  });
+
+  document.querySelector("#activityTabs")?.addEventListener("click", (event) => {
+    const btn = event.target.closest("[data-feed]");
+    if (!btn) return;
+    state.feedFilter = btn.dataset.feed;
+    document.querySelectorAll("[data-feed]").forEach((item) => {
+      item.setAttribute("aria-pressed", String(item === btn));
+    });
+    renderActivityFeed();
+  });
+
+  activityFeed?.addEventListener("click", (event) => {
+    const target = event.target.closest("[data-action='open-mode']");
+    if (!target) return;
+    showModeInCases(target.dataset.id);
   });
 
   const filtersContainer = document.querySelector("#filterButtons");
@@ -912,7 +1129,7 @@ function bindEvents() {
 
 async function init() {
   try {
-    const response = await fetch("data/modes.json");
+    const response = await fetch("data/modes.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     state.modes = await response.json();
     renderFilters();

@@ -6,48 +6,44 @@
   <title>集成农业 · 玩法情报采集点</title>
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=delta-board-space-20260605">
+  <link rel="stylesheet" href="styles.css?v=activity-feed-20260617">
 </head>
 <body>
   <div class="page-shell">
     <header>
       <div class="hero">
-        <div class="eyebrow"><span class="spark" aria-hidden="true"></span>集成农业 · 玩法设计采集点</div>
+        <div class="eyebrow"><span class="spark" aria-hidden="true"></span>集成农业 · 玩法动态采集点</div>
         <h1>集成农业</h1>
-        <p>把 Fortnite / PUBG / 和平精英 / Apex / 三角洲行动的核心模式、限时变体和活动玩法整理成可筛选、可采集、可导出的设计素材。后续可接同步脚本自动更新。</p>
+        <p>追踪 Fortnite / PUBG / 和平精英 / Apex / 三角洲行动最近在做什么玩法实验，把新模式、限时变体和活动规则沉淀成可筛选、可采集、可导出的玩法情报库。</p>
         <div class="hero-meta" aria-label="资料概览">
           <span class="meta-pill" id="caseCount">12 个代表案例</span>
-          <span class="meta-pill">本地收藏</span>
-          <span class="meta-pill">Markdown / Canvas 导出</span>
+          <a class="meta-pill" href="#activity">最新动态</a>
+          <span class="meta-pill" id="latestCount">正在同步动态</span>
+          <span class="meta-pill" id="gameCount">5 个游戏</span>
         </div>
       </div>
     </header>
 
     <main>
       <div class="container">
-        <section class="section" aria-labelledby="takeaways">
-          <div class="section-head">
-            <h2 id="takeaways">设计思路参考</h2>
-            <p>这些射击游戏做新玩法时，通常会明确改动一个核心压力源：胜利条件、队伍复活、移动空间、撤离收益、PvE 威胁或特殊能力。下面先单独整理过往案例。</p>
+        <section class="section activity-section" id="activity" aria-labelledby="activityTitle">
+          <div class="section-head activity-head">
+            <div>
+              <span class="section-kicker">Latest Gameplay Signals</span>
+              <h2 id="activityTitle">最新动态</h2>
+            </div>
+            <p>先让玩家看到“其他游戏最近把玩法改到了哪里”：新地图、短局、撤离、复活、PvE、主题活动都会在这里按时间聚合，进入案例区再看完整拆解。</p>
           </div>
-          <div class="insight-grid">
-            <article class="insight">
-              <strong>目标从吃鸡变成争夺</strong>
-              <span>The Getaway、Rally Royale 证明：把胜利绑定到可见目标物，会天然制造追击、埋伏、转移路线和团队分工。</span>
-            </article>
-            <article class="insight">
-              <strong>PvE 可以重写节奏</strong>
-              <span>Horde Rush、Storm King、暗夜危机把玩家注意力从纯 PvP 拉到阶段防守、Boss、资源补给。</span>
-            </article>
-            <article class="insight">
-              <strong>环境压力是隐形导演</strong>
-              <span>极寒模式的暴风雪、Hot Drop 的急速缩圈证明：周期性环境威胁比全程 DEBUFF 更能制造不重复的紧张曲线。</span>
-            </article>
-            <article class="insight">
-              <strong>撤离改写胜利条件</strong>
-              <span>地铁逃生把「吃鸡」变成「活着带装备出去」，玩家的风险决策模型完全不同，每一步都是成本收益计算。</span>
-            </article>
+          <div class="activity-toolbar" aria-label="动态筛选">
+            <div class="activity-tabs" id="activityTabs">
+              <button type="button" data-feed="all" aria-pressed="true">全部动态</button>
+              <button type="button" data-feed="recent" aria-pressed="false">最近更新</button>
+              <button type="button" data-feed="upcoming" aria-pressed="false">即将上线</button>
+              <button type="button" data-feed="ltm" aria-pressed="false">玩法变体</button>
+            </div>
+            <div class="activity-stats" id="activityStats">正在整理玩法动态...</div>
           </div>
+          <div class="activity-feed" id="activityFeed" aria-live="polite"></div>
         </section>
 
         <section class="section" aria-labelledby="cases">
@@ -134,6 +130,6 @@
   </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js?v=delta-board-space-20260605"></script>
+  <script src="app.js?v=mode-sync-20260617"></script>
 </body>
 </html>
