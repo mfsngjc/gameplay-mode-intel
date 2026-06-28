@@ -1,17 +1,40 @@
 # 游戏玩法情报站 / Gameplay Mode Intel
 
-一个用于整理、采集和复盘游戏玩法案例的静态资料站。
+一个用于整理、采集和复盘游戏玩法案例的静态资料站。当前重点追踪 BR、撤离、团队竞技和活动模式如何改变胜利目标、战斗节奏、复活规则、地图空间、PvE 压力、撤离收益和特殊能力。
 
-当前版本收录 Fortnite、PUBG、和平精英、Apex Legends、三角洲行动过往核心模式、限时变体与活动玩法案例，用来观察这些玩法如何改变胜利目标、战斗节奏、复活规则、地图空间、撤离收益、PvE 压力和特殊能力。
+页面是纯静态实现：`index.html` 负责结构，`styles.css` 负责视觉，`app.js` 负责筛选、采集、导出和分享图生成，玩法数据集中存放在 `data/modes.json`。
+
+## 当前数据快照
+
+快照日期：2026-06-28。
+
+| 游戏 | 案例数 | 时间范围 |
+|------|------:|----------|
+| Apex Legends | 30 | 2019-02-04 至 2026-06-02 |
+| Fortnite | 29 | 2017-12-08 至 2026-04-20 |
+| PUBG | 18 | 2017-03-23 至 2026-07-01 |
+| 三角洲行动 | 27 | 2024-09-26 至 2026-06-05 |
+| 和平精英 | 18 | 2019-05-08 至 2026-04-14 |
+
+合计：122 个玩法案例。
+
+标签分布：
+
+| 标签 | 含义 | 数量 |
+|------|------|-----:|
+| `br-core` | 核心玩法 | 12 |
+| `br-ltm` | 限时/变体 | 66 |
+| `casual` | 特殊玩法 | 44 |
 
 ## 功能
 
-- 以卡片形式展示玩法案例，按游戏切换（全部 / Fortnite / PUBG / 和平精英 / Apex / 三角洲行动）
-- 按玩法类型筛选：核心玩法、限时/变体、特殊玩法（切游戏时标签自动适配）
-- 游戏筛选（Tab Bar）与类型筛选（胶囊标签）可叠加使用
-- 支持游戏级玩法时间画板；当前先启用三角洲行动玩法更新节点
-- 展示玩法上线时间、官方图、核心规则、机制变化、节奏影响和设计观察
-- 支持本地采集玩法卡片、生成分享图、导出 Markdown 和 Canvas
+- 首页展示「最新动态」信息流，支持全部动态、最近更新、即将上线、玩法变体四种视角。
+- 玩法案例以卡片形式展示，支持游戏筛选和玩法类型筛选叠加使用。
+- 每张卡片展示上线时间、官方图片、核心规则、机制变化、节奏影响、时间备注和设计观察。
+- 支持游戏级玩法时间画板；普通游戏按核心/限时/特殊分轨，三角洲行动额外细分大战场、搜打撤和双模式类 LTM。
+- 支持在当前浏览器本地采集案例，采集状态保存在 `localStorage`。
+- 支持复制单张卡片 Markdown、下载单张卡片 Markdown、打开分享弹窗并生成 PNG 分享图。
+- 支持按当前筛选导出 Obsidian Canvas，支持导出已采集案例的 Markdown 合集。
 
 ## 本地运行
 
@@ -35,163 +58,150 @@ http://127.0.0.1:4173/index.html
 stop.command
 ```
 
+也可以在终端指定端口：
+
+```bash
+PORT=5173 ./start.command
+PORT=5173 ./stop.command
+```
+
 ## 静态部署
 
-这个项目可以直接部署为 GitHub Pages 静态页。
-
-页面通过相对路径读取数据：
+项目可以直接部署为 GitHub Pages 静态页。页面通过相对路径读取：
 
 ```text
 data/modes.json
 ```
 
-因此只要 `index.html`、`app.js`、`styles.css`、`data/` 和 `assets/` 一起提交到仓库，GitHub Pages 就可以正常显示玩法数据。
+部署时确保以下文件一起提交：
 
----
+- `index.html`
+- `app.js`
+- `styles.css`
+- `data/modes.json`
+- `assets/`
 
-## 规范
+`scripts/` 目录只用于本地辅助采集，GitHub Pages 不会执行其中脚本。
 
-### 玩法卡片数据结构
+## 项目结构
 
-所有玩法数据集中存放在 `data/modes.json`，每个条目为一个 JSON 对象，字段如下：
+```text
+.
+├── index.html                  # 页面结构与静态入口
+├── app.js                      # 数据加载、筛选、时间画板、采集、导出、分享图
+├── styles.css                  # 页面视觉与响应式布局
+├── data/
+│   ├── modes.json              # 玩法案例数据源，顶层为 JSON 数组
+│   └── fortnite-sync-draft.json # Fortnite 同步脚本输出草稿
+├── scripts/
+│   └── sync_fortnite.py        # 抓取 Fortnite 官方页面 meta 信息的本地脚本
+├── assets/                     # favicon 与本地图片素材
+├── start.command               # 启动本地静态服务器
+└── stop.command                # 停止本地静态服务器
+```
+
+## 数据结构
+
+所有玩法数据集中存放在 `data/modes.json`，顶层是数组，每个条目是一个玩法对象。
 
 | 字段 | 类型 | 必填 | 说明 |
 |------|------|:--:|------|
-| `id` | string | ✅ | 唯一标识，格式 `{game}-{mode-kebab-case}-{year}`，如 `pubg-intense-br-2023` |
-| `game` | string | ✅ | 游戏名，用于游戏筛选，如 `"Fortnite"`、`"PUBG"`、`"和平精英"`、`"Apex Legends"`、`"三角洲行动"` |
-| `modeName` | string | ✅ | 模式/玩法名称，作为卡片标题 |
-| `year` | string | ✅ | 年份标注，显示在卡片右上角绿色徽章 |
-| `date` | string | ✅ | 简化日期，用于分享图日期显示 |
-| `tags` | string[] | ✅ | 筛选标签枚举数组，见下方标签系统 |
-| `type` | string[] | ✅ | 中文类型标签，显示在卡片标签行 |
-| `oneLineRule` | string | ✅ | 一句话规则描述，卡片摘要区 |
-| `mechanicChange` | string | ✅ | 详细说明玩法机制上的改动 |
-| `tempoImpact` | string | ✅ | 对游戏节奏的改变 |
-| `designObservation` | string | ✅ | 通用可复用的设计洞见（最核心字段） |
-| `aiCommentator` | string |  | 可选，设计观察署名；未填写时页面使用默认 AI 评论署名 |
-| `sourceUrl` | string | ✅ | 官方来源链接，卡片底部「来源」按钮 |
-| `imageUrl` | string | ✅ | 卡片顶部封面图 URL，优先使用官方公告头图 |
-| `imageSource` | string | ✅ | 图片来源标注，显示在图片左下角，格式如 `"官方公告头图"` |
-| `launchDate` | string | ✅ | 实际上线日期 ISO 8601，如 `"2023-01-17"` |
-| `launchLabel` | string | ✅ | 上线时间中文显示标签，卡片蓝条 |
-| `launchNote` | string | ✅ | 时间备注，验证上线时间的信息来源说明 |
+| `id` | string | 是 | 唯一标识，格式 `{game}-{mode-kebab-case}-{year}`，如 `pubg-intense-br-2023` |
+| `game` | string | 是 | 游戏名，用于游戏筛选，如 `"Fortnite"`、`"PUBG"`、`"和平精英"`、`"Apex Legends"`、`"三角洲行动"` |
+| `modeName` | string | 是 | 模式/玩法名称，作为卡片标题 |
+| `year` | string | 是 | 年份标注，显示在卡片右上角 |
+| `date` | string | 是 | 简化日期，用于分享图日期显示 |
+| `tags` | string[] | 是 | 筛选标签枚举数组，见下方标签系统 |
+| `type` | string[] | 是 | 中文类型标签，显示在卡片标签行 |
+| `oneLineRule` | string | 是 | 一句话规则描述，卡片摘要区 |
+| `mechanicChange` | string | 是 | 玩法机制变化 |
+| `tempoImpact` | string | 是 | 对游戏节奏、行动路径、风险收益的影响 |
+| `designObservation` | string | 是 | 通用可复用的设计洞见，最核心字段 |
+| `aiCommentator` | string | 否 | 设计观察署名；未填写时页面使用默认 AI 评论署名 |
+| `sourceUrl` | string | 是 | 官方来源链接，卡片底部「来源」按钮使用 |
+| `imageUrl` | string | 是 | 卡片顶部封面图 URL，优先使用官方公告头图 |
+| `imageSource` | string | 是 | 图片来源标注，显示在图片左下角，如 `"官方公告头图"` |
+| `launchDate` | string | 是 | 实际上线日期 ISO 8601，如 `"2023-01-17"` |
+| `launchLabel` | string | 是 | 上线时间中文显示标签，卡片蓝条使用 |
+| `launchNote` | string | 是 | 时间备注，用于说明上线时间的验证来源 |
 
-### 标签系统
+## 标签系统
 
-`tags` 字段使用 3 个枚举值，游戏级动态展示：
+`tags` 字段使用 3 个枚举值。切换游戏时，页面只显示当前游戏实际拥有的标签；「全部游戏」模式显示所有分类的并集。
 
 | tag 值 | 中文名称 | 含义 |
 |--------|---------|------|
 | `br-core` | 核心玩法 | 永久可玩的经典/核心模式，或长期作为游戏主轴存在的变体 |
-| `br-ltm` | 限时/变体 | 限时开放、赛季化开放，或在核心框架上改变目标/资源/节奏的玩法变体 |
-| `casual` | 特殊玩法 | 非标准对局框架（PvE、死斗、撤离、派对游戏、特殊联动、战役等） |
+| `br-ltm` | 限时/变体 | 限时开放、赛季化开放，或在核心框架上改变目标、资源、节奏的玩法变体 |
+| `casual` | 特殊玩法 | 非标准对局框架，包括 PvE、死斗、撤离、派对游戏、特殊联动、战役等 |
 
-**动态筛选机制**：切游戏时，标签按钮自动更新——只显示当前游戏实际拥有的分类。「全部游戏」模式显示所有分类的并集。
+一个模式通常只携带一个 `tags` 标签。`type` 字段用于补充更细的中文分类，如 `"16 人"`、`"免搜刮出生装"`、`"PvE"`。
 
-一个模式可以携带一个标签。`type` 字段是中文标签的补充，用于更具体的归类（如 `"16 人"`、`"免搜刮出生装"`），显示在卡片的 tag row。
+## 维护流程
 
-### UI 设计规范
+新增或更新玩法时，优先按这个顺序处理：
 
-**筛选器层级**：游戏筛选 + 类型筛选，双层叠加。
+1. 从官方公告、补丁说明、官网玩法页、Steam 官方公告或官方社区帖子确认规则和上线时间。
+2. 查阅 `data/modes.json`，确认没有重复 `id`，也没有同一玩法的重复收录。
+3. 按数据结构补全字段，尤其是 `launchDate`、`launchNote`、`mechanicChange`、`tempoImpact` 和 `designObservation`。
+4. 只使用官方图片源，优先取 `og:image`、官方公告头图或官方 CDN 图片。
+5. 新增游戏时，同步更新 `index.html` 里的游戏 Tab；如果需要新的筛选或特殊时间线规则，再更新 `app.js`。
+6. 启动本地服务器，验证首页动态、筛选、时间画板、卡片图片、分享图、Markdown 导出和 Canvas 导出。
 
-- **游戏筛选**：使用 **Tab Bar**（下划线指示器），选中态 = 蓝色文字 + 蓝色底线，无背景填充。对应 CSS class `.game-tabbar`，与下方的类型筛选保持 ≥18px 间距。
-- **类型筛选**：使用 **胶囊按钮**（`border-radius: 999px`），选中态 = 黑色背景 + 白色文字。对应 CSS class `.filters button[data-filter]`。
+常用校验命令：
 
-**设计语言区分原则**：两个筛选器必须使用**不同的视觉语言**—— Tab Bar 是「线性轻量」风格（底线表达状态），胶囊标签是「实体重量」风格（填充表达状态）。禁止两者使用相同的选中文案/填充方案。
+```bash
+jq 'length' data/modes.json
+jq -r '.[].id' data/modes.json | sort | uniq -d
+jq 'map(select(.launchDate == null or .launchLabel == null or .sourceUrl == null or .imageUrl == null)) | length' data/modes.json
+jq 'group_by(.game) | map({game: .[0].game, count: length})' data/modes.json
+```
 
-**卡片布局**：2 列 Grid (`grid-template-columns: repeat(2, minmax(0, 1fr))`)，移动端降为 1 列。卡片顶部图片 16:7 aspect ratio。
+## 图片规范
 
-### 新增游戏/模式流程
+硬性规则：禁止使用任何非官方渠道的图片，包括第三方游戏资讯站、百科站、个人博客、视频截图、用户上传图和带水印图片。
 
-1. 研究该游戏的 BR/LTM 模式，从官方公告、Wiki、补丁说明获取准确信息
-2. 查阅 `data/modes.json` 确认现有条目，避免 id 重复
-3. 按卡片数据结构逐条编写，特别关注 `designObservation` 字段的深度
-4. 从官方公告页抓取图片 URL（优先 Krafton CDN / Unreal Engine CDN / Steam CDN），禁止使用推测路径。如果无法获取，将 `imageSource` 标注为占位并记录 TODO
-5. `id` 命名规则：`{game-kebab}-{mode-kebab}-{year}`
-6. 每新增一个游戏，同步更新 `.game-tabbar` 添加对应 Tab 按钮
-7. 修改后重启本地服务器验证渲染效果
+优先级：
 
-### 图片规范
+1. 官方公告头图，通常来自 `og:image` 或文章首张 16:9 配图。
+2. 官方主站、官方活动页或官方 CDN 的视觉图。
+3. Steam 官方商店、Steam 官方公告流或平台方官方素材。
 
-> **⚠️ 硬性规则：禁止使用任何非官方渠道的图片。** 包括但不限于：TapTap 头图、百度百科/快懂百科、九游/4399/17173 等第三方游戏资讯站、个人博客/视频截图、小红书/抖音/B站用户上传图、任何存在水印的图片。图片必须来自以下认证渠道之一。
+图片 URL 应该是可直接访问的 CDN 地址，不加查询参数，除非确实需要缓存控制。无法确认来源时，不要用作正式封面图。
 
-- **优先使用官方公告头图**（`og:image` 或页面首张 16:9 配图）
-- 图片 URL 必须是可直接访问的 CDN 地址，不加 `?` 查询参数除非是缓存 bust
-- 图片来源标注在卡片左下角，格式：`"官方公告头图"`、`"Steam 商店头图"` 等
-- 若官方页面的文章配图无法直接抓取（如 JS 动态加载），使用该游戏官方主站 CDN 的视觉图，并在 `imageSource` 明确标注来源（如 `"gp.qq.com 官方主站 — 游戏模式主视觉"`）
-- **绝对禁止**使用第三方来源的「脏图」作为占位或替代方案
+已认证图片源：
 
-**各游戏认证图片源：**
+| 游戏 | 可用来源 |
+|------|----------|
+| PUBG / Krafton | `wstatic-prod-boc.krafton.com`、`shared.akamai.steamstatic.com` |
+| Fortnite / Epic Games | `cdn2.unrealengine.com` |
+| 和平精英 / 腾讯 | `game.gtimg.cn/images/gp/`、`static.gametalk.qq.com/image/`、`gp.qq.com/gicp/news/` |
+| 三角洲行动 / 腾讯 | `df.qq.com`、`game.gtimg.cn/images/dfm/`、`steamcommunity.com/app/2507950`、`steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/` |
+| Apex Legends / EA | `drop-assets.ea.com`、`shared.akamai.steamstatic.com` |
 
-- **PUBG / Krafton**：
-  - `wstatic-prod-boc.krafton.com` — 文章内容图片
-  - `shared.akamai.steamstatic.com` — Steam 商店/库图片
-  
-- **Fortnite / Epic Games**：
-  - `cdn2.unrealengine.com` — 官方公告图
+Apex 图片现状：截至 2026-05，wiki.gg、Fandom 和部分 EA 新闻页无法稳定获取各模式专属图标或头图。当前 Apex 多个模式使用 EA `drop-assets.ea.com` 的 Generic Keyart，图片源标注为 `"EA Official — Apex Legends Generic Keyart"`。后续如果发现可访问的官方模式专属图源，再逐一替换。
 
-- **和平精英 / 腾讯**：
-  - `game.gtimg.cn/images/gp/` — gp.qq.com 官方 CDN（主站视觉、功能图）
-  - `static.gametalk.qq.com/image/` — GameTalk CMS CDN（官方内容图）
-  - `gp.qq.com/gicp/news/` — 官方公告页面（文章通常为纯文字，配图可能 JS 动态加载）
+## 同步脚本
 
-- **三角洲行动 / 腾讯**：
-  - `df.qq.com` — 官方主站与玩法介绍页
-  - `game.gtimg.cn/images/dfm/` — df.qq.com 官方玩法区图片 CDN
-  - `steamcommunity.com/app/2507950` / `steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/` — Delta Force 官方 Steam 公告流（海外版本玩法更新、活动模式规则与配图）
+`scripts/sync_fortnite.py` 是本地同步脚本雏形，用于抓取来源页面的标题、描述和 Open Graph 图片，并写入审阅草稿。脚本当前以 Fortnite 官方页为主要使用场景，但默认会读取 `data/modes.json` 中已有的 `sourceUrl`：
 
-- **Apex Legends / EA**：
-  - `drop-assets.ea.com` — EA 官方 Key Art / News CDN，支持 CORS（当前 Apex 默认图来源）
-  - `shared.akamai.steamstatic.com` — Steam 商店截图（通用游戏画面，非模式专属）
-  - ~~`apexlegends.wiki.gg/images/`~~ — 已不可用：2026 年 5 月起 Cloudflare 返回 403 + `cross-origin-resource-policy: same-origin`，浏览器无法加载
-  - ~~`apexlegends.fandom.com`~~ — 同样受 Cloudflare 保护，且 Gamepedia 迁移后图片路径全部失效
+```bash
+python3 scripts/sync_fortnite.py
+python3 scripts/sync_fortnite.py --url "https://www.fortnite.com/news/..."
+```
 
-> **Apex 图片现状（2026-05）**：wiki.gg / Fandom / EA 官方新闻页均无法获取各模式的专属图标或头图。当前 18 个 Apex 模式统一使用 EA drop-assets.ea.com 的 Generic Keyart（16:9），图片源标注 `"EA Official — Apex Legends Generic Keyart"`。若后续发现可访问的模式专属图源，再逐一替换。
+默认输出：
 
-### 同步脚本
+```text
+data/fortnite-sync-draft.json
+```
 
-`scripts/sync_fortnite.py` 是本地同步脚本雏形，用于辅助抓取 Fortnite 官方公告信息。GitHub Pages 不会运行这个脚本，数据更新后需要重新提交到仓库。
-
----
+脚本不会自动改写 `data/modes.json`。草稿需要人工或 Codex 审阅后，再整理成正式玩法卡片。
 
 ## 后续规划
 
-### 玩法排期图（Mode Release Timeline）
-
-基于各个游戏的玩法上线节奏，输出一张可视化排期图：
-
-- **横轴**：时间（按年份/季度/月度），覆盖每款游戏从首发到当前版本的完整生命周期
-- **纵轴**：按游戏分轨（Fortnite / PUBG / 和平精英 / Apex Legends / 三角洲行动）
-- **节点大小**：玩法规模权重 — 核心模式（常驻 BR 变体）> 大型 LTM（独立规则 + 专属地图/资产）> 小型活动（参数微调 / 限时返场）
-- **节点颜色/形状**：玩法母题分类（复活规则 / 胜利条件 / PvE 威胁 / 移动空间 / 特殊能力 / 联动活动）
-
-目标：一眼看出每款游戏在什么时间点做了什么类型的玩法、全年节奏是否有「玩法空缺」、哪些季度是集中爆发期 vs 维护静默期。
-
-### 年度玩法运营复盘
-
-对每款游戏按年份拉片分析：
-
-- **玩法产出量**：每年新上线模式数量 vs 返场复用数量
-- **母题分布**：这一年主攻了哪几类设计方向（比如今年重点搞复活变体、明年开始大量 PvE）
-- **复用策略**：哪些模式从 LTM 升格为常驻？哪些直接放弃？哪些每年固定返场形成「赛季传统」？
-- **覆盖逻辑**：全年 12 个月是否有玩法空白期？节假日/赛季末/过渡期靠什么内容填坑？
-- **可持续思路**：观察每款游戏的「玩法工具体系」— 是否建立了可组合的玩法组件（Fortnite 的 UEFN 编辑器、Apex 的 Mixtape 轮换框架），还是每次从零搭一个新模式
-
-这份复盘的目标是提炼一套**泛 BR 游戏玩法运营方法论**：如何用有限的母题组合 + 参数调校，持续产出差异化的玩法内容，覆盖全年不同时间段的玩家活跃需求。
-
----
-
-## 数据维护
-
-后续更新其他游戏时，会继续把每个玩法整理成结构化字段，包括：
-
-- 游戏名
-- 玩法名
-- 上线时间
-- 玩法类型
-- 一句话规则
-- 机制变化
-- 节奏影响
-- 设计观察
-- 来源链接
-- 官方图片
+- 继续补齐各游戏 2026 年玩法节点，并区分新模式、返场和规则微调。
+- 扩展玩法时间画板：支持按年度、季度、玩法母题和游戏分轨进行更强的对比。
+- 做年度玩法运营复盘：统计新模式数量、返场比例、母题分布、空窗期和节假日填充策略。
+- 为数据维护补充自动化检查：重复 `id`、缺失字段、非官方图片域名、不可访问来源链接。
+- 将导出的 Markdown 和 Canvas 更好地接入 Obsidian 玩法研究工作流。
