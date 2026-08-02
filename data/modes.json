@@ -372,7 +372,7 @@
     "imageSource": "官方 32.2 Hot Drop 公告配图",
     "launchDate": "2024-11-20",
     "launchLabel": "2024年11月20日（32.2 更新 Arcade 限时上线）",
-    "launchNote": "Hot Drop 随 Update 32.2 于 2024年11月20日至12月3日期间作为 Arcade 限时模式上线。PC 端 11月6日先行更新。"
+    "launchNote": "Hot Drop 随 Update 32.2 于 2024年11月20日至12月3日期间作为 Arcade 限时模式上线。Update 42.2 又安排 PC 端 2026年7月15日至7月29日、主机端 7月23日至8月6日回归；回归版 PC 为 24-64 人、主机为 12-32 人，并加入 MMR 匹配。"
   },
   {
     "id": "pubg-fantasy-br-2020",
@@ -3355,5 +3355,80 @@
     "launchDate": "2026-06-17",
     "launchLabel": "2026年6月17日 PC 42.1 更新",
     "launchNote": "PUBG Update 42.1 公告确认 PC 维护后 2026年6月17日上线，主机为 6月25日；Haven 加入 Intense Battle Royale 属于该版本 Arcade 更新。"
+  },
+  {
+    "id": "fortnite-battle-bus-victory-2026",
+    "game": "Fortnite",
+    "modeName": "Battle Bus Victory Royale",
+    "year": "2026",
+    "date": "2026-07-16",
+    "tags": [
+      "objective"
+    ],
+    "type": [
+      "替代胜利条件",
+      "终局撤离",
+      "多队可胜"
+    ],
+    "oneLineRule": "部分 Battle Royale 对局的终局会出现裂隙巴士，队伍只要至少一名成员及时登车撤离即可获胜，多支队伍可以在同一局共同取得 Victory Royale。",
+    "mechanicChange": "官方 Hot Bat Summer 公告说明，新 Rift Anomaly 会在风暴收拢的终局把 Battle Bus 送到地图标记点；每队至少一名玩家必须在巴士裂隙离开前登车。成功撤离的多支队伍都可获胜，未登车者即使成为最后存活小队也会失败。该规则只在部分 Battle Royale 对局触发。",
+    "tempoImpact": "终局从单一清场目标变成限时集合与抢位：队伍要在风暴、敌人和撤离倒计时之间决定护送谁登车。多队共胜降低了必须歼灭所有对手的压力，却把最后阶段的路线判断和队内分工推到最高强度。",
+    "designObservation": "在 BR 中加入概率触发的公开撤离点，可以不改前中期资源循环就重写终局。允许多队获胜尤其关键：它把终局冲突从零和淘汰改成容量与时机竞争，产生更丰富的临时停火、抢位和护送故事。",
+    "sourceUrl": "https://www.fortnite.com/news/dc-sirens-bring-the-heat-to-fortnite",
+    "imageUrl": "",
+    "imageSource": "官方文章主图直链暂无法稳定验证，留空避免 broken image",
+    "launchDate": "2026-07-16",
+    "launchLabel": "2026年7月16日官方公告后上线",
+    "launchNote": "Epic 官方 2026年7月16日公告称该裂隙异常会在部分 Battle Royale 对局中出现；未公布独立结束日期或精确触发概率。"
+  },
+  {
+    "id": "pubg-basic-training-2026",
+    "game": "PUBG",
+    "modeName": "Basic Training Revamp",
+    "year": "2026",
+    "date": "2026-07-15",
+    "tags": [
+      "core"
+    ],
+    "type": [
+      "BR新手教学",
+      "NPC搭档",
+      "17章节"
+    ],
+    "oneLineRule": "约 10 分钟的 17 章 BR 教学由 NPC 搭档全程语音引导，玩家逐步练习跳伞、搜刮、蓝圈生存、救援与召回，并按完成表现获得 B 至 S+ 评级。",
+    "mechanicChange": "Update 42.2 把 Basic Training 重做为 17 个连续章节；每章清完 checklist 才能前进，被淘汰则重开本章。内容覆盖移动、跳伞、射击、舔包与配件、蓝圈、投掷物、护甲、治疗、无线电、空投、救援、蓝色晶片、载具与召回。NPC 以双排搭档身份提供语音和无线电提示，章节成绩生成 B/A/S/S+ Clear Rank，并连接 14 天 Beginner Training 任务。",
+    "tempoImpact": "教学不再一次性倾倒操作说明，而是把完整 BR 循环拆成短目标并即时评分。NPC 搭档减少了团队机制的抽象解释，重复评级与后续 14 天任务则为新玩家提供从演练到真人对局的渐进路径。",
+    "designObservation": "复杂 BR 的新手引导应按真实比赛顺序教学，而不是按输入设备分类。让 NPC 扮演队友，可以在不依赖真人配合的情况下教授报点、救援和召回等协作规则；评级再把一次性教程变成可复练的技能基准。",
+    "sourceUrl": "https://www.pubg.com/en/news/10459",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/common/news/20260713/Ka7kRGKt.jpg",
+    "imageSource": "PUBG Update 42.2 官方 Basic Training 配图",
+    "launchDate": "2026-07-15",
+    "launchLabel": "2026年7月15日 PC 上线，7月23日主机上线",
+    "launchNote": "PUBG Update 42.2 的维护计划为 PC 2026年7月15日、主机 7月23日；Basic Training Revamp 与 Beginner Training 随版本上线。"
+  },
+  {
+    "id": "pubg-solo-deathmatch-2026",
+    "game": "PUBG",
+    "modeName": "Solo Deathmatch",
+    "year": "2026",
+    "date": "2026-07-29",
+    "tags": [
+      "objective"
+    ],
+    "type": [
+      "个人死斗",
+      "10-14人",
+      "积分竞速"
+    ],
+    "oneLineRule": "10-14 名玩家在 10 分钟 FPP 个人死斗中靠击杀、连续击杀和伤害得分，率先达到 100 分或终场最高分者获胜。",
+    "mechanicChange": "击杀得 2 分，3 连杀起每次击杀得 3 分，每造成 100 伤害得 1 分；全局首次有人达到 20/40/60/80 分时各投下一次补给箱。死亡后随机点复活并短暂无敌，可在复活时切换 Spawn Kit。击杀会填充 boost gauge，脱战 5 秒后以消耗该量表的方式自动回血。地图为 Erangel School、Sanhok Camp Charlie、Taego Palace。",
+    "tempoImpact": "伤害也计分让未完成击杀的交火仍有进度价值，连杀加分则鼓励强者持续压迫而非保守保命。分数阈值空投把领先者进度公开转化为全场资源事件，周期性地把分散交火重新聚拢。",
+    "designObservation": "个人死斗若只按击杀计分，容易让补枪和抢人头主导体验；加入伤害分能承认持续输出。把全场领先进度映射成 20 分一档的公共空投，则能用可读的里程碑主动制造新的交火中心。",
+    "sourceUrl": "https://www.pubg.com/en/news/10459",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/common/news/20260713/z4OL4wPD.jpg",
+    "imageSource": "PUBG Update 42.2 官方 Solo Deathmatch 配图",
+    "launchDate": "2026-07-29",
+    "launchLabel": "2026年7月29日 PC 上线，8月6日主机上线",
+    "launchNote": "PC 服务期为 2026年7月29日 07:00 UTC 至8月11日 23:59 UTC；主机为 8月6日 07:00 UTC 至8月19日 00:59 UTC。官方同时确认模式可用于自定义比赛。"
   }
 ]
