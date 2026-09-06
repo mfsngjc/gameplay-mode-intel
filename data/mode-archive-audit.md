@@ -12,6 +12,7 @@
 - 本轮新增：刀球单人练习场、刀球八人自由混战积分赛、热血刀球、刀球淘汰赛、热血刀球（随机技能）、刀球积分赛（随机技能）、刀球淘汰赛（随机技能）、冰封海战地图、冻结塔攻竞技场、排位团队死斗：仓库、排位团队死斗：机库。
 - 已排除：Imagiversary 页面中的 `Team Deathmatch`、`Gun Game`、`Jumping Snipers`、`Occupation Mode` 等“可创建游戏类型参考”，以及 World of Wonder 的设备、编辑器和通用模板；它们是创作系统的通用类型，不是该版本新增的官方全局匹配模式。后续如果用户要专门研究 WOW 模板，再拆出独立集合。
 - 追加复核：Transformers 3.9 专题明确列出 Team Deathmatch - Warehouse（Ranked）与 Team Deathmatch - Hangar（Ranked），此前只有通用团队死斗卡，因此拆成两张排位地图玩法卡；与同页已覆盖的 Assault - The Ruins、Domination - Town 分开记录。
+- 追加复核：4.0 官方页确认 Unfail 的 1v4 追逃规则；4.3 官方页确认 Evolving Universe 主题页入口；3.8 Steampunk Frontier 页确认 Elimination Skillfest 与 Battle Blitz。以上对应卡已存在，本轮未重复添加。
 - 仍待覆盖：更早地区版本的完整索引、2026-09-07 之后的版本页，以及官方页面没有稳定索引的旧专题。
 
 ### Free Fire
