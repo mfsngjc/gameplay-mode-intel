@@ -10726,5 +10726,36 @@
     ],
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-clash-squad-duo-active-skills-2023.svg"
+  },
+  {
+    "id": "free-fire-color-cube-2023",
+    "game": "Free Fire",
+    "modeName": "彩色方块复活（Color Cube Gameplay）",
+    "year": "2023",
+    "date": "2023-05-30",
+    "launchDate": "2023-06-09",
+    "launchLabel": "2023年6月9日后随六周年活动开放",
+    "launchNote": "官方六周年补丁说明彩色方块会在活动正式开始后出现在大逃杀排位与休闲对局；具体活动周期以官方公告为准。",
+    "tags": [
+      "br-ltm",
+      "objective",
+      "resource"
+    ],
+    "type": [
+      "大逃杀规则变体",
+      "限时复活",
+      "地图争夺"
+    ],
+    "oneLineRule": "被淘汰后进入漂浮的彩色方块岛，在限时内移动、击破小方块并与其他玩家争夺染色进度；进度填满后可以重新跳伞回到大逃杀对局。",
+    "mechanicChange": "活动期间，彩色方块岛会出现在大逃杀排位和休闲地图中。玩家被淘汰后会被传送到岛上，通过移动、击杀岛上对手和破坏小方块累积本队颜色的进度；进度条填满后获得一次复活机会，并重新跳伞回到原对局。",
+    "tempoImpact": "淘汰不再立刻结束玩家参与，玩家会先进入一段高密度争夺；队伍需要在安全区转移、岛上抢进度和复活后的重新落点之间安排节奏。",
+    "designObservation": "把复活机会放进独立的短时争夺空间，既保留淘汰的代价，又给落后队伍一次可竞争的翻盘窗口；进度条把个人击杀、移动和破坏目标统一成可读的团队目标。",
+    "sourceUrl": "https://ff.garena.com/en/article/1170/",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-color-cube-2023.svg"
   }
 ]
