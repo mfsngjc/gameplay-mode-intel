@@ -8366,5 +8366,306 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-target-arcade-2020.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-bluehole-2020",
+    "game": "PUBG Mobile",
+    "modeName": "蓝洞模式（Bluehole Mode）",
+    "year": "2020",
+    "date": "2020-05-07",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "双层安全区",
+      "提前预告",
+      "快速复活"
+    ],
+    "oneLineRule": "在 Erangel 同时显示外圈与内圈：内圈预告下一阶段安全区，但停留其中会持续掉血；同时物资增加，队友可更快扶起倒地玩家。",
+    "mechanicChange": "0.18.0 更新把下一阶段安全区的信息提前放到地图上，并用“内圈持续伤害”制造风险；官方还确认物资数量提升 50%，扶人时间缩短到 4 秒。",
+    "tempoImpact": "玩家能更早判断下一次转移方向，但内圈伤害迫使队伍不能只靠预判蹲点，路线和进圈时机更紧凑。",
+    "designObservation": "把未来安全区直接展示出来，再用内圈伤害限制贪图信息优势的玩家，是一种“信息增加、停留成本同步增加”的 BR 试验。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202004/856386.shtml",
+    "launchDate": "2020-05-07",
+    "launchLabel": "2020年5月7日 0.18.0 更新",
+    "launchNote": "官方补丁确认 Bluehole 为 EvoGround 新模式；具体开放时间以客户端轮换为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-bluehole-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-jungle-adventure-2020",
+    "game": "PUBG Mobile",
+    "modeName": "丛林探险（Jungle Adventure）",
+    "year": "2020",
+    "date": "2020-05-07",
+    "tags": [
+      "br-ltm",
+      "casual"
+    ],
+    "type": [
+      "随机进入",
+      "丛林资源",
+      "热气球侦察"
+    ],
+    "oneLineRule": "在 Sanhok 匹配时有概率进入丛林探险版本，地图会出现特殊食物和热气球等额外内容；具体触发与轮换以客户端为准。",
+    "mechanicChange": "官方 0.18.0 补丁把 Jungle Adventure 作为 Sanhok 的随机主题玩法：水果可能带来特殊效果，热气球允许玩家从空中观察战场。",
+    "tempoImpact": "额外资源和高空观察会改变落点与侦察节奏，但随机进入让玩家需要在普通 Sanhok 路线和主题事件之间临场切换。",
+    "designObservation": "把主题玩法嵌入既有地图并采用随机触发，可以保留熟悉的 BR 骨架，同时让同一张地图产生不同的探索预期。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202004/856386.shtml",
+    "launchDate": "2020-05-07",
+    "launchLabel": "2020年5月7日 0.18.0 更新",
+    "launchNote": "官方补丁确认 Jungle Adventure 为 Sanhok 随机主题玩法；水果效果与热气球为已公开机制。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-jungle-adventure-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-brothers-in-arms-2020",
+    "game": "PUBG Mobile",
+    "modeName": "兄弟同心（Brothers in Arms）",
+    "year": "2020",
+    "date": "2020-03-12",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "老带新",
+      "师徒组队",
+      "经典模式"
+    ],
+    "oneLineRule": "老兵与新手从好友页进入 Brothers in Arms 组队，老兵负责带领新手完成 Classic 对局并获得对应奖励。",
+    "mechanicChange": "官方周年活动把玩家匹配关系做成玩法入口：老兵需要达到 Gold V，新手处于 Bronze V 至 Crown I，双方通过师徒关系共同推进对局。",
+    "tempoImpact": "它不改变枪战本身，却改变了队伍沟通与目标结构；老兵需要承担路线和教学责任，新手则获得更低门槛的学习路径。",
+    "designObservation": "把“教学关系”变成可进入的匹配模式，能让新玩家成长目标和老玩家的社交动机在同一局里发生。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/annipark/",
+    "launchDate": "2020-03-12",
+    "launchLabel": "2020年3月12日周年活动",
+    "launchNote": "官方周年活动确认 Brothers in Arms 从好友页进入，并设置老兵/新手段位条件；具体匹配轮换以客户端为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-brothers-in-arms-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-hunt-game-2020",
+    "game": "PUBG Mobile",
+    "modeName": "狩猎游戏（Hunt Game）",
+    "year": "2020",
+    "date": "2020-03-12",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "复古街机",
+      "积分挑战",
+      "活动代币"
+    ],
+    "oneLineRule": "在二周年复古街机入口游玩 Hunt Game，消耗 Arcade Coin 或局内 Game Token 获取积分、碎片和补给。",
+    "mechanicChange": "官方周年活动把两款复古街机小游戏放进大厅和 Classic 对局内：大厅使用 Arcade Coin，局内使用 Game Token，积分还能兑换抽奖与排名奖励。",
+    "tempoImpact": "短时小游戏把等待和对局间隙转化为可重复的积分循环，玩家会在活动资源、排名和碎片收集之间安排游玩频率。",
+    "designObservation": "把轻量小游戏同时放在大厅与战局内，能让活动货币跨越“菜单—对局”两个场景，并形成低成本的重复参与。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/annipark/",
+    "launchDate": "2020-03-12",
+    "launchLabel": "2020年3月12日至4月14日二周年活动",
+    "launchNote": "官方规则确认 Hunt Game 的代币入口、积分和奖励循环；具体小游戏操作画面以活动客户端为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-hunt-game-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-space-wars-2020",
+    "game": "PUBG Mobile",
+    "modeName": "太空战争（Space Wars）",
+    "year": "2020",
+    "date": "2020-03-12",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "复古街机",
+      "积分挑战",
+      "活动代币"
+    ],
+    "oneLineRule": "在二周年复古街机入口游玩 Space Wars，消耗活动代币获得积分、碎片和补给；详细操作以客户端为准。",
+    "mechanicChange": "官方周年规则将 Space Wars 与 Hunt Game 并列为复古街机小游戏，并让大厅代币与局内代币分别承担进入成本。",
+    "tempoImpact": "积分和碎片奖励把几分钟的小游戏连接到周年收集进度，玩家可以在完整对局之外获得持续反馈。",
+    "designObservation": "双小游戏并列的结构能用低学习成本提供不同主题的短循环，同时通过统一奖励池维持活动目标的一致性。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/annipark/",
+    "launchDate": "2020-03-12",
+    "launchLabel": "2020年3月12日至4月14日二周年活动",
+    "launchNote": "官方规则确认 Space Wars 的活动代币、积分和碎片奖励；具体小游戏操作以活动客户端为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-space-wars-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-golden-dynasty-2025",
+    "game": "PUBG Mobile",
+    "modeName": "黄金王朝（Golden Dynasty）",
+    "year": "2025",
+    "date": "2025-03-07",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "时光回溯",
+      "特殊区域"
+    ],
+    "oneLineRule": "在 Erangel、Livik 或 Rondo 的主题 BR 中探索黄金沙宫殿，利用时光回溯恢复建筑、搜寻宝藏，并使用黄金沙护甲获取额外生存能力。",
+    "mechanicChange": "3.7 版本把“时间”变成地图交互：黄金沙宫殿可回溯损坏建筑，特殊区域提供物资与反转之刃；黄金沙护甲还能获得或恢复护甲耐久。",
+    "tempoImpact": "高价值主题区域会吸引早期争夺，而回溯建筑和特殊道具又为进攻、绕行与撤退提供临时路线，热点对局更容易被拉长。",
+    "designObservation": "通过“改变已经发生的地图状态”制造探索价值，主题玩法不只换皮，而是让空间本身成为可逆的资源和路线。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Golden-Dynasty/",
+    "launchDate": "2025-03-07",
+    "launchLabel": "2025年3月7日至5月7日 3.7 版本",
+    "launchNote": "官方 7 周年页面确认 Golden Dynasty；区域官方补丁补充了黄金沙宫殿、时光回溯与主题竞技场细节。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-golden-dynasty-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-golden-dynasty-theme-arena-2025",
+    "game": "PUBG Mobile",
+    "modeName": "黄金王朝主题竞技场（Golden Dynasty Theme Arena）",
+    "year": "2025",
+    "date": "2025-03-07",
+    "tags": [
+      "warfare",
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "团队竞技",
+      "无限复活",
+      "击杀计分"
+    ],
+    "oneLineRule": "在黄金沙宫殿主题竞技场中限时反复复活，双方以累计击杀数决定胜负。",
+    "mechanicChange": "区域官方 3.7 补丁把 Golden Dynasty 的黄金沙宫殿单独扩展为主题竞技场：限时内可无限复活，比赛以总击杀数结算。",
+    "tempoImpact": "无限复活压低了单次死亡成本，队伍会更快试探路线和枪线；最终压力集中在限时内的持续击杀效率。",
+    "designObservation": "同一主题地图同时承载 BR 探索和高频竞技，让主题资产在不同节奏的对局里重复利用，并把空间记忆转化为竞技优势。",
+    "sourceUrl": "https://pubgmobile.jp/version-3-7-0-patch-notes-20250308/",
+    "launchDate": "2025-03-07",
+    "launchLabel": "2025年3月7日 3.7 版本",
+    "launchNote": "官方区域补丁确认该主题竞技场的无限复活与击杀计分规则；不同地区开放时间可能不同。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-golden-dynasty-theme-arena-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-steampunk-frontier-2025",
+    "game": "PUBG Mobile",
+    "modeName": "蒸汽朋克前线（Steampunk Frontier）",
+    "year": "2025",
+    "date": "2025-05-08",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "秘密列车",
+      "巨人战斗"
+    ],
+    "oneLineRule": "在工业革命主题地图中争夺铁路城镇、召唤秘密列车获取物资，并使用主题装备参与高机动与巨人战斗。",
+    "mechanicChange": "3.8 版本将铁路、列车和工业设施变成战场交互：秘密列车会在特定时间卸下大量物资并驶向下一站，主题装备还扩展了移动与近战方式。",
+    "tempoImpact": "列车的时间表制造了可预测但高价值的移动窗口，队伍需要在等车、抢货和避开公开路线之间做取舍。",
+    "designObservation": "把“会移动的补给点”放进 BR，可以让地图热点随时间迁移；铁路网络同时承担导航、抢资源和风险暴露三种作用。",
+    "sourceUrl": "https://pubgmobile.jp/version-3-8-0-patch-notes-20250508/",
+    "launchDate": "2025-05-08",
+    "launchLabel": "2025年5月8日至7月8日 3.8 版本",
+    "launchNote": "官方区域补丁确认 Steampunk Frontier 的铁路城镇、秘密列车和主题交互；全球页面确认该主题玩法与 World of Wonder 更新。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-steampunk-frontier-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-elimination-skillfest-2025",
+    "game": "PUBG Mobile",
+    "modeName": "淘汰技能节（Elimination Skillfest）",
+    "year": "2025",
+    "date": "2025-05-08",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "WOW 创作玩法",
+      "技能挑战",
+      "淘汰赛"
+    ],
+    "oneLineRule": "官方 3.8 更新确认 World of Wonder 新增 Elimination Skillfest；具体地图规则和胜负条件由对应创作地图与客户端说明决定。",
+    "mechanicChange": "官方 Steampunk Frontier 页面只确认该玩法作为 WOW 新玩法上线，没有展开统一的局内规则，因此本条保留名称、入口和待补细节，不补写未经证实的机制。",
+    "tempoImpact": "它把玩家从标准 BR 转入更短、更技能导向的创作地图循环；实际节奏会随具体地图配置变化。",
+    "designObservation": "官方模板只规定入口而把规则交给创作者，能让同一技能主题承载多种淘汰结构，也带来规则理解成本。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Steampunk-Frontier/",
+    "launchDate": "2025-05-08",
+    "launchLabel": "2025年5月8日 3.8 版本",
+    "launchNote": "官方页面仅确认 Elimination Skillfest 为 WOW 新玩法；具体地图规则需进入对应创作内容后确认。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-elimination-skillfest-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-battle-blitz-2025",
+    "game": "PUBG Mobile",
+    "modeName": "闪电战（Battle Blitz）",
+    "year": "2025",
+    "date": "2025-05-08",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "WOW 创作玩法",
+      "快节奏对局",
+      "竞技挑战"
+    ],
+    "oneLineRule": "官方 3.8 更新确认 World of Wonder 新增 Battle Blitz；具体地图规则、人数和胜负条件由对应创作地图与客户端说明决定。",
+    "mechanicChange": "官方 Steampunk Frontier 页面将 Battle Blitz 与 Elimination Skillfest 并列为 WOW 新玩法，但没有公布统一规则；本条明确保留官方已确认范围。",
+    "tempoImpact": "名称与官方描述都指向更快的创作地图节奏，玩家会在短回合和高频交战中获得反馈；具体强度取决于地图作者配置。",
+    "designObservation": "用一个“快节奏”模板承接不同创作者的地图，可以快速测试战斗规则，但需要在进入前把局内目标展示清楚。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Steampunk-Frontier/",
+    "launchDate": "2025-05-08",
+    "launchLabel": "2025年5月8日 3.8 版本",
+    "launchNote": "官方页面仅确认 Battle Blitz 为 WOW 新玩法；具体地图规则需进入对应创作内容后确认。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-battle-blitz-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
