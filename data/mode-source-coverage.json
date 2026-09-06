@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 98,
-      "coverCount": 98,
-      "readableDescriptionCount": 98,
+      "modeCount": 104,
+      "coverCount": 104,
+      "readableDescriptionCount": 104,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -425,7 +425,13 @@
         "pubgm-midnight-hunters-2026",
         "pubgm-spooky-soiree-2025",
         "pubgm-hydroroyal-2025",
-        "pubgm-metro-royale-deathmatch-solo-2025"
+        "pubgm-metro-royale-deathmatch-solo-2025",
+        "pubgm-metro-survival-drop-2025",
+        "pubgm-metro-tdm-warehouse-2025",
+        "pubgm-arena-deathmatch-solo-2025",
+        "pubgm-transformers-cyber-arena-2025",
+        "pubgm-craftground-summer-festival-2025",
+        "pubgm-craftground-survival-train-2025"
       ],
       "officialSourceUrls": [
         "https://pubgmobile.jp/version-3-7-0-patch-notes-20250308/",
@@ -490,9 +496,11 @@
         "https://pubgmobile.jp/version-4-4-0-patch-notes-20260512/",
         "https://pubgmobile.jp/version-4-5-0-patch-notes-20260709/",
         "https://www.pubgmobile.jp/version-4-6-0-update-notice-20260901/",
-        "https://pubgmobile.jp/version-4-0-0-patch-notes-20250904/"
+        "https://pubgmobile.jp/version-4-0-0-patch-notes-20250904/",
+        "https://pubgmobile.jp/version-3-6-0-patch-notes-20250109/",
+        "https://pubgmobile.jp/version-3-9-0-patch-notes-20250708/"
       ],
-      "notes": "已回溯 0.4–4.6 版本及 2018–2026 主题、竞技、街机和 Metro Royale 页面；本轮继续补入 4.0 Spooky Soiree、Hydroroyal 非对称玩法与 Metro Royale 单人死亡竞赛。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
+      "notes": "已回溯 0.4–4.6 版本及 2018–2026 主题、竞技、街机、Metro Royale 与 CRAFTGROUND 页面；本轮继续补入 3.6 Survival Drop、3.7 TDM-Warehouse、3.8 Deathmatch SOLO、3.9 Cyber Arena 及两个创意工坊模板。规则只公开名称的条目标注待补。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",

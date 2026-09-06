@@ -9865,5 +9865,190 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-metro-royale-deathmatch-solo-2025.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-metro-survival-drop-2025",
+    "game": "PUBG Mobile",
+    "modeName": "地铁逃生：生存空投（Survival Drop）",
+    "year": "2025",
+    "date": "2025-01-10",
+    "tags": [
+      "extraction",
+      "objective",
+      "space"
+    ],
+    "type": [
+      "搜打撤",
+      "电磁脉冲",
+      "补给空投"
+    ],
+    "oneLineRule": "在 Metro Royale 的生存空投玩法中搜集物资、应对电磁脉冲和补给争夺，并设法带着战利品撤离。",
+    "mechanicChange": "官方 3.6.0 补丁在 Metro Royale 中新增 Survival Drop，明确写出电磁脉冲与补给物资是该模式的核心内容；公告没有公开更细的地图、计分和撤离限制，本卡不补写未确认规则。",
+    "tempoImpact": "电磁脉冲和补给物资会把搜刮路线变成阶段性风险点，队伍需要在追逐高价值补给、躲避干扰和提前撤离之间做取舍。具体脉冲范围与触发节奏待客户端资料补充。",
+    "designObservation": "在搜打撤框架里加入公开的空投目标，可以把原本分散的搜集路线重新汇聚成短时热点；只有明确脉冲的作用范围后，才能进一步判断它对路线的压缩程度。",
+    "sourceUrl": "https://pubgmobile.jp/version-3-6-0-patch-notes-20250109/",
+    "launchDate": "2025-01-10",
+    "launchLabel": "2025年1月10日至3月5日随 Metro Royale 开放",
+    "launchNote": "官方 3.6.0 补丁确认 Survival Drop、 电磁脉冲和补给物资；未公开的细节留待后续客户端或公告核对。",
+    "gameplayTypes": [
+      "extraction"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-metro-survival-drop-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-metro-tdm-warehouse-2025",
+    "game": "PUBG Mobile",
+    "modeName": "地铁逃生：仓库团队死斗（TDM-Warehouse）",
+    "year": "2025",
+    "date": "2025-03-08",
+    "tags": [
+      "warfare",
+      "arena"
+    ],
+    "type": [
+      "团队死斗",
+      "仓库地图",
+      "Metro Royale 衍生玩法"
+    ],
+    "oneLineRule": "在 Metro Royale 入口体验仓库团队死斗，以短局枪战取代搜打撤；官方补丁暂未公开人数和计分细则。",
+    "mechanicChange": "官方 3.7.0 补丁在 Metro Royale 栏目新增 TDM-Warehouse。公告只确认玩法名称，没有公布队伍人数、胜利分数和是否携带地铁装备，本卡保留这些信息缺口。",
+    "tempoImpact": "从搜刮、交战、撤离切换为直接团队死斗后，准备成本和单局资产风险都会降低，交战密度预计提高；具体回合节奏待规则页补充。",
+    "designObservation": "把团队死斗入口放进搜打撤大厅，可以让玩家在同一套装备主题下快速切换训练和高风险探索，但两者的资产是否互通需要继续核实。",
+    "sourceUrl": "https://pubgmobile.jp/version-3-7-0-patch-notes-20250308/",
+    "launchDate": "2025-03-08",
+    "launchLabel": "2025年3月8日至5月6日随 Metro Royale 开放",
+    "launchNote": "官方 3.7.0 补丁确认新增 TDM-Warehouse；人数、计分、装备和地图细节待后续官方说明。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-metro-tdm-warehouse-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-arena-deathmatch-solo-2025",
+    "game": "PUBG Mobile",
+    "modeName": "竞技场：单人死亡竞赛（Deathmatch SOLO）",
+    "year": "2025",
+    "date": "2025-05-08",
+    "tags": [
+      "warfare",
+      "arena",
+      "objective"
+    ],
+    "type": [
+      "1v1 对抗",
+      "竞技场",
+      "好友邀请"
+    ],
+    "oneLineRule": "从竞技场大厅邀请队友进行 1v1 单人死亡竞赛，以连续淘汰争夺短局胜利。",
+    "mechanicChange": "官方 3.8.0 补丁在竞技场新增 Deathmatch SOLO：组队时可以从大厅邀请队友进行 1v1 死亡竞赛。公告没有公开具体回合、装备和计分规则；本卡与 4.0.0 的 Metro Royale 单人死亡竞赛分开记录。",
+    "tempoImpact": "玩法把竞技场从团队交战扩展到低准备成本的单挑，玩家可以直接检验枪法、武器选择和短线走位，而不必先经历完整搜打撤循环。",
+    "designObservation": "好友邀请和 1v1 结构降低了开局等待与队伍沟通成本，适合把竞技场当作即时练习或社交对抗入口；具体胜利条件仍需官方规则补充。",
+    "sourceUrl": "https://pubgmobile.jp/version-3-8-0-patch-notes-20250508/",
+    "launchDate": "2025-05-08",
+    "launchLabel": "2025年5月8日随 3.8.0 版本加入竞技场",
+    "launchNote": "官方补丁确认竞技场新增 Deathmatch SOLO 和好友邀请；具体人数以外的规则暂未公开。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-arena-deathmatch-solo-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-transformers-cyber-arena-2025",
+    "game": "PUBG Mobile",
+    "modeName": "变形金刚：赛博竞技场（Cyber Arena）",
+    "year": "2025",
+    "date": "2025-07-08",
+    "tags": [
+      "pve",
+      "arena",
+      "objective",
+      "power"
+    ],
+    "type": [
+      "主题竞技场",
+      "AI 敌人",
+      "队友复活"
+    ],
+    "oneLineRule": "在变形金刚主题 BR 的赛博竞技场中拾取场内武器，对抗 AI 或其他队伍；完成挑战可获得物资并争夺最强队伍称号。",
+    "mechanicChange": "官方 3.9.0 补丁在变形金刚主题玩法内加入 Cyber Arena：竞技场可在地图多处出现，非 Neon Town 区域主要由 AI 敌人守护并提供难度选择；玩家通过专用装置进入，场内拾取武器，阵亡后可以复活，获胜队伍获得物资。Neon Town 的入口只在开局后三分钟内开放，且每局只能进入一次。",
+    "tempoImpact": "赛博竞技场把 BR 的大地图转成一次性短战斗，入口时间和单次进入限制会制造明确的决策窗口；AI 难度与队友复活则允许队伍在风险可控时主动争夺收益。",
+    "designObservation": "主题 BR 通过“地图入口—短时副本—奖励回到主局”的结构，把 PVE 挑战嵌入大逃杀路线；一次性进入限制避免副本成为无限刷资源的安全区。",
+    "sourceUrl": "https://pubgmobile.jp/version-3-9-0-patch-notes-20250708/",
+    "launchDate": "2025-07-08",
+    "launchLabel": "2025年7月8日随变形金刚主题玩法开放",
+    "launchNote": "官方 3.9.0 补丁确认 Cyber Arena 的入口、AI 难度、武器拾取、复活、奖励和 Neon Town 三分钟限制。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-transformers-cyber-arena-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-craftground-summer-festival-2025",
+    "game": "PUBG Mobile",
+    "modeName": "创意工坊：夏日祭模式（Summer Festival Mode）",
+    "year": "2025",
+    "date": "2025-07-14",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "创意工坊",
+      "限时模板",
+      "规则待补"
+    ],
+    "oneLineRule": "在创意工坊中进入官方新增的夏日祭模式；当前公开补丁只给出开放时间，具体对局目标待官方规则页补充。",
+    "mechanicChange": "官方 3.9.0 补丁在 CRAFTGROUND 栏目列出 Summer Festival Mode，标注 2025 年 7 月 14 日 11:00 起实施。补丁没有展开人数、地图、胜利条件或特殊道具，因此本卡只记录已确认的模式入口与时间。",
+    "tempoImpact": "作为创意工坊模板，它可能把夏日主题内容封装成独立短局；在规则公开前，不把它推断成 BR、PVE 或竞技场玩法。",
+    "designObservation": "创意工坊的版本更新会把主题模板当作可直接进入的玩法入口，但如果公告只给名称，资料库应保留信息缺口，避免把模板名误写成完整规则。",
+    "sourceUrl": "https://pubgmobile.jp/version-3-9-0-patch-notes-20250708/",
+    "launchDate": "2025-07-14",
+    "launchLabel": "2025年7月14日11:00起加入创意工坊",
+    "launchNote": "官方补丁仅确认 Summer Festival Mode 的名称和开放时间，具体玩法待后续创意工坊规则页确认。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-craftground-summer-festival-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-craftground-survival-train-2025",
+    "game": "PUBG Mobile",
+    "modeName": "创意工坊：生存列车模式（Survival Train Mode）",
+    "year": "2025",
+    "date": "2025-08-08",
+    "tags": [
+      "casual",
+      "objective",
+      "space"
+    ],
+    "type": [
+      "创意工坊",
+      "限时模板",
+      "规则待补"
+    ],
+    "oneLineRule": "在创意工坊中进入官方新增的生存列车模式；当前公开补丁只给出开放时间，具体对局目标待官方规则页补充。",
+    "mechanicChange": "官方 3.9.0 补丁在 CRAFTGROUND 栏目列出 Survival Train Mode，标注 2025 年 8 月 8 日 11:00 起实施。补丁没有展开人数、地图、胜利条件或特殊道具，本卡不从名称推断玩法。",
+    "tempoImpact": "名称暗示玩法可能围绕列车路线或生存压力组织，但官方补丁未给出可核实的规则，因此暂不把它归入搜打撤或 PVE。",
+    "designObservation": "对创意工坊模板，先记录官方明确的入口和时间，再等待规则页面补齐，能避免后续自动采集把标题误当成玩法机制。",
+    "sourceUrl": "https://pubgmobile.jp/version-3-9-0-patch-notes-20250708/",
+    "launchDate": "2025-08-08",
+    "launchLabel": "2025年8月8日11:00起加入创意工坊",
+    "launchNote": "官方补丁仅确认 Survival Train Mode 的名称和开放时间，具体玩法待后续创意工坊规则页确认。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-craftground-survival-train-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
