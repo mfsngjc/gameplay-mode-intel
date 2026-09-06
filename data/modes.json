@@ -11026,5 +11026,69 @@
     "tempoImpact": "防守方能临时关闭关键窗口，进攻方则需要换线、清除掩体或等待时机，塔内推进的节奏会随空间封锁不断变化。",
     "designObservation": "短时可部署掩体能把静态塔防路线变成可重写的空间谜题；设计重点在于限制封锁时长和位置，避免单一窗口永久失效。",
     "imageUrl": "assets/modes/generated/pubgm-wow-freezing-tower-assault-2024.svg"
+  },
+  {
+    "id": "pubgm-ranked-team-deathmatch-warehouse-2025",
+    "game": "PUBG Mobile",
+    "modeName": "排位团队死斗：仓库（Team Deathmatch - Warehouse Ranked）",
+    "year": "2025",
+    "date": "2025-07-24",
+    "tags": [
+      "warfare",
+      "casual",
+      "ranked"
+    ],
+    "type": [
+      "竞技场",
+      "团队死斗",
+      "排位",
+      "随机地图"
+    ],
+    "oneLineRule": "从 Ranked Arena 进入仓库团队死斗，与另一支队伍连续交战并争夺击杀优势；官方将其与其他排位竞技模式随机轮换。",
+    "mechanicChange": "3.9 官方联动页把 Team Deathmatch - Warehouse（Ranked）列入限时 Ranked Arena，并与 Hangar、Assault - The Ruins、Domination - Town 一起随机开放。页面确认了排位入口和轮换关系，但没有公开本次活动的具体分数与回合细则。",
+    "tempoImpact": "仓库的短线掩体和连续重生把战斗集中在近中距离交火；随机轮换又要求队伍在进入地图后快速切换到团队死斗的击杀节奏。",
+    "designObservation": "把熟悉的团队死斗地图放进排位轮换，可以用低理解成本维持竞技入口，同时让排位奖励为常规枪战增加长期目标。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Official-Transformers-Collaboration/",
+    "launchDate": "2025-07-24",
+    "launchLabel": "2025年7月24日至9月2日 3.9 版本",
+    "launchNote": "官方页面确认 Team Deathmatch - Warehouse（Ranked）进入 Ranked Arena 限时轮换；具体胜负分数与回合规则待客户端规则补充。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-ranked-team-deathmatch-warehouse-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-ranked-team-deathmatch-hangar-2025",
+    "game": "PUBG Mobile",
+    "modeName": "排位团队死斗：机库（Team Deathmatch - Hangar Ranked）",
+    "year": "2025",
+    "date": "2025-07-24",
+    "tags": [
+      "warfare",
+      "casual",
+      "ranked"
+    ],
+    "type": [
+      "竞技场",
+      "团队死斗",
+      "排位",
+      "随机地图"
+    ],
+    "oneLineRule": "从 Ranked Arena 进入机库团队死斗，与另一支队伍连续交战并争夺击杀优势；官方将其与其他排位竞技模式随机轮换。",
+    "mechanicChange": "3.9 官方联动页把 Team Deathmatch - Hangar（Ranked）列入限时 Ranked Arena，并与 Warehouse、Assault - The Ruins、Domination - Town 一起随机开放。页面确认了排位入口和轮换关系，但没有公开本次活动的具体分数与回合细则。",
+    "tempoImpact": "机库的纵深通道和中距离交火会放大队伍换线、交叉火力与复活点控制的重要性；随机轮换要求玩家快速读取地图结构。",
+    "designObservation": "同一团队死斗规则配合不同空间骨架，可以在不增加规则学习成本的情况下改变推进、复活和交火线路；排位入口则把地图熟练度转成持续追踪的竞技目标。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Official-Transformers-Collaboration/",
+    "launchDate": "2025-07-24",
+    "launchLabel": "2025年7月24日至9月2日 3.9 版本",
+    "launchNote": "官方页面确认 Team Deathmatch - Hangar（Ranked）进入 Ranked Arena 限时轮换；具体胜负分数与回合规则待客户端规则补充。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-ranked-team-deathmatch-hangar-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
