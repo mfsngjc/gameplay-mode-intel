@@ -6716,5 +6716,277 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-clowns-tricks-2021.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-rampage-opening-2019",
+    "game": "Free Fire",
+    "modeName": "狂暴开幕（Rampage Opening）",
+    "year": "2019",
+    "date": "2019-06-15",
+    "tags": [
+      "objective",
+      "power"
+    ],
+    "type": [
+      "主题事件",
+      "局内奖励",
+      "快速轮换"
+    ],
+    "oneLineRule": "在 Rampage 活动期间进入专属玩法，完成一局后获得结算奖励箱，参与活动目标并解锁主题奖励。",
+    "mechanicChange": "官方 2019 年 Rampage Day 公告确认 Rampage Opening 是 6 月 15日至19日开放的独立限时玩法；每次完成 Rampage 对局后会在结算页生成奖励箱。公告没有公开更细的胜负规则，因此本卡只记录已确认的开放窗口和奖励循环。",
+    "tempoImpact": "短周期开放和结算奖励把玩法变成活动入口，玩家会为了奖励箱快速重复对局；具体对抗规则需要结合当期客户端内容补充。",
+    "designObservation": "早期联动玩法先用清晰的“进入—完成—领奖”闭环制造参与动机，即使规则复杂度有限，也能把主题活动导入真实对局。",
+    "sourceUrl": "https://ff.garena.com/en/article/97",
+    "launchDate": "2019-06-15",
+    "launchLabel": "2019年6月15日至19日限时开放",
+    "launchNote": "官方公告确认模式名称、开放日期和结算奖励箱；未公开完整对局规则，保留资料边界。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-rampage-opening-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-big-head-2019",
+    "game": "Free Fire",
+    "modeName": "大头模式（Big Head / Cabezotas）",
+    "year": "2019",
+    "date": "2019-08-24",
+    "tags": [
+      "objective",
+      "power"
+    ],
+    "type": [
+      "成长体型",
+      "击杀奖励",
+      "短局对抗"
+    ],
+    "oneLineRule": "在大头主题对局中争取击杀和成长，利用不断变大的头部与活动奖励完成短局竞争。",
+    "mechanicChange": "官方二周年地区公告确认 Cabezotas（大头模式）在 2019 年 8 月24日至27日开放，并为每局提供生日战利品箱；英文页面没有展开完整胜负规则，因此本卡保留可确认的模式名称、活动窗口和奖励。",
+    "tempoImpact": "短期开放与活动奖励会促使玩家集中完成对局；由于规则细节未公开，当前只把它作为历史模式索引，不推断额外机制。",
+    "designObservation": "大头模式的主题视觉和短周期奖励形成低门槛入口，适合在周年庆里承担“马上开一局”的轻量体验。",
+    "sourceUrl": "https://ff.garena.com/en/article/48",
+    "launchDate": "2019-08-24",
+    "launchLabel": "2019年8月24日至27日地区限时模式",
+    "launchNote": "来源为 Garena 官方地区公告（页面内容为西语）；规则披露有限，已在说明中明确资料边界。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-big-head-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-cold-steel-2019",
+    "game": "Free Fire",
+    "modeName": "冷钢（Cold Steel）",
+    "year": "2019",
+    "date": "2019-10-14",
+    "tags": [
+      "objective",
+      "space"
+    ],
+    "type": [
+      "投掷刀具",
+      "近战对抗",
+      "特殊武器"
+    ],
+    "oneLineRule": "进入冷钢特殊玩法，使用投掷刀作为主要武器，在近距离空间里争取击杀。",
+    "mechanicChange": "官方 Spooky Night 补丁把 FF Knife 标记为 Cold Steel 特殊模式专属武器：投掷刀伤害倍率为 9999、最多 3 次使用、精度 100；官方页面没有进一步公开地图与胜负流程。",
+    "tempoImpact": "高伤害、低次数的投掷刀会把交战压缩成短距离瞄准和出手时机判断，玩家需要用有限次数换取确定击杀。",
+    "designObservation": "通过限制武器种类和出手次数，冷钢把 Free Fire 的射击反馈改造成纯粹的近战投掷博弈；规则简单但能明显改变瞄准节奏。",
+    "sourceUrl": "https://ff.garena.com/en/article/114",
+    "launchDate": "2019-10-14",
+    "launchLabel": "2019年10月补丁公布的特殊模式",
+    "launchNote": "官方补丁确认 Cold Steel 与 FF Knife 的专属关系，未披露完整地图规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-cold-steel-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-lone-wolf-ranked-2021",
+    "game": "Free Fire",
+    "modeName": "孤狼排位（Lone Wolf Ranked）",
+    "year": "2021",
+    "date": "2021-12-20",
+    "tags": [
+      "objective",
+      "power"
+    ],
+    "type": [
+      "1v1/2v2",
+      "排位积分",
+      "武器轮选"
+    ],
+    "oneLineRule": "在更大的 Iron Cage 中进行 1v1 或 2v2 孤狼对决，以排位积分竞争；双方每两回合轮流为自己和对手选择武器。",
+    "mechanicChange": "官方 New Age 公告确认 Lone Wolf 在 12 月20日加入排位系统，并重新开放 1v1 与 2v2；配套补丁还加入每两回合轮流选武器、已选武器冷却和更大的 Iron Cage，让排位对局增加反制与资源规划。",
+    "tempoImpact": "固定回合和武器轮选让每局的胜负判断集中在适应能力；排位积分又把一次性技巧转化成长期竞争。",
+    "designObservation": "孤狼排位把短局决斗的即时反馈与赛季晋级目标连接起来，轮选武器则防止玩家只依赖单一强势枪械。",
+    "sourceUrl": "https://ff.garena.com/en/article/550",
+    "launchDate": "2021-12-20",
+    "launchLabel": "2021年12月20日起开放排位",
+    "launchNote": "官方公告确认排位开放日期、1v1/2v2 和 Iron Cage；轮选武器细节来自同期 New Age 补丁。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-lone-wolf-ranked-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-big-head-2023",
+    "game": "Free Fire",
+    "modeName": "大头模式：Gloo Maker（Big Head Mode）",
+    "year": "2023",
+    "date": "2023-01-11",
+    "tags": [
+      "objective",
+      "power",
+      "resource"
+    ],
+    "type": [
+      "击杀成长",
+      "复活奖励",
+      "自动产墙"
+    ],
+    "oneLineRule": "在大头模式中通过升级和复活获得强化，击杀越多头部等级越高；Gloo Maker 会持续生产 Gloo Wall。",
+    "mechanicChange": "官方 2023 年 1 月补丁重做 Big Head：玩家升级或复活后获得增益，实时显示头部等级、分数和排名；Gloo Maker 通过时间、造成伤害和拾取 Gloo Chip 获取经验，升级后提高 Gloo Wall 容量并缩短生产时间。",
+    "tempoImpact": "击杀成长和自动产墙让玩家持续围绕“争取经验—保持连杀—抢占资源”循环，复活后的重新购买窗口也减少了空等时间。",
+    "designObservation": "把体型成长、击杀奖励和可持续资源绑定到同一进度条，能在短局中同时制造视觉反馈和长期追逐目标。",
+    "sourceUrl": "https://ff.garena.com/en/article/968",
+    "launchDate": "2023-01-11",
+    "launchLabel": "2023年1月11日补丁更新",
+    "launchNote": "官方补丁确认 Big Head、Gloo Maker、头部等级和击杀/复活增益规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-big-head-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-big-head-training-2023",
+    "game": "Free Fire",
+    "modeName": "大头训练场（Big Head Training Ground）",
+    "year": "2023",
+    "date": "2023-08-08",
+    "tags": [
+      "objective",
+      "power"
+    ],
+    "type": [
+      "自选装备",
+      "成长体型",
+      "训练场对抗"
+    ],
+    "oneLineRule": "进入大头训练场后先选择武器和装备，再通过淘汰其他玩家让头部不断变大。",
+    "mechanicChange": "官方 2023 年 8 月补丁把 Big Head Training Ground 加入 Craftland 轮换：玩家从模式选择页匹配，开局先选武器和装备，准备后直接进入训练场；每次淘汰玩家都会让自己的头部继续变大。",
+    "tempoImpact": "开局自选装备减少了搜刮准备时间，体型成长把击杀转化为持续可见的领先反馈，适合高频重复对抗。",
+    "designObservation": "训练场把随机搜刮替换成开局构筑，让玩家把注意力放在移动、瞄准和连杀表现上；成长体型则提供了清晰的风险回报信号。",
+    "sourceUrl": "https://ff.garena.com/en/article/1213/",
+    "launchDate": "2023-08-08",
+    "launchLabel": "2023年8月补丁加入 Craftland",
+    "launchNote": "官方补丁确认匹配入口、开局装备选择和击杀变大规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-big-head-training-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-rampage-classic-2023",
+    "game": "Free Fire",
+    "modeName": "狂暴：经典（Rampage: Classic）",
+    "year": "2023",
+    "date": "2023-08-08",
+    "tags": [
+      "pve",
+      "objective",
+      "power"
+    ],
+    "type": [
+      "团队 PvP",
+      "武器技能分工",
+      "联动复刻"
+    ],
+    "oneLineRule": "四人队伍选择不同武器与战略技能，协作击败敌方并守住最后的和平。",
+    "mechanicChange": "官方补丁把 Rampage: Classic 描述为旧版 Apocalypse 的优化复刻：玩家选择带有不同战略技能的武器，通过队内分配和协作击杀敌人取胜，还能使用历届 Rampage 外观与技能强化表现。",
+    "tempoImpact": "武器和技能分工让队伍在短局里快速形成职责，复刻主题又通过熟悉的 Apocalypse 目标降低学习成本。",
+    "designObservation": "把旧活动重做成可复用的 PvP 框架，可以同时承接怀旧内容和更清晰的团队构筑；胜负仍依赖协作而不是单个强力技能。",
+    "sourceUrl": "https://ff.garena.com/en/article/1213/",
+    "launchDate": "2023-08-08",
+    "launchLabel": "2023年8月 Rampage 活动期间开放",
+    "launchNote": "官方补丁确认这是 Craftland 版本的优化复刻，并明确 PvP、武器技能和团队协作规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-rampage-classic-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-head-hunt-2023",
+    "game": "Free Fire",
+    "modeName": "猎头（Head Hunt）",
+    "year": "2023",
+    "date": "2023-08-28",
+    "tags": [
+      "objective",
+      "space"
+    ],
+    "type": [
+      "一枪爆头",
+      "硬核规则",
+      "精准射击"
+    ],
+    "oneLineRule": "在猎头模式中只有命中敌人头部才会造成伤害，身体和四肢命中不会产生有效伤害。",
+    "mechanicChange": "官方补丁将 Head Hunt 定义为超硬核地图：只有爆头会造成伤害，其他部位完全无效；模式在 8 月下旬上线 Craftland 轮换。",
+    "tempoImpact": "一枪爆头规则把交战从持续压枪变成预瞄、身位和第一发命中的较量，任何暴露头线的失误都可能直接结束对局。",
+    "designObservation": "通过将有效命中区域压缩到头部，模式把枪械数值差异让位于瞄准精度，适合测试玩家对角度和露头节奏的掌握。",
+    "sourceUrl": "https://ff.garena.com/en/article/1213/",
+    "launchDate": "2023-08-28",
+    "launchLabel": "2023年8月底 Craftland 限时模式",
+    "launchNote": "官方公告只确认上线时间范围和爆头规则，具体地图以当期 Craftland 配置为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-head-hunt-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-clash-squad-slay-2023",
+    "game": "Free Fire",
+    "modeName": "枪王对决：Slay（Clash Squad: Slay）",
+    "year": "2023",
+    "date": "2023-08-08",
+    "tags": [
+      "objective",
+      "space"
+    ],
+    "type": [
+      "随机事件",
+      "神秘任务",
+      "枪王对决变体"
+    ],
+    "oneLineRule": "保留枪王对决的回合与商店骨架，在对局中完成随机事件和神秘任务，换取额外奖励。",
+    "mechanicChange": "官方补丁把 Clash Squad: Slay 作为枪王对决变体：核心战斗不变，但每场会出现随机事件和可解锁的神秘任务；完成事件后可能获得额外奖励。",
+    "tempoImpact": "随机任务让队伍在买枪、占位和交战之外多出临时目标，玩家需要判断奖励是否值得改变当前回合的推进路线。",
+    "designObservation": "在成熟回合模式上叠加轻量事件，能增加局内惊喜而不破坏基本经济系统；任务奖励必须保持可选，才能避免强迫玩家偏离胜利条件。",
+    "sourceUrl": "https://ff.garena.com/en/article/1213/",
+    "launchDate": "2023-08-08",
+    "launchLabel": "2023年8月补丁加入 Craftland",
+    "launchNote": "官方补丁确认随机事件、神秘任务和奖励机制，核心枪王对决规则保持不变。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-clash-squad-slay-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]

@@ -406,9 +406,9 @@
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 40,
-      "coverCount": 40,
-      "readableDescriptionCount": 40,
+      "modeCount": 49,
+      "coverCount": 49,
+      "readableDescriptionCount": 49,
       "modeIds": [
         "free-fire-clash-squad-2019",
         "free-fire-bomb-squad-2019",
@@ -449,7 +449,16 @@
         "free-fire-naruto-nine-tails-2025",
         "free-fire-tsukuyomi-br-2025",
         "free-fire-chaos-events-2024",
-        "free-fire-king-cs-2025"
+        "free-fire-king-cs-2025",
+        "free-fire-rampage-opening-2019",
+        "free-fire-big-head-2019",
+        "free-fire-cold-steel-2019",
+        "free-fire-lone-wolf-ranked-2021",
+        "free-fire-big-head-2023",
+        "free-fire-big-head-training-2023",
+        "free-fire-rampage-classic-2023",
+        "free-fire-head-hunt-2023",
+        "free-fire-clash-squad-slay-2023"
       ],
       "officialSourceUrls": [
         "https://ff.garena.com/en/article/67/",
@@ -483,9 +492,13 @@
         "https://ff.garena.com/en/article/1601/",
         "https://ff.garena.com/en/article/1664",
         "https://ff.garena.com/en/article/1438/",
-        "https://ff.garena.com/en/article/1508/"
+        "https://ff.garena.com/en/article/1508/",
+        "https://ff.garena.com/en/article/97",
+        "https://ff.garena.com/en/article/48",
+        "https://ff.garena.com/en/article/114",
+        "https://ff.garena.com/en/article/550"
       ],
-      "notes": "已回溯 2018–2026 年官方更新页，新增 Rampage、Spider-Verse Parkour、Lone Wolf Strike Out、Shadow Hunter、Free For All、Mini Peak、Clash Squad 第一人称、Gloo Nova、Droid Apocalypse、Coin Clash、Football Squad、Old Peak、Zombie Graveyard、Battle for Infinity、Epic Fight、Zombie Invasion、Rampage Finale PvP、Squid Game、Winterlands Dreamspace、Lost Treasure、Jujutsu Awakening、Fire Kickoff、NARUTO 九尾袭击、无限月读战场、混沌事件、枪王之王等玩法；仍需继续覆盖更早的模式轮换和地区版本差异。"
+      "notes": "已回溯 2018–2026 年官方更新页，新增 Rampage、Spider-Verse Parkour、Lone Wolf Strike Out、Shadow Hunter、Free For All、Mini Peak、Clash Squad 第一人称、Gloo Nova、Droid Apocalypse、Coin Clash、Football Squad、Old Peak、Zombie Graveyard、Battle for Infinity、Epic Fight、Zombie Invasion、Rampage Finale PvP、Squid Game、Winterlands Dreamspace、Lost Treasure、Jujutsu Awakening、Fire Kickoff、NARUTO 九尾袭击、无限月读战场、混沌事件、枪王之王、Rampage Opening、大头模式、冷钢、孤狼排位、大头训练场、Rampage Classic、猎头、Clash Squad: Slay 等玩法；仍需继续覆盖更早的模式轮换和地区版本差异。"
     }
   }
 }
