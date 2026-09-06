@@ -9332,5 +9332,37 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-hardcore-mode-2020.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-mecha-fusion-2024",
+    "game": "PUBG Mobile",
+    "modeName": "机甲融合（Mecha Fusion）",
+    "year": "2024",
+    "date": "2024-05-18",
+    "tags": [
+      "br-ltm",
+      "power",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "机甲载具",
+      "变形载具"
+    ],
+    "oneLineRule": "在主题 BR 中驾驶可组合的机甲载具，争夺钢铁方舟和装配基地，并利用导弹、磁吸和跳跃能力改变交战距离。",
+    "mechanicChange": "官方 2024 年 5 月主题玩法加入两种可组合载具：Strider 负责导弹攻击，Levitron 可切换高速形态与磁力形态；两者靠近后能合体成四人乘坐的 Armamech。钢铁方舟会在开局降落，队伍可在其核心召唤机甲；装配基地则提供机甲维修。",
+    "tempoImpact": "机甲的高机动、导弹和磁吸会放大中距离追击与抢点价值；钢铁方舟和装配基地把开局落点、补给争夺与载具维修连成一条高风险路线。",
+    "designObservation": "把两种能力互补的载具设计成可合体的队伍资产，让驾驶位、火力位和路线选择自然形成分工；公共方舟和维修站则用可见目标控制强力载具的获取节奏。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/New-Mecha-Vehicles/",
+    "launchDate": "2024-05-18",
+    "launchLabel": "2024年5月18日随主题玩法上线",
+    "launchNote": "官方页面确认 Mecha Fusion 主题玩法、Strider、Levitron、Armamech、钢铁方舟与装配基地；卡片只记录页面明确的玩法规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-mecha-fusion-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
