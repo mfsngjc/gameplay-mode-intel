@@ -42,3 +42,8 @@
 - 追加复核官方 OB54 更新日志文章 1678：`新迷你模式：马战` 明确为两人组队、下方玩家驾驶独轮车、上方玩家攻击的玩法，与 `Saddle Brawl` 已有卡片相同；派对大厅 Ring 的 1v1 守擂规则与 `Arena Showdown` 已覆盖，因此不重复建卡。
 - 追加复核 PUBG Mobile 官方日本站 4.2.0、4.3.0 更新/补丁页：`Primewood Genesis`、`Evolving Universe`、`Racing Challenge` 已有独立卡；协力跑酷属于功能层，`Ancient Secret: Arise` 是既有玩法回归，Arena Ranked 属于团队死斗排位层。已把三张相关卡的来源切换到官方日本站页面，未发现新的独立模式遗漏。
 - 追加复核三角洲行动官方 Global 第 11 赛季 `Reorientation` 公告（2026-09-04）：`Fishing`、`Polaris Patrol` 与 `Operations 1v1` 均已有卡；Layali Grove 2.0 和 The Mog 属于地图/地图规则卡，Rover 是干员能力，不新增重复模式。公告中的钓鱼等级、两种钓法、首领身份切换和零损耗 1v1 规则已与卡片逐项核对。
+
+### Apex Legends
+
+- 本轮复核 EA 官方模式总览、2026 Breach 补丁、2025 Prodigy 补丁、2025 Astral Anomaly 活动和 Wildcard 公告，发现此前未收录的四个明确玩法：`Wildcard` 常驻快速 BR、`Bot Royale Evolved` 人机混合 BR、`Launch Royale` 怀旧 LTM，以及 `Arenas: Prodigy` 的 3v3 回合制限时回归。
+- `Mixtape`、Ranked、Unranked 属于总览中的播放列表/竞技层；地图轮换和装备调整不另拆模式。四张新增卡均已写入中文规则、来源和待确认范围，并生成稳定本地封面。

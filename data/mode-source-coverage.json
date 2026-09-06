@@ -182,9 +182,9 @@
     },
     "Apex Legends": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 33,
-      "coverCount": 33,
-      "readableDescriptionCount": 33,
+      "modeCount": 37,
+      "coverCount": 37,
+      "readableDescriptionCount": 37,
       "modeIds": [
         "apex-classic-br-2019",
         "apex-ranked-leagues-2019",
@@ -218,7 +218,11 @@
         "apex-ring-fury-2021",
         "apex-wildcard-map-rotation-2026",
         "apex-cyberpunk-night-city-2026",
-        "apex-ascended-hunt-2026"
+        "apex-ascended-hunt-2026",
+        "apex-wildcard-2025",
+        "apex-bot-royale-evolved-2026",
+        "apex-launch-royale-2025",
+        "apex-arenas-prodigy-2025"
       ],
       "officialSourceUrls": [
         "https://apexlegends.wiki.gg/wiki/Always_Be_Closing",
@@ -239,15 +243,20 @@
         "https://apexlegends.wiki.gg/wiki/Winter_Express",
         "https://forums.ea.com/blog/apex-legends-game-info-hub-en/grand-soir%C3%A9e-patch-notes/9460557",
         "https://forums.ea.com/discussions/apex-legends-general-discussion-en/revelry---patch-notes-discussion/5701100",
+        "https://help.ea.com/en/articles/apex-legends/game-modes/",
         "https://store.steampowered.com/news/posts/?appids=1172470&enddate=1616181217&feed=steam_community_announcements",
         "https://www.ea.com/games/apex-legends/apex-legends/news/ascended-hunt-event",
+        "https://www.ea.com/games/apex-legends/apex-legends/news/astral-anomaly-event",
+        "https://www.ea.com/games/apex-legends/apex-legends/news/breach-patch-notes",
         "https://www.ea.com/games/apex-legends/apex-legends/news/cyberpunk-event",
+        "https://www.ea.com/games/apex-legends/apex-legends/news/game-update-wildcard",
         "https://www.ea.com/games/apex-legends/apex-legends/news/overclocked-midseason-patch-notes",
         "https://www.ea.com/games/apex-legends/apex-legends/news/overclocked-patch-notes",
         "https://www.ea.com/games/apex-legends/apex-legends/news/power-trip-event",
+        "https://www.ea.com/games/apex-legends/apex-legends/news/prodigy-patch-notes",
         "https://www.ea.com/games/apex-legends/news/war-games"
       ],
-      "notes": "已有模式库；后续按 EA/Respawn 官方模式公告继续回溯。"
+      "notes": "已复核 EA/Respawn 官方 Apex Legends 模式总览、Breach、Prodigy、Astral Anomaly 与 Wildcard 公告；本轮补入 Wildcard 常驻玩法、Bot Royale Evolved、Launch Royale 以及 Prodigy 竞技场回归。后续继续按 EA 官方新闻和赛季补丁回溯早期 LTM。"
     },
     "三角洲行动": {
       "coverageStatus": "ongoing_backfill",

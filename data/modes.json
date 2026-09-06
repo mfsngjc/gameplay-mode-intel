@@ -4075,6 +4075,128 @@
     "isLtm": true
   },
   {
+    "id": "apex-wildcard-2025",
+    "game": "Apex Legends",
+    "modeName": "外卡（Wildcard）",
+    "year": "2025",
+    "date": "2025-07-30",
+    "tags": [
+      "core",
+      "casual"
+    ],
+    "type": [
+      "快速大逃杀",
+      "简化搜刮",
+      "复活机制"
+    ],
+    "oneLineRule": "进入约 15 分钟、30 人的快速大逃杀，简化英雄、武器和搜刮系统，把时间集中在交火与移动上。",
+    "mechanicChange": "外卡（Wildcard）是 Apex Legends 的常驻 Freestyle 玩法：玩家使用简化后的英雄和装备系统，减少搜刮时间；英雄可在战斗外自动恢复，队友存活时可持续复活，且每名玩家开局自带自救包。",
+    "tempoImpact": "减少搜刮和装备整理让开局更快进入交火，复活窗口延长后队伍更愿意主动换血；地图玩具和快速轮换把重点从资源路线转到接敌路线。",
+    "designObservation": "把传统 BR 的搜刮负担压缩到可控范围，可以保留队伍协作和缩圈压力，同时让短时玩家更快体验到 Apex 的移动与枪战。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/game-update-wildcard",
+    "imageUrl": "assets/modes/generated/apex-wildcard-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2025-08-05",
+    "launchLabel": "2025年8月5日随 Confrontation 赛季上线",
+    "launchNote": "EA 官方公告将 Wildcard 定义为新的常驻玩法；公开介绍发表于 2025年7月30日，具体上线时间按赛季版本整理。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": false
+  },
+  {
+    "id": "apex-bot-royale-evolved-2026",
+    "game": "Apex Legends",
+    "modeName": "机器人皇家：进化版（Bot Royale Evolved）",
+    "year": "2026",
+    "date": "2026-02-09",
+    "tags": [
+      "br",
+      "pve",
+      "casual"
+    ],
+    "type": [
+      "人机混合 BR",
+      "练习模式",
+      "动态难度"
+    ],
+    "oneLineRule": "以完整 BR 时长进行人机混合对局，真人小队与 Apex 机器人小队共同参战，匹配不足时由机器人补位。",
+    "mechanicChange": "Breach 更新将 Bot Royale 进化为完整 BR 体验：大厅由真人小队和机器人小队组成，匹配会优先寻找相近水平的真人对手，不足时补入机器人；对局时长和缩圈调校接近非排位 BR，经验和挑战进度可正常推进，但徽章和统计数据不计入。",
+    "tempoImpact": "真人对手数量和机器人补位让练习局的压力更平滑，玩家可以在完整缩圈节奏里练习转点、枪法和救援，同时保留比纯训练场更接近正式 BR 的决策密度。",
+    "designObservation": "把人机作为动态补位而不是固定靶场，可以同时解决新手练习、匹配等待和低压热身问题；限制徽章与统计又避免练习局破坏竞技数据。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/breach-patch-notes",
+    "imageUrl": "assets/modes/generated/apex-bot-royale-evolved-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2026-02-09",
+    "launchLabel": "2026年2月9日随 Breach 更新进化",
+    "launchNote": "EA 官方 Breach 补丁明确写出 Bot Royale Evolved 的真人/机器人队伍结构、完整 BR 时长、经验与统计限制。",
+    "gameplayTypes": [
+      "br",
+      "pve"
+    ],
+    "isLtm": false
+  },
+  {
+    "id": "apex-launch-royale-2025",
+    "game": "Apex Legends",
+    "modeName": "初代大逃杀（Launch Royale）",
+    "year": "2025",
+    "date": "2025-01-06",
+    "tags": [
+      "br",
+      "br-ltm"
+    ],
+    "type": [
+      "怀旧 BR",
+      "旧规则",
+      "限时回归"
+    ],
+    "oneLineRule": "使用初代武器、英雄、技能和规则，在现代地图轮换中重现 Apex 首发时期的大逃杀体验。",
+    "mechanicChange": "Launch Royale 回归时保留早期武器、英雄、技能和规则，同时开放 Kings Canyon、World’s Edge、Olympus、Storm Point、Broken Moon 与 E-District；复制器可制作队友旗帜和一级护甲，前期搜不到武器时开箱必得一把。",
+    "tempoImpact": "旧规则和现代地图的组合让玩家重新适应早期资源与缩圈节奏，复制器和保底武器又降低了怀旧玩法的开局空转。",
+    "designObservation": "怀旧模式的关键不是只换皮，而是恢复一组能改变决策的旧规则；把旧系统放到现代地图上，能同时制造熟悉感和路线再学习。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/astral-anomaly-event",
+    "imageUrl": "assets/modes/generated/apex-launch-royale-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2025-01-07",
+    "launchLabel": "2025年1月7日至1月20日限时开放",
+    "launchNote": "EA 官方 Astral Anomaly 公告明确标注 Launch Royale 为 LTM，并给出开放时间、地图和旧规则范围。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-arenas-prodigy-2025",
+    "game": "Apex Legends",
+    "modeName": "竞技场：天才赛季回归（Arenas: Prodigy）",
+    "year": "2025",
+    "date": "2025-05-05",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "3v3 回合制",
+      "购买装备",
+      "限时回归"
+    ],
+    "oneLineRule": "两支三人队通过购买装备进行回合制死斗，先赢下规定回合数的一方获胜；本次回归移除英雄强化并重新调整商店经济。",
+    "mechanicChange": "Prodigy 版本的竞技场在 Overflow、Drop-Off 和 Encore 地图回归，采用先赢三回合的胜负条件。每回合购买武器，所有玩家免费获得所需治疗品；每件武器每局只能购买一次，部分回合提供折扣武器，补给舱增加护甲、强化套件和特殊武器。",
+    "tempoImpact": "购买限制和回合折扣把每轮变成一次明确的配装实验，队伍需要在当前回合取胜、保留资源和预判下一轮折扣之间做决定。",
+    "designObservation": "竞技场回归通过限制购买次数和移除英雄强化，把注意力重新集中到枪械组合、经济和回合节奏；地图保持熟悉，系统规则承担变化。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/prodigy-patch-notes",
+    "imageUrl": "assets/modes/generated/apex-arenas-prodigy-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2025-05-06",
+    "launchLabel": "2025年5月6日至6月23日限时回归",
+    "launchNote": "EA 官方 Prodigy 补丁列出两阶段竞技场回归：5月6日至19日以及5月20日至6月23日；本卡记录后一个完整规则版本。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true
+  },
+  {
     "id": "delta-force-crazy-mystery-box-advanced-2026",
     "game": "三角洲行动",
     "modeName": "疯狂神秘箱进阶挑战（Crazy Mystery Box Advanced）",
