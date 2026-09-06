@@ -14462,5 +14462,156 @@
       "warfare"
     ],
     "isLtm": true
+  },
+  {
+    "id": "fortnite-blitz-2018",
+    "game": "Fortnite",
+    "modeName": "闪电战（Blitz）",
+    "year": "2018",
+    "date": "2018-11-06",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "快速 BR",
+      "提前缩圈",
+      "高资源密度"
+    ],
+    "oneLineRule": "更快的大逃杀：开局风暴已经开始移动，缩圈间隔压缩至最多约 15 分钟，并提高宝箱、弹药箱、资源和空投密度。",
+    "mechanicChange": "Blitz 将风暴的第一阶段前置，缩短各轮等待时间；宝箱与弹药箱刷新率提高，地面空置战利品大幅减少，资源采集提高 50%，材料地面堆叠增加，空投和羊驼数量也更多。",
+    "tempoImpact": "玩家必须在落地瞬间决定路线，搜刮窗口和转点窗口同时被压缩；高资源密度减少“找不到枪”的空档，提前缩圈则持续把队伍推向交火。",
+    "designObservation": "通过压缩等待时间、提升资源供给来制造短局 BR；它保留生存目标，却让决策频率和交战密度明显高于标准局。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v6-22",
+    "imageUrl": "assets/modes/generated/fortnite-blitz-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-11-06",
+    "launchLabel": "2018年11月 v6.22 版本期间开放",
+    "launchNote": "Epic v6.22 官方补丁将 Blitz 列为限时模式；它与 2025 年的 Blitz Royale 是不同规则的两张卡。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "fortnite-team-terror-2018",
+    "game": "Fortnite",
+    "modeName": "团队恐怖战（Team Terror）",
+    "year": "2018",
+    "date": "2018-11-06",
+    "tags": [
+      "br-ltm",
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "32v32 大队伍",
+      "怪物干扰",
+      "复活/资源强化"
+    ],
+    "oneLineRule": "两支 32 人队伍争夺胜利，同时应对遍布地图的方块怪物；消灭敌方队伍即可获胜，怪物会掉落武器和弹药。",
+    "mechanicChange": "地图散布怪物生成器，并在每次风暴进入新圈时继续出现；金色怪物与生成器会掉落传奇物品。采集资源提高 75%，地面、弹药箱、宝箱和空投都提供更高的补给量。",
+    "tempoImpact": "敌我交战与 PvE 目标同时争夺注意力，怪物生成会打断安全转点并制造临时掩护/暴露；高补给让大队伍持续作战，直到一方被清空。",
+    "designObservation": "在大队伍 BR 中加入可争夺的 PvE 噪声源，可以把单纯阵线推进变成三方压力管理；怪物掉落又为主动清理提供即时回报。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v6-22",
+    "imageUrl": "assets/modes/generated/fortnite-team-terror-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-11-06",
+    "launchLabel": "2018年11月 v6.22 版本期间开放",
+    "launchNote": "Epic v6.22 官方补丁明确记载 Team Terror 的 32v32、怪物生成器和资源规则。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "fortnite-team-rumble-2018",
+    "game": "Fortnite",
+    "modeName": "团队骚乱（Team Rumble）",
+    "year": "2018",
+    "date": "2018-11-27",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "20v20 大队伍",
+      "击杀计分",
+      "快速复活"
+    ],
+    "oneLineRule": "两支大队伍持续交战，先达到 100 次淘汰的一方获胜；被淘汰后 5 秒复活并保留当前物品。",
+    "mechanicChange": "v6.31 版本将队伍规模设为 20v20，玩家淘汰后快速复活，并掉落随机弹药或建材；只刷新稀有及以上武器，胜负由团队累计淘汰数决定。",
+    "tempoImpact": "复活和累计击杀目标让对局从一次性生存转为连续前线循环；死亡成本降低后，队伍会围绕交火热点反复争夺位置，直到一方完成 100 击杀。",
+    "designObservation": "把 BR 地图、搜刮和建造放进可持续复活的击杀竞赛，可以同时保留 Fortnite 的建造表达和团队死斗的即时反馈。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v6-31",
+    "imageUrl": "assets/modes/generated/fortnite-team-rumble-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-11-27",
+    "launchLabel": "2018年11月 v6.31 版本期间开放",
+    "launchNote": "Epic v6.31 官方补丁明确 Team Rumble 的 20v20、5 秒复活、100 击杀胜利条件。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "fortnite-score-royale-2018",
+    "game": "Fortnite",
+    "modeName": "积分大逃杀（Score Royale）",
+    "year": "2018",
+    "date": "2018-08-23",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "积分胜利",
+      "探索搜刮",
+      "多队伍 BR"
+    ],
+    "oneLineRule": "通过拾取硬币、打开容器、收集补给和淘汰敌人累积积分，达到对应人数模式的目标分数即可获胜。",
+    "mechanicChange": "模式把 Victory Royale 改成积分竞速：吃苹果或蘑菇、开弹药箱、宝箱、空投、羊驼和硬币都能得分，淘汰敌人也得 100 分；前期风暴更慢，后期风暴加速，逼迫玩家在探索和交战间取舍。",
+    "tempoImpact": "积分目标让搜刮路线本身成为主动策略，玩家不必只追求最后存活；前期缓慢缩圈给探索留出时间，后期加速则把领先者和追赶者拉入最终战。",
+    "designObservation": "将非战斗行为转化为公开分数，可以让 BR 的地图探索、资源搜刮和击杀共享同一胜利经济；分值权重决定玩家对风险的选择。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v5-30?lang=en-US",
+    "imageUrl": "assets/modes/generated/fortnite-score-royale-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-08-23",
+    "launchLabel": "2018年8月23日随 v5.30 版本开放",
+    "launchNote": "Epic v5.30 官方补丁明确 Score Royale 的积分来源与单人/双人/小队目标分数。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "fortnite-teams-of-20-v2-2018",
+    "game": "Fortnite",
+    "modeName": "20 人小队大逃杀 v2（Teams of 20 v2）",
+    "year": "2018",
+    "date": "2018-05-30",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "5 支 20 人队伍",
+      "专属巴士",
+      "大队伍 BR"
+    ],
+    "oneLineRule": "五支 20 人队伍战斗到最后；每队拥有自己的巴士，开局更容易集体跳伞，补给箱额外提供弹药和消耗品。",
+    "mechanicChange": "每队由 5 个四人小队组成，并分配独立巴士路径；宝箱和空投提高弹药、消耗品与资源供给，强化大队伍的集结和持续推进。",
+    "tempoImpact": "专属巴士降低了大队伍落地分散的问题，开局更快形成阵线；额外补给支撑长时间团战，地图中的遭遇更接近多方军团推进。",
+    "designObservation": "大队伍模式的关键在于让“人数优势”能在开局转化为可组织的空间优势；专属跳伞路径和补给强化共同解决了多人队列的集结成本。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v4-3?lang=en-US",
+    "imageUrl": "assets/modes/generated/fortnite-teams-of-20-v2-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-05-30",
+    "launchLabel": "2018年5月30日随 v4.3 版本开放",
+    "launchNote": "Epic v4.3 官方补丁明确 Teams of 20 v2 的 5 队、专属巴士和补给变化；基础 Teams of 20 另有独立卡片。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
   }
 ]

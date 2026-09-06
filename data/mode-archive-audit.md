@@ -152,8 +152,8 @@
 
 ## 2026-09-07 全库完成性校验
 
-- 当前 `data/modes.json` 共 479 张卡：Fortnite 37、PUBG 29、和平精英 65、Apex Legends 56、三角洲行动 37、PUBG Mobile 156、Free Fire 99；每个游戏的 `modeIds` 与来源台账完全一致。
-- 逐卡检查结果：340 张本地封面、139 张官方远程封面，远程封面已逐项抽检并返回 `200 image/*`，本地封面全部存在；`modeName`、规则、机制、节奏、设计观察、上线信息和图片来源字段均包含中文可读内容。
+- 当前 `data/modes.json` 共 484 张卡：Fortnite 42、PUBG 29、和平精英 65、Apex Legends 56、三角洲行动 37、PUBG Mobile 156、Free Fire 99；每个游戏的 `modeIds` 与来源台账完全一致。
+- 逐卡检查结果：345 张本地封面、139 张官方远程封面，远程封面已逐项抽检并返回 `200 image/*`，本地封面全部存在；`modeName`、规则、机制、节奏、设计观察、上线信息和图片来源字段均包含中文可读内容。
 - 这项校验只证明当前入库卡片没有漏图或不可读字段；官方历史模式的回溯仍保持 `ongoing_backfill`，定时任务继续按未覆盖年份、版本和分页推进。
 
 ### Free Fire 来源台账对账（2026-09-07）
@@ -222,3 +222,10 @@
 ### Fortnite v8.40 美食大战变体补漏
 
 - 复核 [Epic v8.40 官方补丁](https://www.fortnite.com/patch-notes/v8-40?lang=en-US)：`Food Fight - Deep Fried` 在基础美食大战上加入熔岩上升、吉祥物被摧毁后取消复活、持续建材和禁用爆炸武器等独立规则，新增 `fortnite-food-fight-deep-fried-2019`；`Air Royale` 已有卡片，普通武器与赛事说明不重复建卡。
+
+### Fortnite 2018 大队伍与积分玩法补漏
+
+- 复核 [Epic v6.22 官方补丁](https://www.fortnite.com/patch-notes/v6-22)：补入 `Team Terror`（32v32、方块怪物干扰）和早期 `Blitz`（提前缩圈、高资源密度）；两者均有独立胜负与资源规则。
+- 复核 [Epic v6.31 官方补丁](https://www.fortnite.com/patch-notes/v6-31)：补入 `Team Rumble`，记录 20v20、5 秒复活、100 击杀胜利和稀有以上武器池。
+- 复核 [Epic v5.30 官方补丁](https://www.fortnite.com/patch-notes/v5-30?lang=en-US)：补入 `Score Royale`，记录硬币、容器、补给和淘汰的积分竞速规则。
+- 复核 [Epic v4.3 官方补丁](https://www.fortnite.com/patch-notes/v4-3?lang=en-US)：补入 `Teams of 20 v2`，记录五队各自巴士与额外补给；基础 Teams of 20 保留原卡片。
