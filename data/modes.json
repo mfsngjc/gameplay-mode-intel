@@ -11660,5 +11660,35 @@
     "isLtm": false,
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
     "imageUrl": "assets/modes/generated/pubgm-wow-pubgm-go-2023.svg"
+  },
+  {
+    "id": "pubgm-wow-summer-brawl-2023",
+    "game": "PUBG Mobile",
+    "modeName": "夏日乱斗地图（Summer Brawl）",
+    "year": "2023",
+    "date": "2023-07-11",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 地图模板",
+      "职业选择",
+      "技能与装备"
+    ],
+    "oneLineRule": "进入夏日乱斗创作地图，从不同职业、技能、枪械和装备中选择配置，完成对应地图的团队对抗目标。",
+    "mechanicChange": "官方 World of Wonder 页面将 Summer Brawl 列为新地图：玩家可以选择不同职业、技能、枪械和装备，形成多种创作战斗方式。公开页面没有给出统一人数、计分或终局规则，因此本卡只记录已确认的配置层。",
+    "tempoImpact": "职业与技能选择会把开局准备变成路线和分工决策，地图中的目标距离与装备组合决定交战密度；具体节奏取决于创作地图配置。",
+    "designObservation": "把职业、技能、枪械和装备放进同一张模板地图，可以让创作者快速试验构筑与团队职责；模板需要在进入前清楚解释配置差异，降低理解成本。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/WOW/new1.shtml",
+    "launchDate": "2023-07-11",
+    "launchLabel": "2023年7月11日随 2.7 版本 World of Wonder 更新公布",
+    "launchNote": "官方页面确认 Summer Brawl 地图和职业/技能/枪械/装备选择；统一胜负条件、人数与开放轮换待具体创作地图补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/generated/pubgm-wow-summer-brawl-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
