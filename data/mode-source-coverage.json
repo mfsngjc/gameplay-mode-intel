@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 128,
-      "coverCount": 128,
-      "readableDescriptionCount": 128,
+      "modeCount": 134,
+      "coverCount": 134,
+      "readableDescriptionCount": 134,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -455,7 +455,13 @@
         "pubgm-wow-ice-naval-map-2024",
         "pubgm-wow-freezing-tower-assault-2024",
         "pubgm-ranked-team-deathmatch-warehouse-2025",
-        "pubgm-ranked-team-deathmatch-hangar-2025"
+        "pubgm-ranked-team-deathmatch-hangar-2025",
+        "pubgm-wow-bio-infection-2024",
+        "pubgm-wow-pan-blade-ball-2024",
+        "pubgm-wow-grenade-blade-ball-2v2-2024",
+        "pubgm-wow-grenade-blade-ball-ffa-2024",
+        "pubgm-wow-aerial-ship-combat-2024",
+        "pubgm-wow-zombie-infection-2024"
       ],
       "officialSourceUrls": [
         "https://pubgmobile.jp/version-2-0-0-patch-notes/",

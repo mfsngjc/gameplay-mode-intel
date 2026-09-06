@@ -11090,5 +11090,185 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-ranked-team-deathmatch-hangar-2025.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-wow-bio-infection-2024",
+    "game": "PUBG Mobile",
+    "modeName": "生化感染（Bio Infection）",
+    "year": "2024",
+    "date": "2024-03-17",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "感染转化",
+      "阵营对抗"
+    ],
+    "oneLineRule": "开局随机一名玩家变成僵尸，僵尸通过淘汰感染其他玩家；人类需要合作存活并阻止感染扩散。",
+    "mechanicChange": "官方 Skyhigh Spectacle 页面把 Bio Infection 列为新的 World of Wonder 游戏模板：开局随机分配一名僵尸，僵尸可以感染其他玩家，阵营人数会随着淘汰逐步变化。页面没有公布人数、回合时间或最终胜负细则，因此只记录已确认的感染框架。",
+    "tempoImpact": "阵营转化会让战斗从分散搜寻逐渐收束为追逐与封锁，人类需要尽早抱团，僵尸则要利用人数增长制造突破窗口。",
+    "designObservation": "感染机制让淘汰者继续参与并改变阵营，能把短局的玩家密度转成持续升级的空间压力；正式规则需要明确感染条件和终局阈值。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
+    "launchDate": "2024-03-17",
+    "launchLabel": "2024年3月17日随 Skyhigh Spectacle 的 World of Wonder 更新公布",
+    "launchNote": "官方页面确认 Bio Infection 为新游戏模板，并明确随机僵尸与感染机制；人数、计分和终局规则待对应创作地图补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-bio-infection-2024.svg"
+  },
+  {
+    "id": "pubgm-wow-pan-blade-ball-2024",
+    "game": "PUBG Mobile",
+    "modeName": "平底锅刀球（Pan and Blade Ball）",
+    "year": "2024",
+    "date": "2024-03-17",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "2v2 团队死斗",
+      "击退出界"
+    ],
+    "oneLineRule": "2v2 在小型礁石上用平底锅反弹刀球，把对手击退到水中；落水者需要快速游回，否则无法继续反弹。",
+    "mechanicChange": "官方页面将 Pan and Blade Ball 列为 Beta Creation Gameplay：玩家在小型礁石上进行 2v2 团队死斗，平底锅反弹刀球会产生击退，掉入水中的玩家必须游回才能继续参与。",
+    "tempoImpact": "刀球轨迹和边缘出界形成持续的空间压力，队伍需要同时控制反弹节奏、站位和回到礁石的路线。",
+    "designObservation": "把“击退出界”加入反弹球规则后，玩家不只争夺命中，还要围绕有限平台管理空间；水面既是失败区，也是短暂的返场路线。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
+    "launchDate": "2024-03-17",
+    "launchLabel": "2024年3月17日随 Skyhigh Spectacle 的 World of Wonder 更新公布",
+    "launchNote": "官方页面确认 2v2、平底锅反弹、击退出界和落水返场规则；具体得分与回合数待创作地图说明补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-pan-blade-ball-2024.svg"
+  },
+  {
+    "id": "pubgm-wow-grenade-blade-ball-2v2-2024",
+    "game": "PUBG Mobile",
+    "modeName": "双人手雷刀球（2v2 Grenade Blade Ball）",
+    "year": "2024",
+    "date": "2024-03-17",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "2v2 团队死斗",
+      "爆炸倒计时"
+    ],
+    "oneLineRule": "2v2 反弹会倒计时爆炸的刀球；没有及时反弹或刀球倒计时结束时，爆炸范围内的玩家会受到伤害或被淘汰。",
+    "mechanicChange": "官方页面将 2v2 Grenade Blade Ball 列为 Beta Creation Gameplay：刀球会在倒计时结束时爆炸，未能成功反弹会立即引爆，双方以 2v2 团队死斗形式对抗。",
+    "tempoImpact": "倒计时把每次反弹变成即时决策，队伍必须在接球、换位和逼迫对手失误之间快速切换。",
+    "designObservation": "把熟悉的反弹球加入爆炸倒计时后，核心乐趣从纯瞄准转向时间压力与站位诱导；爆炸半径决定了风险是否会扩散到队友。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
+    "launchDate": "2024-03-17",
+    "launchLabel": "2024年3月17日随 Skyhigh Spectacle 的 World of Wonder 更新公布",
+    "launchNote": "官方页面确认 2v2、爆炸刀球和失败反弹引爆规则；具体计分、回合和伤害数值待创作地图说明补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-grenade-blade-ball-2v2-2024.svg"
+  },
+  {
+    "id": "pubgm-wow-grenade-blade-ball-ffa-2024",
+    "game": "PUBG Mobile",
+    "modeName": "八人手雷刀球（8-Player Grenade Blade Ball）",
+    "year": "2024",
+    "date": "2024-03-17",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "8 人积分赛",
+      "复活循环"
+    ],
+    "oneLineRule": "8 名玩家在有复活的积分赛中反弹会爆炸的刀球，倒计时结束后以淘汰他人获得分数，最终积分最高者获胜。",
+    "mechanicChange": "官方页面将 8-Player Grenade Blade Ball 列为 Beta Creation Gameplay：8 名玩家参加带复活的积分赛，刀球倒计时结束会爆炸，比赛结束时按淘汰积分决定胜者。",
+    "tempoImpact": "复活让玩家可以持续回到战场，爆炸倒计时又让每次交火都有即时风险；队伍关系被改成围绕积分领先者的短时追逐。",
+    "designObservation": "开放复活和积分目标把一次性淘汰压力转成连续追分，适合观察爆炸范围、复活点和领先者暴露之间的平衡。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
+    "launchDate": "2024-03-17",
+    "launchLabel": "2024年3月17日随 Skyhigh Spectacle 的 World of Wonder 更新公布",
+    "launchNote": "官方页面确认 8 人、复活、积分赛与刀球爆炸规则；具体比赛时长和每次淘汰分值待创作地图说明补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-grenade-blade-ball-ffa-2024.svg"
+  },
+  {
+    "id": "pubgm-wow-aerial-ship-combat-2024",
+    "game": "PUBG Mobile",
+    "modeName": "空中飞船战（Aerial Ship Combat）",
+    "year": "2024",
+    "date": "2024-03-17",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "8 人积分赛",
+      "复活循环"
+    ],
+    "oneLineRule": "8 名玩家在空中飞船上持续交战并争夺淘汰积分；倒计时结束后，积分最高的玩家获胜。",
+    "mechanicChange": "官方页面将 Aerial Ship Combat 列为 Beta Creation Gameplay：8 名玩家参加带复活的积分赛，刀球爆炸机制会威胁近距离玩家，比赛结束时以淘汰积分结算。",
+    "tempoImpact": "空中平台限制了安全退路，复活和积分又会把玩家不断拉回同一条交火路线；位置控制与快速返场共同决定领先能否保持。",
+    "designObservation": "把积分赛放到移动或高风险平台上，可以让空间边界本身成为胜负规则；关键是让返场路线足够清楚，避免失败只来自不可读的坠落。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
+    "launchDate": "2024-03-17",
+    "launchLabel": "2024年3月17日随 Skyhigh Spectacle 的 World of Wonder 更新公布",
+    "launchNote": "官方页面确认 Aerial Ship Combat 为 8 人复活积分赛，并说明以淘汰积分决定胜者；地图布局和具体计分待创作地图说明补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-aerial-ship-combat-2024.svg"
+  },
+  {
+    "id": "pubgm-wow-zombie-infection-2024",
+    "game": "PUBG Mobile",
+    "modeName": "僵尸感染模式（Zombie Infection Mode）",
+    "year": "2024",
+    "date": "2024-03-17",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "阵营转化",
+      "英雄强化"
+    ],
+    "oneLineRule": "开局随机分为僵尸和人类两方；僵尸淘汰人类后会使其转化，最后少数人类会变成拥有强化能力的英雄，最终只有一方获胜。",
+    "mechanicChange": "官方页面将 Zombie Infection Mode 列为 Beta Creation Gameplay：玩家随机分为僵尸和人类，僵尸淘汰人类后会完成感染；当人类只剩少数时，会转化为强化英雄，结局由阵营胜负决定。",
+    "tempoImpact": "阵营转化会持续改变人数和追击关系，后期的英雄强化为人类提供一次反转窗口，避免感染方只靠人数滚雪球。",
+    "designObservation": "“感染—少数英雄—终局阵营”形成清晰的阶段转换，既延长淘汰者的参与时间，也给人类阵营一个可被争夺的最后窗口。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
+    "launchDate": "2024-03-17",
+    "launchLabel": "2024年3月17日随 Skyhigh Spectacle 的 World of Wonder 更新公布",
+    "launchNote": "官方页面确认阵营转化、英雄强化和单一胜方；具体人数、感染条件和时间限制待创作地图说明补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-zombie-infection-2024.svg"
   }
 ]
