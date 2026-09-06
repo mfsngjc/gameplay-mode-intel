@@ -6591,5 +6591,130 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-king-cs-2025.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-hundred-rhythms-2021",
+    "game": "PUBG Mobile",
+    "modeName": "百种节奏（Hundred Rhythms）",
+    "year": "2021",
+    "date": "2021-03-09",
+    "tags": [
+      "br-core",
+      "power",
+      "space"
+    ],
+    "type": [
+      "技能臂章",
+      "音乐地标",
+      "收集升级"
+    ],
+    "oneLineRule": "在 Erangel 选择一种音乐臂章，收集散落的磁带解锁主动与被动技能，在音乐广场争夺战斗优势。",
+    "mechanicChange": "官方 1.3 版本把 Hundred Rhythms 作为 Erangel 限时玩法：出生岛选择守护、侦察或伪装臂章，每种臂章提供 1 个主动技能和 2 个被动技能；玩家需要收集磁带解锁被动能力，地图还会生成 3 个电子音乐广场，其中两个位置随机。",
+    "tempoImpact": "技能选择在跳伞前就确定了队伍的行动倾向，磁带和音乐广场又把中期路线变成可争夺的升级路径。",
+    "designObservation": "把能力构筑压缩成三套易懂的臂章，再用地图收集物控制成长速度，能让主题玩法拥有明显差异而不破坏大逃杀的基础节奏。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202103/884424.shtml",
+    "launchDate": "2021-03-09",
+    "launchLabel": "2021年3月9日起限时开放",
+    "launchNote": "官方 1.3 公告确认三种音乐臂章、磁带升级和随机音乐广场；本卡聚焦 Hundred Rhythms 的局内规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-hundred-rhythms-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-titan-strikes-2021",
+    "game": "PUBG Mobile",
+    "modeName": "泰坦来袭（Titan Strikes）",
+    "year": "2021",
+    "date": "2021-05-11",
+    "tags": [
+      "br-core",
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "移动首领",
+      "PVE 地图事件",
+      "水晶奖励"
+    ],
+    "oneLineRule": "在 Erangel、Sanhok 或 Livik 追踪会沿随机路线移动的泰坦，探索怪物聚落和营地，争夺泰坦水晶。",
+    "mechanicChange": "官方 1.4 版本让三张地图分别出现一名泰坦：泰坦会沿随机路线移动并摧毁怪物聚落或 Apex 远征军营地，达到能量阈值后生成不同效果的泰坦水晶；怪物聚落会主动攻击玩家，Livik 的泰坦还会周期性改变蓝区并暴露水晶收集者的位置。",
+    "tempoImpact": "移动首领持续改变地图上的热点，队伍需要在追踪泰坦、抢先搜刮被摧毁的营地和避开玩家聚集之间做路线选择。",
+    "designObservation": "把 PVE 首领设计成会移动的公共事件，可以持续重排战场热点；不同地图的水晶效果又让同一套主题规则适配不同地图节奏。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202105/889275.shtml",
+    "launchDate": "2021-05-11",
+    "launchLabel": "2021年5月11日至6月8日限时玩法",
+    "launchNote": "官方 1.4 公告确认泰坦在 Erangel、Sanhok、Livik 的出现时间、随机移动、营地、怪物聚落和水晶奖励。",
+    "gameplayTypes": [
+      "br",
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-titan-strikes-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-mission-ignition-2021",
+    "game": "PUBG Mobile",
+    "modeName": "任务点火（Mission Ignition）",
+    "year": "2021",
+    "date": "2021-07-09",
+    "tags": [
+      "br-core",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "动态城市",
+      "线路交通",
+      "科技载具"
+    ],
+    "oneLineRule": "在科技改造后的 Erangel 中利用 HyperLine、空中传送带和动态建筑移动，并争夺 Tesla 工厂与自动驾驶载具。",
+    "mechanicChange": "官方 1.5 版本把 Erangel 作为 DynaHex 科技试验场：城市加入升降机、自动门和移动平台，HyperLine 连接固定站点，空中传送带提供空中转移；Tesla Gigafactory 可生产 Model Y，公路上的自动驾驶车辆会按路线移动并掉落补给。",
+    "tempoImpact": "固定交通网络提高了跨区转移速度，也让路线更容易被预判；工厂开关、车辆和补给运输把大地图上的移动目标变成新的争夺点。",
+    "designObservation": "科技主题通过可重复使用的交通基础设施改变地图流动性，比单个强力道具更能重塑大逃杀的路线网络；自动驾驶车辆又提供了公开、可追踪的移动资源。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202107/894225.shtml",
+    "launchDate": "2021-07-09",
+    "launchLabel": "2021年7月9日至9月6日限时玩法",
+    "launchNote": "官方 1.5 公告确认动态城市、HyperLine、空中传送带、Tesla Gigafactory 与自动驾驶载具。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-mission-ignition-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-clowns-tricks-2021",
+    "game": "PUBG Mobile",
+    "modeName": "小丑把戏（Clowns’ Tricks）",
+    "year": "2021",
+    "date": "2021-03-31",
+    "tags": [
+      "br-core",
+      "objective",
+      "resource"
+    ],
+    "type": [
+      "信息兑换",
+      "移动商店",
+      "地图事件"
+    ],
+    "oneLineRule": "在 Erangel 的周年广场寻找小丑代币，到小丑商店兑换下一安全区、空投和敌人密度等战略信息。",
+    "mechanicChange": "官方 1.3 公告把小丑事件加入经典 Erangel：周年广场会出现涂鸦和小丑商店载具，玩家收集小丑代币后可换取普通物资或下一安全区、下一空投和全图敌人密度等战略信息。",
+    "tempoImpact": "信息兑换把地图资源转化成路线预判，队伍可以用代币换取更准确的转点依据，但也要为小丑商店的位置暴露承担风险。",
+    "designObservation": "把安全区和敌人密度变成可购买的信息，能让资源搜刮产生新的策略层；信息不直接造成伤害，因此不会取代枪法，只会提高决策质量。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202103/884424.shtml",
+    "launchDate": "2021-03-31",
+    "launchLabel": "2021年3月31日起周年活动内容",
+    "launchNote": "官方 1.3 公告确认小丑商店载具、小丑代币和三类战略信息兑换；本卡按独立地图事件收录。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-clowns-tricks-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
