@@ -263,3 +263,7 @@
 ### PUBG Mobile 2020–2025 专题页反查
 
 - 复核 [0.17.0 官方补丁](https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35373/35374/35386/35387/m20497/202002/849328.shtml)、[4 周年活力周年](https://www.pubgmobile.com/en/event/Vibrant-Anniversary/)、[龙珠超主题玩法](https://www.pubgmobile.com/en/event/dragon-ball-super/)、[暗影力量](https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/)、[机甲融合](https://www.pubgmobile.com/en/event/New-Mecha-Vehicles/)、[变形金刚联动](https://www.pubgmobile.com/en/event/Official-Transformers-Collaboration/) 和 [4.1 冰雪乐园](https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-410/)：`Arctic Mode`、`Hardcore Mode`、`Vibrant Anniversary`、`Battle Royale: Dragon Ball Super`、`Ice Naval Map`、`Freezing Tower Assault Arena`、`Mecha Fusion`、`Summer Showdown`、`Racing Carnival`、`Snow Roguelike Adventure`、`Frosty Funland Rocket Launcher Frenzy` 等均已与现有卡片匹配；World of Wonder 编辑器功能和地图模板按创作内容归档，没有新的官方独立匹配模式遗漏。
+
+### Fortnite v8.40 来源 URL 规范化复核
+
+- 发现 `fortnite-food-fight-deep-fried-2019` 的卡片使用 `https://www.fortnite.com/patch-notes/v8-40?lang=en-US`，来源台账此前只登记了同页的 URL 编码形式；已补登记实际 URL，避免定时任务因编码差异跳过该页面。

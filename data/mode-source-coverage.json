@@ -100,10 +100,11 @@
         "https://www.fortnite.com/patch-notes/v7-40-content-update?lang=en-US",
         "https://www.fortnite.com/patch-notes/v8-20?lang=en-US",
         "https://www.fortnite.com/patch-notes/v8-40%3Flang%3Den-US",
+        "https://www.fortnite.com/patch-notes/v8-40?lang=en-US",
         "https://www.fortnite.com/patch-notes/v9-10?lang=en-US",
         "https://www.fortnite.com/patch-notes/v9-21%26?lang=en-US"
       ],
-      "notes": "已复核 Epic 官方 fortnite.com/news 与 patch-notes；本轮补入 Fall Guys Crown Jam 3v3 竞技玩法和 Fortnite: Delulu 临时组队 BR，后续继续回溯早期 LTM、Reload 变体与 Creative/UEFN 的独立规则玩法。 已复核 2026 Lantern Fest 8 人小队 Reload：只是 Reload 的临时组队规模变体，沿用父模式复活/胜负规则，不重复建独立模式卡。 已从 Epic v6.30 官方补丁补入 Scavenger Pop-Up Cup：单人弹窗杯明确改变材料上限、采集速度和击杀回血规则。 已从 Epic v8.20 官方补丁补入 2019 Arena Game Mode，和 2026 年连续回合竞技场分开记录。 已从 Epic v8.40 官方补丁补入 Food Fight: Deep Fried 熔岩变体，和基础 Food Fight 分开记录。 已复核 Epic v6.22、v6.31、v5.30、v4.3 官方补丁，补入 Blitz、Team Terror、Team Rumble、Score Royale 与 Teams of 20 v2。 来源台账已登记本轮复核的 v4.3、v5.30、v6.22、v6.31 官方补丁 URL。 已复核 Epic v3.4、v4.4、v5.20、v5.21、v9.10 与早期公告，补入高爆模式、狙击对决、翱翔 50 人战、持续风暴和复古武器小队。"
+      "notes": "已复核 Epic 官方 fortnite.com/news 与 patch-notes；本轮补入 Fall Guys Crown Jam 3v3 竞技玩法和 Fortnite: Delulu 临时组队 BR，后续继续回溯早期 LTM、Reload 变体与 Creative/UEFN 的独立规则玩法。 已复核 2026 Lantern Fest 8 人小队 Reload：只是 Reload 的临时组队规模变体，沿用父模式复活/胜负规则，不重复建独立模式卡。 已从 Epic v6.30 官方补丁补入 Scavenger Pop-Up Cup：单人弹窗杯明确改变材料上限、采集速度和击杀回血规则。 已从 Epic v8.20 官方补丁补入 2019 Arena Game Mode，和 2026 年连续回合竞技场分开记录。 已从 Epic v8.40 官方补丁补入 Food Fight: Deep Fried 熔岩变体，和基础 Food Fight 分开记录。 已复核 Epic v6.22、v6.31、v5.30、v4.3 官方补丁，补入 Blitz、Team Terror、Team Rumble、Score Royale 与 Teams of 20 v2。 来源台账已登记本轮复核的 v4.3、v5.30、v6.22、v6.31 官方补丁 URL。 已复核 Epic v3.4、v4.4、v5.20、v5.21、v9.10 与早期公告，补入高爆模式、狙击对决、翱翔 50 人战、持续风暴和复古武器小队。 补登记 v8.40 页面实际卡片 URL（?lang=en-US），与编码形式保持并存，避免来源匹配因 URL 编码差异漏扫。"
     },
     "PUBG": {
       "coverageStatus": "ongoing_backfill",
