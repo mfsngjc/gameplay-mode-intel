@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 38,
-      "coverCount": 38,
-      "readableDescriptionCount": 38,
+      "modeCount": 47,
+      "coverCount": 47,
+      "readableDescriptionCount": 47,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -365,7 +365,16 @@
         "pubgm-hundred-rhythms-2021",
         "pubgm-titan-strikes-2021",
         "pubgm-mission-ignition-2021",
-        "pubgm-clowns-tricks-2021"
+        "pubgm-clowns-tricks-2021",
+        "pubgm-spark-the-flame-2020",
+        "pubgm-ancient-secret-2020",
+        "pubgm-team-gun-game-2020",
+        "pubgm-aftermath-2022",
+        "pubgm-spiderman-2022",
+        "pubgm-core-circle-2022",
+        "pubgm-ancient-secret-arise-2022",
+        "pubgm-football-mania-2022",
+        "pubgm-ultimate-arena-2022"
       ],
       "officialSourceUrls": [
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202011/874641.shtml",
@@ -400,9 +409,14 @@
         "https://www.pubgmobile.com/en/event/Official-Transformers-Collaboration/",
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202103/884424.shtml",
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202105/889275.shtml",
-        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202107/894225.shtml"
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202107/894225.shtml",
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202007/862637.shtml",
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202201/908153.shtml",
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202205/915279.shtml",
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202207/918432.shtml",
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/m22521/202211/925426.shtml"
       ],
-      "notes": "已回溯 0.12–4.0 版本及 2021–2025 主题玩法页面，新增 Vibrant Anniversary、Imagiversary、Dinoground、Frozen Kingdom、Skyhigh Spectacle、Ocean Odyssey、Sacred Quartet、Transformers、Gear Front、Royale Arena: Assault、Martial Showdown、Misty Port、Zombie’s Edge、Dragon Ball Super、Shadow Force、Jujutsu Kaisen、Unfail、Hundred Rhythms、Titan Strikes、Mission Ignition、Clowns’ Tricks 等玩法；仍需继续覆盖更早版本、2025–2026 后续主题和地区版本差异。"
+      "notes": "已回溯 0.12–4.0 版本及 2020–2025 主题玩法页面，补入 Spark the Flame、Ancient Secret、Team Gun Game、Aftermath、Spider-Man、Core Circle、Ancient Secret: Arise、Football Mania、Ultimate Arena 等官方玩法；仍需继续覆盖更早版本、2025–2026 后续主题和地区版本差异。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",

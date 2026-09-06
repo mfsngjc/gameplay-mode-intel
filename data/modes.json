@@ -6988,5 +6988,295 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-clash-squad-slay-2023.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-spark-the-flame-2020",
+    "game": "PUBG Mobile",
+    "modeName": "火花绽放主题玩法（Spark the Flame）",
+    "year": "2020",
+    "date": "2020-07-07",
+    "tags": [
+      "br-core",
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "可互动地标",
+      "地图收集"
+    ],
+    "oneLineRule": "在经典 BR 中寻找会燃烧的雕像和雕像营地，点燃地标后获取补给与活动物品，把短暂的主题热点纳入转点路线。",
+    "mechanicChange": "官方 0.19.0 公告把 Spark the Flame 放入 Erangel 与 Miramar 的经典模式：小雕像可互动并在燃烧后掉落补给，巨型雕像会随活动阶段变化并在最终阶段燃烧，雕像周围的帐篷营地可以搜刮。",
+    "tempoImpact": "地标不是固定必争的资源点，而是会随阶段变化的短时热点；队伍要在点燃、搜刮和暴露风险之间做取舍。",
+    "designObservation": "用“可点燃、会变化”的地图地标给经典 BR 增加时间感，既不改变胜利条件，又能制造自然的路线偏移。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202007/862637.shtml",
+    "launchDate": "2020-07-07",
+    "launchLabel": "2020年7月7日起限时加入经典模式",
+    "launchNote": "官方公告确认该主题玩法出现在 Erangel 与 Miramar；具体地区开放时间以客户端为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-spark-the-flame-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-ancient-secret-2020",
+    "game": "PUBG Mobile",
+    "modeName": "远古秘境（The Ancient Secret）",
+    "year": "2020",
+    "date": "2020-07-21",
+    "tags": [
+      "br-core",
+      "br-ltm",
+      "pve",
+      "objective"
+    ],
+    "oneLineRule": "进入会随信号区移动的远古神殿，解开石板谜题并挑战首领，以额外战利品换取高风险的主题路线。",
+    "mechanicChange": "官方 0.19.0 公告预告并随后开放 Ancient Secret：远古神殿会在固定时间升空并跟随信号区移动，玩家可互动解开石板谜题；进入二层封印房间后可以挑战神殿首领，地图上还会随机出现带箱子和谜题的小型遗迹。",
+    "tempoImpact": "神殿移动让主题目标与安全区同步，队伍需要边追区边判断是否进入高风险的 PVE 房间，形成“转点—解谜—撤离”的连续决策。",
+    "designObservation": "把可移动的主题空间和固定的安全区节奏绑定，可以让 PVE 内容成为 BR 路线的一部分，而不是脱离比赛的独立副本。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202007/862637.shtml",
+    "launchDate": "2020-07-21",
+    "launchLabel": "2020年7月下旬限时开放",
+    "launchNote": "官方 0.19.0 公告先确认该玩法即将上线；卡片按官方公布的神殿、石板、首领和小型遗迹规则整理。",
+    "gameplayTypes": [
+      "br",
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-ancient-secret-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "type": [
+      "主题 BR",
+      "移动神殿",
+      "首领战"
+    ]
+  },
+  {
+    "id": "pubgm-team-gun-game-2020",
+    "game": "PUBG Mobile",
+    "modeName": "团队枪械升级赛（Team Gun Game）",
+    "year": "2020",
+    "date": "2020-07-31",
+    "tags": [
+      "arena",
+      "objective",
+      "br-ltm"
+    ],
+    "oneLineRule": "4v4 团队竞技从同一把起始武器开始，击杀后逐级升级枪械，先用最终武器平底锅完成击杀的队伍获胜。",
+    "mechanicChange": "官方 0.19.0 公告加入 Team Gun Game：双方使用相同起始武器，通过击杀升级到下一把武器；终局武器是平底锅，先用平底锅击杀对手的一方获胜，时间到则比较分数。Library 是首张室内对称竞技场地图。",
+    "tempoImpact": "武器升级把击杀优势转化为下一阶段的射程与操作变化，领先队伍会被迫适应新枪，落后队伍则能通过针对性反打追回节奏。",
+    "designObservation": "把武器成长直接绑定击杀，让每次交战都同时改变下一回合的战斗条件；终局近战武器则把远程枪战收束成可读的冲刺目标。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202007/862637.shtml",
+    "launchDate": "2020-07-31",
+    "launchLabel": "2020年7月31日起周末开放",
+    "launchNote": "官方公告确认 4v4、武器升级、平底锅终局与 Library 地图；开放时段和地区轮换以客户端为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-team-gun-game-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "type": [
+      "团队竞技",
+      "武器升级",
+      "竞技场"
+    ]
+  },
+  {
+    "id": "pubgm-aftermath-2022",
+    "game": "PUBG Mobile",
+    "modeName": "余波（Aftermath）",
+    "year": "2022",
+    "date": "2022-01-12",
+    "tags": [
+      "br-core",
+      "br-ltm",
+      "objective",
+      "resource"
+    ],
+    "oneLineRule": "在被火山和爆炸改造的 Livik 上搜集资源、利用战术眼镜和召回塔，边战斗边寻找撤回战场的机会。",
+    "mechanicChange": "官方 1.8 更新将 Aftermath 作为非排位经典地图：Livik 地形被火山和爆炸重塑，枪械自带 AC Core Module，战术眼镜默认显示武器伤害；地图加入互动滑索和召回塔，每名玩家有一次召回队友的机会。",
+    "tempoImpact": "小型地图、稀疏城区和更密集的信号区让遭遇更早发生；滑索与一次召回又给队伍提供了快速转点和重新组织的窗口。",
+    "designObservation": "用一套明确的装备与信息规则重做旧地图，让“熟悉的地图”变成一张需要重新学习的战术空间，同时保留 BR 的搜集和撤离骨架。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202201/908153.shtml",
+    "launchDate": "2022-01-12",
+    "launchLabel": "2022年1月12日起限时开放",
+    "launchNote": "官方 1.8 公告明确将 Aftermath 作为 Unranked - Classic Mode 的新地图；后续版本再次回归并补充资源机制。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-aftermath-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "type": [
+      "主题 BR",
+      "重制地图",
+      "召回机制"
+    ]
+  },
+  {
+    "id": "pubgm-spiderman-2022",
+    "game": "PUBG Mobile",
+    "modeName": "蜘蛛侠主题玩法（Spider-Man™）",
+    "year": "2022",
+    "date": "2022-01-12",
+    "tags": [
+      "br-core",
+      "br-ltm",
+      "pve",
+      "power"
+    ],
+    "oneLineRule": "与蜘蛛侠并肩挑战首领，使用蛛网发射器和蛛网球限制敌人，并从蜘蛛补给箱中寻找主题道具。",
+    "mechanicChange": "官方 1.8 公告把 Spider-Man 主题玩法放进 Erangel 与 Livik：玩家可在 Mylta Power 与蜘蛛侠一起挑战首领，击败后获得高级补给；蛛网发射器可以减速命中目标，蛛网球会在落点范围生成减速蛛网，蜘蛛补给箱还会掉落基础物资和主题道具。",
+    "tempoImpact": "首领房是高收益的定点冲突，蛛网道具则把追击、封路和撤离变成短时空间控制，队伍会围绕首领与补给箱重新规划路线。",
+    "designObservation": "联动能力同时承担移动限制与目标争夺两种功能，能让 IP 主题自然嵌入 BR 的交战循环，而不只是装饰性内容。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202201/908153.shtml",
+    "launchDate": "2022-01-12",
+    "launchLabel": "2022年1月12日至2月14日限时开放",
+    "launchNote": "官方公告给出 Erangel 与 Livik 的开放窗口，以及首领、蛛网发射器、蛛网球和蜘蛛补给箱规则。",
+    "gameplayTypes": [
+      "br",
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-spiderman-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "type": [
+      "主题 BR",
+      "联动能力",
+      "首领战"
+    ]
+  },
+  {
+    "id": "pubgm-core-circle-2022",
+    "game": "PUBG Mobile",
+    "modeName": "核心圈（Core Circle）",
+    "year": "2022",
+    "date": "2022-05-19",
+    "tags": [
+      "br-core",
+      "br-ltm",
+      "pve",
+      "objective"
+    ],
+    "oneLineRule": "在 Erangel 上观察第六使徒与 EVA-01 的路线交锋，利用防御堡垒和固定补给箱，并通过超级召回重返战场。",
+    "mechanicChange": "官方 PUBG MOBILE × EVANGELION 主题玩法只在排位 Erangel 开放：第六使徒从出生岛出现并沿地图发射破坏光束，EVA-01 从地图下方升空迎战；防御堡垒受攻击后会暴露补给，地图各区有固定补给箱，提前淘汰的玩家可依靠超级召回每局自动带枪返场一次。",
+    "tempoImpact": "移动中的巨型事件会改变玩家对路线和暴露面的判断，防御堡垒与超级召回则把早期冲突的失败成本压低，鼓励队伍追逐事件节点。",
+    "designObservation": "让全局事件直接改写地图威胁，再用一次带枪返场缓冲高风险决策，可以把联动叙事转成可被玩家感知的战场节奏。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202205/915279.shtml",
+    "launchDate": "2022-05-19",
+    "launchLabel": "2022年5月19日至6月19日限时开放",
+    "launchNote": "官方页面确认该玩法在 Ranked - Erangel 开放，并列出第六使徒、EVA-01、防御堡垒、补给箱和超级召回。",
+    "gameplayTypes": [
+      "br",
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-core-circle-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "type": [
+      "主题 BR",
+      "全局事件",
+      "超级召回"
+    ]
+  },
+  {
+    "id": "pubgm-ancient-secret-arise-2022",
+    "game": "PUBG Mobile",
+    "modeName": "远古秘境：升空（Ancient Secret: Arise）",
+    "year": "2022",
+    "date": "2022-07-11",
+    "tags": [
+      "br-core",
+      "br-ltm",
+      "pve",
+      "objective"
+    ],
+    "oneLineRule": "穿过沙暴和流沙路径进入帝王神殿，解开石板封印，让背负远古秘境的沙之巨人移动，并完成法老试炼换取战利品。",
+    "mechanicChange": "官方 2.1 更新将 Ancient Secret: Arise 放入 Erangel、Miramar 与 Livik：沙暴区域由木乃伊战士守护并藏有宝藏；在 Erangel 还能沿流沙路径进入帝王神殿，踩下石板激活远古秘境，让沙之巨人带着神殿绕地图移动，玩家可登上它完成法老封印石板与试炼。",
+    "tempoImpact": "沙暴、流沙路径和移动神殿把 PVE 目标变成可追踪的动态路线，队伍需要在信号区、巨人位置和其他队伍之间做三方判断。",
+    "designObservation": "移动目标把“主题地点”从静态 POI 变成全局事件，让玩家在大地图上共享同一个可观察、可竞争的叙事对象。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202207/918432.shtml",
+    "launchDate": "2022-07-11",
+    "launchLabel": "2022年7月11日起限时开放",
+    "launchNote": "官方 2.1 更新公告确认三张地图、沙暴区域、木乃伊战士、帝王神殿和移动沙之巨人等规则。",
+    "gameplayTypes": [
+      "br",
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-ancient-secret-arise-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "type": [
+      "主题 BR",
+      "动态 PVE",
+      "移动目标"
+    ]
+  },
+  {
+    "id": "pubgm-football-mania-2022",
+    "game": "PUBG Mobile",
+    "modeName": "足球狂欢（Football Mania）",
+    "year": "2022",
+    "date": "2022-11-15",
+    "tags": [
+      "br-core",
+      "br-ltm",
+      "objective",
+      "casual"
+    ],
+    "oneLineRule": "在足球嘉年华争夺会倒计时开启的奖励房，用梅西金靴、奇迹足球和滚球载具改变移动、牵引与补给争夺。",
+    "mechanicChange": "官方 2.3 更新把矿坑改造成 Football Carnival：玩家可以乘轨道上的滚球载具快速移动，倒计时结束后开启奖励房；梅西金靴提供冲刺和假动作，奇迹足球可曲线踢向敌人并在落点牵引附近目标，足球场进球可开启补给箱，Erangel 还会出现足球信号枪和可推动、受伤后爆炸的巨大足球掩体。",
+    "tempoImpact": "运动道具把战斗、位移和资源争夺叠成一个可玩目标，倒计时奖励房和可推动掩体会制造短时聚集与爆发。",
+    "designObservation": "把足球动作翻译成“冲刺、牵引、推动、进球”四种可读交互，可以让联动主题直接参与 BR 的路线、交战和资源循环。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/m22521/202211/925426.shtml",
+    "launchDate": "2022-11-15",
+    "launchLabel": "2022年11月15日起限时开放",
+    "launchNote": "官方 2.3 更新公告确认 Football Carnival、梅西金靴、奇迹足球、滚球载具、足球场与足球掩体等内容。",
+    "gameplayTypes": [
+      "br",
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-football-mania-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "type": [
+      "主题 BR",
+      "运动道具",
+      "目标争夺"
+    ]
+  },
+  {
+    "id": "pubgm-ultimate-arena-2022",
+    "game": "PUBG Mobile",
+    "modeName": "终极竞技场（Ultimate Arena）",
+    "year": "2022",
+    "date": "2022-08-11",
+    "tags": [
+      "arena",
+      "objective",
+      "br-ltm"
+    ],
+    "oneLineRule": "多回合团队竞技中先赢下 4 个回合；每回合随机地图，利用防爆盾保护队友并快速歼灭对手。",
+    "mechanicChange": "官方 2.1 更新加入 Ultimate Arena：双方持续战斗直到一方全灭，先赢 4 回合的队伍获胜；每个回合使用随机地图，防爆盾可以为自己和队友挡住子弹，模式入口位于 Ranked - Arena。",
+    "tempoImpact": "四回合胜负和随机地图把单局战斗拆成连续的小目标，队伍需要在回合间调整策略，同时把防爆盾的保护窗口转成推进机会。",
+    "designObservation": "多回合结构让一场竞技同时拥有“即时击杀”和“系列赛适应”两层决策，随机地图则避免固定解法过早固化。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202207/918432.shtml",
+    "launchDate": "2022-08-11",
+    "launchLabel": "2022年8月11日起限时加入竞技场",
+    "launchNote": "官方 2.1 公告确认先赢 4 回合、随机地图、防爆盾和 Ranked - Arena 入口。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-ultimate-arena-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "type": [
+      "多回合竞技",
+      "随机地图",
+      "团队对抗"
+    ]
   }
 ]
