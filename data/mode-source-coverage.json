@@ -75,9 +75,10 @@
         "https://www.fortnite.com/patch-notes/v7-40-content-update?lang=en-US",
         "https://www.fortnite.com/patch-notes/v8-20?lang=en-US",
         "https://www.fortnite.com/patch-notes/v8-40%3Flang%3Den-US",
-        "https://www.fortnite.com/patch-notes/v9-21%26?lang=en-US"
+        "https://www.fortnite.com/patch-notes/v9-21%26?lang=en-US",
+        "https://www.fortnite.com/news/lantern-fest-2026-brings-8-player-reload-teams-to-fortnite?lang=en-US"
       ],
-      "notes": "已复核 Epic 官方 fortnite.com/news 与 patch-notes；本轮补入 Fall Guys Crown Jam 3v3 竞技玩法和 Fortnite: Delulu 临时组队 BR，后续继续回溯早期 LTM、Reload 变体与 Creative/UEFN 的独立规则玩法。"
+      "notes": "已复核 Epic 官方 fortnite.com/news 与 patch-notes；本轮补入 Fall Guys Crown Jam 3v3 竞技玩法和 Fortnite: Delulu 临时组队 BR，后续继续回溯早期 LTM、Reload 变体与 Creative/UEFN 的独立规则玩法。 已复核 2026 Lantern Fest 8 人小队 Reload：只是 Reload 的临时组队规模变体，沿用父模式复活/胜负规则，不重复建独立模式卡。"
     },
     "PUBG": {
       "coverageStatus": "ongoing_backfill",

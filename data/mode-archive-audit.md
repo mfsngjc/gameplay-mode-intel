@@ -133,3 +133,7 @@
 ### 三角洲行动第 11 赛季官方补丁登记
 
 - 追加登记 [S11 Reorientation 官方补丁](https://deltaforce.garena.com/en/news/announcement/PA6CZD)：它明确列出 `Polaris Patrol`、`Fishing` 和 Operations 1v1；三张卡已逐项核对身份成本、钓鱼装备/图鉴、零损耗单挑和开放时间。`Layali Grove 2.0`、`The Mog` 是地图更新，Rover 是干员能力，不重复建卡。
+
+### Fortnite 2026 Reload 变体复核
+
+- 核对 [Lantern Fest 2026 8 人小队 Reload](https://www.fortnite.com/news/lantern-fest-2026-brings-8-player-reload-teams-to-fortnite?lang=en-US)：活动期允许最多 8 人组队，排位 Reload 不开放，但公告没有改变 Reload 的复活、淘汰和胜利条件；它是临时队伍规模变体，归入 `fortnite-reload-2024`，不重复建卡。
