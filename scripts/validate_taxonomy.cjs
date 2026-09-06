@@ -18,6 +18,11 @@ for (const mode of modes) {
   assert.equal(typeof mode.isLtm, 'boolean', mode.id + ': LTM must be an explicit boolean');
   assert.ok(typeof mode.imageUrl === 'string' && mode.imageUrl.trim(), mode.id + ': missing cover image');
   assert.ok(typeof mode.imageSource === 'string' && mode.imageSource.trim(), mode.id + ': missing cover source label');
+  for (const field of ['oneLineRule', 'mechanicChange', 'tempoImpact', 'designObservation']) {
+    assert.ok(typeof mode[field] === 'string' && mode[field].trim(), mode.id + ': missing readable ' + field);
+  }
+  const readableText = [mode.modeName, mode.oneLineRule, mode.mechanicChange, mode.tempoImpact, mode.designObservation].join('');
+  assert.ok(/[\u4e00-\u9fff]/.test(readableText), mode.id + ': visible explanation must include Chinese text');
 }
 for (const entry of research) {
   assert.ok(entry.sourceModeIds.length && entry.sourceModeIds.every((id) => ids.has(id)), entry.id + ': missing source case');
