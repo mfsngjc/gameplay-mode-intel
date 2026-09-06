@@ -10355,5 +10355,37 @@
     "isLtm": false,
     "imageUrl": "assets/modes/generated/free-fire-team-deathmatch-2020.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-payload-2019",
+    "game": "PUBG Mobile",
+    "modeName": "火力全开（Payload Mode）",
+    "year": "2019",
+    "date": "2019-10-14",
+    "tags": [
+      "br",
+      "warfare",
+      "objective"
+    ],
+    "type": [
+      "载具 BR",
+      "重型武器",
+      "队友召回"
+    ],
+    "oneLineRule": "在 BR 地图中驾驶直升机和装甲载具，使用重型武器与空袭，并通过通讯塔召回被淘汰的队友。",
+    "mechanicChange": "官方 0.15.0 补丁首次加入 Payload Mode：地图提供 RPG-7、榴弹发射器、M134 等重型武器，直升机可以直接参战；队友被淘汰后可拾取 ID 卡，在通讯塔召回；超级武器箱会刷新空投武器、三级装备和 Payload 武器，车辆维修包与空袭信标进一步扩展了载具战术。",
+    "tempoImpact": "直升机和空袭提高了跨区移动与暴露速度，超级武器箱制造公开争夺点；队友召回让队伍在一次减员后仍有再进场窗口，战斗节奏比普通 BR 更连续。",
+    "designObservation": "Payload 把 BR 的路线和资源循环改成“载具机动—重火力争夺—召回再战”的高噪声版本；重型装备和维修资源让载具从交通工具变成需要维护的战斗资产。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/201910/831702.shtml",
+    "launchDate": "2019-10-14",
+    "launchLabel": "2019年10月14日 0.15.0 版本加入",
+    "launchNote": "官方补丁明确记录 Payload Mode、重型武器、直升机、队友召回、超级武器箱、车辆维修包和空袭信标；本卡与 Payload 2.0、3.0 分开记录。",
+    "gameplayTypes": [
+      "br",
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-payload-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
