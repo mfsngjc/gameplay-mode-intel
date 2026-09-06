@@ -11851,5 +11851,71 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-anniversary-tasks-2026.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-craftland-pve-rush-2022",
+    "game": "Free Fire",
+    "modeName": "PVE 创作模板：冲刺（Creative - Rush）",
+    "year": "2022",
+    "date": "2022-07-20",
+    "tags": [
+      "pve",
+      "casual",
+      "objective",
+      "teamwork"
+    ],
+    "type": [
+      "Craftland 模板",
+      "僵尸合作",
+      "检查点竞速"
+    ],
+    "oneLineRule": "在倒计时结束前与队友对抗僵尸，至少一名玩家依次通过所有检查点并抵达终点，队伍才算完成目标。",
+    "mechanicChange": "官方五周年补丁将 Creative - Rush 列为 Craftland 的 PVE 创作模板：玩家一边清理僵尸，一边推进检查点；倒计时结束前必须有人到达终点。",
+    "tempoImpact": "检查点把移动路线切成连续阶段，队伍不能只停留在安全位置清怪；前排推进、后排控场和是否绕路都会直接影响剩余时间。",
+    "designObservation": "把竞速终点放进僵尸生存循环，能让 PVE 从固定防守变成持续前进；检查点又给创作者提供了可读的阶段反馈和失败位置。",
+    "sourceUrl": "https://ff.garena.com/en/article/811/",
+    "launchDate": "2022-07-20",
+    "launchLabel": "2022年7月20日 Craftland PVE 模板公布",
+    "launchNote": "官方补丁明确给出 Creative - Rush 的检查点、僵尸和终点条件；这是 Craftland 的可创作 PVE 模板，不等同于全局匹配入口。",
+    "gameplayTypes": [
+      "pve",
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/free-fire-craftland-pve-rush-2022.svg"
+  },
+  {
+    "id": "free-fire-craftland-pve-endurance-2022",
+    "game": "Free Fire",
+    "modeName": "PVE 创作模板：耐久（Creative - Endurance）",
+    "year": "2022",
+    "date": "2022-07-20",
+    "tags": [
+      "pve",
+      "casual",
+      "objective",
+      "teamwork"
+    ],
+    "type": [
+      "Craftland 模板",
+      "僵尸合作",
+      "限时生存"
+    ],
+    "oneLineRule": "在倒计时结束前持续对抗僵尸，至少一名玩家存活到时间归零，队伍即可完成生存目标。",
+    "mechanicChange": "官方五周年补丁将 Creative - Endurance 列为 Craftland 的 PVE 创作模板：队伍需要在僵尸压力下坚持到倒计时结束，目标从抵达终点改成存活达标。",
+    "tempoImpact": "倒计时把资源、站位和救援变成持续消耗；队伍可以选择抱团守点，也可以利用空间拉扯僵尸，但必须保证至少一名成员撑到终局。",
+    "designObservation": "耐久模板用单一的时间终点制造稳定压力，同时允许创作者通过僵尸数量、地形和资源配置改变难度，是易于复用的 PVE 骨架。",
+    "sourceUrl": "https://ff.garena.com/en/article/811/",
+    "launchDate": "2022-07-20",
+    "launchLabel": "2022年7月20日 Craftland PVE 模板公布",
+    "launchNote": "官方补丁明确给出 Creative - Endurance 的僵尸、倒计时和至少一名玩家存活条件；这是 Craftland 的可创作 PVE 模板，不等同于全局匹配入口。",
+    "gameplayTypes": [
+      "pve",
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/free-fire-craftland-pve-endurance-2022.svg"
   }
 ]
