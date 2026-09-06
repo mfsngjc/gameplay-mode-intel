@@ -11690,5 +11690,35 @@
     "isLtm": false,
     "imageUrl": "assets/modes/generated/pubgm-wow-summer-brawl-2023.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-wow-zombie-station-2023",
+    "game": "PUBG Mobile",
+    "modeName": "僵尸站点：人质救援（Zombie Station）",
+    "year": "2023",
+    "date": "2023-12-12",
+    "tags": [
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "双人合作",
+      "解谜救援"
+    ],
+    "oneLineRule": "两名玩家合作解锁房间和秘密通道，穿过僵尸站点救出人质；误伤人质会直接任务失败，限时 60 分钟完成。",
+    "mechanicChange": "官方 Frozen Kingdom 页面将 Zombie Station 列为优秀创作者模板：两名玩家需要合作解锁房间与隐藏通道，寻找射击点或进入指定颜色区域来开门，最终救出被僵尸抓走的人质；如果误杀人质，任务失败，关卡限时 60 分钟。",
+    "tempoImpact": "房间解锁和隐藏通道把推进节奏拆成连续的小目标，双人需要分工搜索、开门和护送；误伤人质让射击决策始终带有约束。",
+    "designObservation": "把传统射击的“清空房间”改成“识别线索—解锁路径—保护目标”，能把准星控制、空间观察和合作沟通同时变成胜负条件；明确的失败目标也会抑制无差别开火。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+    "launchDate": "2023-12-12",
+    "launchLabel": "2023年12月12日至2024年1月7日 Frozen Kingdom 期间公布",
+    "launchNote": "官方页面明确给出双人合作、房间与秘密通道、人质救援、误杀失败和 60 分钟时限；具体地图布局与敌人数量待创作地图资料补充。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-zombie-station-2023.svg"
   }
 ]

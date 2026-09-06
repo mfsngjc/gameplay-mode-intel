@@ -15,6 +15,7 @@
 - 本轮新增：Skyhigh Spectacle 页面中明确命名且有规则描述的 WOW 创作玩法：Bio Infection、Pan and Blade Ball、2v2 Grenade Blade Ball、8-Player Grenade Blade Ball、Aerial Ship Combat、Zombie Infection Mode。
 - 追加复核：4.0 官方页确认 Unfail 的 1v4 追逃规则；4.3 官方页确认 Evolving Universe 主题页入口；3.8 Steampunk Frontier 页确认 Elimination Skillfest 与 Battle Blitz。以上对应卡已存在，本轮未重复添加。
 - 仍待覆盖：更早地区版本的完整索引、2026-09-07 之后的版本页，以及官方页面没有稳定索引的旧专题。
+- 追加复核 Frozen Kingdom 的 WOW 创作者模板：`Zombie Station` 有双人解谜救人质、误杀即失败和 60 分钟限制，新增为独立 PVE 卡；`Battle Isle` 仅说明快速团队死斗地图与伏击空间，没有独立规则，记录为地图模板而不重复建卡。
 
 ### Free Fire
 
