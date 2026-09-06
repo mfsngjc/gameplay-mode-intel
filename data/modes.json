@@ -13742,5 +13742,304 @@
       "br"
     ],
     "isLtm": false
+  },
+  {
+    "id": "apex-lockdown-2024",
+    "game": "Apex Legends",
+    "modeName": "据点封锁（Lockdown）",
+    "year": "2024",
+    "date": "2024-03-26",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "4 队混战",
+      "占点争夺",
+      "自由混战"
+    ],
+    "oneLineRule": "四支小队同时争夺并守住地图上的据点，在自由混战中积累控制优势。",
+    "mechanicChange": "Lockdown 是四支小队参加的自由混战限时玩法。队伍需要在地图上抢占并守住目标区域，同时处理其他三支队伍的干扰；胜负围绕据点控制进度，而不是标准 BR 的最后存活。",
+    "tempoImpact": "多个队伍共享同一批据点会把交战重心不断拉向可预测的目标区。队伍必须在占点、清场和转移之间快速切换，击杀本身服务于争夺空间。",
+    "designObservation": "把 BR 的多人遭遇压缩到占点目标，可以让“先打谁、何时离开据点”成为主要决策。四队结构比两队攻防更容易形成临时夹击与反夹击。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/shadow-society-event",
+    "imageUrl": "https://drop-assets.ea.com/images/2JNCcTrNIPxJtuER4BLQJw/d7255b2b03e3afba24ba7132484c1508/Apex_Shadow-Society-Event_Primary_Art_3840x2160.png",
+    "imageSource": "EA Shadow Society 官方活动头图",
+    "launchDate": "2024-03-26",
+    "launchLabel": "2024年3月26日至4月16日限时开放",
+    "launchNote": "EA 官方 Shadow Society 活动将 Lockdown 列为全新限时玩法，明确为四支小队自由混战并争夺据点。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-big-tdm-2024",
+    "game": "Apex Legends",
+    "modeName": "大型团队死斗（Big TDM）",
+    "year": "2024",
+    "date": "2024-07-18",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "12v12",
+      "团队死斗",
+      "强化回血"
+    ],
+    "oneLineRule": "两支 12 人队伍在五张地图上持续复活交战，先达到 60 分或在时间结束时领先的一方获胜。",
+    "mechanicChange": "Big TDM 把团队死斗扩大为 12 对 12，最高同时有 24 名玩家。每队需要累计击杀达到 60 分，模式还提高生命恢复速度；地图轮换提供五张团队死斗场地。",
+    "tempoImpact": "人数翻倍让火力线和复活点更密集，队伍需要更快补位和处理侧翼。强化生命恢复减少脱战等待，使连续交火成为主要节奏。",
+    "designObservation": "扩大团队死斗不只是增加人数，还要同步提高得分上限和恢复速度，才能让战斗保持可持续。大规模模式的关键是让局部击杀仍能被队伍整体读懂。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/void-reckoning-event",
+    "imageUrl": "https://drop-assets.ea.com/images/1V8W9jHVD5EfZTnxMZfgBd/27f2089f42ad9a710dc4410bbcb6d551/Copy_of_ApexS21_VoidReckoning_KeyArt_3840x2160.jpg",
+    "imageSource": "EA Void Reckoning 官方活动头图",
+    "launchDate": "2024-07-18",
+    "launchLabel": "2024年7月18日至8月6日限时开放",
+    "launchNote": "EA 官方 Void Reckoning 活动确认 Big TDM 为首个 12v12 团队死斗，5 张地图、60 分上限和强化生命恢复。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-knockout-2024",
+    "game": "Apex Legends",
+    "modeName": "淘汰赛（Knockout）",
+    "year": "2024",
+    "date": "2024-09-17",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "60 人",
+      "占区得分",
+      "阶段淘汰"
+    ],
+    "oneLineRule": "20 支小队争夺区域并收集进化值赚取分数，每轮淘汰得分最低的五队，最后五队进入突然死亡决胜。",
+    "mechanicChange": "Knockout 是 60 人、20 队参加的目标型 BR。小队通过占领区域、收集进化值（EVO）获得分数；每轮结束时淘汰得分最低的五队，前三轮后剩余五队重新部署到突然死亡决胜阶段，最终存活的小队获胜。对局中允许无限返场，直到决胜阶段。",
+    "tempoImpact": "无限返场让前半段重点从保命转向抢区和刷分，阶段淘汰又会持续抬高分数压力。队伍需要判断何时投入目标区、何时避开低分淘汰线，并为最终决胜保存资源。",
+    "designObservation": "目标型 BR 可以把“活到最后”拆成可读的阶段分数，再用定期淘汰制造中盘压力。返场只服务于目标争夺，最后再收回返场权，能同时保留高频交战和终局紧张。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/space-hunt-event",
+    "imageUrl": "https://drop-assets.ea.com/images/1Ar5svqo6GSmnwfR2QgM4B/75681486ba2aa0bc55d9be8c7eecd03e/ApexS22_SpaceHunt_KeyArt_3840x2160.jpg",
+    "imageSource": "EA Space Hunt 官方活动头图",
+    "launchDate": "2024-09-17",
+    "launchLabel": "2024年9月17日至10月8日限时开放",
+    "launchNote": "EA 官方 Space Hunt 活动确认 Knockout 的 60 人、20 队、占区得分、分轮淘汰、无限返场和突然死亡决胜规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-power-sword-royale-2025",
+    "game": "Apex Legends",
+    "modeName": "能量剑大逃杀（Power Sword Royale）",
+    "year": "2025",
+    "date": "2025-03-25",
+    "tags": [
+      "br-ltm",
+      "power"
+    ],
+    "type": [
+      "三人小队",
+      "开局能量剑",
+      "近战能力"
+    ],
+    "oneLineRule": "在三人小队大逃杀中，所有玩家开局获得能量剑；用近战与能量斩击争夺战场优势并完成标准 BR 胜负。",
+    "mechanicChange": "Power Sword Royale 把能量剑（Power Sword）作为每局的核心开局装备，并在每轮再次生成。能量剑既能进行快速近战，也能瞄准释放远程能量斩击、吸收伤害并制造能量爆发；其他 BR 搜刮和缩圈流程保留。",
+    "tempoImpact": "开局固定的近战能力让落地交战不再完全依赖随机枪械，队伍会围绕能量剑持有者安排贴身推进和掩护。远程斩击、防御吸收与减益爆发让中近距离交战频率提高。",
+    "designObservation": "给 BR 全员同一件高辨识度核心装备，可以在不重做地图的情况下统一开局主题。攻击、防御和团队增益同时存在时，需要让使用时机成为取舍，而不是单纯替代枪械。",
+    "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/breakthrough-in-the-beast-mode-event/12042675",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA 官方 Apex 通用主视觉（活动页原图不稳定）",
+    "launchDate": "2025-03-25",
+    "launchLabel": "2025年3月25日至4月14日限时开放",
+    "launchNote": "EA 官方 Beast Mode 活动补丁将 Power Sword Royale 列为 Pubs 三人小队限时玩法；能量剑每局开局和每轮重新出现。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-three-strikes-mystery-legends-2025",
+    "game": "Apex Legends",
+    "modeName": "三次机会：神秘传奇（Three Strikes: Mystery Legends）",
+    "year": "2025",
+    "date": "2025-03-11",
+    "tags": [
+      "br-ltm",
+      "power"
+    ],
+    "type": [
+      "三次机会",
+      "随机英雄",
+      "带装返场"
+    ],
+    "oneLineRule": "沿用三次机会的带装返场规则，但每次进入跳伞或重新返场时由系统随机指定英雄，队伍可以出现重复英雄。",
+    "mechanicChange": "这是三次机会（Three Strikes）的随机英雄变体：进入空投前系统为玩家指定英雄，返场时重新随机；小队允许出现重复英雄。每次进化等级提升会自动获得该等级的全部强化，并在返场后保留进化等级。",
+    "tempoImpact": "随机英雄让队伍无法长期固定职责，返场后的新英雄会即时改变分工。三次团灭机会仍鼓励主动交战，而自动获得强化减少了返场后重新成型的等待。",
+    "designObservation": "在成熟复活规则上增加随机英雄，能把“返场”从简单重置变成新的构筑节点。重复英雄限制被解除后，临时组合会成为策略的一部分。",
+    "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/apex-legends%E2%84%A2-takeover-patch-notes/11885383",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA 官方 Apex 通用主视觉（论坛补丁页原图不稳定）",
+    "launchDate": "2025-03-11",
+    "launchLabel": "2025年3月11日至3月24日限时开放",
+    "launchNote": "EA 官方 Takeover 补丁将 Three Strikes: Mystery Legends 列为三次机会的限时变体，明确随机英雄、重复英雄和返场保留进化等级。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-epg-extreme-2025",
+    "game": "Apex Legends",
+    "modeName": "EPG 极限（EPG Extreme）",
+    "year": "2025",
+    "date": "2025-04-15",
+    "tags": [
+      "br-ltm",
+      "power"
+    ],
+    "type": [
+      "18 人",
+      "第三人称",
+      "固定装备"
+    ],
+    "oneLineRule": "6 支三人小队以第三人称进入更快的 BR 小地图，所有人固定携带 EPG-1、能量剑和紫色护甲，靠击杀与快速返场争夺胜利。",
+    "mechanicChange": "EPG Extreme 采用 18 人、6 队三人小队和第三人称视角，开局给出 EPG-1 榴弹发射器、能量剑、紫色护甲与全部英雄强化。地图没有普通战利品、背包、进化收集器或复制器；返场更快，返场后再次获得同一套极限装备，并启用自动回血。",
+    "tempoImpact": "固定装备和无搜刮流程把时间直接交给移动与交火，第三人称扩大了拐角观察和近战能量剑的价值。更快返场使队伍可以连续试探，但最后圈仍会把 6 队压缩到高密度决战。",
+    "designObservation": "当核心装备足够鲜明时，可以完全移除搜刮和背包，把 BR 改造成短局武器实验场。固定装备、快速返场和少量队伍共同保证实验变量集中在走位与技能组合。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/fight-force-event",
+    "imageUrl": "https://drop-assets.ea.com/images/5p1WVS30Rc4iDeD9SEvE3T/23a4962044fbfad480a63a3b31a17f33/Apex_S24_FightForce_KeyArt_Primary_update.jpg",
+    "imageSource": "EA Fight Force 官方活动头图",
+    "launchDate": "2025-04-15",
+    "launchLabel": "2025年4月15日至4月29日限时开放",
+    "launchNote": "EA 官方 Fight Force 活动补丁确认 18 人、6 队三人、第三人称、固定 EPG-1/能量剑/紫甲、无搜刮和快速返场规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-straight-shot-revival-quads-2025",
+    "game": "Apex Legends",
+    "modeName": "直入战场：四人返场（Straight Shot Revival Quads）",
+    "year": "2025",
+    "date": "2025-04-29",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "32 人",
+      "四人小队",
+      "返场规则"
+    ],
+    "oneLineRule": "8 支四人小队在较小安全区和固定落点附近快速交战；队友存活时，被淘汰者可按返场计时重新进入，末圈后关闭返场。",
+    "mechanicChange": "Straight Shot Revival Quads 把直入战场扩展为四人小队、32 人和 8 队。系统将队伍投放到彼此接近的预设区域，战利品简化、安全区更快；队友仍存活时，淘汰者等待返场计时结束即可重返，队伍进入最后安全区后关闭返场。",
+    "tempoImpact": "四人编制增加了救援、补枪和分线的空间，但固定落点仍保证首战迅速发生。返场让队伍可以主动换血和试探，末圈关闭返场后再把决策切回传统生存压力。",
+    "designObservation": "把返场与末圈绑定，可以让前中期鼓励学习和交战，后期恢复一次性生命的紧张。四人小队则把快速 BR 的协作从“跟随落点”扩展到更细的角色分工。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/fight-force-event",
+    "imageUrl": "https://drop-assets.ea.com/images/5p1WVS30Rc4iDeD9SEvE3T/23a4962044fbfad480a63a3b31a17f33/Apex_S24_FightForce_KeyArt_Primary_update.jpg",
+    "imageSource": "EA Fight Force 官方活动头图",
+    "launchDate": "2025-04-29",
+    "launchLabel": "2025年4月29日至5月5日限时开放",
+    "launchNote": "EA 官方 Fight Force 活动补丁确认 32 人、8 队四人、直入战场简化搜刮和队友存活时返场的规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-arenas-duels-no-abilities-2025",
+    "game": "Apex Legends",
+    "modeName": "竞技场：无能力决斗（Arenas: Duels without abilities）",
+    "year": "2025",
+    "date": "2025-06-24",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "1v1",
+      "禁用技能",
+      "匹配英雄与武器"
+    ],
+    "oneLineRule": "两名玩家进行限时 1v1 决斗，系统为双方分配相同英雄与武器，前段关闭技能，以枪法和移动赢下更多对决。",
+    "mechanicChange": "该阶段的竞技场改为 1v1 决斗，双方获得匹配的英雄和武器以保持对等；比赛前段关闭英雄技能，让玩家专注枪械和移动，排行榜记录整场表现。地图包括 Encore、Habitat 和 Party Crasher。",
+    "tempoImpact": "镜像英雄与武器移除组合克制，交战结果更直接地反馈瞄准、身法和掩体使用。回合式 1v1 让每次出手都有明确损失，排行榜又把短局表现串成持续目标。",
+    "designObservation": "公平对决可以先固定双方工具，再逐步放开能力层。先验证枪法和移动，再引入技能，有助于把“操作差距”和“构筑差距”分开观察。",
+    "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/face-off-in-the-future-icons-event/12276147",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA 官方 Apex 通用主视觉（论坛活动页原图不稳定）",
+    "launchDate": "2025-06-24",
+    "launchLabel": "2025年6月24日至7月15日限时开放",
+    "launchNote": "EA 官方 Future Icons 活动补丁列出无能力决斗阶段：1v1、匹配英雄与武器、前段禁用技能、三张竞技场地图。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-arenas-duels-abilities-2025",
+    "game": "Apex Legends",
+    "modeName": "竞技场：能力决斗（Arenas: Duels with abilities）",
+    "year": "2025",
+    "date": "2025-07-15",
+    "tags": [
+      "casual",
+      "objective",
+      "power"
+    ],
+    "type": [
+      "1v1",
+      "开放技能",
+      "竞技场"
+    ],
+    "oneLineRule": "两名玩家进行限时 1v1 决斗，在相同竞技场框架下开放英雄技能，用技能时机和枪法争取更高对决成绩。",
+    "mechanicChange": "能力决斗承接无能力决斗的 1v1 框架，但在 2025年7月15日阶段开启英雄技能。双方仍在 Encore、Habitat 和 Party Crasher 等小型地图上对决，并通过排行榜记录表现。",
+    "tempoImpact": "技能开放后，玩家需要同时判断枪线、冷却和打断时机；同一张地图的熟悉路线会因为英雄能力重新产生进攻和防守节奏。",
+    "designObservation": "先关闭再开放技能，让同一竞技场可以清楚展示能力层对 1v1 节奏的增量。能力不是单独的胜负目标，而是围绕有限空间重新安排交战窗口。",
+    "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/face-off-in-the-future-icons-event/12276147",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA 官方 Apex 通用主视觉（论坛活动页原图不稳定）",
+    "launchDate": "2025-07-15",
+    "launchLabel": "2025年7月15日至8月5日限时开放",
+    "launchNote": "EA 官方 Future Icons 活动补丁列出能力决斗阶段，说明英雄技能在 1v1 竞技场中开启。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-solos-respawn-token-2025",
+    "game": "Apex Legends",
+    "modeName": "单人大逃杀：复活代币（Solos: Respawn Token）",
+    "year": "2025",
+    "date": "2025-04-08",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "30 人单人",
+      "复活代币",
+      "后期禁用返场"
+    ],
+    "oneLineRule": "30 名玩家各自战斗并开局获得 1 枚复活代币，前期可用代币返场；进入后期后返场关闭，未使用的代币转化为进化值。",
+    "mechanicChange": "该单人变体把比赛人数调整为 30 人，并让所有玩家开局拥有 1 枚复活代币。前期被淘汰后可用代币重新部署，比赛后段会关闭复活；仍持有代币的玩家会获得大量进化值。武器库会逐级升级武器，部分高阶瞄准镜和配件会随升级保留。",
+    "tempoImpact": "一次保底返场降低了早期试错成本，玩家可以主动争夺武器库和高价值区域；返场关闭后，剩余玩家必须重新评估风险，避免把前期的激进节奏带进终局。",
+    "designObservation": "单人模式用统一发放的复活代币取代随机召回点，能让每个人拥有可预期的第二次机会。把未使用代币转成进化值，则让谨慎保留资源也有明确收益。",
+    "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/breakthrough-in-the-beast-mode-event/12042675",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA 官方 Apex 通用主视觉（论坛活动页原图不稳定）",
+    "launchDate": "2025-04-08",
+    "launchLabel": "2025年4月8日至4月14日限时开放",
+    "launchNote": "EA 官方 Beast Mode 活动补丁确认 30 人单人、开局 1 枚复活代币、后期关闭返场及未使用代币转化进化值。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
   }
 ]

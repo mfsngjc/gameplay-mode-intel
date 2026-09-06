@@ -167,3 +167,19 @@
 
 - 同页复核 [PUBG 13.2 主机补丁](https://pubg.com/en/news/1718) 时发现 `Casual Mode` 原库也没有独立记录。它是主机专属的轻量 BR 队列：艾伦格、第三人称、小队、每场最多 12 人，空位由 AI 填充，单日最多 3 场，并保留任务/战绩/奖励进度；已新增 `pubg-casual-mode-2021`，不与标准 BR 合并。
 - `Hungers Left Behind` 是 2024 年对已有 `Survivors Left Behind` 的回归命名，规则仍是同一合作 PVE 撤离流程，已在来源台账登记回归页，不重复建卡。
+
+## 2026-09-07 Apex 2024–2025 模式补漏
+
+复核 EA 官方活动页与 Apex 官方补丁后，补入原库缺失且规则独立的模式/变体：
+
+- `Lockdown`：四队自由混战争夺据点；
+- `Big TDM`：12v12、60 分上限、强化生命恢复；
+- `Knockout`：60 人/20 队占区得分，分轮淘汰并进入突然死亡；
+- `Power Sword Royale`：BR 开局与每轮获得能量剑；
+- `Three Strikes: Mystery Legends`：三次机会结合随机英雄与返场保留进化等级；
+- `EPG Extreme`：18 人、6 队三人、第三人称固定 EPG-1/能量剑、无搜刮快速返场；
+- `Straight Shot Revival Quads`：32 人四人小队、固定落点、简化搜刮与前中期返场；
+- `Arenas: Duels without abilities` 与 `Arenas: Duels with abilities`：分别记录无能力与开放能力的 1v1 竞技场阶段；
+- `Solos: Respawn Token`：30 人单人、统一复活代币、后期关闭返场。
+
+这些条目均有官方页面给出的名称和局内规则，已写入中文卡片、来源台账与封面字段。普通 Pubs/Ranked、Mixtape 轮换和英雄/武器平衡继续作为播放列表或系统更新处理。

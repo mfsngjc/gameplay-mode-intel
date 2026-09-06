@@ -260,9 +260,9 @@
     },
     "Apex Legends": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 37,
-      "coverCount": 37,
-      "readableDescriptionCount": 37,
+      "modeCount": 47,
+      "coverCount": 47,
+      "readableDescriptionCount": 47,
       "modeIds": [
         "apex-classic-br-2019",
         "apex-ranked-leagues-2019",
@@ -300,7 +300,17 @@
         "apex-wildcard-2025",
         "apex-bot-royale-evolved-2026",
         "apex-launch-royale-2025",
-        "apex-arenas-prodigy-2025"
+        "apex-arenas-prodigy-2025",
+        "apex-lockdown-2024",
+        "apex-big-tdm-2024",
+        "apex-knockout-2024",
+        "apex-power-sword-royale-2025",
+        "apex-three-strikes-mystery-legends-2025",
+        "apex-epg-extreme-2025",
+        "apex-straight-shot-revival-quads-2025",
+        "apex-arenas-duels-no-abilities-2025",
+        "apex-arenas-duels-abilities-2025",
+        "apex-solos-respawn-token-2025"
       ],
       "officialSourceUrls": [
         "https://apexlegends.wiki.gg/wiki/Always_Be_Closing",
@@ -319,6 +329,9 @@
         "https://apexlegends.wiki.gg/wiki/Straight_Shot",
         "https://apexlegends.wiki.gg/wiki/Three_Strikes",
         "https://apexlegends.wiki.gg/wiki/Winter_Express",
+        "https://forums.ea.com/blog/apex-legends-game-info-hub-en/apex-legends%E2%84%A2-takeover-patch-notes/11885383",
+        "https://forums.ea.com/blog/apex-legends-game-info-hub-en/breakthrough-in-the-beast-mode-event/12042675",
+        "https://forums.ea.com/blog/apex-legends-game-info-hub-en/face-off-in-the-future-icons-event/12276147",
         "https://forums.ea.com/blog/apex-legends-game-info-hub-en/grand-soir%C3%A9e-patch-notes/9460557",
         "https://forums.ea.com/discussions/apex-legends-general-discussion-en/revelry---patch-notes-discussion/5701100",
         "https://help.ea.com/en/articles/apex-legends/game-modes/",
@@ -327,15 +340,20 @@
         "https://www.ea.com/games/apex-legends/apex-legends/news/astral-anomaly-event",
         "https://www.ea.com/games/apex-legends/apex-legends/news/breach-patch-notes",
         "https://www.ea.com/games/apex-legends/apex-legends/news/cyberpunk-event",
+        "https://www.ea.com/games/apex-legends/apex-legends/news/fight-force-event",
         "https://www.ea.com/games/apex-legends/apex-legends/news/game-update-wildcard",
+        "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes",
         "https://www.ea.com/games/apex-legends/apex-legends/news/overclocked-midseason-patch-notes",
         "https://www.ea.com/games/apex-legends/apex-legends/news/overclocked-patch-notes",
         "https://www.ea.com/games/apex-legends/apex-legends/news/power-trip-event",
         "https://www.ea.com/games/apex-legends/apex-legends/news/prodigy-patch-notes",
-        "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes",
+        "https://www.ea.com/games/apex-legends/apex-legends/news/shadow-society-event",
+        "https://www.ea.com/games/apex-legends/apex-legends/news/space-hunt-event",
+        "https://www.ea.com/games/apex-legends/apex-legends/news/void-reckoning-event",
         "https://www.ea.com/games/battlefield/news/war-games"
       ],
-      "notes": "已复核 EA/Respawn 官方模式总览、Breach、Prodigy、Astral Anomaly、Wildcard 与 Marked（2026-08）公告；Marked 的 Pubs/Ranked、Mixtape、Wildcard 均为已覆盖队列或模式，没有新增独立匹配玩法。后续继续按 EA 官方新闻和赛季补丁回溯早期 LTM。 War Games 五个 2021 LTM 卡片已切换到 EA 可访问的官方存档 URL，正文规则保持不变。"
+      "notes": "已复核 EA 官方 Apex 模式公告与 2024–2025 活动补丁；本轮补入 Lockdown、Big TDM、Knockout、Power Sword Royale、Three Strikes: Mystery Legends、EPG Extreme、Straight Shot Revival Quads、竞技场两阶段 Duel 及 Solos 复活代币变体，继续沿官方活动档案回溯。",
+      "updatedAt": "2026-09-07"
     },
     "三角洲行动": {
       "coverageStatus": "ongoing_backfill",
