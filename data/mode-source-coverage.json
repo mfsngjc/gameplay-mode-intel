@@ -518,9 +518,9 @@
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 86,
-      "coverCount": 86,
-      "readableDescriptionCount": 86,
+      "modeCount": 88,
+      "coverCount": 88,
+      "readableDescriptionCount": 88,
       "modeIds": [
         "free-fire-clash-squad-2019",
         "free-fire-bomb-squad-2019",
@@ -607,7 +607,9 @@
         "free-fire-zombie-hunt-dungeon-ascent-2024",
         "free-fire-kill-secured-2020",
         "free-fire-gun-king-squad-2020",
-        "free-fire-team-deathmatch-2020"
+        "free-fire-team-deathmatch-2020",
+        "free-fire-zombie-invasion-2019",
+        "free-fire-zombie-invasion-2022"
       ],
       "officialSourceUrls": [
         "https://ff.garena.com/en-pk/article/641/",
@@ -666,9 +668,10 @@
         "https://ff.garena.com/id/article/209/",
         "https://ff.garena.com/en/article/137",
         "https://ff.garena.com/en/article/299/",
-        "https://ff.garena.com/en/article/122/"
+        "https://ff.garena.com/en/article/122/",
+        "https://ff.garena.com/en/article/680/"
       ],
-      "notes": "已核对 Garena 2018–2026 官方补丁与活动档案；本轮补入 Zombie Hunt 的 Dungeon Ascent、2020 3volution 的 Kill Secured 与 Gun King 小队版，以及 Kalahari 补丁明确记录的 Team Deathmatch；仍需继续补齐更早版本、地区差异和后续公告。"
+      "notes": "已核对 Garena 2018–2026 官方补丁与活动档案；本轮补入 Zombie Hunt 的 Dungeon Ascent、2020 3volution 的 Kill Secured 与 Gun King 小队版、Team Deathmatch，以及 Zombie Invasion 的 2019 首次轮换和 2022 五变体回归。仍需继续补齐更早版本、地区差异和后续公告。"
     }
   }
 }

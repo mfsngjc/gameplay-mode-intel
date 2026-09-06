@@ -10387,5 +10387,69 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-payload-2019.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-zombie-invasion-2019",
+    "game": "Free Fire",
+    "modeName": "僵尸入侵（Zombie Invasion）",
+    "year": "2019",
+    "date": "2019-03-20",
+    "tags": [
+      "pve",
+      "br",
+      "objective"
+    ],
+    "type": [
+      "PVE 生存",
+      "轮换活动",
+      "僵尸波次"
+    ],
+    "oneLineRule": "在 Zombie Invasion 轮换活动中抵抗僵尸威胁；官方 2019 年公告确认它取代 Death Race 的开放时段，具体敌群和胜利规则待补。",
+    "mechanicChange": "官方 Free Fire World Cup 公告把 Zombie Invasion 列为新轮换时段，并写明 Death Race 的开放时间改由该模式占用；同年补丁继续为模式加入新僵尸。公开页面没有完整描述地图、波次和胜负条件，因此只保留已确认事实。",
+    "tempoImpact": "轮换时段把 BR 的活动入口从载具竞速切换到僵尸压力，玩家需要适应 PVE 威胁；公开资料不足以确认每波敌人的节奏。",
+    "designObservation": "早期 Zombie Invasion 用轮换时段把同一客户端的活动注意力从竞速转向生存，说明模式排期本身就能成为活动节奏工具；规则缺失时不应补写具体敌群。",
+    "sourceUrl": "https://ff.garena.com/en/article/38/",
+    "launchDate": "2019-03-20",
+    "launchLabel": "2019年3月20日 World Cup 活动公告列入轮换",
+    "launchNote": "官方公告确认 Zombie Invasion 取代 Death Race 的开放时间；2019年5月补丁还记录了新增僵尸，但完整模式规则待官方档案补齐。",
+    "gameplayTypes": [
+      "pve",
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-zombie-invasion-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-zombie-invasion-2022",
+    "game": "Free Fire",
+    "modeName": "僵尸入侵：五种变体（Zombie Invasion）",
+    "year": "2022",
+    "date": "2022-04-29",
+    "tags": [
+      "pve",
+      "br",
+      "objective"
+    ],
+    "type": [
+      "PVE 生存",
+      "五种僵尸变体",
+      "限时活动"
+    ],
+    "oneLineRule": "在 2022 年重启的 Zombie Invasion 中对抗五种僵尸变体，目标是在 Bermuda 的感染威胁下活到最后。",
+    "mechanicChange": "官方 2022 年活动公告确认 Zombie Invasion 于 4 月 29 日回归，并提供五种僵尸变体；它把感染威胁重新放回 Bermuda 的限时玩法入口。公开公告没有展开每种变体的属性、资源和胜利条件，因此与 2023 年双主动技能、军火库升级版分开记录。",
+    "tempoImpact": "不同僵尸变体会改变玩家处理感染威胁的优先级，BR 的搜集和转点需要围绕 PVE 压力重新安排；详细波次节奏待官方规则补充。",
+    "designObservation": "通过“同一模式、多种僵尸变体”制造重玩差异，可以复用 BR 地图和资源框架，同时让玩家重新学习威胁类型；版本卡应保留这次重启的独立设计意图。",
+    "sourceUrl": "https://ff.garena.com/en/article/680/",
+    "launchDate": "2022-04-29",
+    "launchLabel": "2022年4月29日限时活动回归",
+    "launchNote": "官方公告确认五种僵尸变体和开放日期；各变体具体机制、地图点位与奖励流程待官方补档。",
+    "gameplayTypes": [
+      "pve",
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-zombie-invasion-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
