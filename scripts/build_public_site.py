@@ -2,14 +2,31 @@
 """Create an explicit public-file allowlist; never publish local research drafts."""
 from pathlib import Path
 import shutil
+import time
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / '_site'
 
 
+def remove_output_with_retry():
+    if not OUTPUT.exists():
+        return
+    last_error = None
+    for attempt in range(6):
+        try:
+            shutil.rmtree(OUTPUT)
+            return
+        except OSError as error:
+            last_error = error
+            if attempt == 5:
+                raise
+            time.sleep(0.2 * (attempt + 1))
+    if last_error:
+        raise last_error
+
+
 def main():
-    if OUTPUT.exists():
-        shutil.rmtree(OUTPUT)
+    remove_output_with_retry()
     OUTPUT.mkdir()
     files = ['index.html', 'app.js', 'workspace.js', 'maps.js', 'styles.css',
              'workspace.css', 'data/modes.json', 'data/maps.json',
