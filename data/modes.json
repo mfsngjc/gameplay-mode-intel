@@ -6244,5 +6244,352 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-transformers-2025.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-zombie-invasion-2023",
+    "game": "Free Fire",
+    "modeName": "僵尸入侵（Zombie Invasion）",
+    "year": "2023",
+    "date": "2023-10-30",
+    "tags": [
+      "pve",
+      "br-core",
+      "objective"
+    ],
+    "type": [
+      "PVE 成长",
+      "军火库",
+      "战利品箱"
+    ],
+    "oneLineRule": "在升级后的僵尸入侵玩法中抵抗感染威胁，使用第二个主动技能、军火库和战场宝箱提升战斗能力，并适应更快的安全区节奏。",
+    "mechanicChange": "官方补丁把 Zombie Invasion 作为回归玩法升级：玩家可以装备第二个主动技能，等级上限提高到 15，新增 Arsenal 和 BR War Chest，移除空袭，并调整安全区收缩速度。",
+    "tempoImpact": "双主动技能和军火库让中期成长更快，战场宝箱把高价值资源变成公开目标；安全区加速则压缩了刷资源和清理僵尸的时间。",
+    "designObservation": "PVE 回归玩法通过成长上限和资源点重做节奏，而不是简单增加敌人数量；额外技能提供构筑空间，宝箱则把合作生存连接到地图争夺。",
+    "sourceUrl": "https://ff.garena.com/en/article/1266/",
+    "launchDate": "2023-10-30",
+    "launchLabel": "2023年10月30日补丁回归并升级",
+    "launchNote": "官方补丁确认双主动技能、15级等级上限、军火库、战场宝箱和安全区调整；本卡与 2022 年 Zombie Hunt: Double Evil 分开记录。",
+    "gameplayTypes": [
+      "pve",
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-zombie-invasion-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-rampage-finale-pvp-2023",
+    "game": "Free Fire",
+    "modeName": "狂暴终局 PvP（Rampage: Finale PvP）",
+    "year": "2023",
+    "date": "2023-08-17",
+    "tags": [
+      "casual",
+      "objective",
+      "arena"
+    ],
+    "type": [
+      "4v4 对抗",
+      "武器争夺",
+      "出口目标"
+    ],
+    "oneLineRule": "在 Craftland 的 4v4 限时 PvP 中争夺 Rampage 主题武器，并一路战斗到出口完成撤离目标。",
+    "mechanicChange": "官方 Rampage: Finale 公告加入 Craftland PvP 玩法：四人一队，队伍需要获取主题武器并寻找出口；地图把收集、战斗和逃生组合成一条短局目标链。",
+    "tempoImpact": "武器获取点和出口把队伍从交战区拉向连续路线，先拿到武器的一方有优势，但必须暴露在出口附近完成最后阶段。",
+    "designObservation": "4v4 目标模式用“先武装、再推进、最后逃生”替代单一击杀，能在短时对局里制造清晰的阶段转换。",
+    "sourceUrl": "https://ff.garena.com/en/article/1234/",
+    "launchDate": "2023-08-17",
+    "launchLabel": "2023年8月17日至23日 Craftland 限时玩法",
+    "launchNote": "官方英文公告确认 4 人组队、Rampage 武器和战斗到出口的规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-rampage-finale-pvp-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-squid-game-2025",
+    "game": "Free Fire",
+    "modeName": "鱿鱼游戏挑战（Squid Game Challenges）",
+    "year": "2025",
+    "date": "2025-07-18",
+    "tags": [
+      "br-core",
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "红灯绿灯",
+      "玻璃桥",
+      "地图挑战"
+    ],
+    "oneLineRule": "在 BR 和 Clash Squad 地图中完成红灯绿灯、玻璃桥、椪糖和符号收集等挑战，在躲避限制和争夺奖励之间做选择。",
+    "mechanicChange": "官方联动玩法把多种 Squid Game 挑战嵌入七张地图：红灯绿灯中移动会被 Young-hee 冻住，玻璃桥踩错面板会损失生命值，椪糖摊位和隐藏符号提供额外奖励。",
+    "tempoImpact": "移动检测和玻璃桥把普通搜集路线变成需要停走、试探和诱导的微型关卡，玩家既要防敌人也要处理环境规则。",
+    "designObservation": "把影视中的单项挑战拆成可插入 BR/CS 的短目标，能让联动内容在不替换核心枪战的情况下改变局部节奏。",
+    "sourceUrl": "https://ff.garena.com/en/article/1506/",
+    "launchDate": "2025-07-18",
+    "launchLabel": "2025年7月18日起限时开放",
+    "launchNote": "官方公告确认红灯绿灯、玻璃桥、椪糖和隐藏符号等局内挑战；本卡把同一联动下的挑战集合为一张规则卡。",
+    "gameplayTypes": [
+      "br",
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-squid-game-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-battle-for-dreamspace-2025",
+    "game": "Free Fire",
+    "modeName": "梦境冬境（Winterlands: Dreamspace）",
+    "year": "2025",
+    "date": "2025-12-12",
+    "tags": [
+      "br-core",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "空中飞艇",
+      "许愿喷泉",
+      "雪板转点"
+    ],
+    "oneLineRule": "在冬季 BR 中寻找会随机飞行的 Dreamport 空中飞艇，使用许愿喷泉换取资源，并用特殊雪板在地图雪坡上快速转点。",
+    "mechanicChange": "官方 Winterlands: Dreamspace 活动首次把 Dreamport 带入 BR：由 Yeti 控制的低空飞艇会沿不同路线停靠，中心的 Dreamy Wish Fountain 可用 FF Coins 许愿获得高价值物资；特殊雪板同时适用于 BR 和 Clash Squad。",
+    "tempoImpact": "空中飞艇和随机停靠点让队伍持续追踪移动目标，雪板和雪坡则提高了转点速度，地图路线更容易在中期发生改变。",
+    "designObservation": "移动资源点与愿望奖励把节日主题转成一条主动追逐路线；跨 BR/CS 的雪板保持了主题动作的一致性。",
+    "sourceUrl": "https://ff.garena.com/en/article/1571/",
+    "launchDate": "2025-12-12",
+    "launchLabel": "2025年12月12日至2026年1月6日冬季玩法",
+    "launchNote": "官方公告确认 Dreamport、Dreamy Wish Fountain、随机飞艇路线和跨 BR/CS 雪板。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-battle-for-dreamspace-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-lost-treasure-2026",
+    "game": "Free Fire",
+    "modeName": "失落宝藏（Lost Treasure）",
+    "year": "2026",
+    "date": "2026-02-20",
+    "tags": [
+      "br-core",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "地下秘室",
+      "寻宝路线",
+      "复活装置"
+    ],
+    "oneLineRule": "在沙漠化的 Bermuda 中寻找通往 Sunken Chamber 的入口，利用 Sky Portal 和 Revival Pod 探索地表与地下区域并收集宝藏。",
+    "mechanicChange": "官方 Lost Treasure 活动重做 Bermuda 的局部区域：沙漠建筑和 Sunken Chamber 会在对局中出现，玩家通过特定行动打开地下通路，并利用 Sky Portal、Revival Pod 和寻宝工具改变路线与返场选择。",
+    "tempoImpact": "地下秘室提供了第二层交战空间，入口解锁和传送装置会把队伍从常规搜刮路线拉向公共探索点。",
+    "designObservation": "寻宝主题的核心是让“发现入口”本身成为局内目标；地表、地下和返场装置共同构成可追踪的风险收益链。",
+    "sourceUrl": "https://ff.garena.com/en/article/1617/",
+    "launchDate": "2026-02-20",
+    "launchLabel": "2026年2月20日至3月6日限时活动",
+    "launchNote": "官方公告确认 Bermuda 沙漠化、Sunken Chamber、Sky Portal、Revival Pod 和合作挖宝活动。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-lost-treasure-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-jujutsu-awakening-2026",
+    "game": "Free Fire",
+    "modeName": "咒术觉醒（Jujutsu Awakening）",
+    "year": "2026",
+    "date": "2026-01-14",
+    "tags": [
+      "br-core",
+      "casual",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "诅咒能量",
+      "技能解锁",
+      "强化复活点"
+    ],
+    "oneLineRule": "在 BR 和 Clash Squad 中收集诅咒能量，解锁咒术和诅咒工具，并通过强化复活点和空投资源把能力带回战斗。",
+    "mechanicChange": "官方联动玩法加入 Cursed Energy 收集系统：玩家可从地面资源堆、击杀或售货机获得能量，用于强化锤子或解锁咒术；BR 有强化复活点，Clash Squad 则可购买咒术武器并争夺领域扩张空投。",
+    "tempoImpact": "能力资源让击杀、搜集和售货机都成为成长来源，队伍会主动争夺能量堆和空投；强化复活点提高了中期再次接战的机会。",
+    "designObservation": "联动能力系统把角色招式变成可规划的资源经济，BR 的收集与 CS 的购买保持同一主题，却分别服务于长线成长和回合决策。",
+    "sourceUrl": "https://ff.garena.com/en/article/1601/",
+    "launchDate": "2026-01-14",
+    "launchLabel": "2026年1月14日至2月13日限时玩法",
+    "launchNote": "官方公告确认 Cursed Energy、咒术、诅咒工具、强化复活点和 Clash Squad 咒术武器。",
+    "gameplayTypes": [
+      "br",
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-jujutsu-awakening-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-fire-kickoff-2026",
+    "game": "Free Fire",
+    "modeName": "足球开球（Fire Kickoff）",
+    "year": "2026",
+    "date": "2026-06-05",
+    "tags": [
+      "br-core",
+      "casual",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "足球场景",
+      "单挑复活",
+      "变身移动"
+    ],
+    "oneLineRule": "在 BR（大逃杀）和枪王对决（Clash Squad）中使用足球形态、足球爆破和足球场互动装置；被淘汰的 BR 玩家可通过单挑复活（Pitch Showdown Revival）争取立即返场。",
+    "mechanicChange": "官方 Fire Kickoff 活动把 Bermuda 的 Factory 区域改成足球场，并加入单挑复活（Pitch Showdown Revival）：早中期被淘汰的玩家会进入 1v1 足球场，获胜即可回到对局；足球形态（Football Form）可变成足球快速移动，足球爆破（Football Blast）可投掷爆炸足球。",
+    "tempoImpact": "单挑复活把淘汰后的等待变成一次高压返场，足球形态和足球爆破又让队伍获得新的接近、追击和封锁路线。",
+    "designObservation": "运动主题通过“场内对抗—返场奖励”连接主局与次级挑战，让复活变成玩家需要主动争取的技能检查。",
+    "sourceUrl": "https://ff.garena.com/en/article/1664",
+    "launchDate": "2026-06-05",
+    "launchLabel": "2026年6月5日至23日限时活动",
+    "launchNote": "官方公告确认足球场、单挑复活（Pitch Showdown Revival）、足球形态（Football Form）和足球爆破（Football Blast）；这些规则同时影响 BR 与枪王对决。",
+    "gameplayTypes": [
+      "br",
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-fire-kickoff-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-naruto-nine-tails-2025",
+    "game": "Free Fire",
+    "modeName": "九尾袭击百慕大（Nine Tails Strikes Bermuda）",
+    "year": "2025",
+    "date": "2025-01-10",
+    "tags": [
+      "br-core",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "BR 地图改造",
+      "动态空袭事件",
+      "强化返场"
+    ],
+    "oneLineRule": "在 BR 百慕大探索重建的木叶村，遭遇九尾袭击事件，并通过忍术卷轴和强化返场点改变整局路线。",
+    "mechanicChange": "官方火影忍者疾风传第一章把百慕大的 Rim Nam Village 改造成木叶村：拉面店可提供整局持续的能量自动增长；跳伞阶段会触发九尾袭击飞机、军火库或地面，不同目标会生成不同战场变化；淘汰玩家从“秽土转生”复活点返场，获得比普通返场更强的初始装备。BR 与枪王对决还加入忍术卷轴和相关能力。",
+    "tempoImpact": "九尾袭击把开局路线和跳伞决策变成随机事件，木叶村和忍术卷轴又提供了主动绕路的理由；强化返场提高了中期复活后的反打能力。",
+    "designObservation": "联动内容同时改造地标、开局事件和返场系统，让主题不只停留在外观；随机目标位置还能迫使队伍重新评估落点和转移线路。",
+    "sourceUrl": "https://ff.garena.com/en/article/1438/",
+    "launchDate": "2025-01-10",
+    "launchLabel": "2025年1月10日至2月8日限时活动",
+    "launchNote": "官方公告确认木叶村、九尾袭击、秽土转生复活点和忍术卷轴；本卡聚焦第一章的 BR 规则集合。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-naruto-nine-tails-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-tsukuyomi-br-2025",
+    "game": "Free Fire",
+    "modeName": "无限月读战场（Tsukuyomi BR）",
+    "year": "2025",
+    "date": "2025-07-30",
+    "tags": [
+      "br-core",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "BR 地图改造",
+      "收集能力",
+      "动态商店"
+    ],
+    "oneLineRule": "在被晓组织改造的百慕大寻找六种晓之信物，解锁忍术能力，并通过红月区域和特殊金币机争夺战斗优势。",
+    "mechanicChange": "火影忍者疾风传第二章把木叶村改造成行星毁灭弹后的战场，并加入无限月读区域；每个受影响区域隐藏一个晓之信物，收集后可获得吸引敌人、纸炸弹、可控黏土鸟、黑炎、鲨鱼召唤或减伤自救等忍术。局内还会出现特殊金币机，可选择木叶或晓组织的增益。",
+    "tempoImpact": "六个信物把地图探索变成连续的风险收益选择：队伍越深入无限月读区域，越可能拿到改变交战方式的能力，也越容易暴露在公共争夺中。",
+    "designObservation": "把联动技能拆成地图上的可争夺收集物，能让能力差异转化为路线与信息博弈；红月区域则提供了清晰的高风险高回报空间。",
+    "sourceUrl": "https://ff.garena.com/en/article/1523/",
+    "launchDate": "2025-07-30",
+    "launchLabel": "2025年7月30日至8月31日限时活动",
+    "launchNote": "官方第二章公告确认无限月读区域、六种晓之信物、忍术和特殊金币机；枪王对决的红月空投规则另有独立描述。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-tsukuyomi-br-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-chaos-events-2024",
+    "game": "Free Fire",
+    "modeName": "混沌事件（Chaos Events）",
+    "year": "2024",
+    "date": "2024-01-22",
+    "tags": [
+      "br-core",
+      "objective",
+      "space"
+    ],
+    "type": [
+      "投票改规则",
+      "BR/枪王对决事件",
+      "动态战场"
+    ],
+    "oneLineRule": "玩家先投票决定本局的混沌事件，票数最高的规则会在 BR 或枪王对决中生效，临时改变航线、补给、技能冷却和安全区。",
+    "mechanicChange": "官方补丁加入 The Chaos 投票：玩家可以选择失控飞机、超级蘑菇、异常空投、技能涌动、军火库喷发、补给机替换、安全区扰动和任务嘉年华等事件；投票结果会在对局内触发，活动结束后仍可能随机出现。",
+    "tempoImpact": "每局开始前的投票会改变队伍对落点、资源和技能循环的预期，安全区、航线与补给规则的临时偏移会把熟悉地图变成需要即时读图的战场。",
+    "designObservation": "让玩家共同选择规则，比单纯随机事件更容易制造期待；投票结果又必须保持短周期和可读反馈，才能避免规则变化变成不可控的噪声。",
+    "sourceUrl": "https://ff.garena.com/en/article/1306/",
+    "launchDate": "2024-01-22",
+    "launchLabel": "2024年1月22日补丁加入",
+    "launchNote": "官方补丁同时说明混沌事件会影响 BR 与枪王对决，并列出八类可投票事件。",
+    "gameplayTypes": [
+      "br",
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-chaos-events-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-king-cs-2025",
+    "game": "Free Fire",
+    "modeName": "枪王之王（Raja CS）",
+    "year": "2025",
+    "date": "2025-08-22",
+    "tags": [
+      "objective",
+      "power"
+    ],
+    "type": [
+      "单人排位",
+      "隐藏身份",
+      "竞技商店"
+    ],
+    "oneLineRule": "达到指定段位后解锁枪王之王，在限定时段参加单人枪王对决排位；隐藏身份，按局内表现积累积分。",
+    "mechanicChange": "官方地区补丁公布全新的 Raja CS：只能单人进入，队伍和头像等身份信息在局内隐藏；积分按表现计算，商店采用更接近电竞赛制的配置，提供更便宜的 Gloo Wall、更丰富的武器和主动技能卡，并在后续回合显示特殊 MVP。",
+    "tempoImpact": "单人排位和隐藏身份减少了固定队伍信息，玩家需要更快读懂陌生对手；竞技化商店则提高了每轮购买和技能卡选择的重要性。",
+    "designObservation": "把枪王对决的短回合包装成高门槛单人排位，可以把个人决策从队伍协作中抽离出来；隐藏身份强化了当局信息博弈，但需要稳定的匹配质量支撑。",
+    "sourceUrl": "https://ff.garena.com/en/article/1508/",
+    "launchDate": "2025-08-22",
+    "launchLabel": "2025年8月22日地区版本公布",
+    "launchNote": "官方印度尼西亚地区补丁公布 Raja CS 的开放时间和规则；该卡保留地区差异说明，后续需继续确认全球服是否同步。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-king-cs-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
