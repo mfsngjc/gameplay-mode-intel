@@ -13683,5 +13683,35 @@
       "pve"
     ],
     "isLtm": true
+  },
+  {
+    "id": "pubg-1v1-arena-2025",
+    "game": "PUBG",
+    "modeName": "一对一竞技场（1v1 Arena）",
+    "year": "2025",
+    "date": "2025-02-12",
+    "tags": [
+      "objective",
+      "casual"
+    ],
+    "type": [
+      "街机",
+      "1v1",
+      "回合制"
+    ],
+    "oneLineRule": "两名玩家在小型竞技场逐回合对决，每回合先准备装备；规定时间内赢下更多回合的人获胜。",
+    "mechanicChange": "官方将训练模式里的 1v1 竞技场扩展为独立街机玩法。两名玩家进入小型战斗区域，在每回合开始前选择装备并准备；回合结束后按胜负继续下一回合，最终以赢下的回合数决定胜者。模式支持连胜显示，且可在自定义比赛中使用。",
+    "tempoImpact": "固定两人和小型场地让交战几乎立即发生，回合间的装备选择又保留了短暂的调整窗口。连胜显示会把一次胜利转化为持续的心理压力，鼓励玩家根据对手的上一回合选择调整装备。",
+    "designObservation": "1v1 模式不需要复杂地图和长线资源循环，关键是让每回合都有清晰的准备、交战和结算边界。把训练场功能升级为街机入口，还能让单挑练习拥有正式的胜负反馈和连胜目标。",
+    "sourceUrl": "https://pubg.com/en/news/8170",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/common/content/news/20250210/6LNbQyv6.jpg",
+    "imageSource": "PUBG 34.1 官方 1v1 竞技场公告头图",
+    "launchDate": "2025-02-12",
+    "launchLabel": "2025年2月12日电脑端上线，2月20日主机上线",
+    "launchNote": "官方 34.1 公告将 1v1 竞技场作为街机限时玩法开放：电脑端 2025年2月12日至2月26日，主机端 2月20日至3月6日；同时支持自定义比赛。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true
   }
 ]
