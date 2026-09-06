@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 88,
-      "coverCount": 88,
-      "readableDescriptionCount": 88,
+      "modeCount": 95,
+      "coverCount": 95,
+      "readableDescriptionCount": 95,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -415,7 +415,14 @@
         "pubgm-bloodmoon-awakening-2024",
         "pubgm-bloodmoon-arena-2024",
         "pubgm-icemire-frontier-2024",
-        "pubgm-icemire-arena-2024"
+        "pubgm-icemire-arena-2024",
+        "pubgm-heros-crown-2026",
+        "pubgm-naruto-shippuden-2026",
+        "pubgm-naruto-valley-ninjutsu-2026",
+        "pubgm-naruto-konoha-pve-2026",
+        "pubgm-naruto-nine-tails-challenge-2026",
+        "pubgm-spiderman-brand-new-day-2026",
+        "pubgm-midnight-hunters-2026"
       ],
       "officialSourceUrls": [
         "https://pubgmobile.jp/version-3-7-0-patch-notes-20250308/",
@@ -476,9 +483,12 @@
         "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35373/35374/35386/35387/m20497/202002/849328.shtml",
         "https://www.pubgmobile.com/en/event/New-Mecha-Vehicles/",
         "https://pubgmobile.jp/version-3-4-0-patch-notes-20240911/",
-        "https://pubgmobile.jp/version-3-5-0-patch-notes-20241112/"
+        "https://pubgmobile.jp/version-3-5-0-patch-notes-20241112/",
+        "https://pubgmobile.jp/version-4-4-0-patch-notes-20260512/",
+        "https://pubgmobile.jp/version-4-5-0-patch-notes-20260709/",
+        "https://www.pubgmobile.jp/version-4-6-0-update-notice-20260901/"
       ],
-      "notes": "已回溯 0.4–4.3 版本及 2018–2026 主题、竞技、街机和 Metro Royale 页面；本轮补入 0.17.0 周年游乐园、街机硬核模式、机甲融合、血月觉醒、血月主题竞技场、冰原前线与冰原主题竞技场。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
+      "notes": "已回溯 0.4–4.6 版本及 2018–2026 主题、竞技、街机和 Metro Royale 页面；本轮补入 4.4 Hero’s Crown、4.5 NARUTO/蜘蛛侠主题及其独立 PVE/忍术/九尾玩法、4.6 Midnight Hunters。Midnight Hunters 机制待完整官方补丁公开；仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",

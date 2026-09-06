@@ -6111,7 +6111,7 @@
     "sourceUrl": "https://www.pubgmobile.com/en/event/Dinoground/",
     "launchDate": "2023-05-16",
     "launchLabel": "2023年5月16日至6月18日主题玩法",
-    "launchNote": "官方页面确认恐龙聚落、霸王龙、原始区域、PVE 恐龙和驯服坐骑；官方频道后来宣布该玩法回归，暂不另建重复卡。",
+    "launchNote": "官方页面确认恐龙聚落、霸王龙、原始区域、PVE 恐龙和驯服坐骑；官方频道后来宣布该玩法回归，暂不另建重复卡。 官方 4.4.0（2026年6月）还记录了该主题玩法部分要素限时回归。",
     "gameplayTypes": [
       "br",
       "pve"
@@ -9489,6 +9489,225 @@
     ],
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-icemire-arena-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-heros-crown-2026",
+    "game": "PUBG Mobile",
+    "modeName": "英雄王冠（Hero’s Crown）",
+    "year": "2026",
+    "date": "2026-05-12",
+    "tags": [
+      "br-ltm",
+      "pve",
+      "objective",
+      "space"
+    ],
+    "type": [
+      "主题 BR",
+      "希腊神话",
+      "首领试炼"
+    ],
+    "oneLineRule": "在希腊神话主题 BR 中进入浮空的戴冠之地，完成试炼收集火之源，再乘坐日逐金车挑战首领。",
+    "mechanicChange": "官方 4.4.0 版本在 Erangel、Livik 和 Rondo 开放英雄王冠：Erangel 的戴冠之地提供特殊物资和首领试炼；玩家需要在限时内收集火之源，也可以从敌人身上夺取，集齐后乘坐日逐金车进入首领区域挑战半人马战士赫利俄斯。",
+    "tempoImpact": "浮空岛和试炼把队伍从常规搜刮路线吸引到高价值垂直空间，火之源既是任务资源也是可争夺战利品，首领区域则形成后续的集中战斗。",
+    "designObservation": "把“收集—夺取—转移—首领”串成一条可见流程，让主题 BR 的 PvE 目标持续制造玩家相遇，而不是把首领做成孤立的地图彩蛋。",
+    "sourceUrl": "https://pubgmobile.jp/version-4-4-0-patch-notes-20260512/",
+    "launchDate": "2026-05-12",
+    "launchLabel": "2026年5月12日至7月7日限时开放",
+    "launchNote": "官方 4.4.0 补丁确认 Hero’s Crown 的地图、戴冠之地、赫利俄斯试炼、火之源和首领战规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-heros-crown-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-naruto-shippuden-2026",
+    "game": "PUBG Mobile",
+    "modeName": "火影忍者疾风传主题玩法（NARUTO: Shippuden）",
+    "year": "2026",
+    "date": "2026-07-09",
+    "tags": [
+      "br-ltm",
+      "power",
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "联动 BR",
+      "忍术能力",
+      "九尾事件"
+    ],
+    "oneLineRule": "在火影忍者联动 BR 中收集查克拉、使用忍术并探索木叶隐村与终末之谷，继续争夺大逃杀胜利。",
+    "mechanicChange": "官方 4.5.0 版本在 Erangel、Livik 和 Sanhok 开放主题玩法：查克拉支持忍者跑、火遁、土流壁、螺旋丸、千鸟和飞雷神等能力；九尾会在 Erangel 出现，玩家可以击败它或从休息中的九尾处夺取九尾查克拉。木叶地图、NPC、叛忍和特殊补给进一步改变落点与搜刮路线。",
+    "tempoImpact": "忍术让追击、封锁和位移拥有新的资源门槛，九尾与最强的班宝箱把队伍推向高价值热点；查克拉消耗又限制了连续施法，迫使队伍安排拾取和交战节奏。",
+    "designObservation": "把联动能力设计成可管理的战斗资源，并用 NPC、首领和特殊事件把能力获取绑定到地图路线，让 IP 内容真正改变 BR 决策。",
+    "sourceUrl": "https://pubgmobile.jp/version-4-5-0-patch-notes-20260709/",
+    "launchDate": "2026-07-09",
+    "launchLabel": "2026年7月9日至9月8日限时开放",
+    "launchNote": "官方 4.5.0 补丁确认 NARUTO: Shippuden 主题玩法、忍术、查克拉、九尾和木叶地图；特殊模式另行记录。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-naruto-shippuden-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-naruto-valley-ninjutsu-2026",
+    "game": "PUBG Mobile",
+    "modeName": "终末之谷忍术对战（Valley of the End Ninjutsu Battle）",
+    "year": "2026",
+    "date": "2026-07-23",
+    "tags": [
+      "br-ltm",
+      "power",
+      "objective",
+      "arena"
+    ],
+    "type": [
+      "联动对战",
+      "忍术竞技",
+      "特殊地图"
+    ],
+    "oneLineRule": "在终末之谷进入独立忍术对战，用联动能力和队友配合完成一场短时竞技。",
+    "mechanicChange": "官方 4.5.0 补丁在 7 月 23 日新增终末之谷忍术对战模式；页面确认这是 NARUTO 主题下的独立新模式，但没有公开完整人数、计分和胜负细则，本卡不补写未确认数值。",
+    "tempoImpact": "独立场地把忍术能力从 BR 的搜刮与存活目标抽离，集中到短时交战和技能配合；具体回合节奏以客户端规则为准。",
+    "designObservation": "联动主题可以把同一套能力拆成 BR 资源层和独立竞技层，让玩家先在开放地图探索，再在封闭场地验证操作上限。",
+    "sourceUrl": "https://pubgmobile.jp/version-4-5-0-patch-notes-20260709/",
+    "launchDate": "2026-07-23",
+    "launchLabel": "2026年7月23日起开放，详细结束时间待确认",
+    "launchNote": "官方补丁只确认“终末之谷忍术对战模式”上线，完整人数、胜负与计分规则尚待更详细的官方说明。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-naruto-valley-ninjutsu-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-naruto-konoha-pve-2026",
+    "game": "PUBG Mobile",
+    "modeName": "木叶隐村 PVE（Konoha Village PvE）",
+    "year": "2026",
+    "date": "2026-07-23",
+    "tags": [
+      "br-ltm",
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "联动 PVE",
+      "木叶隐村",
+      "合作挑战"
+    ],
+    "oneLineRule": "在木叶隐村的联动 PVE 玩法中与队友合作完成区域挑战，抵抗敌方威胁并推进任务。",
+    "mechanicChange": "官方 4.5.0 补丁确认木叶隐村新增 PVE 模式，但没有公开完整敌人配置、流程长度和结算条件；本卡只记录已确认的合作 PVE 入口，未推测未公布规则。",
+    "tempoImpact": "PVE 目标会把玩家的注意力从互相淘汰转向清理区域、保护队友和推进任务；具体阶段节奏以客户端说明为准。",
+    "designObservation": "把联动地标从 BR 的观光空间转成合作任务，可以让主题建筑承担可重复游玩的目标，而不只是视觉包装。",
+    "sourceUrl": "https://pubgmobile.jp/version-4-5-0-patch-notes-20260709/",
+    "launchDate": "2026-07-23",
+    "launchLabel": "2026年7月23日起开放，详细结束时间待确认",
+    "launchNote": "官方补丁确认木叶隐村 PVE 模式上线，但暂未公开完整敌人、流程和胜负细则。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-naruto-konoha-pve-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-naruto-nine-tails-challenge-2026",
+    "game": "PUBG Mobile",
+    "modeName": "九尾袭来：木叶保卫战（Nine-Tails Challenge）",
+    "year": "2026",
+    "date": "2026-07-09",
+    "tags": [
+      "br-ltm",
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "特殊 BR",
+      "全员合作",
+      "首领防守"
+    ],
+    "oneLineRule": "在随机触发的特殊对局中，所有队伍暂停互相攻击并合作阻止九尾抵达木叶隐村。",
+    "mechanicChange": "官方 4.5.0 补丁确认九尾挑战会以随机概率触发特殊对局：玩家之间禁止战斗，所有队伍需要合作沿固定路线击退入侵木叶的九尾；根据击退结果显示不同结算演出。",
+    "tempoImpact": "规则把 BR 的敌对关系临时改成全员防守，队伍需要共享火力、路线和复活资源；随机触发又让玩家无法提前按固定节奏准备。",
+    "designObservation": "通过短时改变胜负关系，主题事件可以把大逃杀的竞争空间转成共同危机，让同一张地图产生截然不同的协作节奏。",
+    "sourceUrl": "https://pubgmobile.jp/version-4-5-0-patch-notes-20260709/",
+    "launchDate": "2026-07-09",
+    "launchLabel": "2026年7月9日起随机触发",
+    "launchNote": "官方补丁明确记录“九尾袭来・木叶袭撃事件”的触发条件和全员合作规则；具体触发概率未公布。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-naruto-nine-tails-challenge-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-spiderman-brand-new-day-2026",
+    "game": "PUBG Mobile",
+    "modeName": "蜘蛛侠：崭新的日子（Spider-Man: Brand New Day）",
+    "year": "2026",
+    "date": "2026-07-30",
+    "tags": [
+      "br-ltm",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "联动 BR",
+      "攀爬移动",
+      "蜘蛛能力"
+    ],
+    "oneLineRule": "在蜘蛛侠联动 BR 中使用帕克夹克和蛛网手套攀墙、摆荡与追踪敌人，并在主题区域搜集物资。",
+    "mechanicChange": "官方 4.5.0 追加蜘蛛侠主题玩法：中央广场和彼得·帕克公寓改变建筑路线，帕克夹克提供二段跳、攀墙和蜘蛛感知，蜘蛛侠手套可发射蛛网造成减速与束缚，也能用蛛网摆荡快速转移。",
+    "tempoImpact": "攀墙、二段跳和蛛网摆荡增加了垂直路线与追击速度，蜘蛛感知又让足迹成为新的信息资源；墓地等安全区域则暂时禁止战斗，形成节奏缓冲。",
+    "designObservation": "把联动能力直接接入建筑和移动网络，能让玩家感到“角色能力改变地图”，而不是只获得一套外观。",
+    "sourceUrl": "https://pubgmobile.jp/version-4-5-0-patch-notes-20260709/",
+    "launchDate": "2026-07-30",
+    "launchLabel": "2026年7月30日至9月2日限时开放",
+    "launchNote": "官方 4.5.0 补丁追加该主题玩法，确认中央广场、彼得·帕克公寓、帕克夹克、蜘蛛侠手套和蛛网摆荡规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-spiderman-brand-new-day-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-midnight-hunters-2026",
+    "game": "PUBG Mobile",
+    "modeName": "午夜猎手（Midnight Hunters）",
+    "year": "2026",
+    "date": "2026-09-09",
+    "tags": [
+      "br-ltm",
+      "needs_review"
+    ],
+    "type": [
+      "主题 BR",
+      "4.6.0 新玩法",
+      "规则待补档"
+    ],
+    "oneLineRule": "PUBG Mobile 4.6.0 官方更新预告确认午夜猎手主题玩法登场，具体地图、目标和局内规则待完整补丁页公开。",
+    "mechanicChange": "目前官方 4.6.0 更新预告只确认 Midnight Hunters 为新主题模式，并未公开完整玩法说明；本卡保留已确认事实，不推测敌人、道具或胜负条件。",
+    "tempoImpact": "详细节奏影响待官方玩法说明公开后补充。",
+    "designObservation": "待完整规则公开后，再分析它如何改变落点、资源、交战和队伍分工。",
+    "sourceUrl": "https://www.pubgmobile.jp/version-4-6-0-update-notice-20260901/",
+    "launchDate": "2026-09-09",
+    "launchLabel": "预计2026年9月9日随4.6.0开放",
+    "launchNote": "官方更新预告确认新主题模式名称，但完整机制与开放地图尚未在当前官方页面公开。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-midnight-hunters-2026.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
