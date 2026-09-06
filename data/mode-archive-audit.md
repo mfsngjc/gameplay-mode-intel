@@ -152,8 +152,8 @@
 
 ## 2026-09-07 全库完成性校验
 
-- 当前 `data/modes.json` 共 484 张卡：Fortnite 42、PUBG 29、和平精英 65、Apex Legends 56、三角洲行动 37、PUBG Mobile 156、Free Fire 99；每个游戏的 `modeIds` 与来源台账完全一致。
-- 逐卡检查结果：345 张本地封面、139 张官方远程封面，远程封面已逐项抽检并返回 `200 image/*`，本地封面全部存在；`modeName`、规则、机制、节奏、设计观察、上线信息和图片来源字段均包含中文可读内容。
+- 当前 `data/modes.json` 共 491 张卡：Fortnite 49、PUBG 29、和平精英 65、Apex Legends 56、三角洲行动 37、PUBG Mobile 156、Free Fire 99；每个游戏的 `modeIds` 与来源台账完全一致。
+- 逐卡检查结果：352 张本地封面、139 张官方远程封面，远程封面已逐项抽检并返回 `200 image/*`，本地封面全部存在；`modeName`、规则、机制、节奏、设计观察、上线信息和图片来源字段均包含中文可读内容。
 - 这项校验只证明当前入库卡片没有漏图或不可读字段；官方历史模式的回溯仍保持 `ongoing_backfill`，定时任务继续按未覆盖年份、版本和分页推进。
 
 ### Free Fire 来源台账对账（2026-09-07）
@@ -229,3 +229,9 @@
 - 复核 [Epic v6.31 官方补丁](https://www.fortnite.com/patch-notes/v6-31)：补入 `Team Rumble`，记录 20v20、5 秒复活、100 击杀胜利和稀有以上武器池。
 - 复核 [Epic v5.30 官方补丁](https://www.fortnite.com/patch-notes/v5-30?lang=en-US)：补入 `Score Royale`，记录硬币、容器、补给和淘汰的积分竞速规则。
 - 复核 [Epic v4.3 官方补丁](https://www.fortnite.com/patch-notes/v4-3?lang=en-US)：补入 `Teams of 20 v2`，记录五队各自巴士与额外补给；基础 Teams of 20 保留原卡片。
+
+### Fortnite 2017–2019 装备与风暴变体补漏
+
+- 复核 [High Explosives 官方公告](https://www.fortnite.com/news/boogie-bomb-update?lang=en-US) 与 [v3.4 内容更新](https://www.fortnite.com/news/v3-4-content-update?lang=en-US)：补入 `High Explosives` 与 `High Explosives v2`，分别记录爆炸物限定、陷阱关闭、资源强化和导弹补给规则。
+- 复核 [Epic v5.21 官方补丁](https://www.fortnite.com/patch-notes/v5-21/?lang=en-US) 与 [v4.4 官方补丁](https://www.fortnite.com/patch-notes/v4-4?lang=en-US)：补入 `Sniper Shootout`、`Sniper Shootout v3` 和 `Soaring 50s`，记录狙击武器池、无倒地、滑翔重部署等差异。
+- 复核 [Epic v5.20 官方补丁](https://www.fortnite.com/patch-notes/v5-20) 与 [v9.10 官方补丁](https://www.fortnite.com/patch-notes/v9-10?lang=en-US)：补入 `Steady Storm` 与 `Unvaulted Squads`，分别记录持续风暴/复活和全复古武器池；装备、地图与常规赛制更新不重复建卡。

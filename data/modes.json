@@ -14613,5 +14613,215 @@
       "br"
     ],
     "isLtm": true
+  },
+  {
+    "id": "fortnite-high-explosives-2017",
+    "game": "Fortnite",
+    "modeName": "高爆模式（High Explosives）",
+    "year": "2017",
+    "date": "2017-12-28",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "爆炸物限定",
+      "投掷物",
+      "BR 变体"
+    ],
+    "oneLineRule": "只使用火箭发射器、榴弹发射器和各类投掷物的限时大逃杀，陷阱关闭，争夺最后存活。",
+    "mechanicChange": "武器池限制为 Snowball Launcher、Rocket Launcher 和各类手雷，常规枪械与陷阱不出现；投掷物和爆炸物成为唯一远程伤害手段，玩家仍可使用常规消耗品。",
+    "tempoImpact": "没有步枪和霰弹枪后，交战依赖抛物线预判、爆炸范围与掩体破坏；每次投掷都能改变空间控制，战斗更偏向连续压制。",
+    "designObservation": "用单一伤害家族替代完整武器池，会把瞄准从命中线转向落点和爆炸半径；关闭陷阱则避免防守手段过度叠加。",
+    "sourceUrl": "https://www.fortnite.com/news/boogie-bomb-update?lang=en-US",
+    "imageUrl": "assets/modes/generated/fortnite-high-explosives-2017.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2017-12-28",
+    "launchLabel": "2017年12月28日至2018年1月2日开放",
+    "launchNote": "Epic 官方 Boogie Bomb 更新公告明确列出 High Explosives LTM 的武器池和陷阱关闭规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "fortnite-high-explosives-v2-2018",
+    "game": "Fortnite",
+    "modeName": "高爆模式 v2（High Explosives v2）",
+    "year": "2018",
+    "date": "2018-04-04",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "爆炸物限定",
+      "资源强化",
+      "快速缩圈"
+    ],
+    "oneLineRule": "高爆模式的强化版本：移除非爆炸武器，缩短前几轮风暴等待，并提高弹药、建材和导弹补给。",
+    "mechanicChange": "v3.4 内容更新关闭友军伤害，移除非爆炸武器并压缩前四轮等待时间；空投额外提供消耗品与材料，并有机会掉落传奇制导导弹；地面材料与弹药掉率提高。",
+    "tempoImpact": "更短的风暴等待和更高的补给密度让爆炸物交战更早发生；资源增加支持连续轰炸，但导弹稀有度仍把高爆发留给争夺空投的队伍。",
+    "designObservation": "同一武器主题通过资源和时间参数就能形成新一轮玩法节奏；v2 把“爆炸物实验”从短暂乱斗推向可持续攻防。",
+    "sourceUrl": "https://www.fortnite.com/news/v3-4-content-update?lang=en-US",
+    "imageUrl": "assets/modes/generated/fortnite-high-explosives-v2-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-04-04",
+    "launchLabel": "2018年4月4日随 v3.4 内容更新开放",
+    "launchNote": "Epic v3.4 官方内容更新明确将 High Explosives v2 作为单独玩法规则发布；基础 High Explosives 另有卡片。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "fortnite-sniper-shootout-2018",
+    "game": "Fortnite",
+    "modeName": "狙击对决（Sniper Shootout）",
+    "year": "2018",
+    "date": "2018-08-15",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "狙击限定",
+      "低补给",
+      "BR 变体"
+    ],
+    "oneLineRule": "只刷新狙击枪的限时大逃杀，地面战利品刷新减少，靠远距离命中争夺胜利。",
+    "mechanicChange": "只有狙击枪会作为武器掉落，地面战利品刷新率降低 50%；不同版本会调整是否允许倒地、是否加入猎枪/弩和是否统计战绩，主体始终围绕狙击武器池。",
+    "tempoImpact": "低补给减少了落地即成型的稳定性，玩家需要用地形和视线寻找第一枪；远距离淘汰降低了持续近战频率，但每次露头的风险更高。",
+    "designObservation": "限定武器池后，地图视线、掩体密度和倒地规则成为主要平衡旋钮；同一模式可以通过少量参数适配单排或组队。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v5-21/?lang=en-US",
+    "imageUrl": "assets/modes/generated/fortnite-sniper-shootout-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-08-15",
+    "launchLabel": "2018年8月15日随 v5.21 版本轮换开放",
+    "launchNote": "Epic v5.21 官方补丁明确 Sniper Shootout 的狙击限定和低地面战利品；后续 v8.20、v9.10 又发布了变体。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "fortnite-sniper-shootout-v3-2018",
+    "game": "Fortnite",
+    "modeName": "狙击对决 v3（Sniper Shootout v3）",
+    "year": "2018",
+    "date": "2018-06-12",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "狙击/瞄准镜限定",
+      "无倒地",
+      "低建材"
+    ],
+    "oneLineRule": "狙击枪与带瞄准镜突击步枪限定的狙击变体，玩家被击倒后立即淘汰，资源和地面战利品均被压低。",
+    "mechanicChange": "可用武器只有狙击枪与带瞄准镜突击步枪，地面刷新减少 50%，采集建材减少 25%；双排/小队关闭倒地救援，受击后直接淘汰，战绩正常统计。",
+    "tempoImpact": "无倒地机制让每次命中直接决定人数，低资源和远距离武器池减少连续补枪；队伍必须优先管理视线、掩体和救援路线。",
+    "designObservation": "通过关闭倒地状态，狙击玩法的命中价值被放大；同时降低建材，避免玩家用高墙完全抵消远距离风险。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v4-4?lang=en-US",
+    "imageUrl": "assets/modes/generated/fortnite-sniper-shootout-v3-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-06-12",
+    "launchLabel": "2018年6月12日随 v4.4 版本开放",
+    "launchNote": "Epic v4.4 官方补丁明确 Sniper Shootout v3 的武器池、无倒地和低建材规则；与基础狙击对决分开记录。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "fortnite-soaring-50s-2018",
+    "game": "Fortnite",
+    "modeName": "翱翔 50 人战（Soaring 50s）",
+    "year": "2018",
+    "date": "2018-08-15",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "50v50",
+      "滑翔重部署",
+      "大队伍 BR"
+    ],
+    "oneLineRule": "50v50 大队伍大逃杀的机动变体：高空坠落时可以重新展开滑翔伞，并提高冲击波、跳板和发射台的出现率。",
+    "mechanicChange": "沿用 50v50 的战利品、弹药和资源等级；玩家从高于 10 米处下落时可重新部署滑翔伞，地图额外提供冲击波手雷、跳板和发射台，降低移动和集结成本。",
+    "tempoImpact": "空中重部署让大队伍能快速跨越地形、追击或撤离，战线移动更频繁；额外机动道具把落点和高地争夺转化为空间机动竞赛。",
+    "designObservation": "在大队伍 BR 中强化空中机动，可以缓解 50 人队伍的地图响应延迟；移动资源越多，越需要通过风暴和资源刷新控制战斗边界。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v5-21/?lang=en-US",
+    "imageUrl": "assets/modes/generated/fortnite-soaring-50s-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-08-15",
+    "launchLabel": "2018年8月15日随 v5.21 版本轮换开放",
+    "launchNote": "Epic v5.21 官方补丁明确 Soaring 50s 的滑翔重部署和大队伍资源规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "fortnite-steady-storm-2018",
+    "game": "Fortnite",
+    "modeName": "持续风暴（Steady Storm）",
+    "year": "2018",
+    "date": "2018-08-07",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "无安全区",
+      "持续缩圈",
+      "复活"
+    ],
+    "oneLineRule": "没有固定安全区的限时大逃杀：风暴持续推进，玩家必须不断向中心移动，被淘汰后仍可复活，除非死于风暴。",
+    "mechanicChange": "模式不生成传统静止安全区，风暴持续向中心移动；玩家被淘汰后可以复活，但被风暴淘汰不能回场。官方同时提供高资源、满额宝箱和弹药箱，方便队伍边移动边补给。",
+    "tempoImpact": "持续风暴把转点变成全程主线，玩家几乎没有静态守点窗口；复活与高补给维持交战密度，直到风暴压缩出最后路线。",
+    "designObservation": "删除安全区等待后，地图导航本身成为胜负条件；复活和高资源补偿让持续移动不至于变成一次失误即结束。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v5-20",
+    "imageUrl": "assets/modes/generated/fortnite-steady-storm-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-08-07",
+    "launchLabel": "2018年8月7日随 v5.20 版本开放",
+    "launchNote": "Epic v5.20 官方补丁明确 Steady Storm 的持续风暴、复活和补给规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "fortnite-unvaulted-squads-2019",
+    "game": "Fortnite",
+    "modeName": "复古武器小队（Unvaulted Squads）",
+    "year": "2019",
+    "date": "2019-06-19",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "小队 BR",
+      "全复古武器池",
+      "装备轮换"
+    ],
+    "oneLineRule": "小队大逃杀的复古装备变体：武器池只使用标准模式已进入 Vault 的物品，围绕旧版本装备组合争夺胜利。",
+    "mechanicChange": "模式保留 BR 的搜刮、风暴和小队胜负结构，但把可用装备限定为当期标准模式已封存的武器和物品；装备池随版本 Vault 状态变化，战斗距离和资源节奏随之改变。",
+    "tempoImpact": "玩家必须重新学习旧装备的射程、弹道和组合，落点价值取决于复古池的稀缺性；装备不确定性提高了前中期探索和临场换枪的重要性。",
+    "designObservation": "用版本 Vault 作为动态武器池，可以低成本重做整套战斗生态；模式的核心体验来自熟悉地图与陌生装备之间的认知错位。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v9-10?lang=en-US",
+    "imageUrl": "assets/modes/generated/fortnite-unvaulted-squads-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2019-06-19",
+    "launchLabel": "2019年6月 v9.10 版本期间轮换开放",
+    "launchNote": "Epic v9.10 官方补丁明确 Unvaulted Squads 的全复古武器池；与 Solid Gold、Close Encounters 等装备限定模式分开记录。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
   }
 ]
