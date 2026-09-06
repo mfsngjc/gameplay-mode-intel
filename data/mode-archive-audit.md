@@ -259,3 +259,7 @@
 ### Free Fire 2018–2024 “新模式”关键词反查
 
 - 复核 Garena 官方页面 97、170、454、485、680、811、892、917、1120、1170、1213、1266、1306、1332、1357、1385：页面中明确命名的 `Rampage: New Dawn`、`Lone Wolf`、`Football Squad`、`Coin Clash`、`Pet Smash`、`Triple Wolves`、`Shadow Hunter`、`Head Hunt`、`Clash Squad: Slay`、`Lone Wolf: Duo Active Skills`、`CS-Peak` 等均已与现有模式卡逐项匹配；其余内容是模式变体、地图、系统或武器规则，没有发现新的独立匹配模式。
+
+### PUBG Mobile 2020–2025 专题页反查
+
+- 复核 [0.17.0 官方补丁](https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35373/35374/35386/35387/m20497/202002/849328.shtml)、[4 周年活力周年](https://www.pubgmobile.com/en/event/Vibrant-Anniversary/)、[龙珠超主题玩法](https://www.pubgmobile.com/en/event/dragon-ball-super/)、[暗影力量](https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/)、[机甲融合](https://www.pubgmobile.com/en/event/New-Mecha-Vehicles/)、[变形金刚联动](https://www.pubgmobile.com/en/event/Official-Transformers-Collaboration/) 和 [4.1 冰雪乐园](https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-410/)：`Arctic Mode`、`Hardcore Mode`、`Vibrant Anniversary`、`Battle Royale: Dragon Ball Super`、`Ice Naval Map`、`Freezing Tower Assault Arena`、`Mecha Fusion`、`Summer Showdown`、`Racing Carnival`、`Snow Roguelike Adventure`、`Frosty Funland Rocket Launcher Frenzy` 等均已与现有卡片匹配；World of Wonder 编辑器功能和地图模板按创作内容归档，没有新的官方独立匹配模式遗漏。
