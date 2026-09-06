@@ -11270,5 +11270,185 @@
     "isLtm": false,
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
     "imageUrl": "assets/modes/generated/pubgm-wow-zombie-infection-2024.svg"
+  },
+  {
+    "id": "pubgm-wow-hide-and-seek-2023",
+    "game": "PUBG Mobile",
+    "modeName": "躲猫猫模板（Hide and Seek Gameplay）",
+    "year": "2023",
+    "date": "2023-12-12",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "伪装搜寻",
+      "阵营对抗"
+    ],
+    "oneLineRule": "躲藏者变形成地图物件藏起来，搜寻者寻找并淘汰所有躲藏者；最终由一方完成阵营目标。",
+    "mechanicChange": "官方 Frozen Kingdom 页面将 Hide and Seek 列为新地图与玩法模板：躲藏者可以变形成场景物件，搜寻者需要找出所有躲藏者。页面没有公开人数、时间和计分细则。",
+    "tempoImpact": "伪装让信息从枪线转成观察与声音判断，搜寻者要覆盖路线，躲藏者则要利用场景语义和时间拖延制造误导。",
+    "designObservation": "躲猫猫模板把射击游戏的地图识别能力转成核心胜负资源；伪装对象越贴合场景，搜寻者越需要通过行为线索而不是纯搜索完成确认。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+    "launchDate": "2023-12-12",
+    "launchLabel": "2023年12月12日至2024年1月7日 Frozen Kingdom 期间公布",
+    "launchNote": "官方页面确认变形伪装与搜寻目标；人数、回合时长和计分规则待对应创作地图补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-hide-and-seek-2023.svg"
+  },
+  {
+    "id": "pubgm-wow-sky-control-2023",
+    "game": "PUBG Mobile",
+    "modeName": "天空控制（Sky Control）",
+    "year": "2023",
+    "date": "2023-12-12",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "击退淘汰",
+      "高空平台"
+    ],
+    "oneLineRule": "使用 Super Color Bazooka 发射击退弹，把对手从云端平台击落。",
+    "mechanicChange": "官方 Frozen Kingdom 页面把 Sky Control 列为 Beta Creation Gameplay：Super Color Bazooka 可以发射击退投射物，玩家通过把敌人打下云端取胜。",
+    "tempoImpact": "高空边界把每次命中都转成位置风险，玩家既要瞄准对手，也要保持自己远离边缘并控制落脚点。",
+    "designObservation": "当地图边缘直接承担淘汰条件时，击退距离、平台宽度和返场机会会比伤害数值更决定战术深度。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+    "launchDate": "2023-12-12",
+    "launchLabel": "2023年12月12日至2024年1月7日 Frozen Kingdom 期间公布",
+    "launchNote": "官方页面确认击退投射物和云端淘汰目标；具体人数、回合和返场规则待创作地图说明补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-sky-control-2023.svg"
+  },
+  {
+    "id": "pubgm-wow-gold-rush-2023",
+    "game": "PUBG Mobile",
+    "modeName": "淘金竞速（Gold Rush）",
+    "year": "2023",
+    "date": "2023-12-12",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "金币争夺",
+      "击退控场"
+    ],
+    "oneLineRule": "使用 Super Color Bazooka 击退对手并抢夺尽可能多的 Gold Coins，最终以金币数量决定胜负。",
+    "mechanicChange": "官方 Frozen Kingdom 页面把 Gold Rush 列为 Beta Creation Gameplay：Super Color Bazooka 可发射击退弹，玩家需要把敌人击退并收集 Gold Coins 赢得比赛。",
+    "tempoImpact": "金币把玩家拉向公开热点，击退能力同时承担进攻、护送和清场作用；队伍需要在拿钱、守钱和逼退对手之间切换。",
+    "designObservation": "把击退武器和可见货币目标绑定，可以让空间控制直接转化为经济领先；金币刷新节奏会决定比赛是围绕中心争夺还是分散搜集。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+    "launchDate": "2023-12-12",
+    "launchLabel": "2023年12月12日至2024年1月7日 Frozen Kingdom 期间公布",
+    "launchNote": "官方页面确认 Super Color Bazooka、Gold Coins 和胜负目标；金币数量、刷新和比赛时长待创作地图说明补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-gold-rush-2023.svg"
+  },
+  {
+    "id": "pubgm-wow-bazooka-parkour-2023",
+    "game": "PUBG Mobile",
+    "modeName": "火箭筒跑酷（Bazooka Parkour）",
+    "year": "2023",
+    "date": "2023-12-12",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "火箭筒位移",
+      "道具跑酷"
+    ],
+    "oneLineRule": "使用 Super Color Bazooka 向脚下开火完成超级跳，在带道具的跑酷战场中移动、躲避并击退对手。",
+    "mechanicChange": "官方 Frozen Kingdom 页面把 Bazooka Parkour 列为 Beta Creation Gameplay：向脚下发射 Super Color Bazooka 可实现超级跳，玩家在道具跑酷战斗中用击退干扰对手。",
+    "tempoImpact": "超级跳把武器射击转成垂直移动，路线选择、落点控制和空中干扰会同时影响速度与生存。",
+    "designObservation": "当武器既是攻击工具又是移动工具时，地图高度差和冷却资源会形成新的路线语言；跑酷目标需要让玩家能读懂成功路径。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+    "launchDate": "2023-12-12",
+    "launchLabel": "2023年12月12日至2024年1月7日 Frozen Kingdom 期间公布",
+    "launchNote": "官方页面确认超级跳、道具跑酷和击退干扰；具体赛道、检查点和计分规则待创作地图说明补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-bazooka-parkour-2023.svg"
+  },
+  {
+    "id": "pubgm-wow-snowboard-descent-2023",
+    "game": "PUBG Mobile",
+    "modeName": "滑雪板速降（Snowboard Descent）",
+    "year": "2023",
+    "date": "2023-12-12",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "滑雪竞速",
+      "下坡路线"
+    ],
+    "oneLineRule": "从 Snowy Village 山顶出发使用滑雪板冲到山脚，先到终点的玩家赢得雪地竞速。",
+    "mechanicChange": "官方 Frozen Kingdom 页面把 Snowboard Descent 列为 Beta Creation Gameplay：玩家从 Snowy Village 顶部使用 Snowboard 下坡竞速，胜者占据雪场。",
+    "tempoImpact": "下坡速度和障碍路线让玩家在持续移动中做转向选择，领先者需要管理失误风险，落后者则寻找更激进的捷径。",
+    "designObservation": "竞速模板把载具操控和地形阅读变成主要技能；山坡宽度、跳台和分叉路线共同决定追赶是否有意义。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+    "launchDate": "2023-12-12",
+    "launchLabel": "2023年12月12日至2024年1月7日 Frozen Kingdom 期间公布",
+    "launchNote": "官方页面确认 Snowboard、起点山顶、下坡终点和竞速目标；具体检查点与碰撞规则待创作地图说明补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-snowboard-descent-2023.svg"
+  },
+  {
+    "id": "pubgm-wow-flying-reindeer-circuit-2023",
+    "game": "PUBG Mobile",
+    "modeName": "飞天驯鹿赛道（Flying Reindeer Circuit）",
+    "year": "2023",
+    "date": "2023-12-12",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "空中竞速",
+      "载具组合"
+    ],
+    "oneLineRule": "把 Reindeer 与 Sleigh 组合成 Flying Reindeer，在空中赛道中竞速并率先到达终点。",
+    "mechanicChange": "官方 Frozen Kingdom 页面把 Flying Reindeer Circuit 列为中期 Beta Creation Gameplay：驯鹿与雪橇组合后变成 Flying Reindeer，玩家在空中与对手竞速。",
+    "tempoImpact": "空中赛道把高度、加速和转向同时纳入路线选择，玩家需要在保持飞行稳定和抢占内弯之间取舍。",
+    "designObservation": "载具组合先改变移动能力，再把能力放入公开竞速目标，可以让主题道具从收藏物变成可观察、可比较的操作系统。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+    "launchDate": "2023-12-12",
+    "launchLabel": "2023年12月12日至2024年1月7日 Frozen Kingdom 期间公布",
+    "launchNote": "官方页面确认 Reindeer、Sleigh、Flying Reindeer 和空中竞速；具体赛道、检查点与胜负时间待创作地图说明补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-flying-reindeer-circuit-2023.svg"
   }
 ]
