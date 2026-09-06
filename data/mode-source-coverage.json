@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 81,
-      "coverCount": 81,
-      "readableDescriptionCount": 81,
+      "modeCount": 83,
+      "coverCount": 83,
+      "readableDescriptionCount": 83,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -408,7 +408,9 @@
         "pubgm-war-2018",
         "pubgm-metro-royale-uncover-2021",
         "pubgm-react-survival-2021",
-        "pubgm-react-survival-2-0-2022"
+        "pubgm-react-survival-2-0-2022",
+        "pubgm-amusement-park-2020",
+        "pubgm-hardcore-mode-2020"
       ],
       "officialSourceUrls": [
         "https://pubgmobile.jp/version-3-7-0-patch-notes-20250308/",
@@ -465,9 +467,10 @@
         "https://www.pubgmobile.com/TW/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201807/743855.shtml",
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/202103/884576.shtml",
         "https://www.youtube.com/watch?v=si5fRm5Sa8s",
-        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60922/60923/60924/60926/m22609/202203/912060.shtml"
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60922/60923/60924/60926/m22609/202203/912060.shtml",
+        "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35373/35374/35386/35387/m20497/202002/849328.shtml"
       ],
-      "notes": "已回溯 0.4–4.3 版本及 2018–2026 主题、竞技、街机和 Metro Royale 页面；本轮补入 Metro Royale: Uncover 章节、React Survival 首发与 2.0 回归。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
+      "notes": "已回溯 0.4–4.3 版本及 2018–2026 主题、竞技、街机和 Metro Royale 页面；本轮补入 0.17.0 周年游乐园与街机硬核模式。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",

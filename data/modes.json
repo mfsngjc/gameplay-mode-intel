@@ -9271,5 +9271,66 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-rampage-uprising-2020.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-amusement-park-2020",
+    "game": "PUBG Mobile",
+    "modeName": "周年游乐园（Amusement Park Mode）",
+    "year": "2020",
+    "date": "2020-03-12",
+    "tags": [
+      "br-ltm",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "随机游乐园",
+      "互动设施"
+    ],
+    "oneLineRule": "在经典艾伦格的限时周年玩法中探索随机出现的游乐园，用代币启动街机设施并利用蹦极、滑翔等互动路线。",
+    "mechanicChange": "0.17.0 周年玩法会在经典艾伦格的三个随机地点生成老式游乐园；游乐园和主要城镇放置可用代币启动的街机机台，并提供 Hunt Game、Space War、开箱、射击场、蹦床和反向蹦极等互动内容。",
+    "tempoImpact": "游乐园把高价值资源和短时小游戏变成新的落点热点，反向蹦极还能把玩家送上空中重新滑翔，改变转点与高低差处理方式。",
+    "designObservation": "在经典 BR 中加入可选的互动景点，可以不改变胜负目标就制造路线分叉；随机位置让每局的探索价值和交战风险保持变化。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35373/35374/35386/35387/m20497/202002/849328.shtml",
+    "launchDate": "2020-03-12",
+    "launchLabel": "2020年3月12日 2周年活动开启",
+    "launchNote": "官方 0.17.0 补丁明确记录 Erangel - Amusement Park Mode 的开放日期、随机游乐园和互动设施。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-amusement-park-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-hardcore-mode-2020",
+    "game": "PUBG Mobile",
+    "modeName": "硬核模式（Hardcore Mode）",
+    "year": "2020",
+    "date": "2020-03-03",
+    "tags": [
+      "casual",
+      "br-ltm"
+    ],
+    "type": [
+      "街机模式",
+      "关闭提示",
+      "手动操作"
+    ],
+    "oneLineRule": "在街机硬核模式中关闭声音提示，拾取和开关门等动作改为手动完成，用更少的界面辅助进行生存射击。",
+    "mechanicChange": "0.17.0 将 Hardcore Mode 重新放回 Arcade 选择页：取消声音提示，并要求玩家手动完成拾取、开门和关门等操作，让信息获取和交互承担更多决策成本。",
+    "tempoImpact": "玩家不能依赖自动提示判断附近物资或声音事件，搜刮和进屋速度都会下降；每次交互前都要主动确认环境，战斗节奏更谨慎。",
+    "designObservation": "硬核模式通过减少辅助信息和自动化，把熟悉的 BR 操作转成注意力管理挑战；它适合用低成本规则开关测试玩家对拟真感和压力的接受度。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35373/35374/35386/35387/m20497/202002/849328.shtml",
+    "launchDate": "2020-03-03",
+    "launchLabel": "2020年3月3日随 0.17.0 更新开放",
+    "launchNote": "官方补丁将 Return of Hardcore Mode 列为新的街机模式内容，并明确记录关闭声音提示、手动拾取和手动开关门。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-hardcore-mode-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
