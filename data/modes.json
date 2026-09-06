@@ -10785,7 +10785,8 @@
     "mechanicChange": "官方把单人练习场作为刀球玩法的入门模板：玩家需要持续弹开飞来的刀球，成功后获得双倍经验；经验可以提升等级并解锁高级技能，地图还会保存玩家的等级数据。",
     "tempoImpact": "练习场把高压对抗拆成可重复的单人节奏，玩家可以先练反弹时机和技能成长，再进入多人模式。",
     "designObservation": "先用可重复、低惩罚的单人场景教会核心反弹，再把同一套技能带入多人对局，是降低新机制学习成本的有效方式。",
-    "imageUrl": "assets/modes/generated/pubgm-wow-blade-ball-solo-practice-2024.svg"
+    "imageUrl": "assets/modes/generated/pubgm-wow-blade-ball-solo-practice-2024.svg",
+    "launchNote": "官方 3.0 Shadow Force 页面将单人练习场列为刀球模板，并说明反弹刀球、双倍经验和等级数据保存规则。"
   },
   {
     "game": "PUBG Mobile",
@@ -10815,7 +10816,8 @@
     "mechanicChange": "玩家通过弹开刀球和淘汰对手获得分数，淘汰后不退出对局而是立即回到战场；击杀还会提供经验，用于升级并解锁高级技能，地图会保存等级进度。",
     "tempoImpact": "无限重生让交战持续不断，玩家可以反复试错；6 分钟倒计时把个人击杀、走位和技能成长压缩成高密度积分竞赛。",
     "designObservation": "将淘汰从终止条件改成短暂损失，再用积分和经验双轨奖励持续进攻，可以把弹反机制变成稳定的高频练习场。",
-    "imageUrl": "assets/modes/generated/pubgm-wow-blade-ball-ffa-2024.svg"
+    "imageUrl": "assets/modes/generated/pubgm-wow-blade-ball-ffa-2024.svg",
+    "launchNote": "官方页面确认 8 人、6 分钟、无限重生和积分结算；更细的出生点与技能池未在页面展开。"
   },
   {
     "game": "PUBG Mobile",
@@ -10845,7 +10847,8 @@
     "mechanicChange": "双方从竞技场两端出发，通过弹反刀球和淘汰对手积累团队分数；对手被击败后还能提供经验，玩家升级并解锁高级技能。",
     "tempoImpact": "固定两端出生点和 6 分钟时限让推进路线清晰，队伍需要同时争夺击杀分、保护队友和技能升级窗口。",
     "designObservation": "把个人反弹技术嵌进 6v6 队伍分工，可以同时检验反应、掩护和目标优先级；经验成长则给中局争夺增加长期方向。",
-    "imageUrl": "assets/modes/generated/pubgm-wow-hot-blooded-blade-ball-2024.svg"
+    "imageUrl": "assets/modes/generated/pubgm-wow-hot-blooded-blade-ball-2024.svg",
+    "launchNote": "官方页面确认 6v6、6 分钟、刀球淘汰与团队得分规则；具体技能解锁节奏以模板配置为准。"
   },
   {
     "game": "PUBG Mobile",
@@ -10875,7 +10878,8 @@
     "mechanicChange": "官方将刀球从积分赛改造成多队淘汰赛：玩家需要在多轮或连续对抗中存活，击杀带来的经验仍可用于解锁技能，胜负重点从累计分数转为最后存活。",
     "tempoImpact": "没有固定的持续积分目标后，玩家会更重视保命、观察刀球路线和选择交战时机；每次淘汰都会改变剩余队伍的风险结构。",
     "designObservation": "同一个核心投射物机制切换到淘汰赛结构，就能从练习反应转向资源与风险管理，说明胜利条件本身会重塑玩家的进攻意愿。",
-    "imageUrl": "assets/modes/generated/pubgm-wow-blade-ball-elimination-tournament-2024.svg"
+    "imageUrl": "assets/modes/generated/pubgm-wow-blade-ball-elimination-tournament-2024.svg",
+    "launchNote": "官方页面确认该模板采用刀球淘汰赛结构；完整轮次和参赛人数未在公告中展开。"
   },
   {
     "game": "PUBG Mobile",
@@ -10905,7 +10909,8 @@
     "mechanicChange": "基础规则沿用热血刀球，但开局直接给每位玩家随机技能；玩家仍通过弹反和淘汰争取团队分数，随机能力会改变每局的进攻和防守组合。",
     "tempoImpact": "队伍不能完全依赖赛前构筑，需要在开局快速识别随机技能、调整站位和分配目标；中局的应变比固定套路更重要。",
     "designObservation": "随机技能为同一张竞技地图引入可控的不确定性，适合检验玩家能否在短时间内读懂队伍资源并形成临时策略。",
-    "imageUrl": "assets/modes/generated/pubgm-wow-hot-blooded-blade-ball-random-skills-2024.svg"
+    "imageUrl": "assets/modes/generated/pubgm-wow-hot-blooded-blade-ball-random-skills-2024.svg",
+    "launchNote": "官方页面将其列为热血刀球的随机技能变体；基础 6v6、6 分钟规则沿用，随机技能池未完整公开。"
   },
   {
     "game": "PUBG Mobile",
@@ -10935,7 +10940,8 @@
     "mechanicChange": "这是自由混战积分赛的随机技能变体：玩家开局获得随机技能，淘汰后持续重生，击杀既推进个人得分也会影响技能使用节奏。",
     "tempoImpact": "无限重生保证交战持续，随机技能迫使玩家在每次返回战场时重新判断距离、目标和反弹路线。",
     "designObservation": "将随机构筑与无限重生结合，能把失败转化为快速试验反馈；计分榜则让玩家在尝试新技能和稳定得分之间做取舍。",
-    "imageUrl": "assets/modes/generated/pubgm-wow-blade-ball-score-match-random-skills-2024.svg"
+    "imageUrl": "assets/modes/generated/pubgm-wow-blade-ball-score-match-random-skills-2024.svg",
+    "launchNote": "官方页面将其列为刀球积分赛的随机技能变体；积分、重生和时限沿用对应模板，技能池未完整公开。"
   },
   {
     "game": "PUBG Mobile",
@@ -10965,7 +10971,8 @@
     "mechanicChange": "在淘汰赛结构上加入开局随机技能，玩家必须在不知道对手能力组合的情况下选择是否交战；淘汰和存活仍是主要胜负依据。",
     "tempoImpact": "随机技能提高了读局成本，前期更适合观察和试探；随着队伍减少，单次误判会直接失去继续比赛的机会。",
     "designObservation": "随机能力与生存淘汰的组合，把即时反应变成信息不完整下的风险决策，适合研究不对称情报如何改变竞技节奏。",
-    "imageUrl": "assets/modes/generated/pubgm-wow-blade-ball-elimination-random-skills-2024.svg"
+    "imageUrl": "assets/modes/generated/pubgm-wow-blade-ball-elimination-random-skills-2024.svg",
+    "launchNote": "官方页面将其列为刀球淘汰赛的随机技能变体；具体轮次与随机技能池未完整公开。"
   },
   {
     "game": "PUBG Mobile",
@@ -10995,7 +11002,8 @@
     "mechanicChange": "官方将原有海战玩法与 Snowball Blaster 的冻结能力结合：水面可以被改变，冰冻后的区域会重塑船只路线、可站立空间和交战角度。",
     "tempoImpact": "海面从单纯阻隔变成可被改变的战场，队伍需要根据冻结范围重新安排航线、追击和撤退。",
     "designObservation": "把环境状态变化交给玩家触发，可以让载具战从固定路线转成动态空间争夺；关键是让冻结结果足够可读，避免移动规则变成随机障碍。",
-    "imageUrl": "assets/modes/generated/pubgm-wow-ice-naval-map-2024.svg"
+    "imageUrl": "assets/modes/generated/pubgm-wow-ice-naval-map-2024.svg",
+    "launchNote": "官方 3.0 Shadow Force 页面确认冰冻能力会改变海战水面与路线；该条目作为有规则影响的地图玩法模板记录。"
   },
   {
     "game": "PUBG Mobile",
@@ -11025,7 +11033,8 @@
     "mechanicChange": "官方把既有 Tower Assault Arena 的攻防规则与 Snowball Blaster 的雪堆掩体结合；玩家可以封锁窗口，改变原本固定的射击线和突破路线。",
     "tempoImpact": "防守方能临时关闭关键窗口，进攻方则需要换线、清除掩体或等待时机，塔内推进的节奏会随空间封锁不断变化。",
     "designObservation": "短时可部署掩体能把静态塔防路线变成可重写的空间谜题；设计重点在于限制封锁时长和位置，避免单一窗口永久失效。",
-    "imageUrl": "assets/modes/generated/pubgm-wow-freezing-tower-assault-2024.svg"
+    "imageUrl": "assets/modes/generated/pubgm-wow-freezing-tower-assault-2024.svg",
+    "launchNote": "官方页面确认雪球炮可在 Tower Assault Arena 中制造雪堆并封锁射击口；更细的胜负参数未展开。"
   },
   {
     "id": "pubgm-ranked-team-deathmatch-warehouse-2025",
@@ -11810,5 +11819,37 @@
     "isLtm": false,
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
     "imageUrl": "assets/modes/generated/pubgm-wow-craft-mod-2023.svg"
+  },
+  {
+    "id": "free-fire-anniversary-tasks-2026",
+    "game": "Free Fire",
+    "modeName": "周年任务（Anniversary Tasks）",
+    "year": "2026",
+    "date": "2026-06-23",
+    "tags": [
+      "br-core",
+      "casual",
+      "objective",
+      "teamwork"
+    ],
+    "type": [
+      "Battle Royale 规则变体",
+      "区域任务",
+      "团队占点"
+    ],
+    "oneLineRule": "在周年 BR 对局中，每个区域随机出现一项任务；队伍通过收集碎片、重铸骑士之剑或利用跳台收集空中硬币来换取区域与团队奖励。",
+    "mechanicChange": "官方 OB54 公告把周年任务列为 Battle Royale 的独立任务层：进入区域后可通过自动售货机或特殊任务点接取，三种任务分别是射击收集周年碎片并拼成水晶、与队友防守并占领骑士之剑、使用跳台收集空中硬币；完成后可获得团队强化、高价值区域战利品、优惠商店与升级复活点。",
+    "tempoImpact": "随机区域任务把落地后的控区从一次性搜刮改成持续目标，胜者需要在早中期继续守点或转移争夺任务；任务奖励又会提高后续装备、复活和经济优势。",
+    "designObservation": "把三个不同动作目标放进每个区域，能让“赢下落点”继续产生决策，而不是在首轮交战结束后失去价值；任务奖励同时服务战斗、经济与复活，形成清晰的风险回报链。",
+    "sourceUrl": "https://ff.garena.com/en/article/1675",
+    "launchDate": "2026-06-23",
+    "launchLabel": "2026年6月23日 OB54 九周年限时玩法",
+    "launchNote": "官方 OB54 页面确认周年任务包含三种任务类型和区域奖励；这里记录为 BR 限时规则变体，与跨 BR/CS 的 Epic Fight 成长系统分开。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-anniversary-tasks-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
