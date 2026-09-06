@@ -10050,5 +10050,36 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-craftground-survival-train-2025.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-payload-3-0-2023",
+    "game": "PUBG Mobile",
+    "modeName": "火力全开 3.0（Payload 3.0）",
+    "year": "2023",
+    "date": "2023-03-15",
+    "tags": [
+      "warfare",
+      "objective",
+      "space"
+    ],
+    "type": [
+      "武装载具",
+      "坦克",
+      "团队召回"
+    ],
+    "oneLineRule": "在 Payload 3.0 的团队大规模战场中使用武装载具和坦克推进，围绕载具火力与队友召回争夺胜利。",
+    "mechanicChange": "官方 2.5.0 补丁将 Payload 3.0 单列为新模式版本：在 Payload 玩法中加入坦克，玩家可使用主炮和机枪，也能通过坦克信号枪呼叫坦克。其余人数、复活和地图规则以 Payload 系列基础规则为准。",
+    "tempoImpact": "坦克把高火力和移动掩体带入战场，队伍会围绕载具出现点、射界和维修路线重新组织推进；坦克信号枪还会把资源争夺变成可读的局内目标。",
+    "designObservation": "对载具玩法做版本化更新时，新增的坦克既改变火力层级，也改变队伍的空间占领方式；把它作为独立版本记录能区分规则变化与普通武器调整。",
+    "sourceUrl": "https://pubgmobile.jp/version-2-5-0-patch-notes-20230315/",
+    "launchDate": "2023-03-15",
+    "launchLabel": "2023年3月15日随 2.5.0 版本开放",
+    "launchNote": "官方补丁确认 Payload 3.0、坦克、主炮、机枪和坦克信号枪；其余模式规则沿用 Payload 系列说明。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-payload-3-0-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
