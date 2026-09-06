@@ -10325,5 +10325,35 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-gun-king-squad-2020.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-team-deathmatch-2020",
+    "game": "Free Fire",
+    "modeName": "团队竞技（Team Deathmatch / TDM）",
+    "year": "2020",
+    "date": "2020-02-25",
+    "tags": [
+      "warfare",
+      "objective"
+    ],
+    "type": [
+      "团队竞技",
+      "复活战斗",
+      "装备预设"
+    ],
+    "oneLineRule": "两支队伍在持续复活的战场上交战，使用装备预设和区域复活点推进击杀节奏；官方补丁还加入了局内空投。",
+    "mechanicChange": "官方 Kalahari 补丁确认 Team Deathmatch 已在此前版本上线，并调整了装备预设、每个战区的复活点和生存保护，同时加入每局最多 10 个空投。后续 3volution 补丁又允许玩家在复活时购买武器和装备。",
+    "tempoImpact": "持续复活让战斗保持高频，复活点分布降低出生点压制；装备预设和局内空投把固定枪战变成持续的资源与路线争夺。",
+    "designObservation": "TDM 用稳定复活保证交火密度，再通过复活点、预设装备和空投制造位置与资源变化；它适合观察“快速再入场”和“短回合战场控制”的组合。",
+    "sourceUrl": "https://ff.garena.com/en/article/122/",
+    "launchDate": "2020-02-25",
+    "launchLabel": "2020年2月25日官方补丁记录已上线并调整",
+    "launchNote": "官方 Kalahari 补丁说明 Team Deathmatch 已在此前更新上线，并明确写出装备预设、复活点、空投等调整；3volution 的武器预设更新另见官方补丁。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/generated/free-fire-team-deathmatch-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]

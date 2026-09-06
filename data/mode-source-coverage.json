@@ -516,9 +516,9 @@
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 85,
-      "coverCount": 85,
-      "readableDescriptionCount": 85,
+      "modeCount": 86,
+      "coverCount": 86,
+      "readableDescriptionCount": 86,
       "modeIds": [
         "free-fire-clash-squad-2019",
         "free-fire-bomb-squad-2019",
@@ -604,7 +604,8 @@
         "free-fire-rampage-uprising-2020",
         "free-fire-zombie-hunt-dungeon-ascent-2024",
         "free-fire-kill-secured-2020",
-        "free-fire-gun-king-squad-2020"
+        "free-fire-gun-king-squad-2020",
+        "free-fire-team-deathmatch-2020"
       ],
       "officialSourceUrls": [
         "https://ff.garena.com/en-pk/article/641/",
@@ -662,9 +663,10 @@
         "https://ff.garena.com/id/article/1150",
         "https://ff.garena.com/id/article/209/",
         "https://ff.garena.com/en/article/137",
-        "https://ff.garena.com/en/article/299/"
+        "https://ff.garena.com/en/article/299/",
+        "https://ff.garena.com/en/article/122/"
       ],
-      "notes": "已核对 Garena 2018–2026 官方补丁与活动档案；本轮补入 Zombie Hunt 的 Dungeon Ascent，以及 2020 3volution 补丁列出的 Kill Secured 与 Gun King 小队版；仍需继续补齐更早版本、地区差异和后续公告。"
+      "notes": "已核对 Garena 2018–2026 官方补丁与活动档案；本轮补入 Zombie Hunt 的 Dungeon Ascent、2020 3volution 的 Kill Secured 与 Gun King 小队版，以及 Kalahari 补丁明确记录的 Team Deathmatch；仍需继续补齐更早版本、地区差异和后续公告。"
     }
   }
 }
