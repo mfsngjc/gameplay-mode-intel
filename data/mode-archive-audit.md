@@ -129,3 +129,7 @@
 
 - 核对 [官方 TapTap 1.38.12（2026-09-02）版本说明](https://www.taptap.cn/app/70056/all-info?platform=android)：`金秋龙狮城`是主题海岛与地图交互，`团竞排位·图书馆`沿用已有军备团竞规则，`怪物扮演·蝾螈小宝`已由 `hpjy-monster-role-salamander-2026` 记录；`异变密林·演练`是下线通知，不新增模式卡。未发现另一张具有独立胜负流程的命名玩法。
 - TapTap 的“战场进化”预约页只提供版本包装、新地图和新玩法宣传，没有公开独立模式名称、匹配入口或胜负规则；暂不将其作为模式卡，后续待官方版本页给出可核对规则后再判断。
+
+### 三角洲行动第 11 赛季官方补丁登记
+
+- 追加登记 [S11 Reorientation 官方补丁](https://deltaforce.garena.com/en/news/announcement/PA6CZD)：它明确列出 `Polaris Patrol`、`Fishing` 和 Operations 1v1；三张卡已逐项核对身份成本、钓鱼装备/图鉴、零损耗单挑和开放时间。`Layali Grove 2.0`、`The Mog` 是地图更新，Rover 是干员能力，不重复建卡。
