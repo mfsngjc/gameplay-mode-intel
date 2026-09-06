@@ -5499,7 +5499,7 @@
   {
     "id": "free-fire-gloo-nova-2024",
     "game": "Free Fire",
-    "modeName": "Gloo Nova（Gloo Nova）",
+    "modeName": "胶墙新星（Gloo Nova）",
     "year": "2024",
     "date": "2024-09-01",
     "tags": [
@@ -5512,10 +5512,10 @@
       "特殊区域",
       "临时装备"
     ],
-    "oneLineRule": "在 BR 的 Gloo Nova 事件中利用 Gloo Wall 生成器、特殊区域和临时装置重新规划掩体与推进路线。",
-    "mechanicChange": "官方更新在 BR 加入 Gloo Nova：Bermuda 的 Factory 被 Gloo 覆盖并形成新资源区，玩家可通过 Gloo Makers 和相关装置获得更多 Gloo Wall，改变掩体经济。",
-    "tempoImpact": "掩体供应增加会提升队伍主动推进和封锁路线的能力，Factory 等高价值区域也会成为更稳定的交战锚点。",
-    "designObservation": "把基础防御资源变成地图事件，可以让熟悉的 Gloo Wall 从消耗品升级为路线和空间控制工具。",
+    "oneLineRule": "在 BR 的胶墙新星（Gloo Nova）事件中利用胶墙生成器、特殊区域和临时装置重新规划掩体与推进路线。",
+    "mechanicChange": "官方更新在 BR 加入胶墙新星：Bermuda 的 Factory 被胶墙覆盖并形成新资源区，玩家可通过胶墙生成器（Gloo Makers）和相关装置获得更多胶墙（Gloo Wall），改变掩体经济。",
+    "tempoImpact": "胶墙供应增加会提升队伍主动推进和封锁路线的能力，Factory 等高价值区域也会成为更稳定的交战锚点。",
+    "designObservation": "把基础防御资源变成地图事件，可以让熟悉的胶墙从消耗品升级为路线和空间控制工具。",
     "sourceUrl": "https://ff.garena.com/en/article/1385/",
     "launchDate": "2024-09-01",
     "launchLabel": "2024年9月版本加入",
