@@ -139,9 +139,9 @@
     },
     "和平精英": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 35,
-      "coverCount": 35,
-      "readableDescriptionCount": 35,
+      "modeCount": 48,
+      "coverCount": 48,
+      "readableDescriptionCount": 48,
       "modeIds": [
         "hpjy-classic-br-2019",
         "hpjy-chaoti-duikang-2023",
@@ -177,7 +177,20 @@
         "hpjy-fpp-team-deathmatch-2025",
         "hpjy-surnan-conflict-2025",
         "hpjy-icebound-train-2026",
-        "hpjy-cowboy-revenge-2026"
+        "hpjy-cowboy-revenge-2026",
+        "hpjy-extreme-hunt-2020",
+        "hpjy-esports-mode-2021",
+        "hpjy-restart-future-2021",
+        "hpjy-impostor-verification-2021",
+        "hpjy-light-shadow-adventure-2021",
+        "hpjy-peace-wing-2022",
+        "hpjy-vacation-island-2022",
+        "hpjy-dragon-lion-winter-2022",
+        "hpjy-airdrop-operation-2022",
+        "hpjy-mutant-tdm-2-2022",
+        "hpjy-sniper-tdm-2023",
+        "hpjy-adventure-train-2023",
+        "hpjy-sky-arena-2023"
       ],
       "officialSourceUrls": [
         "https://gp.qq.com/",
@@ -201,7 +214,7 @@
         "https://gp.qq.com/gicp/news/736/9448717.html",
         "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision"
       ],
-      "notes": "已复核和平精英官方站与 App Store 版本历史；本轮补入 2024–2026 年快速爆破、冰河夺金、奇幻大乱斗、征服模式、个人竞技、核爆对决、FPP 爆破/仓库团竞、苏尔南冲突、冰封列车、牛仔的复仇，继续回溯地区版本与创意工坊档案。"
+      "notes": "已复核和平精英官方站与 App Store 版本历史；本轮继续补入 2020–2023 年极限追猎、电竞模式、重启未来、查证模式、光影冒险、和平之翼、度假岛、龙狮迎冰雪、空投行动、突变团竞 2.0、狙击团竞、冒险列车、天空赛场，继续回溯更早版本与创意工坊档案。"
     },
     "Apex Legends": {
       "coverageStatus": "ongoing_backfill",

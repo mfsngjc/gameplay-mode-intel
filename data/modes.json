@@ -12554,5 +12554,394 @@
     "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
     "imageUrl": "assets/modes/generated/hpjy-cowboy-revenge-2026.svg"
+  },
+  {
+    "id": "hpjy-extreme-hunt-2020",
+    "game": "和平精英",
+    "modeName": "极限追猎（Power Hunt）",
+    "year": "2020",
+    "date": "2020-09-16",
+    "tags": [
+      "casual",
+      "power"
+    ],
+    "type": [
+      "创意工坊",
+      "动力外骨骼",
+      "矩阵基站"
+    ],
+    "oneLineRule": "玩家在海岛搜集矩阵晶体和外骨骼蓝图，前往矩阵基站兑换动力外骨骼与高科技道具，在缩圈对抗中争取生存。",
+    "mechanicChange": "矩阵基站、自动召回和动力外骨骼把经典 BR 改成科技追猎：玩家可以用晶体兑换不同外骨骼，获得移动、护盾或战斗能力；被淘汰后还能通过基站和召回机制重新跳伞。",
+    "tempoImpact": "科技资源点会把队伍吸向基站，外骨骼改变转点和交火距离，自动召回则让中期淘汰不再立即结束个人参与。",
+    "designObservation": "把可争夺的科技成长和多次返场放进 BR，可以让地图路线同时服务于搜集、追击和复活决策。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2020-09-16",
+    "launchLabel": "2020年9月16日限时上线；具体开放窗口以游戏内公告为准。",
+    "launchNote": "2020年9月16日限时上线；具体开放窗口以游戏内公告为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/hpjy-extreme-hunt-2020.svg"
+  },
+  {
+    "id": "hpjy-esports-mode-2021",
+    "game": "和平精英",
+    "modeName": "电竞模式（Esports Mode）",
+    "year": "2021",
+    "date": "2021-09-08",
+    "tags": [
+      "br",
+      "objective"
+    ],
+    "type": [
+      "电竞模式",
+      "60人",
+      "快节奏缩圈"
+    ],
+    "oneLineRule": "60 名玩家在海岛进行更快缩圈、物资更丰富的高强度 BR 对局，使用更接近职业联赛的节奏争夺最终胜利。",
+    "mechanicChange": "电竞模式以 PEL 赛事规则为基础，提升物资刷新并加快缩圈，同时保留声音可视化、辅助瞄准和第三人称选项。它独立替代了此前的竞技模式入口。",
+    "tempoImpact": "更快缩圈压缩了搜集和转点时间，丰富物资让队伍更早形成完整战斗配置，前中期交战密度明显提高。",
+    "designObservation": "赛事规则下放到大众匹配时，关键是保留职业节奏，同时用声音可视化和辅助瞄准降低普通玩家的上手门槛。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2021-09-08",
+    "launchLabel": "2021年9月8日上线，替代竞技模式；开放时间和后续轮换以官方公告为准。",
+    "launchNote": "2021年9月8日上线，替代竞技模式；开放时间和后续轮换以官方公告为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/generated/hpjy-esports-mode-2021.svg"
+  },
+  {
+    "id": "hpjy-restart-future-2021",
+    "game": "和平精英",
+    "modeName": "重启未来（Restart Future）",
+    "year": "2021",
+    "date": "2021-09-07",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "剧情事件",
+      "PVE 敌人"
+    ],
+    "oneLineRule": "玩家在海岛对抗未来黑刃舰队，探索矩阵工业工厂、入侵机械单位并推进剧情阶段，争夺物资和主题能力。",
+    "mechanicChange": "地图会按剧情阶段解锁母舰、造车工厂、机械单兵、侦查机器犬和时空装置；玩家可通过电力开关恢复生产、击败 AI 敌人获得定制载具与物资。",
+    "tempoImpact": "剧情解锁让海岛热点按阶段迁移，AI 敌人和工厂目标把部分交战从单纯搜人变成争夺事件奖励。",
+    "designObservation": "主题 BR 的叙事推进需要落在可重复的局内目标上，工厂、电力和 AI 敌人提供了比装饰更具体的路线理由。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2021-09-07",
+    "launchLabel": "2021年9月7日版本更新公布，按版本周期逐步解锁；具体开放安排以官方公告为准。",
+    "launchNote": "2021年9月7日版本更新公布，按版本周期逐步解锁；具体开放安排以官方公告为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/hpjy-restart-future-2021.svg"
+  },
+  {
+    "id": "hpjy-impostor-verification-2021",
+    "game": "和平精英",
+    "modeName": "谁是内鬼：查证模式（Impostor Verification）",
+    "year": "2021",
+    "date": "2021-09-07",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "社交推理",
+      "查验身份",
+      "单排/组排"
+    ],
+    "oneLineRule": "特种兵通过完成任务和会议判断内鬼；发现盒子后可获得查验其他玩家身份的机会，但查验结果只有自己知道。",
+    "mechanicChange": "查证模式在谁是内鬼基础上加入隐藏信息工具：找到盒子即可获得身份查验机会，组排玩家被淘汰后从大厅复活但不会获得额外信息；还支持单人匹配与独立战绩记录。",
+    "tempoImpact": "私有查验信息会让证据从公共讨论变成个人判断，淘汰后的大厅复活则保持社交参与，却不破坏局内信息平衡。",
+    "designObservation": "社交推理模式的关键是控制信息传播：查验结果只给一人，能避免全队直接得到答案，同时保留讨论和误判空间。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2021-09-07",
+    "launchLabel": "2021年9月7日版本更新作为谁是内鬼新模式公布。",
+    "launchNote": "2021年9月7日版本更新作为谁是内鬼新模式公布。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/hpjy-impostor-verification-2021.svg"
+  },
+  {
+    "id": "hpjy-light-shadow-adventure-2021",
+    "game": "和平精英",
+    "modeName": "光影冒险（Light and Shadow Adventure）",
+    "year": "2021",
+    "date": "2021-11-09",
+    "tags": [
+      "br-ltm",
+      "space"
+    ],
+    "type": [
+      "主题 BR",
+      "互动地图",
+      "特殊道具"
+    ],
+    "oneLineRule": "玩家在电影主题海岛中探索光影工厂、建筑与互动设施，争夺主题物资并完成局内战斗。",
+    "mechanicChange": "地图会概率匹配到光影工厂、光影建筑和游客中心；盔仔装甲车、黑猫警长飞天摩托、宝莲灯、金箍棒等道具改变移动、补给与近战方式。",
+    "tempoImpact": "互动建筑和特殊载具把部分队伍从常规资源点引向打卡与事件热点，飞行和冲刺能力提高了转移速度。",
+    "designObservation": "联动主题要成为玩法，就必须让特殊建筑和道具改变路线与战斗，而不是只替换美术。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2021-11-09",
+    "launchLabel": "2021年11月9日版本主题玩法，采用概率匹配投放。",
+    "launchNote": "2021年11月9日版本主题玩法，采用概率匹配投放。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/hpjy-light-shadow-adventure-2021.svg"
+  },
+  {
+    "id": "hpjy-peace-wing-2022",
+    "game": "和平精英",
+    "modeName": "和平之翼（Peace Wings）",
+    "year": "2022",
+    "date": "2022-01-11",
+    "tags": [
+      "br-ltm",
+      "space"
+    ],
+    "type": [
+      "主题 BR",
+      "低重力",
+      "高达联动"
+    ],
+    "oneLineRule": "玩家在海岛探索机库和大天使号，获取机动空投、驾驶高达，并在随机失重战区中进行低重力战斗。",
+    "mechanicChange": "机库探索可解锁高达进行大范围位移；大天使号会随机悬停并提供高价值物资；机动空投有时间限制，失重战区降低动能武器伤害，改变空中交战和落点选择。",
+    "tempoImpact": "空中舰船和低重力区域把战斗从地面掩体扩展到垂直空间，限时空投则制造了可预判但高风险的移动热点。",
+    "designObservation": "主题能力只有同时影响交通、资源和战斗物理，才能让联动内容真正成为一套可研究的 BR 规则。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2022-01-11",
+    "launchLabel": "2022年1月11日版本主题玩法，具体开放窗口以官方公告为准。",
+    "launchNote": "2022年1月11日版本主题玩法，具体开放窗口以官方公告为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/hpjy-peace-wing-2022.svg"
+  },
+  {
+    "id": "hpjy-vacation-island-2022",
+    "game": "和平精英",
+    "modeName": "度假岛（Vacation Island）",
+    "year": "2022",
+    "date": "2022-01-11",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "快节奏 BR",
+      "1×1公里地图",
+      "一次召回"
+    ],
+    "oneLineRule": "玩家在 1×1 公里度假岛上进行快节奏 BR；开局一段时间内被淘汰且队伍仍有人存活时，可带随机武器重新跳伞。",
+    "mechanicChange": "度假岛缩小战场面积并提供一次队伍召回机会，战术十字弩还能与固定场景交互建立索道或破坏部分房屋。",
+    "tempoImpact": "小地图和一次召回让战斗更早发生，同时给队伍一次主动救回队友的路线目标。",
+    "designObservation": "快节奏 BR 需要同时缩短地图距离、提高复活可见度并提供可操作的转移工具，才能避免小地图只变成无脑近战。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2022-01-11",
+    "launchLabel": "2022年1月11日版本公告列为经典模式新地图，具体开放时间以官方公告为准。",
+    "launchNote": "2022年1月11日版本公告列为经典模式新地图，具体开放时间以官方公告为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/hpjy-vacation-island-2022.svg"
+  },
+  {
+    "id": "hpjy-dragon-lion-winter-2022",
+    "game": "和平精英",
+    "modeName": "龙狮迎冰雪（Dragon-Lion Winter）",
+    "year": "2022",
+    "date": "2022-01-11",
+    "tags": [
+      "br-ltm",
+      "space"
+    ],
+    "type": [
+      "春节主题 BR",
+      "互动事件",
+      "特殊载具"
+    ],
+    "oneLineRule": "玩家在海岛春节主题区域参与年夜饭、红包枪和小年兽等事件，完成舞龙舞狮祭坛后获得载具和战斗物资。",
+    "mechanicChange": "龙狮城、祈愿树和舞龙醒狮祭坛提供局内互动目标；舞龙可切换便携飞行形态，醒狮具备爆发和跳跃能力，自救除颤器与祝福卷轴提高返场和续航。",
+    "tempoImpact": "节日事件把队伍引向固定城区和祭坛，载具的飞行、跳跃与快速位移会改变附近交战的高度和追击路线。",
+    "designObservation": "节日主题的互动点应同时提供资源、移动和战斗收益，才会形成可重复的局内路线，而不是一次性观景。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2022-01-11",
+    "launchLabel": "2022年1月11日版本主题玩法，春节期间限时开放。",
+    "launchNote": "2022年1月11日版本主题玩法，春节期间限时开放。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/hpjy-dragon-lion-winter-2022.svg"
+  },
+  {
+    "id": "hpjy-airdrop-operation-2022",
+    "game": "和平精英",
+    "modeName": "空投行动（Airdrop Operation）",
+    "year": "2022",
+    "date": "2022-06-28",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "周年主题 BR",
+      "空投基地",
+      "特殊任务"
+    ],
+    "oneLineRule": "玩家前往 3 周年空投基地完成特殊任务，争夺基地内的高级物资和王牌小队称号，并通过特典飞机重新规划跳伞路线。",
+    "mechanicChange": "空投基地和分部会提供生产线探索与竞赛目标；特典飞机可进入并驾驶，特典空投限时开放，安全区探测器能提前显示下一个信号接收区。",
+    "tempoImpact": "固定基地任务把开局落点从纯搜物资变成争夺任务资格，特典飞机和安全区信息则让完成事件的队伍获得转点优势。",
+    "designObservation": "周年 BR 的事件目标最好同时带来资源、身份展示和路线信息，才能让玩家愿意承担前往热点的风险。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2022-06-28",
+    "launchLabel": "2022年6月28日版本主题玩法，周年期间限时开放。",
+    "launchNote": "2022年6月28日版本主题玩法，周年期间限时开放。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/hpjy-airdrop-operation-2022.svg"
+  },
+  {
+    "id": "hpjy-mutant-tdm-2-2022",
+    "game": "和平精英",
+    "modeName": "突变团竞 2.0（Mutation TDM 2.0）",
+    "year": "2022",
+    "date": "2022-06-28",
+    "tags": [
+      "casual",
+      "power"
+    ],
+    "type": [
+      "团队竞技",
+      "人类/突变者",
+      "角色切换"
+    ],
+    "oneLineRule": "两方玩家在火车站 2.0 进行团队竞技，玩家可在返场后切换已拥有的突变角色，利用传送门、雷达和怒气值争夺击杀分。",
+    "mechanicChange": "突变角色分为普通战士、高级战士和特殊猎手，各自拥有隐身、牵引、减速或范围伤害能力；传送门改变路线，雷达短暂暴露敌人，击杀积累怒气带来属性加成。",
+    "tempoImpact": "角色切换和怒气成长让每次复活都成为重新选位与换职能的机会，传送门和雷达则把死斗地图从单线对枪变成立体追击。",
+    "designObservation": "非对称团队竞技的复玩价值来自角色克制和复活决策，而不是单纯提高武器伤害；公共雷达能制造短暂的集火窗口。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2022-06-28",
+    "launchLabel": "2022年6月28日版本公告公布，后续开放时间以官方公告为准。",
+    "launchNote": "2022年6月28日版本公告公布，后续开放时间以官方公告为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/hpjy-mutant-tdm-2-2022.svg"
+  },
+  {
+    "id": "hpjy-sniper-tdm-2023",
+    "game": "和平精英",
+    "modeName": "狙击团竞（Sniper Team Deathmatch）",
+    "year": "2023",
+    "date": "2023-03-21",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "团队竞技",
+      "狙击限制",
+      "军事基地"
+    ],
+    "oneLineRule": "两方阵营只能使用栓动狙击枪和十字弩，在军事基地附近专属场景中进行击杀分数竞速，率先达到目标分数的队伍获胜。",
+    "mechanicChange": "场景固定刷新 M200、AMR、AWM、战术瞄准镜和三级头等特殊补给；武器限制把交战距离与换位节奏集中到精确射击和补给争夺。",
+    "tempoImpact": "补给点会制造短暂的高价值争夺，长枪限制降低近距离乱战，让队伍更依赖视线控制、掩体和交叉预瞄。",
+    "designObservation": "限制武器类别可以把团队死斗变成针对瞄准、距离和补给路线的专项训练，同时保留即时复活的低成本试错。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2023-03-21",
+    "launchLabel": "2023年3月21日版本更新列为团队竞技限时玩法。",
+    "launchNote": "2023年3月21日版本更新列为团队竞技限时玩法。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/hpjy-sniper-tdm-2023.svg"
+  },
+  {
+    "id": "hpjy-adventure-train-2023",
+    "game": "和平精英",
+    "modeName": "冒险列车（Adventure Train）",
+    "year": "2023",
+    "date": "2023-06-27",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "周年主题 BR",
+      "列车转移",
+      "召回任务"
+    ],
+    "oneLineRule": "玩家围绕海岛中心车站和分车站乘坐和平号列车快速转移，完成召回任务并争夺车站物资。",
+    "mechanicChange": "中心车站与 G 港、S 城、核电站、军事基地分车站由列车连接；磁吸小火车可吸附组成更长车组并在车上射击，队伍在规定时间内可前往指定地点召回淘汰队友。",
+    "tempoImpact": "列车让跨地图转移变成可预判的公共路线，召回任务把被淘汰队友的返场转化成中局目标和争夺点。",
+    "designObservation": "移动交通工具如果同时提供路线、掩体和召回任务，就会形成“跟车转移—车站交战—任务返场”的新局内节奏。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2023-06-27",
+    "launchLabel": "2023年6月27日版本主题玩法，具体开放窗口以官方公告为准。",
+    "launchNote": "2023年6月27日版本主题玩法，具体开放窗口以官方公告为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/hpjy-adventure-train-2023.svg"
+  },
+  {
+    "id": "hpjy-sky-arena-2023",
+    "game": "和平精英",
+    "modeName": "天空赛场（Sky Arena）",
+    "year": "2023",
+    "date": "2023-09-12",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "近战竞技场",
+      "王牌小队"
+    ],
+    "oneLineRule": "玩家在海岛天空赛场探索上下城区；上城区的全域格斗区只允许近战，八角笼擂台赛决出胜者，下城区则通过淘汰目标争夺王牌小队资格。",
+    "mechanicChange": "上城区位于空中 500 米，禁用枪械和投掷物；开局一段时间后举行八角笼擂台，胜者获得金腰带。下城区的队伍累计淘汰 6 人且成为唯一队伍后可打开王牌物资箱，赛场空投与防弹巴士强化热点。",
+    "tempoImpact": "近战禁枪区和地面 BR 形成两套交战距离，擂台赛定时公开制造高风险事件，王牌小队资格把队伍淘汰进度转成公共荣誉和资源。",
+    "designObservation": "同一张 BR 地图可以用局部规则切换战斗语言：高空近战训练、公开擂台和地面资源争夺共同形成分层节奏。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2023-09-12",
+    "launchLabel": "2023年9月12日版本主题玩法，具体开放窗口以官方公告为准。",
+    "launchNote": "2023年9月12日版本主题玩法，具体开放窗口以官方公告为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/hpjy-sky-arena-2023.svg"
   }
 ]
