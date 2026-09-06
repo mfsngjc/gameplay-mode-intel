@@ -12943,5 +12943,527 @@
     ],
     "isLtm": true,
     "imageUrl": "assets/modes/generated/hpjy-sky-arena-2023.svg"
+  },
+  {
+    "id": "hpjy-mutant-mine-2020",
+    "game": "和平精英",
+    "modeName": "突变矿场（Mutant Mine）",
+    "year": "2020",
+    "date": "2020-11-18",
+    "tags": [
+      "br-ltm",
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "经典 BR 变体",
+      "区域 PVE",
+      "首领战"
+    ],
+    "oneLineRule": "在海岛经典模式中进入突变矿场，击败突变乌鸦和强化战士，调查矩阵基地并领取高价值物资，同时继续争夺本局 BR 胜利。",
+    "mechanicChange": "官方“突变”版本把矿场做成经典 BR 内的随机事件区域：陨石坑会形成低重力地带，突变乌鸦和强化战士会主动攻击玩家并掉落物资；进入矿场东侧的矩阵基地后，队伍可以使用火焰喷射器和固定机枪对抗强化战士，完成区域挑战后获得更丰富的奖励。",
+    "tempoImpact": "突变矿场把原本的搜刮路线变成可选的 PVE 热点：队伍需要在击杀敌人、争夺矩阵基地和暴露位置之间做取舍，低重力区域也会改变移动与交战高度。",
+    "designObservation": "把 PVE 敌群和高价值奖励嵌入 BR 地图，能让队伍主动选择一条高风险支线；区域事件只有同时影响路线、资源和战斗压力时，才会成为真正的局内目标。",
+    "sourceUrl": "https://www.taptap.cn/moment/77821174586803681",
+    "imageUrl": "assets/modes/generated/hpjy-mutant-mine-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2020-11-18",
+    "launchLabel": "2020年11月18日随“突变”版本限时开放",
+    "launchNote": "和平精英官方运营团队在版本 FAQ 中确认“经典模式-突变矿场玩法”，具体出现概率与开放窗口以游戏内公告为准。",
+    "gameplayTypes": [
+      "br",
+      "pve"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "hpjy-domination-2019",
+    "game": "和平精英",
+    "modeName": "占点竞技（Domination）",
+    "year": "2019",
+    "date": "2019-11-20",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "团队竞技",
+      "三据点占领",
+      "无限返场"
+    ],
+    "oneLineRule": "红蓝两队争夺会轮流激活的 A、B、C 三个据点，率先占领其中两个据点的队伍获胜。",
+    "mechanicChange": "官方玩法说明将小镇地图拆成三个据点：倒计时后随机激活一个据点，队伍站在点内推进占领进度；双方同时进入时进度暂停，单个据点最多争夺 3 分 40 秒，满进度或倒计时结束后判定归属。队伍可以无限返场，但返场点会避开据点内部，并优先靠近队友。",
+    "tempoImpact": "据点随机激活让队伍必须在转点、清点和绕后之间快速分工；无限返场降低了单次淘汰的等待，却把战斗压力集中到正在计分的空间。",
+    "designObservation": "把三个据点按时间顺序激活，可以把团队死斗从全图找人改成连续的攻防窗口；返场位置避开据点，能减少“出生即拖延占点”的无效循环。",
+    "sourceUrl": "https://www.taptap.cn/moment/15212943150943499",
+    "imageUrl": "assets/modes/generated/hpjy-domination-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2019-11-20",
+    "launchLabel": "2019年11月20日官方玩法预告",
+    "launchNote": "官方玩法预告确认三据点、进度占领、无限返场和率先占领两点获胜规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "hpjy-tactical-tdm-2019",
+    "game": "和平精英",
+    "modeName": "战术团队竞技（Tactical Team Deathmatch）",
+    "year": "2019",
+    "date": "2019-08-27",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "4v4团队竞技",
+      "快速返场",
+      "滑铲移动"
+    ],
+    "oneLineRule": "4v4 小队在遗迹地图中快速交战，被淘汰后会在队友附近随机返场，靠团队击杀与战术配合取胜。",
+    "mechanicChange": "官方“重装对决”版本把战术团队竞技定义为 4v4 竞赛：玩家被淘汰后会在队友一定范围内随机复活，并配套遗迹专属地图与滑铲动作。它把普通团队竞技的复活位置和移动手段改成更强调协同推进的规则。",
+    "tempoImpact": "队友附近返场会持续维持前线压力，滑铲和遗迹的曲折路线则增加了抢点、夹击和快速换位的机会。",
+    "designObservation": "把返场点绑定到队友附近，可以让团队站位本身成为胜负资源；地图与移动动作一起变化时，短局竞技才会形成新的配合节奏。",
+    "sourceUrl": "https://www.taptap.cn/moment/15219560575665681",
+    "imageUrl": "assets/modes/generated/hpjy-tactical-tdm-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2019-08-27",
+    "launchLabel": "2019年8月27日随“重装对决”版本开放",
+    "launchNote": "官方版本 FAQ 确认 4V4、快速返场、遗迹地图和滑铲动作。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false
+  },
+  {
+    "id": "hpjy-christmas-mode-2019",
+    "game": "和平精英",
+    "modeName": "圣诞模式（Christmas Mode）",
+    "year": "2019",
+    "date": "2019-12-18",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "节日资源点",
+      "特殊空投"
+    ],
+    "oneLineRule": "匹配海岛或雪地时有概率进入圣诞主题 BR，在城区寻找圣诞树和礼物盒，并利用驯鹿车、圣诞信号枪等主题道具争夺搜刮优势。",
+    "mechanicChange": "官方版本 FAQ 确认圣诞老人会驾驶装载礼物的驯鹿车经过地图，城区会生成圣诞树和礼物盒，礼物盒提供圣诞信号枪、冰霜手枪和节日互动道具；这些内容叠加在经典 BR 的搜刮与缩圈流程上。",
+    "tempoImpact": "固定城区的节日资源点会改变落地路线，驯鹿车和礼物盒又会在中期制造可追踪的移动目标；队伍需要在主题奖励和安全区转移之间取舍。",
+    "designObservation": "节日主题只有进入资源循环和移动路线，才会从装饰变成玩法；概率进入也能让熟悉的经典地图保留偶遇感。",
+    "sourceUrl": "https://www.taptap.cn/moment/15202284518509745",
+    "imageUrl": "assets/modes/generated/hpjy-christmas-mode-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2019-12-18",
+    "launchLabel": "2019年12月18日限时开放",
+    "launchNote": "官方 FAQ 确认海岛与雪地概率进入圣诞模式；具体轮换窗口以游戏内公告为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "hpjy-arsenal-tdm-2020",
+    "game": "和平精英",
+    "modeName": "军备团竞（Arsenal Team Deathmatch）",
+    "year": "2020",
+    "date": "2020-04-01",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "4v4团队竞技",
+      "武器升级",
+      "终极近战"
+    ],
+    "oneLineRule": "4v4 队伍从相同初始武器开始，击倒对手后逐步升级枪械，最后用终极武器平底锅完成淘汰或在倒计时结束时以更高分获胜。",
+    "mechanicChange": "官方“激情沙漠 2.0”版本 FAQ 把军备团竞列为团队竞技新玩法：双方在图书馆地图中共享武器升级线，淘汰会推进个人武器，终局由平底锅淘汰或时间结束的分数决定胜负。",
+    "tempoImpact": "武器升级让每次击杀同时改变下一次交战的装备，领先者会更快接近终局，落后者则必须利用地图路线和集火打断升级节奏。",
+    "designObservation": "军备团竞把“杀人奖励”直接做成下一阶段武器状态，玩家的优势会不断转化但不会永久锁死，终极近战又给落后方保留翻盘节点。",
+    "sourceUrl": "https://www.taptap.cn/moment/15217739467589134",
+    "imageUrl": "assets/modes/generated/hpjy-arsenal-tdm-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2020-04-01",
+    "launchLabel": "2020年4月1日版本开放",
+    "launchNote": "官方版本 FAQ 确认图书馆 4V4、武器升级线、平底锅终局和倒计时计分规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false
+  },
+  {
+    "id": "hpjy-treasure-battlefield-2021",
+    "game": "和平精英",
+    "modeName": "夺宝战场（Treasure Battlefield）",
+    "year": "2021",
+    "date": "2021-01-26",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "小型 BR",
+      "金条经济",
+      "多路线撤离"
+    ],
+    "oneLineRule": "在黄金岛搜集金条并兑换装备，通过特殊地堡、光子鸡车辆或直升机撤离；带着战利品成功离场即可赢下这局夺宝战场。",
+    "mechanicChange": "官方黄金岛配套玩法公告确认金条只在本局使用，可在商店换取武器和装备；地图提供特殊地堡、光子鸡车辆和直升机三类撤离路线，队伍可以根据资源和风险选择离场方式。",
+    "tempoImpact": "金条把搜刮直接转成可见的局内经济，商店与多撤离点会把队伍吸引到不同路线；后期决策不再只有击杀和缩圈，还要判断何时带着收益离开。",
+    "designObservation": "多撤离路线让小型 BR 的胜利条件从“活到最后”扩展为“带收益离场”，局内货币同时承担装备选择和风险提示功能。",
+    "sourceUrl": "https://www.taptap.cn/moment/102841267771148269",
+    "imageUrl": "assets/modes/generated/hpjy-treasure-battlefield-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2021-01-26",
+    "launchLabel": "2021年1月26日版本预告，后续限时开放",
+    "launchNote": "官方公告确认黄金岛夺宝战场的金条商店与三类撤离路线，具体开放时间以后续公告为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "hpjy-silent-comms-2021",
+    "game": "和平精英",
+    "modeName": "免耳麦模式（No-Headset Mode）",
+    "year": "2021",
+    "date": "2021-01-26",
+    "tags": [
+      "br-ltm",
+      "casual"
+    ],
+    "type": [
+      "经典 BR 变体",
+      "无 3D 音效",
+      "公平对战"
+    ],
+    "oneLineRule": "在经典海岛四排第三人称对局中关闭除自己的枪声、脚步声、载具声和道具声，让队伍主要依靠视野与位置判断作战。",
+    "mechanicChange": "官方版本预告将免耳麦模式限定为经典地图、四排、第三人称，并关闭其他玩家的 3D 音效；它只改变信息来源，不改变武器、缩圈或胜负条件。",
+    "tempoImpact": "声音侦察被削弱后，队伍更依赖观察、报点和提前占位，偷袭与反偷袭的距离判断会变得更困难。",
+    "designObservation": "短期关闭高价值信息源，可以把玩家的注意力转向视觉读图与团队沟通；限定队伍规模和视角有助于控制规则变量。",
+    "sourceUrl": "https://www.taptap.cn/moment/102841267771148269",
+    "imageUrl": "assets/modes/generated/hpjy-silent-comms-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2021-01-26",
+    "launchLabel": "2021年1月26日限时模式预告",
+    "launchNote": "官方预告确认仅对经典地图四排第三人称生效，并注明为限时开放；详细轮换待游戏内公告确认。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "hpjy-quick-duel-2020",
+    "game": "和平精英",
+    "modeName": "极速对决（Quick Duel）",
+    "year": "2020",
+    "date": "2020-06-17",
+    "tags": [
+      "br-ltm",
+      "needs_review"
+    ],
+    "type": [
+      "娱乐 BR",
+      "快速节奏",
+      "规则待补档"
+    ],
+    "oneLineRule": "娱乐模式中的快速 BR 变体，通过更短的开放窗口和更快的对局节奏让玩家迅速进入交战；完整人数、缩圈和资源规则待补档。",
+    "mechanicChange": "官方《海岛 2.0》公告确认极速对决属于娱乐模式轮换，并与赛场行动、极限竞技按固定日期开放；官方页面没有在本次公告中给出完整的局内参数，因此仅记录已确认的模式身份。",
+    "tempoImpact": "已确认它承担娱乐模式的快速轮换定位，但具体如何压缩搜刮、转点和交战节奏，待后续官方规则页补充。",
+    "designObservation": "当官方只公开入口和轮换而未公开规则时，先保留模式卡能防止档案漏项，同时把未知参数显式标记为待补，而不是用名称推断机制。",
+    "sourceUrl": "https://www.taptap.cn/moment/21993052490959807",
+    "imageUrl": "assets/modes/generated/hpjy-quick-duel-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2020-06-17",
+    "launchLabel": "2020年6月17日娱乐模式轮换公告",
+    "launchNote": "官方公告确认极速对决为娱乐模式并列出轮换日期，完整局内规则待官方玩法说明补档。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "hpjy-eagle-eye-training-2020",
+    "game": "和平精英",
+    "modeName": "鹰眼特训（Eagle-Eye Training）",
+    "year": "2020",
+    "date": "2020-06-17",
+    "tags": [
+      "br-ltm",
+      "needs_review"
+    ],
+    "type": [
+      "娱乐 BR",
+      "狙击训练",
+      "规则待补档"
+    ],
+    "oneLineRule": "娱乐模式中的狙击训练向 BR 变体，官方确认它与极速对决一起进入山谷地图轮换；完整武器池和胜负参数待补档。",
+    "mechanicChange": "官方《海岛 2.0》公告确认鹰眼特训属于娱乐模式轮换，并将山谷加入其随机匹配池；当前官方页面没有公开完整的局内规则，因此不推测具体枪械限制。",
+    "tempoImpact": "狙击训练的明确定位会把交战距离拉长，但地图、武器和缩圈参数尚未在已查官方页面公开，节奏分析保留待确认。",
+    "designObservation": "以单一武器能力作为模式识别点时，资料库需要同时保留玩法入口和参数缺口，方便后续补丁把训练目标与地图规则补齐。",
+    "sourceUrl": "https://www.taptap.cn/moment/21993052490959807",
+    "imageUrl": "assets/modes/generated/hpjy-eagle-eye-training-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2020-06-17",
+    "launchLabel": "2020年6月17日娱乐模式轮换公告",
+    "launchNote": "官方公告确认鹰眼特训为娱乐模式并加入山谷随机匹配池，完整规则待官方玩法说明补档。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "hpjy-airdrop-assault-2020",
+    "game": "和平精英",
+    "modeName": "空降奇兵（Airborne Assault）",
+    "year": "2020",
+    "date": "2020-06-17",
+    "tags": [
+      "br-ltm",
+      "needs_review"
+    ],
+    "type": [
+      "娱乐 BR",
+      "快速空降",
+      "规则待补档"
+    ],
+    "oneLineRule": "娱乐模式中的空降主题 BR 变体，官方公告确认它进入定期轮换；完整空降规则、资源和胜负参数待补档。",
+    "mechanicChange": "官方《海岛 2.0》公告把空降奇兵列为娱乐模式轮换玩法，并安排在每周一、三、五、日开放；已查页面没有公开更细的对局规则，因此不把名称扩写成未经证实的跳伞机制。",
+    "tempoImpact": "模式名称明确强调空降主题，但当前官方页面不足以确认其是否改变跳伞、资源或缩圈；相关节奏影响待补档。",
+    "designObservation": "对于只有轮换信息的历史模式，先记录可验证的模式身份和开放窗口，后续用专门玩法页补齐，而不是让推测污染历史档案。",
+    "sourceUrl": "https://www.taptap.cn/moment/21993052490959807",
+    "imageUrl": "assets/modes/generated/hpjy-airdrop-assault-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2020-06-17",
+    "launchLabel": "2020年6月17日娱乐模式轮换公告",
+    "launchNote": "官方公告确认空降奇兵属于娱乐模式轮换，详细规则待官方玩法说明补档。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "hpjy-field-action-2020",
+    "game": "和平精英",
+    "modeName": "赛场行动（Field Action）",
+    "year": "2020",
+    "date": "2020-06-17",
+    "tags": [
+      "br-ltm",
+      "needs_review"
+    ],
+    "type": [
+      "娱乐 BR",
+      "快速轮换",
+      "规则待补档"
+    ],
+    "oneLineRule": "娱乐模式中的短局 BR 变体，官方公告确认它与极速对决、极限竞技轮换开放；完整对局目标和规则待补档。",
+    "mechanicChange": "官方《海岛 2.0》公告将赛场行动列入周二、四、六开放的娱乐模式列表，但本页未披露人数、地图、武器池或胜负条件，因此只保留公告已确认的模式身份。",
+    "tempoImpact": "当前只能确认其处于短周期娱乐轮换，具体搜刮、转点和交战节奏待官方模式说明公开。",
+    "designObservation": "用待补档字段保存低信息模式，能够让历史列表保持完整，同时把后续同步任务明确指向缺失的规则说明。",
+    "sourceUrl": "https://www.taptap.cn/moment/21993052490959807",
+    "imageUrl": "assets/modes/generated/hpjy-field-action-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2020-06-17",
+    "launchLabel": "2020年6月17日娱乐模式轮换公告",
+    "launchNote": "官方公告确认赛场行动属于娱乐模式轮换，详细规则待官方玩法说明补档。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "hpjy-extreme-arena-2020",
+    "game": "和平精英",
+    "modeName": "极限竞技（Extreme Arena）",
+    "year": "2020",
+    "date": "2020-06-17",
+    "tags": [
+      "br-ltm",
+      "needs_review"
+    ],
+    "type": [
+      "娱乐 BR",
+      "高强度对抗",
+      "规则待补档"
+    ],
+    "oneLineRule": "娱乐模式中的高强度短局玩法，官方公告确认它进入周二、四、六轮换；完整地图、人数和胜负规则待补档。",
+    "mechanicChange": "官方《海岛 2.0》公告把极限竞技列入娱乐模式轮换，但没有在页面中公开具体局内规则；当前卡片不对名称做额外推断。",
+    "tempoImpact": "高强度定位已由模式名体现，但没有可核对的缩圈、资源或复活参数，节奏分析等待官方玩法页。",
+    "designObservation": "模式档案应区分“存在性证据”和“规则证据”：前者足以建立卡片，后者不足时要清楚标记待确认。",
+    "sourceUrl": "https://www.taptap.cn/moment/21993052490959807",
+    "imageUrl": "assets/modes/generated/hpjy-extreme-arena-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2020-06-17",
+    "launchLabel": "2020年6月17日娱乐模式轮换公告",
+    "launchNote": "官方公告确认极限竞技属于娱乐模式轮换，详细规则待官方玩法说明补档。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "hpjy-ice-gold-rush-mutant-2026",
+    "modeName": "冰河夺金·异变（Ice Gold Rush: Mutation）",
+    "date": "2026-06-30",
+    "year": "2026",
+    "tags": [
+      "extraction",
+      "power",
+      "objective",
+      "br-ltm"
+    ],
+    "type": [
+      "搜打撤衍生",
+      "限时特殊模式",
+      "随机能力插件"
+    ],
+    "oneLineRule": "在冰河夺金的限时特殊模式中搜集并争夺高价值物资，同时选择随机能力插件，把撤离目标和局内构筑结合起来。",
+    "mechanicChange": "官方版本说明确认该玩法在冰河夺金基础上加入海量随机能力插件；玩家在局内选取插件获得特殊能力，形成不同的战斗套路。当前公开说明没有列出完整插件池与撤离参数，因此只记录已确认的插件构筑变化。",
+    "tempoImpact": "插件选择会让每局的交战能力和风险窗口不同，队伍需要在拿取高价值物资、争抢插件与及时撤离之间做取舍。",
+    "designObservation": "它把搜打撤的资产风险和轻量构筑结合起来：同一张冰河地图因为插件组合而出现不同的临场解法，适合观察随机能力如何改变撤离节奏。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "launchDate": "2026-06-30",
+    "launchLabel": "2026年6月30日版本公告列为限时特殊模式",
+    "launchNote": "官方版本说明写明“冰河夺金·异变”为限时特殊模式，并确认新增随机能力插件；完整开放窗口和插件池以游戏内公告为准。",
+    "gameplayTypes": [
+      "extraction"
+    ],
+    "isLtm": true,
+    "game": "和平精英",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-ice-gold-rush-mutant-2026.svg"
+  },
+  {
+    "id": "hpjy-major-counterattack-2026",
+    "modeName": "少将的反攻（Major General Counterattack）",
+    "date": "2026-09-02",
+    "year": "2026",
+    "tags": [
+      "extraction",
+      "pve",
+      "objective",
+      "br-ltm"
+    ],
+    "type": [
+      "搜打撤特殊玩法",
+      "首领扮演",
+      "限时"
+    ],
+    "oneLineRule": "在迷雾荒岛中，玩家可扮演卡德尔少将并与黑鹰小队协同反攻；其他幸存者争夺动力装甲、完成任务并击败卡德尔，获取特殊奖励。",
+    "mechanicChange": "扮演卡德尔需要消耗专属凭证，组队队友会携带黑鹰装备入局；地图内会刷新动力装甲变身装置，首个交互者可变身为动力装甲，局内任务与击败卡德尔共同构成特殊目标。",
+    "tempoImpact": "首领扮演把一名高威胁角色和一组追击目标放进搜打撤地图，动力装甲的争夺会制造即时热点，任务进度则把队伍重新拉回终局冲突。",
+    "designObservation": "通过“可扮演首领+全图追击目标”改变传统搜打撤的身份关系：一方拥有主动压迫能力，其他玩家则围绕装备、任务和集火形成临时合作。",
+    "sourceUrl": "https://www.taptap.cn/app/70056/all-info?platform=ios",
+    "launchDate": "2026-09-02",
+    "launchLabel": "2026年9月2日版本公告列为限时特殊模式",
+    "launchNote": "官方版本说明明确列出少将的反攻规则与卡德尔扮演凭证；具体开放时段以游戏内公告为准。",
+    "gameplayTypes": [
+      "extraction",
+      "pve"
+    ],
+    "isLtm": true,
+    "game": "和平精英",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-major-counterattack-2026.svg"
+  },
+  {
+    "id": "hpjy-deathmatch-2026",
+    "modeName": "死斗竞技（Deathmatch）",
+    "date": "2026-09-02",
+    "year": "2026",
+    "tags": [
+      "casual",
+      "objective",
+      "br-ltm",
+      "needs_review"
+    ],
+    "type": [
+      "地铁币入场",
+      "4v4或1v1",
+      "回合制连胜"
+    ],
+    "oneLineRule": "消耗地铁币进入回合制 4v4 或 1v1 对战，装备不会掉落；通过连续获胜累积连胜场次，奖金随连胜提升，对手也会变强。",
+    "mechanicChange": "模式把搜打撤的资产风险改成可控的入场成本：局内装备不掉落，回合开始自动提供指定消耗品，并加入迷雾荒岛信号干扰区地图与每回合缩圈。",
+    "tempoImpact": "回合制、连胜奖金和逐渐变强的对手会持续抬高风险；缩圈让每回合从自由找人收束到固定交战窗口。",
+    "designObservation": "死斗竞技把撤离玩法的“带入资产”剥离出来，保留连续胜利的风险收益曲线，让玩家用连胜而不是装备库存承担压力。",
+    "sourceUrl": "https://www.taptap.cn/app/70056/all-info?platform=ios",
+    "launchDate": "2026-09-02",
+    "launchLabel": "2026年9月2日版本公告列为特殊玩法",
+    "launchNote": "官方说明确认 4v4/1v1、装备不掉落、连胜奖金、信号干扰区和缩圈规则；具体上线时间以后续官方公告为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "game": "和平精英",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-deathmatch-2026.svg"
+  },
+  {
+    "id": "hpjy-surnan-conflict-icebound-2026",
+    "modeName": "苏尔南冲突·冰河禁区（Surnan Conflict: Icebound Zone）",
+    "date": "2026-09-02",
+    "year": "2026",
+    "tags": [
+      "extraction",
+      "objective"
+    ],
+    "type": [
+      "搜打撤",
+      "冰河禁区",
+      "双阶段占点撤离"
+    ],
+    "oneLineRule": "在冰河禁区的苏尔南冲突变体中争夺高资源区域与苏尔南钻宝箱，依次抢占两个占点撤离点，在高战备门槛下完成撤离。",
+    "mechanicChange": "地图加入地面随机高资源区域，首领有概率掉落空投信号枪；两个占点撤离点先后开放，前一个关闭后信号干扰区开启并解锁后一个撤离点，且没有备用撤离点。入局要求至少 90 万战备值，并携带橙色头甲包和红色枪械。",
+    "tempoImpact": "撤离窗口被拆成前后两个阶段：队伍要先争夺常规撤离点，再决定是否冒险进入信号干扰区抢苏尔南钻。高资源区和空投会把资源争夺提前到中局。",
+    "designObservation": "这是对苏尔南冲突“先占点、再抢名额”结构的地图化变体：封锁区、顺序撤离和高战备门槛把路线选择转成连续的风险升级。",
+    "sourceUrl": "https://www.taptap.cn/app/70056/all-info?platform=ios",
+    "launchDate": "2026-09-02",
+    "launchLabel": "2026年9月2日版本更新列为新模式变体",
+    "launchNote": "官方版本说明明确列出冰河禁区局部地图、两个先后开启的占点撤离点、高资源区与战备门槛；开放时间以游戏内公告为准。",
+    "gameplayTypes": [
+      "extraction"
+    ],
+    "isLtm": false,
+    "game": "和平精英",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-surnan-conflict-icebound-2026.svg"
+  },
+  {
+    "id": "hpjy-monster-role-salamander-2026",
+    "modeName": "怪物扮演·蝾螈小宝（Monster Roleplay: Little Salamander）",
+    "date": "2026-09-19",
+    "year": "2026",
+    "tags": [
+      "casual",
+      "pve",
+      "objective",
+      "br-ltm",
+      "needs_review"
+    ],
+    "type": [
+      "怪物扮演",
+      "古墓迷途",
+      "预告玩法"
+    ],
+    "oneLineRule": "在古墓迷途中扮演蝾螈小宝参与纷争对局，与人类玩家互动并完成任务，使用专属技能搜集物资，达成目标后有概率获得专属大金。",
+    "mechanicChange": "蝾螈小宝拥有“藏肚里”吞吐物资、“嗷嗷哭”制造声音和“弹弹舌”钩锁位移等技能；史前蝾螈还能抓取或吞入目标窃取背包物资。详细胜负条件与匹配规则仍待正式上线说明。",
+    "tempoImpact": "怪物技能把物资争夺变成主动骚扰和位移博弈；钩锁、吞取和声音干扰会让古墓路线出现新的追逐与反追逐节奏。",
+    "designObservation": "把玩家身份从幸存者切换成地图生物，能观察“非对称能力+任务互动”如何改变搜打撤中的信息关系；正式上线后需继续补齐胜负和奖励参数。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "launchDate": "2026-09-19",
+    "launchLabel": "2026年9月19日预告上线",
+    "launchNote": "官方预告已公开模式名称、蝾螈小宝技能和任务奖励，但它尚未到正式上线日，当前标记 needs_review，规则以后续版本说明为准。",
+    "gameplayTypes": [
+      "br",
+      "pve"
+    ],
+    "isLtm": true,
+    "game": "和平精英",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-monster-role-salamander-2026.svg"
   }
 ]

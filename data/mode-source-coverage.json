@@ -139,9 +139,9 @@
     },
     "和平精英": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 48,
-      "coverCount": 48,
-      "readableDescriptionCount": 48,
+      "modeCount": 65,
+      "coverCount": 65,
+      "readableDescriptionCount": 65,
       "modeIds": [
         "hpjy-classic-br-2019",
         "hpjy-chaoti-duikang-2023",
@@ -190,7 +190,24 @@
         "hpjy-mutant-tdm-2-2022",
         "hpjy-sniper-tdm-2023",
         "hpjy-adventure-train-2023",
-        "hpjy-sky-arena-2023"
+        "hpjy-sky-arena-2023",
+        "hpjy-mutant-mine-2020",
+        "hpjy-domination-2019",
+        "hpjy-tactical-tdm-2019",
+        "hpjy-christmas-mode-2019",
+        "hpjy-arsenal-tdm-2020",
+        "hpjy-treasure-battlefield-2021",
+        "hpjy-silent-comms-2021",
+        "hpjy-quick-duel-2020",
+        "hpjy-eagle-eye-training-2020",
+        "hpjy-airdrop-assault-2020",
+        "hpjy-field-action-2020",
+        "hpjy-extreme-arena-2020",
+        "hpjy-ice-gold-rush-mutant-2026",
+        "hpjy-major-counterattack-2026",
+        "hpjy-deathmatch-2026",
+        "hpjy-surnan-conflict-icebound-2026",
+        "hpjy-monster-role-salamander-2026"
       ],
       "officialSourceUrls": [
         "https://gp.qq.com/",
@@ -212,9 +229,18 @@
         "https://gp.qq.com/gicp/news/684/7354921.html",
         "https://gp.qq.com/gicp/news/684/7624328.html",
         "https://gp.qq.com/gicp/news/736/9448717.html",
-        "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision"
+        "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+        "https://www.taptap.cn/moment/77821174586803681",
+        "https://www.taptap.cn/moment/15212943150943499",
+        "https://www.taptap.cn/moment/15219560575665681",
+        "https://www.taptap.cn/moment/15202284518509745",
+        "https://www.taptap.cn/moment/15217739467589134",
+        "https://www.taptap.cn/moment/102841267771148269",
+        "https://www.taptap.cn/moment/21993052490959807",
+        "https://www.taptap.cn/app/70056/all-info?platform=ios"
       ],
-      "notes": "已复核和平精英官方站与 App Store 版本历史；本轮继续补入 2020–2023 年极限追猎、电竞模式、重启未来、查证模式、光影冒险、和平之翼、度假岛、龙狮迎冰雪、空投行动、突变团竞 2.0、狙击团竞、冒险列车、天空赛场，继续回溯更早版本与创意工坊档案。"
+      "notes": "已复核和平精英官方站与 App Store 版本历史；本轮继续补入 2020–2023 年极限追猎、电竞模式、重启未来、查证模式、光影冒险、和平之翼、度假岛、龙狮迎冰雪、空投行动、突变团竞 2.0、狙击团竞、冒险列车、天空赛场，继续回溯更早版本与创意工坊档案。 本轮补入官方运营团队 2020-11-17 版本 FAQ 明确列出的“经典模式-突变矿场玩法”：矿场低重力、突变乌鸦、强化战士、矩阵基地和 PVE 奖励均形成独立地图规则；与已有的“突变团竞”分开记录。 本轮继续反向核对 2019–2021 官方 TapTap 版本与玩法公告，补入占点竞技、战术团队竞技、圣诞模式、军备团竞、黄金岛夺宝战场、免耳麦模式，以及娱乐模式中的极速对决、鹰眼特训、空降奇兵、赛场行动、极限竞技。后五项官方页面只给出轮换身份和开放时段，已标记 needs_review，待后续玩法页补齐参数。 本轮继续核对 2026-06-30 与 2026-09-02 官方版本说明，补入冰河夺金·异变、少将的反攻、死斗竞技、苏尔南冲突·冰河禁区、怪物扮演·蝾螈小宝；其中死斗竞技与蝾螈小宝因开放时间或正式规则未完全公开标记 needs_review。",
+      "updatedAt": "2026-09-07"
     },
     "Apex Legends": {
       "coverageStatus": "ongoing_backfill",
