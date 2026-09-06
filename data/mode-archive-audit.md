@@ -152,8 +152,8 @@
 
 ## 2026-09-07 全库完成性校验
 
-- 当前 `data/modes.json` 共 474 张卡：Fortnite 34、PUBG 29、和平精英 65、Apex Legends 56、三角洲行动 37、PUBG Mobile 156、Free Fire 97；每个游戏的 `modeIds` 与来源台账完全一致。
-- 逐卡检查结果：335 张本地封面、139 张官方远程封面，远程封面已逐项抽检并返回 `200 image/*`，本地封面全部存在；`modeName`、规则、机制、节奏、设计观察、上线信息和图片来源字段均包含中文可读内容。
+- 当前 `data/modes.json` 共 476 张卡：Fortnite 34、PUBG 29、和平精英 65、Apex Legends 56、三角洲行动 37、PUBG Mobile 156、Free Fire 99；每个游戏的 `modeIds` 与来源台账完全一致。
+- 逐卡检查结果：337 张本地封面、139 张官方远程封面，远程封面已逐项抽检并返回 `200 image/*`，本地封面全部存在；`modeName`、规则、机制、节奏、设计观察、上线信息和图片来源字段均包含中文可读内容。
 - 这项校验只证明当前入库卡片没有漏图或不可读字段；官方历史模式的回溯仍保持 `ongoing_backfill`，定时任务继续按未覆盖年份、版本和分页推进。
 
 ### Free Fire 来源台账对账（2026-09-07）
@@ -204,3 +204,8 @@
 - 复核 [Free Fire India Official 的 Cosmic Racer 模式教程](https://www.youtube.com/watch?v=T66mnRvvGfE) 与 Garena 7 周年补丁中对 Cosmic Racer 的后续优化：`Cosmic Racer` 是 15 支双人队伍驾驶战斗载具的限时 BR，驾驶位与炮手位可交换，黄色/绿色/红色强化物分别承担载具升级、恢复和技能增益。新增 `free-fire-cosmic-racer-2020`，补齐中文规则、节奏和设计观察，并使用本地整理封面。
 - 复核 [Free Fire India Official 的 The Chosen One 模式教程](https://www.youtube.com/watch?v=FrkBlE3kNDY)：`The Chosen One` 是两支 4 人队伍的积分对抗，先到 40 分获胜；随机单挑胜者为队伍赢得 30 秒双倍得分窗口。新增 `free-fire-chosen-one-2020`，补齐中文规则、节奏和设计观察，并使用本地整理封面。
 - 两张卡的上线窗口按 Operation Chrono 的公开排期记录为 2020 年 12 月；官方 India 账号教程确认玩法与模式名称，后续定时任务继续寻找全球 Garena 页面中的首发排期原文。
+### Free Fire 2026 9 周年区域页反向核对
+
+- 复核 [Garena 9 周年官方补丁页（区域语言镜像）](https://ff.garena.com/en/article/1676) 与 [9 周年活动公告](https://ff.garena.com/en/article/1681)：`Anniversary Tasks`、Skill Boost、Weapon Awakening、`Arena Showdown` 和 `Saddle Brawl` 均已在现有 Free Fire 卡片或系统字段中覆盖；区域镜像没有新增独立匹配规则。
+- `Party Lobby` 是社交大厅容器，`Arena Showdown` 与 `Saddle Brawl` 已分别记录为休闲竞技卡；技能、武器觉醒、BR Match Review 与地图装饰属于局内系统/活动内容，不重复建模式卡。
+

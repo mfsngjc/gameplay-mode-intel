@@ -901,7 +901,9 @@
         "https://ff.garena.com/en/article/1664/",
         "https://ff.garena.com/en/article/1673/",
         "https://ff.garena.com/en/article/1675",
+        "https://ff.garena.com/en/article/1676",
         "https://ff.garena.com/en/article/1678/",
+        "https://ff.garena.com/en/article/1681",
         "https://ff.garena.com/en/article/1683/",
         "https://ff.garena.com/en/article/1690/",
         "https://ff.garena.com/en/article/17/",
@@ -996,10 +998,10 @@
         "https://ff.garena.com/es/article/1120/",
         "https://ff.garena.com/id/article/1150",
         "https://ff.garena.com/id/article/209/",
-        "https://www.youtube.com/watch?v=T66mnRvvGfE",
-        "https://www.youtube.com/watch?v=FrkBlE3kNDY"
+        "https://www.youtube.com/watch?v=FrkBlE3kNDY",
+        "https://www.youtube.com/watch?v=T66mnRvvGfE"
       ],
-      "notes": "已复核 Garena 2017–2026 官方 API 索引与 OB 补丁档案；本轮补入 Operation Chrono 期间的 Cosmic Racer 与 The Chosen One，使用 Free Fire India Official 模式教程逐项补齐车辆、积分和单挑规则；历史与未来扫描保持 ongoing_backfill。已将全部 Free Fire 已入库卡片的官方来源 URL 与历史索引统一登记。",
+      "notes": "已复核 Garena 2017–2026 官方 API 索引与 OB 补丁档案；本轮补入 Operation Chrono 期间的 Cosmic Racer 与 The Chosen One，使用 Free Fire India Official 模式教程逐项补齐车辆、积分和单挑规则；历史与未来扫描保持 ongoing_backfill。已将全部 Free Fire 已入库卡片的官方来源 URL 与历史索引统一登记。 已复核 2026 年 9 周年区域语言镜像（1676、1681）：周年任务、竞技对决和马鞍乱斗均已在现有卡片覆盖，未发现新的独立匹配玩法。",
       "updatedAt": "2026-09-07",
       "officialArchiveIndexUrls": [
         "https://ff.garena.com/en/news/20/",
