@@ -18,6 +18,7 @@
 - 追加复核 Frozen Kingdom 的 WOW 创作者模板：`Zombie Station` 有双人解谜救人质、误杀即失败和 60 分钟限制，新增为独立 PVE 卡；`Battle Isle` 仅说明快速团队死斗地图与伏击空间，没有独立规则，记录为地图模板而不重复建卡。
 - 追加复核 Imagiversary 的 WOW Gameplay Templates：`Erangel Mod`（12 支四人队、无载具无 AI）与 `Craft Mod`（4v4、60 击杀或 15 分钟）有明确运行规则，新增两张模板卡；`Jumping Snipers`、`Occupation Mode`、`Racing Gameplay`、`Escape Gameplay`、`Tank Battle` 等仅列为编辑器可创建类型参考，不作为已发布模式入库。
 - 追加复核 4.4.0–4.6.0 官方日本站页面：Hero’s Crown、NARUTO: Shippuden、终末之谷忍术对战、木叶隐村 PVE、九尾袭来、蜘蛛侠：崭新的日子和 Midnight Hunters 均已在库中；其中 Midnight Hunters 只有 4.6.0 更新预告名称，规则保留待补。CRAFTGROUND 比赛与更新公告、修复公告不构成新增模式。
+- 追加核对 2026-09-01 发布的 4.6.0 更新预告：`Midnight Hunters` 已由主题模式卡覆盖；公告只给出名称、上线日和下线的旧主题模式，没有公开新的人数、目标或地图规则，因此继续保留 `needs_review`，不凭空补写机制。
 - 4.4.0 子项负向审计：Dinoground 回归已有 `pubgm-dinoground-2023` 卡；Arena Ranked（TDM 排位）是团队死斗的排位层与开放时间，不另拆为新规则模式；Metro Royale Chapter 32 的 Arctic Base 是地图/首领内容，仍归 Metro Royale 父模式；CRAFTGROUND 只写“追加新模式”而未公开名称、人数或胜负规则，标记为 `needs_review`，暂不凭空建卡。
 - 追加旧版本补丁交叉核对：0.5.0、0.6.0、0.8.0、0.9.0、0.10.0、0.11.0 页面没有新的独立匹配玩法；Mini-Zone、War、Quick Match、Zombie: Survive Till Dawn 等在现有卡片中已覆盖，Miramar/Vikendi、夜间天气和出生岛小游戏属于地图或系统内容。
 
@@ -40,6 +41,7 @@
 - 仍待覆盖：更早版本的完整分页、地区差异，以及下一轮官方公告。
 - 本轮完成 Garena 官方 API 历史索引反向比对：类别 1、20、31、32 合计 150 篇（2017–2026），其中 75 篇此前未进入来源台账的文章已逐篇重扫并登记。新增候选均归入已有父模式、地图、系统/武器、角色能力、联动任务或 Craftland 编辑器功能；`Bomb Squad`、`Clash Squad`、`Zombie Hunt`、`Flame Arena` 等已有卡片，`Alpine`/`Ice Ground` 是地图，`Machine Gun Mode` 是武器行为，未发现另一张具有独立胜负规则的模式卡。标题只有“time-limited game mode”而正文没有名称和规则的页面保留 `needs_review`，不凭空建卡。
 - 追加复核官方 OB54 更新日志文章 1678：`新迷你模式：马战` 明确为两人组队、下方玩家驾驶独轮车、上方玩家攻击的玩法，与 `Saddle Brawl` 已有卡片相同；派对大厅 Ring 的 1v1 守擂规则与 `Arena Showdown` 已覆盖，因此不重复建卡。
+- 追加核对 Garena 2026-08-01 动画公告与 2026-09-03 年度奖项公告：两篇内容分别是 Free Fire: Daybreak 宣传和 Naruto Shippuden 联动回顾，没有新增可游玩的局内模式；9 周年公告、OB54 玩法日志中的 Epic Fight、Anniversary Tasks、Arena Showdown、Saddle Brawl 均已有对应卡片。
 - 追加复核 PUBG Mobile 官方日本站 4.2.0、4.3.0 更新/补丁页：`Primewood Genesis`、`Evolving Universe`、`Racing Challenge` 已有独立卡；协力跑酷属于功能层，`Ancient Secret: Arise` 是既有玩法回归，Arena Ranked 属于团队死斗排位层。已把三张相关卡的来源切换到官方日本站页面，未发现新的独立模式遗漏。
 - 追加复核三角洲行动官方 Global 第 11 赛季 `Reorientation` 公告（2026-09-04）：`Fishing`、`Polaris Patrol` 与 `Operations 1v1` 均已有卡；Layali Grove 2.0 和 The Mog 属于地图/地图规则卡，Rover 是干员能力，不新增重复模式。公告中的钓鱼等级、两种钓法、首领身份切换和零损耗 1v1 规则已与卡片逐项核对。
 
