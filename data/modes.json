@@ -4106,6 +4106,98 @@
     "isLtm": false
   },
   {
+    "id": "pubg-xeno-point-2026",
+    "game": "PUBG",
+    "modeName": "异种据点（Xeno Point）",
+    "year": "2026",
+    "date": "2026-04-08",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "PVE",
+      "4人合作",
+      "波次推进",
+      "首领战"
+    ],
+    "oneLineRule": "4 人小队在米拉玛的合作 PVE 副本中清理异种、完成任务并解锁区域，最终抵达母舰击败 Architect；在时间耗尽前完成撤离式推进。",
+    "mechanicChange": "每局从 HUB 出发，进入不同区域完成目标并回到 HUB；普通难度按已清理区域逐步解锁新门，高难度则开放大部分区域。击杀和任务会提供技能点、碎片与带额外词条的装备，可在 HUB 制作或升级 Supers、购买可退款的 Blue Chip Skills。队友可随时救起倒地成员，但全队倒地即失败；每个区域末尾有 Sector Commander，最终母舰由 Architect 镇守。",
+    "tempoImpact": "区域解锁把合作推进拆成连续的小目标，HUB 回合让队伍在战斗和构筑之间换挡。波次敌人、随机技能与三档难度把压力从单次枪战延伸为整局资源管理和首领应对。",
+    "designObservation": "把 PUBG 的枪械手感放进分区副本后，推进路线、可重置的技能构筑和首领弱点共同替代了缩圈。HUB 既是安全点也是决策点，能让队伍在下一扇门前讨论风险与分工。",
+    "sourceUrl": "https://pubg.com/en/news/9844",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2026-04-08",
+    "launchLabel": "2026年4月8日 电脑端上线，4月16日主机上线",
+    "launchNote": "官方服务期：电脑端 2026年4月8日至5月6日 07:00 UTC；主机端 2026年4月16日至5月14日 07:00 UTC。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubg-xeno-point-2026.svg"
+  },
+  {
+    "id": "pubg-payday-2026",
+    "game": "PUBG",
+    "modeName": "劫案行动（PAYDAY）",
+    "year": "2026",
+    "date": "2026-05-13",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "PVE",
+      "4人合作",
+      "潜入劫案",
+      "撤离"
+    ],
+    "oneLineRule": "最多 4 人合作完成劫案：准备、潜入、执行目标、搜集并守住战利品，最后在安全部队围攻中成功逃脱。",
+    "mechanicChange": "Safe House 允许队伍投票选择劫案与难度，并选择 Assault、Support、Tank、Marksman、Ghost 等职业。任务点和安保系统随机布置，玩家可蹲伏潜入、处理摄像头与证据袋来压低警戒，也可以在暴露后转入正面战斗。副武器拥有无限弹药且带消音，主武器需要弹药包或职业能力补给；敌人按 Assault 与 Regrouping 阶段持续增援，收集战利品还能提升职业。",
+    "tempoImpact": "潜入阶段用检测圈和 Suspicion Score 逐步累积风险，报警后直接切换高压战斗；撤离目标让队伍不能只清场，还必须把生命、弹药和带出的战利品一起带到终点。",
+    "designObservation": "PAYDAY 把 PUBG 的枪战改造成一条可分叉的任务链：安静处理能换取位置和资源，失误则让敌潮和警报接管节奏。职业、随机安保和投票难度让同一张劫案地图拥有可重复的分工与路线决策。",
+    "sourceUrl": "https://pubg.com/en/news/10009",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2026-05-13",
+    "launchLabel": "2026年5月13日 电脑端上线，5月21日主机上线",
+    "launchNote": "官方服务期：电脑端 2026年5月13日至6月10日 07:00 UTC；主机端 2026年5月21日至6月18日 07:00 UTC。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubg-payday-2026.svg"
+  },
+  {
+    "id": "pubg-prop-hunt-2026",
+    "game": "PUBG",
+    "modeName": "躲猫猫（Prop Hunt）",
+    "year": "2026",
+    "date": "2026-03-31",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "街机模式",
+      "非对称对抗",
+      "12人"
+    ],
+    "oneLineRule": "每回合 3 名 Hunters 对抗 9 名 Props：伪装成场景物件的 Props 躲到时间结束，Hunters 在回合结束前找出并消灭所有 Props。",
+    "mechanicChange": "准备阶段中 Hunters 被限制视野，Props 获得更高移动速度并选择伪装。Hunters 误射非玩家物件会损失生命，Props 可使用闪光、嘲讽、眩晕枪、诱饵、随机换物件和定身等能力；阶段切换时伪装会随机更换，回合末 Fever Time 期间 Hunters 获得额外武器且开火不再扣血。",
+    "tempoImpact": "误射惩罚让 Hunters 必须观察和沟通，Props 则通过随机换形与干扰能力制造短暂脱身窗口。临近结束的 Fever Time 把前段的搜索博弈压缩成一次公开收网。",
+    "designObservation": "把地图装饰变成可玩的身份伪装，让熟悉场景成为记忆与观察力的竞技场。Hunters 的资源惩罚、Props 的主动干扰和最后冲刺共同维持双方在信息优势上的来回交换。",
+    "sourceUrl": "https://pubg.com/en/news/9889",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2026-03-31",
+    "launchLabel": "2026年3月31日 07:00 UTC 限时开放",
+    "launchNote": "官方服务期为 2026年3月31日 07:00 至4月8日 00:00 UTC；标准回合 12 人，支持 Rondo、Vikendi、Miramar，自定义比赛最多 40 人。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubg-prop-hunt-2026.svg"
+  },
+  {
     "id": "apex-ascended-hunt-2026",
     "game": "Apex Legends",
     "modeName": "外卡：进阶狩猎（Wildcard: Ascended Hunt）",

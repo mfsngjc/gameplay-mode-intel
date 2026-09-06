@@ -81,9 +81,9 @@
     },
     "PUBG": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 22,
-      "coverCount": 22,
-      "readableDescriptionCount": 22,
+      "modeCount": 25,
+      "coverCount": 25,
+      "readableDescriptionCount": 25,
       "modeIds": [
         "pubg-classic-br-2017",
         "pubg-intense-br-2023",
@@ -106,7 +106,10 @@
         "pubg-intense-br-haven-2026",
         "pubg-basic-training-2026",
         "pubg-solo-deathmatch-2026",
-        "pubg-playgrounds-2026"
+        "pubg-playgrounds-2026",
+        "pubg-xeno-point-2026",
+        "pubg-payday-2026",
+        "pubg-prop-hunt-2026"
       ],
       "officialSourceUrls": [
         "https://pubg.ac/news/37554-fantasy-battle-royale",
@@ -127,9 +130,12 @@
         "https://www.pubg.com/en/news/10459",
         "https://www.pubg.com/en/news/1588",
         "https://www.pubg.com/en/news/1708",
-        "https://www.pubg.com/en/news/5023"
+        "https://www.pubg.com/en/news/5023",
+        "https://pubg.com/en/news/9844",
+        "https://pubg.com/en/news/10009",
+        "https://pubg.com/en/news/9889"
       ],
-      "notes": "已有模式库；后续按 PUBG 官方补丁与 LABS 档案继续回溯。"
+      "notes": "已复核 PUBG 官方新闻、Arcade 与 2026 路线图；本轮补入 Xeno Point、PAYDAY、Prop Hunt 三个明确独立玩法，继续回溯 LABS、Arcade 和历史限时模式。"
     },
     "和平精英": {
       "coverageStatus": "ongoing_backfill",
