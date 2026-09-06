@@ -139,9 +139,9 @@
     },
     "和平精英": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 24,
-      "coverCount": 24,
-      "readableDescriptionCount": 24,
+      "modeCount": 35,
+      "coverCount": 35,
+      "readableDescriptionCount": 35,
       "modeIds": [
         "hpjy-classic-br-2019",
         "hpjy-chaoti-duikang-2023",
@@ -166,7 +166,18 @@
         "hpjy-gumu-changbai-palace-2026",
         "hpjy-mutant-crisis-2026",
         "hpjy-annihilation-summer-cup-2026",
-        "hpjy-superbody-tidal-plugin-2026"
+        "hpjy-superbody-tidal-plugin-2026",
+        "hpjy-fast-bomb-2024",
+        "hpjy-ice-gold-rush-2024",
+        "hpjy-fantasy-brawl-2025",
+        "hpjy-conquest-2025",
+        "hpjy-solo-arena-2025",
+        "hpjy-nuclear-showdown-2025",
+        "hpjy-fpp-bomb-2025",
+        "hpjy-fpp-team-deathmatch-2025",
+        "hpjy-surnan-conflict-2025",
+        "hpjy-icebound-train-2026",
+        "hpjy-cowboy-revenge-2026"
       ],
       "officialSourceUrls": [
         "https://gp.qq.com/",
@@ -187,9 +198,10 @@
         "https://gp.qq.com/gicp/news/684/18808318.html",
         "https://gp.qq.com/gicp/news/684/7354921.html",
         "https://gp.qq.com/gicp/news/684/7624328.html",
-        "https://gp.qq.com/gicp/news/736/9448717.html"
+        "https://gp.qq.com/gicp/news/736/9448717.html",
+        "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision"
       ],
-      "notes": "已有模式库；后续按官方版本公告继续回溯。"
+      "notes": "已复核和平精英官方站与 App Store 版本历史；本轮补入 2024–2026 年快速爆破、冰河夺金、奇幻大乱斗、征服模式、个人竞技、核爆对决、FPP 爆破/仓库团竞、苏尔南冲突、冰封列车、牛仔的复仇，继续回溯地区版本与创意工坊档案。"
     },
     "Apex Legends": {
       "coverageStatus": "ongoing_backfill",

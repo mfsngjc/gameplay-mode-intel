@@ -12223,5 +12223,336 @@
     "isLtm": true,
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
     "imageUrl": "assets/modes/generated/free-fire-lone-wolf-cup-2023.svg"
+  },
+  {
+    "id": "hpjy-fast-bomb-2024",
+    "modeName": "快速爆破（Fast Bomb）",
+    "date": "2024-11-04",
+    "year": "2024",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "爆破模式",
+      "5v5",
+      "7回合"
+    ],
+    "oneLineRule": "10 名玩家分为进攻方和防守方，在港口进行最多 7 回合的 5v5 爆破攻防，先拿到 4 分的阵营获胜。",
+    "mechanicChange": "进攻方每回合获得 1 枚炸弹并随机交给一名队员，需要在 A 点或 B 点安装并引爆；消灭防守方也能赢下回合。防守方全员自带快速拆弹器，拆弹或在安装前消灭进攻方即可获胜。上下半场各 3 回合后换边，必要时进行 1 回合加时。",
+    "tempoImpact": "每回合的炸弹持有者和两个包点会快速形成局部焦点，换边把信息优势切成两段，7 回合短赛制让每次阵亡和交叉火力都更有价值。",
+    "designObservation": "把经典爆破压缩到 5v5 与 7 回合后，攻防身份依旧清晰，但港口的掩体密度和短局结构让玩家更快进入包点决策。",
+    "launchDate": "2024-11-04",
+    "launchLabel": "2024年11月4日版本公告列为限时玩法",
+    "launchNote": "官方 App Store 版本说明将其写作“限时玩法-快速爆破模式”，具体开放时间以游戏内公告为准。",
+    "gameplayTypes": [
+      "bomb"
+    ],
+    "isLtm": true,
+    "game": "和平精英",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-fast-bomb-2024.svg"
+  },
+  {
+    "id": "hpjy-ice-gold-rush-2024",
+    "modeName": "冰河夺金（Ice Gold Rush）",
+    "date": "2024-11-04",
+    "year": "2024",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "搜打撤衍生",
+      "4v4夺金",
+      "限时"
+    ],
+    "oneLineRule": "4v4 小队在冰河禁区导弹井区域搜寻、搬运并守住更多可变卖物，在限定时间内与对手争夺更高收益。",
+    "mechanicChange": "对局把地铁逃生的搜索和变卖物带进双方对抗：队伍需要在战斗中找到高价值物资并带回，同时阻止对手搬运和瓜分战利品。它保留撤离玩法的物资价值，却用固定区域和时间限制把目标集中到一场 4v4 夺金。",
+    "tempoImpact": "导弹井把搜索、搬运和交战压缩在同一热点，背着高价值物资的队员既是收益来源也是暴露目标，队伍必须在抢夺和护送之间不断切换。",
+    "designObservation": "夺金模式把搜打撤的“价值携带”转成直接竞赛目标，不需要完整的长线撤离局，也能保留“拿得越多越危险”的张力。",
+    "launchDate": "2024-11-04",
+    "launchLabel": "2024年11月4日版本公告列为限时玩法",
+    "launchNote": "官方 App Store 版本说明将其列为地铁逃生“新玩法-冰河夺金”，开放时间以游戏内公告为准。",
+    "gameplayTypes": [
+      "extraction"
+    ],
+    "isLtm": true,
+    "game": "和平精英",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-ice-gold-rush-2024.svg"
+  },
+  {
+    "id": "hpjy-fantasy-brawl-2025",
+    "modeName": "奇幻大乱斗（Fantasy Brawl）",
+    "date": "2025-01-13",
+    "year": "2025",
+    "tags": [
+      "br-ltm",
+      "power"
+    ],
+    "type": [
+      "限时玩法",
+      "职业构筑",
+      "剑与魔法"
+    ],
+    "oneLineRule": "选择野蛮人、法师、游侠或圣骑士，在主题海岛上搜集装备与经验、升级战斗能力，并利用营地和神器争取最后胜利。",
+    "mechanicChange": "每个职业拥有两种可切换的专属武器与技能；地图分布欢乐营地，提供武器台、复活点和宝藏；对局中拾取装备与经验会逐步强化角色，部分营地还能开出终极神器。",
+    "tempoImpact": "职业选择先决定交战距离，营地和经验点再把队伍不断拉向局部争夺；复活点和神器让中后期热点不只围绕普通物资。",
+    "designObservation": "奇幻职业把 BR 的开局选择与局内成长绑定，让玩家在搜集、升级和争夺营地之间形成一条短期构筑路线。",
+    "launchDate": "2025-01-13",
+    "launchLabel": "2025年1月13日版本更新列为限时玩法",
+    "launchNote": "官方 App Store 版本说明写明其为“限时玩法-奇幻大乱斗”，具体开放时间以官方公告为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "game": "和平精英",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-fantasy-brawl-2025.svg"
+  },
+  {
+    "id": "hpjy-conquest-2025",
+    "modeName": "征服模式（Conquest）",
+    "date": "2025-01-13",
+    "year": "2025",
+    "tags": [
+      "warfare",
+      "objective"
+    ],
+    "type": [
+      "大战场",
+      "5据点",
+      "分数竞速"
+    ],
+    "oneLineRule": "两方阵营同时争夺全图 5 个交战区域，占领据点持续获得分数，先达到目标分数的一方获胜。",
+    "mechanicChange": "征服模式不设置固定进攻方和防守方，5 个区域在开局同时开放；控制的据点越多，阵营的分数增长越快。它还配有兵种、C4、坦克和火力载具等大战场工具。",
+    "tempoImpact": "五点同时开放让队伍必须在广度和集中突破之间取舍，领先阵营需要守住多点，落后阵营则可通过集中人数夺回关键区域。",
+    "designObservation": "没有固定攻守后，占点模式的决策从单点突破变成全图分配；据点数量直接影响得分速度，能自然制造前线拉扯。",
+    "launchDate": "2025-01-13",
+    "launchLabel": "2025年1月13日版本更新列为全新模式",
+    "launchNote": "官方 App Store 版本说明把征服模式放在“刺激战场”创意工坊内容下；它是明确的据点分数模式，不与普通团队竞技合并。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": false,
+    "game": "和平精英",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-conquest-2025.svg"
+  },
+  {
+    "id": "hpjy-solo-arena-2025",
+    "modeName": "个人竞技（Solo Arena）",
+    "date": "2025-01-13",
+    "year": "2025",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "个人死斗",
+      "6人",
+      "10分钟"
+    ],
+    "oneLineRule": "6 名玩家各自为战，在装甲工厂进行 10 分钟个人竞技；击败 1 名对手得 1 分，先到 18 分或时间结束时分数最高者获胜。",
+    "mechanicChange": "所有玩家独立成队，枪械配置可以在大厅、准备阶段和被淘汰后调整，并会带入下一次复活后的对局。它把传统团队竞技的复活循环改成个人得分竞速。",
+    "tempoImpact": "没有队友分工后，每一次击杀和换枪都直接影响个人排名；10 分钟倒计时会把后半局转成主动找人和抢分。",
+    "designObservation": "个人死斗适合用“可调整配置+短局目标”降低试错成本，让玩家同时练枪和研究武器组合。",
+    "launchDate": "2025-01-13",
+    "launchLabel": "2025年1月13日版本公告列为限时玩法",
+    "launchNote": "官方 App Store 版本说明写明地图为装甲工厂，具体开放时间以游戏内公告为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "game": "和平精英",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-solo-arena-2025.svg"
+  },
+  {
+    "id": "hpjy-nuclear-showdown-2025",
+    "modeName": "核爆对决（Nuclear Showdown）",
+    "date": "2025-06-23",
+    "year": "2025",
+    "tags": [
+      "bomb",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "超体对抗",
+      "爆破攻防",
+      "专属段位"
+    ],
+    "oneLineRule": "两方阵营围绕核子炸弹进行攻防：进攻方安装并引爆炸弹，防守方阻止安装或拆除炸弹，在零号街区等场景争取胜利。",
+    "mechanicChange": "模式把超体角色和爆破目标叠加在一起：随机插件最多可装配 4 张，角色通过造成伤害、淘汰、助攻和装拆弹获取终极技能充能；玩法还有独立段位和积分。",
+    "tempoImpact": "炸弹倒计时让角色技能充能、包点控制和插件选择都集中到回合窗口，阵亡后复活能力等插件会改变残局的时间价值。",
+    "designObservation": "将英雄能力放进爆破框架，胜负仍由包点目标决定，但插件随机性和终极技能资源会把同一张图变成不断变化的攻防题。",
+    "launchDate": "2025-06-23",
+    "launchLabel": "2025年6月23日版本更新随六周年内容公布",
+    "launchNote": "官方 App Store 版本说明将其写作“超体-核爆对决”，并明确列出炸弹攻防、随机插件与专属段位；具体开放时间以游戏内公告为准。",
+    "gameplayTypes": [
+      "bomb"
+    ],
+    "isLtm": true,
+    "game": "和平精英",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-nuclear-showdown-2025.svg"
+  },
+  {
+    "id": "hpjy-fpp-bomb-2025",
+    "modeName": "第一人称爆破团竞（FPP Bomb）",
+    "date": "2025-09-08",
+    "year": "2025",
+    "tags": [
+      "bomb",
+      "casual"
+    ],
+    "type": [
+      "第一人称",
+      "爆破模式",
+      "港口"
+    ],
+    "oneLineRule": "在港口地图以第一人称进行爆破攻防，进攻方安装炸弹，防守方阻止或拆除炸弹，按回合争夺胜利。",
+    "mechanicChange": "这是和平精英高品质第一人称团竞中的独立爆破入口，强调第一人称视角下的枪械表现和港口攻防空间；炸弹安装、拆除与阵营轮换沿用爆破胜负流程。",
+    "tempoImpact": "第一人称限制视野信息，港口掩体和拐角更依赖听声、预瞄和短距离协同，包点交火会比第三人称更快暴露风险。",
+    "designObservation": "同一爆破目标换成第一人称后，视角公平性和信息不对称会成为主要设计变量，地图需要用明确的掩体线和声音反馈支持判断。",
+    "launchDate": "2025-09-08",
+    "launchLabel": "2025年9月8日版本更新限时上线",
+    "launchNote": "官方 App Store 版本说明列出“高品质第一人称团竞-限时上线 FPP-爆破团竞”，具体开放时间以官方公告为准。",
+    "gameplayTypes": [
+      "bomb"
+    ],
+    "isLtm": true,
+    "game": "和平精英",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-fpp-bomb-2025.svg"
+  },
+  {
+    "id": "hpjy-fpp-team-deathmatch-2025",
+    "modeName": "第一人称仓库团竞（FPP Warehouse TDM）",
+    "date": "2025-09-08",
+    "year": "2025",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "第一人称",
+      "团队竞技",
+      "仓库"
+    ],
+    "oneLineRule": "两方阵营在仓库地图以第一人称快速对战，率先达到规定击杀分数的阵营获胜。",
+    "mechanicChange": "它将仓库团队竞技的快速复活和击杀计分改为第一人称高品质表现，保留短距离枪战的连续交火，并单独作为限时入口开放。",
+    "tempoImpact": "第一人称减少越墙和拐角信息，连续复活会让玩家更依赖出生点预判、交叉火力和近距离听声。",
+    "designObservation": "同一团队死斗规则可以通过视角和地图节奏形成独立体验，但需要把“限时”与“第一人称”作为可见标签，避免玩家误以为只是普通仓库团竞。",
+    "launchDate": "2025-09-08",
+    "launchLabel": "2025年9月8日版本更新限时上线",
+    "launchNote": "官方 App Store 版本说明列出“高品质第一人称团竞-限时上线 FPP-仓库团竞”，具体开放时间以官方公告为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "game": "和平精英",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-fpp-team-deathmatch-2025.svg"
+  },
+  {
+    "id": "hpjy-surnan-conflict-2025",
+    "modeName": "苏尔南冲突（Surnan Conflict）",
+    "date": "2025-09-08",
+    "year": "2025",
+    "tags": [
+      "extraction",
+      "objective"
+    ],
+    "type": [
+      "搜打撤",
+      "高战备值",
+      "占点撤离"
+    ],
+    "oneLineRule": "在苏尔南冲突地图中搜集并携带苏尔南钻，先占领开放的撤离区域，之后争抢有限名额的应急撤离点。",
+    "mechanicChange": "模式要求 90 万地铁币战备值。对局一段时间后开放一个占点撤离点，一支队伍占领后该点关闭；随后随机开放最多容纳 4 人的应急撤离点，名额用尽或有人成功撤离后对局结束。地图保险柜会生成全图可见的苏尔南钻宝箱，成功带出可让全队获得苏尔南钻。",
+    "tempoImpact": "撤离点从“多队都能用”变成先到先得的公共倒计时，队伍需要在携带高价值宝箱、守点和抢应急名额之间快速决策。",
+    "designObservation": "高战备门槛和有限撤离名额把搜打撤的风险集中到终局，玩家不只是判断“要不要撤”，还要判断“让谁先撤、在哪个时间窗口抢点”。",
+    "launchDate": "2025-09-08",
+    "launchLabel": "2025年9月8日版本更新后上线",
+    "launchNote": "官方 App Store 版本说明将其列为地铁逃生“新模式-苏尔南冲突”，并给出 90 万地铁币门槛和两阶段撤离规则。",
+    "gameplayTypes": [
+      "extraction"
+    ],
+    "isLtm": false,
+    "game": "和平精英",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-surnan-conflict-2025.svg"
+  },
+  {
+    "id": "hpjy-icebound-train-2026",
+    "modeName": "冰封列车（Icebound Train）",
+    "date": "2026-01-26",
+    "year": "2026",
+    "tags": [
+      "pve",
+      "extraction",
+      "objective"
+    ],
+    "type": [
+      "合作生存",
+      "移动列车",
+      "首领挑战"
+    ],
+    "oneLineRule": "小队在雪地中搜集装备和燃料、应对严寒与敌人，驾驶可养成的列车沿途搜索和挑战首领，最终抵达终点并成功通关。",
+    "mechanicChange": "列车是可操控、可升级的移动平台，队伍可以自由前往沿线城镇，搜索并挑战随机首领，再在站点把战利品换成当局使用的冰封物资币。昼夜交替会触发怪物攻击，随机事件改变每局任务；除冰封列车物资礼箱外，其他装备只在本局使用，不能带出局外。",
+    "tempoImpact": "队伍必须同时管理列车耐久、燃料、沿线路线和夜间怪物压力；移动平台让“赶路”本身变成消耗资源与选择目标的阶段。",
+    "designObservation": "把搜打撤的地图探索改成合作护送后，列车成为队伍共享的生命条和成长对象，沿线站点、随机首领与昼夜变化共同提供重复游玩的变量。",
+    "launchDate": "2026-01-26",
+    "launchLabel": "2026年1月26日版本更新公布",
+    "launchNote": "官方 App Store 版本说明将其列为地铁逃生世界观下的全新合作生存挑战，具体正式开放时间以游戏内公告为准。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": false,
+    "game": "和平精英",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-icebound-train-2026.svg"
+  },
+  {
+    "id": "hpjy-cowboy-revenge-2026",
+    "modeName": "牛仔的复仇（Cowboy’s Revenge）",
+    "date": "2026-01-26",
+    "year": "2026",
+    "tags": [
+      "extraction",
+      "objective"
+    ],
+    "type": [
+      "限时特殊模式",
+      "旧封锁区",
+      "身份争夺"
+    ],
+    "oneLineRule": "在限时返场的旧封锁区争夺“牛仔·杰西”身份机会，完成牛仔使命并获得苏尔南钻奖励。",
+    "mechanicChange": "模式把地铁逃生的搜打撤局面加上身份争夺目标：玩家不仅要搜索和战斗，还要争取化身牛仔并完成专属使命。官方目前公开了地图返场、身份争夺与奖励方向，具体任务链待游戏内开放后确认。",
+    "tempoImpact": "身份机会会把队伍吸引到特定争夺区域，形成短时高风险热点；任务目标和苏尔南钻奖励则让玩家在撤离安全与完成使命之间做取舍。",
+    "designObservation": "在长期撤离模式中加入一次性身份目标，可以让旧地图重新拥有可追逐的中局事件；但任务触发和奖励条件需要在实装后继续核对。",
+    "launchDate": "2026-01-26",
+    "launchLabel": "2026年1月26日版本公告预告，具体开放时间待确认",
+    "launchNote": "官方 App Store 版本说明称其为“限时特殊模式玩法”，并注明将在赛季晚些时候限时上线；完整任务规则待官方后续公告确认。",
+    "gameplayTypes": [
+      "extraction"
+    ],
+    "isLtm": true,
+    "game": "和平精英",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/hpjy-cowboy-revenge-2026.svg"
   }
 ]
