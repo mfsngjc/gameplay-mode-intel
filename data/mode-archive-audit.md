@@ -152,8 +152,8 @@
 
 ## 2026-09-07 全库完成性校验
 
-- 当前 `data/modes.json` 共 476 张卡：Fortnite 34、PUBG 29、和平精英 65、Apex Legends 56、三角洲行动 37、PUBG Mobile 156、Free Fire 99；每个游戏的 `modeIds` 与来源台账完全一致。
-- 逐卡检查结果：337 张本地封面、139 张官方远程封面，远程封面已逐项抽检并返回 `200 image/*`，本地封面全部存在；`modeName`、规则、机制、节奏、设计观察、上线信息和图片来源字段均包含中文可读内容。
+- 当前 `data/modes.json` 共 479 张卡：Fortnite 37、PUBG 29、和平精英 65、Apex Legends 56、三角洲行动 37、PUBG Mobile 156、Free Fire 99；每个游戏的 `modeIds` 与来源台账完全一致。
+- 逐卡检查结果：340 张本地封面、139 张官方远程封面，远程封面已逐项抽检并返回 `200 image/*`，本地封面全部存在；`modeName`、规则、机制、节奏、设计观察、上线信息和图片来源字段均包含中文可读内容。
 - 这项校验只证明当前入库卡片没有漏图或不可读字段；官方历史模式的回溯仍保持 `ongoing_backfill`，定时任务继续按未覆盖年份、版本和分页推进。
 
 ### Free Fire 来源台账对账（2026-09-07）
@@ -209,3 +209,16 @@
 - 复核 [Garena 9 周年官方补丁页（区域语言镜像）](https://ff.garena.com/en/article/1676) 与 [9 周年活动公告](https://ff.garena.com/en/article/1681)：`Anniversary Tasks`、Skill Boost、Weapon Awakening、`Arena Showdown` 和 `Saddle Brawl` 均已在现有 Free Fire 卡片或系统字段中覆盖；区域镜像没有新增独立匹配规则。
 - `Party Lobby` 是社交大厅容器，`Arena Showdown` 与 `Saddle Brawl` 已分别记录为休闲竞技卡；技能、武器觉醒、BR Match Review 与地图装饰属于局内系统/活动内容，不重复建模式卡。
 
+
+### Fortnite v6.30 弹窗杯模式补漏
+
+- 复核 [Epic v6.30 官方补丁](https://www.fortnite.com/patch-notes/v6-30?lang=en-US)：`Scavenger Pop-Up Cup` 明确采用单人临时规则，材料上限为木/砖/金属各 500，采集速度提高 40%，淘汰后恢复 50 点生命值（满血时转为护盾）。该规则组合改变资源与交战循环，新增 `fortnite-scavenger-pop-up-cup-2018`；其余同页武器、系统和普通赛事功能不单独建卡。
+
+### Fortnite v8.20 竞技场排位补漏
+
+- 复核 [Epic v8.20 官方补丁](https://www.fortnite.com/patch-notes/v8-20?lang=en-US)：`Arena Game Mode (Solo & Duos)` 明确引入 Hype、联赛/分段、Bus Fare 和按 Hype 匹配的排位 BR 规则，新增 `fortnite-arena-2019`。
+- 该卡与 2026 年“连续回合竞技场”规则不同，分别保留；同页 `Floor is Lava` 已有卡片，竞技赛事奖金和普通武器更新不单独建卡。
+
+### Fortnite v8.40 美食大战变体补漏
+
+- 复核 [Epic v8.40 官方补丁](https://www.fortnite.com/patch-notes/v8-40?lang=en-US)：`Food Fight - Deep Fried` 在基础美食大战上加入熔岩上升、吉祥物被摧毁后取消复活、持续建材和禁用爆炸武器等独立规则，新增 `fortnite-food-fight-deep-fried-2019`；`Air Royale` 已有卡片，普通武器与赛事说明不重复建卡。

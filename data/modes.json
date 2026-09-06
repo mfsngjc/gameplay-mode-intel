@@ -14369,5 +14369,98 @@
       "warfare"
     ],
     "isLtm": true
+  },
+  {
+    "id": "fortnite-scavenger-pop-up-cup-2018",
+    "game": "Fortnite",
+    "modeName": "拾荒者弹窗杯（Scavenger Pop-Up Cup）",
+    "year": "2018",
+    "date": "2018-11-13",
+    "tags": [
+      "br-ltm",
+      "objective",
+      "ranked"
+    ],
+    "type": [
+      "单人锦标赛",
+      "资源上限",
+      "击杀回血"
+    ],
+    "oneLineRule": "单人限时锦标赛玩法：降低材料携带上限、提高采集速度，并通过淘汰对手恢复生命或护盾，靠连续交战争取更高积分。",
+    "mechanicChange": "每名玩家最多携带 500 木材、500 砖块和 500 金属；采集速度提高 40%。淘汰对手后立即获得 50 点生命值，生命值已满时改为获得护盾。它把常规 BR 的建造储备和生存恢复，改成更快的资源周转与击杀奖励。",
+    "tempoImpact": "资源上限降低了长期囤积的价值，采集速度提升则缩短补充建材的等待时间；击杀回血会鼓励玩家在交战后继续追击，整场节奏比普通 BR 更连续。",
+    "designObservation": "把资源经济和击杀恢复同时前置，可以将单人竞技从“避战攒资源”推向“主动找人换取续航”；资源上限也限制了高层建筑拖延，帮助比赛更快进入决胜交火。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v6-30?lang=en-US",
+    "imageUrl": "assets/modes/generated/fortnite-scavenger-pop-up-cup-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-11-13",
+    "launchLabel": "2018年11月 v6.30 版本期间的限时弹窗杯",
+    "launchNote": "Epic 官方 v6.30 补丁将 Scavenger Pop-Up Cup 列为测试临时玩法规则的单人赛事；官方页面未给出单独长期匹配入口，因此按独立规则玩法记录。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "fortnite-arena-2019",
+    "game": "Fortnite",
+    "modeName": "竞技场排位（Arena Game Mode）",
+    "year": "2019",
+    "date": "2019-03-27",
+    "tags": [
+      "br-core",
+      "ranked",
+      "objective"
+    ],
+    "type": [
+      "排位 BR",
+      "单人/双人",
+      "Hype 联赛"
+    ],
+    "oneLineRule": "单人或双人排位大逃杀：通过比赛获得 Hype，逐级晋升联赛与分段，并按段位收取不断增加的入场费。",
+    "mechanicChange": "竞技场保留 BR 的搜刮、建造和最后存活目标，但加入 Hype 积分、Open/Contender/Champion 联赛与分段进度。匹配会优先寻找 Hype 接近的玩家；进入更高分段后，每局扣除更多 Bus Fare，迫使玩家在争取击杀、排名和风险之间做取舍。",
+    "tempoImpact": "入场费让高分段玩家不能无限避战，Hype 奖励又鼓励主动争取淘汰和排名；匹配按 Hype 分层，使对局节奏从公开 BR 转向持续的竞技晋级循环。",
+    "designObservation": "把 BR 的长期生存目标接入可见的 Hype 晋级和入场费，可以把每局结果转化为持续的竞技压力；分段门槛与成本曲线共同构成风险/回报调节器。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v8-20?lang=en-US",
+    "imageUrl": "assets/modes/generated/fortnite-arena-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2019-03-27",
+    "launchLabel": "2019年3月27日随 v8.20 版本上线",
+    "launchNote": "Epic v8.20 官方补丁将 Arena Game Mode 列为新功能，明确支持 Solo 与 Duos、Hype、联赛分段和 Bus Fare；它与 2026 年连续回合竞技场是不同规则的两个模式。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": false
+  },
+  {
+    "id": "fortnite-food-fight-deep-fried-2019",
+    "game": "Fortnite",
+    "modeName": "美食大战：油炸版（Food Fight: Deep Fried）",
+    "year": "2019",
+    "date": "2019-04-17",
+    "tags": [
+      "br-ltm",
+      "objective",
+      "pve"
+    ],
+    "type": [
+      "基地攻防",
+      "熔岩环境",
+      "复活阶段"
+    ],
+    "oneLineRule": "美食大战的熔岩变体：两队在中央屏障后建造餐厅基地，熔岩升起、屏障下降后摧毁敌方吉祥物，再消灭剩余敌人取胜。",
+    "mechanicChange": "开局中央屏障阻挡两队，几分钟后熔岩从地图下方持续上升。每队餐厅内有巨型吉祥物；吉祥物被摧毁后，该队失去被淘汰后的复活能力。玩家保留物品复活，采集资源提高 100%，并获得少量持续建材；模式禁用爆炸武器。",
+    "tempoImpact": "准备期的筑防被熔岩倒计时压缩，屏障落下后目标点从水平攻防变成带高度差的紧急争夺；吉祥物存亡决定复活权，迫使队伍在守家与抢攻之间快速换挡。",
+    "designObservation": "在已有基地攻防骨架上叠加不可逆环境威胁，可以把“等待屏障”变成明确倒计时；复活权绑定目标核心，使每次推进同时改变战斗资源和心理压力。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v8-40?lang=en-US",
+    "imageUrl": "assets/modes/generated/fortnite-food-fight-deep-fried-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2019-04-17",
+    "launchLabel": "2019年4月17日随 v8.40 版本开放",
+    "launchNote": "Epic v8.40 官方补丁将 Food Fight - Deep Fried 列为独立限时模式，明确加入熔岩上升、吉祥物摧毁后禁用复活等新规则；基础 Food Fight 另有独立卡片。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true
   }
 ]
