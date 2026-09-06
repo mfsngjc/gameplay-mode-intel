@@ -149,3 +149,9 @@
 ### PUBG Mobile React Survival 来源修正
 
 - 找到并核对 [PUBG MOBILE 官方 1.8 更新公告](https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202201/908153.shtml)：它确认 React Survival 的关闭时间和历史状态。已将该卡的 YouTube 辅助来源替换为官方公告，保留 React Survival 2.0 作为后续回归记录。
+
+## 2026-09-07 全库完成性校验
+
+- 当前 `data/modes.json` 共 453 张卡：Fortnite 34、PUBG 27、和平精英 65、Apex Legends 37、三角洲行动 37、PUBG Mobile 156、Free Fire 97；每个游戏的 `modeIds` 与来源台账完全一致。
+- 逐卡检查结果：335 张本地封面、118 张官方远程封面，远程封面全部返回 `200 image/*`，本地封面全部存在；`modeName`、规则、机制、节奏、设计观察、上线信息和图片来源字段均包含中文可读内容。
+- 这项校验只证明当前入库卡片没有漏图或不可读字段；官方历史模式的回溯仍保持 `ongoing_backfill`，定时任务继续按未覆盖年份、版本和分页推进。
