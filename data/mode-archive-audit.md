@@ -267,3 +267,7 @@
 ### Fortnite v8.40 来源 URL 规范化复核
 
 - 发现 `fortnite-food-fight-deep-fried-2019` 的卡片使用 `https://www.fortnite.com/patch-notes/v8-40?lang=en-US`，来源台账此前只登记了同页的 URL 编码形式；已补登记实际 URL，避免定时任务因编码差异跳过该页面。
+
+### Fortnite v3.5 50v50 v2 模式补漏
+
+- 复核 [Epic v3.5 官方补丁](https://www.fortnite.com/news/v3-5-patch-notes?lang=en-US) 时发现 `50v50 v2` 只在旧卡片的基础 `50v50` 名称旁被隐含覆盖，实际规则已经变化：双方各有一辆反向航线巴士、地图显示交战前线、前期搜刮窗口更长，最终风暴圈开局可见且补给空投成批落入决战区。已新增 `fortnite-50v50-v2-2018`，使用中文规则说明和本地整理封面。

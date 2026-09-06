@@ -14823,5 +14823,35 @@
       "br"
     ],
     "isLtm": true
+  },
+  {
+    "id": "fortnite-50v50-v2-2018",
+    "game": "Fortnite",
+    "modeName": "50 对 50 v2（50v50 v2）",
+    "year": "2018",
+    "date": "2018-04-11",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "50v50",
+      "大队伍对抗",
+      "前线推进"
+    ],
+    "oneLineRule": "两支 50 人队伍从相反方向乘巴士进入地图，沿前线推进并在风暴收拢前集结，最后击败对方队伍赢得胜利。",
+    "mechanicChange": "模式把普通 BR 改成两支大队伍的前线对抗：双方各有一辆标记颜色的巴士，从相反方向飞过地图；地图上的虚线提示两队交战前线。开局有较长的搜刮窗口，最终风暴圈从一开始就显示，补给空投成批落入最终区域。",
+    "tempoImpact": "前期 10 分钟左右用于搜集装备和材料，队伍可以沿己方巴士路线分散落地；随着前线和风暴压缩空间，玩家必须逐步向决战区域汇合，后半段会从大范围搜索快速转入集中交火。",
+    "designObservation": "50v50 v2 用两辆巴士和地图前线把百人 BR 变成可读的阵营推进：玩家能快速判断己方集结方向，也能预期敌方出现区域。大队伍模式需要较高补给密度和明确的战线提示，才能避免队员在大地图上失去目标。",
+    "sourceUrl": "https://www.fortnite.com/news/v3-5-patch-notes?lang=en-US",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-04-11",
+    "launchLabel": "2018年4月11日，v3.5 版本期间轮换开放",
+    "launchNote": "Epic v3.5 官方补丁明确 50v50 v2：双方各有巴士、地图显示前线、前期搜刮与成批补给空投；与基础 50v50 分开记录。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/fortnite-50v50-v2-2018.svg"
   }
 ]
