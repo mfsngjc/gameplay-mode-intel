@@ -8788,5 +8788,185 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-bomb-squad-5v5-2022.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-mini-zone-2018",
+    "game": "PUBG Mobile",
+    "modeName": "迷你战场（Mini-Zone）",
+    "year": "2018",
+    "date": "2018-06-19",
+    "tags": [
+      "br-ltm",
+      "casual"
+    ],
+    "type": [
+      "小地图",
+      "高物资",
+      "高空投"
+    ],
+    "oneLineRule": "在较小地图中进行 100 人 BR，物资和空投密度约为普通对局的 3 倍，快速进入交战。",
+    "mechanicChange": "0.6.0 补丁把 Mini-Zone 放入 Arcade：缩小战场尺寸，同时提高资源和空投密度，压缩搜刮阶段。",
+    "tempoImpact": "资源更快成型、对手更容易相遇，开局到第一次交火的时间明显缩短，转移和战斗频率都更高。",
+    "designObservation": "用“更小空间 + 更高资源”把 BR 变成短局练习，保留生存结构的同时减少空窗时间。",
+    "sourceUrl": "https://www.pubgmobile.com/TW/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201806/731228.shtml",
+    "launchDate": "2018-06-19",
+    "launchLabel": "2018年6月19日 0.6.0 补丁",
+    "launchNote": "官方补丁确认 Mini-Zone 的 100 人、小地图、三倍物资与空投；轮换时间以客户端为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-mini-zone-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-quick-match-2019",
+    "game": "PUBG Mobile",
+    "modeName": "快速比赛（Quick Match）",
+    "year": "2019",
+    "date": "2019-06-11",
+    "tags": [
+      "casual",
+      "br-ltm"
+    ],
+    "type": [
+      "街机 BR",
+      "快速缩圈",
+      "短局"
+    ],
+    "oneLineRule": "在 Arcade 的快速比赛中用更短的节奏完成 BR 对局，物资和安全区节奏以当前轮换规则为准。",
+    "mechanicChange": "官方 0.13.0 补丁把 Quick Match 与 Mini-Zone、Sniper Training、War 一起纳入 Arcade 轮换，并明确了按周开放的模式入口。",
+    "tempoImpact": "相较 Classic，短局和更快的轮换让玩家能用较低时间成本反复练习落点、搜刮和残局决策。",
+    "designObservation": "快速比赛把完整 BR 的决策链压缩成一轮短反馈，适合作为玩家等待、热身和重复试错的入口。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201906/813644.shtml",
+    "launchDate": "2019-06-11",
+    "launchLabel": "2019年6月11日 0.13.0 补丁",
+    "launchNote": "官方补丁确认 Quick Match 的 Arcade 轮换位置；具体人数、缩圈和物资规则会随版本轮换变化。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-quick-match-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-sniper-training-2019",
+    "game": "PUBG Mobile",
+    "modeName": "狙击特训（Sniper Training）",
+    "year": "2019",
+    "date": "2019-06-11",
+    "tags": [
+      "warfare",
+      "casual"
+    ],
+    "type": [
+      "远程枪战",
+      "街机轮换",
+      "狙击练习"
+    ],
+    "oneLineRule": "在 Arcade 的狙击特训中集中使用远程武器进行快速对抗，模式按官方轮换时段开放。",
+    "mechanicChange": "0.13.0 补丁把 Sniper Training 列入 Arcade 的固定轮换，并与 War、Mini-Zone、Quick Match 分配不同开放日。",
+    "tempoImpact": "武器池和地图目标都把注意力集中到远距离观察、架枪和换位，单次暴露的惩罚更高但对局更短。",
+    "designObservation": "把单一武器关系抽出来做成短局训练，可以让玩家在低成本环境中反复练习瞄准、掩体和视线管理。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201906/813644.shtml",
+    "launchDate": "2019-06-11",
+    "launchLabel": "2019年6月11日 0.13.0 补丁",
+    "launchNote": "官方补丁确认 Sniper Training 的 Arcade 轮换；没有在该公告中展开完整人数与胜负细则。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-sniper-training-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-war-2019",
+    "game": "PUBG Mobile",
+    "modeName": "战争模式（War Mode）",
+    "year": "2019",
+    "date": "2019-06-11",
+    "tags": [
+      "warfare",
+      "casual"
+    ],
+    "type": [
+      "团队复活",
+      "积分击杀",
+      "街机轮换"
+    ],
+    "oneLineRule": "在 Arcade 的 War 模式中围绕持续复活和击杀积分进行团队对抗，开放时间按官方轮换安排。",
+    "mechanicChange": "0.13.0 补丁把 War 列入 Arcade 轮换，并与 Sniper Training、Mini-Zone、Quick Match 采用不同开放日。",
+    "tempoImpact": "持续复活和积分目标让玩家更快回到战斗，队伍会围绕交战热点和击杀效率持续拉扯。",
+    "designObservation": "War 模式将 BR 的单次淘汰压力改成可重复交战和积分累积，适合在保留枪战手感的同时提供高频练习。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201906/813644.shtml",
+    "launchDate": "2019-06-11",
+    "launchLabel": "2019年6月11日 0.13.0 补丁",
+    "launchNote": "官方补丁确认 War 的 Arcade 轮换；该公告未展开完整积分与复活细则，具体以客户端为准。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-war-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-ranked-assault-2025",
+    "game": "PUBG Mobile",
+    "modeName": "突袭（Assault）",
+    "year": "2025",
+    "date": "2025-07-24",
+    "tags": [
+      "warfare",
+      "casual"
+    ],
+    "type": [
+      "竞技场",
+      "团队对抗",
+      "随机地图"
+    ],
+    "oneLineRule": "在 Ranked Arena 轮换中进行 Assault 团队对抗，地图与其他竞技模式随机抽取，具体胜负条件以客户端规则为准。",
+    "mechanicChange": "3.9 官方页面把 Assault - The Ruins 列入限时 Ranked Arena，与团队死斗和 Domination 一起组成随机竞技轮换。",
+    "tempoImpact": "竞技场入口缩短了进入战斗的时间，随机地图让队伍需要快速读取地形并调整开局策略。",
+    "designObservation": "将多个小队竞技规则放入同一 Ranked Arena 入口，可以提高轮换新鲜感，同时用段位奖励维持重复游玩。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Official-Transformers-Collaboration/",
+    "launchDate": "2025-07-24",
+    "launchLabel": "2025年7月24日至9月2日 3.9 版本",
+    "launchNote": "官方页面确认 Assault - The Ruins（Ranked）进入限时竞技轮换；详细回合规则以客户端为准。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-ranked-assault-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-ranked-domination-2025",
+    "game": "PUBG Mobile",
+    "modeName": "占领（Domination）",
+    "year": "2025",
+    "date": "2025-07-24",
+    "tags": [
+      "warfare",
+      "casual"
+    ],
+    "type": [
+      "竞技场",
+      "区域控制",
+      "随机地图"
+    ],
+    "oneLineRule": "在 Ranked Arena 轮换中进行 Domination 团队区域控制，地图与其他竞技模式随机抽取，具体计分规则以客户端为准。",
+    "mechanicChange": "3.9 官方页面把 Domination - Town 列入限时 Ranked Arena，与 Assault、团队死斗一起随机开放并提供段位奖励。",
+    "tempoImpact": "区域控制会把队伍拉向多个争夺点，轮换地图又要求玩家迅速找到推进、驻守和换点的节奏。",
+    "designObservation": "把区域控制放入随机竞技轮换，可以让玩家在短局中练习从击杀思维切换到占点与资源分配。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Official-Transformers-Collaboration/",
+    "launchDate": "2025-07-24",
+    "launchLabel": "2025年7月24日至9月2日 3.9 版本",
+    "launchNote": "官方页面确认 Domination - Town（Ranked）进入限时竞技轮换；详细计分与占点规则以客户端为准。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-ranked-domination-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
