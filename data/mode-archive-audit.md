@@ -255,3 +255,7 @@
 - 复核 [Apex Legends Marked 补丁](https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes)：Pubs、Ranked、Mixtape 与 Wildcard 均是现有播放列表/模式卡；地图轮换、排位阶梯和匹配测试属于服务配置，不新增独立玩法。
 - 复核 [Fortnite 创作者路线图更新](https://www.fortnite.com/news/public-roadmap-for-fortnite-creators-announced?lang=en-US)：页面只更新 UEFN/创作工具路线图，没有新的可匹配玩法名称或胜负规则，不新增模式卡。
 - 进一步打开 [Apex Beast Mode 官方活动页](https://forums.ea.com/blog/apex-legends-game-info-hub-en/breakthrough-in-the-beast-mode-event/12042675) 和 [Temporal Chaos 官方活动页](https://www.ea.com/games/apex-legends/apex-legends/news/temporal-chaos-event)：`Power Sword Royale`、`Solos: Respawn Token`、`Straight Shot Revival` 和双持/轻机枪团队死斗已有完整卡片；`April Fools`、`Straight Shot Rumble` 只被官方点名但未公开本次完整规则，继续保留待复核说明，不套用其他变体规则。
+
+### Free Fire 2018–2024 “新模式”关键词反查
+
+- 复核 Garena 官方页面 97、170、454、485、680、811、892、917、1120、1170、1213、1266、1306、1332、1357、1385：页面中明确命名的 `Rampage: New Dawn`、`Lone Wolf`、`Football Squad`、`Coin Clash`、`Pet Smash`、`Triple Wolves`、`Shadow Hunter`、`Head Hunt`、`Clash Squad: Slay`、`Lone Wolf: Duo Active Skills`、`CS-Peak` 等均已与现有模式卡逐项匹配；其余内容是模式变体、地图、系统或武器规则，没有发现新的独立匹配模式。
