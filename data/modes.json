@@ -5187,5 +5187,592 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-clash-squad-random-events-2026.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-royale-arena-assault-2022",
+    "game": "PUBG Mobile",
+    "modeName": "皇家竞技场：突袭（Royale Arena: Assault）",
+    "year": "2022",
+    "date": "2022-04-07",
+    "tags": [
+      "objective",
+      "arena"
+    ],
+    "type": [
+      "团队死斗",
+      "随机安全区",
+      "竞技场"
+    ],
+    "oneLineRule": "在竞技场中与对手进行团队死斗，安全区会从经典地图的随机区域切入，迫使双方快速接战。",
+    "mechanicChange": "官方将 Royale Arena: Assault 作为 Unranked-Arena 的新玩法：队伍在旧地图的随机安全区碎片内交战，目标是先达到击杀分数；地图碎片和安全区变化让传统团队死斗拥有不同的空间节奏。",
+    "tempoImpact": "随机安全区缩短了寻找交战面的时间，队伍需要先判断落点和掩体，再用击杀分数把短回合优势滚起来。",
+    "designObservation": "把经典地图切成竞技场碎片，可以复用玩家熟悉的空间语言，同时通过随机落点控制每局的开场解题顺序。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60922/60923/60924/60926/m22609/202204/913942.shtml",
+    "launchDate": "2022-04-07",
+    "launchLabel": "2022年4月7日加入竞技场轮换",
+    "launchNote": "官方公告确认这是 Unranked-Arena 的新玩法；具体开放地图和轮换时间以客户端为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-royale-arena-assault-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-gear-front-2022",
+    "game": "PUBG Mobile",
+    "modeName": "齿轮前线（Gear Front）",
+    "year": "2022",
+    "date": "2022-09-29",
+    "tags": [
+      "br-core",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "技能选择",
+      "地图事件",
+      "快速转点"
+    ],
+    "oneLineRule": "在 BR 对局中选择并使用八种技能，通过扫描安全区、召唤载具、标记敌人或生成商店改变常规搜集与转点。",
+    "mechanicChange": "官方 2.2 公告新增 Gear Front：玩家从八种技能中选择，包括安全区分析、载具空投、补给扫描、滑翔玩偶、黑市、追踪、幸运背包和治疗烟雾；玩法支持 Nusa、Erangel、Livik 的指定轮换。",
+    "tempoImpact": "技能把信息、移动、补给和治疗压缩到一局中，队伍可以主动制造转点窗口，也会因为技能冷却形成新的交战时机。",
+    "designObservation": "技能型 BR 的关键是让能力改变决策顺序，而不是只增加火力；八种技能覆盖信息、资源和移动，能把同一张地图拆成不同的路线问题。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202209/922032.shtml",
+    "launchDate": "2022-09-29",
+    "launchLabel": "2022年9月29日至11月14日限时开放",
+    "launchNote": "官方列出 Nusa、Erangel、Livik 支持范围和八种技能；本卡将其归入 BR 下的 LTM。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-gear-front-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-martial-showdown-2023",
+    "game": "PUBG Mobile",
+    "modeName": "武术对决（Martial Showdown）",
+    "year": "2023",
+    "date": "2023-01-12",
+    "tags": [
+      "br-core",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "近战能力",
+      "动态区域"
+    ],
+    "oneLineRule": "在主题 BR 中收集武术能力并争夺特殊区域，让近战移动和短时爆发成为常规枪战之外的决策资源。",
+    "mechanicChange": "官方 2.4 更新将 Martial Showdown 列为新主题玩法，并把武术主题区域、能力和互动内容放进经典 BR 地图；玩家需要在搜集资源时判断是否进入高收益主题点。",
+    "tempoImpact": "近战能力和主题区域制造了更短的突袭窗口，队伍会在常规枪械交战与高收益热点之间反复切换。",
+    "designObservation": "主题玩法的价值在于把一个清晰的动作主题转化为空间选择；武术能力只有同时影响接近、脱离和争夺，才会成为 BR 的路线语言。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/m22521/202301/928128.shtml",
+    "launchDate": "2023-01-12",
+    "launchLabel": "2023年1月 2.4 版本加入",
+    "launchNote": "官方 2.4 更新公告确认 Martial Showdown 为新主题玩法；地区开放和具体轮换以客户端为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-martial-showdown-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-metro-royale-misty-port-2023",
+    "game": "PUBG Mobile",
+    "modeName": "地铁逃生：迷雾港（Metro Royale: Misty Port）",
+    "year": "2023",
+    "date": "2023-01-15",
+    "tags": [
+      "objective",
+      "economy",
+      "extraction"
+    ],
+    "type": [
+      "撤离搜集",
+      "动态事件",
+      "首领战"
+    ],
+    "oneLineRule": "进入迷雾港搜集高价值物资，在基础或进阶模式中处理首领和动态事件，并带着战利品撤离。",
+    "mechanicChange": "官方 Metro Royale 公告加入 Misty Port 新地图，提供 Basic 和 Advanced 两种风险层级；地图包含首领、动态事件和更高价值的搜集路线，玩家需要在收益与撤离风险之间做选择。",
+    "tempoImpact": "地图首领和动态事件把静态搜集变成连续的风险判断，队伍越深入越容易遇到更高价值和更高暴露。",
+    "designObservation": "搜打撤地图的深度来自收益曲线，而不是单纯扩大地图；基础与进阶层级让玩家先选择风险，再决定是否继续贪取资源。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60688/60689/60690/m22521/202212/927994.shtml",
+    "launchDate": "2023-01-15",
+    "launchLabel": "2023年初随 Metro Royale 更新加入",
+    "launchNote": "官方公告确认 Misty Port、Basic/Advanced 模式和动态事件；本卡按独立地铁逃生地图玩法记录。",
+    "gameplayTypes": [
+      "extraction"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-metro-royale-misty-port-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-zombies-edge-2023",
+    "game": "PUBG Mobile",
+    "modeName": "僵尸边缘（Zombie’s Edge）",
+    "year": "2023",
+    "date": "2023-09-14",
+    "tags": [
+      "br-core",
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "BR PVE",
+      "变异敌人",
+      "主题区域"
+    ],
+    "oneLineRule": "在 BR 地图中应对变异体、狂战士和撕裂者，探索 Aerolith Lab 并利用特殊能力和战利品穿过高危区域。",
+    "mechanicChange": "官方主题页面加入 Zombie’s Edge：地图会出现 Mutants、Berserkers、Rippers 和 Aerolith Lab，玩家可获取 Rage Berserker、变异拳套和变异刀等能力，在玩家对抗中插入 PVE 威胁。",
+    "tempoImpact": "变异敌人把热点从单纯资源点变成多方噪声源，队伍必须在清理 PVE、抢资源和防范第三方之间分配时间。",
+    "designObservation": "BR PVE 事件需要让敌人既能制造路线压力又不能夺走玩家主导权；可预测的实验室和能力收益让玩家愿意主动接近风险。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/ZOMBILE_EDGE/",
+    "launchDate": "2023-09-14",
+    "launchLabel": "2023年9月14日至11月13日主题玩法",
+    "launchNote": "官方主题页列出变异体、狂战士、撕裂者和 Aerolith Lab；具体轮换以活动页面为准。",
+    "gameplayTypes": [
+      "br",
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-zombies-edge-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-dragon-ball-super-themed-2023",
+    "game": "PUBG Mobile",
+    "modeName": "龙珠超主题玩法（Dragon Ball Super Themed Mode）",
+    "year": "2023",
+    "date": "2023-07-15",
+    "tags": [
+      "br-core",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "龙珠收集",
+      "许愿奖励"
+    ],
+    "oneLineRule": "在 BR 对局中收集七颗龙珠，召唤神龙获得愿望奖励，并围绕主题资源点重新规划搜集和交战路线。",
+    "mechanicChange": "官方 Dragon Ball Super 活动把七颗龙珠分散到主题区域，集齐后可召唤 Shenron；主题能力、资源点和角色化装置改变了常规 BR 的搜集优先级。",
+    "tempoImpact": "七颗龙珠形成跨区域的公共目标，队伍需要在追求愿望奖励与保持安全转点之间持续权衡。",
+    "designObservation": "跨 IP 主题最有效的结构是把角色幻想变成可读的目标链；收集、护送和召唤让联动内容参与对局，而不是只停留在外观层。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/dragon-ball-super/",
+    "launchDate": "2023-07-15",
+    "launchLabel": "2023年7月15日至9月4日限时开放",
+    "launchNote": "官方活动页确认七颗龙珠与 Shenron 召唤；本卡记录叠加在 BR 上的主题规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-dragon-ball-super-themed-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-battle-royale-dragon-ball-super-2023",
+    "game": "PUBG Mobile",
+    "modeName": "龙珠超：独立大逃杀（Battle Royale: Dragon Ball Super）",
+    "year": "2023",
+    "date": "2023-07-15",
+    "tags": [
+      "br-core",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "独立 BR 地图",
+      "能力收集",
+      "主题对局"
+    ],
+    "oneLineRule": "在 1.6×1.6 公里主题地图中进行独立 BR，对局围绕龙珠超能力、资源和区域控制展开。",
+    "mechanicChange": "官方活动页将 Battle Royale: Dragon Ball Super 单列为独立玩法，使用 1.6×1.6 公里主题地图和专属规则；它与经典地图上的 Dragon Ball Super 主题叠加玩法分开记录。",
+    "tempoImpact": "独立地图把联动能力和资源密度重新编排，缩短了发现主题内容的时间，也让每局更集中于主题区域之间的争夺。",
+    "designObservation": "联动独立模式的设计重点是重做空间和资源节奏；单独地图可以让能力成为基础规则，而不是对经典 BR 的局部覆盖。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/dragon-ball-super/",
+    "launchDate": "2023-07-15",
+    "launchLabel": "2023年7月15日至9月4日限时开放",
+    "launchNote": "官方活动页明确列出独立的 1.6×1.6 公里 Battle Royale: Dragon Ball Super；与主题叠加玩法分卡记录。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-battle-royale-dragon-ball-super-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-free-for-all-2023",
+    "game": "Free Fire",
+    "modeName": "自由混战（Free For All）",
+    "year": "2023",
+    "date": "2023-01-11",
+    "tags": [
+      "objective",
+      "arena"
+    ],
+    "type": [
+      "个人混战",
+      "击杀计分",
+      "军火库"
+    ],
+    "oneLineRule": "所有玩家各自为战，在限定时间内争夺击杀分数；地图上的军火库提供额外武器和资源选择。",
+    "mechanicChange": "官方更新将 Free For All 作为个人对抗玩法，并加入可争夺的 Arsenals；玩家不再依赖固定小队分工，而是通过击杀、换枪和抢占资源点建立优势。",
+    "tempoImpact": "没有队友复活和分摊火力后，玩家需要更快读懂威胁方向；军火库把高价值交战点变成持续争夺的节奏锚点。",
+    "designObservation": "个人混战的核心不是简单增加人数，而是让资源点、击杀分数和复活位置共同维持可追赶的竞争。",
+    "sourceUrl": "https://ff.garena.com/en/article/968",
+    "launchDate": "2023-01-11",
+    "launchLabel": "2023年1月更新加入",
+    "launchNote": "官方更新页确认 Free For All 和 Arsenals；具体地图与轮换由版本客户端决定。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-free-for-all-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-mini-peak-2024",
+    "game": "Free Fire",
+    "modeName": "迷你巅峰（Mini Peak）",
+    "year": "2024",
+    "date": "2024-06-26",
+    "tags": [
+      "br-core",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "浮空区域",
+      "记忆传送门",
+      "复活资源"
+    ],
+    "oneLineRule": "在 BR 中通过 Memory Portal 登上漂浮的 Mini Peak，争夺 Memory Points 和岛上的补给，再回到主战场继续对局。",
+    "mechanicChange": "官方七周年活动在 Bermuda 上空加入 Mini Peak：玩家通过 Memory Portals 抵达浮空岛，岛上提供独立资源和复活相关收益，Memory Points 会改变队伍的路线价值。",
+    "tempoImpact": "浮空岛提供一次短暂脱离地表战线的机会，传送门位置和岛上资源会把队伍从安全搜刮路线拉向公共热点。",
+    "designObservation": "临时空中空间可以作为 BR 的第二层路线，但必须有清晰的进入、收益和返回条件，才能让冒险感转化为可读的战略选择。",
+    "sourceUrl": "https://ff.garena.com/en/article/1357/",
+    "launchDate": "2024-06-26",
+    "launchLabel": "2024年6月26日七周年活动加入",
+    "launchNote": "官方活动页确认 Mini Peak、Memory Portals 和 Memory Points；本卡将其归入 BR 下的 LTM。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-mini-peak-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-clash-squad-first-person-2024",
+    "game": "Free Fire",
+    "modeName": "枪王对决：第一人称（Clash Squad: First-Person）",
+    "year": "2024",
+    "date": "2024-06-26",
+    "tags": [
+      "objective",
+      "arena"
+    ],
+    "type": [
+      "回合制小队",
+      "第一人称视角",
+      "快速购买"
+    ],
+    "oneLineRule": "在 Clash Squad 的回合制小队对抗中切换第一人称视角，用更快的移动和更直接的瞄准反馈完成短回合攻防。",
+    "mechanicChange": "官方七周年内容为 Clash Squad 增加第一人称视角选项，同时调整移动和射击反馈；核心买枪、回合和淘汰结构保留，观察信息与枪线表达发生变化。",
+    "tempoImpact": "第一人称提高近距离信息密度和瞄准沉浸感，短回合中的预瞄、转角和快速换位更容易成为胜负节点。",
+    "designObservation": "同一套回合制规则切换视角，就能改变玩家对空间和枪线的理解；视角变化应服务于决策速度，而不是只改变画面。",
+    "sourceUrl": "https://ff.garena.com/en/article/1357/",
+    "launchDate": "2024-06-26",
+    "launchLabel": "2024年6月26日随七周年活动加入",
+    "launchNote": "官方公告确认 Clash Squad 的第一人称视角和移动、射击体验调整；本卡作为规则变体记录。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-clash-squad-first-person-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-gloo-nova-2024",
+    "game": "Free Fire",
+    "modeName": "Gloo Nova（Gloo Nova）",
+    "year": "2024",
+    "date": "2024-09-01",
+    "tags": [
+      "br-core",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "Gloo Wall 事件",
+      "特殊区域",
+      "临时装备"
+    ],
+    "oneLineRule": "在 BR 的 Gloo Nova 事件中利用 Gloo Wall 生成器、特殊区域和临时装置重新规划掩体与推进路线。",
+    "mechanicChange": "官方更新在 BR 加入 Gloo Nova：Bermuda 的 Factory 被 Gloo 覆盖并形成新资源区，玩家可通过 Gloo Makers 和相关装置获得更多 Gloo Wall，改变掩体经济。",
+    "tempoImpact": "掩体供应增加会提升队伍主动推进和封锁路线的能力，Factory 等高价值区域也会成为更稳定的交战锚点。",
+    "designObservation": "把基础防御资源变成地图事件，可以让熟悉的 Gloo Wall 从消耗品升级为路线和空间控制工具。",
+    "sourceUrl": "https://ff.garena.com/en/article/1385/",
+    "launchDate": "2024-09-01",
+    "launchLabel": "2024年9月版本加入",
+    "launchNote": "官方更新页确认 Gloo Nova、Factory 变化和 Gloo Makers；本卡聚焦 BR 内的临时资源规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-gloo-nova-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-shadow-force-2024",
+    "game": "PUBG Mobile",
+    "modeName": "暗影力量（Shadow Force）",
+    "year": "2024",
+    "date": "2024-02-08",
+    "tags": [
+      "br-core",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "额外复活",
+      "独立战场",
+      "近战能力"
+    ],
+    "oneLineRule": "在 BR 对局中获得一次额外复活机会；首次被淘汰后进入独立的 Respawn Battle 战场，完成任务或找到紧急复活道具即可回到主战场。",
+    "mechanicChange": "官方 Shadow Force 主题玩法在开局前八分钟提供额外复活机会。被淘汰的玩家会进入与主地图隔离的 Respawn Battle 岛屿，在随机复活点限时互动或使用 Emergency Respawn 物品，成功后回到原对局；主题区域还加入 Shadow Blade、抓钩和侦察傀儡。",
+    "tempoImpact": "淘汰不再立即结束个体的对局，队伍会围绕复活点形成第二条战线；主战场的追击、救援和岛屿任务互相牵制，延长了中前期的决策窗口。",
+    "designObservation": "复活系统的关键是把失败转化为一次高风险任务，而不是无条件回归；隔离战场、一次性进入和限时复活点共同控制了额外生命的价值。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
+    "launchDate": "2024-02-08",
+    "launchLabel": "2024年2月8日随 Shadow Force 主题玩法加入",
+    "launchNote": "官方页面确认 Respawn Battle、额外复活、Shadow Blade、抓钩和 Proxy Scout；本卡聚焦复活规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-shadow-force-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-jujutsu-kaisen-themed-2021",
+    "game": "PUBG Mobile",
+    "modeName": "咒术回战主题玩法（Jujutsu Kaisen）",
+    "year": "2021",
+    "date": "2021-08",
+    "tags": [
+      "br-core",
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "线索收集",
+      "召唤首领"
+    ],
+    "oneLineRule": "在 Erangel 和 Livik 中寻找被封印的宿傩手指，依据线索收集咒物，并用诅咒尸体手雷召唤首领换取物资。",
+    "mechanicChange": "官方合作页面把 Jujutsu Kaisen 角色带入 Erangel 和 Livik：玩家通过 Cycle 系统线索寻找 Cursed Object Crate，偶尔拾取 Cursed Corpse Grenade，召唤并击败首领获得补给。",
+    "tempoImpact": "线索把队伍从常规搜刮路线带向主题建筑，召唤首领又会制造一段可被第三方听见和干扰的公共战斗。",
+    "designObservation": "联动主题通过“线索—召唤—奖励”链条进入 BR，玩家先承担探索成本，再用首领战把主题资源转化成公开争夺。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/JUJUTSUKAISEN/",
+    "launchDate": "2021-08",
+    "launchLabel": "2021年主题合作玩法",
+    "launchNote": "官方合作页确认 Erangel/Livik、宿傩手指、诅咒尸体手雷和首领奖励；原页面未显示精确开放日。",
+    "gameplayTypes": [
+      "br",
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-jujutsu-kaisen-themed-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-unfail-2025",
+    "game": "PUBG Mobile",
+    "modeName": "Unfail：猎手与幸存者（Unfail）",
+    "year": "2025",
+    "date": "2025-09-05",
+    "tags": [
+      "pve",
+      "objective",
+      "arena"
+    ],
+    "type": [
+      "1v4 追逃",
+      "出口逃生",
+      "非对称目标"
+    ],
+    "oneLineRule": "一名 Predator 追击四名 Survivors；Predator 通过淘汰获胜，Survivors 则需要协作完成路线并从 Exit Gate 逃离。",
+    "mechanicChange": "官方 4.0 页面列出 Unfail 为 1v4 追逃玩法：Predator 负责追捕，四名 Survivors 以逃离出口为目标；页面提示该玩法会在后续公告确定正式开放时间。",
+    "tempoImpact": "非对称目标让信息和时间成为主要资源，幸存者必须分工开路、拉扯和救援，猎手则通过压缩出口路线制造追击节奏。",
+    "designObservation": "1v4 玩法的平衡不只靠数值，而要靠目标暴露、出口进度和追击信息在不同阶段交替领先。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-400/",
+    "launchDate": "2025-09-05",
+    "launchLabel": "2025年4.0 版本页面预告",
+    "launchNote": "官方 4.0 页面确认 1v4 追逃规则，但同时注明正式开放时间以未来公告为准；本卡保持待上线标记。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-unfail-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-droid-apocalypse-2022",
+    "game": "Free Fire",
+    "modeName": "机器人末日（Droid Apocalypse）",
+    "year": "2022",
+    "date": "2022-08-01",
+    "tags": [
+      "pve",
+      "objective",
+      "arena"
+    ],
+    "type": [
+      "阵营转化",
+      "三回合计分",
+      "猎人追捕"
+    ],
+    "oneLineRule": "12 名玩家在三回合中扮演不同机器人，机器人感染人类；当剩余人类变少后，他们会转为猎人并永久淘汰机器人。",
+    "mechanicChange": "官方五周年公告新增 Droid Apocalypse：玩家选择机器人类型并转换人类，剩余人类在临界人数后成为强化猎人；三回合结束时按表现计分，最高分者获胜。",
+    "tempoImpact": "阵营会在回合内动态翻转，前期扩散、后期追捕形成明显的节奏拐点；玩家需要判断何时冒险感染，何时保存位置。",
+    "designObservation": "感染玩法把人数优势转成可逆资源，临界人数触发猎人阶段后，后期不再只是前期滚雪球，而是重新分配主动权。",
+    "sourceUrl": "https://ff.garena.com/en/article/813",
+    "launchDate": "2022-08-01",
+    "launchLabel": "2022年8月五周年限时玩法",
+    "launchNote": "官方五周年公告确认 12 人、机器人转化、人类猎人和三回合计分规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-droid-apocalypse-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-coin-clash-2022",
+    "game": "Free Fire",
+    "modeName": "硬币对决（Coin Clash）",
+    "year": "2022",
+    "date": "2022-10-22",
+    "tags": [
+      "objective",
+      "arena",
+      "economy"
+    ],
+    "type": [
+      "限时竞技",
+      "硬币目标",
+      "近距离对抗"
+    ],
+    "oneLineRule": "在限定时间内围绕硬币目标展开近距离战斗，利用击杀和拾取把资源优势转化为胜利。",
+    "mechanicChange": "官方 Booyah Day 公告将 Coin Clash 列为限时新模式；它把活动硬币和短回合战斗结合，玩家需要在收集目标与击退对手之间做即时取舍。",
+    "tempoImpact": "硬币目标让交战点不断移动，玩家很难只守一个安全位置；目标暴露和近距离枪战共同推动快速回合。",
+    "designObservation": "活动货币只有在局内承担空间目标时才会产生玩法价值；Coin Clash 用可见的资源争夺替代单纯击杀计分。",
+    "sourceUrl": "https://ff.garena.com/en/article/892/",
+    "launchDate": "2022-10-22",
+    "launchLabel": "2022年10月22日 Booyah Day 限时模式",
+    "launchNote": "官方公告确认 Coin Clash 为 Booyah Day 限时新模式；页面没有公开完整胜负数值，因此只记录已确认的目标结构。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-coin-clash-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-football-squad-2022",
+    "game": "Free Fire",
+    "modeName": "足球小队（Football Squad Mode）",
+    "year": "2022",
+    "date": "2022-12-02",
+    "tags": [
+      "objective",
+      "arena",
+      "space"
+    ],
+    "type": [
+      "4v4 进球",
+      "位置分工",
+      "随机强化"
+    ],
+    "oneLineRule": "4v4 在足球场上争取更多进球；玩家选择前锋或后卫位置，并利用随机出现的 Gloo Wall 和冰冻强化。",
+    "mechanicChange": "官方 Winterlands 补丁加入 Football Squad：前锋可使用 Tatsuya 的冲刺技能，后卫可使用 Chrono 的护盾技能；随机强化让射门和防守回合出现短时变化。",
+    "tempoImpact": "位置分工把枪战习惯转成球场线路，随机强化会在进攻与回防之间制造新的短窗口。",
+    "designObservation": "轻量休闲模式通过明确位置能力让非枪战目标也有团队分工，胜负依然由可读的进球结果收束。",
+    "sourceUrl": "https://ff.garena.com/en/article/917",
+    "launchDate": "2022-12-02",
+    "launchLabel": "2022年12月2日开放",
+    "launchNote": "官方 Winterlands 补丁确认 4v4、前锋/后卫位置和随机强化；本卡归入其他休闲玩法。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-football-squad-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-old-peak-2024",
+    "game": "Free Fire",
+    "modeName": "旧峰会（Old Peak）",
+    "year": "2024",
+    "date": "2024-06-26",
+    "tags": [
+      "br-core",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "迷你 BR",
+      "11人对局",
+      "怀旧地图"
+    ],
+    "oneLineRule": "在七周年活动的迷你 BR 中与另外 11 名玩家争夺 Old Peak，利用小地图和快速资源循环尽快完成一局。",
+    "mechanicChange": "官方七周年公告把 Old Peak 作为独立的快速迷你 BR 玩法，场上只有 12 名玩家；它复刻旧 Bermuda Peak 的视觉与资源记忆，并缩短了对局空间。",
+    "tempoImpact": "玩家数量和地图尺寸都压缩后，落地到首次交战的时间更短，路线判断和快速搜集比长线运营更重要。",
+    "designObservation": "怀旧内容不只是复制旧地图；缩小参与人数和空间，才能把熟悉地标转成一局可快速完成的活动玩法。",
+    "sourceUrl": "https://ff.garena.com/en/article/1365",
+    "launchDate": "2024-06-26",
+    "launchLabel": "2024年6月26日七周年限时玩法",
+    "launchNote": "官方公告明确称 Old Peak 为 12 人的快速 mini BR；本卡与 Mini Peak 浮空区域分开记录。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-old-peak-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-zombie-graveyard-2024",
+    "game": "Free Fire",
+    "modeName": "僵尸墓园（Zombie Graveyard）",
+    "year": "2024",
+    "date": "2024-06-26",
+    "tags": [
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "合作 PVE",
+      "僵尸波次",
+      "小队生存"
+    ],
+    "oneLineRule": "4 到 5 名玩家组队抵抗僵尸潮，在限定活动流程中清理敌人并完成生存目标。",
+    "mechanicChange": "官方七周年公告把 Zombie Graveyard 描述为 Zombie Uprising 的回归版本：4 到 5 名玩家需要协作击败一波波僵尸才能获胜。",
+    "tempoImpact": "固定人数和连续敌潮让队伍必须在火力分配、救援和资源消耗之间循环决策，个人击杀无法替代协作。",
+    "designObservation": "合作 PVE 的紧张感来自持续的资源曲线；复用旧模式名称时，通过队伍规模和波次结构让玩家迅速理解目标。",
+    "sourceUrl": "https://ff.garena.com/en/article/1365",
+    "launchDate": "2024-06-26",
+    "launchLabel": "2024年6月26日七周年活动回归",
+    "launchNote": "官方公告确认 4–5 人合作、僵尸潮和胜利目标；页面称其为 Zombie Uprising 的回归版本。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-zombie-graveyard-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]

@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 16,
-      "coverCount": 16,
-      "readableDescriptionCount": 16,
+      "modeCount": 26,
+      "coverCount": 26,
+      "readableDescriptionCount": 26,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -343,30 +343,49 @@
         "pubgm-titan-last-stand-2021",
         "pubgm-insectoid-2021",
         "pubgm-mirror-world-2021",
-        "pubgm-vs-ai-2021"
+        "pubgm-vs-ai-2021",
+        "pubgm-royale-arena-assault-2022",
+        "pubgm-gear-front-2022",
+        "pubgm-martial-showdown-2023",
+        "pubgm-metro-royale-misty-port-2023",
+        "pubgm-zombies-edge-2023",
+        "pubgm-dragon-ball-super-themed-2023",
+        "pubgm-battle-royale-dragon-ball-super-2023",
+        "pubgm-shadow-force-2024",
+        "pubgm-jujutsu-kaisen-themed-2021",
+        "pubgm-unfail-2025"
       ],
       "officialSourceUrls": [
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202011/874641.shtml",
+        "https://www.pubgmobile.com/en/event/payload/",
+        "https://www.pubgmobile.com/en/event/WOW/news.shtml",
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202109/900286.shtml",
         "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201904/804220.shtml",
         "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201906/813644.shtml",
-        "https://www.pubgmobile.com/en/event/WOW/news.shtml",
-        "https://www.pubgmobile.com/en/event/devtalk/",
-        "https://www.pubgmobile.com/en/event/payload/",
-        "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54203/m22142/202111/904670.shtml",
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/201912/839688.shtml",
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/202002/849328.shtml",
-        "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/202101/880069.shtml",
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202009/868877.shtml",
-        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202011/874641.shtml",
-        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202109/900286.shtml",
-        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202105/889275.shtml"
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/202101/880069.shtml",
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202105/889275.shtml",
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54203/m22142/202111/904670.shtml",
+        "https://www.pubgmobile.com/en/event/devtalk/",
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60922/60923/60924/60926/m22609/202204/913942.shtml",
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202209/922032.shtml",
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/m22521/202301/928128.shtml",
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60688/60689/60690/m22521/202212/927994.shtml",
+        "https://www.pubgmobile.com/en/event/ZOMBILE_EDGE/",
+        "https://www.pubgmobile.com/en/event/dragon-ball-super/",
+        "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
+        "https://www.pubgmobile.com/en/event/JUJUTSUKAISEN/",
+        "https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-400/"
       ],
-      "notes": "本轮重点检查 0.12、0.13、0.16、0.17、1.0、1.2、1.4、1.6、1.7 官方版本页，以及 Metro Royale、Payload、World of Wonder 页面；仍需继续检查其余版本。"
+      "notes": "已回溯 0.12–4.0 版本及 2023–2025 主题玩法页面，新增 Gear Front、Royale Arena: Assault、Martial Showdown、Misty Port、Zombie’s Edge、Dragon Ball Super、Shadow Force、Jujutsu Kaisen、Unfail 等玩法；仍需继续覆盖 2023 年后及更早的版本公告。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 13,
-      "coverCount": 13,
-      "readableDescriptionCount": 13,
+      "modeCount": 22,
+      "coverCount": 22,
+      "readableDescriptionCount": 22,
       "modeIds": [
         "free-fire-clash-squad-2019",
         "free-fire-bomb-squad-2019",
@@ -380,22 +399,38 @@
         "free-fire-lone-wolf-duo-skills-2024",
         "free-fire-craftland-2022",
         "free-fire-undersea-mystery-2026",
-        "free-fire-clash-squad-random-events-2026"
+        "free-fire-clash-squad-random-events-2026",
+        "free-fire-free-for-all-2023",
+        "free-fire-mini-peak-2024",
+        "free-fire-clash-squad-first-person-2024",
+        "free-fire-gloo-nova-2024",
+        "free-fire-droid-apocalypse-2022",
+        "free-fire-coin-clash-2022",
+        "free-fire-football-squad-2022",
+        "free-fire-old-peak-2024",
+        "free-fire-zombie-graveyard-2024"
       ],
       "officialSourceUrls": [
+        "https://ff.garena.com/en/article/67/",
+        "https://ff.garena.com/en/article/253/",
+        "https://ff.garena.com/en/article/1332/",
+        "https://ff.garena.com/en/article/1456/",
+        "https://ff.garena.com/en/article/485",
+        "https://ff.garena.com/en/article/1523/",
         "https://ff.garena.com/en/article/1213/",
         "https://ff.garena.com/en/article/1266/",
         "https://ff.garena.com/en/article/1306/",
-        "https://ff.garena.com/en/article/1332/",
-        "https://ff.garena.com/en/article/1456/",
-        "https://ff.garena.com/en/article/1523/",
+        "https://ff.garena.com/en/article/735/",
         "https://ff.garena.com/en/article/1640/",
-        "https://ff.garena.com/en/article/253/",
-        "https://ff.garena.com/en/article/485",
-        "https://ff.garena.com/en/article/67/",
-        "https://ff.garena.com/en/article/735/"
+        "https://ff.garena.com/en/article/968",
+        "https://ff.garena.com/en/article/1357/",
+        "https://ff.garena.com/en/article/1385/",
+        "https://ff.garena.com/en/article/813",
+        "https://ff.garena.com/en/article/892/",
+        "https://ff.garena.com/en/article/917",
+        "https://ff.garena.com/en/article/1365"
       ],
-      "notes": "本轮重点检查 2019–2026 官方补丁档案与模式文章；仍需继续分页核对早期版本和地区差异。"
+      "notes": "已回溯 2019–2026 年官方更新页，新增 Free For All、Mini Peak、Clash Squad 第一人称、Gloo Nova、Droid Apocalypse、Coin Clash、Football Squad、Old Peak、Zombie Graveyard 等玩法；仍需继续覆盖更早的模式轮换和地区版本差异。"
     }
   }
 }
