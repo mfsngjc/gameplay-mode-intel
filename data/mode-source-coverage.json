@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 67,
-      "coverCount": 67,
-      "readableDescriptionCount": 67,
+      "modeCount": 69,
+      "coverCount": 69,
+      "readableDescriptionCount": 69,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -394,7 +394,9 @@
         "pubgm-golden-dynasty-theme-arena-2025",
         "pubgm-steampunk-frontier-2025",
         "pubgm-elimination-skillfest-2025",
-        "pubgm-battle-blitz-2025"
+        "pubgm-battle-blitz-2025",
+        "pubgm-metro-theme-2020",
+        "pubgm-winter-festival-2020"
       ],
       "officialSourceUrls": [
         "https://pubgmobile.jp/version-3-7-0-patch-notes-20250308/",
@@ -403,6 +405,7 @@
         "https://tencent.pk/news/2026-03-11-v4-3-update-announcement/",
         "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201904/804220.shtml",
         "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201906/813644.shtml",
+        "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/202011/874641.shtml",
         "https://www.pubgmobile.com/en/event/Dinoground/",
         "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
         "https://www.pubgmobile.com/en/event/Golden-Dynasty/",
@@ -445,13 +448,13 @@
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/m22521/202301/928128.shtml",
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60922/60923/60924/60926/m22609/202204/913942.shtml"
       ],
-      "notes": "已回溯 0.12–4.3 版本及 2020–2026 主题玩法页面；本轮补入 0.18.0 的 Bluehole、Jungle Adventure，二周年 Brothers in Arms/Hunt Game/Space Wars，3.7 Golden Dynasty 与主题竞技场，3.8 Steampunk Frontier 及 WOW 的 Elimination Skillfest、Battle Blitz。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
+      "notes": "已回溯 0.12–4.3 版本及 2020–2026 主题玩法页面；本轮补入 1.1 的 Metro 主题玩法与 Winter Festival 主题。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 74,
-      "coverCount": 74,
-      "readableDescriptionCount": 74,
+      "modeCount": 76,
+      "coverCount": 76,
+      "readableDescriptionCount": 76,
       "modeIds": [
         "free-fire-clash-squad-2019",
         "free-fire-bomb-squad-2019",
@@ -526,7 +529,9 @@
         "free-fire-arena-showdown-2026",
         "free-fire-saddle-brawl-2026",
         "free-fire-gloo-wall-relay-2025",
-        "free-fire-target-arcade-2020"
+        "free-fire-target-arcade-2020",
+        "free-fire-football-fire-social-island-2022",
+        "free-fire-bomb-squad-5v5-2022"
       ],
       "officialSourceUrls": [
         "https://ff.garena.com/en-pk/article/641/",
@@ -584,7 +589,7 @@
         "https://ff.garena.com/id/article/1150",
         "https://ff.garena.com/id/article/209/"
       ],
-      "notes": "已回溯 2018–2026 的公开官方资料，覆盖 OB47–OB54、Craftland、周年活动与早期模式；本轮补入 2020 BOOYAH Day 的 Target Arcade（官方仅确认小游戏上线，细节待客户端确认）。仍需继续核对区域公告、早期活动和后续版本空窗。"
+      "notes": "已回溯 2018–2026 的公开官方资料，覆盖 OB47–OB54、Craftland、周年活动与早期模式；本轮补入 2022 Winterlands 补丁的 Football Fire - Social Island 与 Bomb Squad 5v5。仍需继续核对区域公告、早期活动和后续版本空窗。"
     }
   }
 }

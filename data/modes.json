@@ -8667,5 +8667,126 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-battle-blitz-2025.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-metro-theme-2020",
+    "game": "PUBG Mobile",
+    "modeName": "地铁主题玩法（Metro Theme）",
+    "year": "2020",
+    "date": "2020-11-10",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "地图主题",
+      "地铁站",
+      "辐射区"
+    ],
+    "oneLineRule": "在经典 Erangel 中探索地下地铁站、辐射区和随机出现的地铁线路，利用列车快速转移并寻找主题资源。",
+    "mechanicChange": "1.1 版本把 Metro 主题内容嵌入 Classic Erangel：地下站点、两条随机出现的地铁线路和辐射区改变了传统 BR 的路线与风险判断。",
+    "tempoImpact": "地铁线路提供高速但可预测的转移路径，辐射区又会限制停留时间，队伍需要在抢资源和离开地下空间之间快速决策。",
+    "designObservation": "把独立题材的交通网络嵌入经典地图，可以在不重做整张地图的情况下增加一层路线博弈和空间记忆。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/202011/874641.shtml",
+    "launchDate": "2020-11-10",
+    "launchLabel": "2020年11月10日 1.1 版本",
+    "launchNote": "官方补丁将 Metro 与 Winter Festival 并列为新主题玩法；本条只记录 Classic Erangel 的 Metro 主题层，不与 Metro Royale 撤离模式合并。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-metro-theme-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-winter-festival-2020",
+    "game": "PUBG Mobile",
+    "modeName": "冬季节日主题（Winter Festival Theme）",
+    "year": "2020",
+    "date": "2020-12",
+    "tags": [
+      "br-ltm",
+      "casual"
+    ],
+    "type": [
+      "节日主题",
+      "冰面移动",
+      "雪球互动"
+    ],
+    "oneLineRule": "冬季主题覆盖 Erangel：海面结冰、冬季城堡会随机出现，玩家可以进行雪球互动和滑雪移动。",
+    "mechanicChange": "1.1 版本从 12 月起在 Erangel 加入冬季主题，冰面、随机冬季城堡、小屋和礼物树把原本的地图路线扩展为节日探索节点。",
+    "tempoImpact": "冰面和滑雪改变了跨水域移动方式，随机城堡则制造新的争夺点；玩家需要在节日互动与正常搜刮之间分配时间。",
+    "designObservation": "节日主题用低门槛移动和社交互动改变 BR 的空间感，让熟悉地图在短期内获得新的路线和聚集点。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/202011/874641.shtml",
+    "launchDate": "2020-12",
+    "launchLabel": "2020年12月起 1.1 版本主题活动",
+    "launchNote": "官方补丁确认冬季主题从 12 月起开放；具体轮换时间、冰面范围和活动奖励以客户端为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-winter-festival-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-football-fire-social-island-2022",
+    "game": "Free Fire",
+    "modeName": "足球火力：社交岛（Football Fire - Social Island）",
+    "year": "2022",
+    "date": "2022-11-16",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "社交岛",
+      "足球对抗",
+      "限时计分"
+    ],
+    "oneLineRule": "在 Social Island 的 6 分钟足球对局中，用 Football Shooter 把球射入球门，进球更多的一方获胜。",
+    "mechanicChange": "官方 Winterlands 补丁把足球从装饰互动扩展成独立社交岛玩法：玩家用 Football Shooter 控球和射门，并以 6 分钟内的进球数决定胜负。",
+    "tempoImpact": "短时限和持续争球让玩家频繁在进攻、回防与抢位置之间切换，比赛节奏比普通社交岛互动更集中。",
+    "designObservation": "在非枪战空间中保留“争夺—推进—得分”的清晰循环，可以让社交大厅同时承担轻竞技和休闲聚会功能。",
+    "sourceUrl": "https://ff.garena.com/en/article/917",
+    "launchDate": "2022-11-16",
+    "launchLabel": "2022年11月16日 Winterlands 补丁",
+    "launchNote": "官方补丁确认 Football Fire 的 6 分钟时长、Football Shooter 和进球胜负条件。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-football-fire-social-island-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-bomb-squad-5v5-2022",
+    "game": "Free Fire",
+    "modeName": "爆破小队 5v5（Bomb Squad 5v5）",
+    "year": "2022",
+    "date": "2022-11-16",
+    "tags": [
+      "bomb",
+      "warfare"
+    ],
+    "type": [
+      "5v5 爆破",
+      "全员携弹",
+      "无倒地"
+    ],
+    "oneLineRule": "5v5 爆破对局中，进攻方每名玩家都携带炸弹并可独立引爆；取消倒地救援，先完成爆破目标或消灭对手的一方获胜。",
+    "mechanicChange": "官方 Winterlands 补丁重做 Bomb Squad 5v5：扩大出生区、取消倒地、让全员携带炸弹并加快回合节奏，进攻方可以用多人假动作分散防守。",
+    "tempoImpact": "全员携弹提高了进攻威胁，取消倒地又缩短了容错窗口；防守方必须同时处理多个引爆点和更快的换位。",
+    "designObservation": "把爆破责任从单一持包者扩散到整队，会让信息欺骗和同步推进变得更重要，同时用取消倒地强化回合的决断感。",
+    "sourceUrl": "https://ff.garena.com/en/article/917",
+    "launchDate": "2022-11-16",
+    "launchLabel": "2022年11月16日 Winterlands 补丁",
+    "launchNote": "官方补丁确认 Bomb Squad 5v5 的全员携弹、取消倒地、扩大出生区和更快节奏；地图细节以客户端版本为准。",
+    "gameplayTypes": [
+      "bomb",
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-bomb-squad-5v5-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
