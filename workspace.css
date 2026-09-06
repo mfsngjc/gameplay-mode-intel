@@ -540,6 +540,9 @@
 .map-card-info { padding: 18px; }
 .map-card-info h2 { margin: 0 0 7px; font-size: 19px; }
 .map-card-info p { font-size: 11px; color: #80877d; margin: 0 0 18px; }
+.map-card-info .map-card-description { min-height: 50px; margin: -6px 0 14px; color: #5f6c5d; line-height: 1.65; }
+.map-card-info .map-card-facts { margin: -4px 0 14px; color: #52674b; line-height: 1.55; }
+.map-collection-facts { color: #52674b; font-size: 11px; line-height: 1.55; margin: -5px 0 13px; }
 .map-card-actions { padding-top: 13px; border-top: 1px solid #edf0e9; gap: 8px; flex-wrap: wrap; }
 .map-card-actions a { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: #42543b; text-decoration: none; }
 .map-card-actions a:hover { text-decoration: underline; }
@@ -549,6 +552,7 @@
 .map-dialog-header { padding: 17px 22px; }
 .map-dialog-header h2 { margin: 0 0 5px; font-size: 22px; }
 .map-detail-callouts { max-width: min(820px, 72vw); max-height: 42px; overflow: auto; margin: 8px 0 0; font-size: 11px; line-height: 1.6; color: #6f796e; }
+.map-detail-description { max-width: min(780px, 70vw); line-height: 1.7; color: #4f5e50 !important; }
 .map-dialog-header p { margin: 0; font-size: 12px; color: #7b8475; }
 .map-viewer-controls { padding: 8px 22px; border-top: 1px solid #e1e5dc; color: #7b8475; font-size: 12px; }
 .map-viewer-controls > div, .map-dialog-footer > div { display: flex; gap: 10px; align-items: center; }
@@ -579,6 +583,11 @@
 .map-preview-button { cursor: pointer; }
 .map-card-actions button { padding:0; border:0; background:none; color:#42543b; font:inherit; font-size:12px; cursor:pointer; }
 .map-card-actions button:hover { text-decoration:underline; }
+.map-card-actions .map-collect-button { display: inline-flex; align-items: center; gap: 5px; padding: 0; border: 0; background: none; color: #42543b; font: inherit; font-size: 12px; cursor: pointer; }
+.map-card-actions .map-collect-button svg { width: 14px; height: 14px; }
+.map-card-actions .map-collect-button.is-collected { color: #264835; font-weight: 700; }
+.map-dialog-footer #mapDetailCollect { display: inline-flex; align-items: center; gap: 6px; }
+.map-dialog-footer #mapDetailCollect svg { width: 15px; height: 15px; }
 .interactive-map-dialog { position:fixed; inset:0; margin:0; padding:0; width:100vw; height:100dvh; max-width:none; max-height:none; border:0; background:#0c1518; color:#d6e8e1; overflow:hidden; }
 .interactive-map-dialog[open] { display:flex; flex-direction:column; }
 .interactive-map-header { flex:0 0 54px; min-height:54px; height:54px; display:flex; gap:20px; align-items:center; padding:0 18px; border-bottom:1px solid #2b4240; background:#142421; }

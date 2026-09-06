@@ -136,7 +136,7 @@ function updateCounts() {
   const counts = Object.fromEntries(Object.keys(kindLabels).map((kind) => [kind, state.entries.filter((entry) => entry.kind === kind).length]));
   $('#navModeCount').textContent = counts.modes;
   $('#navMapCount').textContent = mapArchive.entries.length || '—';
-  $('#navCollectedCount').textContent = state.entries.filter((entry) => state.collected.has(entry.id)).length;
+  $('#navCollectedCount').textContent = state.entries.filter((entry) => state.collected.has(entry.id)).length + (mapArchive.mapCollected?.size || 0);
   $('#librarySummary').textContent = state.view === 'maps' ? new Set(mapArchive.entries.map((entry) => entry.game)).size + ' 款游戏 · ' + mapArchive.entries.length + ' 张地图' : getGames().length + ' 款游戏 · ' + state.entries.length + ' 个模式';
 }
 
@@ -169,8 +169,9 @@ function renderLibrary() {
   renderGameplayFilters();
   renderGameFilters();
   const entries = getFilteredEntries();
+  const collectedMaps = state.view === 'collection' ? mapArchive.entries.filter((entry) => mapArchive.mapCollected?.has(entry.id) && mapEntryMatchesQuery(entry)) : [];
   $('#resultsTitle').textContent = state.view === 'collection' ? '已收藏资料' : kindLabels[state.view] + '资料';
-  $('#resultCount').textContent = entries.length + ' 份';
+  $('#resultCount').textContent = entries.length + collectedMaps.length + ' 份';
   $('#sectionAside').textContent = ['mechanics', 'levels'].includes(state.view)
     ? '按关联案例的核心玩法，查找可复用的设计'
     : state.gameplayFilter === 'all' ? 'LTM 是独立标签，可与任意核心玩法组合筛选' : '核心模式与限时模式，按同一核心玩法归档';
@@ -180,13 +181,16 @@ function renderLibrary() {
   const visible = entries.slice(0, state.limit);
   modeGrid.classList.toggle('list-view', state.layout === 'list');
   modeGrid.setAttribute('aria-busy', 'false');
-  const emptyMessage = state.view === 'collection' && !state.entries.some((entry) => state.collected.has(entry.id))
-    ? ['还没有收藏', '点选卡片上的书签，留下你想继续研究的玩法。', '<a class="button" href="#modes">浏览玩法模式</a>']
+  const emptyMessage = state.view === 'collection' && !state.entries.some((entry) => state.collected.has(entry.id)) && !collectedMaps.length
+    ? ['还没有收藏', '点选卡片上的书签，留下你想继续研究的玩法和地图。', '<a class="button" href="#modes">浏览玩法模式</a>']
     : ['没有找到匹配的资料', '试试更短的关键词，或放宽核心玩法、游戏和标签筛选。', '<button class="button" data-reset-filters>清除筛选</button>'];
-  modeGrid.innerHTML = visible.length ? visible.map(renderCard).join('') :
+  const visibleMaps = collectedMaps.slice(0, Math.max(0, state.limit - visible.length));
+  modeGrid.innerHTML = (visible.length || visibleMaps.length) ? visible.map(renderCard).join('') + visibleMaps.map(renderMapCollectionCard).join('') :
     '<div class="empty-state">' + icon('search') + '<h3>' + emptyMessage[0] + '</h3><p>' + emptyMessage[1] + '</p>' + emptyMessage[2] + '</div>';
-  statusLine.textContent = '已展示 ' + visible.length + ' / ' + entries.length + ' 份资料';
-  $('#loadMore').hidden = visible.length >= entries.length;
+  const totalVisible = visible.length + visibleMaps.length;
+  const totalEntries = entries.length + collectedMaps.length;
+  statusLine.textContent = '已展示 ' + totalVisible + ' / ' + totalEntries + ' 份资料';
+  $('#loadMore').hidden = totalVisible >= totalEntries;
   const activeFilters = [
     state.query ? '搜索：' + state.query : '',
     state.gameFilter !== 'all' ? state.gameFilter : '',
@@ -196,6 +200,23 @@ function renderLibrary() {
   ].filter(Boolean);
   $('#filterSummary').hidden = !activeFilters.length;
   $('#filterSummaryText').textContent = activeFilters.join(' · ');
+}
+
+function mapEntryMatchesQuery(entry) {
+  const text = [entry.name, entry.originalName, entry.game, entry.variant, entry.description, mapCategoryLabels?.[entry.category], mapGameLabels?.[mapGameKey(entry)]].filter(Boolean).join(' ').toLocaleLowerCase();
+  return state.query.toLocaleLowerCase().trim().split(/\s+/).every((word) => text.includes(word));
+}
+
+function renderMapCollectionCard(entry) {
+  const collected = mapArchive.mapCollected.has(entry.id);
+  const coverHint = ['pubg', 'apex'].includes(mapGameKey(entry)) ? '查看 2D 平面图' : '查看地图';
+  return '<article class="mode-card map-collection-card" data-map-id="' + escapeHtml(entry.id) + '">' +
+    '<button class="card-cover" type="button" data-map-interactive="' + escapeHtml(entry.id) + '" aria-label="查看 ' + escapeHtml(entry.name) + '地图">' +
+    '<img src="' + escapeHtml(entry.thumbnailUrl) + '" alt="' + escapeHtml(entry.name + ' 地图') + '" loading="lazy" width="640" height="346"><span class="cover-shade"></span><span class="cover-game">' + escapeHtml(entry.game) + '</span><span class="cover-badge">' + escapeHtml(coverHint) + '</span></button>' +
+    '<div class="card-body"><div class="card-eyebrow"><span class="category-name">地图</span><span class="eyebrow-sep">/</span><span>' + escapeHtml(entry.game) + '</span></div>' +
+    '<h3 class="card-title"><button type="button" data-map-interactive="' + escapeHtml(entry.id) + '">' + escapeHtml(entry.name) + '</button></h3>' +
+    '<p class="card-summary">' + escapeHtml(entry.description || entry.variant || '地图资料') + '</p>' + (entry.mapSize || entry.supportedModes ? '<p class="map-collection-facts">' + escapeHtml([entry.mapSize ? '规模：' + entry.mapSize : '', entry.supportedModes ? '支持：' + entry.supportedModes : ''].filter(Boolean).join(' · ')) + '</p>' : '') + '<div class="tag-row"><span class="tag">' + escapeHtml(entry.variant || '地图资料') + '</span></div></div>' +
+    '<div class="card-bottom"><span>' + icon('map') + '<span>地图资料</span></span><div class="card-bottom-actions"><button class="icon-button ' + (collected ? 'is-collected' : '') + '" type="button" data-action="collect-map" data-map-id="' + escapeHtml(entry.id) + '" aria-label="' + (collected ? '取消收藏 ' : '收藏 ') + escapeHtml(entry.name) + '" aria-pressed="' + collected + '">' + icon('bookmark') + '</button><button class="card-open" type="button" data-map-interactive="' + escapeHtml(entry.id) + '">查看地图' + icon('arrow-up-right') + '</button></div></div></article>';
 }
 
 function renderActivityFeed() {
@@ -408,6 +429,10 @@ function bindWorkspaceEvents() {
         button.setAttribute('aria-pressed', String(button.dataset.layout === state.layout));
       });
       renderLibrary(); return;
+    }
+    if (target.dataset.action === 'collect-map') {
+      toggleMapCollect(target.dataset.mapId);
+      return;
     }
     const entry = state.entries.find((item) => item.id === target.dataset.id);
     if (!entry) return;

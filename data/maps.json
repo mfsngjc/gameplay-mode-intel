@@ -334,7 +334,9 @@
     "imageSource": "官方地图页视觉图",
     "originalName": "Wake Island",
     "checkedAt": "2026-09-06",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/Wake_Island_(Battlefield_6)"
+    "wikiUrl": "https://battlefield.fandom.com/wiki/Wake_Island_(Battlefield_6)",
+    "description": "传奇海岛回归太平洋海岸；可沿岸巡逻防守，使用 C-4 摧毁桥梁，并利用海上航空母舰改变进攻路线。",
+    "descriptionSource": "EA 官方地图介绍"
   },
   {
     "game": "战地风云 6",
@@ -351,7 +353,9 @@
     "imageSource": "官方地图页视觉图",
     "originalName": "Tsuru Reef",
     "checkedAt": "2026-09-06",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/Tsuru_Reef"
+    "wikiUrl": "https://battlefield.fandom.com/wiki/Tsuru_Reef",
+    "description": "大型群岛战场，遍布度假屋、热带植被和峭壁；支持全部模式，适合载具与步兵在多岛之间拉开战线。",
+    "descriptionSource": "EA 官方地图介绍"
   },
   {
     "game": "战地风云 6",
@@ -368,7 +372,9 @@
     "imageSource": "官方地图页视觉图",
     "originalName": "Cairo Bazaar",
     "checkedAt": "2026-09-06",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/Cairo_Bazaar"
+    "wikiUrl": "https://battlefield.fandom.com/wiki/Cairo_Bazaar",
+    "description": "重制自《战地 3》大巴扎；开罗市中心密集巷道带来高强度近距离交火和多条战术机会。",
+    "descriptionSource": "EA 官方地图介绍"
   },
   {
     "game": "战地风云 6",
@@ -385,7 +391,9 @@
     "imageSource": "官方地图页视觉图",
     "originalName": "Railway to Golmud",
     "checkedAt": "2026-09-06",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/Railway_to_Golmud"
+    "wikiUrl": "https://battlefield.fandom.com/wiki/Railway_to_Golmud",
+    "description": "重制的大型战场，穿越废墟村庄、燃烧的坦克交火区、工业设施与移动铁路；小队需要争夺铁路控制权。",
+    "descriptionSource": "EA 官方地图介绍"
   },
   {
     "game": "战地风云 6",
@@ -402,7 +410,9 @@
     "imageSource": "官方地图页视觉图",
     "originalName": "Contaminated",
     "checkedAt": "2026-09-06",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/Contaminated"
+    "wikiUrl": "https://battlefield.fandom.com/wiki/Contaminated",
+    "description": "欧洲山坡上的德国空军基地被精神活性烟雾笼罩；围绕关键卫星情报争夺岩地与机场设施。",
+    "descriptionSource": "EA 官方地图介绍"
   },
   {
     "game": "战地风云 6",
@@ -419,7 +429,9 @@
     "imageSource": "官方地图页视觉图",
     "originalName": "Blackwell Fields",
     "checkedAt": "2026-09-06",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/Blackwell_Fields"
+    "wikiUrl": "https://battlefield.fandom.com/wiki/Blackwell_Fields",
+    "description": "南加州大型全面战场，军事设施与农场住宅群在燃烧天际线下遭到围攻。",
+    "descriptionSource": "EA 官方地图介绍"
   },
   {
     "game": "战地风云 6",
@@ -436,7 +448,9 @@
     "imageSource": "官方地图页视觉图",
     "originalName": "Eastwood",
     "checkedAt": "2026-09-06",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/Eastwood"
+    "wikiUrl": "https://battlefield.fandom.com/wiki/Eastwood",
+    "description": "南加州豪宅、泳池和私人高尔夫球场变成战区；宁静的郊区景观承受高强度交火。",
+    "descriptionSource": "EA 官方地图介绍"
   },
   {
     "game": "战地风云 6",
@@ -457,9 +471,13 @@
     "planWidth": 2400,
     "planHeight": 1350,
     "planType": "模式战术图 · Conquest / Domination",
-    "planSourceUrl": "https://www.battlefield6.gg/maps/",
-    "planSource": "Battlefield6.gg 模式战术图",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/Siege_of_Cairo"
+    "planSourceUrl": "https://www.battlefield6.gg/map/siege-of-cairo/",
+    "planSource": "Battlefield6.gg Siege of Cairo 地图布局",
+    "wikiUrl": "https://battlefield.fandom.com/wiki/Siege_of_Cairo",
+    "description": "开罗市中心街巷的步坦追逐；穿过巷道、进出建筑，并随时注意身后。",
+    "descriptionSource": "EA 官方地图介绍",
+    "mapSize": "中型",
+    "supportedModes": "征服、突破、突袭、爆破模式"
   },
   {
     "game": "战地风云 6",
@@ -480,9 +498,13 @@
     "planWidth": 2400,
     "planHeight": 1350,
     "planType": "模式战术图 · Conquest / Domination",
-    "planSourceUrl": "https://www.battlefield6.gg/maps/",
-    "planSource": "Battlefield6.gg 模式战术图",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/Iberian_Offensive"
+    "planSourceUrl": "https://www.battlefield6.gg/map/iberian-offensive/",
+    "planSource": "Battlefield6.gg Iberian Offensive 地图布局",
+    "wikiUrl": "https://battlefield.fandom.com/wiki/Iberian_Offensive",
+    "description": "穿越直布罗陀蜿蜒街道和巷道，躲避重装坦克并破坏建筑以取得战术优势。",
+    "descriptionSource": "EA 官方地图介绍",
+    "mapSize": "中型",
+    "supportedModes": "征服、突破、突袭、爆破模式、小队死斗、团队死斗"
   },
   {
     "game": "战地风云 6",
@@ -503,9 +525,13 @@
     "planWidth": 2400,
     "planHeight": 1350,
     "planType": "模式战术图 · Conquest / Domination",
-    "planSourceUrl": "https://www.battlefield6.gg/maps/",
-    "planSource": "Battlefield6.gg 模式战术图",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/Liberation_Peak"
+    "planSourceUrl": "https://www.battlefield6.gg/map/liberation-peak/",
+    "planSource": "Battlefield6.gg Liberation Peak 地图布局",
+    "wikiUrl": "https://battlefield.fandom.com/wiki/Liberation_Peak",
+    "description": "塔吉克斯坦山地大型战场；岩壁为喷气机与直升机空战提供掩护，也给步兵和坦克带来高地优势。",
+    "descriptionSource": "EA 官方地图介绍",
+    "mapSize": "大型",
+    "supportedModes": "征服、突破、升级攻势、突袭、爆破模式"
   },
   {
     "game": "战地风云 6",
@@ -526,9 +552,13 @@
     "planWidth": 2400,
     "planHeight": 1350,
     "planType": "模式战术图 · Conquest / Domination",
-    "planSourceUrl": "https://www.battlefield6.gg/maps/",
-    "planSource": "Battlefield6.gg 模式战术图",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/Empire_State"
+    "planSourceUrl": "https://www.battlefield6.gg/map/empire-state/",
+    "planSource": "Battlefield6.gg Empire State 地图布局",
+    "wikiUrl": "https://battlefield.fandom.com/wiki/Empire_State",
+    "description": "纽约布鲁克林步兵专用地图；巷道、屋顶和城市街区构成连续的爆炸性交火。",
+    "descriptionSource": "EA 官方地图介绍",
+    "mapSize": "中型",
+    "supportedModes": "征服、突破、爆破模式、山丘之王、小队死斗、团队死斗"
   },
   {
     "game": "战地风云 6",
@@ -549,9 +579,13 @@
     "planWidth": 2400,
     "planHeight": 1350,
     "planType": "模式战术图 · Conquest / Domination",
-    "planSourceUrl": "https://www.battlefield6.gg/maps/",
-    "planSource": "Battlefield6.gg 模式战术图",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/Operation_Firestorm"
+    "planSourceUrl": "https://www.battlefield6.gg/map/operation-firestorm/",
+    "planSource": "Battlefield6.gg Operation Firestorm 地图布局",
+    "wikiUrl": "https://battlefield.fandom.com/wiki/Operation_Firestorm",
+    "description": "经典《战地 3》地图回归；在燃烧的油田中争夺控制权，步兵、坦克、直升机与喷气机共同参战。",
+    "descriptionSource": "EA 官方地图介绍",
+    "mapSize": "大型",
+    "supportedModes": "征服、突破、升级攻势、突袭"
   },
   {
     "game": "战地风云 6",
@@ -571,10 +605,14 @@
     "planImageUrl": "assets/maps/2d-plans/bf6-saints-quarter.jpg",
     "planWidth": 2400,
     "planHeight": 1350,
-    "planType": "模式战术图 · Conquest / Domination",
-    "planSourceUrl": "https://www.battlefield6.gg/maps/",
-    "planSource": "Battlefield6.gg 模式战术图",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/Saints_Quarter"
+    "planType": "Domination 战术图 · 小型近距离步兵地图",
+    "planSourceUrl": "https://www.battlefield6.gg/map/saints-quarter/",
+    "planSource": "Battlefield6.gg Saints Quarter 地图布局",
+    "wikiUrl": "https://battlefield.fandom.com/wiki/Saints_Quarter",
+    "description": "围绕直布罗陀老城区喷泉展开的近距离战斗；可破坏建筑让步兵在小范围内快速交火。第三方地图页补充支持 Domination、King of the Hill、Squad Deathmatch 和 Team Deathmatch。",
+    "descriptionSource": "EA 官方地图介绍",
+    "mapSize": "小型",
+    "supportedModes": "爆破模式、山丘之王、小队死斗、团队死斗"
   },
   {
     "game": "战地风云 6",
@@ -595,9 +633,13 @@
     "planWidth": 2400,
     "planHeight": 1350,
     "planType": "模式战术图 · Conquest / Domination",
-    "planSourceUrl": "https://www.battlefield6.gg/maps/",
-    "planSource": "Battlefield6.gg 模式战术图",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/New_Sobek_City"
+    "planSourceUrl": "https://www.battlefield6.gg/map/new-sobek-city/",
+    "planSource": "Battlefield6.gg New Sobek City 地图布局",
+    "wikiUrl": "https://battlefield.fandom.com/wiki/New_Sobek_City",
+    "description": "开罗郊区施工场地与巨大沙丘组成的战区；可作为步兵推进、驾驶坦克，或乘攻击直升机从空中压制。",
+    "descriptionSource": "EA 官方地图介绍",
+    "mapSize": "中型",
+    "supportedModes": "征服、突破、爆破模式、山丘之王、突袭、小队死斗、团队死斗"
   },
   {
     "game": "战地风云 6",
@@ -618,9 +660,13 @@
     "planWidth": 2400,
     "planHeight": 1350,
     "planType": "模式战术图 · Conquest / Domination",
-    "planSourceUrl": "https://www.battlefield6.gg/maps/",
-    "planSource": "Battlefield6.gg 模式战术图",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/Mirak_Valley"
+    "planSourceUrl": "https://www.battlefield6.gg/map/mirak-valley/",
+    "planSource": "Battlefield6.gg Mirak Valley 地图布局",
+    "wikiUrl": "https://battlefield.fandom.com/wiki/Mirak_Valley",
+    "description": "发售时最大的全面战场地图之一；广阔的战争废墟里包含各类型载具。",
+    "descriptionSource": "EA 官方地图介绍",
+    "mapSize": "大型",
+    "supportedModes": "征服、突破、升级攻势、突袭"
   },
   {
     "game": "战地风云 6",
@@ -641,9 +687,13 @@
     "planWidth": 2400,
     "planHeight": 1350,
     "planType": "模式战术图 · Conquest / Domination",
-    "planSourceUrl": "https://www.battlefield6.gg/maps/",
-    "planSource": "Battlefield6.gg 模式战术图",
-    "wikiUrl": "https://battlefield.fandom.com/wiki/Manhattan_Bridge"
+    "planSourceUrl": "https://www.battlefield6.gg/map/manhattan-bridge/",
+    "planSource": "Battlefield6.gg Manhattan Bridge 地图布局",
+    "wikiUrl": "https://battlefield.fandom.com/wiki/Manhattan_Bridge",
+    "description": "在城市街道进行近距离枪战，乘攻击直升机升空，或用大规模破坏改变战线流向。",
+    "descriptionSource": "EA 官方地图介绍",
+    "mapSize": "中型",
+    "supportedModes": "征服、突破、爆破模式、山丘之王、小队死斗、团队死斗"
   },
   {
     "game": "无畏契约",
@@ -815,7 +865,9 @@
         "left": 3.99,
         "top": 89.639
       }
-    ]
+    ],
+    "description": "中国最先进的辐能训练学院坐落于峰顶；巨大的可投放墙体会改变整回合的战场布局。",
+    "descriptionSource": "VALORANT 官方地图介绍"
   },
   {
     "game": "无畏契约",
@@ -969,7 +1021,9 @@
         "left": 39.844,
         "top": 49.067
       }
-    ]
+    ],
+    "description": "法国城堡小镇被改造成辐能盐矿设施；玩家穿过中世纪街道和工业设备组成的分层防线，展开经典三线攻防。",
+    "descriptionSource": "VALORANT 官方地图介绍"
   },
   {
     "game": "无畏契约",
@@ -1135,7 +1189,9 @@
         "left": 47.367,
         "top": 36.23
       }
-    ]
+    ],
+    "description": "秘密基地深埋在无尽深渊中；死亡坠落带来新的技能博弈，高风险路线也可能换来高回报。",
+    "descriptionSource": "VALORANT 官方地图介绍"
   },
   {
     "game": "无畏契约",
@@ -1265,7 +1321,9 @@
         "left": 46.88,
         "top": 98.558
       }
-    ]
+    ],
+    "description": "当地王国设施事故可能吞没整个街区；穿过城市三线结构，在熟悉的街头展开攻防。",
+    "descriptionSource": "VALORANT 官方地图介绍"
   },
   {
     "game": "无畏契约",
@@ -1461,7 +1519,9 @@
         "left": 51.075,
         "top": 81.686
       }
-    ]
+    ],
+    "description": "神秘建筑中的星界导管释放远古能量；巨大的石门提供多种转移方式，并打开通往三个目标点的路线。",
+    "descriptionSource": "VALORANT 官方地图介绍"
   },
   {
     "game": "无畏契约",
@@ -1645,7 +1705,9 @@
         "left": 43.367,
         "top": 95.892
       }
-    ]
+    ],
+    "description": "水下城市中的双目标点地图；中路紧凑、两侧适合远距离交火，地图本身不依赖额外机制。",
+    "descriptionSource": "VALORANT 官方地图介绍"
   },
   {
     "game": "无畏契约",
@@ -1805,7 +1867,9 @@
         "left": 48.297,
         "top": 81.693
       }
-    ]
+    ],
+    "description": "辐能实验失败后，秘密研究设施被一分为二；防守方的选择也被地图结构分割，可以前压迎击或固守等待。",
+    "descriptionSource": "VALORANT 官方地图介绍"
   },
   {
     "game": "无畏契约",
@@ -1971,7 +2035,9 @@
         "left": 43.362,
         "top": 87.333
       }
-    ]
+    ],
+    "description": "热带遗迹与海边洞穴组成的开放空间；长距离交火和侧翼威胁要求队伍主动寻找掩体。",
+    "descriptionSource": "VALORANT 官方地图介绍"
   },
   {
     "game": "无畏契约",
@@ -2149,7 +2215,9 @@
         "left": 71.905,
         "top": 27.855
       }
-    ]
+    ],
+    "description": "被极地吞没的王国挖掘基地；两个目标点由雪地和金属结构保护，绳索与横向移动带来新的进攻角度。",
+    "descriptionSource": "VALORANT 官方地图介绍"
   },
   {
     "game": "无畏契约",
@@ -2309,7 +2377,9 @@
         "left": 48.565,
         "top": 5.813
       }
-    ]
+    ],
+    "description": "开放区域承载着两座目标点之间的阵地消耗；可落下的炸弹门能永久封锁路线，迫使队伍改变空间控制。",
+    "descriptionSource": "VALORANT 官方地图介绍"
   },
   {
     "game": "无畏契约",
@@ -2481,7 +2551,9 @@
         "left": 42.578,
         "top": 45.148
       }
-    ]
+    ],
+    "description": "被高架中路分隔的双目标点；两条绳索升降机提供快速转移，每个目标点都有需要控制的高塔。",
+    "descriptionSource": "VALORANT 官方地图介绍"
   },
   {
     "game": "无畏契约",
@@ -2635,7 +2707,9 @@
         "left": 30.801,
         "top": 13.862
       }
-    ]
+    ],
+    "description": "废弃修道院下方的三目标点地图；防守方拥有更多领地，也能利用额外空间主动前压。",
+    "descriptionSource": "VALORANT 官方地图介绍"
   },
   {
     "game": "无畏契约",
@@ -2807,7 +2881,9 @@
         "left": 72.779,
         "top": 20.808
       }
-    ]
+    ],
+    "description": "没有中路，进攻方必须在左右两条路线之间做选择；两个单向传送器提供快速侧翼和转点。",
+    "descriptionSource": "VALORANT 官方地图介绍"
   },
   {
     "game": "PUBG",

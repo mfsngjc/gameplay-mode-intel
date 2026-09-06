@@ -442,6 +442,21 @@ function modeToMarkdown(mode) {
   return lines.join("\n") + "\n";
 }
 
+function mapToMarkdown(map) {
+  const lines = [
+    '# ' + map.name, '',
+    '- 资料类型：地图',
+    '- 游戏：' + map.game,
+    '- 地图类型：' + (map.variant || '地图资料'),
+    ...(map.description ? ['- 官方地图介绍：' + map.description] : []),
+    '- 来源：' + (map.sourceUrl || ''),
+    ...(map.planSourceUrl ? ['- 2D 平面图来源：' + map.planSourceUrl] : []),
+    ...(map.wikiUrl ? ['- Wiki：' + map.wikiUrl] : []),
+    '', '## 地图说明', '', map.description || map.variant || '待补充', ''
+  ];
+  return lines.join('\n') + '\n';
+}
+
 function iconSvg(name) {
   const icons = {
     collect: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1Z"/><path d="M9 8h6M9 12h4"/></svg>',
@@ -896,15 +911,16 @@ function exportCurrentCanvas() {
 
 function exportCollectedMarkdown() {
   const modes = state.entries.filter((mode) => state.collected.has(mode.id));
-  if (!modes.length) {
+  const maps = typeof mapArchive !== 'undefined' ? mapArchive.entries.filter((map) => mapArchive.mapCollected?.has(map.id)) : [];
+  if (!modes.length && !maps.length) {
     showToast("还没有收藏资料");
     return;
   }
   downloadFile(
     "br-mode-collected.md",
-    modes.map(modeToMarkdown).join("\n\n---\n\n")
+    [...modes.map(modeToMarkdown), ...maps.map(mapToMarkdown)].join("\n\n---\n\n")
   );
-  showToast(`已导出 ${modes.length} 个采集玩法`);
+  showToast(`已导出 ${modes.length + maps.length} 份收藏资料`);
 }
 
 // The research workspace owns navigation and rendering; existing export, share,

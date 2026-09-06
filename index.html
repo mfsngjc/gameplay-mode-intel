@@ -7,8 +7,8 @@
   <meta name="description" content="集成农业，面向射击游戏设计的研究资料库。收集射击游戏玩法模式与地图资料，保留原始来源。">
   <title>集成农业 · 射击玩法研究库</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=maps-library-20260907">
-  <link rel="stylesheet" href="workspace.css?v=maps-library-20260907">
+  <link rel="stylesheet" href="styles.css?v=maps-archive-20260906">
+  <link rel="stylesheet" href="workspace.css?v=maps-archive-20260906">
 </head>
 <body class="workspace">
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><symbol id="ui-compass" viewBox="0 0 24 24">
@@ -254,10 +254,10 @@
     <iframe id="interactiveMapFrame" title="互动地图" src="about:blank" allow="fullscreen" referrerpolicy="no-referrer"></iframe>
   </dialog>
   <dialog class="map-dialog" id="mapDialog" aria-labelledby="mapDetailTitle">
-    <div class="map-dialog-header"><div><h2 id="mapDetailTitle"></h2><p id="mapDetailSubtitle"></p><p id="mapDetailCallouts" class="map-detail-callouts" hidden></p></div><button class="icon-button" id="mapDetailClose" aria-label="关闭地图"><svg><use href="#ui-x"></use></svg></button></div>
+    <div class="map-dialog-header"><div><h2 id="mapDetailTitle"></h2><p id="mapDetailSubtitle"></p><p id="mapDetailDescription" class="map-detail-description" hidden></p><p id="mapDetailCallouts" class="map-detail-callouts" hidden></p></div><button class="icon-button" id="mapDetailClose" aria-label="关闭地图"><svg><use href="#ui-x"></use></svg></button></div>
     <div class="map-viewer-controls"><div><button class="button" type="button" data-map-zoom="out" aria-label="缩小地图">−</button><span id="mapZoomValue">100%</span><button class="button" type="button" data-map-zoom="in" aria-label="放大地图">+</button><button class="button subtle" type="button" data-map-zoom="reset">适应窗口</button></div><span>放大后可滚动查看</span></div>
     <div class="map-viewport" id="mapViewport" tabindex="0" aria-label="地图预览，可滚动查看"><div class="map-image-stage" id="mapImageStage"><img id="mapDetailImage" alt=""><div class="map-callout-layer" id="mapCalloutLayer" aria-label="地图点位名称"></div></div><p id="mapImageError" hidden>图片暂时无法加载，请打开来源页面查看。</p></div>
-    <div class="map-dialog-footer"><span id="mapDetailCredit">图片来源：官方地图页 · 版本信息以官方页面为准</span><div><a class="button" id="mapDetailDownload" download>下载图片</a><a class="button" id="mapDetailWiki" target="_blank" rel="noopener noreferrer" hidden>Wiki ↗</a><a class="button primary" id="mapDetailSource" target="_blank" rel="noopener noreferrer">来源页面<svg><use href="#ui-external-link"></use></svg></a></div></div>
+    <div class="map-dialog-footer"><span id="mapDetailCredit">图片来源：官方地图页 · 版本信息以官方页面为准</span><div><button class="button" id="mapDetailCollect" type="button" aria-pressed="false"><svg><use href="#ui-bookmark"></use></svg>收藏地图</button><a class="button" id="mapDetailDownload" download>下载图片</a><a class="button" id="mapDetailWiki" target="_blank" rel="noopener noreferrer" hidden>Wiki ↗</a><a class="button" id="mapDetailOfficial" target="_blank" rel="noopener noreferrer" hidden>官方介绍 ↗</a><a class="button primary" id="mapDetailSource" target="_blank" rel="noopener noreferrer">来源页面<svg><use href="#ui-external-link"></use></svg></a></div></div>
   </dialog>
   <dialog class="detail-dialog" id="detailDialog" aria-labelledby="detailTitle"><button class="icon-button detail-close" id="detailClose" aria-label="关闭详情"><svg><use href="#ui-x"></use></svg></button><div id="detailContent"></div></dialog>
   <div class="share-modal" id="shareModal" hidden>
@@ -301,8 +301,8 @@
   </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js?v=maps-library-20260922"></script>
-  <script src="maps.js?v=maps-library-20260922"></script>
-  <script src="workspace.js?v=maps-library-20260922"></script>
+  <script src="app.js?v=maps-archive-20260906"></script>
+  <script src="maps.js?v=maps-archive-20260906"></script>
+  <script src="workspace.js?v=maps-archive-20260906"></script>
 </body>
 </html>

@@ -1,9 +1,41 @@
 const MAP_ZOOM_MAX = 8;
-const mapArchive = { entries: [], game: 'all', loading: true, error: false, zoom: 1 };
+function readMapCollected() {
+  try {
+    const value = JSON.parse(localStorage.getItem('br-map-collected') || '[]');
+    return new Set(Array.isArray(value) ? value.filter((id) => typeof id === 'string') : []);
+  } catch { return new Set(); }
+}
+const mapArchive = { entries: [], game: 'all', loading: true, error: false, zoom: 1, mapCollected: readMapCollected() };
 const mapCategoryLabels = { operations: '烽火地带', warfare: '全面战场', campaign: '黑鹰坠落', 'battle-royale': '大逃杀' };
 const mapGameLabels = { all: '全部地图', delta: '三角洲行动', battlefield6: '战地风云 6', valorant: '无畏契约', pubg: 'PUBG', apex: 'Apex Legends' };
 let mapTrigger = null;
 let mapPan = null;
+
+function saveMapCollected() {
+  try { localStorage.setItem('br-map-collected', JSON.stringify([...mapArchive.mapCollected])); }
+  catch { showToast('当前浏览器无法保存地图收藏；请导出以保留本次研究。'); }
+}
+
+function toggleMapCollect(id) {
+  if (!mapArchive.entries.some((entry) => entry.id === id)) return;
+  if (mapArchive.mapCollected.has(id)) {
+    mapArchive.mapCollected.delete(id);
+    showToast('已取消地图收藏');
+  } else {
+    mapArchive.mapCollected.add(id);
+    showToast('地图已收藏到当前浏览器');
+  }
+  saveMapCollected();
+  renderMapArchive();
+  updateCounts();
+  const entry = mapArchive.entries.find((item) => item.id === id);
+  const button = document.querySelector('#mapDetailCollect');
+  if (button && entry) {
+    const collected = mapArchive.mapCollected.has(id);
+    button.innerHTML = icon('bookmark') + (collected ? '已收藏地图' : '收藏地图');
+    button.setAttribute('aria-pressed', String(collected));
+  }
+}
 
 function mapGameKey(entry) {
   return entry.gameKey || ({ '三角洲行动': 'delta', '战地风云 6': 'battlefield6', '无畏契约': 'valorant', PUBG: 'pubg', 'Apex Legends': 'apex' }[entry.game] || '');
@@ -31,12 +63,15 @@ function renderMapArchive() {
     const downloadLabel = isDelta ? '下载底图' : '下载图片';
     const imageAlt = isPlanCover ? '2D 游戏内平面图' : '官方地图视觉图';
     const wikiLink = entry.wikiUrl ? '<a href="' + escapeHtml(entry.wikiUrl) + '" target="_blank" rel="noopener noreferrer">Wiki ↗</a>' : '';
+    const collected = mapArchive.mapCollected.has(entry.id);
     return '<article class="map-archive-card">' +
     '<button class="map-preview-button" type="button" data-map-interactive="' + escapeHtml(entry.id) + '" aria-label="查看' + escapeHtml(entry.name) + '地图">' +
     '<img src="' + escapeHtml(entry.thumbnailUrl) + '" alt="' + escapeHtml(entry.name) + escapeHtml(imageAlt) + '" width="512" height="288" loading="lazy">' +
     '<span class="map-cover-label">' + escapeHtml(coverLabel) + '</span><span class="map-preview-hint">' + icon('search') + escapeHtml(coverHint) + '</span></button>' +
     '<div class="map-card-info"><p class="map-card-game">' + escapeHtml(entry.game) + '</p><h2>' + escapeHtml(entry.name) + '</h2><p>' + escapeHtml(entry.variant) + '</p>' +
-    '<div class="map-card-actions"><a href="' + escapeHtml(entry.imageUrl) + '" download="' + escapeHtml(entry.name) + '.jpg">' + icon('download') + downloadLabel + '</a>' +
+    (entry.description ? '<p class="map-card-description">' + escapeHtml(entry.description) + '</p>' : '') +
+    (entry.mapSize || entry.supportedModes ? '<p class="map-card-facts">' + (entry.mapSize ? '规模：' + escapeHtml(entry.mapSize) : '') + (entry.supportedModes ? ' · 支持：' + escapeHtml(entry.supportedModes) : '') + '</p>' : '') +
+    '<div class="map-card-actions"><button type="button" class="map-collect-button ' + (collected ? 'is-collected' : '') + '" data-map-collect="' + escapeHtml(entry.id) + '" aria-label="' + (collected ? '取消收藏 ' : '收藏 ') + escapeHtml(entry.name) + '" aria-pressed="' + collected + '">' + icon('bookmark') + (collected ? '已收藏' : '收藏') + '</button><a href="' + escapeHtml(entry.imageUrl) + '" download="' + escapeHtml(entry.name) + '.jpg">' + icon('download') + downloadLabel + '</a>' +
     (entry.planImageUrl ? '<button type="button" data-map-plan="' + escapeHtml(entry.id) + '">查看 2D 平面图</button>' : '') +
     ((!entry.planImageUrl || entry.planImageUrl !== entry.imageUrl) ? '<button type="button" data-map-open="' + escapeHtml(entry.id) + '">查看静态底图</button>' : '') + wikiLink + '</div></div></article>';
   }).join('');
@@ -74,19 +109,26 @@ function openMapPreview(id, kind = 'cover') {
   document.querySelector('#mapDetailSubtitle').textContent = isPlan
     ? entry.variant + ' · ' + entry.planType
     : entry.variant + ' · ' + (entry.gameKey === 'delta' ? '官方底图' : '官方地图视觉图');
+  const description = document.querySelector('#mapDetailDescription');
+  description.textContent = [entry.description, entry.mapSize ? '地图规模：' + entry.mapSize : '', entry.supportedModes ? '支持模式：' + entry.supportedModes : ''].filter(Boolean).join('  ');
+  description.hidden = !entry.description;
   const image = document.querySelector('#mapDetailImage');
   image.src = imageUrl;
   image.alt = entry.name + (isPlan ? '2D 游戏内平面图' : (entry.gameKey === 'delta' ? '官方俯视底图' : '官方地图视觉图'));
   image.hidden = false;
   document.querySelector('#mapImageError').hidden = true;
   document.querySelector('#mapDetailSource').href = sourceUrl;
+  const official = document.querySelector('#mapDetailOfficial');
+  official.href = entry.sourceUrl || '#';
+  official.hidden = !isPlan || !entry.sourceUrl;
   wiki.href = entry.wikiUrl || '#';
   wiki.hidden = !entry.wikiUrl;
+  const descriptionCredit = entry.descriptionSource ? '介绍：' + entry.descriptionSource + ' · ' : '';
   document.querySelector('#mapDetailCredit').textContent = entry.gameKey === 'delta'
     ? '底图 © 腾讯 · 点位、楼层与版本信息以官方工具为准'
     : isPlan
-      ? '平面图来源：' + entry.planSource + ' · 地图版本和点位名称以来源页面为准'
-      : '图片来源：' + entry.game + '官方地图页 · 版本信息以官方页面为准';
+      ? descriptionCredit + '平面图来源：' + entry.planSource + ' · 地图版本和点位名称以来源页面为准'
+      : descriptionCredit + '图片来源：' + entry.game + '官方地图页 · 版本信息以官方页面为准';
   const callouts = document.querySelector('#mapDetailCallouts');
   const calloutLayer = document.querySelector('#mapCalloutLayer');
   calloutLayer.innerHTML = isPlan && entry.planCalloutPoints?.length
@@ -104,6 +146,10 @@ function openMapPreview(id, kind = 'cover') {
   download.href = imageUrl;
   download.download = entry.name + (isPlan ? '-2d-plan' : '') + (isPlan && imageUrl.endsWith('.png') ? '.png' : '.jpg');
   document.querySelector('#mapDialog').showModal();
+  const collectButton = document.querySelector('#mapDetailCollect');
+  collectButton.innerHTML = icon('bookmark') + (mapArchive.mapCollected.has(entry.id) ? '已收藏地图' : '收藏地图');
+  collectButton.setAttribute('aria-pressed', String(mapArchive.mapCollected.has(entry.id)));
+  collectButton.dataset.mapCollect = entry.id;
   document.body.classList.add('modal-open');
   mapArchive.zoom = 1;
   resizeMapPreview(true);
@@ -127,11 +173,15 @@ async function loadMapArchive() {
     const entries = await response.json();
     if (!Array.isArray(entries)) throw new Error('Invalid map archive');
     mapArchive.entries = entries;
+    const validMapIds = new Set(entries.map((entry) => entry.id));
+    mapArchive.mapCollected = new Set([...mapArchive.mapCollected].filter((id) => validMapIds.has(id)));
+    saveMapCollected();
   } catch { mapArchive.error = true; }
   mapArchive.loading = false;
   document.querySelector('#navMapCount').textContent = mapArchive.entries.length || '—';
   if (state.ready) updateCounts();
   if (state.view === 'maps') renderMapArchive();
+  if (state.view === 'collection') renderLibrary();
 }
 
 function initMapArchive() {
@@ -142,6 +192,9 @@ function initMapArchive() {
     if (plan) openMapPreview(plan.dataset.mapPlan, 'plan');
     const open = event.target.closest('[data-map-open]');
     if (open) openMapPreview(open.dataset.mapOpen);
+    const collect = event.target.closest('[data-map-collect]');
+    if (collect) { toggleMapCollect(collect.dataset.mapCollect); return; }
+    if (event.target.closest('#mapDetailCollect')) { toggleMapCollect(event.target.closest('#mapDetailCollect').dataset.mapCollect); return; }
     const game = event.target.closest('[data-map-game]');
     if (game) {
       mapArchive.game = game.dataset.mapGame;
