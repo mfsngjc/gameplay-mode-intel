@@ -93,3 +93,4 @@
 - 已覆盖：`Pitch Showdown Revival` 归入 `Fire Kickoff`，`On-the-Spot Revival`、周年任务和 `Epic Fight` 归入九周年卡，`CS Random Events` 归入枪王对决随机事件，`Saddle Brawl` 与 `Arena Showdown` 已有独立卡。
 - 负向检查：动画/奖项宣传、地图换肤、技能与武器成长、赛事赛制、社交大厅活动和奖励小游戏没有新的独立对局胜负规则，未重复建卡。
 - 追加发现并补入 `Armory Arena`：官方 2020-07-31 公告明确给出 4v4、18 种武器、击杀换枪、平底锅终局和时间结束比较进度规则；Library 与 Hangar 是同一模式的地图变体，因此只建一张模式卡。
+- 继续复核日本官方 2020–2021 历史页，补入 `Halloweek Mode`（万圣主题 BR、随机首领）、`Extreme Hunt`（Livik 动力外骨骼、矩阵事件与召回）和 `Graffiti Prank`（小丑商店、代币情报兑换）。同页 `Playground Zombie Challenge` 与已有 `Halloween Battle: Capture the Camp` 的单人 5 分钟 6 波 PVE 规则一致，作为别名/子挑战处理，不重复建卡。

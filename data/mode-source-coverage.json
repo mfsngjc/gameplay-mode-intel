@@ -402,9 +402,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 152,
-      "coverCount": 152,
-      "readableDescriptionCount": 152,
+      "modeCount": 155,
+      "coverCount": 155,
+      "readableDescriptionCount": 155,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -557,7 +557,10 @@
         "pubgm-wow-zombie-station-2023",
         "pubgm-wow-erangel-mod-2023",
         "pubgm-wow-craft-mod-2023",
-        "pubgm-armory-arena-2020"
+        "pubgm-armory-arena-2020",
+        "pubgm-halloweek-2020",
+        "pubgm-extreme-hunt-2021",
+        "pubgm-graffiti-prank-2021"
       ],
       "officialSourceUrls": [
         "https://pubgmobile.jp/version-2-0-0-patch-notes/",
@@ -646,9 +649,12 @@
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60922/60923/60924/60926/m22609/202204/913942.shtml",
         "https://www.pubgmobile.jp/version-4-6-0-update-notice-20260901/",
         "https://www.youtube.com/watch?v=si5fRm5Sa8s",
-        "https://pubgmobile.jp/armory-arenalibrary%E3%81%8C%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A%E3%81%AB%E7%99%BB%E5%A0%B4%EF%BC%81/"
+        "https://pubgmobile.jp/armory-arenalibrary%E3%81%8C%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A%E3%81%AB%E7%99%BB%E5%A0%B4%EF%BC%81/",
+        "https://pubgmobile.jp/%E3%83%8F%E3%83%AD%E3%82%A6%E3%82%A3%E3%83%B3%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AE%E3%83%A2%E3%83%BC%E3%83%89%E3%81%8C%E7%99%BB%E5%A0%B4%EF%BC%81/",
+        "https://pubgmobile.jp/extreme-hunt-mode/",
+        "https://pubgmobile.jp/graffiti-prank%E3%83%A2%E3%83%BC%E3%83%89%E3%81%8C%E7%99%BB%E5%A0%B4%EF%BC%81/"
       ],
-      "notes": "已回溯 0.4–4.6 版本及 2018–2026 主题、竞技、街机、Metro Royale、Payload 与 CRAFTGROUND 页面；本次继续复核 0.17.0 周年游乐园、2020 万圣周、2021 三周年、World of Wonder/3.0 Shadow Force 专题，补入 Capture the Camp、TAP JOY、PAN JAM、BEAT IT、What’s in the Box、Shooting Range，以及刀球和冰冻竞技类 WOW 示例模板。WOW 子卡明确标注为官方 Beta 创建玩法描述，不与全局匹配模式混淆。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。 本轮追加 Frozen Kingdom 的 Zombie Station，以及 Imagiversary 的 Erangel Mod、Craft Mod；编辑器泛化参考类型仍排除。 本轮再核对官方日本站 4.4.0、4.5.0、4.6.0 更新页与补丁页：Hero’s Crown、NARUTO: Shippuden、终末之谷忍术对战、木叶隐村 PVE、九尾袭来、蜘蛛侠：崭新的日子和 Midnight Hunters 均已有独立卡；4.6 目前只有名称预告，规则继续标记待补。4.4 子项中 Dinoground 回归已有卡，Arena Ranked 视为团队死斗的排位层，Metro Chapter 32 的 Arctic Base 视为地图/首领内容；CRAFTGROUND 仅写“追加新模式”且没有公开名称、人数或胜负规则，保留 needs_review，不凭空建卡。CRAFTGROUND 比赛、活动宣传和修复公告没有新增可独立检索的对局模式。 追加复核官方日本站 Version 4.2.0 与 4.3.0 页面：Primewood Genesis、Evolving Universe、Racing Challenge 均已有卡；协力跑酷是功能层，Ancient Secret: Arise 是已有主题玩法回归，Arena Ranked 是团队死斗排位层，未发现新的独立规则模式。三张卡的 sourceUrl 已切换到官方日本站页面。 本轮反向检查日本官方新闻分页 1–20，覆盖 Version 3.5.0–4.6.0 的更新通知/补丁页及 4.6.0 Midnight Hunters 预告；同时对 2026 主题、Metro Royale、Payload、WOW 来源做候选名称比对。4.6.0 只新增 Midnight Hunters 名称，已存在对应卡；Metro Royale: Reunion 是父模式回归，旧主题关闭/重开不拆新卡。 追加回溯 2020-07-31 官方 Armory Arena:Library 公告：补入 4v4 击杀换枪、18 种武器和平底锅终局规则；Library/Hangar 作为同一模式的地图变体记录。",
+      "notes": "已回溯 0.4–4.6 版本及 2018–2026 主题、竞技、街机、Metro Royale、Payload 与 CRAFTGROUND 页面；本次继续复核 0.17.0 周年游乐园、2020 万圣周、2021 三周年、World of Wonder/3.0 Shadow Force 专题，补入 Capture the Camp、TAP JOY、PAN JAM、BEAT IT、What’s in the Box、Shooting Range，以及刀球和冰冻竞技类 WOW 示例模板。WOW 子卡明确标注为官方 Beta 创建玩法描述，不与全局匹配模式混淆。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。 本轮追加 Frozen Kingdom 的 Zombie Station，以及 Imagiversary 的 Erangel Mod、Craft Mod；编辑器泛化参考类型仍排除。 本轮再核对官方日本站 4.4.0、4.5.0、4.6.0 更新页与补丁页：Hero’s Crown、NARUTO: Shippuden、终末之谷忍术对战、木叶隐村 PVE、九尾袭来、蜘蛛侠：崭新的日子和 Midnight Hunters 均已有独立卡；4.6 目前只有名称预告，规则继续标记待补。4.4 子项中 Dinoground 回归已有卡，Arena Ranked 视为团队死斗的排位层，Metro Chapter 32 的 Arctic Base 视为地图/首领内容；CRAFTGROUND 仅写“追加新模式”且没有公开名称、人数或胜负规则，保留 needs_review，不凭空建卡。CRAFTGROUND 比赛、活动宣传和修复公告没有新增可独立检索的对局模式。 追加复核官方日本站 Version 4.2.0 与 4.3.0 页面：Primewood Genesis、Evolving Universe、Racing Challenge 均已有卡；协力跑酷是功能层，Ancient Secret: Arise 是已有主题玩法回归，Arena Ranked 是团队死斗排位层，未发现新的独立规则模式。三张卡的 sourceUrl 已切换到官方日本站页面。 本轮反向检查日本官方新闻分页 1–20，覆盖 Version 3.5.0–4.6.0 的更新通知/补丁页及 4.6.0 Midnight Hunters 预告；同时对 2026 主题、Metro Royale、Payload、WOW 来源做候选名称比对。4.6.0 只新增 Midnight Hunters 名称，已存在对应卡；Metro Royale: Reunion 是父模式回归，旧主题关闭/重开不拆新卡。 追加回溯 2020-07-31 官方 Armory Arena:Library 公告：补入 4v4 击杀换枪、18 种武器和平底锅终局规则；Library/Hangar 作为同一模式的地图变体记录。 继续回溯 2020–2021 日本官方历史页，补入 Halloweek 主题 BR、Extreme Hunt 动力外骨骼 BR、Graffiti Prank 小丑商店主题 BR；Playground 僵尸挑战与已有万圣节据点守卫规则一致，作为别名/子挑战保留。",
       "updatedAt": "2026-09-07",
       "officialArchiveIndexUrls": [
         "https://pubgmobile.jp/news/",

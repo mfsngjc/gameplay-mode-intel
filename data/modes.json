@@ -10781,7 +10781,7 @@
     "sourceUrl": "https://www.pubgmobile.com/en/event/halloweeks2020/",
     "launchDate": "2020-10-21",
     "launchLabel": "2020 年万圣周活动期间（具体首日待客户端核对）",
-    "launchNote": "官方活动页明确给出单人、5 分钟、6 波怪物攻击和训练场入口，但没有单独公布该挑战的首日；日期按万圣周活动窗口暂记。",
+    "launchNote": "官方万圣周页面把该训练场挑战写作 Playground Zombie Challenge，并确认单人、5分钟、6波怪物攻击；它与 Halloweek 主局主题玩法分开记录。",
     "gameplayTypes": [
       "casual",
       "pve"
@@ -13495,6 +13495,100 @@
     ],
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-armory-arena-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-halloweek-2020",
+    "game": "PUBG Mobile",
+    "modeName": "万圣周主题玩法（Halloweek Mode）",
+    "year": "2020",
+    "date": "2020-10-23",
+    "tags": [
+      "br-ltm",
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "随机首领",
+      "南瓜资源点"
+    ],
+    "oneLineRule": "在万圣主题的 Erangel BR 对局中探索南瓜主题区域、收集特殊物资，并击败随机出现的首领争夺更高收益。",
+    "mechanicChange": "官方万圣周页面把 Halloweek Mode 作为 Classic Erangel 的主题玩法：地图中的南瓜区域会生成特殊资源，村落之外还会随机出现 4 个首领点；击败首领可以获得更好的物资。该页面同时列出独立的 Playground 僵尸挑战，后者作为子挑战另由据点守卫卡记录。",
+    "tempoImpact": "随机首领和主题资源点让队伍在常规搜刮路线之外主动寻找高价值热点，首领战的枪声又会暴露队伍位置，形成“收益—第三方风险”的中局选择。",
+    "designObservation": "节日 BR 通过随机首领和可见资源点把装饰主题转成可争夺事件；把训练场挑战单独拆开，能区分主局热点和支线 PVE。",
+    "sourceUrl": "https://pubgmobile.jp/%E3%83%8F%E3%83%AD%E3%82%A6%E3%82%A3%E3%83%B3%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AE%E3%83%A2%E3%83%BC%E3%83%89%E3%81%8C%E7%99%BB%E5%A0%B4%EF%BC%81/",
+    "launchDate": "2020-10-23",
+    "launchLabel": "2020年10月23日至11月10日万圣周限时开放",
+    "launchNote": "官方页面确认 Classic Erangel 的 Halloweek 主题玩法、随机首领和特殊资源点；Playground 僵尸挑战是同页列出的训练场子挑战，已在另一张卡中记录。",
+    "gameplayTypes": [
+      "br",
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-halloweek-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-extreme-hunt-2021",
+    "game": "PUBG Mobile",
+    "modeName": "极限追猎（Extreme Hunt）",
+    "year": "2021",
+    "date": "2021-02-05",
+    "tags": [
+      "br-ltm",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "Livik BR",
+      "动力外骨骼",
+      "矩阵事件"
+    ],
+    "oneLineRule": "在 Livik 的限时 BR 中搜集设计图与纳米晶体，前往矩阵基站制造动力外骨骼，并利用自动召回和矩阵事件争取活到最后。",
+    "mechanicChange": "官方 Extreme Hunt 页面加入矩阵基站、动力外骨骼三部件和随机矩阵事件：玩家收集设计图与纳米晶体制作护甲、手臂和腿部组件，组件分别改变减伤、近战、容量和空中移动；每名玩家最多自动复活两次，之后可由队友在矩阵基站协助召回。",
+    "tempoImpact": "基站和材料把队伍吸向固定热点，外骨骼改变转点、近战和空中路线；多次召回降低早期淘汰的终止性，却会把中后期资源争夺推向更激烈的复活窗口。",
+    "designObservation": "将可拆分的装备成长、随机事件与团队召回放进小地图 BR，可以同时制造路线目标和容错空间；复活代价仍通过失去原装备来保持风险。",
+    "sourceUrl": "https://pubgmobile.jp/extreme-hunt-mode/",
+    "launchDate": "2021-02-05",
+    "launchLabel": "2021年2月5日起限时开放",
+    "launchNote": "官方页面确认 Extreme Hunt 为 Livik 的 EVENT BR，包含动力外骨骼、矩阵事件和最多两次自动复活；开放结束时间以官方公告为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-extreme-hunt-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-graffiti-prank-2021",
+    "game": "PUBG Mobile",
+    "modeName": "涂鸦恶作剧（Graffiti Prank）",
+    "year": "2021",
+    "date": "2021-03-31",
+    "tags": [
+      "br-ltm",
+      "objective",
+      "power"
+    ],
+    "type": [
+      "主题 BR",
+      "小丑商店",
+      "任务技能"
+    ],
+    "oneLineRule": "在 Erangel 的愚人节主题 BR 中搜集小丑代币，前往随机出现的小丑商店兑换安全区、空投和敌人分布信息，并继续争夺大逃杀胜利。",
+    "mechanicChange": "官方页面把 Graffiti Prank 设为 Erangel 限时主题玩法：地图随机生成小丑商店，玩家用金/银小丑代币兑换下一安全区、下一空投或敌人密集区信息；开局岛还有可触发音乐的涂鸦墙，玩家仍可使用 3 周年主题的职业技能。",
+    "tempoImpact": "小丑商店把搜集转成可购买的信息资源，队伍可以用代币提前规划转点或主动追踪热点；信息优势会反过来引导中期交战路线。",
+    "designObservation": "把“情报”做成可搜集、可消费的局内货币，可以让 BR 的资源循环从装备扩展到路线决策；主题互动只有连接到安全区和敌人分布，才会真正改变对局。",
+    "sourceUrl": "https://pubgmobile.jp/graffiti-prank%E3%83%A2%E3%83%BC%E3%83%89%E3%81%8C%E7%99%BB%E5%A0%B4%EF%BC%81/",
+    "launchDate": "2021-03-31",
+    "launchLabel": "2021年3月31日至5月11日限时开放",
+    "launchNote": "官方页面确认 Erangel、随机小丑商店、两类代币、三种情报兑换与涂鸦互动；主题职业技能沿用同期周年玩法。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-graffiti-prank-2021.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
