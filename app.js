@@ -9,6 +9,7 @@ const state = {
   modes: [],
   entries: [],
   view: "modes",
+  modeView: "library",
   query: "",
   topic: "all",
   sort: "recommended",
@@ -597,22 +598,22 @@ async function renderModeBlockPng(mode) {
   }
 
   /* ── Badge row: game + date ── */
-  ctx.fillStyle = "#fff0db";
+  ctx.fillStyle = "#edf3e5";
   roundRect(ctx, layout.margin, y, 116, 32, 16);
   ctx.fill();
-  ctx.strokeStyle = "rgba(255, 159, 10, .4)";
+  ctx.strokeStyle = "#d5e1c9";
   ctx.stroke();
-  ctx.fillStyle = "#7c4a00";
+  ctx.fillStyle = "#426034";
   ctx.font = "700 18px Inter, PingFang SC, sans-serif";
   ctx.fillText(mode.game, layout.margin + 20, y + 22);
 
-  ctx.fillStyle = "#86868b";
+  ctx.fillStyle = "#788178";
   ctx.font = "700 18px Inter, PingFang SC, sans-serif";
   const dateText = mode.date || mode.year;
   ctx.fillText(dateText, width - layout.margin - ctx.measureText(dateText).width, y + 22);
 
   /* ── Title: badge bottom + 10px visual gap ── */
-  ctx.fillStyle = "#1d1d1f";
+  ctx.fillStyle = "#24382f";
   ctx.font = "800 50px Inter, PingFang SC, sans-serif";
   y = drawWrappedLines(ctx, layout.lines.title, layout.margin, y + 88, 58);
 
@@ -622,24 +623,24 @@ async function renderModeBlockPng(mode) {
 
   /* ── Launch time: tags bottom + 20px ── */
   y += 20;
-  ctx.fillStyle = "#f5f5f7";
+  ctx.fillStyle = "#f1f4ef";
   roundRect(ctx, layout.margin, y, layout.contentWidth, 46, 14);
   ctx.fill();
-  ctx.strokeStyle = "rgba(0, 0, 0, .06)";
+  ctx.strokeStyle = "#dce5d2";
   ctx.stroke();
-  ctx.fillStyle = "#0071e3";
+  ctx.fillStyle = "#4b6936";
   ctx.font = "800 18px Inter, PingFang SC, sans-serif";
   ctx.fillText(mode.kind === "modes" ? "上线时间" : "案例上线", layout.margin + 18, y + 30);
-  ctx.fillStyle = "#424245";
+  ctx.fillStyle = "#516346";
   ctx.font = "700 18px Inter, PingFang SC, sans-serif";
   ctx.fillText(mode.launchLabel || mode.date || mode.year, layout.margin + 108, y + 30);
 
   /* ── Sections: launch bottom + 24px ── */
   y += 70;
   y = drawShareSection(ctx, "一句话规则", layout.lines.rule, layout.margin, y, layout.contentWidth, "#424245");
-  y = drawShareSection(ctx, "机制变化", layout.lines.mechanic, layout.margin, y + 12, layout.contentWidth, "#6e6e73");
-  y = drawShareSection(ctx, "节奏影响", layout.lines.tempo, layout.margin, y + 12, layout.contentWidth, "#6e6e73");
-  y = drawShareSection(ctx, "设计观察", layout.lines.observation, layout.margin, y + 12, layout.contentWidth, "#2b6d3c");
+  y = drawShareSection(ctx, "机制变化", layout.lines.mechanic, layout.margin, y + 12, layout.contentWidth, "#667463");
+  y = drawShareSection(ctx, "节奏影响", layout.lines.tempo, layout.margin, y + 12, layout.contentWidth, "#667463");
+  y = drawShareSection(ctx, "设计观察", layout.lines.observation, layout.margin, y + 12, layout.contentWidth, "#286446");
 
   return new Promise((resolve, reject) => {
     canvas.toBlob((blob) => blob ? resolve(blob) : reject(new Error("canvas export failed")), "image/png");
@@ -714,7 +715,7 @@ function loadImageForCanvas(src) {
 }
 
 function drawCardBackground(ctx, width, height) {
-  ctx.fillStyle = "#ffffff";
+  ctx.fillStyle = "#f7f8f5";
   ctx.fillRect(0, 0, width, height);
 }
 
@@ -741,16 +742,16 @@ function drawCoverImageRounded(ctx, image, x, y, width, height, radius) {
 
 function drawShareSection(ctx, title, lines, x, y, width, color = "#b9b0a4") {
   const height = shareSectionHeight(lines.length, title === "一句话规则" ? 36 : 32);
-  ctx.fillStyle = "#f5f5f7";
+  ctx.fillStyle = "#ffffff";
   roundRect(ctx, x, y, width, height, 16);
   ctx.fill();
-  ctx.strokeStyle = "rgba(0, 0, 0, .06)";
+  ctx.strokeStyle = "#e3e8df";
   ctx.stroke();
 
-  ctx.fillStyle = "#0071e3";
+  ctx.fillStyle = "#4b6936";
   ctx.font = "800 19px Inter, PingFang SC, sans-serif";
   ctx.fillText(title, x + 20, y + 34);
-  ctx.fillStyle = color;
+  ctx.fillStyle = color === "#424245" ? "#516346" : color;
   ctx.font = title === "一句话规则" ? "400 25px Inter, PingFang SC, sans-serif" : "400 23px Inter, PingFang SC, sans-serif";
   drawWrappedLines(ctx, lines, x + 20, y + 76, title === "一句话规则" ? 36 : 32);
   return y + height;
@@ -770,12 +771,12 @@ function drawTagRow(ctx, tags, x, y, maxWidth) {
       cursorX = x;
       cursorY += 42;
     }
-    ctx.fillStyle = "#f3efe7";
+    ctx.fillStyle = "#edf3e5";
     roundRect(ctx, cursorX, cursorY, tagWidth, 32, 16);
     ctx.fill();
-    ctx.strokeStyle = "rgba(0, 0, 0, .06)";
+    ctx.strokeStyle = "#d5e1c9";
     ctx.stroke();
-    ctx.fillStyle = "#515154";
+    ctx.fillStyle = "#426034";
     ctx.fillText(tag, cursorX + 15, cursorY + 22);
     cursorX += tagWidth + 10;
   });

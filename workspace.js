@@ -2,10 +2,13 @@
 const viewMeta = {
   modes: ['玩法模式', '玩法模式', '发现射击游戏的核心模式与限时变体，按玩法、游戏和设计主题查找案例。', '01 / GAME MODES'],
   maps: ['地图', '地图', '收集射击游戏的地图资料，查看空间布局，保存底图并追溯官方来源。', '02 / MAP LIBRARY'],
-  activity: ['玩法动态', '玩法正在发生什么变化？', '追踪资料库中的上线节点，回到来源查看每一次规则变化。', 'GAMEPLAY SIGNALS'],
-  timeline: ['时间画板', '沿着时间，看玩法演变。', '按游戏与核心玩法分轨，BR、大战场、爆破、搜打撤、PVE 和其他玩法分别归档。', 'MODE TIMELINE'],
   collection: ['我的收藏', '我的研究收藏', '收藏值得继续研究的玩法案例。', 'YOUR FIELDNOTES'],
 
+};
+const modeViewMeta = {
+  library: viewMeta.modes,
+  activity: ['玩法模式', '玩法动态', '追踪资料库中的上线节点，回到来源查看每一次规则变化。', '01 / GAME MODES · DYNAMIC'],
+  timeline: ['玩法模式', '时间画板', '按游戏与核心玩法分轨，沿着时间查看 BR、大战场、爆破、搜打撤、PVE 和其他玩法的演变。', '01 / GAME MODES · TIMELINE']
 };
 const kindLabels = { modes: '玩法模式', mechanics: '玩法机制', levels: '关卡机制' };
 const gameplayDefinitions = [
@@ -120,6 +123,7 @@ function renderGameplayFilters() {
 
 function workspaceHash(entryId) {
   const params = new URLSearchParams();
+  if (state.view === 'modes' && state.modeView !== 'library') params.set('view', state.modeView);
   if (state.gameplayFilter !== 'all') params.set('gameplay', state.gameplayFilter);
   if (state.filter === 'ltm') params.set('tag', 'ltm');
   if (entryId) params.set('entry', entryId);
@@ -195,7 +199,7 @@ function renderLibrary() {
 }
 
 function renderActivityFeed() {
-  const baseModes = state.modes.filter(entryMatchesQuery);
+  const baseModes = state.modes.filter((mode) => matchesLibraryEntry(mode));
   let modes = getSortedModesDescending(baseModes);
   if (state.feedFilter === 'upcoming') modes = modes.filter((mode) => getDayDelta(mode) > 0).reverse();
   if (state.feedFilter === 'recent') modes = modes.filter((mode) => getDayDelta(mode) !== null && getDayDelta(mode) <= 0 && getDayDelta(mode) >= -30);
@@ -215,7 +219,7 @@ function renderWorkspace() {
   if (!state.ready) return;
   updateCounts();
   renderGameFilters();
-  const meta = viewMeta[state.view] || viewMeta.modes;
+  const meta = state.view === 'modes' ? (modeViewMeta[state.modeView] || modeViewMeta.library) : (viewMeta[state.view] || viewMeta.modes);
   $('#currentViewLabel').textContent = meta[0];
   $('#pageTitle').innerHTML = escapeHtml(meta[1]);
   $('#pageDescription').textContent = meta[2];
@@ -226,15 +230,23 @@ function renderWorkspace() {
     link.classList.toggle('is-active', active);
     if (active) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
   });
-  const library = ['modes', 'mechanics', 'levels', 'collection'].includes(state.view);
+  const library = ['mechanics', 'levels', 'collection'].includes(state.view) || (state.view === 'modes' && state.modeView === 'library');
+  const showActivity = state.view === 'modes' && state.modeView === 'activity';
+  const showTimeline = state.view === 'modes' && state.modeView === 'timeline';
+  $('#modeViewSwitcher').hidden = state.view !== 'modes';
+  document.querySelectorAll('[data-mode-view]').forEach((button) => {
+    const active = state.view === 'modes' && button.dataset.modeView === state.modeView;
+    button.setAttribute('aria-selected', String(active));
+    button.tabIndex = active ? 0 : -1;
+  });
   $('#librarySection').hidden = !library;
-  $('#activitySection').hidden = state.view !== 'activity';
-  $('#timelineSection').hidden = state.view !== 'timeline';
+  $('#activitySection').hidden = !showActivity;
+  $('#timelineSection').hidden = !showTimeline;
   $('#mapsSection').hidden = state.view !== 'maps';
   $('.export-menu').hidden = state.view === 'maps';
   if (library) renderLibrary();
-  if (state.view === 'activity') renderActivityFeed();
-  if (state.view === 'timeline') renderTimeline();
+  if (showActivity) renderActivityFeed();
+  if (showTimeline) renderTimeline();
   if (state.view === 'maps') renderMapArchive();
 }
 
@@ -259,19 +271,29 @@ function setNavOpen(open) {
 function readRoute() {
   if (!state.ready) return;
   const [route, query] = location.hash.slice(1).split('?');
-  // Former discovery links share the mode library, including filters and detail links.
-  const canonicalRoute = route === 'explore' ? 'modes' : route;
+  const routeParams = new URLSearchParams(query);
+  // Former discovery, activity and timeline links now share the mode library.
+  const legacyModeView = route === 'activity' ? 'activity' : route === 'timeline' ? 'timeline' : null;
+  const canonicalRoute = route === 'explore' || legacyModeView ? 'modes' : route;
   const view = Object.hasOwn(viewMeta, canonicalRoute) ? canonicalRoute : 'modes';
-  if (route !== view) history.replaceState(null, '', '#' + view + (query ? '?' + query : ''));
+  const requestedModeView = legacyModeView || routeParams.get('view');
+  const modeView = view === 'modes' && ['activity', 'timeline'].includes(requestedModeView) ? requestedModeView : 'library';
+  if (route !== canonicalRoute || (view === 'modes' && routeParams.get('view') !== (modeView === 'library' ? null : modeView))) {
+    const nextParams = new URLSearchParams(routeParams);
+    if (view === 'modes' && modeView !== 'library') nextParams.set('view', modeView); else nextParams.delete('view');
+    history.replaceState(null, '', '#' + canonicalRoute + (nextParams.size ? '?' + nextParams.toString() : ''));
+  }
   const viewChanged = state.view !== view;
   if (viewChanged) {
     resetFilters();
     state.view = view;
-    if (view === 'timeline') state.gameFilter = getGames()[0] || 'all';
+    if (view === 'modes') state.modeView = modeView;
+  } else if (view === 'modes') {
+    state.modeView = modeView;
   }
-  const routeParams = new URLSearchParams(query);
+  if (view === 'modes' && modeView === 'timeline' && state.gameFilter === 'all') state.gameFilter = getGames()[0] || 'all';
   state.gameplayFilter = gameplayDefinitions.some((item) => item.id === routeParams.get('gameplay')) ? routeParams.get('gameplay') : 'all';
-  state.filter = routeParams.get('tag') === 'ltm' && !['mechanics', 'levels'].includes(view) ? 'ltm' : 'all';
+  state.filter = routeParams.get('tag') === 'ltm' && view === 'modes' ? 'ltm' : 'all';
   $('#typeSelect').value = state.filter;
   setNavOpen(false);
   renderWorkspace();
@@ -361,9 +383,17 @@ function bindWorkspaceEvents() {
     });
   });
   document.addEventListener('click', (event) => {
-    const target = event.target.closest('[data-action], [data-game], [data-gameplay], [data-layout], [data-reset-filters]');
+    const target = event.target.closest('[data-action], [data-game], [data-gameplay], [data-layout], [data-mode-view], [data-reset-filters]');
     if (!target) return;
     if (target.hasAttribute('data-reset-filters')) { resetFilters(); syncFilterRoute(); renderWorkspace(); return; }
+    if (target.dataset.modeView) {
+      state.modeView = target.dataset.modeView;
+      state.limit = 12;
+      syncFilterRoute();
+      renderWorkspace();
+      target.focus({ preventScroll: true });
+      return;
+    }
     if (target.dataset.gameplay) {
       state.gameplayFilter = target.dataset.gameplay; state.limit = 12; syncFilterRoute(); renderLibrary();
       $('#gameplayFilters [aria-pressed="true"]')?.focus({ preventScroll: true }); return;
@@ -399,7 +429,7 @@ function bindWorkspaceEvents() {
   });
   $('#searchInput').addEventListener('input', (event) => {
     state.query = event.target.value; state.limit = 12;
-    if (!['modes', 'mechanics', 'levels', 'collection', 'activity', 'maps'].includes(state.view)) {
+    if (!['modes', 'mechanics', 'levels', 'collection', 'maps'].includes(state.view)) {
       state.view = 'modes'; state.gameFilter = 'all';
       history.replaceState(null, '', '#modes');
     }

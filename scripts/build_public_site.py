@@ -19,6 +19,8 @@ def main():
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(ROOT / name, destination)
     shutil.copytree(ROOT / 'assets/maps', OUTPUT / 'assets/maps')
+    if (ROOT / 'assets/modes').exists():
+        shutil.copytree(ROOT / 'assets/modes', OUTPUT / 'assets/modes')
     (OUTPUT / '.nojekyll').touch()
     assert not (OUTPUT / 'data/research.json').exists()
     assert not (OUTPUT / 'local-only').exists()
