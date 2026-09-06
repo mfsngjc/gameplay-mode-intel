@@ -9088,5 +9088,188 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-new-age-resource-management-2021.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-metro-royale-uncover-2021",
+    "game": "PUBG Mobile",
+    "modeName": "地铁逃生：揭晓章节（Metro Royale: Uncover）",
+    "year": "2021",
+    "date": "2021-03-09",
+    "tags": [
+      "extraction",
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "撤离搜打",
+      "精英敌人",
+      "章节重置"
+    ],
+    "oneLineRule": "进入地铁逃生的“揭晓”章节，搜集物资并成功撤离；精英敌人和地图提示会把高价值路线变成新的风险选择。",
+    "mechanicChange": "1.3 版本为 Metro Royale 开启新章节：赛季荣誉、排名和库存会重置，地图会出现额外精英敌人，并通过广播和标记提示其位置；击败它们可获得奖励。",
+    "tempoImpact": "章节重置让玩家重新建立装备和荣誉，精英敌人的随机出现则制造临时热点；队伍需要在安全撤离和追逐高价值目标之间做取舍。",
+    "designObservation": "搜打撤章节更新用“重置长期进度 + 新目标热点”重新分配玩家路线，既让老玩家有回归理由，也让风险收益关系在每个章节重新计算。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/202103/884576.shtml",
+    "launchDate": "2021-03-09",
+    "launchLabel": "2021年3月9日 1.3 版本",
+    "launchNote": "官方地区版本公告记录 Metro Royale: Uncover 新章节，并明确提到章节荣誉、排名和库存重置，以及精英敌人与地图提示；此卡按搜打撤章节更新单独记录。",
+    "gameplayTypes": [
+      "extraction"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-metro-royale-uncover-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-react-survival-2021",
+    "game": "PUBG Mobile",
+    "modeName": "反应生存（React Survival）",
+    "year": "2021",
+    "date": "2021-12-20",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "街机模式",
+      "生存挑战",
+      "反应判断"
+    ],
+    "oneLineRule": "在限时街机生存挑战中持续前进并躲过危险，按官方活动规则完成路线才能存活到终点。",
+    "mechanicChange": "官方宣传将 React Survival 定义为新的 Arcade 生存模式，核心体验是奔跑、观察危险信号并在关键时刻停下或移动；官方页面没有公开完整人数与回合参数，因此细则以客户端为准。",
+    "tempoImpact": "移动与停顿交替产生短促的节奏压力，玩家必须把注意力从射击准度转向环境提示、反应窗口和路线判断。",
+    "designObservation": "把射击游戏的输入压力转成“移动/停下”的反应测试，可以在共享客户端里制造完全不同的短局体验；规则参数应在入口处清楚说明。",
+    "sourceUrl": "https://www.youtube.com/watch?v=si5fRm5Sa8s",
+    "launchDate": "2021-12-20",
+    "launchLabel": "2021年12月20日官方宣传上线",
+    "launchNote": "PUBG MOBILE 官方频道称 React Survival 已上线；1.8 版本公告随后确认该模式于 2022年1月10日 23:59（UTC）关闭。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-react-survival-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-react-survival-2-0-2022",
+    "game": "PUBG Mobile",
+    "modeName": "反应生存 2.0（React Survival 2.0）",
+    "year": "2022",
+    "date": "2022-04-20",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "周年回归",
+      "街机模式",
+      "任务奖励"
+    ],
+    "oneLineRule": "在四周年活动期间回到 React Survival 2.0，完成该模式内的指定任务并领取活动奖励。",
+    "mechanicChange": "官方周年活动重新开放 React Survival 2.0，并把模式任务接入活动奖励链；公告没有重新列出完整规则，因此此卡记录回归与任务化更新，不臆测具体关卡参数。",
+    "tempoImpact": "任务奖励给短局模式增加了重复游玩的目标，玩家会围绕活动期限安排多次挑战，而不是只玩一次体验规则。",
+    "designObservation": "限时模式回归时加入任务链，可以把一次性玩法转成可追踪的重复目标；奖励条件必须和模式的核心动作保持一致。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60922/60923/60924/60926/m22609/202203/912060.shtml",
+    "launchDate": "2022-04-20",
+    "launchLabel": "2022年4月20日至5月10日周年活动",
+    "launchNote": "官方 1.9 四周年活动页将 React Survival 2.0 列为独立活动项目，并记录在该模式内完成指定任务；完整规则未在公告中重复展开。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-react-survival-2-0-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-pumpkin-snatch-2019",
+    "game": "Free Fire",
+    "modeName": "南瓜争夺（Pumpkin Snatch）",
+    "year": "2019",
+    "date": "2019-10",
+    "tags": [
+      "objective",
+      "casual"
+    ],
+    "type": [
+      "万圣节主题",
+      "团队争夺",
+      "复活对抗"
+    ],
+    "oneLineRule": "在万圣节主题的团队争夺模式中收集并保护南瓜，同时阻止对手把目标带走；具体人数和胜负阈值按当时客户端活动规则执行。",
+    "mechanicChange": "Free Fire 官方游戏模式 DevBlog 将 Pumpkin Snatch 列为过去成功的活动联动模式；现有官方页面未保留完整规则，因此这里只确认其节日争夺定位，不补写未核实的数字。",
+    "tempoImpact": "可携带、可争夺的活动目标会把队伍注意力从单纯击杀转向护送、拦截和快速返场，形成围绕热点的短周期冲突。",
+    "designObservation": "节日主题目标能把熟悉的枪战包装成易懂的团队任务；目标状态应持续可见，才能让队伍快速形成保护与抢夺分工。",
+    "sourceUrl": "https://ff.garena.com/en/article/137",
+    "launchDate": "2019-10",
+    "launchLabel": "2019年万圣节活动期间（具体全球上线日待确认）",
+    "launchNote": "官方 DevBlog 明确把 Pumpkin Snatch 列为过去的事件联动游戏模式；官方原始规则页暂未找到，人数、时长和胜负阈值保持待确认。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-pumpkin-snatch-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-rampage-redemption-2019",
+    "game": "Free Fire",
+    "modeName": "狂暴：救赎（Rampage: Redemption）",
+    "year": "2019",
+    "date": "2019",
+    "tags": [
+      "br-core",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "能力成长",
+      "活动联动"
+    ],
+    "oneLineRule": "在 2019 年 Rampage 主题活动中进入限时 BR 玩法，围绕阵营目标和强化能力完成活动对抗。",
+    "mechanicChange": "Garena 后续官方回顾将 Rampage: Redemption 认定为 2019 年首届 Rampage 活动模式；现有官方回顾没有保留完整规则，因此只记录其作为主题 BR 活动的历史存在。",
+    "tempoImpact": "主题目标和活动强化会让玩家在普通 BR 的搜刮、交战路线之外追逐额外事件热点；具体节奏参数以当时客户端为准。",
+    "designObservation": "系列化活动先建立一套可复用的 BR 主题框架，再通过每年更换目标和能力持续生产新内容；历史归档应保留每一届的独立主题。",
+    "sourceUrl": "https://ff.garena.com/en/article/454/",
+    "launchDate": "2019",
+    "launchLabel": "2019年 Rampage 活动（具体开放日待官方原始页面确认）",
+    "launchNote": "官方 2021 年回顾明确列出 Rampage: Redemption 为 2019 年前一届活动；由于原始规则页尚未在官方英文档案中找到，人数、目标和能力细节保持待确认。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-rampage-redemption-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-rampage-uprising-2020",
+    "game": "Free Fire",
+    "modeName": "狂暴：崛起（Rampage: Uprising）",
+    "year": "2020",
+    "date": "2020",
+    "tags": [
+      "br-core",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "能力成长",
+      "活动联动"
+    ],
+    "oneLineRule": "在 2020 年 Rampage 主题活动中进入限时 BR 玩法，围绕活动目标和强化能力与其他玩家对抗。",
+    "mechanicChange": "Garena 后续官方回顾将 Rampage: Uprising 认定为 2020 年 Rampage 活动模式；原始英文规则页未在当前档案中找到，因此不把未核实的数值或地图机制写成事实。",
+    "tempoImpact": "活动热点会重新分配玩家的落点与转移路线，能力强化则让搜刮和交战同时承担成长价值；具体规则以当时客户端为准。",
+    "designObservation": "同一活动品牌的年度续作需要保留稳定识别符，同时在目标和能力上留下足够差异，玩家才会把它视为新玩法而不是换皮复刻。",
+    "sourceUrl": "https://ff.garena.com/en/article/454/",
+    "launchDate": "2020",
+    "launchLabel": "2020年 Rampage 活动（具体开放日待官方原始页面确认）",
+    "launchNote": "官方 2021 年回顾明确列出 Rampage: Uprising 为 2020 年前一届活动；原始规则页尚未在官方英文档案中找到，细节保持待确认。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-rampage-uprising-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
