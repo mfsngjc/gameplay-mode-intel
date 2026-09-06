@@ -8968,5 +8968,65 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-ranked-domination-2025.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-arcade-mode-2018",
+    "game": "PUBG Mobile",
+    "modeName": "街机模式（Arcade Mode）",
+    "year": "2018",
+    "date": "2018-05-03",
+    "tags": [
+      "casual",
+      "warfare"
+    ],
+    "type": [
+      "28 人对局",
+      "武器变体",
+      "短局竞技"
+    ],
+    "oneLineRule": "在 28 人 Arcade 对局中随机进入霰弹枪、狙击枪、全武器、近战、手枪或道具天堂等武器规则变体。",
+    "mechanicChange": "0.4.0 首次把 Arcade 作为独立模式加入，并用六种武器/道具池变体改变同一张地图的战斗重点。",
+    "tempoImpact": "人数更少、武器规则更集中，玩家能快速进入交火；每次变体都会重新定义搜刮优先级和有效交战距离。",
+    "designObservation": "用“固定人数 + 武器规则轮换”在不重做地图的情况下提供多种短局体验，是把系统组合当作内容生产器的早期例子。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201805/715447.shtml",
+    "launchDate": "2018-05-03",
+    "launchLabel": "2018年5月3日 0.4.0 补丁",
+    "launchNote": "官方补丁确认 Arcade 为 28 人模式，并列出 Shotguns、Sniper Rifles、All Weapons、Melee Only、Pistols、Item Heaven 六种变体；后续轮换以客户端为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/generated/pubgm-arcade-mode-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-snow-paradise-2019",
+    "game": "PUBG Mobile",
+    "modeName": "雪境乐园（Snow Paradise）",
+    "year": "2019",
+    "date": "2019-12-11",
+    "tags": [
+      "br-ltm",
+      "casual"
+    ],
+    "type": [
+      "主题 BR",
+      "缆车移动",
+      "滑雪互动"
+    ],
+    "oneLineRule": "在 Erangel Classic 排队时有机会进入 Snow Paradise，乘坐雪山缆车并进行滑雪移动；具体触发概率以客户端为准。",
+    "mechanicChange": "0.16.0 在 Classic Erangel 中加入 Snow Paradise 随机主题：雪山出现缆车和滑雪内容，普通 BR 路线因此增加了垂直移动与节日互动。",
+    "tempoImpact": "缆车提供新的高点转移方式，滑雪又鼓励玩家利用坡地快速穿越；主题区域会改变早期搜刮和追击的路线选择。",
+    "designObservation": "将轻量交通和运动互动叠加到 Classic 地图，可以在不改变胜负结构的前提下制造新的移动节奏和记忆点。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201912/839688.shtml",
+    "launchDate": "2019-12-11",
+    "launchLabel": "2019年12月11日 0.16.0 补丁",
+    "launchNote": "官方补丁确认 Snow Paradise 为 Erangel Classic 的随机主题玩法；具体开放时段和触发规则以客户端为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-snow-paradise-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]

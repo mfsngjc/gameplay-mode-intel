@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 75,
-      "coverCount": 75,
-      "readableDescriptionCount": 75,
+      "modeCount": 77,
+      "coverCount": 77,
+      "readableDescriptionCount": 77,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -402,7 +402,9 @@
         "pubgm-sniper-training-2019",
         "pubgm-war-2019",
         "pubgm-ranked-assault-2025",
-        "pubgm-ranked-domination-2025"
+        "pubgm-ranked-domination-2025",
+        "pubgm-arcade-mode-2018",
+        "pubgm-snow-paradise-2019"
       ],
       "officialSourceUrls": [
         "https://pubgmobile.jp/version-3-7-0-patch-notes-20250308/",
@@ -410,8 +412,10 @@
         "https://tencent.pk/news/2026-01-06-v4-2-update-announcement/",
         "https://tencent.pk/news/2026-03-11-v4-3-update-announcement/",
         "https://www.pubgmobile.com/TW/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201806/731228.shtml",
+        "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201805/715447.shtml",
         "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201904/804220.shtml",
         "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201906/813644.shtml",
+        "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201912/839688.shtml",
         "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/202011/874641.shtml",
         "https://www.pubgmobile.com/en/event/Dinoground/",
         "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
@@ -455,7 +459,7 @@
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/m22521/202301/928128.shtml",
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60922/60923/60924/60926/m22609/202204/913942.shtml"
       ],
-      "notes": "已回溯 0.6–4.3 版本及 2018–2026 主题、竞技和街机玩法页面；本轮补入 Mini-Zone、Quick Match、Sniper Training、War，以及 3.9 Ranked Arena 的 Assault、Domination。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
+      "notes": "已回溯 0.4–4.3 版本及 2018–2026 主题、竞技和街机玩法页面；本轮补入 0.4.0 Arcade Mode 与 0.16.0 Snow Paradise。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
