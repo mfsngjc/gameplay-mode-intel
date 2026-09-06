@@ -7278,5 +7278,594 @@
       "随机地图",
       "团队对抗"
     ]
+  },
+  {
+    "id": "free-fire-death-race-2018",
+    "game": "Free Fire",
+    "modeName": "死亡竞速（Death Race）",
+    "year": "2018",
+    "date": "2018-04-17",
+    "tags": [
+      "br-ltm",
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "双人载具",
+      "道具竞速",
+      "生存到最后"
+    ],
+    "oneLineRule": "40 名玩家组成双人队，只能驾驶摩托车在地图上收集强化道具，和队友一起撑到最后。",
+    "mechanicChange": "官方 2018 年 4 月更新把 Death Race 设为双人载具玩法：队伍使用摩托车移动，沿途收集 Power-ups，载具本身成为主要移动、战斗和生存资源。",
+    "tempoImpact": "没有常规搜刮和步行枪战后，路线选择、载具耐久和道具时机决定了每次超车与追击，比赛节奏明显快于普通 BR。",
+    "designObservation": "把大逃杀的生存目标压缩成载具竞速，可以用队伍协作和道具路线制造短局内的追逐关系。",
+    "sourceUrl": "https://ff.garena.com/en/article/175/",
+    "launchDate": "2018-04-17",
+    "launchLabel": "2018年4月17日限时开放",
+    "launchNote": "官方公告确认 40 人双人、全程载具和强化道具；具体轮换以客户端为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-death-race-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-rush-hour-2018",
+    "game": "Free Fire",
+    "modeName": "高峰时刻（Rush Hour）",
+    "year": "2018",
+    "date": "2018-06-20",
+    "tags": [
+      "br-core",
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "20 人 BR",
+      "高阶装备",
+      "快速缩圈"
+    ],
+    "oneLineRule": "20 人快速 BR，地图只生成高阶装备，安全区比普通比赛更快收缩，要求玩家尽早接战。",
+    "mechanicChange": "官方地区公告将 Rush Hour 定义为 20 人快速模式：只出现高阶装备，安全区收缩速度明显更快；同一公告还将周末 Death Race（Mad Dog）列为特殊玩法。",
+    "tempoImpact": "高阶出生资源减少了搜刮阶段，快速缩圈把队伍更早推向交战面，整局更像一场短时决赛圈练习。",
+    "designObservation": "通过缩短人数、强化资源和压缩安全区，把 BR 的核心决策保留在更短的时间窗口里。",
+    "sourceUrl": "https://ff.garena.com/id/article/209/",
+    "launchDate": "2018-06-20",
+    "launchLabel": "2018年6月20日限时回归",
+    "launchNote": "官方印度尼西亚地区公告；地区版本名称与开放时间可能不同。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-rush-hour-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-solo-death-race-2018",
+    "game": "Free Fire",
+    "modeName": "单人死亡竞速（Solo Death Race）",
+    "year": "2018",
+    "date": "2018-09-12",
+    "tags": [
+      "br-ltm",
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "单人载具",
+      "竞速生存",
+      "特殊地图"
+    ],
+    "oneLineRule": "在死亡竞速的载具规则上取消组队，玩家独自驾驶并利用载具路线和道具争取最后存活。",
+    "mechanicChange": "官方 2018 年 9 月更新明确加入 Solo Death Race：玩家可以单人进入死亡竞速规则，载具移动和竞速空间成为主要的生存手段。",
+    "tempoImpact": "单人版本取消了队友救援和分工，玩家必须独立处理路线、碰撞和道具窗口，失误成本更高。",
+    "designObservation": "同一套载具系统通过去掉队友依赖，就能从协作竞速变成个人风险管理模式。",
+    "sourceUrl": "https://ff.garena.com/en/article/198/",
+    "launchDate": "2018-09-12",
+    "launchLabel": "2018年9月12日加入轮换",
+    "launchNote": "官方更新公告确认 Solo Death Race；具体开放时段以版本客户端为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-solo-death-race-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-death-uprising-2019",
+    "game": "Free Fire",
+    "modeName": "死亡崛起（Death Uprising）",
+    "year": "2019",
+    "date": "2019-03-20",
+    "tags": [
+      "pve",
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "PvE 生存",
+      "丧尸波次",
+      "首领战"
+    ],
+    "oneLineRule": "玩家组队抵挡一波波丧尸，收集 Zombie Badge 换取奖励，在不断升级的难度中活到最后。",
+    "mechanicChange": "官方世界赛更新把 Death Uprising 作为 PvE 模式：玩家需要抵挡连续丧尸波次，击败敌人获得 Zombie Badge；后续官方补丁又加入 Inferno 难度、护盾丧尸、Undead Agent 首领、无限弹药和濒死保命增益。",
+    "tempoImpact": "敌人波次和难度升级持续抬高压力，队伍需要在清怪、补给和首领阶段之间调整火力分配。",
+    "designObservation": "PvE 模式用明确的波次、难度和奖励货币建立长期成长，让射击练习转化成合作生存目标。",
+    "sourceUrl": "https://ff.garena.com/en/article/38/",
+    "launchDate": "2019-03-20",
+    "launchLabel": "2019年3月20日公布并陆续开放",
+    "launchNote": "官方公告先公布模式与基础规则；OB17 补丁继续补充难度、丧尸、首领与增益。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-death-uprising-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-spray-and-pray-2019",
+    "game": "Free Fire",
+    "modeName": "火力倾泻（Spray and Pray）",
+    "year": "2019",
+    "date": "2019-06-25",
+    "tags": [
+      "casual",
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "特殊武器",
+      "高射速",
+      "火力压制"
+    ],
+    "oneLineRule": "在特殊玩法中使用拥有 1200 发弹匣的加特林机枪，以持续火力压制对手。",
+    "mechanicChange": "官方 OB16 更新将 Gatling Gun 标记为 Special Mode - Spray and Pray 专属武器，拥有 1200 发弹匣和极高射速，局内资源和战斗距离都围绕持续扫射重新分配。",
+    "tempoImpact": "超大弹匣降低换弹停顿，让战斗更强调压制角度、持续输出和队伍交叉火力。",
+    "designObservation": "只改变核心武器就能形成一套明确的模式身份，但地图掩体和弹药经济必须同步调整，才能避免纯数值碾压。",
+    "sourceUrl": "https://ff.garena.com/en/article/60/",
+    "launchDate": "2019-06-25",
+    "launchLabel": "2019年6月25日随 OB16 加入特殊玩法",
+    "launchNote": "官方 OB16 公告确认该武器属于 Spray and Pray 特殊玩法；模式具体入口以客户端为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-spray-and-pray-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-pet-rumble-2021",
+    "game": "Free Fire",
+    "modeName": "宠物乱斗（Pet Rumble）",
+    "year": "2021",
+    "date": "2021-06-09",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "宠物技能",
+      "任务小游戏",
+      "团队协作"
+    ],
+    "oneLineRule": "科学家完成四类小游戏任务，恶作剧者利用陷阱干扰对手，双方围绕任务进度争取胜利。",
+    "mechanicChange": "官方 Rampage 更新把 Pet Rumble 从早期测试推进到匹配开放：科学家需要完成 4 类小游戏，Pranksters 可以使用 Trap 技能，模式通过角色分工和任务完成制造非对称对抗。",
+    "tempoImpact": "玩家必须在完成任务、观察身份和布置陷阱之间切换，短回合会不断产生追逐和误判。",
+    "designObservation": "把宠物从被动陪伴改成身份和任务系统，让轻量社交玩法也能承载信息不对称。",
+    "sourceUrl": "https://ff.garena.com/en/article/459/",
+    "launchDate": "2021-06-09",
+    "launchLabel": "2021年6月9日起开放匹配",
+    "launchNote": "官方公告确认 Pet Rumble 开放匹配并加入小游戏与 Trap 技能。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-pet-rumble-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-clash-squad-6v6-2021",
+    "game": "Free Fire",
+    "modeName": "枪王对决 6v6（Clash Squad 6v6）",
+    "year": "2021",
+    "date": "2021-09-28",
+    "tags": [
+      "casual",
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "6v6 团队竞技",
+      "自定义房间",
+      "经济商店"
+    ],
+    "oneLineRule": "在自定义房间里把标准 Clash Squad 扩展为 6v6，保留购买商店与回合制交战。",
+    "mechanicChange": "官方 BOOYAH Day 更新在 Custom Room 加入 6v6 Clash Squad，让房主可以用更大规模的队伍进行枪王对决；基础购买、回合和地图结构沿用 Clash Squad。",
+    "tempoImpact": "人数提升让交火面和救援链更复杂，队伍需要重新安排开局购买、推进路线和残局分工。",
+    "designObservation": "扩大队伍规模是一种低成本模式变体，但必须重新平衡经济和地图承载量，才能让人数优势转化成新的战术问题。",
+    "sourceUrl": "https://ff.garena.com/en/article/617/",
+    "launchDate": "2021-09-28",
+    "launchLabel": "2021年9月28日起可在自定义房间使用",
+    "launchNote": "官方公告明确标注为 Custom Room 模式。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-clash-squad-6v6-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-kimbo-rush-hour-2022",
+    "game": "Free Fire",
+    "modeName": "双持高峰时刻（Kimbo Rush Hour）",
+    "year": "2022",
+    "date": "2022-04-01",
+    "tags": [
+      "br-ltm",
+      "br-core",
+      "power"
+    ],
+    "type": [
+      "双持武器",
+      "快速 BR",
+      "地区活动"
+    ],
+    "oneLineRule": "在 Rush Hour 快速 BR 中启用 Akimbo 触发器，让玩家可以同时手持两把武器。",
+    "mechanicChange": "官方巴基斯坦地区公告介绍了 Kimbo mode：玩家在 Rush Hour 比赛中加入 Akimbo activator，获得双持武器能力，并配合 Gen FF 活动完成里程碑。",
+    "tempoImpact": "双持强化提高近距离爆发，快速 BR 的缩圈和高阶资源会把玩家更快推入高风险近战。",
+    "designObservation": "用一个短时规则开关改变武器持握方式，能在既有 BR 框架里快速制造鲜明的操作主题。",
+    "sourceUrl": "https://ff.garena.com/en-pk/article/670/",
+    "launchDate": "2022-04-01",
+    "launchLabel": "2022年4月1日起地区限时活动",
+    "launchNote": "官方巴基斯坦地区公告；这是地区版本活动，全球服未必同步。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-kimbo-rush-hour-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-pet-smash-2023",
+    "game": "Free Fire",
+    "modeName": "宠物乱斗：Pet Smash（Pet Smash）",
+    "year": "2023",
+    "date": "2023-03-21",
+    "tags": [
+      "arena",
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "2v2 竞技",
+      "宠物终极技",
+      "随机增益"
+    ],
+    "oneLineRule": "2v2 宠物竞技中通过淘汰拿分，先到 7 分或 5 分钟结束时分数更高的一队获胜。",
+    "mechanicChange": "官方 Ramadan 更新加入 Pet Smash：玩家从 3 种宠物中选择一种，每种宠物有独特攻击和终极技；命中会为终极技能充能，随机增益散布在地图上，低血量时还能暂离战斗区恢复。",
+    "tempoImpact": "击杀得分、终极技能和随机增益让小地图战斗形成短周期的争夺和反打。",
+    "designObservation": "宠物能力与 2v2 得分目标结合，把角色收集系统转化为可读的竞技职责和技能循环。",
+    "sourceUrl": "https://ff.garena.com/es/article/1120/",
+    "launchDate": "2023-03-21",
+    "launchLabel": "2023年3月21日版本宣布",
+    "launchNote": "官方西班牙语地区补丁页面；页面明确列出 2v2、7 分、5 分钟和宠物技能规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-pet-smash-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-triple-wolves-2023",
+    "game": "Free Fire",
+    "modeName": "三狼混战（Triple Wolves）",
+    "year": "2023",
+    "date": "2023-03-21",
+    "tags": [
+      "arena",
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "多方混战",
+      "六回合",
+      "武器选择"
+    ],
+    "oneLineRule": "在冰雪狼巢进行 2v2v2 或 1v1v1 的六回合战斗，每回合选择武器，按淘汰和存活得分。",
+    "mechanicChange": "官方 Ramadan 更新宣布 Triple Wolves：每局进行 6 回合多方混战，玩家可以为该回合选择所有人使用的武器；每回合自动获得闪光弹、冰冻雷、二级护甲和 2 面 Gloo Wall。",
+    "tempoImpact": "三方威胁和每回合武器选择会持续改变安全关系，玩家需要根据得分和对手武器决定进攻或保分。",
+    "designObservation": "让玩家共同选择回合武器，可以把公平性和策略博弈放到开局决策里，而不是只依赖个人枪法。",
+    "sourceUrl": "https://ff.garena.com/es/article/1120/",
+    "launchDate": "2023-03-21",
+    "launchLabel": "2023年3月21日版本宣布",
+    "launchNote": "官方西班牙语地区补丁页面；页面明确列出 2v2v2、1v1v1、六回合和武器选择规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-triple-wolves-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-color-hide-seek-2023",
+    "game": "Free Fire",
+    "modeName": "彩色躲猫猫（Color Hide & Seek）",
+    "year": "2023",
+    "date": "2023-06-09",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "躲猫猫",
+      "搜寻扫描",
+      "积分榜"
+    ],
+    "oneLineRule": "躲藏者利用自由视角和游乐园场景隐藏，搜寻者用扫描定位，最后按累计积分竞争。",
+    "mechanicChange": "官方六周年 Craftland 更新加入 Color Hide & Seek：躲藏者获得自由观察视角，搜寻者可以扫描，模式提供数据记录和排行榜，并使用全新的游乐园地图。",
+    "tempoImpact": "自由视角提高躲藏信息量，扫描则制造周期性追逐窗口，积分榜让单局结果延伸为长期竞争。",
+    "designObservation": "把观察、扫描和积分三个系统组合起来，可以让非射击目标也有清晰的攻守节奏和复玩动力。",
+    "sourceUrl": "https://ff.garena.com/id/article/1150",
+    "launchDate": "2023-06-09",
+    "launchLabel": "2023年6月9日起限时开放",
+    "launchNote": "官方印度尼西亚地区补丁页面，列出自由视角、扫描、记录和游乐园地图。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-color-hide-seek-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-color-spray-2023",
+    "game": "Free Fire",
+    "modeName": "彩色喷涂（Color Spray）",
+    "year": "2023",
+    "date": "2023-06-09",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "区域占领",
+      "喷涂武器",
+      "团队技能"
+    ],
+    "oneLineRule": "两队用不同颜色的喷枪占领方块，喷枪既能改写地块颜色也能淘汰敌人，最后控制更多方块的队伍获胜。",
+    "mechanicChange": "官方 Craftland 更新为每名玩家分配队伍颜色和喷枪，方块可以被对手重新喷涂；团队还能使用不同技能争夺区域。",
+    "tempoImpact": "地块状态会在交火中反复翻转，队伍必须在击杀、占点和抢回关键方块之间分配时间。",
+    "designObservation": "把“涂色”做成可逆的占领状态，让视觉反馈直接承担胜负信息，同时保留射击对抗的压力。",
+    "sourceUrl": "https://ff.garena.com/id/article/1150",
+    "launchDate": "2023-06-09",
+    "launchLabel": "2023年6月9日起限时开放",
+    "launchNote": "官方印度尼西亚地区补丁页面，列出喷枪、可重涂方块、团队技能和胜负条件。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-color-spray-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-mystery-town-2023",
+    "game": "Free Fire",
+    "modeName": "神秘小镇（Mystery Town）",
+    "year": "2023",
+    "date": "2023-06-09",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "身份推理",
+      "三种角色",
+      "资源探索"
+    ],
+    "oneLineRule": "玩家随机成为 Sheriff、Civilian 或 Assassin，在小镇中收集金币、获取武器技能并完成各自阵营目标。",
+    "mechanicChange": "官方 Craftland 更新设定了三种角色：Sheriff 找出 Assassin 并保护 Civilian，Civilian 需要生存并协助调查，Assassin 要辨认同伴并淘汰其他人；地图还提供基地和博物馆等探索区域。",
+    "tempoImpact": "身份不确定性让开火本身带有信息风险，金币探索又会把玩家从安全躲藏点拉到公共路线。",
+    "designObservation": "误伤惩罚让信息判断变成真正的设计约束，适合研究射击游戏如何引入社交推理。",
+    "sourceUrl": "https://ff.garena.com/id/article/1150",
+    "launchDate": "2023-06-09",
+    "launchLabel": "2023年6月9日起限时开放",
+    "launchNote": "官方印度尼西亚地区补丁页面，明确列出三种角色、金币、武器技能和误伤规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-mystery-town-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-fort-feud-2023",
+    "game": "Free Fire",
+    "modeName": "堡垒争夺（Fort Feud）",
+    "year": "2023",
+    "date": "2023-06-09",
+    "tags": [
+      "arena",
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "4 队 2 人",
+      "炮塔攻防",
+      "空中建造"
+    ],
+    "oneLineRule": "4 支双人队伍建设空中家园、购买武器和增益，铺路进攻敌方据点并摧毁炮塔。",
+    "mechanicChange": "官方 Craftland 更新将 Fort Feud 设计为 4 队 2 人：玩家在空中花园建立基地，从军械库选择武器、从增益商店购买强化，并铺设道路前往敌方据点；坠落会直接淘汰，淘汰后可用 Revival Token 返场。",
+    "tempoImpact": "基地建设、铺路、炮塔防守和返场资源形成多阶段推进，队伍需要在发展和主动进攻之间做取舍。",
+    "designObservation": "把塔防的长期目标放进射击地图，可以研究“建造—推进—摧毁”的多阶段胜负链如何与枪战结合。",
+    "sourceUrl": "https://ff.garena.com/id/article/1150",
+    "launchDate": "2023-06-09",
+    "launchLabel": "2023年6月9日起限时开放",
+    "launchNote": "官方印度尼西亚地区补丁页面，明确列出队伍规模、基地、增益商店、炮塔和返场规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-fort-feud-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-beat-carnival-2026",
+    "game": "Free Fire",
+    "modeName": "节拍嘉年华（Beat Carnival）",
+    "year": "2026",
+    "date": "2026-02-13",
+    "tags": [
+      "br-core",
+      "br-ltm",
+      "casual",
+      "power"
+    ],
+    "type": [
+      "音乐区域",
+      "强制跳舞",
+      "弹射移动"
+    ],
+    "oneLineRule": "在 BR 和 Clash Squad 中利用音乐区域、舞蹈手雷、音箱蹦床和强化技能卡，围绕移动舞台争夺增益。",
+    "mechanicChange": "官方 Beat Carnival 活动在 Solara 的 Bloomtown 设置音乐舞台，BR 中出现会移动的 Panther Party Truck 和音乐音符区域，CS 中固定出现提升移动速度与生命恢复的 Soundwave Zone；舞蹈手雷会让爆炸范围内玩家暂时无法攻击，Speaker Trampoline 可把玩家弹射到远处。",
+    "tempoImpact": "移动舞台和音符区域让队伍追逐短时收益，舞蹈控制和弹射位移会在交战中制造突然的节奏切换。",
+    "designObservation": "把音乐节奏转成区域增益、控制和位移三种战斗语言，可以让主题氛围真正改变局内路线。",
+    "sourceUrl": "https://ff.garena.com/en/article/1634/",
+    "launchDate": "2026-02-13",
+    "launchLabel": "2026年2月13日至26日限时活动",
+    "launchNote": "官方公告发布时间与活动开始时间存在差异；卡片按公告标注的活动窗口记录。",
+    "gameplayTypes": [
+      "br",
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-beat-carnival-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-gintama-2026",
+    "game": "Free Fire",
+    "modeName": "银魂联动战场（GINTAMA Crossover）",
+    "year": "2026",
+    "date": "2026-04-24",
+    "tags": [
+      "br-core",
+      "br-ltm",
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "联动地标",
+      "战场道具",
+      "BR 互动"
+    ],
+    "oneLineRule": "在 BR 地图探索万事屋联动地标，收集银魂主题武器、手雷和载具奖励，让联动内容进入常规搜刮路线。",
+    "mechanicChange": "官方 GINTAMA 联动在所有 BR 地图加入两层万事屋建筑，玩家可以进入探索；联动还提供神乐伞主题 Winchester、洞爷湖木刀、Justaway 手雷和银魂摩托车等局内道具与奖励。",
+    "tempoImpact": "固定联动地标为地图增加新的公共搜刮点，主题武器和手雷则在常规 BR 资源循环中提供新的视觉与战斗识别。",
+    "designObservation": "联动地标只有进入地图路线并改变搜刮决策时，才会从外观合作变成可研究的玩法内容。",
+    "sourceUrl": "https://ff.garena.com/en/article/1655/",
+    "launchDate": "2026-04-24",
+    "launchLabel": "2026年4月24日至5月23日限时联动",
+    "launchNote": "官方公告确认所有 BR 地图出现万事屋建筑，并列出联动武器、手雷和载具。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-gintama-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-zombie-uprising-2-0-2025",
+    "game": "PUBG Mobile",
+    "modeName": "僵尸崛起 2.0（Zombie Uprising 2.0）",
+    "year": "2025",
+    "date": "2025-07-09",
+    "tags": [
+      "br-ltm",
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "PvE 生存",
+      "首领等级",
+      "局内成长"
+    ],
+    "oneLineRule": "在升级后的僵尸生存玩法中抵挡不同等级的首领，收集局内成长资源、遗传代码和孵化内容，争取从战场活着撤出。",
+    "mechanicChange": "官方 Transformers 联动页面确认 Zombie Uprising 2.0：加入首领等级、局内成长系统、遗传代码与孵化机制、密码门补给、全新容器和 NPC；玩法在版本期间作为限时 PvE 内容回归。",
+    "tempoImpact": "首领成长和局内养成让队伍必须在搜集、清怪和资源升级之间安排路线，后期战斗压力会随着首领等级持续抬升。",
+    "designObservation": "同一 PvE 模式通过成长系统和首领阶梯延长复玩周期，玩家每局都能在“更快成长”与“更安全路线”之间做选择。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Official-Transformers-Collaboration/",
+    "launchDate": "2025-07-09",
+    "launchLabel": "2025年7月9日至9月2日限时开放",
+    "launchNote": "官方联动页面确认开放窗口和 2.0 机制；具体地区轮换以客户端为准。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-zombie-uprising-2-0-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-summer-showdown-2025",
+    "game": "PUBG Mobile",
+    "modeName": "夏日对决：涂色战场（Summer Showdown Map）",
+    "year": "2025",
+    "date": "2025-07-14",
+    "tags": [
+      "arena",
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "4 队 2 人",
+      "涂色占地",
+      "淘汰得分"
+    ],
+    "oneLineRule": "4 支双人队用 Ink Blaster 给战场涂上队伍颜色，按覆盖面积和淘汰得分竞争总分。",
+    "mechanicChange": "官方 Transformers 联动页面加入 Summer Showdown Map：传统枪械被 Ink Blaster 替代，4 支双人队通过涂色覆盖地面得分；敌方覆盖你的颜色会扣分，淘汰敌人每次额外获得 1 分。",
+    "tempoImpact": "占地状态会不断被改写，队伍需要在扩大颜色面积、守住高价值区域和主动淘汰之间快速切换。",
+    "designObservation": "把地图表面变成可逆的分数板，让视觉控制区域和射击淘汰在同一套胜负公式里互相影响。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Official-Transformers-Collaboration/",
+    "launchDate": "2025-07-14",
+    "launchLabel": "2025年7月14日起限时开放",
+    "launchNote": "官方页面确认 4 队 2 人、Ink Blaster、覆盖面积计分和淘汰得分规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-summer-showdown-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-ice-dragon-boss-2025",
+    "game": "PUBG Mobile",
+    "modeName": "冰龙首领挑战（Ice Dragon Boss Challenge）",
+    "year": "2025",
+    "date": "2025-07-24",
+    "tags": [
+      "arena",
+      "pve",
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "首领战",
+      "冰冻攻击",
+      "双首领事件"
+    ],
+    "oneLineRule": "在限时首领战场同时规避至多两只冰龙的冰冻攻击，团队需要协作规划走位并完成击杀。",
+    "mechanicChange": "官方 Transformers 联动页面将 Ice Dragon Boss Challenge 作为回归的战场事件：冰龙会使用高威胁冰冻攻击，同一战场最多同时存在两只冰龙，队伍需要在动态威胁下完成挑战。",
+    "tempoImpact": "双首领同时出现时，安全位置和输出窗口会不断变化，团队必须在分散规避和集中火力之间做即时判断。",
+    "designObservation": "多个同类首领叠加后，PVE 难点来自空间管理与信息分配，而不是简单增加血量。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Official-Transformers-Collaboration/",
+    "launchDate": "2025-07-24",
+    "launchLabel": "2025年7月24日起限时回归",
+    "launchNote": "官方页面确认冰龙回归、冰冻攻击和最多两只同时存在；本卡单独记录首领挑战事件。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-ice-dragon-boss-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]

@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 47,
-      "coverCount": 47,
-      "readableDescriptionCount": 47,
+      "modeCount": 50,
+      "coverCount": 50,
+      "readableDescriptionCount": 50,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -374,7 +374,10 @@
         "pubgm-core-circle-2022",
         "pubgm-ancient-secret-arise-2022",
         "pubgm-football-mania-2022",
-        "pubgm-ultimate-arena-2022"
+        "pubgm-ultimate-arena-2022",
+        "pubgm-zombie-uprising-2-0-2025",
+        "pubgm-summer-showdown-2025",
+        "pubgm-ice-dragon-boss-2025"
       ],
       "officialSourceUrls": [
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202011/874641.shtml",
@@ -416,13 +419,13 @@
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202207/918432.shtml",
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/m22521/202211/925426.shtml"
       ],
-      "notes": "已回溯 0.12–4.0 版本及 2020–2025 主题玩法页面，补入 Spark the Flame、Ancient Secret、Team Gun Game、Aftermath、Spider-Man、Core Circle、Ancient Secret: Arise、Football Mania、Ultimate Arena 等官方玩法；仍需继续覆盖更早版本、2025–2026 后续主题和地区版本差异。"
+      "notes": "已回溯 0.12–4.0 版本及 2020–2025 主题玩法页面，补入 Spark the Flame、Ancient Secret、Team Gun Game、Aftermath、Spider-Man、Core Circle、Ancient Secret: Arise、Football Mania、Ultimate Arena，以及 3.9 Transformers 页面里的 Zombie Uprising 2.0、Summer Showdown、Ice Dragon Boss Challenge；仍需继续覆盖更早版本、2025–2026 后续主题和地区版本差异。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 49,
-      "coverCount": 49,
-      "readableDescriptionCount": 49,
+      "modeCount": 65,
+      "coverCount": 65,
+      "readableDescriptionCount": 65,
       "modeIds": [
         "free-fire-clash-squad-2019",
         "free-fire-bomb-squad-2019",
@@ -472,7 +475,23 @@
         "free-fire-big-head-training-2023",
         "free-fire-rampage-classic-2023",
         "free-fire-head-hunt-2023",
-        "free-fire-clash-squad-slay-2023"
+        "free-fire-clash-squad-slay-2023",
+        "free-fire-death-race-2018",
+        "free-fire-rush-hour-2018",
+        "free-fire-solo-death-race-2018",
+        "free-fire-death-uprising-2019",
+        "free-fire-spray-and-pray-2019",
+        "free-fire-pet-rumble-2021",
+        "free-fire-clash-squad-6v6-2021",
+        "free-fire-kimbo-rush-hour-2022",
+        "free-fire-pet-smash-2023",
+        "free-fire-triple-wolves-2023",
+        "free-fire-color-hide-seek-2023",
+        "free-fire-color-spray-2023",
+        "free-fire-mystery-town-2023",
+        "free-fire-fort-feud-2023",
+        "free-fire-beat-carnival-2026",
+        "free-fire-gintama-2026"
       ],
       "officialSourceUrls": [
         "https://ff.garena.com/en/article/67/",
@@ -510,9 +529,21 @@
         "https://ff.garena.com/en/article/97",
         "https://ff.garena.com/en/article/48",
         "https://ff.garena.com/en/article/114",
-        "https://ff.garena.com/en/article/550"
+        "https://ff.garena.com/en/article/550",
+        "https://ff.garena.com/en/article/175/",
+        "https://ff.garena.com/id/article/209/",
+        "https://ff.garena.com/en/article/198/",
+        "https://ff.garena.com/en/article/38/",
+        "https://ff.garena.com/en/article/60/",
+        "https://ff.garena.com/en/article/459/",
+        "https://ff.garena.com/en/article/617/",
+        "https://ff.garena.com/en-pk/article/670/",
+        "https://ff.garena.com/es/article/1120/",
+        "https://ff.garena.com/id/article/1150",
+        "https://ff.garena.com/en/article/1634/",
+        "https://ff.garena.com/en/article/1655/"
       ],
-      "notes": "已回溯 2018–2026 年官方更新页，新增 Rampage、Spider-Verse Parkour、Lone Wolf Strike Out、Shadow Hunter、Free For All、Mini Peak、Clash Squad 第一人称、Gloo Nova、Droid Apocalypse、Coin Clash、Football Squad、Old Peak、Zombie Graveyard、Battle for Infinity、Epic Fight、Zombie Invasion、Rampage Finale PvP、Squid Game、Winterlands Dreamspace、Lost Treasure、Jujutsu Awakening、Fire Kickoff、NARUTO 九尾袭击、无限月读战场、混沌事件、枪王之王、Rampage Opening、大头模式、冷钢、孤狼排位、大头训练场、Rampage Classic、猎头、Clash Squad: Slay 等玩法；仍需继续覆盖更早的模式轮换和地区版本差异。"
+      "notes": "已回溯 2019–2026 官方公告，并补充 2018 早期模式与 2023 Craftland 玩法；新增 Death Race、Rush Hour、Solo Death Race、Death Uprising、Spray and Pray、Pet Rumble、6v6 Clash Squad、Kimbo Rush Hour、Pet Smash、Triple Wolves、Color Hide & Seek、Color Spray、Mystery Town、Fort Feud、Beat Carnival、GINTAMA 联动等；仍需继续覆盖地区版本差异与后续公告。"
     }
   }
 }
