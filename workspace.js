@@ -32,7 +32,7 @@ function getEntryTags(entry) {
     ...(isLtmMode(entry) ? ['LTM · 限时模式'] : []), ...entry.type])];
 }
 
-const gameColors = { Fortnite: '#9683b4', PUBG: '#b7a06b', 'Apex Legends': '#b87770', '三角洲行动': '#7d9a7a', '和平精英': '#81a2b1' };
+const gameColors = { Fortnite: '#9683b4', PUBG: '#b7a06b', 'PUBG Mobile': '#6c8db4', 'Free Fire': '#d46d52', 'Apex Legends': '#b87770', '三角洲行动': '#7d9a7a', '和平精英': '#81a2b1' };
 const topicDefs = [
   { id: 'respawn', label: '复活与容错', pattern: /复活|重生|返场|召回|reboot/i },
   { id: 'objective', label: '目标与胜负', pattern: /目标|占点|护送|撤离|胜利|计分|推车|夺旗/ },
