@@ -16,6 +16,8 @@ for (const mode of modes) {
   assert.equal(new Set(mode.gameplayTypes).size, mode.gameplayTypes.length, mode.id + ': duplicate categories');
   assert.ok(mode.gameplayTypes.every((type) => allowed.has(type)), mode.id + ': unknown category');
   assert.equal(typeof mode.isLtm, 'boolean', mode.id + ': LTM must be an explicit boolean');
+  assert.ok(typeof mode.imageUrl === 'string' && mode.imageUrl.trim(), mode.id + ': missing cover image');
+  assert.ok(typeof mode.imageSource === 'string' && mode.imageSource.trim(), mode.id + ': missing cover source label');
 }
 for (const entry of research) {
   assert.ok(entry.sourceModeIds.length && entry.sourceModeIds.every((id) => ids.has(id)), entry.id + ': missing source case');
