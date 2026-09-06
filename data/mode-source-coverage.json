@@ -149,6 +149,7 @@
         "https://pubg.com/en/game-info/arcade",
         "https://pubg.com/en/game-info/arcade/tdm",
         "https://pubg.com/en/news/10009",
+        "https://pubg.com/en/news/10080",
         "https://pubg.com/en/news/10179",
         "https://pubg.com/en/news/10367",
         "https://pubg.com/en/news/10855",
@@ -174,7 +175,7 @@
         "https://www.pubg.com/en/news/1708",
         "https://www.pubg.com/en/news/5023"
       ],
-      "notes": "已复核 PUBG 官方历史街机/实验玩法与 2026 最新公告；本轮补入 34.1 公告明确的 1v1 竞技场、13.2 主机补丁明确的休闲模式，并登记 32.1 Hungers Left Behind 回归页，继续沿官方 Arcade/LABS 分页回溯。",
+      "notes": "已复核 PUBG 官方历史街机/实验玩法与 2026 最新公告；本轮补入 34.1 公告明确的 1v1 竞技场、13.2 主机补丁明确的休闲模式，并登记 32.1 Hungers Left Behind 回归页，继续沿官方 Arcade/LABS 分页回溯。 已复核 41.2 官方补丁：Rumble 与 PAYDAY 已有卡片，未发现新的独立玩法。",
       "updatedAt": "2026-09-07"
     },
     "和平精英": {

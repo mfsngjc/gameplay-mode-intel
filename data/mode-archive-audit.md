@@ -235,3 +235,7 @@
 - 复核 [High Explosives 官方公告](https://www.fortnite.com/news/boogie-bomb-update?lang=en-US) 与 [v3.4 内容更新](https://www.fortnite.com/news/v3-4-content-update?lang=en-US)：补入 `High Explosives` 与 `High Explosives v2`，分别记录爆炸物限定、陷阱关闭、资源强化和导弹补给规则。
 - 复核 [Epic v5.21 官方补丁](https://www.fortnite.com/patch-notes/v5-21/?lang=en-US) 与 [v4.4 官方补丁](https://www.fortnite.com/patch-notes/v4-4?lang=en-US)：补入 `Sniper Shootout`、`Sniper Shootout v3` 和 `Soaring 50s`，记录狙击武器池、无倒地、滑翔重部署等差异。
 - 复核 [Epic v5.20 官方补丁](https://www.fortnite.com/patch-notes/v5-20) 与 [v9.10 官方补丁](https://www.fortnite.com/patch-notes/v9-10?lang=en-US)：补入 `Steady Storm` 与 `Unvaulted Squads`，分别记录持续风暴/复活和全复古武器池；装备、地图与常规赛制更新不重复建卡。
+
+### PUBG 2026 Update 41.2 反向核对
+
+- 复核 [PUBG Update 41.2 官方补丁](https://pubg.com/en/news/10080)：`Rumble` 与 `PAYDAY` 的模式规则均已在现有卡片覆盖；哈雷容器、近战处决、蓝芯塔补给和地图秘密房间属于系统/地图机制，不新增独立玩法卡。
