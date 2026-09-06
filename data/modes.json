@@ -13465,5 +13465,36 @@
     "game": "和平精英",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
     "imageUrl": "assets/modes/generated/hpjy-monster-role-salamander-2026.svg"
+  },
+  {
+    "id": "pubgm-armory-arena-2020",
+    "game": "PUBG Mobile",
+    "modeName": "军械库竞技场（Armory Arena）",
+    "year": "2020",
+    "date": "2020-07-31",
+    "tags": [
+      "casual",
+      "objective",
+      "arena"
+    ],
+    "type": [
+      "4v4团队竞技",
+      "击杀换枪",
+      "平底锅终局"
+    ],
+    "oneLineRule": "4v4 两队从相同武器开始，每次击杀都会推进个人换枪进度；先用最后一把平底锅完成击杀的队伍获胜，时间结束则比较武器进度。",
+    "mechanicChange": "官方规则把武器进度直接绑定到击杀：全员从相同枪械起步，击杀后自动切换到下一把武器，共有 18 种武器，最后所有人都会拿到平底锅。Library 是室内双层图书馆，Hangar 则提供更复杂的立体掩体；两张地图共享同一套军械库换枪规则。",
+    "tempoImpact": "每次击杀都会改变下一次交战的武器距离和优势，队伍既要争取连续击杀推进进度，也要防止对手先进入平底锅阶段；复活让前线压力持续存在。",
+    "designObservation": "把击杀奖励做成强制换枪，让优势不断转化为新的武器熟练度考验；平底锅终局又把短局从枪械对抗推向近战抢先手，形成清晰的节奏收束。",
+    "sourceUrl": "https://pubgmobile.jp/armory-arenalibrary%E3%81%8C%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A%E3%81%AB%E7%99%BB%E5%A0%B4%EF%BC%81/",
+    "launchDate": "2020-07-31",
+    "launchLabel": "2020年7月31日官方公告加入，Library/Hangar 轮换",
+    "launchNote": "官方公告确认 4v4、18 种武器、击杀换枪、平底锅终局和时间结束时比较进度；Library 与 Hangar 是该规则的不同竞技场地图。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-armory-arena-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
