@@ -79,3 +79,16 @@
 - `怪物扮演·蝾螈小宝`：官方预告已给出蝾螈小宝的技能、任务互动和专属掉落，预计 2026-09-19 上线；正式胜负与匹配参数待上线公告补档，卡片标记 `needs_review`。
 
 `异变密林·演练`、`异变密林·冲突`继续作为 `hpjy-metro-mutant-jungle-2026` 的分支规则保留，不重复拆成仅有地图后缀的卡片。`金秋龙狮城`属于主题海岛与场景机制，也不作为独立玩法卡片。
+
+## 2026-09-07 PUBG Mobile / Free Fire 追加负向审计
+
+### PUBG Mobile
+
+- 复核日本官方新闻分页 1–20：覆盖 Version 3.5.0–4.6.0 的更新通知与补丁页，并交叉检查全球/地区主题页、Metro Royale、Payload、World of Wonder。4.6.0 只明确新增 `Midnight Hunters`，已有 `pubgm-midnight-hunters-2026` 卡；公告中的 `Metro Royale: Reunion` 是父模式回归和开放时间调整，不拆新卡。
+- 负向检查：版本页中的 RANKED/UNRANKED、Arena Ranked、地图轮换、Metro 地图/首领、CRAFTGROUND 编辑器入口和活动宣传不构成新的独立胜负规则；规则只写到名称的创意工坊入口继续保留 `needs_review`。
+
+### Free Fire
+
+- 复核 Garena 2026 最新公告与补丁页：1690、1683、1673/1678、1664、1655、1649/1640、1634、1617、1605、1604，以及 2026-09-03 奖项公告。
+- 已覆盖：`Pitch Showdown Revival` 归入 `Fire Kickoff`，`On-the-Spot Revival`、周年任务和 `Epic Fight` 归入九周年卡，`CS Random Events` 归入枪王对决随机事件，`Saddle Brawl` 与 `Arena Showdown` 已有独立卡。
+- 负向检查：动画/奖项宣传、地图换肤、技能与武器成长、赛事赛制、社交大厅活动和奖励小游戏没有新的独立对局胜负规则，未重复建卡。
