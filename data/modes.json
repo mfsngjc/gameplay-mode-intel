@@ -4613,5 +4613,579 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-ninjutsu-lone-wolf-2025.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-survive-till-dawn-2019",
+    "game": "PUBG Mobile",
+    "modeName": "破晓生还（Survive Till Dawn）",
+    "year": "2019",
+    "date": "2019-04-16",
+    "tags": [
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "合作 PVE",
+      "僵尸波次",
+      "生存到天亮"
+    ],
+    "oneLineRule": "玩家在艾伦格夜间与僵尸和首领战斗，活到天亮的队伍获胜。",
+    "mechanicChange": "官方 0.12 版本把破晓生还归入 EvoGround：夜间会出现僵尸和僵尸犬，队伍需要使用冻结、击退和火焰等武器处理持续袭来的敌群；后续更新又加入跳跃僵尸、资源调整和战斗修正。",
+    "tempoImpact": "白天搜集资源、夜间守住阵地，天亮前的倒计时把搜刮、转点和集火首领串成明确阶段。",
+    "designObservation": "把 BR 地图改成夜间合作战场时，最关键的是用时间段和敌群波次制造共同目标；队伍即使不直接对枪，也会因资源和站位形成分工。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201904/804220.shtml",
+    "launchDate": "2019-04-16",
+    "launchLabel": "2019年4月16日随 0.12 版本加入",
+    "launchNote": "官方公告记录了新 EvoGround 入口、僵尸敌群和 Darkest Night；破晓生还后来多次以限时轮换形式回归。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-survive-till-dawn-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-darkest-night-2019",
+    "game": "PUBG Mobile",
+    "modeName": "至暗之夜（Darkest Night）",
+    "year": "2019",
+    "date": "2019-04-16",
+    "tags": [
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "合作 PVE",
+      "单夜生存",
+      "毒雾压力"
+    ],
+    "oneLineRule": "玩家在一整夜里抵挡僵尸和毒雾，撑到天亮即可获胜。",
+    "mechanicChange": "官方 0.12 版本将 Darkest Night 作为新的 EvoGround 模式：玩家需要在夜间对抗僵尸，仍存活到黎明的队伍全部获胜。与破晓生还相比，它把连续夜间生存和毒雾压力放在更核心的位置。",
+    "tempoImpact": "持续收缩的安全空间让队伍必须边搜刮边找可守位置，夜间视野和敌群压力会把每一次转点都变成共同决策。",
+    "designObservation": "把胜利条件从“淘汰所有敌人”换成“撑过一晚”，能让合作 PVE 形成稳定的压力曲线；空间限制又避免玩家无限风筝敌群。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201904/804220.shtml",
+    "launchDate": "2019-04-16",
+    "launchLabel": "2019年4月16日随 0.12 版本加入",
+    "launchNote": "官方公告明确写出“活过一夜、天亮时仍存活的队伍获胜”；后续是否回归以版本公告为准。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-darkest-night-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-team-deathmatch-2019",
+    "game": "PUBG Mobile",
+    "modeName": "团队死斗（Team Deathmatch）",
+    "year": "2019",
+    "date": "2019-06-11",
+    "tags": [
+      "objective"
+    ],
+    "type": [
+      "团队竞技",
+      "快速复活",
+      "击杀计分"
+    ],
+    "oneLineRule": "两支队伍在小型战场中反复交战，依靠击杀计分并在回合结束时比较总分。",
+    "mechanicChange": "官方 0.13 版本把 Team Deathmatch 加入 EvoGround，支持第一人称和第三人称视角，也允许使用房卡创建房间；模式的核心是快速交火和重生循环，而不是搜刮或缩圈。",
+    "tempoImpact": "快速复活缩短了死亡惩罚，玩家可以连续验证枪械、路线和交战距离；小地图与计分目标让队伍更快形成前线和侧翼分工。",
+    "designObservation": "用固定地图、即时重生和击杀计分提供低成本枪法练习，可以把 BR 玩家需要的瞄准和走位拆成快速反馈的回合。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201906/813644.shtml",
+    "launchDate": "2019-06-11",
+    "launchLabel": "2019年6月11日随 0.13 版本加入",
+    "launchNote": "官方公告将其描述为 EvoGround 的快速团队交火模式，并确认支持 FPP、TPP 和房间创建。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/generated/pubgm-team-deathmatch-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-ragegear-2019",
+    "game": "PUBG Mobile",
+    "modeName": "狂暴战车（RageGear）",
+    "year": "2019",
+    "date": "2019-12-11",
+    "tags": [
+      "objective",
+      "space"
+    ],
+    "type": [
+      "载具对战",
+      "车组分工",
+      "目标摧毁"
+    ],
+    "oneLineRule": "两支队伍分配驾驶员和射手，驾驶武装载具摧毁敌方车辆；RageGear-TDM 以摧毁车辆获得分数。",
+    "mechanicChange": "官方 0.16 版本加入 RageGear：玩家随机成为驾驶员或射手，车辆安装机枪、霰弹枪和火箭发射器，驾驶员也能在移动中开火；专属道具会进一步改变车组的战术选择。",
+    "tempoImpact": "载具移动速度和火力把交战范围拉长，驾驶与射击必须同步；车组需要在追击、绕后、维修和集火之间快速分工。",
+    "designObservation": "把载具从转点工具改成可被摧毁的战斗单位，能让驾驶员和射手形成明确协作；分数绑定车辆摧毁，也让玩家更愿意主动寻找交战。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/201912/839688.shtml",
+    "launchDate": "2019-12-11",
+    "launchLabel": "2019年12月11日随 0.16 版本加入",
+    "launchNote": "官方公告记录 RageGear 和 RageGear-TDM 的车辆分工、武装载具与计分规则。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-ragegear-2019.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-arctic-mode-2020",
+    "game": "PUBG Mobile",
+    "modeName": "极寒模式（Arctic Mode）",
+    "year": "2020",
+    "date": "2020-02",
+    "tags": [
+      "br-core",
+      "space"
+    ],
+    "type": [
+      "极寒环境",
+      "体温管理",
+      "无人机侦察"
+    ],
+    "oneLineRule": "在维寒迪的周期性暴风雪中保持体温，利用火堆、加热器和热包继续战斗，同时争夺常规 BR 的胜利。",
+    "mechanicChange": "官方 0.17 版本在维寒迪加入周期性极寒暴风雪；体温过低会持续损失生命，玩家可以在室内生火、收集树枝、使用加热器或热包来取暖。模式还加入无人机侦察和滑雪板，使环境压力与移动路线同时发生变化。",
+    "tempoImpact": "暴风雪阶段迫使队伍暂时离开安全但贫瘠的路线去找室内空间和燃料；体温管理与搜刮、转点、侦察形成额外的资源层。",
+    "designObservation": "环境生存机制必须和地图路线绑定，体温、火堆和加热器让“去哪里”同时回答“能否活下来”，无人机则补偿低能见度下的信息缺口。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/202002/849328.shtml",
+    "launchDate": "2020-02",
+    "launchLabel": "2020年2月随 0.17 版本开放",
+    "launchNote": "官方公告把 Arctic Mode 列为 EvoGround 内容，并明确说明暴风雪、体温、火堆、加热器、热包和无人机规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-arctic-mode-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-infection-mode-2020",
+    "game": "PUBG Mobile",
+    "modeName": "感染模式（Infection Mode）",
+    "year": "2020",
+    "date": "2020-10-23",
+    "tags": [
+      "objective",
+      "pve"
+    ],
+    "type": [
+      "感染阵营",
+      "变身对抗",
+      "限时轮换"
+    ],
+    "oneLineRule": "玩家分成感染者与幸存者两方，感染者通过近战接触扩散阵营，幸存者则坚持到时间结束或完成防守目标。",
+    "mechanicChange": "官方 1.0 版本公告记录万圣节 Infection Mode 回归，并为僵尸加入面具、南瓜灯、墓碑和蜡烛等主题环境；模式的核心变化是阵营转换和近距离感染，而不是经典 BR 的搜刮循环。",
+    "tempoImpact": "开局阵营差异让双方立刻进入追逐与封锁，幸存者需要抱团守点，感染者则要利用人数增长制造突破窗口。",
+    "designObservation": "阵营转换会让玩家在同一局里经历“追捕者”和“被追捕者”的身份切换；只要让转换条件清晰，非对称压力就能持续升级。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202009/868877.shtml",
+    "launchDate": "2020-10-23",
+    "launchLabel": "2020年10月23日起限时回归",
+    "launchNote": "官方公告明确写出 Halloween Infection Mode 的开放日期和主题装饰；具体阵营规则以当次游戏内说明为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-infection-mode-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-runic-power-2021",
+    "game": "PUBG Mobile",
+    "modeName": "符文力量（Runic Power）",
+    "year": "2021",
+    "date": "2021-01-12",
+    "tags": [
+      "br-core",
+      "power"
+    ],
+    "type": [
+      "能力选择",
+      "符文技能",
+      "限时大逃杀"
+    ],
+    "oneLineRule": "在艾伦格大逃杀中选择一套符文，使用召唤技能和强化技能改变交战、移动或防守方式。",
+    "mechanicChange": "官方 1.2 版本开放 Runic Power：玩家从火焰、寒冰和风等符文中选择一套能力，分别提供召唤效果和短时强化；能力需要在局内收集或使用对应资源，带来与普通 BR 不同的战斗窗口。",
+    "tempoImpact": "符文技能会改变落地后的第一轮交战和转点路线，队伍需要提前决定谁负责制造掩体、减速、加速或压制。",
+    "designObservation": "能力选择只有在能改变具体决策时才有价值；召唤与强化分成两种节奏，可以让同一套能力同时服务主动进攻和被动防守。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/202101/880069.shtml",
+    "launchDate": "2021-01-12",
+    "launchLabel": "2021年1月12日至3月7日限时开放",
+    "launchNote": "官方 1.2 英文补丁明确记录 Runic Power Gameplay 的开放周期；技能名称和数值以版本内说明为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-runic-power-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-power-armor-2021",
+    "game": "PUBG Mobile",
+    "modeName": "动力装甲（Power Armor）",
+    "year": "2021",
+    "date": "2021-02-05",
+    "tags": [
+      "br-core",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "装甲成长",
+      "额外复活",
+      "矩阵事件"
+    ],
+    "oneLineRule": "在利维科的矩阵基地收集纳米晶体和装甲蓝图，组装动力装甲并获得额外复活机会，争夺矩阵事件和高价值补给。",
+    "mechanicChange": "官方 1.2 版本让 Power Armor 进入 EvoGround：胸甲、臂甲和腿甲分别提供减伤、近战强化、背包容量和冲刺等效果，集齐整套会解锁龙息手雷；每名玩家最多有两次额外自我或队友复活机会，矩阵事件还会增加补给或开启生命探测器。",
+    "tempoImpact": "装甲材料和矩阵空投把队伍吸引到固定争夺点，额外复活延长了中期交战；玩家必须在升级装甲、守住基地和继续转圈之间取舍。",
+    "designObservation": "成长型护甲需要同时提供短期生存收益和长期收集目标；额外复活把一次失误变成可恢复资源，但矩阵基地也为对手提供了明确的反制位置。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/202101/880069.shtml",
+    "launchDate": "2021-02-05",
+    "launchLabel": "2021年2月5日起在 EvoGround 开放",
+    "launchNote": "官方 1.2 补丁明确给出 Power Armor 的开放日、装甲部件、矩阵事件和两次额外复活规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-power-armor-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-titan-last-stand-2021",
+    "game": "PUBG Mobile",
+    "modeName": "泰坦终局战（Titan Last Stand）",
+    "year": "2021",
+    "date": "2021-05-25",
+    "tags": [
+      "objective",
+      "pve"
+    ],
+    "type": [
+      "限时挑战",
+      "积分兑换",
+      "首领事件"
+    ],
+    "oneLineRule": "进入官方活动入口，在泰坦主题挑战中完成战斗并累积积分，使用积分兑换活动奖励。",
+    "mechanicChange": "官方 1.4 版本把 Titan Last Stand 安排在 5月25日至6月8日：玩家从大厅直升机入口进入航母场景，完成挑战获得积分，再将积分用于兑换奖励。公告把它作为泰坦活动链中的独立玩法，而不是普通地图规则。",
+    "tempoImpact": "独立入口和积分兑换把高风险 BR 之外的挑战变成短时目标，玩家可以围绕活动周期安排重复游玩。",
+    "designObservation": "活动玩法通过“进入门槛—完成挑战—兑换奖励”形成轻量闭环，适合把大型 IP 事件拆成可重复、可追踪的局内目标。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202105/889275.shtml",
+    "launchDate": "2021-05-25",
+    "launchLabel": "2021年5月25日至6月8日限时开放",
+    "launchNote": "官方 1.4 补丁明确写出 Titan Last Stand 的活动日期、大厅入口和积分兑换规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-titan-last-stand-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-insectoid-2021",
+    "game": "PUBG Mobile",
+    "modeName": "微型虫族（Insectoid）",
+    "year": "2021",
+    "date": "2021-06-09",
+    "tags": [
+      "br-core",
+      "space",
+      "power"
+    ],
+    "type": [
+      "缩小变身",
+      "虫洞移动",
+      "特殊武器"
+    ],
+    "oneLineRule": "在艾伦格实验室使用量子变换装置缩小成 Insectoid，通过虫洞移动并用专属武器与其他微型玩家战斗。",
+    "mechanicChange": "官方 1.4 版本在艾伦格设置五个实验室，玩家可以通过量子变换装置变成 Insectoid；变身后可低空飞行并获得只能对其他 Insectoid 生效的特殊武器，但普通子弹无法直接伤害他们，平底锅仍能造成伤害。",
+    "tempoImpact": "缩小和虫洞把交战空间切换到建筑缝隙与实验室内部，玩家需要判断是否变身、何时回到正常尺寸，以及如何避开普通玩家视线。",
+    "designObservation": "尺寸变化只有在同时改变移动、可见性和武器交互时才会成为完整玩法；平底锅这一例外规则提供了简单而明确的反制。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202105/889275.shtml",
+    "launchDate": "2021-06-09",
+    "launchLabel": "2021年6月9日至7月5日限时开放",
+    "launchNote": "官方 1.4 补丁给出 Insectoid 的实验室、缩小、虫洞和特殊武器规则，并说明其开放周期。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-insectoid-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-mirror-world-2021",
+    "game": "PUBG Mobile",
+    "modeName": "镜像世界（Mirror World）",
+    "year": "2021",
+    "date": "2021-11-16",
+    "tags": [
+      "br-core",
+      "power",
+      "space"
+    ],
+    "type": [
+      "联动地图",
+      "英雄变身",
+      "技能战斗"
+    ],
+    "oneLineRule": "进入悬浮的镜像空岛，变身为联动英雄并使用专属武器和技能，与其他玩家争夺大逃杀胜利。",
+    "mechanicChange": "官方 1.7 版本让 Mirror Island 降临：玩家可以变身为 Jinx、Vi、Jayce 或 Caitlyn，在独立空间中使用新武器和技能，并探索 ARCANE 联动故事。地图入口、英雄选择和技能让经典 BR 的战斗表达发生局部变化。",
+    "tempoImpact": "镜像空岛提供额外的高价值路线和交战空间，英雄技能会让落地后的队伍分工从枪械射程扩展到能力组合。",
+    "designObservation": "联动地图最好承担真实的战斗决策，而不是只做视觉装饰；角色变身、技能和空间入口共同构成可观察的规则变化。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54203/m22142/202111/904670.shtml",
+    "launchDate": "2021-11-16",
+    "launchLabel": "2021年11月16日起限时开放",
+    "launchNote": "官方 1.7 英文公告明确记录 Mirror World 的开放日、镜像空岛、四名英雄以及新武器和技能。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-mirror-world-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-vs-ai-2021",
+    "game": "PUBG Mobile",
+    "modeName": "AI 对战（VS AI）",
+    "year": "2021",
+    "date": "2021-09-14",
+    "tags": [
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "AI 练习",
+      "分级挑战",
+      "低风险对局"
+    ],
+    "oneLineRule": "进入由 AI 控制对手组成的练习对局，在较低压力下熟悉武器、地图和战斗流程。",
+    "mechanicChange": "官方 1.6 版本把 VS AI 列为回归模式，开发者问答还说明会推出全新版本并逐步提高挑战难度。当前官方页面没有公开完整的敌人数量、奖励和胜负细则，因此本卡只记录已确认的 AI 练习定位。",
+    "tempoImpact": "AI 对手降低了真实玩家对抗的即时压力，玩家可以把注意力放到路线、武器和操作练习；分级难度则为从训练到实战提供过渡。",
+    "designObservation": "练习模式的价值在于可控反馈，而不是简单降低数值；逐步提高 AI 挑战能让玩家在不承担排位代价的情况下建立战斗信心。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/devtalk/",
+    "launchDate": "2021-09-14",
+    "launchLabel": "2021年9月版本公告列为回归玩法，后续持续调整",
+    "launchNote": "官方 1.6 公告列出 VS AI 回归，开发者问答确认会推出新版本并增加挑战；具体规则待后续专题公告补充。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-vs-ai-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-zombie-hunt-double-evil-2022",
+    "game": "Free Fire",
+    "modeName": "僵尸猎场：双重邪恶（Zombie Hunt: Double Evil）",
+    "year": "2022",
+    "date": "2022",
+    "tags": [
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "合作 PVE",
+      "双首领",
+      "轮换地图"
+    ],
+    "oneLineRule": "组队进入轮换僵尸地图，选择强化并击败两名首领；完成不同难度可获得通关奖励和代币。",
+    "mechanicChange": "官方补丁让 Zombie Hunt 回归，并增加新地图、新敌人和新首领；轮换地图每周变化并提供不同增益，Double Evil 地图要求队伍击败两名首领才能获胜，天赋系统和兑换商店把战斗奖励接入局外成长。",
+    "tempoImpact": "敌群波次和首领目标把队伍火力从清怪逐步推向集中爆发，轮换增益会改变每周的最优分工和资源保留方式。",
+    "designObservation": "双首领目标让 PVE 不再只是坚持时间，而是要求队伍安排击杀顺序和爆发窗口；轮换地图则提供重复挑战的变化。",
+    "sourceUrl": "https://ff.garena.com/en/article/1213/",
+    "launchDate": "2022",
+    "launchLabel": "2022年补丁回归",
+    "launchNote": "官方补丁明确写出 Double Evil、轮换地图、首领数量、天赋系统和兑换商店；原公告日期需继续按官方档案核对。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-zombie-hunt-double-evil-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-epic-battle-2023",
+    "game": "Free Fire",
+    "modeName": "史诗战斗（The Epic Battle）",
+    "year": "2023",
+    "date": "2023-12-01",
+    "tags": [
+      "objective",
+      "power"
+    ],
+    "type": [
+      "枪王对决变体",
+      "战斗风格",
+      "能力成长"
+    ],
+    "oneLineRule": "在枪王对决排位特殊模式中选择战斗风格，随着对局进展解锁能力，用强化后的装备和技能争取回合胜利。",
+    "mechanicChange": "官方 2023 年补丁把 The Epic Battle 放入 Clash Squad 排位特殊模式：玩家先选择战斗风格，不同风格拥有不同成长路径，可逐步解锁破坏敌方掩体、增加生命上限或加快换弹等能力，并提供两次排位保护机会。",
+    "tempoImpact": "购买阶段之外又增加了风格选择和成长路线，队伍需要根据地图和敌方阵容决定先拿通用能力还是针对性能力。",
+    "designObservation": "把构筑和保护机制塞进短回合排位，可以增加长期目标，但必须让每种战斗风格的收益在单局内清楚可见，避免成长变成无关紧要的菜单。",
+    "sourceUrl": "https://ff.garena.com/en/article/1266/",
+    "launchDate": "2023-12-01",
+    "launchLabel": "2023年12月1日随新排位赛季开放",
+    "launchNote": "官方补丁标注新 CS 排位赛季的开放时间，并记录战斗风格和能力成长规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-epic-battle-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-villain-conquest-2024",
+    "game": "Free Fire",
+    "modeName": "反派征服（Villain Conquest）",
+    "year": "2024",
+    "date": "2024-04-16",
+    "tags": [
+      "br-core",
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "BR 事件目标",
+      "地图首领",
+      "召唤挑战"
+    ],
+    "oneLineRule": "在 BR 地图上寻找随机出现的反派，击败他们收集 Mechadrake 点数，再解锁挑战巨龙的资格。",
+    "mechanicChange": "官方 2024 年补丁在 Bermuda 的三个地点随机生成反派入侵；队伍到达标记点并与召唤圈互动后触发战斗，击败反派可获得战利品和 Mechadrake 点数，收集三点后解锁试炼资格。",
+    "tempoImpact": "地图上的公共目标会把队伍从安全搜刮路线拉向高风险战斗；召唤圈、首领生命值和点数上限形成可读的争夺节奏。",
+    "designObservation": "把 PVE 首领放进 BR 时，需要让击杀收益足以吸引队伍，同时保留敌方干扰的机会；点数上限限制了单队滚雪球，让公共目标仍然值得争夺。",
+    "sourceUrl": "https://ff.garena.com/en/article/1332/",
+    "launchDate": "2024-04-16",
+    "launchLabel": "2024年4月16日加入 BR 活动轮换",
+    "launchNote": "官方补丁同时记录反派征服和 Mechadrake Trial；本卡聚焦前置的地图首领与点数目标。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-villain-conquest-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-lone-wolf-duo-skills-2024",
+    "game": "Free Fire",
+    "modeName": "孤狼：双主动技能（Lone Wolf: Duo Active Skills）",
+    "year": "2024",
+    "date": "2024-01-22",
+    "tags": [
+      "objective",
+      "power"
+    ],
+    "type": [
+      "1v1 对决",
+      "双技能构筑",
+      "短回合"
+    ],
+    "oneLineRule": "进入孤狼对决前选择两种主动技能，再用技能组合完成 1 对 1 战斗并赢下对手。",
+    "mechanicChange": "官方补丁把 Duo Active Skills 从特殊枪王对决排位扩展到 Lone Wolf：玩家在开局前选择两种主动技能，之后仍按孤狼的武器选择和回合流程进行战斗。这样模式保留了决斗骨架，同时增加了技能搭配层。",
+    "tempoImpact": "开局前的双技能选择改变了每局的预期交战距离和反制方式，短回合会快速暴露组合的强弱，迫使玩家根据对手调整选择。",
+    "designObservation": "在短时决斗里增加两个主动技能，比持续堆叠复杂天赋更容易读懂；技能组合提供构筑空间，但回合结构仍能控制反馈速度。",
+    "sourceUrl": "https://ff.garena.com/en/article/1306/",
+    "launchDate": "2024-01-22",
+    "launchLabel": "2024年1月22日版本公布",
+    "launchNote": "官方补丁明确写出双主动技能、开局选择和孤狼原有武器流程；实际开放时间以游戏公告为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-lone-wolf-duo-skills-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-craftland-2022",
+    "game": "Free Fire",
+    "modeName": "创意工坊（Craftland）",
+    "year": "2022",
+    "date": "2022",
+    "tags": [
+      "objective",
+      "space"
+    ],
+    "type": [
+      "地图编辑",
+      "规则编辑",
+      "玩家创作"
+    ],
+    "oneLineRule": "使用地图和模式编辑器搭建自己的战场与玩法规则，再邀请其他玩家进入自定义内容中游玩。",
+    "mechanicChange": "官方 Rampage 补丁将 Craftland 的地图编辑和模式编辑功能扩展到 Free Fire：玩家可以设计地图、调整玩法机制，也能为枪王对决和团队死斗加入不同的目标与技能规则。",
+    "tempoImpact": "节奏由创作者决定，地图尺寸、出生点、目标距离和技能限制可以把同一套射击操作改造成竞速、团队目标或派对玩法。",
+    "designObservation": "创作工具把官方更新的单向内容供给变成玩家可组合的规则模块；编辑器必须暴露足够多的目标和空间控制，才能让作品产生可辨识的玩法差异。",
+    "sourceUrl": "https://ff.garena.com/en/article/735/",
+    "launchDate": "2022",
+    "launchLabel": "2022年 Rampage 补丁加入",
+    "launchNote": "官方补丁明确记录 Craftland 的地图和模式编辑功能；本卡记录系统级玩法，不等同于某一张玩家地图。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/generated/free-fire-craftland-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-undersea-mystery-2026",
+    "game": "Free Fire",
+    "modeName": "深海谜境（Undersea Mystery）",
+    "year": "2026",
+    "date": "2026-04-02",
+    "tags": [
+      "br-core",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "水下区域",
+      "动态资源点",
+      "特殊武器"
+    ],
+    "oneLineRule": "在 Bermuda 的水下区域和水墙区域争夺泡泡空投、钓鱼池和水下武器，通过传送门返回地表继续 BR 对局。",
+    "mechanicChange": "官方 OB53 补丁把 Undersea Mystery 放入 BR：鲸鱼飞机替代普通跳伞载具，Nurek Dam 出现可进入的水下领域和传送门，高级资源区变成被水墙包围的 Hydro Zone，玩家经过水墙时不会受伤或减速。",
+    "tempoImpact": "水下领域和传送门改变了地表到地下的转点路线，泡泡空投和高级资源会把队伍吸引到可预期但多入口的争夺点。",
+    "designObservation": "新的垂直空间要同时提供收益和返回路径；传送门降低了探索水下区域的单向风险，水墙则把视觉主题转成可操作的安全边界。",
+    "sourceUrl": "https://ff.garena.com/en/article/1640/",
+    "launchDate": "2026-04-02",
+    "launchLabel": "2026年4月2日随 OB53 补丁开放",
+    "launchNote": "官方 OB53 补丁记录水下领域、Hydro Zone、泡泡空投和传送门；开放地区与轮换时间以客户端公告为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-undersea-mystery-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-clash-squad-random-events-2026",
+    "game": "Free Fire",
+    "modeName": "枪王对决：随机事件（Clash Squad Random Events）",
+    "year": "2026",
+    "date": "2026-04-02",
+    "tags": [
+      "objective",
+      "power"
+    ],
+    "type": [
+      "回合规则变体",
+      "随机事件",
+      "适应性配装"
+    ],
+    "oneLineRule": "每回合随机触发一条规则变化，例如近战武器限定、自动生成 Gloo Wall 或继承上一回合武器，队伍要即时调整购买和分工。",
+    "mechanicChange": "官方 OB53 补丁为 Clash Squad 加入随机事件：部分事件会替换开局医疗物品、周期性生成 Gloo Wall，或让上一回合武器延续到下一回合；每局开局仍会提供固定的 CS Cash。",
+    "tempoImpact": "规则在回合之间随机切换，玩家不能只依赖一套购买模板；侦察到事件后，队伍需要快速判断是抢节奏、抱团推进还是保存资源。",
+    "designObservation": "随机事件适合放在已有回合经济之上，让熟练玩家面对新的约束；事件效果必须短、强、可读，才能把临场适应变成有趣的策略。",
+    "sourceUrl": "https://ff.garena.com/en/article/1640/",
+    "launchDate": "2026-04-02",
+    "launchLabel": "2026年4月2日随 OB53 补丁加入",
+    "launchNote": "官方 OB53 补丁列出 Clash Squad 的随机事件类型和开局资金规则；本卡记录其作为独立规则变体的设计。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-clash-squad-random-events-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
