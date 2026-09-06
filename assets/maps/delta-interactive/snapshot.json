@@ -1,0 +1,619 @@
+{
+  "source": "https://df.qq.com/cp/a20240729directory/",
+  "retrievedAt": "2026-09-06",
+  "maps": 20,
+  "layers": {
+    "map_yc": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_htjd": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_bks2": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_cxjy": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_az3": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_db": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "daba_0f": {
+      "z": 5,
+      "tileSize": 512,
+      "range": [
+        3,
+        12,
+        2,
+        7
+      ],
+      "floor": true
+    },
+    "daba_1f": {
+      "z": 5,
+      "tileSize": 512,
+      "range": [
+        6,
+        10,
+        3,
+        5
+      ],
+      "floor": true
+    },
+    "daba_2f": {
+      "z": 5,
+      "tileSize": 512,
+      "range": [
+        6,
+        10,
+        3,
+        5
+      ],
+      "floor": true
+    },
+    "cgxg_1f": {
+      "z": 5,
+      "tileSize": 512,
+      "range": [
+        5,
+        10,
+        8,
+        10
+      ],
+      "floor": true
+    },
+    "cgxg_2f": {
+      "z": 5,
+      "tileSize": 512,
+      "range": [
+        5,
+        10,
+        8,
+        10
+      ],
+      "floor": true
+    },
+    "map_yc2": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "cgxg_ldz_1f": {
+      "z": 5,
+      "tileSize": 512,
+      "range": [
+        5,
+        11,
+        3,
+        6
+      ],
+      "floor": true
+    },
+    "cgxg_ldz_2f": {
+      "z": 5,
+      "tileSize": 512,
+      "range": [
+        5,
+        11,
+        3,
+        6
+      ],
+      "floor": true
+    },
+    "cgxg_ldz_3f": {
+      "z": 5,
+      "tileSize": 512,
+      "range": [
+        5,
+        11,
+        3,
+        6
+      ],
+      "floor": true
+    },
+    "cgxg_ldz_4f": {
+      "z": 5,
+      "tileSize": 512,
+      "range": [
+        5,
+        11,
+        3,
+        6
+      ],
+      "floor": true
+    },
+    "cgxg_ldz_b1": {
+      "z": 5,
+      "tileSize": 512,
+      "range": [
+        5,
+        11,
+        3,
+        6
+      ],
+      "floor": true
+    },
+    "map_htjd2": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "bks_1f": {
+      "z": 5,
+      "tileSize": 512,
+      "range": [
+        4,
+        10,
+        5,
+        8
+      ],
+      "floor": true
+    },
+    "bks_2f": {
+      "z": 5,
+      "tileSize": 512,
+      "range": [
+        4,
+        10,
+        5,
+        8
+      ],
+      "floor": true
+    },
+    "bks_3f": {
+      "z": 5,
+      "tileSize": 512,
+      "range": [
+        4,
+        10,
+        5,
+        8
+      ],
+      "floor": true
+    },
+    "cxjy_1f": {
+      "z": 4,
+      "tileSize": 512,
+      "range": [
+        0,
+        8,
+        1,
+        6
+      ],
+      "floor": true
+    },
+    "cxjy_2f": {
+      "z": 4,
+      "tileSize": 512,
+      "range": [
+        0,
+        8,
+        1,
+        6
+      ],
+      "floor": true
+    },
+    "cxjy_3f": {
+      "z": 4,
+      "tileSize": 512,
+      "range": [
+        0,
+        8,
+        1,
+        6
+      ],
+      "floor": true
+    },
+    "cxjy_4f": {
+      "z": 4,
+      "tileSize": 512,
+      "range": [
+        0,
+        8,
+        1,
+        6
+      ],
+      "floor": true
+    },
+    "az3_1_1f": {
+      "z": 4,
+      "tileSize": 512,
+      "range": [
+        0,
+        7,
+        1,
+        5
+      ],
+      "floor": true
+    },
+    "az3_1_2f": {
+      "z": 4,
+      "tileSize": 512,
+      "range": [
+        0,
+        7,
+        1,
+        5
+      ],
+      "floor": true
+    },
+    "az3_2_1f": {
+      "z": 4,
+      "tileSize": 512,
+      "range": [
+        0,
+        7,
+        1,
+        5
+      ],
+      "floor": true
+    },
+    "az3_2_2f": {
+      "z": 4,
+      "tileSize": 512,
+      "range": [
+        0,
+        7,
+        1,
+        5
+      ],
+      "floor": true
+    },
+    "az3_3_1f": {
+      "z": 4,
+      "tileSize": 512,
+      "range": [
+        0,
+        7,
+        1,
+        5
+      ],
+      "floor": true
+    },
+    "az3_3_2f": {
+      "z": 4,
+      "tileSize": 512,
+      "range": [
+        0,
+        7,
+        1,
+        5
+      ],
+      "floor": true
+    },
+    "az3_1_3f": {
+      "z": 4,
+      "tileSize": 512,
+      "range": [
+        0,
+        7,
+        1,
+        5
+      ],
+      "floor": true
+    },
+    "map_pc": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_pc_zl": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_pc_mobile_zl": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_ljd_pc": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_ljd_zl": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_gc": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_gc_zl": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_jq": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_jq_zl": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_jq_mobile_zl": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_qhz": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_qhz_zl": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_qhz_mobile_zl": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_df": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_df_zl": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_dg": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_hdz": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_jzt": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_dc": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_yz": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_wmsyh": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_dsc": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    },
+    "map_mgjcq": {
+      "z": 4,
+      "tileSize": 256,
+      "range": [
+        0,
+        15,
+        0,
+        15
+      ],
+      "floor": false
+    }
+  },
+  "tileCount": 11859,
+  "notes": [
+    "官方公开地图工具的静态快照；地图、点位与美术版权归腾讯及相应权利人。",
+    "最高层级使用官方原始切片，较低层级本地生成。",
+    "原站在潮汐监狱边界之外缺少的 24 张切片保留为空白，不替换真实地图内容。",
+    "分享 SDK、统计 SDK、游戏内桥接未集成。"
+  ]
+}

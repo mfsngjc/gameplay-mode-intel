@@ -1,9 +1,25 @@
+function readCollected() {
+  try {
+    const value = JSON.parse(localStorage.getItem("br-mode-collected") || "[]");
+    return new Set(Array.isArray(value) ? value.filter((id) => typeof id === "string") : []);
+  } catch { return new Set(); }
+}
+
 const state = {
   modes: [],
+  entries: [],
+  view: "modes",
+  query: "",
+  topic: "all",
+  sort: "recommended",
+  layout: "grid",
+  limit: 12,
+  ready: false,
   filter: "all",
   feedFilter: "all",
   gameFilter: "all",
-  collected: new Set(JSON.parse(localStorage.getItem("br-mode-collected") || "[]"))
+  gameplayFilter: "all",
+  collected: readCollected()
 };
 
 const modeGrid = document.querySelector("#modeGrid");
@@ -31,9 +47,7 @@ let activeShare = {
 
 const tagLabels = {
   all: "全部",
-  "br-core": "核心玩法",
-  "br-ltm": "限时/变体",
-  casual: "特殊玩法",
+  ltm: "LTM（限时模式）",
   collected: "已采集"
 };
 
@@ -41,40 +55,10 @@ const feedLabels = {
   all: "全部动态",
   recent: "最近更新",
   upcoming: "即将上线",
-  ltm: "玩法变体"
+  ltm: "LTM 限时模式"
 };
 
 const defaultAiCommentator = "集成农业 AI · DeepSeek-V4-Pro（深度求索）";
-const deltaTimelineGame = "三角洲行动";
-
-const defaultTimelineLaneDefinitions = [
-  { key: "核心", label: "核心玩法", statLabel: "核心", dotClass: "is-core" },
-  { key: "限时/变体", label: "限时/变体", statLabel: "变体", dotClass: "is-variant" },
-  { key: "特殊", label: "特殊玩法", statLabel: "特殊", dotClass: "is-special" }
-];
-
-const deltaTimelineLaneDefinitions = [
-  { key: "核心", label: "核心玩法", statLabel: "核心", dotClass: "is-core" },
-  { key: "限时·大战场", label: "限时·大战场类", statLabel: "大战场类", dotClass: "is-warfare" },
-  { key: "限时·搜打撤", label: "限时·搜打撤类", statLabel: "搜打撤类", dotClass: "is-operations" },
-  { key: "限时·双模式", label: "限时·双模式类", statLabel: "双模式类", dotClass: "is-hybrid" },
-  { key: "特殊", label: "特殊玩法", statLabel: "特殊", dotClass: "is-special" }
-];
-
-const deltaFamilyMatchers = {
-  warfare: /全面战场|大战场|Warfare|胜者|Victory|Vanguard|先遣|夺旗|攻城|Capture the Flag|Siege|King of the Hill|Hill of Iron|钢铁洪流|Air Superiority|空中优势|4v4|团队死斗|Overload|超载|载具|攻防|战壕|Trench Lines|A\/D/i,
-  operations: /烽火地带|搜打撤|撤离|Operations|零号大坝|Zero Dam|红鼠窝|Hot Zone|MandelCell|曼德尔|金库|硬通货|Operation Gold|夺砖|破译|烽火挑战/i
-};
-
-function getAvailableTags() {
-  const modes = state.gameFilter === "all"
-    ? state.modes
-    : state.modes.filter((m) => m.game === state.gameFilter);
-  const tags = new Set();
-  modes.forEach((m) => m.tags.forEach((t) => tags.add(t)));
-  return [...tags].sort();
-}
-
 function getAiCommentator(mode) {
   return mode.aiCommentator || defaultAiCommentator;
 }
@@ -95,7 +79,8 @@ function showToast(message) {
 }
 
 function saveCollected() {
-  localStorage.setItem("br-mode-collected", JSON.stringify([...state.collected]));
+  try { localStorage.setItem("br-mode-collected", JSON.stringify([...state.collected])); }
+  catch { showToast("当前浏览器无法保存收藏；请导出以保留本次研究。"); }
 }
 
 function getTodayStart() {
@@ -174,7 +159,7 @@ function getActivityModes() {
 
   if (state.feedFilter === "ltm") {
     return modes
-      .filter((mode) => mode.tags.includes("br-ltm"))
+      .filter((mode) => mode.isLtm === true)
       .slice(0, 10);
   }
 
@@ -242,53 +227,7 @@ function renderActivityFeed() {
 }
 
 function getFilteredModes() {
-  return state.modes.filter((mode) => {
-    if (state.gameFilter !== "all" && mode.game !== state.gameFilter) return false;
-    if (state.filter === "all") return true;
-    if (state.filter === "collected") return state.collected.has(mode.id);
-    return mode.tags.includes(state.filter);
-  });
-}
-
-function getModeFamily(mode) {
-  if (mode.game !== "三角洲行动" || !mode.tags.includes("br-ltm")) return null;
-
-  const sourceText = [
-    mode.modeName,
-    ...(mode.type || []),
-    mode.oneLineRule,
-    mode.mechanicChange,
-    mode.tempoImpact,
-    mode.launchNote
-  ].join(" ");
-  const hasWarfare = deltaFamilyMatchers.warfare.test(sourceText);
-  const hasOperations = deltaFamilyMatchers.operations.test(sourceText);
-
-  if (hasWarfare && hasOperations) {
-    return {
-      className: "is-hybrid",
-      label: "限时·双模式",
-      shortLabel: "双模式",
-      tagLabel: "限时·双模式类",
-      laneKey: "限时·双模式"
-    };
-  }
-  if (hasOperations) {
-    return {
-      className: "is-operations",
-      label: "限时·搜打撤",
-      shortLabel: "搜打撤",
-      tagLabel: "限时·搜打撤类",
-      laneKey: "限时·搜打撤"
-    };
-  }
-  return {
-    className: "is-warfare",
-    label: "限时·大战场",
-    shortLabel: "大战场",
-    tagLabel: "限时·大战场类",
-    laneKey: "限时·大战场"
-  };
+  return getFilteredEntries();
 }
 
 function getTimelineModes() {
@@ -305,9 +244,10 @@ function getTimelineModes() {
 }
 
 function getTimelineLaneDefinitions(game = state.gameFilter) {
-  return game === deltaTimelineGame
-    ? deltaTimelineLaneDefinitions
-    : defaultTimelineLaneDefinitions;
+  const primaryTypes = new Set(state.modes.filter((mode) => mode.game === game).map((mode) => getGameplayTypes(mode)[0]));
+  return gameplayDefinitions.filter((definition) => primaryTypes.has(definition.id)).map((definition) => ({
+    key: definition.id, label: definition.label, statLabel: definition.shortLabel, dotClass: definition.timelineClass
+  }));
 }
 
 function getTimelineLaneLayout(game = state.gameFilter) {
@@ -335,19 +275,13 @@ function getTimelineDateLabel(mode) {
 }
 
 function getTimelineMeta(mode) {
-  if (mode.tags.includes("br-core")) {
-    return { className: "is-core", label: "核心", shortLabel: "核心", laneKey: "核心" };
-  }
-  if (mode.tags.includes("br-ltm")) {
-    const family = getModeFamily(mode);
-    return {
-      className: `is-variant ${family?.className || ""}`.trim(),
-      label: family?.label || "限时/变体",
-      shortLabel: family?.shortLabel || "变体",
-      laneKey: family?.laneKey || "限时/变体"
-    };
-  }
-  return { className: "is-special", label: "特殊", shortLabel: "特殊", laneKey: "特殊" };
+  const definition = gameplayDefinitions.find((item) => item.id === getGameplayTypes(mode)[0]);
+  return {
+    className: definition.timelineClass,
+    label: getGameplayLabel(mode) + (isLtmMode(mode) ? " · LTM" : ""),
+    shortLabel: isLtmMode(mode) ? "LTM" : definition.shortLabel,
+    laneKey: definition.id
+  };
 }
 
 function getTimelineShortDate(mode) {
@@ -359,7 +293,7 @@ function getTimelineShortDate(mode) {
 }
 
 function getTimelineNodeLabel(mode) {
-  const [name] = mode.modeName.split("/");
+  const [name] = mode.modeName.split(/[\/（(]/);
   const normalized = name
     .replace("玩家票选模式：", "票选")
     .replace("夜战：", "")
@@ -369,15 +303,16 @@ function getTimelineNodeLabel(mode) {
 }
 
 function renderTimelineCanvas(modes, filteredIds) {
-  const width = Math.max(1040, 96 + Math.max(0, modes.length - 1) * 86);
+  const firstX = 168;
+  const width = Math.max(1040, firstX + 26 + Math.max(0, modes.length - 1) * 86);
   const { definitions, lanes, height } = getTimelineLaneLayout();
   const points = modes.map((mode, index) => {
     const meta = getTimelineMeta(mode);
-    const lane = lanes[meta.laneKey] || lanes["限时/变体"] || lanes["特殊"] || definitions[0];
+    const lane = lanes[meta.laneKey];
     return {
       mode,
       meta,
-      x: 70 + index * 86,
+      x: firstX + index * 86,
       y: lane.y
     };
   });
@@ -392,14 +327,14 @@ function renderTimelineCanvas(modes, filteredIds) {
           ${definitions.map((definition) => {
             const lane = lanes[definition.key];
             return `
-            <line x1="48" y1="${lane.y}" x2="${width - 34}" y2="${lane.y}"></line>
+            <line x1="138" y1="${lane.y}" x2="${width - 34}" y2="${lane.y}"></line>
             <text x="18" y="${lane.y + 5}">${escapeHtml(lane.label)}</text>
           `;
           }).join("")}
         </g>
         <path class="canvas-flow" d="${flowPath}"></path>
         ${points.map((point) => {
-          const isDimmed = state.filter !== "all" && !filteredIds.has(point.mode.id);
+          const isDimmed = !filteredIds.has(point.mode.id);
           const typeText = point.mode.type.slice(0, 2).join(" / ");
           return `
             <g class="canvas-node ${point.meta.className} ${isDimmed ? "is-dimmed" : ""}" transform="translate(${point.x} ${point.y})">
@@ -458,7 +393,7 @@ function renderTimeline() {
       ${renderTimelineCanvas(modes, filteredIds)}
       <ol class="timeline-list">
         ${modes.map((mode) => {
-          const isDimmed = state.filter !== "all" && !filteredIds.has(mode.id);
+          const isDimmed = !filteredIds.has(mode.id);
           const meta = getTimelineMeta(mode);
           const typeText = mode.type.slice(0, 3).join(" / ");
           return `
@@ -481,36 +416,29 @@ function renderTimeline() {
 }
 
 function modeToMarkdown(mode) {
-  return `# ${mode.modeName}
-
-- 游戏：${mode.game}
-- 上线时间：${mode.launchLabel || mode.date || mode.year}
-- 玩法线：${getModeFamily(mode)?.tagLabel || "未单独标注"}
-- 类型：${mode.type.join(" / ")}
-- 来源：${mode.sourceUrl}
-- 图片来源：${mode.imageSource || "待确认"}
-- AI评论：${getAiCommentator(mode)}
-
-## 一句话规则
-
-${mode.oneLineRule}
-
-## 机制变化
-
-${mode.mechanicChange}
-
-## 节奏影响
-
-${mode.tempoImpact}
-
-## 设计观察
-
-${mode.designObservation}
-
-## 时间备注
-
-${mode.launchNote || "待确认"}
-`;
+  const derived = mode.kind && mode.kind !== "modes";
+  const sourceModes = (mode.sourceModeIds || []).map((id) => state.modes.find((entry) => entry.id === id)).filter(Boolean);
+  const lines = [
+    "# " + mode.modeName, "",
+    "- 资料类型：" + (kindLabels[mode.kind] || "玩法模式"),
+    "- 游戏：" + mode.game,
+    "- " + (derived ? "关联核心玩法：" : "核心玩法：") + getGameplayLabel(mode),
+    ...(isLtmMode(mode) ? ["- 模式标签：LTM（限时模式）"] : []),
+    "- " + (derived ? "关联案例上线时间：" : "上线时间：") + (mode.launchLabel || mode.date || mode.year),
+    "- 类型：" + mode.type.join(" / "),
+    "- 来源：" + mode.sourceUrl,
+    "- 图片来源：" + (mode.imageSource || "待确认"),
+    "- 设计观察署名：" + getAiCommentator(mode)
+  ];
+  if (derived) lines.push("- 提炼日期：" + mode.createdAt, "- 资料性质：基于已有案例的设计提炼，不代表官方结论");
+  lines.push("", "## 一句话规则", "", mode.oneLineRule, "",
+    "## " + (derived ? "原案例的机制依据" : "机制变化"), "", mode.mechanicChange, "",
+    "## " + (derived ? "原案例的节奏影响" : "节奏影响"), "", mode.tempoImpact, "",
+    "## 设计观察", "", mode.designObservation, "", "## 时间备注", "", mode.launchNote || "待确认");
+  if (sourceModes.length) {
+    lines.push("", "## 关联原案例", "", ...sourceModes.map((entry) => "- [" + entry.modeName + "](" + entry.sourceUrl + ")"));
+  }
+  return lines.join("\n") + "\n";
 }
 
 function iconSvg(name) {
@@ -569,44 +497,58 @@ async function copyModeBlockImage(mode) {
 }
 
 async function openShareModal(mode) {
+  const generation = (activeShare.generation || 0) + 1;
+  activeShare.generation = generation;
+  activeShare.trigger = document.activeElement;
   activeShare.mode = mode;
   activeShare.blob = null;
-  if (activeShare.objectUrl) {
-    URL.revokeObjectURL(activeShare.objectUrl);
-    activeShare.objectUrl = null;
-  }
-
+  if (activeShare.objectUrl) URL.revokeObjectURL(activeShare.objectUrl);
+  activeShare.objectUrl = null;
   shareTitle.textContent = mode.modeName;
   sharePreviewImage.removeAttribute("src");
   sharePreviewImage.hidden = true;
-  sharePreviewImage.alt = `${mode.modeName} 玩法块分享预览图`;
-
+  sharePreviewImage.alt = mode.modeName + " 资料分享预览图";
   shareSkeleton.hidden = false;
   shareSource.hidden = true;
-
   shareModal.hidden = false;
   document.body.classList.add("modal-open");
-
-  const blob = await renderModeBlockPng(mode);
-  activeShare.blob = blob;
-  activeShare.objectUrl = URL.createObjectURL(blob);
-
-  shareSkeleton.hidden = true;
-  sharePreviewImage.src = activeShare.objectUrl;
-  sharePreviewImage.hidden = false;
-
-  if (mode.sourceUrl) {
-    shareSourceLink.href = mode.sourceUrl;
-    shareSourceName.textContent = mode.modeName;
-    shareSource.hidden = false;
+  document.querySelector("#downloadShareImage").disabled = true;
+  document.querySelector(".workspace-main").inert = true;
+  document.querySelector("#sidebar").inert = true;
+  shareModal.querySelector("button[data-share-close]").focus();
+  try {
+    const blob = await renderModeBlockPng(mode);
+    if (generation !== activeShare.generation || shareModal.hidden) return;
+    activeShare.blob = blob;
+    activeShare.objectUrl = URL.createObjectURL(blob);
+    shareSkeleton.hidden = true;
+    sharePreviewImage.src = activeShare.objectUrl;
+    sharePreviewImage.hidden = false;
+    document.querySelector("#downloadShareImage").disabled = false;
+    if (safeUrl(mode.sourceUrl)) {
+      shareSourceLink.href = safeUrl(mode.sourceUrl);
+      shareSourceName.textContent = mode.modeName;
+      shareSource.hidden = false;
+    }
+  } catch {
+    if (generation !== activeShare.generation) return;
+    shareSkeleton.hidden = true;
+    showToast("图片暂时生成失败，仍可复制或下载 Markdown。");
   }
 }
 
 function closeShareModal() {
+  activeShare.generation = (activeShare.generation || 0) + 1;
+  if (activeShare.objectUrl) URL.revokeObjectURL(activeShare.objectUrl);
+  activeShare.objectUrl = null;
+  activeShare.blob = null;
   shareModal.hidden = true;
   shareSkeleton.hidden = true;
   shareSource.hidden = true;
   document.body.classList.remove("modal-open");
+  document.querySelector(".workspace-main").inert = false;
+  setNavOpen(false);
+  if (activeShare.trigger?.isConnected) activeShare.trigger.focus();
 }
 
 function downloadActiveShareImage() {
@@ -676,7 +618,7 @@ async function renderModeBlockPng(mode) {
 
   /* ── Tags: title bottom + 14px gap ── */
   y = y - 32;
-  y = drawTagRow(ctx, mode.type, layout.margin, y, layout.contentWidth);
+  y = drawTagRow(ctx, getEntryTags(mode), layout.margin, y, layout.contentWidth);
 
   /* ── Launch time: tags bottom + 20px ── */
   y += 20;
@@ -687,7 +629,7 @@ async function renderModeBlockPng(mode) {
   ctx.stroke();
   ctx.fillStyle = "#0071e3";
   ctx.font = "800 18px Inter, PingFang SC, sans-serif";
-  ctx.fillText("上线时间", layout.margin + 18, y + 30);
+  ctx.fillText(mode.kind === "modes" ? "上线时间" : "案例上线", layout.margin + 18, y + 30);
   ctx.fillStyle = "#424245";
   ctx.font = "700 18px Inter, PingFang SC, sans-serif";
   ctx.fillText(mode.launchLabel || mode.date || mode.year, layout.margin + 108, y + 30);
@@ -729,7 +671,7 @@ async function buildShareLayout(mode, width) {
   const tempo = measureCanvasLines(ctx, mode.tempoImpact, contentWidth - 40, 6);
   const observation = measureCanvasLines(ctx, mode.designObservation, contentWidth - 40, 5);
 
-  const tagRows = countTagRows(ctx, mode.type, contentWidth);
+  const tagRows = countTagRows(ctx, getEntryTags(mode), contentWidth);
   const sectionsHeight =
     shareSectionHeight(rule.length, 36) +
     shareSectionHeight(mechanic.length, 32) +
@@ -760,11 +702,13 @@ async function buildShareLayout(mode, width) {
 function loadImageForCanvas(src) {
   return new Promise((resolve, reject) => {
     const img = new Image();
+    const timeout = window.setTimeout(() => {
+      img.onload = img.onerror = null;
+      reject(new Error("Image request timed out"));
+    }, 7000);
     img.crossOrigin = "anonymous";
-    img.onload = () => {
-      resolve(img);
-    };
-    img.onerror = reject;
+    img.onload = () => { window.clearTimeout(timeout); resolve(img); };
+    img.onerror = () => { window.clearTimeout(timeout); reject(new Error("Image unavailable")); };
     img.src = src;
   });
 }
@@ -899,13 +843,14 @@ function roundRect(ctx, x, y, width, height, radius) {
 function toggleCollect(modeId) {
   if (state.collected.has(modeId)) {
     state.collected.delete(modeId);
-    showToast("已从本地采集中移除");
+    showToast("已取消收藏");
   } else {
     state.collected.add(modeId);
-    showToast("已采集到当前浏览器本地");
+    showToast("已收藏到当前浏览器");
   }
   saveCollected();
   renderModes();
+  updateDetailCollection();
 }
 
 function updateGameTabs() {
@@ -914,48 +859,24 @@ function updateGameTabs() {
   });
 }
 
-function showModeInCases(modeId) {
-  state.gameFilter = "all";
-  state.filter = "all";
-  updateGameTabs();
-  renderFilters();
-  renderModes();
-
-  const card = [...document.querySelectorAll(".mode-card")].find((item) => item.dataset.id === modeId);
-  if (!card) return;
-
-  card.scrollIntoView({ behavior: "smooth", block: "start" });
-  card.classList.add("is-pulsed");
-  window.setTimeout(() => card.classList.remove("is-pulsed"), 1400);
-}
+function showModeInCases(modeId) { openDetail(modeId); }
 
 function buildCanvas(modes) {
   const nodes = modes.map((mode, index) => ({
     id: mode.id,
     type: "text",
     x: (index % 3) * 520,
-    y: Math.floor(index / 3) * 360,
+    y: Math.floor(index / 3) * 620,
     width: 460,
-    height: 270,
+    height: 560,
     color: "4",
-    text: `${mode.modeName}\n${mode.game} · ${mode.type.join(" / ")}\n\n一句话规则：${mode.oneLineRule}\n\n设计观察：${mode.designObservation}\n\n来源：${mode.sourceUrl}`
+    text: [mode.modeName, (kindLabels[mode.kind] || "玩法模式") + " · " + mode.game, "核心玩法：" + getGameplayLabel(mode) + (isLtmMode(mode) ? " · LTM" : ""), "", "一句话规则：" + mode.oneLineRule, "", "设计观察：" + mode.designObservation, "", ...(mode.sourceModeIds ? ["基于已有案例的设计提炼", ""] : []), "来源：" + mode.sourceUrl].join("\n")
   }));
 
   return {
     nodes,
     edges: []
   };
-}
-
-function getModeTypeChips(mode) {
-  const family = getModeFamily(mode);
-  const familyChip = family
-    ? [{ label: family.tagLabel, className: `tag family-tag ${family.className}` }]
-    : [];
-  return [
-    ...familyChip,
-    ...mode.type.map((tag) => ({ label: tag, className: "tag" }))
-  ];
 }
 
 function exportCurrentCanvas() {
@@ -973,9 +894,9 @@ function exportCurrentCanvas() {
 }
 
 function exportCollectedMarkdown() {
-  const modes = state.modes.filter((mode) => state.collected.has(mode.id));
+  const modes = state.entries.filter((mode) => state.collected.has(mode.id));
   if (!modes.length) {
-    showToast("还没有采集内容");
+    showToast("还没有收藏资料");
     return;
   }
   downloadFile(
@@ -985,160 +906,6 @@ function exportCollectedMarkdown() {
   showToast(`已导出 ${modes.length} 个采集玩法`);
 }
 
-function renderModes() {
-  const modes = getFilteredModes();
-  modeGrid.innerHTML = modes.map((mode) => {
-    const collected = state.collected.has(mode.id);
-    const typeChips = getModeTypeChips(mode);
-    const imageBlock = mode.imageUrl ? `
-      <div class="card-image">
-        <img src="${escapeHtml(mode.imageUrl)}" alt="${escapeHtml(mode.modeName)} 官方公告图" loading="lazy">
-        <span class="image-source">${escapeHtml(mode.imageSource || "官方公告图")}</span>
-      </div>
-    ` : "";
-    return `
-      <article class="mode-card" data-id="${escapeHtml(mode.id)}" data-tags="${escapeHtml(mode.tags.join(" "))}">
-        ${imageBlock}
-        <div class="card-body">
-          <div class="card-top">
-            <h3>${escapeHtml(mode.modeName)}</h3>
-            <span class="year">${escapeHtml(mode.year)}</span>
-          </div>
-          <div class="tag-row">${typeChips.map((chip) => `<span class="${escapeHtml(chip.className)}">${escapeHtml(chip.label)}</span>`).join("")}</div>
-          <div class="launch-row">
-            <span>上线时间</span>
-            <strong>${escapeHtml(mode.launchLabel || mode.date || mode.year)}</strong>
-          </div>
-          <p class="summary">${escapeHtml(mode.oneLineRule)}</p>
-          <dl>
-            <div><dt>机制变化</dt><dd>${escapeHtml(mode.mechanicChange)}</dd></div>
-            <div><dt>节奏影响</dt><dd>${escapeHtml(mode.tempoImpact)}</dd></div>
-            <div><dt>时间备注</dt><dd>${escapeHtml(mode.launchNote || "待确认")}</dd></div>
-          </dl>
-        </div>
-        <div class="card-foot">
-          <h4>设计观察</h4>
-          <blockquote>${escapeHtml(mode.designObservation)}</blockquote>
-          <cite>&mdash; ${escapeHtml(getAiCommentator(mode))}</cite>
-        </div>
-        <div class="card-source">
-          <span class="source-label">来源</span>
-          <a href="${escapeHtml(mode.sourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(mode.sourceUrl)}</a>
-        </div>
-        <div class="card-actions compact-actions">
-          <button type="button" class="${collected ? "collected" : "primary-action"}" data-action="collect" data-id="${escapeHtml(mode.id)}" aria-label="${collected ? "取消采集" : "采集"} ${escapeHtml(mode.modeName)}" title="${collected ? "已采集" : "采集"}">${iconSvg(collected ? "collected" : "collect")}<span>${collected ? "已采集" : "采集"}</span></button>
-          <button type="button" data-action="share" data-id="${escapeHtml(mode.id)}" aria-label="分享 ${escapeHtml(mode.modeName)}" title="分享">${iconSvg("share")}<span>分享</span></button>
-          <button type="button" data-action="copy" data-id="${escapeHtml(mode.id)}" aria-label="复制 ${escapeHtml(mode.modeName)} MD" title="复制 MD">${iconSvg("copy")}<span>复制 MD</span></button>
-        </div>
-      </article>
-    `;
-  }).join("");
-
-  const collectedCount = state.collected.size;
-  const gameLabel = state.gameFilter === "all" ? "" : ` · ${state.gameFilter}`;
-  const currentLabel = tagLabels[state.filter] || state.filter;
-  statusLine.textContent = `当前显示 ${modes.length} / ${state.modes.length} 个玩法${gameLabel}，已采集 ${collectedCount} 个。筛选：${currentLabel}`;
-  caseCount.textContent = `${state.modes.length} 个玩法案例`;
-  renderActivityFeed();
-  renderTimeline();
-}
-
-function renderFilters() {
-  const filtersContainer = document.querySelector("#filterButtons");
-  if (!filtersContainer) return;
-
-  const availableTags = getAvailableTags();
-  const tagsToShow = ["all", ...availableTags];
-
-  filtersContainer.innerHTML = tagsToShow.map((tag) => {
-    const label = tagLabels[tag] || tag;
-    const pressed = state.filter === tag;
-    return `<button type="button" data-filter="${tag}" aria-pressed="${pressed}">${label}</button>`;
-  }).join("");
-
-  // Always show collected button
-  const collectedBtn = document.createElement("button");
-  collectedBtn.type = "button";
-  collectedBtn.dataset.filter = "collected";
-  collectedBtn.setAttribute("aria-pressed", String(state.filter === "collected"));
-  collectedBtn.textContent = tagLabels.collected;
-  filtersContainer.insertAdjacentHTML("beforeend", collectedBtn.outerHTML);
-}
-
-function bindEvents() {
-  document.querySelectorAll("[data-game]").forEach((button) => {
-    button.addEventListener("click", () => {
-      state.gameFilter = button.dataset.game;
-      state.filter = "all"; // reset tag filter when switching games
-      updateGameTabs();
-      renderFilters();
-      renderModes();
-    });
-  });
-
-  document.querySelector("#activityTabs")?.addEventListener("click", (event) => {
-    const btn = event.target.closest("[data-feed]");
-    if (!btn) return;
-    state.feedFilter = btn.dataset.feed;
-    document.querySelectorAll("[data-feed]").forEach((item) => {
-      item.setAttribute("aria-pressed", String(item === btn));
-    });
-    renderActivityFeed();
-  });
-
-  activityFeed?.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-action='open-mode']");
-    if (!target) return;
-    showModeInCases(target.dataset.id);
-  });
-
-  const filtersContainer = document.querySelector("#filterButtons");
-  if (filtersContainer) {
-    filtersContainer.addEventListener("click", (event) => {
-      const btn = event.target.closest("[data-filter]");
-      if (!btn) return;
-      state.filter = btn.dataset.filter;
-      document.querySelectorAll("[data-filter]").forEach((item) => {
-        item.setAttribute("aria-pressed", String(item === btn));
-      });
-      renderModes();
-    });
-  }
-
-  modeGrid.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-action]");
-    if (!target) return;
-    const mode = state.modes.find((item) => item.id === target.dataset.id);
-    if (!mode) return;
-
-    if (target.dataset.action === "collect") toggleCollect(mode.id);
-    if (target.dataset.action === "share") openShareModal(mode);
-    if (target.dataset.action === "copy") copyModeMarkdown(mode);
-  });
-
-  document.querySelector("#exportCanvas").addEventListener("click", exportCurrentCanvas);
-  document.querySelector("#exportCollected").addEventListener("click", exportCollectedMarkdown);
-  document.querySelector("#downloadShareImage").addEventListener("click", downloadActiveShareImage);
-  document.querySelector("#copyShareMarkdown").addEventListener("click", copyActiveShareMarkdown);
-  document.querySelector("#downloadShareMarkdown").addEventListener("click", downloadActiveShareMarkdown);
-  document.querySelectorAll("[data-share-close]").forEach((item) => item.addEventListener("click", closeShareModal));
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && !shareModal.hidden) closeShareModal();
-  });
-}
-
-async function init() {
-  try {
-    const response = await fetch("data/modes.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    state.modes = await response.json();
-    renderFilters();
-    renderModes();
-    bindEvents();
-  } catch (error) {
-    statusLine.textContent = `加载失败：${error.message}`;
-    modeGrid.innerHTML = `<p class="note">没有加载到玩法数据。请确认通过本地服务器访问页面，而不是直接打开 file://。</p>`;
-  }
-}
-
-init();
+// The research workspace owns navigation and rendering; existing export, share,
+// date, collection and game-specific timeline helpers above remain reusable.
+function renderModes() { renderWorkspace(); }

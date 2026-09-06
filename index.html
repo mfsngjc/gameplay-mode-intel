@@ -3,92 +3,257 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>集成农业 · 玩法情报采集点</title>
-  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
+  <meta name="theme-color" content="#182c25">
+  <meta name="description" content="集成农业，面向射击游戏设计的研究资料库。收集射击游戏玩法模式与地图资料，保留原始来源。">
+  <title>集成农业 · 射击玩法研究库</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=activity-feed-20260617">
+  <link rel="stylesheet" href="styles.css?v=maps-library-20260907">
+  <link rel="stylesheet" href="workspace.css?v=maps-library-20260907">
 </head>
-<body>
-  <div class="page-shell">
-    <header>
-      <div class="hero">
-        <div class="eyebrow"><span class="spark" aria-hidden="true"></span>集成农业 · 玩法动态采集点</div>
-        <h1>集成农业</h1>
-        <p>追踪 Fortnite / PUBG / 和平精英 / Apex / 三角洲行动最近在做什么玩法实验，把新模式、限时变体和活动规则沉淀成可筛选、可采集、可导出的玩法情报库。</p>
-        <div class="hero-meta" aria-label="资料概览">
-          <span class="meta-pill" id="caseCount">12 个代表案例</span>
-          <a class="meta-pill" href="#activity">最新动态</a>
-          <span class="meta-pill" id="latestCount">正在同步动态</span>
-          <span class="meta-pill" id="gameCount">5 个游戏</span>
+<body class="workspace">
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><symbol id="ui-compass" viewBox="0 0 24 24">
+
+  <path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" />
+  <circle cx="12" cy="12" r="10" />
+</symbol><symbol id="ui-layers" viewBox="0 0 24 24">
+
+  <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" />
+  <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" />
+  <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" />
+</symbol><symbol id="ui-sliders-horizontal" viewBox="0 0 24 24">
+
+  <line x1="21" x2="14" y1="4" y2="4" />
+  <line x1="10" x2="3" y1="4" y2="4" />
+  <line x1="21" x2="12" y1="12" y2="12" />
+  <line x1="8" x2="3" y1="12" y2="12" />
+  <line x1="21" x2="16" y1="20" y2="20" />
+  <line x1="12" x2="3" y1="20" y2="20" />
+  <line x1="14" x2="14" y1="2" y2="6" />
+  <line x1="8" x2="8" y1="10" y2="14" />
+  <line x1="16" x2="16" y1="18" y2="22" />
+</symbol><symbol id="ui-map" viewBox="0 0 24 24">
+
+  <path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z" />
+  <path d="M15 5.764v15" />
+  <path d="M9 3.236v15" />
+</symbol><symbol id="ui-bookmark" viewBox="0 0 24 24">
+
+  <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+</symbol><symbol id="ui-radio" viewBox="0 0 24 24">
+
+  <path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9" />
+  <path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5" />
+  <circle cx="12" cy="12" r="2" />
+  <path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5" />
+  <path d="M19.1 4.9C23 8.8 23 15.1 19.1 19" />
+</symbol><symbol id="ui-clock-3" viewBox="0 0 24 24">
+
+  <circle cx="12" cy="12" r="10" />
+  <polyline points="12 6 12 12 16.5 12" />
+</symbol><symbol id="ui-arrow-up-right" viewBox="0 0 24 24">
+
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</symbol><symbol id="ui-arrow-right" viewBox="0 0 24 24">
+
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</symbol><symbol id="ui-search" viewBox="0 0 24 24">
+
+  <circle cx="11" cy="11" r="8" />
+  <path d="m21 21-4.3-4.3" />
+</symbol><symbol id="ui-grid-2x2" viewBox="0 0 24 24">
+
+  <path d="M12 3v18" />
+  <path d="M3 12h18" />
+  <rect x="3" y="3" width="18" height="18" rx="2" />
+</symbol><symbol id="ui-list" viewBox="0 0 24 24">
+
+  <path d="M3 12h.01" />
+  <path d="M3 18h.01" />
+  <path d="M3 6h.01" />
+  <path d="M8 12h13" />
+  <path d="M8 18h13" />
+  <path d="M8 6h13" />
+</symbol><symbol id="ui-chevron-down" viewBox="0 0 24 24">
+
+  <path d="m6 9 6 6 6-6" />
+</symbol><symbol id="ui-chevron-left" viewBox="0 0 24 24">
+
+  <path d="m15 18-6-6 6-6" />
+</symbol><symbol id="ui-chevron-right" viewBox="0 0 24 24">
+
+  <path d="m9 18 6-6-6-6" />
+</symbol><symbol id="ui-x" viewBox="0 0 24 24">
+
+  <path d="M18 6 6 18" />
+  <path d="m6 6 12 12" />
+</symbol><symbol id="ui-menu" viewBox="0 0 24 24">
+
+  <line x1="4" x2="20" y1="12" y2="12" />
+  <line x1="4" x2="20" y1="6" y2="6" />
+  <line x1="4" x2="20" y1="18" y2="18" />
+</symbol><symbol id="ui-download" viewBox="0 0 24 24">
+
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <polyline points="7 10 12 15 17 10" />
+  <line x1="12" x2="12" y1="15" y2="3" />
+</symbol><symbol id="ui-external-link" viewBox="0 0 24 24">
+
+  <path d="M15 3h6v6" />
+  <path d="M10 14 21 3" />
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+</symbol><symbol id="ui-check" viewBox="0 0 24 24">
+
+  <path d="M20 6 9 17l-5-5" />
+</symbol><symbol id="ui-book-open" viewBox="0 0 24 24">
+
+  <path d="M12 7v14" />
+  <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+</symbol><symbol id="ui-scan-line" viewBox="0 0 24 24">
+
+  <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+  <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+  <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+  <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+  <path d="M7 12h10" />
+</symbol><symbol id="ui-circle-help" viewBox="0 0 24 24">
+
+  <circle cx="12" cy="12" r="10" />
+  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+  <path d="M12 17h.01" />
+</symbol><symbol id="ui-workflow" viewBox="0 0 24 24">
+
+  <rect width="8" height="8" x="3" y="3" rx="2" />
+  <path d="M7 11v4a2 2 0 0 0 2 2h4" />
+  <rect width="8" height="8" x="13" y="13" rx="2" />
+</symbol><symbol id="ui-arrow-down-to-line" viewBox="0 0 24 24">
+
+  <path d="M12 17V3" />
+  <path d="m6 11 6 6 6-6" />
+  <path d="M19 21H5" />
+</symbol><symbol id="ui-sprout" viewBox="0 0 24 24">
+
+  <path d="M7 20h10" />
+  <path d="M10 20c5.5-2.5.8-6.4 3-10" />
+  <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z" />
+  <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z" />
+</symbol></svg>
+  <a class="skip-link" href="#mainContent">跳到资料内容</a>
+  <aside class="sidebar" id="sidebar" aria-label="主导航">
+    <a class="brand" href="#modes" aria-label="集成农业 · 玩法模式">
+      <span class="brand-mark"><svg><use href="#ui-sprout"></use></svg></span>
+      <span><strong>集成农业<span class="brand-period">.</span></strong><small>GAMEPLAY RESEARCH</small></span>
+    </a>
+    <div class="nav-group-label">研究资料库 <span>LIBRARY</span></div>
+    <nav class="primary-nav">
+      <a class="nav-item is-active" href="#modes" data-view="modes" aria-current="page"><svg><use href="#ui-layers"></use></svg><span>玩法模式</span><span class="nav-count" id="navModeCount">—</span></a>
+      <a class="nav-item" href="#maps" data-view="maps"><svg><use href="#ui-map"></use></svg><span>地图</span><span class="nav-count" id="navMapCount">—</span></a>
+    </nav>
+    <div class="nav-divider"></div>
+    <div class="nav-group-label">我的研究 <span>WORKSPACE</span></div>
+    <nav class="secondary-nav">
+      <a class="nav-item" href="#activity" data-view="activity"><svg><use href="#ui-radio"></use></svg><span>玩法动态</span></a>
+      <a class="nav-item" href="#timeline" data-view="timeline"><svg><use href="#ui-clock-3"></use></svg><span>时间画板</span></a>
+      <a class="nav-item" href="#collection" data-view="collection"><svg><use href="#ui-bookmark"></use></svg><span>我的收藏</span><span class="nav-count" id="navCollectedCount">0</span></a>
+    </nav>
+  </aside>
+  <button class="sidebar-overlay" id="sidebarOverlay" aria-label="关闭导航" hidden></button>
+
+  <div class="workspace-main">
+    <header class="topbar">
+      <button class="icon-button mobile-menu" id="menuToggle" aria-label="打开导航" aria-controls="sidebar" aria-expanded="false"><svg><use href="#ui-menu"></use></svg></button>
+      <div class="breadcrumb"><span>研究资料库</span><span class="crumb-slash">/</span><strong id="currentViewLabel">玩法模式</strong></div>
+      <div class="global-search">
+        <svg><use href="#ui-search"></use></svg>
+        <label class="sr-only" for="searchInput">搜索玩法、地图、游戏或关键词</label>
+        <input type="search" id="searchInput" placeholder="搜索玩法、地图、游戏…" autocomplete="off">
+        <kbd>/</kbd>
+      </div>
+      <div class="export-menu">
+        <button class="button subtle" id="exportToggle" aria-label="导出资料" aria-expanded="false" aria-controls="exportOptions"><svg><use href="#ui-download"></use></svg><span>导出资料</span></button>
+        <div class="dropdown-menu" id="exportOptions" hidden>
+          <button id="exportCanvas" type="button">当前筛选 → Obsidian Canvas</button>
+          <button id="exportCollected" type="button">我的收藏 → Markdown</button>
         </div>
       </div>
     </header>
 
-    <main>
-      <div class="container">
-        <section class="section activity-section" id="activity" aria-labelledby="activityTitle">
-          <div class="section-head activity-head">
-            <div>
-              <span class="section-kicker">Latest Gameplay Signals</span>
-              <h2 id="activityTitle">最新动态</h2>
-            </div>
-            <p>先让玩家看到“其他游戏最近把玩法改到了哪里”：新地图、短局、撤离、复活、PvE、主题活动都会在这里按时间聚合，进入案例区再看完整拆解。</p>
-          </div>
-          <div class="activity-toolbar" aria-label="动态筛选">
-            <div class="activity-tabs" id="activityTabs">
-              <button type="button" data-feed="all" aria-pressed="true">全部动态</button>
-              <button type="button" data-feed="recent" aria-pressed="false">最近更新</button>
-              <button type="button" data-feed="upcoming" aria-pressed="false">即将上线</button>
-              <button type="button" data-feed="ltm" aria-pressed="false">玩法变体</button>
-            </div>
-            <div class="activity-stats" id="activityStats">正在整理玩法动态...</div>
-          </div>
-          <div class="activity-feed" id="activityFeed" aria-live="polite"></div>
-        </section>
-
-        <section class="section" aria-labelledby="cases">
-          <div class="section-head">
-            <h2 id="cases">玩法案例</h2>
-            <p>按玩法母题筛选。每张卡片只整理案例本身：核心机制、节奏影响和可复用的通用设计观察；采集后会保存到当前浏览器本地。</p>
-          </div>
-
-          <div class="toolbar" aria-label="案例筛选与导出">
-            <div class="toolbar-row">
-              <div class="game-tabbar">
-                <button type="button" data-game="all" aria-pressed="true">全部游戏</button>
-                <button type="button" data-game="Fortnite" aria-pressed="false">Fortnite</button>
-                <button type="button" data-game="PUBG" aria-pressed="false">PUBG</button>
-                <button type="button" data-game="和平精英" aria-pressed="false">和平精英</button>
-                <button type="button" data-game="Apex Legends" aria-pressed="false">Apex</button>
-                <button type="button" data-game="三角洲行动" aria-pressed="false">三角洲行动</button>
-              </div>
-            </div>
-            <div class="toolbar-row">
-              <div class="filters" id="filterButtons">
-                <!-- Dynamic filter buttons rendered by app.js -->
-              </div>
-              <div class="actions">
-                <button type="button" id="exportCanvas">导出 Canvas</button>
-                <button type="button" id="exportCollected">导出采集 MD</button>
-              </div>
-            </div>
-            <div class="status-line" id="statusLine">正在加载玩法数据...</div>
-          </div>
-
-          <section class="game-timeline" id="gameTimeline" aria-live="polite" hidden></section>
-
-          <div class="mode-grid" id="modeGrid" aria-live="polite"></div>
-        </section>
-
-        <section class="section" aria-labelledby="sources" style="max-width:640px">
-          <h2 id="sources">数据来源</h2>
-          <p class="note">资料来自各游戏官方公告、补丁说明、官网玩法页与社区 Wiki。每个玩法卡片底部标注了具体来源链接。</p>
-          <footer>最后整理：2026-06-04。当前版本是本地 MVP，可继续接入同步脚本与服务器部署。</footer>
-        </section>
+    <main id="mainContent" tabindex="-1">
+      <div class="page-intro">
+        <div>
+          <div class="eyeline"><span class="eyeline-dot"></span><span id="pageEyeline">01 / GAME MODES</span></div>
+          <h1 id="pageTitle">玩法模式</h1>
+          <p id="pageDescription">发现射击游戏的核心模式与限时变体，按玩法、游戏和设计主题查找案例。</p>
+        </div>
+        <div class="library-stamp"><svg><use href="#ui-book-open"></use></svg><span id="librarySummary">正在读取资料</span><small>FOR GAME DESIGNERS</small></div>
       </div>
+
+      <section class="library-section" id="librarySection" aria-labelledby="resultsTitle">
+        <div class="results-heading"><div><h2 id="resultsTitle">玩法模式资料</h2><span id="resultCount" aria-live="polite">加载中</span></div><span class="section-aside" id="sectionAside">从案例出发，连接设计</span></div>
+        <div class="filter-panel">
+          <div class="gameplay-filter-row"><span class="filter-row-label">核心玩法</span><div id="gameplayFilters" class="gameplay-filters" role="group" aria-label="按核心玩法筛选"></div></div>
+          <div class="game-filters" id="gameFilters" aria-label="按游戏筛选"></div>
+          <div class="filter-bottom">
+            <div class="filter-fields">
+              <div class="select-field"><label for="topicSelect">设计主题</label><select id="topicSelect" aria-label="设计主题"><option value="all">全部主题</option></select></div>
+              <div class="select-field" id="typeField"><label for="typeSelect">模式标签</label><select id="typeSelect" aria-label="模式标签"><option value="all">全部标签</option></select></div>
+            </div>
+            <div class="view-controls"><label class="sr-only" for="sortSelect">资料排序</label><select id="sortSelect"><option value="recommended">推荐浏览</option><option value="newest">上线时间：从新到旧</option><option value="oldest">上线时间：从旧到新</option><option value="name">按名称排序</option></select><span class="control-divider"></span><button type="button" class="icon-button is-selected" data-layout="grid" aria-label="卡片视图" aria-pressed="true"><svg><use href="#ui-grid-2x2"></use></svg></button><button type="button" class="icon-button" data-layout="list" aria-label="列表视图" aria-pressed="false"><svg><use href="#ui-list"></use></svg></button></div>
+          </div>
+        </div>
+        <div class="filter-summary" id="filterSummary" hidden><span id="filterSummaryText"></span><button data-reset-filters>清除筛选</button></div>
+        <p class="context-note" id="contextNote" hidden></p>
+        <div class="mode-grid" id="modeGrid" aria-busy="true"><div class="loading-state">正在整理玩法资料…</div></div>
+        <div class="results-footer"><span id="statusLine" role="status"></span><button class="button" id="loadMore" hidden>加载更多<svg><use href="#ui-arrow-right"></use></svg></button></div>
+      </section>
+
+      <section id="activitySection" class="secondary-section" aria-label="玩法动态" hidden>
+        <div class="activity-toolbar"><div class="activity-tabs" id="activityTabs"><button type="button" data-feed="all" aria-pressed="true">全部动态</button><button type="button" data-feed="recent" aria-pressed="false">近 30 天</button><button type="button" data-feed="upcoming" aria-pressed="false">即将上线</button><button type="button" data-feed="ltm" aria-pressed="false">LTM 限时模式</button></div><span id="activityStats"></span></div>
+        <p class="context-note">按案例中的上线日期排列；上线时间与收录时间分别记录。</p>
+        <div id="activityFeed" class="activity-feed"></div>
+      </section>
+
+      <section id="timelineSection" class="secondary-section" aria-label="玩法时间画板" hidden>
+        <div class="timeline-game-picker" id="timelineGameFilters"></div>
+        <section class="game-timeline" id="gameTimeline" hidden></section>
+      </section>
+
+      <section id="mapsSection" class="secondary-section" aria-label="地图资料" hidden>
+        <div class="map-library-toolbar">
+          <div class="activity-tabs" id="mapCategoryFilters" role="group" aria-label="按地图所属模式筛选">
+            <button type="button" data-map-category="all" aria-pressed="true">全部地图</button>
+            <button type="button" data-map-category="operations" aria-pressed="false">烽火地带</button>
+            <button type="button" data-map-category="warfare" aria-pressed="false">全面战场</button>
+            <button type="button" data-map-category="campaign" aria-pressed="false">黑鹰坠落</button>
+          </div>
+          <a class="button subtle" href="assets/maps/delta-force-maps.zip" download>下载底图合集<svg><use href="#ui-download"></use></svg></a>
+        </div>
+        <p class="map-library-note">当前收录三角洲行动的 20 张地图。点击封面打开本地互动地图，可筛选物资与撤离点、查看建筑楼层，切换攻防／占领配置和战场阶段。黑鹰坠落战役底图待补充。</p>
+        <div class="map-results-heading"><span id="mapResultCount" role="status"></span><span>核查日期：2026-09-06 · 底图 © 腾讯</span></div>
+        <div id="mapArchiveGrid" class="map-archive-grid"></div>
+      </section>
+      <footer class="workspace-footer"><span>集成农业<span class="title-dot">.</span> <span class="footer-divider">/</span> 射击玩法研究库</span><span>每一个好玩法，都有值得研究的设计。</span></footer>
     </main>
   </div>
 
+  <dialog class="interactive-map-dialog" id="interactiveMapDialog" aria-labelledby="interactiveMapTitle">
+    <header class="interactive-map-header">
+      <button type="button" id="interactiveMapClose" class="button">← 返回地图</button>
+      <h2 id="interactiveMapTitle">互动地图</h2>
+      <span class="interactive-map-snapshot">本地快照 · 2026.09.06</span>
+      <a id="interactiveMapStandalone" target="_blank" rel="noopener">独立打开 ↗</a>
+      <a id="interactiveMapSource" target="_blank" rel="noopener noreferrer">官方来源 ↗</a>
+    </header>
+    <iframe id="interactiveMapFrame" title="互动地图" src="about:blank" allow="fullscreen" referrerpolicy="no-referrer"></iframe>
+  </dialog>
+  <dialog class="map-dialog" id="mapDialog" aria-labelledby="mapDetailTitle">
+    <div class="map-dialog-header"><div><h2 id="mapDetailTitle"></h2><p id="mapDetailSubtitle"></p></div><button class="icon-button" id="mapDetailClose" aria-label="关闭地图"><svg><use href="#ui-x"></use></svg></button></div>
+    <div class="map-viewer-controls"><div><button class="button" type="button" data-map-zoom="out" aria-label="缩小地图">−</button><span id="mapZoomValue">100%</span><button class="button" type="button" data-map-zoom="in" aria-label="放大地图">+</button><button class="button subtle" type="button" data-map-zoom="reset">适应窗口</button></div><span>放大后可滚动查看</span></div>
+    <div class="map-viewport" id="mapViewport" tabindex="0" aria-label="地图预览，可滚动查看"><img id="mapDetailImage" alt=""><p id="mapImageError" hidden>底图暂时无法加载，可打开官方互动地图查看。</p></div>
+    <div class="map-dialog-footer"><span>底图 © 腾讯 · 点位、楼层与版本信息以官方工具为准</span><div><a class="button" id="mapDetailDownload" download>下载底图</a><a class="button primary" id="mapDetailSource" target="_blank" rel="noopener noreferrer">官方互动地图<svg><use href="#ui-external-link"></use></svg></a></div></div>
+  </dialog>
+  <dialog class="detail-dialog" id="detailDialog" aria-labelledby="detailTitle"><button class="icon-button detail-close" id="detailClose" aria-label="关闭详情"><svg><use href="#ui-x"></use></svg></button><div id="detailContent"></div></dialog>
   <div class="share-modal" id="shareModal" hidden>
     <div class="share-backdrop" data-share-close></div>
     <section class="share-panel" role="dialog" aria-modal="true" aria-labelledby="shareTitle">
@@ -130,6 +295,8 @@
   </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js?v=mode-sync-20260617"></script>
+  <script src="app.js?v=maps-library-20260906"></script>
+  <script src="maps.js?v=maps-library-20260906"></script>
+  <script src="workspace.js?v=maps-library-20260906"></script>
 </body>
 </html>

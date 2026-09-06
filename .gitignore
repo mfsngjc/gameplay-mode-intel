@@ -1,3 +1,8 @@
 .server-*.pid
 .server-*.log
 .DS_Store
+
+# Unpublished research and generated deployment artifact
+local-only/
+data/research.json
+_site/

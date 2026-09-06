@@ -1,0 +1,11 @@
+/* Minimal local-shell integration; original map artwork, layout and colors are retained. */
+.local-map-back { position:fixed; right:18px; top:14px; z-index:10000; padding:9px 14px; color:#c0eed9; background:#142b2a; border:1px solid #416357; font:13px/1.4 sans-serif; text-decoration:none; border-radius:4px; }
+.right-nav { height:auto!important; min-height:50px; }
+.right-nav-bg { display:none!important; }
+[role="button"]:focus-visible, a:focus-visible, input:focus-visible { outline:2px solid #6efbb5; outline-offset:2px; }
+.leaflet-control-attribution { color:#b3c9c3!important; background:#132021d9!important; font-size:10px!important; }
+html, body { width:100%; height:100%; overflow:clip; }
+body { position:fixed; inset:0; margin:0; }
+.local-missing-icon { display:flex; width:100%; height:100%; align-items:center; justify-content:center; font:10px/1.1 sans-serif; color:#d5e8dd; text-align:center; }
+#localMapError { position:fixed; bottom:8px; left:10px; right:10px; z-index:30000; background:#482724; color:#ffe2d6; padding:10px; font:12px/1.5 sans-serif; }
+.local-menu-open .map-list-ctn { height:4.5rem!important; width:4rem!important; }
