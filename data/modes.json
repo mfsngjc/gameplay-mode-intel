@@ -11450,5 +11450,215 @@
     "isLtm": false,
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
     "imageUrl": "assets/modes/generated/pubgm-wow-flying-reindeer-circuit-2023.svg"
+  },
+  {
+    "id": "pubgm-wow-terror-town-2023",
+    "game": "PUBG Mobile",
+    "modeName": "恐怖小镇（Terror Town）",
+    "year": "2023",
+    "date": "2023-09-05",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "PVE",
+      "回合推进"
+    ],
+    "oneLineRule": "在固定战场中逐回合击败新出现的僵尸，清空每一轮敌人后才能取得胜利。",
+    "mechanicChange": "官方 World of Wonder 2.8 页面将 Terror Town 列为新的僵尸玩法模板：僵尸会在固定战场逐回合出现，玩家需要清空每一轮才能获胜。",
+    "tempoImpact": "回合推进会逐步抬高敌人压力，玩家需要在每轮结束前保存弹药、站位和治疗资源。",
+    "designObservation": "固定战场与分轮敌群让 PVE 节奏变得可学习、可复盘；回合间的资源恢复和敌人类型决定挑战是否会形成有意义的增长曲线。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/WOW/new3.shtml",
+    "launchDate": "2023-09-05",
+    "launchLabel": "2023年9月5日至11月6日 World of Wonder 2.8 更新",
+    "launchNote": "官方页面确认固定战场、逐回合刷怪和清空敌群的胜利条件；敌人数量、波次和奖励规则待具体创作地图补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-terror-town-2023.svg"
+  },
+  {
+    "id": "pubgm-wow-infinite-roguelike-2023",
+    "game": "PUBG Mobile",
+    "modeName": "无限肉鸽（Infinite Roguelike）",
+    "year": "2023",
+    "date": "2023-09-05",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "合作 PVE",
+      "随机强化"
+    ],
+    "oneLineRule": "多人合作抵御一波波僵尸，每轮之间随机获得速度提升、燃烧弹药等强化，最终守住战场取得胜利。",
+    "mechanicChange": "官方页面把 Infinite Roguelike 列为 Beta Creation Gameplay：玩家合作对抗僵尸波次，并在波次之间随机取得 Buff。",
+    "tempoImpact": "敌群波次持续增加压力，随机强化会让队伍每轮重新评估站位、火力分配与风险承受能力。",
+    "designObservation": "随机构筑把同一套 PVE 波次转成可重复挑战，强化选择应同时提供即时收益和长期路线差异。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/WOW/new3.shtml",
+    "launchDate": "2023-09-05",
+    "launchLabel": "2023年9月5日至11月6日 World of Wonder 2.8 更新",
+    "launchNote": "官方页面确认合作波次与随机强化示例；具体波次数量、首领和终局条件待创作地图补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-infinite-roguelike-2023.svg"
+  },
+  {
+    "id": "pubgm-wow-boxing-arena-zombie-2023",
+    "game": "PUBG Mobile",
+    "modeName": "经典拳击场 4v4：僵尸版（Classic Boxing Arena 4v4 Team Battle: Zombie Edition）",
+    "year": "2023",
+    "date": "2023-09-05",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "4v4 团队对抗",
+      "PVE"
+    ],
+    "oneLineRule": "4v4 在拳击场击败僵尸赚取金币，用金币升级武器，并先达到指定淘汰数取得胜利。",
+    "mechanicChange": "官方页面将 Classic Boxing Arena 4v4 Team Battle (Zombie Edition) 列为 Beta Creation Gameplay：击败僵尸获得金币，再购买武器升级，比赛按指定淘汰数结束。",
+    "tempoImpact": "击杀僵尸同时承担经济和计分功能，队伍需要在刷钱、抢击杀和保护升级路线之间分工。",
+    "designObservation": "把 PVE 敌群变成团队竞技的资源来源，可以让金币循环连接两种目标；升级价格和僵尸刷新点会直接决定滚雪球强度。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/WOW/new3.shtml",
+    "launchDate": "2023-09-05",
+    "launchLabel": "2023年9月5日至11月6日 World of Wonder 2.8 更新",
+    "launchNote": "官方页面确认 4v4、僵尸、金币升级和指定淘汰数；具体经济数值、波次和地图规则待创作地图补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-boxing-arena-zombie-2023.svg"
+  },
+  {
+    "id": "pubgm-wow-air-raid-shelter-stealth-2023",
+    "game": "PUBG Mobile",
+    "modeName": "空袭避难所潜行（Air Raid Shelter Stealth）",
+    "year": "2023",
+    "date": "2023-09-05",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "潜行 PVE",
+      "路线逃生"
+    ],
+    "oneLineRule": "使用手电筒观察漆黑避难所，避开恐怖僵尸并潜行到达终点即可获胜。",
+    "mechanicChange": "官方页面把 Air Raid Shelter Stealth 列为 Beta Creation Gameplay：玩家在黑暗避难所中用手电筒观察和移动，避开僵尸并安全到达目的地。",
+    "tempoImpact": "有限视野让信息获取本身成为资源，开灯、移动和绕行都会改变被发现的风险。",
+    "designObservation": "潜行模板把射击游戏的照明和声音转成路线决策；终点目标要与可读的风险提示配合，避免玩家只能靠试错。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/WOW/new3.shtml",
+    "launchDate": "2023-09-05",
+    "launchLabel": "2023年9月5日至11月6日 World of Wonder 2.8 更新",
+    "launchNote": "官方页面确认手电筒、黑暗避难所、躲避僵尸和抵达终点；敌人感知与失败条件待创作地图补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-air-raid-shelter-stealth-2023.svg"
+  },
+  {
+    "id": "pubgm-wow-companion-dash-2023",
+    "game": "PUBG Mobile",
+    "modeName": "伙伴冲刺（Companion Dash）",
+    "year": "2023",
+    "date": "2023-09-05",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "伙伴竞速",
+      "障碍路线"
+    ],
+    "oneLineRule": "变身为伙伴，在可爱生物之间进行竞速，率先通过路线取得胜利。",
+    "mechanicChange": "官方页面把 Companion Dash 列为 Beta Creation Gameplay：玩家变成伙伴，在生物主题赛道中进行竞速。",
+    "tempoImpact": "变身后的移动手感和赛道障碍会把射击角色的控制能力转成纯路线学习与追赶节奏。",
+    "designObservation": "角色变身不是纯外观，而是对碰撞体、速度和跳跃反馈的整体替换；赛道需要为这些差异留出可读的超车点。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/WOW/new3.shtml",
+    "launchDate": "2023-09-05",
+    "launchLabel": "2023年9月5日至11月6日 World of Wonder 2.8 更新",
+    "launchNote": "官方页面确认伙伴变身和竞速定位；具体赛道、检查点和终点规则待创作地图补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-companion-dash-2023.svg"
+  },
+  {
+    "id": "pubgm-wow-car-racing-2023",
+    "game": "PUBG Mobile",
+    "modeName": "汽车竞速（Car Racing）",
+    "year": "2023",
+    "date": "2023-09-05",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "载具竞速",
+      "终点目标"
+    ],
+    "oneLineRule": "驾驶跑车在赛道上竞速，先到达终点的玩家获胜。",
+    "mechanicChange": "官方页面把 Car Racing 列为 Beta Creation Gameplay：玩家驾驶跑车在赛道上高速前进，以率先到达终点为胜利条件。",
+    "tempoImpact": "加速、转向和碰撞共同决定路线收益，领先者要在维持速度与避免失误之间平衡。",
+    "designObservation": "最简单的竞速模板也需要把检查点、追赶路线和碰撞恢复设计清楚，否则高速只会放大不可控的随机性。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/WOW/new3.shtml",
+    "launchDate": "2023-09-05",
+    "launchLabel": "2023年9月5日至11月6日 World of Wonder 2.8 更新",
+    "launchNote": "官方页面确认跑车、赛道和先到终点的目标；具体车辆参数、检查点和碰撞规则待创作地图补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-car-racing-2023.svg"
+  },
+  {
+    "id": "pubgm-wow-pubgm-go-2023",
+    "game": "PUBG Mobile",
+    "modeName": "PUBGM GO！障碍赛（PUBGM GO!）",
+    "year": "2023",
+    "date": "2023-05-21",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "平台跳跃",
+      "陷阱竞速"
+    ],
+    "oneLineRule": "多人在带有隐藏陷阱、移动平台和摆锤的障碍赛道上前进，率先到达终点者获胜。",
+    "mechanicChange": "官方 Dinoground 页面将 PUBGM GO! 列为新的多人平台跳跃模板，包含移动平台、大型摆锤和隐藏陷阱，最终以到达终点决定胜负。",
+    "tempoImpact": "障碍节奏由跳跃时机、路线识别和陷阱预判组成，领先者需要持续保持节奏，落后者则依靠捷径和失误惩罚追赶。",
+    "designObservation": "平台竞速把射击游戏的移动操作拆成连续的可读挑战；陷阱应当制造决策而不是纯粹随机秒杀，才能支持复盘和熟练度成长。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Dinoground/",
+    "launchDate": "2023-05-21",
+    "launchLabel": "2023年5月21日至7月17日 World of Wonder 更新",
+    "launchNote": "官方页面确认多人障碍赛、隐藏陷阱、移动平台、摆锤和终点胜利条件；具体人数与检查点待创作地图补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-pubgm-go-2023.svg"
   }
 ]

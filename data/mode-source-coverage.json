@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 140,
-      "coverCount": 140,
-      "readableDescriptionCount": 140,
+      "modeCount": 147,
+      "coverCount": 147,
+      "readableDescriptionCount": 147,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -467,7 +467,14 @@
         "pubgm-wow-gold-rush-2023",
         "pubgm-wow-bazooka-parkour-2023",
         "pubgm-wow-snowboard-descent-2023",
-        "pubgm-wow-flying-reindeer-circuit-2023"
+        "pubgm-wow-flying-reindeer-circuit-2023",
+        "pubgm-wow-terror-town-2023",
+        "pubgm-wow-infinite-roguelike-2023",
+        "pubgm-wow-boxing-arena-zombie-2023",
+        "pubgm-wow-air-raid-shelter-stealth-2023",
+        "pubgm-wow-companion-dash-2023",
+        "pubgm-wow-car-racing-2023",
+        "pubgm-wow-pubgm-go-2023"
       ],
       "officialSourceUrls": [
         "https://pubgmobile.jp/version-2-0-0-patch-notes/",
@@ -511,6 +518,7 @@
         "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
         "https://www.pubgmobile.com/en/event/Steampunk-Frontier/",
         "https://www.pubgmobile.com/en/event/Vibrant-Anniversary/",
+        "https://www.pubgmobile.com/en/event/WOW/new3.shtml",
         "https://www.pubgmobile.com/en/event/WOW/news.shtml",
         "https://www.pubgmobile.com/en/event/ZOMBILE_EDGE/",
         "https://www.pubgmobile.com/en/event/annipark/",
