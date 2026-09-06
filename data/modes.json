@@ -14247,5 +14247,65 @@
       "br"
     ],
     "isLtm": true
+  },
+  {
+    "id": "apex-april-fools-2025",
+    "game": "Apex Legends",
+    "modeName": "愚人节混搭玩法（April Fools）",
+    "year": "2025",
+    "date": "2025-04-01",
+    "tags": [
+      "br-ltm",
+      "needs_review"
+    ],
+    "type": [
+      "愚人节主题",
+      "规则混搭",
+      "限时"
+    ],
+    "oneLineRule": "官方确认这是回归的愚人节混搭玩法，但公告没有公开完整局内规则；具体武器、地图和胜负细节待补充。",
+    "mechanicChange": "EA 官方 Beast Mode 活动公告只确认“remixed April Fools mode returns”，并列出 2025 年 4 月 1 日至 4 月 7 日的开放窗口；公告没有说明本次混搭会替换哪些武器、道具或地图规则，因此不从历年愚人节玩法推断本次内容。",
+    "tempoImpact": "由于官方尚未发布本次玩法的局内规则，节奏变化暂不能确认；待后续补丁或活动说明公开后补齐。",
+    "designObservation": "愚人节玩法通常通过少量规则扰动改变玩家对熟悉系统的预期；研究时应先记录实际改动，再区分主题包装和真正影响战斗决策的规则。",
+    "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/breakthrough-in-the-beast-mode-event/12042675",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA 官方 · Apex Legends 通用主视觉（待补充活动专属图）",
+    "launchDate": "2025-04-01",
+    "launchLabel": "2025年4月1日至4月7日（官方活动窗口）",
+    "launchNote": "官方活动页确认该模式为回归的愚人节混搭玩法，并标明开放日期；完整规则未在公告中公开，当前标记 needs_review。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-straight-shot-rumble-2024",
+    "game": "Apex Legends",
+    "modeName": "直入战场：乱斗（Straight Shot Rumble）",
+    "year": "2024",
+    "date": "2024-08-20",
+    "tags": [
+      "br-ltm",
+      "needs_review"
+    ],
+    "type": [
+      "Straight Shot 变体",
+      "积分乱斗",
+      "限时"
+    ],
+    "oneLineRule": "官方 Temporal Chaos 活动页确认 Straight Shot Rumble 作为直入战场的额外限时轮换，但没有公开完整的匹配、积分和胜负规则；细节待补充。",
+    "mechanicChange": "EA 官方活动介绍只在开篇点名 Straight Shot Rumble，并将其与 Straight Shot Revival 并列为回归内容；正文没有说明参赛人数、复活方式、计分、奖励或开放窗口，因此不把其他 Straight Shot 变体的规则套用到本卡。",
+    "tempoImpact": "官方没有提供足够的局内参数，暂不能判断该乱斗如何改变直入战场的交战密度或比赛时长；待补丁、活动挑战或游戏内说明补齐。",
+    "designObservation": "当同一基础玩法衍生出多个轮换版本时，名称本身不足以证明规则相同；应把每个独立排期或奖励入口作为单独版本追踪，并等待官方明确差异。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/temporal-chaos-event",
+    "imageUrl": "https://drop-assets.ea.com/images/5BDy3KSejsOpRXPh9FD8Ts/509b969b0b259a1db806c7c2a20c1286/ApexS22_TemporalChaos_Trailer_Thumbnails_3840x2160.jpg",
+    "imageSource": "EA 官方 Temporal Chaos 活动主视觉",
+    "launchDate": "2024-08-20",
+    "launchLabel": "2024年8月 Temporal Chaos 活动期间（具体开放窗口待确认）",
+    "launchNote": "官方活动页确认 Straight Shot Rumble 在 Temporal Chaos 期间回归，但没有公开其完整规则或确切开放日期，当前标记 needs_review。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
   }
 ]

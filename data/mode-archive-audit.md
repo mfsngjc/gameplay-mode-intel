@@ -192,3 +192,9 @@
 - 新增 `Mythic Mayhem Royale`、`Redemption Trios & Duos`、`Relic Weapons Trios & Duos`；它们分别改变神话武器效果、可消耗返场经济和整套武器池。
 - `Straight Shot Revival` 的两篇官方说明对返场关闭节点分别写作“第 3 轮结束”和“第 4 轮”，卡片保留这一版本差异，不自行统一成未经核实的数字。
 - 纯 Mixtape 地图轮换、武器平衡和普通 Pubs/Ranked 队列继续归到父模式，不重复建卡。
+
+## 2026-09-07 Apex 官方点名但规则不完整的玩法补录
+
+- 复核 EA 官方 [Beast Mode 活动公告](https://forums.ea.com/blog/apex-legends-game-info-hub-en/breakthrough-in-the-beast-mode-event/12042675)：公告明确列出 `LTM: April Fools`，开放窗口为 2025-04-01 至 2025-04-07，并说明这是回归的 remix 版本；正文没有公开本次具体武器、道具、地图或胜负改动。新增 `apex-april-fools-2025`，中文字段只记录已确认事实，加入 `needs_review`，不沿用历年愚人节规则推断本次内容。
+- 复核 EA 官方 [Temporal Chaos 活动公告](https://www.ea.com/games/apex-legends/apex-legends/news/temporal-chaos-event)：开篇明确点名 `Straight Shot Rumble` 与 Straight Shot Revival 同期回归，但正文没有给出该乱斗的参赛人数、计分、复活、奖励或准确开放窗口。新增 `apex-straight-shot-rumble-2024`，加入 `needs_review`，不把其他 Straight Shot 变体规则套用到本卡。
+- 这两张卡均使用官方 Apex 通用/活动主视觉作为封面，并保留官方来源链接；后续定时任务应继续扫描 EA 活动页、补丁说明和游戏内排期，拿到正式规则后更新中文字段并移除 `needs_review`。

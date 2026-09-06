@@ -260,9 +260,9 @@
     },
     "Apex Legends": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 54,
-      "coverCount": 54,
-      "readableDescriptionCount": 54,
+      "modeCount": 56,
+      "coverCount": 56,
+      "readableDescriptionCount": 56,
       "modeIds": [
         "apex-classic-br-2019",
         "apex-ranked-leagues-2019",
@@ -317,7 +317,9 @@
         "apex-akimbo-lmg-tdm-2024",
         "apex-mythic-mayhem-royale-2025",
         "apex-redemption-trios-duos-2025",
-        "apex-relic-weapons-trios-duos-2025"
+        "apex-relic-weapons-trios-duos-2025",
+        "apex-april-fools-2025",
+        "apex-straight-shot-rumble-2024"
       ],
       "officialSourceUrls": [
         "https://apexlegends.wiki.gg/wiki/Always_Be_Closing",
@@ -362,7 +364,7 @@
         "https://www.ea.com/games/apex-legends/apex-legends/news/void-reckoning-event",
         "https://www.ea.com/games/battlefield/news/war-games"
       ],
-      "notes": "已复核 EA 官方 Apex 模式公告与 2024–2025 活动补丁；本轮补入 Lockdown、Big TDM、Knockout、Power Sword Royale、Three Strikes: Mystery Legends、EPG Extreme、Straight Shot Revival Quads、竞技场两阶段 Duel 及 Solos 复活代币变体，继续沿官方活动档案回溯。",
+      "notes": "已复核 EA 官方 Apex 模式公告与 2024–2025 活动补丁；本轮补入 Lockdown、Big TDM、Knockout、Power Sword Royale、Three Strikes: Mystery Legends、EPG Extreme、Straight Shot Revival Quads、竞技场两阶段 Duel、Solos 复活代币、Trios Revival、Straight Shot Revival、Quads、Akimbo 与 LMG 团队死斗、神话狂欢、救赎、遗物武器，并把官方点名但规则未完整公开的 April Fools 与 Straight Shot Rumble 标为 needs_review。",
       "updatedAt": "2026-09-07"
     },
     "三角洲行动": {
