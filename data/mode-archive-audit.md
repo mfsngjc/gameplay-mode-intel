@@ -249,3 +249,8 @@
 
 - 复核 [PUBG MOBILE 官方公告索引](https://www.pubgmobile.com/en-US/news.shtml) 及 [Version 4.0 玩法页](https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-400/)：`Unfail`、Metro Royale、Payload、World of Wonder 和历史主题玩法均已在库中；没有从索引页发现未登记的独立匹配模式。
 - 复核 [Garena Free Fire 官方补丁索引](https://ff.garena.com/en/news/20/)：当前可见 OB54–OB52 及 2024–2026 补丁入口中的命名玩法均已在卡片或父模式规则中覆盖；`Epic Fight`、`Anniversary Tasks`、`Arena Showdown`、`Saddle Brawl` 已逐项登记，系统和联动内容不重复建卡。
+
+### 2026-09-07 其他目标游戏最新页负向核对
+
+- 复核 [Apex Legends Marked 补丁](https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes)：Pubs、Ranked、Mixtape 与 Wildcard 均是现有播放列表/模式卡；地图轮换、排位阶梯和匹配测试属于服务配置，不新增独立玩法。
+- 复核 [Fortnite 创作者路线图更新](https://www.fortnite.com/news/public-roadmap-for-fortnite-creators-announced?lang=en-US)：页面只更新 UEFN/创作工具路线图，没有新的可匹配玩法名称或胜负规则，不新增模式卡。
