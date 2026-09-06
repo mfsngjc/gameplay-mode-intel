@@ -137,3 +137,7 @@
 ### Fortnite 2026 Reload 变体复核
 
 - 核对 [Lantern Fest 2026 8 人小队 Reload](https://www.fortnite.com/news/lantern-fest-2026-brings-8-player-reload-teams-to-fortnite?lang=en-US)：活动期允许最多 8 人组队，排位 Reload 不开放，但公告没有改变 Reload 的复活、淘汰和胜利条件；它是临时队伍规模变体，归入 `fortnite-reload-2024`，不重复建卡。
+
+### Apex War Games 官方来源修正
+
+- EA 旧的 Apex 路径已返回 404，但同一官方文章目前可从 [EA War Games 存档](https://www.ea.com/games/battlefield/news/war-games)访问；已将 `Second Chance`、`Ultra Zones`、`Auto Banners`、`Killing Time`、`Armor Regen` 五张卡的来源切换到该可访问官方页面，规则未改动。

@@ -327,9 +327,10 @@
         "https://www.ea.com/games/apex-legends/apex-legends/news/power-trip-event",
         "https://www.ea.com/games/apex-legends/apex-legends/news/prodigy-patch-notes",
         "https://www.ea.com/games/apex-legends/news/war-games",
-        "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes"
+        "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes",
+        "https://www.ea.com/games/battlefield/news/war-games"
       ],
-      "notes": "已复核 EA/Respawn 官方模式总览、Breach、Prodigy、Astral Anomaly、Wildcard 与 Marked（2026-08）公告；Marked 的 Pubs/Ranked、Mixtape、Wildcard 均为已覆盖队列或模式，没有新增独立匹配玩法。后续继续按 EA 官方新闻和赛季补丁回溯早期 LTM。"
+      "notes": "已复核 EA/Respawn 官方模式总览、Breach、Prodigy、Astral Anomaly、Wildcard 与 Marked（2026-08）公告；Marked 的 Pubs/Ranked、Mixtape、Wildcard 均为已覆盖队列或模式，没有新增独立匹配玩法。后续继续按 EA 官方新闻和赛季补丁回溯早期 LTM。 War Games 五个 2021 LTM 卡片已切换到 EA 可访问的官方存档 URL，正文规则保持不变。"
     },
     "三角洲行动": {
       "coverageStatus": "ongoing_backfill",
