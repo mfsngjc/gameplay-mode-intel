@@ -20,6 +20,10 @@ for (const mode of modes) {
   assert.ok(typeof mode.imageUrl === 'string' && mode.imageUrl.trim(), mode.id + ': missing cover image');
   assert.ok(typeof mode.imageSource === 'string' && mode.imageSource.trim(), mode.id + ': missing cover source label');
   assert.ok(typeof mode.sourceUrl === 'string' && mode.sourceUrl.trim(), mode.id + ': missing source URL');
+  const gameCoverage = coverage[mode.game];
+  assert.ok(gameCoverage, mode.id + ': missing game source ledger');
+  const trackedSources = new Set([...(gameCoverage.officialSourceUrls || []), ...(gameCoverage.officialArchiveIndexUrls || [])]);
+  assert.ok(trackedSources.has(mode.sourceUrl), mode.id + ': card source URL missing from game ledger');
   for (const field of ['oneLineRule', 'mechanicChange', 'tempoImpact', 'designObservation']) {
     assert.ok(typeof mode[field] === 'string' && mode[field].trim(), mode.id + ': missing readable ' + field);
   }
