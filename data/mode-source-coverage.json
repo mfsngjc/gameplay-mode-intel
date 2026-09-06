@@ -139,9 +139,11 @@
         "https://pubg.com/en/news/9855",
         "https://pubg.com/zh-cn/news/9270",
         "https://pubg.com/en/news/9270",
-        "https://pubg.com/en-asia/news/9273"
+        "https://pubg.com/en-asia/news/9273",
+        "https://pubg.com/en/news/10885",
+        "https://pubg.com/en-asia/news/10885"
       ],
-      "notes": "已复核 PUBG 官方新闻、Arcade 与 2026 路线图；本轮补入 PUBG x 马桶人限时街机 PVE，并记录 Rumble 周末小队竞技模式（正式开放日期和局内规则待确认），继续回溯 LABS、Arcade 和历史限时模式。"
+      "notes": "已复核 PUBG 官方新闻、Arcade、42.3 更新与 2026 路线图；本轮补入 PUBG x 马桶人限时街机 PVE，并记录 Rumble 周末小队竞技模式（正式开放日期和局内规则待确认）。42.3 的 Playgrounds 是社区玩法发现/匹配入口，已覆盖；继续回溯 LABS、Arcade 和历史限时模式。"
     },
     "和平精英": {
       "coverageStatus": "ongoing_backfill",
@@ -322,9 +324,10 @@
         "https://www.ea.com/games/apex-legends/apex-legends/news/overclocked-patch-notes",
         "https://www.ea.com/games/apex-legends/apex-legends/news/power-trip-event",
         "https://www.ea.com/games/apex-legends/apex-legends/news/prodigy-patch-notes",
-        "https://www.ea.com/games/apex-legends/news/war-games"
+        "https://www.ea.com/games/apex-legends/news/war-games",
+        "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes"
       ],
-      "notes": "已复核 EA/Respawn 官方 Apex Legends 模式总览、Breach、Prodigy、Astral Anomaly 与 Wildcard 公告；本轮补入 Wildcard 常驻玩法、Bot Royale Evolved、Launch Royale 以及 Prodigy 竞技场回归。后续继续按 EA 官方新闻和赛季补丁回溯早期 LTM。"
+      "notes": "已复核 EA/Respawn 官方模式总览、Breach、Prodigy、Astral Anomaly、Wildcard 与 Marked（2026-08）公告；Marked 的 Pubs/Ranked、Mixtape、Wildcard 均为已覆盖队列或模式，没有新增独立匹配玩法。后续继续按 EA 官方新闻和赛季补丁回溯早期 LTM。"
     },
     "三角洲行动": {
       "coverageStatus": "ongoing_backfill",

@@ -117,3 +117,10 @@
 
 - 复核 [PUBG 中国官方《街机模式：PUBG x 马桶人》](https://pubg.com/zh-cn/news/9270) 与 38.1 更新说明后，确认此前漏收一张独立的限时 PVE：4 人小队在米拉玛按投票选择三档难度，清理普通与首领马桶人，使用售货机/补给箱取得武器，收集化学罐制作强化装备，并在阶段推进中处理可被打断的首领范围攻击。已新增 `pubg-skibidi-toilet-2025`，使用官方公告头图并标记为 `pve` / LTM。
 - 同期核对 [PUBG 2026 路线图](https://pubg.com/en/news/9855)：`Rumble` 仍只有周末小队竞技的路线图描述，已单独记录为 `needs_review`；Project Cyclops、SLB: Miramar 等仍是计划/内容预告，没有找到对应的正式上线规则公告，因此继续不建卡。
+
+## 2026-09-07 最新官方模式负向复核
+
+- **PUBG 42.3**：核对 [Update 42.3](https://pubg.com/en/news/10885) 与 PUBG Playgrounds 说明。Playgrounds 是浏览、筛选和直接进入社区创作模式的入口，不是新的官方局内胜负规则；补丁中的地图轮换、武器/附件和 POBG 维护状态也不拆成模式卡。已有 `pubg-playgrounds-2026`，无需重复新增。
+- **Apex Legends Marked**：核对 [Marked 补丁](https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes)。公告列出的 Pubs/Ranked、Mixtape 和 Wildcard 均与现有模式卡或播放列表层对应；新 Playground 武器查看页是大厅功能，不是可匹配玩法，没有发现新的独立模式。
+- **PUBG Mobile 4.6.0**：核对 [日本官方更新预告](https://www.pubgmobile.jp/version-4-6-0-update-notice-20260901/)，只确认新主题模式 `Midnight Hunters`，已存在 `pubgm-midnight-hunters-2026` 并保留 `needs_review`，等待完整玩法页补齐规则。Spider-Man 主题、NARUTO 主题和 Metro Royale: Reunion 是关闭/回归公告中的已有内容，不重复建卡。
+- **Free Fire 9 周年与最新公告**：核对 [9 周年公告](https://ff.garena.com/en/article/1683/) 与 [1701 奖项公告](https://ff.garena.com/en/article/1701/)。Epic Fight、技能强化、武器觉醒和周年任务属于 BR/Clash Squad 内的系统与任务，1701 仅回顾联动和奖项，没有新的独立匹配模式；相关卡片已覆盖或保留在父模式说明中。
