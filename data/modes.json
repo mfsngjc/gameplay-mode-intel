@@ -10202,5 +10202,38 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-football-ice-mania-2022.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-metro-zombie-uprising-2024",
+    "game": "PUBG Mobile",
+    "modeName": "地铁逃生：僵尸崛起（Zombie Uprising）",
+    "year": "2024",
+    "date": "2024-07-11",
+    "tags": [
+      "extraction",
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "昼夜切换",
+      "丧尸群",
+      "首领战",
+      "局内特性"
+    ],
+    "oneLineRule": "在 Metro Royale 的昼夜循环中应对丧尸群和首领，并利用特性成长系统完成搜打撤。",
+    "mechanicChange": "官方 3.3.0 更新在 Metro Royale 中加入 Zombie Uprising：昼夜会切换，丧尸群和首领会出现，玩家还能获得特性并进行特性改造。当前公开公告没有展开更细的地图轮换和撤离条件，因此只记录已确认的规则。",
+    "tempoImpact": "昼夜变化会重新分配可见度和路线风险，丧尸群与首领把搜集阶段推向持续的 PvE 压力；特性改造则让队伍需要在当局资源和成长方向之间做选择。",
+    "designObservation": "把僵尸群与首领压力嵌入 Metro Royale 的搜打撤框架，可以让已有资产同时承担资源争夺和 PvE 路线风险；昼夜循环也为重复跑图提供了节奏变化。",
+    "sourceUrl": "https://pubgmobile.jp/version-3-3-0-patch-notes-20240711/",
+    "launchDate": "2024-07-11",
+    "launchLabel": "Version 3.3.0 更新加入，具体地区轮换以客户端为准",
+    "launchNote": "官方日本地区 3.3.0 更新公告明确写出 Metro Royale 新模式 Zombie Uprising、昼夜变化、丧尸群、首领、特性与特性改造；未公开的规则不做推断。",
+    "gameplayTypes": [
+      "extraction",
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-metro-zombie-uprising-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
