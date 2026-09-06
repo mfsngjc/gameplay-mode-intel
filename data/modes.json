@@ -10265,5 +10265,65 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-zombie-hunt-dungeon-ascent-2024.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-kill-secured-2020",
+    "game": "Free Fire",
+    "modeName": "击杀夺牌（Kill Secured）",
+    "year": "2020",
+    "date": "2020-07-29",
+    "tags": [
+      "warfare",
+      "objective"
+    ],
+    "type": [
+      "4v4 对抗",
+      "目标争夺",
+      "复活战斗"
+    ],
+    "oneLineRule": "在 Kill Secured 目标型对抗中反复交战并争夺击杀后的目标物；官方 2020 年补丁确认模式名称和武器预设支持，完整胜负规则待官方档案补充。",
+    "mechanicChange": "官方 3volution 补丁把 Kill Secured 列在支持 Weapon Presets 的模式中，说明玩家会在复活后调整装备并继续战斗。公开官方页面没有展开目标物、计分线或时间限制，因此不把社区资料直接写成确定规则。",
+    "tempoImpact": "复活和局内装备调整意味着战斗会持续推进，队伍需要在反复交火与目标争夺之间切换；具体计分节奏仍待官方规则页确认。",
+    "designObservation": "目标型团队战的关键是让击杀产生可争夺的二次目标；当前官方资料只确认了模式存在和持续战斗框架，后续应优先补齐目标物与计分规则。",
+    "sourceUrl": "https://ff.garena.com/en/article/299/",
+    "launchDate": "2020-07-29",
+    "launchLabel": "2020年7月29日官方补丁列为可用模式",
+    "launchNote": "官方 3volution 补丁仅确认 Kill Secured 作为支持 Weapon Presets 的玩法出现；具体目标、计分和胜负条件待官方档案补充。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-kill-secured-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-gun-king-squad-2020",
+    "game": "Free Fire",
+    "modeName": "枪王：小队版（Gun King: Squad）",
+    "year": "2020",
+    "date": "2020-07-29",
+    "tags": [
+      "warfare",
+      "objective"
+    ],
+    "type": [
+      "4v4 对抗",
+      "武器升级",
+      "落后追赶"
+    ],
+    "oneLineRule": "4v4 进行 Gun King 武器升级对抗；连续输掉 4 场或明显落后时，可以跳过当前武器。",
+    "mechanicChange": "官方 3volution 补丁把 Gun King 扩展为小队版：支持 4v4，玩家可以和队友组队对抗；连续输掉 4 场或进度明显落后时，可以跳过武器，减少单次落后滚雪球。",
+    "tempoImpact": "武器升级会把战斗推进成连续小回合，4v4 队伍协作扩大了交火规模；跳过机制在连续失利后提供追赶窗口，避免落后一方被固定在弱武器上。",
+    "designObservation": "Gun King 的武器阶梯天然会制造领先方优势，小队版通过组队和跳过规则补足社交与追赶机制，让个人枪法成长转成团队轮换和逆转机会。",
+    "sourceUrl": "https://ff.garena.com/en/article/299/",
+    "launchDate": "2020-07-29",
+    "launchLabel": "2020年7月29日补丁加入小队版规则",
+    "launchNote": "官方补丁确认 Gun King 支持 4v4，并加入连续 4 场失利或明显落后时跳过武器的规则。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-gun-king-squad-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
