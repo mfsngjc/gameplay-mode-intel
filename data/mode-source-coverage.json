@@ -516,9 +516,9 @@
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 82,
-      "coverCount": 82,
-      "readableDescriptionCount": 82,
+      "modeCount": 83,
+      "coverCount": 83,
+      "readableDescriptionCount": 83,
       "modeIds": [
         "free-fire-clash-squad-2019",
         "free-fire-bomb-squad-2019",
@@ -601,7 +601,8 @@
         "free-fire-new-age-resource-management-2021",
         "free-fire-pumpkin-snatch-2019",
         "free-fire-rampage-redemption-2019",
-        "free-fire-rampage-uprising-2020"
+        "free-fire-rampage-uprising-2020",
+        "free-fire-zombie-hunt-dungeon-ascent-2024"
       ],
       "officialSourceUrls": [
         "https://ff.garena.com/en-pk/article/641/",
@@ -660,7 +661,7 @@
         "https://ff.garena.com/id/article/209/",
         "https://ff.garena.com/en/article/137"
       ],
-      "notes": "已回溯官方 2018–2026 补丁、公告与活动档案；本轮补入 2024 Zombie Hunt 的 Rift Raiders 与 Hunting Spree 独立轮换事件。仍需继续覆盖更早活动、地区差异与后续版本。"
+      "notes": "已核对 Garena 2018–2026 官方补丁与活动档案；本轮补入 Zombie Hunt 的 Rift Raiders、Hunting Spree、Dungeon Ascent 等明确命名轮换内容，仍需继续补齐更早版本、地区差异和后续公告。"
     }
   }
 }

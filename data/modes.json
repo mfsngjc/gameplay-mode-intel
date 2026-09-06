@@ -10235,5 +10235,35 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-metro-zombie-uprising-2024.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-zombie-hunt-dungeon-ascent-2024",
+    "game": "Free Fire",
+    "modeName": "僵尸猎场：地城攀登（Dungeon Ascent）",
+    "year": "2024",
+    "date": "2024-04-16",
+    "tags": [
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "合作 PVE",
+      "阶段推进",
+      "首领技能"
+    ],
+    "oneLineRule": "在 Zombie Hunt 的地城攀登轮换内容中推进新阶段，并应对新增的首领技能；官方公告未展开完整胜利条件。",
+    "mechanicChange": "官方 2024 年补丁把 Dungeon Ascent 列为 Zombie Hunt 的回归内容，并明确加入新阶段和新的首领技能。公开页面没有进一步说明每阶段目标、队伍规模或奖励流程，因此本卡只记录已确认的更新。",
+    "tempoImpact": "新阶段会把合作队伍推向连续推进，首领技能则会改变每个战斗节点的处理方式；具体波次和时间限制仍需客户端或后续官方页面确认。",
+    "designObservation": "通过增加阶段与首领技能，旧 PVE 轮换可以在不重做整套战斗框架的情况下提高重复挑战的变化；资料不足时应把它作为子玩法记录，避免和 Zombie Hunt 主模式重复计数。",
+    "sourceUrl": "https://ff.garena.com/en/article/1332/",
+    "launchDate": "2024-04-16",
+    "launchLabel": "2024年4月16日随 Zombie Hunt 回归",
+    "launchNote": "官方补丁在 Zombie Hunt 的轮换内容中写明 Dungeon Ascent 回归，并加入新阶段和首领技能；完整规则待客户端或后续官方资料补充。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-zombie-hunt-dungeon-ascent-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
