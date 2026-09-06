@@ -10515,5 +10515,95 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-halloween-capture-the-camp-2020.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-music-tap-joy-2021",
+    "game": "PUBG Mobile",
+    "modeName": "音乐游戏：节拍点击（Music Game: TAP JOY）",
+    "year": "2021",
+    "date": "2021-03-15",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "节奏小游戏",
+      "连击计分",
+      "难度解锁"
+    ],
+    "oneLineRule": "跟随歌曲旋律和节拍点击屏幕，连续准确操作获得连击加分，并逐步解锁普通与困难难度。",
+    "mechanicChange": "官方三周年规则把 TAP JOY 列为独立音乐小游戏：每天有免费挑战次数，也可用 AG 购买额外挑战；玩家按歌曲节拍点击，结算分数会转换为 Music Notes，用于周年大厅抽奖。",
+    "tempoImpact": "固定曲目、节拍窗口和连击奖励把操作节奏变成即时反馈，难度逐级解锁让玩家在短局中持续追求更高准确率。",
+    "designObservation": "节奏窗口与连击奖励让纯反应练习拥有清晰的成长曲线，活动货币又把小游戏成绩连接到长期收集目标。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60728/m22521/202104/887178.shtml",
+    "launchDate": "2021-03-15",
+    "launchLabel": "2021年3月15日至4月9日三周年活动",
+    "launchNote": "官方规则明确列出每日免费/额外挑战、三档难度、连击计分和 Music Notes 奖励。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-music-tap-joy-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-music-pan-jam-2021",
+    "game": "PUBG Mobile",
+    "modeName": "音乐游戏：平底锅节奏（Music Game: PAN JAM）",
+    "year": "2021",
+    "date": "2021-03-15",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "节奏小游戏",
+      "方向反应",
+      "连击积分"
+    ],
+    "oneLineRule": "根据准星范围内音乐方块出现的位置点击上下箭头击打方块，完成舞台并维持连击获得 Music Notes。",
+    "mechanicChange": "PAN JAM 使用上下方向输入完成节奏击打：命中方块获得分数，受击会损失 HP，HP 归零时挑战结束；连续命中可获得连击分，巨大方块出现时还可点击 Pan 获得额外分数。",
+    "tempoImpact": "方块出现、方向判断和 HP 惩罚把节奏挑战变成短周期风险管理，玩家需要在准确率、连击和失误容错之间取舍。",
+    "designObservation": "方向输入、生命值和巨大目标共同构成“反应—风险—爆发”循环，让简单的节奏小游戏拥有可研究的输入层级。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60728/m22521/202104/887178.shtml",
+    "launchDate": "2021-03-15",
+    "launchLabel": "2021年3月15日至4月9日三周年活动",
+    "launchNote": "官方规则明确列出方向击打、HP 归零、连击积分和巨大方块的 Pan 加分机制。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-music-pan-jam-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-music-beat-it-2021",
+    "game": "PUBG Mobile",
+    "modeName": "音乐游戏：节奏投掷（Music Game: BEAT IT）",
+    "year": "2021",
+    "date": "2021-03-15",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "节奏小游戏",
+      "投掷物反应",
+      "难度解锁"
+    ],
+    "oneLineRule": "跟随歌曲节奏击中飞来的投掷物，准确率越高分数越高，并逐步解锁普通与困难难度。",
+    "mechanicChange": "官方三周年规则把 BEAT IT 设计成节奏反应挑战：玩家按旋律击打投掷物，普通和困难难度会出现特殊投掷物；准确连击带来额外分数，结算后获得 Music Notes。",
+    "tempoImpact": "歌曲节拍决定输入窗口，特殊投掷物在高难度中增加识别压力，连续准确命中则把短局推向更高分数目标。",
+    "designObservation": "把熟悉的投掷物改造成节拍目标，可以在不改变武器系统的前提下复用战斗识别能力，形成音乐主题下的轻量化挑战。",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60728/m22521/202104/887178.shtml",
+    "launchDate": "2021-03-15",
+    "launchLabel": "2021年3月15日至4月9日三周年活动",
+    "launchNote": "官方规则明确列出节拍击打、普通/困难难度特殊投掷物、连击计分和 Music Notes 奖励。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-music-beat-it-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
