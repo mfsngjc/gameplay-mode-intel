@@ -244,3 +244,8 @@
 
 - 完整性验证器已增加模式卡与 `mode-source-coverage.json` 的逐游戏 `modeIds`、数量和覆盖状态对账，并要求每张卡具备来源 URL、中文说明和封面来源。
 - 491 张卡逐项复核通过：352 个本地封面文件均存在，139 个远程封面均返回可用图片响应；没有发现缺失封面或空白可读字段。
+
+### 2026-09-07 官方索引再核对
+
+- 复核 [PUBG MOBILE 官方公告索引](https://www.pubgmobile.com/en-US/news.shtml) 及 [Version 4.0 玩法页](https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-400/)：`Unfail`、Metro Royale、Payload、World of Wonder 和历史主题玩法均已在库中；没有从索引页发现未登记的独立匹配模式。
+- 复核 [Garena Free Fire 官方补丁索引](https://ff.garena.com/en/news/20/)：当前可见 OB54–OB52 及 2024–2026 补丁入口中的命名玩法均已在卡片或父模式规则中覆盖；`Epic Fight`、`Anniversary Tasks`、`Arena Showdown`、`Saddle Brawl` 已逐项登记，系统和联动内容不重复建卡。
