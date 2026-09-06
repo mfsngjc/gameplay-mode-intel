@@ -8336,5 +8336,35 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-gloo-wall-relay-2025.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-target-arcade-2020",
+    "game": "Free Fire",
+    "modeName": "目标街机（Target Arcade）",
+    "year": "2020",
+    "date": "2020-09-23",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "射击小游戏",
+      "目标挑战",
+      "大厅活动"
+    ],
+    "oneLineRule": "官方公告确认 Target Arcade 作为新小游戏上线；具体目标、计分和开放时段以客户端活动页为准。",
+    "mechanicChange": "官方 2020 年 BOOYAH Day 更新只确认 Target Arcade 上线，没有在公告中展开局内目标与计分细则，因此本条保留为“已确认存在、细节待补”的历史玩法记录。",
+    "tempoImpact": "作为主战场之外的短时挑战，它把玩家注意力从常规 BR/枪王对决转向即时目标练习；实际节奏需要以客户端版本为准。",
+    "designObservation": "在大厅或活动入口加入低门槛目标小游戏，可以用很短的反馈循环承接等待时间，也能为活动主题提供可重复的轻量互动。",
+    "sourceUrl": "https://ff.garena.com/en/article/322/",
+    "launchDate": "2020-09-23",
+    "launchLabel": "2020年9月23日 BOOYAH Day 更新",
+    "launchNote": "官方 BOOYAH Day 补丁仅确认“New Minigame - Target Arcade now available”；具体玩法流程、计分与轮换以客户端活动页为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-target-arcade-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
