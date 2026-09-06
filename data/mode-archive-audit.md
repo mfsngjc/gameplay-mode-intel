@@ -124,3 +124,8 @@
 - **Apex Legends Marked**：核对 [Marked 补丁](https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes)。公告列出的 Pubs/Ranked、Mixtape 和 Wildcard 均与现有模式卡或播放列表层对应；新 Playground 武器查看页是大厅功能，不是可匹配玩法，没有发现新的独立模式。
 - **PUBG Mobile 4.6.0**：核对 [日本官方更新预告](https://www.pubgmobile.jp/version-4-6-0-update-notice-20260901/)，只确认新主题模式 `Midnight Hunters`，已存在 `pubgm-midnight-hunters-2026` 并保留 `needs_review`，等待完整玩法页补齐规则。Spider-Man 主题、NARUTO 主题和 Metro Royale: Reunion 是关闭/回归公告中的已有内容，不重复建卡。
 - **Free Fire 9 周年与最新公告**：核对 [9 周年公告](https://ff.garena.com/en/article/1683/) 与 [1701 奖项公告](https://ff.garena.com/en/article/1701/)。Epic Fight、技能强化、武器觉醒和周年任务属于 BR/Clash Squad 内的系统与任务，1701 仅回顾联动和奖项，没有新的独立匹配模式；相关卡片已覆盖或保留在父模式说明中。
+
+### 和平精英 1.38.12 最新版本复核
+
+- 核对 [官方 TapTap 1.38.12（2026-09-02）版本说明](https://www.taptap.cn/app/70056/all-info?platform=android)：`金秋龙狮城`是主题海岛与地图交互，`团竞排位·图书馆`沿用已有军备团竞规则，`怪物扮演·蝾螈小宝`已由 `hpjy-monster-role-salamander-2026` 记录；`异变密林·演练`是下线通知，不新增模式卡。未发现另一张具有独立胜负流程的命名玩法。
+- TapTap 的“战场进化”预约页只提供版本包装、新地图和新玩法宣传，没有公开独立模式名称、匹配入口或胜负规则；暂不将其作为模式卡，后续待官方版本页给出可核对规则后再判断。
