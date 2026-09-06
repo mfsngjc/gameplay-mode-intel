@@ -7867,5 +7867,474 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-ice-dragon-boss-2025.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-frosty-funland-2025",
+    "game": "PUBG Mobile",
+    "modeName": "冰雪乐园（Frosty Funland）",
+    "year": "2025",
+    "date": "2025-11-07",
+    "tags": [
+      "br-core",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "冰雪载具",
+      "动态小游戏"
+    ],
+    "oneLineRule": "在冰雪主题 BR（大逃杀）中利用冰面、冰雪道具和四人雪地车转移，参与地图内的竞速与战斗事件，争取活到最后。",
+    "mechanicChange": "官方 4.1 页面将 Frosty Funland 作为主题模式：冰雪主题区域加入可冻结地面的冬境 Kar98K、盐鱼火箭筒和四人协作雪地车；冰面会限制移动或射击，载具还能发射雪球并让目标打滑。",
+    "tempoImpact": "冰面和高机动载具把转点变成可读的路线选择，队伍需要在追求速度、利用滑行接战和避开暴露之间安排移动。",
+    "designObservation": "主题道具同时改变移动、掩体和接战距离，能让同一张地图产生新的路线语言；载具的多人协作也把队伍分工直接放进移动阶段。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-410/",
+    "launchDate": "2025-11-07",
+    "launchLabel": "2025年11月7日随 4.1 版本开放",
+    "launchNote": "官方页面确认 Frosty Funland 主题模式及其冰雪道具、载具与后续 奇幻世界创作工坊（World of Wonder） 玩法；版本开放日按 4.1 更新窗口记录。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-frosty-funland-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-racing-carnival-2025",
+    "game": "PUBG Mobile",
+    "modeName": "竞速嘉年华（Racing Carnival）",
+    "year": "2025",
+    "date": "2025-11-14",
+    "tags": [
+      "objective",
+      "space"
+    ],
+    "type": [
+      "载具竞速",
+      "计时赛",
+      "路线挑战"
+    ],
+    "oneLineRule": "选择车辆沿赛道通过检查点并冲过终点，用更短时间争夺竞速排名。",
+    "mechanicChange": "官方 4.1 页面把 Racing Carnival 描述为真实感载具竞速模板：玩家选择车辆后完成赛道，核心目标是用最短时间到达终点。",
+    "tempoImpact": "胜负从枪战淘汰转向路线规划和车辆操控，跳台、加速带与弯道让玩家在风险和速度之间持续取舍。",
+    "designObservation": "竞速模板把大地图的移动能力单独抽成可重复挑战，适合研究检查点、节奏门槛与车辆差异如何共同形成竞争。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-410/",
+    "launchDate": "2025-11-14",
+    "launchLabel": "2025年11月14日开放",
+    "launchNote": "官方页面将其列为 4.1 奇幻世界创作工坊（World of Wonder） 玩法模板。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-racing-carnival-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-snow-roguelike-adventure-2025",
+    "game": "PUBG Mobile",
+    "modeName": "雪境肉鸽冒险（Snow Roguelike Adventure）",
+    "year": "2025",
+    "date": "2025-11-21",
+    "tags": [
+      "pve",
+      "objective",
+      "power"
+    ],
+    "type": [
+      "单人 PvE",
+      "群怪生存",
+      "随机强化"
+    ],
+    "oneLineRule": "单人对抗成群敌人，击败敌人升级并从三种强化中选择一种，积累资源后挑战最终首领。",
+    "mechanicChange": "官方 4.1 页面把 Snow Roguelike Adventure 定义为单人射击生存与群怪模式：玩家通过击杀升级、从三种增益中选一项，完成击杀数量、收集金币、存活时间或寻找宝箱等目标，并以最终首领作为阶段终点。",
+    "tempoImpact": "局内目标从单纯清场变成“清怪—升级—选强化—找资源—挑战首领”的循环，越接近终局，路线和强化选择越影响生存概率。",
+    "designObservation": "随机强化让每局形成不同的成长路径，而固定的首领终点提供明确的压力曲线；两者结合能支撑短时 PvE 的重复游玩。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-410/",
+    "launchDate": "2025-11-21",
+    "launchLabel": "2025年11月21日开放",
+    "launchNote": "官方页面将其列为 4.1 奇幻世界创作工坊（World of Wonder） 玩法模板。",
+    "gameplayTypes": [
+      "pve",
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-snow-roguelike-adventure-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-frosty-rocket-launcher-frenzy-2025",
+    "game": "PUBG Mobile",
+    "modeName": "冰雪火箭筒乱斗（Frosty Funland Rocket Launcher Frenzy）",
+    "year": "2025",
+    "date": "2025-11-28",
+    "tags": [
+      "objective",
+      "space"
+    ],
+    "type": [
+      "火箭筒混战",
+      "自由混战",
+      "空中移动"
+    ],
+    "oneLineRule": "所有玩家使用火箭筒在混乱战场中互相淘汰，利用飞行和爆炸范围争取最高表现。",
+    "mechanicChange": "官方 4.1 页面将其描述为火箭筒自由混战：玩家在强调飞行与爆炸的战场中持续交战，最终成为混战中的胜者。",
+    "tempoImpact": "爆炸范围和空中位移让安全位置不断变化，玩家需要快速判断落点、弹道与下一次移动，而不是长期架点。",
+    "designObservation": "单一武器限制降低了配装复杂度，却放大了位移、预判和空间读图的差异，适合研究“规则收窄后如何制造深度”。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-410/",
+    "launchDate": "2025-11-28",
+    "launchLabel": "2025年11月28日开放",
+    "launchNote": "官方页面将其列为 4.1 奇幻世界创作工坊（World of Wonder） 玩法模板。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-frosty-rocket-launcher-frenzy-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-primewood-genesis-2026",
+    "game": "PUBG Mobile",
+    "modeName": "原木创世（Primewood Genesis）",
+    "year": "2026",
+    "date": "2026-01-06",
+    "tags": [
+      "br-core",
+      "pve",
+      "objective",
+      "space"
+    ],
+    "type": [
+      "主题 BR",
+      "地图净化",
+      "跨局种植"
+    ],
+    "oneLineRule": "在主题 BR（大逃杀）中净化被污染的地图区域、争夺 原木之眼（Prime Eye）视野能力，并利用跨局种植留下后续资源目标。",
+    "mechanicChange": "4.2 官方更新加入 Primewood Genesis：玩家在 Erangel 的五个城市清理污染植物、净化 Primewood；公共进度达到 50% 或 100% 后会解锁特殊载具和藤蔓道具。队伍还可进入 原木核心（原木核心（Primewood Heart）） 争夺 原木之眼（原木之眼（Prime Eye）），用屏障、传送、治疗和污染花朵技能影响战场，并把种下的圣芽带到后续对局成熟。",
+    "tempoImpact": "地图净化、公共解锁和跨局种植把单局搜刮延伸成连续目标；队伍要在清理 PvE、争夺视野能力和防守成熟果实之间分配时间。",
+    "designObservation": "把世界状态、跨局持久目标和单局抢夺叠在一起，可以让 大逃杀 产生“这一局的行为会影响下一局路线”的连续性，同时保留公共进度带来的集体事件感。",
+    "sourceUrl": "https://tencent.pk/news/2026-01-06-v4-2-update-announcement/",
+    "launchDate": "2026-01-06",
+    "launchLabel": "2026年1月6日随 4.2 版本开放",
+    "launchNote": "该页面是 PUBG MOBILE 官方更新公告的区域镜像，页面保留官方来源入口；记录 原木创世（Primewood Genesis） 的主题区域、净化、原木之眼（Prime Eye） 和跨局种植规则。",
+    "gameplayTypes": [
+      "br",
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-primewood-genesis-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-evolving-universe-2026",
+    "game": "PUBG Mobile",
+    "modeName": "进化宇宙（Evolving Universe）",
+    "year": "2026",
+    "date": "2026-03-11",
+    "tags": [
+      "br-core",
+      "power",
+      "objective",
+      "space"
+    ],
+    "type": [
+      "主题 BR",
+      "职业专精",
+      "局内成长"
+    ],
+    "oneLineRule": "在主题 BR（大逃杀）中选择治疗、战斗、侦察、探测或载具专精，通过完成局内行为升级技能和能量等级，形成自己的队伍分工。",
+    "mechanicChange": "4.3 官方更新加入 Evolving Universe：玩家从五类被动技能中选择专精，技能分为 C/B/A/S 四级，可通过造成伤害、救援队友、探索区域、驾驶载具等行为获得能量并升级；高等级还能解锁 时空宝库（Temporal Vault），进入经典版本主题的特殊补给空间。",
+    "tempoImpact": "击杀不再是唯一成长路径，治疗、驾驶、搜寻和探索都能推动升级，队伍因此会在“做自己擅长的事”和“抢先提高等级”之间调整分工。",
+    "designObservation": "用多种可观察行为分配成长资源，可以让非击杀贡献变得可见；专精等级和可解锁空间又为同一张地图提供了多条价值路线。",
+    "sourceUrl": "https://tencent.pk/news/2026-03-11-v4-3-update-announcement/",
+    "launchDate": "2026-03-11",
+    "launchLabel": "2026年3月11日至5月10日主题模式",
+    "launchNote": "该页面是 PUBG MOBILE 官方更新公告的区域镜像，页面保留官方来源入口；记录五类专精、能量等级和 时空宝库（时空宝库（Temporal Vault）） 规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-evolving-universe-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-racing-challenge-2026",
+    "game": "PUBG Mobile",
+    "modeName": "竞速挑战（Racing Challenge）",
+    "year": "2026",
+    "date": "2026-03-11",
+    "tags": [
+      "objective",
+      "space"
+    ],
+    "type": [
+      "地图竞速",
+      "检查点",
+      "单圈与多圈"
+    ],
+    "oneLineRule": "在主题 BR（大逃杀）的地图赛道中驾驶车辆通过检查点并到达终点，可选择单圈冲刺或多圈竞速来换取补给奖励。",
+    "mechanicChange": "Evolving Universe 在 Erangel、Livik 和 Miramar 加入多条地图竞速路线：车辆需要通过检查点和终点，赛道上设置跳台与加速带；玩法分为单圈冲刺和多圈竞速，首次完成与刷新个人纪录都会给奖励。",
+    "tempoImpact": "竞速把驾驶从转点工具变成主动目标，队伍需要判断何时离开战斗路线、是否冒险冲刺，以及如何利用速度换取补给。",
+    "designObservation": "当竞速路线穿过主地图，移动系统就会从“交通”变成“可争夺内容”；检查点和个人纪录提供了清晰的短期反馈。",
+    "sourceUrl": "https://tencent.pk/news/2026-03-11-v4-3-update-announcement/",
+    "launchDate": "2026-03-11",
+    "launchLabel": "2026年3月11日随 4.3 主题模式开放",
+    "launchNote": "该页面是 PUBG MOBILE 官方更新公告的区域镜像；本卡单独记录 进化宇宙（Evolving Universe） 内的地图竞速玩法。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-racing-challenge-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-winterlands-aurora-2024",
+    "game": "Free Fire",
+    "modeName": "冬境：极光（Winterlands: Aurora）",
+    "year": "2024",
+    "date": "2024-12-03",
+    "tags": [
+      "br-core",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "轨道移动",
+      "极光事件",
+      "BR/CS 双规则"
+    ],
+    "oneLineRule": "在冬季主题 BR（大逃杀）或枪王对决（Clash Squad） 中沿冰雪轨道高速移动，利用极光影响的资源点获得增益并争夺路线优势。",
+    "mechanicChange": "OB47 版本 在 BR（大逃杀）和枪王对决（Clash Squad） 都加入 Winterlands: Aurora：百慕大（Bermuda） 的冰雪轨道允许玩家射击、转向、加速、减速和投掷道具；极光会改变部分硬币机或补给装置，互动后可获得不同团队增益。",
+    "tempoImpact": "轨道把跨区域移动变成高曝光但高效率的路线，极光资源点又会吸引队伍在经过和停留之间做选择。",
+    "designObservation": "同一主题同时改变 BR 的转点和 CS 的攻防位置，可以观察公共移动设施如何在不同回合结构中产生不同风险。",
+    "sourceUrl": "https://ff.garena.com/en/article/1421/",
+    "launchDate": "2024-12-03",
+    "launchLabel": "2024年12月3日 OB47 冬季玩法",
+    "launchNote": "官方 OB47 公告确认 Winterlands: Aurora 同时覆盖 BR（大逃杀）与枪王对决（Clash Squad）；本卡聚焦冰雪轨道和极光事件。",
+    "gameplayTypes": [
+      "br",
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-winterlands-aurora-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-mad-snowman-2024",
+    "game": "Free Fire",
+    "modeName": "疯狂雪人（Mad Snowman）",
+    "year": "2024",
+    "date": "2024-12-03",
+    "tags": [
+      "objective",
+      "power",
+      "casual"
+    ],
+    "type": [
+      "成长变身",
+      "雪球复活",
+      "淘汰积累"
+    ],
+    "oneLineRule": "通过淘汰敌人积累进度并逐步变成雪人；被击倒后会变成雪球，滚动一段距离即可尝试复活。",
+    "mechanicChange": "官方 OB47 把 Mad Snowman 作为独立模式回归：淘汰敌人会推进变身进度并提供属性强化，满进度后成为完整雪人；被击倒会转为雪球，滚动到一定距离可复活，但被其他玩家在雪球形态下淘汰就会永久出局，队友靠近雪球还能加快复活。",
+    "tempoImpact": "淘汰、变身和雪球复活让玩家在击倒后仍有继续移动的机会，队伍需要决定追击雪球、保护队友还是继续寻找目标。",
+    "designObservation": "把“被击倒”改成带风险的第二阶段状态，可以延长交战并增加救援路线；永久淘汰条件则保留追击的终局价值。",
+    "sourceUrl": "https://ff.garena.com/en/article/1421/",
+    "launchDate": "2024-12-03",
+    "launchLabel": "2024年12月3日 OB47 玩法回归",
+    "launchNote": "官方 OB47 公告将 Mad Snowman 标为独立模式，并确认雪人进度、雪球复活和队友加速规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-mad-snowman-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-cs-peak-2025",
+    "game": "Free Fire",
+    "modeName": "枪王巅峰（CS-Peak）",
+    "year": "2025",
+    "date": "2025-07-30",
+    "tags": [
+      "objective",
+      "arena",
+      "power"
+    ],
+    "type": [
+      "单人排位",
+      "匿名对抗",
+      "特殊商店"
+    ],
+    "oneLineRule": "达到门槛后进入固定时段开放的单人枪王排位，只按个人局内表现得分，并在特殊商店中利用更低价格和技能卡取胜。",
+    "mechanicChange": "OB50 新增枪王巅峰（CS-Peak）：达到目标段位后解锁，采用单人排队、隐藏头像与旗帜的匿名对抗，分数只看局内表现；商店提供更低的 冰墙（冰墙（Gloo Wall）） 价格、更丰富的武器和主动技能卡，第二回合起还会展示 MVP。",
+    "tempoImpact": "匿名与单人排队减少固定队友信息，玩家必须在短回合里独立完成买枪、站位和决策；更宽的商店选择扩大了临场构筑空间。",
+    "designObservation": "把团队回合制模式切成个人表现赛，可以测试“同队竞争”如何改变风险承担；匿名展示则把注意力从身份和社交线索拉回局内行为。",
+    "sourceUrl": "https://ff.garena.com/en/article/1511/",
+    "launchDate": "2025-07-30",
+    "launchLabel": "2025年7月30日 OB50 开始，赛季中段开放",
+    "launchNote": "官方 OB50 公告确认 CS-Peak 的解锁门槛、单人排队、匿名展示、特殊商店和排行榜。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-cs-peak-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-flame-arena-2025",
+    "game": "Free Fire",
+    "modeName": "火焰竞技场（Flame Arena）",
+    "year": "2025",
+    "date": "2025-10-29",
+    "tags": [
+      "br-core",
+      "objective",
+      "space",
+      "power"
+    ],
+    "type": [
+      "BR/CS 双规则",
+      "队伍旗帜",
+      "火焰终局"
+    ],
+    "oneLineRule": "在 BR（大逃杀）或枪王对决（Clash Squad） 中代表随机分配的队伍旗帜，淘汰对手并躲避逐步收紧的火焰区域，争取让己方旗帜留到最后。",
+    "mechanicChange": "OB51 加入火焰竞技场（Flame Arena）：BR 开局会把玩家分到不同旗帜，某一旗帜下的队伍全部淘汰后会在空中燃烧；后期火焰区域取代普通边界，火焰奖杯出现在最后安全区。枪王对决（Clash Squad）从第 4 回合起使用同样的火焰终局，并提供主题商店、出生点和特殊火焰武器。",
+    "tempoImpact": "旗帜存活状态把淘汰信息变成全局进度，火焰区域又把后期空间压缩成可读的终局目标，队伍会更主动追踪残余旗帜。",
+    "designObservation": "把队伍身份做成可见的公共状态，可以让淘汰不只影响人数，还改变全场的叙事和目标；大逃杀与枪王对决 共用主题规则则便于比较不同回合尺度下的压力。",
+    "sourceUrl": "https://ff.garena.com/en/article/1549/",
+    "launchDate": "2025-10-29",
+    "launchLabel": "2025年10月29日 OB51 玩法",
+    "launchNote": "官方 OB51 公告确认 Flame Arena 同时覆盖 BR（大逃杀）与枪王对决（Clash Squad），并列出旗帜、火焰区域、奖杯和火焰武器规则。",
+    "gameplayTypes": [
+      "br",
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-flame-arena-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-party-parkour-2026",
+    "game": "Free Fire",
+    "modeName": "派对跑酷（Party Parkour）",
+    "year": "2026",
+    "date": "2026-01-09",
+    "tags": [
+      "casual",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "Craftland",
+      "迷你角色",
+      "跑酷挑战"
+    ],
+    "oneLineRule": "在 创意工坊（Craftland） 的测试玩法中操控迷你角色完成跑酷路线，用移动、跳跃和路线选择到达终点。",
+    "mechanicChange": "OB52 的 创意工坊（创意工坊（Craftland）） 公告新增 Party Parkour：玩家操控迷你角色体验全新的跑酷冒险，模式仍在测试，部分接口（API）可能不可用；官方同时加入下坡赛道到跑酷模板。",
+    "tempoImpact": "战斗被替换成纯移动与障碍判断，节奏来自路线熟悉、失误恢复和终点冲刺，适合研究非射击玩法如何复用射击游戏的编辑器基础。",
+    "designObservation": "把角色尺度和镜头关系改掉，就能让同一套编辑器产生不同的空间感；测试状态也说明创作平台需要为规则不稳定保留容错。",
+    "sourceUrl": "https://ff.garena.com/en/article/1595/",
+    "launchDate": "2026-01-09",
+    "launchLabel": "2026年1月9日 OB52 Craftland 测试玩法",
+    "launchNote": "官方 OB52 公告将 Party Parkour 列为 创意工坊（创意工坊（Craftland）） 新 玩法模式，并明确仍在测试。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-party-parkour-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-arena-showdown-2026",
+    "game": "Free Fire",
+    "modeName": "竞技对决（Arena Showdown）",
+    "year": "2026",
+    "date": "2026-06-23",
+    "tags": [
+      "casual",
+      "objective",
+      "arena"
+    ],
+    "type": [
+      "派对大厅",
+      "1v1 竞技",
+      "连胜守擂"
+    ],
+    "oneLineRule": "在九周年派对大厅排队进行 1 对 1 对决，获胜者留下守擂并迎接下一位挑战者。",
+    "mechanicChange": "OB54 九周年派对大厅新增 Arena Showdown：玩家可在互动大厅内进入 1v1 竞技场，获胜者继续留在场内防守下一轮；官方九周年公告还提到现场预测机制，为对决增加观赛互动。",
+    "tempoImpact": "短局、连续守擂和即时再匹配让失败成本低但节奏密集，玩家会围绕下一位挑战者快速调整策略。",
+    "designObservation": "把竞技场放进社交大厅，能在正式比赛之外提供低门槛的即时对抗；守擂结构还会自然形成“连胜—被挑战—换人”的观看循环。",
+    "sourceUrl": "https://ff.garena.com/en/article/1673/",
+    "launchDate": "2026-06-23",
+    "launchLabel": "2026年6月23日 OB54 九周年派对大厅",
+    "launchNote": "官方 OB54 公告确认 Arena Showdown 是派对大厅的 1v1 竞技区域；九周年公告补充了大厅与预测互动背景。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-arena-showdown-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-saddle-brawl-2026",
+    "game": "Free Fire",
+    "modeName": "马鞍乱斗（Saddle Brawl）",
+    "year": "2026",
+    "date": "2026-06-23",
+    "tags": [
+      "casual",
+      "objective",
+      "arena"
+    ],
+    "type": [
+      "双人协作",
+      "载具瞄准",
+      "派对小游戏"
+    ],
+    "oneLineRule": "两名玩家组成一队，由下方玩家驾驶独轮车控制方向，上方玩家攻击其他队伍，争取赢下派对大厅小游戏。",
+    "mechanicChange": "官方 OB54 九周年派对大厅加入 Saddle Brawl：每队两人，下方玩家骑独轮车并负责移动瞄准，上方玩家负责攻击；大厅还允许玩家创建自己的房间。",
+    "tempoImpact": "驾驶和攻击被拆给两名玩家，队伍需要同步转向、目标选择和进攻时机，失误会直接暴露整队路线。",
+    "designObservation": "把移动与攻击拆成双人岗位，可以在极短规则里制造强协作需求；社交大厅房间又让这类小游戏具备自定义和重复挑战空间。",
+    "sourceUrl": "https://ff.garena.com/en/article/1673/",
+    "launchDate": "2026-06-23",
+    "launchLabel": "2026年6月23日 OB54 九周年派对大厅",
+    "launchNote": "官方 OB54 公告确认 Saddle Brawl 的两人分工、独轮车和攻击规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-saddle-brawl-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-gloo-wall-relay-2025",
+    "game": "Free Fire",
+    "modeName": "冰墙接力（Gloo Wall Relay）",
+    "year": "2025",
+    "date": "2025-06-20",
+    "tags": [
+      "objective",
+      "casual"
+    ],
+    "type": [
+      "周年活动",
+      "组队任务",
+      "奖励接力"
+    ],
+    "oneLineRule": "与拥有周年冰墙的队友组队完成周年 BR 活动，按官方活动条件接力解锁限时奖励。",
+    "mechanicChange": "官方八周年公告确认 Gloo Wall Relay 作为回归周年玩法：玩家可与已经拥有周年冰墙的队友组队，共同完成周年 BR 活动来获得对应奖励；公告没有公开更细的局内任务步骤，因此这里仅记录已确认的组队与奖励条件。",
+    "tempoImpact": "玩法把单局 BR 之外的组队关系变成奖励入口，玩家会主动寻找拥有特定道具的队友，并围绕活动条件安排对局。",
+    "designObservation": "用可传递的限定奖励建立玩家之间的协作链，可以把一次性活动从“个人领取”变成社交传播；规则越依赖队友持有状态，越需要清楚展示进度和完成条件。",
+    "sourceUrl": "https://ff.garena.com/en/article/1486/",
+    "launchDate": "2025-06-20",
+    "launchLabel": "2025年6月20日至7月14日八周年活动",
+    "launchNote": "官方八周年公告确认该模式回归，并确认与拥有周年冰墙的队友组队完成 BR 活动；具体任务流程以客户端活动页为准。",
+    "gameplayTypes": [
+      "br",
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-gloo-wall-relay-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]

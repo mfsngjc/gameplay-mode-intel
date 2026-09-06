@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 50,
-      "coverCount": 50,
-      "readableDescriptionCount": 50,
+      "modeCount": 57,
+      "coverCount": 57,
+      "readableDescriptionCount": 57,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -377,7 +377,14 @@
         "pubgm-ultimate-arena-2022",
         "pubgm-zombie-uprising-2-0-2025",
         "pubgm-summer-showdown-2025",
-        "pubgm-ice-dragon-boss-2025"
+        "pubgm-ice-dragon-boss-2025",
+        "pubgm-frosty-funland-2025",
+        "pubgm-racing-carnival-2025",
+        "pubgm-snow-roguelike-adventure-2025",
+        "pubgm-frosty-rocket-launcher-frenzy-2025",
+        "pubgm-primewood-genesis-2026",
+        "pubgm-evolving-universe-2026",
+        "pubgm-racing-challenge-2026"
       ],
       "officialSourceUrls": [
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202011/874641.shtml",
@@ -417,15 +424,18 @@
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202201/908153.shtml",
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202205/915279.shtml",
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202207/918432.shtml",
-        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/m22521/202211/925426.shtml"
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/m22521/202211/925426.shtml",
+        "https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-410/",
+        "https://tencent.pk/news/2026-01-06-v4-2-update-announcement/",
+        "https://tencent.pk/news/2026-03-11-v4-3-update-announcement/"
       ],
-      "notes": "已回溯 0.12–4.0 版本及 2020–2025 主题玩法页面，补入 Spark the Flame、Ancient Secret、Team Gun Game、Aftermath、Spider-Man、Core Circle、Ancient Secret: Arise、Football Mania、Ultimate Arena，以及 3.9 Transformers 页面里的 Zombie Uprising 2.0、Summer Showdown、Ice Dragon Boss Challenge；仍需继续覆盖更早版本、2025–2026 后续主题和地区版本差异。"
+      "notes": "已回溯 0.12–4.3 版本及 2020–2026 主题玩法页面，补入 4.1 Frosty Funland、Racing Carnival、Snow Roguelike Adventure、Frosty Funland Rocket Launcher Frenzy，4.2 Primewood Genesis，以及 4.3 Evolving Universe、Racing Challenge；并记录 Skyhigh Spectacle 等回归玩法。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 65,
-      "coverCount": 65,
-      "readableDescriptionCount": 65,
+      "modeCount": 73,
+      "coverCount": 73,
+      "readableDescriptionCount": 73,
       "modeIds": [
         "free-fire-clash-squad-2019",
         "free-fire-bomb-squad-2019",
@@ -491,7 +501,15 @@
         "free-fire-mystery-town-2023",
         "free-fire-fort-feud-2023",
         "free-fire-beat-carnival-2026",
-        "free-fire-gintama-2026"
+        "free-fire-gintama-2026",
+        "free-fire-winterlands-aurora-2024",
+        "free-fire-mad-snowman-2024",
+        "free-fire-cs-peak-2025",
+        "free-fire-flame-arena-2025",
+        "free-fire-party-parkour-2026",
+        "free-fire-arena-showdown-2026",
+        "free-fire-saddle-brawl-2026",
+        "free-fire-gloo-wall-relay-2025"
       ],
       "officialSourceUrls": [
         "https://ff.garena.com/en/article/67/",
@@ -541,9 +559,14 @@
         "https://ff.garena.com/es/article/1120/",
         "https://ff.garena.com/id/article/1150",
         "https://ff.garena.com/en/article/1634/",
-        "https://ff.garena.com/en/article/1655/"
+        "https://ff.garena.com/en/article/1655/",
+        "https://ff.garena.com/en/article/1421/",
+        "https://ff.garena.com/en/article/1511/",
+        "https://ff.garena.com/en/article/1549/",
+        "https://ff.garena.com/en/article/1595/",
+        "https://ff.garena.com/en/article/1673/"
       ],
-      "notes": "已回溯 2019–2026 官方公告，并补充 2018 早期模式与 2023 Craftland 玩法；新增 Death Race、Rush Hour、Solo Death Race、Death Uprising、Spray and Pray、Pet Rumble、6v6 Clash Squad、Kimbo Rush Hour、Pet Smash、Triple Wolves、Color Hide & Seek、Color Spray、Mystery Town、Fort Feud、Beat Carnival、GINTAMA 联动等；仍需继续覆盖地区版本差异与后续公告。"
+      "notes": "已回溯 2018–2026 官方公告、OB47–OB54 补丁和 Craftland 地区版本，补入 Winterlands: Aurora、Mad Snowman、CS-Peak、Flame Arena、Party Parkour、Arena Showdown、Saddle Brawl、Gloo Wall Relay；仍需继续覆盖地区版本差异、早期历史档案和后续公告。"
     }
   }
 }
