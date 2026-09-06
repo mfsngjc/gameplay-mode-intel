@@ -7,6 +7,7 @@ const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
 const read = (name) => fs.readFileSync(path.join(root, name), 'utf8');
 const modes = JSON.parse(read('data/modes.json'));
+const coverage = JSON.parse(read('data/mode-source-coverage.json')).games;
 const research = fs.existsSync(path.join(root, 'local-only/research.json')) ? JSON.parse(read('local-only/research.json')) : [];
 const allowed = new Set(['br', 'warfare', 'bomb', 'extraction', 'pve', 'casual']);
 const ids = new Set(modes.map((mode) => mode.id));
@@ -18,11 +19,22 @@ for (const mode of modes) {
   assert.equal(typeof mode.isLtm, 'boolean', mode.id + ': LTM must be an explicit boolean');
   assert.ok(typeof mode.imageUrl === 'string' && mode.imageUrl.trim(), mode.id + ': missing cover image');
   assert.ok(typeof mode.imageSource === 'string' && mode.imageSource.trim(), mode.id + ': missing cover source label');
+  assert.ok(typeof mode.sourceUrl === 'string' && mode.sourceUrl.trim(), mode.id + ': missing source URL');
   for (const field of ['oneLineRule', 'mechanicChange', 'tempoImpact', 'designObservation']) {
     assert.ok(typeof mode[field] === 'string' && mode[field].trim(), mode.id + ': missing readable ' + field);
   }
   const readableText = [mode.modeName, mode.oneLineRule, mode.mechanicChange, mode.tempoImpact, mode.designObservation].join('');
   assert.ok(/[\u4e00-\u9fff]/.test(readableText), mode.id + ': visible explanation must include Chinese text');
+}
+for (const [game, entry] of Object.entries(coverage)) {
+  const gameModes = modes.filter((mode) => mode.game === game);
+  const actualIds = gameModes.map((mode) => mode.id).sort();
+  const ledgerIds = [...new Set(entry.modeIds || [])].sort();
+  assert.deepEqual(ledgerIds, actualIds, game + ': mode source ledger IDs must match data');
+  assert.equal(entry.modeCount, gameModes.length, game + ': mode ledger count mismatch');
+  assert.equal(entry.coverCount, gameModes.length, game + ': cover ledger count mismatch');
+  assert.equal(entry.readableDescriptionCount, gameModes.length, game + ': readable-description ledger count mismatch');
+  assert.ok(['ongoing_backfill', 'complete'].includes(entry.coverageStatus), game + ': invalid coverage status');
 }
 for (const entry of research) {
   assert.ok(entry.sourceModeIds.length && entry.sourceModeIds.every((id) => ids.has(id)), entry.id + ': missing source case');
