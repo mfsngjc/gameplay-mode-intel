@@ -103,3 +103,12 @@
 ### Fortnite Override 追加复核
 
 - 官方 Override 公告再次核对：`Sprite Garden` 虽被称为 mode，但正文只描述收集精灵、展示收藏和与朋友互动，没有独立匹配胜负流程；因此归为社交/收藏系统，不重复新增模式卡。Override 的 BR 规则控制台、小队强化和宝箱掉落定制已由 `fortnite-override-2026` 覆盖。
+
+### PUBG Mobile 日本官方分页追加复核
+
+- 逐页检查日本官方新闻分页后，发现 `オフロードレース（Off-road Racing）` 未在现有卡片中出现。官方公告确认它是 UNRANKED 下的独立竞速射击竞技：4 支四人小队共 16 人、米拉玛参考赛道、三阶段竞速与射击区、检查点、车辆加速、颜色目标扣分和最终冲线。已新增 `pubgm-offroad-racing-2023`，使用官方公告头图。
+- `Ultimate Arena`、`Ladder Arena`、`Royale Arena: Assault`、`React Survival`、`Gear Front`、`Graffiti Prank`、`Extreme Hunt`、`Armory Arena` 和各主题模式均与现有卡片逐项对应；夏季大合战、企业对抗战和线下赛事属于赛事活动，不拆成新匹配玩法。
+
+### Free Fire 2026-09 最新公告追加复核
+
+- Garena 最新文章 1701（2026-09-03）是 Pocket Gamer 奖项公告，正文回顾 NARUTO SHIPPUDEN 联动、忍术能力和线下赛事，没有新增可独立匹配的玩法；相关联动规则已有卡片覆盖，因此不重复建卡。

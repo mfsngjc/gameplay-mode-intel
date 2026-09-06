@@ -13621,5 +13621,35 @@
     "isLtm": false,
     "imageUrl": "assets/modes/generated/pubg-rumble-2026.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-offroad-racing-2023",
+    "game": "PUBG Mobile",
+    "modeName": "越野竞速（Off-road Racing）",
+    "year": "2023",
+    "date": "2023-08-23",
+    "tags": [
+      "objective",
+      "casual"
+    ],
+    "type": [
+      "4队16人",
+      "竞速射击",
+      "三段赛程"
+    ],
+    "oneLineRule": "4 支四人小队驾驶各自车辆通过检查点，在竞速路段为车辆加速、在射击区击破目标积累分数，完成三段赛程后冲过终点。",
+    "mechanicChange": "官方日本公告将它定义为独立的 UNRANKED 竞速射击竞技，而不是传统 BR。每队 4 人共乘一辆专属车辆，在参考米拉玛的赛道上前进；车辆可在加油站补充燃料，偏离路线可能导致车辆翻覆或进水无法使用。\n\n一场比赛有 3 个阶段，每阶段包含竞速区和射击区。竞速区要连续通过检查点，同车队友射击路线上的目标可获得加速效果；射击区则要击破不同目标达到规定分数，误射与自己队伍颜色不符的目标会扣分。完成全部阶段后进入冲刺区，率先冲线结束比赛。",
+    "tempoImpact": "驾驶、补给和射击分工被压进同一辆车：驾驶员要保持路线与燃料，乘员要在移动中命中目标换取加速，进入射击区后又要在时间与准确度之间取舍。三段式流程把长距离移动切成可复盘的检查点和得分门槛。",
+    "designObservation": "把车辆从转点工具变成团队共享的比赛状态，可以让驾驶、移动射击和路线风险同时成为队伍分工。检查点、靶场门槛和最终冲刺形成连续的阶段反馈，比单纯“先到终点”更能让落后队伍通过命中目标追回差距。",
+    "sourceUrl": "https://pubgmobile.jp/off-road-racing-open-20230823/",
+    "imageUrl": "https://pubgmobile.jp/wp-content/uploads/web_%E3%82%AA%E3%83%95%E3%83%AD%E3%83%BC%E3%83%89%E3%83%AC%E3%83%BC%E3%82%B9%E8%A8%B4%E6%B1%82%E7%94%BB%E5%83%8F_900%C3%97568.png",
+    "imageSource": "PUBG Mobile 日本官方公告头图",
+    "launchDate": "2023-08-23",
+    "launchLabel": "2023年8月23日 9:00 开放",
+    "launchNote": "日本官方公告确认该模式在 UNRANKED 的 SQUAD 入口开放，公告写明开放结束时间待定；本卡记录官方公开的 16 人、米拉玛参考赛道、三阶段竞速与射击规则。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false
   }
 ]
