@@ -514,7 +514,7 @@
         "https://pubgmobile.jp/version-3-3-0-patch-notes-20240711/",
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/201910/831702.shtml"
       ],
-      "notes": "已回溯 0.4–4.6 版本及 2018–2026 主题、竞技、街机、Metro Royale、Payload 与 CRAFTGROUND 页面；本轮补入 3.3 Metro Royale Zombie Uprising、0.15.0 原始 Payload Mode，以及此前补入的旧版本命名玩法。规则只公开名称的条目标注待补。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
+      "notes": "已回溯 0.4–4.6 版本及 2018–2026 主题、竞技、街机、Metro Royale、Payload 与 CRAFTGROUND 页面；本次复核 4.0–4.6 最新版本页和 3.3–3.9 补丁页，确认 Unfail、Hydroroyal、NARUTO 终末之谷忍术对战、木ノ葉 PVE、九尾挑战、Spider-Man 与 Midnight Hunters 均已入库。此前补入 3.3 Metro Royale Zombie Uprising、0.15.0 原始 Payload Mode 及旧版本命名玩法。规则只公开名称的条目标注待补。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
@@ -672,7 +672,7 @@
         "https://ff.garena.com/en/article/122/",
         "https://ff.garena.com/en/article/680/"
       ],
-      "notes": "已核对 Garena 2018–2026 官方补丁与活动档案；本轮继续补入 Zombie Invasion 的 2019/2022 历史版本，并拆出 OB52 明确命名的 4V4 Jujutsu Clash；仍需继续补齐更早版本、地区差异和后续公告。"
+      "notes": "已核对 Garena 2018–2026 官方补丁与活动档案；本次复核 OB44–OB54 版本页、2026 年周年/联动公告及早期 2018–2022 模式公告，确认 Zombie Hunt 轮换、Mad Snowman、CS-Peak、Flame Arena、Undersea Mystery、Jujutsu Clash、Arena Showdown、Saddle Brawl、Epic Fight、Fire Kickoff 等已入库。此前继续补入 Zombie Invasion 的 2019/2022 历史版本、2020 Kill Secured/Gun King/TDM；仍需继续补齐更早版本、地区差异和后续公告。"
     }
   }
 }
