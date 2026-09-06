@@ -10483,5 +10483,37 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-jujutsu-clash-2026.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-halloween-capture-the-camp-2020",
+    "game": "PUBG Mobile",
+    "modeName": "万圣节战斗：据点守卫（Halloween Battle: Capture the Camp）",
+    "year": "2020",
+    "date": "2020-10-21",
+    "tags": [
+      "casual",
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "单人 PVE",
+      "六波生存",
+      "训练场挑战"
+    ],
+    "oneLineRule": "独自进入训练场，在 5 分钟内顶住 6 波怪物攻击，并用最终生存记录挑战更高成绩。",
+    "mechanicChange": "官方万圣周页面把 Capture the Camp 列为新的训练场挑战：玩家单人进入，连续面对一波又一波的怪物；每次挑战持续 5 分钟，需要在倒计时结束前撑过 6 波攻击。",
+    "tempoImpact": "固定 5 分钟倒计时和六段敌潮把挑战压缩成短时高密度循环，玩家需要在每波之间快速处理目标、调整站位并争取更高记录。",
+    "designObservation": "把训练场从纯练枪空间变成可重复的 PVE 记录挑战，可以用波次、时间和个人成绩提供清晰的短期目标，同时保持低门槛单人体验。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/halloweeks2020/",
+    "launchDate": "2020-10-21",
+    "launchLabel": "2020 年万圣周活动期间（具体首日待客户端核对）",
+    "launchNote": "官方活动页明确给出单人、5 分钟、6 波怪物攻击和训练场入口，但没有单独公布该挑战的首日；日期按万圣周活动窗口暂记。",
+    "gameplayTypes": [
+      "casual",
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-halloween-capture-the-camp-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
