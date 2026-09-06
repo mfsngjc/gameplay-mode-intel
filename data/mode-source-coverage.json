@@ -294,6 +294,8 @@
         "delta-force-operations-1v1-2026"
       ],
       "officialSourceUrls": [
+        "https://deltaforce.garena.com/en/?redirect=0",
+        "https://deltaforce.garena.com/en/news/all/7K772J",
         "https://deltaforce.garena.com/en/news/all/988DKS",
         "https://deltaforce.garena.com/en/news/all/TERSP4",
         "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
@@ -320,7 +322,12 @@
         "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1834602721184632",
         "https://store.steampowered.com/news/app/2507950/view/685257749622165814?l=schinese&snr=1_5_9_"
       ],
-      "notes": "已有模式库；后续按 Garena 官方赛季公告继续回溯。"
+      "notes": "已复核三角洲行动官方中文站、Global 官方站和 Steam 公告；当前覆盖烽火地带、全面战场、黑鹰坠落及 2025–2026 的限时玩法。后续继续按官方赛季公告、地图更新和模式活动回溯，地区名称与国际服名称存在差异时保留原名并补中文说明。",
+      "officialArchiveIndexUrls": [
+        "https://deltaforce.garena.com/en/?redirect=0",
+        "https://steamcommunity.com/app/2507950/announcements/"
+      ],
+      "auditedArchiveDateRange": "2024–2026"
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
