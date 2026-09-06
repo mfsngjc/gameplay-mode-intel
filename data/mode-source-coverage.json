@@ -692,9 +692,12 @@
         "https://ff.garena.com/en/article/122/",
         "https://ff.garena.com/en/article/680/",
         "https://ff.garena.com/en/article/223/",
-        "https://ff.garena.com/en/article/1170/"
+        "https://ff.garena.com/en/article/1170/",
+        "https://ff.garena.com/en/article/944/",
+        "https://ff.garena.com/en/article/1196/",
+        "https://ff.garena.com/en/article/97/"
       ],
-      "notes": "已核对 Garena 2018–2026 官方补丁与活动档案；本次补入 2020 年枪王对决独立排位、2023 年六周年的双主动技能枪王对决，以及同一补丁中的彩色方块复活玩法。排位层与原枪王对决共用核心规则，因此单独记录其长期竞争机制；彩色方块是活动期间改变大逃杀淘汰与复活流程的限时规则变体。仍需继续补齐更早版本、地区差异和后续公告。"
+      "notes": "已核对 Garena 2018–2026 官方补丁与活动档案；本次补入 2020 年枪王对决独立排位、2023 年六周年的双主动技能枪王对决和彩色方块复活玩法，并复核 Football Squad、Color Playground、Rampage Opening 等早期活动页，确认对应卡片已存在。排位层与原枪王对决共用核心规则，因此单独记录其长期竞争机制；彩色方块是活动期间改变大逃杀淘汰与复活流程的限时规则变体。仍需继续补齐更早版本、地区差异和后续公告。"
     }
   }
 }
