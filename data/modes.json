@@ -11720,5 +11720,95 @@
     "isLtm": false,
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
     "imageUrl": "assets/modes/generated/pubgm-wow-zombie-station-2023.svg"
+  },
+  {
+    "id": "free-fire-pet-ludo-2022",
+    "game": "Free Fire",
+    "modeName": "宠物飞行棋（Pet Ludo）",
+    "year": "2022",
+    "date": "2022-02-12",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "限时休闲",
+      "桌游变体",
+      "宠物互动"
+    ],
+    "oneLineRule": "使用四只宠物角色参与带有 Free Fire 变化规则的飞行棋对局；通过走子与争夺终点推进胜负。",
+    "mechanicChange": "官方 Squad BEATz 活动把 Pet Ludo 明确列为新游戏模式：Mr. Waggor、Moony、Sensei Tig 和 Ottero 四只宠物进入传统飞行棋框架，并加入 Free Fire 风格的变化规则。官方公开页没有展开完整回合、计分和胜负阈值，因此不补写未确认细节。",
+    "tempoImpact": "回合制走子把射击游戏的即时枪战节奏改成轮流决策，宠物选择和走子机会成为主要的不确定性来源；具体节奏由未公开的变体规则决定。",
+    "designObservation": "把宠物从战斗辅助转成桌游棋子，是一次明显的玩法换挡：玩家熟悉的角色资产被重新绑定到走子、路线和终点目标上，适合做轻量活动入口。",
+    "sourceUrl": "https://ff.garena.com/en-pk/article/633/",
+    "launchDate": "2022-02-12",
+    "launchLabel": "2022年2月12日随 Squad BEATz 活动公布",
+    "launchNote": "官方巴基斯坦地区公告明确称 Pet Ludo 为新游戏模式，并列出四只宠物；地区版本可能存在开放时间差异，完整回合规则待官方客户端或后续页面补充。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/free-fire-pet-ludo-2022.svg"
+  },
+  {
+    "id": "pubgm-wow-erangel-mod-2023",
+    "game": "PUBG Mobile",
+    "modeName": "艾伦格改造版（Erangel Mod）",
+    "year": "2023",
+    "date": "2023-03-18",
+    "tags": [
+      "br-core",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "经典 BR 变体",
+      "多队对抗"
+    ],
+    "oneLineRule": "以经典 BR 为基础，12 支四人队伍在没有载具和 AI 的艾伦格上作战，其他核心规则保持不变。",
+    "mechanicChange": "官方 Imagiversary 页面把 Erangel Mod 列为完整 WOW 玩法模板：地图沿用 Erangel，12 支四人队伍进行对抗，局内关闭载具和 AI，其余内容沿用经典模式。",
+    "tempoImpact": "移除载具和 AI 后，转点依赖步行与路线判断，12 队并行作战会让热点冲突更集中，队伍需要更早规划安全区和交战距离。",
+    "designObservation": "这是对经典 BR 的受控减法：保留跳伞、搜刮和安全区，却用无载具、无 AI 限制改变地图尺度感和遭遇密度，适合观察移动工具对节奏的影响。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Imagiversary/",
+    "launchDate": "2023-03-18",
+    "launchLabel": "2023年3月18日随 Imagiversary 五周年 WOW 模板公布",
+    "launchNote": "官方页面明确给出 12 支四人队伍、无载具、无 AI 和 Erangel 地图；页面没有进一步说明匹配人数上限之外的结算改动。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-erangel-mod-2023.svg"
+  },
+  {
+    "id": "pubgm-wow-craft-mod-2023",
+    "game": "PUBG Mobile",
+    "modeName": "创作工坊对战（Craft Mod）",
+    "year": "2023",
+    "date": "2023-03-18",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "World of Wonder 模板",
+      "4v4 团队死斗",
+      "复活竞技"
+    ],
+    "oneLineRule": "4v4 团队死斗中，先拿到 60 次淘汰的一方获胜；15 分钟内无人达到目标时，按更高得分判定胜负。",
+    "mechanicChange": "官方 Imagiversary 页面把 Craft Mod 列为完整 WOW 玩法模板：对局采用 4v4 Team Deathmatch，胜负目标是 60 次淘汰或 15 分钟结束时的得分比较，地图模板为 Kapok Mansion。",
+    "tempoImpact": "固定淘汰目标和 15 分钟上限让队伍持续换血，复活与出生点管理成为循环节奏；接近 60 分时，队伍需要从抢人头转向控制交战风险。",
+    "designObservation": "把团队死斗的目标、复活、补给和 HUD 作为可编辑模板公开，降低了创作者搭建一套可玩的射击循环的成本，也让“规则模板”成为内容生产工具。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Imagiversary/",
+    "launchDate": "2023-03-18",
+    "launchLabel": "2023年3月18日随 Imagiversary 五周年 WOW 模板公布",
+    "launchNote": "官方页面明确给出 4v4、60 次淘汰、15 分钟和 Kapok Mansion；未公开具体出生点、武器池与补给配置。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/pubgm-wow-craft-mod-2023.svg"
   }
 ]

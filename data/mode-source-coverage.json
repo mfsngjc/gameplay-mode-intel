@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 149,
-      "coverCount": 149,
-      "readableDescriptionCount": 149,
+      "modeCount": 151,
+      "coverCount": 151,
+      "readableDescriptionCount": 151,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -476,7 +476,9 @@
         "pubgm-wow-car-racing-2023",
         "pubgm-wow-pubgm-go-2023",
         "pubgm-wow-summer-brawl-2023",
-        "pubgm-wow-zombie-station-2023"
+        "pubgm-wow-zombie-station-2023",
+        "pubgm-wow-erangel-mod-2023",
+        "pubgm-wow-craft-mod-2023"
       ],
       "officialSourceUrls": [
         "https://pubgmobile.jp/version-2-0-0-patch-notes/",
@@ -557,14 +559,14 @@
         "https://www.pubgmobile.jp/version-4-6-0-update-notice-20260901/",
         "https://www.youtube.com/watch?v=si5fRm5Sa8s"
       ],
-      "notes": "已回溯 0.4–4.6 版本及 2018–2026 主题、竞技、街机、Metro Royale、Payload 与 CRAFTGROUND 页面；本次继续复核 0.17.0 周年游乐园、2020 万圣周、2021 三周年、World of Wonder/3.0 Shadow Force 专题，补入 Capture the Camp、TAP JOY、PAN JAM、BEAT IT、What’s in the Box、Shooting Range，以及刀球和冰冻竞技类 WOW 示例模板。WOW 子卡明确标注为官方 Beta 创建玩法描述，不与全局匹配模式混淆。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。",
+      "notes": "已回溯 0.4–4.6 版本及 2018–2026 主题、竞技、街机、Metro Royale、Payload 与 CRAFTGROUND 页面；本次继续复核 0.17.0 周年游乐园、2020 万圣周、2021 三周年、World of Wonder/3.0 Shadow Force 专题，补入 Capture the Camp、TAP JOY、PAN JAM、BEAT IT、What’s in the Box、Shooting Range，以及刀球和冰冻竞技类 WOW 示例模板。WOW 子卡明确标注为官方 Beta 创建玩法描述，不与全局匹配模式混淆。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。 本轮追加 Frozen Kingdom 的 Zombie Station，以及 Imagiversary 的 Erangel Mod、Craft Mod；编辑器泛化参考类型仍排除。",
       "updatedAt": "2026-09-07"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 92,
-      "coverCount": 92,
-      "readableDescriptionCount": 92,
+      "modeCount": 93,
+      "coverCount": 93,
+      "readableDescriptionCount": 93,
       "modeIds": [
         "free-fire-clash-squad-2019",
         "free-fire-bomb-squad-2019",
@@ -657,7 +659,8 @@
         "free-fire-jujutsu-clash-2026",
         "free-fire-clash-squad-ranked-2020",
         "free-fire-clash-squad-duo-active-skills-2023",
-        "free-fire-color-cube-2023"
+        "free-fire-color-cube-2023",
+        "free-fire-pet-ludo-2022"
       ],
       "officialSourceUrls": [
         "https://ff.garena.com/en-pk/article/641/",
@@ -722,9 +725,11 @@
         "https://ff.garena.com/en/article/1170/",
         "https://ff.garena.com/en/article/944/",
         "https://ff.garena.com/en/article/1196/",
-        "https://ff.garena.com/en/article/97/"
+        "https://ff.garena.com/en/article/97/",
+        "https://ff.garena.com/en-pk/article/633/"
       ],
-      "notes": "已核对 Garena 2018–2026 官方补丁与活动档案；本次补入 2020 年枪王对决独立排位、2023 年六周年的双主动技能枪王对决和彩色方块复活玩法，并复核 Football Squad、Color Playground、Rampage Opening 等早期活动页，确认对应卡片已存在。排位层与原枪王对决共用核心规则，因此单独记录其长期竞争机制；彩色方块是活动期间改变大逃杀淘汰与复活流程的限时规则变体。仍需继续补齐更早版本、地区差异和后续公告。"
+      "notes": "已核对 Garena 2018–2026 官方补丁与活动档案；本次补入 2020 年枪王对决独立排位、2023 年六周年的双主动技能枪王对决和彩色方块复活玩法，并复核 Football Squad、Color Playground、Rampage Opening 等早期活动页，确认对应卡片已存在。排位层与原枪王对决共用核心规则，因此单独记录其长期竞争机制；彩色方块是活动期间改变大逃杀淘汰与复活流程的限时规则变体。仍需继续补齐更早版本、地区差异和后续公告。 本轮追加 Squad BEATz 地区公告中的 Pet Ludo；Close Combat 仅作为分组标签，Training Grounds 和 The Arena 等非对局模式继续排除。",
+      "updatedAt": "2026-09-07"
     }
   }
 }
