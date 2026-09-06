@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 26,
-      "coverCount": 26,
-      "readableDescriptionCount": 26,
+      "modeCount": 28,
+      "coverCount": 28,
+      "readableDescriptionCount": 28,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -353,7 +353,9 @@
         "pubgm-battle-royale-dragon-ball-super-2023",
         "pubgm-shadow-force-2024",
         "pubgm-jujutsu-kaisen-themed-2021",
-        "pubgm-unfail-2025"
+        "pubgm-unfail-2025",
+        "pubgm-vibrant-anniversary-2022",
+        "pubgm-ocean-odyssey-2024"
       ],
       "officialSourceUrls": [
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202011/874641.shtml",
@@ -377,15 +379,17 @@
         "https://www.pubgmobile.com/en/event/dragon-ball-super/",
         "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
         "https://www.pubgmobile.com/en/event/JUJUTSUKAISEN/",
-        "https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-400/"
+        "https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-400/",
+        "https://www.pubgmobile.com/en/event/Vibrant-Anniversary/",
+        "https://www.pubgmobile.com/en/event/Ocean-Odyssey/"
       ],
-      "notes": "已回溯 0.12–4.0 版本及 2023–2025 主题玩法页面，新增 Gear Front、Royale Arena: Assault、Martial Showdown、Misty Port、Zombie’s Edge、Dragon Ball Super、Shadow Force、Jujutsu Kaisen、Unfail 等玩法；仍需继续覆盖 2023 年后及更早的版本公告。"
+      "notes": "已回溯 0.12–4.0 版本及 2022–2025 主题玩法页面，新增 Vibrant Anniversary、Ocean Odyssey、Gear Front、Royale Arena: Assault、Martial Showdown、Misty Port、Zombie’s Edge、Dragon Ball Super、Shadow Force、Jujutsu Kaisen、Unfail 等玩法；仍需继续覆盖 2023 年后及更早的版本公告。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 22,
-      "coverCount": 22,
-      "readableDescriptionCount": 22,
+      "modeCount": 29,
+      "coverCount": 29,
+      "readableDescriptionCount": 29,
       "modeIds": [
         "free-fire-clash-squad-2019",
         "free-fire-bomb-squad-2019",
@@ -408,7 +412,14 @@
         "free-fire-coin-clash-2022",
         "free-fire-football-squad-2022",
         "free-fire-old-peak-2024",
-        "free-fire-zombie-graveyard-2024"
+        "free-fire-zombie-graveyard-2024",
+        "free-fire-rampage-new-dawn-2021",
+        "free-fire-spider-verse-parkour-2023",
+        "free-fire-lone-wolf-strike-out-2022",
+        "free-fire-shadow-hunter-2023",
+        "free-fire-rampage-united-2022",
+        "free-fire-battle-for-infinity-2025",
+        "free-fire-epic-fight-2026"
       ],
       "officialSourceUrls": [
         "https://ff.garena.com/en/article/67/",
@@ -428,9 +439,15 @@
         "https://ff.garena.com/en/article/813",
         "https://ff.garena.com/en/article/892/",
         "https://ff.garena.com/en/article/917",
-        "https://ff.garena.com/en/article/1365"
+        "https://ff.garena.com/en/article/1365",
+        "https://ff.garena.com/en/article/454/",
+        "https://ff.garena.com/en/article/1152/",
+        "https://ff.garena.com/en-pk/article/641/",
+        "https://ff.garena.com/en/article/802/",
+        "https://ff.garena.com/en/article/1486/",
+        "https://ff.garena.com/en/article/1683/"
       ],
-      "notes": "已回溯 2019–2026 年官方更新页，新增 Free For All、Mini Peak、Clash Squad 第一人称、Gloo Nova、Droid Apocalypse、Coin Clash、Football Squad、Old Peak、Zombie Graveyard 等玩法；仍需继续覆盖更早的模式轮换和地区版本差异。"
+      "notes": "已回溯 2018–2026 年官方更新页，新增 Rampage、Spider-Verse Parkour、Lone Wolf Strike Out、Shadow Hunter、Free For All、Mini Peak、Clash Squad 第一人称、Gloo Nova、Droid Apocalypse、Coin Clash、Football Squad、Old Peak、Zombie Graveyard、Battle for Infinity、Epic Fight 等玩法；仍需继续覆盖更早的模式轮换和地区版本差异。"
     }
   }
 }

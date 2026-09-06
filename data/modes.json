@@ -5774,5 +5774,286 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-zombie-graveyard-2024.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-vibrant-anniversary-2022",
+    "game": "PUBG Mobile",
+    "modeName": "活力周年（Vibrant Anniversary）",
+    "year": "2022",
+    "date": "2022-03-16",
+    "tags": [
+      "br-core",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "空中战场",
+      "颜色收集",
+      "额外复活"
+    ],
+    "oneLineRule": "在 Erangel 和 Livik 的限时主题 BR 中进入空中战场，收集对应颜色资源并利用特殊载具和复活规则回到主战场。",
+    "mechanicChange": "官方 4 周年玩法把前五分钟的对局变成空中战场：玩家会变成彩色玩偶并收集颜色资源，受到攻击时玩偶外壳会变化；被淘汰后可以回到 BR。地图还加入折叠山地车、周年资源营和枪械仓库。",
+    "tempoImpact": "空中战场把落地后的首轮交战提前到更短窗口，额外复活又让队伍可以承担更高风险去争夺颜色资源和周年热点。",
+    "designObservation": "周年主题通过颜色、空中层和复活把视觉庆典转成可操作的路线选择；前五分钟的时间限制防止主题空间占据整局节奏。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Vibrant-Anniversary/",
+    "launchDate": "2022-03-16",
+    "launchLabel": "2022年3月16日至5月10日限时开放",
+    "launchNote": "官方页面确认 Erangel/Livik、空中战场、彩色玩偶、资源收集和回到 BR 的规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-vibrant-anniversary-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-ocean-odyssey-2024",
+    "game": "PUBG Mobile",
+    "modeName": "海洋奇缘（Ocean Odyssey）",
+    "year": "2024",
+    "date": "2024-07-11",
+    "tags": [
+      "br-core",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "水下宫殿",
+      "深潜路线",
+      "海洋首领"
+    ],
+    "oneLineRule": "在主题 BR 中潜入海底宫殿，探索水下区域、争夺海洋资源，并在海怪首领 Kraken 等主题威胁下返回地表战斗。",
+    "mechanicChange": "官方 3.3 主题玩法把海底宫殿和水下路线放进经典地图：地图出现海怪首领 Kraken、海底雕像和神秘宫殿，玩家通过深潜进入水下空间，在特殊水膜内保持地表般的操作。",
+    "tempoImpact": "水下入口提供了新的转点层级，队伍可以短暂脱离地表枪线，但宫殿入口和高价值资源也会变成可预测的公共争夺点。",
+    "designObservation": "垂直空间的价值在于改变交战时机；水膜让水下探索保持可操作性，入口和回到地表的路线则维持了风险与反制。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Ocean-Odyssey/",
+    "launchDate": "2024-07-11",
+    "launchLabel": "2024年7月11日随 3.3 版本加入",
+    "launchNote": "官方活动页确认 Ocean Odyssey 为 3.3 主题玩法；日本官方版本公告将 2024年7月11日作为版本开放日，全球地区可能存在时差。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-ocean-odyssey-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-rampage-new-dawn-2021",
+    "game": "Free Fire",
+    "modeName": "狂暴新曙光（Rampage: New Dawn）",
+    "year": "2021",
+    "date": "2021-06-26",
+    "tags": [
+      "br-core",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "符文收集",
+      "能力成长",
+      "主题 BR"
+    ],
+    "oneLineRule": "在主题 BR 地图上收集符文和经验，升级四名角色的属性与技能，在成长路线中寻找更适合自己的战斗组合。",
+    "mechanicChange": "官方 Rampage: New Dawn 玩法沿用经典 BR 结构，但加入地图符文、经验升级和四名主角的技能属性；玩家可以在 20 多种属性中组合成长方向。",
+    "tempoImpact": "符文和经验让搜刮路线同时承担成长价值，早期是否绕路拿符文会影响中后期的战斗强度和交战选择。",
+    "designObservation": "能力成长型 BR 的关键是让成长资源产生路线分歧；多属性组合给玩家留下构筑空间，但仍由经典淘汰目标收束对局。",
+    "sourceUrl": "https://ff.garena.com/en/article/454/",
+    "launchDate": "2021-06-26",
+    "launchLabel": "2021年6月26日限时开放",
+    "launchNote": "官方公告称该玩法在 6 月 26 日开放，沿用 BR 并加入符文、经验和角色属性；更早的 Rampage: Redemption、Rampage: Uprising 仅在公告中作为前代活动提及，待对应官方规则页继续回溯。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-rampage-new-dawn-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-spider-verse-parkour-2023",
+    "game": "Free Fire",
+    "modeName": "蜘蛛宇宙跑酷（Spider-Verse Parkour）",
+    "year": "2023",
+    "date": "2023-06-09",
+    "tags": [
+      "casual",
+      "space",
+      "power"
+    ],
+    "type": [
+      "跑酷地图",
+      "蛛网发射器",
+      "主题对抗"
+    ],
+    "oneLineRule": "在蜘蛛宇宙主题城市中穿着角色套装进行跑酷对抗，利用蛛网发射器移动和攻击其他玩家。",
+    "mechanicChange": "官方联动活动加入限时 Spider-Verse Parkour：玩家在电影主题城市中使用蛛网发射器进行移动和对抗，玩法重点从传统 BR 的搜集转向路线、垂直移动和即时追逐。",
+    "tempoImpact": "蛛网移动提高了垂直转场速度，玩家需要同时读懂落点、追击路径和空中攻击角度，交战节奏明显快于常规地图。",
+    "designObservation": "跑酷模式把移动能力直接变成胜负工具；当位移、攻击和场景高度统一到同一主题时，联动内容才会形成独立的操作学习。",
+    "sourceUrl": "https://ff.garena.com/en/article/1152/",
+    "launchDate": "2023-06-09",
+    "launchLabel": "2023年6月9日至18日限时开放",
+    "launchNote": "官方联动公告确认 Spider-Verse Parkour 的开放日、蛛网发射器和主题城市背景。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-spider-verse-parkour-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-lone-wolf-strike-out-2022",
+    "game": "Free Fire",
+    "modeName": "孤狼淘汰赛（Lone Wolf Strike Out）",
+    "year": "2022",
+    "date": "2022-03-12",
+    "tags": [
+      "casual",
+      "objective",
+      "arena"
+    ],
+    "type": [
+      "8人淘汰赛",
+      "多条命",
+      "轮次晋级"
+    ],
+    "oneLineRule": "8 名玩家进入淘汰赛，每轮只有 4 人直接交战；玩家保留三条命，淘汰后退出后续轮次，最后保有生命的玩家获胜。",
+    "mechanicChange": "官方地区公告为 Lone Wolf 增加 Strike Out 变体：8 人各有三条命，每轮按剩余生命安排对战；被淘汰的玩家只能观战，轮次持续到场上只剩一名玩家。",
+    "tempoImpact": "生命数和轮次晋级把一场决斗拆成持续的风险管理，玩家要在当前对手、下一轮匹配和剩余生命之间分配资源。",
+    "designObservation": "淘汰赛模式通过保留生命把一次失误变成长期压力；观战区和轮次结构又保证了场上人数始终可控。",
+    "sourceUrl": "https://ff.garena.com/en-pk/article/641/",
+    "launchDate": "2022-03-12",
+    "launchLabel": "2022年3月12日地区限时开放",
+    "launchNote": "官方 Garena Pakistan 公告确认 Sci-Turf 地图、8 人、三条命和轮次晋级规则；这是地区公告，全球开放情况待继续核对。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-lone-wolf-strike-out-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-shadow-hunter-2023",
+    "game": "Free Fire",
+    "modeName": "暗影猎手：吸血鬼嘉年华（Shadow Hunter: Vampire Carnival）",
+    "year": "2023",
+    "date": "2023-08-08",
+    "tags": [
+      "pve",
+      "objective",
+      "arena"
+    ],
+    "type": [
+      "1对多",
+      "非对称追捕",
+      "技能强化"
+    ],
+    "oneLineRule": "一名玩家扮演拥有技能和增益的吸血鬼（Vampire），其余玩家扮演猎人（Hunters）；吸血鬼淘汰所有猎人获胜，猎人协作击败吸血鬼。",
+    "mechanicChange": "官方补丁把 Vampire Carnival 作为 Shadow Hunter 的非对称模式：系统随机分配一名吸血鬼和多名猎人，吸血鬼可使用额外技能与增益，猎人必须合作完成击杀。",
+    "tempoImpact": "单人强敌与多人围捕让信息和分工成为核心，Vampire 通过制造追击路线获得主动权，Hunters 则要协调包夹和安全距离。",
+    "designObservation": "1 对多模式要同时给单人足够的逃生工具和多人明确的协作目标；技能强化与公开追捕维持了双方的可读反制。",
+    "sourceUrl": "https://ff.garena.com/en/article/1213/",
+    "launchDate": "2023-08-08",
+    "launchLabel": "2023年8月8日补丁加入",
+    "launchNote": "官方补丁确认 Vampire Carnival 的 1 对多分配、双方胜利条件和 Vampire 技能增益。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-shadow-hunter-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-rampage-united-2022",
+    "game": "Free Fire",
+    "modeName": "狂暴联合（Rampage: United）",
+    "year": "2022",
+    "date": "2022-06-25",
+    "tags": [
+      "casual",
+      "objective",
+      "space"
+    ],
+    "type": [
+      "4人小队",
+      "地图占点",
+      "Hyperbook 收集"
+    ],
+    "oneLineRule": "组建 4 人小队，在地图上的不同地点争夺 Hyperbook（活动收集物）并累积分数，按目标点表现决出胜负。",
+    "mechanicChange": "官方 Rampage: United 活动将玩法从单纯击杀转向小队目标：4 人队伍需要前往多个地图位置收集 Hyperbook（活动收集物）并获得分数，路线和队伍分工决定效率。",
+    "tempoImpact": "固定目标点让队伍不断在推进、守点和转移之间切换，单队抱团或分散搜点都会带来不同的被抓风险。",
+    "designObservation": "小队目标模式的空间张力来自“占点收益—暴露风险”的循环；Hyperbook 把主题叙事转成了可持续争夺的地图资源。",
+    "sourceUrl": "https://ff.garena.com/en/article/802/",
+    "launchDate": "2022-06-25",
+    "launchLabel": "2022年6月25日活动开放",
+    "launchNote": "官方 Garena 活动公告确认 4 人组队、Hyperbook 和地图多点计分；英文页面的地区版本可能存在差异。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-rampage-united-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-battle-for-infinity-2025",
+    "game": "Free Fire",
+    "modeName": "无限之战（Battle for Infinity）",
+    "year": "2025",
+    "date": "2025-06-20",
+    "tags": [
+      "br-core",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "列车跳伞",
+      "动态竞技场",
+      "特殊道具"
+    ],
+    "oneLineRule": "从 Infinity 列车进入 BR，在车站争夺登车机会并进入无限竞技场（Infinity Ring），抢到能改变战斗节奏的特殊道具后继续争夺第一。",
+    "mechanicChange": "官方八周年玩法把 BR 的入场方式改成主题列车：地图八个车站会出现列车，每列车只允许一个队伍登乘，队伍争夺后进入无限竞技场（Infinity Ring），获得无限 Gloo Wall、复活卡、强化芯片和吸入器等道具。Clash Squad 还加入 Boost、Weapon、Gloo Wall 三种特殊列车回合。",
+    "tempoImpact": "列车和车站把开局路线变成可预测的移动目标，Infinity Ring 又提供一次高收益短战场，队伍需要在登车、争夺和返回主图之间做连续判断。",
+    "designObservation": "把入场载具做成会回到地图的公共目标，可以同时改写开局和中期转点；特殊竞技场则把高收益集中到有限时间和有限席位上。",
+    "sourceUrl": "https://ff.garena.com/en/article/1486/",
+    "launchDate": "2025-06-20",
+    "launchLabel": "2025年6月20日至7月14日八周年玩法",
+    "launchNote": "官方八周年公告确认 Battle for Infinity、Infinity Ring、列车车站和 Clash Squad 特殊列车回合。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-battle-for-infinity-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-epic-fight-2026",
+    "game": "Free Fire",
+    "modeName": "史诗对决（Epic Fight）",
+    "year": "2026",
+    "date": "2026-06-24",
+    "tags": [
+      "br-core",
+      "casual",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "技能强化",
+      "武器觉醒",
+      "团队任务"
+    ],
+    "oneLineRule": "在 BR 和 Clash Squad 中通过技能强化（Skill Boost）和武器觉醒（Weapon Awakening）调整角色、技能与武器，并完成周年任务强化地图区域和团队收益。",
+    "mechanicChange": "官方九周年公告把 Epic Fight 作为跨 BR/CS 的新玩法框架：玩家可为八名角色配置技能强化（Skill Boost），使用武器觉醒器（Weapon Awakener）强化武器；BR 中还加入队友复活、任务点和自动售货机任务，完成后逐步解锁区域增益。",
+    "tempoImpact": "技能和武器成长把准备阶段延伸到局内，BR 任务点会推动队伍主动转点，复活机制则提高了中后期的追赶空间。",
+    "designObservation": "跨模式系统只有同时改变构筑、地图目标和回合节奏时，才会形成新的玩法层；单独的数值强化则应留在版本平衡记录里。",
+    "sourceUrl": "https://ff.garena.com/en/article/1683/",
+    "launchDate": "2026-06-24",
+    "launchLabel": "2026年6月24日至7月26日九周年活动",
+    "launchNote": "官方九周年公告确认 Epic Fight、Skill Boost、Weapon Awakening、BR 任务和复活机制；它是跨 BR/CS 的活动规则框架。",
+    "gameplayTypes": [
+      "br",
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-epic-fight-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
