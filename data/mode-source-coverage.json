@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 95,
-      "coverCount": 95,
-      "readableDescriptionCount": 95,
+      "modeCount": 98,
+      "coverCount": 98,
+      "readableDescriptionCount": 98,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -422,7 +422,10 @@
         "pubgm-naruto-konoha-pve-2026",
         "pubgm-naruto-nine-tails-challenge-2026",
         "pubgm-spiderman-brand-new-day-2026",
-        "pubgm-midnight-hunters-2026"
+        "pubgm-midnight-hunters-2026",
+        "pubgm-spooky-soiree-2025",
+        "pubgm-hydroroyal-2025",
+        "pubgm-metro-royale-deathmatch-solo-2025"
       ],
       "officialSourceUrls": [
         "https://pubgmobile.jp/version-3-7-0-patch-notes-20250308/",
@@ -486,9 +489,10 @@
         "https://pubgmobile.jp/version-3-5-0-patch-notes-20241112/",
         "https://pubgmobile.jp/version-4-4-0-patch-notes-20260512/",
         "https://pubgmobile.jp/version-4-5-0-patch-notes-20260709/",
-        "https://www.pubgmobile.jp/version-4-6-0-update-notice-20260901/"
+        "https://www.pubgmobile.jp/version-4-6-0-update-notice-20260901/",
+        "https://pubgmobile.jp/version-4-0-0-patch-notes-20250904/"
       ],
-      "notes": "已回溯 0.4–4.6 版本及 2018–2026 主题、竞技、街机和 Metro Royale 页面；本轮补入 4.4 Hero’s Crown、4.5 NARUTO/蜘蛛侠主题及其独立 PVE/忍术/九尾玩法、4.6 Midnight Hunters。Midnight Hunters 机制待完整官方补丁公开；仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
+      "notes": "已回溯 0.4–4.6 版本及 2018–2026 主题、竞技、街机和 Metro Royale 页面；本轮继续补入 4.0 Spooky Soiree、Hydroroyal 非对称玩法与 Metro Royale 单人死亡竞赛。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",

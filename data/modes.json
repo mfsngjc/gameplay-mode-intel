@@ -9709,5 +9709,99 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-midnight-hunters-2026.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-spooky-soiree-2025",
+    "game": "PUBG Mobile",
+    "modeName": "惊悚舞会（Spooky Soiree）",
+    "year": "2025",
+    "date": "2025-09-04",
+    "tags": [
+      "br-ltm",
+      "power",
+      "objective",
+      "space"
+    ],
+    "type": [
+      "主题 BR",
+      "幽灵技能",
+      "复活资源"
+    ],
+    "oneLineRule": "在万圣节主题 BR 中探索神秘宅邸，收集幽灵技能和主题物资，并利用复活镜与飞天扫帚改变战斗路线。",
+    "mechanicChange": "官方 4.0.0 版本在 Erangel、Livik 和 Rondo 开放惊悚舞会：神秘宅邸提供幽灵宝藏和镇魂魔镜，解封魔镜后可获得高级物资并有限次复活队友；玩家会获得幽灵伙伴，可装备一个主动技能和两个被动技能，阵亡后还可能短暂变成恶作剧幽灵。",
+    "tempoImpact": "幽灵技能同时影响侦察、防护、治疗和移动，复活镜把高价值区域变成持续交战点；飞天扫帚提供快速转移，但使用时不能射击或拾取物资，形成明显取舍。",
+    "designObservation": "把能力槽、有限复活和可驾驶的主题载具放在同一张 BR 地图里，可以让主题玩法同时改变搜刮优先级、信息获取和转点风险。",
+    "sourceUrl": "https://pubgmobile.jp/version-4-0-0-patch-notes-20250904/",
+    "launchDate": "2025-09-04",
+    "launchLabel": "2025年9月4日至11月5日限时开放",
+    "launchNote": "官方 4.0.0 补丁确认神秘宅邸、幽灵技能、镇魂魔镜、恶作剧幽灵和飞天扫帚等规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-spooky-soiree-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-hydroroyal-2025",
+    "game": "PUBG Mobile",
+    "modeName": "水域王者（Hydroroyal）",
+    "year": "2025",
+    "date": "2025-09-26",
+    "tags": [
+      "objective",
+      "arena",
+      "power"
+    ],
+    "type": [
+      "非对称对抗",
+      "猎手与幸存者",
+      "逃生目标"
+    ],
+    "oneLineRule": "在限时非对称对抗中，Hunter 负责阻止逃生，Survivor 则启动终端并从出口逃离。",
+    "mechanicChange": "官方 4.0.0 补丁新增 Hydroroyal：玩家分为 Hunter 与 Survivor 两个阵营。Survivor 需要启动五个终端解锁逃生门，或在只剩一人时使用逃生传送门；Hunter 可用钩子、减速陷阱和隐身技能追捕并阻止逃生。",
+    "tempoImpact": "终端进度和逃生门把幸存者的路线变成可读目标，Hunter 的钩子、陷阱和隐身则不断压缩安全空间；倒计时让救援、修机和追击形成阶段性节奏。",
+    "designObservation": "非对称玩法通过“推进终端—暴露位置—转移出口”的循环制造信息差，让同一张小地图同时承载追逐、藏匿和团队分工。",
+    "sourceUrl": "https://pubgmobile.jp/version-4-0-0-patch-notes-20250904/",
+    "launchDate": "2025-09-26",
+    "launchLabel": "2025年9月26日至11月5日限时开放",
+    "launchNote": "官方 4.0.0 补丁明确记录 Hunter/Survivor 阵营、终端、逃生门、逃生传送门和双方技能。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-hydroroyal-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-metro-royale-deathmatch-solo-2025",
+    "game": "PUBG Mobile",
+    "modeName": "地铁逃生：单人死亡竞赛（Metro Royale Deathmatch Solo）",
+    "year": "2025",
+    "date": "2025-09-05",
+    "tags": [
+      "warfare",
+      "objective",
+      "arena"
+    ],
+    "type": [
+      "Metro Royale",
+      "1v1 死亡竞赛",
+      "单人对抗"
+    ],
+    "oneLineRule": "在 Metro Royale 大厅邀请队友进行 1v1 单人死亡竞赛，用连续淘汰争夺短回合胜利。",
+    "mechanicChange": "官方 4.0.0 补丁在 Metro Royale 期间加入 Deathmatch SOLO：组队时可从 Metro Royale 大厅邀请队友进行 1v1 死亡竞赛；页面未公开更细的回合、装备和计分规则，本卡不补写未确认细节。",
+    "tempoImpact": "从搜打撤主循环切换到 1v1 死亡竞赛后，玩家不再围绕撤离和战利品规划路线，而是直接进入短时枪法与装备对抗。",
+    "designObservation": "在搜打撤框架旁边加入低准备成本的 1v1 入口，可以把装备积累转化为即时对抗，同时让玩家在同一大厅内切换不同风险节奏。",
+    "sourceUrl": "https://pubgmobile.jp/version-4-0-0-patch-notes-20250904/",
+    "launchDate": "2025-09-05",
+    "launchLabel": "2025年9月5日至11月4日随 Metro Royale 开放",
+    "launchNote": "官方 4.0.0 补丁确认 Metro Royale 新增 Deathmatch SOLO，具体装备和计分规则待客户端或后续说明补档。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-metro-royale-deathmatch-solo-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
