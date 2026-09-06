@@ -4,9 +4,9 @@
   "games": {
     "Fortnite": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 32,
-      "coverCount": 32,
-      "readableDescriptionCount": 32,
+      "modeCount": 34,
+      "coverCount": 34,
+      "readableDescriptionCount": 34,
       "modeIds": [
         "fortnite-zero-build-2022",
         "fortnite-reload-2024",
@@ -39,7 +39,9 @@
         "fortnite-catch-2019",
         "fortnite-runners-2026",
         "fortnite-battle-bus-victory-2026",
-        "fortnite-override-2026"
+        "fortnite-override-2026",
+        "fortnite-crown-jam-2026",
+        "fortnite-delulu-2025"
       ],
       "officialSourceUrls": [
         "https://fortnite.fandom.com/wiki/50v50",
@@ -48,6 +50,7 @@
         "https://fortnite.fandom.com/wiki/Solid_Gold",
         "https://www.epicgames.com/fortnite/en-US/news/high-stakes",
         "https://www.fortnite.com/news/chase-greatness-in-fortnite-arenas",
+        "https://www.fortnite.com/news/crown-jam-a-limited-time-fortnite-mode-from-the-fall-guys-world?lang=en-US",
         "https://www.fortnite.com/news/dc-sirens-bring-the-heat-to-fortnite",
         "https://www.fortnite.com/news/everyone-wants-wick",
         "https://www.fortnite.com/news/extract-and-collect-sprites-on-a-new-map-in-fortnite-runners",
@@ -58,8 +61,10 @@
         "https://www.fortnite.com/news/fortnite-zero-build-take-the-offensive-in-this-no-build-battle-royale?lang=en-US",
         "https://www.fortnite.com/news/fortnitemares-2019?lang=en-US",
         "https://www.fortnite.com/news/join-the-elites-in-fortnite-reload-elite-stronghold",
+        "https://www.fortnite.com/news/look-out-for-number-1-in-fortnite-delulu?lang=en-US",
         "https://www.fortnite.com/news/squad-up-for-fortnite-reload?lang=pt-BR",
         "https://www.fortnite.com/news/ticket-to-win-it-in-the-rally-royale-ltm",
+        "https://www.fortnite.com/news?lang=en-EN",
         "https://www.fortnite.com/patch-notes/v3-2?lang=en-US",
         "https://www.fortnite.com/patch-notes/v4-5?lang=en-US",
         "https://www.fortnite.com/patch-notes/v5-10-content-update?lang=en-US",
@@ -72,7 +77,7 @@
         "https://www.fortnite.com/patch-notes/v8-40%3Flang%3Den-US",
         "https://www.fortnite.com/patch-notes/v9-21%26?lang=en-US"
       ],
-      "notes": "已有模式库；后续按 fortnite.com/news 与 patch-notes 继续回溯早期 LTM。"
+      "notes": "已复核 Epic 官方 fortnite.com/news 与 patch-notes；本轮补入 Fall Guys Crown Jam 3v3 竞技玩法和 Fortnite: Delulu 临时组队 BR，后续继续回溯早期 LTM、Reload 变体与 Creative/UEFN 的独立规则玩法。"
     },
     "PUBG": {
       "coverageStatus": "ongoing_backfill",

@@ -47,3 +47,8 @@
 
 - 本轮复核 EA 官方模式总览、2026 Breach 补丁、2025 Prodigy 补丁、2025 Astral Anomaly 活动和 Wildcard 公告，发现此前未收录的四个明确玩法：`Wildcard` 常驻快速 BR、`Bot Royale Evolved` 人机混合 BR、`Launch Royale` 怀旧 LTM，以及 `Arenas: Prodigy` 的 3v3 回合制限时回归。
 - `Mixtape`、Ranked、Unranked 属于总览中的播放列表/竞技层；地图轮换和装备调整不另拆模式。四张新增卡均已写入中文规则、来源和待确认范围，并生成稳定本地封面。
+
+### Fortnite
+
+- 本轮复核 Epic 官方新闻索引和模式公告，发现此前未收录的两个明确玩法：`Fall Guys Crown Jam`（3v3 物理篮球障碍竞技）和 `Fortnite: Delulu`（80 人单人开局、最多四人临时组队、最终单人获胜的 BR LTM）。两张卡已补入中文规则、LTM 分类、官方来源和本地封面。
+- Ranked 选项、俱乐部奖励和近距离语音属于玩法内规则；普通赛季、联动装饰和地图宣传不另拆模式。

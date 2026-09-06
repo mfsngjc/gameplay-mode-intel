@@ -4016,6 +4016,66 @@
     "isLtm": false
   },
   {
+    "id": "fortnite-crown-jam-2026",
+    "game": "Fortnite",
+    "modeName": "皇冠乱斗（Fall Guys Crown Jam）",
+    "year": "2026",
+    "date": "2026-01-21",
+    "tags": [
+      "casual",
+      "br-ltm"
+    ],
+    "type": [
+      "3v3 竞技",
+      "篮球障碍赛",
+      "物理碰撞"
+    ],
+    "oneLineRule": "三人小队在障碍赛场上把 Crown Ball 送进对方篮筐，通过冲撞、跳跃和配合完成得分。",
+    "mechanicChange": "Crown Jam 把 Fall Guys 的豆子角色放进 3v3 竞技场：队伍需要把球带到对手半场完成扣篮，角色移动、跳跃、碰撞和球体都采用物理模拟。每次匹配会加入六个 Crown Jam 俱乐部，并提供 Ranked 排位选项和独立奖励。",
+    "tempoImpact": "球权会在得分、抢断和碰撞之间快速转移，障碍路线又会打断直线推进；队伍需要同时安排持球、掩护、抢断和回防，比分压力比单纯淘汰更持续。",
+    "designObservation": "把运动目标、障碍路线和碰撞物理叠在 3v3 结构上，能让每次进攻都产生清晰的空间选择；排位和俱乐部系统则为轻量派对玩法提供长期目标。",
+    "sourceUrl": "https://www.fortnite.com/news/crown-jam-a-limited-time-fortnite-mode-from-the-fall-guys-world?lang=en-US",
+    "imageUrl": "assets/modes/generated/fortnite-crown-jam-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2026-01-23",
+    "launchLabel": "2026年1月23日至2月9日限时开放",
+    "launchNote": "Epic 官方 2026年1月21日公告确认 Crown Jam 为 3v3 限时竞技玩法，1月23日至2月9日开放，并提供 Ranked 选项。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "fortnite-delulu-2025",
+    "game": "Fortnite",
+    "modeName": "孤注一掷（Fortnite: Delulu）",
+    "year": "2025",
+    "date": "2025-09-19",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "80 人 BR",
+      "临时组队",
+      "近距离语音"
+    ],
+    "oneLineRule": "80 名玩家以单人身份跳伞，途中可以临时组队，最多组成四人小队；最终只有一名玩家获胜。",
+    "mechanicChange": "Delulu 是无建造 BR 的限时规则变体：玩家从单人状态开始，可以通过近距离语音与其他玩家交流并临时组队。临时小队最多四人，玩家也可以随时离队并立即攻击旧队友；比赛的胜者始终是最后存活的单个玩家。",
+    "tempoImpact": "组队让前期交火和资源争夺更容易转化为谈判，但离队后立刻反目又把信任变成短期资源；队伍规模变化会持续改变信息共享、火力和背刺风险。",
+    "designObservation": "把社交承诺直接放进胜负结构，可以制造传统 BR 没有的心理博弈；“临时合作但只有一人赢”的规则必须让组队上限、离队和语音范围都足够清楚。",
+    "sourceUrl": "https://www.fortnite.com/news/look-out-for-number-1-in-fortnite-delulu?lang=en-US",
+    "imageUrl": "assets/modes/generated/fortnite-delulu-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2025-09-19",
+    "launchLabel": "2025年9月19日至22日、9月26日至29日限时开放",
+    "launchNote": "Epic 官方公告确认 Delulu 的两段开放时间；后续更新把部分场次的结束条件调整为剩余四名玩家。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
     "id": "pubg-playgrounds-2026",
     "game": "PUBG",
     "modeName": "社区玩法大厅（PUBG: Playgrounds）",
