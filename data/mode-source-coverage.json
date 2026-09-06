@@ -81,9 +81,9 @@
     },
     "PUBG": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 25,
-      "coverCount": 25,
-      "readableDescriptionCount": 25,
+      "modeCount": 26,
+      "coverCount": 26,
+      "readableDescriptionCount": 26,
       "modeIds": [
         "pubg-classic-br-2017",
         "pubg-intense-br-2023",
@@ -109,7 +109,8 @@
         "pubg-playgrounds-2026",
         "pubg-xeno-point-2026",
         "pubg-payday-2026",
-        "pubg-prop-hunt-2026"
+        "pubg-prop-hunt-2026",
+        "pubg-rumble-2026"
       ],
       "officialSourceUrls": [
         "https://pubg.ac/news/37554-fantasy-battle-royale",
@@ -133,9 +134,10 @@
         "https://www.pubg.com/en/news/5023",
         "https://pubg.com/en/news/9844",
         "https://pubg.com/en/news/10009",
-        "https://pubg.com/en/news/9889"
+        "https://pubg.com/en/news/9889",
+        "https://pubg.com/en/news/9855"
       ],
-      "notes": "已复核 PUBG 官方新闻、Arcade 与 2026 路线图；本轮补入 Xeno Point、PAYDAY、Prop Hunt 三个明确独立玩法，继续回溯 LABS、Arcade 和历史限时模式。"
+      "notes": "已复核 PUBG 官方新闻、Arcade 与 2026 路线图；本轮补入 Xeno Point、PAYDAY、Prop Hunt 三个明确独立玩法，并记录路线图预告的 Rumble 周末小队竞技模式（正式开放日期和局内规则待确认），继续回溯 LABS、Arcade 和历史限时模式。"
     },
     "和平精英": {
       "coverageStatus": "ongoing_backfill",

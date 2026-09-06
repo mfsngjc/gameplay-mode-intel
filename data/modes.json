@@ -13590,5 +13590,36 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-graffiti-prank-2021.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubg-rumble-2026",
+    "game": "PUBG",
+    "modeName": "周末乱斗（Rumble）",
+    "year": "2026",
+    "date": "2026-03-23",
+    "tags": [
+      "casual",
+      "objective",
+      "needs_review"
+    ],
+    "type": [
+      "周末模式",
+      "小队竞技",
+      "无段位压力"
+    ],
+    "oneLineRule": "每周末与好友组队参加轻量竞技对局，官方预告将按周展示排名靠前的小队；正式匹配、计分和开放时间待确认。",
+    "mechanicChange": "PUBG 2026 官方路线图将 Rumble 定义为面向小队的周末休闲竞技模式：它保留接近排位的竞技强度，但不使用段位分压力；每周排名前三的小队会在下一周的 Rumble 大厅展示。官方目前没有公开具体地图、人数、胜负条件、计分规则或正式服务日期。",
+    "tempoImpact": "周末固定窗口和大厅展示会把一次性对局转成短周期目标，队伍可以围绕每周排名安排集中游玩；由于正式规则尚未公布，局内节奏暂不能进一步判断。",
+    "designObservation": "把竞技荣誉从永久段位分中拆出来，用周榜展示和短周期荣誉降低参与门槛，可能让不想承担排位损失的玩家也愿意尝试高强度小队对局。后续应重点观察它如何用计分和开放窗口控制刷分、组队优势与参与频率。",
+    "sourceUrl": "https://pubg.com/en/news/9855",
+    "launchDate": "待确认",
+    "launchLabel": "2026年3月23日路线图预告；开放时间待确认",
+    "launchNote": "官方 2026 路线图确认 Rumble 为计划中的周末小队竞技模式，并说明每周前三小队会在下周大厅展示；公告没有给出正式上线日期和完整局内规则，因此标记为待确认。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/generated/pubg-rumble-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]

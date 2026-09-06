@@ -94,3 +94,12 @@
 - 负向检查：动画/奖项宣传、地图换肤、技能与武器成长、赛事赛制、社交大厅活动和奖励小游戏没有新的独立对局胜负规则，未重复建卡。
 - 追加发现并补入 `Armory Arena`：官方 2020-07-31 公告明确给出 4v4、18 种武器、击杀换枪、平底锅终局和时间结束比较进度规则；Library 与 Hangar 是同一模式的地图变体，因此只建一张模式卡。
 - 继续复核日本官方 2020–2021 历史页，补入 `Halloweek Mode`（万圣主题 BR、随机首领）、`Extreme Hunt`（Livik 动力外骨骼、矩阵事件与召回）和 `Graffiti Prank`（小丑商店、代币情报兑换）。同页 `Playground Zombie Challenge` 与已有 `Halloween Battle: Capture the Camp` 的单人 5 分钟 6 波 PVE 规则一致，作为别名/子挑战处理，不重复建卡。
+
+### PUBG 2026 路线图追加复核
+
+- 官方 2026 路线图明确预告 `Rumble`：每周末组队参加轻量竞技模式，周榜前三小队会在下一周大厅展示。已新增 `pubg-rumble-2026`，按休闲小队竞技归类；公告没有公布正式开放日期、人数、地图、计分或胜负规则，卡片保留 `needs_review`，不自行推断。
+- 路线图中的 Destructible Terrain、Interactive Smoke、Blue Chip Towers 等属于 BR 内系统或地图交互；UGC 规则与社区模式入口属于创作平台，不另拆为独立官方匹配模式。
+
+### Fortnite Override 追加复核
+
+- 官方 Override 公告再次核对：`Sprite Garden` 虽被称为 mode，但正文只描述收集精灵、展示收藏和与朋友互动，没有独立匹配胜负流程；因此归为社交/收藏系统，不重复新增模式卡。Override 的 BR 规则控制台、小队强化和宝箱掉落定制已由 `fortnite-override-2026` 覆盖。
