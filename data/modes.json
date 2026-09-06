@@ -4494,6 +4494,68 @@
     "imageUrl": "assets/modes/generated/free-fire-zombie-hunt-2024.svg"
   },
   {
+    "id": "free-fire-zombie-hunt-hunting-spree-2024",
+    "game": "Free Fire",
+    "modeName": "僵尸猎场：猎杀狂欢（Hunting Spree）",
+    "year": "2024",
+    "date": "2024-04-16",
+    "tags": [
+      "pve",
+      "objective",
+      "power"
+    ],
+    "type": [
+      "限时刷怪",
+      "强化选择",
+      "首领计分"
+    ],
+    "oneLineRule": "在限时内持续消灭僵尸、升级并选择强化，击败的首领越多，最终得分越高。",
+    "mechanicChange": "官方 2024 年 Zombie Hunt 回归公告把 Hunting Spree 列为轮换事件：玩家通过击杀僵尸升级，逐步选择更多强化，并在时间限制内尽可能击败首领；首领数量直接转化为分数。",
+    "tempoImpact": "限时倒计时让队伍优先追求连续清怪和升级，强化选择会不断改变火力与生存能力；后半段的目标从稳妥推进转向争取更多首领击杀。",
+    "designObservation": "用‘击杀—升级—选强化—挑战更多首领’的短循环，把 PVE 进度从固定关卡改成可比较的分数竞速，适合反复刷高分。",
+    "sourceUrl": "https://ff.garena.com/en/article/1332/",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2024-04-16",
+    "launchLabel": "2024年4月16日随 Zombie Hunt 回归",
+    "launchNote": "官方补丁明确记录限时、击杀升级、强化选择和按首领数量计分。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-zombie-hunt-hunting-spree-2024.svg"
+  },
+  {
+    "id": "free-fire-zombie-hunt-rift-raiders-2024",
+    "game": "Free Fire",
+    "modeName": "僵尸猎场：裂隙突袭（Rift Raiders）",
+    "year": "2024",
+    "date": "2024-04-16",
+    "tags": [
+      "pve",
+      "warfare",
+      "objective"
+    ],
+    "type": [
+      "4v4 对抗",
+      "首领召唤",
+      "跨场干扰"
+    ],
+    "oneLineRule": "两支 4 人队伍分别清理僵尸、收集邪恶石召唤最终首领，先完成召唤并击败首领的一方获胜。",
+    "mechanicChange": "官方 2024 年 Zombie Hunt 回归公告将 Rift Raiders 列为轮换事件：两支 4 人队伍可以互相干扰，击杀僵尸收集邪恶石，用邪恶石召唤最终首领，也能把 Rogue Zombies 投放到对方场地；传送门解锁后，玩家还可以直接进入对方区域干扰召唤进度。",
+    "tempoImpact": "队伍要在清怪、攒石、守住召唤进度和跨场突袭之间切换；传送门开启后，PVE 的资源竞速会突然转成短距离 PVP 干扰。",
+    "designObservation": "把两支队伍放在同一套 PVE 目标里，再用可投放的敌人和传送门互相施压，形成了‘刷怪—攒资源—干扰—抢首领’的混合循环。",
+    "sourceUrl": "https://ff.garena.com/en/article/1332/",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2024-04-16",
+    "launchLabel": "2024年4月16日随 Zombie Hunt 回归",
+    "launchNote": "官方补丁明确记录 4v4、邪恶石、最终首领、Rogue Zombies 和传送门互相干扰规则。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-zombie-hunt-rift-raiders-2024.svg"
+  },
+  {
     "id": "free-fire-myzone-2025",
     "game": "Free Fire",
     "modeName": "我的区域（MyZone）",
