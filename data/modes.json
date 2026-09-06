@@ -10081,5 +10081,126 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-payload-3-0-2023.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-arena-training-2022",
+    "game": "PUBG Mobile",
+    "modeName": "竞技场训练（Arena Training）",
+    "year": "2022",
+    "date": "2022-05-12",
+    "tags": [
+      "warfare",
+      "arena"
+    ],
+    "type": [
+      "竞技场训练",
+      "规则待补"
+    ],
+    "oneLineRule": "进入竞技场训练入口练习枪战；官方 2.0.0 补丁只确认该入口名称和竞技场栏目，具体训练规则待补。",
+    "mechanicChange": "官方 Version 2.0.0 补丁在「竞技场」栏目明确列出 Arena Training。该页面只记录了模式入口和相关武器调整，没有公开人数、地图、计分或胜利条件，本卡不做推断。",
+    "tempoImpact": "作为训练入口，它的目标应是快速进入交战练习，但公开补丁没有说明是否有独立回合或计分，暂不把其他竞技场规则套用到这里。",
+    "designObservation": "训练模式的价值在于降低练习成本；在规则页缺失时，资料库应先保留入口事实，再等待客户端或后续公告补齐细节。",
+    "sourceUrl": "https://pubgmobile.jp/version-2-0-0-patch-notes/",
+    "launchDate": "2022-05-12",
+    "launchLabel": "2022年5月12日官方 2.0.0 补丁记录",
+    "launchNote": "官方补丁仅确认 Arena Training 位于竞技场栏目；完整训练规则待补。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/generated/pubgm-arena-training-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-ladder-arena-2022",
+    "game": "PUBG Mobile",
+    "modeName": "竞技场天梯（Ladder Arena）",
+    "year": "2022",
+    "date": "2022-07-12",
+    "tags": [
+      "warfare",
+      "arena",
+      "objective"
+    ],
+    "type": [
+      "竞技场排位",
+      "赛季排名",
+      "规则待补"
+    ],
+    "oneLineRule": "进入竞技场天梯参与排位竞争；官方 2.1.0 公告确认该入口，但没有公开具体回合和计分细则。",
+    "mechanicChange": "官方 Version 2.1.0 更新公告把 Ladder Arena 列为「竞技场排名」入口。公告没有公开地图、人数、回合、段位计算或开放周期以外的详细规则，因此本卡只记录其作为独立排名入口出现。",
+    "tempoImpact": "天梯排名会把短局竞技从即时胜负延伸到连续赛季目标，但具体的积分风险与奖励尚待官方规则页确认。",
+    "designObservation": "竞技场天梯通过排名层增加长期追踪价值；在规则尚未公开前，不能把它等同于普通团队死斗或 Ultimate Arena。",
+    "sourceUrl": "https://pubgmobile.jp/version-2-1-0-update-notice-20220706/",
+    "launchDate": "2022-07-12",
+    "launchLabel": "2022年7月12日公告列为竞技场排名入口",
+    "launchNote": "官方公告确认 Ladder Arena 名称；地图、计分、赛季和匹配细节待补。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/generated/pubgm-ladder-arena-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-playground-shoot-challenge-2022",
+    "game": "PUBG Mobile",
+    "modeName": "游乐场：射门挑战（Shoot Challenge）",
+    "year": "2022",
+    "date": "2022-11-17",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "游乐场小游戏",
+      "射门目标",
+      "规则待补"
+    ],
+    "oneLineRule": "在 Playground 的射门挑战中完成足球目标；官方 2.3.0 公告只确认入口名称，具体场地和计分待补。",
+    "mechanicChange": "官方 Version 2.3.0 更新公告在 Football Mania 相关内容中列出 Playground「Shoot Challenge」。公告没有展开参与人数、计分、奖励或开放轮换，本卡不把 Football Mania 的 BR 规则套用到小游戏。",
+    "tempoImpact": "射门挑战把足球互动从主题 BR 的地图事件压缩成短时小游戏，具体挑战节奏和失败条件需要客户端规则才能确认。",
+    "designObservation": "大型主题模式常把核心主题拆成游乐场短玩法，能够提供低压力体验；资料库应把小游戏与主题 BR 分开记录，避免混淆目标。",
+    "sourceUrl": "https://pubgmobile.jp/version-2-3-0-update-notice-20221109/",
+    "launchDate": "2022-11-17",
+    "launchLabel": "2.3.0 期间随 Football Mania 相关内容开放，具体轮换待确认",
+    "launchNote": "官方更新公告只确认 Playground 的 Shoot Challenge 名称，规则和持续时间待补。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-playground-shoot-challenge-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-football-ice-mania-2022",
+    "game": "PUBG Mobile",
+    "modeName": "足球冰雪狂欢（Football Ice Mania）",
+    "year": "2022",
+    "date": "2022-11",
+    "tags": [
+      "br",
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "足球主题",
+      "规则待补"
+    ],
+    "oneLineRule": "在 Football Ice Mania 主题玩法中体验足球与冰雪主题规则；官方地区更新公告只确认名称和轮换位置，具体机制待补。",
+    "mechanicChange": "官方日本地区 Version 2.4.0 更新公告在 RANKED/CLASSIC 列出 Football Ice Mania 主题模式。现有公开页面没有展开地图、特殊道具、人数或胜利条件，因此不把 Football Mania 的规则直接套用到本条。",
+    "tempoImpact": "冰雪与足球主题可能改变地图热点和移动路线，但公开资料不足以确认具体节奏；当前只保留它作为地区版本中独立出现的模式名。",
+    "designObservation": "地区版本可能在同一主题线上使用不同的模式命名或内容排期，收录时保留原名和地区来源，避免把区域差异误并为同一条规则。",
+    "sourceUrl": "https://pubgmobile.jp/version-2-4-0-update-notice-20221228/",
+    "launchDate": "2022-11",
+    "launchLabel": "Version 2.4.0 期间列为 RANKED/CLASSIC 主题模式，开始日待确认",
+    "launchNote": "官方日本地区公告确认 Football Ice Mania 名称；详细规则和实际开始时间待地区页面或客户端补档。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-football-ice-mania-2022.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
