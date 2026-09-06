@@ -183,3 +183,12 @@
 - `Solos: Respawn Token`：30 人单人、统一复活代币、后期关闭返场。
 
 这些条目均有官方页面给出的名称和局内规则，已写入中文卡片、来源台账与封面字段。普通 Pubs/Ranked、Mixtape 轮换和英雄/武器平衡继续作为播放列表或系统更新处理。
+
+### Apex 2024–2025 追加反向核对
+
+继续从 EA 的 Shockwave、Temporal Chaos、Double Take 和 Takeover 官方补丁逐项读取 `MODES`：
+
+- 新增 `Trios Revival`、`Straight Shot Revival`、`Quads Takeover` 和 `Akimbo & LMG Only Loadouts`；它们分别改变返场时机、快速 BR 的生命结构、队伍人数/技能和团队死斗武器池。
+- 新增 `Mythic Mayhem Royale`、`Redemption Trios & Duos`、`Relic Weapons Trios & Duos`；它们分别改变神话武器效果、可消耗返场经济和整套武器池。
+- `Straight Shot Revival` 的两篇官方说明对返场关闭节点分别写作“第 3 轮结束”和“第 4 轮”，卡片保留这一版本差异，不自行统一成未经核实的数字。
+- 纯 Mixtape 地图轮换、武器平衡和普通 Pubs/Ranked 队列继续归到父模式，不重复建卡。

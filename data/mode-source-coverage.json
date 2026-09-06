@@ -260,9 +260,9 @@
     },
     "Apex Legends": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 47,
-      "coverCount": 47,
-      "readableDescriptionCount": 47,
+      "modeCount": 54,
+      "coverCount": 54,
+      "readableDescriptionCount": 54,
       "modeIds": [
         "apex-classic-br-2019",
         "apex-ranked-leagues-2019",
@@ -310,7 +310,14 @@
         "apex-straight-shot-revival-quads-2025",
         "apex-arenas-duels-no-abilities-2025",
         "apex-arenas-duels-abilities-2025",
-        "apex-solos-respawn-token-2025"
+        "apex-solos-respawn-token-2025",
+        "apex-trios-revival-2024",
+        "apex-straight-shot-revival-2024",
+        "apex-quads-takeover-2024",
+        "apex-akimbo-lmg-tdm-2024",
+        "apex-mythic-mayhem-royale-2025",
+        "apex-redemption-trios-duos-2025",
+        "apex-relic-weapons-trios-duos-2025"
       ],
       "officialSourceUrls": [
         "https://apexlegends.wiki.gg/wiki/Always_Be_Closing",
@@ -340,6 +347,7 @@
         "https://www.ea.com/games/apex-legends/apex-legends/news/astral-anomaly-event",
         "https://www.ea.com/games/apex-legends/apex-legends/news/breach-patch-notes",
         "https://www.ea.com/games/apex-legends/apex-legends/news/cyberpunk-event",
+        "https://www.ea.com/games/apex-legends/apex-legends/news/double-take-collection-event",
         "https://www.ea.com/games/apex-legends/apex-legends/news/fight-force-event",
         "https://www.ea.com/games/apex-legends/apex-legends/news/game-update-wildcard",
         "https://www.ea.com/games/apex-legends/apex-legends/news/marked-patch-notes",
@@ -348,7 +356,9 @@
         "https://www.ea.com/games/apex-legends/apex-legends/news/power-trip-event",
         "https://www.ea.com/games/apex-legends/apex-legends/news/prodigy-patch-notes",
         "https://www.ea.com/games/apex-legends/apex-legends/news/shadow-society-event",
+        "https://www.ea.com/games/apex-legends/apex-legends/news/shockwave-patch-notes",
         "https://www.ea.com/games/apex-legends/apex-legends/news/space-hunt-event",
+        "https://www.ea.com/games/apex-legends/apex-legends/news/temporal-chaos-event",
         "https://www.ea.com/games/apex-legends/apex-legends/news/void-reckoning-event",
         "https://www.ea.com/games/battlefield/news/war-games"
       ],

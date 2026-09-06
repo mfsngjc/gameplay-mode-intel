@@ -14041,5 +14041,211 @@
       "br"
     ],
     "isLtm": true
+  },
+  {
+    "id": "apex-trios-revival-2024",
+    "game": "Apex Legends",
+    "modeName": "三人复活战（Trios Revival）",
+    "year": "2024",
+    "date": "2024-08-06",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "三人小队",
+      "自动返场",
+      "第四圈关闭"
+    ],
+    "oneLineRule": "三人小队中只要还有队友存活，被淘汰者就会按计时自动重新空降；到第四圈后关闭返场，之后每次死亡都不可逆。",
+    "mechanicChange": "Trios Revival 不再依赖旗帜和复活信标：只要一名队友仍在场，淘汰者会按计时重新空降。每次死亡和每个安全区阶段都会增加计时，队友造成伤害、击倒或淘汰敌人可以缩短计时；进入第四圈后返场关闭。",
+    "tempoImpact": "自动返场让队伍可以主动换血和持续追击，计时又把“进攻换复活速度”变成明确的团队资源。第四圈关闭返场后，前期积累的优势会突然转化为传统 BR 的终局压力。",
+    "designObservation": "复活机制如果同时奖励进攻行为，就能避免队伍被动等待计时结束。设置明确的关闭阶段，可以把高频试错限制在中前期，不让终局失去淘汰的重量。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/shockwave-patch-notes",
+    "imageUrl": "https://drop-assets.ea.com/images/73LZcTvYbM3uhhh9OC2yzP/7a50693cdf275227f9944c8ce0d42934/apex-hero-md-s22-articles-7x2-xl.jpg",
+    "imageSource": "EA Shockwave 官方补丁头图",
+    "launchDate": "2024-08-06",
+    "launchLabel": "2024年8月6日起限时开放",
+    "launchNote": "EA 官方 Shockwave 公告确认 Trios Revival 的自动返场、计时增减、无旗帜/信标和第四圈关闭规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-straight-shot-revival-2024",
+    "game": "Apex Legends",
+    "modeName": "直入战场：返场（Straight Shot Revival）",
+    "year": "2024",
+    "date": "2024-08-20",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "30 人",
+      "固定落点",
+      "无限返场"
+    ],
+    "oneLineRule": "30 名玩家从系统分配的地标上空快速落地，队友存活时可反复返场；进入后期阶段后返场关闭，最后一队获胜。",
+    "mechanicChange": "Straight Shot Revival 沿用直入战场的 30 人、无跳伞队长和预设地标规则，并加入 Trios Revival 的自动返场：队友存活时，淘汰者可在计时结束后重新空降。地图提高双持武器与轻机枪出现率，武器保持预装配件，敌人高亮和生命条默认开启。官方活动页写明返场持续到第 3 轮，补丁页另写为第 4 轮结束，具体轮次保留版本差异说明。",
+    "tempoImpact": "固定落点和预装配件把首战压到落地瞬间，自动返场又允许队伍持续试探。双持武器与轻机枪提高近距离火力密度；当返场在后期关闭，队伍必须迅速从进攻切回保命。",
+    "designObservation": "短局 BR 可以把“快速开始”和“失败可重试”绑定在同一模式里。把返场关闭点放在后期，能让玩家前半段学习规则、后半段仍然重视每次交战。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/temporal-chaos-event",
+    "imageUrl": "https://drop-assets.ea.com/images/5BDy3KSejsOpRXPh9FD8Ts/509b969b0b259a1db806c7c2a20c1286/ApexS22_TemporalChaos_Trailer_Thumbnails_3840x2160.jpg",
+    "imageSource": "EA Temporal Chaos 官方活动头图",
+    "launchDate": "2024-08-20",
+    "launchLabel": "2024年8月20日至9月3日限时开放",
+    "launchNote": "EA 官方 Temporal Chaos 活动确认 Straight Shot Revival 的 30 人、快速落点、预装配件和返场规则；不同官方页面对返场关闭轮次有第 3 轮/第 4 轮两种表述，待以版本记录进一步核对。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-quads-takeover-2024",
+    "game": "Apex Legends",
+    "modeName": "四人小队接管（Quads Takeover）",
+    "year": "2024",
+    "date": "2024-06-25",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "四人小队",
+      "15 队",
+      "队伍能力调整"
+    ],
+    "oneLineRule": "四人组成一队参加标准 BR，最多 15 支队伍同场争夺冠军；部分英雄技能和补给机制为第四名队友重新调校。",
+    "mechanicChange": "Quads Takeover 将队伍上限从三人扩展到四人，同场最多 15 队。为适应第四名队友，幻象跳伞诱饵、瓦尔基里终极技能、罗芭终极技能等队伍能力被重新调整，物资箱和复制器资源也提高；只有该模式允许四人组队排队。",
+    "tempoImpact": "第四名队友让队伍可以同时承担侦察、推进、支援和断后，但也提高了被多角度包夹的风险。资源增加和技能重调减少了四人队在常规 BR 中的明显短板。",
+    "designObservation": "扩大队伍规模必须同时处理信息沟通、技能人数和资源供给，否则只是把原有三人职责硬塞进更大队伍。把特殊技能和物资一起调整，能让新增队友产生新的分工而非重复占位。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/double-take-collection-event",
+    "imageUrl": "https://drop-assets.ea.com/images/60WdmcwEdKjkTvR9q76gXy/0df83a928861af46ed19be8bf8a28fec/ApexS21_Doubletake_KeyArt_3840x2160.jpg",
+    "imageSource": "EA Double Take 官方活动头图",
+    "launchDate": "2024-06-25",
+    "launchLabel": "2024年6月25日至7月9日限时开放",
+    "launchNote": "EA 官方 Double Take 活动与补丁确认 Quads 为四人小队接管，15 队同场，并对部分英雄技能、物资和排队人数做专门调整。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-akimbo-lmg-tdm-2024",
+    "game": "Apex Legends",
+    "modeName": "双持与轻机枪团队死斗（Akimbo & LMG Only Loadouts）",
+    "year": "2024",
+    "date": "2024-08-13",
+    "tags": [
+      "casual",
+      "power"
+    ],
+    "type": [
+      "团队死斗变体",
+      "仅双持与轻机枪",
+      "混合模式"
+    ],
+    "oneLineRule": "在混合模式的团队死斗地图上只使用双持武器与轻机枪，围绕特定武器池持续复活交战。",
+    "mechanicChange": "该限时团队死斗变体把可用武器限制为双持武器和轻机枪，首周在 Habitat、Skull Town、The Core 与 Zeus Station 轮换。双持武器提供更高射速与弹匣容量，轻机枪保留持续压制能力；团队死斗的连续复活和得分目标不变。",
+    "tempoImpact": "受限武器池让每次交战都围绕近距离爆发和持续压制展开，队伍需要根据地图路线选择双持突进或轻机枪封锁。没有狙击和步枪的远距离稳定解法，战斗热点更集中。",
+    "designObservation": "武器池限制可以在不改胜负目标的情况下改变团队死斗的空间距离。将两类互补武器放在同一池里，能让队伍在爆发和压制之间形成清晰分工。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/temporal-chaos-event",
+    "imageUrl": "https://drop-assets.ea.com/images/5BDy3KSejsOpRXPh9FD8Ts/509b969b0b259a1db806c7c2a20c1286/ApexS22_TemporalChaos_Trailer_Thumbnails_3840x2160.jpg",
+    "imageSource": "EA Temporal Chaos 官方活动头图",
+    "launchDate": "2024-08-13",
+    "launchLabel": "2024年8月13日至8月19日限时开放",
+    "launchNote": "EA 官方 Temporal Chaos/ Shockwave 页面把 Akimbo & LMG Only Loadouts 列为混合模式限时团队死斗武器池变体。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-mythic-mayhem-royale-2025",
+    "game": "Apex Legends",
+    "modeName": "神话狂欢大逃杀（Mythic Mayhem Royale）",
+    "year": "2025",
+    "date": "2025-02-11",
+    "tags": [
+      "br-ltm",
+      "power"
+    ],
+    "type": [
+      "神话武器",
+      "三人/双人小队",
+      "武器变体"
+    ],
+    "oneLineRule": "在三人或双人大逃杀中争夺神话补给，使用带有不同被动效果的 R-301 变体完成标准 BR 胜负。",
+    "mechanicChange": "Mythic Mayhem Royale 在补给中加入三种神话 R-301 变体：不同颜色分别强化移动与换弹、为小队恢复生命护盾，或提高暴击并在击倒时触发燃烧范围伤害。其他大逃杀流程保留，神话武器成为争夺热点。",
+    "tempoImpact": "三种武器效果对应机动、续航和爆发，队伍会围绕补给落点调整战术角色。击倒触发的范围伤害和团队恢复让持有者更容易把局部优势扩展为连续交战。",
+    "designObservation": "把能力集中在稀有武器，而不是改写整张地图，可以快速测试不同的战斗强化方向。颜色区分效果也让队友能在远距离读出队伍当前的战术倾向。",
+    "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/apex-legends%E2%84%A2-takeover-patch-notes/11885383",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA 官方 Apex 通用主视觉（论坛补丁页原图不稳定）",
+    "launchDate": "2025-02-11",
+    "launchLabel": "2025年2月11日至3月3日限时开放",
+    "launchNote": "EA 官方 Takeover 补丁列出 Mythic Mayhem Royale 及三种神话 R-301 变体效果；这是 BR 的限时武器规则变体。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-redemption-trios-duos-2025",
+    "game": "Apex Legends",
+    "modeName": "救赎三人/双人（Redemption Trios & Duos）",
+    "year": "2025",
+    "date": "2025-02-25",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "三人/双人小队",
+      "复活代币",
+      "无限返场"
+    ],
+    "oneLineRule": "每名玩家开局获得复活代币，被淘汰后可消耗代币重新部署；代币还可从击杀、补给和神话补给箱中取得。",
+    "mechanicChange": "Redemption Trios & Duos 为每名玩家开局发放一枚复活代币，玩家被淘汰后可用代币直接返场；比赛后段代币不再能使用，仍装备的代币会转化为进化护甲经验。额外代币来自击杀、补给箱和神话补给箱，普通复活信标仍可使用。",
+    "tempoImpact": "返场代币让队伍敢于主动抢夺高价值资源，击杀又能补充团队的返场库存。进入终局后返场停止，队伍需要提前把代币转化成位置和资源优势。",
+    "designObservation": "可消耗的返场资源比固定次数更容易形成局内经济：玩家既能用它降低当前损失，也能保留它换取后期成长。额外代币来源把交战、抢箱和风险路线串成同一条循环。",
+    "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/apex-legends%E2%84%A2-takeover-patch-notes/11885383",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA 官方 Apex 通用主视觉（论坛补丁页原图不稳定）",
+    "launchDate": "2025-02-25",
+    "launchLabel": "2025年2月25日至3月3日限时开放",
+    "launchNote": "EA 官方 Takeover 补丁确认 Redemption Trios & Duos 的开局复活代币、击杀/补给获取、终局禁用和进化经验转换规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-relic-weapons-trios-duos-2025",
+    "game": "Apex Legends",
+    "modeName": "遗物武器三人/双人（Relic Weapons Trios & Duos）",
+    "year": "2025",
+    "date": "2025-03-04",
+    "tags": [
+      "br-ltm",
+      "power"
+    ],
+    "type": [
+      "三人/双人小队",
+      "金色与神话武器",
+      "全配件枪械"
+    ],
+    "oneLineRule": "在三人或双人大逃杀中，地面武器只出现全配件的金色或神话等级，围绕高强度武器争夺完成标准 BR 胜负。",
+    "mechanicChange": "Relic Weapons Trios & Duos 将地面武器池限制为金色与神话等级，武器自带除瞄具外的大部分配件；补给箱每轮增加神话武器，玩家可以更换瞄具但不能自由重配整把枪。进化值获取和普通搜刮比例也相应调整。",
+    "tempoImpact": "高品质全配件武器减少了整理时间，玩家可以更早进入中距离交战；补给箱携带第二把神话武器，会把队伍进一步吸引到公开资源点。",
+    "designObservation": "当所有武器都带有鲜明能力时，地图探索的重点会从“找一把能用的枪”转向“选择哪种完整方案”。限制瞄具可更换范围，能保留少量个性化决策而不让配装重新变成漫长流程。",
+    "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/apex-legends%E2%84%A2-takeover-patch-notes/11885383",
+    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
+    "imageSource": "EA 官方 Apex 通用主视觉（论坛补丁页原图不稳定）",
+    "launchDate": "2025-03-04",
+    "launchLabel": "2025年3月4日至3月10日限时开放",
+    "launchNote": "EA 官方 Takeover 补丁确认 Relic Weapons Trios & Duos 的金色/神话武器池、全配件武器和神话补给规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
   }
 ]
