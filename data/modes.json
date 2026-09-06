@@ -9364,5 +9364,131 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-mecha-fusion-2024.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-bloodmoon-awakening-2024",
+    "game": "PUBG Mobile",
+    "modeName": "血月觉醒（Bloodmoon Awakening）",
+    "year": "2024",
+    "date": "2024-09-11",
+    "tags": [
+      "br-ltm",
+      "pve",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "吸血鬼与狼人",
+      "复活区域"
+    ],
+    "oneLineRule": "在血月主题 BR 中探索猩红城堡，利用传送门、变身能力和城堡资源与其他队伍争夺最终胜利。",
+    "mechanicChange": "官方 3.4 版本在 Erangel、Sanhok 和 Livik 开放血月觉醒：猩红城堡通过城外传送门进入，城堡内有物资箱、可躲藏的棺材和仪式宝箱；玩家还能围绕吸血鬼、狼人战士和首领德古拉使用主题能力。",
+    "tempoImpact": "城堡传送门和限时复活让高价值区域形成二次交战点，变身与首领事件则让队伍在搜刮、追击和撤离之间持续切换。",
+    "designObservation": "把高收益城堡做成可进入的独立空间，再用变身和可复活规则延长冲突，可以让主题内容同时改变路线选择、失败成本和队伍分工。",
+    "sourceUrl": "https://pubgmobile.jp/version-3-4-0-patch-notes-20240911/",
+    "launchDate": "2024-09-11",
+    "launchLabel": "2024年9月11日至11月11日限时开放",
+    "launchNote": "官方 3.4.0 补丁确认该主题模式开放地图、猩红城堡、传送门、主题变身与复活规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-bloodmoon-awakening-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-bloodmoon-arena-2024",
+    "game": "PUBG Mobile",
+    "modeName": "血月主题竞技场（Bloodmoon Theme Arena）",
+    "year": "2024",
+    "date": "2024-09-11",
+    "tags": [
+      "br-ltm",
+      "objective",
+      "arena"
+    ],
+    "type": [
+      "主题竞技场",
+      "无限复活",
+      "击杀计分"
+    ],
+    "oneLineRule": "在猩红城堡竞技场中限时反复返场，以累计击杀数决定胜负。",
+    "mechanicChange": "血月觉醒主题模式内的猩红城堡提供独立竞技场：比赛有时间限制，玩家可以无限复活，最终按队伍或个人累计击杀数结算。",
+    "tempoImpact": "无限返场降低了单次淘汰的退出成本，队伍可以更主动地争夺城堡中心和连续枪线；时间倒计时会把后半段节奏推向密集交战。",
+    "designObservation": "在大逃杀主题区域里嵌入短时击杀竞技场，可以把探索型高收益点转化为明确的战斗挑战，同时用无限复活保持参与感。",
+    "sourceUrl": "https://pubgmobile.jp/version-3-4-0-patch-notes-20240911/",
+    "launchDate": "2024-09-11",
+    "launchLabel": "2024年9月11日随血月觉醒主题玩法开放",
+    "launchNote": "官方补丁将其列为血月觉醒主题模式内的主题竞技场，明确规则为限时无限复活、按总击杀数竞争。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-bloodmoon-arena-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-icemire-frontier-2024",
+    "game": "PUBG Mobile",
+    "modeName": "冰原前线（Icemire Frontier）",
+    "year": "2024",
+    "date": "2024-11-12",
+    "tags": [
+      "br-ltm",
+      "pve",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "主题 BR",
+      "冰龙首领",
+      "地下矿区"
+    ],
+    "oneLineRule": "在冰原主题 BR 中探索 Frostheim 和魔法水晶矿场，解锁冰龙、秘宝和特殊交通工具，同时继续争夺大逃杀胜利。",
+    "mechanicChange": "官方 3.5 版本在 Erangel、Vikendi 和 Livik 开放冰原前线：Frostheim 的冰龙雕像倒计时结束后会解锁水晶冰龙和龙之补给箱；魔法水晶矿场连接地上与地下，厳冬之门可通往最多三队进入的秘宝龙巢穴。地图还加入冰球变身、冰魂武器、恢复道具和猛犸等特殊载具。",
+    "tempoImpact": "冰龙雕像、地下矿场和龙巢穴把队伍从地表搜刮引向分层战斗；限时宝库与首领掉落制造强烈的路线争夺，猛犸和剑齿虎则改变转点速度。",
+    "designObservation": "通过“地表—地下—首领巢穴”的层级路线把探索奖励逐步加码，再用最多三队的进入限制控制 PvE 战利品竞争，能同时制造合作与冲突。",
+    "sourceUrl": "https://pubgmobile.jp/version-3-5-0-patch-notes-20241112/",
+    "launchDate": "2024-11-12",
+    "launchLabel": "2024年11月12日至2025年1月8日限时开放",
+    "launchNote": "官方 3.5.0 补丁确认开放地图、Frostheim、魔法水晶矿场、冰龙首领、秘宝龙巢穴和特殊载具。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-icemire-frontier-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-icemire-arena-2024",
+    "game": "PUBG Mobile",
+    "modeName": "冰原主题竞技场（Icemire Theme Arena）",
+    "year": "2024",
+    "date": "2024-11-12",
+    "tags": [
+      "br-ltm",
+      "objective",
+      "arena"
+    ],
+    "type": [
+      "主题竞技场",
+      "无限复活",
+      "击杀计分"
+    ],
+    "oneLineRule": "在魔法水晶矿场的主题竞技场中限时无限返场，以总击杀数争夺胜利。",
+    "mechanicChange": "冰原前线主题模式把魔法水晶矿场的一部分设置为主题竞技场：比赛限时进行，玩家可以无限复活，最终按累计击杀数决定结果。",
+    "tempoImpact": "无限复活让队伍能持续试探矿场通道和高低差，限时计分又迫使玩家在倒计时结束前主动寻找交战。",
+    "designObservation": "同一主题区域既承担 PvE 探索，又能切换成高频竞技场，使地图资产在“搜集奖励”和“直接对抗”之间复用。",
+    "sourceUrl": "https://pubgmobile.jp/version-3-5-0-patch-notes-20241112/",
+    "launchDate": "2024-11-12",
+    "launchLabel": "2024年11月12日随冰原前线主题玩法开放",
+    "launchNote": "官方补丁将其列为冰原前线主题模式内的主题竞技场，明确规则为限时无限复活、按总击杀数竞争。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-icemire-arena-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
