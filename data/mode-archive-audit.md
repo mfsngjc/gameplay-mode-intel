@@ -198,3 +198,9 @@
 - 复核 EA 官方 [Beast Mode 活动公告](https://forums.ea.com/blog/apex-legends-game-info-hub-en/breakthrough-in-the-beast-mode-event/12042675)：公告明确列出 `LTM: April Fools`，开放窗口为 2025-04-01 至 2025-04-07，并说明这是回归的 remix 版本；正文没有公开本次具体武器、道具、地图或胜负改动。新增 `apex-april-fools-2025`，中文字段只记录已确认事实，加入 `needs_review`，不沿用历年愚人节规则推断本次内容。
 - 复核 EA 官方 [Temporal Chaos 活动公告](https://www.ea.com/games/apex-legends/apex-legends/news/temporal-chaos-event)：开篇明确点名 `Straight Shot Rumble` 与 Straight Shot Revival 同期回归，但正文没有给出该乱斗的参赛人数、计分、复活、奖励或准确开放窗口。新增 `apex-straight-shot-rumble-2024`，加入 `needs_review`，不把其他 Straight Shot 变体规则套用到本卡。
 - 这两张卡均使用官方 Apex 通用/活动主视觉作为封面，并保留官方来源链接；后续定时任务应继续扫描 EA 活动页、补丁说明和游戏内排期，拿到正式规则后更新中文字段并移除 `needs_review`。
+
+## 2026-09-07 Free Fire Operation Chrono 模式补漏
+
+- 复核 [Free Fire India Official 的 Cosmic Racer 模式教程](https://www.youtube.com/watch?v=T66mnRvvGfE) 与 Garena 7 周年补丁中对 Cosmic Racer 的后续优化：`Cosmic Racer` 是 15 支双人队伍驾驶战斗载具的限时 BR，驾驶位与炮手位可交换，黄色/绿色/红色强化物分别承担载具升级、恢复和技能增益。新增 `free-fire-cosmic-racer-2020`，补齐中文规则、节奏和设计观察，并使用本地整理封面。
+- 复核 [Free Fire India Official 的 The Chosen One 模式教程](https://www.youtube.com/watch?v=FrkBlE3kNDY)：`The Chosen One` 是两支 4 人队伍的积分对抗，先到 40 分获胜；随机单挑胜者为队伍赢得 30 秒双倍得分窗口。新增 `free-fire-chosen-one-2020`，补齐中文规则、节奏和设计观察，并使用本地整理封面。
+- 两张卡的上线窗口按 Operation Chrono 的公开排期记录为 2020 年 12 月；官方 India 账号教程确认玩法与模式名称，后续定时任务继续寻找全球 Garena 页面中的首发排期原文。

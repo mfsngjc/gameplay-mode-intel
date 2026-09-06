@@ -717,9 +717,9 @@
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 97,
-      "coverCount": 97,
-      "readableDescriptionCount": 97,
+      "modeCount": 99,
+      "coverCount": 99,
+      "readableDescriptionCount": 99,
       "modeIds": [
         "free-fire-clash-squad-2019",
         "free-fire-bomb-squad-2019",
@@ -817,7 +817,9 @@
         "free-fire-anniversary-tasks-2026",
         "free-fire-craftland-pve-rush-2022",
         "free-fire-craftland-pve-endurance-2022",
-        "free-fire-lone-wolf-cup-2023"
+        "free-fire-lone-wolf-cup-2023",
+        "free-fire-cosmic-racer-2020",
+        "free-fire-chosen-one-2020"
       ],
       "officialSourceUrls": [
         "https://ff.garena.com/en-pk/article/633/",
@@ -993,9 +995,11 @@
         "https://ff.garena.com/en/article/999/",
         "https://ff.garena.com/es/article/1120/",
         "https://ff.garena.com/id/article/1150",
-        "https://ff.garena.com/id/article/209/"
+        "https://ff.garena.com/id/article/209/",
+        "https://www.youtube.com/watch?v=T66mnRvvGfE",
+        "https://www.youtube.com/watch?v=FrkBlE3kNDY"
       ],
-      "notes": "已复核 Garena 2017–2026 官方 API 索引与 OB 补丁档案；本轮继续核对 2026-09-03 的 1701 奖项公告，未发现新的独立对局模式，历史与未来扫描保持 ongoing_backfill。已将全部 Free Fire 已入库卡片的官方来源 URL 与历史索引统一登记，避免来源台账与卡片脱节。",
+      "notes": "已复核 Garena 2017–2026 官方 API 索引与 OB 补丁档案；本轮补入 Operation Chrono 期间的 Cosmic Racer 与 The Chosen One，使用 Free Fire India Official 模式教程逐项补齐车辆、积分和单挑规则；历史与未来扫描保持 ongoing_backfill。已将全部 Free Fire 已入库卡片的官方来源 URL 与历史索引统一登记。",
       "updatedAt": "2026-09-07",
       "officialArchiveIndexUrls": [
         "https://ff.garena.com/en/news/20/",

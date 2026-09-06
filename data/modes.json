@@ -14307,5 +14307,67 @@
       "br"
     ],
     "isLtm": true
+  },
+  {
+    "id": "free-fire-cosmic-racer-2020",
+    "game": "Free Fire",
+    "modeName": "宇宙竞速（Cosmic Racer）",
+    "year": "2020",
+    "date": "2020-12-13",
+    "tags": [
+      "br-ltm",
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "双人载具 BR",
+      "车辆共享生命",
+      "强化拾取"
+    ],
+    "oneLineRule": "15 支双人小队驾驶战斗载具在 BR 地图中互相追击，收集强化物资、攻击其他载具，最后仍存活的小队获胜。",
+    "mechanicChange": "每支队伍共用一辆 Cosmic Craft 和一条载具生命值：一名玩家驾驶，另一名玩家操作车载武器，队友可以交换座位。黄色强化物用于升级载具并解锁更强武器，绿色强化物恢复载具生命并提供治疗，红色强化物提供技能或增益；载具生命归零时整队淘汰。",
+    "tempoImpact": "玩家不再围绕枪械搜刮和徒步转点，而是围绕强化物、车速和射击角度持续追逐。驾驶与射击的座位交换会把双人协作变成即时操作决策，剩余队伍减少后战斗空间快速收束。",
+    "designObservation": "把 BR 的生存目标绑定到共享载具生命，可以让双人队伍在移动、攻击和资源争夺之间保持持续互动；驾驶和炮手的职责互补，也让“位置”本身成为可切换的战术资源。",
+    "sourceUrl": "https://www.youtube.com/watch?v=T66mnRvvGfE",
+    "imageUrl": "assets/modes/generated/free-fire-cosmic-racer-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2020-12-13",
+    "launchLabel": "2020年12月13日至12月27日（Operation Chrono 限时开放）",
+    "launchNote": "Free Fire India Official 的模式教程确认 Cosmic Racer 为双人载具竞速 BR；首发排期来自 Operation Chrono 活动档案的公开日历，后续若找到全球官方公告将继续补充。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "free-fire-chosen-one-2020",
+    "game": "Free Fire",
+    "modeName": "天选之子（The Chosen One）",
+    "year": "2020",
+    "date": "2020-12-19",
+    "tags": [
+      "warfare",
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "4v4 团队积分",
+      "随机单挑",
+      "双倍得分窗口"
+    ],
+    "oneLineRule": "两支 4 人队伍通过淘汰对手累积积分，先达到 40 分的一队获胜；对局中随机抽取两名玩家进行单挑，胜者为队伍赢得短暂双倍得分时间。",
+    "mechanicChange": "模式把 Clash Squad 的团队对抗改成直接积分竞速：每次淘汰都会给队伍加分，先到 40 分结束对局。系统会随机选出两名玩家进行一对一决斗，获胜者的队伍获得 30 秒 Bonus Time，期间每次淘汰获得双倍积分。",
+    "tempoImpact": "基础淘汰积分让队伍持续寻找交战，随机单挑则制造短暂的高价值焦点；双倍得分窗口会把全队注意力集中到连续击杀，形成“常规交火—单挑—爆发追分”的循环。",
+    "designObservation": "把个人单挑嵌入团队积分赛，可以同时制造个人荣誉和团队追分目标；关键在于让单挑结果带来的收益足够改变战局，但不会完全取代队伍协作。",
+    "sourceUrl": "https://www.youtube.com/watch?v=FrkBlE3kNDY",
+    "imageUrl": "assets/modes/generated/free-fire-chosen-one-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2020-12-19",
+    "launchLabel": "2020年12月19日至12月27日（Operation Chrono 限时开放）",
+    "launchNote": "Free Fire India Official 的 Operation Chrono 模式教程确认名称与 4v4 玩法；40 分、随机单挑和 30 秒双倍得分规则与同期官方活动报道一致。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true
   }
 ]
