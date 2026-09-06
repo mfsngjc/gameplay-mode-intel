@@ -9028,5 +9028,65 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-snow-paradise-2019.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-war-2018",
+    "game": "PUBG Mobile",
+    "modeName": "战争模式：首发（War Mode）",
+    "year": "2018",
+    "date": "2018-07-25",
+    "tags": [
+      "warfare",
+      "casual"
+    ],
+    "type": [
+      "快速街机",
+      "团队复活",
+      "击杀积分"
+    ],
+    "oneLineRule": "在 Arcade 的 War 模式中进行更快节奏的团队对抗，依靠持续交战和击杀积分争夺胜利。",
+    "mechanicChange": "0.7.0 补丁首次加入 War：它把街机模式改造成更高频的团队战斗，并以复活与积分目标替代一次淘汰出局的压力。",
+    "tempoImpact": "玩家可以更快回到战斗，落点和路线围绕交战热点展开；短复活间隔让枪法练习和团队拉扯持续发生。",
+    "designObservation": "War 通过复活和积分把 BR 的单次生存目标改成可重复对抗，是移动端射击游戏用同一张地图承载练习型玩法的早期案例。",
+    "sourceUrl": "https://www.pubgmobile.com/TW/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201807/743855.shtml",
+    "launchDate": "2018-07-25",
+    "launchLabel": "2018年7月25日 0.7.0 补丁",
+    "launchNote": "官方 0.7.0 补丁将 Arcade Mode - War 列为全新、更快节奏的街机变体；本卡记录首发，2019 年重新纳入轮换的版本另行记录。",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-war-2018.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-new-age-resource-management-2021",
+    "game": "Free Fire",
+    "modeName": "新纪元：资源管理活动（New Age Resource Activity）",
+    "year": "2021",
+    "date": "2021-12-17",
+    "tags": [
+      "objective",
+      "casual"
+    ],
+    "type": [
+      "资源管理",
+      "基地建设",
+      "活动玩法"
+    ],
+    "oneLineRule": "在 New Age 活动期间管理资源、建设基地并为 Alpine 居民提供补给，完成阶段目标换取主题奖励。",
+    "mechanicChange": "官方把传统对枪之外的资源循环放进活动：玩家收集和分配资源、扩建基地、推进补给任务，同时体验暴风雪主题地图环境。",
+    "tempoImpact": "对局外的任务节奏从单纯淘汰转向持续投入与回报；资源路线和阶段目标让玩家有理由反复回到活动区域。",
+    "designObservation": "资源管理活动把 BR 世界的主题叙事转成可操作的建设目标，适合用低压力任务扩展地图寿命，但必须让资源产出和奖励反馈足够清晰。",
+    "sourceUrl": "https://ff.garena.com/en/article/550",
+    "launchDate": "2021-12-17",
+    "launchLabel": "2021年12月17日 New Age 活动开启",
+    "launchNote": "官方公告将其定义为 New Age 期间新增的 resource management activity；它不是独立匹配模式，因此按活动玩法归档。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-new-age-resource-management-2021.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]

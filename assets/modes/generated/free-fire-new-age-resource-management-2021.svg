@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">新纪元：资源管理活动（New Age Resource Activity） · Free Fire</title>
+  <desc id="desc">本地整理封面，依据官方模式资料制作。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9e402d"/><stop offset="1" stop-color="#ffad70"/></linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse" patternTransform="rotate(25)"><path d="M0 0H48V48" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <circle cx="1050" cy="110" r="210" fill="#fff" fill-opacity=".08"/><circle cx="1130" cy="580" r="300" fill="#000" fill-opacity=".12"/>
+  <path d="M0 540L360 390 620 475 1200 250V675H0Z" fill="#000" fill-opacity=".16"/>
+  <text x="84" y="88" class="meta" fill="#fff">GAMEPLAY ARCHIVE  /  Free Fire  /  2021</text>
+  <rect x="84" y="122" width="116" height="5" rx="2.5" fill="#fff" fill-opacity=".75"/>
+  <text x="84" y="290" class="title">新纪元：资源管理活动</text>
+  <text x="84" y="350" class="subtitle">（New Age Resource Activity）</text>
+  <text x="84" y="552" class="label">CASUAL  ·  本地整理封面</text>
+  <text x="84" y="592" class="note">依据官方模式资料制作 / 官方原图待确认</text>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    .meta { font-size: 22px; letter-spacing: 3px; font-weight: 650; }
+    .title { font-size: 68px; font-weight: 780; fill: #fff; }
+    .subtitle { font-size: 38px; font-weight: 650; fill: #fff; fill-opacity: .9; }
+    .label { font-size: 23px; letter-spacing: 2px; font-weight: 700; fill: #fff; }
+    .note { font-size: 18px; fill: #fff; fill-opacity: .72; }
+  </style>
+</svg>

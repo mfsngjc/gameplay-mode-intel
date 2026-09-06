@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 77,
-      "coverCount": 77,
-      "readableDescriptionCount": 77,
+      "modeCount": 78,
+      "coverCount": 78,
+      "readableDescriptionCount": 78,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -404,7 +404,8 @@
         "pubgm-ranked-assault-2025",
         "pubgm-ranked-domination-2025",
         "pubgm-arcade-mode-2018",
-        "pubgm-snow-paradise-2019"
+        "pubgm-snow-paradise-2019",
+        "pubgm-war-2018"
       ],
       "officialSourceUrls": [
         "https://pubgmobile.jp/version-3-7-0-patch-notes-20250308/",
@@ -457,15 +458,16 @@
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202205/915279.shtml",
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/m22521/202211/925426.shtml",
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/m22521/202301/928128.shtml",
-        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60922/60923/60924/60926/m22609/202204/913942.shtml"
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60922/60923/60924/60926/m22609/202204/913942.shtml",
+        "https://www.pubgmobile.com/TW/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201807/743855.shtml"
       ],
-      "notes": "已回溯 0.4–4.3 版本及 2018–2026 主题、竞技和街机玩法页面；本轮补入 0.4.0 Arcade Mode 与 0.16.0 Snow Paradise。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
+      "notes": "已回溯 0.4–4.3 版本及 2018–2026 主题、竞技和街机玩法；本轮补入 0.7.0 Arcade Mode - War 首发记录。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 76,
-      "coverCount": 76,
-      "readableDescriptionCount": 76,
+      "modeCount": 77,
+      "coverCount": 77,
+      "readableDescriptionCount": 77,
       "modeIds": [
         "free-fire-clash-squad-2019",
         "free-fire-bomb-squad-2019",
@@ -542,7 +544,8 @@
         "free-fire-gloo-wall-relay-2025",
         "free-fire-target-arcade-2020",
         "free-fire-football-fire-social-island-2022",
-        "free-fire-bomb-squad-5v5-2022"
+        "free-fire-bomb-squad-5v5-2022",
+        "free-fire-new-age-resource-management-2021"
       ],
       "officialSourceUrls": [
         "https://ff.garena.com/en-pk/article/641/",
@@ -600,7 +603,7 @@
         "https://ff.garena.com/id/article/1150",
         "https://ff.garena.com/id/article/209/"
       ],
-      "notes": "已回溯 2018–2026 的公开官方资料，覆盖 OB47–OB54、Craftland、周年活动与早期模式；本轮补入 2022 Winterlands 补丁的 Football Fire - Social Island 与 Bomb Squad 5v5。仍需继续核对区域公告、早期活动和后续版本空窗。"
+      "notes": "已回溯 2018–2026 的公开官方资料，覆盖 OB47–OB54、Craftland、周年活动、早期模式与 New Age 资源管理活动；本轮补入 2021 New Age 活动玩法。仍需继续核对区域公告、早期活动和后续版本空窗。"
     }
   }
 }
