@@ -6055,5 +6055,194 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-epic-fight-2026.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-imagiversary-2023",
+    "game": "PUBG Mobile",
+    "modeName": "想象周年（Imagiversary）",
+    "year": "2023",
+    "date": "2023-03-18",
+    "tags": [
+      "br-core",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "建造资源",
+      "复活卡",
+      "主题 BR"
+    ],
+    "oneLineRule": "在 Erangel 和 Livik 的五周年主题 BR 中收集建造资源，完成广场建筑并获得补给和复活卡，用可建造空间改变路线。",
+    "mechanicChange": "官方五周年玩法在地图加入 Imagination Square、Imagination Block、建造礼物和物资转换器：玩家消耗建造资源完成四处建筑后可领取大量补给，进入广场还会自动获得限时复活卡；多功能大炮和便携蹦床改变转点。",
+    "tempoImpact": "建造点把队伍从常规搜刮路线拉到公开目标，复活卡降低了第一次冒险的淘汰成本，多功能大炮则把广场连接成更快的转点节点。",
+    "designObservation": "建造主题把“收集—建设—奖励”变成一条可见的 BR 目标链；限时复活卡把高风险热点转成值得主动争夺的空间。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Imagiversary/",
+    "launchDate": "2023-03-18",
+    "launchLabel": "2023年3月18日至5月16日五周年主题玩法",
+    "launchNote": "官方页面确认 Erangel/Livik、Imagination Square、建造资源、复活卡和物资转换器；地区开放时间可能存在时差。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-imagiversary-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-dinoground-2023",
+    "game": "PUBG Mobile",
+    "modeName": "恐龙地境（Dinoground）",
+    "year": "2023",
+    "date": "2023-05-16",
+    "tags": [
+      "br-core",
+      "pve",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "恐龙坐骑",
+      "地图首领",
+      "PVE 驯服"
+    ],
+    "oneLineRule": "在主题 BR 中探索恐龙聚落和原始区域，击败或驯服恐龙作为坐骑，并争夺会刷新高价值物资的霸王龙区域。",
+    "mechanicChange": "官方 Dinoground 页面加入 90×90 的恐龙聚落，开局一段时间后会出现可由队伍共同骑乘的霸王龙；原始区域还会生成翼龙和迅猛龙，玩家击败后可以驯服并骑乘，地图内附带套圈、跳跃和孵化等小游戏。",
+    "tempoImpact": "恐龙坐骑提高了跨地形转移速度，恐龙聚落和霸王龙刷新点又会制造高收益公共目标，队伍必须在移动效率与暴露风险之间选择。",
+    "designObservation": "主题坐骑不只是载具换皮；当坐骑需要驯服、拥有独特移动能力并绑定公共热点时，它会同时改变路线、追击和争夺节奏。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Dinoground/",
+    "launchDate": "2023-05-16",
+    "launchLabel": "2023年5月16日至6月18日主题玩法",
+    "launchNote": "官方页面确认恐龙聚落、霸王龙、原始区域、PVE 恐龙和驯服坐骑；官方频道后来宣布该玩法回归，暂不另建重复卡。",
+    "gameplayTypes": [
+      "br",
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-dinoground-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-frozen-kingdom-2023",
+    "game": "PUBG Mobile",
+    "modeName": "冰雪王国（Frozen Kingdom）",
+    "year": "2023",
+    "date": "2023-11-07",
+    "tags": [
+      "br-core",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "冰雪掩体",
+      "雪轨移动",
+      "主题任务"
+    ],
+    "oneLineRule": "在冰雪主题 BR 中使用雪球枪制造掩体、冻结水面和限制敌人，并利用雪轨、滑雪板与驯鹿穿越雪村。",
+    "mechanicChange": "官方 Frost Festival 主题玩法加入 Snowball Blaster：可以生成雪堆掩体、把敌人变成雪人并冻结水面；雪村的 Snow Rail 只允许使用雪球枪，地图还加入滑雪板、驯鹿和寻找雪童任务。",
+    "tempoImpact": "冰雪掩体和雪轨让遮蔽、转点和追击路线不断变化，红区的雪球炸弹还会把普通危险区变成临时地形事件。",
+    "designObservation": "环境主题通过可建造掩体和移动限制直接进入枪战；雪球枪同时提供进攻、封路和垂直移动能力，形成一套完整的主题工具箱。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+    "launchDate": "2023-11-07",
+    "launchLabel": "2023年11月7日至2024年1月7日冬季主题玩法",
+    "launchNote": "官方页面确认 Frozen Kingdom、Snowball Blaster、Snow Rail、滑雪板和驯鹿；圣诞追加内容的开放时间另在页面中标注。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-frozen-kingdom-2023.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-skyhigh-spectacle-2024",
+    "game": "PUBG Mobile",
+    "modeName": "云端盛景（Skyhigh Spectacle）",
+    "year": "2024",
+    "date": "2024-03-12",
+    "tags": [
+      "br-core",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "浮空岛",
+      "飞毯载具",
+      "传送门寻宝"
+    ],
+    "oneLineRule": "在 BR 中选择白昼或夜晚的 Nimbus Island，利用飞毯、天空宝船和传送门寻找宝箱，并在岛屿消失前完成撤离。",
+    "mechanicChange": "官方 Skyhigh Spectacle 玩法加入两种 Nimbus Island：白昼岛适合正面交战，夜晚岛适合隐蔽；岛屿有倒计时且不会受到蓝区伤害，玩家获得复活卡。飞毯可以低空射击或高空加速，Portal Staff 可传送玩家、载具和投掷物，藏宝图则标记普通与高级宝箱。",
+    "tempoImpact": "浮空岛、天空宝船和传送门形成多条垂直转点路线，倒计时把搜宝、复活和返回地面压缩到一段明确的中期窗口。",
+    "designObservation": "限时空中空间同时提供资源、复活与高机动工具，关键是通过倒计时和岛屿消失限制收益，避免主题区域取代主地图。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
+    "launchDate": "2024-03-12",
+    "launchLabel": "2024年3月12日随 3.1 版本加入",
+    "launchNote": "官方页面确认 Nimbus Island、飞毯、天空宝船、Portal Staff、藏宝图和复活卡；全球开放时间以版本地区为准。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-skyhigh-spectacle-2024.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-sacred-quartet-2025",
+    "game": "PUBG Mobile",
+    "modeName": "四象奇境（Sacred Quartet）",
+    "year": "2025",
+    "date": "2025-01-08",
+    "tags": [
+      "br-core",
+      "power",
+      "objective"
+    ],
+    "type": [
+      "元素能力",
+      "试炼区域",
+      "熊猫载具"
+    ],
+    "oneLineRule": "在主题 BR 中进入四象宗门和元素试炼区域，收集元素能力、完成挑战并争夺隐藏宝藏，同时利用熊猫载具与新道具转点。",
+    "mechanicChange": "官方 Sacred Quartet 玩法把四象宗门、元素装置和 Elemental Mastery Pavilion 放进 Erangel、Livik、Sanhok；火、风、水、木等元素能力改变移动和交战，地图还加入焊枪、熊猫载具等主题工具。",
+    "tempoImpact": "元素能力让队伍在短时间内获得不同的接近、脱离或控场方式，试炼区域则把能力收益集中到可预测的公共热点。",
+    "designObservation": "能力主题需要让每个元素承担清晰的移动或战斗职责；试炼场和隐藏宝藏把能力学习转成一次可被争夺的地图事件。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Sacred-Quartet/",
+    "launchDate": "2025-01-08",
+    "launchLabel": "2025年1月8日至3月5日主题玩法",
+    "launchNote": "官方页面确认四象宗门、元素能力、试炼区域、焊枪和熊猫；春节追加内容作为同一模式的中期更新处理。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-sacred-quartet-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-transformers-2025",
+    "game": "PUBG Mobile",
+    "modeName": "变形金刚主题玩法（Transformers）",
+    "year": "2025",
+    "date": "2025-07-08",
+    "tags": [
+      "br-core",
+      "power",
+      "space",
+      "objective"
+    ],
+    "type": [
+      "变形载具",
+      "联动首领",
+      "高机动转点"
+    ],
+    "oneLineRule": "在主题 BR 中使用可变形的联动载具和高机动道具，围绕 Optimus Prime 与 Megatron 的战斗事件争夺资源和位置。",
+    "mechanicChange": "官方联动页面将 Transformers 作为 3.9 版本主题玩法：Optimus Prime 与 Megatron 在地图上展开对抗，玩家可获得 Cosmic Hoverboard、Neon Outpost 和 Astro Den 等联动内容，并在战斗中利用变形与高机动路线。",
+    "tempoImpact": "变形载具和悬浮板让队伍更快切入热点，联动首领战会把原本分散的地图战斗聚集到可读的公共事件。",
+    "designObservation": "跨 IP 载具的价值在于改变移动和接战，而不是只替换外观；首领事件则为全队提供共享的风险与收益锚点。",
+    "sourceUrl": "https://www.pubgmobile.com/en/event/Official-Transformers-Collaboration/",
+    "launchDate": "2025-07-08",
+    "launchLabel": "2025年7月8日随 3.9 版本开放",
+    "launchNote": "官方联动页面确认 Transformers 主题玩法、Optimus Prime 与 Megatron 对抗、Neon Outpost 和 Cosmic Hoverboard。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-transformers-2025.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]

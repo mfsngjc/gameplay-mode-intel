@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 28,
-      "coverCount": 28,
-      "readableDescriptionCount": 28,
+      "modeCount": 34,
+      "coverCount": 34,
+      "readableDescriptionCount": 34,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -355,7 +355,13 @@
         "pubgm-jujutsu-kaisen-themed-2021",
         "pubgm-unfail-2025",
         "pubgm-vibrant-anniversary-2022",
-        "pubgm-ocean-odyssey-2024"
+        "pubgm-ocean-odyssey-2024",
+        "pubgm-imagiversary-2023",
+        "pubgm-dinoground-2023",
+        "pubgm-frozen-kingdom-2023",
+        "pubgm-skyhigh-spectacle-2024",
+        "pubgm-sacred-quartet-2025",
+        "pubgm-transformers-2025"
       ],
       "officialSourceUrls": [
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202011/874641.shtml",
@@ -381,9 +387,15 @@
         "https://www.pubgmobile.com/en/event/JUJUTSUKAISEN/",
         "https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-400/",
         "https://www.pubgmobile.com/en/event/Vibrant-Anniversary/",
-        "https://www.pubgmobile.com/en/event/Ocean-Odyssey/"
+        "https://www.pubgmobile.com/en/event/Ocean-Odyssey/",
+        "https://www.pubgmobile.com/en/event/Imagiversary/",
+        "https://www.pubgmobile.com/en/event/Dinoground/",
+        "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+        "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
+        "https://www.pubgmobile.com/en/event/Sacred-Quartet/",
+        "https://www.pubgmobile.com/en/event/Official-Transformers-Collaboration/"
       ],
-      "notes": "已回溯 0.12–4.0 版本及 2022–2025 主题玩法页面，新增 Vibrant Anniversary、Ocean Odyssey、Gear Front、Royale Arena: Assault、Martial Showdown、Misty Port、Zombie’s Edge、Dragon Ball Super、Shadow Force、Jujutsu Kaisen、Unfail 等玩法；仍需继续覆盖 2023 年后及更早的版本公告。"
+      "notes": "已回溯 0.12–4.0 版本及 2022–2025 主题玩法页面，新增 Vibrant Anniversary、Imagiversary、Dinoground、Frozen Kingdom、Skyhigh Spectacle、Ocean Odyssey、Sacred Quartet、Transformers、Gear Front、Royale Arena: Assault、Martial Showdown、Misty Port、Zombie’s Edge、Dragon Ball Super、Shadow Force、Jujutsu Kaisen、Unfail 等玩法；仍需继续覆盖更早版本与 2026 年后续公告。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
