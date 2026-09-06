@@ -10451,5 +10451,37 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/free-fire-zombie-invasion-2022.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-jujutsu-clash-2026",
+    "game": "Free Fire",
+    "modeName": "咒术对决 4v4（Jujutsu Clash）",
+    "year": "2026",
+    "date": "2026-01-09",
+    "tags": [
+      "warfare",
+      "objective",
+      "power"
+    ],
+    "type": [
+      "4v4 枪王对决",
+      "咒术武器",
+      "空投争夺"
+    ],
+    "oneLineRule": "在 Clash Squad 的 4v4 咒术对决中购买或争夺咒术武器，利用领域与特殊工具赢下回合。",
+    "mechanicChange": "官方 OB52 补丁把 4V4 Jujutsu Clash 列为 Clash Squad 玩法：CS 商店和 Cyber Airdrop 提供 Hollow Purple、Divergent Fist、Ember Insects、Malevolent Shrine、Unlimited Void 等咒术与诅咒工具，出生点和空投也改为咒术主题。",
+    "tempoImpact": "每回合的购买阶段加入咒术能力选择，Cyber Airdrop 又把高价值能力变成公开争夺点；队伍需要在常规枪王经济和联动技能爆发之间安排节奏。",
+    "designObservation": "把 IP 技能放进 Clash Squad 的商店与空投经济，能让联动能力参与回合决策而不是只做外观；4v4 结构也保留了原模式的攻防读图和资源交换。",
+    "sourceUrl": "https://ff.garena.com/en/article/1595/",
+    "launchDate": "2026-01-09",
+    "launchLabel": "2026年1月9日随 OB52 补丁开放",
+    "launchNote": "官方 OB52 补丁明确列出 4V4 Jujutsu Clash、咒术技能、诅咒工具、CS 商店、Cyber Airdrop 和主题出生点。",
+    "gameplayTypes": [
+      "warfare",
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-jujutsu-clash-2026.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]
