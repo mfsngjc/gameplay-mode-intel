@@ -526,9 +526,9 @@
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 89,
-      "coverCount": 89,
-      "readableDescriptionCount": 89,
+      "modeCount": 91,
+      "coverCount": 91,
+      "readableDescriptionCount": 91,
       "modeIds": [
         "free-fire-clash-squad-2019",
         "free-fire-bomb-squad-2019",
@@ -618,7 +618,9 @@
         "free-fire-team-deathmatch-2020",
         "free-fire-zombie-invasion-2019",
         "free-fire-zombie-invasion-2022",
-        "free-fire-jujutsu-clash-2026"
+        "free-fire-jujutsu-clash-2026",
+        "free-fire-clash-squad-ranked-2020",
+        "free-fire-clash-squad-duo-active-skills-2023"
       ],
       "officialSourceUrls": [
         "https://ff.garena.com/en-pk/article/641/",
@@ -678,9 +680,11 @@
         "https://ff.garena.com/en/article/137",
         "https://ff.garena.com/en/article/299/",
         "https://ff.garena.com/en/article/122/",
-        "https://ff.garena.com/en/article/680/"
+        "https://ff.garena.com/en/article/680/",
+        "https://ff.garena.com/en/article/223/",
+        "https://ff.garena.com/en/article/1170/"
       ],
-      "notes": "已核对 Garena 2018–2026 官方补丁与活动档案；本次复核 OB44–OB54 版本页、2026 年周年/联动公告及早期 2018–2022 模式公告，确认 Zombie Hunt 轮换、Mad Snowman、CS-Peak、Flame Arena、Undersea Mystery、Jujutsu Clash、Arena Showdown、Saddle Brawl、Epic Fight、Fire Kickoff 等已入库。此前继续补入 Zombie Invasion 的 2019/2022 历史版本、2020 Kill Secured/Gun King/TDM；仍需继续补齐更早版本、地区差异和后续公告。"
+      "notes": "已核对 Garena 2018–2026 官方补丁与活动档案；本次补入 2020 年枪王对决独立排位，以及 2023 年六周年的双主动技能特殊玩法。排位层与原枪王对决共用核心规则，因此单独记录其长期竞争机制；仍需继续补齐更早版本、地区差异和后续公告。"
     }
   }
 }

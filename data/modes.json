@@ -10665,5 +10665,66 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-amusement-shooting-range-2020.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "free-fire-clash-squad-ranked-2020",
+    "game": "Free Fire",
+    "modeName": "枪王对决：排位（Clash Squad Ranked）",
+    "year": "2020",
+    "date": "2020-03-04",
+    "launchDate": "2020-04-09",
+    "launchLabel": "2020年4月9日15:00（新加坡时间）开启预赛",
+    "launchNote": "官方补丁在3月4日公布枪王对决排位，预赛于4月9日15:00（新加坡时间）开启；排位使用独立于大逃杀的积分机制，并保留休闲模式。",
+    "tags": [
+      "objective",
+      "economy"
+    ],
+    "type": [
+      "4v4小队对抗",
+      "回合制",
+      "独立排位积分",
+      "局内商店"
+    ],
+    "oneLineRule": "两支四人小队继续以回合制购买武器并淘汰对手，同时通过独立的枪王对决排位积分竞争赛季排名。",
+    "mechanicChange": "官方为 Clash Squad 增加独立排位层：排位积分与大逃杀排名分开计算，玩家仍在每回合用资源购买武器和装备，休闲枪王对决继续保留。首个排位赛季还同步调整商店物品，让经济决策成为短回合竞技的一部分。",
+    "tempoImpact": "基础回合节奏不变，但每次买枪、保留资源和翻盘都会影响长期排位；队伍需要在当前回合取胜与下一回合经济之间做取舍。",
+    "designObservation": "把成熟的回合制枪战先拆出独立排位，再保留休闲入口，可以让高强度竞争与练习场景共存；独立积分也避免与大逃杀的评价尺度混在一起。",
+    "sourceUrl": "https://ff.garena.com/en/article/223/",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/generated/free-fire-clash-squad-ranked-2020.svg"
+  },
+  {
+    "id": "free-fire-clash-squad-duo-active-skills-2023",
+    "game": "Free Fire",
+    "modeName": "枪王对决：双主动技能（Clash Squad: Duo Active Skills）",
+    "year": "2023",
+    "date": "2023-05-30",
+    "launchDate": "2023-05-30",
+    "launchLabel": "2023年5月30日随六周年补丁开放",
+    "launchNote": "官方六周年补丁在 2023 年5月30日公布双主动技能枪王对决限时玩法；达到黄金 I 及以上的排位玩家可在开放期间启用，前两场失败不扣星。",
+    "tags": [
+      "objective",
+      "power"
+    ],
+    "type": [
+      "枪王对决变体",
+      "双主动技能",
+      "回合制小队"
+    ],
+    "oneLineRule": "进入枪王对决时携带两种主动技能，组合角色能力来争夺回合胜利；排位启用时还可获得前两场失败不扣星的保护。",
+    "mechanicChange": "玩家在大厅预设一项主动技能和被动技能，进入对局后再选择另一项主动技能；开放期间可从全部角色主动技能中选择，即使尚未解锁对应角色。排位中需要黄金 I 或以上才能启用，匹配会优先寻找同样启用该玩法的玩家。",
+    "tempoImpact": "每回合的购买之外，队伍还要提前规划技能组合和救援、突击、反制的时机；双技能让交战窗口更短，保护机会则降低尝试新组合的排位风险。",
+    "designObservation": "在固定回合结构中增加第二个主动技能，会把角色搭配变成可读的短期构筑；把保护次数限定在开放期和较高段位，可以控制试验玩法对排位秩序的冲击。",
+    "sourceUrl": "https://ff.garena.com/en/article/1170/",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/free-fire-clash-squad-duo-active-skills-2023.svg"
   }
 ]
