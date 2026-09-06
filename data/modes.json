@@ -9475,16 +9475,16 @@
     "mechanicChange": "官方宣传将 React Survival 定义为新的 Arcade 生存模式，核心体验是奔跑、观察危险信号并在关键时刻停下或移动；官方页面没有公开完整人数与回合参数，因此细则以客户端为准。",
     "tempoImpact": "移动与停顿交替产生短促的节奏压力，玩家必须把注意力从射击准度转向环境提示、反应窗口和路线判断。",
     "designObservation": "把射击游戏的输入压力转成“移动/停下”的反应测试，可以在共享客户端里制造完全不同的短局体验；规则参数应在入口处清楚说明。",
-    "sourceUrl": "https://www.youtube.com/watch?v=si5fRm5Sa8s",
+    "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202201/908153.shtml",
     "launchDate": "2021-12-20",
     "launchLabel": "2021年12月20日官方宣传上线",
-    "launchNote": "PUBG MOBILE 官方频道称 React Survival 已上线；1.8 版本公告随后确认该模式于 2022年1月10日 23:59（UTC）关闭。",
+    "launchNote": "官方 1.8 更新公告确认 React Survival 将于 2022年1月10日 23:59 UTC 关闭；此前该模式为 1.7 版本活动玩法，后续 2.0 回归已单独记录。",
     "gameplayTypes": [
       "casual"
     ],
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-react-survival-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageSource": "PUBG MOBILE 官方 React Survival 更新公告配图"
   },
   {
     "id": "pubgm-react-survival-2-0-2022",

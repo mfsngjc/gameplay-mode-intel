@@ -145,3 +145,7 @@
 ### PUBG Mobile 4.0 Unfail 状态与封面修正
 
 - 复核 [PUBG MOBILE 4.0 全球官方页面](https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-400/) 后，确认 `Unfail` 页面写明“Available Now”，同时提示各地区正式开放时间以后续公告为准。已把卡片从“仅预告”改为“已公布玩法、地区时间待核对”，并换用官方 `s3_pic1.png` 配图。
+
+### PUBG Mobile React Survival 来源修正
+
+- 找到并核对 [PUBG MOBILE 官方 1.8 更新公告](https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202201/908153.shtml)：它确认 React Survival 的关闭时间和历史状态。已将该卡的 YouTube 辅助来源替换为官方公告，保留 React Survival 2.0 作为后续回归记录。

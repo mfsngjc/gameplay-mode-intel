@@ -665,9 +665,10 @@
         "https://pubgmobile.jp/%E3%83%8F%E3%83%AD%E3%82%A6%E3%82%A3%E3%83%B3%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AE%E3%83%A2%E3%83%BC%E3%83%89%E3%81%8C%E7%99%BB%E5%A0%B4%EF%BC%81/",
         "https://pubgmobile.jp/extreme-hunt-mode/",
         "https://pubgmobile.jp/graffiti-prank%E3%83%A2%E3%83%BC%E3%83%89%E3%81%8C%E7%99%BB%E5%A0%B4%EF%BC%81/",
-        "https://pubgmobile.jp/off-road-racing-open-20230823/"
+        "https://pubgmobile.jp/off-road-racing-open-20230823/",
+        "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202201/908153.shtml"
       ],
-      "notes": "已复核日本官方新闻分页、版本页、主题页、Metro Royale、Payload、World of Wonder；本轮补入 2023 年独立竞速射击玩法 Off-road Racing（越野竞速），继续回溯未覆盖的地区专题和更早版本页。 已复核 4.0 全球官方页：Unfail 明确列为 Available Now，补正其“仅预告”措辞并改用官方 Unfail 配图；地区服务时间仍待后续公告。",
+      "notes": "已复核日本官方新闻分页、版本页、主题页、Metro Royale、Payload、World of Wonder；本轮补入 2023 年独立竞速射击玩法 Off-road Racing（越野竞速），继续回溯未覆盖的地区专题和更早版本页。 已复核 4.0 全球官方页：Unfail 明确列为 Available Now，补正其“仅预告”措辞并改用官方 Unfail 配图；地区服务时间仍待后续公告。 已将 React Survival 的 YouTube 辅助来源替换为官方 1.8 关闭公告，保留模式历史与回归关系。",
       "updatedAt": "2026-09-07",
       "officialArchiveIndexUrls": [
         "https://pubgmobile.jp/news/",
