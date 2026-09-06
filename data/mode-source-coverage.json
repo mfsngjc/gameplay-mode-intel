@@ -82,9 +82,9 @@
     },
     "PUBG": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 28,
-      "coverCount": 28,
-      "readableDescriptionCount": 28,
+      "modeCount": 29,
+      "coverCount": 29,
+      "readableDescriptionCount": 29,
       "modeIds": [
         "pubg-classic-br-2017",
         "pubg-intense-br-2023",
@@ -113,7 +113,8 @@
         "pubg-prop-hunt-2026",
         "pubg-rumble-2026",
         "pubg-skibidi-toilet-2025",
-        "pubg-1v1-arena-2025"
+        "pubg-1v1-arena-2025",
+        "pubg-casual-mode-2021"
       ],
       "officialSourceUrls": [
         "https://pubg.ac/news/37554-fantasy-battle-royale",
@@ -128,6 +129,7 @@
         "https://pubg.com/en/news/10855",
         "https://pubg.com/en/news/10885",
         "https://pubg.com/en/news/1555",
+        "https://pubg.com/en/news/1718",
         "https://pubg.com/en/news/6366",
         "https://pubg.com/en/news/6490",
         "https://pubg.com/en/news/6674",
@@ -146,7 +148,7 @@
         "https://www.pubg.com/en/news/1708",
         "https://www.pubg.com/en/news/5023"
       ],
-      "notes": "已复核 PUBG 官方历史街机/实验玩法与 2026 最新公告；本轮补入 34.1 公告明确的 1v1 竞技场，继续沿官方 Arcade/LABS 分页回溯。",
+      "notes": "已复核 PUBG 官方历史街机/实验玩法与 2026 最新公告；本轮补入 34.1 公告明确的 1v1 竞技场，以及 13.2 主机补丁明确的休闲模式，继续沿官方 Arcade/LABS 分页回溯。",
       "updatedAt": "2026-09-07"
     },
     "和平精英": {

@@ -164,3 +164,6 @@
 
 - 复核 [PUBG 34.1 官方补丁](https://pubg.com/en/news/8170) 时发现 `1v1 Arena` 只在官方页面出现，原库没有独立卡片。它有两人回合制对决、回合前选装备、按胜利回合数结算、连胜显示和自定义比赛入口，属于独立的街机玩法，已新增 `pubg-1v1-arena-2025`。
 - `Hot Drop` 的 42.2 回归仍归入已有卡片；`Solo Deathmatch`、`Prop Hunt`、`PAYDAY`、`Xeno Point` 和 `Playgrounds` 均已逐项对应现有记录。
+
+- 同页复核 [PUBG 13.2 主机补丁](https://pubg.com/en/news/1718) 时发现 `Casual Mode` 原库也没有独立记录。它是主机专属的轻量 BR 队列：艾伦格、第三人称、小队、每场最多 12 人，空位由 AI 填充，单日最多 3 场，并保留任务/战绩/奖励进度；已新增 `pubg-casual-mode-2021`，不与标准 BR 合并。
+- `Hungers Left Behind` 是 2024 年对已有 `Survivors Left Behind` 的回归命名，规则仍是同一合作 PVE 撤离流程，已在来源台账登记回归页，不重复建卡。

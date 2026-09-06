@@ -13713,5 +13713,34 @@
       "casual"
     ],
     "isLtm": true
+  },
+  {
+    "id": "pubg-casual-mode-2021",
+    "game": "PUBG",
+    "modeName": "休闲模式（Casual Mode）",
+    "year": "2021",
+    "date": "2021-09-14",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "主机限定",
+      "12 人",
+      "AI 填充"
+    ],
+    "oneLineRule": "主机玩家以小队进入艾伦格，单日最多进行 3 场、每场最多 12 人；空缺位置由 AI 补足，完成轻量 BR 对局。",
+    "mechanicChange": "官方 13.2 主机补丁新增休闲模式，保留 BR 的跳伞、搜刮和生存流程，但把每场人数上限降到 12 人，空位由 AI 玩家填充。模式只开放艾伦格与第三人称小队，单个账号每天最多参加 3 场，并保留战绩、任务、奖励和观战等常规进度。",
+    "tempoImpact": "低人数和 AI 填充减少了等待与落地争抢，让玩家更快进入搜刮和转点；每天 3 场的限制又避免它完全替代标准 BR。对新玩家来说，较低的真人密度提供了练习路线、枪械和复活协作的缓冲空间。",
+    "designObservation": "休闲 BR 的关键不是简单减少人数，而是用 AI 填充维持地图规模和搜刮路线，同时降低真人交战密度。保留战绩与任务进度，可以让练习行为与正式成长系统连起来。",
+    "sourceUrl": "https://pubg.com/en/news/1718",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/pubg-legacy/2021/09/1_13.2-Thumbnail-Patchnote.jpg",
+    "imageSource": "PUBG 13.2 官方主机补丁头图",
+    "launchDate": "2021-09-14",
+    "launchLabel": "2021年9月14日主机版更新上线",
+    "launchNote": "官方 13.2 主机补丁明确给出艾伦格、第三人称、小队、每场最多 12 人、AI 填充与每日 3 场限制；该模式与电脑端队列不同，按历史主机玩法记录。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": false
   }
 ]
