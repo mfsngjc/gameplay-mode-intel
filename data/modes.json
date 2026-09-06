@@ -11917,5 +11917,37 @@
     "isLtm": false,
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
     "imageUrl": "assets/modes/generated/free-fire-craftland-pve-endurance-2022.svg"
+  },
+  {
+    "id": "free-fire-lone-wolf-cup-2023",
+    "game": "Free Fire",
+    "modeName": "孤狼杯（Lone Wolf Cup）",
+    "year": "2023",
+    "date": "2023-03-21",
+    "tags": [
+      "casual",
+      "arena",
+      "ranked",
+      "objective"
+    ],
+    "type": [
+      "1v1 对决",
+      "三轮赛制",
+      "淘汰晋级"
+    ],
+    "oneLineRule": "无需预组队，连续进行 3 轮 1v1 对决；每轮面对不同对手，累计赢下更多对局即可争夺孤狼杯冠军。",
+    "mechanicChange": "官方 2023 年 3 月补丁把 Lone Wolf 加入 Free Fire Cup：玩家可直接匹配，连续与 7 名对手进行 3 轮 1v1 比赛，胜场越多奖励越高。",
+    "tempoImpact": "三轮赛制把单局对枪变成短周期赛事，玩家需要在每轮后调整武器选择和风险偏好，同时保留连续晋级的心理压力。",
+    "designObservation": "把孤狼的单局决斗包装成小型杯赛，可以在保留 1v1 易上手特点的同时加入连续表现和奖励追逐；直接匹配降低了参加赛事的组织成本。",
+    "sourceUrl": "https://ff.garena.com/en/article/1120/",
+    "launchDate": "2023-03-21",
+    "launchLabel": "2023年3月21日补丁公布，后续开放匹配",
+    "launchNote": "官方补丁明确给出 3 轮、每轮 1v1、对阵 7 名玩家和 Free Fire Cup 入口；公告只写稍后开放，具体开放时间以客户端为准。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/modes/generated/free-fire-lone-wolf-cup-2023.svg"
   }
 ]

@@ -35,4 +35,5 @@
 - 追加逐页复核：OB54、OB53、OB52、OB50、OB49、OB48、OB47、OB46、OB45、OB44 官方补丁（文章 1673、1640、1595、1511、1473、1456、1424、1421、1385、1357、1332、1306）。`Frosty Track`、`Aurora Event`、`Infinity Train/Infinity Ring`、Mini Peak、Clash Squad FPP、Chaos Events 均已由父模式卡覆盖；Training Grounds、Social Island 与 Craftland 编辑器属于系统/社交/创作功能，不新增模式卡。
 - 追加复核官方 Announcement 页面：1690、1683、1664、1655、1649、1634、1617、1605、1604、1571、1566、1523、1506、1490、1438、1407、1261、1246、1152、854。Blue Lock、Devil May Cry、Demon Slayer 主要是联动道具/任务/外观；Spider-Verse Parkour、Naruto Chapter 2、Squid Game、Fire Kickoff、GINTAMA、Beat Carnival、Lost Treasure 等已有卡片覆盖。电竞赛事、动画预告和奖励活动不作为独立对局模式。
 - 本轮对 Garena 官方 API 索引的 150 篇 2017–2026 公告做正文扫描：OB45 五周年补丁的 Craftland PVE 模板 `Creative - Rush`（检查点竞速）和 `Creative - Endurance`（倒计时生存）有明确规则，新增两张 PVE 创作模板卡；`Machine Gun Mode` 是武器行为，`Droid Apocalypse Mode Template` 是编辑器功能，不新增独立匹配卡。
+- 同轮复核文章 1120 时补出 `Lone Wolf Cup`：官方给出直接匹配、3 轮 1v1、对阵 7 名玩家的明确赛制，新增为限时赛事化 1v1 卡。
 - 仍待覆盖：更早版本的完整分页、地区差异，以及下一轮官方公告。
