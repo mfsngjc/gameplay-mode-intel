@@ -10605,5 +10605,65 @@
     "isLtm": true,
     "imageUrl": "assets/modes/generated/pubgm-music-beat-it-2021.svg",
     "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-amusement-whats-in-the-box-2020",
+    "game": "PUBG Mobile",
+    "modeName": "游乐园：盒中惊喜（What’s in the Box）",
+    "year": "2020",
+    "date": "2020-03-12",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "游乐园小游戏",
+      "互动挑战",
+      "活动代币"
+    ],
+    "oneLineRule": "在艾伦格周年游乐园的互动机台中体验 What’s in the Box，具体操作和奖励以当期客户端活动为准。",
+    "mechanicChange": "官方 0.17.0 补丁把 What’s in the Box 列为周年游乐园的 Games and Attractions，与 Hunt Game、Space War 和 Shooting Range 并列；页面确认机台需要使用 Tokens 激活，但没有公开该小游戏的完整操作规则。",
+    "tempoImpact": "游乐园机台把战斗间隙变成短时互动入口，代币激活成本让玩家在探索、收集和尝试小游戏之间安排时间。",
+    "designObservation": "把不透明的“盒中惊喜”放进可探索的场景机台，能用随机预期驱动玩家靠近兴趣点；后续应继续补齐客户端中的具体输入和奖励循环。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35373/35374/35386/35387/m20497/202002/849328.shtml",
+    "launchDate": "2020-03-12",
+    "launchLabel": "2020年3月12日周年游乐园开放",
+    "launchNote": "官方补丁只确认名称、游乐园机台和 Tokens 激活方式，完整规则待客户端或后续官方资料补档。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-amusement-whats-in-the-box-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+  },
+  {
+    "id": "pubgm-amusement-shooting-range-2020",
+    "game": "PUBG Mobile",
+    "modeName": "游乐园：射击场（Shooting Range）",
+    "year": "2020",
+    "date": "2020-03-12",
+    "tags": [
+      "casual",
+      "objective"
+    ],
+    "type": [
+      "游乐园小游戏",
+      "瞄准挑战",
+      "活动代币"
+    ],
+    "oneLineRule": "在艾伦格周年游乐园的互动机台中体验 Shooting Range，使用代币启动挑战并争取更高记录。",
+    "mechanicChange": "官方 0.17.0 补丁把 Shooting Range 列为周年游乐园的 Games and Attractions；游乐园和主要城镇会出现可用 Tokens 激活的互动机台，但公开页面没有给出靶标、计分和奖励细则。",
+    "tempoImpact": "射击场把熟悉的瞄准操作压缩成游乐园里的短挑战，玩家可以在探索资源点之外获得一段低风险的练习与记录循环。",
+    "designObservation": "将核心枪法拆成可选的场景小游戏，可以把训练价值放进休闲探索路径；规则透明度和成绩反馈会决定它是否能形成重复参与。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35373/35374/35386/35387/m20497/202002/849328.shtml",
+    "launchDate": "2020-03-12",
+    "launchLabel": "2020年3月12日周年游乐园开放",
+    "launchNote": "官方补丁只确认名称、游乐园机台和 Tokens 激活方式，完整规则待客户端或后续官方资料补档。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/pubgm-amusement-shooting-range-2020.svg",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
   }
 ]

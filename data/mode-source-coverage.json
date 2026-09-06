@@ -324,9 +324,9 @@
     },
     "PUBG Mobile": {
       "coverageStatus": "ongoing_backfill",
-      "modeCount": 115,
-      "coverCount": 115,
-      "readableDescriptionCount": 115,
+      "modeCount": 117,
+      "coverCount": 117,
+      "readableDescriptionCount": 117,
       "modeIds": [
         "pubgm-metro-royale-2020",
         "pubgm-payload-2-0-2020",
@@ -442,7 +442,9 @@
         "pubgm-halloween-capture-the-camp-2020",
         "pubgm-music-tap-joy-2021",
         "pubgm-music-pan-jam-2021",
-        "pubgm-music-beat-it-2021"
+        "pubgm-music-beat-it-2021",
+        "pubgm-amusement-whats-in-the-box-2020",
+        "pubgm-amusement-shooting-range-2020"
       ],
       "officialSourceUrls": [
         "https://pubgmobile.jp/version-3-7-0-patch-notes-20250308/",
@@ -520,7 +522,7 @@
         "https://www.pubgmobile.com/en/event/halloweeks2020/",
         "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60728/m22521/202104/887178.shtml"
       ],
-      "notes": "已回溯 0.4–4.6 版本及 2018–2026 主题、竞技、街机、Metro Royale、Payload 与 CRAFTGROUND 页面；本次继续复核 2020 万圣周和 2021 三周年活动页，补入 Capture the Camp，以及 TAP JOY、PAN JAM、BEAT IT 三个独立音乐小游戏。已确认 Unfail、Hydroroyal、NARUTO 终末之谷忍术对战、木ノ葉 PVE、九尾挑战、Spider-Man 与 Midnight Hunters 均已入库。规则只公开名称的条目标注待补。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
+      "notes": "已回溯 0.4–4.6 版本及 2018–2026 主题、竞技、街机、Metro Royale、Payload 与 CRAFTGROUND 页面；本次继续复核 0.17.0 周年游乐园、2020 万圣周和 2021 三周年活动页，补入 Capture the Camp、TAP JOY、PAN JAM、BEAT IT，以及官方列出的 What’s in the Box 与 Shooting Range 两个游乐园小游戏。已确认 Unfail、Hydroroyal、NARUTO 终末之谷忍术对战、木ノ葉 PVE、九尾挑战、Spider-Man 与 Midnight Hunters 均已入库。规则只公开名称的条目标注待补。仍需继续覆盖更早版本、2026 后续版本和地区版本差异。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_backfill",
