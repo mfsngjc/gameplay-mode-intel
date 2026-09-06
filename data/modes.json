@@ -5943,19 +5943,19 @@
       "非对称目标"
     ],
     "oneLineRule": "一名 Predator 追击四名 Survivors；Predator 通过淘汰获胜，Survivors 则需要协作完成路线并从 Exit Gate 逃离。",
-    "mechanicChange": "官方 4.0 页面列出 Unfail 为 1v4 追逃玩法：Predator 负责追捕，四名 Survivors 以逃离出口为目标；页面提示该玩法会在后续公告确定正式开放时间。",
+    "mechanicChange": "官方 4.0 版本页面将 Unfail 列为“现在可用”的 1v4 追逃玩法：Predator 负责追捕，四名 Survivors 以逃离出口为目标。页面同时提示各地区的正式开放时间以后续公告为准，因此这里保留区域开放时间可能不同的说明，不推测额外规则。",
     "tempoImpact": "非对称目标让信息和时间成为主要资源，幸存者必须分工开路、拉扯和救援，猎手则通过压缩出口路线制造追击节奏。",
     "designObservation": "1v4 玩法的平衡不只靠数值，而要靠目标暴露、出口进度和追击信息在不同阶段交替领先。",
     "sourceUrl": "https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-400/",
     "launchDate": "2025-09-05",
-    "launchLabel": "2025年4.0 版本页面预告",
-    "launchNote": "官方 4.0 页面确认 1v4 追逃规则，但同时注明正式开放时间以未来公告为准；本卡保持待上线标记。",
+    "launchLabel": "2025年9月5日随 4.0 版本页面列为可用（地区开放时间待公告）",
+    "launchNote": "全球官方 4.0 页面确认 Unfail 的 1v4 规则并写明“Available Now”，同时要求关注后续开放时间公告；本卡记录为已公布玩法，地区服务期仍需按后续公告核对。",
     "gameplayTypes": [
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-unfail-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "https://www.pubgmobile.com/images/event/PUBG-MOBILE-Version-400/s3_pic1.png",
+    "imageSource": "PUBG MOBILE 4.0 官方 Unfail 配图"
   },
   {
     "id": "free-fire-droid-apocalypse-2022",

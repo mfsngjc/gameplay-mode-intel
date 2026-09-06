@@ -141,3 +141,7 @@
 ### Apex War Games 官方来源修正
 
 - EA 旧的 Apex 路径已返回 404，但同一官方文章目前可从 [EA War Games 存档](https://www.ea.com/games/battlefield/news/war-games)访问；已将 `Second Chance`、`Ultra Zones`、`Auto Banners`、`Killing Time`、`Armor Regen` 五张卡的来源切换到该可访问官方页面，规则未改动。
+
+### PUBG Mobile 4.0 Unfail 状态与封面修正
+
+- 复核 [PUBG MOBILE 4.0 全球官方页面](https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-400/) 后，确认 `Unfail` 页面写明“Available Now”，同时提示各地区正式开放时间以后续公告为准。已把卡片从“仅预告”改为“已公布玩法、地区时间待核对”，并换用官方 `s3_pic1.png` 配图。
