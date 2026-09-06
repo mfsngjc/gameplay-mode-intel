@@ -28,4 +28,5 @@
 - 已覆盖：Death Race、Rush Hour、Big Head、Clash Squad、Bomb Squad、Zombie Invasion、Death Uprising、Rampage 系列、Lone Wolf、Pet Rumble、Target Arcade、Droid Apocalypse、Free For All、Color Hide & Seek、Color Spray、Mystery Town、Zombie Hunt 轮换、CS-Peak、MyZone、Undersea Mystery、Epic Fight、Fire Kickoff、Arena Showdown、Saddle Brawl 等。
 - 已排除：纯系统、商店、武器/角色平衡、社交大厅和地图装饰；如果补丁把规则变化明确命名为玩法并改变对局目标或复活/经济流程，则进入候选复核。
 - 追加负向检查：2020 年 Rampage 补丁中的 `Close Combat modes` 是对 Clash Squad、TDM 等近距离对抗玩法的分组称呼，未定义独立胜负规则，因此不新增重复卡；Training Grounds、The Arena 和编辑器功能同样排除。
+- 追加逐页复核：OB54、OB53、OB52、OB50、OB49、OB48、OB47、OB46、OB45、OB44 官方补丁（文章 1673、1640、1595、1511、1473、1456、1424、1421、1385、1357、1332、1306）。`Frosty Track`、`Aurora Event`、`Infinity Train/Infinity Ring`、Mini Peak、Clash Squad FPP、Chaos Events 均已由父模式卡覆盖；Training Grounds、Social Island 与 Craftland 编辑器属于系统/社交/创作功能，不新增模式卡。
 - 仍待覆盖：更早版本的完整分页、地区差异，以及下一轮官方公告。
