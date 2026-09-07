@@ -271,3 +271,10 @@
 ### Fortnite v3.5 50v50 v2 模式补漏
 
 - 复核 [Epic v3.5 官方补丁](https://www.fortnite.com/news/v3-5-patch-notes?lang=en-US) 时发现 `50v50 v2` 只在旧卡片的基础 `50v50` 名称旁被隐含覆盖，实际规则已经变化：双方各有一辆反向航线巴士、地图显示交战前线、前期搜刮窗口更长，最终风暴圈开局可见且补给空投成批落入决战区。已新增 `fortnite-50v50-v2-2018`，使用中文规则说明和本地整理封面。
+
+### Fortnite v4.2–v4.4 早期 LTM 变体补漏
+
+- 复核 [Epic v4.2 内容更新](https://www.fortnite.com/patch-notes/v4-2-contentupdate%3Flang%3Den-US)：新增 `fortnite-solid-gold-v2-2018`，单独记录全传奇武器池、重型霰弹枪与传奇三连发加入、石材/金属采集增益以及治疗与机动道具掉率调整。
+- 复核 [Epic v4.3 官方补丁](https://www.fortnite.com/patch-notes/v4-3?lang=en-US)：新增 `fortnite-blitz-v2-2018`，单独记录开局即缩圈、约 15 分钟对局、较低巴士高度和高资源规则；基础 Blitz 卡继续保留。
+- 复核 [Epic v4.4 官方补丁](https://www.fortnite.com/patch-notes/v4-4?lang=en-US)：新增 `fortnite-50v50-v3-2018`，记录更大的初始风暴圈、4 至 8 个成批空投、25% 采集增益、中心偏置与标准倒地伤害。
+- 复核 [Epic v4.4 内容更新](https://www.fortnite.com/patch-notes/v4-4-content-update%3Flang%3Den-US)：新增 `fortnite-final-fight-teams-20-2018`，记录第三圈停止、终局倒计时、按存活人数判胜和允许并列胜利。

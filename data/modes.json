@@ -14853,5 +14853,125 @@
     ],
     "isLtm": true,
     "imageUrl": "assets/modes/generated/fortnite-50v50-v2-2018.svg"
+  },
+  {
+    "id": "fortnite-blitz-v2-2018",
+    "game": "Fortnite",
+    "modeName": "闪电战 v2（Blitz! v2）",
+    "year": "2018",
+    "date": "2018-05-30",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "快速 BR",
+      "加速缩圈",
+      "高资源"
+    ],
+    "oneLineRule": "在已经开始收缩的风暴中进行一场不超过约 15 分钟的大逃杀；资源和战利品更密集，玩家必须更快完成搜刮并争夺最后存活。",
+    "mechanicChange": "v2 继续采用快速风暴和高补给，并降低战斗巴士飞行高度；更新可用武器与物品，提高宝箱、弹药箱和空投的补给量，采集资源增加 50%，地面建材由 30 提高到 75。",
+    "tempoImpact": "缩圈从开局就推动玩家移动，高资源让装备迅速成型；更低的巴士高度缩短落地时间，使搜索、转点和首次交战都更早发生。",
+    "designObservation": "闪电战 v2 通过同步压缩时间并提高资源供给，避免快节奏 BR 退化为纯粹的缺装碰运气；玩家减少的是等待时间，而不是决策密度。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v4-3?lang=en-US",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-05-30",
+    "launchLabel": "2018年5月30日随 v4.3 版本开放",
+    "launchNote": "Epic v4.3 官方补丁将 Blitz! v2 作为独立限时模式发布，并列出风暴、巴士高度、补给和采集参数。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/fortnite-blitz-v2-2018.svg"
+  },
+  {
+    "id": "fortnite-50v50-v3-2018",
+    "game": "Fortnite",
+    "modeName": "50 对 50 v3（50v50 v3）",
+    "year": "2018",
+    "date": "2018-06-12",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "50v50",
+      "大队伍对抗",
+      "补给强化"
+    ],
+    "oneLineRule": "两支 50 人队伍从相反方向进入地图，沿地图前线集结并战斗到一方全部被淘汰；v3 用更大的初始风暴圈容纳更多玩家。",
+    "mechanicChange": "相比 v2，开局增加更大的风暴圈，前两个风暴圈内每两分钟成批投放 4 至 8 个补给箱；采集加成调整为 25%，风暴圈更偏向地图中心，倒地状态恢复标准的每跳 2 点伤害。",
+    "tempoImpact": "更大的初始安全区和更多空投让大队伍有时间形成阵线，同时把多个小队吸引到可预期的补给热点；中心偏置减弱了巴士路线对胜负的影响。",
+    "designObservation": "v3 重点修正大队伍模式的出生公平与补给拥挤：增加初始空间、分批投放资源，再用中心偏置让两边获得更接近的转点成本。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v4-4?lang=en-US",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-06-12",
+    "launchLabel": "2018年6月12日随 v4.4 版本开放",
+    "launchNote": "Epic v4.4 官方补丁明确 50v50 v3 相对 v2 的风暴圈、补给批次、采集加成和倒地规则变化。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/fortnite-50v50-v3-2018.svg"
+  },
+  {
+    "id": "fortnite-solid-gold-v2-2018",
+    "game": "Fortnite",
+    "modeName": "全金装备战 v2（Solid Gold v2）",
+    "year": "2018",
+    "date": "2018-05-22",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "传奇武器限定",
+      "资源强化",
+      "BR 变体"
+    ],
+    "oneLineRule": "所有武器掉落均为传奇品质，并提高石材、金属、治疗品和机动道具的供给，让玩家围绕高强度装备争夺最后存活。",
+    "mechanicChange": "v2 为地面、宝箱和空投分别配置传奇武器权重，加入重型霰弹枪与传奇三连发突击步枪；采集石材和金属增加 50%，提高壶、护盾、特殊手雷、发射台和篝火掉率，并降低普通手雷、尖刺陷阱和绷带掉率。",
+    "tempoImpact": "玩家更快获得顶级火力与防护，交战容错和爆发同步提高；石材、金属与机动资源增多，使中后期更容易连续建造、恢复和转点。",
+    "designObservation": "全传奇武器池会压平装备成长，因此 v2 用掉落权重和辅助资源重新制造路线差异；决定优势的不只是武器稀有度，还包括恢复、建材和位移能力。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v4-2-contentupdate%3Flang%3Den-US",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-05-22",
+    "launchLabel": "2018年5月22日随 v4.2 内容更新开放",
+    "launchNote": "Epic v4.2 内容更新将 Solid Gold v2 作为独立限时模式发布，并公布传奇武器池、资源和掉落率调整。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/fortnite-solid-gold-v2-2018.svg"
+  },
+  {
+    "id": "fortnite-final-fight-teams-20-2018",
+    "game": "Fortnite",
+    "modeName": "终局战：20 人小队（Final Fight: Teams of 20）",
+    "year": "2018",
+    "date": "2018-06-19",
+    "tags": [
+      "br-ltm",
+      "objective"
+    ],
+    "type": [
+      "5 支 20 人队伍",
+      "倒计时胜负",
+      "停止缩圈"
+    ],
+    "oneLineRule": "五支 20 人队伍在风暴停止后进入终局倒计时；时间结束时存活人数最多的队伍获胜，人数相同可以并列获胜。",
+    "mechanicChange": "模式沿用大逃杀的搜刮与战斗，但风暴在第 3 个圈后停止继续闭合，随后启动终局倒计时；胜负不再要求淘汰所有敌人，而按倒计时结束时各队存活人数判定。",
+    "tempoImpact": "固定的最终空间让队伍能建立较稳定的阵地，但倒计时迫使落后方主动进攻；领先方需要在保全人数和控制区域之间分配资源。",
+    "designObservation": "把最后存活改成限时人数比较，会自然生成攻守不对称：领先队伍倾向拖延，落后队伍必须制造交换；允许并列则避免最后阶段为了形式上的唯一胜者无限延长。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v4-4-content-update%3Flang%3Den-US",
+    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "launchDate": "2018-06-19",
+    "launchLabel": "2018年6月19日随 v4.4 内容更新开放",
+    "launchNote": "Epic v4.4 内容更新明确 Final Fight: Teams of 20 的第三圈停止、终局倒计时、存活人数判胜和并列胜利规则。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/generated/fortnite-final-fight-teams-20-2018.svg"
   }
 ]
