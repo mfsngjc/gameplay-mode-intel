@@ -6,6 +6,32 @@ function readCollected() {
 }
 
 const analyticsStorageKey = "gameplay-mode-intel-analytics-v1";
+const globalAnalyticsClientKey = "gameplay-mode-intel-client-v2";
+const globalAnalyticsEndpoint = "https://gameplay-intel-metrics.mode-signal-7f3c.workers.dev/event";
+
+function getGlobalAnalyticsClientId() {
+  try {
+    const saved = localStorage.getItem(globalAnalyticsClientKey);
+    if (/^[a-zA-Z0-9_-]{16,80}$/.test(saved || "")) return saved;
+    const value = typeof crypto?.randomUUID === "function"
+      ? crypto.randomUUID().replaceAll("-", "")
+      : Array.from(crypto.getRandomValues(new Uint8Array(18)), (byte) => byte.toString(16).padStart(2, "0")).join("");
+    localStorage.setItem(globalAnalyticsClientKey, value);
+    return value;
+  } catch { return ""; }
+}
+
+function sendGlobalAnalytics(type, details = {}) {
+  if (window.location.hostname !== "mfsngjc.github.io") return;
+  const clientId = getGlobalAnalyticsClientId();
+  if (!clientId) return;
+  fetch(globalAnalyticsEndpoint, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ type, clientId, ...details }),
+    keepalive: true
+  }).catch(() => {});
+}
 
 function analyticsCountMap(value) {
   if (!value || typeof value !== "object" || Array.isArray(value)) return {};
@@ -133,6 +159,7 @@ function recordPageView(routeKey) {
   state.analytics.pageViews += 1;
   state.analytics.pageViewsByRoute[routeKey] = (state.analytics.pageViewsByRoute[routeKey] || 0) + 1;
   saveLocalAnalytics();
+  sendGlobalAnalytics("page_view", { route: routeKey });
 }
 
 function recordModeView(modeId) {
@@ -142,11 +169,13 @@ function recordModeView(modeId) {
   analyticsGuard.modeTime = now;
   state.analytics.modeViews[modeId] = (state.analytics.modeViews[modeId] || 0) + 1;
   saveLocalAnalytics();
+  sendGlobalAnalytics("mode_view", { modeId });
 }
 
 function recordFavoriteAdd(modeId) {
   state.analytics.favoriteAdds[modeId] = (state.analytics.favoriteAdds[modeId] || 0) + 1;
   saveLocalAnalytics();
+  sendGlobalAnalytics("favorite_add", { modeId });
 }
 
 function seedCollectedAnalytics() {
@@ -156,6 +185,7 @@ function seedCollectedAnalytics() {
       state.analytics.favoriteAdds[id] = 1;
       changed = true;
     }
+    sendGlobalAnalytics("favorite_add", { modeId: id });
   });
   if (changed) saveLocalAnalytics();
 }
@@ -950,6 +980,7 @@ function roundRect(ctx, x, y, width, height, radius) {
 function toggleCollect(modeId) {
   if (state.collected.has(modeId)) {
     state.collected.delete(modeId);
+    sendGlobalAnalytics("favorite_remove", { modeId });
     showToast("已取消收藏");
   } else {
     state.collected.add(modeId);
