@@ -5,6 +5,42 @@ function readCollected() {
   } catch { return new Set(); }
 }
 
+const analyticsStorageKey = "gameplay-mode-intel-analytics-v1";
+
+function analyticsCountMap(value) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return {};
+  return Object.fromEntries(Object.entries(value)
+    .filter(([key, count]) => typeof key === "string" && Number.isFinite(Number(count)) && Number(count) > 0)
+    .map(([key, count]) => [key, Math.floor(Number(count))]));
+}
+
+function readLocalAnalytics() {
+  const empty = {
+    version: 1,
+    pageViews: 0,
+    pageViewsByRoute: {},
+    modeViews: {},
+    favoriteAdds: {},
+    firstSeenAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  };
+  try {
+    const value = JSON.parse(localStorage.getItem(analyticsStorageKey) || "null");
+    if (!value || typeof value !== "object") return empty;
+    return {
+      ...empty,
+      pageViews: Math.max(0, Math.floor(Number(value.pageViews) || 0)),
+      pageViewsByRoute: analyticsCountMap(value.pageViewsByRoute),
+      modeViews: analyticsCountMap(value.modeViews),
+      favoriteAdds: analyticsCountMap(value.favoriteAdds),
+      firstSeenAt: typeof value.firstSeenAt === "string" ? value.firstSeenAt : empty.firstSeenAt,
+      updatedAt: typeof value.updatedAt === "string" ? value.updatedAt : empty.updatedAt
+    };
+  } catch { return empty; }
+}
+
+const analyticsGuard = { routeKey: "", modeId: "", modeTime: 0 };
+
 const state = {
   modes: [],
   entries: [],
@@ -20,7 +56,8 @@ const state = {
   feedFilter: "all",
   gameFilter: "all",
   gameplayFilter: "all",
-  collected: readCollected()
+  collected: readCollected(),
+  analytics: readLocalAnalytics()
 };
 
 const modeGrid = document.querySelector("#modeGrid");
@@ -82,6 +119,60 @@ function showToast(message) {
 function saveCollected() {
   try { localStorage.setItem("br-mode-collected", JSON.stringify([...state.collected])); }
   catch { showToast("当前浏览器无法保存收藏；请导出以保留本次研究。"); }
+}
+
+function saveLocalAnalytics() {
+  state.analytics.updatedAt = new Date().toISOString();
+  try { localStorage.setItem(analyticsStorageKey, JSON.stringify(state.analytics)); }
+  catch { showToast("当前浏览器无法保存访问统计。"); }
+}
+
+function recordPageView(routeKey) {
+  if (!routeKey || analyticsGuard.routeKey === routeKey) return;
+  analyticsGuard.routeKey = routeKey;
+  state.analytics.pageViews += 1;
+  state.analytics.pageViewsByRoute[routeKey] = (state.analytics.pageViewsByRoute[routeKey] || 0) + 1;
+  saveLocalAnalytics();
+}
+
+function recordModeView(modeId) {
+  const now = Date.now();
+  if (analyticsGuard.modeId === modeId && now - analyticsGuard.modeTime < 800) return;
+  analyticsGuard.modeId = modeId;
+  analyticsGuard.modeTime = now;
+  state.analytics.modeViews[modeId] = (state.analytics.modeViews[modeId] || 0) + 1;
+  saveLocalAnalytics();
+}
+
+function recordFavoriteAdd(modeId) {
+  state.analytics.favoriteAdds[modeId] = (state.analytics.favoriteAdds[modeId] || 0) + 1;
+  saveLocalAnalytics();
+}
+
+function seedCollectedAnalytics() {
+  let changed = false;
+  state.collected.forEach((id) => {
+    if (!state.analytics.favoriteAdds[id]) {
+      state.analytics.favoriteAdds[id] = 1;
+      changed = true;
+    }
+  });
+  if (changed) saveLocalAnalytics();
+}
+
+function resetLocalAnalytics() {
+  state.analytics = {
+    version: 1,
+    pageViews: 0,
+    pageViewsByRoute: {},
+    modeViews: {},
+    favoriteAdds: {},
+    firstSeenAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  };
+  analyticsGuard.modeId = "";
+  analyticsGuard.modeTime = 0;
+  saveLocalAnalytics();
 }
 
 function getTodayStart() {
@@ -862,6 +953,7 @@ function toggleCollect(modeId) {
     showToast("已取消收藏");
   } else {
     state.collected.add(modeId);
+    recordFavoriteAdd(modeId);
     showToast("已收藏到当前浏览器");
   }
   saveCollected();

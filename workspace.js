@@ -3,6 +3,7 @@ const viewMeta = {
   modes: ['玩法模式', '玩法模式', '发现射击游戏的核心模式与限时变体，按玩法、游戏和设计主题查找案例。', '01 / GAME MODES'],
   maps: ['地图', '地图', '收集射击游戏的地图资料，查看空间布局，保存底图并追溯官方来源。', '02 / MAP LIBRARY'],
   collection: ['我的收藏', '我的研究收藏', '收藏值得继续研究的玩法案例。', 'YOUR FIELDNOTES'],
+  analytics: ['数据看板', '浏览与收藏统计', '查看这台设备上浏览次数最多、收藏热度最高的玩法。', 'LOCAL / ANALYTICS'],
 
 };
 const modeViewMeta = {
@@ -137,7 +138,10 @@ function updateCounts() {
   $('#navModeCount').textContent = counts.modes;
   $('#navMapCount').textContent = mapArchive.entries.length || '—';
   $('#navCollectedCount').textContent = state.entries.filter((entry) => state.collected.has(entry.id)).length + (mapArchive.mapCollected?.size || 0);
-  $('#librarySummary').textContent = state.view === 'maps' ? new Set(mapArchive.entries.map((entry) => entry.game)).size + ' 款游戏 · ' + mapArchive.entries.length + ' 张地图' : getGames().length + ' 款游戏 · ' + state.entries.length + ' 个模式';
+  $('#librarySummary').textContent = state.view === 'maps'
+    ? new Set(mapArchive.entries.map((entry) => entry.game)).size + ' 款游戏 · ' + mapArchive.entries.length + ' 张地图'
+    : state.view === 'analytics' ? '当前浏览器 · 独立存储'
+      : getGames().length + ' 款游戏 · ' + state.entries.length + ' 个模式';
 }
 
 function fallbackCover(entry) {
@@ -236,8 +240,90 @@ function renderActivityFeed() {
   if (modes.length > shown.length) activityFeed.insertAdjacentHTML('beforeend', '<p class="context-note">显示最新 ' + shown.length + ' 条；全部案例可在玩法模式库检索。</p>');
 }
 
+const analyticsRouteLabels = {
+  'modes:library': '玩法模式 · 案例库',
+  'modes:activity': '玩法模式 · 玩法动态',
+  'modes:timeline': '玩法模式 · 时间画板',
+  maps: '地图',
+  collection: '我的收藏',
+  analytics: '数据看板'
+};
+
+function currentAnalyticsRouteKey() {
+  return state.view === 'modes' ? 'modes:' + state.modeView : state.view;
+}
+
+function sumAnalyticsCounts(counts) {
+  return Object.values(counts || {}).reduce((sum, count) => sum + count, 0);
+}
+
+function analyticsModeRows(metric) {
+  const counts = state.analytics[metric] || {};
+  return state.modes.map((mode) => ({ mode, count: counts[mode.id] || 0 }))
+    .filter((row) => row.count > 0)
+    .sort((a, b) => b.count - a.count || a.mode.modeName.localeCompare(b.mode.modeName, 'zh-CN'));
+}
+
+function renderAnalyticsRanking(targetId, rows, valueLabel) {
+  const target = $(targetId);
+  if (!rows.length) {
+    target.innerHTML = '<div class="analytics-empty">还没有数据。打开玩法详情或收藏玩法后，这里会自动生成排行。</div>';
+    return;
+  }
+  const max = rows[0].count;
+  target.innerHTML = rows.slice(0, 10).map(({ mode, count }, index) => {
+    const share = Math.max(5, Math.round(count / max * 100));
+    const collected = state.collected.has(mode.id);
+    return '<button class="ranking-row" type="button" data-action="open-mode" data-id="' + escapeHtml(mode.id) + '" aria-label="查看 ' + escapeHtml(mode.modeName) + '，' + count + ' ' + valueLabel + '">' +
+      '<span class="ranking-index">' + String(index + 1).padStart(2, '0') + '</span>' +
+      '<span class="ranking-main"><span class="ranking-title">' + escapeHtml(mode.modeName) + (collected ? '<span class="ranking-collected">已收藏</span>' : '') + '</span>' +
+      '<span class="ranking-meta">' + escapeHtml(mode.game) + ' · ' + escapeHtml(getGameplayLabel(mode)) + '</span><span class="ranking-track"><span style="width:' + share + '%"></span></span></span>' +
+      '<strong>' + count.toLocaleString('zh-CN') + '<small>' + valueLabel + '</small></strong></button>';
+  }).join('');
+}
+
+function renderAnalytics() {
+  const totalModeViews = sumAnalyticsCounts(state.analytics.modeViews);
+  const viewedModes = Object.keys(state.analytics.modeViews).filter((id) => state.modes.some((mode) => mode.id === id)).length;
+  const collectedModes = state.modes.filter((mode) => state.collected.has(mode.id)).length;
+  const favoriteActions = sumAnalyticsCounts(state.analytics.favoriteAdds);
+  $('#analyticsKpis').innerHTML = [
+    ['页面访问', state.analytics.pageViews, '进入各页面或特殊视图'],
+    ['玩法详情浏览', totalModeViews, '打开玩法详情的累计次数'],
+    ['已浏览玩法', viewedModes, '至少打开过一次的玩法'],
+    ['当前收藏', collectedModes, '仍保存在当前浏览器'],
+    ['收藏次数', favoriteActions, '累计执行收藏的次数']
+  ].map(([label, value, note]) => '<article class="analytics-kpi"><span>' + label + '</span><strong>' + value.toLocaleString('zh-CN') + '</strong><small>' + note + '</small></article>').join('');
+  renderAnalyticsRanking('#modeViewRanking', analyticsModeRows('modeViews'), '次浏览');
+  renderAnalyticsRanking('#favoriteRanking', analyticsModeRows('favoriteAdds'), '次收藏');
+  const pageRows = Object.entries(state.analytics.pageViewsByRoute || {})
+    .filter(([, count]) => count > 0)
+    .sort((a, b) => b[1] - a[1]);
+  const pageMax = pageRows[0]?.[1] || 1;
+  $('#pageViewBreakdown').innerHTML = pageRows.length ? pageRows.map(([route, count]) =>
+    '<div class="page-view-row"><span>' + escapeHtml(analyticsRouteLabels[route] || route) + '</span><span class="page-view-track"><span style="width:' + Math.max(4, Math.round(count / pageMax * 100)) + '%"></span></span><strong>' + count.toLocaleString('zh-CN') + '</strong></div>'
+  ).join('') : '<div class="analytics-empty">还没有页面访问记录。</div>';
+}
+
+function csvCell(value) {
+  return '"' + String(value ?? '').replaceAll('"', '""') + '"';
+}
+
+function exportAnalyticsCsv() {
+  const rows = [['玩法 ID', '游戏', '玩法名称', '详情浏览次数', '收藏次数', '当前已收藏']];
+  state.modes.forEach((mode) => {
+    const views = state.analytics.modeViews[mode.id] || 0;
+    const favorites = state.analytics.favoriteAdds[mode.id] || 0;
+    if (!views && !favorites && !state.collected.has(mode.id)) return;
+    rows.push([mode.id, mode.game, mode.modeName, views, favorites, state.collected.has(mode.id) ? '是' : '否']);
+  });
+  downloadFile('gameplay-mode-local-analytics.csv', '\ufeff' + rows.map((row) => row.map(csvCell).join(',')).join('\n'), 'text/csv;charset=utf-8');
+  showToast('已导出当前浏览器的玩法统计');
+}
+
 function renderWorkspace() {
   if (!state.ready) return;
+  recordPageView(currentAnalyticsRouteKey());
   updateCounts();
   renderGameFilters();
   const meta = state.view === 'modes' ? (modeViewMeta[state.modeView] || modeViewMeta.library) : (viewMeta[state.view] || viewMeta.modes);
@@ -264,11 +350,13 @@ function renderWorkspace() {
   $('#activitySection').hidden = !showActivity;
   $('#timelineSection').hidden = !showTimeline;
   $('#mapsSection').hidden = state.view !== 'maps';
-  $('.export-menu').hidden = state.view === 'maps';
+  $('#analyticsSection').hidden = state.view !== 'analytics';
+  $('.export-menu').hidden = ['maps', 'analytics'].includes(state.view);
   if (library) renderLibrary();
   if (showActivity) renderActivityFeed();
   if (showTimeline) renderTimeline();
   if (state.view === 'maps') renderMapArchive();
+  if (state.view === 'analytics') renderAnalytics();
 }
 
 function resetFilters() {
@@ -332,6 +420,7 @@ function detailButton(entry) {
 function showDetail(id) {
   const entry = state.entries.find((item) => item.id === id);
   if (!entry) return;
+  if (entry.kind === 'modes') recordModeView(entry.id);
   detailId = id;
   const sourceIds = entry.sourceModeIds || [];
   const related = entry.kind === 'modes'
@@ -376,6 +465,7 @@ function closeDetail(updateUrl = true) {
   detailDialog.close(); detailId = null;
   document.body.classList.remove('modal-open');
   if (updateUrl) history.replaceState(null, '', workspaceHash());
+  if (state.view === 'analytics') renderAnalytics();
   if (detailTrigger?.isConnected) detailTrigger.focus();
 }
 
@@ -491,6 +581,13 @@ function bindWorkspaceEvents() {
   });
   $('#exportCanvas').addEventListener('click', exportCurrentCanvas);
   $('#exportCollected').addEventListener('click', exportCollectedMarkdown);
+  $('#exportAnalytics').addEventListener('click', exportAnalyticsCsv);
+  $('#resetAnalytics').addEventListener('click', () => {
+    if (!window.confirm('确定清空这台设备上的页面访问、玩法浏览和收藏次数吗？当前收藏不会被删除。')) return;
+    resetLocalAnalytics();
+    renderAnalytics();
+    showToast('本机统计已清空');
+  });
   $('#detailClose').addEventListener('click', () => closeDetail());
   detailDialog.addEventListener('cancel', (event) => { event.preventDefault(); closeDetail(); });
   detailDialog.addEventListener('click', (event) => { if (event.target === detailDialog) closeDetail(); });
@@ -541,6 +638,7 @@ async function initWorkspace() {
     state.modes = modes.map((mode) => ({ ...mode, kind: 'modes', type: Array.isArray(mode.type) ? mode.type : [], tags: Array.isArray(mode.tags) ? mode.tags : [] }));
     // Unpublished research stays in local-only and is never fetched by the public app.
     state.entries = [...state.modes];
+    seedCollectedAnalytics();
     state.ready = true;
     $('#topicSelect').insertAdjacentHTML('beforeend', topicDefs.map((topic) => '<option value="' + topic.id + '">' + topic.label + '</option>').join(''));
     $('#typeSelect').insertAdjacentHTML('beforeend', ['ltm'].map((tag) => '<option value="' + tag + '">' + tagLabels[tag] + '</option>').join(''));
