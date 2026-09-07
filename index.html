@@ -7,8 +7,8 @@
   <meta name="description" content="集成农业，面向射击游戏设计的研究资料库。收集射击游戏玩法模式与地图资料，保留原始来源。">
   <title>集成农业 · 射击玩法研究库</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=local-analytics-20260907">
-  <link rel="stylesheet" href="workspace.css?v=local-analytics-20260907">
+  <link rel="stylesheet" href="styles.css?v=no-dashboard-20260907">
+  <link rel="stylesheet" href="workspace.css?v=no-dashboard-20260907">
 </head>
 <body class="workspace">
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><symbol id="ui-compass" viewBox="0 0 24 24">
@@ -127,10 +127,6 @@
   <rect width="8" height="8" x="3" y="3" rx="2" />
   <path d="M7 11v4a2 2 0 0 0 2 2h4" />
   <rect width="8" height="8" x="13" y="13" rx="2" />
-</symbol><symbol id="ui-chart" viewBox="0 0 24 24">
-
-  <path d="M3 3v18h18" />
-  <path d="m7 16 4-5 3 3 5-7" />
 </symbol><symbol id="ui-arrow-down-to-line" viewBox="0 0 24 24">
 
   <path d="M12 17V3" />
@@ -158,7 +154,6 @@
     <div class="nav-group-label">我的研究 <span>WORKSPACE</span></div>
     <nav class="secondary-nav">
       <a class="nav-item" href="#collection" data-view="collection"><svg><use href="#ui-bookmark"></use></svg><span>我的收藏</span><span class="nav-count" id="navCollectedCount">0</span></a>
-      <a class="nav-item" href="#analytics" data-view="analytics"><svg><use href="#ui-chart"></use></svg><span>数据看板</span><span class="nav-count">本机</span></a>
     </nav>
   </aside>
   <button class="sidebar-overlay" id="sidebarOverlay" aria-label="关闭导航" hidden></button>
@@ -245,31 +240,6 @@
         <div id="mapArchiveGrid" class="map-archive-grid"></div>
       </section>
 
-      <section id="analyticsSection" class="secondary-section analytics-section" aria-labelledby="analyticsHeading" hidden>
-        <div class="analytics-notice">
-          <div><span class="analytics-scope">LOCAL ANALYTICS</span><h2 id="analyticsHeading">当前浏览器的数据</h2></div>
-          <p>本页展示当前浏览器统计。站点同时把匿名计数事件发送到 Cloudflare Worker：数据库只保存随机浏览器标识的哈希、页面或玩法编号与时间，不保存 IP、账号、设备信息或来源页。</p>
-        </div>
-        <div class="analytics-kpis" id="analyticsKpis" aria-label="本机访问概览"></div>
-        <div class="analytics-layout">
-          <section class="analytics-panel" aria-labelledby="viewRankingTitle">
-            <div class="analytics-panel-head"><div><span>MODE VIEWS</span><h3 id="viewRankingTitle">玩法浏览排行</h3></div><small>打开玩法详情时计数</small></div>
-            <div class="ranking-list" id="modeViewRanking"></div>
-          </section>
-          <section class="analytics-panel" aria-labelledby="favoriteRankingTitle">
-            <div class="analytics-panel-head"><div><span>FAVORITES</span><h3 id="favoriteRankingTitle">玩法收藏排行</h3></div><small>点击收藏时计数</small></div>
-            <div class="ranking-list" id="favoriteRanking"></div>
-          </section>
-        </div>
-        <section class="analytics-panel analytics-pages" aria-labelledby="pageViewTitle">
-          <div class="analytics-panel-head"><div><span>PAGE VIEWS</span><h3 id="pageViewTitle">页面访问分布</h3></div><small>进入不同页面或视图时计数</small></div>
-          <div class="page-view-list" id="pageViewBreakdown"></div>
-        </section>
-        <div class="analytics-actions">
-          <button class="button" id="exportAnalytics" type="button"><svg><use href="#ui-download"></use></svg>导出 CSV</button>
-          <button class="button subtle analytics-reset" id="resetAnalytics" type="button">清空本机统计</button>
-        </div>
-      </section>
       <footer class="workspace-footer"><span>集成农业<span class="title-dot">.</span> <span class="footer-divider">/</span> 射击玩法研究库</span></footer>
     </main>
   </div>
@@ -332,8 +302,8 @@
   </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js?v=local-analytics-20260907"></script>
-  <script src="maps.js?v=local-analytics-20260907"></script>
-  <script src="workspace.js?v=local-analytics-20260907"></script>
+  <script src="app.js?v=no-dashboard-20260907"></script>
+  <script src="maps.js?v=no-dashboard-20260907"></script>
+  <script src="workspace.js?v=no-dashboard-20260907"></script>
 </body>
 </html>
