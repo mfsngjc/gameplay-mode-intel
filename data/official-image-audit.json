@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T18:57:35.745793+00:00",
+  "updatedAt": "2026-09-08T01:11:37.394133+00:00",
   "status": "in_progress",
   "scopeModeIds": [
     "pubg-classic-br-2017",
@@ -7543,7 +7543,7 @@
       "id": "apex-storm-point",
       "game": "Apex Legends",
       "name": "风暴点（Storm Point）",
-      "status": "pending_review",
+      "status": "verified",
       "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/game-objects/maps-hub",
       "imageSource": "Apex Legends Wiki 地图图像（公开归档）",
       "planSource": "Apex Legends Wiki / Map images"
@@ -7562,6 +7562,12 @@
           "sourceUrl": "https://www.ea.com/ea-play/news/upheaval-game-updates",
           "result": "s21-bm-rotation-6.png 实际为局部通道场景，非平面图。",
           "candidateCacheKey": "6079595037db4f4d01e2"
+        },
+        {
+          "round": 2,
+          "sourceUrl": "https://www.ea.com/en-gb/games/battlefield/news/eclipse-patch-notes",
+          "result": "apex-s15-brokenmoon.jpg 为倾斜场景总览，非2D平面图；文章所链broken-moon开发博客返回404，仍待查。",
+          "candidateCacheKey": "64794a2135764afb85d9"
         }
       ]
     },
@@ -7980,6 +7986,44 @@
         4096
       ],
       "evidence": "官网正文 mp-rr-district-overhead，去除16:9裁剪参数取得完整方形原图；目视确认全岛俯视图及POI名称。"
+    },
+    {
+      "id": "apex-storm-point",
+      "pageUrl": "https://www.ea.com/games/battlefield/news/monstrous-storm-point-map-update",
+      "imageUrl": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2022/04/monstrous-storm-point-map-update/monstrous-storm-point-map-update-6.jpg",
+      "key": "e9b3799ccd481dff1a77",
+      "usable": true,
+      "localImageUrl": "assets/maps/official-plans/apex-storm-point.jpg",
+      "reviewStatus": "verified",
+      "previous": {
+        "game": "Apex Legends",
+        "gameKey": "apex",
+        "id": "apex-storm-point",
+        "name": "风暴点（Storm Point）",
+        "category": "battle-royale",
+        "variant": "大逃杀 · 约 4×4 km",
+        "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/game-objects/maps-hub",
+        "imageUrl": "assets/maps/2d-plans/apex-storm-point.jpg",
+        "thumbnailUrl": "assets/maps/2d-plans/apex-storm-point-thumb.jpg",
+        "width": 2048,
+        "height": 2048,
+        "imageSource": "Apex Legends Wiki 地图图像（公开归档）",
+        "originalName": "Storm Point",
+        "checkedAt": "2026-09-06",
+        "planImageUrl": "assets/maps/2d-plans/apex-storm-point.jpg",
+        "planWidth": 2048,
+        "planHeight": 2048,
+        "planType": "游戏内 2D 平面图 · POI 点位文字已烘焙",
+        "planSourceUrl": "https://apexlegends.wiki.gg/wiki/Category:Map_images",
+        "planSource": "Apex Legends Wiki / Map images",
+        "wikiUrl": "https://apexlegends.wiki.gg/wiki/Storm_Point",
+        "imageAssetSourceUrl": "https://apexlegends.wiki.gg/images/Storm_Point.png"
+      },
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "evidence": "正文第6张图片显示完整风暴点地图界面与军械库位置；9张正文图均经目视核对，其他局部场景图未用作平面图。"
     }
   ]
 }

@@ -38,6 +38,8 @@ def main():
     shutil.copytree(ROOT / 'assets/maps', OUTPUT / 'assets/maps')
     if (ROOT / 'assets/modes').exists():
         shutil.copytree(ROOT / 'assets/modes', OUTPUT / 'assets/modes')
+    if (ROOT / 'assets/mode-official').exists():
+        shutil.copytree(ROOT / 'assets/mode-official', OUTPUT / 'assets/mode-official')
     (OUTPUT / '.nojekyll').touch()
     assert not (OUTPUT / 'data/research.json').exists()
     assert not (OUTPUT / 'local-only').exists()
