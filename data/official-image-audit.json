@@ -3576,46 +3576,1389 @@
         800,
         450
       ]
-    }
-  ],
-  "note": "未出现在 verified 中的条目仍待处理，不能视为确认找不到。",
-  "pending": [
+    },
+    {
+      "id": "pubgm-wow-blade-ball-solo-practice-2024",
+      "pageUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/RESPAWN-BATTLE/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/802b40173ed4ee8c8a04.jpg",
+      "dimensions": [
+        486,
+        400
+      ]
+    },
+    {
+      "id": "pubgm-wow-blade-ball-ffa-2024",
+      "pageUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/RESPAWN-BATTLE/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/802b40173ed4ee8c8a04.jpg",
+      "dimensions": [
+        486,
+        400
+      ]
+    },
+    {
+      "id": "pubgm-wow-hot-blooded-blade-ball-2024",
+      "pageUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/RESPAWN-BATTLE/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/802b40173ed4ee8c8a04.jpg",
+      "dimensions": [
+        486,
+        400
+      ]
+    },
+    {
+      "id": "pubgm-wow-blade-ball-elimination-tournament-2024",
+      "pageUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/RESPAWN-BATTLE/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/802b40173ed4ee8c8a04.jpg",
+      "dimensions": [
+        486,
+        400
+      ]
+    },
+    {
+      "id": "pubgm-wow-hot-blooded-blade-ball-random-skills-2024",
+      "pageUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/RESPAWN-BATTLE/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/802b40173ed4ee8c8a04.jpg",
+      "dimensions": [
+        486,
+        400
+      ]
+    },
+    {
+      "id": "pubgm-wow-blade-ball-score-match-random-skills-2024",
+      "pageUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/RESPAWN-BATTLE/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/802b40173ed4ee8c8a04.jpg",
+      "dimensions": [
+        486,
+        400
+      ]
+    },
+    {
+      "id": "pubgm-wow-blade-ball-elimination-random-skills-2024",
+      "pageUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/RESPAWN-BATTLE/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/802b40173ed4ee8c8a04.jpg",
+      "dimensions": [
+        486,
+        400
+      ]
+    },
+    {
+      "id": "pubgm-wow-ice-naval-map-2024",
+      "pageUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/RESPAWN-BATTLE/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/802b40173ed4ee8c8a04.jpg",
+      "dimensions": [
+        486,
+        400
+      ]
+    },
+    {
+      "id": "pubgm-wow-freezing-tower-assault-2024",
+      "pageUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/RESPAWN-BATTLE/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/802b40173ed4ee8c8a04.jpg",
+      "dimensions": [
+        486,
+        400
+      ]
+    },
+    {
+      "id": "pubgm-wow-bio-infection-2024",
+      "pageUrl": "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/Skyhigh-Spectacle/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/11202fdeae3313e85d00.jpg",
+      "dimensions": [
+        1500,
+        1500
+      ]
+    },
+    {
+      "id": "pubgm-wow-aerial-ship-combat-2024",
+      "pageUrl": "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/Skyhigh-Spectacle/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/11202fdeae3313e85d00.jpg",
+      "dimensions": [
+        1500,
+        1500
+      ]
+    },
+    {
+      "id": "pubgm-wow-zombie-infection-2024",
+      "pageUrl": "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/Skyhigh-Spectacle/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/11202fdeae3313e85d00.jpg",
+      "dimensions": [
+        1500,
+        1500
+      ]
+    },
+    {
+      "id": "pubgm-wow-sky-control-2023",
+      "pageUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/FROST_FESTIVAL/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/b66a4bdda42ce51b6d9c.jpg",
+      "dimensions": [
+        792,
+        791
+      ]
+    },
+    {
+      "id": "pubgm-wow-gold-rush-2023",
+      "pageUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/FROST_FESTIVAL/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/b66a4bdda42ce51b6d9c.jpg",
+      "dimensions": [
+        792,
+        791
+      ]
+    },
+    {
+      "id": "pubgm-wow-bazooka-parkour-2023",
+      "pageUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/FROST_FESTIVAL/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/b66a4bdda42ce51b6d9c.jpg",
+      "dimensions": [
+        792,
+        791
+      ]
+    },
+    {
+      "id": "pubgm-wow-snowboard-descent-2023",
+      "pageUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/FROST_FESTIVAL/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/b66a4bdda42ce51b6d9c.jpg",
+      "dimensions": [
+        792,
+        791
+      ]
+    },
+    {
+      "id": "pubgm-wow-flying-reindeer-circuit-2023",
+      "pageUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/FROST_FESTIVAL/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/b66a4bdda42ce51b6d9c.jpg",
+      "dimensions": [
+        792,
+        791
+      ]
+    },
+    {
+      "id": "pubgm-wow-zombie-station-2023",
+      "pageUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+      "imageUrl": "https://www.pubgmobile.com/images/event/FROST_FESTIVAL/share.jpg",
+      "imageSource": "PUBG MOBILE 官方公告封面",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/b66a4bdda42ce51b6d9c.jpg",
+      "dimensions": [
+        792,
+        791
+      ]
+    },
+    {
+      "imageUrl": "https://static.gametalk.qq.com/image/182/1788518753_6cd7f5b83c2f1f804fd1ac466d80ebb2.jpg",
+      "id": "hpjy-scientific-wheel-2022",
+      "pageUrl": "https://gp.qq.com/gicp/news/684/17461905.html",
+      "imageSource": "和平精英官网玩法介绍配图（本地归档）",
+      "reviewStatus": "verified",
+      "localImageUrl": "assets/mode-official/45e2921dca2af6eb7095.jpg",
+      "dimensions": [
+        500,
+        270
+      ]
+    },
+    {
+      "id": "pubgm-mini-zone-2018",
+      "pageUrl": "https://www.pubgmobile.com/TW/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201806/731228.shtml",
+      "imageUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20180619/650661380564344.jpg",
+      "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+      "reviewStatus": "verified",
+      "evidence": {
+        "score": 10,
+        "sourceHost": "www.pubgmobile.com",
+        "kind": "img"
+      },
+      "localImageUrl": "assets/mode-official/e890d4d0c106dcf6cd65.jpg",
+      "dimensions": [
+        1200,
+        628
+      ]
+    },
+    {
+      "id": "free-fire-pumpkin-snatch-2019",
+      "pageUrl": "https://ff.garena.com/en/article/137",
+      "imageUrl": "https://cdn.wildflamestudio.com/common/OB19/ofweb/DEV%20BLOG2.png",
+      "imageSource": "Garena 官方公告玩法配图（本地归档）",
+      "reviewStatus": "verified",
+      "evidence": {
+        "score": 15,
+        "sourceHost": "ff.garena.com",
+        "kind": "img"
+      },
+      "localImageUrl": "assets/mode-official/307dcd12ce8f48fbccb0.png",
+      "dimensions": [
+        1335,
+        751
+      ]
+    },
+    {
+      "id": "pubgm-amusement-park-2020",
+      "pageUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35373/35374/35386/35387/m20497/202002/849328.shtml",
+      "imageUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20200303/47164532478664.jpg",
+      "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+      "reviewStatus": "verified",
+      "evidence": {
+        "score": 10,
+        "sourceHost": "www.pubgmobile.com",
+        "kind": "img"
+      },
+      "localImageUrl": "assets/mode-official/9c490d35c6a3803ff6fa.jpg",
+      "dimensions": [
+        870,
+        436
+      ]
+    },
+    {
+      "id": "pubgm-amusement-whats-in-the-box-2020",
+      "pageUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35373/35374/35386/35387/m20497/202002/849328.shtml",
+      "imageUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20200303/976911309742356.jpg",
+      "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+      "reviewStatus": "verified",
+      "evidence": {
+        "score": 25,
+        "kind": "meta",
+        "dimensions": [
+          2273,
+          1435
+        ]
+      },
+      "localImageUrl": "assets/mode-official/2f16f6ee09aee0804f29.jpg",
+      "dimensions": [
+        2273,
+        1435
+      ]
+    },
+    {
+      "id": "pubgm-quick-match-2019",
+      "pageUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201906/813644.shtml",
+      "imageUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20190611/272181049006115.jpg",
+      "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+      "reviewStatus": "verified",
+      "evidence": {
+        "score": 18,
+        "kind": "img",
+        "dimensions": [
+          2554,
+          1432
+        ]
+      },
+      "localImageUrl": "assets/mode-official/6877971565448ef10d82.jpg",
+      "dimensions": [
+        2554,
+        1432
+      ]
+    },
+    {
+      "id": "pubgm-sniper-training-2019",
+      "pageUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201906/813644.shtml",
+      "imageUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20190611/272181049006115.jpg",
+      "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+      "reviewStatus": "verified",
+      "evidence": {
+        "score": 14,
+        "kind": "img",
+        "dimensions": [
+          2554,
+          1432
+        ]
+      },
+      "localImageUrl": "assets/mode-official/6877971565448ef10d82.jpg",
+      "dimensions": [
+        2554,
+        1432
+      ]
+    },
+    {
+      "id": "pubgm-spark-the-flame-2020",
+      "pageUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202007/862637.shtml",
+      "imageUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20200702/707621304486955.jpg",
+      "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+      "reviewStatus": "verified",
+      "evidence": {
+        "score": 18,
+        "kind": "img",
+        "dimensions": [
+          816,
+          411
+        ]
+      },
+      "localImageUrl": "assets/mode-official/6747d6136020baa6c87b.png",
+      "dimensions": [
+        816,
+        411
+      ]
+    },
     {
       "id": "fortnite-solid-gold-2018",
       "game": "Fortnite",
-      "modeName": "全金装备战（Solid Gold）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://fortnite.fandom.com/wiki/Solid_Gold",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "f2b7cf0c6e68acbb2796"
-      },
-      "round2": {
-        "query": "Fortnite \"Solid Gold\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-0.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方发布视频配图（早期 LTM 通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "generic official early-LTM fallback"
       }
     },
     {
       "id": "fortnite-arsenal-2019",
       "game": "Fortnite",
-      "modeName": "军备竞赛（Arsenal）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://fortnite.fandom.com/wiki/Arsenal_(LTM)",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "9e96f5eb074977e66165"
-      },
-      "round2": {
-        "query": "Fortnite \"Arsenal\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-0.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方发布视频配图（早期 LTM 通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "generic official early-LTM fallback"
       }
     },
+    {
+      "id": "fortnite-final-fight-teams-12-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方同系列/团队战玩法配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official 50v50/team variant art"
+      }
+    },
+    {
+      "id": "fortnite-one-shot-2019",
+      "game": "Fortnite",
+      "imageUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fv3-4-content-update%2FHighExplosivesv2-1280x720-82c683eb54bcee415077df71b2b19eaac37fa1f5.jpg",
+      "localImageUrl": "assets/mode-official/4bbe3b6b4c63a393b311.jpg",
+      "pageUrl": "https://www.fortnite.com/news/v3-4-content-update?lang=en-US",
+      "imageSource": "Epic 官方早期 LTM 补丁配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "generic official early-LTM fallback"
+      }
+    },
+    {
+      "id": "fortnite-teams-of-20-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方同系列/团队战玩法配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official 50v50/team variant art"
+      }
+    },
+    {
+      "id": "fortnite-close-encounters-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方发布视频配图（早期 LTM 通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "generic official early-LTM fallback"
+      }
+    },
+    {
+      "id": "fortnite-soaring-solos-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方发布视频配图（早期 LTM 通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "generic official early-LTM fallback"
+      }
+    },
+    {
+      "id": "fortnite-driftin-2019",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方发布视频配图（早期 LTM 通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "generic official early-LTM fallback"
+      }
+    },
+    {
+      "id": "fortnite-catch-2019",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方发布视频配图（早期 LTM 通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "generic official early-LTM fallback"
+      }
+    },
+    {
+      "id": "delta-force-blitz-2024",
+      "game": "三角洲行动",
+      "imageUrl": "https://web.df.garena.com//03_news/news_banner/SMP/20250920_patch/9.jpg",
+      "localImageUrl": "assets/mode-official/07bfc5ce74151ae00303.jpg",
+      "pageUrl": "https://deltaforce.garena.com/en/news/announcement/W9PGYU",
+      "imageSource": "Garena 三角洲行动官方玩法图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official Delta Force gameplay fallback"
+      }
+    },
+    {
+      "id": "delta-force-threshold-attack-defense-2024",
+      "game": "三角洲行动",
+      "imageUrl": "https://web.df.garena.com//03_news/news_banner/SMP/20250920_patch/9.jpg",
+      "localImageUrl": "assets/mode-official/07bfc5ce74151ae00303.jpg",
+      "pageUrl": "https://deltaforce.garena.com/en/news/announcement/W9PGYU",
+      "imageSource": "Garena 三角洲行动官方玩法图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official Delta Force gameplay fallback"
+      }
+    },
+    {
+      "id": "delta-force-black-tide-bomb-2026",
+      "game": "三角洲行动",
+      "imageUrl": "https://web.df.garena.com//03_news/news_banner/SMP/20250920_patch/9.jpg",
+      "localImageUrl": "assets/mode-official/07bfc5ce74151ae00303.jpg",
+      "pageUrl": "https://deltaforce.garena.com/en/news/announcement/W9PGYU",
+      "imageSource": "Garena 三角洲行动官方玩法图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official Delta Force gameplay fallback"
+      }
+    },
+    {
+      "id": "free-fire-bomb-squad-2019",
+      "game": "Free Fire",
+      "imageUrl": "https://i.ytimg.com/vi/hTSx52F8J_c/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/c4460ec2cf2efc4a3e4b.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=hTSx52F8J_c",
+      "imageSource": "Garena 官方 Bomb Squad 同系列视频封面（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official same-series video art"
+      }
+    },
+    {
+      "id": "free-fire-kimbo-rush-hour-2022",
+      "game": "Free Fire",
+      "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/d5830/en-1.jpg",
+      "localImageUrl": "assets/mode-official/b0326b735afb9b8bbc11.jpg",
+      "pageUrl": "https://ff.garena.com/en/article/735/",
+      "imageSource": "Garena 官方活动配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official FF event art"
+      }
+    },
+    {
+      "id": "free-fire-color-spray-2023",
+      "game": "Free Fire",
+      "imageUrl": "https://i.ytimg.com/vi/RwH5Nwvb1_0/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/a1fff1e4d9624ae1a421.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=RwH5Nwvb1_0",
+      "imageSource": "Garena 官方 Color 系列玩法视频封面（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official Color-series video art"
+      }
+    },
+    {
+      "id": "free-fire-mystery-town-2023",
+      "game": "Free Fire",
+      "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/d5830/en-1.jpg",
+      "localImageUrl": "assets/mode-official/b0326b735afb9b8bbc11.jpg",
+      "pageUrl": "https://ff.garena.com/en/article/735/",
+      "imageSource": "Garena 官方活动配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official FF event art"
+      }
+    },
+    {
+      "id": "free-fire-fort-feud-2023",
+      "game": "Free Fire",
+      "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/d5830/en-1.jpg",
+      "localImageUrl": "assets/mode-official/b0326b735afb9b8bbc11.jpg",
+      "pageUrl": "https://ff.garena.com/en/article/735/",
+      "imageSource": "Garena 官方活动配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official FF event art"
+      }
+    },
+    {
+      "id": "pubgm-arcade-mode-2018",
+      "game": "PUBG Mobile",
+      "imageUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20190611/272181049006115.jpg",
+      "localImageUrl": "assets/mode-official/6877971565448ef10d82.jpg",
+      "pageUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201906/813644.shtml",
+      "imageSource": "PUBG MOBILE 官方 Arcade/EvoGround 更新配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official arcade-era update art"
+      }
+    },
+    {
+      "id": "pubgm-react-survival-2-0-2022",
+      "game": "PUBG Mobile",
+      "imageUrl": "https://www.pubgmobile.com/images/event/common/long_cache_30d/icon.png?v=5",
+      "localImageUrl": "assets/mode-official/2273e57e9fc1aa1f1d6d.jpg",
+      "pageUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60922/60923/60924/60926/m22609/202203/912060.shtml",
+      "imageSource": "PUBG MOBILE 官方 App 图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "free-fire-kill-secured-2020",
+      "game": "Free Fire",
+      "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg",
+      "localImageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg",
+      "pageUrl": "https://ff.garena.com/en/article/67/",
+      "imageSource": "Garena 官方小队对抗模式封面（通用兜底）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official squad-mode art"
+      }
+    },
+    {
+      "id": "free-fire-gun-king-squad-2020",
+      "game": "Free Fire",
+      "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg",
+      "localImageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg",
+      "pageUrl": "https://ff.garena.com/en/article/67/",
+      "imageSource": "Garena 官方小队对抗模式封面（通用兜底）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official squad-mode art"
+      }
+    },
+    {
+      "id": "free-fire-clash-squad-ranked-2020",
+      "game": "Free Fire",
+      "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg",
+      "localImageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg",
+      "pageUrl": "https://ff.garena.com/en/article/67/",
+      "imageSource": "Garena 官方 Clash Squad 同系列封面（通用兜底）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official same-series art"
+      }
+    },
+    {
+      "id": "pubgm-wow-infinite-roguelike-2023",
+      "game": "PUBG Mobile",
+      "imageUrl": "https://i.ytimg.com/vi/If0dohVA8Fw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/f4d64a1b5ac701be0d2e.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=If0dohVA8Fw",
+      "imageSource": "PUBG MOBILE 官方 World of Wonder 配图（同系列通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official WOW art"
+      }
+    },
+    {
+      "id": "pubgm-wow-boxing-arena-zombie-2023",
+      "game": "PUBG Mobile",
+      "imageUrl": "https://i.ytimg.com/vi/If0dohVA8Fw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/f4d64a1b5ac701be0d2e.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=If0dohVA8Fw",
+      "imageSource": "PUBG MOBILE 官方 World of Wonder 配图（同系列通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official WOW art"
+      }
+    },
+    {
+      "id": "pubgm-wow-air-raid-shelter-stealth-2023",
+      "game": "PUBG Mobile",
+      "imageUrl": "https://i.ytimg.com/vi/If0dohVA8Fw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/f4d64a1b5ac701be0d2e.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=If0dohVA8Fw",
+      "imageSource": "PUBG MOBILE 官方 World of Wonder 配图（同系列通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official WOW art"
+      }
+    },
+    {
+      "id": "pubgm-wow-companion-dash-2023",
+      "game": "PUBG Mobile",
+      "imageUrl": "https://i.ytimg.com/vi/If0dohVA8Fw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/f4d64a1b5ac701be0d2e.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=If0dohVA8Fw",
+      "imageSource": "PUBG MOBILE 官方 World of Wonder 配图（同系列通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official WOW art"
+      }
+    },
+    {
+      "id": "pubgm-wow-car-racing-2023",
+      "game": "PUBG Mobile",
+      "imageUrl": "https://i.ytimg.com/vi/If0dohVA8Fw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/f4d64a1b5ac701be0d2e.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=If0dohVA8Fw",
+      "imageSource": "PUBG MOBILE 官方 World of Wonder 配图（同系列通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official WOW art"
+      }
+    },
+    {
+      "id": "pubgm-wow-pubgm-go-2023",
+      "game": "PUBG Mobile",
+      "imageUrl": "https://i.ytimg.com/vi/If0dohVA8Fw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/f4d64a1b5ac701be0d2e.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=If0dohVA8Fw",
+      "imageSource": "PUBG MOBILE 官方 World of Wonder 配图（同系列通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official WOW art"
+      }
+    },
+    {
+      "id": "pubgm-wow-erangel-mod-2023",
+      "game": "PUBG Mobile",
+      "imageUrl": "https://i.ytimg.com/vi/If0dohVA8Fw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/f4d64a1b5ac701be0d2e.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=If0dohVA8Fw",
+      "imageSource": "PUBG MOBILE 官方 World of Wonder 配图（同系列通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official WOW art"
+      }
+    },
+    {
+      "id": "pubgm-wow-craft-mod-2023",
+      "game": "PUBG Mobile",
+      "imageUrl": "https://i.ytimg.com/vi/If0dohVA8Fw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/f4d64a1b5ac701be0d2e.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=If0dohVA8Fw",
+      "imageSource": "PUBG MOBILE 官方 World of Wonder 配图（同系列通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official WOW art"
+      }
+    },
+    {
+      "id": "hpjy-fast-bomb-2024",
+      "game": "和平精英",
+      "imageUrl": "https://shp.qpic.cn/cfwebcap/0/444c0a657b99f4d3a6ad8b19ca103043/0?width=690&height=340",
+      "localImageUrl": "assets/mode-official/1ec591418a37f24454cc.jpg",
+      "pageUrl": "https://gp.qq.com/gicp/news/684/7354921.html",
+      "imageSource": "和平精英官网团队竞技/爆破玩法配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official TDM gameplay image"
+      }
+    },
+    {
+      "id": "hpjy-ice-gold-rush-2024",
+      "game": "和平精英",
+      "imageUrl": "https://static.gametalk.qq.com/image/182/1788518753_6cd7f5b83c2f1f804fd1ac466d80ebb2.jpg",
+      "localImageUrl": "assets/mode-official/45e2921dca2af6eb7095.jpg",
+      "pageUrl": "https://gp.qq.com/gicp/news/684/17461905.html",
+      "imageSource": "和平精英官网玩法介绍配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official HP gameplay image"
+      }
+    },
+    {
+      "id": "hpjy-fantasy-brawl-2025",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-conquest-2025",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-solo-arena-2025",
+      "game": "和平精英",
+      "imageUrl": "https://shp.qpic.cn/cfwebcap/0/444c0a657b99f4d3a6ad8b19ca103043/0?width=690&height=340",
+      "localImageUrl": "assets/mode-official/1ec591418a37f24454cc.jpg",
+      "pageUrl": "https://gp.qq.com/gicp/news/684/7354921.html",
+      "imageSource": "和平精英官网团队竞技/爆破玩法配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official TDM gameplay image"
+      }
+    },
+    {
+      "id": "hpjy-nuclear-showdown-2025",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-fpp-bomb-2025",
+      "game": "和平精英",
+      "imageUrl": "https://shp.qpic.cn/cfwebcap/0/444c0a657b99f4d3a6ad8b19ca103043/0?width=690&height=340",
+      "localImageUrl": "assets/mode-official/1ec591418a37f24454cc.jpg",
+      "pageUrl": "https://gp.qq.com/gicp/news/684/7354921.html",
+      "imageSource": "和平精英官网团队竞技/爆破玩法配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official TDM gameplay image"
+      }
+    },
+    {
+      "id": "hpjy-fpp-team-deathmatch-2025",
+      "game": "和平精英",
+      "imageUrl": "https://shp.qpic.cn/cfwebcap/0/444c0a657b99f4d3a6ad8b19ca103043/0?width=690&height=340",
+      "localImageUrl": "assets/mode-official/1ec591418a37f24454cc.jpg",
+      "pageUrl": "https://gp.qq.com/gicp/news/684/7354921.html",
+      "imageSource": "和平精英官网团队竞技/爆破玩法配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official TDM gameplay image"
+      }
+    },
+    {
+      "id": "hpjy-surnan-conflict-2025",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-icebound-train-2026",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-cowboy-revenge-2026",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-extreme-hunt-2020",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-esports-mode-2021",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-restart-future-2021",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-impostor-verification-2021",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-light-shadow-adventure-2021",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-peace-wing-2022",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-dragon-lion-winter-2022",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-airdrop-operation-2022",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-mutant-tdm-2-2022",
+      "game": "和平精英",
+      "imageUrl": "https://shp.qpic.cn/cfwebcap/0/ab3c017e1d871e4a09daeaabb32ef16e/0/?width=752&height=280",
+      "localImageUrl": "assets/mode-official/51b050e1271c8e0f9722.jpg",
+      "pageUrl": "https://gp.qq.com/gicp/news/684/15032347.html",
+      "imageSource": "和平精英官网玩法介绍配图（同类玩法通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official gameplay-site image"
+      }
+    },
+    {
+      "id": "hpjy-sniper-tdm-2023",
+      "game": "和平精英",
+      "imageUrl": "https://shp.qpic.cn/cfwebcap/0/444c0a657b99f4d3a6ad8b19ca103043/0?width=690&height=340",
+      "localImageUrl": "assets/mode-official/1ec591418a37f24454cc.jpg",
+      "pageUrl": "https://gp.qq.com/gicp/news/684/7354921.html",
+      "imageSource": "和平精英官网团队竞技/爆破玩法配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official TDM gameplay image"
+      }
+    },
+    {
+      "id": "hpjy-adventure-train-2023",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-sky-arena-2023",
+      "game": "和平精英",
+      "imageUrl": "https://shp.qpic.cn/cfwebcap/0/444c0a657b99f4d3a6ad8b19ca103043/0?width=690&height=340",
+      "localImageUrl": "assets/mode-official/1ec591418a37f24454cc.jpg",
+      "pageUrl": "https://gp.qq.com/gicp/news/684/7354921.html",
+      "imageSource": "和平精英官网团队竞技/爆破玩法配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official TDM gameplay image"
+      }
+    },
+    {
+      "id": "hpjy-mutant-mine-2020",
+      "game": "和平精英",
+      "imageUrl": "https://img2-tc.tapimg.com/bbcode/images/266ec7be1641a39f2c2d85798c0b1ff0.png/_tap_ugc.jpg",
+      "localImageUrl": "assets/mode-official/981129763a7d9cbb3afe.jpg",
+      "pageUrl": "https://www.taptap.cn/moment/77821174586803681",
+      "imageSource": "和平精英官方账号/社区公告配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official/community-account source-page image"
+      }
+    },
+    {
+      "id": "hpjy-christmas-mode-2019",
+      "game": "和平精英",
+      "imageUrl": "https://img2-tc.tapimg.com/bbcode/images/3721e26282d58d52f1d1d7435e059ca2.png/_tap_ugc.jpg",
+      "localImageUrl": "assets/mode-official/e624608a15411a6bef7c.jpg",
+      "pageUrl": "https://www.taptap.cn/moment/15202284518509745",
+      "imageSource": "和平精英官方账号/社区公告配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official/community-account source-page image"
+      }
+    },
+    {
+      "id": "hpjy-arsenal-tdm-2020",
+      "game": "和平精英",
+      "imageUrl": "https://img2-tc.tapimg.com/bbcode/images/b12a52ddd67c0c4e7934bfea4e7de09a.png/_tap_ugc.jpg",
+      "localImageUrl": "assets/mode-official/7b3ed598f0b384ea2fa1.jpg",
+      "pageUrl": "https://www.taptap.cn/moment/15217739467589134",
+      "imageSource": "和平精英官方账号/社区公告配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official/community-account source-page image"
+      }
+    },
+    {
+      "id": "hpjy-treasure-battlefield-2021",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://www.taptap.cn/moment/102841267771148269",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-silent-comms-2021",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://www.taptap.cn/moment/102841267771148269",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-quick-duel-2020",
+      "game": "和平精英",
+      "imageUrl": "https://img2-tc.tapimg.com/bbcode/images/fd7be93eb8dd990f141552c630be487d.jpg/_tap_ugc.jpg",
+      "localImageUrl": "assets/mode-official/bcf66dc69c1c88cbc4cd.jpg",
+      "pageUrl": "https://www.taptap.cn/moment/21993052490959807",
+      "imageSource": "和平精英官方账号/社区公告配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official/community-account source-page image"
+      }
+    },
+    {
+      "id": "hpjy-eagle-eye-training-2020",
+      "game": "和平精英",
+      "imageUrl": "https://img2-tc.tapimg.com/bbcode/images/fd7be93eb8dd990f141552c630be487d.jpg/_tap_ugc.jpg",
+      "localImageUrl": "assets/mode-official/bcf66dc69c1c88cbc4cd.jpg",
+      "pageUrl": "https://www.taptap.cn/moment/21993052490959807",
+      "imageSource": "和平精英官方账号/社区公告配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official/community-account source-page image"
+      }
+    },
+    {
+      "id": "hpjy-airdrop-assault-2020",
+      "game": "和平精英",
+      "imageUrl": "https://img2-tc.tapimg.com/bbcode/images/fd7be93eb8dd990f141552c630be487d.jpg/_tap_ugc.jpg",
+      "localImageUrl": "assets/mode-official/bcf66dc69c1c88cbc4cd.jpg",
+      "pageUrl": "https://www.taptap.cn/moment/21993052490959807",
+      "imageSource": "和平精英官方账号/社区公告配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official/community-account source-page image"
+      }
+    },
+    {
+      "id": "hpjy-field-action-2020",
+      "game": "和平精英",
+      "imageUrl": "https://img2-tc.tapimg.com/bbcode/images/fd7be93eb8dd990f141552c630be487d.jpg/_tap_ugc.jpg",
+      "localImageUrl": "assets/mode-official/bcf66dc69c1c88cbc4cd.jpg",
+      "pageUrl": "https://www.taptap.cn/moment/21993052490959807",
+      "imageSource": "和平精英官方账号/社区公告配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official/community-account source-page image"
+      }
+    },
+    {
+      "id": "hpjy-extreme-arena-2020",
+      "game": "和平精英",
+      "imageUrl": "https://img2-tc.tapimg.com/bbcode/images/fd7be93eb8dd990f141552c630be487d.jpg/_tap_ugc.jpg",
+      "localImageUrl": "assets/mode-official/bcf66dc69c1c88cbc4cd.jpg",
+      "pageUrl": "https://www.taptap.cn/moment/21993052490959807",
+      "imageSource": "和平精英官方账号/社区公告配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official/community-account source-page image"
+      }
+    },
+    {
+      "id": "hpjy-ice-gold-rush-mutant-2026",
+      "game": "和平精英",
+      "imageUrl": "https://static.gametalk.qq.com/image/182/1788518753_6cd7f5b83c2f1f804fd1ac466d80ebb2.jpg",
+      "localImageUrl": "assets/mode-official/45e2921dca2af6eb7095.jpg",
+      "pageUrl": "https://gp.qq.com/gicp/news/684/17461905.html",
+      "imageSource": "和平精英官网玩法介绍配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official HP gameplay image"
+      }
+    },
+    {
+      "id": "hpjy-major-counterattack-2026",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://www.taptap.cn/app/70056/all-info?platform=ios",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-deathmatch-2026",
+      "game": "和平精英",
+      "imageUrl": "https://shp.qpic.cn/cfwebcap/0/444c0a657b99f4d3a6ad8b19ca103043/0?width=690&height=340",
+      "localImageUrl": "assets/mode-official/1ec591418a37f24454cc.jpg",
+      "pageUrl": "https://gp.qq.com/gicp/news/684/7354921.html",
+      "imageSource": "和平精英官网团队竞技/爆破玩法配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official TDM gameplay image"
+      }
+    },
+    {
+      "id": "hpjy-surnan-conflict-icebound-2026",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://www.taptap.cn/app/70056/all-info?platform=ios",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "hpjy-monster-role-salamander-2026",
+      "game": "和平精英",
+      "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg",
+      "localImageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
+      "pageUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+      "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "official generic app icon"
+      }
+    },
+    {
+      "id": "fortnite-scavenger-pop-up-cup-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方发布视频配图（早期 LTM 通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "generic official early-LTM fallback"
+      }
+    },
+    {
+      "id": "fortnite-arena-2019",
+      "game": "Fortnite",
+      "imageUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmnngoupulagy07oei29h5i6e",
+      "localImageUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmnngoupulagy07oei29h5i6e",
+      "pageUrl": "https://www.fortnite.com/news/chase-greatness-in-fortnite-arenas",
+      "imageSource": "Epic 官方竞技场模式公告图（通用兜底）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official Arena-series art"
+      }
+    },
+    {
+      "id": "fortnite-food-fight-deep-fried-2019",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/AZ9WzKpm-UQ/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/7007a3ae08287c84d9fd.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=AZ9WzKpm-UQ",
+      "imageSource": "Fortnite 官方同系列 Food Fight 配图（本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse same-series official art"
+      }
+    },
+    {
+      "id": "fortnite-blitz-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://cdn2.unrealengine.com/fortnite-blitz-royale-1920x1080-9946411a3a9f.jpg",
+      "localImageUrl": "https://cdn2.unrealengine.com/fortnite-blitz-royale-1920x1080-9946411a3a9f.jpg",
+      "pageUrl": "https://www.fortnite.com/news/fortnite-blitz-royale-full-throttle-phone-ready?lang=en-US",
+      "imageSource": "Fortnite 官方 Blitz 系列公告头图（通用兜底）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official Blitz-series art"
+      }
+    },
+    {
+      "id": "fortnite-team-terror-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方发布视频配图（早期 LTM 通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "generic official early-LTM fallback"
+      }
+    },
+    {
+      "id": "fortnite-teams-of-20-v2-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方同系列/团队战玩法配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official 50v50/team variant art"
+      }
+    },
+    {
+      "id": "fortnite-high-explosives-2017",
+      "game": "Fortnite",
+      "imageUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fv3-4-content-update%2FHighExplosivesv2-1280x720-82c683eb54bcee415077df71b2b19eaac37fa1f5.jpg",
+      "localImageUrl": "assets/mode-official/4bbe3b6b4c63a393b311.jpg",
+      "pageUrl": "https://www.fortnite.com/news/v3-4-content-update?lang=en-US",
+      "imageSource": "Epic 官方同系列 High Explosives 配图（本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse same-series official art"
+      }
+    },
+    {
+      "id": "fortnite-sniper-shootout-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fv3-4-content-update%2FHighExplosivesv2-1280x720-82c683eb54bcee415077df71b2b19eaac37fa1f5.jpg",
+      "localImageUrl": "assets/mode-official/4bbe3b6b4c63a393b311.jpg",
+      "pageUrl": "https://www.fortnite.com/news/v3-4-content-update?lang=en-US",
+      "imageSource": "Epic 官方早期 LTM 补丁配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "generic official early-LTM fallback"
+      }
+    },
+    {
+      "id": "fortnite-sniper-shootout-v3-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fv3-4-content-update%2FHighExplosivesv2-1280x720-82c683eb54bcee415077df71b2b19eaac37fa1f5.jpg",
+      "localImageUrl": "assets/mode-official/4bbe3b6b4c63a393b311.jpg",
+      "pageUrl": "https://www.fortnite.com/news/v3-4-content-update?lang=en-US",
+      "imageSource": "Epic 官方早期 LTM 补丁配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "generic official early-LTM fallback"
+      }
+    },
+    {
+      "id": "fortnite-soaring-50s-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方发布视频配图（早期 LTM 通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "generic official early-LTM fallback"
+      }
+    },
+    {
+      "id": "fortnite-unvaulted-squads-2019",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方发布视频配图（早期 LTM 通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "generic official early-LTM fallback"
+      }
+    },
+    {
+      "id": "fortnite-50v50-v2-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方同系列/团队战玩法配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official 50v50/team variant art"
+      }
+    },
+    {
+      "id": "fortnite-blitz-v2-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://cdn2.unrealengine.com/fortnite-blitz-royale-1920x1080-9946411a3a9f.jpg",
+      "localImageUrl": "https://cdn2.unrealengine.com/fortnite-blitz-royale-1920x1080-9946411a3a9f.jpg",
+      "pageUrl": "https://www.fortnite.com/news/fortnite-blitz-royale-full-throttle-phone-ready?lang=en-US",
+      "imageSource": "Fortnite 官方 Blitz 系列公告头图（通用兜底）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official Blitz-series art"
+      }
+    },
+    {
+      "id": "fortnite-50v50-v3-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方同系列/团队战玩法配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official 50v50/team variant art"
+      }
+    },
+    {
+      "id": "fortnite-solid-gold-v2-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方发布视频配图（早期 LTM 通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "generic official early-LTM fallback"
+      }
+    },
+    {
+      "id": "fortnite-final-fight-teams-20-2018",
+      "game": "Fortnite",
+      "imageUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg",
+      "localImageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+      "pageUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+      "imageSource": "Fortnite 官方同系列/团队战玩法配图（通用兜底，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "reuse official 50v50/team variant art"
+      }
+    },
+    {
+      "id": "pubgm-react-survival-2021",
+      "game": "PUBG Mobile",
+      "imageUrl": "https://www.pubgmobile.com/images/event/common/long_cache_30d/icon.png?v=5",
+      "localImageUrl": "assets/mode-official/2273e57e9fc1aa1f1d6d.jpg",
+      "pageUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202201/908153.shtml",
+      "imageSource": "PUBG MOBILE 官方 App 图标（通用兜底，非玩法专图，本地归档）",
+      "reviewStatus": "verified_official_fallback",
+      "evidence": {
+        "note": "replaced generated svg with official generic app icon"
+      }
+    }
+  ],
+  "note": "未出现在 verified 中的条目仍待处理，不能视为确认找不到。",
+  "pending": [
     {
       "id": "apex-armed-dangerous-2019",
       "game": "Apex Legends",
@@ -3677,47 +5020,6 @@
         "cacheKey": "dfc723d558381aaa67c7"
       },
       "round2": null
-    },
-    {
-      "id": "fortnite-final-fight-teams-12-2018",
-      "game": "Fortnite",
-      "modeName": "12 人小队终局战（Final Fight Teams of 12）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v4-5?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "a1c75225a6fc02059a7b"
-      },
-      "round2": {
-        "query": "Fortnite \"Final Fight Teams of 12\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-1.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-one-shot-2019",
-      "game": "Fortnite",
-      "modeName": "一击狙击战（One Shot）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v7-20?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "263c71a777792ed93c70"
-      },
-      "round2": {
-        "query": "Fortnite \"One Shot\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-1.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      },
-      "sourceImageReview": {
-        "status": "reviewed_no_matching_image_selected",
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v7-20?lang=en-US",
-        "note": "web 工具成功读取原始补丁页；模式段落为文字，图片属于其他武器、道具或 Save the World 内容。仍需其他官方来源。"
-      }
     },
     {
       "id": "apex-second-chance-2021",
@@ -3796,157 +5098,6 @@
       }
     },
     {
-      "id": "fortnite-teams-of-20-2018",
-      "game": "Fortnite",
-      "modeName": "20 人小队大逃杀（Teams of 20）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v3-2?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "91b2e2b5ac7a2eb816a0"
-      },
-      "round2": {
-        "query": "Fortnite \"Teams of 20\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-1.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-close-encounters-2018",
-      "game": "Fortnite",
-      "modeName": "贴身交战（Close Encounters）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v5-41?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "bbd06cb4a747bf0eacd4"
-      },
-      "round2": {
-        "query": "Fortnite \"Close Encounters\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-2.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      },
-      "sourceImageReview": {
-        "status": "reviewed_no_matching_image_selected",
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v5-41?lang=en-US",
-        "note": "web 工具成功读取原始补丁页；模式段落为文字，图片属于其他武器、道具或 Save the World 内容。仍需其他官方来源。"
-      }
-    },
-    {
-      "id": "fortnite-soaring-solos-2018",
-      "game": "Fortnite",
-      "modeName": "单人滑翔战（Soaring Solos）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v5-41?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "bbd06cb4a747bf0eacd4"
-      },
-      "round2": {
-        "query": "Fortnite \"Soaring Solos\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-2.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      },
-      "sourceImageReview": {
-        "status": "reviewed_no_matching_image_selected",
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v5-41?lang=en-US",
-        "note": "web 工具成功读取原始补丁页；模式段落为文字，图片属于其他武器、道具或 Save the World 内容。仍需其他官方来源。"
-      }
-    },
-    {
-      "id": "fortnite-driftin-2019",
-      "game": "Fortnite",
-      "modeName": "漂移板大战（Driftin’）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v7-40-content-update?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "6ec3011189694596eecf"
-      },
-      "round2": {
-        "query": "Fortnite \"Driftin’\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-2.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-catch-2019",
-      "game": "Fortnite",
-      "modeName": "投掷物大战（Catch!）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v7-40-content-update?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "6ec3011189694596eecf"
-      },
-      "round2": {
-        "query": "Fortnite \"Catch!\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-2.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-scientific-wheel-2022",
-      "game": "和平精英",
-      "modeName": "科学之轮",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://gp.qq.com/gicp/news/684/17461905.html",
-        "httpStatus": 200,
-        "imageCandidates": 28,
-        "cacheKey": "9e8ce420e917843e5343"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "和平精英 科学之轮 官方 玩法",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-0.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "delta-force-blitz-2024",
-      "game": "三角洲行动",
-      "modeName": "闪击玩法（Blitz）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://df.qq.com/cp/a20240906main/newsdetail.html?id=11829496586981425697",
-        "httpStatus": 200,
-        "imageCandidates": 3,
-        "cacheKey": "bace7d179bb042466bad"
-      },
-      "round2": null,
-      "sourceImageReview": {
-        "status": "matching_official_image_inaccessible",
-        "pageUrl": "https://deltaforce.garena.com/en/news/announcement/WRAT69",
-        "httpStatus": 403,
-        "evidence": "官方 BLITZ 段落已确认配图，但 Googleusercontent 原图请求403；继续查官方其他发布渠道，不能认定不存在。",
-        "cacheKey": "48a167d0a3e12375b9ed"
-      }
-    },
-    {
-      "id": "delta-force-threshold-attack-defense-2024",
-      "game": "三角洲行动",
-      "modeName": "临界点攻防",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://df.qq.com/cp/a20240906main/newsdetail.html?id=11829496586981425697",
-        "httpStatus": 200,
-        "imageCandidates": 3,
-        "cacheKey": "bace7d179bb042466bad"
-      },
-      "round2": null
-    },
-    {
       "id": "apex-ring-fury-2021",
       "game": "Apex Legends",
       "modeName": "戒圈狂怒（Ring Fury）",
@@ -3969,19 +5120,6 @@
         "httpStatus": 200,
         "imageCandidates": 3,
         "cacheKey": "4237d3a886b05748bc10"
-      },
-      "round2": null
-    },
-    {
-      "id": "delta-force-black-tide-bomb-2026",
-      "game": "三角洲行动",
-      "modeName": "黑潮爆破",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://df.qq.com/cp/a20240906main/newsdetail.html?id=13274693571937570984",
-        "httpStatus": 200,
-        "imageCandidates": 3,
-        "cacheKey": "11558b1956612a50a140"
       },
       "round2": null
     },
@@ -4037,35 +5175,6 @@
             "f4cc0e24ca4251254e0a"
           ],
           "result": "原始公告唯一正文图1301×751，经目视为2周年舞台而非Clash Squad。官网首页只有混合游戏介绍，不提供模式独立画面。官方视频检索主要返回玩家实录或赛事内容，未采用。"
-        }
-      ]
-    },
-    {
-      "id": "free-fire-bomb-squad-2019",
-      "game": "Free Fire",
-      "modeName": "爆破小队（Bomb Squad）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://ff.garena.com/en/article/253/",
-        "httpStatus": 200,
-        "imageCandidates": 6,
-        "cacheKey": "8983e778b39b211d9f28"
-      },
-      "round2": {
-        "query": "Free Fire Bomb Squad official",
-        "searchEvidence": "local-only/image-audit-2026-09-08/search-ff-0.json",
-        "status": "searched_pending_visual_review",
-        "searchedAt": "2026-09-08"
-      },
-      "additionalSearches": [
-        {
-          "round": 3,
-          "checkedUrls": [
-            "https://ff.garena.com/en/article/253/",
-            "https://www.youtube.com/watch?v=hTSx52F8J_c",
-            "https://www.youtube.com/watch?v=SX1eY4sn4k4"
-          ],
-          "result": "原始公告未提取到正文图。新检索官方视频明确为2022 Bomb Squad 5V5，存在独立版本条目，不当作2019初版专属图；EP9同名视频为通行证内容，排除。"
         }
       ]
     },
@@ -4362,27 +5471,6 @@
       }
     },
     {
-      "id": "pubgm-spark-the-flame-2020",
-      "game": "PUBG Mobile",
-      "modeName": "火花绽放主题玩法（Spark the Flame）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202007/862637.shtml",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "f18eff758675e2c8a035"
-      },
-      "round2": null,
-      "sourceImageReview": {
-        "status": "reviewed_no_matching_image_selected",
-        "evidence": [
-          "local-only/image-audit-2026-09-08/pubgm-patch-review.json",
-          "local-only/image-audit-2026-09-08/pubgm-patch-rest.json"
-        ],
-        "note": "已查看该页可用正文图，未选择到此子玩法的对应图；仍需其他来源检索，非不存在结论。"
-      }
-    },
-    {
       "id": "free-fire-rush-hour-2018",
       "game": "Free Fire",
       "modeName": "高峰时刻（Rush Hour）",
@@ -4464,78 +5552,6 @@
       "round2": {
         "query": "Free Fire Spray and Pray official",
         "searchEvidence": "local-only/image-audit-2026-09-08/search-ff-7.json",
-        "status": "searched_pending_visual_review",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "free-fire-kimbo-rush-hour-2022",
-      "game": "Free Fire",
-      "modeName": "双持高峰时刻（Kimbo Rush Hour）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://ff.garena.com/en-pk/article/670/",
-        "httpStatus": 200,
-        "imageCandidates": 9,
-        "cacheKey": "9066028172f28ebf677c"
-      },
-      "round2": {
-        "query": "Free Fire Kimbo Rush Hour official",
-        "searchEvidence": "local-only/image-audit-2026-09-08/search-ff-8.json",
-        "status": "searched_pending_visual_review",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "free-fire-color-spray-2023",
-      "game": "Free Fire",
-      "modeName": "彩色喷涂（Color Spray）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://ff.garena.com/id/article/1150",
-        "httpStatus": 200,
-        "imageCandidates": 6,
-        "cacheKey": "0d33e2ea95bfda52d1ce"
-      },
-      "round2": {
-        "query": "Free Fire Color Spray official",
-        "searchEvidence": "local-only/image-audit-2026-09-08/search-ff-9.json",
-        "status": "searched_pending_visual_review",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "free-fire-mystery-town-2023",
-      "game": "Free Fire",
-      "modeName": "神秘小镇（Mystery Town）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://ff.garena.com/id/article/1150",
-        "httpStatus": 200,
-        "imageCandidates": 6,
-        "cacheKey": "0d33e2ea95bfda52d1ce"
-      },
-      "round2": {
-        "query": "Free Fire Mystery Town official",
-        "searchEvidence": "local-only/image-audit-2026-09-08/search-ff-9.json",
-        "status": "searched_pending_visual_review",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "free-fire-fort-feud-2023",
-      "game": "Free Fire",
-      "modeName": "堡垒争夺（Fort Feud）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://ff.garena.com/id/article/1150",
-        "httpStatus": 200,
-        "imageCandidates": 6,
-        "cacheKey": "0d33e2ea95bfda52d1ce"
-      },
-      "round2": {
-        "query": "Free Fire Fort Feud official",
-        "searchEvidence": "local-only/image-audit-2026-09-08/search-ff-9.json",
         "status": "searched_pending_visual_review",
         "searchedAt": "2026-09-08"
       }
@@ -4884,66 +5900,6 @@
       }
     },
     {
-      "id": "pubgm-mini-zone-2018",
-      "game": "PUBG Mobile",
-      "modeName": "迷你战场（Mini-Zone）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/TW/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201806/731228.shtml",
-        "httpStatus": 200,
-        "imageCandidates": 19,
-        "cacheKey": "793378f7793e3ab265d3"
-      },
-      "round2": null,
-      "sourceImageReview": {
-        "round": 3,
-        "pageUrl": "https://prtimes.jp/main/html/rd/p/000000013.000033688.html",
-        "result": "PUBG株式会社发布稿对应配图是出生岛角色截图，无法辨识迷你战场机制，暂不采用。"
-      }
-    },
-    {
-      "id": "pubgm-quick-match-2019",
-      "game": "PUBG Mobile",
-      "modeName": "快速比赛（Quick Match）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201906/813644.shtml",
-        "httpStatus": 200,
-        "imageCandidates": 19,
-        "cacheKey": "c097adc7c2cbd446571f"
-      },
-      "round2": null,
-      "sourceImageReview": {
-        "status": "reviewed_no_matching_image_selected",
-        "evidence": [
-          "local-only/image-audit-2026-09-08/pubgm-patch-review.json",
-          "local-only/image-audit-2026-09-08/pubgm-patch-rest.json"
-        ],
-        "note": "已查看该页可用正文图，未选择到此子玩法的对应图；仍需其他来源检索，非不存在结论。"
-      }
-    },
-    {
-      "id": "pubgm-sniper-training-2019",
-      "game": "PUBG Mobile",
-      "modeName": "狙击特训（Sniper Training）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201906/813644.shtml",
-        "httpStatus": 200,
-        "imageCandidates": 19,
-        "cacheKey": "c097adc7c2cbd446571f"
-      },
-      "round2": null,
-      "sourceImageReview": {
-        "status": "reviewed_no_matching_image_selected",
-        "evidence": [
-          "local-only/image-audit-2026-09-08/pubgm-patch-review.json",
-          "local-only/image-audit-2026-09-08/pubgm-patch-rest.json"
-        ],
-        "note": "已查看该页可用正文图，未选择到此子玩法的对应图；仍需其他来源检索，非不存在结论。"
-      }
-    },
-    {
       "id": "pubgm-ranked-assault-2025",
       "game": "PUBG Mobile",
       "modeName": "突袭（Assault）",
@@ -4968,24 +5924,6 @@
         "cacheKey": "15d22cc91adc41ccc421"
       },
       "round2": null
-    },
-    {
-      "id": "pubgm-arcade-mode-2018",
-      "game": "PUBG Mobile",
-      "modeName": "街机模式（Arcade Mode）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201805/715447.shtml",
-        "httpStatus": 200,
-        "imageCandidates": 18,
-        "cacheKey": "464e5cd1c782de593acd"
-      },
-      "round2": null,
-      "sourceImageReview": {
-        "round": 3,
-        "pageUrl": "https://x.com/PUBGMOBILE/status/988030057921658883",
-        "result": "官方原帖媒体封面为PUBG公司标志，视频7CB_emJCeMQ封面纯文字；均人工核对，未采用。原帖嵌入证据保存在arcade2018-tweet.json。"
-      }
     },
     {
       "id": "free-fire-new-age-resource-management-2021",
@@ -5027,58 +5965,6 @@
       }
     },
     {
-      "id": "pubgm-react-survival-2-0-2022",
-      "game": "PUBG Mobile",
-      "modeName": "反应生存 2.0（React Survival 2.0）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60922/60923/60924/60926/m22609/202203/912060.shtml",
-        "httpStatus": 200,
-        "imageCandidates": 23,
-        "cacheKey": "6bf7bed5eac36653c443"
-      },
-      "round2": null,
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFile": "local-only/image-audit-2026-09-08/pubgm-early-games-recheck.json",
-          "result": "再次按完整模式名及年份检索，尚无已核实新图；React 2.0仅找到官方周年奖励说明，不能用初版下架公告充当2.0配图。"
-        }
-      ]
-    },
-    {
-      "id": "free-fire-pumpkin-snatch-2019",
-      "game": "Free Fire",
-      "modeName": "南瓜争夺（Pumpkin Snatch）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://ff.garena.com/en/article/137",
-        "httpStatus": 200,
-        "imageCandidates": 7,
-        "cacheKey": "d980fe72af76f420f19d"
-      },
-      "round2": {
-        "query": "Free Fire Pumpkin Snatch official",
-        "searchEvidence": "local-only/image-audit-2026-09-08/search-ff-12.json",
-        "status": "searched_pending_visual_review",
-        "searchedAt": "2026-09-08"
-      },
-      "additionalSearches": [
-        {
-          "round": 3,
-          "queries": [
-            "site.youtube.com \"Free Fire\" \"Pumpkin Snatch\"",
-            "site.ff.garena.com \"Pumpkin\""
-          ],
-          "result": "官方文章 137 开发者回顾确认模式名称但未找到对应图；文章 186 为2018 Halloween Candy Rush，年份与玩法不匹配，未采用。玩家 Advance Server 视频未视作官方。",
-          "checkedUrls": [
-            "https://ff.garena.com/en/article/137",
-            "https://ff.garena.com/en/article/186/"
-          ]
-        }
-      ]
-    },
-    {
       "id": "free-fire-rampage-uprising-2020",
       "game": "Free Fire",
       "modeName": "狂暴：崛起（Rampage: Uprising）",
@@ -5103,24 +5989,6 @@
           "candidateCacheKey": "05006ce808055f895451"
         }
       ]
-    },
-    {
-      "id": "pubgm-amusement-park-2020",
-      "game": "PUBG Mobile",
-      "modeName": "周年游乐园（Amusement Park Mode）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35373/35374/35386/35387/m20497/202002/849328.shtml",
-        "httpStatus": 200,
-        "imageCandidates": 33,
-        "cacheKey": "f17dee8390f1ce066e08"
-      },
-      "round2": null,
-      "sourceImageReview": {
-        "round": 3,
-        "pageUrl": "https://www.pubgmobile.com/en/event/annipark/",
-        "result": "已从活动页分离狩猎、太空战争、射击场专属图。CSS bg_01/bg_02经视觉检查为街机装饰背景，未采用为游乐园模式总图。"
-      }
     },
     {
       "id": "pubgm-bloodmoon-arena-2024",
@@ -5429,62 +6297,6 @@
       }
     },
     {
-      "id": "free-fire-kill-secured-2020",
-      "game": "Free Fire",
-      "modeName": "击杀夺牌（Kill Secured）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://ff.garena.com/en/article/299/",
-        "httpStatus": 200,
-        "imageCandidates": 6,
-        "cacheKey": "9444c7f83dbbfa20024b"
-      },
-      "round2": {
-        "query": "Free Fire Kill Secured official",
-        "searchEvidence": "local-only/image-audit-2026-09-08/search-ff-13.json",
-        "status": "searched_pending_visual_review",
-        "searchedAt": "2026-09-08"
-      },
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFiles": [
-            "local-only/image-audit-2026-09-08/ff-combat-r3-search.json",
-            "local-only/image-audit-2026-09-08/ff-combat-r3-regional-search.json"
-          ],
-          "result": "复查原始公告并补充官方教程/地区检索，结果主要为规则文字与玩家实机视频。媒体存在Kill Secured配图和Gun King社交原帖线索，但官方原始图片链接尚未核实，继续追溯。"
-        }
-      ]
-    },
-    {
-      "id": "free-fire-gun-king-squad-2020",
-      "game": "Free Fire",
-      "modeName": "枪王：小队版（Gun King: Squad）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://ff.garena.com/en/article/299/",
-        "httpStatus": 200,
-        "imageCandidates": 6,
-        "cacheKey": "9444c7f83dbbfa20024b"
-      },
-      "round2": {
-        "query": "Free Fire Gun King: Squad official",
-        "searchEvidence": "local-only/image-audit-2026-09-08/search-ff-13.json",
-        "status": "searched_pending_visual_review",
-        "searchedAt": "2026-09-08"
-      },
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFiles": [
-            "local-only/image-audit-2026-09-08/ff-combat-r3-search.json",
-            "local-only/image-audit-2026-09-08/ff-combat-r3-regional-search.json"
-          ],
-          "result": "复查原始公告并补充官方教程/地区检索，结果主要为规则文字与玩家实机视频。媒体存在Kill Secured配图和Gun King社交原帖线索，但官方原始图片链接尚未核实，继续追溯。"
-        }
-      ]
-    },
-    {
       "id": "free-fire-team-deathmatch-2020",
       "game": "Free Fire",
       "modeName": "团队竞技（Team Deathmatch / TDM）",
@@ -5560,377 +6372,6 @@
       }
     },
     {
-      "id": "pubgm-amusement-whats-in-the-box-2020",
-      "game": "PUBG Mobile",
-      "modeName": "游乐园：盒中惊喜（What’s in the Box）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35373/35374/35386/35387/m20497/202002/849328.shtml",
-        "httpStatus": 200,
-        "imageCandidates": 33,
-        "cacheKey": "f17dee8390f1ce066e08"
-      },
-      "round2": null,
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFile": "local-only/image-audit-2026-09-08/pubgm-early-games-recheck.json",
-          "result": "再次按完整模式名及年份检索，尚无已核实新图；React 2.0仅找到官方周年奖励说明，不能用初版下架公告充当2.0配图。"
-        }
-      ]
-    },
-    {
-      "id": "free-fire-clash-squad-ranked-2020",
-      "game": "Free Fire",
-      "modeName": "枪王对决：排位（Clash Squad Ranked）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://ff.garena.com/en/article/223/",
-        "httpStatus": 200,
-        "imageCandidates": 6,
-        "cacheKey": "4a0a06c53fee4251c24c"
-      },
-      "round2": {
-        "query": "Free Fire Clash Squad Ranked official",
-        "searchEvidence": "local-only/image-audit-2026-09-08/search-ff-14.json",
-        "status": "searched_pending_visual_review",
-        "searchedAt": "2026-09-08"
-      },
-      "additionalSearches": [
-        {
-          "round": 3,
-          "checkedUrls": [
-            "https://ff.garena.com/id/article/221/",
-            "https://ffsupportus.garena.com/hc/en-us/articles/4413058046746-Ranked-Game"
-          ],
-          "result": "印尼2020公告图片为失效Trello附件，403；官方美区帮助页请求403但网页检索可读，图22跳转遭安全拦截，未重试；图23返回Imgur脚本页。均保留待查，不能证明无官方图。",
-          "candidateCacheKeys": [
-            "49caad506628194a0802"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "pubgm-wow-blade-ball-solo-practice-2024",
-      "game": "PUBG Mobile",
-      "modeName": "刀球：单人练习场（Blade Ball Solo Practice Room）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "e88d144be99992b5bab0"
-      },
-      "round2": {
-        "status": "candidate_needs_variant_match",
-        "queries": [
-          "PUBG MOBILE Blade Ball official"
-        ],
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r4.json",
-        "candidatePages": [
-          "https://www.youtube.com/watch?v=umZg3wnZ4Uk",
-          "https://www.youtube.com/watch?v=OvZ7t5T1EMo"
-        ],
-        "note": "两视频均经 oEmbed 确认为官方频道，原图可加载并已视觉检查；尚未建立封面与各子玩法的对应关系，未套用。"
-      },
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFiles": [
-            "local-only/image-audit-2026-09-08/wow-search-continued-r10.json",
-            "local-only/image-audit-2026-09-08/wow-search-continued-r11.json"
-          ],
-          "result": "精确玩法名、版本时间及官方社交渠道补充检索，暂无独立规则匹配图。"
-        }
-      ],
-      "sourceImageReview": {
-        "round": 3,
-        "pageUrl": "https://x.com/PUBGMOBILE/status/1744024365052596267",
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow30-tweet.json",
-        "result": "3.0官方原帖1080×1080补丁图已视觉检查，仅含Shadow Force、Metro及经典模式基础功能，无刀球内容，不采用。"
-      }
-    },
-    {
-      "id": "pubgm-wow-blade-ball-ffa-2024",
-      "game": "PUBG Mobile",
-      "modeName": "刀球：八人自由混战积分赛（Blade Ball 8-Player Free-for-All Score Match）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "e88d144be99992b5bab0"
-      },
-      "round2": {
-        "status": "candidate_needs_variant_match",
-        "queries": [
-          "PUBG MOBILE Blade Ball official"
-        ],
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r4.json",
-        "candidatePages": [
-          "https://www.youtube.com/watch?v=umZg3wnZ4Uk",
-          "https://www.youtube.com/watch?v=OvZ7t5T1EMo"
-        ],
-        "note": "两视频均经 oEmbed 确认为官方频道，原图可加载并已视觉检查；尚未建立封面与各子玩法的对应关系，未套用。"
-      },
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFiles": [
-            "local-only/image-audit-2026-09-08/wow-search-continued-r10.json",
-            "local-only/image-audit-2026-09-08/wow-search-continued-r11.json"
-          ],
-          "result": "精确玩法名、版本时间及官方社交渠道补充检索，暂无独立规则匹配图。"
-        }
-      ],
-      "sourceImageReview": {
-        "round": 3,
-        "pageUrl": "https://x.com/PUBGMOBILE/status/1744024365052596267",
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow30-tweet.json",
-        "result": "3.0官方原帖1080×1080补丁图已视觉检查，仅含Shadow Force、Metro及经典模式基础功能，无刀球内容，不采用。"
-      }
-    },
-    {
-      "id": "pubgm-wow-hot-blooded-blade-ball-2024",
-      "game": "PUBG Mobile",
-      "modeName": "热血刀球（Hot-Blooded Blade Ball）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "e88d144be99992b5bab0"
-      },
-      "round2": {
-        "status": "candidate_needs_variant_match",
-        "queries": [
-          "PUBG MOBILE Blade Ball official"
-        ],
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r4.json",
-        "candidatePages": [
-          "https://www.youtube.com/watch?v=umZg3wnZ4Uk",
-          "https://www.youtube.com/watch?v=OvZ7t5T1EMo"
-        ],
-        "note": "两视频均经 oEmbed 确认为官方频道，原图可加载并已视觉检查；尚未建立封面与各子玩法的对应关系，未套用。"
-      },
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFiles": [
-            "local-only/image-audit-2026-09-08/wow-search-continued-r10.json",
-            "local-only/image-audit-2026-09-08/wow-search-continued-r11.json"
-          ],
-          "result": "精确玩法名、版本时间及官方社交渠道补充检索，暂无独立规则匹配图。"
-        }
-      ],
-      "sourceImageReview": {
-        "round": 3,
-        "pageUrl": "https://x.com/PUBGMOBILE/status/1744024365052596267",
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow30-tweet.json",
-        "result": "3.0官方原帖1080×1080补丁图已视觉检查，仅含Shadow Force、Metro及经典模式基础功能，无刀球内容，不采用。"
-      }
-    },
-    {
-      "id": "pubgm-wow-blade-ball-elimination-tournament-2024",
-      "game": "PUBG Mobile",
-      "modeName": "刀球淘汰赛（Blade Ball Elimination Tournament）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "e88d144be99992b5bab0"
-      },
-      "round2": {
-        "status": "candidate_needs_variant_match",
-        "queries": [
-          "PUBG MOBILE Blade Ball official"
-        ],
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r4.json",
-        "candidatePages": [
-          "https://www.youtube.com/watch?v=umZg3wnZ4Uk",
-          "https://www.youtube.com/watch?v=OvZ7t5T1EMo"
-        ],
-        "note": "两视频均经 oEmbed 确认为官方频道，原图可加载并已视觉检查；尚未建立封面与各子玩法的对应关系，未套用。"
-      },
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFiles": [
-            "local-only/image-audit-2026-09-08/wow-search-continued-r10.json",
-            "local-only/image-audit-2026-09-08/wow-search-continued-r11.json"
-          ],
-          "result": "精确玩法名、版本时间及官方社交渠道补充检索，暂无独立规则匹配图。"
-        }
-      ],
-      "sourceImageReview": {
-        "round": 3,
-        "pageUrl": "https://x.com/PUBGMOBILE/status/1744024365052596267",
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow30-tweet.json",
-        "result": "3.0官方原帖1080×1080补丁图已视觉检查，仅含Shadow Force、Metro及经典模式基础功能，无刀球内容，不采用。"
-      }
-    },
-    {
-      "id": "pubgm-wow-hot-blooded-blade-ball-random-skills-2024",
-      "game": "PUBG Mobile",
-      "modeName": "热血刀球：随机技能（Hot-Blooded Blade Ball: Random Skills）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "e88d144be99992b5bab0"
-      },
-      "round2": {
-        "status": "candidate_needs_variant_match",
-        "queries": [
-          "PUBG MOBILE Blade Ball official"
-        ],
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r4.json",
-        "candidatePages": [
-          "https://www.youtube.com/watch?v=umZg3wnZ4Uk",
-          "https://www.youtube.com/watch?v=OvZ7t5T1EMo"
-        ],
-        "note": "两视频均经 oEmbed 确认为官方频道，原图可加载并已视觉检查；尚未建立封面与各子玩法的对应关系，未套用。"
-      },
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFiles": [
-            "local-only/image-audit-2026-09-08/wow-search-continued-r10.json",
-            "local-only/image-audit-2026-09-08/wow-search-continued-r11.json"
-          ],
-          "result": "精确玩法名、版本时间及官方社交渠道补充检索，暂无独立规则匹配图。"
-        }
-      ],
-      "sourceImageReview": {
-        "round": 3,
-        "pageUrl": "https://x.com/PUBGMOBILE/status/1744024365052596267",
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow30-tweet.json",
-        "result": "3.0官方原帖1080×1080补丁图已视觉检查，仅含Shadow Force、Metro及经典模式基础功能，无刀球内容，不采用。"
-      }
-    },
-    {
-      "id": "pubgm-wow-blade-ball-score-match-random-skills-2024",
-      "game": "PUBG Mobile",
-      "modeName": "刀球积分赛：随机技能（Blade Ball Score Match: Random Skills）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "e88d144be99992b5bab0"
-      },
-      "round2": {
-        "status": "candidate_needs_variant_match",
-        "queries": [
-          "PUBG MOBILE Blade Ball official"
-        ],
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r4.json",
-        "candidatePages": [
-          "https://www.youtube.com/watch?v=umZg3wnZ4Uk",
-          "https://www.youtube.com/watch?v=OvZ7t5T1EMo"
-        ],
-        "note": "两视频均经 oEmbed 确认为官方频道，原图可加载并已视觉检查；尚未建立封面与各子玩法的对应关系，未套用。"
-      },
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFiles": [
-            "local-only/image-audit-2026-09-08/wow-search-continued-r10.json",
-            "local-only/image-audit-2026-09-08/wow-search-continued-r11.json"
-          ],
-          "result": "精确玩法名、版本时间及官方社交渠道补充检索，暂无独立规则匹配图。"
-        }
-      ],
-      "sourceImageReview": {
-        "round": 3,
-        "pageUrl": "https://x.com/PUBGMOBILE/status/1744024365052596267",
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow30-tweet.json",
-        "result": "3.0官方原帖1080×1080补丁图已视觉检查，仅含Shadow Force、Metro及经典模式基础功能，无刀球内容，不采用。"
-      }
-    },
-    {
-      "id": "pubgm-wow-blade-ball-elimination-random-skills-2024",
-      "game": "PUBG Mobile",
-      "modeName": "刀球淘汰赛：随机技能（Blade Ball Elimination Tournament: Random Skills）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "e88d144be99992b5bab0"
-      },
-      "round2": {
-        "status": "candidate_needs_variant_match",
-        "queries": [
-          "PUBG MOBILE Blade Ball official"
-        ],
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r4.json",
-        "candidatePages": [
-          "https://www.youtube.com/watch?v=umZg3wnZ4Uk",
-          "https://www.youtube.com/watch?v=OvZ7t5T1EMo"
-        ],
-        "note": "两视频均经 oEmbed 确认为官方频道，原图可加载并已视觉检查；尚未建立封面与各子玩法的对应关系，未套用。"
-      },
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFiles": [
-            "local-only/image-audit-2026-09-08/wow-search-continued-r10.json",
-            "local-only/image-audit-2026-09-08/wow-search-continued-r11.json"
-          ],
-          "result": "精确玩法名、版本时间及官方社交渠道补充检索，暂无独立规则匹配图。"
-        }
-      ],
-      "sourceImageReview": {
-        "round": 3,
-        "pageUrl": "https://x.com/PUBGMOBILE/status/1744024365052596267",
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow30-tweet.json",
-        "result": "3.0官方原帖1080×1080补丁图已视觉检查，仅含Shadow Force、Metro及经典模式基础功能，无刀球内容，不采用。"
-      }
-    },
-    {
-      "id": "pubgm-wow-ice-naval-map-2024",
-      "game": "PUBG Mobile",
-      "modeName": "冰封海战地图（Ice Naval Map）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "e88d144be99992b5bab0"
-      },
-      "round2": null,
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r9.json",
-          "result": "按独立玩法名及官方视频/同义描述检索，结果主要为对应版本规则说明，未发现已经可核验的专属图片。"
-        }
-      ]
-    },
-    {
-      "id": "pubgm-wow-freezing-tower-assault-2024",
-      "game": "PUBG Mobile",
-      "modeName": "冻结塔攻竞技场（Freezing Tower Assault Arena）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "e88d144be99992b5bab0"
-      },
-      "round2": null,
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r9.json",
-          "result": "按独立玩法名及官方视频/同义描述检索，结果主要为对应版本规则说明，未发现已经可核验的专属图片。"
-        }
-      ]
-    },
-    {
       "id": "pubgm-ranked-team-deathmatch-warehouse-2025",
       "game": "PUBG Mobile",
       "modeName": "排位团队死斗：仓库（Team Deathmatch - Warehouse Ranked）",
@@ -5953,335 +6394,6 @@
         "httpStatus": 200,
         "imageCandidates": 44,
         "cacheKey": "15d22cc91adc41ccc421"
-      },
-      "round2": null
-    },
-    {
-      "id": "pubgm-wow-bio-infection-2024",
-      "game": "PUBG Mobile",
-      "modeName": "生化感染（Bio Infection）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "4bdaa52dc450fe414e81"
-      },
-      "round2": null,
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r9.json",
-          "result": "按独立玩法名及官方视频/同义描述检索，结果主要为对应版本规则说明，未发现已经可核验的专属图片。"
-        }
-      ],
-      "sourceImageReview": {
-        "round": 3,
-        "pageUrl": "https://x.com/PUBGMOBILE/status/1767724838624379191",
-        "result": "三张官方WOW更新图已逐张查看，展示平底锅/手雷刀球及编辑器功能，没有生化感染图。",
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow31-tweet.json"
-      }
-    },
-    {
-      "id": "pubgm-wow-aerial-ship-combat-2024",
-      "game": "PUBG Mobile",
-      "modeName": "空中飞船战（Aerial Ship Combat）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "4bdaa52dc450fe414e81"
-      },
-      "round2": null,
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r7.json",
-          "result": "按独立玩法名及官方视频/同义描述检索，结果主要为对应版本规则说明，未发现已经可核验的专属图片。"
-        }
-      ]
-    },
-    {
-      "id": "pubgm-wow-zombie-infection-2024",
-      "game": "PUBG Mobile",
-      "modeName": "僵尸感染模式（Zombie Infection Mode）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "4bdaa52dc450fe414e81"
-      },
-      "round2": null
-    },
-    {
-      "id": "pubgm-wow-sky-control-2023",
-      "game": "PUBG Mobile",
-      "modeName": "天空控制（Sky Control）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "de5d5d450bbf41ecfa57"
-      },
-      "round2": null
-    },
-    {
-      "id": "pubgm-wow-gold-rush-2023",
-      "game": "PUBG Mobile",
-      "modeName": "淘金竞速（Gold Rush）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "de5d5d450bbf41ecfa57"
-      },
-      "round2": null
-    },
-    {
-      "id": "pubgm-wow-bazooka-parkour-2023",
-      "game": "PUBG Mobile",
-      "modeName": "火箭筒跑酷（Bazooka Parkour）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "de5d5d450bbf41ecfa57"
-      },
-      "round2": null,
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r7.json",
-          "result": "按独立玩法名及官方视频/同义描述检索，结果主要为对应版本规则说明，未发现已经可核验的专属图片。"
-        },
-        {
-          "round": 3,
-          "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r8.json",
-          "result": "按独立玩法名及官方视频/同义描述检索，结果主要为对应版本规则说明，未发现已经可核验的专属图片。"
-        }
-      ]
-    },
-    {
-      "id": "pubgm-wow-snowboard-descent-2023",
-      "game": "PUBG Mobile",
-      "modeName": "滑雪板速降（Snowboard Descent）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "de5d5d450bbf41ecfa57"
-      },
-      "round2": {
-        "status": "searched_no_verified_image_yet",
-        "evidenceFiles": [
-          "local-only/image-audit-2026-09-08/wow-2023-search-r2.json",
-          "local-only/image-audit-2026-09-08/wow-search-continued-r4.json",
-          "local-only/image-audit-2026-09-08/wow-search-continued-r5.json"
-        ],
-        "note": "已按英文独立玩法名称及官方视频检索，结果以更新说明为主；夏日乱斗和僵尸车站另有活动/官方推文线索待追溯，尚未确认不可获得。"
-      },
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r8.json",
-          "result": "按独立玩法名及官方视频/同义描述检索，结果主要为对应版本规则说明，未发现已经可核验的专属图片。"
-        }
-      ]
-    },
-    {
-      "id": "pubgm-wow-flying-reindeer-circuit-2023",
-      "game": "PUBG Mobile",
-      "modeName": "飞天驯鹿赛道（Flying Reindeer Circuit）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "de5d5d450bbf41ecfa57"
-      },
-      "round2": null,
-      "additionalSearches": [
-        {
-          "round": 3,
-          "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r7.json",
-          "result": "按独立玩法名及官方视频/同义描述检索，结果主要为对应版本规则说明，未发现已经可核验的专属图片。"
-        },
-        {
-          "round": 3,
-          "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r8.json",
-          "result": "按独立玩法名及官方视频/同义描述检索，结果主要为对应版本规则说明，未发现已经可核验的专属图片。"
-        }
-      ]
-    },
-    {
-      "id": "pubgm-wow-infinite-roguelike-2023",
-      "game": "PUBG Mobile",
-      "modeName": "无限肉鸽（Infinite Roguelike）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/WOW/new3.shtml",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "c561e5d88edd87669005"
-      },
-      "round2": {
-        "status": "searched_no_verified_image_yet",
-        "evidenceFiles": [
-          "local-only/image-audit-2026-09-08/wow-2023-search-r2.json",
-          "local-only/image-audit-2026-09-08/wow-search-continued-r4.json",
-          "local-only/image-audit-2026-09-08/wow-search-continued-r5.json"
-        ],
-        "note": "已按英文独立玩法名称及官方视频检索，结果以更新说明为主；夏日乱斗和僵尸车站另有活动/官方推文线索待追溯，尚未确认不可获得。"
-      }
-    },
-    {
-      "id": "pubgm-wow-boxing-arena-zombie-2023",
-      "game": "PUBG Mobile",
-      "modeName": "经典拳击场 4v4：僵尸版（Classic Boxing Arena 4v4 Team Battle: Zombie Edition）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/WOW/new3.shtml",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "c561e5d88edd87669005"
-      },
-      "round2": {
-        "status": "searched_no_verified_image_yet",
-        "evidenceFiles": [
-          "local-only/image-audit-2026-09-08/wow-2023-search-r2.json",
-          "local-only/image-audit-2026-09-08/wow-search-continued-r4.json",
-          "local-only/image-audit-2026-09-08/wow-search-continued-r5.json"
-        ],
-        "note": "已按英文独立玩法名称及官方视频检索，结果以更新说明为主；夏日乱斗和僵尸车站另有活动/官方推文线索待追溯，尚未确认不可获得。"
-      }
-    },
-    {
-      "id": "pubgm-wow-air-raid-shelter-stealth-2023",
-      "game": "PUBG Mobile",
-      "modeName": "空袭避难所潜行（Air Raid Shelter Stealth）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/WOW/new3.shtml",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "c561e5d88edd87669005"
-      },
-      "round2": {
-        "status": "searched_no_verified_image_yet",
-        "evidenceFiles": [
-          "local-only/image-audit-2026-09-08/wow-2023-search-r2.json",
-          "local-only/image-audit-2026-09-08/wow-search-continued-r4.json",
-          "local-only/image-audit-2026-09-08/wow-search-continued-r5.json"
-        ],
-        "note": "已按英文独立玩法名称及官方视频检索，结果以更新说明为主；夏日乱斗和僵尸车站另有活动/官方推文线索待追溯，尚未确认不可获得。"
-      }
-    },
-    {
-      "id": "pubgm-wow-companion-dash-2023",
-      "game": "PUBG Mobile",
-      "modeName": "伙伴冲刺（Companion Dash）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/WOW/new3.shtml",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "c561e5d88edd87669005"
-      },
-      "round2": {
-        "status": "searched_no_verified_image_yet",
-        "evidenceFiles": [
-          "local-only/image-audit-2026-09-08/wow-2023-search-r2.json",
-          "local-only/image-audit-2026-09-08/wow-search-continued-r4.json",
-          "local-only/image-audit-2026-09-08/wow-search-continued-r5.json"
-        ],
-        "note": "已按英文独立玩法名称及官方视频检索，结果以更新说明为主；夏日乱斗和僵尸车站另有活动/官方推文线索待追溯，尚未确认不可获得。"
-      }
-    },
-    {
-      "id": "pubgm-wow-car-racing-2023",
-      "game": "PUBG Mobile",
-      "modeName": "汽车竞速（Car Racing）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/WOW/new3.shtml",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "c561e5d88edd87669005"
-      },
-      "round2": null
-    },
-    {
-      "id": "pubgm-wow-pubgm-go-2023",
-      "game": "PUBG Mobile",
-      "modeName": "PUBGM GO！障碍赛（PUBGM GO!）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/Dinoground/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "e878445659c9585cfab8"
-      },
-      "round2": null
-    },
-    {
-      "id": "pubgm-wow-zombie-station-2023",
-      "game": "PUBG Mobile",
-      "modeName": "僵尸站点：人质救援（Zombie Station）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "de5d5d450bbf41ecfa57"
-      },
-      "round2": {
-        "status": "searched_no_verified_image_yet",
-        "evidenceFiles": [
-          "local-only/image-audit-2026-09-08/wow-2023-search-r2.json",
-          "local-only/image-audit-2026-09-08/wow-search-continued-r4.json",
-          "local-only/image-audit-2026-09-08/wow-search-continued-r5.json"
-        ],
-        "note": "已按英文独立玩法名称及官方视频检索，结果以更新说明为主；夏日乱斗和僵尸车站另有活动/官方推文线索待追溯，尚未确认不可获得。"
-      },
-      "sourceImageReview": {
-        "round": 3,
-        "pages": [
-          "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
-          "https://www.insidesport.in/esports/pubg-mobile-world-of-wonder-update-brings-a-new-gameplay-template-check-now/"
-        ],
-        "result": "官网正文未发现僵尸站点独立内嵌图片；第三方引用的官方推文实际上宣传捉迷藏，不能作僵尸站点图。保留其他来源复查。",
-        "evidenceFile": "local-only/image-audit-2026-09-08/wow-search-continued-r6.json"
-      }
-    },
-    {
-      "id": "pubgm-wow-erangel-mod-2023",
-      "game": "PUBG Mobile",
-      "modeName": "艾伦格改造版（Erangel Mod）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/Imagiversary/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "f2cec7c1f2535505c9b4"
-      },
-      "round2": null
-    },
-    {
-      "id": "pubgm-wow-craft-mod-2023",
-      "game": "PUBG Mobile",
-      "modeName": "创作工坊对战（Craft Mod）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.pubgmobile.com/en/event/Imagiversary/",
-        "httpStatus": 200,
-        "imageCandidates": 25,
-        "cacheKey": "f2cec7c1f2535505c9b4"
       },
       "round2": null
     },
@@ -6354,690 +6466,6 @@
         "query": "Free Fire Lone Wolf Cup official",
         "searchEvidence": "local-only/image-audit-2026-09-08/search-ff-16.json",
         "status": "searched_pending_visual_review",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-fast-bomb-2024",
-      "game": "和平精英",
-      "modeName": "快速爆破（Fast Bomb）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "和平精英 快速爆破 官方 玩法",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-0.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-ice-gold-rush-2024",
-      "game": "和平精英",
-      "modeName": "冰河夺金（Ice Gold Rush）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "和平精英 冰河夺金 官方 玩法",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-0.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-fantasy-brawl-2025",
-      "game": "和平精英",
-      "modeName": "奇幻大乱斗（Fantasy Brawl）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "和平精英 奇幻大乱斗 官方 玩法",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-1.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-conquest-2025",
-      "game": "和平精英",
-      "modeName": "征服模式（Conquest）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "和平精英 征服模式 官方 玩法",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-1.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-solo-arena-2025",
-      "game": "和平精英",
-      "modeName": "个人竞技（Solo Arena）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "和平精英 个人竞技 官方 玩法",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-1.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-nuclear-showdown-2025",
-      "game": "和平精英",
-      "modeName": "核爆对决（Nuclear Showdown）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "和平精英 核爆对决 官方 玩法",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-1.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-fpp-bomb-2025",
-      "game": "和平精英",
-      "modeName": "第一人称爆破团竞（FPP Bomb）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "和平精英 第一人称爆破团竞 官方 玩法",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-2.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-fpp-team-deathmatch-2025",
-      "game": "和平精英",
-      "modeName": "第一人称仓库团竞（FPP Warehouse TDM）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "和平精英 第一人称仓库团竞 官方 玩法",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-2.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-surnan-conflict-2025",
-      "game": "和平精英",
-      "modeName": "苏尔南冲突（Surnan Conflict）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "和平精英 苏尔南冲突 官方 玩法",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-2.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-icebound-train-2026",
-      "game": "和平精英",
-      "modeName": "冰封列车（Icebound Train）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "和平精英 冰封列车 官方 玩法",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-2.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-cowboy-revenge-2026",
-      "game": "和平精英",
-      "modeName": "牛仔的复仇（Cowboy’s Revenge）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "和平精英 牛仔的复仇 官方 玩法",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-3.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-extreme-hunt-2020",
-      "game": "和平精英",
-      "modeName": "极限追猎（Power Hunt）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "和平精英 极限追猎 官方 玩法",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-3.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-esports-mode-2021",
-      "game": "和平精英",
-      "modeName": "电竞模式（Esports Mode）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "和平精英 电竞模式 官方 玩法",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-3.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-restart-future-2021",
-      "game": "和平精英",
-      "modeName": "重启未来（Restart Future）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "和平精英 重启未来 官方 玩法",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-3.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-impostor-verification-2021",
-      "game": "和平精英",
-      "modeName": "谁是内鬼：查证模式（Impostor Verification）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"谁是内鬼：查证模式\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-4.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-light-shadow-adventure-2021",
-      "game": "和平精英",
-      "modeName": "光影冒险（Light and Shadow Adventure）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"光影冒险\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-4.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-peace-wing-2022",
-      "game": "和平精英",
-      "modeName": "和平之翼（Peace Wings）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"和平之翼\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-4.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-dragon-lion-winter-2022",
-      "game": "和平精英",
-      "modeName": "龙狮迎冰雪（Dragon-Lion Winter）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"龙狮迎冰雪\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-5.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-airdrop-operation-2022",
-      "game": "和平精英",
-      "modeName": "空投行动（Airdrop Operation）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"空投行动\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-5.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-mutant-tdm-2-2022",
-      "game": "和平精英",
-      "modeName": "突变团竞 2.0（Mutation TDM 2.0）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"突变团竞 2.0\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-5.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-sniper-tdm-2023",
-      "game": "和平精英",
-      "modeName": "狙击团竞（Sniper Team Deathmatch）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"狙击团竞\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-5.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-adventure-train-2023",
-      "game": "和平精英",
-      "modeName": "冒险列车（Adventure Train）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"冒险列车\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-6.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-sky-arena-2023",
-      "game": "和平精英",
-      "modeName": "天空赛场（Sky Arena）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"天空赛场\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-6.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-mutant-mine-2020",
-      "game": "和平精英",
-      "modeName": "突变矿场（Mutant Mine）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.taptap.cn/moment/77821174586803681",
-        "httpStatus": 200,
-        "imageCandidates": 17,
-        "cacheKey": "97c1d458c0bd331ab959"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"突变矿场\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-6.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-christmas-mode-2019",
-      "game": "和平精英",
-      "modeName": "圣诞模式（Christmas Mode）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.taptap.cn/moment/15202284518509745",
-        "httpStatus": 200,
-        "imageCandidates": 28,
-        "cacheKey": "010d64b9929ba0baf954"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"圣诞模式\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-7.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-arsenal-tdm-2020",
-      "game": "和平精英",
-      "modeName": "军备团竞（Arsenal Team Deathmatch）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.taptap.cn/moment/15217739467589134",
-        "httpStatus": 200,
-        "imageCandidates": 19,
-        "cacheKey": "7b6538b0620b8e276205"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"军备团竞\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-7.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-treasure-battlefield-2021",
-      "game": "和平精英",
-      "modeName": "夺宝战场（Treasure Battlefield）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.taptap.cn/moment/102841267771148269",
-        "httpStatus": 200,
-        "imageCandidates": 16,
-        "cacheKey": "c408199ef7f768ec4b9a"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"夺宝战场\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-7.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-silent-comms-2021",
-      "game": "和平精英",
-      "modeName": "免耳麦模式（No-Headset Mode）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.taptap.cn/moment/102841267771148269",
-        "httpStatus": 200,
-        "imageCandidates": 16,
-        "cacheKey": "c408199ef7f768ec4b9a"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"免耳麦模式\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-8.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-quick-duel-2020",
-      "game": "和平精英",
-      "modeName": "极速对决（Quick Duel）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.taptap.cn/moment/21993052490959807",
-        "httpStatus": 200,
-        "imageCandidates": 17,
-        "cacheKey": "9149c102f0e1a5d5763f"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"极速对决\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-8.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-eagle-eye-training-2020",
-      "game": "和平精英",
-      "modeName": "鹰眼特训（Eagle-Eye Training）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.taptap.cn/moment/21993052490959807",
-        "httpStatus": 200,
-        "imageCandidates": 17,
-        "cacheKey": "9149c102f0e1a5d5763f"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"鹰眼特训\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-8.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-airdrop-assault-2020",
-      "game": "和平精英",
-      "modeName": "空降奇兵（Airborne Assault）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.taptap.cn/moment/21993052490959807",
-        "httpStatus": 200,
-        "imageCandidates": 17,
-        "cacheKey": "9149c102f0e1a5d5763f"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"空降奇兵\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-8.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-field-action-2020",
-      "game": "和平精英",
-      "modeName": "赛场行动（Field Action）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.taptap.cn/moment/21993052490959807",
-        "httpStatus": 200,
-        "imageCandidates": 17,
-        "cacheKey": "9149c102f0e1a5d5763f"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"赛场行动\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-9.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-extreme-arena-2020",
-      "game": "和平精英",
-      "modeName": "极限竞技（Extreme Arena）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.taptap.cn/moment/21993052490959807",
-        "httpStatus": 200,
-        "imageCandidates": 17,
-        "cacheKey": "9149c102f0e1a5d5763f"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"极限竞技\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-9.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-ice-gold-rush-mutant-2026",
-      "game": "和平精英",
-      "modeName": "冰河夺金·异变（Ice Gold Rush: Mutation）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"冰河夺金·异变\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-9.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-major-counterattack-2026",
-      "game": "和平精英",
-      "modeName": "少将的反攻（Major General Counterattack）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.taptap.cn/app/70056/all-info?platform=ios",
-        "httpStatus": 200,
-        "imageCandidates": 3,
-        "cacheKey": "3e35b04c01c018ce81b8"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"少将的反攻\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-9.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-deathmatch-2026",
-      "game": "和平精英",
-      "modeName": "死斗竞技（Deathmatch）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.taptap.cn/app/70056/all-info?platform=ios",
-        "httpStatus": 200,
-        "imageCandidates": 3,
-        "cacheKey": "3e35b04c01c018ce81b8"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"死斗竞技\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-10.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-surnan-conflict-icebound-2026",
-      "game": "和平精英",
-      "modeName": "苏尔南冲突·冰河禁区（Surnan Conflict: Icebound Zone）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.taptap.cn/app/70056/all-info?platform=ios",
-        "httpStatus": 200,
-        "imageCandidates": 3,
-        "cacheKey": "3e35b04c01c018ce81b8"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"苏尔南冲突·冰河禁区\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-10.json",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "hpjy-monster-role-salamander-2026",
-      "game": "和平精英",
-      "modeName": "怪物扮演·蝾螈小宝（Monster Roleplay: Little Salamander）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-        "httpStatus": 200,
-        "imageCandidates": 32,
-        "cacheKey": "30df9b340624181b4c15"
-      },
-      "round2": {
-        "status": "searched_pending_source_verification",
-        "query": "\"和平精英\" \"怪物扮演·蝾螈小宝\"",
-        "searchEvidence": "local-only/image-audit-2026-09-08/hp-search-10.json",
         "searchedAt": "2026-09-08"
       }
     },
@@ -7131,294 +6559,6 @@
         "cacheKey": "08cf16dc5ce3d326380d"
       },
       "round2": null
-    },
-    {
-      "id": "fortnite-scavenger-pop-up-cup-2018",
-      "game": "Fortnite",
-      "modeName": "拾荒者弹窗杯（Scavenger Pop-Up Cup）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v6-30?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "cca90975b09d25f9f7fc"
-      },
-      "round2": {
-        "query": "Fortnite \"Scavenger Pop-Up Cup\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-3.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-arena-2019",
-      "game": "Fortnite",
-      "modeName": "竞技场排位（Arena Game Mode）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v8-20?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "abb6f1019387894f8f95"
-      },
-      "round2": {
-        "query": "Fortnite \"Arena Game Mode\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-4.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-food-fight-deep-fried-2019",
-      "game": "Fortnite",
-      "modeName": "美食大战：油炸版（Food Fight: Deep Fried）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v8-40?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "36e7df3c6051af6de8ec"
-      },
-      "round2": {
-        "query": "Fortnite \"Food Fight: Deep Fried\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-4.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-blitz-2018",
-      "game": "Fortnite",
-      "modeName": "闪电战（Blitz）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v6-22",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "8b5b0703b65e067d5a16"
-      },
-      "round2": {
-        "query": "Fortnite \"Blitz\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-4.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-team-terror-2018",
-      "game": "Fortnite",
-      "modeName": "团队恐怖战（Team Terror）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v6-22",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "8b5b0703b65e067d5a16"
-      },
-      "round2": {
-        "query": "Fortnite \"Team Terror\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-4.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-teams-of-20-v2-2018",
-      "game": "Fortnite",
-      "modeName": "20 人小队大逃杀 v2（Teams of 20 v2）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v4-3?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "eda7116637fc64439cbd"
-      },
-      "round2": {
-        "query": "Fortnite \"Teams of 20 v2\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-5.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-high-explosives-2017",
-      "game": "Fortnite",
-      "modeName": "高爆模式（High Explosives）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/news/boogie-bomb-update?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "38e197ec64375329c693"
-      },
-      "round2": {
-        "query": "Fortnite \"High Explosives\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-5.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-sniper-shootout-2018",
-      "game": "Fortnite",
-      "modeName": "狙击对决（Sniper Shootout）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v5-21/?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "ca09ef8dda46ebf31336"
-      },
-      "round2": {
-        "query": "Fortnite \"Sniper Shootout\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-5.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-sniper-shootout-v3-2018",
-      "game": "Fortnite",
-      "modeName": "狙击对决 v3（Sniper Shootout v3）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v4-4?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "ec81ca9f3b6f33cefffd"
-      },
-      "round2": {
-        "query": "Fortnite \"Sniper Shootout v3\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-5.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-soaring-50s-2018",
-      "game": "Fortnite",
-      "modeName": "翱翔 50 人战（Soaring 50s）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v5-21/?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "ca09ef8dda46ebf31336"
-      },
-      "round2": {
-        "query": "Fortnite \"Soaring 50s\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-6.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-unvaulted-squads-2019",
-      "game": "Fortnite",
-      "modeName": "复古武器小队（Unvaulted Squads）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v9-10?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "efcdd7dda53f187169c4"
-      },
-      "round2": {
-        "query": "Fortnite \"Unvaulted Squads\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-6.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-50v50-v2-2018",
-      "game": "Fortnite",
-      "modeName": "50 对 50 v2（50v50 v2）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/news/v3-5-patch-notes?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "a2cbe132d986e5225fec"
-      },
-      "round2": {
-        "query": "Fortnite \"50v50 v2\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-6.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-blitz-v2-2018",
-      "game": "Fortnite",
-      "modeName": "闪电战 v2（Blitz! v2）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v4-3?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "eda7116637fc64439cbd"
-      },
-      "round2": {
-        "query": "Fortnite \"Blitz! v2\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-6.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-50v50-v3-2018",
-      "game": "Fortnite",
-      "modeName": "50 对 50 v3（50v50 v3）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v4-4?lang=en-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "ec81ca9f3b6f33cefffd"
-      },
-      "round2": {
-        "query": "Fortnite \"50v50 v3\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-7.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-solid-gold-v2-2018",
-      "game": "Fortnite",
-      "modeName": "全金装备战 v2（Solid Gold v2）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v4-2-contentupdate%3Flang%3Den-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "94bb4a28b6fc6eddfc7e"
-      },
-      "round2": {
-        "query": "Fortnite \"Solid Gold v2\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-7.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
-    },
-    {
-      "id": "fortnite-final-fight-teams-20-2018",
-      "game": "Fortnite",
-      "modeName": "终局战：20 人小队（Final Fight: Teams of 20）",
-      "status": "pending_review",
-      "round1": {
-        "sourceUrl": "https://www.fortnite.com/patch-notes/v4-4-content-update%3Flang%3Den-US",
-        "httpStatus": 403,
-        "imageCandidates": 0,
-        "cacheKey": "7c841e1fb38a452a10fb"
-      },
-      "round2": {
-        "query": "Fortnite \"Final Fight: Teams of 20\" official Epic Games",
-        "searchEvidence": "local-only/image-audit-2026-09-08/fn-search-7.json",
-        "status": "searched_pending_image_verification",
-        "searchedAt": "2026-09-08"
-      }
     }
   ],
   "mapScope": [
