@@ -366,15 +366,17 @@
     "tempoImpact": "热门落点会在开局迅速交火，偏远落点则保留更多搜刮时间。中期需要利用载具、船只或游泳转移，决赛圈再围绕掩体和投掷物决胜；较长路线也带来遭遇伏击的风险。",
     "designObservation": "大逃杀的紧张感来自难以预测的遭遇和逐渐收紧的活动空间。大地图允许主动交战与谨慎生存等不同打法并存，蓝圈再让这些玩家逐步相遇。",
     "sourceUrl": "https://pubg.com/en/game-info",
-    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/library_hero.jpg",
-    "imageSource": "Steam 库头图",
+    "imageUrl": "assets/mode-official/db7c4100a4f95ad410f8.webp",
+    "imageSource": "PUBG 官网 BR 小队模式入口图（本地归档）",
     "launchDate": "2017-03-23",
     "launchLabel": "2017年3月23日，Steam 抢先体验上线",
     "launchNote": "PUBG 抢先体验 于 2017年3月23日上线 Steam。1.0 正式版于 2017年12月20日发布。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://pubg.com/en/game-info",
+    "imageOriginalUrl": "https://wstatic-prod.pubg.com/web/live/main_cf7d221/img/812563d.webp"
   },
   {
     "id": "pubg-intense-br-2023",
@@ -453,15 +455,17 @@
     "tempoImpact": "职业差异让队员分担近战追击、远程压制和治疗。升至 5 级所需的稀有材料与空投的 30 秒无敌效果，会吸引多支队伍争夺同一目标；搜刮重点也转为收集适合自身职业的成长素材。",
     "designObservation": "将武器掉落替换为职业养成材料，会改变玩家搜刮和提升战力的方式。每种职业都应有清晰的成长目标，例如升至 5 级，也应有能应对其他职业的战术选择。",
     "sourceUrl": "https://pubg.ac/news/37554-fantasy-battle-royale",
-    "imageUrl": "assets/modes/generated/pubg-fantasy-br-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/35e60559b884eeea98aa.jpg",
+    "imageSource": "Xbox Wire 官方 PUBG 奇幻大逃杀公告图（本地归档）",
     "launchDate": "2020-04-01",
     "launchLabel": "2020年4月1日（愚人节活动，持续 1 周）",
     "launchNote": "模式于 2020年4月1日太平洋夏令时间 00:00 开放，持续至 4月7日。20 支四人小队共 80 人，仅限第三人称，地图为艾伦格的龙之岛主题版本（Erangel Dragon’s Isle）。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://news.xbox.com/en-us/2020/04/01/play-fantasy-battle-royale-pubg-xbox/",
+    "imageOriginalUrl": "https://xboxwire.thesourcemediaassets.com/sites/2/2020/04/PUBG_FBR_MAIN_Video_Thumbnail.jpg"
   },
   {
     "id": "pubg-war-mode-2018",
@@ -482,15 +486,17 @@
     "tempoImpact": "被淘汰后仍可随下一班飞机返场，玩家更愿意探身交火或配合队友突击。40 秒的飞机周期让队伍反复经历交战、减员、重新空降和站位调整。",
     "designObservation": "给 BR 加上重生，本质是在「持续战斗密度」和「生存紧张感」之间做取舍；战争模式 选择了前者，用积分制和飞机重生周期替代了缩圈的压力节奏。",
     "sourceUrl": "https://pubg.com/en/game-info",
-    "imageUrl": "https://wstatic-prod-boc.krafton.com/pubg-legacy/2023/01/Gameplay-Screenshot-1024x576.jpg",
-    "imageSource": "官方截图（战争模式暂用配图）",
+    "imageUrl": "assets/mode-official/57326a6454481a018b43.jpg",
+    "imageSource": "PUBG 官方 Steam War Mode: Desert Knights 活动图（2018）（本地归档）",
     "launchDate": "2018",
     "launchLabel": "2018年，自定义比赛上线后的首批可选模式",
     "launchNote": "战争模式 作为 自定义比赛 的自定义模式随 电脑端 1.0 更新 #18 引入，具体月份待确认。后续也作为限时 限时活动模式 开放过公开匹配。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://steamcommunity.com/games/578080/announcements/detail/1648759816040404086",
+    "imageOriginalUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/27971017/ce117e75455136969508639b51303da9667644f5.jpg"
   },
   {
     "id": "pubg-bluebomb-rush-2023",
@@ -540,15 +546,17 @@
     "tempoImpact": "模式将对抗其他玩家的压力换成清理敌人、收集补给和逐关推进。明确的关卡进度与首领战，给熟悉 PUBG 地图和武器外观的玩家提供了另一种短时体验。",
     "designObservation": "将熟悉的武器、地图和“吃鸡”主题改成像素闯关，可以让老玩家快速认出游戏元素，同时尝试另一种操作和胜利目标。",
     "sourceUrl": "https://pubg.com/en/game-info/arcade",
-    "imageUrl": "https://www.ginx.tv/en/wp-content/uploads/sites/3/2025/12/pobg_cover.png",
-    "imageSource": "Ginx.tv 像素打鸡闯关 封面图",
+    "imageUrl": "assets/mode-official/46e2d62ff42626c86d79.png",
+    "imageSource": "KRAFTON 官方 POBG 开发访谈游戏截图（2021 版本）（本地归档）",
     "launchDate": "2022-04-01",
     "launchLabel": "2022年4月1日（愚人节活动）",
     "launchNote": "像素打鸡闯关于 2022年4月1日至12日、4月8日至19日分平台限时开放。由独立开发者 IMGN.PRO 合作开发，像素艺术受阿列克谢·加尔库申（Alexey “Gas 13” Garkushin）启发。",
     "gameplayTypes": [
       "pve"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://blog.krafton.com/5743/",
+    "imageOriginalUrl": "https://i0.wp.com/blog.krafton.com/wp-content/uploads/2021/08/image-1.png?w=770&ssl=1"
   },
   {
     "id": "hpjy-classic-br-2019",
@@ -772,15 +780,17 @@
     "tempoImpact": "快捷标记降低了陌生队友的沟通难度，复活信标让失去一名成员的小队仍有补回人数的机会。角色技能改变掩护、突入和撤退方式；后续进化护甲又让主动交战同时带来防御成长。",
     "designObservation": "组队大逃杀可以分别处理沟通、阵亡等待和成长反馈：标记帮助队友共享信息，复活让阵亡者重返战场，进化护甲奖励有效输出。每个系统都对应一种具体的协作障碍。",
     "sourceUrl": "https://apexlegends.wiki.gg/wiki/Game_mode",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/4e8351874e27bd3868f1.jpg",
+    "imageSource": "EA 官方模式页 Battle Royale 入口图（本地归档）",
     "launchDate": "2019-02-04",
     "launchLabel": "2019年2月4日（突击上线，无预告）",
     "launchNote": "游戏于 2019年2月4日突然公布并上线。本卡记录首发小队框架，同时注明后续增加的地图与进化护甲，避免将不同年代的规则混写为首发内容。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://www.ea.com/en/games/apex-legends/apex-legends/apex-legends-modes-hub",
+    "imageOriginalUrl": "https://drop-assets.ea.com/images/3MenMJriVkwTbbUvbKfPVY/be1813ca014cbb4189ac3ae7197ee414/Apex-Legends_Tile-Battle-Royale.jpg"
   },
   {
     "id": "apex-ranked-leagues-2019",
@@ -801,15 +811,17 @@
     "tempoImpact": "入场分让每次交战都涉及积分损失，玩家需要比较抢击杀、争取更好排名和保住现有分数的收益。如果排名收益过高，部分玩家也会选择长期避战。",
     "designObservation": "排位计分需要同时奖励有效战斗与生存决策。入场分增加风险成本，但仍应检查玩家是否因此只愿意躲藏，或只顾追击而忽视最终胜利。",
     "sourceUrl": "https://apexlegends.wiki.gg/wiki/Game_mode",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/bb5ad130db99d0557126.jpg",
+    "imageSource": "EA 2019 Ranked Leagues 官方发布公告段位图",
     "launchDate": "2019-07-02",
     "launchLabel": "2019年7月2日，第 2 赛季上线",
     "launchNote": "排位联赛于第 2 赛季、2019年7月2日首次加入。段位名称、分区数量和计分公式以对应赛季公告为准。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/ranked-leagues-mode-details",
+    "imageOriginalUrl": "https://drop-assets.ea.com/images/BXNaQAXzHbJpVIHJjOVA5/bdf6f99ace81e828d45b7c5bfb5c6c73/ranking-icons-ca.jpg?im=AspectCrop=%2816,9%29,xPosition=0.19114583333333332,yPosition=0.4675925925925926"
   },
   {
     "id": "apex-arenas-2021",
@@ -830,15 +842,17 @@
     "tempoImpact": "玩家将搜刮时的随机选择换成预算分配：现在买更强的枪，还是保留材料用于后续回合。没有第三支队伍突然加入战斗，队员可以集中练习三人协作；但每回合阵亡后需要等待，仍有明显的失败压力。",
     "designObservation": "回合经济要避免所有玩家反复购买同一把性价比最高的武器。模式定位也要清楚：需要慎重购买和等待下一回合的对抗，未必适合只想轻松练枪的玩家。",
     "sourceUrl": "https://apexlegends.wiki.gg/wiki/Arenas",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/5e2a3d50e78e58c8b391.jpg",
+    "imageSource": "EA 官方 Legacy 更新 Arenas 玩法配图（本地归档）",
     "launchDate": "2021-05-04",
     "launchLabel": "2021年5月4日上线；2023年2月14日退出常驻入口",
     "launchNote": "原版于第 9 赛季（2021年5月4日）作为常驻模式上线，第 10 赛季增加排位竞技场。第 16 赛季（2023年2月14日）退出常驻入口，同期推出团队死斗；不同年份的回归版规则应另行区分。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://www.ea.com/ea-play/news/legacy-update-patch-notes",
+    "imageOriginalUrl": "https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/legacy-patch-notes/apex-legacy-patch-notes-screenshot-action.jpg.adapt.1920w.jpg"
   },
   {
     "id": "apex-control-2022",
@@ -859,15 +873,17 @@
     "tempoImpact": "反复复活减轻了单次阵亡压力，队伍需要持续分配守点、绕后和支援的人手。重新部署时能换角色，也让玩家有机会针对对方的远程火力或突击打法调整技能配置。",
     "designObservation": "占点模式需要让地图位置、复活选择和角色能力产生联系。允许再次部署时换角色，可以让队伍随局势调整，而不必整局沿用开场阵容。",
     "sourceUrl": "https://apexlegends.wiki.gg/wiki/Control",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/6f423d139830ce2c44b9.png",
+    "imageSource": "EA 官方 Control 玩法图（本地归档）",
     "launchDate": "2022-02-08",
     "launchLabel": "2022年2月8日，第 12 赛季首次限时开放",
     "launchNote": "控制模式于第 12 赛季、2022年2月8日首次限时开放，后多次回归并进入混合模式轮换。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.ea.com/games/battlefield/news/control-ltm-blog",
+    "imageOriginalUrl": "https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/control-ltm-blog/common/picture31.png.adapt.1920w.png"
   },
   {
     "id": "apex-gun-run-2022",
@@ -888,15 +904,17 @@
     "tempoImpact": "队友轮流取得击杀，可以共同推进武器序列。拿到不熟悉的武器时，玩家要调整交战距离；队伍进入飞刀阶段后，其他成员可以压低敌人状态、掩护持刀队友完成终结。",
     "designObservation": "团队武器竞赛可以让个人击杀推进全队进度，再用一种操作方式不同的最终武器制造决胜目标。最终武器的持有者和队友都应有明确职责。",
     "sourceUrl": "https://apexlegends.wiki.gg/wiki/Gun_Run",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/744975ecfdf391b6ef22.png",
+    "imageSource": "EA 官方 Gun Run 玩法公告配图（本地归档）",
     "launchDate": "2022-09-20",
     "launchLabel": "2022年9月20日，猛兽猎手收藏活动开放",
     "launchNote": "模式于第 14 赛季的猛兽猎手活动（Beast of Prey，2022年9月20日至10月4日）首次限时开放，后进入混合模式轮换。武器推进和飞刀胜利条件已按官方首发公告复核。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.ea.com/ea-studios/motive/news/beast-of-prey-collection-event",
+    "imageOriginalUrl": "https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-legends-screenshots-s14-ll-groupchaos-skulltown-a-v02.png.adapt.1920w.png"
   },
   {
     "id": "apex-three-strikes-2023",
@@ -917,15 +935,17 @@
     "tempoImpact": "更快的救援鼓励队友冒险接近倒地成员，而带装返场减少了重新搜刮的等待。小队可以在前两次失败后再次组织进攻，但用尽机会后仍需慎重选择交战。",
     "designObservation": "复活机会、倒地保护和装备保留解决的是不同问题：分别降低团灭损失、争取救援时间、缩短返场准备。组合使用时，能让失败队伍更快重新参与战斗。",
     "sourceUrl": "https://apexlegends.wiki.gg/wiki/Three_Strikes",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/17be6368641a14f54b27.jpg",
+    "imageSource": "EA 官方玩法公告配图（本地归档）",
     "launchDate": "2023-11-07",
     "launchLabel": "2023年11月7日，波兹·马龙联动活动开放",
     "launchNote": "模式在第 19 赛季的波兹·马龙联动活动（Post Malone，2023年11月7日至21日）首次限时开放，后续多次回归。这里按首发官方说明整理机会消耗、救援和保装规则。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.ea.com/seed/news/post-malone-event",
+    "imageOriginalUrl": "https://media.contentapi.ea.com/content/dam/apex-legends/common/post-malone-event/third-strikes.jpg.adapt.1920w.jpg"
   },
   {
     "id": "apex-solos-2019",
@@ -946,15 +966,17 @@
     "tempoImpact": "原版中，每次交火都要自己处理侦察、进攻和撤退，一次失误更难由队友补救。回归版的治疗与复活机制则给单人交战增加了容错，改变了主动出击的代价。",
     "designObservation": "团队射击改成单人玩法时，需要逐项检查哪些能力依赖队友，并明确死亡后的处理方式。是否允许复活，会直接改变玩家的进攻意愿，不能只用“单人”二字概括。",
     "sourceUrl": "https://apexlegends.wiki.gg/wiki/Solos",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/4108dec99c12aa4c306f.jpg",
+    "imageSource": "Apex Legends 官方2019铁王冠活动宣传片封面（单人模式首发活动）",
     "launchDate": "2019-08-13",
     "launchLabel": "2019年8月13日首次限时开放；2024年5月7日至6月24日限时回归",
     "launchNote": "原版于铁王冠收藏活动（Iron Crown，2019年8月13日至27日）首次限时开放。第 21 赛季回归版的官方活动期为 2024年5月7日至6月24日，属于限时替换双排入口。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.youtube.com/watch?v=kQOC1OOJzv0",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/kQOC1OOJzv0/maxresdefault.jpg"
   },
   {
     "id": "fortnite-50v50-2017",
@@ -974,15 +996,17 @@
     "tempoImpact": "开局节奏大幅放缓：大团队有更多时间搜刮和建造防线。中后期两条战线逐步汇聚成大规模正面冲突，单局时长接近经典 BR 的 1.5 倍。",
     "designObservation": "将小队扩大为两支大军后，天然地形、跨区通道和安全区会影响双方集结。需要让分散落地的玩家知道队伍在哪、该向哪处前线移动。",
     "sourceUrl": "https://fortnite.fandom.com/wiki/50v50",
-    "imageUrl": "assets/modes/generated/fortnite-50v50-2017.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/42d598c37a44c5376753.jpg",
+    "imageSource": "Fortnite 官方公告 / 官方发布视频配图（本地归档）",
     "launchDate": "2017-12-08",
     "launchLabel": "2017 年 12 月 8 日",
     "launchNote": "Fortnite 早期的大团队限时模式，2025 年怀旧版第 3 赛季曾安排回归。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.youtube.com/watch?v=sZcuF1T4Vxw",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/sZcuF1T4Vxw/maxresdefault.jpg"
   },
   {
     "id": "fortnite-infinity-gauntlet-2018",
@@ -1002,15 +1026,17 @@
     "tempoImpact": "手套出现前按常规大逃杀节奏进行。有人变身后，周围玩家会向这个强力目标聚集，战局在追击灭霸、躲避攻击和提防其他玩家之间切换。",
     "designObservation": "这类联动让角色能力直接进入规则，而不止改变外观。一名强力角色与大量普通玩家之间的能力差异，能让玩家体验到被围攻和共同围攻的两种战斗角色。",
     "sourceUrl": "https://fortnite.fandom.com/wiki/Infinity_Gauntlet_(LTM)",
-    "imageUrl": "assets/modes/generated/fortnite-infinity-gauntlet-2018.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/359b352be805f5162c53.jpg",
+    "imageSource": "Fortnite 官方公告 / 官方发布视频配图（本地归档）",
     "launchDate": "2018-05-08",
     "launchLabel": "2018 年 5 月 8 日",
     "launchNote": "配合《复仇者联盟 3：无限战争》上映推出的跨界联动 LTM。是 Fortnite 首个 IP 跨界大事件。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.fortnite.com/news/infinity-gauntlet",
+    "imageOriginalUrl": "https://cdn2.unrealengine.com/Fortnite%2FEN_BR04_Social_InfinityGauntletLTM-1000x1000-de9fc2264b73dc191be2435b3e80bdff4bbdfc8a.jpg"
   },
   {
     "id": "fortnite-solid-gold-2018",
@@ -1086,15 +1112,17 @@
     "tempoImpact": "10 波节奏：波间有简短准备期，波内节奏由丧尸密度决定。后期丧尸数量和 首领 强度形成高压曲线，需要团队协作和资源分配。",
     "designObservation": "大桥的狭长空间可以集中怪物来路，让已有地图承载波次防守。波间准备和击杀所得的资源，需要足以支持队伍购买装备、应对下一波敌人。",
     "sourceUrl": "https://store.steampowered.com/news/app/578080/view/3681166422855088575",
-    "imageUrl": "assets/modes/generated/pubg-zombie-survival-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/abb82b5b44dbbcaa0596.jpg",
+    "imageSource": "PUBG 官方 Zombie Survival 2.0 公告截图（2023 版本）（本地归档）",
     "launchDate": "2024-02",
     "launchLabel": "2024年2月，实验玩法限时开放",
     "launchNote": "PUBG 实验玩法 系列实验模式之一。基于 艾伦格 大桥地图，从 经典大逃杀 模式入口选择。",
     "gameplayTypes": [
       "pve"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://pubg.com/en/news/1516",
+    "imageOriginalUrl": "https://wstatic-prod-boc.krafton.com/pubg-legacy/2023/02/22.1-LABS-Zombie-Survival-2.0-Reopen_002-1024x576.jpg"
   },
   {
     "id": "hpjy-sheishineigui-2021",
@@ -1143,15 +1171,17 @@
     "tempoImpact": "前期仍需防范其他活人，后期却要与刚才的竞争者共同逃离。公开撤离点将双方集中起来，战斗目标从击败对手转为掩护登船或阻止逃离。",
     "designObservation": "让淘汰者切换阵营和操作方式，可以延长参与时间。将最后一批幸存者从竞争者改成合作者，也能在同一局中形成清晰的目标转折。",
     "sourceUrl": "https://apexlegends.wiki.gg/wiki/Shadowfall",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/3559dfbff4feaf3267fc.jpg",
+    "imageSource": "Apex Legends 官方频道：2019 Fight or Fright / Shadowfall 宣传片封面",
     "launchDate": "2019-10-15",
     "launchLabel": "2019 年 10 月 15 日",
     "launchNote": "第 3 赛季万圣节惊惧之战活动（Fight or Fright）的限时模式。2020 年的暗影大逃杀改为阵亡后协助原小队，应与本模式区分。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.youtube.com/watch?v=3upqj3z0iLM",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/3upqj3z0iLM/maxresdefault.jpg"
   },
   {
     "id": "apex-winter-express-2019",
@@ -1172,15 +1202,17 @@
     "tempoImpact": "极快的回合制节奏——每轮约 3 分钟。火车停站时是战斗高峰（争夺控制权），行驶期间是调整期（更换武器/复活）。",
     "designObservation": "把大逃杀地图中的火车改成争夺目标，可以让已有场景承载独立玩法。火车停站和行驶分别提供争夺与调整的时间，方便玩家理解何时进攻、何时准备下一轮。",
     "sourceUrl": "https://apexlegends.wiki.gg/wiki/Winter_Express",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/2eb2d958f74eedeb4ed5.png",
+    "imageSource": "EA 官方 Winter Express 场景图（2020 回归版本）（本地归档）",
     "launchDate": "2019-12-12",
     "launchLabel": "2019 年 12 月 12 日",
     "launchNote": "模式于第 3 赛季的冬季节庆活动（Holo-Day Bash）首次推出，后续多次在冬季回归；具体回归版的重生、装备和计分规则可能调整。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.ea.com/games/battlefield/news/season-7-holoday-bash",
+    "imageOriginalUrl": "https://media.contentapi.ea.com/content/dam/apex-legends/common/s7-holo-day-bash/apex-legends-screenshot-season7-holoday-10-train-location-04-clean.png.adapt.1920w.png"
   },
   {
     "id": "apex-armed-dangerous-2019",
@@ -1228,15 +1260,17 @@
     "tempoImpact": "共同入口集中匹配人数，定时轮换也能让玩家在占点、武器竞赛和团队击杀之间改变目标。代价是想练习特定模式时，可能需要等它再次轮到。",
     "designObservation": "轮换可以帮助维护较小的玩法群体，但也减少了即时选择。需要结合匹配时间和玩家对指定模式的需求，决定轮换周期与内容数量。",
     "sourceUrl": "https://apexlegends.wiki.gg/wiki/Game_mode",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/c23b557699d0c6c00b89.jpg",
+    "imageSource": "EA 官方模式页 Mixtape 入口图（本地归档）",
     "launchDate": "2023-03-07",
     "launchLabel": "2023 年 3 月 7 日",
     "launchNote": "第 16 赛季欢庆（Revelry）引入，首发轮换包含控制、武器竞速和团队死斗，每 15 分钟切换。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://www.ea.com/en/games/apex-legends/apex-legends/apex-legends-modes-hub",
+    "imageOriginalUrl": "https://drop-assets.ea.com/images/dVY93TaGRi80ApTDCY0LS/f17cad9a47d76d1755fc9ab2c8a693ee/Apex-Legends_Tile-mixtape.jpg"
   },
   {
     "id": "apex-shadow-royale-2020",
@@ -1256,15 +1290,17 @@
     "tempoImpact": "队友阵亡后，队伍仍有协作空间，但分工会改变：暗影负责接近和干扰，活人需要保存自身、完成远程战斗。后期的关键是配合不同形态的能力。",
     "designObservation": "阵亡后的玩法可以保留原来的队伍关系。让玩家变换职责继续帮助朋友，比单纯延长观战或无代价增加人数，更容易形成持续协作。",
     "sourceUrl": "https://apexlegends.wiki.gg/wiki/Shadow_Royale",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/976fc5313838c34e9b82.jpg",
+    "imageSource": "EA 官方玩法公告配图（本地归档）",
     "launchDate": "2020-10-22",
     "launchLabel": "2020 年 10 月 22 日",
     "launchNote": "第 6 赛季万圣节惊惧之战活动（Fight or Fright）的限时模式。阵亡者协助自己的小队，应与暗影降临的阵营转换区分。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.ea.com/games/battlefield/news/season-6-fight-or-fright",
+    "imageOriginalUrl": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2020/10/fof-2020/apex-legends-screenshot-season6-fof-shadow-combat.jpg.adapt.crop16x9.1920w.jpg"
   },
   {
     "id": "apex-straight-shot-2024",
@@ -1341,15 +1377,17 @@
     "tempoImpact": "受伤后的路线从“找隐蔽角落用药”变成“前往最近的治疗区”。队伍会在治疗区相遇，也可能围绕入口进行掩护、拦截或追击。",
     "designObservation": "将随身资源改为地图功能，可以让移动路线和战斗目标自然发生变化。治疗区既是伤员的退路，也是敌人可以预判的目的地。",
     "sourceUrl": "https://apexlegends.wiki.gg/wiki/Flashpoint_(LTM)",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/28ca0a1739e9be2a989e.jpg",
+    "imageSource": "EA 官方玩法公告配图（本地归档）",
     "launchDate": "2020-10-06",
     "launchLabel": "2020 年 10 月 6 日",
     "launchNote": "第 6 赛季售后市场活动（Aftermarket）引入，开放至 2020年10月20日。原版移除治疗物品，由地图治疗区提供生命与护盾恢复。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.ea.com/games/battlefield/news/season-6-aftermarket-event",
+    "imageOriginalUrl": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2020/09/apex-inline-image-flashpoint-aftermarket-event.jpg.adapt.crop16x9.1920w.jpg"
   },
   {
     "id": "apex-always-be-closing-2020",
@@ -1369,15 +1407,17 @@
     "tempoImpact": "搜刮、治疗和远距离绕行都需要计算追赶安全区的时间。落点离圈越远，留给战斗与收集物资的余裕越少。",
     "designObservation": "持续环境压力可以减少长时间等待，但也压缩玩家整理装备、观察局势和调整状态的机会。设计时需要明确希望保留多少短暂休息。",
     "sourceUrl": "https://apexlegends.wiki.gg/wiki/Always_Be_Closing",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/c38a23afb125ad03c660.jpg",
+    "imageSource": "EA 官方2020大晚宴模式日程图（包含本模式名称与图标，活动共用图）",
     "launchDate": "2020-01-20",
     "launchLabel": "2020 年 1 月 20 日",
     "launchNote": "第 3 赛季盛大晚会活动（Grand Soirée）引入。进化版于第 5 赛季、2020年8月11日推出，并提供开局莫桑比克霰弹枪。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.ea.com/games/battlefield/news/grand-soiree-arcade-event",
+    "imageOriginalUrl": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2020/01/pathfinder-event-scorecard.jpg"
   },
   {
     "id": "apex-deja-loot-2020",
@@ -1397,15 +1437,17 @@
     "tempoImpact": "熟悉掉落点的队伍可以减少盲目搜刮，直接争夺目标装备。每天变化的航线和圈位又要求重新判断进入、转移和撤退的路径。",
     "designObservation": "固定资源位置会提高学习地图的收益，也可能扩大熟练玩家的优势。每天改变航线和圈位，可以保留路线调整的空间；这属于设计取舍，不能据此断言新人必然没有机会。",
     "sourceUrl": "https://apexlegends.wiki.gg/wiki/Déjà_Loot",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/ab794d258b708c648b61.jpg",
+    "imageSource": "Apex Legends 官方频道：System Override / Déjà Loot 活动宣传片封面",
     "launchDate": "2020-03-03",
     "launchLabel": "2020 年 3 月 3 日",
     "launchNote": "第 4 赛季系统覆盖活动（System Override，2020年3月3日至17日）引入。官方说明明确区分“活动期战利品位置固定”和“航线、圈位每日变化”。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.youtube.com/watch?v=YPkZ2a0rUB4",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/YPkZ2a0rUB4/maxresdefault.jpg"
   },
   {
     "id": "apex-live-die-live-2020",
@@ -1426,15 +1468,17 @@
     "tempoImpact": "临近复活时点时，存活队员要在继续交战与保护自身之间取舍。阵亡者仍需等待缩圈结束，所以“能够复活”不等于“死亡后立刻继续战斗”。",
     "designObservation": "按环境阶段触发复活，可以让救援和缩圈共享一个可预判的时点。需要同时说明谁能复活、依赖什么队友条件以及等待多久，才能让队伍做出正确选择。",
     "sourceUrl": "https://apexlegends.wiki.gg/wiki/LIVE.DIE.LIVE",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/c38a23afb125ad03c660.jpg",
+    "imageSource": "EA 官方2020大晚宴模式日程图（包含本模式名称与图标，活动共用图）",
     "launchDate": "2020-01-16",
     "launchLabel": "2020 年 1 月 16 日",
     "launchNote": "第 3 赛季盛大晚会活动（Grand Soirée）引入。官方排期为 2020年1月16日至17日，明确要求在存活队友附近复活；返场装备不沿用未经证实的“满装”说法。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.ea.com/games/battlefield/news/grand-soiree-arcade-event",
+    "imageOriginalUrl": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2020/01/pathfinder-event-scorecard.jpg"
   },
   {
     "id": "delta-force-operations-2024",
@@ -1636,15 +1680,17 @@
     "designObservation": "在撤离玩法里加入跑酷挑战，可以把地图熟练度转化为局内收益；关键是让挑战点固定可学，同时让进入挑战本身保留暴露和时间成本。",
     "aiCommentator": "集成农业 AI · Codex（GPT-5）",
     "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830163047262256",
-    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img1.jpg",
-    "imageSource": "df.qq.com 官方玩法区通用图",
+    "imageUrl": "assets/mode-official/0efa0c51c9cde1cf31f2.png",
+    "imageSource": "Delta Force 官方 Steam 公告玩法配图（本地归档）",
     "launchDate": "2026-04-21",
     "launchLabel": "2026年4月21日，回声 赛季上线",
     "launchNote": "Steam 官方回声赛季前瞻列出大师遗踪与埋宝赠礼，说明跑酷涂鸦和排行榜板会出现在多张地图的固定地点。",
     "gameplayTypes": [
       "extraction"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/523121185690487973",
+    "imageOriginalUrl": "https://clan.fastly.steamstatic.com/images/45050610/17dfc052d984f4ec92d3865b0d66b73d2b63d56d.png"
   },
   {
     "id": "delta-force-treasure-hunt-2026",
@@ -1666,15 +1712,17 @@
     "designObservation": "撤离玩法的社交感不一定来自聊天系统；把玩家物资和留言异步留在地图里，可以让不同局的玩家产生轻量连接，同时把风险收益变成带情绪的故事。",
     "aiCommentator": "集成农业 AI · Codex（GPT-5）",
     "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1831432155566977",
-    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img6.jpg",
-    "imageSource": "df.qq.com 官方玩法区通用图",
+    "imageUrl": "assets/mode-official/ea48c84487ad10e60bce.jpg",
+    "imageSource": "Delta Force 官方 Steam 公告玩法配图（本地归档）",
     "launchDate": "2026-04-21",
     "launchLabel": "2026年4月21日，回声 赛季上线",
     "launchNote": "Steam 官方回声赛季前瞻列出此玩法；4月30日猛攻节主播活动进一步介绍埋宝、留言与挖掘的操作。",
     "gameplayTypes": [
       "extraction"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/523121185690487973",
+    "imageOriginalUrl": "https://clan.fastly.steamstatic.com/images/45050610/90df1369ea281a20add7f972ee0130293c828590.jpg"
   },
   {
     "id": "delta-force-operation-gold-2026",
@@ -1696,15 +1744,17 @@
     "designObservation": "高价值房间如果只是堆物资，很快会变成固定路线；加入递增环境伤害和互斥任务线，可以让每次进金库都产生真正的止损决策。",
     "aiCommentator": "集成农业 AI · Codex（GPT-5）",
     "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830797770230938",
-    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img6.jpg",
-    "imageSource": "df.qq.com 官方玩法区通用图",
+    "imageUrl": "assets/mode-official/22a80d14ab30e0320517.png",
+    "imageSource": "Delta Force 官方 Steam 公告玩法配图（本地归档）",
     "launchDate": "2026-04-22",
     "launchLabel": "2026年4月22日，官方开发者说明发布",
     "launchNote": "Steam 官方回声赛季开发者说明介绍硬通货任务的金库、安全窗口、氢气伤害和互斥任务。渡鸦与破墙行动为便于理解的名称对照，正式中文名称待核实。",
     "gameplayTypes": [
       "extraction"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/519744754933563927",
+    "imageOriginalUrl": "https://clan.fastly.steamstatic.com/images/45050610/6a9ef01981703491301196118c0139a156e7a44b.png"
   },
   {
     "id": "delta-force-vanguard-2026",
@@ -1726,15 +1776,17 @@
     "designObservation": "大战场快节奏变体不一定要缩小地图；跳过低互动战区、限制载具投放，也能把玩家密度和决策压力集中到更早的战线节点。",
     "aiCommentator": "集成农业 AI · Codex（GPT-5）",
     "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830163047262256",
-    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3-main2.jpg",
-    "imageSource": "df.qq.com 官方玩法区通用图",
+    "imageUrl": "assets/mode-official/0ee5785f4b515a190667.png",
+    "imageSource": "Delta Force 官方 Steam 公告玩法配图（本地归档）",
     "launchDate": "2026-04-21",
     "launchLabel": "2026年4月21日，回声 赛季上线",
     "launchNote": "Steam 官方回声赛季公告说明先遣部队属于攻防模式（Attack/Defense），并列出跳过战区、限制载具和首批地图。",
     "gameplayTypes": [
       "warfare"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/659358879913607566",
+    "imageOriginalUrl": "https://clan.fastly.steamstatic.com/images/45050610/4b7c8a8838a154db5d062a70c75909c6b4e4f2d7.png"
   },
   {
     "id": "delta-force-overload-2026",
@@ -1756,15 +1808,17 @@
     "designObservation": "死斗模式的连杀奖励最怕只变成单向碾压；把增益做得显性且可被追踪，可以把个人高光转化为全场都能理解的风险目标。",
     "aiCommentator": "集成农业 AI · Codex（GPT-5）",
     "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830797770245753",
-    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img5.jpg",
-    "imageSource": "df.qq.com 官方玩法区通用图",
+    "imageUrl": "assets/mode-official/9de9fc3f460098eca06b.jpg",
+    "imageSource": "Delta Force 官方 Steam 公告玩法配图（本地归档）",
     "launchDate": "2026-04-21",
     "launchLabel": "2026年4月21日，回声 赛季引入；5月1日猛攻节活动开放",
     "launchNote": "Steam 官方回声赛季公告首次提到超载；4月28日猛攻节公告确认相关活动于 5月1日至21日开放。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/519744754933565068",
+    "imageOriginalUrl": "https://clan.fastly.steamstatic.com/images/45050610/27e40f4bea05ad966fb448cea180c3290113cadd.jpg"
   },
   {
     "id": "delta-force-hill-of-iron-2026",
@@ -1786,15 +1840,17 @@
     "designObservation": "载具模式要把奖励目标也绑定到载具行为上；否则玩家会继续按普通步兵 团队死斗 的方式刷分，无法形成真正的装甲战场。",
     "aiCommentator": "集成农业 AI · Codex（GPT-5）",
     "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826362059920758",
-    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3-main3.jpg",
-    "imageSource": "df.qq.com 官方玩法区通用图",
+    "imageUrl": "assets/mode-official/1a81eb69bac853168e05.png",
+    "imageSource": "Delta Force 官方 Steam 公告玩法配图（本地归档）",
     "launchDate": "2026-03-06",
     "launchLabel": "2026年3月6日，钢铁洪流 2.0 开放；5月1日纪念碑战场优化活动开放",
     "launchNote": "Steam 官方 3月5日公告列出钢铁洪流 2.0 的开放期为 3月6日至26日；4月28日公告补充纪念碑战场与载具伤害相关任务。",
     "gameplayTypes": [
       "warfare"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/519744754933565068",
+    "imageOriginalUrl": "https://clan.fastly.steamstatic.com/images/45050610/47713fbfd23482383810e50543d5ba96367ecb71.png"
   },
   {
     "id": "delta-force-4v4-tactical-2026",
@@ -1816,15 +1872,17 @@
     "designObservation": "大型射击游戏需要小规模训练场式玩法承接不同心流：当玩家不想打长局大图时，4v4 可以提供低等待、高交火、强反馈的技术磨练空间。",
     "aiCommentator": "集成农业 AI · Codex（GPT-5）",
     "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1832700592788878",
-    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img2.jpg",
-    "imageSource": "df.qq.com 官方玩法区通用图",
+    "imageUrl": "assets/mode-official/8046e0a4d6adee8a8339.jpg",
+    "imageSource": "Delta Force Steam 官方 2026年5月14日公告「Flashpoint Combat」配图",
     "launchDate": "2026-05-15",
     "launchLabel": "2026年5月15日",
     "launchNote": "Steam 官方公告列出战术闪点交锋活动（Flashpoint Combat）于 5月15日至6月4日开放，包含两种 4 对 4 模式。",
     "gameplayTypes": [
       "warfare"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/692009446330597408",
+    "imageOriginalUrl": "https://clan.fastly.steamstatic.com/images/45050610/23a7d841e1e69744c01857f9248df9b3db9a98e5.jpg"
   },
   {
     "id": "delta-force-capture-the-flag-2026",
@@ -1846,15 +1904,17 @@
     "designObservation": "夺旗类模式的好处是天然制造“带球者”与追击者；只要地图路线足够清晰，玩家会自发形成进攻、护送、断后、回防的团队脚本。",
     "aiCommentator": "集成农业 AI · Codex（GPT-5）",
     "sourceUrl": "https://steamcommunity.com/app/2507950/allnews/?l=schinese",
-    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3_img5.jpg",
-    "imageSource": "df.qq.com 官方玩法区通用图",
+    "imageUrl": "assets/mode-official/cd7414b5313a87221de0.png",
+    "imageSource": "Delta Force 官方 Steam 公告玩法配图（本地归档）",
     "launchDate": "2026-05-22",
     "launchLabel": "2026年5月22日，夺旗回归活动开放",
     "launchNote": "Steam 官方中文公告列出 8 对 8 夺旗开放期为 5月22日至6月11日，6月3日英文公告再次介绍其回归。",
     "gameplayTypes": [
       "warfare"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/681878146434203868",
+    "imageOriginalUrl": "https://clan.fastly.steamstatic.com/images/45050610/5d48d33220e4425d4bb5474ff4613042aaf1a16b.png"
   },
   {
     "id": "delta-force-soccer-frenzy-2026",
@@ -1876,15 +1936,17 @@
     "designObservation": "节日玩法不一定要脱离主模式；把轻松目标塞进原有高压地图，可以制造反差感，让玩家在同一局里从战斗紧绷切到社交娱乐。",
     "aiCommentator": "集成农业 AI · Codex（GPT-5）",
     "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1834602721184632",
-    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3-main1.jpg",
-    "imageSource": "df.qq.com 官方玩法区通用图",
+    "imageUrl": "assets/mode-official/9a0afb277e8f69f5f19e.jpg",
+    "imageSource": "Delta Force 官方 Steam 公告玩法配图（本地归档）",
     "launchDate": "2026-06-05",
     "launchLabel": "2026年6月5日",
     "launchNote": "Steam 官方 6月3日更新确认阿萨拉绿茵场及两类足球挑战于 6月5日开启，并说明足球可带出，也可在局内用于传球、突破和射门。",
     "gameplayTypes": [
       "extraction"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/681878146434203868",
+    "imageOriginalUrl": "https://clan.fastly.steamstatic.com/images/45050610/d796156b975d2f8647614d3fdb9ffbccd39c8cd1.jpg"
   },
   {
     "id": "delta-force-knife-mode-2025",
@@ -2058,15 +2120,17 @@
     "designObservation": "当一个据点模式需要变体时，可以不改占点目标，而是改变主导火力层级；空地协同会自然迫使团队分出制空、防空和推进角色。",
     "aiCommentator": "集成农业 AI · Codex（GPT-5）",
     "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821306436",
-    "imageUrl": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p3-main2.jpg",
-    "imageSource": "df.qq.com 官方玩法区通用图",
+    "imageUrl": "assets/mode-official/1daf786d3a049fbf075d.png",
+    "imageSource": "Delta Force 官方 Steam 公告玩法配图（本地归档）",
     "launchDate": "2026-04-10",
     "launchLabel": "2026年4月10日-4月16日",
     "launchNote": "Steam 官方 4月9日公告确认开放期，描述其为山丘之王占点玩法（King of the Hill）的空地协同变体；此处不将它与胜者为王的名称混用。",
     "gameplayTypes": [
       "warfare"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/523121185690485757",
+    "imageOriginalUrl": "https://clan.fastly.steamstatic.com/images/45050610/2d52261aaaafae4f2ee1a128513ffb418e65ebfd.png"
   },
   {
     "id": "delta-force-wild-red-envelopes-2026",
@@ -2408,15 +2472,17 @@
     "tempoImpact": "它把 BR 从淘汰压力中抽离出来，变成练习、实验和社交空间；玩家可以安全学习建筑、武器、道具和地形，而不是每次失败都被送回大厅。",
     "designObservation": "竞技游戏需要“无排名后果的实验室”：当核心玩法学习成本很高时，官方训练沙盒能把新手教学、创作者玩法和朋友局自然串起来。",
     "sourceUrl": "https://www.fortnite.com/patch-notes/v4-5?lang=en-US",
-    "imageUrl": "assets/modes/generated/fortnite-playground-2018.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/d8c55fc9937c92daa949.jpg",
+    "imageSource": "Epic 官方补丁公告模式配图（本地归档）",
     "launchDate": "2018-06-27",
     "launchLabel": "2018年6月27日（v4.5）",
     "launchNote": "Fortnite v4.5 官方补丁说明列出 训练游乐场 的规则与一小时沙盒设定。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://www.fortnite.com/patch-notes/v4-5?lang=en-US",
+    "imageOriginalUrl": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv4-5%2FBR04_Social_LTM-Playground-%281%29-1920x1080-b7f811a498f54cd5ab359e468b76e6ab2a4f6139.jpg"
   },
   {
     "id": "fortnite-final-fight-teams-12-2018",
@@ -2466,15 +2532,17 @@
     "tempoImpact": "它把“站点控制”包装成强可读的跳舞互动，迫使玩家轮转多个公开目标；复活机制降低单次死亡惩罚，使冲点和反打更频繁。",
     "designObservation": "占点玩法适合用主题化交互降低理解门槛：玩家一眼知道要在舞池跳舞，复杂的控制权、进度条和复活节奏就被自然接受。",
     "sourceUrl": "https://www.fortnite.com/patch-notes/v6-02?lang=en-US",
-    "imageUrl": "assets/modes/generated/fortnite-disco-domination-2018.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/6b98264dddf4060d4997.gif",
+    "imageSource": "Epic 官方补丁公告模式配图（本地归档）",
     "launchDate": "2018-10-10",
     "launchLabel": "2018年10月10日（v6.02）",
     "launchNote": "Fortnite v6.02 官方补丁说明列出 舞池争夺 的舞池、复活和 100% 进度条规则。",
     "gameplayTypes": [
       "warfare"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.fortnite.com/patch-notes/v6-02?lang=en-US",
+    "imageOriginalUrl": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv6-02%2Foverview-text-v6-02%2FDiscoDomination_GIF-cea0a33674ec3d704896096bcb5d80393529146d.gif"
   },
   {
     "id": "fortnite-food-fight-2018",
@@ -2495,15 +2563,17 @@
     "tempoImpact": "前半段是集体筑防，后半段变成明确的目标摧毁战，节奏比普通 BR 更像 攻城；复活让前线持续拉扯而不是一次交火决定整局。",
     "designObservation": "给大队伍模式加入“可被摧毁的基地核心”，能把松散混战收束成攻防剧本；准备期和进攻期分离会让玩家自然产生分工。",
     "sourceUrl": "https://www.fortnite.com/patch-notes/v6-30?lang=en-US",
-    "imageUrl": "assets/modes/generated/fortnite-food-fight-2018.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/7007a3ae08287c84d9fd.jpg",
+    "imageSource": "Fortnite 官方公告 / 官方发布视频配图（本地归档）",
     "launchDate": "2018-11-14",
     "launchLabel": "2018年11月14日（v6.30）",
     "launchNote": "Fortnite v6.30 官方补丁说明列出 美食大战 LTM 的屏障、吉祥物核心与 7 秒复活规则。",
     "gameplayTypes": [
       "warfare"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.youtube.com/watch?v=AZ9WzKpm-UQ",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/AZ9WzKpm-UQ/maxresdefault.jpg"
   },
   {
     "id": "fortnite-one-shot-2019",
@@ -2553,15 +2623,17 @@
     "tempoImpact": "团队死斗 把 PUBG 的长搜刮、长转移压缩成高频对枪循环，给玩家提供低成本热身、枪械熟悉和团队交火训练。",
     "designObservation": "硬核 BR 需要一个不消耗整局时间的“枪感入口”；团队死斗能让新老玩家在进入正赛前先完成热手和枪械校准。",
     "sourceUrl": "https://pubg.com/en/game-info/arcade/tdm",
-    "imageUrl": "https://wstatic-prod.pubg.com/web/live/static/og/img-og-pubg.jpg",
-    "imageSource": "PUBG 官方 街机 页面通用分享预览图",
+    "imageUrl": "assets/mode-official/0f99a45319566a840dde.webp",
+    "imageSource": "PUBG 官网 Team Deathmatch 玩法页截图（本地归档）",
     "launchDate": "2020-02-19",
     "launchLabel": "2020年2月，更新 6.2 后作为 街机 玩法线推出",
     "launchNote": "PUBG 官方 街机 页面当前保留 团队死斗 入口；补丁页持续更新 团队死斗 地图与体验。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://pubg.com/en/game-info/arcade/tdm",
+    "imageOriginalUrl": "https://wstatic-prod.pubg.com/web/live/main_cf7d221/img/fa07f09.webp"
   },
   {
     "id": "pubg-racing-mode-2021",
@@ -2727,15 +2799,17 @@
     "tempoImpact": "多个热点让队伍有更多落点选择，而持续恢复能力让这些位置在开局搜刮后仍有价值。受伤者可能回到这里恢复，其他队伍也能据此组织争夺或拦截。",
     "designObservation": "物资被拿完后，资源点往往不再重要。叠加可以持续使用的治疗功能，能让同一地点继续影响中期路线和战斗。",
     "sourceUrl": "https://www.ea.com/games/battlefield/news/war-games",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/385bcf0f718a38b5bc3e.jpg",
+    "imageSource": "EA 官方 Ultra Zones 玩法图（本地归档）",
     "launchDate": "2021-04-15",
     "launchLabel": "2021年4月15日，战争游戏 第二个接管模式",
     "launchNote": "EA 官方战争游戏活动公告列出的原定开放期为 4月15日至19日。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.ea.com/games/battlefield/news/war-games",
+    "imageOriginalUrl": "https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/war-games/apex-legends-screenshot-season8-wargames-03-ultra-zones-clean.jpg.adapt.1920w.jpg"
   },
   {
     "id": "apex-auto-banners-2021",
@@ -2843,15 +2917,17 @@
     "tempoImpact": "它为移动端 BR 提供了热身入口，玩家不用经历跳伞、搜刮和长转移，就能快速练枪、熟悉武器后坐和团队配合。",
     "designObservation": "移动端射击尤其需要短循环练习场；团队竞技把“每局十几分钟的学习成本”压成连续数秒级反馈。",
     "sourceUrl": "https://gp.qq.com/gicp/news/684/7354921.html",
-    "imageUrl": "assets/modes/generated/hpjy-team-deathmatch-2019.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/1ec591418a37f24454cc.jpg",
+    "imageSource": "和平精英官网玩法介绍配图（本地归档）",
     "launchDate": "2019-06-28",
     "launchLabel": "2019年6月28日官方攻略页确认",
     "launchNote": "和平精英官方 2019年6月28日攻略页介绍团队竞技优化与刚枪体验。 当前收录信息主要来自公告标题或摘要，具体数值与完整规则待补充。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://gp.qq.com/gicp/news/684/7354921.html",
+    "imageOriginalUrl": "https://shp.qpic.cn/cfwebcap/0/444c0a657b99f4d3a6ad8b19ca103043/0?width=690&height=340"
   },
   {
     "id": "hpjy-circle-in-circle-2020",
@@ -2872,15 +2948,17 @@
     "tempoImpact": "提前暴露下一圈会减少纯随机跑圈感，放大抢点、卡边和提前转移；队伍更容易围绕信息优势形成主动战术。",
     "designObservation": "安全区信息可以被设计成策略资源：提前给一点未来信息，会把被动进圈改成主动规划。",
     "sourceUrl": "https://gp.qq.com/gicp/news/684/10128525.html",
-    "imageUrl": "assets/modes/generated/hpjy-circle-in-circle-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/50f46dbd9dee16ada985.jpg",
+    "imageSource": "和平精英官网玩法介绍配图（本地归档）",
     "launchDate": "2020-04-16",
     "launchLabel": "2020年4月16日官方页面确认",
     "launchNote": "和平精英官方 2020年4月16日页面介绍“信号接收区”与圈中圈模式。 当前收录信息主要来自公告标题或摘要，具体数值与完整规则待补充。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://gp.qq.com/gicp/news/684/10128525.html",
+    "imageOriginalUrl": "https://shp.qpic.cn/cfwebcap/0/39e3e8a1b422675eb908bee0e9ce8555/0?width=826&height=459"
   },
   {
     "id": "hpjy-hide-and-seek-2021",
@@ -2901,15 +2979,17 @@
     "tempoImpact": "躲藏方的紧张来自暴露风险，搜寻方的紧张来自有限时间内辨别异常；它把射击游戏节奏改成心理博弈和环境阅读。",
     "designObservation": "强枪战产品也可以用非对称伪装玩法扩宽人群：保留地图熟悉度，但把胜负能力从枪法转移到观察和表演。",
     "sourceUrl": "https://gp.qq.com/gicp/news/684/15032347.html",
-    "imageUrl": "assets/modes/generated/hpjy-hide-and-seek-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/51b050e1271c8e0f9722.jpg",
+    "imageSource": "和平精英官网玩法介绍配图（本地归档）",
     "launchDate": "2021-09-26",
     "launchLabel": "2021年9月26日官方页面确认",
     "launchNote": "和平精英官方 2021年9月26日页面确认“躲猫猫”大乱斗主题。 当前收录信息主要来自公告标题或摘要，具体数值与完整规则待补充。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://gp.qq.com/gicp/news/684/15032347.html",
+    "imageOriginalUrl": "https://shp.qpic.cn/cfwebcap/0/ab3c017e1d871e4a09daeaabb32ef16e/0/?width=752&height=280"
   },
   {
     "id": "hpjy-oasis-qiyuan-2022",
@@ -2930,15 +3010,17 @@
     "tempoImpact": "绿洲启元把玩家从经典海岛节奏中分流到短局和主题体验，适合承接娱乐、社交、训练和活动型规则实验。",
     "designObservation": "创意玩法数量增加后，需要让玩家能找到并顺利进入作品。统一入口可承载短局、玩家创作内容和主题规则轮换，降低发现新玩法的成本。",
     "sourceUrl": "https://gp.qq.com/gicp/news/684/18090722.html",
-    "imageUrl": "assets/modes/generated/hpjy-oasis-qiyuan-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/6baa0248e20f3af9f350.png",
+    "imageSource": "和平精英官网玩法介绍配图（本地归档）",
     "launchDate": "2022-08-26",
     "launchLabel": "2022年8月26日官方升级页确认",
     "launchNote": "和平精英官方 2022年8月26日页面介绍绿洲启元全新升级与多款创意玩法。 当前收录信息主要来自公告标题或摘要，具体数值与完整规则待补充。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://gp.qq.com/gicp/news/684/18090722.html",
+    "imageOriginalUrl": "https://shp.qpic.cn/cfwebcap/0/f979fcf655f749a4de515a5d86441b02/0/?width=1269&height=714"
   },
   {
     "id": "delta-force-team-deathmatch-2025",
@@ -2959,15 +3041,17 @@
     "tempoImpact": "团队死斗把三角洲的大地图推进压成连续步战反馈，适合练枪、熟悉干员和武器，也给全面战场之外提供更轻量的对抗入口。",
     "designObservation": "战术射击产品可以用团队死斗承接“短时长、高反馈”的需求：它不是主模式替代品，而是降低回流门槛的热身层。",
     "sourceUrl": "https://df.qq.com/cp/a20240906main/newsdetail.html?id=11829496586981425697",
-    "imageUrl": "assets/modes/generated/delta-force-team-deathmatch-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/07bfc5ce74151ae00303.jpg",
+    "imageSource": "Garena Delta Force 官方 War Ablaze 赛季公告：Team Deathmatch 模式宣传图",
     "launchDate": "2025-09-15",
     "launchLabel": "2025年9月官方新闻确认新模式开放",
     "launchNote": "三角洲行动官方新闻搜索结果提到新模式团队死斗开放，并描述更快速重新部署与更简化 界面。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://deltaforce.garena.com/en/news/announcement/W9PGYU",
+    "imageOriginalUrl": "https://web.df.garena.com//03_news/news_banner/SMP/20250920_patch/9.jpg"
   },
   {
     "id": "fortnite-teams-of-20-2018",
@@ -3017,15 +3101,17 @@
     "tempoImpact": "对枪节奏从掩体 探身射击 变成高度、弹道预判和爆炸半径控制；玩家更频繁利用空中位移脱离或强开。",
     "designObservation": "强机动道具最好搭配低精度范围武器，否则空中目标过难命中；喷气背包 与爆炸武器是一组互相补偿的规则组合。",
     "sourceUrl": "https://www.fortnite.com/patch-notes/v5-10-content-update?lang=en-US",
-    "imageUrl": "assets/modes/generated/fortnite-fly-explosives-2018.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/65a09e64b8b2e36100d7.jpg",
+    "imageSource": "Epic 官方补丁公告模式配图（本地归档）",
     "launchDate": "2018-08-01",
     "launchLabel": "2018年8月1日（v5.10 内容更新）",
     "launchNote": "Fortnite v5.10 内容更新 官方补丁列出 喷气爆破战 LTM。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.fortnite.com/patch-notes/v5-10-content-update?lang=en-US",
+    "imageOriginalUrl": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv5-10-content-update%2Foverview-text-v5-10-content-update%2FBR05_Social_LTM-Fly-Explosives-%281%29-1920x1080-5ae6d349c2d489747ace061aed29ae7cc9d49baf.jpg"
   },
   {
     "id": "fortnite-close-encounters-2018",
@@ -3220,15 +3306,17 @@
     "tempoImpact": "高品质武器前置会压缩搜刮曲线，让开局更快进入成型战斗；双排也强化个人配合而不是三人技能组合。",
     "designObservation": "把顶级装备普发给所有人，能临时跳过养成曲线，测试纯战斗决策和小队默契。",
     "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/grand-soir%C3%A9e-patch-notes/9460557",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/c38a23afb125ad03c660.jpg",
+    "imageSource": "EA 官方2020大晚宴模式日程图（包含本模式名称与图标，活动共用图）",
     "launchDate": "2020-01-14",
     "launchLabel": "2020年1月14日，盛大晚会 轮换活动开启",
     "launchNote": "EA 官方盛大晚会补丁公告列出金枪双排轮换。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.ea.com/games/battlefield/news/grand-soiree-arcade-event",
+    "imageOriginalUrl": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2020/01/pathfinder-event-scorecard.jpg"
   },
   {
     "id": "apex-third-person-mode-2020",
@@ -3249,15 +3337,17 @@
     "tempoImpact": "第三人称改变掩体观察、身位暴露和近距离追踪，玩家能获得更多拐角信息，也会改变突入和架枪节奏。",
     "designObservation": "视角是射击游戏最底层的规则之一；短期 LTM 是测试第三人称可读性和公平性的安全方式。",
     "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/grand-soir%C3%A9e-patch-notes/9460557",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/c38a23afb125ad03c660.jpg",
+    "imageSource": "EA 官方2020大晚宴模式日程图（包含本模式名称与图标，活动共用图）",
     "launchDate": "2020-01-18",
     "launchLabel": "2020年1月18日，盛大晚会 轮换模式",
     "launchNote": "EA 官方盛大晚会补丁公告列出第三人称模式轮换。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.ea.com/games/battlefield/news/grand-soiree-arcade-event",
+    "imageOriginalUrl": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2020/01/pathfinder-event-scorecard.jpg"
   },
   {
     "id": "apex-dummies-big-day-2020",
@@ -3278,15 +3368,17 @@
     "tempoImpact": "传奇身份被统一后，队伍组合压力降低，战局记忆点转向随机技能和荒诞表现。",
     "designObservation": "统一角色可以暂时减少阵容选择的影响，让玩家把注意力转向本轮特殊能力，以及如何和队友配合。",
     "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/grand-soir%C3%A9e-patch-notes/9460557",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/c38a23afb125ad03c660.jpg",
+    "imageSource": "EA 官方2020大晚宴模式日程图（包含本模式名称与图标，活动共用图）",
     "launchDate": "2020-01-26",
     "launchLabel": "2020年1月26日，盛大晚会 轮换模式",
     "launchNote": "EA 官方盛大晚会补丁公告列出假人大作战（DUMMIE’s Big Day）。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.ea.com/games/battlefield/news/grand-soiree-arcade-event",
+    "imageOriginalUrl": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2020/01/pathfinder-event-scorecard.jpg"
   },
   {
     "id": "apex-team-deathmatch-2023",
@@ -3307,15 +3399,17 @@
     "tempoImpact": "它把 Apex 的移动和枪感从大地图生存中抽出来，提供高频练枪、热身和英雄能力实战入口。",
     "designObservation": "快速复活的团队战能让玩家反复练习移动、瞄准和角色能力。明确的队伍击杀目标，也让短时热身有可追求的胜负结果。",
     "sourceUrl": "https://forums.ea.com/discussions/apex-legends-general-discussion-en/revelry---patch-notes-discussion/5701100",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 · Apex Legends 通用主视觉",
+    "imageUrl": "assets/mode-official/6934e92321f918add1c6.jpg",
+    "imageSource": "EA Revelry 官方玩法详解：团队死斗装备选择界面截图",
     "launchDate": "2023-02-14",
     "launchLabel": "2023年2月14日，欢庆 赛季上线",
     "launchNote": "EA 官方欢庆赛季补丁公告宣布团队死斗上线。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://www.ea.com/ea-play/news/revelry-season-game-updates",
+    "imageOriginalUrl": "https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/revelry-season-game-updates/apex-legends-revelry-updates-018-deathmatch.jpg.adapt.1920w.jpg"
   },
   {
     "id": "hpjy-summer-mode-2019",
@@ -3336,15 +3430,17 @@
     "tempoImpact": "主题岛屿把一部分玩家从传统陆地资源点吸引到海上热点，形成更强打卡和局部争夺。",
     "designObservation": "季节主题模式最有效的做法是给地图增加可被争夺的主题空间，而不只是换天空盒和装饰。",
     "sourceUrl": "https://gp.qq.com/gicp/news/684/7624328.html",
-    "imageUrl": "assets/modes/generated/hpjy-summer-mode-2019.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/a7583b8f317155919334.jpg",
+    "imageSource": "和平精英官网玩法介绍配图（本地归档）",
     "launchDate": "2019-07-25",
     "launchLabel": "2019年7月25日官方攻略页确认",
     "launchNote": "和平精英官方 2019年7月25日攻略页介绍夏日模式玩法。 当前收录信息主要来自公告标题或摘要，具体数值与完整规则待补充。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://gp.qq.com/gicp/news/684/7624328.html",
+    "imageOriginalUrl": "https://shp.qpic.cn/cfwebcap/0/46c83eb522db66add87ec0b5ee32bfb6/0?width=1268&height=585"
   },
   {
     "id": "hpjy-scientific-wheel-2022",
@@ -3394,15 +3490,17 @@
     "tempoImpact": "空中区域会改变开局落点、垂直转移和中期争夺，玩家必须判断是否投入到高曝光但高收益的主题空间。",
     "designObservation": "垂直地图热点能给老地图制造新鲜路线，但必须配合清晰入口、收益和撤离路径。",
     "sourceUrl": "https://gp.qq.com/gicp/news/684/18406448.html",
-    "imageUrl": "assets/modes/generated/hpjy-sky-island-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/862a76673645a0612863.jpg",
+    "imageSource": "和平精英官方账号「小白裙」TapTap 公告配图（本地归档）",
     "launchDate": "2024-03-20",
     "launchLabel": "2024年3月20日版本更新公告",
     "launchNote": "和平精英官方《空岛集结》版本更新公告页面日期为 2024年3月20日。 当前收录信息主要来自公告标题或摘要，具体数值与完整规则待补充。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.taptap.cn/moment/519194540628770944",
+    "imageOriginalUrl": "https://img2-tc.tapimg.com/moment/etag/liYAJDbQCNESixg-odWKuMijHlaj.jpg/_tap_ugc.jpg"
   },
   {
     "id": "hpjy-animal-jungle-2024",
@@ -3423,15 +3521,17 @@
     "tempoImpact": "战斗伙伴会让玩家在资源搜索之外增加“找伙伴、用伙伴、围绕伙伴打架”的路线目标。",
     "designObservation": "伙伴系统进入 BR 时，最好通过扫描/召唤这类主动动作绑定到地图探索，让新系统自然嵌入跑图节奏。",
     "sourceUrl": "https://gp.qq.com/gicp/news/684/18482886.html",
-    "imageUrl": "assets/modes/generated/hpjy-animal-jungle-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/b6ec6465a6b053e438fe.png",
+    "imageSource": "和平精英官网玩法介绍配图（本地归档）",
     "launchDate": "2024-08-23",
     "launchLabel": "2024年8月23日官方页面确认",
     "launchNote": "和平精英官方 2024年8月23日页面确认动物丛林主题玩法上线。 当前收录信息主要来自公告标题或摘要，具体数值与完整规则待补充。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://gp.qq.com/gicp/news/684/18482886.html",
+    "imageOriginalUrl": "https://img.crawler.qq.com/cfwebcap/0/ec88ba45d805f3682e1fdce975b37405/0/?width=993&height=545"
   },
   {
     "id": "delta-force-blitz-2024",
@@ -3481,15 +3581,17 @@
     "tempoImpact": "单人撤离会放大听声、避战、背包收益和撤离判断，团队救援容错消失，风险决策更个人化。",
     "designObservation": "搜打撤模式的单人化不是简单关掉队友，而是把所有信息判断和收益风险压回一个人身上，适合测试硬核玩家需求。",
     "sourceUrl": "https://df.qq.com/cp/a20240906main/newsdetail.html?id=11829496586981425697",
-    "imageUrl": "assets/modes/generated/delta-force-solo-ops-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/ee15c8c528bf27d23c85.png",
+    "imageSource": "Garena Delta Force 官方 Lone Wolf 单人撤离活动配图（2025年10月国际服版本）",
     "launchDate": "2024-09-27",
     "launchLabel": "2024年9月下旬官方活动信息确认",
     "launchNote": "官方新闻搜索结果提到独侠行动与机密行动单人匹配；规则细节需后续官方详情页复核。",
     "gameplayTypes": [
       "extraction"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://deltaforce.garena.com/en/news/announcement/Z54KA9",
+    "imageOriginalUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20251030_update/image1.png"
   },
   {
     "id": "delta-force-threshold-attack-defense-2024",
@@ -3858,15 +3960,17 @@
     "tempoImpact": "持有精灵后，玩家需要尽快规划安全路线，其他队伍则有明确的追击目标。对局不必一直等到最后一队存活才结束，每次取得目标物都可能触发一段紧张的撤离过程。",
     "designObservation": "在大逃杀基础上尝试撤离玩法时，可以先围绕一种可携带、可被抢夺的目标物展开。只要它能改变路线并促使玩家提前离场，就能形成不同于最终存活的胜利追求。",
     "sourceUrl": "https://www.fortnite.com/news/extract-and-collect-sprites-on-a-new-map-in-fortnite-runners",
-    "imageUrl": "assets/modes/generated/fortnite-runners-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/fc31b29fcde49d1ef07a.jpg",
+    "imageSource": "Fortnite 官方公告 / 官方发布视频配图（本地归档）",
     "launchDate": "2026-06",
     "launchLabel": "2026年6月官方发布（具体上线日待确认）",
     "launchNote": "原记录依据 Epic 游戏商城官方页面对新地图、精灵收集和撤离目标的介绍；当时新闻页重定向登录，精确上线日仍待复核。",
     "gameplayTypes": [
       "extraction"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://www.fortnite.com/news/extract-and-collect-sprites-on-a-new-map-in-fortnite-runners",
+    "imageOriginalUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmpzkp7470hn107oikhoxsef9"
   },
   {
     "id": "pubg-intense-br-haven-2026",
@@ -3916,15 +4020,17 @@
     "tempoImpact": "终局从单一清场目标变成限时集合与抢位：队伍要在风暴、敌人和撤离倒计时之间决定护送谁登车。多队共胜降低了必须歼灭所有对手的压力，却把最后阶段的路线判断和队内分工推到最高强度。",
     "designObservation": "公开撤离点可以保留前中期搜刮循环，同时改变最后阶段的目标。允许多队获胜后，队伍可以选择争抢登车时机、护送成员或暂时避战，而不必消灭所有对手。",
     "sourceUrl": "https://www.fortnite.com/news/dc-sirens-bring-the-heat-to-fortnite",
-    "imageUrl": "assets/modes/generated/fortnite-battle-bus-victory-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/74e047e225c58f94941c.png",
+    "imageSource": "Fortnite 官方 Battle Bus Victory Royale 正文配图（本地归档）",
     "launchDate": "2026-07-16",
     "launchLabel": "2026年7月16日官方公告后上线",
     "launchNote": "Epic 官方 2026年7月16日公告称该裂隙异常会在部分 大逃杀 对局中出现；未公布独立结束日期或精确触发概率。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://www.fortnite.com/news/dc-sirens-bring-the-heat-to-fortnite",
+    "imageOriginalUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmrnfwkdj0ye107n93b7z2bso"
   },
   {
     "id": "pubg-basic-training-2026",
@@ -4035,15 +4141,17 @@
     "tempoImpact": "球权会在得分、抢断和碰撞之间快速转移，障碍路线又会打断直线推进；队伍需要同时安排持球、掩护、抢断和回防，比分压力比单纯淘汰更持续。",
     "designObservation": "把运动目标、障碍路线和碰撞物理叠在 3v3 结构上，能让每次进攻都产生清晰的空间选择；排位和俱乐部系统则为轻量派对玩法提供长期目标。",
     "sourceUrl": "https://www.fortnite.com/news/crown-jam-a-limited-time-fortnite-mode-from-the-fall-guys-world?lang=en-US",
-    "imageUrl": "assets/modes/generated/fortnite-crown-jam-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/ae0deb92a7c7df0c9a46.jpg",
+    "imageSource": "Fortnite 官方公告 / 官方发布视频配图（本地归档）",
     "launchDate": "2026-01-23",
     "launchLabel": "2026年1月23日至2月9日限时开放",
     "launchNote": "Epic 官方 2026年1月21日公告确认 Crown Jam 为 3v3 限时竞技玩法，1月23日至2月9日开放，并提供 Ranked 选项。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.fortnite.com/news/crown-jam-a-limited-time-fortnite-mode-from-the-fall-guys-world",
+    "imageOriginalUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmkk218m44zcl07olh9kwj5ay"
   },
   {
     "id": "fortnite-delulu-2025",
@@ -4065,15 +4173,17 @@
     "tempoImpact": "组队让前期交火和资源争夺更容易转化为谈判，但离队后立刻反目又把信任变成短期资源；队伍规模变化会持续改变信息共享、火力和背刺风险。",
     "designObservation": "把社交承诺直接放进胜负结构，可以制造传统 BR 没有的心理博弈；“临时合作但只有一人赢”的规则必须让组队上限、离队和语音范围都足够清楚。",
     "sourceUrl": "https://www.fortnite.com/news/look-out-for-number-1-in-fortnite-delulu?lang=en-US",
-    "imageUrl": "assets/modes/generated/fortnite-delulu-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/c9c536365fa205ccc3dd.jpg",
+    "imageSource": "Epic 官方临时组队模式活动头图（本地归档）",
     "launchDate": "2025-09-19",
     "launchLabel": "2025年9月19日至22日、9月26日至29日限时开放",
     "launchNote": "Epic 官方公告确认 Delulu 的两段开放时间；后续更新把部分场次的结束条件调整为剩余四名玩家。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.fortnite.com/news/look-out-for-number-1-in-fortnite-delulu?lang=en-US",
+    "imageOriginalUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmfpome710zxc07oj1fg3eihh"
   },
   {
     "id": "pubg-playgrounds-2026",
@@ -4126,7 +4236,7 @@
     "tempoImpact": "区域解锁把合作推进拆成连续的小目标，HUB 回合让队伍在战斗和构筑之间换挡。波次敌人、随机技能与三档难度把压力从单次枪战延伸为整局资源管理和首领应对。",
     "designObservation": "把 PUBG 的枪械手感放进分区副本后，推进路线、可重置的技能构筑和首领弱点共同替代了缩圈。HUB 既是安全点也是决策点，能让队伍在下一扇门前讨论风险与分工。",
     "sourceUrl": "https://pubg.com/en/news/9844",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageSource": "PUBG 官方玩法公告正文配图（本地归档）",
     "launchDate": "2026-04-08",
     "launchLabel": "2026年4月8日 电脑端上线，4月16日主机上线",
     "launchNote": "官方服务期：电脑端 2026年4月8日至5月6日 07:00 UTC；主机端 2026年4月16日至5月14日 07:00 UTC。",
@@ -4134,7 +4244,9 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubg-xeno-point-2026.svg"
+    "imageUrl": "assets/mode-official/0f822e5e4e7b93230686.jpg",
+    "imageSourceUrl": "https://pubg.com/en/news/9844",
+    "imageOriginalUrl": "https://wstatic-prod-boc.krafton.com/common/news/20260407/DMRxd6Gm.jpg"
   },
   {
     "id": "pubg-payday-2026",
@@ -4157,7 +4269,7 @@
     "tempoImpact": "潜入阶段用检测圈和 Suspicion Score 逐步累积风险，报警后直接切换高压战斗；撤离目标让队伍不能只清场，还必须把生命、弹药和带出的战利品一起带到终点。",
     "designObservation": "PAYDAY 把 PUBG 的枪战改造成一条可分叉的任务链：安静处理能换取位置和资源，失误则让敌潮和警报接管节奏。职业、随机安保和投票难度让同一张劫案地图拥有可重复的分工与路线决策。",
     "sourceUrl": "https://pubg.com/en/news/10009",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageSource": "PUBG 官方玩法公告正文配图（本地归档）",
     "launchDate": "2026-05-13",
     "launchLabel": "2026年5月13日 电脑端上线，5月21日主机上线",
     "launchNote": "官方服务期：电脑端 2026年5月13日至6月10日 07:00 UTC；主机端 2026年5月21日至6月18日 07:00 UTC。",
@@ -4165,7 +4277,9 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubg-payday-2026.svg"
+    "imageUrl": "assets/mode-official/94c228a5d73cf9acb39b.jpg",
+    "imageSourceUrl": "https://pubg.com/en/news/10009",
+    "imageOriginalUrl": "https://wstatic-prod-boc.krafton.com/common/news/20260512/meewjPXi.jpg"
   },
   {
     "id": "pubg-prop-hunt-2026",
@@ -4187,7 +4301,7 @@
     "tempoImpact": "误射惩罚让 Hunters 必须观察和沟通，Props 则通过随机换形与干扰能力制造短暂脱身窗口。临近结束的 Fever Time 把前段的搜索博弈压缩成一次公开收网。",
     "designObservation": "把地图装饰变成可玩的身份伪装，让熟悉场景成为记忆与观察力的竞技场。Hunters 的资源惩罚、Props 的主动干扰和最后冲刺共同维持双方在信息优势上的来回交换。",
     "sourceUrl": "https://pubg.com/en/news/9889",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageSource": "PUBG 官方玩法公告正文配图（本地归档）",
     "launchDate": "2026-03-31",
     "launchLabel": "2026年3月31日 07:00 UTC 限时开放",
     "launchNote": "官方服务期为 2026年3月31日 07:00 至4月8日 00:00 UTC；标准回合 12 人，支持 Rondo、Vikendi、Miramar，自定义比赛最多 40 人。",
@@ -4195,7 +4309,9 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubg-prop-hunt-2026.svg"
+    "imageUrl": "assets/mode-official/ec932bef6d26ac9ff57a.jpg",
+    "imageSourceUrl": "https://pubg.com/en/news/9889",
+    "imageOriginalUrl": "https://wstatic-prod-boc.krafton.com/common/news/20260327/V2sJs67z.jpg"
   },
   {
     "id": "apex-ascended-hunt-2026",
@@ -4246,15 +4362,17 @@
     "tempoImpact": "减少搜刮和装备整理让开局更快进入交火，复活窗口延长后队伍更愿意主动换血；地图玩具和快速轮换把重点从资源路线转到接敌路线。",
     "designObservation": "把传统 BR 的搜刮负担压缩到可控范围，可以保留队伍协作和缩圈压力，同时让短时玩家更快体验到 Apex 的移动与枪战。",
     "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/game-update-wildcard",
-    "imageUrl": "assets/modes/generated/apex-wildcard-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/20ff0cd2cf59e5f8d695.jpg",
+    "imageSource": "EA Apex Legends 官网 Wildcard 模式入口官方截图",
     "launchDate": "2025-08-05",
     "launchLabel": "2025年8月5日随 Confrontation 赛季上线",
     "launchNote": "EA 官方公告将 Wildcard 定义为新的常驻玩法；公开介绍发表于 2025年7月30日，具体上线时间按赛季版本整理。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://www.ea.com/en/games/apex-legends/apex-legends/apex-legends-modes-hub",
+    "imageOriginalUrl": "https://drop-assets.ea.com/images/25slcgXhZdTBCvVOFzQtfP/73a54bc71badb3a72a9677361edf0fab/APEX_Legends_S26_Screenshots_s26_Launch_Shot_WildcardOTMapToys_A_v01a__1_.png?im=AspectCrop=(1,1),xPosition=0.6513020833333333,yPosition=0.4236111111111111"
   },
   {
     "id": "apex-bot-royale-evolved-2026",
@@ -4277,8 +4395,8 @@
     "tempoImpact": "真人对手数量和机器人补位让练习局的压力更平滑，玩家可以在完整缩圈节奏里练习转点、枪法和救援，同时保留比纯训练场更接近正式 BR 的决策密度。",
     "designObservation": "把人机作为动态补位而不是固定靶场，可以同时解决新手练习、匹配等待和低压热身问题；限制徽章与统计又避免练习局破坏竞技数据。",
     "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/breach-patch-notes",
-    "imageUrl": "assets/modes/generated/apex-bot-royale-evolved-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/c1c19167d5fddb039531.jpg",
+    "imageSource": "EA Breach赛季官方Bot Royale Evolved专属配图",
     "launchDate": "2026-02-09",
     "launchLabel": "2026年2月9日随 Breach 更新进化",
     "launchNote": "EA 官方 Breach 补丁明确写出 Bot Royale Evolved 的真人/机器人队伍结构、完整 BR 时长、经验与统计限制。",
@@ -4286,7 +4404,9 @@
       "br",
       "pve"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://www.ea.com/pt-br/games/apex-legends/apex-legends/news/breach-game-updates",
+    "imageOriginalUrl": "https://drop-assets.ea.com/images/3iUGgwZkywQUjPfE3ZGSmH/5ebc80ec9313d8146a95e4971b76c6be/03._Bot_Royale_Evolved.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5"
   },
   {
     "id": "apex-launch-royale-2025",
@@ -4338,15 +4458,17 @@
     "tempoImpact": "购买限制和回合折扣把每轮变成一次明确的配装实验，队伍需要在当前回合取胜、保留资源和预判下一轮折扣之间做决定。",
     "designObservation": "竞技场回归通过限制购买次数和移除英雄强化，把注意力重新集中到枪械组合、经济和回合节奏；地图保持熟悉，系统规则承担变化。",
     "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/prodigy-patch-notes",
-    "imageUrl": "assets/modes/generated/apex-arenas-prodigy-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/586d2c2468777a9ec5ed.jpg",
+    "imageSource": "EA Prodigy赛季官网竞技场回归专属战斗图",
     "launchDate": "2025-05-06",
     "launchLabel": "2025年5月6日至6月23日限时回归",
     "launchNote": "EA 官方 Prodigy 补丁列出两阶段竞技场回归：5月6日至19日以及5月20日至6月23日；本卡记录后一个完整规则版本。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.ea.com/es-mx/games/apex-legends/apex-legends/seasons/prodigy",
+    "imageOriginalUrl": "https://drop-assets.ea.com/images/35b7TTxM2cAriPE8BohczU/e26ca16cca39a74a10c25fed43c6b0c6/Apex-SeasonsPage_Gameplay-Arena_16x9.jpg?im=AspectCrop=(16,9),xPosition=0.2869791666666667,yPosition=0.22407407407407406"
   },
   {
     "id": "delta-force-crazy-mystery-box-advanced-2026",
@@ -4608,7 +4730,7 @@
     "tempoImpact": "携带高价值装备会提高每次交战的损失，玩家会在继续搜刮、绕开枪声和提前撤离之间做选择；撤离点因此成为天然的冲突节点，搜刮路线也需要围绕风险和收益不断调整。",
     "designObservation": "把大逃杀的即时胜负改成跨局资产循环后，失败不再只意味着本局出局，而是会影响下一局的装备准备；保护栏、黑市和品质差异共同提供了风险分层。",
     "sourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202011/874641.shtml",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
     "launchDate": "2020-11-10",
     "launchLabel": "2020年11月10日随 1.1 版本开放",
     "launchNote": "官方 1.1 版本公告将 Metro Royale 作为独立玩法和专属大厅接入；后续章节会周期性回归并继续调整规则。",
@@ -4616,7 +4738,9 @@
       "extraction"
     ],
     "isLtm": false,
-    "imageUrl": "assets/modes/generated/pubgm-metro-royale-2020.svg"
+    "imageUrl": "assets/mode-official/149a103aab2e6196a9ef.jpg",
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202011/874641.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20201109/95543413759018.jpg"
   },
   {
     "id": "pubgm-payload-2-0-2020",
@@ -4638,7 +4762,7 @@
     "tempoImpact": "载具火力和空中单位扩大了转点与追击的速度，基地和安全屋把队伍吸引到高价值争夺点；召回机制延长了小队的有效交战时间，使中期交火更容易连续发生。",
     "designObservation": "在 BR 的生存骨架上放入高噪声载具和阶段性高价值地点，可以让地图在中期重新生成冲突中心；召回则给队伍一次把优势转化为持续施压的机会。",
     "sourceUrl": "https://www.pubgmobile.com/en/event/payload/",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageSource": "PUBG MOBILE 官方火力对决活动主视觉（本地归档）",
     "launchDate": "2020-10",
     "launchLabel": "2020年10月上线",
     "launchNote": "官方 Payload 2.0 页面记录了武装载具、基地、超级武器、通信塔和召回等核心规则；首发月份按 PUBG MOBILE 官方发布记录整理。",
@@ -4646,7 +4770,9 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-payload-2-0-2020.svg"
+    "imageUrl": "assets/mode-official/96602b7b1a2891e0ae6c.jpg",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/payload/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/payload/kv.jpg"
   },
   {
     "id": "pubgm-world-of-wonder-2023",
@@ -4668,7 +4794,7 @@
     "tempoImpact": "节奏由创作者对地图尺寸、目标距离、重生和装置触发条件的组合决定；同一套射击操作可以被改造成竞速、团队目标或轻量派对玩法，单局时长和交战密度因此高度可调。",
     "designObservation": "开放式创作工具把玩法变化从官方赛季节奏扩展到玩家社群，让地图、目标和规则成为可复用的组合模块；审核与精选机制则承担内容质量和发现成本的控制。",
     "sourceUrl": "https://www.pubgmobile.com/en/event/WOW/news.shtml",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageSource": "PUBG MOBILE 官方频道：World of Wonder 2023 上线宣传片封面",
     "launchDate": "2023",
     "launchLabel": "2023年起持续更新，初次开放日期待进一步核对",
     "launchNote": "官方 World of Wonder 档案持续记录版本 2.7、2.8 及后续创作设备和地图更新；本卡先记录系统级玩法，完整历史版本会继续按档案补齐。",
@@ -4676,7 +4802,9 @@
       "casual"
     ],
     "isLtm": false,
-    "imageUrl": "assets/modes/generated/pubgm-world-of-wonder-2023.svg"
+    "imageUrl": "assets/mode-official/f4d64a1b5ac701be0d2e.jpg",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=If0dohVA8Fw",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/If0dohVA8Fw/maxresdefault.jpg"
   },
   {
     "id": "free-fire-clash-squad-2019",
@@ -4757,7 +4885,7 @@
     "tempoImpact": "敌群和阶段推进持续抬高压力，队伍必须在清理小怪、保存资源和处理首领之间分配火力；每周轮换的地图增益改变最优配装，让重复挑战仍有变化。",
     "designObservation": "PVE 轮换通过敌人阶段、地图增益和首领目标提供清晰的协作节拍；兑换商店把一次性的通关奖励转成连续游玩的收集目标。",
     "sourceUrl": "https://ff.garena.com/en/article/1332/",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageSource": "Garena 官方僵尸猎场轮换活动共用配图（本地归档）",
     "launchDate": "2024-04-16",
     "launchLabel": "2024年4月16日版本回归",
     "launchNote": "官方补丁说明 Zombie Hunt 以新地图和新阶段回归，并提供轮换特殊事件；本卡记录该次规则更新。",
@@ -4765,7 +4893,9 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-zombie-hunt-2024.svg"
+    "imageUrl": "assets/mode-official/fe17cce889c3cf1033bc.jpg",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1332/",
+    "imageOriginalUrl": "https://lh7-us.googleusercontent.com/MtA4OWS7z9LnFhgSeRi5ECDj0cEeEgxNKkfhIZ5wbDF2_RKxSI8Cu8semJA-q7HD20-CaSEy4W3YbwadzBM7M1n4HjmTazob1DAuFWAxsTXGpaQXjrscecxG_qvX_lPEY3LpBeE7YF3ZK1ECQK7DC0U"
   },
   {
     "id": "free-fire-zombie-hunt-hunting-spree-2024",
@@ -4788,7 +4918,7 @@
     "tempoImpact": "限时倒计时让队伍优先追求连续清怪和升级，强化选择会不断改变火力与生存能力；后半段的目标从稳妥推进转向争取更多首领击杀。",
     "designObservation": "用‘击杀—升级—选强化—挑战更多首领’的短循环，把 PVE 进度从固定关卡改成可比较的分数竞速，适合反复刷高分。",
     "sourceUrl": "https://ff.garena.com/en/article/1332/",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageSource": "Garena 官方僵尸猎场轮换活动共用配图（本地归档）",
     "launchDate": "2024-04-16",
     "launchLabel": "2024年4月16日随 Zombie Hunt 回归",
     "launchNote": "官方补丁明确记录限时、击杀升级、强化选择和按首领数量计分。",
@@ -4796,7 +4926,9 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-zombie-hunt-hunting-spree-2024.svg"
+    "imageUrl": "assets/mode-official/fe17cce889c3cf1033bc.jpg",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1332/",
+    "imageOriginalUrl": "https://lh7-us.googleusercontent.com/MtA4OWS7z9LnFhgSeRi5ECDj0cEeEgxNKkfhIZ5wbDF2_RKxSI8Cu8semJA-q7HD20-CaSEy4W3YbwadzBM7M1n4HjmTazob1DAuFWAxsTXGpaQXjrscecxG_qvX_lPEY3LpBeE7YF3ZK1ECQK7DC0U"
   },
   {
     "id": "free-fire-zombie-hunt-rift-raiders-2024",
@@ -4819,7 +4951,7 @@
     "tempoImpact": "队伍要在清怪、攒石、守住召唤进度和跨场突袭之间切换；传送门开启后，PVE 的资源竞速会突然转成短距离 PVP 干扰。",
     "designObservation": "把两支队伍放在同一套 PVE 目标里，再用可投放的敌人和传送门互相施压，形成了‘刷怪—攒资源—干扰—抢首领’的混合循环。",
     "sourceUrl": "https://ff.garena.com/en/article/1332/",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageSource": "Garena 官方僵尸猎场轮换活动共用配图（本地归档）",
     "launchDate": "2024-04-16",
     "launchLabel": "2024年4月16日随 Zombie Hunt 回归",
     "launchNote": "官方补丁明确记录 4v4、邪恶石、最终首领、Rogue Zombies 和传送门互相干扰规则。",
@@ -4827,7 +4959,9 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-zombie-hunt-rift-raiders-2024.svg"
+    "imageUrl": "assets/mode-official/fe17cce889c3cf1033bc.jpg",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1332/",
+    "imageOriginalUrl": "https://lh7-us.googleusercontent.com/MtA4OWS7z9LnFhgSeRi5ECDj0cEeEgxNKkfhIZ5wbDF2_RKxSI8Cu8semJA-q7HD20-CaSEy4W3YbwadzBM7M1n4HjmTazob1DAuFWAxsTXGpaQXjrscecxG_qvX_lPEY3LpBeE7YF3ZK1ECQK7DC0U"
   },
   {
     "id": "free-fire-myzone-2025",
@@ -4850,7 +4984,7 @@
     "tempoImpact": "资源点从固定搜刮位置变成可被玩家主动改造的目标，队伍需要在花钱建造、守住解锁时间和继续转点之间取舍；设施的侦察或补给效果会重新塑造附近交战路线。",
     "designObservation": "让玩家在 BR 局内建设局部规则，可以把地图控制从被动占位变成主动投资；随机选项控制了强度上限，而建造时间提供了明确的反制窗口。",
     "sourceUrl": "https://ff.garena.com/en/article/1456/",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
     "launchDate": "2025-02-19",
     "launchLabel": "2025年2月19日版本加入",
     "launchNote": "官方补丁将 MyZone 同时放入 Battle Royale 和 Clash Squad 的活动规则中；本卡聚焦其对 BR 地图和局内资源的改造。",
@@ -4858,7 +4992,9 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-myzone-2025.svg"
+    "imageUrl": "assets/mode-official/b6e0b11834246cd0f8ea.jpg",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1456/",
+    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfTD2IoyKfDM004xgDxTr432i_Cd6d5gAMFmraFlRHxZVPl28khBug_0PIyLplikt7jo37DV73lMk6RHCY7GOaA2gkaWNPT3549OVyEfxvVgE_QzDDbNJf-uFvqeV8XtUNcLwhPEw?key=srvUdi2CqQzIeOGTGUessUab"
   },
   {
     "id": "pubgm-flora-menace-2021",
@@ -4888,8 +5024,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-flora-menace-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/e2948b4ba50b053317cd.jpg",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202109/900286.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20210910/8371554243498.jpg"
   },
   {
     "id": "free-fire-lone-wolf-2021",
@@ -4917,8 +5055,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-lone-wolf-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/5a54c6c86f186c231789.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/485",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/ob29img/en-5.jpg"
   },
   {
     "id": "free-fire-ninjutsu-lone-wolf-2025",
@@ -4977,8 +5117,10 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-survive-till-dawn-2019.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/8f83c5061f03d68eb65e.jpg",
+    "imageSource": "PUBG MOBILE 官方破晓生还2019宣传片封面（暴君）",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=02KjuvYLUIM",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/02KjuvYLUIM/maxresdefault.jpg"
   },
   {
     "id": "pubgm-darkest-night-2019",
@@ -5007,8 +5149,10 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-darkest-night-2019.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/47e0d61f7e9806710971.jpg",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201904/804220.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20190416/13255921013834.jpg"
   },
   {
     "id": "pubgm-team-deathmatch-2019",
@@ -5036,8 +5180,10 @@
       "casual"
     ],
     "isLtm": false,
-    "imageUrl": "assets/modes/generated/pubgm-team-deathmatch-2019.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/6877971565448ef10d82.jpg",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/35485/m20570/201906/813644.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20190611/272181049006115.jpg"
   },
   {
     "id": "pubgm-ragegear-2019",
@@ -5066,8 +5212,10 @@
       "warfare"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-ragegear-2019.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/17d2b02f2b4c4404bbcb.png",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/201912/839688.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20191209/77943888172475.png"
   },
   {
     "id": "pubgm-arctic-mode-2020",
@@ -5096,8 +5244,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-arctic-mode-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/52e8dd6ea08b99df20d0.jpg",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/202002/849328.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20200303/24643235835518.jpg"
   },
   {
     "id": "pubgm-infection-mode-2020",
@@ -5126,8 +5276,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-infection-mode-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/0b0440f5d4424e2b7305.png",
+    "imageSource": "PUBG MOBILE Halloweeks 2020 官方 Infection Mode 配图",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/halloweeks2020/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/halloweeks2020/part_slide1.png"
   },
   {
     "id": "pubgm-runic-power-2021",
@@ -5156,8 +5308,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-runic-power-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/3e2a329df7e892fa10ac.jpg",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/202101/880069.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20210107/948201460131532.jpg"
   },
   {
     "id": "pubgm-power-armor-2021",
@@ -5187,8 +5341,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-power-armor-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/761f90a169be742a0b92.png",
+    "imageSource": "PUBG MOBILE 日本官网玩法公告图（本地归档）",
+    "imageSourceUrl": "https://pubgmobile.jp/extreme-hunt-mode/",
+    "imageOriginalUrl": "https://pubgmobile.jp/wp-content/uploads/mobile_web_Extreme-Hunt_900x568-1.png"
   },
   {
     "id": "pubgm-titan-last-stand-2021",
@@ -5217,8 +5373,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-titan-last-stand-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/423c95a1261eeb5c2150.png",
+    "imageSource": "PUBG MOBILE 日本官网 Titans: Last Stand 官方主题图",
+    "imageSourceUrl": "https://www.pubgmobile.jp/コラボスペシャルイベントモード【titans-last-stand】開催！/",
+    "imageOriginalUrl": "https://www.pubgmobile.jp/wp-content/uploads/web_GODZILLA-TITANS-LAST-STAND_900x568.png"
   },
   {
     "id": "pubgm-insectoid-2021",
@@ -5248,8 +5406,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-insectoid-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/5b32ab58a654923a743d.jpg",
+    "imageSource": "PUBG MOBILE Traverse–Insectoid 官方活动页主视觉",
+    "imageSourceUrl": "https://www.pubgmobile.com/id/event/traverse/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/traverse/share.jpg"
   },
   {
     "id": "pubgm-mirror-world-2021",
@@ -5279,8 +5439,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-mirror-world-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/45a4b44a2fd3366e0243.jpg",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54203/m22142/202111/904670.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20211115/155241547985578.jpg"
   },
   {
     "id": "pubgm-vs-ai-2021",
@@ -5339,8 +5501,10 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-zombie-hunt-double-evil-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/53c220aecf3c81e8acc6.jpg",
+    "imageSource": "Garena 官方游戏内公告：双首领僵尸猎场配图（本地归档）",
+    "imageSourceUrl": "https://dl.dir.freefiremobile.com/common/web_event/aswqooiwd/Yrl7zxCZ.html?lang=en",
+    "imageOriginalUrl": "https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/20238/2769ac661dfa89aabc2decea8dcbc17a.jpg"
   },
   {
     "id": "free-fire-epic-battle-2023",
@@ -5400,8 +5564,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-villain-conquest-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/dced5b3ff3ea4f931422.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1332/",
+    "imageOriginalUrl": "https://lh7-us.googleusercontent.com/hM2MTP-29_nkGZCBZ-2HHn2kZEksrZPfmM4kSiGrPecIsQqlLCGdR1HUZAtCNDwM3YbfPbzfv3wPYc_amdMTOFRdrX4f9Ds6wdlk1-4y2vD50p4yuy6Bq_M8K_eY9ThFKw6Lq5j_HwkiYR4tRKhE_OE"
   },
   {
     "id": "free-fire-lone-wolf-duo-skills-2024",
@@ -5460,8 +5626,10 @@
       "casual"
     ],
     "isLtm": false,
-    "imageUrl": "assets/modes/generated/free-fire-craftland-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/b0326b735afb9b8bbc11.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/735/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/d5830/en-1.jpg"
   },
   {
     "id": "free-fire-undersea-mystery-2026",
@@ -5491,8 +5659,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-undersea-mystery-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/dc88bdddc04edb37822b.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1640/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20264/c57c0a509dd55e527fd73a89d3aae479.jpeg"
   },
   {
     "id": "free-fire-clash-squad-random-events-2026",
@@ -5521,8 +5691,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-clash-squad-random-events-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/fe544f0601ec3428b145.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1640/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20264/0b4a1faa98d337705d45733891ba1d24.jpeg"
   },
   {
     "id": "pubgm-royale-arena-assault-2022",
@@ -5551,8 +5723,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-royale-arena-assault-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/c32108ddd5db4ff84820.png",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60922/60923/60924/60926/m22609/202204/913942.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20220424/91484505403147.png"
   },
   {
     "id": "pubgm-gear-front-2022",
@@ -5582,8 +5756,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-gear-front-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/244a4abebabb201531bb.jpg",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）；2023 年技能更新版本",
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/m22521/202301/928128.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20230103/456931475938849.jpg"
   },
   {
     "id": "pubgm-martial-showdown-2023",
@@ -5613,8 +5789,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-martial-showdown-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/0146adda52de2a2fac2e.jpg",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/m22521/202301/928128.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20230103/10600174461041.jpg"
   },
   {
     "id": "pubgm-metro-royale-misty-port-2023",
@@ -5644,8 +5822,10 @@
       "extraction"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-metro-royale-misty-port-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/d07f5724da9967511b79.png",
+    "imageSource": "PUBG MOBILE 日本官网玩法公告图（本地归档）",
+    "imageSourceUrl": "https://pubgmobile.jp/version-2-4-0-update-notice-20221228/",
+    "imageOriginalUrl": "https://pubgmobile.jp/wp-content/uploads/web_2.4.0Update-information_900x506-600x337.png"
   },
   {
     "id": "pubgm-zombies-edge-2023",
@@ -5676,8 +5856,10 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-zombies-edge-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/d9ba5ef28cf3ff2bdf08.jpg",
+    "imageSource": "PUBG MOBILE 官方活动页主视觉 / 场景图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/ZOMBILE_EDGE/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/ZOMBILE_EDGE/bg_1.jpg"
   },
   {
     "id": "pubgm-dragon-ball-super-themed-2023",
@@ -5707,8 +5889,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-dragon-ball-super-themed-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/ddf23d5a54b8b6074b07.jpg",
+    "imageSource": "PUBG MOBILE 官方龙珠联动共用主视觉（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/dragon-ball-super/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/dragon-ball-super/bg_1.jpg"
   },
   {
     "id": "pubgm-battle-royale-dragon-ball-super-2023",
@@ -5738,8 +5922,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-battle-royale-dragon-ball-super-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/ddf23d5a54b8b6074b07.jpg",
+    "imageSource": "PUBG MOBILE 官方龙珠联动共用主视觉（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/dragon-ball-super/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/dragon-ball-super/bg_1.jpg"
   },
   {
     "id": "free-fire-free-for-all-2023",
@@ -5768,8 +5954,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-free-for-all-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/910907d7cdcda750c944.jpg",
+    "imageSource": "Garena 官方玩法教学 / 动画视频封面（本地归档）；2022 年五周年玩法教学图",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=CWz1_QxVkL0",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/CWz1_QxVkL0/hqdefault.jpg"
   },
   {
     "id": "free-fire-mini-peak-2024",
@@ -5799,8 +5987,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-mini-peak-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/0b44663f33334ef36695.jpg",
+    "imageSource": "Garena 官方活动 / 玩法公告配图（本地归档）",
+    "imageSourceUrl": "https://dl.dir.freefiremobile.com/common/web_event/aswqooiwd/ozlkeyfU.html?lang=en",
+    "imageOriginalUrl": "https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/20246/0b22b3304cf4bbf18ab7ba66882e5ff1.jpg"
   },
   {
     "id": "free-fire-clash-squad-first-person-2024",
@@ -5860,8 +6050,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-gloo-nova-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/32512ee3716a3894c669.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1385/",
+    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeppUeC5F4k749we4r_rVkSPck798Jg2nLXB6aFu-56_MBLbCi-uX5LsKgPUGGBV_OGvm27YpjvwJZDVb_2PYAU5MlPoHeDk7mBpQiG3tIvELqYIaDtPhvowHHWchDFJ6GyoNLB9bwO9Ib-4jqLHz1gX5W5?key=DmXViBkqc4SgdDA25La7WQ"
   },
   {
     "id": "pubgm-shadow-force-2024",
@@ -5891,8 +6083,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-shadow-force-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/72f74b781ac8d54c0f63.jpg",
+    "imageSource": "PUBG MOBILE 官方活动页主视觉 / 场景图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/RESPAWN-BATTLE/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/RESPAWN-BATTLE/bg_1.jpg"
   },
   {
     "id": "pubgm-jujutsu-kaisen-themed-2021",
@@ -5923,8 +6117,10 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-jujutsu-kaisen-themed-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/0f20c596256e704fa4a8.jpg",
+    "imageSource": "PUBG MOBILE 官方活动页主视觉 / 场景图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/JUJUTSUKAISEN/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/JUJUTSUKAISEN/bg_1.jpg"
   },
   {
     "id": "pubgm-unfail-2025",
@@ -5985,8 +6181,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-droid-apocalypse-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/dbc97aa70883cd3c07c4.jpg",
+    "imageSource": "Garena 官方玩法视频封面（本地归档）",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=AG2wtz-dNmQ",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/AG2wtz-dNmQ/maxresdefault.jpg"
   },
   {
     "id": "free-fire-coin-clash-2022",
@@ -6016,8 +6214,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-coin-clash-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/853ebfde24572606a6b0.jpg",
+    "imageSource": "Free Fire India 官方Coin Clash玩法教程封面（2023年版本）",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=4IpqdPuAAAY",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/4IpqdPuAAAY/maxresdefault.jpg"
   },
   {
     "id": "free-fire-football-squad-2022",
@@ -6047,8 +6247,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-football-squad-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/5300d61b9fce0295ff0f.jpg",
+    "imageSource": "Garena 官方活动 / 玩法公告配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/944/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/202212/35c34495b51b0f170c99dd22d8f4e48b.jpg"
   },
   {
     "id": "free-fire-old-peak-2024",
@@ -6139,8 +6341,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-vibrant-anniversary-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/42f3fb5e6d83a6646741.jpg",
+    "imageSource": "PUBG MOBILE 活力周年官网主题场景图（1920×960）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/Vibrant-Anniversary/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/Vibrant-Anniversary/bg_4.jpg"
   },
   {
     "id": "pubgm-ocean-odyssey-2024",
@@ -6170,8 +6374,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-ocean-odyssey-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/bbd62c448891203bcaee.jpg",
+    "imageSource": "PUBG MOBILE 官方海洋奇境活动主视觉（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/Ocean-Odyssey/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/Ocean-Odyssey/bg.jpg"
   },
   {
     "id": "free-fire-rampage-new-dawn-2021",
@@ -6201,8 +6407,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-rampage-new-dawn-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/0dbcdcd4e1b35ab70f4f.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/454/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/hash/e72966651991dd21fe5cc13872de6a4ejpg"
   },
   {
     "id": "free-fire-spider-verse-parkour-2023",
@@ -6232,8 +6440,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-spider-verse-parkour-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/4075f86d537fc98b17ad.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1152/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20235/aa355533524647c43724e4437ec4b727.jpg"
   },
   {
     "id": "free-fire-lone-wolf-strike-out-2022",
@@ -6263,8 +6473,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-lone-wolf-strike-out-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/da954e4beff0564ec217.jpg",
+    "imageSource": "Garena 官方玩法教学 / 动画视频封面（本地归档）",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=SpTwVZufnN0",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/SpTwVZufnN0/maxresdefault.jpg"
   },
   {
     "id": "free-fire-shadow-hunter-2023",
@@ -6325,8 +6537,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-rampage-united-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/61193e400f857c692d49.jpg",
+    "imageSource": "Garena 官方活动 / 玩法公告配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/772/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/hash/9a90eb8787665ec498dd73f53d579187jpg"
   },
   {
     "id": "free-fire-battle-for-infinity-2025",
@@ -6389,8 +6603,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-epic-fight-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/afe7e566a4cc03a4fc76.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1683/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20266/5c8ea4f29936c9f41d44c388d91d6f29.jpeg"
   },
   {
     "id": "pubgm-imagiversary-2023",
@@ -6420,8 +6636,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-imagiversary-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/984f6784de2edd5616e3.jpg",
+    "imageSource": "PUBG MOBILE 官方活动页主视觉 / 场景图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/Imagiversary/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/Imagiversary/bg_1.jpg"
   },
   {
     "id": "pubgm-dinoground-2023",
@@ -6453,8 +6671,10 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-dinoground-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/a339e6cd86578bdb734c.jpg",
+    "imageSource": "PUBG MOBILE 官方活动页主视觉 / 场景图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/Dinoground/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/Dinoground/bg_1.jpg"
   },
   {
     "id": "pubgm-frozen-kingdom-2023",
@@ -6484,8 +6704,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-frozen-kingdom-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/c8b4c296b96ef3237a5d.jpg",
+    "imageSource": "PUBG MOBILE 官方活动页主视觉 / 场景图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/FROST_FESTIVAL/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/FROST_FESTIVAL/bg_1.jpg"
   },
   {
     "id": "pubgm-skyhigh-spectacle-2024",
@@ -6515,8 +6737,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-skyhigh-spectacle-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/1e871a17fe58f94cd69c.jpg",
+    "imageSource": "PUBG MOBILE 官方活动页主视觉 / 场景图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/Skyhigh-Spectacle/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/Skyhigh-Spectacle/bg_2.jpg"
   },
   {
     "id": "pubgm-sacred-quartet-2025",
@@ -6546,8 +6770,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-sacred-quartet-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/a14718f81da2be9817e0.jpg",
+    "imageSource": "PUBG MOBILE 官方四象修行活动主视觉（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/Sacred-Quartet/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/Sacred-Quartet/bg1.jpg"
   },
   {
     "id": "pubgm-transformers-2025",
@@ -6578,8 +6804,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-transformers-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/fae6f0f9b5bd68da01b8.jpg",
+    "imageSource": "PUBG MOBILE 官方活动页主视觉 / 场景图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/Official-Transformers-Collaboration/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/Official-Transformers-Collaboration/bg1.jpg"
   },
   {
     "id": "free-fire-zombie-invasion-2023",
@@ -6641,8 +6869,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-rampage-finale-pvp-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/92e106c970c5e3f47dc2.png",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1234/",
+    "imageOriginalUrl": "https://lh5.googleusercontent.com/s0YHaf9sLqgb93P-erd8euJx7fWmrromWy-gHbt6GcYCFyMM_4NMkVQCpam2GDMQ7NgDLkksZchz3SQ3STBrWu6mCciWlSeR3VdlogLpL6imK6NLqLePBwALr0UliH83i3ek1nZNdttTd3zmkDJkD9s"
   },
   {
     "id": "free-fire-squid-game-2025",
@@ -6673,8 +6903,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-squid-game-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/77f82bc3fd27ab72afc6.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1506/",
+    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfJSO2jWLu49VwnBfoQEHF2bhJ4KFSt8mNzUaJ5Y87hhQNy_RuD9Y1WbQKcYWZ-q3KkdNc15DtG6ogW5WYpXa2gs1srM5fKk3uvIebkau3sK42zaATgETMp1b7_K45rPvTr9HtUag?key=-1Af7hJvAmcQegd-MOzxdQ"
   },
   {
     "id": "free-fire-battle-for-dreamspace-2025",
@@ -6704,8 +6936,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-battle-for-dreamspace-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/1ab1f91085545f54ffdb.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1571/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/202512/ce7dbaba1668fbc1b949e3a8a186f433.jpeg"
   },
   {
     "id": "free-fire-lost-treasure-2026",
@@ -6735,8 +6969,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-lost-treasure-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/6f2c87eb02ea4e9639f3.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1617/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20262/e57ecca0bd7133234d6168086463b2a2.jpeg"
   },
   {
     "id": "free-fire-jujutsu-awakening-2026",
@@ -6768,8 +7004,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-jujutsu-awakening-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/029201f03bfc4bbd9ebf.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1601/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20261/750ab34d6d0c6700dc3d4db90e6b7630.jpeg"
   },
   {
     "id": "free-fire-fire-kickoff-2026",
@@ -6801,8 +7039,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-fire-kickoff-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/7538ec7134c03e332182.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1664",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20266/9fc3e4ce3c2065020eb8f43cf5e03e70.jpeg"
   },
   {
     "id": "free-fire-naruto-nine-tails-2025",
@@ -6863,8 +7103,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-tsukuyomi-br-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/45834f75b4d4eb3a08aa.gif",
+    "imageSource": "Garena 官方火影联动战场能力配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1523/",
+    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXe72HDQTmV4x2IrJh2QEXhoheyCFAyBa08ZMbyPbwzWzP_Crm_UCaC9YiRZPGMqivuGmbL1CFw2npKIsdO9aAu8Il2jFty5BTSLcvJym0uMJQaXz_rPYcmGedOxGrXkPsvo8hIKnQ?key=Q4vf7hFy9wrHEe0i7R6BJg"
   },
   {
     "id": "free-fire-chaos-events-2024",
@@ -6895,8 +7137,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-chaos-events-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/8a8fd2674364b64e1caf.jpg",
+    "imageSource": "Garena Free Fire Global 官方混沌事件教学视频封面（本地归档）",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=sIsGCdsmP9w",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/sIsGCdsmP9w/maxresdefault.jpg"
   },
   {
     "id": "free-fire-king-cs-2025",
@@ -6956,8 +7200,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-hundred-rhythms-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/752d2d6ee19e5432610a.jpg",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202103/884424.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20210305/942071176070575.jpg"
   },
   {
     "id": "pubgm-titan-strikes-2021",
@@ -6988,8 +7234,10 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-titan-strikes-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/aab03f690786935a1272.png",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202105/889275.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20210508/32686390541805.png"
   },
   {
     "id": "pubgm-mission-ignition-2021",
@@ -7019,8 +7267,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-mission-ignition-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/73707337e8aac689a67b.jpg",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202107/894225.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20210708/3662042979941.jpg"
   },
   {
     "id": "pubgm-clowns-tricks-2021",
@@ -7050,8 +7300,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-clowns-tricks-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/c3999bd8b01e75edc3e1.png",
+    "imageSource": "PUBG MOBILE 日本官网玩法公告图（本地归档）",
+    "imageSourceUrl": "https://pubgmobile.jp/graffiti-prank%E3%83%A2%E3%83%BC%E3%83%89%E3%81%8C%E7%99%BB%E5%A0%B4%EF%BC%81/",
+    "imageOriginalUrl": "https://pubgmobile.jp/wp-content/uploads/Web_GRAFFITI-PRANK-MODE.png"
   },
   {
     "id": "free-fire-rampage-opening-2019",
@@ -7080,8 +7332,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-rampage-opening-2019.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/cee21703f3cfc3fd6c7f.jpg",
+    "imageSource": "Garena 官方 2019 年狂暴开幕玩法截图",
+    "imageSourceUrl": "https://ff.garena.com/en/article/97/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official/b54d49224e2a06.jpg"
   },
   {
     "id": "free-fire-big-head-2019",
@@ -7110,8 +7364,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-big-head-2019.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/227b4ab947600b6e46e2.jpg",
+    "imageSource": "Free Fire 印度官方大头模式教程封面（2023年回归版）",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=XYAO5DdJL50",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/XYAO5DdJL50/maxresdefault.jpg"
   },
   {
     "id": "free-fire-cold-steel-2019",
@@ -7140,8 +7396,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-cold-steel-2019.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/1430d2853ea2333c4997.jpg",
+    "imageSource": "Free Fire 印度官方冷钢玩法教程封面（2023年回归版）",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=RDci1Cda_bg",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/RDci1Cda_bg/maxresdefault.jpg"
   },
   {
     "id": "free-fire-lone-wolf-ranked-2021",
@@ -7170,8 +7428,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-lone-wolf-ranked-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/549bb49aa1b2d3d5fcb3.jpg",
+    "imageSource": "Garena 官方玩法视频封面（本地归档）",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=2nnPj5hJp34",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/2nnPj5hJp34/maxresdefault.jpg"
   },
   {
     "id": "free-fire-big-head-2023",
@@ -7201,8 +7461,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-big-head-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/ed0fb15140737b5e61d5.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/968",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20231/7d3b994730d745b2f6ed65044d113124.jpg"
   },
   {
     "id": "free-fire-big-head-training-2023",
@@ -7381,13 +7643,15 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-ancient-secret-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/9708eca2402a32e11bdb.png",
+    "imageSource": "PUBG MOBILE 日本官网 The Ancient Secret 2020 官方玩法主视觉",
     "type": [
       "主题 BR",
       "移动神殿",
       "首领战"
-    ]
+    ],
+    "imageSourceUrl": "https://pubgmobile.jp/the-ancient-secretがclassicモードに登場！/",
+    "imageOriginalUrl": "https://pubgmobile.jp/wp-content/uploads/Web_The-Ancient-Secret.png"
   },
   {
     "id": "pubgm-team-gun-game-2020",
@@ -7412,13 +7676,15 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-team-gun-game-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/3d82baebb59f88c2db2a.png",
+    "imageSource": "PUBG MOBILE 官方Team Gun Game图书馆玩法图",
     "type": [
       "团队竞技",
       "武器升级",
       "竞技场"
-    ]
+    ],
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/theancientsecret/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/theancientsecret/s3_swiper_pic.png"
   },
   {
     "id": "pubgm-aftermath-2022",
@@ -7444,13 +7710,15 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-aftermath-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/eb3171d38981401f85db.jpg",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
     "type": [
       "主题 BR",
       "重制地图",
       "召回机制"
-    ]
+    ],
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202201/908153.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20220112/53941895767729.jpg"
   },
   {
     "id": "pubgm-spiderman-2022",
@@ -7477,13 +7745,15 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-spiderman-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/fcd2d5ba2e2cbfc89f49.jpg",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
     "type": [
       "主题 BR",
       "联动能力",
       "首领战"
-    ]
+    ],
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202201/908153.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20220112/663691640869169.jpg"
   },
   {
     "id": "pubgm-core-circle-2022",
@@ -7510,13 +7780,15 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-core-circle-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/657bed4070c06caf8e0d.jpg",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
     "type": [
       "主题 BR",
       "全局事件",
       "超级召回"
-    ]
+    ],
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60765/m22521/202205/915279.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20220518/792391196122336.jpg"
   },
   {
     "id": "pubgm-ancient-secret-arise-2022",
@@ -7543,13 +7815,15 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-ancient-secret-arise-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/ded5973886b04523fa5a.jpg",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
     "type": [
       "主题 BR",
       "动态 PVE",
       "移动目标"
-    ]
+    ],
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/60726/m22521/202207/918432.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20220708/5606623608549.jpg"
   },
   {
     "id": "pubgm-football-mania-2022",
@@ -7576,13 +7850,15 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-football-mania-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/e97e48dda993816bcfc9.png",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
     "type": [
       "主题 BR",
       "运动道具",
       "目标争夺"
-    ]
+    ],
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/60662/60663/60724/60725/m22521/202211/925426.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20221114/84731407877664.png"
   },
   {
     "id": "pubgm-ultimate-arena-2022",
@@ -7607,13 +7883,15 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-ultimate-arena-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/9c51cf971ea89ff5314b.jpg",
+    "imageSource": "PUBG MOBILE Pakistan 官方Ultimate Arena玩法宣传封面",
     "type": [
       "多回合竞技",
       "随机地图",
       "团队对抗"
-    ]
+    ],
+    "imageSourceUrl": "https://www.youtube.com/watch?v=cldix2J01QQ",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/cldix2J01QQ/maxresdefault.jpg"
   },
   {
     "id": "free-fire-death-race-2018",
@@ -7643,8 +7921,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-death-race-2018.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/8ad60260d597fb40bd60.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/175/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official/f623f24c946102.jpg"
   },
   {
     "id": "free-fire-rush-hour-2018",
@@ -7797,8 +8077,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-pet-rumble-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/89156e3211d5351a952d.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/459/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/28_2.jpg"
   },
   {
     "id": "free-fire-clash-squad-6v6-2021",
@@ -7828,8 +8110,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-clash-squad-6v6-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/63ece166f290ba4c35a7.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/617/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/GltZw/en_1.jpg"
   },
   {
     "id": "free-fire-kimbo-rush-hour-2022",
@@ -7890,8 +8174,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-pet-smash-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/5c31d38f2c68d01e75a8.jpg",
+    "imageSource": "Garena Free Fire North America 官方 Pet Smash 上线预告图",
+    "imageSourceUrl": "https://x.com/FreeFire_NA/status/1640066100712075266",
+    "imageOriginalUrl": "https://pbs.twimg.com/media/FsKvbK4aMAE3snr.jpg"
   },
   {
     "id": "free-fire-triple-wolves-2023",
@@ -7921,8 +8207,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-triple-wolves-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/f8df7e94c47a403408e6.jpg",
+    "imageSource": "Garena 官方玩法视频封面（本地归档）",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=DcUw6yNsw4Y",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/DcUw6yNsw4Y/maxresdefault.jpg"
   },
   {
     "id": "free-fire-color-hide-seek-2023",
@@ -7951,8 +8239,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-color-hide-seek-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/2b847af9da43b0f58207.jpg",
+    "imageSource": "Garena 官方六周年公告 Color Hide & Seek 专属游乐园图",
+    "imageSourceUrl": "https://ff.garena.in.th/en/article/1195/",
+    "imageOriginalUrl": "https://lh4.googleusercontent.com/5wZVUz2AUCAm3BMH75DpZPq_O12aa4LpWil0U4w8bCVmzSYDp5L5l1bo-EMPwtKjn1lOW_XwziAtxlV_KdyEYLp_FGQX_TWWtY75zxiUtVUIX-rS7xoQwjGhY1xHiRFgBy4n6xhBXlA90i3Rc5ETdDc"
   },
   {
     "id": "free-fire-color-spray-2023",
@@ -8075,8 +8365,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-beat-carnival-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/eda4cb2f431eb0d9aa14.jpg",
+    "imageSource": "Garena 官方活动 / 玩法公告配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1634/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20263/91841c513eb0428364e98fc711b018e7.jpeg"
   },
   {
     "id": "free-fire-gintama-2026",
@@ -8107,8 +8399,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-gintama-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/4058cc79ce7a80b1bf79.jpg",
+    "imageSource": "Garena 官方活动 / 玩法公告配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1655",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20264/22b113ffa434c352ec60a5772a0d45c2.jpeg"
   },
   {
     "id": "pubgm-zombie-uprising-2-0-2025",
@@ -8138,8 +8432,10 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-zombie-uprising-2-0-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/463bd0143d3f8e62fe5d.jpg",
+    "imageSource": "PUBG MOBILE 官方2025版本3.9僵尸崛起攻略封面",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=8JaBLz_gg-Y",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/8JaBLz_gg-Y/maxresdefault.jpg"
   },
   {
     "id": "pubgm-summer-showdown-2025",
@@ -8169,8 +8465,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-summer-showdown-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/8274addbf2232ce0d59f.jpg",
+    "imageSource": "PUBG MOBILE 马来西亚官方视频封面：夏日涂色战场（2025）",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=4P4y3gFhk8A",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/4P4y3gFhk8A/maxresdefault.jpg"
   },
   {
     "id": "pubgm-ice-dragon-boss-2025",
@@ -8232,8 +8530,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-frosty-funland-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/8783a900f7791a17b111.jpg",
+    "imageSource": "PUBG MOBILE 官方活动页主视觉 / 场景图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-410/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/PUBG-MOBILE-Version-410/bg1.jpg"
   },
   {
     "id": "pubgm-racing-carnival-2025",
@@ -8357,8 +8657,10 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-primewood-genesis-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/e8ab0a124a55c230d772.jpg",
+    "imageSource": "PUBG MOBILE 官方频道：Primewood Genesis V4.2 上线宣传片封面",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=74X9h-4veZE",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/74X9h-4veZE/maxresdefault.jpg"
   },
   {
     "id": "pubgm-evolving-universe-2026",
@@ -8389,8 +8691,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-evolving-universe-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/364f34259900a0d6909e.png",
+    "imageSource": "PUBG MOBILE 官方4.3进化宇宙主题玩法指南封面",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/PUBG-MOBILE-Version-430/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/PUBG-MOBILE-Version-430/s2_pic1_en.png"
   },
   {
     "id": "pubgm-racing-challenge-2026",
@@ -8451,8 +8755,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-winterlands-aurora-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/cdd6fe24f9ac114cba21.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1421/",
+    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXd84Hh1gEpQuF9AidCH_FcJchNPvCQ_tiUxrilxS1NmFJqgmEjOao6er61fkAXi_e28mdEqGdXlu8gYxsN-CQ0skkeRVZp4KsSwr-jdW8SEeWNJ7mSB02uV6ZvlGoTr8gY_pR3MRA?key=XmDX5RryEeDAlx8KHymCO2ip"
   },
   {
     "id": "free-fire-mad-snowman-2024",
@@ -8482,8 +8788,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-mad-snowman-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/befd1f98b9a64672d2f7.jpg",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1421/",
+    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfd_upD_EDDSB0j2dryilAUrRNDmk29PuSWcdGJ_gOyQi7y_Bsd8Us3LqGJWxxRGA2TY5xV8z3sFNj670aR2OpeIum9CIDDTKwuHUxAUqR8wYKHauEACRXMBtOLIhKD9KHa4EawmQ?key=XmDX5RryEeDAlx8KHymCO2ip"
   },
   {
     "id": "free-fire-cs-peak-2025",
@@ -8546,8 +8854,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-flame-arena-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/7c6fba51cd1788484cdc.jpg",
+    "imageSource": "Garena 官方活动 / 玩法公告配图（本地归档）",
+    "imageSourceUrl": "https://dl.dir.freefiremobile.com/common/web_event/aswqooiwd/EUlLuWP2.html?lang=en",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/202510/4b261d99d9af5b25f50ac440763eff34.jpeg"
   },
   {
     "id": "free-fire-party-parkour-2026",
@@ -8730,8 +9040,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-bluehole-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/bb375d6a05c4a0ddec14.png",
+    "imageSource": "PUBG MOBILE 日本官网 BLUEHOLE 模式双圈示意图",
+    "imageSourceUrl": "https://pubgmobile.jp/blueholeモードがplaylabに登場！/",
+    "imageOriginalUrl": "https://d6mxp7lp30jlr.cloudfront.net/wp-content/uploads/BLUEHOLEモード紹介1-2-600x555.png"
   },
   {
     "id": "pubgm-jungle-adventure-2020",
@@ -8760,8 +9072,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-jungle-adventure-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/15e634c5ff016fa273aa.jpg",
+    "imageSource": "PUBG MOBILE Jungle Adventure 官方活动页主视觉",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/jungleadventure/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/jungleadventure/share.jpg"
   },
   {
     "id": "pubgm-brothers-in-arms-2020",
@@ -8790,8 +9104,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-brothers-in-arms-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/be6de33f0aeba7a388df.jpg",
+    "imageSource": "PUBG MOBILE 官方更新公告玩法配图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/webplat/info/news_version3/35372/35373/54207/54208/m22148/202002/849328.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20200303/21273968443967.jpg"
   },
   {
     "id": "pubgm-hunt-game-2020",
@@ -8820,8 +9136,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-hunt-game-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/727569dd604ee1d9eee6.png",
+    "imageSource": "PUBG MOBILE 官方狩猎小游戏画面（含原站播放按钮）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/annipark/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/annipark/s3_swiper_img1.png"
   },
   {
     "id": "pubgm-space-wars-2020",
@@ -8850,8 +9168,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-space-wars-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/2cc0afadc279d1f8c729.png",
+    "imageSource": "PUBG MOBILE 官方太空战争小游戏截图",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/annipark/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/annipark/s3_swiper_img2.png"
   },
   {
     "id": "pubgm-golden-dynasty-2025",
@@ -8880,8 +9200,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-golden-dynasty-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/947867b53414a18a746c.jpg",
+    "imageSource": "PUBG MOBILE 官方活动页主视觉 / 场景图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/Golden-Dynasty/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/Golden-Dynasty2/bg1.jpg"
   },
   {
     "id": "pubgm-golden-dynasty-theme-arena-2025",
@@ -8941,8 +9263,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-steampunk-frontier-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/7d160758b647cea076b6.jpg",
+    "imageSource": "KRAFTON JAPAN 官方新闻稿：Steampunk Frontier 进击的巨人联动玩法图",
+    "imageSourceUrl": "https://prtimes.jp/main/html/rd/p/000000292.000082433.html",
+    "imageOriginalUrl": "https://prcdn.freetls.fastly.net/release_image/82433/292/82433-292-eeb769ff83ec1ab8ed693c210136a839-1920x1080.png?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff"
   },
   {
     "id": "pubgm-elimination-skillfest-2025",
@@ -9031,8 +9355,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-metro-theme-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/cab6e1b1261bbbf0ec90.png",
+    "imageSource": "PUBG MOBILE 日本官网：经典艾伦格地铁主题实机截图（2020）",
+    "imageSourceUrl": "https://pubgmobile.jp/classicモードのerangelにmetroが登場！/",
+    "imageOriginalUrl": "https://pubgmobile.jp/wp-content/uploads/iOS-の画像-10.png"
   },
   {
     "id": "pubgm-winter-festival-2020",
@@ -9061,8 +9387,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-winter-festival-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/cddc4caca8c59f75dede.png",
+    "imageSource": "PUBG MOBILE 日本官网2020 Frost Festival玩法公告图",
+    "imageSourceUrl": "https://pubgmobile.jp/frost-festivalがclassicモードに登場！/",
+    "imageOriginalUrl": "https://pubgmobile.jp/wp-content/uploads/Web_Frost-Festival-KV.png"
   },
   {
     "id": "free-fire-football-fire-social-island-2022",
@@ -9122,8 +9450,10 @@
       "warfare"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-bomb-squad-5v5-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/c4460ec2cf2efc4a3e4b.jpg",
+    "imageSource": "Garena 官方玩法教学 / 动画视频封面（本地归档）",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=hTSx52F8J_c",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/hTSx52F8J_c/maxresdefault.jpg"
   },
   {
     "id": "pubgm-mini-zone-2018",
@@ -9242,8 +9572,10 @@
       "warfare"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-war-2019.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/ea44b940463d102ac825.jpg",
+    "imageSource": "PUBG 株式会社官方发布稿：War Mode 2018首发宣传图",
+    "imageSourceUrl": "https://prtimes.jp/main/html/rd/p/000000020.000033688.html",
+    "imageOriginalUrl": "https://prtimes.jp/i/33688/20/resize/d33688-20-236162-0.jpg"
   },
   {
     "id": "pubgm-ranked-assault-2025",
@@ -9362,8 +9694,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-snow-paradise-2019.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/3f50777646a83f523aa5.jpg",
+    "imageSource": "PUBG MOBILE 官方2019 Winter Festival雪境乐园场景封面",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=5XO6RlSaMaI",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/5XO6RlSaMaI/maxresdefault.jpg"
   },
   {
     "id": "pubgm-war-2018",
@@ -9392,8 +9726,10 @@
       "warfare"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-war-2018.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/ea44b940463d102ac825.jpg",
+    "imageSource": "PUBG 株式会社官方发布稿：War Mode 2018首发宣传图",
+    "imageSourceUrl": "https://prtimes.jp/main/html/rd/p/000000020.000033688.html",
+    "imageOriginalUrl": "https://prtimes.jp/i/33688/20/resize/d33688-20-236162-0.jpg"
   },
   {
     "id": "free-fire-new-age-resource-management-2021",
@@ -9574,8 +9910,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-rampage-redemption-2019.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/146bf261309a70fe87b3.jpg",
+    "imageSource": "Garena 官方 2019 年狂暴：救赎活动主视觉",
+    "imageSourceUrl": "https://ff.garena.com/en/article/97/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official/200b58c51bab02.jpg"
   },
   {
     "id": "free-fire-rampage-uprising-2020",
@@ -9666,8 +10004,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-hardcore-mode-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/31c7e5c856edfa8615cd.jpg",
+    "imageSource": "PUBG MOBILE 官方补丁说明：硬核模式选择界面（2020）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35373/35374/35386/35387/m20497/202002/849328.shtml",
+    "imageOriginalUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20200303/2909278590270.jpg"
   },
   {
     "id": "pubgm-mecha-fusion-2024",
@@ -9698,8 +10038,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-mecha-fusion-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/3bfdfba6e78e61e0772a.jpg",
+    "imageSource": "PUBG MOBILE 官方活动页主视觉 / 场景图（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/New-Mecha-Vehicles/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/New-Mecha-Vehicles/bg_1.jpg"
   },
   {
     "id": "pubgm-bloodmoon-awakening-2024",
@@ -9730,8 +10072,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-bloodmoon-awakening-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/21b12ea7cf1f78295fde.jpg",
+    "imageSource": "PUBG MOBILE 官方频道：2024 Bloodmoon Awakening 主题宣传片封面",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=vgVcUMrKlyw",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/vgVcUMrKlyw/maxresdefault.jpg"
   },
   {
     "id": "pubgm-bloodmoon-arena-2024",
@@ -9793,8 +10137,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-icemire-frontier-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/87d131e477802a91cefb.jpg",
+    "imageSource": "PUBG MOBILE 泰国官方频道：2024 Icemire Frontier 主题宣传片封面",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=Re4lH6n-Mgk",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/Re4lH6n-Mgk/maxresdefault.jpg"
   },
   {
     "id": "pubgm-icemire-arena-2024",
@@ -9856,8 +10202,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-heros-crown-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/c8626b4a32384ea95dfb.png",
+    "imageSource": "PUBG MOBILE Hero’s Crown 官网飞翼能力演示图",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/Heros-Crown/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/Heros-Crown/s2_pic4.png"
   },
   {
     "id": "pubgm-naruto-shippuden-2026",
@@ -9888,8 +10236,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-naruto-shippuden-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/539d80f59249bc714eda.jpg",
+    "imageSource": "KRAFTON JAPAN 官方2026火影忍者疾风传联动主视觉",
+    "imageSourceUrl": "https://prtimes.jp/main/html/rd/p/000000403.000082433.html",
+    "imageOriginalUrl": "https://prcdn.freetls.fastly.net/release_image/82433/403/82433-403-a91a0ec418ebec5b6dae57b97367f8dd-1920x1080.png?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff"
   },
   {
     "id": "pubgm-naruto-valley-ninjutsu-2026",
@@ -9982,8 +10332,10 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-naruto-nine-tails-challenge-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/8d83d7af62681bacb982.jpg",
+    "imageSource": "PUBG MOBILE 官方九尾袭击木叶保卫战配图",
+    "imageSourceUrl": "https://www.pubgmobile.com/act/naruto/index.html?code=ngsofc",
+    "imageOriginalUrl": "https://www.pubgmobile.com/act/naruto/long_cache_30d/images/adv_2.jpg"
   },
   {
     "id": "pubgm-spiderman-brand-new-day-2026",
@@ -10075,8 +10427,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-spooky-soiree-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/ab85ce62ee8928e6d8a5.jpg",
+    "imageSource": "PUBG MOBILE Spooky Soiree官方主题主视觉",
+    "imageSourceUrl": "https://prtimes.jp/main/html/rd/p/000000326.000082433.html",
+    "imageOriginalUrl": "https://prcdn.freetls.fastly.net/release_image/82433/326/82433-326-363cdc1b70dac45ec152d20cf81fe8aa-1920x1080.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff"
   },
   {
     "id": "pubgm-hydroroyal-2025",
@@ -10106,8 +10460,10 @@
       "warfare"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-hydroroyal-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/036f1c8b86670f4c285d.jpg",
+    "imageSource": "PUBG MOBILE ハイドロイヤル官方非对称对抗主视觉",
+    "imageSourceUrl": "https://prtimes.jp/main/html/rd/p/000000332.000082433.html",
+    "imageOriginalUrl": "https://prcdn.freetls.fastly.net/release_image/82433/332/82433-332-1cb26ce097dc23bf6bb0613b1a69f2e7-1080x608.png?width=1950&height=1350&quality=85%2C75&format=jpeg&auto=webp&fit=bounds&bg-color=fff"
   },
   {
     "id": "pubgm-metro-royale-deathmatch-solo-2025",
@@ -10168,8 +10524,10 @@
       "extraction"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-metro-survival-drop-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/ec8f7c3ee5b82ac006e5.jpg",
+    "imageSource": "PUBG MOBILE 官方地铁逃生第24章生存空投玩法示意图",
+    "imageSourceUrl": "https://x.com/PUBGMOBILE/status/1878415652349747271",
+    "imageOriginalUrl": "https://pbs.twimg.com/media/GhF5EILW4AA_aPS.jpg"
   },
   {
     "id": "pubgm-metro-tdm-warehouse-2025",
@@ -10322,8 +10680,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-craftground-survival-train-2025.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/c5158ab863f8fae5f7ce.jpg",
+    "imageSource": "PUBG MOBILE 官方视频封面：生存列车／护送列车玩法介绍（2025年8月）",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=fXk0y_hrIp4",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/fXk0y_hrIp4/maxresdefault.jpg"
   },
   {
     "id": "pubgm-payload-3-0-2023",
@@ -10353,8 +10713,10 @@
       "warfare"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-payload-3-0-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/cce4cfbd5b963b9e5e39.jpg",
+    "imageSource": "PUBG MOBILE 官方2023火力全开坦克更新视频封面",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=2aC47khasJg",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/2aC47khasJg/maxresdefault.jpg"
   },
   {
     "id": "pubgm-arena-training-2022",
@@ -10413,8 +10775,10 @@
       "warfare"
     ],
     "isLtm": false,
-    "imageUrl": "assets/modes/generated/pubgm-ladder-arena-2022.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/5ebb1e0d8736694bcf92.png",
+    "imageSource": "PUBG MOBILE 日本官网：竞技场天梯段位界面（2022）",
+    "imageSourceUrl": "https://pubgmobile.jp/arena-ranking-ladder-arena-notice-20220627/",
+    "imageOriginalUrl": "https://pubgmobile.jp/wp-content/uploads/Web_Ladder-Arena_1_20220627.png"
   },
   {
     "id": "pubgm-playground-shoot-challenge-2022",
@@ -10507,8 +10871,10 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-metro-zombie-uprising-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/36452ffe49687733c29a.jpg",
+    "imageSource": "PUBG MOBILE 官方2024地铁逃生第21章僵尸崛起首发图",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=90Gfc66YYx0",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/90Gfc66YYx0/maxresdefault.jpg"
   },
   {
     "id": "free-fire-zombie-hunt-dungeon-ascent-2024",
@@ -10537,8 +10903,10 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-zombie-hunt-dungeon-ascent-2024.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/fe17cce889c3cf1033bc.jpg",
+    "imageSource": "Garena 官方僵尸猎场轮换活动共用配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1332/",
+    "imageOriginalUrl": "https://lh7-us.googleusercontent.com/MtA4OWS7z9LnFhgSeRi5ECDj0cEeEgxNKkfhIZ5wbDF2_RKxSI8Cu8semJA-q7HD20-CaSEy4W3YbwadzBM7M1n4HjmTazob1DAuFWAxsTXGpaQXjrscecxG_qvX_lPEY3LpBeE7YF3ZK1ECQK7DC0U"
   },
   {
     "id": "free-fire-kill-secured-2020",
@@ -10659,8 +11027,10 @@
       "warfare"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-payload-2019.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/999a6e3284b847df34a8.jpg",
+    "imageSource": "PUBG MOBILE 官方Payload 2019空袭机制演示封面",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=0ufeA8YNzgA",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/0ufeA8YNzgA/maxresdefault.jpg"
   },
   {
     "id": "free-fire-zombie-invasion-2019",
@@ -10755,8 +11125,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-jujutsu-clash-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/371e7dd6af92077cabc9.png",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1595/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20261/dfd2ae1057a50161559dbc2770053c53.png"
   },
   {
     "id": "pubgm-halloween-capture-the-camp-2020",
@@ -10787,8 +11159,10 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-halloween-capture-the-camp-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/9d5cc8b5a802b8e96c72.jpg",
+    "imageSource": "PUBG MOBILE 官方2020 万圣节活动主视觉（本地归档）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/halloweeks2020/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/halloweeks2020/bg_01.jpg"
   },
   {
     "id": "pubgm-music-tap-joy-2021",
@@ -10817,8 +11191,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-music-tap-joy-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/37318ed59802ff0a094f.png",
+    "imageSource": "PUBG MOBILE 日本官网TAP JOY节拍点击专属玩法截图",
+    "imageSourceUrl": "https://pubgmobile.jp/version-1-3-0-アップデート記念イベント/",
+    "imageOriginalUrl": "https://pubgmobile.jp/wp-content/uploads/3rd_anniversary_event3_20210309.png"
   },
   {
     "id": "pubgm-music-pan-jam-2021",
@@ -10847,8 +11223,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-music-pan-jam-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/898965b2a3e75d8e905b.png",
+    "imageSource": "PUBG MOBILE 日本官网PAN JAM平底锅节奏专属玩法截图",
+    "imageSourceUrl": "https://pubgmobile.jp/version-1-3-0-アップデート記念イベント/",
+    "imageOriginalUrl": "https://pubgmobile.jp/wp-content/uploads/3rd_anniversary_event1_20210309.png"
   },
   {
     "id": "pubgm-music-beat-it-2021",
@@ -10877,8 +11255,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-music-beat-it-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/94d9e5c3cce988b84458.png",
+    "imageSource": "PUBG MOBILE 日本官网BEAT IT节奏投掷专属玩法截图",
+    "imageSourceUrl": "https://pubgmobile.jp/version-1-3-0-アップデート記念イベント/",
+    "imageOriginalUrl": "https://pubgmobile.jp/wp-content/uploads/3rd_anniversary_event2_20210309.png"
   },
   {
     "id": "pubgm-amusement-whats-in-the-box-2020",
@@ -10937,8 +11317,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-amusement-shooting-range-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/b91fcbd9ad8601179b0c.png",
+    "imageSource": "PUBG MOBILE 官方周年游乐园射击场截图（原图458×228）",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/annipark/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/annipark/s4_tab_img1.png"
   },
   {
     "id": "free-fire-clash-squad-ranked-2020",
@@ -10994,12 +11376,14 @@
     "tempoImpact": "每回合的购买之外，队伍还要提前规划技能组合和救援、突击、反制的时机；双技能让交战窗口更短，保护机会则降低尝试新组合的排位风险。",
     "designObservation": "在固定回合结构中增加第二个主动技能，会把角色搭配变成可读的短期构筑；把保护次数限定在开放期和较高段位，可以控制试验玩法对排位秩序的冲击。",
     "sourceUrl": "https://ff.garena.com/en/article/1170/",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageSource": "Garena 官方公告活动配图（本地归档）",
     "gameplayTypes": [
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-clash-squad-duo-active-skills-2023.svg"
+    "imageUrl": "assets/mode-official/66dd3a4b6a994bffb211.png",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1170/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20235/d8dfdf072a6466e968fdfafa1cb0d236.png"
   },
   {
     "id": "free-fire-color-cube-2023",
@@ -11025,12 +11409,14 @@
     "tempoImpact": "淘汰不再立刻结束玩家参与，玩家会先进入一段高密度争夺；队伍需要在安全区转移、岛上抢进度和复活后的重新落点之间安排节奏。",
     "designObservation": "把复活机会放进独立的短时争夺空间，既保留淘汰的代价，又给落后队伍一次可竞争的翻盘窗口；进度条把个人击杀、移动和破坏目标统一成可读的团队目标。",
     "sourceUrl": "https://ff.garena.com/en/article/1170/",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageSource": "Garena 官方玩法视频封面（本地归档）",
     "gameplayTypes": [
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-color-cube-2023.svg"
+    "imageUrl": "assets/mode-official/a1fff1e4d9624ae1a421.jpg",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=RwH5Nwvb1_0",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/RwH5Nwvb1_0/maxresdefault.jpg"
   },
   {
     "game": "PUBG Mobile",
@@ -11431,8 +11817,10 @@
       "casual"
     ],
     "isLtm": false,
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
-    "imageUrl": "assets/modes/generated/pubgm-wow-pan-blade-ball-2024.svg"
+    "imageSource": "PUBG MOBILE 官方更新说明图：平底锅／手雷刀球共用玩法图（2024）",
+    "imageUrl": "assets/mode-official/738f9aa0752a82d5c48f.jpg",
+    "imageSourceUrl": "https://x.com/PUBGMOBILE/status/1767724838624379191",
+    "imageOriginalUrl": "https://pbs.twimg.com/media/GIg4UUyXoAEpfhH.jpg"
   },
   {
     "id": "pubgm-wow-grenade-blade-ball-2v2-2024",
@@ -11461,8 +11849,10 @@
       "casual"
     ],
     "isLtm": false,
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
-    "imageUrl": "assets/modes/generated/pubgm-wow-grenade-blade-ball-2v2-2024.svg"
+    "imageSource": "PUBG MOBILE 官方更新说明图：平底锅／手雷刀球共用玩法图（2024）",
+    "imageUrl": "assets/mode-official/738f9aa0752a82d5c48f.jpg",
+    "imageSourceUrl": "https://x.com/PUBGMOBILE/status/1767724838624379191",
+    "imageOriginalUrl": "https://pbs.twimg.com/media/GIg4UUyXoAEpfhH.jpg"
   },
   {
     "id": "pubgm-wow-grenade-blade-ball-ffa-2024",
@@ -11491,8 +11881,10 @@
       "casual"
     ],
     "isLtm": false,
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
-    "imageUrl": "assets/modes/generated/pubgm-wow-grenade-blade-ball-ffa-2024.svg"
+    "imageSource": "PUBG MOBILE 官方更新说明图：平底锅／手雷刀球共用玩法图（2024）",
+    "imageUrl": "assets/mode-official/738f9aa0752a82d5c48f.jpg",
+    "imageSourceUrl": "https://x.com/PUBGMOBILE/status/1767724838624379191",
+    "imageOriginalUrl": "https://pbs.twimg.com/media/GIg4UUyXoAEpfhH.jpg"
   },
   {
     "id": "pubgm-wow-aerial-ship-combat-2024",
@@ -11581,8 +11973,10 @@
       "casual"
     ],
     "isLtm": false,
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
-    "imageUrl": "assets/modes/generated/pubgm-wow-hide-and-seek-2023.svg"
+    "imageSource": "PUBG MOBILE 官方视频封面：创意工坊捉迷藏模板（2023）",
+    "imageUrl": "assets/mode-official/bf5d2b515f126a36704d.jpg",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=ZUdsNvNG-ww",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/ZUdsNvNG-ww/maxresdefault.jpg"
   },
   {
     "id": "pubgm-wow-sky-control-2023",
@@ -11761,8 +12155,10 @@
       "casual"
     ],
     "isLtm": false,
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
-    "imageUrl": "assets/modes/generated/pubgm-wow-terror-town-2023.svg"
+    "imageSource": "PUBG MOBILE 官方视频封面：恐怖小镇 PVE 模板",
+    "imageUrl": "assets/mode-official/81c9e05a8ad953262c5f.jpg",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=tIP3UyIcyb8",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/tIP3UyIcyb8/maxresdefault.jpg"
   },
   {
     "id": "pubgm-wow-infinite-roguelike-2023",
@@ -11971,8 +12367,10 @@
       "casual"
     ],
     "isLtm": false,
-    "imageUrl": "assets/modes/generated/pubgm-wow-summer-brawl-2023.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/700c90bc50d5ccbee2d1.jpg",
+    "imageSource": "PUBG MOBILE 官网：夏日乱斗玩法主视觉",
+    "imageSourceUrl": "https://www.pubgmobile.com/en/event/dragon-ball-super/",
+    "imageOriginalUrl": "https://www.pubgmobile.com/images/event/dragon-ball-super/img2.jpg"
   },
   {
     "id": "pubgm-wow-zombie-station-2023",
@@ -12031,8 +12429,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
-    "imageUrl": "assets/modes/generated/free-fire-pet-ludo-2022.svg"
+    "imageSource": "Garena 官方玩法视频封面（本地归档）",
+    "imageUrl": "assets/mode-official/1218b29c8c934185dc62.jpg",
+    "imageSourceUrl": "https://www.youtube.com/watch?v=Rg4Vf9sDH0o",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/Rg4Vf9sDH0o/maxresdefault.jpg"
   },
   {
     "id": "pubgm-wow-erangel-mod-2023",
@@ -12755,7 +13155,7 @@
     "tempoImpact": "小地图和一次召回让战斗更早发生，同时给队伍一次主动救回队友的路线目标。",
     "designObservation": "快节奏 BR 需要同时缩短地图距离、提高复活可见度并提供可操作的转移工具，才能避免小地图只变成无脑近战。",
     "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageSource": "和平精英官方账号「小白裙」TapTap 公告配图（本地归档）",
     "launchDate": "2022-01-11",
     "launchLabel": "2022年1月11日版本公告列为经典模式新地图，具体开放时间以官方公告为准。",
     "launchNote": "2022年1月11日版本公告列为经典模式新地图，具体开放时间以官方公告为准。",
@@ -12763,7 +13163,9 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/hpjy-vacation-island-2022.svg"
+    "imageUrl": "assets/mode-official/78e0abadbb7939b5cc06.jpg",
+    "imageSourceUrl": "https://www.taptap.cn/moment/233223032947081896",
+    "imageOriginalUrl": "https://img2-tc.tapimg.com/bbcode/images/947f7e7dbf59498a4ff19d6f2d910ddc.jpg/_tap_ugc.jpg"
   },
   {
     "id": "hpjy-dragon-lion-winter-2022",
@@ -12996,15 +13398,17 @@
     "tempoImpact": "据点随机激活让队伍必须在转点、清点和绕后之间快速分工；无限返场降低了单次淘汰的等待，却把战斗压力集中到正在计分的空间。",
     "designObservation": "把三个据点按时间顺序激活，可以把团队死斗从全图找人改成连续的攻防窗口；返场位置避开据点，能减少“出生即拖延占点”的无效循环。",
     "sourceUrl": "https://www.taptap.cn/moment/15212943150943499",
-    "imageUrl": "assets/modes/generated/hpjy-domination-2019.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/7305ade3b8f483cf2288.jpg",
+    "imageSource": "和平精英官方账号「小白裙」TapTap 公告配图（本地归档）",
     "launchDate": "2019-11-20",
     "launchLabel": "2019年11月20日官方玩法预告",
     "launchNote": "官方玩法预告确认三据点、进度占领、无限返场和率先占领两点获胜规则。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.taptap.cn/moment/15212943150943499",
+    "imageOriginalUrl": "https://img2-tc.tapimg.com/bbcode/images/8591f4943a21156cdc0fd9d4217d438b.jpg/_tap_ugc.jpg"
   },
   {
     "id": "hpjy-tactical-tdm-2019",
@@ -13025,15 +13429,17 @@
     "tempoImpact": "队友附近返场会持续维持前线压力，滑铲和遗迹的曲折路线则增加了抢点、夹击和快速换位的机会。",
     "designObservation": "把返场点绑定到队友附近，可以让团队站位本身成为胜负资源；地图与移动动作一起变化时，短局竞技才会形成新的配合节奏。",
     "sourceUrl": "https://www.taptap.cn/moment/15219560575665681",
-    "imageUrl": "assets/modes/generated/hpjy-tactical-tdm-2019.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/83a58f3bf5fa41b5c6e4.jpg",
+    "imageSource": "和平精英官方账号「小白裙」TapTap 公告配图（本地归档）",
     "launchDate": "2019-08-27",
     "launchLabel": "2019年8月27日随“重装对决”版本开放",
     "launchNote": "官方版本 FAQ 确认 4V4、快速返场、遗迹地图和滑铲动作。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "imageSourceUrl": "https://www.taptap.cn/moment/15219560575665681",
+    "imageOriginalUrl": "https://img2-tc.tapimg.com/bbcode/images/01fb103816ec6dd9ed2c2fa2d04fcdc4.jpg/_tap_ugc.jpg"
   },
   {
     "id": "hpjy-christmas-mode-2019",
@@ -13494,8 +13900,10 @@
       "casual"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-armory-arena-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/e04ba98385c4c3678724.png",
+    "imageSource": "PUBG MOBILE 日本官网玩法公告图（本地归档）",
+    "imageSourceUrl": "https://pubgmobile.jp/armory-arenalibrary%E3%81%8C%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A%E3%81%AB%E7%99%BB%E5%A0%B4%EF%BC%81/",
+    "imageOriginalUrl": "https://pubgmobile.jp/wp-content/uploads/Web_ARMORY-ARENA.png"
   },
   {
     "id": "pubgm-halloweek-2020",
@@ -13526,8 +13934,10 @@
       "pve"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-halloweek-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/cbafdc607779533c849c.png",
+    "imageSource": "PUBG MOBILE 日本官网 Halloweeks 2020 主题公告图",
+    "imageSourceUrl": "https://pubgmobile.jp/%E3%83%8F%E3%83%AD%E3%82%A6%E3%82%A3%E3%83%B3%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AE%E3%83%A2%E3%83%BC%E3%83%89%E3%81%8C%E7%99%BB%E5%A0%B4%EF%BC%81/",
+    "imageOriginalUrl": "https://pubgmobile.jp/wp-content/uploads/Web_ハロウィンモード.png"
   },
   {
     "id": "pubgm-extreme-hunt-2021",
@@ -13557,8 +13967,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-extreme-hunt-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/761f90a169be742a0b92.png",
+    "imageSource": "PUBG MOBILE 日本官网 Extreme Hunt 2021 官方主题图",
+    "imageSourceUrl": "https://pubgmobile.jp/extreme-hunt-mode/",
+    "imageOriginalUrl": "https://pubgmobile.jp/wp-content/uploads/mobile_web_Extreme-Hunt_900x568-1.png"
   },
   {
     "id": "pubgm-graffiti-prank-2021",
@@ -13588,8 +14000,10 @@
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/pubgm-graffiti-prank-2021.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/c3999bd8b01e75edc3e1.png",
+    "imageSource": "PUBG MOBILE 日本官网玩法公告图（本地归档）",
+    "imageSourceUrl": "https://pubgmobile.jp/graffiti-prank%E3%83%A2%E3%83%BC%E3%83%89%E3%81%8C%E7%99%BB%E5%A0%B4%EF%BC%81/",
+    "imageOriginalUrl": "https://pubgmobile.jp/wp-content/uploads/Web_GRAFFITI-PRANK-MODE.png"
   },
   {
     "id": "pubg-rumble-2026",
@@ -13619,8 +14033,10 @@
       "casual"
     ],
     "isLtm": false,
-    "imageUrl": "assets/modes/generated/pubg-rumble-2026.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）"
+    "imageUrl": "assets/mode-official/968fc474ef0fbfc142d8.jpg",
+    "imageSource": "PUBG 官方玩法公告正文配图（本地归档）",
+    "imageSourceUrl": "https://pubg.com/en/news/9855",
+    "imageOriginalUrl": "https://wstatic-prod-boc.krafton.com/common/news/20260323/6oh0WgVr.jpg"
   },
   {
     "id": "pubgm-offroad-racing-2023",
@@ -13971,15 +14387,17 @@
     "tempoImpact": "镜像英雄与武器移除组合克制，交战结果更直接地反馈瞄准、身法和掩体使用。回合式 1v1 让每次出手都有明确损失，排行榜又把短局表现串成持续目标。",
     "designObservation": "公平对决可以先固定双方工具，再逐步放开能力层。先验证枪法和移动，再引入技能，有助于把“操作差距”和“构筑差距”分开观察。",
     "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/face-off-in-the-future-icons-event/12276147",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 Apex 通用主视觉（论坛活动页原图不稳定）",
+    "imageUrl": "assets/mode-official/bf36edfa25e79b286be4.jpg",
+    "imageSource": "EA Future Icons 官方 Arenas: Duels 玩法截图（两阶段共用公告图）",
     "launchDate": "2025-06-24",
     "launchLabel": "2025年6月24日至7月15日限时开放",
     "launchNote": "EA 官方 Future Icons 活动补丁列出无能力决斗阶段：1v1、匹配英雄与武器、前段禁用技能、三张竞技场地图。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/future-icons-event",
+    "imageOriginalUrl": "https://drop-assets.ea.com/images/7cmANvqacBCEpPkEG4gs38/0ff5ae9007e53709957c066db9e7018f/Copy_of_APEX_Legends_S25_Screenshots_Future_Icons_Encore_ArenasRPs_A_v04.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5"
   },
   {
     "id": "apex-arenas-duels-abilities-2025",
@@ -14002,15 +14420,17 @@
     "tempoImpact": "技能开放后，玩家需要同时判断枪线、冷却和打断时机；同一张地图的熟悉路线会因为英雄能力重新产生进攻和防守节奏。",
     "designObservation": "先关闭再开放技能，让同一竞技场可以清楚展示能力层对 1v1 节奏的增量。能力不是单独的胜负目标，而是围绕有限空间重新安排交战窗口。",
     "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/face-off-in-the-future-icons-event/12276147",
-    "imageUrl": "https://drop-assets.ea.com/images/2YcU8XoDXd5Ir7WpX5P2yR/b78b8cfafabfd58d631c009ac0a41379/apex-legends-generic-keyart-16x9.jpg",
-    "imageSource": "EA 官方 Apex 通用主视觉（论坛活动页原图不稳定）",
+    "imageUrl": "assets/mode-official/bf36edfa25e79b286be4.jpg",
+    "imageSource": "EA Future Icons 官方 Arenas: Duels 玩法截图（两阶段共用公告图）",
     "launchDate": "2025-07-15",
     "launchLabel": "2025年7月15日至8月5日限时开放",
     "launchNote": "EA 官方 Future Icons 活动补丁列出能力决斗阶段，说明英雄技能在 1v1 竞技场中开启。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/future-icons-event",
+    "imageOriginalUrl": "https://drop-assets.ea.com/images/7cmANvqacBCEpPkEG4gs38/0ff5ae9007e53709957c066db9e7018f/Copy_of_APEX_Legends_S25_Screenshots_Future_Icons_Encore_ArenasRPs_A_v04.png?im=AspectCrop=%2816,9%29,xPosition=0.5,yPosition=0.5"
   },
   {
     "id": "apex-solos-respawn-token-2025",
@@ -14329,15 +14749,17 @@
     "tempoImpact": "玩家不再围绕枪械搜刮和徒步转点，而是围绕强化物、车速和射击角度持续追逐。驾驶与射击的座位交换会把双人协作变成即时操作决策，剩余队伍减少后战斗空间快速收束。",
     "designObservation": "把 BR 的生存目标绑定到共享载具生命，可以让双人队伍在移动、攻击和资源争夺之间保持持续互动；驾驶和炮手的职责互补，也让“位置”本身成为可切换的战术资源。",
     "sourceUrl": "https://www.youtube.com/watch?v=T66mnRvvGfE",
-    "imageUrl": "assets/modes/generated/free-fire-cosmic-racer-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/ea1593b467b6498f8f71.jpg",
+    "imageSource": "Garena 官方玩法视频封面（本地归档）；2023 年回归版教学图",
     "launchDate": "2020-12-13",
     "launchLabel": "2020年12月13日至12月27日（Operation Chrono 限时开放）",
     "launchNote": "Free Fire India Official 的模式教程确认 Cosmic Racer 为双人载具竞速 BR；首发排期来自 Operation Chrono 活动档案的公开日历，后续若找到全球官方公告将继续补充。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.youtube.com/watch?v=T66mnRvvGfE",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/T66mnRvvGfE/maxresdefault.jpg"
   },
   {
     "id": "free-fire-chosen-one-2020",
@@ -14360,15 +14782,17 @@
     "tempoImpact": "基础淘汰积分让队伍持续寻找交战，随机单挑则制造短暂的高价值焦点；双倍得分窗口会把全队注意力集中到连续击杀，形成“常规交火—单挑—爆发追分”的循环。",
     "designObservation": "把个人单挑嵌入团队积分赛，可以同时制造个人荣誉和团队追分目标；关键在于让单挑结果带来的收益足够改变战局，但不会完全取代队伍协作。",
     "sourceUrl": "https://www.youtube.com/watch?v=FrkBlE3kNDY",
-    "imageUrl": "assets/modes/generated/free-fire-chosen-one-2020.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/9a97110c810dcebacd42.jpg",
+    "imageSource": "Garena 官方玩法视频封面（本地归档）",
     "launchDate": "2020-12-19",
     "launchLabel": "2020年12月19日至12月27日（Operation Chrono 限时开放）",
     "launchNote": "Free Fire India Official 的 Operation Chrono 模式教程确认名称与 4v4 玩法；40 分、随机单挑和 30 秒双倍得分规则与同期官方活动报道一致。",
     "gameplayTypes": [
       "warfare"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.youtube.com/watch?v=FrkBlE3kNDY",
+    "imageOriginalUrl": "https://i.ytimg.com/vi/FrkBlE3kNDY/maxresdefault.jpg"
   },
   {
     "id": "fortnite-scavenger-pop-up-cup-2018",
@@ -14544,15 +14968,17 @@
     "tempoImpact": "复活和累计击杀目标让对局从一次性生存转为连续前线循环；死亡成本降低后，队伍会围绕交火热点反复争夺位置，直到一方完成 100 击杀。",
     "designObservation": "把 BR 地图、搜刮和建造放进可持续复活的击杀竞赛，可以同时保留 Fortnite 的建造表达和团队死斗的即时反馈。",
     "sourceUrl": "https://www.fortnite.com/patch-notes/v6-31",
-    "imageUrl": "assets/modes/generated/fortnite-team-rumble-2018.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/bceb3cb5fd5f0565036b.jpg",
+    "imageSource": "Epic 官方补丁公告模式配图（本地归档）",
     "launchDate": "2018-11-27",
     "launchLabel": "2018年11月 v6.31 版本期间开放",
     "launchNote": "Epic v6.31 官方补丁明确 Team Rumble 的 20v20、5 秒复活、100 击杀胜利条件。",
     "gameplayTypes": [
       "warfare"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.fortnite.com/patch-notes/v6-31",
+    "imageOriginalUrl": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv6-31%2Foverview-text-v6-31%2FBR06_Social_TDM-1920x1080-963f44e65e665a723c477e161671a470c4491e79.jpg"
   },
   {
     "id": "fortnite-score-royale-2018",
@@ -14574,15 +15000,17 @@
     "tempoImpact": "积分目标让搜刮路线本身成为主动策略，玩家不必只追求最后存活；前期缓慢缩圈给探索留出时间，后期加速则把领先者和追赶者拉入最终战。",
     "designObservation": "将非战斗行为转化为公开分数，可以让 BR 的地图探索、资源搜刮和击杀共享同一胜利经济；分值权重决定玩家对风险的选择。",
     "sourceUrl": "https://www.fortnite.com/patch-notes/v5-30?lang=en-US",
-    "imageUrl": "assets/modes/generated/fortnite-score-royale-2018.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/7d2447cb0ea81fdba6c2.jpg",
+    "imageSource": "Epic 官方补丁公告模式配图（本地归档）",
     "launchDate": "2018-08-23",
     "launchLabel": "2018年8月23日随 v5.30 版本开放",
     "launchNote": "Epic v5.30 官方补丁明确 Score Royale 的积分来源与单人/双人/小队目标分数。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.fortnite.com/patch-notes/v5-30?lang=en-US",
+    "imageOriginalUrl": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv5-30%2Foverview-text-v5-30%2FBR05_Social_LTM_ScoreRoyale-1920x1080-5ed77282d3830a9d674c3de573bb6de1715e5484.jpg"
   },
   {
     "id": "fortnite-teams-of-20-v2-2018",
@@ -14664,15 +15092,17 @@
     "tempoImpact": "更短的风暴等待和更高的补给密度让爆炸物交战更早发生；资源增加支持连续轰炸，但导弹稀有度仍把高爆发留给争夺空投的队伍。",
     "designObservation": "同一武器主题通过资源和时间参数就能形成新一轮玩法节奏；v2 把“爆炸物实验”从短暂乱斗推向可持续攻防。",
     "sourceUrl": "https://www.fortnite.com/news/v3-4-content-update?lang=en-US",
-    "imageUrl": "assets/modes/generated/fortnite-high-explosives-v2-2018.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/4bbe3b6b4c63a393b311.jpg",
+    "imageSource": "Epic 官方补丁公告模式配图（本地归档）",
     "launchDate": "2018-04-04",
     "launchLabel": "2018年4月4日随 v3.4 内容更新开放",
     "launchNote": "Epic v3.4 官方内容更新明确将 High Explosives v2 作为单独玩法规则发布；基础 High Explosives 另有卡片。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.fortnite.com/news/v3-4-content-update?lang=en-US",
+    "imageOriginalUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fv3-4-content-update%2FHighExplosivesv2-1280x720-82c683eb54bcee415077df71b2b19eaac37fa1f5.jpg"
   },
   {
     "id": "fortnite-sniper-shootout-2018",
@@ -14784,15 +15214,17 @@
     "tempoImpact": "持续风暴把转点变成全程主线，玩家几乎没有静态守点窗口；复活与高补给维持交战密度，直到风暴压缩出最后路线。",
     "designObservation": "删除安全区等待后，地图导航本身成为胜负条件；复活和高资源补偿让持续移动不至于变成一次失误即结束。",
     "sourceUrl": "https://www.fortnite.com/patch-notes/v5-20",
-    "imageUrl": "assets/modes/generated/fortnite-steady-storm-2018.svg",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
+    "imageUrl": "assets/mode-official/1d9f89c71e4a1dd8048c.jpg",
+    "imageSource": "Epic 官方补丁公告模式配图（本地归档）",
     "launchDate": "2018-08-07",
     "launchLabel": "2018年8月7日随 v5.20 版本开放",
     "launchNote": "Epic v5.20 官方补丁明确 Steady Storm 的持续风暴、复活和补给规则。",
     "gameplayTypes": [
       "br"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "imageSourceUrl": "https://www.fortnite.com/patch-notes/v5-20",
+    "imageOriginalUrl": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv5-20%2Foverview-text-v5-20%2FBR05_Social_LTM-Steady-Storm-1920x1080-bd6df92c9eda9bc2fcc4a5cfca5889b930f8f99f.jpg"
   },
   {
     "id": "fortnite-unvaulted-squads-2019",
