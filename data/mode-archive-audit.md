@@ -278,3 +278,15 @@
 - 复核 [Epic v4.3 官方补丁](https://www.fortnite.com/patch-notes/v4-3?lang=en-US)：新增 `fortnite-blitz-v2-2018`，单独记录开局即缩圈、约 15 分钟对局、较低巴士高度和高资源规则；基础 Blitz 卡继续保留。
 - 复核 [Epic v4.4 官方补丁](https://www.fortnite.com/patch-notes/v4-4?lang=en-US)：新增 `fortnite-50v50-v3-2018`，记录更大的初始风暴圈、4 至 8 个成批空投、25% 采集增益、中心偏置与标准倒地伤害。
 - 复核 [Epic v4.4 内容更新](https://www.fortnite.com/patch-notes/v4-4-content-update%3Flang%3Den-US)：新增 `fortnite-final-fight-teams-20-2018`，记录第三圈停止、终局倒计时、按存活人数判胜和允许并列胜利。
+
+## 2026-09-13 每周官方更新反向漏项审计
+
+- **PUBG Mobile 4.6.0**：逐项复核日本官方完整补丁。`Midnight Hunters` 已由仅预告更新为完整主题 BR 卡；`Blood Awakening` 具有淘汰后转化吸血鬼、最多 20 人敌对阵营及独立消灭人类胜负目标，新增卡片。`Ocean Odyssey` 只回归部分旧主题元素；Arena Ranked 是排名层；Metro Royale Chapter 34 是父模式内的地图/PVE 内容；CRAFTGROUND、Brainrot 与 My World 属于编辑器、创作地图或测试功能，均不新增独立模式卡。
+- **Free Fire OB55**：`Nine Tails Event` 相比 2025 版本新增可争夺的写轮眼控制权和玩家指定区域的尾兽玉轰炸，属于实质规则变化，新增回归卡。木叶村、秽土转生返场点、蛤蟆吉召唤、忍术技能与忍具归入同一联动规则集合。`Lone Wolf: Duel of Honor` 只新增表情、胜利横幅、结果与分享页，不改变 1v1 的胜负流程；BR 随机事件、空投、武器、训练场与系统功能按系统项排除。
+- **PUBG 43.1**：`Duo Rumble` 补齐固定双人组、五个周六阶段、最佳三局、排名/生存/击杀积分和实时前三展示，更新既有 `pubg-rumble-2026`，不重复建卡。`Solo Deathmatch` 明确沿用 42.2 规则，仅记录回归；Jujutsu Kaisen Collaboration World 是普通 BR 的主题世界；Intense Battle Royale 仅改结算页，其余是系统、平衡、榜单与地图轮换。
+- **Apex Legends（9月10日）**：复核 Marked Midseason Designer’s Notes；页面解释现有 Marked 赛季平衡、Wildcard 与地图/武器设计，没有公布新的命名模式、LTM 或独立胜负规则。
+- **三角洲行动（9月8日、9月10日）**：复核 Reorientation 上线公告和 9月10日平衡修复。Polaris Patrol、Fishing、Operations 1v1 已有卡；Layali Grove 2.0 是地图更新，其余为活动任务、奖励、轮换、数值和修复，不新增模式。
+- **和平精英 1.38.12**：复核 9月2日官方版本页与本周公告；金秋龙狮城是主题海岛交互，团竞排位·图书馆沿用军备团竞，怪物扮演·蝾螈小宝已有卡；9月1日后续内容为问题修复，没有新的独立玩法。
+- **Fortnite**：复核本周官方 News 索引，未发现 9月7日至9月13日发布且具有独立匹配入口、目标或胜负规则的新模式公告；继续保留早期补丁分页回溯缺口。
+
+本次实际近期检查范围为 2026-09-07 至 2026-09-13；历史覆盖仍无完整官方索引证明，所有游戏的 `coverageStatus` 保持 `ongoing_backfill`。
