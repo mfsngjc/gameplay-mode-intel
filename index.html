@@ -7,8 +7,8 @@
   <meta name="description" content="集成农业，面向射击游戏设计的研究资料库。收集射击游戏玩法模式与地图资料，保留原始来源。">
   <title>集成农业 · 射击玩法研究库</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=no-dashboard-20260907">
-  <link rel="stylesheet" href="workspace.css?v=no-dashboard-20260907">
+  <link rel="stylesheet" href="styles.css?v=core-updates-20260919-r9">
+  <link rel="stylesheet" href="workspace.css?v=core-updates-20260919-r9">
 </head>
 <body class="workspace">
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><symbol id="ui-compass" viewBox="0 0 24 24">
@@ -149,6 +149,7 @@
     <nav class="primary-nav">
       <a class="nav-item is-active" href="#modes" data-view="modes" aria-current="page"><svg><use href="#ui-layers"></use></svg><span>玩法模式</span><span class="nav-count" id="navModeCount">—</span></a>
       <a class="nav-item" href="#maps" data-view="maps"><svg><use href="#ui-map"></use></svg><span>地图</span><span class="nav-count" id="navMapCount">—</span></a>
+      <a class="nav-item local-preview-nav" href="#mechanics" data-view="mechanics" hidden><svg><use href="#ui-workflow"></use></svg><span>机制库预览</span><span class="nav-count" id="navMechanicsCount">—</span></a>
     </nav>
     <div class="nav-divider"></div>
     <div class="nav-group-label">我的研究 <span>WORKSPACE</span></div>
@@ -182,7 +183,7 @@
         <div>
           <div class="eyeline"><span class="eyeline-dot"></span><span id="pageEyeline">01 / GAME MODES</span></div>
           <h1 id="pageTitle">玩法模式</h1>
-          <p id="pageDescription">发现射击游戏的核心模式与限时变体，按玩法、游戏和设计主题查找案例。</p>
+          <p id="pageDescription">收录模式案例与基础局内体验更新，按核心玩法、游戏和更新类别查找资料。</p>
         </div>
         <div class="library-stamp"><svg><use href="#ui-book-open"></use></svg><span id="librarySummary">正在读取资料</span><small>FOR GAME DESIGNERS</small></div>
       </div>
@@ -191,22 +192,29 @@
         <button type="button" data-mode-view="library" role="tab" aria-controls="librarySection" aria-selected="true">案例库</button>
         <button type="button" data-mode-view="activity" role="tab" aria-controls="activitySection" aria-selected="false"><svg><use href="#ui-radio"></use></svg>玩法动态</button>
         <button type="button" data-mode-view="timeline" role="tab" aria-controls="timelineSection" aria-selected="false"><svg><use href="#ui-clock-3"></use></svg>时间画板</button>
+        <button type="button" data-mode-view="patches" role="tab" aria-controls="patchesSection" aria-selected="false">版本详录</button>
       </div>
 
-      <section class="library-section" id="librarySection" role="tabpanel" aria-labelledby="resultsTitle">
-        <div class="results-heading"><div><h2 id="resultsTitle">玩法模式资料</h2><span id="resultCount" aria-live="polite">加载中</span></div><span class="section-aside" id="sectionAside">从案例出发，连接设计</span></div>
+      <div id="sharedFilters">
         <div class="filter-panel">
           <div class="gameplay-filter-row"><span class="filter-row-label">核心玩法</span><div id="gameplayFilters" class="gameplay-filters" role="group" aria-label="按核心玩法筛选"></div></div>
           <div class="game-filters" id="gameFilters" aria-label="按游戏筛选"></div>
           <div class="filter-bottom">
             <div class="filter-fields">
+              <div class="select-field" id="contentTypeField"><label for="contentTypeSelect">资料类型</label><select id="contentTypeSelect"><option value="all">全部资料</option><option value="mode">模式案例</option><option value="core_update">基础更新</option></select></div>
+              <div class="select-field" id="updateCategoryField" hidden><label for="updateCategorySelect">更新类别</label><select id="updateCategorySelect"><option value="all">全部更新类别</option></select></div>
               <div class="select-field"><label for="topicSelect">设计主题</label><select id="topicSelect" aria-label="设计主题"><option value="all">全部主题</option></select></div>
               <div class="select-field" id="typeField"><label for="typeSelect">模式标签</label><select id="typeSelect" aria-label="模式标签"><option value="all">全部标签</option></select></div>
             </div>
-            <div class="view-controls"><label class="sr-only" for="sortSelect">资料排序</label><select id="sortSelect"><option value="recommended">推荐浏览</option><option value="newest">上线时间：从新到旧</option><option value="oldest">上线时间：从旧到新</option><option value="name">按名称排序</option></select><span class="control-divider"></span><button type="button" class="icon-button is-selected" data-layout="grid" aria-label="卡片视图" aria-pressed="true"><svg><use href="#ui-grid-2x2"></use></svg></button><button type="button" class="icon-button" data-layout="list" aria-label="列表视图" aria-pressed="false"><svg><use href="#ui-list"></use></svg></button></div>
+            <div class="view-controls" id="libraryViewControls"><label class="sr-only" for="sortSelect">资料排序</label><select id="sortSelect"><option value="recommended">推荐浏览</option><option value="newest">记录时间：从新到旧</option><option value="oldest">记录时间：从旧到新</option><option value="name">按名称排序</option></select><span class="control-divider"></span><button type="button" class="icon-button is-selected" data-layout="grid" aria-label="卡片视图" aria-pressed="true"><svg><use href="#ui-grid-2x2"></use></svg></button><button type="button" class="icon-button" data-layout="list" aria-label="列表视图" aria-pressed="false"><svg><use href="#ui-list"></use></svg></button></div>
           </div>
         </div>
         <div class="filter-summary" id="filterSummary" hidden><span id="filterSummaryText"></span><button data-reset-filters>清除筛选</button></div>
+      </div>
+
+      <section class="library-section" id="librarySection" role="tabpanel" aria-labelledby="resultsTitle">
+        <section id="ffPatchLibrary" hidden></section>
+        <div class="results-heading"><div><h2 id="resultsTitle">玩法模式资料</h2><span id="resultCount" aria-live="polite">加载中</span></div><span class="section-aside" id="sectionAside">模式案例与基础更新</span></div>
         <p class="context-note" id="contextNote" hidden></p>
         <div class="mode-grid" id="modeGrid" aria-busy="true"><div class="loading-state">正在整理玩法资料…</div></div>
         <div class="results-footer"><span id="statusLine" role="status"></span><button class="button" id="loadMore" hidden>加载更多<svg><use href="#ui-arrow-right"></use></svg></button></div>
@@ -214,14 +222,16 @@
 
       <section id="activitySection" class="secondary-section" role="tabpanel" aria-label="玩法动态" hidden>
         <div class="activity-toolbar"><div class="activity-tabs" id="activityTabs"><button type="button" data-feed="all" aria-pressed="true">全部动态</button><button type="button" data-feed="recent" aria-pressed="false">近 30 天</button><button type="button" data-feed="upcoming" aria-pressed="false">即将上线</button><button type="button" data-feed="ltm" aria-pressed="false">LTM 限时模式</button></div><span id="activityStats"></span></div>
-        <p class="context-note">按案例中的上线日期排列；上线时间与收录时间分别记录。</p>
+        <p class="context-note">模式按案例日期排列；基础更新优先采用已核实的生效日，否则标注公告或预定日期。</p>
         <div id="activityFeed" class="activity-feed"></div>
       </section>
 
       <section id="timelineSection" class="secondary-section" role="tabpanel" aria-label="玩法时间画板" hidden>
-        <div class="timeline-game-picker" id="timelineGameFilters"></div>
+        <div class="timeline-game-picker" id="timelineGameFilters" hidden></div>
         <section class="game-timeline" id="gameTimeline" hidden></section>
       </section>
+
+      <section id="patchesSection" class="secondary-section" role="tabpanel" aria-label="版本详录" hidden></section>
 
       <section id="mapsSection" class="secondary-section" aria-label="地图资料" hidden>
         <div class="map-library-toolbar">
@@ -302,8 +312,10 @@
   </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js?v=no-dashboard-20260907"></script>
-  <script src="maps.js?v=no-dashboard-20260907"></script>
-  <script src="workspace.js?v=no-dashboard-20260907"></script>
+  <script src="core-updates.js?v=20260919-r9"></script>
+  <script src="app.js?v=core-updates-20260919-r9"></script>
+  <script src="maps.js?v=core-updates-20260919-r9"></script>
+  <script src="ff-patches.js?v=20260919-r13"></script>
+  <script src="workspace.js?v=core-updates-20260919-r9"></script>
 </body>
 </html>

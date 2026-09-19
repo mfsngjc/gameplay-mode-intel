@@ -47,6 +47,9 @@ const state = {
   ready: false,
   filter: "all",
   feedFilter: "all",
+  contentFilter: "all",
+  updateCategory: "all",
+  activityLimit: 24,
   gameFilter: "all",
   gameplayFilter: "all",
   collected: readCollected()
@@ -143,7 +146,7 @@ function getTodayStart() {
 }
 
 function getModeDateValue(mode) {
-  const value = mode.launchDate || mode.date || mode.year || "";
+  const value = isCoreUpdate(mode) ? getCoreUpdateTiming(mode).date : mode.launchDate || mode.date || mode.year || "";
   const match = String(value).match(/\d{4}(?:-\d{2}-\d{2})?/);
   return match ? match[0] : "";
 }
@@ -170,6 +173,7 @@ function getDayDelta(mode) {
 }
 
 function getActivityState(mode) {
+  if (isCoreUpdate(mode)) return coreUpdateActivityState(mode);
   const delta = getDayDelta(mode);
   if (delta === null) return { className: "is-unknown", label: "待确认" };
   if (delta > 0) return { className: "is-upcoming", label: "即将上线" };
@@ -179,6 +183,7 @@ function getActivityState(mode) {
 }
 
 function formatActivityDate(mode) {
+  if (isCoreUpdate(mode)) return coreUpdateDateLabel(mode);
   const date = parseModeDate(mode);
   if (!date) return mode.launchLabel || mode.date || mode.year || "待确认";
   return `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, "0")}.${String(date.getDate()).padStart(2, "0")}`;
@@ -297,15 +302,16 @@ function getTimelineModes() {
     .map((item) => item.mode);
 }
 
-function getTimelineLaneDefinitions(game = state.gameFilter) {
-  const primaryTypes = new Set(state.modes.filter((mode) => mode.game === game).map((mode) => getGameplayTypes(mode)[0]));
+function getTimelineLaneDefinitions(game = state.gameFilter, entries = state.modes) {
+  if (game === 'Free Fire') return ffPlaylistDefinitions.filter(d => entries.some(e => e.game === game && (e.timelineLane ? e.timelineLane === d.id : getFFPlaylists(e).includes(d.id)))).map(d => ({key:d.id,label:d.label,statLabel:d.shortLabel,dotClass:d.timelineClass}));
+  const primaryTypes = new Set(entries.filter((mode) => mode.game === game).map((mode) => getGameplayTypes(mode)[0]));
   return gameplayDefinitions.filter((definition) => primaryTypes.has(definition.id)).map((definition) => ({
     key: definition.id, label: definition.label, statLabel: definition.shortLabel, dotClass: definition.timelineClass
   }));
 }
 
-function getTimelineLaneLayout(game = state.gameFilter) {
-  const definitions = getTimelineLaneDefinitions(game);
+function getTimelineLaneLayout(game = state.gameFilter, entries = state.modes) {
+  const definitions = getTimelineLaneDefinitions(game, entries);
   const laneGap = 78;
   const firstY = 64;
   const lanes = definitions.reduce((acc, lane, index) => {
@@ -320,7 +326,12 @@ function getTimelineLaneLayout(game = state.gameFilter) {
   };
 }
 
+function getModeTimingLabel(mode) {
+  return mode.launchDate ? "上线时间" : "时间说明";
+}
+
 function getTimelineDateLabel(mode) {
+  if (isCoreUpdate(mode)) return coreUpdateDateLabel(mode);
   if (mode.launchDate && /^\d{4}-\d{2}-\d{2}$/.test(mode.launchDate)) {
     const [year, month, day] = mode.launchDate.split("-");
     return `${Number(year)}年${Number(month)}月${Number(day)}日`;
@@ -329,16 +340,17 @@ function getTimelineDateLabel(mode) {
 }
 
 function getTimelineMeta(mode) {
-  const definition = gameplayDefinitions.find((item) => item.id === getGameplayTypes(mode)[0]);
+  const definition = mode.game === 'Free Fire' ? ffPlaylistDefinitions.find(d=>d.id===(mode.timelineLane||getFFPlaylists(mode)[0])) : gameplayDefinitions.find((item) => item.id === getGameplayTypes(mode)[0]);
   return {
     className: definition.timelineClass,
-    label: getGameplayLabel(mode) + (isLtmMode(mode) ? " · LTM" : ""),
+    label: (mode.timelineLane ? definition.label : getGameplayLabel(mode)) + (isCoreUpdate(mode) ? " · 基础更新" : "") + (isLtmMode(mode) ? " · LTM" : ""),
     shortLabel: isLtmMode(mode) ? "LTM" : definition.shortLabel,
     laneKey: definition.id
   };
 }
 
 function getTimelineShortDate(mode) {
+  if (isCoreUpdate(mode)) { const timing = getCoreUpdateTiming(mode); return timing.date.slice(2).replaceAll("-", ".") + " · " + timing.label; }
   if (mode.launchDate && /^\d{4}-\d{2}-\d{2}$/.test(mode.launchDate)) {
     const [year, month, day] = mode.launchDate.split("-");
     return `${year.slice(2)}.${Number(month)}.${Number(day)}`;
@@ -356,120 +368,49 @@ function getTimelineNodeLabel(mode) {
   return chars.length > 7 ? `${chars.slice(0, 7).join("")}…` : normalized;
 }
 
-function renderTimelineCanvas(modes, filteredIds) {
+function renderTimelineCanvas(groups) {
   const firstX = 168;
-  const width = Math.max(1040, firstX + 26 + Math.max(0, modes.length - 1) * 86);
-  const { definitions, lanes, height } = getTimelineLaneLayout();
-  const points = modes.map((mode, index) => {
-    const meta = getTimelineMeta(mode);
-    const lane = lanes[meta.laneKey];
-    return {
-      mode,
-      meta,
-      x: firstX + index * 86,
-      y: lane.y
-    };
-  });
-  const flowPath = points
-    .map((point, index) => `${index ? "L" : "M"} ${point.x} ${point.y}`)
-    .join(" ");
-
-  return `
-    <div class="timeline-canvas-wrap" tabindex="0" aria-label="${escapeHtml(state.gameFilter)}玩法更新时间画板">
-      <svg class="timeline-canvas-svg" viewBox="0 0 ${width} ${height}" style="width:${width}px;min-width:${width}px" role="img" aria-label="${escapeHtml(state.gameFilter)}玩法更新时间画板">
-        <g class="canvas-lanes" aria-hidden="true">
-          ${definitions.map((definition) => {
-            const lane = lanes[definition.key];
-            return `
-            <line x1="138" y1="${lane.y}" x2="${width - 34}" y2="${lane.y}"></line>
-            <text x="18" y="${lane.y + 5}">${escapeHtml(lane.label)}</text>
-          `;
-          }).join("")}
-        </g>
-        <path class="canvas-flow" d="${flowPath}"></path>
-        ${points.map((point) => {
-          const isDimmed = !filteredIds.has(point.mode.id);
-          const typeText = point.mode.type.slice(0, 2).join(" / ");
-          return `
-            <g class="canvas-node ${point.meta.className} ${isDimmed ? "is-dimmed" : ""}" transform="translate(${point.x} ${point.y})">
-              <title>${escapeHtml(getTimelineDateLabel(point.mode))} · ${escapeHtml(point.meta.label)} · ${escapeHtml(point.mode.modeName)} · ${escapeHtml(typeText)}</title>
-              <circle r="14"></circle>
-              <text class="canvas-node-date" y="-24">${escapeHtml(getTimelineShortDate(point.mode))}</text>
-              <text class="canvas-node-label" y="36">${escapeHtml(getTimelineNodeLabel(point.mode))}</text>
-              <text class="canvas-node-family" y="53">${escapeHtml(point.meta.shortLabel)}</text>
-            </g>
-          `;
-        }).join("")}
-      </svg>
-    </div>
-  `;
+  const width = Math.max(1040, firstX + 50 + Math.max(0, groups.length - 1) * 110);
+  const { definitions, lanes, height } = getTimelineLaneLayout(state.gameFilter, groups.map((g) => g.representative));
+  const points = groups.map((group, index) => ({ group, index, meta: getTimelineMeta(group.representative),
+    x: firstX + index * 110, y: lanes[getTimelineMeta(group.representative).laneKey].y }));
+  return `<div class="timeline-canvas-wrap" tabindex="0" aria-label="可横向滚动的玩法时间画板">
+    <svg class="timeline-canvas-svg" viewBox="0 0 ${width} ${height}" style="width:${width}px;min-width:${width}px" role="group" aria-label="${escapeHtml(state.gameFilter)}玩法更新时间画板">
+      <g class="canvas-lanes" aria-hidden="true">${definitions.map((d) => `<line x1="138" y1="${lanes[d.key].y}" x2="${width - 34}" y2="${lanes[d.key].y}"></line><text x="18" y="${lanes[d.key].y + 5}">${escapeHtml(d.label)}</text>`).join('')}</g>
+      ${points.map(({group, index, meta, x, y}) => {
+        const entry = group.representative;
+        const title = getTimelineDateLabel(entry) + ' · ' + groupTitle(group);
+        const action = group.entries.length > 1 ? `data-timeline-group="${index}"` : `data-action="open-mode" data-id="${escapeHtml(entry.id)}"`;
+        const label = group.entries.length > 1 ? entry.versionLabel.replace(/ 补丁$/, '') : getTimelineNodeLabel(entry);
+        return `<g class="canvas-node ${meta.className} ${group.isUpdateGroup ? 'is-core-update' : ''}" transform="translate(${x} ${y})" role="button" tabindex="0" aria-label="${escapeHtml(title + (entry.timelineLane ? ' · ' + meta.label : ''))}" ${action}>
+          <title>${escapeHtml(title)}</title>${group.isUpdateGroup ? '<rect x="-13" y="-13" width="26" height="26" rx="5"></rect>' : '<circle r="14"></circle>'}
+          <text class="canvas-node-date" y="-24">${escapeHtml(getTimelineShortDate(entry))}</text>
+          <text class="canvas-node-label" y="36">${escapeHtml(label)}</text>
+          <text class="canvas-node-family" y="53">${group.isUpdateGroup ? (group.entries.length > 1 ? group.entries.length + ' 条基础更新' : '基础更新') : escapeHtml(meta.shortLabel)}</text></g>`;
+      }).join('')}
+    </svg></div>`;
 }
 
 function renderTimeline() {
   if (!gameTimeline) return;
-
-  const modes = getTimelineModes();
-  if (!modes.length) {
-    gameTimeline.hidden = true;
-    gameTimeline.innerHTML = "";
+  gameTimeline.hidden = false;
+  if (state.gameFilter === "all") {
+    gameTimeline.innerHTML = '<div class="empty-state"><h3>选择一个游戏查看时间画板</h3><p>使用上方游戏筛选，查看该游戏的模式案例与基础更新。</p></div>';
     return;
   }
-
-  const filteredIds = new Set(getFilteredModes().map((mode) => mode.id));
-  const activeFilterLabel = state.filter === "all" ? "全部玩法" : (tagLabels[state.filter] || state.filter);
-  const laneDefinitions = getTimelineLaneDefinitions();
-  const counts = modes.reduce((acc, mode) => {
-    const key = getTimelineMeta(mode).laneKey;
-    acc[key] = (acc[key] || 0) + 1;
-    return acc;
-  }, {});
-  const latestMode = modes[modes.length - 1];
-
-  gameTimeline.hidden = false;
-  gameTimeline.innerHTML = `
-    <div class="timeline-head">
-      <div>
-        <span class="timeline-kicker">玩法时间画板</span>
-        <h3>${escapeHtml(state.gameFilter)}</h3>
-      </div>
-      <div class="timeline-stats" aria-label="玩法时间线摘要">
-        <span><b>${modes.length}</b> 节点</span>
-        ${laneDefinitions.map((lane) => `<span><b>${counts[lane.key] || 0}</b> ${escapeHtml(lane.statLabel)}</span>`).join("")}
-      </div>
-    </div>
-    <div class="timeline-board">
-      <div class="timeline-board-head">
-        <p>${escapeHtml(activeFilterLabel)} · 最新节点：${escapeHtml(getTimelineDateLabel(latestMode))} ${escapeHtml(latestMode.modeName)}</p>
-        <div class="timeline-legend" aria-label="节点类型图例">
-          ${laneDefinitions.map((lane) => `<span><i class="legend-dot ${escapeHtml(lane.dotClass)}" aria-hidden="true"></i>${escapeHtml(lane.label)}</span>`).join("")}
-        </div>
-      </div>
-      ${renderTimelineCanvas(modes, filteredIds)}
-      <ol class="timeline-list">
-        ${modes.map((mode) => {
-          const isDimmed = !filteredIds.has(mode.id);
-          const meta = getTimelineMeta(mode);
-          const typeText = mode.type.slice(0, 3).join(" / ");
-          return `
-            <li class="timeline-node ${meta.className} ${isDimmed ? "is-dimmed" : ""}">
-              <span class="timeline-dot" aria-hidden="true"></span>
-              <div class="timeline-date-row">
-                <time datetime="${escapeHtml(mode.launchDate || mode.date || mode.year)}">${escapeHtml(getTimelineDateLabel(mode))}</time>
-                <span>${escapeHtml(meta.label)}</span>
-              </div>
-              <div class="timeline-event">
-                <strong>${escapeHtml(mode.modeName)}</strong>
-                <span>${escapeHtml(typeText)}</span>
-              </div>
-            </li>
-          `;
-        }).join("")}
-      </ol>
-    </div>
-  `;
+  const entries = getTimelineModes().filter((entry) => matchesLibraryEntry(entry));
+  if (!entries.length) {
+    gameTimeline.innerHTML = renderFFPatchTimeline() + '<div class="empty-state"><h3>当前筛选没有时间节点</h3><button class="button" data-reset-filters>清除筛选</button></div>';
+    return;
+  }
+  const groups = groupUpdateEntries(expandFFTimelineEntries(entries), true);
+  gameTimeline.innerHTML = `${renderFFPatchTimeline()}<div class="timeline-head"><div><span class="timeline-kicker">玩法时间画板</span><h3>${escapeHtml(state.gameFilter)}</h3></div><div class="timeline-stats"><span>${escapeHtml(summarizeLibrary(entries))}</span><span><b>${groups.length}</b> 个节点</span></div></div>
+    <div class="timeline-board"><div class="timeline-board-head"><p>按记录日期排列，节点间距不代表实际时间跨度。公告与预定日期单独标注。</p><div class="timeline-legend"><span>○ 模式案例</span><span>▢ 基础更新</span></div></div>
+    ${renderTimelineCanvas(groups)}<ol class="timeline-list">${groups.map(renderTimelineGroup).join('')}</ol></div>`;
 }
 
 function modeToMarkdown(mode) {
+  if (isCoreUpdate(mode)) return coreUpdateMarkdown(mode);
   const derived = mode.kind && mode.kind !== "modes";
   const sourceModes = (mode.sourceModeIds || []).map((id) => state.modes.find((entry) => entry.id === id)).filter(Boolean);
   const lines = [
@@ -478,7 +419,7 @@ function modeToMarkdown(mode) {
     "- 游戏：" + mode.game,
     "- " + (derived ? "关联核心玩法：" : "核心玩法：") + getGameplayLabel(mode),
     ...(isLtmMode(mode) ? ["- 模式标签：LTM（限时模式）"] : []),
-    "- " + (derived ? "关联案例上线时间：" : "上线时间：") + (mode.launchLabel || mode.date || mode.year),
+    "- " + (derived ? "关联案例时间：" : getModeTimingLabel(mode) + "：") + (mode.launchLabel || mode.date || mode.year),
     "- 类型：" + mode.type.join(" / "),
     "- 来源：" + mode.sourceUrl,
     "- 图片来源：" + (mode.imageSource || "待确认"),
@@ -574,6 +515,7 @@ async function openShareModal(mode) {
   if (activeShare.objectUrl) URL.revokeObjectURL(activeShare.objectUrl);
   activeShare.objectUrl = null;
   shareTitle.textContent = mode.modeName;
+  shareModal.querySelector(".share-tag").textContent = getContentTypeLabel(mode);
   sharePreviewImage.removeAttribute("src");
   sharePreviewImage.hidden = true;
   sharePreviewImage.alt = mode.modeName + " 资料分享预览图";
@@ -677,7 +619,7 @@ async function renderModeBlockPng(mode) {
 
   ctx.fillStyle = "#788178";
   ctx.font = "700 18px Inter, PingFang SC, sans-serif";
-  const dateText = mode.date || mode.year;
+  const dateText = isCoreUpdate(mode) ? coreUpdateDateLabel(mode) : mode.date || mode.year;
   ctx.fillText(dateText, width - layout.margin - ctx.measureText(dateText).width, y + 22);
 
   /* ── Title: badge bottom + 10px visual gap ── */
@@ -698,18 +640,24 @@ async function renderModeBlockPng(mode) {
   ctx.stroke();
   ctx.fillStyle = "#4b6936";
   ctx.font = "800 18px Inter, PingFang SC, sans-serif";
-  ctx.fillText(mode.kind === "modes" ? "上线时间" : "案例上线", layout.margin + 18, y + 30);
+  ctx.fillText(isCoreUpdate(mode) ? "记录日期" : mode.kind === "modes" ? getModeTimingLabel(mode) : "案例时间", layout.margin + 18, y + 30);
   ctx.fillStyle = "#516346";
   ctx.font = "700 18px Inter, PingFang SC, sans-serif";
   ctx.fillText(mode.launchLabel || mode.date || mode.year, layout.margin + 108, y + 30);
 
   /* ── Sections: launch bottom + 24px ── */
   y += 70;
-  y = drawShareSection(ctx, "一句话规则", layout.lines.rule, layout.margin, y, layout.contentWidth, "#424245");
-  y = drawShareSection(ctx, "机制变化", layout.lines.mechanic, layout.margin, y + 12, layout.contentWidth, "#667463");
-  y = drawShareSection(ctx, "节奏影响", layout.lines.tempo, layout.margin, y + 12, layout.contentWidth, "#667463");
-  y = drawShareSection(ctx, "设计观察", layout.lines.observation, layout.margin, y + 12, layout.contentWidth, "#286446");
+  y = drawShareSection(ctx, isCoreUpdate(mode) ? "具体变化" : "一句话规则", layout.lines.rule, layout.margin, y, layout.contentWidth, "#424245");
+  y = drawShareSection(ctx, isCoreUpdate(mode) ? "改动前" : "机制变化", layout.lines.mechanic, layout.margin, y + 12, layout.contentWidth, "#667463");
+  y = drawShareSection(ctx, isCoreUpdate(mode) ? "玩家行为变化（分析）" : "节奏影响", layout.lines.tempo, layout.margin, y + 12, layout.contentWidth, "#667463");
+  y = drawShareSection(ctx, isCoreUpdate(mode) ? "设计观察（分析）" : "设计观察", layout.lines.observation, layout.margin, y + 12, layout.contentWidth, "#286446");
 
+  if (isCoreUpdate(mode)) {
+    ctx.font = "400 17px Inter, PingFang SC, sans-serif";
+    ctx.fillStyle = "#687367";
+    y = drawWrappedLines(ctx, measureCanvasLines(ctx, '配图：' + mode.imageSource, layout.contentWidth, 3), layout.margin, y + 24, 24);
+    y = drawWrappedLines(ctx, measureCanvasLines(ctx, '来源：' + mode.sourceUrl, layout.contentWidth, 2), layout.margin, y + 8, 24);
+  }
   return new Promise((resolve, reject) => {
     canvas.toBlob((blob) => blob ? resolve(blob) : reject(new Error("canvas export failed")), "image/png");
   });
@@ -732,11 +680,13 @@ async function buildShareLayout(mode, width) {
   const contentY = image ? imageMargin + imageHeight + 34 : margin;
 
   ctx.font = "800 50px Inter, PingFang SC, sans-serif";
-  const title = measureCanvasLines(ctx, mode.modeName, contentWidth, 3);
+  const title = isCoreUpdate(mode) && ctx.measureText(mode.modeName).width > contentWidth && mode.modeName.includes('（')
+    ? mode.modeName.replace('（', '\n（').split('\n').flatMap((part) => measureCanvasLines(ctx, part, contentWidth, 3))
+    : measureCanvasLines(ctx, mode.modeName, contentWidth, 3);
   ctx.font = "400 25px Inter, PingFang SC, sans-serif";
   const rule = measureCanvasLines(ctx, mode.oneLineRule, contentWidth - 40, 4);
   ctx.font = "400 23px Inter, PingFang SC, sans-serif";
-  const mechanic = measureCanvasLines(ctx, mode.mechanicChange, contentWidth - 40, 6);
+  const mechanic = measureCanvasLines(ctx, isCoreUpdate(mode) ? (mode.before || "该来源未明确说明改动前的完整状态。") : mode.mechanicChange, contentWidth - 40, 6);
   const tempo = measureCanvasLines(ctx, mode.tempoImpact, contentWidth - 40, 6);
   const observation = measureCanvasLines(ctx, mode.designObservation, contentWidth - 40, 5);
 
@@ -753,7 +703,7 @@ async function buildShareLayout(mode, width) {
     title.length * 58 - 32 +
     tagRows * 24 +
     20 + 46 + 24 +
-    sectionsHeight + 40;
+    sectionsHeight + (isCoreUpdate(mode) ? 170 : 40);
 
   return {
     margin,
@@ -941,7 +891,7 @@ function buildCanvas(modes) {
     width: 460,
     height: 560,
     color: "4",
-    text: [mode.modeName, (kindLabels[mode.kind] || "玩法模式") + " · " + mode.game, "核心玩法：" + getGameplayLabel(mode) + (isLtmMode(mode) ? " · LTM" : ""), "", "一句话规则：" + mode.oneLineRule, "", "设计观察：" + mode.designObservation, "", ...(mode.sourceModeIds ? ["基于已有案例的设计提炼", ""] : []), "来源：" + mode.sourceUrl].join("\n")
+    text: isCoreUpdate(mode) ? coreUpdateMarkdown(mode) : [mode.modeName, (kindLabels[mode.kind] || "玩法模式") + " · " + mode.game, "核心玩法：" + getGameplayLabel(mode) + (isLtmMode(mode) ? " · LTM" : ""), "", "一句话规则：" + mode.oneLineRule, "", "设计观察：" + mode.designObservation, "", ...(mode.sourceModeIds ? ["基于已有案例的设计提炼", ""] : []), "来源：" + mode.sourceUrl].join("\n")
   }));
 
   return {
@@ -961,7 +911,7 @@ function exportCurrentCanvas() {
     JSON.stringify(buildCanvas(modes), null, 2),
     "application/json;charset=utf-8"
   );
-  showToast(`已导出 ${modes.length} 个玩法为 Canvas`);
+  showToast(`已导出 ${modes.length} 份资料为 Canvas`);
 }
 
 function exportCollectedMarkdown() {

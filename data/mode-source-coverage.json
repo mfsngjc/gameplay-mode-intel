@@ -1,6 +1,14 @@
 {
   "updatedAt": "2026-09-13",
   "purpose": "记录官方来源回溯范围，防止定时同步遗漏已知档案；coverageStatus 为 ongoing_backfill 时不代表全历史完成。",
+  "additionalCollectionScope": {
+    "addedAt": "2026-09-16",
+    "name": "基础局内体验更新",
+    "policyDocument": "docs/core-experience-updates.md",
+    "coverageLedger": "data/core-update-source-coverage.json",
+    "dataFile": "data/core-updates.json",
+    "note": "用户要求同步收集地图/POI、机制物、道具、资源、转点、救援、战斗规则和局内操作更新。既有 system-only 排除结论需按新口径重新检查；本账本的模式覆盖不代表基础更新已收齐。"
+  },
   "games": {
     "Fortnite": {
       "coverageStatus": "ongoing_backfill",

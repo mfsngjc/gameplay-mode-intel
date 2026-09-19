@@ -47,9 +47,9 @@ const context = vm.createContext({
   assert, modes,
   document: { querySelector: () => ({}), baseURI: 'http://127.0.0.1:4173/' },
   localStorage: { getItem: () => '[]' },
-  URL, URLSearchParams
+  location: { search: '' }, URL, URLSearchParams
 });
-vm.runInContext(read('app.js') + '\n' + read('workspace.js').replace(/initWorkspace\(\);\s*$/, ''), context);
+vm.runInContext(read('core-updates.js') + '\n' + read('app.js') + '\n' + read('ff-patches.js') + '\n' + read('workspace.js').replace(/initWorkspace\(\);\s*$/, ''), context);
 vm.runInContext(`
   state.modes = modes.map((mode) => ({ ...mode, kind: 'modes' }));
   state.entries = [...state.modes];
@@ -110,7 +110,7 @@ vm.runInContext(`
     const gameModes = getTimelineModes();
     const lanes = new Set(getTimelineLaneDefinitions().map((lane) => lane.key));
     assert.ok(gameModes.every((mode) => lanes.has(getTimelineMeta(mode).laneKey)), game + ': missing timeline lane');
-    const chart = renderTimelineCanvas(gameModes, new Set(gameModes.map((mode) => mode.id)));
+    const chart = renderTimelineCanvas(groupUpdateEntries(gameModes, true));
     assert.doesNotMatch(chart, /NaN|undefined/, game + ': invalid chart position');
     assert.equal((chart.match(/<g class="canvas-node /g) || []).length, gameModes.length, game + ': duplicated timeline nodes');
   }

@@ -28,6 +28,12 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Validate gameplay records and official assets
+        run: |
+          node scripts/validate_taxonomy.cjs
+          node scripts/validate_core_updates.cjs
+          node scripts/validate_ff_patches.cjs
+
       - name: Prepare public files only
         run: python3 scripts/build_public_site.py
 

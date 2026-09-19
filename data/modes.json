@@ -4860,7 +4860,11 @@
       "casual"
     ],
     "isLtm": false,
-    "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg"
+    "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg",
+    "ffPlaylists": [
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-bomb-squad-2019",
@@ -4891,7 +4895,11 @@
     "isLtm": true,
     "imageUrl": "assets/mode-official/c4460ec2cf2efc4a3e4b.jpg",
     "imageSourceUrl": "https://www.youtube.com/watch?v=hTSx52F8J_c",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/hTSx52F8J_c/maxresdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/hTSx52F8J_c/maxresdefault.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-zombie-hunt-2024",
@@ -4923,7 +4931,11 @@
     "isLtm": true,
     "imageUrl": "assets/mode-official/fe17cce889c3cf1033bc.jpg",
     "imageSourceUrl": "https://ff.garena.com/en/article/1332/",
-    "imageOriginalUrl": "https://lh7-us.googleusercontent.com/MtA4OWS7z9LnFhgSeRi5ECDj0cEeEgxNKkfhIZ5wbDF2_RKxSI8Cu8semJA-q7HD20-CaSEy4W3YbwadzBM7M1n4HjmTazob1DAuFWAxsTXGpaQXjrscecxG_qvX_lPEY3LpBeE7YF3ZK1ECQK7DC0U"
+    "imageOriginalUrl": "https://lh7-us.googleusercontent.com/MtA4OWS7z9LnFhgSeRi5ECDj0cEeEgxNKkfhIZ5wbDF2_RKxSI8Cu8semJA-q7HD20-CaSEy4W3YbwadzBM7M1n4HjmTazob1DAuFWAxsTXGpaQXjrscecxG_qvX_lPEY3LpBeE7YF3ZK1ECQK7DC0U",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-zombie-hunt-hunting-spree-2024",
@@ -4956,7 +4968,11 @@
     "isLtm": true,
     "imageUrl": "assets/mode-official/fe17cce889c3cf1033bc.jpg",
     "imageSourceUrl": "https://ff.garena.com/en/article/1332/",
-    "imageOriginalUrl": "https://lh7-us.googleusercontent.com/MtA4OWS7z9LnFhgSeRi5ECDj0cEeEgxNKkfhIZ5wbDF2_RKxSI8Cu8semJA-q7HD20-CaSEy4W3YbwadzBM7M1n4HjmTazob1DAuFWAxsTXGpaQXjrscecxG_qvX_lPEY3LpBeE7YF3ZK1ECQK7DC0U"
+    "imageOriginalUrl": "https://lh7-us.googleusercontent.com/MtA4OWS7z9LnFhgSeRi5ECDj0cEeEgxNKkfhIZ5wbDF2_RKxSI8Cu8semJA-q7HD20-CaSEy4W3YbwadzBM7M1n4HjmTazob1DAuFWAxsTXGpaQXjrscecxG_qvX_lPEY3LpBeE7YF3ZK1ECQK7DC0U",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-zombie-hunt-rift-raiders-2024",
@@ -4989,7 +5005,11 @@
     "isLtm": true,
     "imageUrl": "assets/mode-official/fe17cce889c3cf1033bc.jpg",
     "imageSourceUrl": "https://ff.garena.com/en/article/1332/",
-    "imageOriginalUrl": "https://lh7-us.googleusercontent.com/MtA4OWS7z9LnFhgSeRi5ECDj0cEeEgxNKkfhIZ5wbDF2_RKxSI8Cu8semJA-q7HD20-CaSEy4W3YbwadzBM7M1n4HjmTazob1DAuFWAxsTXGpaQXjrscecxG_qvX_lPEY3LpBeE7YF3ZK1ECQK7DC0U"
+    "imageOriginalUrl": "https://lh7-us.googleusercontent.com/MtA4OWS7z9LnFhgSeRi5ECDj0cEeEgxNKkfhIZ5wbDF2_RKxSI8Cu8semJA-q7HD20-CaSEy4W3YbwadzBM7M1n4HjmTazob1DAuFWAxsTXGpaQXjrscecxG_qvX_lPEY3LpBeE7YF3ZK1ECQK7DC0U",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-myzone-2025",
@@ -5022,7 +5042,11 @@
     "isLtm": true,
     "imageUrl": "assets/mode-official/b6e0b11834246cd0f8ea.jpg",
     "imageSourceUrl": "https://ff.garena.com/en/article/1456/",
-    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfTD2IoyKfDM004xgDxTr432i_Cd6d5gAMFmraFlRHxZVPl28khBug_0PIyLplikt7jo37DV73lMk6RHCY7GOaA2gkaWNPT3549OVyEfxvVgE_QzDDbNJf-uFvqeV8XtUNcLwhPEw?key=srvUdi2CqQzIeOGTGUessUab"
+    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfTD2IoyKfDM004xgDxTr432i_Cd6d5gAMFmraFlRHxZVPl28khBug_0PIyLplikt7jo37DV73lMk6RHCY7GOaA2gkaWNPT3549OVyEfxvVgE_QzDDbNJf-uFvqeV8XtUNcLwhPEw?key=srvUdi2CqQzIeOGTGUessUab",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-flora-menace-2021",
@@ -5086,7 +5110,11 @@
     "imageUrl": "assets/mode-official/5a54c6c86f186c231789.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/485",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/ob29img/en-5.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/ob29img/en-5.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-ninjutsu-lone-wolf-2025",
@@ -5116,7 +5144,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeBpME1LhQ0uCz391KO2I9cLula9KmXWD0B57XxuVRprFUYQrH3f4-SRrE1D-NL4Ld1n_orQbWG4AlhxRQBVNhnYCf4B7_vW0hn1RmkpEj_pUA3h-L_yLoUSVkG-Clq6J9fHy2IzQ?key=Q4vf7hFy9wrHEe0i7R6BJg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-survive-till-dawn-2019",
@@ -5532,7 +5564,11 @@
     "imageUrl": "assets/mode-official/53c220aecf3c81e8acc6.jpg",
     "imageSource": "Garena 官方游戏内公告：双首领僵尸猎场配图（本地归档）",
     "imageSourceUrl": "https://dl.dir.freefiremobile.com/common/web_event/aswqooiwd/Yrl7zxCZ.html?lang=en",
-    "imageOriginalUrl": "https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/20238/2769ac661dfa89aabc2decea8dcbc17a.jpg"
+    "imageOriginalUrl": "https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/20238/2769ac661dfa89aabc2decea8dcbc17a.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-epic-battle-2023",
@@ -5562,7 +5598,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://lh7-us.googleusercontent.com/uLrTzcYuw8Ix9rO2KBHrjz20C35BYW-tukHHDjET-g43mBVhqWvB0s4MTQuCaaGM4iU_f5_4IssS2qGXSsWT7aivIGMz2uyWQrCE9UaULdpmnjD_tL2c1sjUysl20fbPl5FxjWxNnPxV2y_obUK2Wwk",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-villain-conquest-2024",
@@ -5595,7 +5635,11 @@
     "imageUrl": "assets/mode-official/dced5b3ff3ea4f931422.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1332/",
-    "imageOriginalUrl": "https://lh7-us.googleusercontent.com/hM2MTP-29_nkGZCBZ-2HHn2kZEksrZPfmM4kSiGrPecIsQqlLCGdR1HUZAtCNDwM3YbfPbzfv3wPYc_amdMTOFRdrX4f9Ds6wdlk1-4y2vD50p4yuy6Bq_M8K_eY9ThFKw6Lq5j_HwkiYR4tRKhE_OE"
+    "imageOriginalUrl": "https://lh7-us.googleusercontent.com/hM2MTP-29_nkGZCBZ-2HHn2kZEksrZPfmM4kSiGrPecIsQqlLCGdR1HUZAtCNDwM3YbfPbzfv3wPYc_amdMTOFRdrX4f9Ds6wdlk1-4y2vD50p4yuy6Bq_M8K_eY9ThFKw6Lq5j_HwkiYR4tRKhE_OE",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-lone-wolf-duo-skills-2024",
@@ -5625,7 +5669,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://lh7-us.googleusercontent.com/pGkOgzMewFrLwNeDy1-R39HrF2C-ItE3g-NJkmWrHqp34IVr2TnIcs-dh7X-Fu8RXpDQ0pk1hcPdXf-O1R8vS_dyfvhnzFruNhnm0baSbbBa4wlXzOTwl1_SD8TPc5lGk_-fajz-desAUd6X28CYVpE",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-craftland-2022",
@@ -5657,7 +5705,11 @@
     "imageUrl": "assets/mode-official/b0326b735afb9b8bbc11.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/735/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/d5830/en-1.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/d5830/en-1.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-undersea-mystery-2026",
@@ -5690,7 +5742,11 @@
     "imageUrl": "assets/mode-official/dc88bdddc04edb37822b.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1640/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20264/c57c0a509dd55e527fd73a89d3aae479.jpeg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20264/c57c0a509dd55e527fd73a89d3aae479.jpeg",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-clash-squad-random-events-2026",
@@ -5722,7 +5778,11 @@
     "imageUrl": "assets/mode-official/fe544f0601ec3428b145.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1640/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20264/0b4a1faa98d337705d45733891ba1d24.jpeg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20264/0b4a1faa98d337705d45733891ba1d24.jpeg",
+    "ffPlaylists": [
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-royale-arena-assault-2022",
@@ -5985,7 +6045,11 @@
     "imageUrl": "assets/mode-official/910907d7cdcda750c944.jpg",
     "imageSource": "Garena 官方玩法教学 / 动画视频封面（本地归档）；2022 年五周年玩法教学图",
     "imageSourceUrl": "https://www.youtube.com/watch?v=CWz1_QxVkL0",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/CWz1_QxVkL0/hqdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/CWz1_QxVkL0/hqdefault.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-mini-peak-2024",
@@ -6018,7 +6082,11 @@
     "imageUrl": "assets/mode-official/0b44663f33334ef36695.jpg",
     "imageSource": "Garena 官方活动 / 玩法公告配图（本地归档）",
     "imageSourceUrl": "https://dl.dir.freefiremobile.com/common/web_event/aswqooiwd/ozlkeyfU.html?lang=en",
-    "imageOriginalUrl": "https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/20246/0b22b3304cf4bbf18ab7ba66882e5ff1.jpg"
+    "imageOriginalUrl": "https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/20246/0b22b3304cf4bbf18ab7ba66882e5ff1.jpg",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-clash-squad-first-person-2024",
@@ -6048,7 +6116,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://lh7-us.googleusercontent.com/docsz/AD_4nXf0DUYof2fM6XBHNADzcZi1Bo4E5mGANcJIS27G4Ir5QnuQs3dZr4F9nEZzpgsVu0ik-JmANOhDXTwW3l5K_N27CorU4yeRKlG3_MOtwuorDqd5UeO83TNHPVOmEFqxuyHlIHVS5L2jSPYThfqs32A-DwRw?key=rm_bZWImXdBkcjAzWDF3_A",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-gloo-nova-2024",
@@ -6081,7 +6153,11 @@
     "imageUrl": "assets/mode-official/32512ee3716a3894c669.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1385/",
-    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeppUeC5F4k749we4r_rVkSPck798Jg2nLXB6aFu-56_MBLbCi-uX5LsKgPUGGBV_OGvm27YpjvwJZDVb_2PYAU5MlPoHeDk7mBpQiG3tIvELqYIaDtPhvowHHWchDFJ6GyoNLB9bwO9Ib-4jqLHz1gX5W5?key=DmXViBkqc4SgdDA25La7WQ"
+    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeppUeC5F4k749we4r_rVkSPck798Jg2nLXB6aFu-56_MBLbCi-uX5LsKgPUGGBV_OGvm27YpjvwJZDVb_2PYAU5MlPoHeDk7mBpQiG3tIvELqYIaDtPhvowHHWchDFJ6GyoNLB9bwO9Ib-4jqLHz1gX5W5?key=DmXViBkqc4SgdDA25La7WQ",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-shadow-force-2024",
@@ -6212,7 +6288,11 @@
     "imageUrl": "assets/mode-official/dbc97aa70883cd3c07c4.jpg",
     "imageSource": "Garena 官方玩法视频封面（本地归档）",
     "imageSourceUrl": "https://www.youtube.com/watch?v=AG2wtz-dNmQ",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/AG2wtz-dNmQ/maxresdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/AG2wtz-dNmQ/maxresdefault.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-coin-clash-2022",
@@ -6245,7 +6325,11 @@
     "imageUrl": "assets/mode-official/853ebfde24572606a6b0.jpg",
     "imageSource": "Free Fire India 官方Coin Clash玩法教程封面（2023年版本）",
     "imageSourceUrl": "https://www.youtube.com/watch?v=4IpqdPuAAAY",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/4IpqdPuAAAY/maxresdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/4IpqdPuAAAY/maxresdefault.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-football-squad-2022",
@@ -6278,7 +6362,11 @@
     "imageUrl": "assets/mode-official/5300d61b9fce0295ff0f.jpg",
     "imageSource": "Garena 官方活动 / 玩法公告配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/944/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/202212/35c34495b51b0f170c99dd22d8f4e48b.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/202212/35c34495b51b0f170c99dd22d8f4e48b.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-old-peak-2024",
@@ -6309,7 +6397,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://lh7-us.googleusercontent.com/docsz/AD_4nXf5v1cs4ZJmgyyK06Zwb8fWwMFZ5d4t0nO9oLP2fByAz1GoStjMm9f1J9Mwe508_LWoar4Zd3Zqs4rema900UN34whL1-KfuSpMSZGPjqxhoPhO8DuM7NP7y52KQ7JTaahVK0m_Cp9VBTkKlG380rCE0yI-?key=xo9WUVXn6Y0aO9Prjvnimg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-zombie-graveyard-2024",
@@ -6339,7 +6431,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://lh7-us.googleusercontent.com/docsz/AD_4nXf5v1cs4ZJmgyyK06Zwb8fWwMFZ5d4t0nO9oLP2fByAz1GoStjMm9f1J9Mwe508_LWoar4Zd3Zqs4rema900UN34whL1-KfuSpMSZGPjqxhoPhO8DuM7NP7y52KQ7JTaahVK0m_Cp9VBTkKlG380rCE0yI-?key=xo9WUVXn6Y0aO9Prjvnimg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-vibrant-anniversary-2022",
@@ -6438,7 +6534,11 @@
     "imageUrl": "assets/mode-official/0dbcdcd4e1b35ab70f4f.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/454/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/hash/e72966651991dd21fe5cc13872de6a4ejpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/hash/e72966651991dd21fe5cc13872de6a4ejpg",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-spider-verse-parkour-2023",
@@ -6471,7 +6571,11 @@
     "imageUrl": "assets/mode-official/4075f86d537fc98b17ad.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1152/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20235/aa355533524647c43724e4437ec4b727.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20235/aa355533524647c43724e4437ec4b727.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-lone-wolf-strike-out-2022",
@@ -6504,7 +6608,11 @@
     "imageUrl": "assets/mode-official/da954e4beff0564ec217.jpg",
     "imageSource": "Garena 官方玩法教学 / 动画视频封面（本地归档）",
     "imageSourceUrl": "https://www.youtube.com/watch?v=SpTwVZufnN0",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/SpTwVZufnN0/maxresdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/SpTwVZufnN0/maxresdefault.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-shadow-hunter-2023",
@@ -6535,7 +6643,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://lh4.googleusercontent.com/n8eSCP9oyTsXJLe7Lptg9TI6Xoiyb_aOprp9LVO3eOCml9GFjw-2uuOt7AjYsXczewdvLYL0eHAeiYuFqONE6Fmo_ZHwPP_yyovPc7wbDxkjj0PB3wxWvjTWNOcbziYsmj1WDqlKpk9dRPEQRq9yN_M",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-rampage-united-2022",
@@ -6568,7 +6680,11 @@
     "imageUrl": "assets/mode-official/61193e400f857c692d49.jpg",
     "imageSource": "Garena 官方活动 / 玩法公告配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/772/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/hash/9a90eb8787665ec498dd73f53d579187jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/hash/9a90eb8787665ec498dd73f53d579187jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-battle-for-infinity-2025",
@@ -6599,7 +6715,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfdM7n3cHagRUc5A9KOMavhQPojFq8V6QhXxuKDZLM_VaWWqhLpy75ULvdvBXZx1btmgDohtRcO7SU8N799nhuQ9EAMOvMbcbKL4ihpH7jKgBpqm-da0-sjrx4VezPcEuNgPuPCJw?key=32ofgQDwfWwtH5yMjp0mVA",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-epic-fight-2026",
@@ -6634,7 +6754,12 @@
     "imageUrl": "assets/mode-official/afe7e566a4cc03a4fc76.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1683/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20266/5c8ea4f29936c9f41d44c388d91d6f29.jpeg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20266/5c8ea4f29936c9f41d44c388d91d6f29.jpeg",
+    "ffPlaylists": [
+      "br",
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-imagiversary-2023",
@@ -6867,7 +6992,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://lh7-us.googleusercontent.com/uLrTzcYuw8Ix9rO2KBHrjz20C35BYW-tukHHDjET-g43mBVhqWvB0s4MTQuCaaGM4iU_f5_4IssS2qGXSsWT7aivIGMz2uyWQrCE9UaULdpmnjD_tL2c1sjUysl20fbPl5FxjWxNnPxV2y_obUK2Wwk",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-rampage-finale-pvp-2023",
@@ -6900,7 +7029,11 @@
     "imageUrl": "assets/mode-official/92e106c970c5e3f47dc2.png",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1234/",
-    "imageOriginalUrl": "https://lh5.googleusercontent.com/s0YHaf9sLqgb93P-erd8euJx7fWmrromWy-gHbt6GcYCFyMM_4NMkVQCpam2GDMQ7NgDLkksZchz3SQ3STBrWu6mCciWlSeR3VdlogLpL6imK6NLqLePBwALr0UliH83i3ek1nZNdttTd3zmkDJkD9s"
+    "imageOriginalUrl": "https://lh5.googleusercontent.com/s0YHaf9sLqgb93P-erd8euJx7fWmrromWy-gHbt6GcYCFyMM_4NMkVQCpam2GDMQ7NgDLkksZchz3SQ3STBrWu6mCciWlSeR3VdlogLpL6imK6NLqLePBwALr0UliH83i3ek1nZNdttTd3zmkDJkD9s",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-squid-game-2025",
@@ -6934,7 +7067,12 @@
     "imageUrl": "assets/mode-official/77f82bc3fd27ab72afc6.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1506/",
-    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfJSO2jWLu49VwnBfoQEHF2bhJ4KFSt8mNzUaJ5Y87hhQNy_RuD9Y1WbQKcYWZ-q3KkdNc15DtG6ogW5WYpXa2gs1srM5fKk3uvIebkau3sK42zaATgETMp1b7_K45rPvTr9HtUag?key=-1Af7hJvAmcQegd-MOzxdQ"
+    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfJSO2jWLu49VwnBfoQEHF2bhJ4KFSt8mNzUaJ5Y87hhQNy_RuD9Y1WbQKcYWZ-q3KkdNc15DtG6ogW5WYpXa2gs1srM5fKk3uvIebkau3sK42zaATgETMp1b7_K45rPvTr9HtUag?key=-1Af7hJvAmcQegd-MOzxdQ",
+    "ffPlaylists": [
+      "br",
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-battle-for-dreamspace-2025",
@@ -6967,7 +7105,11 @@
     "imageUrl": "assets/mode-official/1ab1f91085545f54ffdb.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1571/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/202512/ce7dbaba1668fbc1b949e3a8a186f433.jpeg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/202512/ce7dbaba1668fbc1b949e3a8a186f433.jpeg",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-lost-treasure-2026",
@@ -7000,7 +7142,11 @@
     "imageUrl": "assets/mode-official/6f2c87eb02ea4e9639f3.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1617/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20262/e57ecca0bd7133234d6168086463b2a2.jpeg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20262/e57ecca0bd7133234d6168086463b2a2.jpeg",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-jujutsu-awakening-2026",
@@ -7035,7 +7181,12 @@
     "imageUrl": "assets/mode-official/029201f03bfc4bbd9ebf.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1601/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20261/750ab34d6d0c6700dc3d4db90e6b7630.jpeg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20261/750ab34d6d0c6700dc3d4db90e6b7630.jpeg",
+    "ffPlaylists": [
+      "br",
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-fire-kickoff-2026",
@@ -7070,7 +7221,12 @@
     "imageUrl": "assets/mode-official/7538ec7134c03e332182.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1664",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20266/9fc3e4ce3c2065020eb8f43cf5e03e70.jpeg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20266/9fc3e4ce3c2065020eb8f43cf5e03e70.jpeg",
+    "ffPlaylists": [
+      "br",
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-naruto-nine-tails-2025",
@@ -7101,7 +7257,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfOiyNKFPeW6z4Z0c9caakTCqoT2r28-By2AG5kZt9zCElxG6fNy6ONXgMfUVYQPktIgy2xEDc-tCpKPBWXZc_-b64t59cLbGObA1zLhHtKva2B6FmF_UUQu8cydt97YxIeur8z?key=mNENg-5hBwW8AOYWU_nP5eo3",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-tsukuyomi-br-2025",
@@ -7134,7 +7294,11 @@
     "imageUrl": "assets/mode-official/45834f75b4d4eb3a08aa.gif",
     "imageSource": "Garena 官方火影联动战场能力配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1523/",
-    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXe72HDQTmV4x2IrJh2QEXhoheyCFAyBa08ZMbyPbwzWzP_Crm_UCaC9YiRZPGMqivuGmbL1CFw2npKIsdO9aAu8Il2jFty5BTSLcvJym0uMJQaXz_rPYcmGedOxGrXkPsvo8hIKnQ?key=Q4vf7hFy9wrHEe0i7R6BJg"
+    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXe72HDQTmV4x2IrJh2QEXhoheyCFAyBa08ZMbyPbwzWzP_Crm_UCaC9YiRZPGMqivuGmbL1CFw2npKIsdO9aAu8Il2jFty5BTSLcvJym0uMJQaXz_rPYcmGedOxGrXkPsvo8hIKnQ?key=Q4vf7hFy9wrHEe0i7R6BJg",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-chaos-events-2024",
@@ -7168,7 +7332,12 @@
     "imageUrl": "assets/mode-official/8a8fd2674364b64e1caf.jpg",
     "imageSource": "Garena Free Fire Global 官方混沌事件教学视频封面（本地归档）",
     "imageSourceUrl": "https://www.youtube.com/watch?v=sIsGCdsmP9w",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/sIsGCdsmP9w/maxresdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/sIsGCdsmP9w/maxresdefault.jpg",
+    "ffPlaylists": [
+      "br",
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-king-cs-2025",
@@ -7198,7 +7367,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20257/09265ef8aa8c602261b114cc20556cdf.jpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-hundred-rhythms-2021",
@@ -7363,7 +7536,11 @@
     "imageUrl": "assets/mode-official/cee21703f3cfc3fd6c7f.jpg",
     "imageSource": "Garena 官方 2019 年狂暴开幕玩法截图",
     "imageSourceUrl": "https://ff.garena.com/en/article/97/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official/b54d49224e2a06.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official/b54d49224e2a06.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-big-head-2019",
@@ -7395,7 +7572,11 @@
     "imageUrl": "assets/mode-official/227b4ab947600b6e46e2.jpg",
     "imageSource": "Free Fire 印度官方大头模式教程封面（2023年回归版）",
     "imageSourceUrl": "https://www.youtube.com/watch?v=XYAO5DdJL50",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/XYAO5DdJL50/maxresdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/XYAO5DdJL50/maxresdefault.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-cold-steel-2019",
@@ -7412,14 +7593,14 @@
       "近战对抗",
       "特殊武器"
     ],
-    "oneLineRule": "进入冷钢特殊玩法，使用投掷刀作为主要武器，在近距离空间里争取击杀。",
-    "mechanicChange": "官方 Spooky Night 补丁把 FF Knife 标记为 Cold Steel 特殊模式专属武器：投掷刀伤害倍率为 9999、最多 3 次使用、精度 100；官方页面没有进一步公开地图与胜负流程。",
-    "tempoImpact": "高伤害、低次数的投掷刀会把交战压缩成短距离瞄准和出手时机判断，玩家需要用有限次数换取确定击杀。",
-    "designObservation": "通过限制武器种类和出手次数，冷钢把 Free Fire 的射击反馈改造成纯粹的近战投掷博弈；规则简单但能明显改变瞄准节奏。",
-    "sourceUrl": "https://ff.garena.com/en/article/114",
-    "launchDate": "2019-10-14",
-    "launchLabel": "2019年10月补丁公布的特殊模式",
-    "launchNote": "官方补丁确认 Cold Steel 与 FF Knife 的专属关系，未披露完整地图规则。",
+    "oneLineRule": "使用投掷刀进行对抗；公告只给出专属武器参数，未公开地图与胜负规则。",
+    "mechanicChange": "官方 Spooky Night 补丁预告冷钢专属投掷刀 FF Knife：伤害参数 9999、最大蓄积次数 3、精度参数 100；原文没有给出地图、胜负规则、补充次数的方法或推出日期。",
+    "tempoImpact": "设计推断：高伤害参数与蓄积次数上限可能突出瞄准和出手时机；实际对局时长与武器补充规则未公开。",
+    "designObservation": "设计推断：专属投掷武器可改变既有射击动作；仅凭本篇参数，尚不能判断地图尺度、对抗距离和完整节奏。",
+    "sourceUrl": "https://ff.garena.com/en/article/114/",
+    "launchDate": null,
+    "launchLabel": "2019年10月14日预告，实际上线日待确认",
+    "launchNote": "官方原文为 Coming Soon in Special Mode - Cold Steel，未公布实际推出日期；2019-10-14 是公告日期。最大蓄积次数为 3，原文未说明是否及如何补充，不代表每局只能使用 3 次。",
     "gameplayTypes": [
       "casual"
     ],
@@ -7427,7 +7608,11 @@
     "imageUrl": "assets/mode-official/1430d2853ea2333c4997.jpg",
     "imageSource": "Free Fire 印度官方冷钢玩法教程封面（2023年回归版）",
     "imageSourceUrl": "https://www.youtube.com/watch?v=RDci1Cda_bg",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/RDci1Cda_bg/maxresdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/RDci1Cda_bg/maxresdefault.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-lone-wolf-ranked-2021",
@@ -7459,7 +7644,11 @@
     "imageUrl": "assets/mode-official/549bb49aa1b2d3d5fcb3.jpg",
     "imageSource": "Garena 官方玩法视频封面（本地归档）",
     "imageSourceUrl": "https://www.youtube.com/watch?v=2nnPj5hJp34",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/2nnPj5hJp34/maxresdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/2nnPj5hJp34/maxresdefault.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-big-head-2023",
@@ -7492,7 +7681,11 @@
     "imageUrl": "assets/mode-official/ed0fb15140737b5e61d5.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/968",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20231/7d3b994730d745b2f6ed65044d113124.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20231/7d3b994730d745b2f6ed65044d113124.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-big-head-training-2023",
@@ -7522,7 +7715,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://lh3.googleusercontent.com/rZ7bdL7qVYWcyZ9Hx3rvmutHN_TGNFS0qGyNeQbxX2OzFxzagykDC9zIEw1_bHhu2BLEi57OJ8rJHjve4oJvHa4QamPvpFKkMq07MwMiIGnNDQRN7v8a8mk5hiZJRETxn-lkA1faL6BBe5gbucuQBu0",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-rampage-classic-2023",
@@ -7553,7 +7750,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://lh4.googleusercontent.com/n8eSCP9oyTsXJLe7Lptg9TI6Xoiyb_aOprp9LVO3eOCml9GFjw-2uuOt7AjYsXczewdvLYL0eHAeiYuFqONE6Fmo_ZHwPP_yyovPc7wbDxkjj0PB3wxWvjTWNOcbziYsmj1WDqlKpk9dRPEQRq9yN_M",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-head-hunt-2023",
@@ -7583,7 +7784,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://lh4.googleusercontent.com/n8eSCP9oyTsXJLe7Lptg9TI6Xoiyb_aOprp9LVO3eOCml9GFjw-2uuOt7AjYsXczewdvLYL0eHAeiYuFqONE6Fmo_ZHwPP_yyovPc7wbDxkjj0PB3wxWvjTWNOcbziYsmj1WDqlKpk9dRPEQRq9yN_M",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-clash-squad-slay-2023",
@@ -7613,7 +7818,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://lh4.googleusercontent.com/n8eSCP9oyTsXJLe7Lptg9TI6Xoiyb_aOprp9LVO3eOCml9GFjw-2uuOt7AjYsXczewdvLYL0eHAeiYuFqONE6Fmo_ZHwPP_yyovPc7wbDxkjj0PB3wxWvjTWNOcbziYsmj1WDqlKpk9dRPEQRq9yN_M",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-spark-the-flame-2020",
@@ -7954,7 +8163,11 @@
     "imageUrl": "assets/mode-official/8ad60260d597fb40bd60.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/175/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official/f623f24c946102.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official/f623f24c946102.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-rush-hour-2018",
@@ -7985,7 +8198,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/c47178c357eb03.jpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-solo-death-race-2018",
@@ -8016,7 +8233,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/f73538cd71ed02.jpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-death-uprising-2019",
@@ -8047,7 +8268,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/65f97516594e02.jpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-spray-and-pray-2019",
@@ -8078,7 +8303,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/fba47a8e76df01.jpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-pet-rumble-2021",
@@ -8110,7 +8339,11 @@
     "imageUrl": "assets/mode-official/89156e3211d5351a952d.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/459/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/28_2.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/28_2.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-clash-squad-6v6-2021",
@@ -8143,7 +8376,11 @@
     "imageUrl": "assets/mode-official/63ece166f290ba4c35a7.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/617/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/GltZw/en_1.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/GltZw/en_1.jpg",
+    "ffPlaylists": [
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-kimbo-rush-hour-2022",
@@ -8176,7 +8413,11 @@
     "imageUrl": "assets/mode-official/b0326b735afb9b8bbc11.jpg",
     "imageSource": "Garena 官方活动配图（通用兜底，本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/735/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/d5830/en-1.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/d5830/en-1.jpg",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-pet-smash-2023",
@@ -8209,7 +8450,11 @@
     "imageUrl": "assets/mode-official/5c31d38f2c68d01e75a8.jpg",
     "imageSource": "Garena Free Fire North America 官方 Pet Smash 上线预告图",
     "imageSourceUrl": "https://x.com/FreeFire_NA/status/1640066100712075266",
-    "imageOriginalUrl": "https://pbs.twimg.com/media/FsKvbK4aMAE3snr.jpg"
+    "imageOriginalUrl": "https://pbs.twimg.com/media/FsKvbK4aMAE3snr.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-triple-wolves-2023",
@@ -8242,7 +8487,11 @@
     "imageUrl": "assets/mode-official/f8df7e94c47a403408e6.jpg",
     "imageSource": "Garena 官方玩法视频封面（本地归档）",
     "imageSourceUrl": "https://www.youtube.com/watch?v=DcUw6yNsw4Y",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/DcUw6yNsw4Y/maxresdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/DcUw6yNsw4Y/maxresdefault.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-color-hide-seek-2023",
@@ -8274,7 +8523,11 @@
     "imageUrl": "assets/mode-official/2b847af9da43b0f58207.jpg",
     "imageSource": "Garena 官方六周年公告 Color Hide & Seek 专属游乐园图",
     "imageSourceUrl": "https://ff.garena.in.th/en/article/1195/",
-    "imageOriginalUrl": "https://lh4.googleusercontent.com/5wZVUz2AUCAm3BMH75DpZPq_O12aa4LpWil0U4w8bCVmzSYDp5L5l1bo-EMPwtKjn1lOW_XwziAtxlV_KdyEYLp_FGQX_TWWtY75zxiUtVUIX-rS7xoQwjGhY1xHiRFgBy4n6xhBXlA90i3Rc5ETdDc"
+    "imageOriginalUrl": "https://lh4.googleusercontent.com/5wZVUz2AUCAm3BMH75DpZPq_O12aa4LpWil0U4w8bCVmzSYDp5L5l1bo-EMPwtKjn1lOW_XwziAtxlV_KdyEYLp_FGQX_TWWtY75zxiUtVUIX-rS7xoQwjGhY1xHiRFgBy4n6xhBXlA90i3Rc5ETdDc",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-color-spray-2023",
@@ -8306,7 +8559,11 @@
     "imageUrl": "assets/mode-official/a1fff1e4d9624ae1a421.jpg",
     "imageSource": "Garena 官方 Color 系列玩法视频封面（通用兜底，本地归档）",
     "imageSourceUrl": "https://www.youtube.com/watch?v=RwH5Nwvb1_0",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/RwH5Nwvb1_0/maxresdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/RwH5Nwvb1_0/maxresdefault.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-mystery-town-2023",
@@ -8338,7 +8595,11 @@
     "imageUrl": "assets/mode-official/b0326b735afb9b8bbc11.jpg",
     "imageSource": "Garena 官方活动配图（通用兜底，本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/735/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/d5830/en-1.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/d5830/en-1.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-fort-feud-2023",
@@ -8371,7 +8632,11 @@
     "imageUrl": "assets/mode-official/b0326b735afb9b8bbc11.jpg",
     "imageSource": "Garena 官方活动配图（通用兜底，本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/735/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/d5830/en-1.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/d5830/en-1.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-beat-carnival-2026",
@@ -8406,7 +8671,12 @@
     "imageUrl": "assets/mode-official/eda4cb2f431eb0d9aa14.jpg",
     "imageSource": "Garena 官方活动 / 玩法公告配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1634/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20263/91841c513eb0428364e98fc711b018e7.jpeg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20263/91841c513eb0428364e98fc711b018e7.jpeg",
+    "ffPlaylists": [
+      "br",
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-gintama-2026",
@@ -8440,7 +8710,11 @@
     "imageUrl": "assets/mode-official/4058cc79ce7a80b1bf79.jpg",
     "imageSource": "Garena 官方活动 / 玩法公告配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1655",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20264/22b113ffa434c352ec60a5772a0d45c2.jpeg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20264/22b113ffa434c352ec60a5772a0d45c2.jpeg",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-zombie-uprising-2-0-2025",
@@ -8796,7 +9070,12 @@
     "imageUrl": "assets/mode-official/cdd6fe24f9ac114cba21.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1421/",
-    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXd84Hh1gEpQuF9AidCH_FcJchNPvCQ_tiUxrilxS1NmFJqgmEjOao6er61fkAXi_e28mdEqGdXlu8gYxsN-CQ0skkeRVZp4KsSwr-jdW8SEeWNJ7mSB02uV6ZvlGoTr8gY_pR3MRA?key=XmDX5RryEeDAlx8KHymCO2ip"
+    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXd84Hh1gEpQuF9AidCH_FcJchNPvCQ_tiUxrilxS1NmFJqgmEjOao6er61fkAXi_e28mdEqGdXlu8gYxsN-CQ0skkeRVZp4KsSwr-jdW8SEeWNJ7mSB02uV6ZvlGoTr8gY_pR3MRA?key=XmDX5RryEeDAlx8KHymCO2ip",
+    "ffPlaylists": [
+      "br",
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-mad-snowman-2024",
@@ -8829,7 +9108,11 @@
     "imageUrl": "assets/mode-official/befd1f98b9a64672d2f7.jpg",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1421/",
-    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfd_upD_EDDSB0j2dryilAUrRNDmk29PuSWcdGJ_gOyQi7y_Bsd8Us3LqGJWxxRGA2TY5xV8z3sFNj670aR2OpeIum9CIDDTKwuHUxAUqR8wYKHauEACRXMBtOLIhKD9KHa4EawmQ?key=XmDX5RryEeDAlx8KHymCO2ip"
+    "imageOriginalUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfd_upD_EDDSB0j2dryilAUrRNDmk29PuSWcdGJ_gOyQi7y_Bsd8Us3LqGJWxxRGA2TY5xV8z3sFNj670aR2OpeIum9CIDDTKwuHUxAUqR8wYKHauEACRXMBtOLIhKD9KHa4EawmQ?key=XmDX5RryEeDAlx8KHymCO2ip",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-cs-peak-2025",
@@ -8860,7 +9143,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20257/f9545fc3dcfb5c73ac5aae6a9eab5ce3.jpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-flame-arena-2025",
@@ -8895,7 +9182,12 @@
     "imageUrl": "assets/mode-official/7c6fba51cd1788484cdc.jpg",
     "imageSource": "Garena 官方活动 / 玩法公告配图（本地归档）",
     "imageSourceUrl": "https://dl.dir.freefiremobile.com/common/web_event/aswqooiwd/EUlLuWP2.html?lang=en",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/202510/4b261d99d9af5b25f50ac440763eff34.jpeg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/202510/4b261d99d9af5b25f50ac440763eff34.jpeg",
+    "ffPlaylists": [
+      "br",
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-party-parkour-2026",
@@ -8926,7 +9218,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20261/dfd2ae1057a50161559dbc2770053c53.png",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-arena-showdown-2026",
@@ -8957,7 +9253,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20266/c5221298ce80aebe19f4b270160181ab.jpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-saddle-brawl-2026",
@@ -8988,7 +9288,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20266/c5221298ce80aebe19f4b270160181ab.jpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-gloo-wall-relay-2025",
@@ -9019,7 +9323,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfdM7n3cHagRUc5A9KOMavhQPojFq8V6QhXxuKDZLM_VaWWqhLpy75ULvdvBXZx1btmgDohtRcO7SU8N799nhuQ9EAMOvMbcbKL4ihpH7jKgBpqm-da0-sjrx4VezPcEuNgPuPCJw?key=32ofgQDwfWwtH5yMjp0mVA",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-target-arcade-2020",
@@ -9049,7 +9357,11 @@
     ],
     "isLtm": true,
     "imageUrl": "http://dl.dir.freefiremobile.com/common/web_event/officialwebsite/news/OB24_pn.jpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-bluehole-2020",
@@ -9458,7 +9770,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/202211/d0bdde148dc984c04a1d196d7e4a5d24.jpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-bomb-squad-5v5-2022",
@@ -9491,7 +9807,11 @@
     "imageUrl": "assets/mode-official/c4460ec2cf2efc4a3e4b.jpg",
     "imageSource": "Garena 官方玩法教学 / 动画视频封面（本地归档）",
     "imageSourceUrl": "https://www.youtube.com/watch?v=hTSx52F8J_c",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/hTSx52F8J_c/maxresdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/hTSx52F8J_c/maxresdefault.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-mini-zone-2018",
@@ -9805,7 +10125,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/hash/50daba2776b6672d3ceb86f4cf470180jpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-metro-royale-uncover-2021",
@@ -9932,7 +10256,11 @@
     "imageUrl": "assets/mode-official/307dcd12ce8f48fbccb0.png",
     "imageSource": "Garena 官方公告玩法配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/137",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/OB19/ofweb/DEV%20BLOG2.png"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/OB19/ofweb/DEV%20BLOG2.png",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-rampage-redemption-2019",
@@ -9965,7 +10293,11 @@
     "imageUrl": "assets/mode-official/146bf261309a70fe87b3.jpg",
     "imageSource": "Garena 官方 2019 年狂暴：救赎活动主视觉",
     "imageSourceUrl": "https://ff.garena.com/en/article/97/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official/200b58c51bab02.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official/200b58c51bab02.jpg",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-rampage-uprising-2020",
@@ -9996,7 +10328,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/hash/fa9f90eae71a6c94bfe3abd118f2c1b0jpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-amusement-park-2020",
@@ -10962,7 +11298,11 @@
     "imageUrl": "assets/mode-official/fe17cce889c3cf1033bc.jpg",
     "imageSource": "Garena 官方僵尸猎场轮换活动共用配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1332/",
-    "imageOriginalUrl": "https://lh7-us.googleusercontent.com/MtA4OWS7z9LnFhgSeRi5ECDj0cEeEgxNKkfhIZ5wbDF2_RKxSI8Cu8semJA-q7HD20-CaSEy4W3YbwadzBM7M1n4HjmTazob1DAuFWAxsTXGpaQXjrscecxG_qvX_lPEY3LpBeE7YF3ZK1ECQK7DC0U"
+    "imageOriginalUrl": "https://lh7-us.googleusercontent.com/MtA4OWS7z9LnFhgSeRi5ECDj0cEeEgxNKkfhIZ5wbDF2_RKxSI8Cu8semJA-q7HD20-CaSEy4W3YbwadzBM7M1n4HjmTazob1DAuFWAxsTXGpaQXjrscecxG_qvX_lPEY3LpBeE7YF3ZK1ECQK7DC0U",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-kill-secured-2020",
@@ -10994,7 +11334,11 @@
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg",
     "imageSource": "Garena 官方小队对抗模式封面（通用兜底）",
     "imageSourceUrl": "https://ff.garena.com/en/article/67/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-gun-king-squad-2020",
@@ -11026,7 +11370,11 @@
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg",
     "imageSource": "Garena 官方小队对抗模式封面（通用兜底）",
     "imageSourceUrl": "https://ff.garena.com/en/article/67/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-team-deathmatch-2020",
@@ -11056,7 +11404,11 @@
     ],
     "isLtm": false,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/F7921362A14C9E8909A550289B190A5A.jpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-payload-2019",
@@ -11122,7 +11474,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/448a7c668a3305.jpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-zombie-invasion-2022",
@@ -11154,7 +11510,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/hash/e84a6678683304352198f444018681afjpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-jujutsu-clash-2026",
@@ -11188,7 +11548,11 @@
     "imageUrl": "assets/mode-official/371e7dd6af92077cabc9.png",
     "imageSource": "Garena 官方公告活动配图（本地归档）",
     "imageSourceUrl": "https://ff.garena.com/en/article/1595/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20261/dfd2ae1057a50161559dbc2770053c53.png"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20261/dfd2ae1057a50161559dbc2770053c53.png",
+    "ffPlaylists": [
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-halloween-capture-the-camp-2020",
@@ -11415,7 +11779,11 @@
     "isLtm": false,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg",
     "imageSourceUrl": "https://ff.garena.com/en/article/67/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official/cdca4e852fbe31d356eb4d7b7ce1354a489fa2fdeaf0.jpg",
+    "ffPlaylists": [
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-clash-squad-duo-active-skills-2023",
@@ -11447,7 +11815,11 @@
     "isLtm": true,
     "imageUrl": "assets/mode-official/66dd3a4b6a994bffb211.png",
     "imageSourceUrl": "https://ff.garena.com/en/article/1170/",
-    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20235/d8dfdf072a6466e968fdfafa1cb0d236.png"
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20235/d8dfdf072a6466e968fdfafa1cb0d236.png",
+    "ffPlaylists": [
+      "cs"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-color-cube-2023",
@@ -11480,7 +11852,11 @@
     "isLtm": true,
     "imageUrl": "assets/mode-official/a1fff1e4d9624ae1a421.jpg",
     "imageSourceUrl": "https://www.youtube.com/watch?v=RwH5Nwvb1_0",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/RwH5Nwvb1_0/maxresdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/RwH5Nwvb1_0/maxresdefault.jpg",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "game": "PUBG Mobile",
@@ -12544,7 +12920,11 @@
     "imageSource": "Garena 官方玩法视频封面（本地归档）",
     "imageUrl": "assets/mode-official/1218b29c8c934185dc62.jpg",
     "imageSourceUrl": "https://www.youtube.com/watch?v=Rg4Vf9sDH0o",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/Rg4Vf9sDH0o/maxresdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/Rg4Vf9sDH0o/maxresdefault.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "pubgm-wow-erangel-mod-2023",
@@ -12640,7 +13020,11 @@
     ],
     "isLtm": true,
     "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20266/6d20f32bc589a0b55673e34adf8328c0.jpg",
-    "imageSource": "官方封面（来源页）"
+    "imageSource": "官方封面（来源页）",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-craftland-pve-rush-2022",
@@ -12673,7 +13057,11 @@
     ],
     "isLtm": false,
     "imageSource": "官方封面（来源页）",
-    "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/ytg7t/en-6.jpg"
+    "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/ytg7t/en-6.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-craftland-pve-endurance-2022",
@@ -12706,7 +13094,11 @@
     ],
     "isLtm": false,
     "imageSource": "官方封面（来源页）",
-    "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/ytg7t/en-6.jpg"
+    "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/aswqooiwd/ytg7t/en-6.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-lone-wolf-cup-2023",
@@ -12738,7 +13130,11 @@
     ],
     "isLtm": true,
     "imageSource": "官方封面（来源页）",
-    "imageUrl": "https://lh5.googleusercontent.com/sv538Ry6azVBE5d9I_5gnrZauHqYfZ0FXVJ68u1QOVrx3yWrwkmCF0CZ6S2Ye_0PFZk9HL-gfI8wrsLF8YoOAI9SPFiwizwk-Vpa7YGYvDH0fZ3UGutL57XDNIjZ3IisvzyAUZ1Qu6G7HKabUg-68DM"
+    "imageUrl": "https://lh5.googleusercontent.com/sv538Ry6azVBE5d9I_5gnrZauHqYfZ0FXVJ68u1QOVrx3yWrwkmCF0CZ6S2Ye_0PFZk9HL-gfI8wrsLF8YoOAI9SPFiwizwk-Vpa7YGYvDH0fZ3UGutL57XDNIjZ3IisvzyAUZ1Qu6G7HKabUg-68DM",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "hpjy-fast-bomb-2024",
@@ -14950,7 +15346,11 @@
     ],
     "isLtm": true,
     "imageSourceUrl": "https://www.youtube.com/watch?v=T66mnRvvGfE",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/T66mnRvvGfE/maxresdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/T66mnRvvGfE/maxresdefault.jpg",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "free-fire-chosen-one-2020",
@@ -14983,7 +15383,11 @@
     ],
     "isLtm": true,
     "imageSourceUrl": "https://www.youtube.com/watch?v=FrkBlE3kNDY",
-    "imageOriginalUrl": "https://i.ytimg.com/vi/FrkBlE3kNDY/maxresdefault.jpg"
+    "imageOriginalUrl": "https://i.ytimg.com/vi/FrkBlE3kNDY/maxresdefault.jpg",
+    "ffPlaylists": [
+      "other"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。"
   },
   {
     "id": "fortnite-scavenger-pop-up-cup-2018",
@@ -15665,7 +16069,7 @@
     "game": "Free Fire",
     "modeName": "九尾回归事件（Nine Tails Event Return）",
     "year": "2026",
-    "date": "2026-09-10",
+    "date": "2026-09-16",
     "tags": [
       "br-ltm",
       "power",
@@ -15681,14 +16085,20 @@
     "tempoImpact": "开局随机事件会迫使队伍临时改变跳伞和搜刮计划；中期可控轰炸把地图级威胁交给玩家争夺，既能逼出掩体中的敌人，也会围绕控制装置制造新的交火中心。",
     "designObservation": "回归活动通过加入可争夺、可指定目标的地图级攻击，把原本偏环境演出的九尾事件变成玩家主动操控的战术资源，因此值得作为实质规则变化单独追踪。",
     "sourceUrl": "https://ff.garena.com/en/article/1712/",
-    "imageSource": "本地整理封面（依据官方模式资料设计；官方原图待确认）",
-    "launchDate": "2026-09-10",
-    "launchLabel": "2026年9月10日随 OB55 补丁公布并开放",
-    "launchNote": "这是 2025 年九尾袭击百慕大规则的实质变化回归：保留开局随机九尾事件，同时新增玩家争夺写轮眼控制权并指定尾兽玉轰炸区域。各地区服务时间可能略有差异。",
+    "imageSource": "Garena 官方九尾回归活动配图（本地归档；图内注明 9 月 16 日随补丁推出）",
+    "launchDate": "2026-09-16",
+    "launchLabel": "2026年9月16日（官方公告配图所列补丁日期）",
+    "launchNote": "这是 2025 年九尾袭击百慕大规则的实质变化回归：保留开局随机九尾事件，同时新增玩家争夺写轮眼控制权并指定尾兽玉轰炸区域。各地区服务时间可能略有差异。 官方公告发布于 2026-09-10；该页九尾回归配图注明“with the new patch on 16 Sep”，据此将活动日期修正为 2026-09-16，原 9 月 10 日是公告日，不是活动开放日。",
     "gameplayTypes": [
       "br"
     ],
     "isLtm": true,
-    "imageUrl": "assets/modes/generated/free-fire-nine-tails-return-2026.svg"
+    "imageUrl": "assets/ff-patches/1712-01.jpg",
+    "ffPlaylists": [
+      "br"
+    ],
+    "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1712/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20269/97ef11e9b9a48933b40695952fcd0793.jpeg"
   }
 ]

@@ -1,0 +1,190 @@
+{
+  "reviewedAt": "2026-09-19",
+  "recordCount": 14,
+  "assetCount": 11,
+  "notes": "官方原图归档；3 条记录使用对应版本封面，卡片与详情明确标注。CS 新投掷物改用正文中实际展示它的 BR／CS 更新图。",
+  "images": [
+    {
+      "recordId": "free-fire-update-peak-rework-2023-08-08",
+      "path": "assets/core-updates/free-fire-1213-8.jpg",
+      "sourcePageUrl": "https://ff.garena.com/en/article/1213/",
+      "assetSourceUrl": "https://lh3.googleusercontent.com/rZ7bdL7qVYWcyZ9Hx3rvmutHN_TGNFS0qGyNeQbxX2OzFxzagykDC9zIEw1_bHhu2BLEi57OJ8rJHjve4oJvHa4QamPvpFKkMq07MwMiIGnNDQRN7v8a8mk5hiZJRETxn-lkA1faL6BBe5gbucuQBu0",
+      "scope": "section",
+      "caption": "百慕大地图改造官方配图，包含 Peak、Hangar 与 Factory",
+      "dimensions": [
+        1400,
+        700
+      ],
+      "sha256": "4d3f618d64b947f895c383a02dc690f64472dc65a4d518942d28cecb8562b40c"
+    },
+    {
+      "recordId": "free-fire-update-hangar-routes-2023-08-08",
+      "path": "assets/core-updates/free-fire-1213-8.jpg",
+      "sourcePageUrl": "https://ff.garena.com/en/article/1213/",
+      "assetSourceUrl": "https://lh3.googleusercontent.com/rZ7bdL7qVYWcyZ9Hx3rvmutHN_TGNFS0qGyNeQbxX2OzFxzagykDC9zIEw1_bHhu2BLEi57OJ8rJHjve4oJvHa4QamPvpFKkMq07MwMiIGnNDQRN7v8a8mk5hiZJRETxn-lkA1faL6BBe5gbucuQBu0",
+      "scope": "section",
+      "caption": "百慕大地图改造官方配图，包含 Peak、Hangar 与 Factory",
+      "dimensions": [
+        1400,
+        700
+      ],
+      "sha256": "4d3f618d64b947f895c383a02dc690f64472dc65a4d518942d28cecb8562b40c"
+    },
+    {
+      "recordId": "free-fire-update-coin-machine-2023-10-30",
+      "path": "assets/core-updates/free-fire-1266-5.jpg",
+      "sourcePageUrl": "https://ff.garena.com/en/article/1266/",
+      "assetSourceUrl": "https://lh7-us.googleusercontent.com/uLrTzcYuw8Ix9rO2KBHrjz20C35BYW-tukHHDjET-g43mBVhqWvB0s4MTQuCaaGM4iU_f5_4IssS2qGXSsWT7aivIGMz2uyWQrCE9UaULdpmnjD_tL2c1sjUysl20fbPl5FxjWxNnPxV2y_obUK2Wwk",
+      "scope": "specific",
+      "caption": "官方 FF Coin 更新图，展示金币机与金币获取方式",
+      "dimensions": [
+        724,
+        408
+      ],
+      "sha256": "f0e4c997a9d9ca15d17d8ed18df36cfa224ba4c3762f941116b936de99d07392"
+    },
+    {
+      "recordId": "free-fire-update-portal-go-2023-10-30",
+      "path": "assets/core-updates/free-fire-1266-6.jpg",
+      "sourcePageUrl": "https://ff.garena.com/en/article/1266/",
+      "assetSourceUrl": "https://lh7-us.googleusercontent.com/9pS4ijKS3PQzN1hioyC7pYd57akNjrnKbVPsxNO5Vn2oWFjhP5PIUQBKqJDrvmLqZjS2aNb_rM8m5kHBcD_2WPe1rKcxIrCGc8PatFUEs9xzqddUBD3Lbf0qHskFyJa7AmckSVvUBBRadMmujR2JKOU",
+      "scope": "section",
+      "caption": "官方新道具日历，包含 Portal Go 与同期其他道具",
+      "dimensions": [
+        1600,
+        978
+      ],
+      "sha256": "6b1cd2fe6b5070e32252d010365cda6a8d061bdce745a48f2654ed50bac46ed1"
+    },
+    {
+      "recordId": "free-fire-update-grav-labs-rework-2024-01-22",
+      "path": "assets/core-updates/free-fire-1306-9.jpg",
+      "sourcePageUrl": "https://ff.garena.com/en/article/1306/",
+      "assetSourceUrl": "https://lh7-us.googleusercontent.com/QYn4W8OYbRWuufOyyvJYcn1XjrTomPf_7tra9pyq52HInsPLxxopL2WHrBhWGgKc-k5ZAwzbfw7drqZDy4IDrjL5rOnCs6OnRzeI4RKF79lm2MEzOCvXLZ9d1ZRxV1UMdwQBknjvSep7EYnUfIYmIw8",
+      "scope": "section",
+      "caption": "官方 NeXTerra 2.0 地图更新总览，包含 Grav Labs 改造",
+      "dimensions": [
+        1070,
+        600
+      ],
+      "sha256": "67bd771eca710f2c0eda480d818eb923a6ef329fced15ca0b0d7d9cbbda0ea6f"
+    },
+    {
+      "recordId": "free-fire-update-solara-slides-2025-05-21",
+      "path": "assets/core-updates/free-fire-1473-5.jpg",
+      "sourcePageUrl": "https://ff.garena.com/en/article/1473/",
+      "assetSourceUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20255/a1ca90c7d11be020775339001e767790.jpg",
+      "scope": "specific",
+      "caption": "官方 Solara 新地图配图，展示城市和高架滑道",
+      "dimensions": [
+        1070,
+        600
+      ],
+      "sha256": "a86c23087f8a3b889c3002382732b960a4eb426999bbabf6ba2c9408a321fbe3"
+    },
+    {
+      "recordId": "free-fire-update-gloo-maker-supply-2025-07-30",
+      "path": "assets/core-updates/free-fire-1511-hero-0.jpg",
+      "sourcePageUrl": "https://ff.garena.com/en/article/1511/",
+      "assetSourceUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20257/2c310004f2e0a93cd3e89e5da8bc91a9.jpg",
+      "scope": "version",
+      "caption": "OB50 官方补丁封面；版本配图，未展示本条冰墙生成器调整",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "sha256": "ee8b954df6d99a3e64cd93a807640c8e02fe29663be825681c76121cd32caf1d"
+    },
+    {
+      "recordId": "free-fire-update-parachute-control-2025-07-30",
+      "path": "assets/core-updates/free-fire-1511-hero-0.jpg",
+      "sourcePageUrl": "https://ff.garena.com/en/article/1511/",
+      "assetSourceUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20257/2c310004f2e0a93cd3e89e5da8bc91a9.jpg",
+      "scope": "version",
+      "caption": "OB50 官方补丁封面；版本配图，未展示本条跳伞操作调整",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "sha256": "ee8b954df6d99a3e64cd93a807640c8e02fe29663be825681c76121cd32caf1d"
+    },
+    {
+      "recordId": "free-fire-update-breakable-arsenal-2026-01-09",
+      "path": "assets/core-updates/free-fire-1595-7.jpg",
+      "sourcePageUrl": "https://ff.garena.com/en/article/1595/",
+      "assetSourceUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20261/74a29105b7c68b7ae56279de4eab35da.jpg",
+      "scope": "section",
+      "caption": "OB52 官方战场机制总览，包含可破坏军械库与终极空投",
+      "dimensions": [
+        1070,
+        600
+      ],
+      "sha256": "52306d90fe8c632dac20019d517aa1d20d6a35a55caeb798c5c4526e94360640"
+    },
+    {
+      "recordId": "free-fire-update-ultra-airdrop-2026-01-09",
+      "path": "assets/core-updates/free-fire-1595-7.jpg",
+      "sourcePageUrl": "https://ff.garena.com/en/article/1595/",
+      "assetSourceUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20261/74a29105b7c68b7ae56279de4eab35da.jpg",
+      "scope": "section",
+      "caption": "OB52 官方战场机制总览，包含终极空投与可破坏军械库",
+      "dimensions": [
+        1070,
+        600
+      ],
+      "sha256": "52306d90fe8c632dac20019d517aa1d20d6a35a55caeb798c5c4526e94360640"
+    },
+    {
+      "recordId": "free-fire-update-early-team-revival-2026-01-09",
+      "path": "assets/core-updates/free-fire-1595-8.jpg",
+      "sourcePageUrl": "https://ff.garena.com/en/article/1595/",
+      "assetSourceUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20261/9b0b8d57881cdd21274c27f7d8467e5b.jpg",
+      "scope": "section",
+      "caption": "OB52 官方返场机制更新图，包含单排与组队返场",
+      "dimensions": [
+        1070,
+        600
+      ],
+      "sha256": "6ad592921e321d5a25ab60d394010f3dfe84a93fbc23701711e602de9bd8d125"
+    },
+    {
+      "recordId": "free-fire-update-device-slots-2026-09-10",
+      "path": "assets/core-updates/free-fire-1712-hero-0.jpg",
+      "sourcePageUrl": "https://ff.garena.com/en/article/1712/",
+      "assetSourceUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20269/1cfdbe17006d0170cd9bf8b97f73e080.jpg",
+      "scope": "version",
+      "caption": "OB55 官方补丁封面；版本配图，未展示本条装置槽位调整",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "sha256": "dc330aae2588725475c49937468df00f1c744d7f46559f347f83043e3f89fd85"
+    },
+    {
+      "recordId": "free-fire-update-cs-throwables-2026-09-10",
+      "path": "assets/ff-patches/1712-04.jpg",
+      "sourcePageUrl": "https://ff.garena.com/en/article/1712/",
+      "assetSourceUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20269/4916366f5b345410dde655a038c7aa93.jpeg",
+      "scope": "section",
+      "caption": "OB55 官方 BR／CS 更新总览，右侧展示火焰手雷、声呐手雷及烟雾效果（官方素材本地归档）",
+      "dimensions": [
+        1070,
+        600
+      ],
+      "sha256": "d18c6aea6d10c95f3fec3b12a818aebe1b62acafd265c71bf26a74ef9588b952"
+    },
+    {
+      "recordId": "free-fire-update-october-weapons-2026-09-10",
+      "path": "assets/core-updates/free-fire-1712-10.jpg",
+      "sourcePageUrl": "https://ff.garena.com/en/article/1712/",
+      "assetSourceUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20269/f2088183bc327d892b3ab2de8f242cf3.jpeg",
+      "scope": "specific",
+      "caption": "OB55 官方新武器预告图，展示 M7、RPK、Hawk 与 Skorp；图内注明 10 月 1 日",
+      "dimensions": [
+        1070,
+        600
+      ],
+      "sha256": "bac8ad6d7b107cd0b1c435d82aea5839c4f832f9cf1d1049265b32cef66b9004"
+    }
+  ]
+}
