@@ -1,14 +1,55 @@
 {
-  "updatedAt": "2026-09-19",
+  "updatedAt": "2026-09-27",
   "purpose": "基础局内体验更新的独立覆盖账本。mode-source-coverage.json 的旧模式扫描结果不可视为此类更新已经收全。",
   "policyDocument": "docs/core-experience-updates.md",
   "dataFile": "data/core-updates.json",
   "games": {
     "Apex Legends": {
-      "coverageStatus": "not_started",
-      "recordCount": 0,
-      "checkedSources": [],
-      "nextRange": "按最新官方补丁开始基础体验更新扫描，再制定历史回填批次。"
+      "coverageStatus": "ongoing_backfill",
+      "recordCount": 2,
+      "checkedSources": [
+        {
+          "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes",
+          "publishedDate": "2026-09-14",
+          "versionLabel": "Marked Split 2",
+          "reviewedAt": "2026-09-27",
+          "reviewScope": "通读目录及英雄、战利品、武器、地图、外卡、排位、音频、修复和易用性章节；本轮先发布资源循环与外卡进化规则两条可独立检索的基础更新。",
+          "checkedSections": [
+            "Legend Buffs / Nerfs",
+            "Loot & Attachments",
+            "Maps",
+            "Wildcard",
+            "Ranked",
+            "Audio",
+            "Bug Fixes",
+            "Quality of Life"
+          ],
+          "recordIds": [
+            "apex-update-midseason-loot-2026-09-15",
+            "apex-update-wildcard-evo-carryover-2026-09-15"
+          ],
+          "remainingCandidates": [
+            "英雄与武器逐项数值仍需按对象拆分；地图 150 余项修复未逐条公开列出，不能据摘要宣称完整。"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "outsideCoreDisposition": [
+            {
+              "title": "反作弊与排位日程",
+              "sourceHeading": "Anti Cheat Update / Ranked",
+              "summary": "反作弊执法与排位梯级日期不直接改变单场基础规则，本轮登记为系统与排期信息。",
+              "disposition": "outside_core_scope_indexed"
+            }
+          ],
+          "imageCoverage": {
+            "checkedAt": "2026-09-27",
+            "status": "version_art_only_for_published_records"
+          },
+          "timingReview": "公告发布于 2026-09-14，正文确认 Split 2 于 2026-09-15 开始。",
+          "routingNotes": "新增两条基础体验更新，不计新增模式；Street Fighter 6 外卡接管另进 modes.json。"
+        }
+      ],
+      "nextRange": "继续拆分 Marked 中期补丁的英雄、武器与操作修复；随后回填 2026 年更早补丁。"
     },
     "Fortnite": {
       "coverageStatus": "not_started",

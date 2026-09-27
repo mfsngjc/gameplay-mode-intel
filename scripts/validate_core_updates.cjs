@@ -9,14 +9,14 @@ const read = (name) => fs.readFileSync(path.join(root, name), 'utf8');
 const updates = JSON.parse(read('data/core-updates.json'));
 const modes = JSON.parse(read('data/modes.json'));
 const evidence = JSON.parse(read('data/core-update-image-sources.json'));
-const coverage = JSON.parse(read('data/core-update-source-coverage.json')).games['Free Fire'];
+const coverageGames = JSON.parse(read('data/core-update-source-coverage.json')).games;
 const ids = new Set(modes.map((r) => r.id));
 for (const record of updates) {
   assert.ok(!ids.has(record.id), 'Unique ID: ' + record.id); ids.add(record.id);
   assert.equal(record.contentKind, 'core_update');
   assert.equal(record.publicationStatus, 'ready');
   assert.ok(record.sourceModeIds.every((id) => modes.some((m) => m.id === id)), 'Related modes exist');
-  assert.equal(new URL(record.sourceUrl).hostname, 'ff.garena.com');
+  assert.ok(['ff.garena.com', 'www.ea.com'].includes(new URL(record.sourceUrl).hostname), 'Approved official source host');
   const asset = evidence.images.find((r) => r.recordId === record.id);
   assert.ok(asset, 'Image provenance for ' + record.id);
   assert.equal(asset.path, record.imageUrl);
@@ -24,10 +24,10 @@ for (const record of updates) {
   const bytes = fs.readFileSync(path.join(root, asset.path));
   assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), asset.sha256, 'Unmodified official image');
   assert.ok(asset.dimensions[0] >= 600 && asset.dimensions[1] >= 300);
-  assert.match(new URL(asset.assetSourceUrl).hostname, /^(cdn\.wildflamestudio\.com|lh[\w-]*\.googleusercontent\.com)$/);
+  assert.match(new URL(asset.assetSourceUrl).hostname, /^(cdn\.wildflamestudio\.com|lh[\w-]*\.googleusercontent\.com|drop-assets\.ea\.com)$/);
   if (record.imageScope === 'version') assert.match(record.imageSource, /版本配图，未展示本条/);
 }
-assert.equal(coverage.coverCount, updates.length);
+assert.equal(Object.values(coverageGames).reduce((sum, game) => sum + (game.recordCount || 0), 0), updates.length);
 assert.equal(evidence.recordCount, updates.length);
 const context = vm.createContext({ assert, updates, modes,
   document: { querySelector: () => ({}), baseURI: 'http://127.0.0.1:4173/' },
@@ -37,9 +37,9 @@ vm.runInContext(`
   state.modes = [...modes.map((m) => ({...m, kind: 'modes'})), ...updates.map(normalizeCoreUpdate)];
   state.entries = [...state.modes];
   state.gameFilter = 'Free Fire';
-  assert.equal(getFilteredEntries().length, modes.filter(m => m.game === 'Free Fire').length + updates.length);
+  assert.equal(getFilteredEntries().length, modes.filter(m => m.game === 'Free Fire').length + updates.filter(r => r.game === 'Free Fire').length);
   state.contentFilter = 'core_update';
-  assert.equal(getFilteredEntries().length, updates.length);
+  assert.equal(getFilteredEntries().length, updates.filter(r => r.game === 'Free Fire').length);
   state.contentFilter = 'mode';
   assert.equal(getFilteredEntries().length, modes.filter(m => m.game === 'Free Fire').length);
   state.contentFilter = 'core_update';
@@ -48,7 +48,7 @@ vm.runInContext(`
   state.filter = 'all';
   for (const category of Object.keys(coreUpdateCategories)) {
     state.updateCategory = category;
-    assert.equal(getFilteredEntries().length, updates.filter(r => r.categories.includes(category)).length);
+    assert.equal(getFilteredEntries().length, updates.filter(r => r.game === 'Free Fire' && r.categories.includes(category)).length);
   }
   state.updateCategory = 'all';
   state.query = 'OB52';

@@ -16100,5 +16100,66 @@
     "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。",
     "imageSourceUrl": "https://ff.garena.com/en/article/1712/",
     "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/20269/97ef11e9b9a48933b40695952fcd0793.jpeg"
+  },
+  {
+    "id": "fortnite-kingdom-hearts-power-hours-2026",
+    "game": "Fortnite",
+    "modeName": "王国之心强力时段（KINGDOM HEARTS Power Hours）",
+    "year": "2026",
+    "date": "2026-09-19",
+    "tags": [
+      "br-ltm",
+      "power"
+    ],
+    "type": [
+      "限时 BR 规则",
+      "统一出生装备",
+      "联动能力"
+    ],
+    "oneLineRule": "所有玩家开局都携带王国之钥和海盐冰淇淋，以统一的近战能力与恢复资源快速进入联动主题战斗。",
+    "mechanicChange": "官方在 2026年9月19日安排两个两小时开放窗口。进入该时段后，本场所有玩家开局都获得王国之钥（Kingdom Key）和一份海盐冰淇淋（Sea Salt Ice Cream）。王国之钥可发动连续近战攻击并召下雷击；海盐冰淇淋可恢复生命值与护盾。\n\n同一联动还为常规「规则改写」赛季加入两种控制台效果：恢复规则会让任何武器淘汰的玩家掉落治疗球；升级规则会在每名小队成员所在位置生成一把神话品质王国之钥。这两项属于父玩法的规则池更新，不另外拆卡。",
+    "tempoImpact": "全员带着同样的主题武器与恢复道具落地，减少了寻找关键装备的时间，让开局更快围绕近战突进、雷击和续航发生交火。",
+    "designObservation": "短时开放的统一出生装备可以把联动核心机制直接交到每位玩家手里，不依赖随机搜刮；同时保留 BR 的落点、缩圈与小队生存结构。",
+    "sourceUrl": "https://www.fortnite.com/news/journey-across-worlds-with-kingdom-hearts-in-fortnite",
+    "imageUrl": "assets/mode-official/fortnite-kingdom-hearts-2026.jpg",
+    "imageSource": "Epic 官方《Fortnite》×《王国之心》公告主视觉（本地归档）",
+    "imageAssetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmtxdeqim56ue06n0kbu04aq4",
+    "launchDate": "2026-09-19",
+    "launchLabel": "2026年9月19日 2–4 PM、9–11 PM（美东时间）",
+    "launchNote": "Epic 官方公告列出两个 Power Hours 开放窗口；公告未说明这套统一出生装备在其他日期继续开放，因此按限时玩法记录。中文专名为说明性译法，括号保留英文原名。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-street-fighter-wildcard-takeover-2026",
+    "game": "Apex Legends",
+    "modeName": "街头霸王 6 外卡接管（Street Fighter 6 Wildcard Takeover）",
+    "year": "2026",
+    "date": "2026-09-22",
+    "tags": [
+      "br-ltm",
+      "power"
+    ],
+    "type": [
+      "外卡模式",
+      "第三人称格斗形态",
+      "终局乱斗"
+    ],
+    "oneLineRule": "收集代币蓄满战斗槽后变身格斗家，以第三人称视角使用专属动作；活到最终回合还要在快速返场的自由乱斗中坚持到最后一队。",
+    "mechanicChange": "玩家在奥林匹斯地图收集代币，为战斗槽（Fight Gauge）充能。蓄满后可启动格斗家形态（Fighter Form），镜头切换为第三人称，并获得大幅减伤、强化移动、格挡和一套新的专属招式。\n\n存活到最终回合的队伍会进入终局乱斗（Showdown）。倒地或正在返场的玩家会立刻重新投入战斗，所有人持续使用波动拳、升龙拳、瑜伽烈阳和气功掌等主题能力，直到只剩一支小队。奥林匹斯同时加入卢克健身房、可破坏的拳击卡车与街机装置等地图改造。",
+    "tempoImpact": "代币把队伍引向地图资源点，格斗家形态让接近、格挡和爆发输出替代部分常规枪战。终局取消长返场等待后，最后一圈会变成连续重返战场的高密度混战。",
+    "designObservation": "把联动能力放进可积累的战斗槽，能让玩家先通过地图行动取得变身机会；终局再用即时返场和专属招式集中兑现主题，而不必重写整场 BR 的生存目标。",
+    "sourceUrl": "https://www.ea.com/news/apex-legends-vs-street-fighter-6-is-here",
+    "imageUrl": "https://drop-assets.ea.com/images/17lV0DGFzT04g9EaTi43XK/445ce65ba080313cb5ae9198c52232ff/ApexS30_SnapBack_3840x2160.jpg?im=AspectCrop%3D%2816%2C9%29%2CxPosition%3D0.26640625%2CyPosition%3D0.3023148148148148",
+    "imageSource": "EA 官方 Apex Legends × Street Fighter 6 联动活动主视觉",
+    "launchDate": "2026-09-22",
+    "launchLabel": "2026年9月22日至10月13日",
+    "launchNote": "EA 官方 2026年9月22日公告确认活动已开放并给出结束日期。此卡记录外卡父玩法的限时实质规则变化，不与常驻外卡卡片合并。中文专名采用说明性译法。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
   }
 ]

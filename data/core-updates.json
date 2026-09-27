@@ -761,5 +761,102 @@
     ],
     "ffPlaylistEvidence": "按本条来源已整理的适用模式标注；其他为独立玩法或未明确属于 BR/CS 的案例。",
     "patchId": "ff-patch-1712"
+  },
+  {
+    "id": "apex-update-midseason-loot-2026-09-15",
+    "objectKey": "apex-midseason-loot-flow",
+    "contentKind": "core_update",
+    "game": "Apex Legends",
+    "title": "中期补丁提高治疗与重置补给箱供给",
+    "categories": [
+      "loot_economy",
+      "equipment"
+    ],
+    "changeType": "balance",
+    "updateScope": "core",
+    "duration": "unspecified",
+    "gameplayTypes": [
+      "br"
+    ],
+    "affectedModes": [
+      "公开比赛",
+      "排位赛"
+    ],
+    "mapNames": [],
+    "sourceModeIds": [],
+    "sourceMapIds": [],
+    "before": "治疗品偏少；重置后的补给箱不足以支持终局快速补货；武器辅助只覆盖少量手枪、霰弹枪和转换者冲锋枪。",
+    "after": "场景治疗品增加、弹药略减；重置补给箱平均物品数提高，并增加治疗、弹药、生存槽物品和增幅器。空箱概率显著降低；无武器时开启首个补给箱，武器辅助可从全部基础武器中生成一把。",
+    "playerImpact": "队伍在中后期更容易从重置补给箱补齐续航，落地没有武器时也更可能拿到可用主武器。",
+    "designObservation": "设计推断：补给箱重置可以承担终局补货功能，但需要控制治疗、弹药和战力提升的密度。",
+    "versionLabel": "Marked Split 2",
+    "publishedDate": "2026-09-14",
+    "effectiveDate": "2026-09-15",
+    "effectiveDateStatus": "confirmed",
+    "timingNote": "官方补丁明确说明 Split 2 于 2026-09-15 开始。",
+    "scopeNote": "只整理公告中影响对局资源循环的供给逻辑；英雄与武器数值另按后续批次继续拆分。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes",
+    "sourceHeading": "Loot & Attachments > Loot Spawning",
+    "previousUpdateIds": [],
+    "reviewStatus": "source_verified",
+    "publicationStatus": "ready",
+    "reviewedAt": "2026-09-27",
+    "imageUrl": "assets/core-updates/apex-marked-midseason-2026.jpg",
+    "imageSource": "EA 官方 Marked 赛季中期相关主视觉；版本配图，未展示本条补给箱改动（官方素材本地归档）",
+    "imageStatus": "verified_official",
+    "imageAssetSourceUrl": "https://drop-assets.ea.com/images/17lV0DGFzT04g9EaTi43XK/445ce65ba080313cb5ae9198c52232ff/ApexS30_SnapBack_3840x2160.jpg",
+    "imageSourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes",
+    "imageScope": "version",
+    "imageScopeLabel": "赛季中期版本配图",
+    "imageReviewedAt": "2026-09-27"
+  },
+  {
+    "id": "apex-update-wildcard-evo-carryover-2026-09-15",
+    "objectKey": "apex-wildcard-evo-carryover",
+    "contentKind": "core_update",
+    "game": "Apex Legends",
+    "title": "外卡空手取得的进化值转入首把武器",
+    "categories": [
+      "combat_rules",
+      "loot_economy"
+    ],
+    "changeType": "quality_of_life",
+    "updateScope": "mode_specific",
+    "duration": "unspecified",
+    "gameplayTypes": [
+      "br"
+    ],
+    "affectedModes": [
+      "外卡（Wildcard）"
+    ],
+    "mapNames": [],
+    "sourceModeIds": [
+      "apex-wildcard-2025"
+    ],
+    "sourceMapIds": [],
+    "before": "没有装备武器时获得的进化值不会明确转入后续武器成长。",
+    "after": "空手期间取得的进化值会计入之后装备的第一把武器。",
+    "playerImpact": "落地阶段即使暂时没有武器，玩家的战斗和行动进度也不会因装备时点而浪费。",
+    "designObservation": "设计推断：延迟结算成长资源可以减少随机搜刮顺序对长期战力的惩罚。",
+    "versionLabel": "Marked Split 2",
+    "publishedDate": "2026-09-14",
+    "effectiveDate": "2026-09-15",
+    "effectiveDateStatus": "confirmed",
+    "timingNote": "官方补丁明确说明 Split 2 于 2026-09-15 开始。",
+    "scopeNote": "仅适用于外卡玩法；不推定公开比赛与排位赛采用相同进化逻辑。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes",
+    "sourceHeading": "Wildcard > Wildcard Updates",
+    "previousUpdateIds": [],
+    "reviewStatus": "source_verified",
+    "publicationStatus": "ready",
+    "reviewedAt": "2026-09-27",
+    "imageUrl": "assets/core-updates/apex-marked-midseason-2026.jpg",
+    "imageSource": "EA 官方 Marked 赛季中期相关主视觉；版本配图，未展示本条进化值转入规则（官方素材本地归档）",
+    "imageStatus": "verified_official",
+    "imageAssetSourceUrl": "https://drop-assets.ea.com/images/17lV0DGFzT04g9EaTi43XK/445ce65ba080313cb5ae9198c52232ff/ApexS30_SnapBack_3840x2160.jpg",
+    "imageSourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes",
+    "imageScope": "version",
+    "imageScopeLabel": "赛季中期版本配图",
+    "imageReviewedAt": "2026-09-27"
   }
 ]

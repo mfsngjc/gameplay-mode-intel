@@ -1,9 +1,35 @@
 {
-  "reviewedAt": "2026-09-19",
-  "recordCount": 14,
-  "assetCount": 11,
-  "notes": "官方原图归档；3 条记录使用对应版本封面，卡片与详情明确标注。CS 新投掷物改用正文中实际展示它的 BR／CS 更新图。",
+  "reviewedAt": "2026-09-27",
+  "recordCount": 16,
+  "assetCount": 12,
+  "notes": "官方原图归档；5 条记录使用对应版本封面，卡片与详情明确标注。CS 新投掷物改用正文中实际展示它的 BR／CS 更新图。",
   "images": [
+    {
+      "recordId": "apex-update-midseason-loot-2026-09-15",
+      "path": "assets/core-updates/apex-marked-midseason-2026.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/17lV0DGFzT04g9EaTi43XK/445ce65ba080313cb5ae9198c52232ff/ApexS30_SnapBack_3840x2160.jpg",
+      "scope": "version",
+      "caption": "Marked 赛季中期官方相关主视觉；版本配图，未展示本条补给箱改动",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "58a25161c426fc6d00a651336e1a6e05d792c6d9dd01228d431aa8ae2a362c11"
+    },
+    {
+      "recordId": "apex-update-wildcard-evo-carryover-2026-09-15",
+      "path": "assets/core-updates/apex-marked-midseason-2026.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/17lV0DGFzT04g9EaTi43XK/445ce65ba080313cb5ae9198c52232ff/ApexS30_SnapBack_3840x2160.jpg",
+      "scope": "version",
+      "caption": "Marked 赛季中期官方相关主视觉；版本配图，未展示本条进化值转入规则",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "58a25161c426fc6d00a651336e1a6e05d792c6d9dd01228d431aa8ae2a362c11"
+    },
     {
       "recordId": "free-fire-update-peak-rework-2023-08-08",
       "path": "assets/core-updates/free-fire-1213-8.jpg",
