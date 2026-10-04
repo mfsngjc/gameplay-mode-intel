@@ -7447,10 +7447,22 @@
       "nextRange": "按最新官方补丁开始基础体验更新扫描，再制定历史回填批次。"
     },
     "三角洲行动": {
-      "coverageStatus": "not_started",
+      "coverageStatus": "ongoing_backfill",
       "recordCount": 0,
-      "checkedSources": [],
-      "nextRange": "按最新官方补丁开始基础体验更新扫描，再制定历史回填批次。"
+      "checkedSources": [
+        {
+          "sourceUrl": "https://www.playdeltaforce.com/zh-tw/detail.html?content_id=7e78fb0ea6a9ba447fa8d36aae3289b629a5&father_content_id=3b491764ae264a4be3a95e2ad3cb28263992",
+          "publishedDate": "2026-09-30",
+          "reviewedAt": "2026-10-04",
+          "reviewStatus": "version_summary_only",
+          "reviewedSections": [
+            "黑潮爆破武器平衡性调整",
+            "问题修复与最佳化"
+          ],
+          "disposition": "FS-12 四肢、腹部与距离衰减倍率的小幅调整归入版本摘要；三个地图越界/炸弹交互修复记录于来源审计，不单拆基础更新卡。"
+        }
+      ],
+      "nextRange": "继续扫描 Reorientation 后续补丁中的地图、装备、资源、复活与局内操作更新，并逐批回填更早赛季。"
     },
     "和平精英": {
       "coverageStatus": "not_started",

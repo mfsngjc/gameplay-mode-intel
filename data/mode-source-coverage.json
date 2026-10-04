@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-10-04",
   "purpose": "记录官方来源回溯范围，防止定时同步遗漏已知档案；coverageStatus 为 ongoing_backfill 时不代表全历史完成。",
   "additionalCollectionScope": {
     "addedAt": "2026-09-16",
@@ -196,8 +196,8 @@
         "https://www.pubg.com/en/news/1708",
         "https://www.pubg.com/en/news/5023"
       ],
-      "notes": "已复核 PUBG 官方历史街机/实验玩法与 2026 最新公告；本轮补入 34.1 公告明确的 1v1 竞技场、13.2 主机补丁明确的休闲模式，并登记 32.1 Hungers Left Behind 回归页，继续沿官方 Arcade/LABS 分页回溯。 已复核 41.2 官方补丁：Rumble 与 PAYDAY 已有卡片，未发现新的独立玩法。 2026-09-13 复核 43.1：用正式 Duo Rumble 的固定双人组、五阶段、最佳三局和计分规则更新既有卡；Solo Deathmatch 按原规则回归，Jujutsu Kaisen World 是普通 BR 主题世界，Intense BR 只更新结算页，其余为系统、平衡和榜单功能。下一轮继续沿 Arcade/LABS 历史分页回溯。",
-      "updatedAt": "2026-09-13"
+      "notes": "已复核 PUBG 官方历史街机/实验玩法与 2026 最新公告；本轮补入 34.1 公告明确的 1v1 竞技场、13.2 主机补丁明确的休闲模式，并登记 32.1 Hungers Left Behind 回归页，继续沿官方 Arcade/LABS 分页回溯。 已复核 41.2 官方补丁：Rumble 与 PAYDAY 已有卡片，未发现新的独立玩法。 2026-09-13 复核 43.1：用正式 Duo Rumble 的固定双人组、五阶段、最佳三局和计分规则更新既有卡；Solo Deathmatch 按原规则回归，Jujutsu Kaisen World 是普通 BR 主题世界，Intense BR 只更新结算页，其余为系统、平衡和榜单功能。2026-10-04 复核官方 News 索引，9月28日至10月4日仅见赛事奖励与封禁公告，没有新的独立玩法。下一轮继续沿 Arcade/LABS 历史分页回溯。",
+      "updatedAt": "2026-10-04"
     },
     "和平精英": {
       "coverageStatus": "ongoing_backfill",
@@ -492,7 +492,7 @@
         "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1834602721184632",
         "https://store.steampowered.com/news/app/2507950/view/685257749622165814?l=schinese&snr=1_5_9_"
       ],
-      "notes": "已复核三角洲行动官方中文站、Global 官方站和 Steam 公告；当前覆盖烽火地带、全面战场、黑鹰坠落及 2025–2026 的限时玩法。后续继续按官方赛季公告、地图更新和模式活动回溯，地区名称与国际服名称存在差异时保留原名并补中文说明。 已补登记第 11 赛季 Reorientation 官方补丁 PA6CZD，Fishing、Polaris Patrol 与 Operations 1v1 的规则逐项核对。 2026-09-13 复核 9月8日上线公告与 9月10日平衡修复：现有三张新玩法已覆盖，Layali Grove 2.0、活动、轮换、数值和修复不新增卡。下一轮继续按赛季公告与历史分页回溯。",
+      "notes": "已复核三角洲行动官方中文站、Global 官方站和 Steam 公告；当前覆盖烽火地带、全面战场、黑鹰坠落及 2025–2026 的限时玩法。后续继续按官方赛季公告、地图更新和模式活动回溯，地区名称与国际服名称存在差异时保留原名并补中文说明。 已补登记第 11 赛季 Reorientation 官方补丁 PA6CZD，Fishing、Polaris Patrol 与 Operations 1v1 的规则逐项核对。 2026-09-13 复核 9月8日上线公告与 9月10日平衡修复：现有三张新玩法已覆盖，Layali Grove 2.0、活动、轮换、数值和修复不新增卡。2026-10-04 复核 9月30日不停机更新：黑潮爆破仅调整 FS-12 数值并修复包点、炸弹拾取和拆除问题，不新增模式。下一轮继续按赛季公告与历史分页回溯。",
       "officialArchiveIndexUrls": [
         "https://deltaforce.garena.com/en/?redirect=0",
         "https://steamcommunity.com/app/2507950/announcements/"
