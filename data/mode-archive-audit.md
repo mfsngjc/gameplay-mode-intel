@@ -314,3 +314,15 @@
 - **Free Fire**：复核 Garena News、补丁分类和 OB55 后续入口；最新公开玩法内容仍是9月15日《火影忍者疾风传》九尾回归，已由 `free-fire-nine-tails-return-2026` 覆盖。9月28日至10月4日未出现新补丁或独立玩法公告。
 
 本次实际近期检查范围为 2026-09-28 至 2026-10-04；新增模式卡 0、更新模式卡 0、基础更新独立卡 0。PUBG Mobile 4.7 仍为 Beta 预告，不能标为已上线。历史档案仍缺少可证明全量的官方索引，所有游戏的模式覆盖继续保持 `ongoing_backfill`。
+
+## 2026-10-11 每周官方更新反向漏项审计
+
+- **Fortnite（10月5日至11日）**：复核 Epic News 索引与《Fortnitemares 2026》。Horde Rush 是已有玩法回归；10月8日上线的更新版 Nitemare Island、Stranger Things 与 Squid Grounds 属于 Reload 地图内容。诅咒卡带 Override、FNAF 动画首领附身、Freddy's Nightmare、Bonerattler SMG、POI 与回归武器均改变既有 BR/Reload 局内体验，应进入基础更新队列，不重复建模式卡。
+- **PUBG**：复核官方 News/Arcade 入口与 Asia Stars 赛事页。Circuit Racing、Survivor's Climb、Glider Battle、Crossbow Shooting、Solo Showdown、Melee Clash、Obstacle Challenge、Bluebomb Rush 和 Platoon Battle Royale 均是赛事使用的 Playgrounds/UGC 项目；官方只说明部分项目会在10月开放，尚无本周公开服务页、准确上线日和稳定规则页，因此记为待复核，不按已上线模式发布。
+- **和平精英**：复核官方版本与近期公告入口；本周未找到具有独立匹配入口、人数和胜负流程的新玩法公告。继续回溯早期 App Store、创意工坊和娱乐模式玩法页。
+- **Apex Legends（10月8日）**：复核 Blood Pact 官方公告。玩家将在 Wildcard 中选择 Beasts 或 Demons，并通过每回合伤害/击倒挑战获得阵营 Wild Card；活动明确在10月13日上线，当前仍是预告，不能在10月11日标为已上线。下轮需核对正式能力池、轮次与活动结束时间后决定更新父卡或新建实质变体卡。
+- **三角洲行动**：复核 Global 官方公告索引；10月1日仍是最新更新，内容为外观与平衡调整，10月5日至11日没有新的命名模式或独立胜负规则。
+- **PUBG Mobile（10月10日）**：复核4.7 Beta Test 2公告及全球、地区公告索引。该页仍属测试服预告，公开正文抓取未提供可核实的正式上线人数、目标与服务窗口；Ocean Odyssey 是既有主题模式回归，因此不提前发布新卡。
+- **Free Fire**：复核 Garena News、Patch Note 与 OB55 后续入口；最新公开玩法页仍是9月15日《火影忍者疾风传》回归，既有卡已覆盖。10月5日至11日未出现新的 OB 补丁或独立玩法公告。
+
+本次实际近期检查范围为 2026-10-05 至 2026-10-11；新增模式卡 0、更新模式卡 0。Apex Blood Pact 与 PUBG Mobile 4.7 Beta Test 2 均为预告/测试状态，PUBG Asia Stars 的部分 Playgrounds 项目仍待正式公开服务证据。历史档案仍缺少可证明全量的官方索引，所有游戏的模式覆盖继续保持 `ongoing_backfill`。
