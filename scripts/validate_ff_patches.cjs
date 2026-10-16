@@ -93,7 +93,7 @@ assert.deepEqual(modes.find(r=>r.id==='free-fire-clash-squad-2019').ffPlaylists,
 assert.deepEqual(modes.find(r=>r.id==='free-fire-bomb-squad-2019').ffPlaylists,['other']);
 assert.deepEqual(modes.find(r=>r.id==='free-fire-lone-wolf-2021').ffPlaylists,['other']);
 const context=vm.createContext({assert,modes,updates,patches,document:{querySelector:()=>({}),baseURI:'http://127.0.0.1:4173/'},localStorage:{getItem:()=>'[]'},location:{search:''},URL,URLSearchParams});
-vm.runInContext(['core-updates.js','app.js','ff-patches.js'].map(read).join('\n')+'\n'+read('workspace.js').replace(/initWorkspace\(\);\s*$/,''),context);
+vm.runInContext(['core-updates.js','tactical-items.js','app.js','ff-patches.js'].map(read).join('\n')+'\n'+read('workspace.js').replace(/initWorkspace\(\);\s*$/,''),context);
 vm.runInContext(`
  state.ffPatches=patches; state.modes=[...modes.map(r=>({...r,kind:'modes'})),...updates.map(normalizeCoreUpdate)];state.entries=state.modes;state.gameFilter='Free Fire';state.gameplayFilter='cs';
  const cs=getFilteredEntries();assert.ok(cs.length&&cs.every(r=>r.ffPlaylists.includes('cs')));assert.ok(cs.some(r=>r.id==='free-fire-clash-squad-2019'));assert.ok(cs.every(r=>!r.id.startsWith('free-fire-bomb-squad')));

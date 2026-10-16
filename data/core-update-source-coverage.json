@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-10-11",
   "purpose": "基础局内体验更新的独立覆盖账本。mode-source-coverage.json 的旧模式扫描结果不可视为此类更新已经收全。",
   "policyDocument": "docs/core-experience-updates.md",
   "dataFile": "data/core-updates.json",
@@ -52,10 +52,94 @@
       "nextRange": "继续拆分 Marked 中期补丁的英雄、武器与操作修复；随后回填 2026 年更早补丁。"
     },
     "Fortnite": {
-      "coverageStatus": "not_started",
-      "recordCount": 0,
-      "checkedSources": [],
-      "nextRange": "按最新官方补丁开始基础体验更新扫描，再制定历史回填批次。"
+      "coverageStatus": "ongoing_backfill",
+      "recordCount": 8,
+      "checkedSources": [
+        {
+          "sourceUrl": "https://www.fortnite.com/patch-notes/v7-40-content-update",
+          "checkedAt": "2026-10-11",
+          "scope": "定向战术道具专题；全文 BR 章节扫描，其他局内内容仅登记候选，不代表整篇已收齐。",
+          "sourceHeading": "Battle Royale > Weapons + Items > Driftboard",
+          "recordIds": [
+            "fortnite-update-driftboard-2019-02-19"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.fortnite.com/news/fortnitemares-2023-dawns-in-the-fortnite-battle-royale-v26-30-update",
+          "checkedAt": "2026-10-11",
+          "scope": "定向战术道具专题；全文 BR 章节扫描，其他局内内容仅登记候选，不代表整篇已收齐。",
+          "sourceHeading": "Witch Broom; Competitive Notes",
+          "recordIds": [
+            "fortnite-update-witch-broom-2023-10-10"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.fortnite.com/patch-notes/v8-00",
+          "checkedAt": "2026-10-11",
+          "scope": "定向战术道具专题；全文 BR 章节扫描，其他局内内容仅登记候选，不代表整篇已收齐。",
+          "sourceHeading": "Battle Royale > Weapons + Items > Pirate Cannon",
+          "recordIds": [
+            "fortnite-update-pirate-cannon-2019-02-27"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.fortnite.com/patch-notes/v5-30",
+          "checkedAt": "2026-10-11",
+          "scope": "定向战术道具专题；全文 BR 章节扫描，其他局内内容仅登记候选，不代表整篇已收齐。",
+          "sourceHeading": "Battle Royale > Weapons + Items > Rift-To-Go",
+          "recordIds": [
+            "fortnite-update-rift-to-go-2018-08-23"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.fortnite.com/patch-notes/v5-30-content-update",
+          "checkedAt": "2026-10-11",
+          "scope": "定向战术道具专题；全文 BR 章节扫描，其他局内内容仅登记候选，不代表整篇已收齐。",
+          "sourceHeading": "Battle Royale > Weapons + Items > Shockwave Grenade",
+          "recordIds": [
+            "fortnite-update-shockwave-grenade-2018-08-28"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.fortnite.com/patch-notes/v5-40",
+          "checkedAt": "2026-10-11",
+          "scope": "定向战术道具专题；全文 BR 章节扫描，其他局内内容仅登记候选，不代表整篇已收齐。",
+          "sourceHeading": "Battle Royale > Weapons + Items > Grappler; The Getaway > Mode Details",
+          "recordIds": [
+            "fortnite-update-grappler-2018-09-06"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.fortnite.com/news/v3-5-patch-notes",
+          "checkedAt": "2026-10-11",
+          "scope": "定向战术道具专题；全文 BR 章节扫描，其他局内内容仅登记候选，不代表整篇已收齐。",
+          "sourceHeading": "Battle Royale > Weapons + Items > Port-a-Fort",
+          "recordIds": [
+            "fortnite-update-port-a-fort-2018-04-11"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.fortnite.com/patch-notes/v6-21",
+          "checkedAt": "2026-10-11",
+          "scope": "定向战术道具专题；全文 BR 章节扫描，其他局内内容仅登记候选，不代表整篇已收齐。",
+          "sourceHeading": "Battle Royale > Weapons + Items > Balloons",
+          "recordIds": [
+            "fortnite-update-balloons-2018-11-01"
+          ]
+        }
+      ],
+      "remainingCandidates": [
+        "v3.5：武器切换时间、导弹与售货机调整；回放非本专题。",
+        "v5.30：黏性炸弹、弹跳板触发、倒地沟通、输入与信息优化；Score Royale 已有模式卡。",
+        "v5.30 CU：Switch 卡顿修复待基础更新复核；Solid Gold 已有模式卡。",
+        "v5.40：移动风暴破坏建筑、物资稀有度与堆叠调整、陀螺仪、移动端 HUD；The Getaway 已有模式卡。",
+        "v6.21：抓钩载具交互、穿透建筑爆炸伤害、滑翔重部署及声音优先级。",
+        "v7.40 CU：气球、滑翔伞、双枪地面掉率调整；Driftin’ 与 Catch 已有模式卡；Creative/STW 不混入 BR。",
+        "v8.00：火山喷气口、熔岩、POI、标记、声音、移动端和物资池；STW 职业重做另待整理。",
+        "v26.30：木桩霰弹枪、吸血刀、南瓜发射器、糖果、强化回归、Quick Weapon；皮肤和奖励属局外，Horde Rush 已有父卡。"
+      ],
+      "nextRange": "继续战术道具历史版本：气球后续重做、抓钩充能调整、冲击波与脉冲手雷差异；补喷气背包、弹跳板、便携裂隙之外的伪装／控场／侦察道具。官方目录与整篇基础更新覆盖仍开放。",
+      "notes": "本轮新增 8 个历史道具／载具对象记录，不新增模式。直接 HTTP 抓取遇到官网校验页，机制通过可读取的官方页面核对；不把校验页当正文归档。"
     },
     "Free Fire": {
       "coverageStatus": "ongoing_historical_backfill",

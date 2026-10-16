@@ -49,7 +49,7 @@ const context = vm.createContext({
   localStorage: { getItem: () => '[]' },
   location: { search: '' }, URL, URLSearchParams
 });
-vm.runInContext(read('core-updates.js') + '\n' + read('app.js') + '\n' + read('ff-patches.js') + '\n' + read('workspace.js').replace(/initWorkspace\(\);\s*$/, ''), context);
+vm.runInContext(read('core-updates.js') + '\n' + read('tactical-items.js') + '\n' + read('app.js') + '\n' + read('ff-patches.js') + '\n' + read('workspace.js').replace(/initWorkspace\(\);\s*$/, ''), context);
 vm.runInContext(`
   state.modes = modes.map((mode) => ({ ...mode, kind: 'modes' }));
   state.entries = [...state.modes];

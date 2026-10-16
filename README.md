@@ -1,8 +1,10 @@
 # 集成农业 · 射击玩法研究库
 
-面向射击游戏设计的静态研究资料库，公开「玩法模式」与「地图」。采用固定导航、统一搜索、可筛选的卡片/列表与来源详情。玩法机制、关卡机制暂存为本地草稿，等待整理后再开放。
+面向射击游戏设计的静态研究资料库，提供「玩法模式」「地图」与「主题道具」三个独立栏目。采用固定导航、统一搜索、可筛选的卡片/列表与来源详情。玩法机制、关卡机制暂存为本地草稿，等待整理后再开放。
 
 ## 当前内容
+
+2026-10-12 新增独立「主题道具」页签（`#items`），收录 Fortnite 136 项历史对象/道具族，分为 14 个功能分类。全部条目已配图：124 项官方图、12 项经用户授权的社区补图，均保留出处。8 项含历史机制详录、10 个 YouTube 链接、8 张官方版本封面及 6 张官方视频截图；其余 128 项含名称、外观配图、机制摘要和资料入口，逐版本核对、视频及操作截图仍待补。支持中英文/作用检索、对象类型与资料进度筛选、卡片/列表、收藏及 Markdown/Canvas 导出。8 项原专题不再显示于玩法模式、动态或时间画板；模式案例仍为 500 项，模式区另有 16 条基础更新。原始 24 条基础更新记录继续保存，8 条作为道具版本依据关联引用。2026-10-16 按用户指令提交发布。详见 [专题说明](docs/fortnite-tactical-items.md)。
 
 截至 2026-09-19，玩法库收录 498 个模式案例、14 条基础更新，覆盖 7 款游戏；Free Fire 另有 70 篇版本及活动详录、16 篇关联公告，不计为新增模式，历史覆盖仍待补齐。地图页现收录三角洲行动 20 张、战地风云 6 16 张、无畏契约 13 张、PUBG 10 张和 Apex Legends 6 张地图。原有 6 张玩法机制卡和 6 张关卡机制卡暂存本地，不加载、不公开发布。
 
@@ -20,9 +22,10 @@
 
 - 玩法模式：合并原“发现玩法”后的首页，直接浏览全部模式案例，提供推荐顺序、全文搜索、核心玩法/游戏/主题/LTM 标签筛选及排序；完整拆解收进详情。
 - 地图：按游戏归档，支持三角洲行动、战地风云 6、无畏契约、PUBG 和 Apex Legends 筛选，支持中文搜索、放大预览、单图下载和来源跳转。三角洲行动保留本地互动地图入口，可筛选点位、搜索定位、切换楼层与战场配置；战地风云 6 已接入 9 张公开模式战术图，无畏契约已接入 13 张游戏内小地图 / Callout 平面图，PUBG 已接入 10 张 PUBG Planet 2D 平面图，Apex Legends 已接入 6 张 Apex Legends Wiki 地图平面图。
+- 主题道具：独立的对象目录，不计入模式数量。涵盖伪装、整蛊、移动、防御、支援、联动能力、载具和地图交互物；区分目录收录与机制详录，历史版本不表示当前赛季可用。
 - 玩法机制、关卡机制：暂停公开；原稿保存在被 Git 忽略的 `local-only/research.json`。旧栏目地址回到模式首页。
 - 玩法模式内置三个视图：案例库、玩法动态和时间画板。玩法动态按案例上线时间排列，提供近 30 天、即将上线、LTM 限时模式筛选；时间画板按游戏与六种核心玩法分轨，LTM 标在节点上，与同类核心模式共用轨道。
-- 我的收藏：兼容原有浏览器收藏标识，支持玩法模式收藏；既有草稿收藏标识保留在浏览器，但不显示或导出未公开内容。
+- 我的收藏：兼容原有浏览器收藏标识，支持玩法、地图与主题道具收藏；既有草稿收藏标识保留在浏览器，但不显示或导出未公开内容。
 - 站点在正式 GitHub Pages 域名下把匿名计数事件发送到 Cloudflare Worker，供站长通过私有数据回收 Skill 离线查看全站趋势。前端不提供数据看板；D1 只保存随机浏览器标识的哈希、页面或玩法编号与时间，不保存 IP、账号、设备信息或来源页。
 
 详情支持 Markdown 复制、PNG 分享与来源跳转；分享弹窗和 PNG 卡片同步研究工作台的浅色绿色 UI。顶部可导出当前筛选的 Obsidian Canvas，或收藏的 Markdown 合集。支持分页加载、空结果提示、缺图回退、移动端导航、键盘操作与详情深链接。
@@ -197,6 +200,7 @@ BR 中同时收录核心 BR 和限时 BR。例如 Reload、Zero Build 与 Floor 
 
 ```bash
 node scripts/validate_taxonomy.cjs
+node scripts/validate_tactical_items.cjs
 jq 'length' data/modes.json
 jq -r '.[].id' data/modes.json | sort | uniq -d
 jq 'map(select(.launchDate == null or .launchLabel == null or .sourceUrl == null or .imageUrl == null)) | length' data/modes.json
@@ -206,6 +210,8 @@ jq 'group_by(.game) | map({game: .[0].game, count: length})' data/modes.json
 ## 图片规范
 
 硬性规则：禁止使用任何非官方渠道的图片，包括第三方游戏资讯站、百科站、个人博客、视频截图、用户上传图和带水印图片。
+
+主题道具目录例外（用户于 2026-10-12 明确授权）：`data/tactical-items.json` 中暂缺可辨认官方图片的条目，可以使用带明确出处的社区道具图或实机场景图。页面与导出必须区分官方和社区来源，保留官方查找范围、缺图原因、原始图片地址和来源页。当前 136 项全部配图，其中 124 项官方、12 项社区补图；具体条目见 [专题规范](docs/fortnite-tactical-items.md#道具图片)。此例外不扩展到模式和基础体验更新的公开封面。
 
 优先级：
 
@@ -220,7 +226,7 @@ jq 'group_by(.game) | map({game: .[0].game, count: length})' data/modes.json
 | 游戏 | 可用来源 |
 |------|----------|
 | PUBG / Krafton | `wstatic-prod-boc.krafton.com`、`shared.akamai.steamstatic.com` |
-| Fortnite / Epic Games | `cdn2.unrealengine.com` |
+| Fortnite / Epic Games | `cdn2.unrealengine.com`；由官方开发文档图片元数据核实的 `d1iv7db44yhgxn.cloudfront.net/documentation/images/` |
 | 和平精英 / 腾讯 | `game.gtimg.cn/images/gp/`、`static.gametalk.qq.com/image/`、`gp.qq.com/gicp/news/` |
 | 三角洲行动 / 腾讯 | `df.qq.com`、`game.gtimg.cn/images/dfm/`、`steamcommunity.com/app/2507950`、`steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/` |
 | Apex Legends / EA | `drop-assets.ea.com`、`shared.akamai.steamstatic.com` |

@@ -1,8 +1,8 @@
 {
-  "reviewedAt": "2026-09-27",
-  "recordCount": 16,
-  "assetCount": 12,
-  "notes": "官方原图归档；5 条记录使用对应版本封面，卡片与详情明确标注。CS 新投掷物改用正文中实际展示它的 BR／CS 更新图。",
+  "reviewedAt": "2026-10-11",
+  "recordCount": 24,
+  "assetCount": 20,
+  "notes": "官方原图归档；5 条记录使用对应版本封面，卡片与详情明确标注。CS 新投掷物改用正文中实际展示它的 BR／CS 更新图。 2026-10-11 新增 8 张 Fortnite 官方道具图；6 张官方视频截图的时间点、来源和哈希另存于对应 core-updates 记录。第三方视频仅作链接，不以其画面作公开素材。",
   "images": [
     {
       "recordId": "apex-update-midseason-loot-2026-09-15",
@@ -211,6 +211,110 @@
         600
       ],
       "sha256": "bac8ad6d7b107cd0b1c435d82aea5839c4f832f9cf1d1049265b32cef66b9004"
+    },
+    {
+      "recordId": "fortnite-update-driftboard-2019-02-19",
+      "path": "assets/core-updates/fortnite-tactical/driftboard-official.jpg",
+      "assetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv7-40-content-update%2Fbr-header-v7-40-content-update%2FBR07_Social_Driftboard%2BPowder-1920x1080-f4204ee82caf03382cea99a21f78eb4694340e95.jpg",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "1d4ee7dcd350240fc144e46244be678239d8d81502fc1de768afc93a4ce6cbdb",
+      "sourcePageUrl": "https://www.fortnite.com/patch-notes/v7-40-content-update",
+      "scope": "specific",
+      "caption": "漂移滑板官方道具宣传图（非实机截图）"
+    },
+    {
+      "recordId": "fortnite-update-witch-broom-2023-10-10",
+      "path": "assets/core-updates/fortnite-tactical/broom-official.jpg",
+      "assetSourceUrl": "https://cdn2.unrealengine.com/fortnite-witch-broom-1900x600-6f550ef50e23.jpg",
+      "dimensions": [
+        1900,
+        600
+      ],
+      "sha256": "6e6260f7eabdaa105bb8934dc62b70a8d7e2dcaa27feed8e5b0510583d088f7b",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnitemares-2023-dawns-in-the-fortnite-battle-royale-v26-30-update",
+      "scope": "specific",
+      "caption": "女巫扫帚官方道具宣传图（非实机截图）"
+    },
+    {
+      "recordId": "fortnite-update-pirate-cannon-2019-02-27",
+      "path": "assets/core-updates/fortnite-tactical/cannon-official.jpg",
+      "assetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv8-00%2Fbr-header-v8-00%2FBR08_Social_PirateCannon-1920x1080-5f700a0f80e81232df19a73cca73180ffee713e8.jpg",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "324497b1f7784292166905723281e0ed554238059054f69e9fb9ddc8bdd1f419",
+      "sourcePageUrl": "https://www.fortnite.com/patch-notes/v8-00",
+      "scope": "specific",
+      "caption": "海盗炮官方道具宣传图（非实机截图）"
+    },
+    {
+      "recordId": "fortnite-update-rift-to-go-2018-08-23",
+      "path": "assets/core-updates/fortnite-tactical/rift-official.jpg",
+      "assetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fv5-30-patch-notes%2FBR05_News_Header_16_9_-RiftToGo-1920x1080-3f1921eb6a869c706bbe84a8a0dbdbc5db28a445.jpg",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "19b68e28860074ff3492354fdd8c20328e95addab2996a6791083188a5f63b2a",
+      "sourcePageUrl": "https://www.fortnite.com/news/v5-30-patch-notes",
+      "scope": "specific",
+      "caption": "随身裂隙官方道具宣传图（非实机截图）"
+    },
+    {
+      "recordId": "fortnite-update-shockwave-grenade-2018-08-28",
+      "path": "assets/core-updates/fortnite-tactical/shockwave-official.jpg",
+      "assetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fv5-30-content-update%2FBR05_News_Header_16_9_Shockwave-Grenade-1920x1080-ad3fbd7fb7ed83217dac7aad5bb11231726574b1.jpg",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "754de717582d87eebaaeb9c437ad74726ce76f7e4b89cd0a2018a152bf74dbd9",
+      "sourcePageUrl": "https://www.fortnite.com/news/v5-30-content-update",
+      "scope": "specific",
+      "caption": "冲击波手雷官方道具宣传图（非实机截图）"
+    },
+    {
+      "recordId": "fortnite-update-grappler-2018-09-06",
+      "path": "assets/core-updates/fortnite-tactical/grappler-official.jpg",
+      "assetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv5-40%2Foverview-text-v5-40%2FBR05_Social_HighStakes_Grappler_NoText-1920x1080-f35b1140f10ea7b97dc0c66d2b851e80e2fb4520.jpg",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "d6bee25161db14119993c71af969f97c4b5a7919783ae74dd2374b92f0e90ad7",
+      "sourcePageUrl": "https://www.fortnite.com/patch-notes/v5-40",
+      "scope": "specific",
+      "caption": "抓钩枪官方道具宣传图（非实机截图）"
+    },
+    {
+      "recordId": "fortnite-update-port-a-fort-2018-04-11",
+      "path": "assets/core-updates/fortnite-tactical/fort-official.jpg",
+      "assetSourceUrl": "https://i.ytimg.com/vi/53485ZbOXf4/maxresdefault.jpg",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "fcf41a17a21fb0135fd56ee159f14360174b42635ea5b36376ab13b757710d9c",
+      "sourcePageUrl": "https://www.youtube.com/watch?v=53485ZbOXf4",
+      "scope": "specific",
+      "caption": "便携堡垒官方视频封面（非实机截图）"
+    },
+    {
+      "recordId": "fortnite-update-balloons-2018-11-01",
+      "path": "assets/core-updates/fortnite-tactical/balloons-official.png",
+      "assetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fv6-21-patch-notes%2FBR06_News_Featured_16_9-1920x1080-a4c7fd121c134e8b06efa953d822f41f5ff2c098.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "15a59f6e9bdc9a4d1e75ebe321ad2970d11491b0e9874d8cf846114d3b7cf24c",
+      "sourcePageUrl": "https://www.fortnite.com/news/v6-21-patch-notes",
+      "scope": "specific",
+      "caption": "升空气球官方道具宣传图（非实机截图）"
     }
   ]
 }

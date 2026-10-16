@@ -4,7 +4,7 @@ const coreUpdateCategories = {
   traversal: '移动与转点', economy_loot: '资源与经济', revive_teamplay: '救援与返场',
   combat_rules: '战斗规则', in_match_usability: '局内操作与信息'
 };
-const contentTypeLabels = { all: '全部资料', mode: '模式案例', core_update: '基础更新' };
+const contentTypeLabels = { all: '全部资料', mode: '模式案例', core_update: '基础更新', item: '主题道具' };
 function isCoreUpdate(entry) { return entry.contentKind === 'core_update'; }
 function getContentTypeLabel(entry) { return isCoreUpdate(entry) ? '基础更新' : entry.kind === 'modes' ? '模式案例' : kindLabels[entry.kind]; }
 function getCoreUpdateTiming(entry) {
@@ -40,6 +40,7 @@ function summarizeLibrary(entries) {
   return entries.length + ' 份资料 · ' + (entries.length - updates) + ' 个模式案例 · ' + updates + ' 条基础更新';
 }
 function updateMatchesContentFilters(entry) {
+  if (state.contentFilter === 'item' && !isTacticalItem(entry)) return false;
   if (state.contentFilter === 'core_update' && !isCoreUpdate(entry)) return false;
   if (state.contentFilter === 'mode' && (isCoreUpdate(entry) || entry.kind !== 'modes')) return false;
   if (state.updateCategory !== 'all' && !entry.categories?.includes(state.updateCategory)) return false;
@@ -47,7 +48,8 @@ function updateMatchesContentFilters(entry) {
 }
 function renderSharedFilters() {
   const modeView = state.view === 'modes';
-  document.querySelector('#sharedFilters').hidden = state.view === 'maps' || (state.view === 'modes' && state.modeView === 'patches');
+  document.querySelector('#sharedFilters').hidden = ['maps', 'items'].includes(state.view) || (state.view === 'modes' && state.modeView === 'patches');
+  document.querySelector('#itemContentOption').hidden = state.view !== 'collection';
   document.querySelector('#contentTypeField').hidden = !modeView && state.view !== 'collection';
   document.querySelector('#updateCategoryField').hidden = state.contentFilter !== 'core_update';
   document.querySelector('#contentTypeSelect').value = state.contentFilter;
@@ -65,6 +67,36 @@ function renderSharedFilters() {
   document.querySelector('#filterSummary').hidden = !filters.length;
   document.querySelector('#filterSummaryText').textContent = filters.join(' · ');
 }
+function tacticalProfileDetail(entry) {
+  const p = entry.tacticalProfile;
+  if (!p) return '';
+  const row = (label, value) => '<div><dt>' + escapeHtml(label) + '</dt><dd>' + escapeHtml(value) + '</dd></div>';
+  return '<section class="detail-section tactical-profile"><h3>战术道具机制</h3><p class="tactical-role">' + escapeHtml(p.role) + '</p><dl>' +
+    row('英文原名', p.englishName) + row('操作方式', p.operation) + row('作用效果', p.effect) + row('获取方式', p.acquisition) + row('限制与版本差异', p.limits) +
+    '</dl><div class="tactical-parameters">' + p.parameters.map((r) => '<div><span>' + escapeHtml(r.label) + '</span><strong>' + escapeHtml(r.value) + '</strong></div>').join('') + '</div></section>';
+}
+function coreUpdateMediaDetail(entry) {
+  const videos = (entry.videos || []).filter((v) => safeUrl(v.url));
+  const shots = (entry.screenshots || []).filter((s) => safeUrl(s.path));
+  return (videos.length ? '<section class="detail-section"><h3>YouTube 视频演示</h3><div class="tactical-videos">' + videos.map((v) =>
+    '<a class="tactical-video" href="' + escapeHtml(safeUrl(v.url)) + '" target="_blank" rel="noopener noreferrer"><span class="tactical-video-label">' +
+    (v.sourceType === 'official' ? '官方演示' : '第三方实机演示') + ' · ' + escapeHtml(v.publishedDate) + '</span><strong>' + escapeHtml(v.title) + ' ↗</strong><span>' + escapeHtml(v.channel) + ' · ' + escapeHtml(v.versionLabel) + '</span><p>' + escapeHtml(v.watchFor) + '</p></a>'
+  ).join('') + '</div><p class="tactical-note">视频用于观察操作和表现；数值与适用范围以本条官方来源为准。</p></section>' : '') +
+    (shots.length ? '<section class="detail-section"><h3>视频截图</h3><div class="tactical-screenshots">' + shots.map((s) => '<figure><a href="' + escapeHtml(safeUrl(s.path)) + '" target="_blank" rel="noopener noreferrer"><img src="' + escapeHtml(safeUrl(s.path)) + '" alt="' + escapeHtml(s.caption) + '" loading="lazy"></a><figcaption>' + escapeHtml(s.caption) + ' <a href="' + escapeHtml(safeUrl(s.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">查看视频时间点 ↗</a></figcaption></figure>').join('') + '</div></section>' : '') +
+    (entry.mediaNote ? '<p class="tactical-note">' + escapeHtml(entry.mediaNote) + '</p>' : '');
+}
+function coreUpdateEvidenceDetail(entry) {
+  return entry.evidenceLinks?.length ? '<section class="detail-section"><h3>机制与日期依据</h3><ul class="tactical-evidence">' + entry.evidenceLinks.map((s) => '<li><a href="' + escapeHtml(safeUrl(s.url)) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(s.label) + ' ↗</a></li>').join('') + '</ul></section>' : '';
+}
+function tacticalProfileMarkdown(entry) {
+  const p = entry.tacticalProfile;
+  if (!p) return [];
+  return ['## 战术道具机制', '', '- 英文原名：' + p.englishName, '- 定位：' + p.role, '', '### 操作方式', '', p.operation, '', '### 作用效果', '', p.effect, '', '### 获取方式', '', p.acquisition, '', '### 限制与版本差异', '', p.limits, '', ...p.parameters.map((r) => '- ' + r.label + '：' + r.value), '',
+    '## YouTube 视频演示', '', ...(entry.videos || []).flatMap((v) => ['- [' + v.title + '](' + v.url + ')', '  - ' + v.channel + ' · ' + v.publishedDate + ' · ' + (v.sourceType === 'official' ? '官方演示' : '第三方演示'), '  - ' + v.versionLabel + '；' + v.watchFor]), '',
+    ...((entry.screenshots || []).length ? ['## 视频截图', '', ...entry.screenshots.flatMap((s) => ['![' + s.caption + '](' + new URL(s.path, document.baseURI).href + ')', '', '[' + s.caption + '](' + s.sourceUrl + ')', ''])] : []),
+    ...(entry.mediaNote ? [entry.mediaNote, ''] : []),
+    '## 机制与日期依据', '', ...(entry.evidenceLinks || []).map((s) => '- [' + s.label + '](' + s.url + ')'), ''];
+}
 function coreUpdateDetail(entry) {
   const section = (title, text) => text ? '<div class="detail-section"><h3>' + title + '</h3><p>' + escapeHtml(text) + '</p></div>' : '';
   const related = (entry.sourceModeIds || []).map((id) => state.entries.find((r) => r.id === id)).filter(Boolean);
@@ -75,8 +107,10 @@ function coreUpdateDetail(entry) {
     '<div class="detail-taxonomy">' + entryGameplayDefinitions(entry).map((d) => '<span class="gameplay-chip">' + escapeHtml(d.label) + '</span>').join('') + '</div>' +
     section('适用模式与地图', [...entry.affectedModes, ...entry.mapNames].join(' · ')) +
     section('改动前', entry.before || '该来源未明确说明改动前的完整状态。') + section('具体变化', entry.after) +
+    tacticalProfileDetail(entry) + coreUpdateMediaDetail(entry) +
     section('玩家行为变化 · 分析', entry.playerImpact) + section('设计观察 · 分析', entry.designObservation.replace(/^设计推断：/, '')) +
     section('时间与来源备注', entry.launchNote) +
+    coreUpdateEvidenceDetail(entry) +
     (related.length ? '<div class="detail-section"><h3>关联模式</h3><div class="related-cases">' + related.map((r) => '<button data-action="open-mode" data-id="' + escapeHtml(r.id) + '">' + escapeHtml(r.modeName) + icon('arrow-up-right') + '</button>').join('') + '</div></div>' : '') +
     '<div class="detail-actions">' + ffRelatedPatchLink(entry) + detailButton(entry) + '<button class="button" data-action="copy" data-id="' + escapeHtml(entry.id) + '">复制 Markdown</button><button class="button" data-action="share" data-id="' + escapeHtml(entry.id) + '">分享图片</button><a class="button" href="' + escapeHtml(safeUrl(entry.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">查看官方来源</a></div></div>';
 }
@@ -88,6 +122,7 @@ function coreUpdateMarkdown(entry) {
     '- 来源：' + entry.sourceUrl, ...(entry.patchId ? ['- 完整版本详录：docs/free-fire-patches/' + entry.patchId.replace('ff-patch-', '') + '.md'] : []), '- 图片来源：' + entry.imageSource,
     '- 图片原始地址：' + (entry.imageAssetSourceUrl || ''), '',
     '## 改动前', '', entry.before || '该来源未明确说明改动前的完整状态。', '', '## 具体变化', '', entry.after, '',
+    ...tacticalProfileMarkdown(entry),
     '## 玩家行为变化（分析）', '', entry.playerImpact, '', '## 设计观察（分析）', '', entry.designObservation, '',
     '## 时间与来源备注', '', entry.launchNote, ''].join('\n');
 }

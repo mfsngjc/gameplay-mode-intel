@@ -8,6 +8,7 @@ const root = path.resolve(__dirname, '..');
 const read = (name) => fs.readFileSync(path.join(root, name), 'utf8');
 const updates = JSON.parse(read('data/core-updates.json'));
 const modes = JSON.parse(read('data/modes.json'));
+const catalogue = JSON.parse(read('data/tactical-items.json'));
 const evidence = JSON.parse(read('data/core-update-image-sources.json'));
 const coverageGames = JSON.parse(read('data/core-update-source-coverage.json')).games;
 const ids = new Set(modes.map((r) => r.id));
@@ -16,7 +17,7 @@ for (const record of updates) {
   assert.equal(record.contentKind, 'core_update');
   assert.equal(record.publicationStatus, 'ready');
   assert.ok(record.sourceModeIds.every((id) => modes.some((m) => m.id === id)), 'Related modes exist');
-  assert.ok(['ff.garena.com', 'www.ea.com'].includes(new URL(record.sourceUrl).hostname), 'Approved official source host');
+  assert.ok(['ff.garena.com', 'www.ea.com', 'www.fortnite.com'].includes(new URL(record.sourceUrl).hostname), 'Approved official source host');
   const asset = evidence.images.find((r) => r.recordId === record.id);
   assert.ok(asset, 'Image provenance for ' + record.id);
   assert.equal(asset.path, record.imageUrl);
@@ -24,17 +25,38 @@ for (const record of updates) {
   const bytes = fs.readFileSync(path.join(root, asset.path));
   assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), asset.sha256, 'Unmodified official image');
   assert.ok(asset.dimensions[0] >= 600 && asset.dimensions[1] >= 300);
-  assert.match(new URL(asset.assetSourceUrl).hostname, /^(cdn\.wildflamestudio\.com|lh[\w-]*\.googleusercontent\.com|drop-assets\.ea\.com)$/);
+  assert.match(new URL(asset.assetSourceUrl).hostname, /^(cdn\.wildflamestudio\.com|lh[\w-]*\.googleusercontent\.com|drop-assets\.ea\.com|cdn2\.unrealengine\.com|i\.ytimg\.com)$/);
+  if (new URL(asset.assetSourceUrl).hostname === 'i.ytimg.com') {
+    const id = new URL(asset.assetSourceUrl).pathname.split('/')[2];
+    assert.ok(record.videos?.some(v => v.sourceType === 'official' && v.channel === 'Fortnite' && new URL(v.url).searchParams.get('v') === id), 'Video cover must belong to a verified official video');
+  }
+  if (record.tacticalProfile) {
+    for (const field of ['englishName', 'role', 'operation', 'effect', 'acquisition', 'limits']) assert.ok(record.tacticalProfile[field], record.id + ': ' + field);
+    assert.ok(record.tacticalProfile.parameters.length);
+    assert.ok(record.videos?.length);
+    for (const video of record.videos) {
+      assert.equal(new URL(video.url).hostname, 'www.youtube.com');
+      assert.match(new URL(video.url).searchParams.get('v'), /^[\w-]{11}$/);
+      assert.ok(video.title && video.channel && video.publishedDate && video.versionLabel && video.watchFor);
+    }
+    for (const shot of record.screenshots || []) {
+      assert.ok(fs.existsSync(path.join(root, shot.path)));
+      assert.equal(shot.sourceType, 'official');
+      assert.ok(record.videos.some(v => v.sourceType === 'official' && new URL(v.url).searchParams.get('v') === new URL(shot.sourceUrl).searchParams.get('v')));
+      assert.ok(shot.timestampSeconds >= 0 && shot.caption && shot.capturedAt);
+      assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root, shot.path))).digest('hex'), shot.sha256);
+    }
+  }
   if (record.imageScope === 'version') assert.match(record.imageSource, /版本配图，未展示本条/);
 }
 assert.equal(Object.values(coverageGames).reduce((sum, game) => sum + (game.recordCount || 0), 0), updates.length);
 assert.equal(evidence.recordCount, updates.length);
-const context = vm.createContext({ assert, updates, modes,
+const context = vm.createContext({ assert, updates, modes, catalogue,
   document: { querySelector: () => ({}), baseURI: 'http://127.0.0.1:4173/' },
   localStorage: { getItem: () => '[]' }, location: { search: '' }, URL, URLSearchParams });
-vm.runInContext(read('core-updates.js') + '\n' + read('app.js') + '\n' + read('ff-patches.js') + '\n' + read('workspace.js').replace(/initWorkspace\(\);\s*$/, ''), context);
+vm.runInContext(read('core-updates.js') + '\n' + read('tactical-items.js') + '\n' + read('app.js') + '\n' + read('ff-patches.js') + '\n' + read('workspace.js').replace(/initWorkspace\(\);\s*$/, ''), context);
 vm.runInContext(`
-  state.modes = [...modes.map((m) => ({...m, kind: 'modes'})), ...updates.map(normalizeCoreUpdate)];
+  state.modes = [...modes.map((m) => ({...m, kind: 'modes'})), ...loadTacticalCatalogue(catalogue, updates)];
   state.entries = [...state.modes];
   state.gameFilter = 'Free Fire';
   assert.equal(getFilteredEntries().length, modes.filter(m => m.game === 'Free Fire').length + updates.filter(r => r.game === 'Free Fire').length);
@@ -92,5 +114,13 @@ vm.runInContext(`
   assert.equal(params.get('entry'), planned.id);
   state.view = 'collection'; state.updateCategory = 'all'; state.collected.add(planned.id);
   assert.deepEqual(getFilteredEntries().map(r => r.id), [planned.id], 'Collection retains core records');
+  state.view = 'modes'; state.gameFilter = 'Fortnite'; state.query = '战术道具'; state.contentFilter = 'core_update';
+  assert.equal(getFilteredEntries().length, 0, 'Object dossiers are excluded from the mode library');
+  for (const r of state.coreUpdates.filter(r => r.tacticalProfile)) {
+    assert.ok(coreUpdateDetail(r).includes('战术道具机制'));
+    assert.ok(coreUpdateDetail(r).includes(r.videos[0].url.replace(/&/g, '&amp;')));
+    assert.ok(modeToMarkdown(r).includes(r.videos[0].url));
+    assert.ok(buildCanvas([r]).nodes[0].text.includes(r.tacticalProfile.limits));
+  }
 `, context);
 console.log(`Core update validation passed: ${updates.length} records, ${evidence.assetCount} verified original assets; filters, dates, timeline grouping, collection and exports.`);

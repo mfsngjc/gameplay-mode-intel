@@ -32,6 +32,7 @@ jobs:
         run: |
           node scripts/validate_taxonomy.cjs
           node scripts/validate_core_updates.cjs
+          node scripts/validate_tactical_items.cjs
           node scripts/validate_ff_patches.cjs
 
       - name: Prepare public files only

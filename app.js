@@ -410,6 +410,7 @@ function renderTimeline() {
 }
 
 function modeToMarkdown(mode) {
+  if (isTacticalItem(mode)) return tacticalItemMarkdown(mode);
   if (isCoreUpdate(mode)) return coreUpdateMarkdown(mode);
   const derived = mode.kind && mode.kind !== "modes";
   const sourceModes = (mode.sourceModeIds || []).map((id) => state.modes.find((entry) => entry.id === id)).filter(Boolean);
@@ -891,7 +892,7 @@ function buildCanvas(modes) {
     width: 460,
     height: 560,
     color: "4",
-    text: isCoreUpdate(mode) ? coreUpdateMarkdown(mode) : [mode.modeName, (kindLabels[mode.kind] || "玩法模式") + " · " + mode.game, "核心玩法：" + getGameplayLabel(mode) + (isLtmMode(mode) ? " · LTM" : ""), "", "一句话规则：" + mode.oneLineRule, "", "设计观察：" + mode.designObservation, "", ...(mode.sourceModeIds ? ["基于已有案例的设计提炼", ""] : []), "来源：" + mode.sourceUrl].join("\n")
+    text: isTacticalItem(mode) ? tacticalItemMarkdown(mode) : isCoreUpdate(mode) ? coreUpdateMarkdown(mode) : [mode.modeName, (kindLabels[mode.kind] || "玩法模式") + " · " + mode.game, "核心玩法：" + getGameplayLabel(mode) + (isLtmMode(mode) ? " · LTM" : ""), "", "一句话规则：" + mode.oneLineRule, "", "设计观察：" + mode.designObservation, "", ...(mode.sourceModeIds ? ["基于已有案例的设计提炼", ""] : []), "来源：" + mode.sourceUrl].join("\n")
   }));
 
   return {

@@ -3,8 +3,9 @@ const localMechanicsPreview = new URLSearchParams(location.search).get('preview'
 const viewMeta = {
   modes: ['玩法模式', '玩法模式', '收录模式案例与基础局内体验更新，按核心玩法、游戏和更新类别查找资料。', '01 / GAME MODES'],
   maps: ['地图', '地图', '收集射击游戏的地图资料，查看空间布局，保存底图并追溯官方来源。', '02 / MAP LIBRARY'],
+  items: ['主题道具', '主题与战术道具', '收集游戏内改变行动方式的道具、装备和场景交互物，按功能查找机制、视频与图片资料。', '03 / TACTICAL ITEMS'],
   mechanics: ['机制库预览', '地图机制与交互物', '本地预览区：先把局内交互、空间作用和设计观察放在一起试排，尚未发布到公开站点。', 'LOCAL PREVIEW · MECHANICS'],
-  collection: ['我的收藏', '我的研究收藏', '收藏值得继续研究的玩法案例。', 'YOUR FIELDNOTES']
+  collection: ['我的收藏', '我的研究收藏', '收藏值得继续研究的玩法、地图与主题道具。', 'YOUR FIELDNOTES']
 };
 const modeViewMeta = {
   library: viewMeta.modes,
@@ -12,7 +13,7 @@ const modeViewMeta = {
   activity: ['玩法模式', '玩法动态', '按日期查看模式与基础更新；同一版本的基础更新集中展示，并保留官方来源。', '01 / GAME MODES · DYNAMIC'],
   timeline: ['玩法模式', '时间画板', '按游戏与核心玩法分轨，查看模式案例及基础更新的日期、版本和具体变化。', '01 / GAME MODES · TIMELINE']
 };
-const kindLabels = { modes: '玩法模式', mechanics: '玩法机制', levels: '关卡机制' };
+const kindLabels = { modes: '玩法模式', items: '主题道具', mechanics: '玩法机制', levels: '关卡机制' };
 const gameplayDefinitions = [
   { id: 'br', label: 'BR（大逃杀）', shortLabel: 'BR', timelineClass: 'is-core' },
   { id: 'warfare', label: '大战场', shortLabel: '大战场', timelineClass: 'is-warfare' },
@@ -70,14 +71,20 @@ function topicIds(entry) {
 }
 
 function entryMatchesQuery(entry) {
+  if (isTacticalItem(entry)) return itemMatchesQuery(entry);
   const text = [entry.modeName, entry.game, entry.oneLineRule, entry.mechanicChange,
-    entry.tempoImpact, entry.designObservation, entry.versionLabel, ...(entry.affectedModes || []), ...(entry.mapNames || []), getContentTypeLabel(entry), ...(entry.type || []),
+    entry.tempoImpact, entry.designObservation, entry.versionLabel, ...(entry.searchAliases || []), entry.tacticalProfile?.role, ...(entry.affectedModes || []), ...(entry.mapNames || []), getContentTypeLabel(entry), ...(entry.type || []),
     kindLabels[entry.kind], getGameplayLabel(entry), isLtmMode(entry) ? 'LTM 限时模式' : '', ...topicIds(entry).map((id) => topicDefs.find((item) => item.id === id)?.label || '')
   ].join(' ').toLocaleLowerCase();
   return state.query.toLocaleLowerCase().trim().split(/\s+/).every((word) => text.includes(word));
 }
 
 function matchesLibraryEntry(entry, { ignoreGameplay = false, ignoreGame = false } = {}) {
+  if (isTacticalItem(entry)) return state.view === 'collection' && state.collected.has(entry.id) &&
+    (ignoreGame || state.gameFilter === 'all' || entry.game === state.gameFilter) &&
+    (ignoreGameplay || state.gameplayFilter === 'all') && state.filter === 'all' &&
+    ['all', 'item'].includes(state.contentFilter) && state.updateCategory === 'all' &&
+    (state.topic === 'all' || topicIds(entry).includes(state.topic)) && itemMatchesQuery(entry);
   if (kindLabels[state.view] && entry.kind !== state.view) return false;
   if (state.view === 'timeline' && entry.kind !== 'modes') return false;
   if (state.view === 'collection' && !state.collected.has(entry.id)) return false;
@@ -90,6 +97,7 @@ function matchesLibraryEntry(entry, { ignoreGameplay = false, ignoreGame = false
 }
 
 function getFilteredEntries() {
+  if (state.view === 'items') return getFilteredTacticalItems();
   let entries = state.entries.filter((entry) => matchesLibraryEntry(entry));
   if (state.sort === 'name') return entries.sort((a, b) => a.modeName.localeCompare(b.modeName, 'zh-CN'));
   if (state.sort === 'newest') return getSortedModesDescending(entries);
@@ -103,6 +111,7 @@ function getFilteredEntries() {
 }
 
 function getGames() {
+  if (state.view === 'items') return [...new Set(itemArchive.entries.map((entry) => entry.game))];
   const source = localMechanicsPreview && state.view === 'mechanics'
     ? state.entries.filter((entry) => entry.kind === 'mechanics')
     : state.modes;
@@ -131,6 +140,7 @@ function renderGameplayFilters() {
 }
 
 function workspaceHash(entryId) {
+  if (state.view === 'items') return itemHash(entryId);
   const params = new URLSearchParams();
   if (state.view === 'modes' && state.modeView !== 'library') params.set('view', state.modeView);
   if (state.gameplayFilter !== 'all') params.set('gameplay', state.gameplayFilter);
@@ -155,10 +165,13 @@ function updateCounts() {
   const counts = Object.fromEntries(Object.keys(kindLabels).map((kind) => [kind, state.entries.filter((entry) => entry.kind === kind).length]));
   $('#navModeCount').textContent = counts.modes;
   $('#navMapCount').textContent = mapArchive.entries.length || '—';
+  $('#navItemCount').textContent = itemArchive.entries.length;
   $('#navMechanicsCount').textContent = counts.mechanics || '—';
   $('#navCollectedCount').textContent = state.entries.filter((entry) => state.collected.has(entry.id)).length + (mapArchive.mapCollected?.size || 0);
   if (state.view === 'maps') {
     $('#librarySummary').textContent = new Set(mapArchive.entries.map((entry) => entry.game)).size + ' 款游戏 · ' + mapArchive.entries.length + ' 张地图';
+  } else if (state.view === 'items') {
+    $('#librarySummary').textContent = itemArchive.entries.length + ' 项对象 · ' + itemArchive.categories.length + ' 个分类';
   } else if (state.view === 'mechanics') {
     $('#librarySummary').textContent = getGames().length + ' 款游戏 · ' + state.entries.filter((entry) => entry.kind === 'mechanics').length + ' 张机制卡';
   } else {
@@ -174,6 +187,7 @@ function fallbackCover(entry) {
 }
 
 function renderCard(entry) {
+  if (isTacticalItem(entry)) return tacticalCard(entry);
   const collected = state.collected.has(entry.id);
   const isMode = entry.kind === 'modes';
   const imageUrl = isMode || entry.kind === 'levels' || (localMechanicsPreview && entry.kind === 'mechanics') ? safeUrl(entry.imageUrl) : '';
@@ -211,7 +225,7 @@ function renderLibrary() {
   modeGrid.classList.toggle('list-view', state.layout === 'list');
   modeGrid.setAttribute('aria-busy', 'false');
   const emptyMessage = state.view === 'collection' && !state.entries.some((entry) => state.collected.has(entry.id)) && !collectedMaps.length
-    ? ['还没有收藏', '点选卡片上的书签，留下你想继续研究的玩法和地图。', '<a class="button" href="#modes">浏览玩法模式</a>']
+    ? ['还没有收藏', '点选卡片上的书签，留下你想继续研究的玩法、地图和道具。', '<a class="button" href="#modes">浏览玩法模式</a>']
     : ['没有找到匹配的资料', '试试更短的关键词，或放宽核心玩法、游戏和标签筛选。', '<button class="button" data-reset-filters>清除筛选</button>'];
   const visibleMaps = collectedMaps.slice(0, Math.max(0, state.limit - visible.length));
   modeGrid.innerHTML = (visible.length || visibleMaps.length) ? visible.map(renderCard).join('') + visibleMaps.map(renderMapCollectionCard).join('') :
@@ -258,6 +272,7 @@ function currentMetricsRouteKey() {
 function renderWorkspace() {
   if (!state.ready) return;
   recordPageView(currentMetricsRouteKey());
+  document.body.classList.toggle('items-view', state.view === 'items');
   updateCounts();
   renderGameFilters();
   const meta = state.view === 'modes' ? (modeViewMeta[state.modeView] || modeViewMeta.library) : (viewMeta[state.view] || viewMeta.modes);
@@ -284,6 +299,9 @@ function renderWorkspace() {
   $('#activitySection').hidden = !showActivity;
   $('#timelineSection').hidden = !showTimeline;
   $('#mapsSection').hidden = state.view !== 'maps';
+  $('#itemsSection').hidden = state.view !== 'items';
+  $('#exportItemsMarkdown').hidden = state.view !== 'items';
+  $('#searchInput').placeholder = state.view === 'items' ? '搜索道具、英文名、作用…' : '搜索玩法、地图、游戏…';
   $('#patchesSection').hidden = !(state.view === 'modes' && state.modeView === 'patches');
   $('.export-menu').hidden = state.view === 'maps' || (state.view === 'modes' && state.modeView === 'patches');
   if (library) renderLibrary();
@@ -292,10 +310,12 @@ function renderWorkspace() {
   if (state.view === 'modes' && state.modeView === 'patches') renderFFPatches();
   renderFFPatchLibrary();
   if (state.view === 'maps') renderMapArchive();
+  if (state.view === 'items') renderTacticalItems();
   renderSharedFilters();
 }
 
 function resetFilters() {
+  resetItemFilters();
   state.patchId = ''; state.patchLane = 'all'; state.patchCategory = 'all'; state.query = ''; state.topic = 'all'; state.filter = 'all'; state.gameFilter = 'all'; state.gameplayFilter = 'all'; state.contentFilter = 'all'; state.updateCategory = 'all'; state.activityLimit = 24; state.limit = 12;
   $('#searchInput').value = ''; $('#topicSelect').value = 'all'; $('#typeSelect').value = 'all';
 }
@@ -315,8 +335,19 @@ function setNavOpen(open) {
 
 function readRoute() {
   if (!state.ready) return;
-  const [route, query] = location.hash.slice(1).split('?');
+  let [route, query] = location.hash.slice(1).split('?');
   const routeParams = new URLSearchParams(query);
+  const legacyItem = resolveTacticalItem(routeParams.get('entry'));
+  const legacyTopic = route === 'modes' && routeParams.get('game') === 'Fortnite' &&
+    routeParams.get('content') === 'core_update' && routeParams.get('q') === '战术道具';
+  if (legacyTopic || (legacyItem && (route === 'modes' || legacyItem.id !== routeParams.get('entry')))) {
+    route = 'items';
+    ['view', 'content', 'category', 'gameplay', 'topic', 'tag'].forEach((key) => routeParams.delete(key));
+    if (legacyTopic) routeParams.delete('q');
+    if (legacyItem) routeParams.set('entry', legacyItem.id);
+    query = routeParams.toString();
+    history.replaceState(null, '', '#items' + (query ? '?' + query : ''));
+  }
   // Former discovery, activity and timeline links now share the mode library.
   const legacyModeView = route === 'activity' ? 'activity' : route === 'timeline' ? 'timeline' : null;
   const requestedRoute = route === 'explore' || legacyModeView ? 'modes' : route;
@@ -340,6 +371,7 @@ function readRoute() {
   }
   state.gameFilter = getGames().includes(routeParams.get('game')) ? routeParams.get('game') : 'all';
   state.contentFilter = Object.hasOwn(contentTypeLabels, routeParams.get('content')) ? routeParams.get('content') : 'all';
+  if (view !== 'collection' && state.contentFilter === 'item') state.contentFilter = 'all';
   state.updateCategory = state.contentFilter === 'core_update' && Object.hasOwn(coreUpdateCategories, routeParams.get('category')) ? routeParams.get('category') : 'all';
   state.query = routeParams.get('q') || '';
   state.topic = topicDefs.some((t) => t.id === routeParams.get('topic')) ? routeParams.get('topic') : 'all';
@@ -350,11 +382,12 @@ function readRoute() {
   state.patchLane = Object.hasOwn(ffPatchLanes, routeParams.get('lane')) ? routeParams.get('lane') : 'all';
   state.patchCategory = Object.hasOwn(ffPatchCategories, routeParams.get('pcategory')) ? routeParams.get('pcategory') : 'all';
   state.filter = routeParams.get('tag') === 'ltm' && view === 'modes' ? 'ltm' : 'all';
+  if (view === 'items') readItemRoute(routeParams);
   $('#typeSelect').value = state.filter;
   setNavOpen(false);
   renderWorkspace();
   if (contentChanged) window.scrollTo({ top: 0, behavior: 'instant' });
-  const requestedId = new URLSearchParams(query).get('entry');
+  const requestedId = routeParams.get('entry');
   if (requestedId && state.entries.some((entry) => entry.id === requestedId)) showDetail(requestedId);
   else if (detailDialog.open) closeDetail(false);
 }
@@ -375,7 +408,7 @@ function showDetail(id) {
     : sourceIds.map((sourceId) => state.entries.find((item) => item.id === sourceId)).filter(Boolean);
   const imageUrl = safeUrl(entry.imageUrl);
   const derived = entry.kind !== 'modes';
-  $('#detailContent').innerHTML = isCoreUpdate(entry) ? coreUpdateDetail(entry) :
+  $('#detailContent').innerHTML = isTacticalItem(entry) ? tacticalItemDetail(entry) : isCoreUpdate(entry) ? coreUpdateDetail(entry) :
     (imageUrl ? '<img class="detail-cover" src="' + escapeHtml(imageUrl) + '" alt="' + escapeHtml(entry.imageSource || '原案例配图') + '">' : '') +
     '<div class="detail-inner"><div class="detail-kicker">' + kindLabels[entry.kind] + ' / ' + escapeHtml(entry.game) + '</div>' +
     '<h2 id="detailTitle">' + escapeHtml(entry.modeName) + '</h2>' +
@@ -479,13 +512,13 @@ function bindWorkspaceEvents() {
     }
     const entry = state.entries.find((item) => item.id === target.dataset.id);
     if (!entry) return;
-    if (target.dataset.action === 'open-mode') openDetail(entry.id);
+    if (target.dataset.action === 'open-mode' || target.dataset.action === 'open-item') openDetail(entry.id);
     if (target.dataset.action === 'collect') {
       const restoreId = entry.id;
       const fromDetail = detailDialog.open;
       toggleCollect(entry.id);
       if (!fromDetail) {
-        const button = [...document.querySelectorAll('#modeGrid [data-action="collect"]')].find((item) => item.dataset.id === restoreId);
+        const button = [...document.querySelectorAll('#modeGrid [data-action="collect"], #itemGrid [data-action="collect"]')].find((item) => item.dataset.id === restoreId);
         button?.focus({ preventScroll: true });
       }
     }
@@ -496,8 +529,8 @@ function bindWorkspaceEvents() {
     }
   });
   $('#searchInput').addEventListener('input', (event) => {
-    state.query = event.target.value; state.limit = 12; syncFilterRoute();
-    if (!['modes', 'mechanics', 'levels', 'collection', 'maps'].includes(state.view)) {
+    state.query = event.target.value; state.limit = 12; itemArchive.limit = 24; syncFilterRoute();
+    if (!['modes', 'mechanics', 'levels', 'collection', 'maps', 'items'].includes(state.view)) {
       state.view = 'modes'; state.gameFilter = 'all';
       history.replaceState(null, '', '#modes');
     }
@@ -563,6 +596,7 @@ function bindWorkspaceEvents() {
     }
   });
   modeGrid.addEventListener('error', (event) => {
+    if (handleTacticalImageError(event)) return;
     if (event.target.tagName !== 'IMG') return;
     const entry = state.entries.find((item) => item.id === event.target.closest('[data-id]')?.dataset.id);
     if (!entry) return;
@@ -571,7 +605,9 @@ function bindWorkspaceEvents() {
     cover.querySelector('.cover-game')?.remove();
     event.target.outerHTML = fallbackCover(entry);
   }, true);
-  $('#detailContent').addEventListener('error', (event) => { if (event.target.tagName === 'IMG') event.target.hidden = true; }, true);
+  $('#detailContent').addEventListener('error', (event) => {
+    if (!handleTacticalImageError(event) && event.target.tagName === 'IMG') event.target.hidden = true;
+  }, true);
   window.addEventListener('hashchange', readRoute);
   window.matchMedia('(max-width: 760px)').addEventListener('change', () => setNavOpen(false));
 }
@@ -579,6 +615,7 @@ function bindWorkspaceEvents() {
 async function initWorkspace() {
   bindWorkspaceEvents();
   bindFFPatchEvents();
+  bindTacticalItemEvents();
   initMapArchive();
   try {
     const response = await fetch('data/modes.json', { cache: 'no-store' });
@@ -590,7 +627,9 @@ async function initWorkspace() {
     if (!updateResponse.ok) throw new Error('基础更新资料暂时无法读取');
     const updates = await updateResponse.json();
     if (!Array.isArray(updates)) throw new Error('基础更新资料格式有误');
-    state.modes.push(...updates.filter((entry) => entry.publicationStatus === 'ready').map(normalizeCoreUpdate));
+    const itemResponse = await fetch('data/tactical-items.json', { cache: 'no-store' });
+    if (!itemResponse.ok) throw new Error('主题道具资料暂时无法读取');
+    state.modes.push(...loadTacticalCatalogue(await itemResponse.json(), updates));
     const patchResponse = await fetch('data/free-fire-patches.json', { cache: 'no-store' });
     if (!patchResponse.ok) throw new Error('版本详录暂时无法读取');
     state.ffPatches = (await patchResponse.json()).filter(patch => patch.publicationStatus === 'ready');
@@ -608,6 +647,7 @@ async function initWorkspace() {
     } else {
       state.entries = [...state.modes];
     }
+    state.entries.push(...itemArchive.entries);
     seedCollectedAnalytics();
     state.ready = true;
     $('#topicSelect').insertAdjacentHTML('beforeend', topicDefs.map((topic) => '<option value="' + topic.id + '">' + topic.label + '</option>').join(''));

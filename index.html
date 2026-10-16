@@ -8,7 +8,8 @@
   <title>集成农业 · 射击玩法研究库</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css?v=core-updates-20260919-r9">
-  <link rel="stylesheet" href="workspace.css?v=core-updates-20260919-r9">
+  <link rel="stylesheet" href="workspace.css?v=20261012-items">
+  <link rel="stylesheet" href="tactical-items.css?v=20261012-images">
 </head>
 <body class="workspace">
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><symbol id="ui-compass" viewBox="0 0 24 24">
@@ -149,6 +150,7 @@
     <nav class="primary-nav">
       <a class="nav-item is-active" href="#modes" data-view="modes" aria-current="page"><svg><use href="#ui-layers"></use></svg><span>玩法模式</span><span class="nav-count" id="navModeCount">—</span></a>
       <a class="nav-item" href="#maps" data-view="maps"><svg><use href="#ui-map"></use></svg><span>地图</span><span class="nav-count" id="navMapCount">—</span></a>
+      <a class="nav-item" href="#items" data-view="items"><svg><use href="#ui-scan-line"></use></svg><span>主题道具</span><span class="nav-count" id="navItemCount">—</span></a>
       <a class="nav-item local-preview-nav" href="#mechanics" data-view="mechanics" hidden><svg><use href="#ui-workflow"></use></svg><span>机制库预览</span><span class="nav-count" id="navMechanicsCount">—</span></a>
     </nav>
     <div class="nav-divider"></div>
@@ -165,13 +167,14 @@
       <div class="breadcrumb"><span>研究资料库</span><span class="crumb-slash">/</span><strong id="currentViewLabel">玩法模式</strong></div>
       <div class="global-search">
         <svg><use href="#ui-search"></use></svg>
-        <label class="sr-only" for="searchInput">搜索玩法、地图、游戏或关键词</label>
+        <label class="sr-only" for="searchInput">搜索当前资料库</label>
         <input type="search" id="searchInput" placeholder="搜索玩法、地图、游戏…" autocomplete="off">
         <kbd>/</kbd>
       </div>
       <div class="export-menu">
         <button class="button subtle" id="exportToggle" aria-label="导出资料" aria-expanded="false" aria-controls="exportOptions"><svg><use href="#ui-download"></use></svg><span>导出资料</span></button>
         <div class="dropdown-menu" id="exportOptions" hidden>
+          <button id="exportItemsMarkdown" type="button" hidden>当前道具筛选 → Markdown</button>
           <button id="exportCanvas" type="button">当前筛选 → Obsidian Canvas</button>
           <button id="exportCollected" type="button">我的收藏 → Markdown</button>
         </div>
@@ -201,7 +204,7 @@
           <div class="game-filters" id="gameFilters" aria-label="按游戏筛选"></div>
           <div class="filter-bottom">
             <div class="filter-fields">
-              <div class="select-field" id="contentTypeField"><label for="contentTypeSelect">资料类型</label><select id="contentTypeSelect"><option value="all">全部资料</option><option value="mode">模式案例</option><option value="core_update">基础更新</option></select></div>
+              <div class="select-field" id="contentTypeField"><label for="contentTypeSelect">资料类型</label><select id="contentTypeSelect"><option value="all">全部资料</option><option value="mode">模式案例</option><option value="core_update">基础更新</option><option value="item" id="itemContentOption" hidden>主题道具</option></select></div>
               <div class="select-field" id="updateCategoryField" hidden><label for="updateCategorySelect">更新类别</label><select id="updateCategorySelect"><option value="all">全部更新类别</option></select></div>
               <div class="select-field"><label for="topicSelect">设计主题</label><select id="topicSelect" aria-label="设计主题"><option value="all">全部主题</option></select></div>
               <div class="select-field" id="typeField"><label for="typeSelect">模式标签</label><select id="typeSelect" aria-label="模式标签"><option value="all">全部标签</option></select></div>
@@ -232,6 +235,28 @@
       </section>
 
       <section id="patchesSection" class="secondary-section" role="tabpanel" aria-label="版本详录" hidden></section>
+
+      <section id="itemsSection" aria-label="主题与战术道具资料" hidden>
+        <div class="items-overview">
+          <div><span class="items-kicker">FORTNITE / 堡垒之夜</span><h2>历史道具与局内交互物</h2></div>
+          <dl id="itemStats" class="items-stats"></dl>
+        </div>
+        <div class="items-filter-panel">
+          <div class="items-filter-header"><h2>按作用查找</h2><button type="button" class="button subtle" data-reset-items>重置筛选</button></div>
+          <div id="itemCategoryFilters" class="item-category-filters" role="group" aria-label="道具功能分类"></div>
+          <div class="items-controls">
+            <div class="select-field"><label for="itemGameSelect">游戏</label><select id="itemGameSelect"><option value="all">全部游戏</option></select></div>
+            <div class="select-field"><label for="itemObjectSelect">对象类型</label><select id="itemObjectSelect"><option value="all">全部对象</option><option value="equipment">道具与功能装备</option><option value="vehicle">载具与炮台</option><option value="world">场景交互物</option><option value="creative">创意模式道具</option></select></div>
+            <div class="select-field"><label for="itemStatusSelect">资料进度</label><select id="itemStatusSelect"><option value="all">全部进度</option><option value="documented">含机制详录</option><option value="catalogued">目录已收录</option></select></div>
+            <div class="items-layout-controls"><label class="sr-only" for="itemSortSelect">道具排序</label><select id="itemSortSelect"><option value="catalogue">按分类顺序</option><option value="documented">机制详录优先</option><option value="name">按名称排序</option></select><button type="button" class="icon-button" data-item-layout="grid" aria-label="道具卡片视图" aria-pressed="true"><svg><use href="#ui-grid-2x2"></use></svg></button><button type="button" class="icon-button" data-item-layout="list" aria-label="道具列表视图" aria-pressed="false"><svg><use href="#ui-list"></use></svg></button></div>
+          </div>
+        </div>
+        <p class="items-scope-note">每项均配外观图，点击图片可查看大图和出处。优先官方图片，官方缺图的条目用社区资料补充并标注。历史对象与道具族不代表当前赛季可用物资；“目录已收录”条目仍待补逐版本核对、视频与操作截图。</p>
+        <div class="results-heading items-results-heading"><div><h2 id="itemResultsTitle">全部道具</h2><span id="itemResultCount" role="status" aria-live="polite"></span></div><button type="button" class="button subtle" id="downloadItemsList">导出清单 <svg><use href="#ui-download"></use></svg></button></div>
+        <p id="itemFilterSummary" class="item-filter-summary" hidden></p>
+        <div id="itemGrid" class="item-grid"></div>
+        <div class="results-footer"><span id="itemShownCount"></span><button type="button" class="button" id="loadMoreItems">加载更多 <svg><use href="#ui-arrow-right"></use></svg></button></div>
+      </section>
 
       <section id="mapsSection" class="secondary-section" aria-label="地图资料" hidden>
         <div class="map-library-toolbar">
@@ -312,10 +337,11 @@
   </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="core-updates.js?v=20260919-r9"></script>
-  <script src="app.js?v=core-updates-20260919-r9"></script>
+  <script src="core-updates.js?v=20261012-items"></script>
+  <script src="tactical-items.js?v=20261012-images"></script>
+  <script src="app.js?v=20261012-items"></script>
   <script src="maps.js?v=core-updates-20260919-r9"></script>
   <script src="ff-patches.js?v=20260919-r13"></script>
-  <script src="workspace.js?v=core-updates-20260919-r9"></script>
+  <script src="workspace.js?v=20261012-images"></script>
 </body>
 </html>

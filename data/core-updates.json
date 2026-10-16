@@ -858,5 +858,915 @@
     "imageScope": "version",
     "imageScopeLabel": "赛季中期版本配图",
     "imageReviewedAt": "2026-09-27"
+  },
+  {
+    "id": "fortnite-update-driftboard-2019-02-19",
+    "objectKey": "fortnite-driftboard",
+    "contentKind": "core_update",
+    "game": "Fortnite",
+    "title": "漂移滑板（Driftboard）",
+    "categories": [
+      "traversal",
+      "equipment",
+      "revive_teamplay"
+    ],
+    "changeType": "addition",
+    "updateScope": "core",
+    "duration": "limited",
+    "gameplayTypes": [
+      "br"
+    ],
+    "affectedModes": [
+      "大逃杀（BR）"
+    ],
+    "mapNames": [],
+    "sourceModeIds": [
+      "fortnite-driftin-2019"
+    ],
+    "sourceMapIds": [],
+    "before": null,
+    "after": "骑乘时可加速、射击、使用消耗品、拾取物资和救起倒地队友，但不能建造。",
+    "playerImpact": "转点途中可补给或救援，但遇到火力时需要决定继续机动还是下板建造。",
+    "designObservation": "设计推断：同一载具保留多种行动，却关闭建造，可以改变玩家应对突袭的手段。",
+    "versionLabel": "v7.40 内容更新",
+    "publishedDate": "2019-02-19",
+    "effectiveDate": "2019-02-19",
+    "effectiveDateStatus": "confirmed",
+    "timingNote": "官方新闻页标注 2019-02-19；同日官方道具视频展示该内容更新。公告明确称限时道具，未给退场日。",
+    "scopeNote": "战术道具专题。中文名为说明性译法，英文原名用于检索。本条只描述所列历史版本，不代表当前赛季物资池或完整版本沿革。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v7-40-content-update",
+    "sourceHeading": "Battle Royale > Weapons + Items > Driftboard",
+    "previousUpdateIds": [],
+    "reviewStatus": "source_verified",
+    "publicationStatus": "ready",
+    "reviewedAt": "2026-10-11",
+    "imageUrl": "assets/core-updates/fortnite-tactical/driftboard-official.jpg",
+    "imageSource": "漂移滑板官方道具宣传图（非实机截图）",
+    "imageStatus": "verified_official",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv7-40-content-update%2Fbr-header-v7-40-content-update%2FBR07_Social_Driftboard%2BPowder-1920x1080-f4204ee82caf03382cea99a21f78eb4694340e95.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/patch-notes/v7-40-content-update",
+    "imageScope": "specific",
+    "imageScopeLabel": "官方道具图",
+    "imageReviewedAt": "2026-10-11",
+    "searchAliases": [
+      "堡垒之夜",
+      "战术道具",
+      "Driftboard"
+    ],
+    "tacticalProfile": {
+      "englishName": "Driftboard",
+      "role": "机动载具 · 移动射击与救援",
+      "operation": "在地图中找到滑板后骑乘；利用加速与跳跃特技移动，骑乘状态下仍可操作武器和消耗品。",
+      "effect": "把转点、搜刮和救援合并到骑乘过程中，不必为了这些动作先下板。",
+      "acquisition": "地图各处的滑板；漂移板大战（Driftin’）限时模式另由红色空投提供。",
+      "limits": "骑乘时不能建造。普通 BR 的滑板没有在本篇中被赋予自动回血；生命与护盾缓慢恢复只写在 漂移板大战（Driftin’）限时模式小节。",
+      "parameters": [
+        {
+          "label": "可同时进行",
+          "value": "射击、使用消耗品、拾取、救援"
+        },
+        {
+          "label": "禁止操作",
+          "value": "骑乘时建造"
+        },
+        {
+          "label": "速度／加速冷却",
+          "value": "本篇未给数值"
+        }
+      ]
+    },
+    "evidenceLinks": [
+      {
+        "label": "机制：Battle Royale > Weapons + Items > Driftboard",
+        "url": "https://www.fortnite.com/patch-notes/v7-40-content-update"
+      },
+      {
+        "label": "公告日期依据",
+        "url": "https://www.fortnite.com/news/v7-40-content-update"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=d06pGjGzoSc",
+        "title": "Fortnite - Driftboard",
+        "channel": "Fortnite",
+        "publishedDate": "2019-02-19",
+        "sourceType": "official",
+        "versionLabel": "v7.40 内容更新",
+        "watchFor": "观察骑乘、跳跃特技、加速与射击的组合。",
+        "verification": "已通过 YouTube oEmbed 核对视频标题、发布频道和可访问性；机制与数字仍以官方补丁为准。",
+        "reviewedAt": "2026-10-11",
+        "channelUrl": "https://www.youtube.com/@fortnite"
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "assets/core-updates/fortnite-tactical/driftboard-video-10s.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=d06pGjGzoSc&t=10s",
+        "timestampSeconds": 10,
+        "caption": "官方演示 00:10：角色骑滑板越过雪地高差。",
+        "sourceType": "official",
+        "capturedAt": "2026-10-11",
+        "sha256": "690fe392bcb878f8c4a1065043c61b88a46c006f0c30b8129c664e3476d1e16c"
+      }
+    ]
+  },
+  {
+    "id": "fortnite-update-witch-broom-2023-10-10",
+    "objectKey": "fortnite-witch-broom",
+    "contentKind": "core_update",
+    "game": "Fortnite",
+    "title": "女巫扫帚（Witch Broom）",
+    "categories": [
+      "traversal",
+      "equipment"
+    ],
+    "changeType": "addition",
+    "updateScope": "event_overlay",
+    "duration": "limited",
+    "gameplayTypes": [
+      "br"
+    ],
+    "affectedModes": [
+      "大逃杀（BR，非锦标赛）"
+    ],
+    "mapNames": [],
+    "sourceModeIds": [],
+    "sourceMapIds": [],
+    "before": "本次为返场；不是 2023 年首次推出。",
+    "after": "激活后快速升空，再滑翔回地面；2023 年返场版可从地面和宝箱获得，锦标赛不投放。",
+    "playerImpact": "被伏击时可快速改变高度；滑翔后的落点需要结合掩体和敌方视线选择。",
+    "designObservation": "设计推断：把位移拆成快速脱离和滑翔落地两个阶段，使启动时机与落点选择分别成为决策。",
+    "versionLabel": "v26.30 · 2023 万圣节返场",
+    "publishedDate": "2023-10-10",
+    "effectiveDate": "2023-10-10",
+    "effectiveDateStatus": "confirmed",
+    "timingNote": "公告日期为 2023-10-10，正文确认返场。活动截至 2023-11-03 美东时间 02:00（北京时间 14:00）；这是 2023 年活动期限，不代表今日仍可取得。",
+    "scopeNote": "战术道具专题。中文名为说明性译法，英文原名用于检索。本条只描述所列历史版本，不代表当前赛季物资池或完整版本沿革。",
+    "sourceUrl": "https://www.fortnite.com/news/fortnitemares-2023-dawns-in-the-fortnite-battle-royale-v26-30-update",
+    "sourceHeading": "Witch Broom; Competitive Notes",
+    "previousUpdateIds": [],
+    "reviewStatus": "source_verified",
+    "publicationStatus": "ready",
+    "reviewedAt": "2026-10-11",
+    "imageUrl": "assets/core-updates/fortnite-tactical/broom-official.jpg",
+    "imageSource": "女巫扫帚官方道具宣传图（非实机截图）",
+    "imageStatus": "verified_official",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/fortnite-witch-broom-1900x600-6f550ef50e23.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/fortnitemares-2023-dawns-in-the-fortnite-battle-royale-v26-30-update",
+    "imageScope": "specific",
+    "imageScopeLabel": "官方道具图",
+    "imageReviewedAt": "2026-10-11",
+    "searchAliases": [
+      "堡垒之夜",
+      "战术道具",
+      "Witch Broom"
+    ],
+    "tacticalProfile": {
+      "englishName": "Witch Broom",
+      "role": "随身位移道具 · 升空后滑翔",
+      "operation": "装备并激活扫帚，先快速向上移动，再进入滑翔下降过程。",
+      "effect": "通过改变高度离开地面交战位置，重新选择落点。",
+      "acquisition": "地面战利品、宝箱。",
+      "limits": "本篇没有给出升空高度、滑翔时长、冷却或充能数；不把其他年份或攻略数值套进本条。官方明确该道具不进入锦标赛。",
+      "parameters": [
+        {
+          "label": "移动阶段",
+          "value": "快速升空 → 滑翔下降"
+        },
+        {
+          "label": "获取",
+          "value": "地面、宝箱"
+        },
+        {
+          "label": "赛事",
+          "value": "锦标赛不投放"
+        },
+        {
+          "label": "冷却／高度",
+          "value": "本篇未说明"
+        }
+      ]
+    },
+    "evidenceLinks": [
+      {
+        "label": "机制：Witch Broom; Competitive Notes",
+        "url": "https://www.fortnite.com/news/fortnitemares-2023-dawns-in-the-fortnite-battle-royale-v26-30-update"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=yiNF6KwWZOo",
+        "title": "Where to Find MYTHIC Witch Broom in fortnite Chapter 4 Season 4 - Witch Broom locations",
+        "channel": "Fortnite Events（第三方频道）",
+        "publishedDate": "2023-10-10",
+        "sourceType": "community",
+        "versionLabel": "v26.30 · 2023 万圣节返场",
+        "watchFor": "查看 2023 年返场扫帚的获取和使用过程；机制以官方公告为准。",
+        "verification": "已通过 YouTube oEmbed 核对视频标题、发布频道和可访问性；机制与数字仍以官方补丁为准。",
+        "reviewedAt": "2026-10-11",
+        "channelUrl": "https://www.youtube.com/@GamerHexYT"
+      }
+    ],
+    "screenshots": [],
+    "mediaNote": "本条展示官方道具配图，并附对应版本的视频链接；暂未收录可核实的官方操作截图。"
+  },
+  {
+    "id": "fortnite-update-pirate-cannon-2019-02-27",
+    "objectKey": "fortnite-pirate-cannon",
+    "contentKind": "core_update",
+    "game": "Fortnite",
+    "title": "海盗炮（Pirate Cannon）",
+    "categories": [
+      "map_interactable",
+      "traversal",
+      "equipment"
+    ],
+    "changeType": "addition",
+    "updateScope": "core",
+    "duration": "unspecified",
+    "gameplayTypes": [
+      "br"
+    ],
+    "affectedModes": [
+      "大逃杀（BR）"
+    ],
+    "mapNames": [],
+    "sourceModeIds": [],
+    "sourceMapIds": [],
+    "before": null,
+    "after": "把炮推到合适位置后瞄准，可发射炮弹，也可钻入炮管把自己发射出去；命中会造成伤害和击退。",
+    "playerImpact": "队伍可先布置炮位压制建筑，也可用同一装置完成远距离投送；炮位与落点决定行动方向。",
+    "designObservation": "设计推断：同一瞄准发射操作同时支持火力和投送，使地图装置兼具战斗与交通用途。",
+    "versionLabel": "v8.00 · 第 8 赛季",
+    "publishedDate": "2019-02-27",
+    "effectiveDate": "2019-02-28",
+    "effectiveDateStatus": "confirmed",
+    "timingNote": "补丁新闻页显示 2019-02-27；第 8 赛季官方上线公告显示 2019-02-28 并明确提及海盗炮，因此公告日和生效日分别记录。未核实永久保留承诺。",
+    "scopeNote": "战术道具专题。中文名为说明性译法，英文原名用于检索。本条只描述所列历史版本，不代表当前赛季物资池或完整版本沿革。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v8-00",
+    "sourceHeading": "Battle Royale > Weapons + Items > Pirate Cannon",
+    "previousUpdateIds": [],
+    "reviewStatus": "source_verified",
+    "publicationStatus": "ready",
+    "reviewedAt": "2026-10-11",
+    "imageUrl": "assets/core-updates/fortnite-tactical/cannon-official.jpg",
+    "imageSource": "海盗炮官方道具宣传图（非实机截图）",
+    "imageStatus": "verified_official",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv8-00%2Fbr-header-v8-00%2FBR08_Social_PirateCannon-1920x1080-5f700a0f80e81232df19a73cca73180ffee713e8.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/patch-notes/v8-00",
+    "imageScope": "specific",
+    "imageScopeLabel": "官方道具图",
+    "imageReviewedAt": "2026-10-11",
+    "searchAliases": [
+      "堡垒之夜",
+      "战术道具",
+      "Pirate Cannon"
+    ],
+    "tacticalProfile": {
+      "englishName": "Pirate Cannon",
+      "role": "可推动的场景炮台 · 发射炮弹或玩家",
+      "operation": "先推动海盗炮调整位置，再瞄准发射；也能进入炮管，把玩家作为发射对象。",
+      "effect": "炮弹和被发射的玩家可飞越较远距离，沿途冲破部分物体，终止时对附近玩家造成伤害和击退。",
+      "acquisition": "在地图场景中寻找，不是从宝箱拾取的随身投掷物。",
+      "limits": "原文没有给出射程、炮台耐久、射速或落地保护的数值，本条不补猜。100／50 是本版对敌人伤害，不能当作建筑伤害。",
+      "parameters": [
+        {
+          "label": "直接命中敌人",
+          "value": "100 伤害"
+        },
+        {
+          "label": "小范围内敌人",
+          "value": "50 伤害"
+        },
+        {
+          "label": "发射对象",
+          "value": "炮弹或玩家"
+        },
+        {
+          "label": "范围半径／射程",
+          "value": "本篇未给数值"
+        }
+      ]
+    },
+    "evidenceLinks": [
+      {
+        "label": "机制：Battle Royale > Weapons + Items > Pirate Cannon",
+        "url": "https://www.fortnite.com/patch-notes/v8-00"
+      },
+      {
+        "label": "公告日期依据",
+        "url": "https://www.fortnite.com/news/v8-00-patch-notes"
+      },
+      {
+        "label": "第 8 赛季生效日期依据",
+        "url": "https://www.fortnite.com/news/season-8"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=qtI5vBXvrN4",
+        "title": "*NEW* Pirate Cannon Gameplay + Spawn Location! (Fortnite)",
+        "channel": "AciDic BliTzz",
+        "publishedDate": "2019-02-28",
+        "sourceType": "community",
+        "versionLabel": "v8.00 · 第 8 赛季",
+        "watchFor": "观察炮位移动、瞄准、炮弹发射与玩家进入炮管。",
+        "verification": "已通过 YouTube oEmbed 核对视频标题、发布频道和可访问性；机制与数字仍以官方补丁为准。",
+        "reviewedAt": "2026-10-11",
+        "channelUrl": "https://www.youtube.com/@AciDicBliTzz"
+      }
+    ],
+    "screenshots": [],
+    "mediaNote": "本条展示官方道具配图，并附对应版本的视频链接；暂未收录可核实的官方操作截图。"
+  },
+  {
+    "id": "fortnite-update-rift-to-go-2018-08-23",
+    "objectKey": "fortnite-rift-to-go",
+    "contentKind": "core_update",
+    "game": "Fortnite",
+    "title": "随身裂隙（Rift-To-Go）",
+    "categories": [
+      "equipment",
+      "traversal"
+    ],
+    "changeType": "addition",
+    "updateScope": "core",
+    "duration": "unspecified",
+    "gameplayTypes": [
+      "br"
+    ],
+    "affectedModes": [
+      "大逃杀（BR）"
+    ],
+    "mapNames": [],
+    "sourceModeIds": [],
+    "sourceMapIds": [],
+    "before": null,
+    "after": "使用后传送到空中并进入跳伞状态；原地裂隙保留 10 秒，队友和敌人都能跟随使用。",
+    "playerImpact": "可以集体转点或脱离包围，但需要同时考虑队友进门时间和敌人跟进的风险。",
+    "designObservation": "设计推断：保留公共入口，让个人脱战工具产生短暂的共享路线和追击机会。",
+    "versionLabel": "v5.30",
+    "publishedDate": "2018-08-23",
+    "effectiveDate": "2018-08-23",
+    "effectiveDateStatus": "confirmed",
+    "timingNote": "新闻页与官方视频均标注 2018-08-23；视频说明当时已可用。",
+    "scopeNote": "战术道具专题。中文名为说明性译法，英文原名用于检索。本条只描述所列历史版本，不代表当前赛季物资池或完整版本沿革。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v5-30",
+    "sourceHeading": "Battle Royale > Weapons + Items > Rift-To-Go",
+    "previousUpdateIds": [],
+    "reviewStatus": "source_verified",
+    "publicationStatus": "ready",
+    "reviewedAt": "2026-10-11",
+    "imageUrl": "assets/core-updates/fortnite-tactical/rift-official.jpg",
+    "imageSource": "随身裂隙官方道具宣传图（非实机截图）",
+    "imageStatus": "verified_official",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fv5-30-patch-notes%2FBR05_News_Header_16_9_-RiftToGo-1920x1080-3f1921eb6a869c706bbe84a8a0dbdbc5db28a445.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/v5-30-patch-notes",
+    "imageScope": "specific",
+    "imageScopeLabel": "官方道具图",
+    "imageReviewedAt": "2026-10-11",
+    "searchAliases": [
+      "堡垒之夜",
+      "战术道具",
+      "Rift-To-Go"
+    ],
+    "tacticalProfile": {
+      "englishName": "Rift-To-Go",
+      "role": "随身传送道具 · 多人共用的临时入口",
+      "operation": "在背包中携带，激活后立即传送到空中。",
+      "effect": "玩家进入跳伞状态；部署点保留可供其他玩家使用的裂隙 10 秒。",
+      "acquisition": "宝箱、自动售货机、空投、补给羊驼。",
+      "limits": "史诗品质，每组掉落 1 个，最多堆叠 2 个。裂隙不是队伍专属入口，敌人也能追进来。",
+      "parameters": [
+        {
+          "label": "入口持续",
+          "value": "10 秒"
+        },
+        {
+          "label": "掉落／堆叠上限",
+          "value": "1／2 个"
+        },
+        {
+          "label": "品质",
+          "value": "史诗"
+        },
+        {
+          "label": "传送后状态",
+          "value": "跳伞"
+        }
+      ]
+    },
+    "evidenceLinks": [
+      {
+        "label": "机制：Battle Royale > Weapons + Items > Rift-To-Go",
+        "url": "https://www.fortnite.com/patch-notes/v5-30"
+      },
+      {
+        "label": "公告日期依据",
+        "url": "https://www.fortnite.com/news/v5-30-patch-notes"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=J3wNiQcrqAM",
+        "title": "RIFT-TO-GO | NEW ITEM",
+        "channel": "Fortnite",
+        "publishedDate": "2018-08-23",
+        "sourceType": "official",
+        "versionLabel": "v5.30",
+        "watchFor": "观察激活、空中重定位，以及其他玩家跟随进入裂隙。",
+        "verification": "已通过 YouTube oEmbed 核对视频标题、发布频道和可访问性；机制与数字仍以官方补丁为准。",
+        "reviewedAt": "2026-10-11",
+        "channelUrl": "https://www.youtube.com/@fortnite"
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "assets/core-updates/fortnite-tactical/rift-video-15s.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=J3wNiQcrqAM&t=15s",
+        "timestampSeconds": 15.6,
+        "caption": "官方演示约 00:16：玩家经裂隙来到空中。",
+        "sourceType": "official",
+        "capturedAt": "2026-10-11",
+        "sha256": "7ef89bb2daa6e4e5bc8393c08e873fea55cf6a2c41192e939fe75d68fe7a27a6"
+      }
+    ]
+  },
+  {
+    "id": "fortnite-update-shockwave-grenade-2018-08-28",
+    "objectKey": "fortnite-shockwave-grenade",
+    "contentKind": "core_update",
+    "game": "Fortnite",
+    "title": "冲击波手雷（Shockwave Grenade）",
+    "categories": [
+      "equipment",
+      "traversal",
+      "combat_rules"
+    ],
+    "changeType": "addition",
+    "updateScope": "core",
+    "duration": "unspecified",
+    "gameplayTypes": [
+      "br"
+    ],
+    "affectedModes": [
+      "大逃杀（BR）"
+    ],
+    "mapNames": [],
+    "sourceModeIds": [],
+    "sourceMapIds": [],
+    "before": null,
+    "after": "冲击波把玩家推离爆点，被击退者可撞毁路径中的物体；受影响的友军、敌人和载具免受摔落伤害。",
+    "playerImpact": "可以给自己开出撤退路线，也能改变敌方站位；投掷位置会影响被推开的方向。",
+    "designObservation": "设计推断：把强制位移与摔落保护捆绑，使主要作用集中在位置改变和破坏掩体。",
+    "versionLabel": "v5.30 内容更新",
+    "publishedDate": "2018-08-28",
+    "effectiveDate": "2018-08-28",
+    "effectiveDateStatus": "confirmed",
+    "timingNote": "新闻页与官方道具视频均标注 2018-08-28；视频说明当时已可用。不要把同页 8 月 29 日热修日期用作道具首次生效日。",
+    "scopeNote": "战术道具专题。中文名为说明性译法，英文原名用于检索。本条只描述所列历史版本，不代表当前赛季物资池或完整版本沿革。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v5-30-content-update",
+    "sourceHeading": "Battle Royale > Weapons + Items > Shockwave Grenade",
+    "previousUpdateIds": [],
+    "reviewStatus": "source_verified",
+    "publicationStatus": "ready",
+    "reviewedAt": "2026-10-11",
+    "imageUrl": "assets/core-updates/fortnite-tactical/shockwave-official.jpg",
+    "imageSource": "冲击波手雷官方道具宣传图（非实机截图）",
+    "imageStatus": "verified_official",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fv5-30-content-update%2FBR05_News_Header_16_9_Shockwave-Grenade-1920x1080-ad3fbd7fb7ed83217dac7aad5bb11231726574b1.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/v5-30-content-update",
+    "imageScope": "specific",
+    "imageScopeLabel": "官方道具图",
+    "imageReviewedAt": "2026-10-11",
+    "searchAliases": [
+      "堡垒之夜",
+      "战术道具",
+      "Shockwave Grenade"
+    ],
+    "tacticalProfile": {
+      "englishName": "Shockwave Grenade",
+      "role": "位移投掷物 · 击退与穿破障碍",
+      "operation": "投掷后以冲击波击退受影响玩家，利用爆点与站位改变移动方向。",
+      "effect": "被击退者会破坏移动路径中的物体；官方同时说明受影响的友军、敌人和载具有摔落伤害保护。",
+      "acquisition": "空投、自动售货机、补给羊驼、宝箱。",
+      "limits": "史诗品质，每组掉落 2 个，最多堆叠 6 个。敌人同样获得摔落保护，不能把击退简单等同于摔落击杀。",
+      "parameters": [
+        {
+          "label": "掉落／堆叠上限",
+          "value": "2／6 个"
+        },
+        {
+          "label": "品质",
+          "value": "史诗"
+        },
+        {
+          "label": "摔落保护",
+          "value": "受影响的友军、敌人、载具"
+        },
+        {
+          "label": "击退距离",
+          "value": "本篇未给数值"
+        }
+      ]
+    },
+    "evidenceLinks": [
+      {
+        "label": "机制：Battle Royale > Weapons + Items > Shockwave Grenade",
+        "url": "https://www.fortnite.com/patch-notes/v5-30-content-update"
+      },
+      {
+        "label": "公告日期依据",
+        "url": "https://www.fortnite.com/news/v5-30-content-update"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=sKju1Jw-GnM",
+        "title": "SHOCKWAVE GRENADE | NEW ITEM",
+        "channel": "Fortnite",
+        "publishedDate": "2018-08-28",
+        "sourceType": "official",
+        "versionLabel": "v5.30 内容更新",
+        "watchFor": "观察击退方向、穿破建筑和落地过程。",
+        "verification": "已通过 YouTube oEmbed 核对视频标题、发布频道和可访问性；机制与数字仍以官方补丁为准。",
+        "reviewedAt": "2026-10-11",
+        "channelUrl": "https://www.youtube.com/@fortnite"
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "assets/core-updates/fortnite-tactical/shockwave-video-18s.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=sKju1Jw-GnM&t=18s",
+        "timestampSeconds": 18.03,
+        "caption": "官方演示约 00:18：结构出现缺口，附近角色被冲击波推开。",
+        "sourceType": "official",
+        "capturedAt": "2026-10-11",
+        "sha256": "960b16f964465f0a8d38074022d39c3d303f9b2a434fa9b56feef12f6b4197db"
+      }
+    ]
+  },
+  {
+    "id": "fortnite-update-grappler-2018-09-06",
+    "objectKey": "fortnite-grappler",
+    "contentKind": "core_update",
+    "game": "Fortnite",
+    "title": "抓钩枪（Grappler）",
+    "categories": [
+      "equipment",
+      "traversal"
+    ],
+    "changeType": "addition",
+    "updateScope": "core",
+    "duration": "unspecified",
+    "gameplayTypes": [
+      "br"
+    ],
+    "affectedModes": [
+      "大逃杀（BR）",
+      "逃亡（The Getaway，获取方式独立）"
+    ],
+    "mapNames": [],
+    "sourceModeIds": [
+      "fortnite-the-getaway-2018"
+    ],
+    "sourceMapIds": [],
+    "before": null,
+    "after": "向附近物体发射抓钩，把自己拉过去；可以连续发射转点，首发版本共 15 次充能，用尽后丢弃。",
+    "playerImpact": "需要寻找可命中的物体并管理剩余次数；连续位移路线依赖周围场景，而非随意朝空中冲刺。",
+    "designObservation": "设计推断：有限充能与锚点条件同时限制位移，把路线判断和资源保留结合起来。",
+    "versionLabel": "v5.40",
+    "publishedDate": "2018-09-06",
+    "effectiveDate": "2018-09-06",
+    "effectiveDateStatus": "confirmed",
+    "timingNote": "官方补丁新闻页为 2018-09-06，正文列为本版新增；具体开服时刻未注明。",
+    "scopeNote": "战术道具专题。中文名为说明性译法，英文原名用于检索。本条只描述所列历史版本，不代表当前赛季物资池或完整版本沿革。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v5-40",
+    "sourceHeading": "Battle Royale > Weapons + Items > Grappler; The Getaway > Mode Details",
+    "previousUpdateIds": [],
+    "reviewStatus": "source_verified",
+    "publicationStatus": "ready",
+    "reviewedAt": "2026-10-11",
+    "imageUrl": "assets/core-updates/fortnite-tactical/grappler-official.jpg",
+    "imageSource": "抓钩枪官方道具宣传图（非实机截图）",
+    "imageStatus": "verified_official",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv5-40%2Foverview-text-v5-40%2FBR05_Social_HighStakes_Grappler_NoText-1920x1080-f35b1140f10ea7b97dc0c66d2b851e80e2fb4520.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/patch-notes/v5-40",
+    "imageScope": "specific",
+    "imageScopeLabel": "官方道具图",
+    "imageReviewedAt": "2026-10-11",
+    "searchAliases": [
+      "堡垒之夜",
+      "战术道具",
+      "Grappler"
+    ],
+    "tacticalProfile": {
+      "englishName": "Grappler",
+      "role": "充能式位移工具 · 抓住物体拉近距离",
+      "operation": "瞄准附近物体发射，命中后把自己拉向该物体；连续选择新的锚点串联位移。",
+      "effect": "利用场景中的物体建立短程位移路线，支持快速接近或脱离交战。",
+      "acquisition": "普通 BR：自动售货机、地面、宝箱、空投、补给羊驼。逃亡模式中只有开局 12 个红色追击空投能提供。",
+      "limits": "本版为史诗品质、15 次充能，用尽后丢弃。不同版本的使用次数不能混用；本篇未给抓取距离或摔落保护。",
+      "parameters": [
+        {
+          "label": "首发充能",
+          "value": "15 次"
+        },
+        {
+          "label": "用尽",
+          "value": "丢弃"
+        },
+        {
+          "label": "品质",
+          "value": "史诗"
+        },
+        {
+          "label": "射程／摔落保护",
+          "value": "本篇未说明"
+        }
+      ]
+    },
+    "evidenceLinks": [
+      {
+        "label": "机制：Battle Royale > Weapons + Items > Grappler; The Getaway > Mode Details",
+        "url": "https://www.fortnite.com/patch-notes/v5-40"
+      },
+      {
+        "label": "公告日期依据",
+        "url": "https://www.fortnite.com/news/v5-40-patch-notes"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=cfXlkxtsiIo",
+        "title": "Web Slinging With New Grappler Gun!! - Fortnite Battle Royale Gameplay - Ninja & Nickmercs",
+        "channel": "Ninja",
+        "publishedDate": "2018-09-09",
+        "sourceType": "community",
+        "versionLabel": "v5.40",
+        "watchFor": "观察实战中选择锚点、连续抓取和接近目标的操作。",
+        "verification": "已通过 YouTube oEmbed 核对视频标题、发布频道和可访问性；机制与数字仍以官方补丁为准。",
+        "reviewedAt": "2026-10-11",
+        "channelUrl": "https://www.youtube.com/@Ninja"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=ojd9Fsr9owE",
+        "title": "Fortnite Presents: High Stakes",
+        "channel": "Fortnite",
+        "channelUrl": "https://www.youtube.com/@fortnite",
+        "publishedDate": "2018-09-06",
+        "sourceType": "official",
+        "versionLabel": "v5.40 · High Stakes 官方预告",
+        "watchFor": "观察抓钩的持握、锚点和移动表现；The Getaway 的投放规则与普通 BR 分开记录。",
+        "verification": "YouTube oEmbed 核对标题与官方频道，网页核对发布日期；已在浏览器播放并截取对应画面。",
+        "reviewedAt": "2026-10-11"
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "assets/core-updates/fortnite-tactical/grappler-video-20s.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=ojd9Fsr9owE&t=20s",
+        "timestampSeconds": 20.31,
+        "caption": "官方预告约 00:20：角色持握红色吸盘抓钩枪。",
+        "sourceType": "official",
+        "capturedAt": "2026-10-11",
+        "sha256": "2d29c911e708ecad2d8bf174aa45ecc3b72ff9c188132447d94c2b73228cfb23"
+      }
+    ]
+  },
+  {
+    "id": "fortnite-update-port-a-fort-2018-04-11",
+    "objectKey": "fortnite-port-a-fort",
+    "contentKind": "core_update",
+    "game": "Fortnite",
+    "title": "便携堡垒（Port-a-Fort）",
+    "categories": [
+      "equipment",
+      "map_interactable"
+    ],
+    "changeType": "addition",
+    "updateScope": "core",
+    "duration": "unspecified",
+    "gameplayTypes": [
+      "br"
+    ],
+    "affectedModes": [
+      "大逃杀（BR）"
+    ],
+    "mapNames": [],
+    "sourceModeIds": [],
+    "sourceMapIds": [],
+    "before": null,
+    "after": "投掷物命中后立即生成三层金属堡垒；底层为带门的 1×1 空间，内部轮胎帮助玩家登顶。",
+    "playerImpact": "缺少现成掩体时可快速创建高点；预制的入口和登顶方式也让对手能够判断进攻路线。",
+    "designObservation": "设计推断：把连续建造压缩成一次投掷，降低建立防守位置所需的操作量，同时保留可读的结构。",
+    "versionLabel": "v3.5",
+    "publishedDate": "2018-04-11",
+    "effectiveDate": null,
+    "effectiveDateStatus": "unverified",
+    "timingNote": "补丁页日期为 2018-04-11；官方视频发布于 2018-04-10，目前视频简介含“NOW AVAILABLE”，无法确认简介是否后改，因此不据此把上线日提前，具体生效日标待核实。",
+    "scopeNote": "战术道具专题。中文名为说明性译法，英文原名用于检索。本条只描述所列历史版本，不代表当前赛季物资池或完整版本沿革。",
+    "sourceUrl": "https://www.fortnite.com/news/v3-5-patch-notes",
+    "sourceHeading": "Battle Royale > Weapons + Items > Port-a-Fort",
+    "previousUpdateIds": [],
+    "reviewStatus": "source_verified",
+    "publicationStatus": "ready",
+    "reviewedAt": "2026-10-11",
+    "imageUrl": "assets/core-updates/fortnite-tactical/fort-official.jpg",
+    "imageSource": "便携堡垒官方视频封面（非实机截图）",
+    "imageStatus": "verified_official",
+    "imageAssetSourceUrl": "https://i.ytimg.com/vi/53485ZbOXf4/maxresdefault.jpg",
+    "imageSourcePageUrl": "https://www.youtube.com/watch?v=53485ZbOXf4",
+    "imageScope": "specific",
+    "imageScopeLabel": "官方道具图",
+    "imageReviewedAt": "2026-10-11",
+    "searchAliases": [
+      "堡垒之夜",
+      "战术道具",
+      "Port-a-Fort"
+    ],
+    "tacticalProfile": {
+      "englishName": "Port-a-Fort",
+      "role": "部署式掩体 · 投掷生成预制高点",
+      "operation": "把便携堡垒投向目标位置，命中点立即生成预制建筑。",
+      "effect": "生成三层金属堡垒，底层有门可进入，里面的轮胎可以把玩家弹向屋顶。",
+      "acquisition": "本篇只明确每组掉落 1 个，未在该小节列出掉落容器。",
+      "limits": "首发版本为史诗品质，最多堆叠 5 个。本条是 Port-a-Fort，不是后来更大的 Port-a-Fortress。",
+      "parameters": [
+        {
+          "label": "建筑材质／高度",
+          "value": "金属／三层"
+        },
+        {
+          "label": "底层",
+          "value": "1×1，有门"
+        },
+        {
+          "label": "垂直通路",
+          "value": "内部轮胎弹跳"
+        },
+        {
+          "label": "掉落／堆叠上限",
+          "value": "1／5 个"
+        }
+      ]
+    },
+    "evidenceLinks": [
+      {
+        "label": "机制：Battle Royale > Weapons + Items > Port-a-Fort",
+        "url": "https://www.fortnite.com/news/v3-5-patch-notes"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=53485ZbOXf4",
+        "title": "PORT-A-FORT | NEW ITEM",
+        "channel": "Fortnite",
+        "publishedDate": "2018-04-10",
+        "sourceType": "official",
+        "versionLabel": "v3.5",
+        "watchFor": "观察投掷后建筑展开，以及轮胎连接底层和屋顶的方式。",
+        "verification": "已通过 YouTube oEmbed 核对视频标题、发布频道和可访问性；机制与数字仍以官方补丁为准。",
+        "reviewedAt": "2026-10-11",
+        "channelUrl": "https://www.youtube.com/@fortnite"
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "assets/core-updates/fortnite-tactical/fort-video-7s.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=53485ZbOXf4&t=7s",
+        "timestampSeconds": 7.72,
+        "caption": "官方演示约 00:08：投掷后金属堡垒展开。",
+        "sourceType": "official",
+        "capturedAt": "2026-10-11",
+        "sha256": "cff5437a34343b16901e30e6fd11a8d5528e5e5a20cd24c5acc28900635d3091"
+      }
+    ]
+  },
+  {
+    "id": "fortnite-update-balloons-2018-11-01",
+    "objectKey": "fortnite-balloons",
+    "contentKind": "core_update",
+    "game": "Fortnite",
+    "title": "升空气球（Balloons）",
+    "categories": [
+      "equipment",
+      "traversal"
+    ],
+    "changeType": "addition",
+    "updateScope": "core",
+    "duration": "unspecified",
+    "gameplayTypes": [
+      "br"
+    ],
+    "affectedModes": [
+      "大逃杀（BR）"
+    ],
+    "mapNames": [],
+    "sourceModeIds": [],
+    "sourceMapIds": [],
+    "before": null,
+    "after": "一组带 20 个可部署气球，同时最多持有 6 个；主开火键充气、副开火键放走气球，以数量调整升空。",
+    "playerImpact": "玩家可以控制气球数量取得高度，但需要考虑高空暴露和高度上限。",
+    "designObservation": "设计推断：把连续移动状态交给离散的气球数量控制，使浮力变化可见、可操作。",
+    "versionLabel": "v6.21 · 首发持握版本",
+    "publishedDate": "2018-11-01",
+    "effectiveDate": "2018-11-01",
+    "effectiveDateStatus": "confirmed",
+    "timingNote": "官方新闻页和道具视频均为 2018-11-01，补丁明确本版新增。",
+    "scopeNote": "战术道具专题。中文名为说明性译法，英文原名用于检索。本条只描述所列历史版本，不代表当前赛季物资池或完整版本沿革。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v6-21",
+    "sourceHeading": "Battle Royale > Weapons + Items > Balloons",
+    "previousUpdateIds": [],
+    "reviewStatus": "source_verified",
+    "publicationStatus": "ready",
+    "reviewedAt": "2026-10-11",
+    "imageUrl": "assets/core-updates/fortnite-tactical/balloons-official.png",
+    "imageSource": "升空气球官方道具宣传图（非实机截图）",
+    "imageStatus": "verified_official",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fv6-21-patch-notes%2FBR06_News_Featured_16_9-1920x1080-a4c7fd121c134e8b06efa953d822f41f5ff2c098.png",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/v6-21-patch-notes",
+    "imageScope": "specific",
+    "imageScopeLabel": "官方道具图",
+    "imageReviewedAt": "2026-10-11",
+    "searchAliases": [
+      "堡垒之夜",
+      "战术道具",
+      "Balloons"
+    ],
+    "tacticalProfile": {
+      "englishName": "Balloons",
+      "role": "可调浮力道具 · 增减气球控制升空",
+      "operation": "装备气球后用主开火键充起气球，用副开火键放走气球。",
+      "effect": "增加持握的气球获得向上浮力；通过气球数量改变空中移动状态。",
+      "acquisition": "地面、宝箱、空投、补给羊驼、自动售货机。",
+      "limits": "此处记录 v6.21 首发的持握版本，不套用后续背部附着、最多 3 个等规则。在最大建造高度，气球不能无限维持；原文没有给具体秒数。",
+      "parameters": [
+        {
+          "label": "一组数量",
+          "value": "20 个可部署气球"
+        },
+        {
+          "label": "同时持有上限",
+          "value": "6 个"
+        },
+        {
+          "label": "品质",
+          "value": "史诗"
+        },
+        {
+          "label": "最大建造高度停留",
+          "value": "有限，未给秒数"
+        }
+      ]
+    },
+    "evidenceLinks": [
+      {
+        "label": "机制：Battle Royale > Weapons + Items > Balloons",
+        "url": "https://www.fortnite.com/patch-notes/v6-21"
+      },
+      {
+        "label": "公告日期依据",
+        "url": "https://www.fortnite.com/news/v6-21-patch-notes"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=6pLHRY1SpE4",
+        "title": "BALLOONS | NEW ITEM",
+        "channel": "Fortnite",
+        "publishedDate": "2018-11-01",
+        "sourceType": "official",
+        "versionLabel": "v6.21 · 首发持握版本",
+        "watchFor": "观察充气、放走气球与高度变化；这是首发持握版本。",
+        "verification": "已通过 YouTube oEmbed 核对视频标题、发布频道和可访问性；机制与数字仍以官方补丁为准。",
+        "reviewedAt": "2026-10-11",
+        "channelUrl": "https://www.youtube.com/@fortnite"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=BgoBWw3Mkeg",
+        "title": "Fortnite | Balloons | New Item",
+        "channel": "XBOX",
+        "channelUrl": "https://www.youtube.com/@XBOX",
+        "publishedDate": "2018-11-01",
+        "sourceType": "official",
+        "versionLabel": "v6.21 · Xbox 官方发布",
+        "watchFor": "观察首发持握气球的队伍移动画面；不要套用后续背部附着版本。",
+        "verification": "YouTube oEmbed 核对标题与官方频道，网页核对发布日期；已在浏览器播放并截取对应画面。",
+        "reviewedAt": "2026-10-11"
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "assets/core-updates/fortnite-tactical/balloons-video-12s.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=BgoBWw3Mkeg&t=11s",
+        "timestampSeconds": 11.83,
+        "caption": "Xbox 官方演示约 00:12：队员持握气球靠近建筑。",
+        "sourceType": "official",
+        "capturedAt": "2026-10-11",
+        "sha256": "361fac823fc191d3ce323e0c40b95728cb240bc385484aca66f89c0251c63e00"
+      }
+    ]
   }
 ]
