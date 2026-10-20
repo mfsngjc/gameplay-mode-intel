@@ -6,3 +6,6 @@
 local-only/
 data/research.json
 _site/
+data/ugc/source-descriptions.json
+data/ugc/chinese-queue.json
+__pycache__/

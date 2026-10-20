@@ -1,6 +1,7 @@
 /* Public mode library and map archive; unpublished research remains local. */
 const localMechanicsPreview = new URLSearchParams(location.search).get('preview') === 'mechanics';
 const viewMeta = {
+  ugc: ['UGC 榜单', 'UGC 创作榜单', '跟踪四个平台的每日热榜与历史最热门，查看上涨、新入榜及近期强势作品。', '04 / 社区创作榜单'],
   modes: ['玩法模式', '玩法模式', '收录模式案例与基础局内体验更新，按核心玩法、游戏和更新类别查找资料。', '01 / GAME MODES'],
   maps: ['地图', '地图', '收集射击游戏的地图资料，查看空间布局，保存底图并追溯官方来源。', '02 / MAP LIBRARY'],
   items: ['主题道具', '主题与战术道具', '收集游戏内改变行动方式的道具、装备和场景交互物，按功能查找机制、视频与图片资料。', '03 / TACTICAL ITEMS'],
@@ -140,6 +141,7 @@ function renderGameplayFilters() {
 }
 
 function workspaceHash(entryId) {
+  if (state.view === 'ugc') return UGCMonitor.hash(state.query);
   if (state.view === 'items') return itemHash(entryId);
   const params = new URLSearchParams();
   if (state.view === 'modes' && state.modeView !== 'library') params.set('view', state.modeView);
@@ -168,7 +170,9 @@ function updateCounts() {
   $('#navItemCount').textContent = itemArchive.entries.length;
   $('#navMechanicsCount').textContent = counts.mechanics || '—';
   $('#navCollectedCount').textContent = state.entries.filter((entry) => state.collected.has(entry.id)).length + (mapArchive.mapCollected?.size || 0);
-  if (state.view === 'maps') {
+  if (state.view === 'ugc') {
+    $('#librarySummary').textContent = '4 个平台 · 热榜 100 / 历史榜 200';
+  } else if (state.view === 'maps') {
     $('#librarySummary').textContent = new Set(mapArchive.entries.map((entry) => entry.game)).size + ' 款游戏 · ' + mapArchive.entries.length + ' 张地图';
   } else if (state.view === 'items') {
     $('#librarySummary').textContent = itemArchive.entries.length + ' 项对象 · ' + itemArchive.categories.length + ' 个分类';
@@ -273,6 +277,7 @@ function renderWorkspace() {
   if (!state.ready) return;
   recordPageView(currentMetricsRouteKey());
   document.body.classList.toggle('items-view', state.view === 'items');
+  document.body.classList.toggle('ugc-view', state.view === 'ugc');
   updateCounts();
   renderGameFilters();
   const meta = state.view === 'modes' ? (modeViewMeta[state.modeView] || modeViewMeta.library) : (viewMeta[state.view] || viewMeta.modes);
@@ -300,10 +305,11 @@ function renderWorkspace() {
   $('#timelineSection').hidden = !showTimeline;
   $('#mapsSection').hidden = state.view !== 'maps';
   $('#itemsSection').hidden = state.view !== 'items';
+  $('#ugcSection').hidden = state.view !== 'ugc';
   $('#exportItemsMarkdown').hidden = state.view !== 'items';
-  $('#searchInput').placeholder = state.view === 'items' ? '搜索道具、英文名、作用…' : '搜索玩法、地图、游戏…';
+  $('#searchInput').placeholder = state.view === 'ugc' ? '搜索创作内容、作者、岛屿代码…' : state.view === 'items' ? '搜索道具、英文名、作用…' : '搜索玩法、地图、游戏…';
   $('#patchesSection').hidden = !(state.view === 'modes' && state.modeView === 'patches');
-  $('.export-menu').hidden = state.view === 'maps' || (state.view === 'modes' && state.modeView === 'patches');
+  $('.export-menu').hidden = ['maps', 'ugc'].includes(state.view) || (state.view === 'modes' && state.modeView === 'patches');
   if (library) renderLibrary();
   if (showActivity) renderActivityFeed();
   if (showTimeline) renderTimeline();
@@ -312,6 +318,7 @@ function renderWorkspace() {
   if (state.view === 'maps') renderMapArchive();
   if (state.view === 'items') renderTacticalItems();
   renderSharedFilters();
+  if (state.view === 'ugc') { $('#sharedFilters').hidden = true; UGCMonitor.render(state.query); }
 }
 
 function resetFilters() {
@@ -383,6 +390,7 @@ function readRoute() {
   state.patchCategory = Object.hasOwn(ffPatchCategories, routeParams.get('pcategory')) ? routeParams.get('pcategory') : 'all';
   state.filter = routeParams.get('tag') === 'ltm' && view === 'modes' ? 'ltm' : 'all';
   if (view === 'items') readItemRoute(routeParams);
+  if (view === 'ugc') UGCMonitor.readRoute(routeParams);
   $('#typeSelect').value = state.filter;
   setNavOpen(false);
   renderWorkspace();
@@ -530,7 +538,7 @@ function bindWorkspaceEvents() {
   });
   $('#searchInput').addEventListener('input', (event) => {
     state.query = event.target.value; state.limit = 12; itemArchive.limit = 24; syncFilterRoute();
-    if (!['modes', 'mechanics', 'levels', 'collection', 'maps', 'items'].includes(state.view)) {
+    if (!['modes', 'mechanics', 'levels', 'collection', 'maps', 'items', 'ugc'].includes(state.view)) {
       state.view = 'modes'; state.gameFilter = 'all';
       history.replaceState(null, '', '#modes');
     }

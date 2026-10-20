@@ -105,6 +105,22 @@ GitHub Pages 没有可写入的数据库。全站匿名事件经 `workers.dev` �
 
 需要重建归档时安装 Pillow 后运行 `python3 scripts/archive_delta_maps.py`；已有图片默认跳过以避免重复请求。只有明确核实来源更新后才替换对应图片，并更新核查日期。
 
+## UGC 双榜每日监控
+
+侧栏「UGC 榜单」跟踪 CS2、Roblox、堡垒之夜社区和 Minecraft。每个平台提供每日热榜前 100、历史最热门前 200，共 1200 条；支持跨日升降、近 7 天走势、新入榜、强势新进榜、历史快照与中文介绍导出。
+
+本地 AI 定时任务每天北京时间 09:00 运行。首日建立真实基线，随后按保存的历史比较，采集失败保留原快照和原更新时间。页面每分钟检查更新后的数据文件。来源、统计口径、执行和故障规则见 [UGC 监控说明](docs/ugc-monitor.md)。
+
+```powershell
+python scripts/sync_ugc.py
+python scripts/prepare_ugc_chinese.py --refresh-sources
+# 按监控说明完成待审核的中文介绍后，再做完整校验。
+python scripts/test_ugc.py
+node scripts/validate_ugc.cjs
+```
+
+本地修改不自动发布；已有公开构建会包含 UGC 前端和快照文件。
+
 ## 项目结构
 
 ```text

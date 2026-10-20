@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles.css?v=core-updates-20260919-r9">
   <link rel="stylesheet" href="workspace.css?v=20261012-items">
   <link rel="stylesheet" href="tactical-items.css?v=20261012-images">
+  <link rel="stylesheet" href="ugc.css?v=20261021-zh2">
 </head>
 <body class="workspace">
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><symbol id="ui-compass" viewBox="0 0 24 24">
@@ -151,6 +152,7 @@
       <a class="nav-item is-active" href="#modes" data-view="modes" aria-current="page"><svg><use href="#ui-layers"></use></svg><span>玩法模式</span><span class="nav-count" id="navModeCount">—</span></a>
       <a class="nav-item" href="#maps" data-view="maps"><svg><use href="#ui-map"></use></svg><span>地图</span><span class="nav-count" id="navMapCount">—</span></a>
       <a class="nav-item" href="#items" data-view="items"><svg><use href="#ui-scan-line"></use></svg><span>主题道具</span><span class="nav-count" id="navItemCount">—</span></a>
+      <a class="nav-item" href="#ugc" data-view="ugc"><svg><use href="#ui-radio"></use></svg><span>UGC 榜单</span><span class="nav-count" id="navUgcCount">—</span></a>
       <a class="nav-item local-preview-nav" href="#mechanics" data-view="mechanics" hidden><svg><use href="#ui-workflow"></use></svg><span>机制库预览</span><span class="nav-count" id="navMechanicsCount">—</span></a>
     </nav>
     <div class="nav-divider"></div>
@@ -258,6 +260,8 @@
         <div class="results-footer"><span id="itemShownCount"></span><button type="button" class="button" id="loadMoreItems">加载更多 <svg><use href="#ui-arrow-right"></use></svg></button></div>
       </section>
 
+      <section id="ugcSection" class="secondary-section" aria-label="UGC 创作榜单" hidden></section>
+
       <section id="mapsSection" class="secondary-section" aria-label="地图资料" hidden>
         <div class="map-library-toolbar">
           <div class="activity-tabs" id="mapCategoryFilters" role="group" aria-label="按游戏筛选地图">
@@ -342,6 +346,7 @@
   <script src="app.js?v=20261012-items"></script>
   <script src="maps.js?v=core-updates-20260919-r9"></script>
   <script src="ff-patches.js?v=20260919-r13"></script>
-  <script src="workspace.js?v=20261012-images"></script>
+  <script src="ugc.js?v=20261021-top200"></script>
+  <script src="workspace.js?v=20261021-ugc"></script>
 </body>
 </html>

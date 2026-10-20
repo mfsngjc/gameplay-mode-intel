@@ -9,6 +9,8 @@ OUTPUT = ROOT / '_site'
 
 
 def remove_output_with_retry():
+    if OUTPUT.resolve().parent != ROOT.resolve() or OUTPUT.is_symlink():
+        raise RuntimeError('Public output must remain directly inside the project')
     if not OUTPUT.exists():
         return
     last_error = None
@@ -28,7 +30,7 @@ def remove_output_with_retry():
 def main():
     remove_output_with_retry()
     OUTPUT.mkdir()
-    files = ['index.html', 'app.js', 'workspace.js', 'maps.js', 'styles.css',
+    files = ['index.html', 'app.js', 'workspace.js', 'maps.js', 'styles.css', 'ugc.js', 'ugc.css',
              'workspace.css', 'tactical-items.css', 'tactical-items.js', 'data/tactical-items.json',
              'ff-patches.js', 'data/free-fire-patches.json', 'core-updates.js', 'data/core-updates.json', 'data/modes.json', 'data/maps.json',
              'assets/favicon.svg', 'assets/lucide-LICENSE']
@@ -36,6 +38,16 @@ def main():
         destination = OUTPUT / name
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(ROOT / name, destination)
+    for name in ['latest.json', 'index.json', 'briefing.json', 'chinese.json']:
+        source = ROOT / 'data/ugc' / name
+        if source.exists():
+            destination = OUTPUT / 'data/ugc' / name
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, destination)
+    for source in sorted((ROOT / 'data/ugc/history').glob('????-??-??.json')):
+        destination = OUTPUT / 'data/ugc/history' / source.name
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, destination)
     shutil.copytree(ROOT / 'assets/maps', OUTPUT / 'assets/maps')
     if (ROOT / 'assets/modes').exists():
         shutil.copytree(ROOT / 'assets/modes', OUTPUT / 'assets/modes')

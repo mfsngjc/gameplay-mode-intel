@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-20T17:51:55+00:00",
+  "note": "首日观察基于已采集的来源说明；尚无跨日数据，不判断上涨原因。",
+  "entries": [
+    {
+      "boardId": "cs2",
+      "id": "3818299372",
+      "title": "鼠标灵敏度测试器：把调试做成训练内容",
+      "observation": "作者说明该地图会测试多组鼠标灵敏度下的瞄准表现，再推荐表现更好的设置；当前位于本次 CS2 近 7 天热门榜前列。首日尚不能判断排名涨幅。",
+      "designInference": "参数配置与可重复的实测任务结合，可作为工具型社区内容的研究样本；实际训练效果仍需体验验证。",
+      "sources": ["https://steamcommunity.com/sharedfiles/filedetails/?id=3818299372"]
+    },
+    {
+      "boardId": "roblox",
+      "id": "10563114921",
+      "title": "偷蛋养宠：收集经营与玩家争夺结合",
+      "observation": "官方说明包含偷蛋、孵化宠物、宠物产钱，以及速度训练和基地升级。在线排名来自本次来源站采集，不能从这个单点推导增长原因。",
+      "designInference": "宠物收益提供长期目标，偷取行为带来玩家之间的短期冲突，两种循环可分别拆解研究。",
+      "sources": ["https://www.roblox.com/games/107778070777162/Steal-An-Egg", "https://statroblox.com/leaderboards/playing"]
+    },
+    {
+      "boardId": "fortnite",
+      "id": "7786-0958-2481",
+      "title": "高柱生存战：随机道具与最后生存者",
+      "observation": "岛屿说明为 12 人自由对抗，每 6 秒获得随机道具，最后存活者获胜，并保留胜场和淘汰记录。",
+      "designInference": "固定发放节奏与随机道具能为短回合持续制造局面变化，适合观察派对玩法如何降低准备成本。",
+      "sources": ["https://fortnite.gg/island/7786-0958-2481"]
+    },
+    {
+      "boardId": "minecraft",
+      "id": "j0IfTxBq",
+      "title": "筛界异维度：探索新的世界",
+      "observation": "来源简介将其描述为包含特殊岩层、神秘液体、古老生命与灵魂元素的新维度。本次进入近 30 天创建模组的下载榜；该范围与历史累计榜不同。",
+      "designInference": "可从新空间、新资源与遭遇内容如何形成探索目标入手继续核查；仅凭简介不能确认完整流程和系统深度。",
+      "sources": ["https://modrinth.com/mod/mielons-the-sift"]
+    }
+  ]
+}

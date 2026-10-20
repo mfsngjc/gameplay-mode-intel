@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-20T18:35:40+00:00",
+  "dates": [
+    {
+      "date": "2026-10-21",
+      "platforms": [
+        "cs2",
+        "roblox",
+        "fortnite",
+        "minecraft",
+        "cs2_alltime",
+        "roblox_alltime",
+        "fortnite_alltime",
+        "minecraft_alltime"
+      ],
+      "counts": {
+        "cs2": 100,
+        "roblox": 100,
+        "fortnite": 100,
+        "minecraft": 100,
+        "cs2_alltime": 200,
+        "roblox_alltime": 200,
+        "fortnite_alltime": 200,
+        "minecraft_alltime": 200
+      }
+    }
+  ]
+}
