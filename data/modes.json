@@ -4667,16 +4667,16 @@
     "mechanicChange": "德穆兰身份需完成档案并消耗价值 25 万哈夫币的工作证，可单人进入或携一名副官；副官默认解锁，但必须与德穆兰组队。首领小队拥有专属电梯和撤离点，普通干员阵营（GTI）击败德穆兰后，也能拾取通行卡使用该路线。\n\n德穆兰可遥控神经控制载具，使用机枪、榴弹、威胁显像与寻敌爆破车。双方均可通过对抗获得表现积分和限定红色收藏品。",
     "tempoImpact": "首领方支付较高入场成本，换取独特能力和路线；普通干员则有积分与稀有掉落作为挑战动力。移动的首领小队因此成为其他队伍追踪、避让或伏击的目标。",
     "designObservation": "让玩家扮演首领时，需要为双方提供参与理由。身份成本限制首领的试错，专属能力提供优势，而可继承的路线权限和战利品鼓励其他人主动挑战。",
-    "sourceUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+    "sourceUrl": "https://deltaforce.garena.com/en/news/announcement/NDXE4K",
     "imageUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image4.png",
     "imageSource": "Garena 三角洲行动 第 11 赛季 官方 极星守望 配图",
     "launchDate": "2026-10-16",
     "launchLabel": "2026年10月16日开放（国际服）",
-    "launchNote": "该模式已在 9月4日官方补丁中公布，但明确标注 10月16日才开放；上线前规则仍可能调整。中文名采用国服官方预告“极星守望”。",
+    "launchNote": "9月4日赛季补丁先行公布，10月15日正式更新页确认模式于10月16日 08:00（UTC+8）开放，至2027年1月27日 10:00结束。中文名采用国服官方预告“极星守望”。",
     "gameplayTypes": [
       "extraction"
     ],
-    "isLtm": false
+    "isLtm": true
   },
   {
     "id": "delta-force-fishing-2026",
@@ -16157,6 +16157,66 @@
     "launchDate": "2026-09-22",
     "launchLabel": "2026年9月22日至10月13日",
     "launchNote": "EA 官方 2026年9月22日公告确认活动已开放并给出结束日期。此卡记录外卡父玩法的限时实质规则变化，不与常驻外卡卡片合并。中文专名采用说明性译法。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "pubg-slb-dawnbreakers-rondo-2026",
+    "game": "PUBG",
+    "modeName": "被遗留的幸存者：隆都破晓（SLB: Dawnbreakers of Rondo）",
+    "year": "2026",
+    "date": "2026-10-14",
+    "tags": [
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "4 人合作 PVE",
+      "据点防守与撤离",
+      "跨局装备成长"
+    ],
+    "oneLineRule": "最多 4 人在隆都搜集材料、制作武器和防御装置，启动发电机并守住蓄电器，充满电后发出信号撤离。",
+    "mechanicChange": "这是《被遗留的幸存者》的第四次规则版本，战场改到隆都六个区域，并加入新防守阶段。队伍先寻找油桶为发电机供能，再保护蓄电器；若蓄电器被饥饿者摧毁，充电进度会重置，充满后才能发出撤离信号。\n\n玩家可从售货机取得基础武器，并用战斗中收集的材料制作枪械、食物、炮塔、铁丝网、尖刺陷阱、治疗站与特殊武器。队友死亡后可回收蓝色芯片，在安全屋召回。急救包、材料、投掷物以及部分带独特战斗效果的武器和装备可带入后续对局。",
+    "tempoImpact": "每个阶段先搜集和制作，再转入蓄电器防守；装置摆位、资源共享和召回队友会把小队分工集中到最后的守点窗口。跨局保留物品又让高难度通关成为后续配装的来源。",
+    "designObservation": "同一合作 PVE 系列可以通过更换地图、增加明确的防守失败条件和跨局装备成长形成新版本，而不必改变四人协作的基础框架。",
+    "sourceUrl": "https://pubg.com/en/news/11138",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/common/content/news/20261014/qHn2DRRu.jpg",
+    "imageSource": "KRAFTON 官方《隆都破晓》公告主视觉",
+    "launchDate": "2026-10-14",
+    "launchLabel": "PC：2026年10月14日维护后至11月4日 00:00 UTC；主机：10月22日维护后至11月12日 01:00 UTC",
+    "launchNote": "官方将其称为《被遗留的幸存者》第四次玩法版本。它新增隆都场景、蓄电器防守、可部署装置、新敌人和跨局装备，因此作为实质规则变化单独记录；中文副标题为说明性译法。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-blood-pact-wildcard-2026",
+    "game": "Apex Legends",
+    "modeName": "血契外卡（Blood Pact Wildcard）",
+    "year": "2026",
+    "date": "2026-10-13",
+    "tags": [
+      "br-ltm",
+      "power"
+    ],
+    "type": [
+      "外卡模式",
+      "阵营能力",
+      "回合挑战"
+    ],
+    "oneLineRule": "在外卡模式选择野兽或恶魔阵营，每回合完成伤害或击倒挑战，逐步取得本阵营的三种专属强化。",
+    "mechanicChange": "玩家进入外卡模式后选择野兽或恶魔阵营，每回合会收到新的局内挑战；达到指定伤害或击倒要求即可取得一项阵营外卡。\n\n野兽阵营可依次获得收起武器时加速并二段跳、加快换弹与护盾电池使用、以及按节奏换弹触发暴击。恶魔阵营可获得更快的战术与终极技能充能、史诗级护盾，以及一次充满护盾的护盾电池效果。国王峡谷会随机降雾降低视野，并加入可用于搜寻目标的炸弹头手雷和万圣节主题地图交互。",
+    "tempoImpact": "每回合挑战推动小队持续输出并争取击倒，阵营能力会把野兽方引向追击与移动，把恶魔方引向技能循环和正面换血；随机浓雾又让接近、搜索和脱离交战更难判断。",
+    "designObservation": "在已有快速 BR 父玩法上叠加阵营选择和逐回合解锁，可以让同一小队围绕一致的成长方向行动，同时保留原有搜刮与生存目标。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/blood-pact-event",
+    "imageUrl": "https://drop-assets.ea.com/images/21kMVLKxEenjwgtH5KZc67/8f8524ac4a8339c1692df46217b35de4/ApexS30_BloodPact_3840x2160.jpg?im=AspectCrop=(16,9),xPosition=0.47421875,yPosition=0.5814814814814815",
+    "imageSource": "EA 官方《Apex Legends》血契活动主视觉",
+    "launchDate": "2026-10-13",
+    "launchLabel": "2026年10月13日至11月3日",
+    "launchNote": "EA 官方公告于10月8日发布，明确活动在10月13日上线；本卡记录外卡父玩法的限时实质规则变化。阵营与能力名称采用说明性译法。",
     "gameplayTypes": [
       "br"
     ],

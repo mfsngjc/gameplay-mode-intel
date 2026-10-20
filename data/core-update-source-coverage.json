@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11",
+  "updatedAt": "2026-10-20",
   "purpose": "基础局内体验更新的独立覆盖账本。mode-source-coverage.json 的旧模式扫描结果不可视为此类更新已经收全。",
   "policyDocument": "docs/core-experience-updates.md",
   "dataFile": "data/core-updates.json",
@@ -7519,10 +7519,29 @@
       ]
     },
     "PUBG": {
-      "coverageStatus": "not_started",
+      "coverageStatus": "ongoing_backfill",
       "recordCount": 0,
-      "checkedSources": [],
-      "nextRange": "按最新官方补丁开始基础体验更新扫描，再制定历史回填批次。"
+      "checkedSources": [
+        {
+          "sourceUrl": "https://pubg.com/en/news/11136",
+          "publishedDate": "2026-10-13",
+          "versionLabel": "Update 43.2",
+          "reviewedAt": "2026-10-20",
+          "reviewStatus": "version_summary_only",
+          "reviewedSections": [
+            "Gameplay > Message Radial Improvement",
+            "Gameplay > Vehicle Spawn Balance Adjustments",
+            "World > Erangel",
+            "PUBG: Playgrounds",
+            "Bug Fixes"
+          ],
+          "disposition": "标记轮盘、300米物品标记、屏外队友提示、普通/竞技载具刷新统一、地形破坏可读性与局内修复均登记为版本摘要候选；本轮不拆独立基础更新卡。SLB: Dawnbreakers of Rondo 作为实质模式变体进入 modes.json，Playgrounds 编辑器与竞赛获奖内容不计官方新模式。",
+          "remainingCandidates": [
+            "逐项拆分标记系统和载具刷新规则；按对象回填 Update 43.2 的局内修复。"
+          ]
+        }
+      ],
+      "nextRange": "继续拆分 Update 43.2 的标记、载具刷新和局内修复；随后回填 2026 年更早补丁。"
     },
     "PUBG Mobile": {
       "coverageStatus": "not_started",
