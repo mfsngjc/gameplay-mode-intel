@@ -3,7 +3,7 @@ window.UGCMonitor = (() => {
   'use strict';
   const root = document.querySelector('#ugcSection');
   const platforms = [['cs2', 'CS2 创意工坊'], ['roblox', '罗布乐思'], ['fortnite', '堡垒之夜社区'], ['minecraft', '我的世界模组']];
-  const ui = { platform: 'cs2', board: 'hot', date: '', filter: 'all', sort: 'rank', limit: 25, query: '', loading: false, error: '', latest: null, historical: null, index: null, briefing: null, chinese: null, creators: null };
+  const ui = { platform: 'cs2', board: 'hot', date: '', filter: 'all', sort: 'rank', limit: 25, query: '', loading: false, error: '', latest: null, historical: null, index: null, briefing: null, chinese: null, creators: null, boardCovers: null };
   const categories = { Custom: '自定义', Classic: '经典对战', Wingman: '搭档模式', Deathmatch: '死斗', Armsrace: '军备竞赛', Training: '训练',
     optimization: '性能优化', utility: '实用工具', adventure: '冒险', technology: '科技', magic: '魔法', storage: '存储', worldgen: '世界生成',
     decoration: '装饰', equipment: '装备', food: '食物', transportation: '交通', management: '管理', social: '社交', mobs: '生物', game_mechanics: '游戏机制',
@@ -39,6 +39,7 @@ window.UGCMonitor = (() => {
   const rankChange = value => value == null ? '<span class="ugc-neutral">—</span>' : value > 0 ? '<span class="ugc-up">↑ ' + value + '</span>' : value < 0 ? '<span class="ugc-down">↓ ' + Math.abs(value) + '</span>' : '<span class="ugc-neutral">持平</span>';
 
   function hash(query = ui.query) {
+    if (ui.board === 'catalog' && window.UGCCatalog) return '#ugc?' + UGCCatalog.routeParams(query).toString();
     const params = new URLSearchParams({ platform: ui.platform, board: ui.board });
     if (ui.date) params.set('date', ui.date);
     if (ui.filter !== 'all') params.set('signal', ui.filter);
@@ -49,12 +50,15 @@ window.UGCMonitor = (() => {
   function syncRoute() { history.replaceState(null, '', hash()); }
 
   function readRoute(params) {
-    ui.platform = platforms.some(([id]) => id === params.get('platform')) ? params.get('platform') : 'cs2';
-    ui.board = params.get('board') === 'alltime' ? 'alltime' : 'hot';
+    ui.platform = params.get('platform') === 'all' ? 'all' : platforms.some(([id]) => id === params.get('platform')) ? params.get('platform') : 'cs2';
+    ui.board = ['alltime', 'catalog'].includes(params.get('board')) ? params.get('board') : 'hot';
+    if (ui.board !== 'catalog' && ui.platform === 'all') ui.platform = 'cs2';
     const requestedDate = /^\d{4}-\d{2}-\d{2}$/.test(params.get('date') || '') ? params.get('date') : '';
     if (ui.date !== requestedDate) { ui.date = requestedDate; ui.historical = null; }
     ui.filter = ['risers', 'new', 'strong'].includes(params.get('signal')) ? params.get('signal') : 'all';
     ui.query = params.get('q') || '';
+    if (ui.board === 'catalog') { ui.date = ''; ui.filter = 'all'; }
+    if (ui.board === 'catalog' && window.UGCCatalog) UGCCatalog.readRoute(params);
     ui.limit = 25;
   }
 
@@ -71,11 +75,12 @@ window.UGCMonitor = (() => {
     ui.loading = true;
     if (!ui.latest) paint();
     try {
-      const [latest, catalog, creators] = await Promise.all([getJSON('data/ugc/latest.json'), getJSON('data/ugc/chinese.json'), getJSON('data/ugc/creators.json').catch(() => null)]);
+      const [latest, catalog, creators, boardCovers] = await Promise.all([getJSON('data/ugc/latest.json'), getJSON('data/ugc/chinese.json'), getJSON('data/ugc/creators.json').catch(() => null), getJSON('data/ugc/catalog/board-covers.json').catch(() => null)]);
       if (!latest.platforms || typeof latest.platforms !== 'object') throw new Error('榜单内容不完整');
-      const changed = !ui.latest || latest.generatedAt !== ui.latest.generatedAt || catalog.updatedAt !== ui.chinese?.updatedAt || (creators && creators.updatedAt !== ui.creators?.updatedAt);
+      const changed = !ui.latest || latest.generatedAt !== ui.latest.generatedAt || catalog.updatedAt !== ui.chinese?.updatedAt || (creators && creators.updatedAt !== ui.creators?.updatedAt) || (boardCovers?.updatedAt && boardCovers.updatedAt !== ui.boardCovers?.updatedAt);
       ui.chinese = catalog;
       if (creators) ui.creators = creators;
+      if (boardCovers?.schemaVersion === 1 && boardCovers.entries) ui.boardCovers = boardCovers;
       ui.latest = latest;
       if (changed || !ui.index || force) {
         ui.index = await getJSON('data/ugc/index.json');
@@ -157,6 +162,7 @@ window.UGCMonitor = (() => {
   }
 
   function paint() {
+    if (ui.board === 'catalog') { UGCCatalog.render({ platform: ui.platform, query: ui.query }); return; }
     if (!root) return;
     const board = current();
     const datasets = ui.latest?.platforms || {};
@@ -168,7 +174,7 @@ window.UGCMonitor = (() => {
     const stale = board && (board.status === 'stale' || (!ui.date && Date.now() - Date.parse(board.collectedAt) > 36 * 3600000));
     let html = '<div class="ugc-heading-line"><span class="ugc-schedule">' + esc(ui.latest?.scheduleLabel || '每天 09:00 · 北京时间') + '</span><span>每日采集 · 页面每分钟检查新数据</span><button type="button" class="button" data-ugc-refresh' + (ui.loading ? ' disabled' : '') + '>重新读取</button></div>';
     html += '<div class="ugc-platforms" role="group" aria-label="UGC 平台">' + platforms.map(([id, label]) => '<button type="button" data-ugc-platform="' + id + '" aria-pressed="' + (ui.platform === id) + '"><span>' + esc(label) + '</span><small>' + ((datasets[id]?.entries?.length || 0) + (datasets[id + '_alltime']?.entries?.length || 0)) + ' 条</small></button>').join('') + '</div>';
-    html += '<div class="ugc-board-line"><div class="ugc-board-switch" role="group" aria-label="榜单口径"><button type="button" data-ugc-board="hot" aria-pressed="' + (ui.board === 'hot') + '">每日热榜</button><button type="button" data-ugc-board="alltime" aria-pressed="' + (ui.board === 'alltime') + '">历史最热门</button></div><label class="ugc-date-label">历史快照 <select id="ugcDate"><option value="">最新榜单</option>' + selectedDates.map(item => '<option value="' + item.date + '"' + (ui.date === item.date ? ' selected' : '') + '>' + item.date + '</option>').join('') + '</select></label></div>';
+    html += '<div class="ugc-board-line"><div class="ugc-board-switch" role="group" aria-label="榜单口径"><button type="button" data-ugc-board="hot" aria-pressed="' + (ui.board === 'hot') + '">每日热榜</button><button type="button" data-ugc-board="alltime" aria-pressed="' + (ui.board === 'alltime') + '">历史最热门</button><button type="button" data-ugc-board="catalog" aria-pressed="false">全部收录</button></div><label class="ugc-date-label">历史快照 <select id="ugcDate"><option value="">最新榜单</option>' + selectedDates.map(item => '<option value="' + item.date + '"' + (ui.date === item.date ? ' selected' : '') + '>' + item.date + '</option>').join('') + '</select></label></div>';
     if (ui.error) html += '<div class="ugc-warning" role="status">' + esc(ui.error) + '。已载入的数据会继续保留。<button type="button" data-ugc-refresh>重试</button></div>';
     if (!board) {
       html += '<div class="ugc-empty" role="status"><h2>' + (ui.loading ? '正在读取 UGC 榜单…' : '本快照尚无这份榜单') + '</h2><p>' + (ui.loading ? '四个平台的热榜与历史最热门分别加载。' : '请选择最新榜单或其他日期。') + '</p></div>';
@@ -189,13 +195,17 @@ window.UGCMonitor = (() => {
     html += visible.map(row => {
       const translated = chinese(row, board);
       const labels = categoryLabels(row).slice(0, 3).join(' / ') || (ui.platform === 'fortnite' ? '岛屿代码 ' + row.id : '社区作品');
-      return '<tr><td class="ugc-rank">' + row.rank + '</td><td class="ugc-work"><a href="' + esc(safe(row.url)) + '" target="_blank" rel="noopener noreferrer">' + workTitle(row, board) + ' ↗</a>' + signal(row, board) + workAuthor(row, board) + '<small>' + esc(labels) + '</small><p>' + esc(translated.intro) + '</p></td><td class="ugc-metric" title="' + esc(row.metricValue) + '">' + number(row.metricValue) + (row.metricGrowthPct == null ? '' : '<small class="' + (row.metricGrowthPct >= 0 ? 'ugc-up' : 'ugc-down') + '">' + (row.metricGrowthPct >= 0 ? '+' : '') + row.metricGrowthPct + '%</small>') + '</td><td>' + (row.isNewEntry ? '<span class="ugc-up">' + (row.isReturning ? '重返' : '新入') + '</span>' : rankChange(row.rankDelta)) + '</td><td>' + rankChange(row.rankDelta7d) + '</td><td>' + sparkline(row, board) + '</td></tr>';
+      const cover = ui.boardCovers?.entries?.[board.platformId + ':' + row.id];
+      const imageUrl = cover?.status === 'available' ? safe(cover.url) : '';
+      const thumbnail = imageUrl ? '<img class="ugc-board-cover" loading="lazy" decoding="async" src="' + esc(imageUrl) + '" alt="" data-ugc-cover-fallback>' : '<span class="ugc-board-cover-missing">暂缺封面</span>';
+      return '<tr><td class="ugc-rank">' + row.rank + '</td><td class="ugc-work"><div class="ugc-work-heading">' + thumbnail + '<a href="' + esc(safe(row.url)) + '" target="_blank" rel="noopener noreferrer">' + workTitle(row, board) + ' ↗</a></div>' + signal(row, board) + workAuthor(row, board) + '<small>' + esc(labels) + '</small><p>' + esc(translated.intro) + '</p></td><td class="ugc-metric" title="' + esc(row.metricValue) + '">' + number(row.metricValue) + (row.metricGrowthPct == null ? '' : '<small class="' + (row.metricGrowthPct >= 0 ? 'ugc-up' : 'ugc-down') + '">' + (row.metricGrowthPct >= 0 ? '+' : '') + row.metricGrowthPct + '%</small>') + '</td><td>' + (row.isNewEntry ? '<span class="ugc-up">' + (row.isReturning ? '重返' : '新入') + '</span>' : rankChange(row.rankDelta)) + '</td><td>' + rankChange(row.rankDelta7d) + '</td><td>' + sparkline(row, board) + '</td></tr>';
     }).join('');
     if (!visible.length) html += '<tr><td colspan="6" class="ugc-empty">' + (board.isBaseline && ui.filter !== 'all' ? '首日尚无跨日对比数据。' : '没有匹配内容，试试其他筛选或关键词。') + '</td></tr>';
     html += '</tbody></table></div><div class="ugc-footer"><span>已展示 ' + visible.length + ' / ' + rows.length + ' 条' + (board.comparisonDate ? ' · 对比 ' + board.comparisonDate : ' · 首日基线') + '</span>' + (visible.length < rows.length ? '<button class="button" type="button" data-ugc-more>' + (board.boardType === 'alltime' ? '显示全部 ' + rows.length + ' 条' : '继续显示 25 条') + '</button>' : '') + '</div>';
     html += '<p class="ugc-translation-note">作品以来源原名与作者署名展示，括号内中文名称为说明性译法，仅供参考；玩法介绍按公开来源整理。</p>';
     html += '<details class="ugc-rules"><summary>如何判断上涨与强势新进榜</summary><p>排名上涨 = 对比日名次 − 当前名次。新入榜表示上次完整前 ' + boardSize(board) + ' 名中没有该作品，不代表刚发布；榜外名次不会按第 ' + (boardSize(board) + 1) + ' 名估算。</p><p>近 7 天新入榜的作品，若新入即进前 20，或一天上升至少 10 名、7 天上升至少 20 名、主要指标一天增长至少 25%，标记为强势新进榜。缺少历史、口径变更、采集失败均不制造变化；日期不连续时明确改用“较上次”。</p></details>';
     root.innerHTML = html;
+    root.querySelectorAll('[data-ugc-cover-fallback]').forEach(img => img.addEventListener('error', () => { img.replaceWith(Object.assign(document.createElement('span'), { className: 'ugc-board-cover-missing', textContent: '封面暂不可用' })); }, { once: true }));
   }
 
   function render(query = '') {
@@ -218,12 +228,16 @@ window.UGCMonitor = (() => {
   root.addEventListener('click', event => {
     const target = event.target.closest('button');
     if (!target) return;
+    if (target.hasAttribute('data-catalog-page') || target.hasAttribute('data-catalog-refresh')) return;
+    if (!target.hasAttribute('data-ugc-refresh') && !target.hasAttribute('data-ugc-more') && !target.hasAttribute('data-ugc-export') && !target.dataset.ugcPlatform && !target.dataset.ugcBoard && !target.dataset.ugcFilter) return;
     if (target.hasAttribute('data-ugc-refresh')) { load(true); return; }
     if (target.hasAttribute('data-ugc-more')) { ui.limit = current()?.boardType === 'alltime' ? current().entries.length : ui.limit + 25; paint(); root.querySelector('[data-ugc-more]')?.focus({ preventScroll: true }); return; }
     if (target.hasAttribute('data-ugc-export')) { exportCSV(); return; }
     if (target.dataset.ugcPlatform) { ui.platform = target.dataset.ugcPlatform; ui.limit = 25; }
     if (target.dataset.ugcBoard) { ui.board = target.dataset.ugcBoard; ui.limit = 25; }
     if (target.dataset.ugcFilter) { ui.filter = target.dataset.ugcFilter; ui.limit = 25; }
+    if (target.dataset.ugcBoard === 'catalog') { ui.date = ''; ui.filter = 'all'; }
+    if (ui.board !== 'catalog' && ui.platform === 'all') ui.platform = 'cs2';
     const focusSelector = target.dataset.ugcPlatform ? '[data-ugc-platform="' + ui.platform + '"]' : target.dataset.ugcBoard ? '[data-ugc-board="' + ui.board + '"]' : '[data-ugc-filter="' + ui.filter + '"]';
     const keyboardFocus = event.detail === 0;
     syncRoute(); paint(); if (keyboardFocus) root.querySelector(focusSelector)?.focus({ preventScroll: true });
@@ -233,5 +247,5 @@ window.UGCMonitor = (() => {
     if (event.target.id === 'ugcSort') { ui.sort = event.target.value; paint(); root.querySelector('#ugcSort')?.focus({ preventScroll: true }); }
   });
   setInterval(() => { if (!document.hidden && document.body.classList.contains('ugc-view') && !ui.date) load(); }, 60000);
-  return { render, readRoute, hash, refresh: () => load(true) };
+  return { render, readRoute, hash, refresh: () => load(true), isCatalog: () => ui.board === 'catalog' };
 })();

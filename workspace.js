@@ -171,7 +171,7 @@ function updateCounts() {
   $('#navMechanicsCount').textContent = counts.mechanics || '—';
   $('#navCollectedCount').textContent = state.entries.filter((entry) => state.collected.has(entry.id)).length + (mapArchive.mapCollected?.size || 0);
   if (state.view === 'ugc') {
-    $('#librarySummary').textContent = '4 个平台 · 热榜 100 / 历史榜 200';
+    $('#librarySummary').textContent = UGCMonitor.isCatalog() ? '正在读取目录收录数与中文审核进度' : '4 个平台 · 热榜 100 / 历史榜 200';
   } else if (state.view === 'maps') {
     $('#librarySummary').textContent = new Set(mapArchive.entries.map((entry) => entry.game)).size + ' 款游戏 · ' + mapArchive.entries.length + ' 张地图';
   } else if (state.view === 'items') {

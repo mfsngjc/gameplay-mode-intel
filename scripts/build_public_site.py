@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Create an explicit public-file allowlist; never publish local research drafts."""
 from pathlib import Path
+import gzip
+import json
 import shutil
 import time
 
@@ -38,6 +40,9 @@ def main():
         destination = OUTPUT / name
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(ROOT / name, destination)
+    for name in ['ugc-catalog.js', 'ugc-catalog-worker.js']:
+        if (ROOT / name).exists():
+            shutil.copy2(ROOT / name, OUTPUT / name)
     for name in ['latest.json', 'index.json', 'briefing.json', 'chinese.json', 'creators.json']:
         source = ROOT / 'data/ugc' / name
         if source.exists():
@@ -48,6 +53,40 @@ def main():
         destination = OUTPUT / 'data/ugc/history' / source.name
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, destination)
+    catalog_root = (ROOT / 'data/ugc/catalog').resolve()
+    catalog_manifest = catalog_root / 'manifest.json'
+    if catalog_manifest.exists():
+        catalog = json.loads(catalog_manifest.read_text(encoding='utf-8'))
+        public_catalog_files = set()
+        if catalog.get('boardCoversUrl'):
+            public_catalog_files.add(catalog['boardCoversUrl'])
+        for platform in catalog.get('platforms', {}).values():
+            for group in ('shards', 'searchShards'):
+                for shard in platform.get(group, []):
+                    public_catalog_files.add(shard['url'])
+                    shard['url'] += '.gz'
+        for name in sorted(public_catalog_files):
+            relative = Path(name)
+            source = (ROOT / relative).resolve()
+            if (relative.is_absolute() or '..' in relative.parts or '\\' in name or
+                    source.suffix != '.json' or not source.is_relative_to(catalog_root) or not source.is_file()):
+                raise RuntimeError('Invalid public catalog reference: ' + name)
+            payload = json.loads(source.read_text(encoding='utf-8'))
+            entries = payload.get('entries', [])
+            if isinstance(entries, list):
+                for entry in entries:
+                    if entry.get('detailShard'):
+                        if entry['detailShard'] not in public_catalog_files:
+                            raise RuntimeError('Unlisted catalog detail reference: ' + entry['detailShard'])
+                        entry['detailShard'] += '.gz'
+            compressed = name != catalog.get('boardCoversUrl')
+            destination = OUTPUT / (name + '.gz' if compressed else name)
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            encoded = json.dumps(payload, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
+            destination.write_bytes(gzip.compress(encoded, mtime=0) if compressed else encoded)
+        manifest_destination = OUTPUT / 'data/ugc/catalog/manifest.json'
+        manifest_destination.parent.mkdir(parents=True, exist_ok=True)
+        manifest_destination.write_text(json.dumps(catalog, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     shutil.copytree(ROOT / 'assets/maps', OUTPUT / 'assets/maps')
     if (ROOT / 'assets/modes').exists():
         shutil.copytree(ROOT / 'assets/modes', OUTPUT / 'assets/modes')
@@ -60,7 +99,11 @@ def main():
     (OUTPUT / '.nojekyll').touch()
     assert not (OUTPUT / 'data/research.json').exists()
     assert not (OUTPUT / 'local-only').exists()
-    print(f'Public site ready: {OUTPUT} (research drafts excluded)')
+    assert not (OUTPUT / 'data/ugc/catalog-cache').exists()
+    total_bytes = sum(path.stat().st_size for path in OUTPUT.rglob('*') if path.is_file())
+    if total_bytes > 1_000_000_000:
+        raise RuntimeError(f'Public site exceeds GitHub Pages 1 GB limit: {total_bytes} bytes')
+    print(f'Public site ready: {OUTPUT} ({total_bytes:,} bytes; catalog shards gzip-compressed)')
 
 
 if __name__ == '__main__':

@@ -8,4 +8,5 @@ data/research.json
 _site/
 data/ugc/source-descriptions.json
 data/ugc/chinese-queue.json
+data/ugc/catalog-cache/
 __pycache__/

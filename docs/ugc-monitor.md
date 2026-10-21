@@ -81,4 +81,30 @@ node scripts/validate_ugc.cjs
 
 任务在当前聊天每天北京时间 09:00 唤醒，工作目录为 `C:\Repos\gameplay-mode-intel`。执行采集、验证、检查来源异常并为显著变化补充中文观察；事实与设计推断分栏，禁止编造增长原因。只有完成、明显变化、失败或需要用户处理时通知；无变化保持安静。
 
-这是本地定时任务，运行时需要电脑开机且 Codex 桌面应用运行，见 [OpenAI 官方定时任务说明](https://developers.openai.com/training/walkthroughs/scheduled-tasks)。代码、快照和摘要在本地更新；本地修改不自动提交、推送或发布。公开站发布需另行明确授权，现有 Pages 构建已包含 UGC 数据。
+这是本地定时任务，运行时需要电脑开机且 Codex 桌面应用运行，见 [OpenAI 官方定时任务说明](https://learn.chatgpt.com/docs/automations)。代码、快照和摘要在本地更新；本地修改不自动提交、推送或发布。公开站发布需另行明确授权，现有 Pages 构建已包含 UGC 数据。
+
+## 全部收录目录
+
+2026-10-21 用户要求取消目录数量限制，增加封面与检索，并由 Luna 执行、主代理验收。实施与验收遵循 [UGC 全量目录规范](ugc-catalog.md)。该目录与上述热榜、历史榜及每日快照分开，不改变任何榜单容量或排名口径。
+
+`data/ugc/catalog/manifest.json` 保存各来源实际覆盖、进度和公开分片引用；目录可检索全部已收录记录，并分别显示中文审核与封面状态。原始证据、断点和中文批次队列保存在被忽略的 `data/ugc/catalog-cache/`。公开构建只复制清单明确引用的目录分片及原榜封面索引，不复制缓存或审核草稿。
+
+普通枚举、去重、图片来源记录与索引用脚本完成，中文整理按真实来源指纹分批交给 Luna。新增或说明变化才进入审核，不重复整理相同作品。公开源被限流或缺乏全站枚举时保留断点与边界说明，不能把“已收录”宣称为“全平台全部已完成”。每日监控继续按原计划执行，目录与中文工作按断点接续。
+
+日常目录续接示例（时间预算用于保存断点，不限制目录总条数）：
+
+```powershell
+python scripts/sync_ugc_catalog.py --time-budget-seconds 1800 --platform-time-budget-seconds 600
+# 完成 Luna 审稿、独立核对和主代理批准后，只导出缓存，不重新联网抓取。
+python scripts/sync_ugc_catalog.py --publish-only
+python scripts/test_ugc_catalog.py
+node scripts/validate_ugc_catalog.cjs
+python scripts/build_public_site.py
+```
+
+重开已完成来源时，使用 `--platforms 平台编号 --refresh`；未完成来源继续原断点，不能每天清零。调度在本轮开始时根据各来源的完成状态与 `enumerationCompletedAt` 决定哪些需要开始新一轮。`lastSuccessfulAt` 代表实际采集成功时间，不能用 `generatedAt` 或中文稿导出时间代替。
+
+按需补充作者与详情可使用 `--resolve-roblox-identities --max-identities 200`、`--resolve-creators --max-creators 200`、`--refresh-details --max-details 200`；用 `--platforms` 选择相应平台并显式给出执行时间预算。`--refresh-covers` 使用公开模组项目批量接口补查缺图。命令均会持有同一采集锁，不应在采集进程运行时再启动写入；锁检查不得终止已有进程。
+
+每批中文先由 Luna 编写，再由另一位 Luna 对照原文逐项核查，主代理做字段、指纹、来源校验和分层抽查；疑点全部复核。批准稿必须含 `acceptance.approvedBy/approvedAt`，公开记录保留 `reviewApproval`。出现串稿等错误，先撤回整批，再修正与重新接受；待整理数量可以大于零，不能把它当作全量中文已经完成。每日任务仅在本地更新，交互轮次的 Git 发布授权不延伸为定时任务自动推送。
+目录类型复核与中文整理按 [目录规范的类型复核流程](ugc-catalog.md#类型复核与排除证据) 执行。先处理新增或原文变化的类型候选，再做中文；`catalog-exclusions.json` 只保存已批准且指纹绑定的非地图排除依据。相同来源指纹的历史判断可复用，资料不足保留待核。独立目录的类型清理不改写旧榜口径和快照。

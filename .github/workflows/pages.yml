@@ -36,6 +36,8 @@ jobs:
           node scripts/validate_ff_patches.cjs
           python3 scripts/test_ugc.py
           node scripts/validate_ugc.cjs
+          python3 scripts/test_ugc_catalog.py
+          node scripts/validate_ugc_catalog.cjs
 
       - name: Prepare public files only
         run: python3 scripts/build_public_site.py
