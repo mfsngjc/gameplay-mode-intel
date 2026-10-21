@@ -8,7 +8,7 @@ window.UGCCatalog = (() => {
   const cache = { manifest: null, generation: '', manifestFetchedAt: 0, indexPromises: new Map(), detailPromises: new Map() };
   const MANIFEST_TTL_MS = 60000;
   let queryTimer = 0, renderToken = 0;
-  const state = { platform: 'all', query: '', page: 0, status: 'all', cover: 'all' };
+  const state = { platform: 'all', query: '', page: 0 };
   const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const safe = value => { if (typeof value !== 'string' || !value.trim()) return ''; try { const u = new URL(value); return u.protocol === 'https:' ? u.href : ''; } catch { return ''; } };
   const normalize = value => String(value || '').normalize('NFKC').toLocaleLowerCase();
@@ -54,11 +54,11 @@ window.UGCCatalog = (() => {
   }
   function updateSummary(doc) {
     if (!document.body.classList.contains('ugc-view')) return;
-    const totals = Object.values(doc.platforms).reduce((sum, meta) => ({ observed: sum.observed + Number(meta.observedCount || 0), reviewed: sum.reviewed + Number(meta.reviewedCount || 0) }), { observed: 0, reviewed: 0 });
+    const totals = Object.values(doc.platforms).reduce((sum, meta) => sum + Number(meta.observedCount || 0), 0);
     const el = document.querySelector('#librarySummary');
-    if (el) el.textContent = totals.observed.toLocaleString() + ' 条来源记录 · ' + totals.reviewed.toLocaleString() + ' 条中文已审核';
+    if (el) el.textContent = totals.toLocaleString() + ' 条已收录';
     const nav = document.querySelector('#navUgcCount');
-    if (nav) nav.textContent = totals.observed.toLocaleString();
+    if (nav) nav.textContent = totals.toLocaleString();
   }
   async function sharedJSON(url, type) {
     const map = type === 'detail' ? cache.detailPromises : cache.indexPromises;
@@ -78,32 +78,15 @@ window.UGCCatalog = (() => {
   }
   function activePlatforms(doc) { return Object.entries(doc.platforms).filter(([id]) => state.platform === 'all' || id === state.platform); }
   function totalCount(platforms) { return platforms.reduce((n, [, meta]) => n + Number(meta.observedCount || 0), 0); }
-  function statusName(status) { return ({ complete: '已遍历当前来源可见范围', partial: '部分收录', limited: '来源受限', unavailable: '来源暂不可用' })[status] || '状态未知'; }
-  function progressText(progress, platformId, enumerationComplete) {
-    if (!progress || typeof progress !== 'object') return '';
-    if (enumerationComplete) return '';
-    const offset = Number(progress.nextOffset ?? progress.offset);
-    if ((platformId === 'minecraft' || platformId === 'modrinth') && Number.isFinite(offset) && offset > 0) return ' · 已读取到第 ' + offset.toLocaleString() + ' 条';
-    const pages = Number(progress.pagesFetched ?? progress.pages ?? progress.completedPages);
-    const total = Number(progress.totalPages ?? progress.reportedPages);
-    if (Number.isFinite(pages) && pages >= 0 && Number.isFinite(total) && total > 0) return ' · 已读取 ' + pages.toLocaleString() + ' / ' + total.toLocaleString() + ' 页';
-    const last = Number(progress.lastCompletedPage), next = Number(progress.nextPage);
-    if (Number.isFinite(last) && last > 0 && Number.isFinite(next) && total > 0) return ' · 已完成第 ' + last.toLocaleString() + ' 页，待读取第 ' + next.toLocaleString() + ' / ' + total.toLocaleString() + ' 页';
-    if (Number.isFinite(next) && next > 0) return ' · 待从第 ' + next.toLocaleString() + ' 页接续';
-    if (Number.isFinite(pages) && pages > 0) return ' · 已读取 ' + pages.toLocaleString() + ' 页';
-    const count = Number(progress.observedCount);
-    if (Number.isFinite(count) && count > 0) return ' · 已读取 ' + count.toLocaleString() + ' 条';
-    return '';
-  }
   function errorSummary(meta) {
     const errors = Array.isArray(meta.errors) ? meta.errors : meta.errors ? [meta.errors] : [];
     if (!errors.length) return '';
     const text = errors.map(item => typeof item === 'string' ? item : [item?.message, item?.error, item?.status].filter(Boolean).join(' ')).join(' ').toLowerCase();
-    if (text.includes('not attempted')) return '该来源尚未开始枚举。';
+    if (text.includes('not attempted')) return '暂无可用来源数据。';
     if (text.includes('403') || text.includes('forbidden')) return '来源拒绝访问，当前记录可能不完整。';
-    if (text.includes('429') || text.includes('rate limit')) return '来源请求受限，已保留断点，稍后可重试。';
-    if (text.includes('timeout')) return '来源响应超时，已保留当前记录和断点。';
-    return '该来源有采集错误，当前结果可能不完整。';
+    if (text.includes('429') || text.includes('rate limit')) return '来源访问受限，当前记录可能不完整。';
+    if (text.includes('timeout')) return '来源更新失败，当前记录可能不完整。';
+    return '来源更新失败，当前记录可能不完整。';
   }
   function recordLookup(records) { return new Map(records.map(record => [record.key, record])); }
   async function detailRecords(platforms, entries, token, progress) {
@@ -137,16 +120,6 @@ window.UGCCatalog = (() => {
     if (token !== renderToken) return null;
     return recordLookup(records);
   }
-  function statusFilter(entry) {
-    if (state.status === 'reviewed') return entry.translationStatus === 'reviewed';
-    if (state.status === 'pending') return entry.translationStatus !== 'reviewed';
-    return true;
-  }
-  function coverFilter(entry) {
-    if (state.cover === 'all') return true;
-    const has = entry.imageStatus === 'available' || entry.hasCover === true;
-    return state.cover === 'with' ? has : !has;
-  }
   function queryMatches(entry, queryWords) {
     if (!queryWords.length) return true;
     const rawCategories = entry.categories || [];
@@ -157,7 +130,7 @@ window.UGCCatalog = (() => {
   async function searchIndex(platforms, token, loadingEl) {
     const tasks = [];
     for (const [platformId, meta] of platforms) for (const shard of (meta.searchShards?.length ? meta.searchShards : meta.shards || [])) tasks.push({ platformId, shard });
-    const result = new Array(tasks.length), countByPlatform = new Map(platforms.map(([id]) => [id, 0]));
+    const result = new Array(tasks.length);
     let done = 0;
     await pooled(tasks, async (task, i) => {
       if (token !== renderToken) return;
@@ -172,9 +145,8 @@ window.UGCCatalog = (() => {
         shardEntries.push({ ...entry, platformId: task.platformId });
       }
       result[i] = shardEntries;
-      countByPlatform.set(task.platformId, countByPlatform.get(task.platformId) + doc.entries.length);
       done++;
-      if (loadingEl && token === renderToken) loadingEl.textContent = '检索分片 ' + done + ' / ' + tasks.length + '，已读 ' + [...countByPlatform.values()].reduce((a, b) => a + b, 0).toLocaleString() + ' 条';
+      if (loadingEl && token === renderToken) loadingEl.textContent = '正在搜索已收录作品（' + Math.round(done / tasks.length * 100) + '%）…';
     });
     return token === renderToken ? result.flat() : null;
   }
@@ -192,7 +164,6 @@ window.UGCCatalog = (() => {
       if (offset >= end) break;
     }
     const result = new Array(ranges.length);
-    let done = 0;
     await pooled(ranges, async (range, i) => {
       if (token !== renderToken) return;
       const url = validPath(range.shard.url);
@@ -202,7 +173,7 @@ window.UGCCatalog = (() => {
       if (doc.schemaVersion !== 1 || doc.platformId !== range.platformId || !Array.isArray(doc.entries)) throw new Error('schema');
       if (doc.entries.some(entry => !entry || typeof entry.key !== 'string' || !entry.key)) throw new Error('schema');
       result[i] = doc.entries.slice(range.from, range.to).map(entry => ({ ...entry, platformId: range.platformId }));
-      loadingEl.textContent = '读取当前页分片 ' + (++done) + ' / ' + ranges.length;
+      loadingEl.textContent = '正在读取作品列表…';
     });
     if (token !== renderToken) return null;
     const expected = Math.max(0, Math.min(PAGE_SIZE, total - start));
@@ -230,23 +201,27 @@ window.UGCCatalog = (() => {
     const sourceLinks = originalSources.map((url, index) => '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">来源 ' + (index + 1) + ' ↗</a>').join(' ');
     const rawDescription = record.descriptionOriginal ? '<details class="ugc-catalog-original"><summary>查看来源原文</summary><p>' + esc(record.descriptionOriginal) + '</p>' + sourceLinks + '</details>' : '';
     const { known: knownCategories, unknown: unknownCategories } = categories(record);
-    const isVerified = record.identityStatus === 'verified';
     const isReviewed = record.translationStatus === 'reviewed';
-    const imageBadge = imageUrl ? (image.kind === 'icon' ? '作品图标' : '封面可用') : image.status === 'unavailable' ? '封面暂不可用' : '暂缺封面';
+    const imageFallback = image.status === 'unavailable' ? '作品图暂不可用' : '暂缺作品图';
     const knownMetric = { downloads: '下载次数', 'total downloads': '下载次数', visits: '访问次数', 'total visits': '访问次数', 'playing now': '当前在线人数', 'concurrent players': '当前在线人数', 'playtime minutes': '累计游玩分钟', subscribers: '订阅人数', '历史总订阅': '历史总订阅', '当前在线人数': '当前在线人数', '累计访问次数': '累计访问次数', '累计游玩分钟': '累计游玩分钟', '累计下载次数': '累计下载次数' };
     const metricName = knownMetric[normalize(record.metricLabel)] || '来源指标';
     const metric = record.metricValue == null ? '' : '<span>' + metricName + '：' + esc(record.metricValue) + '</span>';
     const creator = record.creator || entry.creator || '';
     const creatorLabel = platformId === 'cs2' && /^\d{17}$/.test(creator) ? '作者编号：' : '作者：';
-    return '<article class="ugc-catalog-card"><div class="ugc-catalog-image">' + (imageUrl ? '<img loading="lazy" decoding="async" src="' + esc(imageUrl) + '" alt="' + esc(originalTitle) + ' 作品图" data-cover-fallback>' : '<span>' + imageBadge + '</span>') + '</div><div class="ugc-catalog-body"><div class="ugc-catalog-kicker">' + esc(labels[platformId]) + ' · ' + esc(record.id || entry.key || '') + '</div><h3>' + (isRobloxOfficial ? '<a href="' + esc(officialUrl) + '" target="_blank" rel="noopener noreferrer">' + title + '</a>' : title) + '</h3><div class="ugc-catalog-links">' + (statsUrl ? '<a href="' + esc(statsUrl) + '" target="_blank" rel="noopener noreferrer">统计详情 ↗</a>' : '') + (isRobloxOfficial ? '<a href="' + esc(officialUrl) + '" target="_blank" rel="noopener noreferrer">作品官网 ↗</a>' : officialUrl ? '<a href="' + esc(officialUrl) + '" target="_blank" rel="noopener noreferrer">作品页面 ↗</a>' : '') + (safe(image.sourceUrl) ? '<a href="' + esc(safe(image.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">封面来源 ↗</a>' : '') + '</div><p class="ugc-author">' + creatorLabel + esc(creator || '来源暂未提供') + '</p><div class="ugc-catalog-badges"><span class="ugc-catalog-badge ' + (isReviewed ? 'reviewed' : '') + '">' + (isReviewed ? '中文已审核' : '中文待整理') + '</span><span class="ugc-catalog-badge">' + (isVerified ? '作品身份已核实' : '作品身份待核实') + '</span><span class="ugc-catalog-badge ' + (imageUrl ? 'covered' : '') + '">' + imageBadge + '</span></div><p class="ugc-catalog-intro">' + (isReviewed && record.introZh ? esc(record.introZh) : '<span>中文介绍待整理</span>') + '</p><div class="ugc-catalog-meta">' + esc(knownCategories.join(' · ') || (unknownCategories.length ? '来源分类' : '分类暂缺')) + (unknownCategories.length ? ' <details class="ugc-catalog-raw-tags"><summary>查看来源分类</summary>' + esc(unknownCategories.join('、')) + '</details>' : '') + (metric ? ' · ' + metric : '') + '</div>' + rawDescription + '</div></article>';
+    const imageMarkup = imageUrl ? '<img loading="lazy" decoding="async" src="' + esc(imageUrl) + '" alt="' + esc(originalTitle) + ' 作品图" data-cover-fallback>' : '<span class="ugc-catalog-cover-fallback">' + imageFallback + '</span>';
+    const links = '<div class="ugc-catalog-links">' + (statsUrl ? '<a href="' + esc(statsUrl) + '" target="_blank" rel="noopener noreferrer">统计详情 ↗</a>' : '') + (isRobloxOfficial ? '<a href="' + esc(officialUrl) + '" target="_blank" rel="noopener noreferrer">作品官网 ↗</a>' : officialUrl ? '<a href="' + esc(officialUrl) + '" target="_blank" rel="noopener noreferrer">作品页面 ↗</a>' : '') + (safe(image.sourceUrl) ? '<a href="' + esc(safe(image.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">作品图来源 ↗</a>' : '') + '</div>';
+    const intro = '<p class="ugc-catalog-intro">' + (isReviewed && record.introZh ? esc(record.introZh) : '<span>中文介绍待补充。</span>') + '</p>';
+    const meta = '<div class="ugc-catalog-meta">' + esc(knownCategories.join(' · ') || (unknownCategories.length ? '来源分类' : '分类暂缺')) + (unknownCategories.length ? ' <details class="ugc-catalog-raw-tags"><summary>查看来源分类</summary>' + esc(unknownCategories.join('、')) + '</details>' : '') + (metric ? ' · ' + metric : '') + '</div>';
+    const compact = platformId === 'fortnite' || platformId === 'minecraft';
+    const heading = '<div class="ugc-catalog-kicker">' + esc(labels[platformId]) + ' · ' + esc(record.id || entry.key || '') + '</div><h3>' + (isRobloxOfficial ? '<a href="' + esc(officialUrl) + '" target="_blank" rel="noopener noreferrer">' + title + '</a>' : title) + '</h3><p class="ugc-author">' + creatorLabel + esc(creator || '来源暂未提供') + '</p>';
+    if (compact) return '<article class="ugc-catalog-card ugc-catalog-card-compact ' + platformId + '"><div class="ugc-catalog-compact-head"><div class="ugc-catalog-image">' + imageMarkup + '</div><div class="ugc-catalog-compact-heading">' + heading + '</div></div><div class="ugc-catalog-body">' + intro + meta + links + rawDescription + '</div></article>';
+    return '<article class="ugc-catalog-card"><div class="ugc-catalog-image">' + imageMarkup + '</div><div class="ugc-catalog-body"><div class="ugc-catalog-kicker">' + esc(labels[platformId]) + ' · ' + esc(record.id || entry.key || '') + '</div><h3>' + (isRobloxOfficial ? '<a href="' + esc(officialUrl) + '" target="_blank" rel="noopener noreferrer">' + title + '</a>' : title) + '</h3><p class="ugc-author">' + creatorLabel + esc(creator || '来源暂未提供') + '</p>' + intro + meta + links + rawDescription + '</div></article>';
   }
   function routeParams(query = state.query, page = state.page) {
     const params = new URLSearchParams({ platform: state.platform, board: 'catalog' });
     query = cleanQuery(query);
     if (query !== cleanQuery(state.query)) page = 0;
     if (query) params.set('q', query);
-    if (state.status !== 'all') params.set('catalogStatus', state.status);
-    if (state.cover !== 'all') params.set('catalogCover', state.cover);
     if (page > 0) params.set('catalogPage', String(page + 1));
     return params;
   }
@@ -254,10 +229,12 @@ window.UGCCatalog = (() => {
     const platform = params.get('platform');
     state.platform = platform === 'all' || Object.hasOwn(labels, platform) ? platform : 'all';
     state.query = params.get('q') || '';
-    state.status = ['reviewed', 'pending'].includes(params.get('catalogStatus')) ? params.get('catalogStatus') : 'all';
-    state.cover = ['with', 'missing'].includes(params.get('catalogCover')) ? params.get('catalogCover') : 'all';
     const page = Number(params.get('catalogPage'));
     state.page = Number.isSafeInteger(page) && page > 0 ? page - 1 : 0;
+    if (params.has('catalogStatus') || params.has('catalogCover')) {
+      const clean = routeParams();
+      history.replaceState(null, '', '#ugc?' + clean.toString());
+    }
   }
   function setRoute(push = false, query = state.query) {
     const params = routeParams(query, state.page);
@@ -268,30 +245,30 @@ window.UGCCatalog = (() => {
   function refreshDirectory() {
     clearTimeout(queryTimer);
     const token = ++renderToken;
-    root.innerHTML = '<div class="ugc-catalog-loading" role="status">正在刷新目录清单…</div>';
+    root.innerHTML = '<div class="ugc-catalog-loading" role="status">正在刷新作品列表…</div>';
     readManifest(true).then(() => { if (token === renderToken) render(state); }).catch(() => { if (token === renderToken) render(state); });
   }
   async function run(token) {
     const requestedPage = state.page;
-    root.innerHTML = '<div class="ugc-catalog-loading" role="status">正在读取目录清单…</div>';
+    root.innerHTML = '<div class="ugc-catalog-loading" role="status">正在读取作品列表…</div>';
     const loadingEl = root.querySelector('.ugc-catalog-loading');
     try {
       const doc = await readManifest();
       if (token !== renderToken) return;
       const platforms = activePlatforms(doc), total = totalCount(platforms);
       const words = normalize(state.query).split(/\s+/).filter(Boolean);
-      const filtering = words.length > 0 || state.status !== 'all' || state.cover !== 'all';
+      const filtering = words.length > 0;
       let entries, pageTotal;
       if (filtering) {
         const index = await searchIndex(platforms, token, loadingEl);
         if (!index || token !== renderToken) return;
-        loadingEl.textContent = '正在筛选 ' + index.length.toLocaleString() + ' 条已收录记录…';
+        loadingEl.textContent = '正在匹配搜索结果…';
         const matches = [];
         for (let start = 0; start < index.length; start += 2000) {
           if (token !== renderToken) return;
           const end = Math.min(start + 2000, index.length);
-          for (let i = start; i < end; i++) if (statusFilter(index[i]) && coverFilter(index[i]) && queryMatches(index[i], words)) matches.push(index[i]);
-          loadingEl.textContent = '筛选记录 ' + end.toLocaleString() + ' / ' + index.length.toLocaleString() + '，匹配 ' + matches.length.toLocaleString() + ' 条';
+          for (let i = start; i < end; i++) if (queryMatches(index[i], words)) matches.push(index[i]);
+          loadingEl.textContent = '正在匹配搜索结果…';
           if (end < index.length) await new Promise(resolve => setTimeout(resolve, 0));
         }
         pageTotal = matches.length;
@@ -305,21 +282,26 @@ window.UGCCatalog = (() => {
         entries = paged.entries; pageTotal = paged.total;
       }
       loadingEl.textContent = '正在读取当前页作品资料…';
-      const records = await detailRecords(platforms, entries.map(entry => [entry.platformId, entry]), token, (done, amount) => { loadingEl.textContent = '读取当前页作品资料 ' + done + ' / ' + amount; });
+      const records = await detailRecords(platforms, entries.map(entry => [entry.platformId, entry]), token, () => { loadingEl.textContent = '正在读取作品资料…'; });
       if (!records || token !== renderToken) return;
       const pageCount = Math.max(1, Math.ceil(pageTotal / PAGE_SIZE));
-      const stats = platforms.map(([id, meta]) => '<span><strong>' + esc(labels[id] || id) + '</strong> ' + Number(meta.observedCount || 0).toLocaleString() + ' 条来源记录' + (meta.reportedTotal == null ? '' : ' / 来源报告 ' + Number(meta.reportedTotal).toLocaleString() + ' 条') + ' · ' + Number(meta.reviewedCount || 0).toLocaleString() + ' 条中文已审核 · ' + Number(meta.withCoverCount || 0).toLocaleString() + ' 有图 · ' + Number(meta.identityPendingCount || 0).toLocaleString() + ' 个身份待核实 · ' + statusName(meta.status) + ' · ' + (meta.enumerationComplete ? '已遍历可见末端' : '枚举未完成') + progressText(meta.progress, id, meta.enumerationComplete) + (errorSummary(meta) ? ' · ' + errorSummary(meta) : '') + '</span>').join('');
+      const statusLabels = { partial: '部分收录', limited: '来源访问受限', unavailable: '来源暂不可用' };
+      const stats = platforms.map(([id, meta]) => {
+        const sourceUpdatedAt = meta.lastSuccessfulAt;
+        const updatedAt = sourceUpdatedAt || meta.updatedAt;
+        const updateLabel = sourceUpdatedAt ? '来源更新 ' : '目录更新 ';
+        const updatedText = updatedAt ? updateLabel + new Intl.DateTimeFormat('zh-CN', { timeZone: 'Asia/Shanghai', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(updatedAt)) : '更新时间暂缺';
+        const statusText = statusLabels[meta.status] || '';
+        const statusDetails = statusText ? ' · ' + statusText + (errorSummary(meta) ? ' · ' + errorSummary(meta) : '') : '';
+        return '<span><strong>' + esc(labels[id] || id) + '</strong> ' + Number(meta.observedCount || 0).toLocaleString() + ' 条已收录 · ' + esc(updatedText) + statusDetails + '</span>';
+      }).join('');
       const scopes = platforms.map(([id, meta]) => '<span>' + esc(labels[id] || id) + '：' + esc(typeof meta.sourceScope === 'string' ? meta.sourceScope : '来源范围说明暂缺') + (safe(meta.sourceUrl) ? ' <a href="' + esc(safe(meta.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">来源页面 ↗</a>' : '') + '</span>').join('');
-      const errors = platforms.some(([, meta]) => ['partial', 'limited', 'unavailable'].includes(meta.status)) ? '<p class="ugc-catalog-partial">至少一个来源尚未完整遍历；当前结果仅代表已收录内容。</p>' : '';
+      const errors = platforms.some(([, meta]) => ['partial', 'limited', 'unavailable'].includes(meta.status)) ? '<p class="ugc-catalog-partial">部分来源受限或尚未更新，当前仅展示已收录作品。</p>' : '';
       const empty = platforms.some(([, meta]) => meta.status === 'unavailable') ? '来源暂不可用，无法据此判断没有匹配内容。' : filtering ? '没有匹配内容，请调整搜索词或筛选。' : '当前来源范围内尚无已收录记录。';
-      root.innerHTML = '<div class="ugc-heading-line"><span>来源可见范围内的全部收录</span><span>目录记录独立于每日热榜和历史最热门</span><button type="button" class="button" data-catalog-refresh>刷新目录</button></div><div class="ugc-board-line"><div class="ugc-board-switch" role="group" aria-label="UGC 视图"><button type="button" data-ugc-board="hot" aria-pressed="false">每日热榜</button><button type="button" data-ugc-board="alltime" aria-pressed="false">历史最热门</button><button type="button" data-ugc-board="catalog" aria-pressed="true">全部收录</button></div></div><div class="ugc-catalog-toolbar"><label>平台<select id="catalogPlatform"><option value="all"' + (state.platform === 'all' ? ' selected' : '') + '>全部平台</option>' + Object.entries(labels).map(([id, label]) => '<option value="' + id + '"' + (state.platform === id ? ' selected' : '') + '>' + esc(label) + '</option>').join('') + '</select></label><label>中文状态<select id="catalogStatus"><option value="all"' + (state.status === 'all' ? ' selected' : '') + '>全部状态</option><option value="reviewed"' + (state.status === 'reviewed' ? ' selected' : '') + '>中文已审核</option><option value="pending"' + (state.status === 'pending' ? ' selected' : '') + '>待整理或待审核</option></select></label><label>封面<select id="catalogCover"><option value="all"' + (state.cover === 'all' ? ' selected' : '') + '>全部封面状态</option><option value="with"' + (state.cover === 'with' ? ' selected' : '') + '>有作品图</option><option value="missing"' + (state.cover === 'missing' ? ' selected' : '') + '>暂缺作品图</option></select></label><span>支持原名、中文参考名、作者、编号、玩法和分类；空格分隔词须同时匹配</span></div><div class="ugc-catalog-status">' + stats + '<details><summary>来源范围</summary>' + scopes + '</details>' + errors + '</div><div class="ugc-catalog-count">' + (filtering ? '匹配 ' : '来源记录 ') + pageTotal.toLocaleString() + ' 条 · 第 ' + (state.page + 1) + ' / ' + pageCount + ' 页</div><div class="ugc-catalog-grid">' + (entries.length ? entries.map(entry => { const rec = records.get(entry.key); return rec ? card(entry.platformId, entry, rec) : ''; }).join('') : '<div class="ugc-empty">' + empty + '</div>') + '</div><div class="ugc-footer"><span>每页最多 ' + PAGE_SIZE + ' 条；仅加载当前页作品图</span><div><button class="button" type="button" data-catalog-page="prev"' + (state.page <= 0 ? ' disabled' : '') + '>上一页</button> <button class="button" type="button" data-catalog-page="next"' + (state.page >= pageCount - 1 ? ' disabled' : '') + '>下一页</button></div></div>';
+      const compactGrid = state.platform === 'fortnite' || state.platform === 'minecraft';
+      root.innerHTML = '<div class="ugc-heading-line"><span>来源公开范围内的全部收录 · 目录独立于每日榜单</span><button type="button" class="button" data-catalog-refresh>刷新目录</button></div><div class="ugc-board-line"><div class="ugc-board-switch" role="group" aria-label="UGC 视图"><button type="button" data-ugc-board="hot" aria-pressed="false">每日热榜</button><button type="button" data-ugc-board="alltime" aria-pressed="false">历史最热门</button><button type="button" data-ugc-board="catalog" aria-pressed="true">全部收录</button></div></div><div class="ugc-catalog-toolbar"><label>平台<select id="catalogPlatform"><option value="all"' + (state.platform === 'all' ? ' selected' : '') + '>全部平台</option>' + Object.entries(labels).map(([id, label]) => '<option value="' + id + '"' + (state.platform === id ? ' selected' : '') + '>' + esc(label) + '</option>').join('') + '</select></label><span>支持原名、中文参考名、作者、编号、玩法和分类；空格分隔词须同时匹配</span></div><div class="ugc-catalog-status">' + stats + '<details><summary>来源范围与来源链接</summary>' + scopes + '</details>' + errors + '</div><div class="ugc-catalog-count">' + (filtering ? '匹配 ' : '已收录 ') + pageTotal.toLocaleString() + ' 条 · 第 ' + (state.page + 1) + ' / ' + pageCount + ' 页</div><div class="ugc-catalog-grid' + (compactGrid ? ' ugc-catalog-grid-compact' : '') + '">' + (entries.length ? entries.map(entry => { const rec = records.get(entry.key); return rec ? card(entry.platformId, entry, rec) : ''; }).join('') : '<div class="ugc-empty">' + empty + '</div>') + '</div><div class="ugc-footer"><span>每页最多 ' + PAGE_SIZE + ' 条</span><div><button class="button" type="button" data-catalog-page="prev"' + (state.page <= 0 ? ' disabled' : '') + '>上一页</button> <button class="button" type="button" data-catalog-page="next"' + (state.page >= pageCount - 1 ? ' disabled' : '') + '>下一页</button></div></div>';
       root.querySelectorAll('[data-cover-fallback]').forEach(img => img.addEventListener('error', () => {
         img.replaceWith(Object.assign(document.createElement('span'), { className: 'ugc-catalog-cover-fallback', textContent: '作品图暂不可用' }));
-        const badge = img.closest('.ugc-catalog-card')?.querySelector('.ugc-catalog-badges .ugc-catalog-badge:last-child');
-        if (badge) {
-          badge.textContent = '封面暂不可用';
-          badge.classList.remove('covered');
-        }
       }, { once: true }));
       if (state.page !== requestedPage) { const params = routeParams(); history.replaceState(null, '', '#ugc?' + params.toString()); }
     } catch (error) {
@@ -346,10 +328,8 @@ window.UGCCatalog = (() => {
   });
   root.addEventListener('change', event => {
     const id = event.target.id;
-    if (!['catalogPlatform', 'catalogStatus', 'catalogCover'].includes(id)) return;
+    if (id !== 'catalogPlatform') return;
     if (id === 'catalogPlatform') state.platform = event.target.value;
-    if (id === 'catalogStatus') state.status = event.target.value;
-    if (id === 'catalogCover') state.cover = event.target.value;
     state.page = 0; setRoute(true); render(state);
   });
   return {
