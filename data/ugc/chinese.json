@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "language": "zh-CN",
-  "updatedAt": "2026-10-20T18:46:06.801387+00:00",
+  "updatedAt": "2026-10-21T01:11:27+00:00",
   "note": "中文名称为说明性译法，原名保留供回查。介绍仅整理公开来源能够支持的内容；资料不足时明确说明。",
   "entries": {
     "cs2:3818299372": {
@@ -864,15 +864,15 @@
     },
     "cs2:3821984794": {
       "title": "炼狱小镇熄灯版",
-      "intro": "把炼狱小镇改成黑暗环境，使用手电和可投掷照明物，并分别控制两个包点与中路的电路。",
-      "originalTitle": "Inferno Dark - Lanternas",
+      "intro": "在黑暗版炼狱小镇中对战，用手电和投掷照明物照亮环境，也能分别开关两个包点与中路的电路。双方都可操作电路，投掷照明持续十二秒，目前为实验版本。",
+      "originalTitle": "Inferno Dark - Flashlights & Flares",
       "canonicalId": "3821984794",
-      "sourceTitle": "Inferno Dark - Lanternas",
-      "sourceFingerprint": "d274ac34bb5604cf4bc9f7809742cf67714d36846f59f99165dea6bad8b7b99e",
+      "sourceTitle": "Inferno Dark - Flashlights & Flares",
+      "sourceFingerprint": "0385cee93bbbf36644c4660b21d8fe70bd34c28d6ddd6d8ec444f586ffb040ba",
       "sources": [
         "https://steamcommunity.com/sharedfiles/filedetails/?id=3821984794"
       ],
-      "reviewedAt": "2026-10-20T18:25:12.240314+00:00",
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
       "translationKind": "descriptive"
     },
     "cs2:3820593146": {
@@ -929,15 +929,15 @@
     },
     "cs2:3820758165": {
       "title": "幻影迷城连跳联机",
-      "intro": "以幻影迷城和连续跳跃为主题的社区联机作品，当前来源主要介绍服务器连接方法。",
+      "intro": "作品名称提到幻影迷城和连续跳跃，但来源正文仅介绍自动连接社区服务器的方法，没有说明地图规则或胜负目标。",
       "originalTitle": "BHOP MiRAGE",
       "canonicalId": "3820758165",
       "sourceTitle": "BHOP MiRAGE ",
-      "sourceFingerprint": "6185a85e9f4e4906c362e2c2dc55d9a3480c80e640ac9e872f051a481b332e23",
+      "sourceFingerprint": "f4929c8f473c0ae6681330b6c0a10907283044810474a22bf5f85194513db3f3",
       "sources": [
         "https://steamcommunity.com/sharedfiles/filedetails/?id=3820758165"
       ],
-      "reviewedAt": "2026-10-20T18:25:12.240314+00:00",
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
       "translationKind": "descriptive"
     },
     "cs2:3823073271": {
@@ -3825,14 +3825,14 @@
     "fortnite:4062-1024-9914": {
       "title": "无限决斗场",
       "intro": "支持一到十二人的武器自选对战地图，带有额外功能与隐藏内容，供玩家入场自由较量。",
-      "originalTitle": "1V1 MAP INFINITE",
+      "originalTitle": "1C1 1B1 1D1 1V1 A",
       "canonicalId": "4062-1024-9914",
-      "sourceTitle": "1V1 MAP INFINITE",
-      "sourceFingerprint": "e8f7bdc5d60127b0e3d4e98da26956627298e1a6cb135c2ed1f9b5f3cb920a05",
+      "sourceTitle": "1C1 1B1 1D1 1V1 A",
+      "sourceFingerprint": "9083e002eec04b3342fab39870e526f2fc22e44fd67b0377dd5a1e54b500478d",
       "sources": [
         "https://fortnite.gg/island/4062-1024-9914"
       ],
-      "reviewedAt": "2026-10-20T18:25:12.240314+00:00",
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
       "translationKind": "descriptive"
     },
     "fortnite:6386-2237-2556": {
@@ -6971,15 +6971,15 @@
     "roblox:116495829188952": {
       "title": "死亡铁轨",
       "intro": "在病毒肆虐的十九世纪美洲，组队登上列车，穿过遍布僵尸的沙漠，向发现解药的墨西哥前进。",
-      "originalTitle": "Dead Rails",
+      "originalTitle": "[👻EVENT] Dead Rails ",
       "canonicalId": "7018190066",
-      "sourceTitle": "Dead Rails",
-      "sourceFingerprint": "b737da51c655d57f355e263e22f1ba49ef66d42bb73debe3d9ca5aeb4feeb0e1",
+      "sourceTitle": "[👻EVENT] Dead Rails ",
+      "sourceFingerprint": "d0fd822bcc0d185c15d2972dbf3e384ca8af66e2184dc6c2706fc27020a24b41",
       "sources": [
         "https://www.roblox.com/games/116495829188952",
         "https://games.roblox.com/v1/games?universeIds=7018190066"
       ],
-      "reviewedAt": "2026-10-20T18:25:12.240314+00:00",
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
       "translationKind": "descriptive"
     },
     "roblox:95082159892680": {
@@ -7867,15 +7867,15 @@
     "roblox:6447798030": {
       "title": "放克星期五",
       "intro": "以节奏和音乐对决为主题，通过按键参与表演，并可在设置中调整按键与箭头外观。",
-      "originalTitle": "[MADNESS] Funky Friday",
+      "originalTitle": "Funky Friday",
       "canonicalId": "2404080894",
-      "sourceTitle": "[MADNESS] Funky Friday",
-      "sourceFingerprint": "13208af2c034a0e2baa1cd7775c35fe336c625632f9cfc77e6feb9c0d2b1fb9b",
+      "sourceTitle": "Funky Friday",
+      "sourceFingerprint": "112bb5db7af577a19e6ac7b9cf975779af6631f364547132d556c9cea2784399",
       "sources": [
         "https://www.roblox.com/games/6447798030",
         "https://games.roblox.com/v1/games?universeIds=2404080894"
       ],
-      "reviewedAt": "2026-10-20T18:25:12.240314+00:00",
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
       "translationKind": "descriptive"
     },
     "roblox:7549229959": {
@@ -8682,15 +8682,15 @@
     },
     "fortnite:9783-9810-3294": {
       "title": "整活起床战争",
-      "intro": "四支三人队保护床铺，收集材料升级基地，购买监控和强化物，还能通过通风口干扰敌人。",
+      "intro": "四支三人队收集材料升级基地，并利用通风口干扰敌人；守住自己的床，床被毁后便无法复活。",
       "originalTitle": "TROLL BED WARS 🤣",
       "canonicalId": "9783-9810-3294",
       "sourceTitle": "TROLL BED WARS 🤣",
-      "sourceFingerprint": "b7bbd018cb6bea5aada7723eb8bb18086934dc286a26d6b7b79d7b93a34f9721",
+      "sourceFingerprint": "0723c57057eb47e52b7e4e9727284d7fd817d526671fa052767493e954adf67d",
       "sources": [
         "https://fortnite.gg/island/9783-9810-3294"
       ],
-      "reviewedAt": "2026-10-20T18:25:12.240314+00:00",
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
       "translationKind": "descriptive"
     },
     "fortnite:1188-8174-4193": {
@@ -11870,12 +11870,12 @@
       "originalTitle": "Feather Family 🎃 [Bearded Vulture]",
       "canonicalId": "547524060",
       "sourceTitle": "Feather Family 🎃 [Bearded Vulture]",
-      "sourceFingerprint": "a8cf235b9b4606cc6b75b01055ebb1cb3129b184df06efcb40dc5e3117181a54",
+      "sourceFingerprint": "85dbe9e86f182b561cb40cd26b93e90a4a12b6cea5519942db469f0a0d728bd6",
       "sources": [
         "https://www.roblox.com/games/1365404657",
         "https://games.roblox.com/v1/games?universeIds=547524060"
       ],
-      "reviewedAt": "2026-10-20T18:46:06.801387+00:00",
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
       "translationKind": "descriptive"
     },
     "roblox:13621938427": {
@@ -11926,12 +11926,12 @@
       "originalTitle": "[🎃] Anime Dimensions Simulator",
       "canonicalId": "2655311011",
       "sourceTitle": "[🎃] Anime Dimensions Simulator",
-      "sourceFingerprint": "1d5c78dfa52fd65367512ff4d67502adb5177da7991e0287eda47d657e812c95",
+      "sourceFingerprint": "05f5fe104fd9102804cb72447d88382d5bd6b5c2bafda6586797d80f25bb0054",
       "sources": [
         "https://www.roblox.com/games/6938803436",
         "https://games.roblox.com/v1/games?universeIds=2655311011"
       ],
-      "reviewedAt": "2026-10-20T18:46:06.801387+00:00",
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
       "translationKind": "descriptive"
     },
     "roblox:4042427666": {
@@ -15161,6 +15161,652 @@
         "https://modrinth.com/mod/fallingtree"
       ],
       "reviewedAt": "2026-10-20T18:46:06.801387+00:00",
+      "translationKind": "descriptive"
+    },
+    "cs2:3823631914": {
+      "title": "幻影迷城联机入口",
+      "intro": "来源说明只提供自动连接社区服务器的方法，没有介绍这张地图的规则、胜负目标或具体玩法，实际内容仍待核实。",
+      "originalTitle": "MIRAGE",
+      "canonicalId": "3823631914",
+      "sourceTitle": "MIRAGE",
+      "sourceFingerprint": "fdb88a04797b2b530740fc99cdc9d61047183f2a51b075eda44cf8c57273dadf",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3823631914"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "cs2:3823633786": {
+      "title": "积木狙击场二号联机入口",
+      "intro": "名称提到积木狙击场，但来源正文仅介绍自动连接社区服务器的方法，没有说明地图布局、对战规则或胜负目标。",
+      "originalTitle": "AWP_LEGO_2",
+      "canonicalId": "3823633786",
+      "sourceTitle": "AWP_LEGO_2",
+      "sourceFingerprint": "c32b910e19f1df65a8c88eaee10dae91683397e7e504bb58ddc824ecb1538d36",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3823633786"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "cs2:3823634983": {
+      "title": "冬季积木狙击场联机入口",
+      "intro": "名称提到冬季积木狙击场，但来源正文只有自动连接社区服务器的说明，无法据此确认地图内容和具体对战规则。",
+      "originalTitle": "WINTER AWP_LEGO_2",
+      "canonicalId": "3823634983",
+      "sourceTitle": "WINTER AWP_LEGO_2",
+      "sourceFingerprint": "c2d40021560a80c8a5b22ea39df08cd249342549a3a05899541b30c78df5657c",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3823634983"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "cs2:3823641229": {
+      "title": "随机事件联机入口",
+      "intro": "名称提到随机事件，但来源正文仅说明如何连接社区服务器，没有介绍事件类型、触发方式或胜负规则。",
+      "originalTitle": "RANDOM EVENTS",
+      "canonicalId": "3823641229",
+      "sourceTitle": "RANDOM EVENTS",
+      "sourceFingerprint": "405741ff70a874b633c180c318b9edf2d6ae691096b3f30c67759acab055f76d",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3823641229"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "cs2:3823636212": {
+      "title": "幻影迷城连跳联机入口",
+      "intro": "名称提到幻影迷城和连续跳跃，但来源正文只有自动连接服务器的方法，没有说明特殊效果、地图规则或胜负目标。",
+      "originalTitle": "WH+BHOP MIRAGE",
+      "canonicalId": "3823636212",
+      "sourceTitle": "WH+BHOP MIRAGE",
+      "sourceFingerprint": "1a7a274bf869aa51d6ae8f8746e277d9a12a1d91bdeaaf46c0b2cb27498be11c",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3823636212"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "cs2:3822320795": {
+      "title": "监狱地图测试版",
+      "intro": "名称提到监狱地图，作者正文只标注测试版本，没有介绍队伍分工、关卡内容或胜负规则，玩法资料不足。",
+      "originalTitle": "JB_LAPTI_JAIL_beta",
+      "canonicalId": "3822320795",
+      "sourceTitle": "JB_LAPTI_JAIL_beta",
+      "sourceFingerprint": "985efed87e5a26efda47a9df982bb7077727d28ec2e5b479b8dd6ce22d5ebf7b",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3822320795"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:184199275": {
+      "title": "职业橄榄球宇宙",
+      "intro": "选择美式职业橄榄球队，与朋友参加比赛，通过达阵庆祝、球员成长和队伍收藏展现表现。",
+      "originalTitle": "[🔥NIKE + 2X] NFL Universe Football",
+      "canonicalId": "184199275",
+      "sourceTitle": "[🔥NIKE + 2X] NFL Universe Football",
+      "sourceFingerprint": "accf2b9d4421aa5b7d4073a976c214844b3328ceb5384a9c9f5fd96a0f799865",
+      "sources": [
+        "https://www.roblox.com/games/2338325648",
+        "https://games.roblox.com/v1/games?universeIds=184199275"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:7018190066": {
+      "title": "死亡铁轨",
+      "intro": "在病毒肆虐的十九世纪美洲，组队登上列车，穿过遍布僵尸的沙漠，向发现解药的墨西哥前进。",
+      "originalTitle": "[👻EVENT] Dead Rails",
+      "canonicalId": "7018190066",
+      "sourceTitle": "[👻EVENT] Dead Rails ",
+      "sourceFingerprint": "d0fd822bcc0d185c15d2972dbf3e384ca8af66e2184dc6c2706fc27020a24b41",
+      "sources": [
+        "https://www.roblox.com/games/116495829188952",
+        "https://games.roblox.com/v1/games?universeIds=7018190066"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:10769464063": {
+      "title": "毒液进化训练",
+      "intro": "训练角色，击败敌人并通过关卡，积累胜场来解锁新的进化形态和区域，逐步提升变身能力。",
+      "originalTitle": "[🌍WORLD 2] +1 Venom Evolution",
+      "canonicalId": "10769464063",
+      "sourceTitle": "[🌍WORLD 2] +1 Venom Evolution",
+      "sourceFingerprint": "790b9a9051e3656a13073d2ce1b29cef80a978e76a0a2afe26885ccc9e723de4",
+      "sources": [
+        "https://www.roblox.com/games/116448925875915",
+        "https://games.roblox.com/v1/games?universeIds=10769464063"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:10770018231": {
+      "title": "克隆宝宝照护：异常之夜",
+      "intro": "照顾夜里来到家中的五个宝宝，给他们喂食、洗澡并哄睡；屋内逐渐出现怪事，还要保护宝宝免受黑暗中不明存在的威胁。",
+      "originalTitle": "Clone Baby Care (Anomaly)",
+      "canonicalId": "10770018231",
+      "sourceTitle": "Clone Baby Care (Anomaly)",
+      "sourceFingerprint": "512ccbc7d7498fe17f3c54b80666fcab261b88dd72f0eb530571108249befc6d",
+      "sources": [
+        "https://www.roblox.com/games/87346021451395",
+        "https://games.roblox.com/v1/games?universeIds=10770018231"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:10767784294": {
+      "title": "偷小丑蛋",
+      "intro": "偷取并孵化小丑蛋，让孵出的小丑产生收入，再扩建基地增加空间；也能升级跑步机来训练移动速度。",
+      "originalTitle": "[🎃] Steal an Clown Egg",
+      "canonicalId": "10767784294",
+      "sourceTitle": "[🎃] Steal an Clown Egg",
+      "sourceFingerprint": "f2a63f7438d31194d50f8a0b36b6c4981f47bb347fa09abe22215006c296d533",
+      "sources": [
+        "https://www.roblox.com/games/77881572888789",
+        "https://games.roblox.com/v1/games?universeIds=10767784294"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:6325068386": {
+      "title": "蓝色监狱对手",
+      "intro": "同人足球作品，在五对五球赛中选择拥有独特能力的角色流派，通过觉醒强化自己的场上表现。",
+      "originalTitle": "[🐍 NEL Aiku] Blue Lock: Rivals",
+      "canonicalId": "6325068386",
+      "sourceTitle": "[🐍 NEL Aiku] Blue Lock: Rivals",
+      "sourceFingerprint": "4c54135fe529fe0b695ba1b7ff7e793be35ffaa1763c86f37ee75c648cdc5510",
+      "sources": [
+        "https://www.roblox.com/games/18668065416",
+        "https://games.roblox.com/v1/games?universeIds=6325068386"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:10732236937": {
+      "title": "怪兽阿尔法",
+      "intro": "操作怪兽使用多种技能作战，当前说明列有哥斯拉、摩斯拉等角色的更新。具体对局目标与胜负规则尚未说明。",
+      "originalTitle": "[ Heisei Mothra ] Kaiju Alpha",
+      "canonicalId": "10732236937",
+      "sourceTitle": "[ Heisei Mothra ] Kaiju Alpha",
+      "sourceFingerprint": "7507210115563198d78c4da82547f9338d8776fc26c3613dfbb6d418c640d35b",
+      "sources": [
+        "https://www.roblox.com/games/127403135954624",
+        "https://games.roblox.com/v1/games?universeIds=10732236937"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:10222476236": {
+      "title": "角色时装秀场",
+      "intro": "玩家投票选择主题，用服饰和动作设计角色造型，再上台走秀并互相评分，争夺每轮的领奖台名次。",
+      "originalTitle": "⭐Catalog Avatar Runway",
+      "canonicalId": "10222476236",
+      "sourceTitle": "⭐Catalog Avatar Runway",
+      "sourceFingerprint": "0a1ce33234c6078aa40bfb276384058997b957e9a42b18466477452b933edea7",
+      "sources": [
+        "https://www.roblox.com/games/97577741629233",
+        "https://games.roblox.com/v1/games?universeIds=10222476236"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:10766620257": {
+      "title": "骑行偷蛋",
+      "intro": "从宠物或其他玩家那里偷蛋，孵化宠物获取收入；训练速度、扩建基地，并收集更稀有的宠物与变异外形。",
+      "originalTitle": "[🎃] Bike For Egg!",
+      "canonicalId": "10766620257",
+      "sourceTitle": "[🎃] Bike For Egg!",
+      "sourceFingerprint": "29148f219f610db907cc6643a8461f5d2611af333628a7a6148a3947d8c529d0",
+      "sources": [
+        "https://www.roblox.com/games/74023858073178",
+        "https://games.roblox.com/v1/games?universeIds=10766620257"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:10768861430": {
+      "title": "神级孵化场",
+      "intro": "从守卫区域取走物品并进行孵化，在跑步机上训练力量以搬运更重的物品，再升级跑步机和基地，反复积累。",
+      "originalTitle": "DIVINE HATCHERS 0.0001% [NEW!]",
+      "canonicalId": "10768861430",
+      "sourceTitle": "DIVINE HATCHERS 0.0001% [NEW!]",
+      "sourceFingerprint": "ac459e6c997aed0d578ccb64a19f1b8116a55d1957b1cd6698f309095ef96295",
+      "sources": [
+        "https://www.roblox.com/games/98442746787754",
+        "https://games.roblox.com/v1/games?universeIds=10768861430"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:4723764956": {
+      "title": "我的电影",
+      "intro": "制作自己的影片，并观看其他玩家发布的视频；既能分享自己的创作，也能浏览持续更新的社区作品。",
+      "originalTitle": "🎥My Movie",
+      "canonicalId": "4723764956",
+      "sourceTitle": "🎥My Movie",
+      "sourceFingerprint": "fcf6ee12463922061077d342942f9c1eba4555f76a87804f7982e6421e563b7f",
+      "sources": [
+        "https://www.roblox.com/games/13600218266",
+        "https://games.roblox.com/v1/games?universeIds=4723764956"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:578392296": {
+      "title": "动漫格斗竞技场",
+      "intro": "操作动漫角色参加格斗，把普通攻击、空中攻击和角色技能组合成连招，也可使用闪避、防御与变身。",
+      "originalTitle": "ABA",
+      "canonicalId": "578392296",
+      "sourceTitle": "ABA",
+      "sourceFingerprint": "edafafb1f00daf6b81ad9333121f74d5daaf351635cd302e9a65d81fb392a79c",
+      "sources": [
+        "https://www.roblox.com/games/1458767429",
+        "https://games.roblox.com/v1/games?universeIds=578392296"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:5265857965": {
+      "title": "传奇战场",
+      "intro": "使用原创或动漫主题的火柴人角色格斗，通过轻攻击、冲刺、防御和觉醒展开较量，倒地时还能使用闪避脱身。",
+      "originalTitle": "[SHINJI] Legends Battlegrounds",
+      "canonicalId": "5265857965",
+      "sourceTitle": "[SHINJI] Legends Battlegrounds",
+      "sourceFingerprint": "a9c3ef5b48a9fd641b432c6c2345f4fc4489345debad85ad67b68bb83695e1cd",
+      "sources": [
+        "https://www.roblox.com/games/15269951959",
+        "https://games.roblox.com/v1/games?universeIds=5265857965"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:10768498581": {
+      "title": "部落三对三",
+      "intro": "三对三团队射击对抗，可自行搭配装备并制定战术。作者将其定位为强调对抗的竞技玩法。",
+      "originalTitle": "Tribes 3v3 [RANKED!]",
+      "canonicalId": "10768498581",
+      "sourceTitle": "Tribes 3v3 [RANKED!]",
+      "sourceFingerprint": "500fc847a078a6bc0d59f961f7bfc8e07953c3f542fedd90c724c48219a2827c",
+      "sources": [
+        "https://www.roblox.com/games/72169370437173",
+        "https://games.roblox.com/v1/games?universeIds=10768498581"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:10765618402": {
+      "title": "钢铁斗士",
+      "intro": "混搭上百种机器人的零件，组建自己的机器人军队，闯过连续楼层并挑战首领；也能到废料场收集材料、升级和转生。",
+      "originalTitle": "Steel Fighters",
+      "canonicalId": "10765618402",
+      "sourceTitle": "Steel Fighters",
+      "sourceFingerprint": "c7c9dc21a3eb6ed2f87fbe4471ff5bc8a024d3045951da5f9efaf97926f2de38",
+      "sources": [
+        "https://www.roblox.com/games/74122653145285",
+        "https://games.roblox.com/v1/games?universeIds=10765618402"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:8719555347": {
+      "title": "南方泥地越野",
+      "intro": "驾驶皮卡、卡车等车辆探索越野地图，挑战泥地、拖拽和运输，也能与朋友角色扮演并自定义车辆、轮胎及拖车。",
+      "originalTitle": "[🔧Tires🔧] Southern Mudding 🚜 OffRoading",
+      "canonicalId": "8719555347",
+      "sourceTitle": "[🔧Tires🔧] Southern Mudding 🚜 OffRoading",
+      "sourceFingerprint": "35aeaf7fc3e5a2b03ae9bc4b659f7c3bb223493bc6ce4fd57e37964aea9433e4",
+      "sources": [
+        "https://www.roblox.com/games/79480724066456",
+        "https://games.roblox.com/v1/games?universeIds=8719555347"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:10764221401": {
+      "title": "飞行搬人整活塔",
+      "intro": "一边向高塔顶部飞行，一边抓住并搬运其他玩家，还能把他们扔进熔岩；登顶过程中也要提防别人的干扰。",
+      "originalTitle": "TROLL Fly & Carry Tower",
+      "canonicalId": "10764221401",
+      "sourceTitle": "TROLL Fly & Carry Tower",
+      "sourceFingerprint": "3976a431eb8c85ec95448fa45603ee4f84764d86ef1044f344cecf5d94d2ca5d",
+      "sources": [
+        "https://www.roblox.com/games/117043200777029",
+        "https://games.roblox.com/v1/games?universeIds=10764221401"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:10739112966": {
+      "title": "街头足球高手",
+      "intro": "与队友配合踢球，通过带球、传球、弧线射门和抢断争取进球，也能担任门将扑救；支持头球、凌空射门等动作。",
+      "originalTitle": "🎃 Street Soccer Pro",
+      "canonicalId": "10739112966",
+      "sourceTitle": "🎃 Street Soccer Pro",
+      "sourceFingerprint": "7a2bf402aad71923c1a97164ec222386a25b146f86f15bc8d69a0b3a511e1b36",
+      "sources": [
+        "https://www.roblox.com/games/119242658671952",
+        "https://games.roblox.com/v1/games?universeIds=10739112966"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:10769384180": {
+      "title": "假装一颗蛋",
+      "intro": "伪装成一颗蛋等待其他玩家靠近，再趁对方没有注意时偷走其宠物，以伪装和偷取构成主要玩法。",
+      "originalTitle": "Fake an Egg",
+      "canonicalId": "10769384180",
+      "sourceTitle": "Fake an Egg",
+      "sourceFingerprint": "c51d8d818f98f6c6ffd30a9fd6e937df05406c4597235c5c649180538fa18090",
+      "sources": [
+        "https://www.roblox.com/games/97289366402005",
+        "https://games.roblox.com/v1/games?universeIds=10769384180"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:1852226622": {
+      "title": "扭蛋人物生活",
+      "intro": "自由制作和调整角色外形，可扮演人物、宠物甚至车辆，与朋友布置家园并探索动漫风格世界。",
+      "originalTitle": "Gacha Online 🎃 RP",
+      "canonicalId": "1852226622",
+      "sourceTitle": "Gacha Online 🎃 RP",
+      "sourceFingerprint": "85c29127807cc87026f1e45da27b96cc7832f13847d2b27ef858bffdb8971907",
+      "sources": [
+        "https://www.roblox.com/games/5289509545",
+        "https://games.roblox.com/v1/games?universeIds=1852226622"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:10381189313": {
+      "title": "揪出冒牌画家",
+      "intro": "大家按秘密主题作画，只有冒牌画家不知道题目，必须猜出主题并混入其中；其他人观察画作、讨论并投票找出冒牌者。",
+      "originalTitle": "[🎨] Catch the Artist!",
+      "canonicalId": "10381189313",
+      "sourceTitle": "[🎨] Catch the Artist!",
+      "sourceFingerprint": "921ffd652c1bc2ae3ef8ee808c59e65716f49900c020423fdf753d714b8b5423",
+      "sources": [
+        "https://www.roblox.com/games/129928276175025",
+        "https://games.roblox.com/v1/games?universeIds=10381189313"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "roblox:2783797267": {
+      "title": "美洲平原泥地生活",
+      "intro": "与朋友驾驶车辆挑战泥地越野、拖拽和运输，也能种田、划船与角色扮演；车辆和拖车可自定义，搭配自己的驾驶方案。",
+      "originalTitle": "[🪦HEARSE🪦] American Plains Mudding",
+      "canonicalId": "2783797267",
+      "sourceTitle": "[🪦HEARSE🪦] American Plains Mudding",
+      "sourceFingerprint": "28525568d44e95f847932faa9f1b8a468f193c2e0a7da96dc8d47a745c151ccb",
+      "sources": [
+        "https://www.roblox.com/games/7171174521",
+        "https://games.roblox.com/v1/games?universeIds=2783797267"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:9886-0074-1759": {
+      "title": "光环高柱生存战",
+      "intro": "十二名玩家在高柱上对抗，每五秒获得一个随机道具，最后存活者获胜；支持自定义高柱，并有段位系统。",
+      "originalTitle": "AURA PILLARS",
+      "canonicalId": "9886-0074-1759",
+      "sourceTitle": "AURA PILLARS",
+      "sourceFingerprint": "437e6b05dd7182b6fc1fbc98357ff6fc3319c29e788a607b6ddb7cdaea8256af",
+      "sources": [
+        "https://fortnite.gg/island/9886-0074-1759"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:1602-6355-3892": {
+      "title": "彼得博特一对一建造战",
+      "intro": "在简洁草地区域进行一对一建造对抗，可匹配随机对手、调整生命值，并快速开始下一场较量，练习搭建与交战。",
+      "originalTitle": "Peterbot 1v1",
+      "canonicalId": "1602-6355-3892",
+      "sourceTitle": "Peterbot 1v1",
+      "sourceFingerprint": "ce5345c6f144f773605c62570c3bdbe9767511c51f87dfe768d0e98d753ae1d4",
+      "sources": [
+        "https://fortnite.gg/island/1602-6355-3892"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:0004-9973-3062": {
+      "title": "韦兹一对一建造场",
+      "intro": "进行一对一或自由混战式的建造对抗，支持即时复活、重置建筑、调整生命值、自定义准星和观战。",
+      "originalTitle": "Wayz 1v1 Map (200 Pumps)",
+      "canonicalId": "0004-9973-3062",
+      "sourceTitle": "Wayz 1v1 Map (200 Pumps)",
+      "sourceFingerprint": "6bbb73b57def31c385f81602d476a46c2fa350b889a1bff36b2ca834e4e764d3",
+      "sources": [
+        "https://fortnite.gg/island/0004-9973-3062"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:7675-8305-9560": {
+      "title": "快速三队双人零建造",
+      "intro": "三支双人队在四十多种场景中进行零建造对抗，投票选择装备，率先赢得十个回合的队伍获胜，回合间无需等待。",
+      "originalTitle": "Rapid 2V2V2 Zero Build 💎",
+      "canonicalId": "7675-8305-9560",
+      "sourceTitle": "Rapid 2V2V2 Zero Build 💎",
+      "sourceFingerprint": "6774d404d14182193d62c753f9d14d15d218bf39feaaa3534f2a49709e4428e7",
+      "sources": [
+        "https://fortnite.gg/island/7675-8305-9560"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:5382-8693-1539": {
+      "title": "玩具熊的五夜后宫：夜班求生",
+      "intro": "扮演披萨店的夜班保安，面对弗雷迪等机械玩偶带来的恐怖威胁，设法活下来并逃离。",
+      "originalTitle": "FNAF - Night Shift Survival",
+      "canonicalId": "5382-8693-1539",
+      "sourceTitle": "FNAF - Night Shift Survival",
+      "sourceFingerprint": "8e7e7a1ca17adbd0bf062e2e1b14c1ca0446294febf42f6804a552fbb9987334",
+      "sources": [
+        "https://fortnite.gg/island/5382-8693-1539"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:7541-3275-7180": {
+      "title": "社区大混战",
+      "intro": "四十名玩家组队求生，利用地图中的物品与队友配合，争取成为最后存活的队伍；近距离语音可用于交流、结伴或互相干扰。",
+      "originalTitle": "Community Frenzy",
+      "canonicalId": "7541-3275-7180",
+      "sourceTitle": "Community Frenzy",
+      "sourceFingerprint": "3c51339531d65536eb1ad00a2515b8508534474f643009fba2baf60ee986a705",
+      "sources": [
+        "https://fortnite.gg/island/7541-3275-7180"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:6425-8239-0515": {
+      "title": "邪教惊魂",
+      "intro": "一至四名玩家跟随警长调查暴雨夜的失踪事件，在餐馆与汽车旅馆的线索中探索、躲藏和求生；故事有两种结局，并包含突然惊吓。",
+      "originalTitle": "THE CULT [HORROR]",
+      "canonicalId": "6425-8239-0515",
+      "sourceTitle": "THE CULT [HORROR]",
+      "sourceFingerprint": "8dedd3318f33642c4d0adc85f791028c3ee400f267832c2f5d04b4832dcda597",
+      "sources": [
+        "https://fortnite.gg/island/6425-8239-0515"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:1650-4346-6758": {
+      "title": "狂野狙击一击战",
+      "intro": "使用狙击武器进行一击淘汰的自由混战，支持即时复活与装填，并保存装备和战绩，通过段位及排行榜记录表现。",
+      "originalTitle": "WILD SNIPER ONE SHOT 🎯",
+      "canonicalId": "1650-4346-6758",
+      "sourceTitle": "WILD SNIPER ONE SHOT 🎯",
+      "sourceFingerprint": "55eb9c38b653b05276718e1289045628d91bc95291d3b592c2f94489dc00f35c",
+      "sources": [
+        "https://fortnite.gg/island/1650-4346-6758"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:2543-1561-6190": {
+      "title": "星球大战红蓝对抗",
+      "intro": "红蓝两队使用星球大战主题武器、原力和载具交战，也能化身英雄或反派；淘汰对手获得金币，积分用于提升段位。",
+      "originalTitle": "STAR WARS RED VS BLUE",
+      "canonicalId": "2543-1561-6190",
+      "sourceTitle": "STAR WARS RED VS BLUE",
+      "sourceFingerprint": "795c238424830b95c409d4e9968557caded9dee6c83362439ca037ba8ce27d19",
+      "sources": [
+        "https://fortnite.gg/island/2543-1561-6190"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:8887-1914-7284": {
+      "title": "精英缩圈对抗",
+      "intro": "进行一对一到四对四的缩圈对抗练习，支持重置比分，并提供平衡调整功能，可按不同队伍规模反复较量。",
+      "originalTitle": "ELITE ZONE WARS [1V1 TO 4V4]",
+      "canonicalId": "8887-1914-7284",
+      "sourceTitle": "ELITE ZONE WARS [1V1 TO 4V4]",
+      "sourceFingerprint": "22ac5e38d36820b916e72491227b1beb89c048483690bf2a0ac3b4d6ccd1ac3b",
+      "sources": [
+        "https://fortnite.gg/island/8887-1914-7284"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:9377-6678-9172": {
+      "title": "玩具熊的五夜后宫经营岛",
+      "intro": "建造和升级设施，探索多个世界，打僵尸、寻找战利品并参与小游戏，也可收集跑车；最多六人游玩，进度自动保存。",
+      "originalTitle": "FNAF TYCOON [FIVE NIGHTS]",
+      "canonicalId": "9377-6678-9172",
+      "sourceTitle": "FNAF TYCOON [FIVE NIGHTS]",
+      "sourceFingerprint": "f3f7410403eaeaeab34844846390dbd72b448adc9ced152150a30b8ff946f6f3",
+      "sources": [
+        "https://fortnite.gg/island/9377-6678-9172"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:8402-7861-9119": {
+      "title": "伙伴大师",
+      "intro": "捕捉伙伴、组建小队并搭配技能，带队爬塔挑战首领，也能与其他玩家进行小队对决；转生可解锁新区域和加成。",
+      "originalTitle": "Sidekick Masters",
+      "canonicalId": "8402-7861-9119",
+      "sourceTitle": "Sidekick Masters",
+      "sourceFingerprint": "276d52f83a82687b7297b2a72c7f2aa05b40dfc5b411a84ee1f6ef07e67b4e34",
+      "sources": [
+        "https://fortnite.gg/island/8402-7861-9119"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:8003-2362-4527": {
+      "title": "精灵能力盒子战",
+      "intro": "从五十种具有不同能力的精灵中选择角色，在盒子空间内交战，争取成为最后存活者；能力包括制造水龙卷、石化敌人等。",
+      "originalTitle": "SPRITE BOX PVP - BOX FIGHTS",
+      "canonicalId": "8003-2362-4527",
+      "sourceTitle": "SPRITE BOX PVP - BOX FIGHTS",
+      "sourceFingerprint": "91179d3c429ea103f5a54aec299b6078ab29d2c8f994730aeebc7d5be83739ee",
+      "sources": [
+        "https://fortnite.gg/island/8003-2362-4527"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:2276-7799-6979": {
+      "title": "弹道突击",
+      "intro": "五对五爆破对抗，进攻方安放装置，防守方阻止或拆除装置；每回合只有一条命，可用获得的资金升级装备。",
+      "originalTitle": "Ballistic R",
+      "canonicalId": "2276-7799-6979",
+      "sourceTitle": "Ballistic R",
+      "sourceFingerprint": "174c4ff8dff320ef749241ccfbeab69baa8b2b569e6c0e85333b38775efd6763",
+      "sources": [
+        "https://fortnite.gg/island/2276-7799-6979"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:3527-4959-6539": {
+      "title": "见面聊一聊",
+      "intro": "通过近距离语音与其他玩家交流，可用遥控器切换聊天对象或组成小组；收集货币购买道具、服装和能力。",
+      "originalTitle": "MEET UP - PROXIMITY CHAT RP 📞",
+      "canonicalId": "3527-4959-6539",
+      "sourceTitle": "MEET UP - PROXIMITY CHAT RP 📞",
+      "sourceFingerprint": "7e97e43d20222f818c88d408ef0cc513f776cb16f5e67cbb571e36f7bacd97e2",
+      "sources": [
+        "https://fortnite.gg/island/3527-4959-6539"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:3576-3976-5738": {
+      "title": "布朗克斯街区",
+      "intro": "在开放街区中进行角色扮演，组建团队、使用自定义武器，并参与银行与交易系统；支持近距离语音和进度保存。",
+      "originalTitle": "THA BRONX",
+      "canonicalId": "3576-3976-5738",
+      "sourceTitle": "THA BRONX",
+      "sourceFingerprint": "72e45da298d9644d7925d5b55849a8b7425159d47cce0b8e12c81cf24357cef2",
+      "sources": [
+        "https://fortnite.gg/island/3576-3976-5738"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:8105-9005-4478": {
+      "title": "劫案逃生：收获日",
+      "intro": "一至四人闯入珠宝店、银行或港口，逐个房间击败守卫、夺取战利品并逃离。每过一间房可选强化能力，积累资源提升实力，进度可保存。",
+      "originalTitle": "HEIST ESCAPE ROGUELIKE PAYDAY EXPERIENCE",
+      "canonicalId": "8105-9005-4478",
+      "sourceTitle": "HEIST ESCAPE ROGUELIKE PAYDAY EXPERIENCE",
+      "sourceFingerprint": "94abfc39074181f072bf8a292457c3ea5d84709d8a4cdb7f0290987c80dbe079",
+      "sources": [
+        "https://fortnite.gg/island/8105-9005-4478"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "fortnite:1245-9511-3686": {
+      "title": "商场超市道具捉迷藏",
+      "intro": "躲藏者变成道具混入超市货架，猎人需要在限时内将他们找出；支持二至二十人游玩，回合间无需等待。",
+      "originalTitle": "Supermarket Prop Hunt 🛒 Mall",
+      "canonicalId": "1245-9511-3686",
+      "sourceTitle": "Supermarket Prop Hunt 🛒 Mall",
+      "sourceFingerprint": "0b5347f2a5eb7dbeedbe4b59c5efe5bf8c60ffbe55a2f3274974fb797308f631",
+      "sources": [
+        "https://fortnite.gg/island/1245-9511-3686"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "minecraft:qYtXvlBc": {
+      "title": "远古遗存：神秘巨石",
+      "intro": "在世界中寻找神秘巨石，探索其中隐藏的远古力量。来源简介未说明触发方式和具体能力，详细机制仍待核实。",
+      "originalTitle": "Ancient Remnants: Monoliths",
+      "canonicalId": "qYtXvlBc",
+      "sourceTitle": "Ancient Remnants: Monoliths",
+      "sourceFingerprint": "d7b5210610411464dee445f698dbd0890a8287de107612ee24f41c27d3bb7c69",
+      "sources": [
+        "https://modrinth.com/mod/ancient-remnants"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
+      "translationKind": "descriptive"
+    },
+    "minecraft:Tojtoj2r": {
+      "title": "方可梦究极空间",
+      "intro": "这是方可梦的扩展模组。来源仅给出兼容测试说明，未介绍新增内容、进入方式或具体玩法。",
+      "originalTitle": "Cobblemon Ultra Space",
+      "canonicalId": "Tojtoj2r",
+      "sourceTitle": "Cobblemon Ultra Space",
+      "sourceFingerprint": "e40faaeee454b0863ee2fba477e4cda5ab75ca05a545e544143816bd6b17c055",
+      "sources": [
+        "https://modrinth.com/mod/cobblemon-ultra-space"
+      ],
+      "reviewedAt": "2026-10-21T01:11:27+00:00",
       "translationKind": "descriptive"
     }
   }

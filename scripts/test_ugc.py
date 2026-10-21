@@ -203,6 +203,29 @@ class Parsers(unittest.TestCase):
 
 
 class ChineseReview(unittest.TestCase):
+    def test_fortnite_attribution_uses_island_author_not_navigation(self):
+        from prepare_ugc_chinese import fetch_fortnite
+        html = '<a href="/creators">All Creators</a><a href="/creator/the-author">The Author</a><div class="island-desc">Defend your base.</div>'
+        with patch('prepare_ugc_chinese.request', return_value=html):
+            source = fetch_fortnite({'id': '1234-5678-9012', 'title': 'Map', 'url': 'https://fortnite.gg/island/1234-5678-9012'})
+        self.assertEqual(source['creator'], 'The Author')
+        self.assertEqual(source['description'], 'Defend your base.')
+
+    def test_steam_profile_must_match_requested_author(self):
+        from prepare_ugc_chinese import steam_creator
+        xml = '<profile><steamID64>76561197970363778</steamID64><steamID><![CDATA[A & B]]></steamID></profile>'
+        with patch('prepare_ugc_chinese.request', return_value=xml):
+            self.assertEqual(steam_creator('76561197970363778')['name'], 'A & B')
+            with self.assertRaises(ValueError):
+                steam_creator('76561198000000000')
+
+    def test_roblox_group_credit_keeps_official_creator_name(self):
+        from prepare_ugc_chinese import roblox_source
+        source = roblox_source({'id': 100, 'rootPlaceId': 200, 'name': 'Game',
+                               'creator': {'id': 300, 'name': 'Studio & Friends', 'type': 'Group'}})
+        self.assertEqual(source['creator'], 'Studio & Friends')
+        self.assertEqual(source['canonicalId'], '100')
+
     def test_restricted_roblox_placeholder_does_not_become_work_zero(self):
         from prepare_ugc_chinese import roblox_games
         with patch('prepare_ugc_chinese.request', return_value=json.dumps({'data': [

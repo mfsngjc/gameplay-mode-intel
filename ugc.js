@@ -3,7 +3,7 @@ window.UGCMonitor = (() => {
   'use strict';
   const root = document.querySelector('#ugcSection');
   const platforms = [['cs2', 'CS2 创意工坊'], ['roblox', '罗布乐思'], ['fortnite', '堡垒之夜社区'], ['minecraft', '我的世界模组']];
-  const ui = { platform: 'cs2', board: 'hot', date: '', filter: 'all', sort: 'rank', limit: 25, query: '', loading: false, error: '', latest: null, historical: null, index: null, briefing: null, chinese: null };
+  const ui = { platform: 'cs2', board: 'hot', date: '', filter: 'all', sort: 'rank', limit: 25, query: '', loading: false, error: '', latest: null, historical: null, index: null, briefing: null, chinese: null, creators: null };
   const categories = { Custom: '自定义', Classic: '经典对战', Wingman: '搭档模式', Deathmatch: '死斗', Armsrace: '军备竞赛', Training: '训练',
     optimization: '性能优化', utility: '实用工具', adventure: '冒险', technology: '科技', magic: '魔法', storage: '存储', worldgen: '世界生成',
     decoration: '装饰', equipment: '装备', food: '食物', transportation: '交通', management: '管理', social: '社交', mobs: '生物', game_mechanics: '游戏机制',
@@ -14,6 +14,13 @@ window.UGCMonitor = (() => {
   const key = () => ui.platform + (ui.board === 'alltime' ? '_alltime' : '');
   const current = () => (ui.date ? ui.historical : ui.latest)?.platforms?.[key()];
   const chinese = (row, board = current()) => ui.chinese?.entries?.[board.platformId + ':' + row.id] || { title: '新收录作品', intro: '中文介绍正在整理。' };
+  const creatorName = (row, board) => ui.creators?.entries?.[board.platformId + ':' + row.id]?.name || row.creator || '';
+  const workTitle = (row, board) => esc(row.title) + '<span class="ugc-title-translation">（' + esc(chinese(row, board).title) + '）</span>';
+  const workAuthor = (row, board) => {
+    const name = creatorName(row, board);
+    const label = board.platformId === 'cs2' && /^\d{17}$/.test(name) ? '作者编号：' : '作者：';
+    return '<div class="ugc-author">' + label + esc(name || '来源暂未提供') + '</div>';
+  };
   const categoryLabels = row => [...new Set((row.categories || []).map(c => categories[c]).filter(Boolean))];
   const platformLabel = board => platforms.find(([id]) => id === board.platformId)?.[1] || '社区平台';
   const boardSize = board => board.rankingLimit || board.entries?.length || 100;
@@ -64,10 +71,11 @@ window.UGCMonitor = (() => {
     ui.loading = true;
     if (!ui.latest) paint();
     try {
-      const [latest, catalog] = await Promise.all([getJSON('data/ugc/latest.json'), getJSON('data/ugc/chinese.json')]);
+      const [latest, catalog, creators] = await Promise.all([getJSON('data/ugc/latest.json'), getJSON('data/ugc/chinese.json'), getJSON('data/ugc/creators.json').catch(() => null)]);
       if (!latest.platforms || typeof latest.platforms !== 'object') throw new Error('榜单内容不完整');
-      const changed = !ui.latest || latest.generatedAt !== ui.latest.generatedAt || catalog.updatedAt !== ui.chinese?.updatedAt;
+      const changed = !ui.latest || latest.generatedAt !== ui.latest.generatedAt || catalog.updatedAt !== ui.chinese?.updatedAt || (creators && creators.updatedAt !== ui.creators?.updatedAt);
       ui.chinese = catalog;
+      if (creators) ui.creators = creators;
       ui.latest = latest;
       if (changed || !ui.index || force) {
         ui.index = await getJSON('data/ugc/index.json');
@@ -91,7 +99,7 @@ window.UGCMonitor = (() => {
       if (ui.filter === 'new' && !row.isNewEntry) return false;
       if (ui.filter === 'strong' && !row.isStrongNewEntry) return false;
       const translated = chinese(row, board);
-      const text = [translated.title, translated.intro, row.title, row.creator, row.id, row.summary, ...categoryLabels(row)].join(' ').toLocaleLowerCase();
+      const text = [translated.title, translated.intro, row.title, creatorName(row, board), row.id, row.summary, ...categoryLabels(row)].join(' ').toLocaleLowerCase();
       return words.every(word => text.includes(word));
     });
     return rows.sort((a, b) => {
@@ -132,7 +140,7 @@ window.UGCMonitor = (() => {
       const row = lookup.get(id);
       if (!row) return '';
       const reason = (row.strongReasons?.join('；') || (row.isNewEntry ? '上次完整前 ' + boardSize(board) + ' 名中未出现' : '较对比日上升 ' + row.rankDelta + ' 名')).replace(/Top\s*(100|200)/gi, '前 $1 名');
-      return '<a class="ugc-highlight" href="' + esc(safe(row.url)) + '" target="_blank" rel="noopener noreferrer"><small>' + (row.isStrongNewEntry ? '强势新进榜' : row.isNewEntry ? '新入榜' : '排名上涨') + ' <span>#' + row.rank + '</span></small><strong>' + esc(chinese(row, board).title) + '</strong><p>' + esc(reason) + '</p></a>';
+      return '<a class="ugc-highlight" href="' + esc(safe(row.url)) + '" target="_blank" rel="noopener noreferrer"><small>' + (row.isStrongNewEntry ? '强势新进榜' : row.isNewEntry ? '新入榜' : '排名上涨') + ' <span>#' + row.rank + '</span></small><strong>' + workTitle(row, board) + '</strong>' + workAuthor(row, board) + '<p>' + esc(reason) + '</p></a>';
     }).join('') + '</div>';
   }
 
@@ -141,7 +149,11 @@ window.UGCMonitor = (() => {
     if (!briefing || briefing.date !== board.date || ui.date) return '';
     const entries = (briefing.entries || []).filter(item => item.boardId === key() && board.entries.some(row => row.id === item.id));
     if (!entries.length) return '';
-    return '<section class="ugc-briefing" aria-label="每日观察"><h2>每日观察</h2>' + entries.map(item => '<article><strong>' + esc(chinese({ id: item.id }, board).title) + '</strong><p>' + esc(item.observation) + '</p><span>设计推断：' + esc(item.designInference || '暂无') + '</span>' + (item.sources || []).filter(url => safe(url)).slice(0, 3).map((url, index) => '<a href="' + esc(safe(url)) + '" target="_blank" rel="noopener noreferrer">来源 ' + (index + 1) + ' ↗</a>').join('') + '</article>').join('') + '</section>';
+    const lookup = new Map(board.entries.map(row => [row.id, row]));
+    return '<section class="ugc-briefing" aria-label="每日观察"><h2>每日观察</h2>' + entries.map(item => {
+      const row = lookup.get(item.id);
+      return '<article><strong>' + workTitle(row, board) + '</strong>' + workAuthor(row, board) + '<p>' + esc(item.observation) + '</p><span>设计推断：' + esc(item.designInference || '暂无') + '</span>' + (item.sources || []).filter(url => safe(url)).slice(0, 3).map((url, index) => '<a href="' + esc(safe(url)) + '" target="_blank" rel="noopener noreferrer">来源 ' + (index + 1) + ' ↗</a>').join('') + '</article>';
+    }).join('') + '</section>';
   }
 
   function paint() {
@@ -177,11 +189,11 @@ window.UGCMonitor = (() => {
     html += visible.map(row => {
       const translated = chinese(row, board);
       const labels = categoryLabels(row).slice(0, 3).join(' / ') || (ui.platform === 'fortnite' ? '岛屿代码 ' + row.id : '社区作品');
-      return '<tr><td class="ugc-rank">' + row.rank + '</td><td class="ugc-work"><a href="' + esc(safe(row.url)) + '" target="_blank" rel="noopener noreferrer">' + esc(translated.title) + ' ↗</a>' + signal(row, board) + '<small>' + esc(labels) + '</small><p>' + esc(translated.intro) + '</p><details class="ugc-original"><summary>原名与作者</summary><span>原名：' + esc(row.title) + (row.creator && !/^\d{10,}$/.test(row.creator) ? '<br>作者：' + esc(row.creator) : '') + '</span></details></td><td class="ugc-metric" title="' + esc(row.metricValue) + '">' + number(row.metricValue) + (row.metricGrowthPct == null ? '' : '<small class="' + (row.metricGrowthPct >= 0 ? 'ugc-up' : 'ugc-down') + '">' + (row.metricGrowthPct >= 0 ? '+' : '') + row.metricGrowthPct + '%</small>') + '</td><td>' + (row.isNewEntry ? '<span class="ugc-up">' + (row.isReturning ? '重返' : '新入') + '</span>' : rankChange(row.rankDelta)) + '</td><td>' + rankChange(row.rankDelta7d) + '</td><td>' + sparkline(row, board) + '</td></tr>';
+      return '<tr><td class="ugc-rank">' + row.rank + '</td><td class="ugc-work"><a href="' + esc(safe(row.url)) + '" target="_blank" rel="noopener noreferrer">' + workTitle(row, board) + ' ↗</a>' + signal(row, board) + workAuthor(row, board) + '<small>' + esc(labels) + '</small><p>' + esc(translated.intro) + '</p></td><td class="ugc-metric" title="' + esc(row.metricValue) + '">' + number(row.metricValue) + (row.metricGrowthPct == null ? '' : '<small class="' + (row.metricGrowthPct >= 0 ? 'ugc-up' : 'ugc-down') + '">' + (row.metricGrowthPct >= 0 ? '+' : '') + row.metricGrowthPct + '%</small>') + '</td><td>' + (row.isNewEntry ? '<span class="ugc-up">' + (row.isReturning ? '重返' : '新入') + '</span>' : rankChange(row.rankDelta)) + '</td><td>' + rankChange(row.rankDelta7d) + '</td><td>' + sparkline(row, board) + '</td></tr>';
     }).join('');
     if (!visible.length) html += '<tr><td colspan="6" class="ugc-empty">' + (board.isBaseline && ui.filter !== 'all' ? '首日尚无跨日对比数据。' : '没有匹配内容，试试其他筛选或关键词。') + '</td></tr>';
     html += '</tbody></table></div><div class="ugc-footer"><span>已展示 ' + visible.length + ' / ' + rows.length + ' 条' + (board.comparisonDate ? ' · 对比 ' + board.comparisonDate : ' · 首日基线') + '</span>' + (visible.length < rows.length ? '<button class="button" type="button" data-ugc-more>' + (board.boardType === 'alltime' ? '显示全部 ' + rows.length + ' 条' : '继续显示 25 条') + '</button>' : '') + '</div>';
-    html += '<p class="ugc-translation-note">中文名称采用便于理解的说明性译法，玩法介绍按公开来源整理。展开“原名与作者”可核对作品原名。</p>';
+    html += '<p class="ugc-translation-note">作品以来源原名与作者署名展示，括号内中文名称为说明性译法，仅供参考；玩法介绍按公开来源整理。</p>';
     html += '<details class="ugc-rules"><summary>如何判断上涨与强势新进榜</summary><p>排名上涨 = 对比日名次 − 当前名次。新入榜表示上次完整前 ' + boardSize(board) + ' 名中没有该作品，不代表刚发布；榜外名次不会按第 ' + (boardSize(board) + 1) + ' 名估算。</p><p>近 7 天新入榜的作品，若新入即进前 20，或一天上升至少 10 名、7 天上升至少 20 名、主要指标一天增长至少 25%，标记为强势新进榜。缺少历史、口径变更、采集失败均不制造变化；日期不连续时明确改用“较上次”。</p></details>';
     root.innerHTML = html;
   }
@@ -196,7 +208,7 @@ window.UGCMonitor = (() => {
     const board = current();
     if (!board) return;
     const quote = value => '"' + String(value ?? '').replace(/^[=+@\-\t\r]/, "'$&").replace(/"/g, '""') + '"';
-    const rows = [['日期', '平台', '榜单', '排名', '中文名称', '中文介绍', '原名', '指标', '指标值', '对比日期', '排名变化', '7日变化', '新入榜', '强势新入榜', '来源'], ...filteredRows(board).map(row => [board.date, platformLabel(board), board.boardLabel, row.rank, chinese(row, board).title, chinese(row, board).intro, row.title, board.metricLabel, row.metricValue, board.comparisonDate, row.rankDelta, row.rankDelta7d, row.isNewEntry ? '是' : '', row.isStrongNewEntry ? '是' : '', row.url])];
+    const rows = [['日期', '平台', '榜单', '排名', '原名', '作者', '中文名称（参考）', '中文介绍', '指标', '指标值', '对比日期', '排名变化', '7日变化', '新入榜', '强势新入榜', '来源'], ...filteredRows(board).map(row => [board.date, platformLabel(board), board.boardLabel, row.rank, row.title, creatorName(row, board), chinese(row, board).title, chinese(row, board).intro, board.metricLabel, row.metricValue, board.comparisonDate, row.rankDelta, row.rankDelta7d, row.isNewEntry ? '是' : '', row.isStrongNewEntry ? '是' : '', row.url])];
     const blob = new Blob(['\ufeff' + rows.map(row => row.map(quote).join(',')).join('\r\n')], { type: 'text/csv;charset=utf-8' });
     const url = URL.createObjectURL(blob), link = document.createElement('a');
     link.href = url; link.download = 'ugc-' + key() + '-' + board.date + '.csv'; link.click();

@@ -6,6 +6,16 @@ const folder = path.join(root, 'data', 'ugc');
 const read = name => JSON.parse(fs.readFileSync(path.join(folder, name), 'utf8'));
 const latest = read('latest.json');
 const chinese = read('chinese.json');
+const creators = read('creators.json');
+assert.equal(creators.schemaVersion, 1);
+assert.ok(Number.isFinite(Date.parse(creators.updatedAt)));
+for (const [key, item] of Object.entries(creators.entries)) {
+  assert.ok(['ok', 'stale', 'unavailable'].includes(item.status), key + ' invalid attribution status');
+  assert.ok(item.sources.length && item.sources.every(url => url.startsWith('https://')));
+  if (item.status !== 'unavailable') {
+    assert.ok(item.name && Number.isFinite(Date.parse(item.checkedAt)), key + ' missing verified attribution');
+  }
+}
 assert.equal(chinese.schemaVersion, 1);
 assert.equal(chinese.language, 'zh-CN');
 assert.ok(Number.isFinite(Date.parse(chinese.updatedAt)));

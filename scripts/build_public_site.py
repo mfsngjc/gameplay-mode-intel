@@ -38,7 +38,7 @@ def main():
         destination = OUTPUT / name
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(ROOT / name, destination)
-    for name in ['latest.json', 'index.json', 'briefing.json', 'chinese.json']:
+    for name in ['latest.json', 'index.json', 'briefing.json', 'chinese.json', 'creators.json']:
         source = ROOT / 'data/ugc' / name
         if source.exists():
             destination = OUTPUT / 'data/ugc' / name

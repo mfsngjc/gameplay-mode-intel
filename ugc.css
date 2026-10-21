@@ -55,10 +55,8 @@
 .ugc-work > a:hover { text-decoration:underline; }
 .ugc-work > small { display:block; margin-top:5px; color:var(--muted); font-size:10px; line-height:1.6; }
 .ugc-work p { margin:7px 0 0; color:#596552; font-size:12px; line-height:1.8; overflow-wrap:anywhere; }
-.ugc-original { margin-top:7px; font-size:10px; color:var(--muted); line-height:1.7; }
-.ugc-original summary { cursor:pointer; width:fit-content; }
-.ugc-original summary:hover { color:var(--accent); }
-.ugc-original span { display:block; margin-top:5px; overflow-wrap:anywhere; }
+.ugc-title-translation { color:var(--muted); font-size:12px; font-weight:400; overflow-wrap:anywhere; }
+.ugc-author { margin-top:5px; color:var(--muted); font-size:11px; line-height:1.6; font-weight:400; overflow-wrap:anywhere; }
 .ugc-translation-note { color:var(--muted); font-size:11px; line-height:1.8; margin:12px 0; }
 .ugc-metric { font-weight:600; font-variant-numeric:tabular-nums; white-space:nowrap; }
 .ugc-metric small { display:block; font-size:10px; font-weight:400; margin-top:5px; }

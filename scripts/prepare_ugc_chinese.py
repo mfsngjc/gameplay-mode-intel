@@ -11,6 +11,7 @@ import argparse
 import hashlib
 import json
 import time
+import xml.etree.ElementTree as ET
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
@@ -27,7 +28,10 @@ def fetch_fortnite(row):
     description = ' '.join(node.text() for node in descriptions)
     if not description:
         raise ValueError('岛屿详情没有可核实的玩法说明')
+    authors = [node for node in tree.root.find_all(tag='a') if node.attrs.get('href', '').startswith('/creator/')]
     return {'title': row['title'], 'description': description,
+            'creator': authors[0].text().strip() if authors else '',
+            'creatorCheckedAt': datetime.now(timezone.utc).isoformat(timespec='seconds'),
             'categories': [node.text() for node in tree.root.find_all(class_name='island-tag')],
             'sources': [row['url']], 'canonicalId': row['id']}
 
@@ -47,6 +51,8 @@ def resolve_place(place_id):
 
 def roblox_source(game):
     return {'title': game['name'], 'description': game.get('description') or '',
+            'creator': (game.get('creator') or {}).get('name', ''),
+            'creatorCheckedAt': datetime.now(timezone.utc).isoformat(timespec='seconds'),
             'categories': [game.get('genre_l1', ''), game.get('genre_l2', '')],
             'sources': ['https://www.roblox.com/games/' + str(game['rootPlaceId']),
                         'https://games.roblox.com/v1/games?universeIds=' + str(game['id'])],
@@ -69,7 +75,70 @@ def steam_sources(rows):
                 'categories': [tag['tag'] for tag in item.get('tags', [])],
                 'sources': ['https://steamcommunity.com/sharedfiles/filedetails/?id=' + item['publishedfileid']],
                 'canonicalId': item['publishedfileid'], 'fullDescription': True}
+            result[item['publishedfileid']]['creatorId'] = str(item.get('creator') or '')
     return result
+
+
+def steam_creator(creator_id):
+    url = 'https://steamcommunity.com/profiles/' + creator_id + '/?xml=1'
+    profile = ET.fromstring(request(url))
+    if profile.findtext('steamID64') != creator_id:
+        raise ValueError('作者资料编号与请求不一致')
+    name = (profile.findtext('steamID') or '').strip()
+    if not name:
+        raise ValueError('公开资料缺少作者署名')
+    return {'name': name, 'creatorId': creator_id, 'sources': [url],
+            'checkedAt': datetime.now(timezone.utc).isoformat(timespec='seconds'), 'status': 'ok'}
+
+
+def prepare_creators(folder, observed, evidence):
+    """Publish public attribution separately from rankings and reviewed translations."""
+    path = folder / 'creators.json'
+    catalog = json.loads(path.read_text(encoding='utf-8')) if path.exists() else {'schemaVersion': 1, 'entries': {}}
+    entries = catalog['entries']
+    now = datetime.now(timezone.utc)
+    profiles = {item['creatorId']: item for key, item in entries.items()
+                if key.startswith('cs2:') and item.get('creatorId') and item.get('name')}
+    steam_ids = {evidence.get(key, {}).get('creatorId') or row.get('creator') for key, row in observed.items()
+                 if row['platformId'] == 'cs2'}
+    missing = []
+    for creator_id in sorted(filter(None, steam_ids)):
+        old = profiles.get(creator_id)
+        if not old or (now - datetime.fromisoformat(old['checkedAt'])).total_seconds() >= 86400:
+            missing.append(creator_id)
+    failures = {}
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        futures = {pool.submit(steam_creator, creator_id): creator_id for creator_id in missing}
+        for index, future in enumerate(as_completed(futures), 1):
+            creator_id = futures[future]
+            try:
+                profiles[creator_id] = future.result()
+            except Exception as error:
+                failures[creator_id] = str(error)
+            if index % 40 == 0:
+                print('已核对工坊作者', index, '/', len(futures), flush=True)
+    for key, row in observed.items():
+        source = evidence.get(key, {})
+        if row['platformId'] == 'cs2':
+            creator_id = source.get('creatorId') or row.get('creator')
+            item = profiles.get(creator_id)
+            if item:
+                entries[key] = {**item, 'status': 'stale' if creator_id in failures else 'ok'}
+            else:
+                entries[key] = {'name': '', 'creatorId': creator_id, 'sources': [row['url']],
+                                'status': 'unavailable', 'lastAttemptAt': now.isoformat(timespec='seconds')}
+        else:
+            name = source.get('creator') or row.get('creator')
+            if name:
+                entries[key] = {'name': name, 'sources': source.get('sources') or [row['url']],
+                                'checkedAt': source.get('creatorCheckedAt') or row['collectedAt'], 'status': 'ok'}
+            elif key not in entries:
+                entries[key] = {'name': '', 'sources': [row['url']], 'status': 'unavailable',
+                                'lastAttemptAt': now.isoformat(timespec='seconds')}
+    catalog['updatedAt'] = datetime.now(timezone.utc).isoformat(timespec='seconds')
+    atomic_json(path, catalog)
+    print('公开作者署名', sum(bool(entries[key].get('name')) for key in observed), '/', len(observed),
+          '；工坊作者读取失败', len(failures), flush=True)
 
 
 def pending_entries(observed, evidence, catalog):
@@ -100,7 +169,7 @@ def prepare(root, refresh_sources=False):
     for board_id, board in latest['platforms'].items():
         for row in board['entries']:
             key = board['platformId'] + ':' + row['id']
-            observed[key] = {**row, 'platformId': board['platformId'], 'boardId': board_id}
+            observed[key] = {**row, 'platformId': board['platformId'], 'boardId': board_id, 'collectedAt': board['collectedAt']}
 
     # Refreshes affect evidence and the review queue only. Existing reviewed
     # translations remain visible until the AI task reviews changed descriptions.
@@ -145,6 +214,8 @@ def prepare(root, refresh_sources=False):
             try:
                 asset = json.loads(request(asset_url))
                 evidence['roblox:' + place] = {'title': asset.get('Name') or observed['roblox:' + place]['title'],
+                    'creator': (asset.get('Creator') or {}).get('Name', ''),
+                    'creatorCheckedAt': datetime.now(timezone.utc).isoformat(timespec='seconds'),
                     'description': asset.get('Description') or '', 'canonicalId': roots[place],
                     'categories': [], 'sources': ['https://www.roblox.com/games/' + place, asset_url],
                     'availability': 'deleted_or_restricted' if 'deleted' in asset.get('Name', '').lower() else 'asset_only'}
@@ -161,6 +232,8 @@ def prepare(root, refresh_sources=False):
                 futures[pool.submit(fetch_fortnite, row)] = key
             elif row['platformId'] != 'roblox':
                 evidence[key] = {'title': row['title'], 'description': row['summary'], 'categories': row['categories'],
+                                 'creator': row.get('creator', ''),
+                                 'creatorCheckedAt': row['collectedAt'],
                                  'sources': [row['url']], 'canonicalId': row['id']}
         for index, future in enumerate(as_completed(futures), 1):
             key = futures[future]
@@ -173,6 +246,7 @@ def prepare(root, refresh_sources=False):
                 print('已读取岛屿说明', index, '/', len(futures), flush=True)
     atomic_json(cache_path, cache)
 
+    prepare_creators(folder, observed, evidence)
     queue = pending_entries(observed, evidence, catalog)
     errors.extend(row['key'] + ': ' + row['sourceError'] for row in queue if row['sourceError'])
     atomic_json(folder / 'chinese-queue.json', {'schemaVersion': 1, 'preparedAt': datetime.now(timezone.utc).isoformat(), 'entries': queue, 'errors': errors})
