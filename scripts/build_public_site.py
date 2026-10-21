@@ -32,7 +32,7 @@ def remove_output_with_retry():
 def main():
     remove_output_with_retry()
     OUTPUT.mkdir()
-    files = ['index.html', 'app.js', 'workspace.js', 'maps.js', 'styles.css', 'ugc.js', 'ugc.css',
+    files = ['index.html', 'card-view.js', 'card-view.css', 'app.js', 'workspace.js', 'maps.js', 'styles.css', 'ugc.js', 'ugc.css',
              'workspace.css', 'tactical-items.css', 'tactical-items.js', 'data/tactical-items.json',
              'ff-patches.js', 'data/free-fire-patches.json', 'core-updates.js', 'data/core-updates.json', 'data/modes.json', 'data/maps.json',
              'assets/favicon.svg', 'assets/lucide-LICENSE']

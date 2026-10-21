@@ -8,9 +8,10 @@
   <title>集成农业 · 射击玩法研究库</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css?v=core-updates-20260919-r9">
-  <link rel="stylesheet" href="workspace.css?v=20261021-ugc-sticky">
-  <link rel="stylesheet" href="tactical-items.css?v=20261012-images">
-  <link rel="stylesheet" href="ugc.css?v=20261021-catalog-r4">
+  <link rel="stylesheet" href="workspace.css?v=20261021-card-size-r3">
+  <link rel="stylesheet" href="tactical-items.css?v=20261021-card-size-r3">
+  <link rel="stylesheet" href="ugc.css?v=20261021-card-size-r3">
+  <link rel="stylesheet" href="card-view.css?v=20261021-r3">
 </head>
 <body class="workspace">
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><symbol id="ui-compass" viewBox="0 0 24 24">
@@ -211,7 +212,7 @@
               <div class="select-field"><label for="topicSelect">设计主题</label><select id="topicSelect" aria-label="设计主题"><option value="all">全部主题</option></select></div>
               <div class="select-field" id="typeField"><label for="typeSelect">模式标签</label><select id="typeSelect" aria-label="模式标签"><option value="all">全部标签</option></select></div>
             </div>
-            <div class="view-controls" id="libraryViewControls"><label class="sr-only" for="sortSelect">资料排序</label><select id="sortSelect"><option value="recommended">推荐浏览</option><option value="newest">记录时间：从新到旧</option><option value="oldest">记录时间：从旧到新</option><option value="name">按名称排序</option></select><span class="control-divider"></span><button type="button" class="icon-button is-selected" data-layout="grid" aria-label="卡片视图" aria-pressed="true"><svg><use href="#ui-grid-2x2"></use></svg></button><button type="button" class="icon-button" data-layout="list" aria-label="列表视图" aria-pressed="false"><svg><use href="#ui-list"></use></svg></button></div>
+            <div class="view-controls" id="libraryViewControls"><label class="sr-only" for="sortSelect">资料排序</label><select id="sortSelect"><option value="recommended">推荐浏览</option><option value="newest">记录时间：从新到旧</option><option value="oldest">记录时间：从旧到新</option><option value="name">按名称排序</option></select><div class="card-size-switch" role="group" aria-label="卡片大小"><button type="button" class="card-size-button" data-card-size="large" aria-pressed="false">大图</button><button type="button" class="card-size-button" data-card-size="small" aria-pressed="true">小图</button></div></div>
           </div>
         </div>
         <div class="filter-summary" id="filterSummary" hidden><span id="filterSummaryText"></span><button data-reset-filters>清除筛选</button></div>
@@ -250,7 +251,7 @@
             <div class="select-field"><label for="itemGameSelect">游戏</label><select id="itemGameSelect"><option value="all">全部游戏</option></select></div>
             <div class="select-field"><label for="itemObjectSelect">对象类型</label><select id="itemObjectSelect"><option value="all">全部对象</option><option value="equipment">道具与功能装备</option><option value="vehicle">载具与炮台</option><option value="world">场景交互物</option><option value="creative">创意模式道具</option></select></div>
             <div class="select-field"><label for="itemStatusSelect">资料进度</label><select id="itemStatusSelect"><option value="all">全部进度</option><option value="documented">含机制详录</option><option value="catalogued">目录已收录</option></select></div>
-            <div class="items-layout-controls"><label class="sr-only" for="itemSortSelect">道具排序</label><select id="itemSortSelect"><option value="catalogue">按分类顺序</option><option value="documented">机制详录优先</option><option value="name">按名称排序</option></select><button type="button" class="icon-button" data-item-layout="grid" aria-label="道具卡片视图" aria-pressed="true"><svg><use href="#ui-grid-2x2"></use></svg></button><button type="button" class="icon-button" data-item-layout="list" aria-label="道具列表视图" aria-pressed="false"><svg><use href="#ui-list"></use></svg></button></div>
+            <div class="items-layout-controls"><label class="sr-only" for="itemSortSelect">道具排序</label><select id="itemSortSelect"><option value="catalogue">按分类顺序</option><option value="documented">机制详录优先</option><option value="name">按名称排序</option></select><div class="card-size-switch" role="group" aria-label="卡片大小"><button type="button" class="card-size-button" data-card-size="large" aria-pressed="false">大图</button><button type="button" class="card-size-button" data-card-size="small" aria-pressed="true">小图</button></div></div>
           </div>
         </div>
         <p class="items-scope-note">每项均配外观图，点击图片可查看大图和出处。优先官方图片，官方缺图的条目用社区资料补充并标注。历史对象与道具族不代表当前赛季可用物资；“目录已收录”条目仍待补逐版本核对、视频与操作截图。</p>
@@ -272,7 +273,7 @@
             <button type="button" data-map-game="pubg" aria-pressed="false">PUBG</button>
             <button type="button" data-map-game="apex" aria-pressed="false">Apex Legends</button>
           </div>
-          <a class="button subtle" href="assets/maps/delta-force-maps.zip" download>下载底图合集<svg><use href="#ui-download"></use></svg></a>
+          <div class="map-card-controls"><div class="card-size-switch" role="group" aria-label="卡片大小"><button type="button" class="card-size-button" data-card-size="large" aria-pressed="false">大图</button><button type="button" class="card-size-button" data-card-size="small" aria-pressed="true">小图</button></div><a class="button subtle" href="assets/maps/delta-force-maps.zip" download>下载底图合集<svg><use href="#ui-download"></use></svg></a></div>
         </div>
         <p class="map-library-note">当前收录三角洲行动 20 张、战地风云 6 16 张、无畏契约 13 张、PUBG 10 张和 Apex Legends 6 张地图；其中新增地图均已补充公开的 2D 游戏内平面图。每张地图都保留来源页面与 Wiki 跳链，地图版本和点位名称以来源页面为准。</p>
         <div class="map-results-heading"><span id="mapResultCount" role="status"></span><span>核查日期：2026-09-06 · 图片来源：官方页面与公开地图图集</span></div>
@@ -341,13 +342,14 @@
   </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="card-view.js?v=20261021-r3"></script>
   <script src="core-updates.js?v=20261012-items"></script>
-  <script src="tactical-items.js?v=20261012-images"></script>
+  <script src="tactical-items.js?v=20261021-card-size-r3"></script>
   <script src="app.js?v=20261012-items"></script>
-  <script src="maps.js?v=core-updates-20260919-r9"></script>
-  <script src="ff-patches.js?v=20260919-r13"></script>
+  <script src="maps.js?v=20261021-card-size-r3"></script>
+  <script src="ff-patches.js?v=20261021-card-size-r3"></script>
   <script src="ugc.js?v=20261021-catalog-r3"></script>
-  <script src="ugc-catalog.js?v=20261021-catalog-r9"></script>
-  <script src="workspace.js?v=20261021-ugc-r2"></script>
+  <script src="ugc-catalog.js?v=20261021-card-size-r3"></script>
+  <script src="workspace.js?v=20261021-card-size-r3"></script>
 </body>
 </html>

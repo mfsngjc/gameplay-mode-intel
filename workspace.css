@@ -588,6 +588,83 @@
 .map-card-actions .map-collect-button.is-collected { color: #264835; font-weight: 700; }
 .map-dialog-footer #mapDetailCollect { display: inline-flex; align-items: center; gap: 6px; }
 .map-dialog-footer #mapDetailCollect svg { width: 15px; height: 15px; }
+
+/* Site-wide small cards keep a readable thumbnail beside the full card content. */
+body.workspace[data-card-size="small"] .mode-grid,
+body[data-card-size="small"] .map-archive-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+body.workspace[data-card-size="small"] .mode-grid .mode-card {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) auto;
+  align-items: stretch;
+  min-width: 0;
+}
+body.workspace[data-card-size="small"] .mode-grid .card-cover {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  align-self: stretch;
+  width: 112px;
+  height: 100%;
+  min-height: 80px;
+  aspect-ratio: auto;
+}
+body.workspace[data-card-size="small"] .mode-grid .card-cover img { object-fit: contain; background: #e6eadf; }
+body.workspace[data-card-size="small"] .mode-grid .cover-game,
+body.workspace[data-card-size="small"] .mode-grid .cover-badge { display: none; }
+body.workspace[data-card-size="small"] .mode-grid .card-body {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+  padding: 10px 11px 4px;
+}
+body.workspace[data-card-size="small"] .mode-grid .card-title { min-width: 0; font-size: 14px; line-height: 1.4; overflow-wrap: anywhere; }
+body.workspace[data-card-size="small"] .mode-grid .card-title button { overflow-wrap: anywhere; }
+body.workspace[data-card-size="small"] .mode-grid .card-summary { margin-bottom: 7px; font-size: 11px; line-height: 1.55; }
+body.workspace[data-card-size="small"] .mode-grid .tag-row { margin-bottom: 4px; gap: 4px; }
+body.workspace[data-card-size="small"] .mode-grid .tag { overflow-wrap: anywhere; }
+body.workspace[data-card-size="small"] .mode-grid .card-bottom {
+  grid-column: 2;
+  grid-row: 2;
+  min-width: 0;
+  margin: 0 10px;
+  padding: 5px 0;
+}
+body.workspace[data-card-size="small"] .mode-grid .card-bottom-actions { flex-shrink: 0; }
+body[data-card-size="small"] .map-archive-grid .map-archive-card {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) auto;
+  min-width: 0;
+}
+body[data-card-size="small"] .map-archive-grid .map-preview-button {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  align-self: stretch;
+  width: 112px;
+  height: 100%;
+  min-height: 80px;
+  aspect-ratio: auto;
+}
+body[data-card-size="small"] .map-archive-grid .map-preview-button img { object-fit: contain; }
+body[data-card-size="small"] .map-archive-grid .map-cover-label,
+body[data-card-size="small"] .map-archive-grid .map-preview-hint { display: none; }
+body[data-card-size="small"] .map-archive-grid .map-card-info { grid-column: 2; grid-row: 1 / 3; min-width: 0; padding: 10px 11px; }
+body[data-card-size="small"] .map-archive-grid .map-card-info h2 { font-size: 14px; line-height: 1.4; overflow-wrap: anywhere; }
+body[data-card-size="small"] .map-archive-grid .map-card-info p { margin-bottom: 7px; overflow-wrap: anywhere; }
+body[data-card-size="small"] .map-archive-grid .map-card-info .map-card-description { min-height: 0; margin: 0 0 7px; font-size: 11px; line-height: 1.55; }
+body[data-card-size="small"] .map-archive-grid .map-card-actions { padding-top: 6px; gap: 6px 10px; }
+body[data-card-size="small"] .map-archive-grid .map-card-actions a,
+body[data-card-size="small"] .map-archive-grid .map-card-actions button { overflow-wrap: anywhere; }
+@media (max-width: 1050px) {
+  body.workspace[data-card-size="small"] .mode-grid,
+  body[data-card-size="small"] .map-archive-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 600px) {
+  body.workspace[data-card-size="small"] .mode-grid .card-title { font-size: 13px; }
+}
 .interactive-map-dialog { position:fixed; inset:0; margin:0; padding:0; width:100vw; height:100dvh; max-width:none; max-height:none; border:0; background:#0c1518; color:#d6e8e1; overflow:hidden; }
 .interactive-map-dialog[open] { display:flex; flex-direction:column; }
 .interactive-map-header { flex:0 0 54px; min-height:54px; height:54px; display:flex; gap:20px; align-items:center; padding:0 18px; border-bottom:1px solid #2b4240; background:#142421; }
@@ -756,3 +833,35 @@
 @media(max-width:760px) {.ff-version-grid,.ff-section-grid,.ff-image-grid{grid-template-columns:1fr;}.ff-section-heading,.ff-patch-header{flex-direction:column;align-items:flex-start;}.ff-patch-header{padding:20px;}.ff-patch-actions{max-width:none;flex-direction:row;flex-wrap:wrap;}.ff-appendix ul{columns:1;}.ff-lane-tabs button{padding:9px;font-size:12px;}.ff-patch-timeline{padding:16px;}.ff-patch-controls{gap:10px;}.mode-view-switcher{flex-wrap:wrap;}.ff-section-card summary{padding:16px;}.ff-card-content{padding:0 16px 16px;}}
 
 .ff-table-scroll caption { text-align: left; padding: 10px 12px; font-weight: 600; }
+
+/* The version directories share the global card-size preference. */
+.ff-directory-actions { display:flex; align-items:center; justify-content:flex-end; gap:12px; flex-wrap:wrap; }
+body[data-card-size="small"] .ff-version-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+body[data-card-size="small"] .ff-version-card > a {
+  display:grid;
+  grid-template-columns:112px minmax(0,1fr);
+  align-items:stretch;
+  min-height:88px;
+}
+body[data-card-size="small"] .ff-version-card img {
+  grid-column:1;
+  grid-row:1;
+  width:112px;
+  height:100%;
+  min-height:63px;
+  aspect-ratio:auto;
+  object-fit:contain;
+  background:#ecefe7;
+}
+body[data-card-size="small"] .ff-version-card > a > div { grid-column:2; grid-row:1; min-width:0; padding:9px 12px; }
+body[data-card-size="small"] .ff-version-card:not(.has-cover) > a > div { grid-column:1 / -1; }
+body[data-card-size="small"] .ff-version-card h3 { margin:4px 0 5px; font-size:15px; overflow-wrap:anywhere; }
+body[data-card-size="small"] .ff-version-card p,
+body[data-card-size="small"] .ff-version-card span { font-size:11px; line-height:1.55; overflow-wrap:anywhere; }
+@media(max-width:1050px) {
+  body[data-card-size="small"] .ff-version-grid { grid-template-columns:minmax(0,1fr); }
+}
+@media(max-width:760px) {
+  .ff-directory-actions { width:100%; justify-content:flex-start; }
+  .ff-directory-actions .button { white-space:normal; }
+}

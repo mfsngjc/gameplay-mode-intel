@@ -126,12 +126,11 @@
 @media(max-width:900px) { .ugc-catalog-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:600px) { .ugc-catalog-grid { grid-template-columns:1fr; } }
 @media(max-width:600px) { .ugc-catalog-toolbar > span { width:100%; margin-left:0; } .ugc-catalog-toolbar label { flex:1; } .ugc-catalog-toolbar select { min-width:0; width:100%; } }
-.ugc-catalog-grid-compact { grid-template-columns:repeat(2,minmax(0,1fr)); }
-@media(max-width:1050px) { .ugc-catalog-grid-compact { grid-template-columns:1fr; } }
-@media(min-width:601px) and (max-width:1050px) { .ugc-catalog-grid:not(.ugc-catalog-grid-compact) .ugc-catalog-card-compact { grid-column:1 / -1; } }
+.ugc-catalog-grid-small { grid-template-columns:repeat(2,minmax(0,1fr)); }
+@media(max-width:900px) { .ugc-catalog-grid-small { grid-template-columns:1fr; } }
 .ugc-catalog-compact-head { display:flex; align-items:flex-start; gap:12px; min-width:0; padding:14px 14px 0; }
 .ugc-catalog-card-compact .ugc-catalog-image { flex:0 0 112px; width:112px; height:63px; aspect-ratio:auto; }
-.ugc-catalog-card-compact.minecraft .ugc-catalog-image { flex-basis:64px; width:64px; height:64px; }
+.ugc-catalog-card-compact.minecraft .ugc-catalog-image,.ugc-catalog-card-compact.roblox .ugc-catalog-image { flex-basis:64px; width:64px; height:64px; }
 .ugc-catalog-card-compact .ugc-catalog-image img { width:100%; height:100%; }
 .ugc-catalog-compact-heading { min-width:0; }
 .ugc-catalog-compact-heading h3 { margin:4px 0 0; }

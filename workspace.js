@@ -53,6 +53,17 @@ const preferredIds = [
 ];
 const $ = (selector) => document.querySelector(selector);
 const icon = (name) => '<svg aria-hidden="true"><use href="#ui-' + name + '"></use></svg>';
+function getCardSize() {
+  const size = window.CardView?.get?.() || document.body.dataset.cardSize || 'small';
+  return size === 'large' ? 'large' : 'small';
+}
+function syncCardSizeSurfaces() {
+  const small = getCardSize() === 'small';
+  modeGrid?.classList.toggle('small-view', small);
+  document.querySelector('#mapArchiveGrid')?.classList.toggle('small-view', small);
+  document.querySelector('#itemGrid')?.classList.toggle('small-view', small);
+  window.CardView?.syncControls?.();
+}
 const detailDialog = $('#detailDialog');
 let detailId = null;
 let detailTrigger = null;
@@ -226,7 +237,8 @@ function renderLibrary() {
     ? '本地预览区 · 战地六 REDSEC 局内交互物。内容暂不进入公开站点，也不参与定期更新；用于先验证机制库的信息结构和浏览体验。'
     : '以下卡片提炼自已有模式案例，属于设计分析。打开详情可查看原案例与来源。';
   const visible = entries.slice(0, state.limit);
-  modeGrid.classList.toggle('list-view', state.layout === 'list');
+  modeGrid.classList.toggle('small-view', getCardSize() === 'small');
+  modeGrid.classList.remove('list-view');
   modeGrid.setAttribute('aria-busy', 'false');
   const emptyMessage = state.view === 'collection' && !state.entries.some((entry) => state.collected.has(entry.id)) && !collectedMaps.length
     ? ['还没有收藏', '点选卡片上的书签，留下你想继续研究的玩法、地图和道具。', '<a class="button" href="#modes">浏览玩法模式</a>']
@@ -275,6 +287,7 @@ function currentMetricsRouteKey() {
 
 function renderWorkspace() {
   if (!state.ready) return;
+  syncCardSizeSurfaces();
   recordPageView(currentMetricsRouteKey());
   document.body.classList.toggle('items-view', state.view === 'items');
   document.body.classList.toggle('ugc-view', state.view === 'ugc');
@@ -481,7 +494,7 @@ function bindWorkspaceEvents() {
     });
   });
   document.addEventListener('click', (event) => {
-    const target = event.target.closest('[data-action], [data-game], [data-gameplay], [data-layout], [data-mode-view], [data-reset-filters], [data-timeline-group], [data-load-activity]');
+    const target = event.target.closest('[data-action], [data-game], [data-gameplay], [data-mode-view], [data-reset-filters], [data-timeline-group], [data-load-activity]');
     if (!target) return;
     if (target.hasAttribute('data-load-activity')) { state.activityLimit += 24; renderActivityFeed(); return; }
     if (target.hasAttribute('data-timeline-group')) {
@@ -505,14 +518,6 @@ function bindWorkspaceEvents() {
     }
     if (target.dataset.game) {
       state.gameFilter = target.dataset.game; if (!currentGameplayDefinitions().some(d=>d.id===state.gameplayFilter)) state.gameplayFilter='all'; state.limit = 12; syncFilterRoute(); renderWorkspace(); return;
-    }
-    if (target.dataset.layout) {
-      state.layout = target.dataset.layout;
-      document.querySelectorAll('[data-layout]').forEach((button) => {
-        button.classList.toggle('is-selected', button.dataset.layout === state.layout);
-        button.setAttribute('aria-pressed', String(button.dataset.layout === state.layout));
-      });
-      renderLibrary(); return;
     }
     if (target.dataset.action === 'collect-map') {
       toggleMapCollect(target.dataset.mapId);
@@ -621,6 +626,8 @@ function bindWorkspaceEvents() {
 }
 
 async function initWorkspace() {
+  window.CardView?.subscribe?.(() => syncCardSizeSurfaces());
+  syncCardSizeSurfaces();
   bindWorkspaceEvents();
   bindFFPatchEvents();
   bindTacticalItemEvents();

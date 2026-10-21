@@ -1,7 +1,7 @@
 /* Object catalogue, separate from modes and dated core-update records. */
 const itemArchive = {
   entries: [], categories: [], category: 'all', objectGroup: 'all',
-  researchStatus: 'all', sort: 'catalogue', layout: 'grid', limit: 24
+  researchStatus: 'all', sort: 'catalogue', limit: 24
 };
 const itemGroupLabels = { equipment: '道具与功能装备', vehicle: '载具与炮台', world: '场景交互物', creative: '创意模式道具' };
 const itemStatusLabels = { documented: '含机制详录', catalogued: '目录已收录' };
@@ -69,7 +69,7 @@ function readItemRoute(params) {
   itemArchive.objectGroup = Object.hasOwn(itemGroupLabels, params.get('object')) ? params.get('object') : 'all';
   itemArchive.researchStatus = Object.hasOwn(itemStatusLabels, params.get('status')) ? params.get('status') : 'all';
   itemArchive.sort = ['name', 'documented'].includes(params.get('sort')) ? params.get('sort') : 'catalogue';
-  itemArchive.layout = params.get('layout') === 'list' ? 'list' : 'grid';
+  // Legacy per-section layout parameters are ignored; card size is shared site-wide.
   itemArchive.limit = 24;
 }
 function itemHash(entryId) {
@@ -79,7 +79,6 @@ function itemHash(entryId) {
   if (itemArchive.objectGroup !== 'all') params.set('object', itemArchive.objectGroup);
   if (itemArchive.researchStatus !== 'all') params.set('status', itemArchive.researchStatus);
   if (itemArchive.sort !== 'catalogue') params.set('sort', itemArchive.sort);
-  if (itemArchive.layout !== 'grid') params.set('layout', itemArchive.layout);
   if (state.query) params.set('q', state.query);
   if (entryId) params.set('entry', entryId);
   return '#items' + (params.size ? '?' + params.toString() : '');
@@ -153,8 +152,6 @@ function renderTacticalItems() {
   $('#itemObjectSelect').value = itemArchive.objectGroup;
   $('#itemStatusSelect').value = itemArchive.researchStatus;
   $('#itemSortSelect').value = itemArchive.sort;
-  document.querySelectorAll('[data-item-layout]').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.itemLayout === itemArchive.layout)));
-  $('#itemGrid').classList.toggle('item-list', itemArchive.layout === 'list');
   const visible = entries.slice(0, itemArchive.limit);
   $('#itemGrid').innerHTML = visible.length ? visible.map(tacticalCard).join('') :
     '<div class="empty-state">' + icon('search') + '<h3>没有找到匹配的道具</h3><p>可以搜索中英文名、作用或关键词，例如“躲猫猫”“位移”。</p><button class="button" type="button" data-reset-items>清除筛选</button></div>';
@@ -218,11 +215,10 @@ function exportTacticalList() {
 function bindTacticalItemEvents() {
   $('#itemGrid').addEventListener('error', handleTacticalImageError, true);
   $('#itemsSection').addEventListener('click', (event) => {
-    const target = event.target.closest('[data-item-category], [data-item-layout], [data-reset-items]');
+    const target = event.target.closest('[data-item-category], [data-reset-items]');
     if (!target) return;
     if (target.hasAttribute('data-reset-items')) { resetItemFilters(); state.query = ''; state.gameFilter = 'all'; $('#searchInput').value = ''; }
     if (target.dataset.itemCategory) itemArchive.category = target.dataset.itemCategory;
-    if (target.dataset.itemLayout) itemArchive.layout = target.dataset.itemLayout;
     itemArchive.limit = 24;
     syncFilterRoute(); renderTacticalItems();
     if (target.dataset.itemCategory) $('#itemCategoryFilters [aria-pressed="true"]')?.focus({ preventScroll: true });

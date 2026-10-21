@@ -35,7 +35,7 @@ function ffRelatedPatchLink(entry) {
 function renderFFPatchCard(patch) {
   const image=patch.images[0];
   const counts=['br','cs','shared'].map(lane=>ffPatchLanes[lane]+' '+patch.sections.filter(s=>s.lane===lane).length+' 节').join(' · ');
-  return '<article class="ff-version-card"><a href="'+ffPatchLink(patch.id)+'">'+(image?'<img src="'+escapeHtml(image.imageUrl)+'" alt="'+escapeHtml(image.caption)+'" loading="lazy">':'')+'<div><small>'+patch.publishedDate+' · 公告</small><h3>'+escapeHtml(patch.versionLabel)+'</h3><p>'+counts+'</p><span>'+patch.itemCount+' 项说明及表格行 · '+patch.images.length+' 张公告插图</span></div></a></article>';
+  return '<article class="ff-version-card'+(image?' has-cover':'')+'"><a href="'+ffPatchLink(patch.id)+'">'+(image?'<img src="'+escapeHtml(image.imageUrl)+'" alt="'+escapeHtml(image.caption)+'" loading="lazy">':'')+'<div><small>'+patch.publishedDate+' · 公告</small><h3>'+escapeHtml(patch.versionLabel)+'</h3><p>'+counts+'</p><span>'+patch.itemCount+' 项说明及表格行 · '+patch.images.length+' 张公告插图</span></div></a></article>';
 }
 function renderFFPatchLibrary() {
   const host=document.querySelector('#ffPatchLibrary');
@@ -90,11 +90,13 @@ function renderFFPatches() {
   const host=document.querySelector('#patchesSection');
   const patches=state.ffPatches||[];
   const patch=patches.find(p=>p.id===state.patchId);
-  host.innerHTML='<div class="ff-section-heading"><div><h2>Free Fire 版本详录</h2><p>当前收录 '+patches.length+' 篇公告，'+(patches[0]?.publishedDate||'')+' 至 '+(patches.at(-1)?.publishedDate||'')+'；历史缺口持续补齐中。</p></div><a class="button" href="#modes?view=timeline&game=Free+Fire">查看 BR / CS 时间轴</a></div>'+
+  host.innerHTML='<div class="ff-section-heading"><div><h2>Free Fire 版本详录</h2><p>当前收录 '+patches.length+' 篇公告，'+(patches[0]?.publishedDate||'')+' 至 '+(patches.at(-1)?.publishedDate||'')+'；历史缺口持续补齐中。</p></div>'+(!patch?'<div class="ff-directory-actions"><div class="card-size-switch" role="group" aria-label="卡片大小"><button type="button" class="card-size-button" data-card-size="large">大图</button><button type="button" class="card-size-button" data-card-size="small">小图</button></div><a class="button" href="#modes?view=timeline&game=Free+Fire">查看 BR / CS 时间轴</a></div>':'<a class="button" href="#modes?view=timeline&game=Free+Fire">查看 BR / CS 时间轴</a>')+'</div>'+
     '<nav class="ff-version-nav" aria-label="选择 FF 版本"><a href="#modes?view=patches&game=Free+Fire" '+(!patch?'aria-current="page"':'')+'>全部版本</a>'+patches.slice().reverse().map(p=>'<a href="'+ffPatchLink(p.id,state.patchLane||'all')+'" '+(p===patch?'aria-current="page"':'')+'>'+escapeHtml(p.versionLabel)+'</a>').join('')+'</nav>';
   if(!patch){
     const filtered=patches.filter(p=>!state.query || [p.versionLabel,JSON.stringify(p.sections)].join(' ').toLowerCase().includes(state.query.toLowerCase()));
-    host.insertAdjacentHTML('beforeend','<div class="ff-version-grid">'+filtered.slice().reverse().map(renderFFPatchCard).join('')+'</div>');return;
+    host.insertAdjacentHTML('beforeend','<div class="ff-version-grid">'+filtered.slice().reverse().map(renderFFPatchCard).join('')+'</div>');
+    window.CardView?.syncControls?.(host);
+    return;
   }
   const sections=patch.sections.filter(patchSectionMatches);
   const imageLayout=assignPatchImages(patch,sections);

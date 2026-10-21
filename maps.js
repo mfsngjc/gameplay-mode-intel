@@ -43,6 +43,8 @@ function mapGameKey(entry) {
 
 function renderMapArchive() {
   const grid = document.querySelector('#mapArchiveGrid');
+  grid.classList.toggle('small-view', (window.CardView?.get?.() || document.body.dataset.cardSize || 'small') === 'small');
+  window.CardView?.syncControls?.();
   const words = state.query.toLocaleLowerCase().trim().split(/\s+/);
   const entries = mapArchive.entries.filter((entry) =>
     (mapArchive.game === 'all' || mapGameKey(entry) === mapArchive.game) &&

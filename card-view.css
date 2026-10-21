@@ -1,0 +1,8 @@
+.workspace .card-size-switch { display:inline-flex; flex:0 0 auto; align-items:center; gap:2px; padding:3px; border:1px solid var(--line-strong); border-radius:6px; background:var(--surface); }
+.workspace .card-size-button { display:inline-flex; align-items:center; justify-content:center; min-height:32px; padding:6px 11px; border:0; border-radius:4px; background:transparent; color:var(--muted); font-size:12px; font-weight:500; white-space:nowrap; }
+.workspace .card-size-button:hover { background:var(--surface-soft); color:var(--accent); }
+.workspace .card-size-button[aria-pressed="true"] { background:#e4eddc; color:var(--accent); font-weight:600; }
+.workspace .card-size-button:focus-visible { outline:2px solid #7b9d43; outline-offset:2px; }
+.map-card-controls { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-left:auto; }
+@media(max-width:760px) { .workspace .card-size-button { min-height:38px; padding:7px 10px; } }
+@media(max-width:600px) { .map-card-controls { width:100%; margin-left:0; justify-content:space-between; } }
