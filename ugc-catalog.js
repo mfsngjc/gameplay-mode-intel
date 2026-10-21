@@ -7,7 +7,7 @@ window.UGCCatalog = (() => {
   const PAGE_SIZE = 24, MAX_CONCURRENT = 4;
   const cache = { manifest: null, generation: '', manifestFetchedAt: 0, indexPromises: new Map(), detailPromises: new Map() };
   const MANIFEST_TTL_MS = 60000;
-  let queryTimer = 0, renderToken = 0, focusCardView = false;
+  let queryTimer = 0, renderToken = 0, focusCardView = false, focusNavigation = '';
   const state = { platform: 'all', query: '', page: 0 };
   const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const safe = value => { if (typeof value !== 'string' || !value.trim()) return ''; try { const u = new URL(value); return u.protocol === 'https:' ? u.href : ''; } catch { return ''; } };
@@ -298,26 +298,28 @@ window.UGCCatalog = (() => {
       const scopes = platforms.map(([id, meta]) => '<span>' + esc(labels[id] || id) + '：' + esc(typeof meta.sourceScope === 'string' ? meta.sourceScope : '来源范围说明暂缺') + (safe(meta.sourceUrl) ? ' <a href="' + esc(safe(meta.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">来源页面 ↗</a>' : '') + '</span>').join('');
       const errors = platforms.some(([, meta]) => ['partial', 'limited', 'unavailable'].includes(meta.status)) ? '<p class="ugc-catalog-partial">部分来源受限或尚未更新，当前仅展示已收录作品。</p>' : '';
       const empty = platforms.some(([, meta]) => meta.status === 'unavailable') ? '来源暂不可用，无法据此判断没有匹配内容。' : filtering ? '没有匹配内容，请调整搜索词或筛选。' : '当前来源范围内尚无已收录记录。';
-      root.innerHTML = '<div class="ugc-heading-line"><span>来源公开范围内的全部收录 · 目录独立于每日榜单</span><button type="button" class="button" data-catalog-refresh>刷新目录</button></div><div class="ugc-board-line"><div class="ugc-board-switch" role="group" aria-label="UGC 视图"><button type="button" data-ugc-board="hot" aria-pressed="false">每日热榜</button><button type="button" data-ugc-board="alltime" aria-pressed="false">历史最热门</button><button type="button" data-ugc-board="catalog" aria-pressed="true">全部收录</button></div></div><div class="ugc-catalog-toolbar"><label>平台<select id="catalogPlatform"><option value="all"' + (state.platform === 'all' ? ' selected' : '') + '>全部平台</option>' + Object.entries(labels).map(([id, label]) => '<option value="' + id + '"' + (state.platform === id ? ' selected' : '') + '>' + esc(label) + '</option>').join('') + '</select></label><div class="card-size-switch" role="group" aria-label="卡片大小"><button type="button" class="card-size-button" data-card-size="large">大图</button><button type="button" class="card-size-button" data-card-size="small">小图</button></div><span>支持原名、中文参考名、作者、编号、玩法和分类；空格分隔词须同时匹配</span></div><div class="ugc-catalog-status">' + stats + '<details><summary>来源范围与来源链接</summary>' + scopes + '</details>' + errors + '</div><div class="ugc-catalog-count">' + (filtering ? '匹配 ' : '已收录 ') + pageTotal.toLocaleString() + ' 条 · 第 ' + (state.page + 1) + ' / ' + pageCount + ' 页</div><div class="ugc-catalog-grid' + (window.CardView.get() === 'small' ? ' ugc-catalog-grid-small' : '') + '">' + (entries.length ? entries.map(entry => { const rec = records.get(entry.key); return rec ? card(entry.platformId, entry, rec) : ''; }).join('') : '<div class="ugc-empty">' + empty + '</div>') + '</div><div class="ugc-footer"><span>每页最多 ' + PAGE_SIZE + ' 条</span><div><button class="button" type="button" data-catalog-page="prev"' + (state.page <= 0 ? ' disabled' : '') + '>上一页</button> <button class="button" type="button" data-catalog-page="next"' + (state.page >= pageCount - 1 ? ' disabled' : '') + '>下一页</button></div></div>';
+      root.innerHTML = '<div class="ugc-heading-line"><span>来源公开范围内的全部收录 · 目录独立于每日榜单</span><button type="button" class="button" data-catalog-refresh>刷新目录</button></div>' + UGCMonitor.platformSwitch(state.platform, Object.fromEntries(Object.entries(doc.platforms).map(([id, meta]) => [id, Number(meta.observedCount || 0)])), true) + '<div class="ugc-board-line"><div class="ugc-board-switch" role="group" aria-label="UGC 视图"><button type="button" data-ugc-board="hot" aria-pressed="false">每日热榜</button><button type="button" data-ugc-board="alltime" aria-pressed="false">历史最热门</button><button type="button" data-ugc-board="catalog" aria-pressed="true">全部收录</button></div></div><div class="ugc-catalog-toolbar"><div class="card-size-switch" role="group" aria-label="卡片大小"><button type="button" class="card-size-button" data-card-size="large">大图</button><button type="button" class="card-size-button" data-card-size="small">小图</button></div><span>支持原名、中文参考名、作者、编号、玩法和分类；空格分隔词须同时匹配</span></div><div class="ugc-catalog-status">' + stats + '<details><summary>来源范围与来源链接</summary>' + scopes + '</details>' + errors + '</div><div class="ugc-catalog-count">' + (filtering ? '匹配 ' : '已收录 ') + pageTotal.toLocaleString() + ' 条 · 第 ' + (state.page + 1) + ' / ' + pageCount + ' 页</div><div class="ugc-catalog-grid' + (window.CardView.get() === 'small' ? ' ugc-catalog-grid-small' : '') + '">' + (entries.length ? entries.map(entry => { const rec = records.get(entry.key); return rec ? card(entry.platformId, entry, rec) : ''; }).join('') : '<div class="ugc-empty">' + empty + '</div>') + '</div><div class="ugc-footer"><span>每页最多 ' + PAGE_SIZE + ' 条</span><div><button class="button" type="button" data-catalog-page="prev"' + (state.page <= 0 ? ' disabled' : '') + '>上一页</button> <button class="button" type="button" data-catalog-page="next"' + (state.page >= pageCount - 1 ? ' disabled' : '') + '>下一页</button></div></div>';
       window.CardView.syncControls(root);
       root.querySelectorAll('[data-cover-fallback]').forEach(img => img.addEventListener('error', () => {
         img.replaceWith(Object.assign(document.createElement('span'), { className: 'ugc-catalog-cover-fallback', textContent: '作品图暂不可用' }));
       }, { once: true }));
-      if (focusCardView) {
-        root.querySelector('[data-card-size="' + window.CardView.get() + '"]')?.focus({ preventScroll: true });
-        focusCardView = false;
-      }
+      const focusSelector = focusCardView ? '[data-card-size="' + window.CardView.get() + '"]' : focusNavigation;
+      if (focusSelector) root.querySelector(focusSelector)?.focus({ preventScroll: true });
+      focusCardView = false;
+      focusNavigation = '';
       if (state.page !== requestedPage) { const params = routeParams(); history.replaceState(null, '', '#ugc?' + params.toString()); }
     } catch (error) {
       if (token !== renderToken) return;
       root.innerHTML = '<div class="ugc-warning" role="alert"><strong>目录无法完整读取</strong><p>' + esc(error?.message === 'schema' ? '目录分片格式暂不受支持，请刷新重试。' : error?.message === 'missing' ? '当前页作品记录缺失，请刷新重试。' : error?.status === 404 ? '目录清单或分片尚未发布（404），目前没有可展示的真实目录数据。' : errorText(error)) + '</p><button type="button" class="button" data-catalog-refresh>重试</button></div>';
-      if (focusCardView) {
+      if (focusCardView || focusNavigation) {
         root.querySelector('[data-catalog-refresh]')?.focus({ preventScroll: true });
         focusCardView = false;
+        focusNavigation = '';
       }
     }
   }
-  function render({ platform = state.platform, query = state.query } = {}) {
+  function render({ platform = state.platform, query = state.query, focusSelector = '' } = {}) {
+    if (focusSelector) focusNavigation = focusSelector;
     if (state.platform !== platform || cleanQuery(state.query) !== cleanQuery(query)) state.page = 0;
     state.platform = platform; state.query = cleanQuery(query);
     clearTimeout(queryTimer);
@@ -334,12 +336,12 @@ window.UGCCatalog = (() => {
     }
     if (button.hasAttribute('data-catalog-refresh')) { refreshDirectory(); return; }
   });
-  root.addEventListener('change', event => {
-    const id = event.target.id;
-    if (id !== 'catalogPlatform') return;
-    if (id === 'catalogPlatform') state.platform = event.target.value;
-    state.page = 0; setRoute(true); render(state);
-  });
+  function cancel() {
+    clearTimeout(queryTimer);
+    renderToken++;
+    focusCardView = false;
+    focusNavigation = '';
+  }
   window.CardView.subscribe(() => {
     if (!document.body.classList.contains('ugc-view') || !window.UGCMonitor.isCatalog()) return;
     focusCardView = document.activeElement?.matches('[data-card-size]') || false;
@@ -349,6 +351,7 @@ window.UGCCatalog = (() => {
     render,
     readRoute,
     routeParams,
+    cancel,
     refresh: refreshDirectory
   };
 })();

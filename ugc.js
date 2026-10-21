@@ -2,7 +2,7 @@
 window.UGCMonitor = (() => {
   'use strict';
   const root = document.querySelector('#ugcSection');
-  const platforms = [['cs2', 'CS2 创意工坊'], ['roblox', '罗布乐思'], ['fortnite', '堡垒之夜社区'], ['minecraft', '我的世界模组']];
+  const platforms = [['cs2', 'CS2 创意工坊'], ['roblox', '罗布乐思'], ['fortnite', '堡垒之夜社区岛'], ['minecraft', '我的世界模组']];
   const ui = { platform: 'cs2', board: 'hot', date: '', filter: 'all', sort: 'rank', limit: 25, query: '', loading: false, error: '', latest: null, historical: null, index: null, briefing: null, chinese: null, creators: null, boardCovers: null };
   const categories = { Custom: '自定义', Classic: '经典对战', Wingman: '搭档模式', Deathmatch: '死斗', Armsrace: '军备竞赛', Training: '训练',
     optimization: '性能优化', utility: '实用工具', adventure: '冒险', technology: '科技', magic: '魔法', storage: '存储', worldgen: '世界生成',
@@ -37,6 +37,12 @@ window.UGCMonitor = (() => {
   const number = value => typeof value === 'number' && Number.isFinite(value) ? new Intl.NumberFormat('zh-CN', { notation: 'compact', maximumFractionDigits: 2 }).format(value) : '—';
   const timeLabel = value => value ? new Intl.DateTimeFormat('zh-CN', { timeZone: 'Asia/Shanghai', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(value)) : '尚未采集';
   const rankChange = value => value == null ? '<span class="ugc-neutral">—</span>' : value > 0 ? '<span class="ugc-up">↑ ' + value + '</span>' : value < 0 ? '<span class="ugc-down">↓ ' + Math.abs(value) + '</span>' : '<span class="ugc-neutral">持平</span>';
+
+  function platformSwitch(selected, counts = {}, includeAll = false) {
+    const choices = includeAll ? [['all', '全部'], ...platforms] : platforms;
+    const total = platforms.reduce((sum, [id]) => sum + (counts[id] || 0), 0);
+    return '<div class="ugc-platforms' + (includeAll ? ' ugc-platforms-catalog' : '') + '" role="group" aria-label="UGC 平台">' + choices.map(([id, label]) => '<button type="button" data-ugc-platform="' + id + '" aria-pressed="' + (selected === id) + '"><span>' + esc(label) + '</span><small>' + (id === 'all' ? total : counts[id] || 0).toLocaleString('zh-CN') + ' 条</small></button>').join('') + '</div>';
+  }
 
   function hash(query = ui.query) {
     if (ui.board === 'catalog' && window.UGCCatalog) return '#ugc?' + UGCCatalog.routeParams(query).toString();
@@ -130,17 +136,17 @@ window.UGCMonitor = (() => {
   }
 
   function signal(row, board) {
-    if (board.isBaseline) return '<span class="ugc-tag">基线</span>';
+    if (board.isBaseline) return '';
     if (row.isStrongNewEntry) return '<span class="ugc-tag ugc-tag-strong" title="' + esc(row.strongReasons.join('；')) + '">强势新进榜</span>';
     if (row.isNewEntry) return '<span class="ugc-tag ugc-tag-new">' + (row.isReturning ? '重新入榜' : '新入榜') + '</span>';
     return '';
   }
 
   function renderHighlights(board) {
-    if (board.isBaseline) return '<div class="ugc-baseline"><strong>本次榜单基线已建立</strong><p>已保存本榜 ' + board.entries.length + ' 条真实记录。下一次同口径跨日采集后显示名次升降与新入榜；7 日对比按真实历史逐日积累。</p></div>';
+    if (board.isBaseline) return '';
     const ids = [...new Set([...(board.highlights?.strongNewEntries || []), ...(board.highlights?.risers || []), ...(board.highlights?.newEntries || [])])].slice(0, 3);
     const lookup = new Map(board.entries.map(row => [row.id, row]));
-    if (!ids.length) return '<p class="ugc-baseline">本次没有显著上涨或新入榜内容，可切换完整榜单查看。</p>';
+    if (!ids.length) return '<p class="ugc-no-changes">本次没有显著上涨或新入榜内容，可切换完整榜单查看。</p>';
     return '<div class="ugc-highlights">' + ids.map(id => {
       const row = lookup.get(id);
       if (!row) return '';
@@ -161,8 +167,9 @@ window.UGCMonitor = (() => {
     }).join('') + '</section>';
   }
 
-  function paint() {
-    if (ui.board === 'catalog') { UGCCatalog.render({ platform: ui.platform, query: ui.query }); return; }
+  function paint(focusSelector = '') {
+    if (ui.board === 'catalog') { UGCCatalog.render({ platform: ui.platform, query: ui.query, focusSelector }); return; }
+    window.UGCCatalog?.cancel();
     if (!root) return;
     const board = current();
     const datasets = ui.latest?.platforms || {};
@@ -173,7 +180,7 @@ window.UGCMonitor = (() => {
     const selectedDates = (ui.index?.dates || []).filter(item => item.platforms.includes(key())).slice(0, 90);
     const stale = board && (board.status === 'stale' || (!ui.date && Date.now() - Date.parse(board.collectedAt) > 36 * 3600000));
     let html = '<div class="ugc-heading-line"><span class="ugc-schedule">' + esc(ui.latest?.scheduleLabel || '每天 09:00 · 北京时间') + '</span><span>每日采集 · 页面每分钟检查新数据</span><button type="button" class="button" data-ugc-refresh' + (ui.loading ? ' disabled' : '') + '>重新读取</button></div>';
-    html += '<div class="ugc-platforms" role="group" aria-label="UGC 平台">' + platforms.map(([id, label]) => '<button type="button" data-ugc-platform="' + id + '" aria-pressed="' + (ui.platform === id) + '"><span>' + esc(label) + '</span><small>' + ((datasets[id]?.entries?.length || 0) + (datasets[id + '_alltime']?.entries?.length || 0)) + ' 条</small></button>').join('') + '</div>';
+    html += platformSwitch(ui.platform, Object.fromEntries(platforms.map(([id]) => [id, (datasets[id]?.entries?.length || 0) + (datasets[id + '_alltime']?.entries?.length || 0)])));
     html += '<div class="ugc-board-line"><div class="ugc-board-switch" role="group" aria-label="榜单口径"><button type="button" data-ugc-board="hot" aria-pressed="' + (ui.board === 'hot') + '">每日热榜</button><button type="button" data-ugc-board="alltime" aria-pressed="' + (ui.board === 'alltime') + '">历史最热门</button><button type="button" data-ugc-board="catalog" aria-pressed="false">全部收录</button></div><label class="ugc-date-label">历史快照 <select id="ugcDate"><option value="">最新榜单</option>' + selectedDates.map(item => '<option value="' + item.date + '"' + (ui.date === item.date ? ' selected' : '') + '>' + item.date + '</option>').join('') + '</select></label></div>';
     if (ui.error) html += '<div class="ugc-warning" role="status">' + esc(ui.error) + '。已载入的数据会继续保留。<button type="button" data-ugc-refresh>重试</button></div>';
     if (!board) {
@@ -201,7 +208,7 @@ window.UGCMonitor = (() => {
       return '<tr><td class="ugc-rank">' + row.rank + '</td><td class="ugc-work"><div class="ugc-work-heading">' + thumbnail + '<div class="ugc-work-info"><div class="ugc-work-titleline"><a href="' + esc(safe(row.url)) + '" target="_blank" rel="noopener noreferrer">' + workTitle(row, board) + ' ↗</a>' + signal(row, board) + '</div>' + workAuthor(row, board) + '</div></div><small>' + esc(labels) + '</small><p>' + esc(translated.intro) + '</p></td><td class="ugc-metric" title="' + esc(row.metricValue) + '">' + number(row.metricValue) + (row.metricGrowthPct == null ? '' : '<small class="' + (row.metricGrowthPct >= 0 ? 'ugc-up' : 'ugc-down') + '">' + (row.metricGrowthPct >= 0 ? '+' : '') + row.metricGrowthPct + '%</small>') + '</td><td>' + (row.isNewEntry ? '<span class="ugc-up">' + (row.isReturning ? '重返' : '新入') + '</span>' : rankChange(row.rankDelta)) + '</td><td>' + rankChange(row.rankDelta7d) + '</td><td>' + sparkline(row, board) + '</td></tr>';
     }).join('');
     if (!visible.length) html += '<tr><td colspan="6" class="ugc-empty">' + (board.isBaseline && ui.filter !== 'all' ? '首日尚无跨日对比数据。' : '没有匹配内容，试试其他筛选或关键词。') + '</td></tr>';
-    html += '</tbody></table></div><div class="ugc-footer"><span>已展示 ' + visible.length + ' / ' + rows.length + ' 条' + (board.comparisonDate ? ' · 对比 ' + board.comparisonDate : ' · 首日基线') + '</span>' + (visible.length < rows.length ? '<button class="button" type="button" data-ugc-more>' + (board.boardType === 'alltime' ? '显示全部 ' + rows.length + ' 条' : '继续显示 25 条') + '</button>' : '') + '</div>';
+    html += '</tbody></table></div><div class="ugc-footer"><span>已展示 ' + visible.length + ' / ' + rows.length + ' 条' + (board.comparisonDate ? ' · 对比 ' + board.comparisonDate : '') + '</span>' + (visible.length < rows.length ? '<button class="button" type="button" data-ugc-more>' + (board.boardType === 'alltime' ? '显示全部 ' + rows.length + ' 条' : '继续显示 25 条') + '</button>' : '') + '</div>';
     html += '<p class="ugc-translation-note">作品以来源原名与作者署名展示，括号内中文名称为说明性译法，仅供参考；玩法介绍按公开来源整理。</p>';
     html += '<details class="ugc-rules"><summary>如何判断上涨与强势新进榜</summary><p>排名上涨 = 对比日名次 − 当前名次。新入榜表示上次完整前 ' + boardSize(board) + ' 名中没有该作品，不代表刚发布；榜外名次不会按第 ' + (boardSize(board) + 1) + ' 名估算。</p><p>近 7 天新入榜的作品，若新入即进前 20，或一天上升至少 10 名、7 天上升至少 20 名、主要指标一天增长至少 25%，标记为强势新进榜。缺少历史、口径变更、采集失败均不制造变化；日期不连续时明确改用“较上次”。</p></details>';
     root.innerHTML = html;
@@ -239,13 +246,18 @@ window.UGCMonitor = (() => {
     if (target.dataset.ugcBoard === 'catalog') { ui.date = ''; ui.filter = 'all'; }
     if (ui.board !== 'catalog' && ui.platform === 'all') ui.platform = 'cs2';
     const focusSelector = target.dataset.ugcPlatform ? '[data-ugc-platform="' + ui.platform + '"]' : target.dataset.ugcBoard ? '[data-ugc-board="' + ui.board + '"]' : '[data-ugc-filter="' + ui.filter + '"]';
-    const keyboardFocus = event.detail === 0;
-    syncRoute(); paint(); if (keyboardFocus) root.querySelector(focusSelector)?.focus({ preventScroll: true });
+    if (ui.board === 'catalog' && (target.dataset.ugcPlatform || target.dataset.ugcBoard)) {
+      const params = new URLSearchParams({ platform: ui.platform, board: 'catalog' });
+      if (ui.query) params.set('q', ui.query);
+      UGCCatalog.readRoute(params);
+    }
+    syncRoute(); paint(focusSelector);
+    if (ui.board !== 'catalog') root.querySelector(focusSelector)?.focus({ preventScroll: true });
   });
   root.addEventListener('change', event => {
     if (event.target.id === 'ugcDate') { ui.date = event.target.value; ui.historical = null; ui.limit = 25; syncRoute(); if (ui.date) load(true); else paint(); }
     if (event.target.id === 'ugcSort') { ui.sort = event.target.value; paint(); root.querySelector('#ugcSort')?.focus({ preventScroll: true }); }
   });
   setInterval(() => { if (!document.hidden && document.body.classList.contains('ugc-view') && !ui.date) load(); }, 60000);
-  return { render, readRoute, hash, refresh: () => load(true), isCatalog: () => ui.board === 'catalog' };
+  return { render, readRoute, hash, platformSwitch, refresh: () => load(true), isCatalog: () => ui.board === 'catalog' };
 })();
