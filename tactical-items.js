@@ -121,6 +121,7 @@ function tacticalCard(entry) {
   const versions = itemVersions(entry);
   const videos = versions.reduce((count, version) => count + (version.videos?.length || 0), 0);
   const shots = versions.reduce((count, version) => count + (version.screenshots?.length || 0), 0);
+  const clips = typeof ItemDemos === 'undefined' ? [] : ItemDemos.clips(entry);
   return '<article class="item-card" data-id="' + escapeHtml(entry.id) + '">' +
     tacticalImage(entry) +
     '<div class="item-card-top"><span class="item-category-label">' + icon(category.icon) + escapeHtml(category.label) + '</span>' +
@@ -131,6 +132,7 @@ function tacticalCard(entry) {
     '<p class="item-mechanic">' + escapeHtml(entry.mechanic) + '</p>' +
     '<div class="item-card-tags"><span>' + escapeHtml(entry.objectType) + '</span>' +
     (entry.sourceStatus === 'community_reference' ? '<span class="item-source-pending">社区来源 · 待复核</span>' : '') +
+    (clips.length ? '<span>' + clips.length + ' 段演示短片</span>' : '') +
     (videos ? '<span>' + videos + ' 视频' + (shots ? ' · ' + shots + ' 截图' : '') + '</span>' : '') + '</div>' +
     '<div class="item-card-footer"><span>' + escapeHtml(entry.game) + '</span><div>' +
     '<button type="button" class="icon-button ' + (collected ? 'is-collected' : '') + '" data-action="collect" data-id="' + escapeHtml(entry.id) + '" aria-label="' + (collected ? '取消收藏 ' : '收藏 ') + escapeHtml(entry.name) + '" aria-pressed="' + collected + '">' + icon('bookmark') + '</button>' +
@@ -156,7 +158,7 @@ function renderTacticalItems() {
   $('#itemGrid').innerHTML = visible.length ? visible.map(tacticalCard).join('') :
     '<div class="empty-state">' + icon('search') + '<h3>没有找到匹配的道具</h3><p>可以搜索中英文名、作用或关键词，例如“躲猫猫”“位移”。</p><button class="button" type="button" data-reset-items>清除筛选</button></div>';
   $('#itemResultsTitle').textContent = itemArchive.category === 'all' ? '全部道具' : itemCategory(itemArchive.category).label;
-  $('#itemResultCount').textContent = entries.length + ' 项 · ' + entries.filter((entry) => entry.image?.path).length + ' 项已配图';
+  $('#itemResultCount').textContent = entries.length + ' 项 · ' + entries.filter((entry) => entry.image?.path).length + ' 项已配图 · ' + entries.filter((entry) => entry.clips?.length).length + ' 项含短片';
   $('#itemShownCount').textContent = '已展示 ' + visible.length + ' / ' + entries.length + ' 项';
   $('#loadMoreItems').hidden = visible.length >= entries.length;
   const filters = [state.query ? '搜索：' + state.query : '', state.gameFilter !== 'all' ? state.gameFilter : '',
@@ -167,19 +169,21 @@ function renderTacticalItems() {
 function tacticalItemDetail(entry) {
   const versions = itemVersions(entry);
   const category = itemCategory(entry.category);
+  const hasClips = typeof ItemDemos !== 'undefined' && ItemDemos.clips(entry).length > 0;
   const section = (title, text) => text ? '<section class="detail-section"><h3>' + title + '</h3><p>' + escapeHtml(text) + '</p></section>' : '';
   const versionHtml = versions.map((version) => '<section class="item-version"><div class="item-version-heading"><h3>' + escapeHtml(version.versionLabel) + '</h3><span>' + escapeHtml(coreUpdateDateLabel(version)) + '</span></div>' +
     section('适用范围', [...version.affectedModes, ...version.mapNames].join(' · ')) + tacticalProfileDetail(version) +
     coreUpdateMediaDetail(version) + section('玩家行为变化 · 分析', version.playerImpact) + section('设计观察 · 分析', version.designObservation.replace(/^设计推断：/, '')) +
     section('版本与时间依据', version.launchNote) + coreUpdateEvidenceDetail(version) + '</section>').join('');
-  return tacticalImage(entry, { detail: true }) +
+  return (hasClips ? '' : tacticalImage(entry, { detail: true })) +
     '<div class="detail-inner"><div class="detail-kicker">主题道具 / ' + escapeHtml(entry.game) + '</div>' +
     '<h2 id="detailTitle">' + escapeHtml(entry.name) + '</h2><p class="item-detail-english" lang="en">' + escapeHtml(entry.englishName) + '</p>' +
     '<div class="detail-meta"><span>' + escapeHtml(category.label) + '</span><span>' + escapeHtml(entry.objectType) + '</span><span class="item-status ' + (versions.length ? 'has-dossier' : '') + '">' + itemStatusLabels[entry.researchStatus] + '</span></div>' +
     '<p class="detail-summary">' + escapeHtml(entry.mechanic) + '</p>' +
+    (hasClips ? ItemDemos.render(entry) + '<details class="item-appearance"><summary>道具外观与图片出处</summary>' + tacticalImage(entry, { detail: true }) + '</details>' : '') +
     (entry.objectGroup === 'creative' ? '<p class="item-detail-note">创意模式道具：本条描述创意模式中的伪装工具；不据此推定大逃杀中的获取方式或数值。</p>' : '') +
     (entry.englishName.includes(' / ') ? '<p class="item-detail-note">此条按道具族收录，英文名列出相关变体；各版本的参数和使用限制需分别核对。</p>' : '') +
-    (versions.length ? versionHtml : '<section class="item-pending"><h3>已收录目录，详录待补</h3><p>已收录外观配图、机制摘要与资料入口。具体数值、适用版本及生效日期仍待核对。</p><ul><li>操作、获取方式与限制：待逐版本整理</li><li>YouTube 演示：待核验</li><li>操作过程截图：待补</li></ul></section>') +
+    (versions.length ? versionHtml : '<section class="item-pending"><h3>已收录目录，详录待补</h3><p>已收录外观配图、机制摘要与资料入口。具体数值、适用版本及生效日期仍待核对。</p><ul><li>操作、获取方式与限制：待逐版本整理</li><li>完整视频与版本对应：待逐版本核对</li><li>操作过程截图：待补</li></ul></section>') +
     '<section class="detail-section"><h3>资料入口</h3><p>' + (entry.sourceStatus === 'official_reference' ? '官方资料入口。目录条目的逐项参数与适用版本仍以详录中的依据为准。' : '社区资料入口，尚待官方来源交叉核对。') + '</p><a class="item-source-link" href="' + escapeHtml(safeUrl(entry.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(new URL(entry.sourceUrl).hostname) + ' ' + icon('external-link') + '</a></section>' +
     '<p class="item-detail-note">目录收录：' + escapeHtml(entry.cataloguedAt) + '。历史记录不代表当前赛季可用；中文名含说明性译法。</p>' +
     '<div class="detail-actions">' + detailButton(entry) + '<button type="button" class="button" data-action="copy" data-id="' + escapeHtml(entry.id) + '">' + icon('book-open') + '复制 Markdown</button><a class="button" href="' + escapeHtml(safeUrl(entry.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">' + icon('external-link') + '打开资料来源</a></div></div>';
@@ -194,6 +198,7 @@ function tacticalItemMarkdown(entry) {
     ...(picture ? ['## 道具图片', '', '![' + picture.alt.replace(/[\[\]]/g, '') + '](' + picture.assetSourceUrl + ')', '',
       picture.caption, '', '- 图片性质：' + tacticalImageLabel(entry) + (picture.sourceType === 'community' ? '（官方缺图补充）' : ''),
       '- 图片出处：[' + picture.sourceName + '](' + picture.sourcePageUrl + ')', '- 图片归档日期：' + picture.retrievedAt, ''] : []),
+    ...(typeof ItemDemos === 'undefined' ? [] : ItemDemos.markdown(entry)),
     '## 机制摘要', '', entry.mechanic, '', '历史对象目录，不代表当前赛季可用；中文名含说明性译法。',
     ...(entry.objectGroup === 'creative' ? ['', '范围：创意模式道具，不据此推定大逃杀中的获取方式或数值。'] : []),
     ...(entry.englishName.includes(' / ') ? ['', '按道具族收录，相关变体的参数及限制需分别核对。'] : []), '',

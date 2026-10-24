@@ -21,6 +21,52 @@ const communityHosts = new Set(['www.everyeye.it', 'fortnite.gs', 'www.pcgamer.c
   'www.sportskeeda.com', 'www.invenglobal.com', 'www.gamesradar.com', 'us.millenium.gg']);
 const communityAssetHosts = new Set(['images.everyeye.it', 'cdn.source.gs', 'cdn.mos.cms.futurecdn.net',
   'assets.reedpopcdn.com', 'staticg.sportskeeda.com', 'static.invenglobal.com', 'static1-us.millenium.gg']);
+
+const clipPaths = new Set();
+function validateClip(entry) {
+  assert.equal(entry.clips?.length, 1, entry.id + ': one reviewed excerpt');
+  for (const clip of entry.clips) {
+    for (const key of ['id', 'title', 'caption', 'sourceName', 'sourceTitle', 'versionLabel']) assert.ok(clip[key]?.trim(), entry.id + ': clip.' + key);
+    assert.ok(['official', 'community'].includes(clip.sourceType));
+    assert.ok(['gameplay', 'in_engine_demo'].includes(clip.footageKind));
+    const source = new URL(clip.sourceUrl);
+    assert.equal(source.protocol, 'https:'); assert.equal(source.hostname, 'www.youtube.com');
+    assert.match(source.searchParams.get('v'), /^[a-zA-Z0-9_-]{11}$/);
+    if (updates.some(u => (u.videos || []).some(v => v.url === clip.sourceUrl && v.sourceType === 'official'))) assert.equal(clip.sourceType, 'official', entry.id + ': preserve verified official source');
+    assert.match(clip.sourcePublishedAt, /^\d{4}-\d{2}-\d{2}$/);
+    for (const key of ['capturedAt', 'reviewedAt']) {
+      assert.ok(Number.isFinite(Date.parse(clip[key])) && Date.parse(clip[key]) <= Date.now() + 60000);
+    }
+    assert.equal(clip.reviewedBy, 'primary-agent');
+    assert.ok(clip.sourceStartSeconds >= 0 && clip.sourceEndSeconds <= clip.sourceDurationSeconds + .5);
+    assert.ok(clip.durationSeconds >= 5 && clip.durationSeconds <= 20);
+    assert.ok(Math.abs(clip.sourceEndSeconds - clip.sourceStartSeconds - clip.durationSeconds) < .02);
+    assert.equal(clip.width, 960); assert.equal(clip.height, 540); assert.equal(clip.frameRate, 24);
+    assert.equal(clip.codec, 'h264'); assert.equal(clip.hasAudio, false);
+    assert.ok(clip.posterTimeSeconds >= 0 && clip.posterTimeSeconds < clip.durationSeconds);
+    assert.match(clip.path, /^assets\/tactical-demos\/[a-z0-9-]+\.mp4$/);
+    assert.match(clip.posterPath, /^assets\/tactical-demos\/[a-z0-9-]+-poster\.jpg$/);
+    for (const [file, digest] of [[clip.path, clip.sha256], [clip.posterPath, clip.posterSha256]]) {
+      assert.ok(!clipPaths.has(file), 'One asset path per item: ' + file); clipPaths.add(file);
+      const bytes = fs.readFileSync(path.join(root, file));
+      assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), digest, file + ': integrity');
+      if (file.endsWith('.mp4')) {
+        assert.equal(bytes.length, clip.byteSize); assert.ok(bytes.includes(Buffer.from('avc1')));
+        const atoms = []; let offset = 0;
+        while (offset + 8 <= bytes.length) {
+          const size = bytes.readUInt32BE(offset); const type = bytes.toString('ascii', offset + 4, offset + 8);
+          assert.ok(size >= 8 && offset + size <= bytes.length, file + ': valid MP4 atom');
+          atoms.push(type); offset += size;
+        }
+        assert.equal(offset, bytes.length); assert.equal(atoms[0], 'ftyp');
+        assert.ok(atoms.includes('moov') && atoms.includes('mdat') && atoms.indexOf('moov') < atoms.indexOf('mdat'), file + ': streamable MP4');
+      } else {
+        assert.equal(bytes.readUInt16BE(0), 0xffd8); assert.equal(bytes.readUInt16BE(bytes.length - 2), 0xffd9);
+      }
+    }
+  }
+}
+
 assert.equal(catalogue.imagePolicy.officialFirst, true);
 assert.equal(catalogue.imagePolicy.communityFallback.authorizedAt, '2026-10-12');
 for (const entry of catalogue.items) {
@@ -34,6 +80,7 @@ for (const entry of catalogue.items) {
   assert.equal(source.protocol, 'https:');
   if (entry.sourceStatus === 'official_reference') assert.ok(['www.fortnite.com', 'dev.epicgames.com'].includes(source.hostname));
   else assert.equal(entry.sourceStatus, 'community_reference');
+  validateClip(entry);
   const picture = entry.image;
   assert.ok(picture, entry.id + ': has a recognizable image');
   for (const key of ['caption', 'alt', 'sourceName', 'retrievedAt']) assert.ok(picture[key]?.trim(), entry.id + ': image.' + key);
@@ -77,7 +124,7 @@ function element(selector) {
 const context = vm.createContext({ assert, catalogue, updates, modes, URL, URLSearchParams,
   document: { querySelector: element, querySelectorAll: () => [], baseURI: 'http://127.0.0.1:4173/index.html' },
   localStorage: { getItem: () => '[]', setItem() {} }, location: { search: '' } });
-vm.runInContext(['core-updates.js', 'tactical-items.js', 'app.js', 'ff-patches.js'].map(read).join('\n') +
+vm.runInContext(['item-demos.js', 'core-updates.js', 'tactical-items.js', 'app.js', 'ff-patches.js'].map(read).join('\n') +
   '\n' + read('workspace.js').replace(/initWorkspace\(\);\s*$/, ''), context);
 vm.runInContext(String.raw`
   const legacy = catalogue.items.find((entry) => entry.legacyIds.length);
@@ -147,6 +194,11 @@ vm.runInContext(String.raw`
     assert.ok(html.includes(entry.image.sourcePageUrl.replace(/&/g, '&amp;')));
     assert.ok(md.includes(entry.image.assetSourceUrl) && md.includes(entry.image.caption));
     assert.match(card, /loading="lazy"/);
+    assert.match(html, /<video [^>]*controls playsinline muted preload="none"/);
+    assert.doesNotMatch(html, /<video [^>]*autoplay/);
+    assert.ok(html.includes(entry.clips[0].path) && html.includes(entry.clips[0].posterPath));
+    assert.ok(md.includes(entry.clips[0].path) && md.includes(entry.clips[0].sourceUrl));
+    assert.ok(md.includes(entry.clips[0].versionLabel));
     if (entry.image.sourceType === 'community') assert.match(html, /官方缺图补充 · 社区来源/);
     if (entry.researchStatus === 'catalogued') {
       assert.match(html, /详录待补/); assert.match(md, /待补资料/);
@@ -166,8 +218,10 @@ vm.runInContext(String.raw`
   state.contentFilter = 'core_update'; assert.equal(getFilteredEntries().length, 0);
   state.contentFilter = 'all'; assert.equal(getFilteredEntries().length, 1);
 `, context);
-for (const file of ['tactical-items.js', 'tactical-items.css', 'data/tactical-items.json']) assert.ok(read('scripts/build_public_site.py').includes("'" + file + "'"));
+assert.equal(clipPaths.size, 272);
+for (const file of ['item-demos.js', 'tactical-items.js', 'tactical-items.css', 'data/tactical-items.json']) assert.ok(read('scripts/build_public_site.py').includes("'" + file + "'"));
 assert.ok(read('scripts/build_public_site.py').includes("'assets/tactical-items'"));
+assert.ok(read('scripts/build_public_site.py').includes("'assets/tactical-demos'"));
 assert.ok(read('index.html').includes('data-view="items"'));
 assert.ok(!read('index.html').includes('tactical-shortcut'));
-console.log('Tactical catalogue passed: 136 illustrated objects (124 official / 12 community), 14 categories, 8 linked dossiers; image integrity, attribution, separation, search, filters, favorites, and exports.');
+console.log('Tactical catalogue passed: 136 illustrated objects (124 official / 12 community) and 136 reviewed local video excerpts, 14 categories, 8 linked dossiers; image integrity, attribution, separation, search, filters, favorites, and exports.');

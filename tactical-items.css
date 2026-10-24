@@ -191,3 +191,27 @@ body[data-card-size="small"] .mode-grid:has(> .item-card) { grid-template-column
   .item-detail-figure figcaption { padding:12px 18px; }
   .item-detail-figure img { max-height:310px; }
 }
+
+/* In-page gameplay excerpts load only after the visitor starts playback. */
+.item-demos { margin:24px 0; }
+.item-demo { margin:0 0 22px; min-width:0; }
+.item-demo-screen { background:#131d17; border-radius:8px; overflow:hidden; }
+.item-demo video { display:block; width:100%; height:auto; max-height:65vh; object-fit:contain; background:#131d17; }
+.item-demo-tools { display:flex; flex-wrap:wrap; align-items:center; gap:8px; padding:11px 0; }
+.workspace .item-demo-tools button,.item-demo-tools select { min-height:34px; border:1px solid var(--line-strong); border-radius:5px; background:#fff; color:var(--ink); padding:6px 10px; font-size:12px; }
+.workspace .item-demo-tools button[aria-pressed="true"] { background:#e4eddc; color:var(--accent); border-color:#9fb78e; }
+.item-demo-tools label { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--muted); }
+.item-demo-tools > span { margin-left:auto; font-size:11px; color:var(--muted); }
+.item-demo-tools button:focus-visible,.item-demo-tools select:focus-visible { outline:2px solid #668f51; outline-offset:2px; }
+.item-demo figcaption { display:flex; flex-wrap:wrap; gap:6px 14px; color:var(--muted); font-size:11px; line-height:1.7; }
+.item-demo figcaption p { width:100%; margin:0; font-size:13px; color:var(--ink); }
+.item-demo figcaption a { color:var(--accent); text-decoration:underline; text-underline-offset:3px; }
+.item-demo-error { padding:14px; margin:0; color:#e8eedf; font-size:12px; line-height:1.7; }
+.item-demo-error[hidden] { display:none; }
+.item-appearance { border:1px solid var(--line); border-radius:7px; margin:12px 0 24px; padding:12px 14px; color:var(--muted); font-size:12px; }
+.item-appearance > summary { cursor:pointer; }
+.item-appearance .item-detail-figure { margin:12px 0 0; }
+@media(max-width:600px) {
+  .workspace .item-demo-tools button,.item-demo-tools select { min-height:40px; }
+  .item-demo-tools > span { width:100%; margin-left:0; }
+}

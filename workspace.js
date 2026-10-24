@@ -429,6 +429,7 @@ function showDetail(id) {
     : sourceIds.map((sourceId) => state.entries.find((item) => item.id === sourceId)).filter(Boolean);
   const imageUrl = safeUrl(entry.imageUrl);
   const derived = entry.kind !== 'modes';
+  if (typeof ItemDemos !== 'undefined') ItemDemos.stop(detailDialog);
   $('#detailContent').innerHTML = isTacticalItem(entry) ? tacticalItemDetail(entry) : isCoreUpdate(entry) ? coreUpdateDetail(entry) :
     (imageUrl ? '<img class="detail-cover" src="' + escapeHtml(imageUrl) + '" alt="' + escapeHtml(entry.imageSource || '原案例配图') + '">' : '') +
     '<div class="detail-inner"><div class="detail-kicker">' + kindLabels[entry.kind] + ' / ' + escapeHtml(entry.game) + '</div>' +
@@ -463,6 +464,7 @@ function openDetail(id) {
 }
 
 function closeDetail(updateUrl = true) {
+  if (typeof ItemDemos !== 'undefined') ItemDemos.stop(detailDialog);
   detailDialog.close(); detailId = null;
   document.body.classList.remove('modal-open');
   if (updateUrl) history.replaceState(null, '', workspaceHash());
@@ -631,6 +633,7 @@ async function initWorkspace() {
   bindWorkspaceEvents();
   bindFFPatchEvents();
   bindTacticalItemEvents();
+  if (typeof ItemDemos !== 'undefined') ItemDemos.bind(detailDialog);
   initMapArchive();
   try {
     const response = await fetch('data/modes.json', { cache: 'no-store' });

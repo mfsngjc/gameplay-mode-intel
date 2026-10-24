@@ -33,7 +33,7 @@ def main():
     remove_output_with_retry()
     OUTPUT.mkdir()
     files = ['index.html', 'card-view.js', 'card-view.css', 'app.js', 'workspace.js', 'maps.js', 'styles.css', 'ugc.js', 'ugc.css',
-             'workspace.css', 'tactical-items.css', 'tactical-items.js', 'data/tactical-items.json',
+             'workspace.css', 'tactical-items.css', 'tactical-items.js', 'item-demos.js', 'data/tactical-items.json',
              'ff-patches.js', 'data/free-fire-patches.json', 'core-updates.js', 'data/core-updates.json', 'data/modes.json', 'data/maps.json',
              'assets/favicon.svg', 'assets/lucide-LICENSE']
     for name in files:
@@ -94,6 +94,8 @@ def main():
         shutil.copytree(ROOT / 'assets/mode-official', OUTPUT / 'assets/mode-official')
     shutil.copytree(ROOT / 'assets/core-updates', OUTPUT / 'assets/core-updates')
     shutil.copytree(ROOT / 'assets/tactical-items', OUTPUT / 'assets/tactical-items')
+    if (ROOT / 'assets/tactical-demos').exists():
+        shutil.copytree(ROOT / 'assets/tactical-demos', OUTPUT / 'assets/tactical-demos')
     shutil.copytree(ROOT / 'assets/ff-patches', OUTPUT / 'assets/ff-patches')
     shutil.copytree(ROOT / 'docs/free-fire-patches', OUTPUT / 'docs/free-fire-patches')
     (OUTPUT / '.nojekyll').touch()
