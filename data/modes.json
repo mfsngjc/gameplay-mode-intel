@@ -16221,5 +16221,44 @@
       "br"
     ],
     "isLtm": true
+  },
+  {
+    "id": "free-fire-hidden-side-2026",
+    "game": "Free Fire",
+    "modeName": "隐秘侧世界",
+    "year": "2026",
+    "date": "2026-10-16",
+    "tags": [
+      "br-ltm",
+      "power",
+      "teamwork"
+    ],
+    "type": [
+      "BR／枪王对决规则覆盖",
+      "双层地图探索",
+      "淘汰后支援"
+    ],
+    "oneLineRule": "拾取面具进入隐秘侧世界，以更快移动和更高跳跃寻找隐藏装备；交战会被送回常规地图，淘汰后仍可化为傀儡支援存活队友。",
+    "mechanicChange": "在大逃杀中，玩家拾取彼岸面具后可进入地图的隐秘侧世界：天空变暗，玩家移动更快、跳得更高，并能与常规地图不可见的物体互动来取得装备；主动攻击或受到伤害都会把玩家送回常规地图。\n\n只要小队仍有至少一名成员存活，被淘汰的玩家就会变成恐怖傀儡，继续进入隐秘侧世界、为存活队友提供强化并使用特殊表情。枪王对决也会出现面具和隐秘侧世界；官方只说明两种玩法内部分武器有新机制，未公开完整武器清单与数值。",
+    "tempoImpact": "队伍需要在隐秘侧世界的探索收益与被交战强制返回的风险之间选择时机；淘汰者继续提供支援后，小队减员不会立刻终止协作，存活者的拖延与傀儡强化会共同影响残局。",
+    "designObservation": "把同一张地图叠成可切换的探索层，可以在不更换基础胜负目标的前提下制造搜刮路线差异；让淘汰者保留有限支援能力，也能减少观战空档，但仍以至少一名队友存活作为参与条件。",
+    "sourceUrl": "https://ff.garena.com/en/article/1726/",
+    "imageUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/202610/de2549e5da06a23c418b9f7e105acabd.jpeg",
+    "imageSource": "Garena 官方万圣节活动主视觉",
+    "imageSourceUrl": "https://ff.garena.com/en/article/1726/",
+    "imageOriginalUrl": "https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/202610/de2549e5da06a23c418b9f7e105acabd.jpeg",
+    "launchDate": "2026-10-16",
+    "launchLabel": "2026年10月16日至11月1日",
+    "launchNote": "Garena 泰国与越南地区官方公告均确认活动期和 BR／枪王对决规则；各地区活动名不同，本卡标题采用中文说明性译法，不宣称为官方统一名称。公告没有说明该规则是否在所有地区同步开放。",
+    "gameplayTypes": [
+      "br",
+      "casual"
+    ],
+    "isLtm": true,
+    "ffPlaylists": [
+      "br",
+      "cs"
+    ],
+    "ffPlaylistEvidence": "官方区域公告分别明确写到 Battle Royale 与 Clash Squad 均可通过面具进入隐秘侧世界。"
   }
 ]
