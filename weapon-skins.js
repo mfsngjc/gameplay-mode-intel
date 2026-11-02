@@ -37,6 +37,12 @@ const WeaponSkins = (() => {
     return media.kind === 'inspect' || (media.contains || media.containsActions || []).includes('inspect');
   }
   function isVideo(media) { return ['mp4', 'youtube', 'bilibili'].includes(media.provider); }
+  function chromaCount(entry) { return (entry.chromas || []).filter(chroma => !chroma.isBase).length; }
+  function chromaImage(entry, chroma) {
+    if (chroma?.image) return chroma.image;
+    const url = link(chroma?.imageUrl || chroma?.fullRender);
+    return url ? { ...entry.image, url, assetSourceUrl: url } : entry.image;
+  }
   function providerId(media) {
     try {
       const url = new URL(media.url);
@@ -59,7 +65,7 @@ const WeaponSkins = (() => {
       if (media.provider === 'mp4') {
         if (!/\.mp4(?:[?#]|$)/i.test(url)) return false;
       } else if (media.provider === 'gif') {
-        if (!/\.gif(?:[?#]|$)/i.test(url)) return false;
+        if (!/\.gif(?:[?#]|$)/i.test(url) && !(media.mimeType === 'image/gif' && Number(media.frameCount) > 1)) return false;
       } else if (!providerId(media)) return false;
       seen.add(url);
       return true;
@@ -235,7 +241,7 @@ const WeaponSkins = (() => {
       '<p class="weapon-card-english" lang="en">' + esc(entry.englishName && entry.englishName !== entry.name ? entry.englishName : entry.weaponEnglishName || entry.weaponName) + '</p>' +
       '<div class="weapon-card-tags"><span>' + esc(entry.category || (entry.weaponType === 'melee' ? '近战武器' : '枪械')) + '</span>' +
       (videos.length ? '<span class="has-media">' + (inspection ? '含检视资料' : '动作预览') + '</span>' : '<span>外观图</span>') +
-      ((entry.chromas || []).length > 1 ? '<span>' + entry.chromas.length + ' 款炫彩</span>' : '') + '</div>' +
+      ((entry.chromas || []).length > 1 && chromaCount(entry) ? '<span>' + chromaCount(entry) + ' 款炫彩</span>' : '') + '</div>' +
       '<div class="weapon-card-bottom"><span>' + esc(imageCredit(entry)) + '</span><div><button type="button" class="icon-button ' +
       (collected ? 'is-collected' : '') + '" data-action="collect" data-id="' + esc(entry.id) + '" aria-pressed="' + collected + '" aria-label="' +
       (collected ? '取消收藏 ' : '收藏 ') + esc(entry.name) + '">' + icon('bookmark') + '</button>' +
@@ -275,27 +281,29 @@ const WeaponSkins = (() => {
   function detail(entry) {
     const media = mediaList(entry), chromas = (entry.chromas || []).filter(chroma => link(chroma.imageUrl || chroma.fullRender));
     const firstMedia = Math.max(0, media.findIndex(item => containsInspect(item)));
-    const initialImage = link(chromas[0]?.imageUrl || chromas[0]?.fullRender) || imageUrl(entry);
-    detailState = { id: entry.id, media: firstMedia, chroma: 0 };
+    const firstChroma = Math.max(0, chromas.findIndex(chroma => chroma.id === media[firstMedia]?.chromaId));
+    const picture = chromaImage(entry, chromas[firstChroma]);
+    const initialImage = link(chromas[firstChroma]?.imageUrl || chromas[firstChroma]?.fullRender) || imageUrl(entry);
+    detailState = { id: entry.id, media: firstMedia, chroma: firstChroma };
     const release = entry.releaseDateStatus === 'confirmed' && entry.releaseDate ? '首发：' + entry.releaseDate :
       entry.releaseDateStatus === 'scheduled' && entry.releaseDate ? '预告日期：' + entry.releaseDate : '首发日期待核实';
     const fact = (label, value) => value ? '<div><dt>' + esc(label) + '</dt><dd>' + esc(value) + '</dd></div>' : '';
-    const source = link(entry.sourceUrl), pictureSource = link(entry.image?.sourcePageUrl), original = link(entry.image?.assetSourceUrl) || imageUrl(entry);
+    const source = link(entry.sourceUrl), pictureSource = link(picture?.sourcePageUrl), original = link(picture?.assetSourceUrl) || initialImage;
     return '<div class="weapon-detail-art"><a id="skinOriginalImage" href="' + esc(initialImage) + '" target="_blank" rel="noopener noreferrer"><img id="skinDetailImage" src="' +
       esc(initialImage) + '" alt="' + esc(entry.name) +
-      '" referrerpolicy="no-referrer"><span class="weapon-art-fallback" hidden>图片暂时无法读取</span></a><span>' +
-      esc(imageCredit(entry)) + (entry.image?.caption ? ' · ' + esc(entry.image.caption) : '') + '</span></div>' +
+      '" referrerpolicy="no-referrer"><span class="weapon-art-fallback" hidden>图片暂时无法读取</span></a><span id="skinImageCredit">' +
+      esc(imageCredit({ image: picture })) + (picture?.caption ? ' · ' + esc(picture.caption) : '') + '</span></div>' +
       '<div class="detail-inner weapon-detail"><div class="detail-kicker">武器外观 / ' + esc(entry.game) + '</div><h2 id="detailTitle">' + esc(entry.name) +
       '</h2><p class="weapon-detail-english" lang="en">' + esc(entry.englishName || entry.weaponEnglishName || '') + '</p>' +
       '<div class="detail-meta"><span>' + esc(entry.weaponName) + '</span><span>' + esc(entry.rarity?.name || entry.category) +
       '</span><span>' + esc(entry.region || '适用地区待核实') + '</span></div>' +
       (entry.description ? '<p class="detail-summary">' + esc(cleanText(entry.description)) + '</p>' : '') +
       (chromas.length > 1 ? '<section class="weapon-chromas"><h3>外观与炫彩</h3><div class="weapon-chroma-list">' + chromas.map((chroma, index) =>
-        '<button type="button" data-skin-chroma="' + index + '" aria-pressed="' + (index === 0) + '" title="' + esc(chroma.name) + '">' +
+        '<button type="button" data-skin-chroma="' + index + '" aria-pressed="' + (index === firstChroma) + '" title="' + esc(chroma.name) + '">' +
         '<img src="' + esc(link(chroma.swatchUrl) || link(chroma.imageUrl || chroma.fullRender)) + '" alt="" loading="lazy"><span>' +
         esc(cleanText(chroma.name || '默认外观')) + '</span></button>').join('') + '</div></section>' : '') +
       '<section class="detail-section weapon-media-section"><h3>展示与动作</h3>' +
-      (media.length ? '<label class="sr-only" for="skinVideoSelect">选择等级、炫彩或动作视频</label><select id="skinVideoSelect">' + media.map((item, index) =>
+      (media.length ? '<label class="sr-only" for="skinVideoSelect">选择等级、炫彩或动作资料</label><select id="skinVideoSelect">' + media.map((item, index) =>
         '<option value="' + index + '"' + (index === firstMedia ? ' selected' : '') + '>' + esc(item.title || mediaLabel(item) + ' ' + (index + 1)) + '</option>').join('') + '</select>' : '') +
       '<div id="skinPlayer" class="weapon-player">' + playerHtml(entry, media[firstMedia]) + '</div>' +
       '<div id="skinMediaCaption" class="weapon-media-caption">' + mediaCaption(media[firstMedia]) + '</div></section>' +
@@ -303,15 +311,16 @@ const WeaponSkins = (() => {
         entry.levels.map((level, index) => '<span>' + esc(cleanText(level.name || '等级 ' + (index + 1))) + '</span>').join('') + '</div></section>' : '') +
       '<section class="detail-section"><h3>资料与出处</h3><dl class="weapon-facts">' + fact('武器分类', entry.category) +
       fact('收录日期', String(entry.firstSeenAt || '').slice(0, 10)) + fact('上线信息', release) +
+      fact('原稿发布日期', entry.publishedDate) +
       fact('版本 / 系列', entry.gameTitle || entry.family || '') +
       fact('磨损范围', entry.floatRange && (Array.isArray(entry.floatRange) || (entry.floatRange.min != null && entry.floatRange.max != null)) ? (Array.isArray(entry.floatRange) ? entry.floatRange.join(' → ') : entry.floatRange.min + ' → ' + entry.floatRange.max) : '') +
       fact('图案编号', entry.paintIndex) + '</dl>' +
       (entry.timingNote ? '<p class="weapon-source-note">' + esc(entry.timingNote) + '</p>' : '') +
       '<p class="weapon-source-note">历史外观目录不代表当前在售；收录日期与首发日期分别记录。</p><div class="weapon-source-links">' +
       (source ? '<a href="' + esc(source) + '" target="_blank" rel="noopener noreferrer">' + esc(entry.sourceName || '目录来源') + ' ↗</a>' : '') +
-      (pictureSource && pictureSource !== source ? '<a href="' + esc(pictureSource) + '" target="_blank" rel="noopener noreferrer">图片出处 ↗</a>' : '') +
-      '<a href="' + esc(original) + '" target="_blank" rel="noopener noreferrer">查看原图 ↗</a></div>' +
-      '<p class="weapon-source-note">' + esc(imageCredit(entry)) + (entry.image?.provider ? ' · ' + esc(entry.image.provider) : '') + '</p></section>' +
+      (pictureSource ? '<a id="skinImageSource" href="' + esc(pictureSource) + '" target="_blank" rel="noopener noreferrer">图片出处 ↗</a>' : '') +
+      '<a id="skinAssetOriginal" href="' + esc(original) + '" target="_blank" rel="noopener noreferrer">素材原址 ↗</a></div>' +
+      '<p id="skinImageProvider" class="weapon-source-note">' + esc(imageCredit({ image: picture })) + (picture?.provider ? ' · ' + esc(picture.provider) : '') + '</p></section>' +
       '<div class="detail-actions">' + detailButton(entry) + '<button type="button" class="button" data-action="copy" data-id="' + esc(entry.id) +
       '">' + icon('book-open') + '复制 Markdown</button><button type="button" class="button" data-skin-copy-link>复制详情链接</button></div></div>';
   }
@@ -324,6 +333,11 @@ const WeaponSkins = (() => {
     const entry = archive.entries.find(item => item.id === detailState?.id);
     const media = entry && mediaList(entry)[index];
     if (!entry || !media) return;
+    if (media.chromaId) {
+      const chromas = (entry.chromas || []).filter(chroma => link(chroma.imageUrl || chroma.fullRender));
+      const chromaIndex = chromas.findIndex(chroma => chroma.id === media.chromaId);
+      if (chromaIndex >= 0) selectChroma(entry, chromaIndex);
+    }
     stop(detailDialog);
     detailState.media = index;
     document.getElementById('skinPlayer').innerHTML = playerHtml(entry, media, activated);
@@ -331,15 +345,35 @@ const WeaponSkins = (() => {
     const select = document.getElementById('skinVideoSelect');
     if (select) select.value = index;
   }
+  function selectChroma(entry, index) {
+    const chromas = (entry.chromas || []).filter(chroma => link(chroma.imageUrl || chroma.fullRender));
+    const chroma = chromas[index];
+    if (!chroma) return false;
+    detailState.chroma = index;
+    const url = link(chroma.imageUrl || chroma.fullRender), metadata = chromaImage(entry, chroma);
+    const picture = document.getElementById('skinDetailImage');
+    picture.hidden = false; picture.src = url; picture.alt = chroma.name || entry.name;
+    document.getElementById('skinOriginalImage').href = url;
+    document.getElementById('skinImageCredit').textContent = imageCredit({ image: metadata }) + (metadata?.caption ? ' · ' + metadata.caption : '');
+    document.getElementById('skinImageProvider').textContent = imageCredit({ image: metadata }) + (metadata?.provider ? ' · ' + metadata.provider : '');
+    document.getElementById('skinAssetOriginal').href = link(metadata?.assetSourceUrl) || url;
+    const source = document.getElementById('skinImageSource');
+    if (source) source.href = link(metadata?.sourcePageUrl) || link(entry.sourceUrl);
+    document.querySelectorAll('[data-skin-chroma]').forEach(button => button.setAttribute('aria-pressed', String(Number(button.dataset.skinChroma) === index)));
+    return true;
+  }
   function markdown(entry) {
+    const picture = entry.image?.derivedFromVideoUrl ? imageUrl(entry) : (link(entry.image?.assetSourceUrl) || imageUrl(entry));
     return ['# ' + entry.name, '', '- 资料类型：武器外观', '- 游戏：' + entry.game,
       '- 英文名：' + (entry.englishName || ''), '- 基础武器：' + entry.weaponName,
       '- 分类：' + entry.category, '- 品质：' + (entry.rarity?.name || '未标注'),
       '- 地区 / 版本：' + (entry.region || '待核实') + (entry.gameTitle ? ' / ' + entry.gameTitle : ''),
       '- 上线信息：' + (entry.releaseDateStatus === 'confirmed' ? entry.releaseDate : '待核实；收录日期不作为首发日期'),
       '- 收录日期：' + (entry.firstSeenAt || ''), '- 来源：' + (entry.sourceUrl || ''),
-      '', '## 外观图', '', '![' + entry.name.replace(/[\[\]]/g, '') + '](' + (entry.image?.assetSourceUrl || imageUrl(entry)) + ')',
+      ...(entry.publishedDate ? ['- 原稿发布日期：' + entry.publishedDate] : []),
+      '', '## 外观图', '', '![' + entry.name.replace(/[\[\]]/g, '') + '](' + picture + ')',
       '', imageCredit(entry), '', '- 图片出处：' + (entry.image?.sourcePageUrl || entry.sourceUrl || ''),
+      '- 素材原址：' + (entry.image?.assetSourceUrl || imageUrl(entry)),
       '', '## 介绍', '', cleanText(entry.description),
       '', '## 展示与动作', '', ...mediaList(entry).flatMap(media => ['- [' + (media.title || mediaLabel(media)).replace(/[\[\]]/g, '') + '](' + media.url + ')',
         '  - ' + mediaLabel(media) + ' · ' + (media.sourceType === 'official' ? '官方素材' : media.provider === 'gif' ? '社区动图' : '社区录像') + ' · ' + (media.sourceName || ''),
@@ -386,15 +420,17 @@ const WeaponSkins = (() => {
       if (target.dataset.skinChroma !== undefined) {
         const chromas = (entry.chromas || []).filter(chroma => link(chroma.imageUrl || chroma.fullRender));
         const index = Number(target.dataset.skinChroma), chroma = chromas[index];
-        if (!chroma) return;
-        detailState.chroma = index;
-        const url = link(chroma.imageUrl || chroma.fullRender);
-        const picture = document.getElementById('skinDetailImage');
-        picture.hidden = false; picture.src = url; picture.alt = chroma.name || entry.name;
-        document.getElementById('skinOriginalImage').href = url;
-        document.querySelectorAll('[data-skin-chroma]').forEach(button => button.setAttribute('aria-pressed', String(button === target)));
+        if (!chroma || !selectChroma(entry, index)) return;
         const matching = mediaList(entry).findIndex(media => media.chromaId === chroma.id || (chroma.videoUrl && media.url === chroma.videoUrl));
-        if (matching >= 0) showPlayer(matching);
+        const generic = mediaList(entry).findIndex(media => !media.chromaId);
+        if (matching >= 0 || generic >= 0) showPlayer(matching >= 0 ? matching : generic);
+        else if (mediaList(entry).length) {
+          stop(detailDialog);
+          document.getElementById('skinPlayer').innerHTML = '<div class="weapon-media-empty"><p>当前外观暂无对应动作资料，可从上方选择其他外观的动作。</p></div>';
+          document.getElementById('skinMediaCaption').textContent = '';
+          const select = document.getElementById('skinVideoSelect');
+          if (select) select.value = '';
+        }
       }
       if (target.hasAttribute('data-skin-activate')) showPlayer(detailState.media, true);
       if (target.hasAttribute('data-skin-copy-link')) {
@@ -420,5 +456,5 @@ const WeaponSkins = (() => {
     }, true);
   }
   return { archive, games, count, ensure, bind, render, reset, readRoute, hash, filtered, card, detail, stop, markdown,
-    matchesQuery, normalise, filterEntries, mediaList, containsInspect, isVideo, link, providerId, exportList };
+    matchesQuery, normalise, filterEntries, mediaList, containsInspect, isVideo, chromaCount, chromaImage, link, providerId, exportList };
 })();

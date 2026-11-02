@@ -54,8 +54,18 @@ CAPTION_CORRECTIONS = {
     "Pink_Purr_P2020.png": "Pink Purr", "Pushing_Daisies_G7_Scout.png": "Pushing Daisies",
     "Tagged_(Season_16)_RE-45.png": "Tagged (Season 16)",
 }
+VERIFIED_MELEE_OWNERS = {
+    "Belva Bruisers": {"legend": "Pathfinder", "sourceUrl": "https://apexitemstore.com/2025/05/06/death-by-design-milestone-collection-skins-and-cosmetics/belva-bruisers-2/"},
+}
+VERIFIED_UNIVERSAL_MELEE = {"Serpent's Sting": "https://www.ea.com/games/apex-legends/apex-legends/news/space-hunt-event"}
 RESUME = False
 CURATED_INSPECT = {
+    "Serpent's Sting": {"videoId": "CBrKTURG9LA", "title": "*NEW* Universal Heirloom All Animations - Apex Legends", "author": "HYPERMYST", "publishedDate": "2024-09-17", "start": 0, "end": 77},
+    "Power Sword": {"videoId": "j1Hj4MufRPE", "title": "NEW Power Sword Heirloom All Animations - Apex Legends", "author": "HYPERMYST · footage courtesy Makian", "publishedDate": "2025-03-25", "start": 16, "end": 74},
+    "Dead Man's Curve": {"videoId": "u8Rryg35zuc", "title": "Revenant Heirloom All Animations | Apex Legends", "author": "MadLad", "publishedDate": "2021-06-29", "start": 35, "end": 79},
+    "Suzaku": {"videoId": "KG3TLFgHB-Q", "title": "NEW Valkyrie Heirloom All Animations - Apex Legends", "author": "MadLad", "publishedDate": "2022-06-21", "start": 103, "end": 177},
+    "Energy Reader": {"videoId": "nEGlBp1rjow", "title": "Wattson Heirloom All Animations - Apex Legends", "author": "MadLad", "publishedDate": "2021-12-07", "start": 101, "end": 162},
+    "Strongest Link": {"videoId": "OTWLA0F0PlY", "title": "NEW Ash Heirloom All Animations - Apex Legends", "author": "MadLad", "publishedDate": "2023-03-28", "start": 49, "end": 204},
     "Showstoppers": {"videoId": "quqQRYvHAdI", "title": "Apex Legends New Seer Heirloom All Animations", "author": "MadLad", "publishedDate": "2023-01-10", "start": 74, "end": 170},
     "Hope's Dawn": {"videoId": "ao44wqdjSlo", "title": "Wraith Heirloom Hopes Dawn All Animations - Apex Legends", "author": "MadLad", "publishedDate": "2023-03-07", "start": 32, "end": 114},
     "Butterfly Knife": {"videoId": "PbAUemaZtv4", "title": "Octane Heirloom - All Secret Animations and Inspects / Apex Legends", "author": "XanthiumGUM", "publishedDate": "2021-04-26"},
@@ -324,7 +334,7 @@ def base_record(identifier, name, weapon, rarity, source_id, source_url, timesta
             "sourceId": source_id, "sourceUrl": source_url, "sourceName": "Apex Legends Wiki / apex.source.gs",
             "region": "国际服", "gameTitle": "Apex Legends", "firstSeenAt": previous.get(identifier, {}).get("firstSeenAt", timestamp),
             "releaseDate": None, "releaseDateStatus": "unverified", "timingNote": "采集时间及资源构建时间不等于皮肤首发日或当前可获取状态。",
-            "publicationStatus": "pending", "chromas": [], "levels": [], "media": [], "tags": [owner, weapon_name, rarity.title()]}
+            "publicationStatus": "pending", "chromas": [], "levels": [], "media": previous.get(identifier, {}).get("media", []), "tags": [owner, weapon_name, rarity.title()]}
 
 
 def heirloom_owners(source):
@@ -497,8 +507,8 @@ def run(offline):
             identifier = "apex-seer-showstoppers"
         elif item["name"] == "Cobalt Katar":
             identifier = "apex-cobalt-katar"
-        owner = wiki_owners.get(key(item["name"])) or item.get("owner")
-        universal = item["id"].startswith("melee_skin_agnostic_") or item["id"] == "melee_skin_artifact_sword"
+        owner = wiki_owners.get(key(item["name"])) or VERIFIED_MELEE_OWNERS.get(item["name"], {}).get("legend") or item.get("owner")
+        universal = item["id"].startswith("melee_skin_agnostic_") or item["id"] == "melee_skin_artifact_sword" or item["name"] in VERIFIED_UNIVERSAL_MELEE
         category = "传家宝" if owner else "通用近战" if universal else "近战外观（归属待核）"
         family_id = re.sub(r"_(?:rt|rc)\d+$", "", item["id"])
         family_name = melee_by_id.get(family_id, item)["name"]
@@ -509,8 +519,10 @@ def run(offline):
         if owner:
             record["legend"] = owner
             record["searchAliases"] = LEGEND_ALIASES.get(owner, [])
-            record["legendEvidenceUrl"] = WIKI + "/wiki/Heirloom#Heirloom_Sets"
-        record["description"] = "神话近战外观。保留客户端资源标识及可核对的 Wiki 配图；套装图包含其他奖励，不等于单件渲染。不同外观变体分别记录，未枚举所有自定义组件组合。"
+            record["legendEvidenceUrl"] = VERIFIED_MELEE_OWNERS.get(item["name"], {}).get("sourceUrl", WIKI + "/wiki/Heirloom#Heirloom_Sets")
+        if item["name"] in VERIFIED_UNIVERSAL_MELEE:
+            record["universalEvidenceUrl"] = VERIFIED_UNIVERSAL_MELEE[item["name"]]
+        record["description"] = "神话近战外观。保留客户端资源标识及可核对的逐条配图出处；套装图包含其他奖励，不等于单件渲染。不同外观变体分别记录，未枚举所有自定义组件组合。"
         if key(item["name"]) in wiki_melee_images:
             record["image"] = wiki_melee_images[key(item["name"])]
             record["sourceUrl"] = WIKI + "/wiki/Heirloom"
@@ -533,6 +545,23 @@ def run(offline):
     # as proof of current availability; no full-dataset overwrite on partial fetch.
     present = {record["id"] for record in records}
     historical = previous_doc.get("retainedHistorical", []) + [dict(record, sourcePresent=False) for identifier, record in previous.items() if identifier not in present]
+    # Supplemented artwork and original-author media retain stable IDs and their
+    # actual evidence timestamps across later raw catalogue refreshes.
+    for record in records:
+        prior = previous.get(record["id"], {})
+        supplement = prior.get("artSupplement")
+        if supplement and supplement.get("reviewStatus") in {"source_confirmed", "sample_reviewed"}:
+            record["artSupplement"] = supplement
+            record["image"] = supplement["image"]
+            record["publicationStatus"] = "ready"
+            record.pop("pendingReason", None)
+        old_media = {media["id"]: media for media in prior.get("media", [])}
+        old_media.update({media["id"]: media for media in record["media"]})
+        record["media"] = list(old_media.values())
+        if prior.get("mediaSupplements"):
+            record["mediaSupplements"] = prior["mediaSupplements"]
+        if prior.get("remainingReason") and record["publicationStatus"] != "ready":
+            record["remainingReason"] = prior["remainingReason"]
     ready = [record for record in records if record["publicationStatus"] == "ready"]
     for coverage in per_weapon:
         canonical = WEAPON_FAMILY.get(coverage["weapon"], coverage["weapon"])
@@ -559,6 +588,8 @@ def run(offline):
                 "withVideoCount": sum(bool(record["media"]) for record in ready), "videoCount": sum(len(record["media"]) for record in ready),
                 "wikiImageCount": sum(record["image"]["provider"] == "Apex Legends Wiki" for record in ready),
                 "coloredSourceImageCount": sum(record["image"]["provider"] == "apex.source.gs" for record in ready),
+                "supplementedImageCount": sum(bool(record.get("artSupplement")) for record in ready),
+                "withInspectCount": sum(any(media.get("kind") == "inspect" or "inspect" in media.get("contains", []) for media in record["media"]) for record in ready),
                 "rejectedGunSilhouetteImages": sum(record.get("sourceRenderQuality", {}).get("status") == "client_ui_silhouette" for record in records),
                 "imageScope": "公开记录必须有真实彩图或明确标注范围的套装/系列图；已检测的纯白客户端UI轮廓不作为皮肤材质展示。",
                 "mediaScope": "来源索引和 Wiki 图库不提供全皮肤动作包；仅保留经身份核对的原作者视频，当前不代表全量检视覆盖。",
@@ -571,6 +602,17 @@ def run(offline):
               "coverage": coverage, "skins": sorted(records, key=lambda record: (record["weaponType"], record["weaponEnglishName"], record["englishName"], record["id"])),
               "retainedHistorical": {item["id"]: item for item in historical}.values()}
     output["retainedHistorical"] = list(output["retainedHistorical"])
+    if previous_doc.get("source", {}).get("enrichmentSources"):
+        output["source"]["enrichmentSources"] = previous_doc["source"]["enrichmentSources"]
+    if previous_doc.get("coverage", {}).get("artSearchCoverage"):
+        output["coverage"]["artSearchCoverage"] = previous_doc["coverage"]["artSearchCoverage"]
+    output["coverage"]["remainingReasonCounts"] = dict(Counter(record.get("remainingReason", {}).get("code", "not_yet_classified") for record in records if record["publicationStatus"] != "ready"))
+    evidence_times = [output["updatedAt"]]
+    for record in records:
+        if record.get("artSupplement"):
+            evidence_times.append(record["artSupplement"]["image"]["retrievedAt"])
+        evidence_times.extend(media["reviewedAt"] for media in record["media"] if media.get("reviewedAt"))
+    output["updatedAt"] = max(evidence_times)
     ids = [record["id"] for record in records]
     if len(ids) != len(set(ids)):
         raise RuntimeError("Duplicate normalized skin ID")

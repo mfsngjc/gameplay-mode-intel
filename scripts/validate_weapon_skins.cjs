@@ -17,7 +17,7 @@ function http(value, message) {
 const manifest = read('data/weapon-skins/manifest.json');
 assert.equal(manifest.schemaVersion, 1);
 assert.deepEqual(manifest.games.map(game => game.id), gameIds);
-const ids = new Set(), all = [];
+const ids = new Set(), all = [], weaponTypes = new Map();
 for (const game of manifest.games) {
   assert.equal(game.url, 'data/weapon-skins/' + game.id + '.json');
   const data = read(game.url);
@@ -34,7 +34,11 @@ for (const game of manifest.games) {
       assert.ok(typeof skin[field] === 'string' && skin[field].trim(), skin.id + ' missing ' + field);
     }
     assert.ok(['gun', 'melee'].includes(skin.weaponType), skin.id + ' type');
+    const baseWeapon = game.id + ':' + skin.weaponId;
+    if (weaponTypes.has(baseWeapon)) assert.equal(skin.weaponType, weaponTypes.get(baseWeapon), skin.id + ' base weapon type conflict');
+    else weaponTypes.set(baseWeapon, skin.weaponType);
     assert.ok(['unverified', 'confirmed', 'scheduled'].includes(skin.releaseDateStatus), skin.id + ' release status');
+    if (skin.publishedDate) assert.match(skin.publishedDate, /^\d{4}-\d{2}-\d{2}$/, skin.id + ' original article publication date');
     if (skin.releaseDateStatus === 'unverified') assert.equal(skin.releaseDate, null, skin.id + ' unknown release must stay null');
     else {
       assert.match(skin.releaseDate, /^\d{4}-\d{2}-\d{2}$/, skin.id + ' release date');
@@ -55,6 +59,19 @@ for (const game of manifest.games) {
     const levelIds = new Set(skin.levels.map(level => level.id)), chromaIds = new Set(skin.chromas.map(chroma => chroma.id));
     assert.equal(levelIds.size, skin.levels.length, skin.id + ' duplicate levels');
     assert.equal(chromaIds.size, skin.chromas.length, skin.id + ' duplicate chromas');
+    for (const chroma of skin.chromas) {
+      const picture = chroma.imageUrl || chroma.fullRender;
+      if (!picture) continue;
+      if (picture.startsWith('assets/weapon-skins/')) {
+        assert.ok(!picture.includes('..') && !picture.includes('\\'), skin.id + ' chroma path');
+        const file = path.resolve(root, picture);
+        assert.ok(file.startsWith(path.join(root, 'assets', 'weapon-skins') + path.sep) && fs.statSync(file).isFile());
+        assert.equal(chroma.image?.url, picture, skin.id + ' chroma image identity');
+        assert.equal(crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex'), chroma.image.sha256, skin.id + ' chroma image hash');
+        http(chroma.image.sourcePageUrl, skin.id + ' chroma attribution');
+        http(chroma.image.assetSourceUrl, skin.id + ' chroma original');
+      } else http(picture, skin.id + ' chroma image');
+    }
     const mediaIds = new Set();
     for (const media of skin.media) {
       assert.ok(media.id && !mediaIds.has(media.id), skin.id + ' duplicate media'); mediaIds.add(media.id);
@@ -66,9 +83,13 @@ for (const game of manifest.games) {
       if (media.levelId) assert.ok(levelIds.has(media.levelId), skin.id + ' dangling level');
       if (media.chromaId) assert.ok(chromaIds.has(media.chromaId), skin.id + ' dangling chroma');
       if (media.provider === 'mp4') assert.match(mediaUrl.pathname, /\.mp4$/i, skin.id + ' playable MP4 reference');
-      if (media.provider === 'gif') assert.match(mediaUrl.pathname, /\.gif$/i, skin.id + ' animation reference');
+      if (media.provider === 'gif' && !/\.gif$/i.test(mediaUrl.pathname)) {
+        assert.equal(media.mimeType, 'image/gif', skin.id + ' extensionless GIF must have decoded MIME evidence');
+        assert.ok(Number(media.frameCount) > 1, skin.id + ' GIF must contain multiple frames');
+        assert.match(media.sha256, /^[a-f0-9]{64}$/, skin.id + ' decoded GIF hash');
+      }
       if (media.kind === 'inspect' || (media.contains || media.containsActions || []).includes('inspect')) {
-        assert.ok(media.reviewStatus !== 'metadata_only', skin.id + ' unreviewed inspect claim');
+        assert.ok(['source_confirmed', 'sample_reviewed'].includes(media.reviewStatus), skin.id + ' unreviewed inspect claim');
       }
     }
     all.push(skin);
@@ -92,6 +113,10 @@ const context = vm.createContext({
 vm.runInContext(fs.readFileSync(path.join(root, 'weapon-skins.js'), 'utf8') + '\nglobalThis.testSkins = WeaponSkins;', context);
 const api = context.testSkins;
 const normal = all.map(skin => api.normalise(skin, skin.game));
+for (const [weapon, type] of [['9A91', 'gun'], ['柯尔特', 'gun'], ['麒麟刺', 'melee'], ['尼泊尔', 'melee'], ['阿波罗之弓', 'gun']]) {
+  const variants = normal.filter(skin => skin.skinGame === 'cf-mobile' && skin.weaponName === weapon);
+  assert.ok(variants.length && variants.every(skin => skin.weaponType === type), 'CFM base weapon classification: ' + weapon);
+}
 const filters = { game: 'valorant', type: 'melee', weapon: 'all', rarity: 'all', media: 'all' };
 assert.equal(api.filterEntries(normal, filters, '').length, manifest.games[0].meleeCount);
 assert.ok(api.filterEntries(normal, { ...filters, type: 'all' }, 'RGX 狂徒').length > 0, 'Chinese/English cross-field search');
@@ -107,6 +132,22 @@ assert.equal(api.filterEntries([gifSample], { ...filters, game: 'cf-mobile', typ
 assert.equal(api.filterEntries([gifSample], { ...filters, game: 'cf-mobile', type: 'all', media: 'inspect' }, '').length, 1);
 assert.ok(api.detail(gifSample).includes('id="skinAnimation"'), 'Inspection GIF is displayed without a video iframe');
 assert.equal(api.mediaList({ media: [{ provider: 'gif', url: 'https://example.com/inspect.gif.js' }] }).length, 0);
+assert.equal(api.mediaList({ media: [{ provider: 'gif', url: 'https://example.com/resource/0', mimeType: 'image/gif', frameCount: 8 }] }).length, 1);
+assert.equal(api.mediaList({ media: [{ provider: 'gif', url: 'https://example.com/resource/0', mimeType: 'image/jpeg', frameCount: 8 }] }).length, 0);
+const basePicture = { url: 'https://example.com/base.png', assetSourceUrl: 'https://example.com/base.png', sourcePageUrl: 'https://example.com/base', sourceType: 'official', caption: 'BASE CAPTION' };
+const altPicture = { url: 'https://example.com/alt.png', assetSourceUrl: 'https://example.com/alt.png', sourcePageUrl: 'https://example.com/alt', sourceType: 'game_asset', caption: 'ALT CAPTION' };
+const chromaSample = api.normalise({ ...all[0], image: basePicture,
+  chromas: [{ id: 'base', name: '基础外观', isBase: true, imageUrl: basePicture.url, image: basePicture },
+    { id: 'alt', name: '炫彩', imageUrl: altPicture.url, image: altPicture }],
+  media: [{ id: 'alt-gif', provider: 'gif', kind: 'inspect', chromaId: 'alt', url: 'https://example.com/alt.gif' }] }, 'cfhd');
+assert.equal(api.chromaCount(chromaSample), 1, 'Base appearance is not an extra chroma');
+assert.ok(api.card(chromaSample).includes('1 款炫彩'));
+const chromaDetail = api.detail(chromaSample);
+assert.ok(chromaDetail.includes('src="https://example.com/alt.png"') && chromaDetail.includes('ALT CAPTION'), 'Chroma-specific media opens with its image and provenance');
+const frameSample = api.normalise({ ...all[0], name: 'Beam Saber', image: {
+  ...basePicture, url: 'https://example.com/frame.webp', assetSourceUrl: 'https://example.com/showcase.mp4',
+  derivedFromVideoUrl: 'https://example.com/showcase.mp4' } }, 'apex');
+assert.ok(api.markdown(frameSample).includes('![Beam Saber](https://example.com/frame.webp)'), 'Frame exports render an image and retain the original video as provenance');
 assert.equal(api.link('javascript:alert(1)'), '');
 assert.equal(api.link('https://user:password@example.com/x'), '');
 assert.equal(api.providerId({ provider: 'youtube', url: 'https://youtube.com.evil.example/watch?v=abcdefghijk' }), '');

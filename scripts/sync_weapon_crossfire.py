@@ -583,16 +583,14 @@ def main():
     parser.add_argument('--refresh',action='store_true',help='Refresh successful cached source responses')
     args=parser.parse_args()
     if args.offline and args.refresh: parser.error('--offline cannot be combined with --refresh')
-    fetcher=Fetcher(args.offline,args.refresh)
     failures=[]
     for game in (['cfhd','cf-mobile'] if args.game == 'all' else [args.game]):
-        try:
-            result = get_cfhd(fetcher) if game == 'cfhd' else get_cfm(fetcher)
-            atomically(OUTPUT/(game+'.json'),result)
-            print(json.dumps({'game':game,'count':len(result['skins']),'coverage':result['coverage']},ensure_ascii=False))
-        except Exception as error:
-            failures.append({'game':game,'error':str(error)})
-            print(game+' failed; previous snapshot preserved: '+str(error),file=sys.stderr)
+        script = 'sync_weapon_cfhd.py' if game == 'cfhd' else 'sync_weapon_cfm.py'
+        command = [sys.executable, str(ROOT/'scripts'/script)]
+        if args.offline: command.append('--offline')
+        if args.refresh: command.append('--refresh')
+        code = subprocess.call(command)
+        if code: failures.append({'game':game,'error':'Dedicated catalogue sync failed','exitCode':code})
     if failures:
         atomically(CACHE.parent/'last-failures.json',{'at':stamp(),'failures':failures})
         return 1

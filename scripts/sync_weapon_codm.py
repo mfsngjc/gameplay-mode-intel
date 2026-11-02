@@ -433,6 +433,11 @@ def main():
             collected[seed['id']] = seed
         if len(collected) < 100:
             raise ValueError('Unexpectedly small upstream skin parse; prior snapshot preserved')
+        # China official-article records are maintained by sync_weapon_codm_cn.py.
+        # A community-index refresh must not erase that independently verified work.
+        for item in previous.get('skins', []):
+            if item['id'].startswith('codm-cn-'):
+                collected[item['id']] = item
         present = set(collected)
         historical = {x['id']: x for x in previous.get('historicalSkins', [])} if previous.get('source', {}).get('parserVersion') == 3 else {}
         if previous.get('source', {}).get('parserVersion') == 3:
@@ -451,8 +456,9 @@ def main():
                          'cataloguedCount': len(entries), 'weaponCount': len({x['weaponId'] for x in entries}),
                          'gunCount': sum(x['weaponType'] == 'gun' for x in entries),
                          'meleeCount': sum(x['weaponType'] == 'melee' for x in entries),
-                         'withVideoCount': sum(bool(x['media']) for x in entries),
-                         'videoCount': sum(len(x['media']) for x in entries),
+                         'withVideoCount': sum(any(m['provider'] in {'mp4', 'youtube', 'bilibili'} for m in x['media']) for x in entries),
+                         'videoCount': sum(sum(m['provider'] in {'mp4', 'youtube', 'bilibili'} for m in x['media']) for x in entries),
+                         'withAnimationCount': sum(any(m['provider'] == 'gif' for m in x['media']) for x in entries),
                          'sourcePageCount': len(pages), 'pagesWithSkinImages': sum(x['skinImageCount'] > 0 for x in per_page),
                          'sameAssetAliasesMerged': len(duplicate_assets),
                          'unavailableSourcePages': unavailable,
@@ -462,6 +468,12 @@ def main():
                          'remaining': ['国服完整蓝图目录与核实中文名', '所有历史皮肤与地区专属外观', '逐皮肤专属检视录像与精确时间段', '首发日期和获取状态']},
             'skins': entries, 'historicalSkins': sorted(historical.values(), key=lambda x: x['id']),
         }
+        if previous.get('source', {}).get('chinaCatalogue'):
+            snapshot['source']['chinaCatalogue'] = previous['source']['chinaCatalogue']
+            snapshot['updatedAt'] = max(snapshot['updatedAt'], previous['source']['chinaCatalogue']['retrievedAt'])
+            snapshot['coverage'].update({key: value for key, value in previous['coverage'].items() if key.startswith('china')})
+            for key in ['scope', 'mediaScope']:
+                snapshot['coverage'][key] = previous['coverage'][key]
         atomic(CACHE / 'coverage.json', {'builtAt': now(), 'offline': args.offline, 'pages': per_page, 'issues': notes, 'sameAssetAliasesMerged': duplicate_assets, 'coverage': snapshot['coverage']})
         atomic(OUT, snapshot)
         atomic(CACHE / 'last-run.json', {'attemptedAt': now(), 'offline': args.offline, 'success': True, 'count': len(entries)})

@@ -10,6 +10,7 @@ GAMES = [
     ("cf-mobile", "穿越火线手游"), ("cfhd", "CFHD"),
     ("cs2", "CS2"), ("apex", "Apex Legends"),
 ]
+SOURCE_INDEX_FIELDS = {'name', 'type', 'url', 'retrievedAt', 'feedUrl', 'feedBuild', 'feedExtractedAt', 'rightsNote'}
 
 
 def main():
@@ -26,7 +27,10 @@ def main():
             "withVideoCount": sum(any(media.get("provider") in {"mp4", "youtube", "bilibili"} for media in skin.get("media", [])) for skin in skins),
             "withAnimationCount": sum(any(media.get("provider") == "gif" for media in skin.get("media", [])) for skin in skins),
             "updatedAt": payload["updatedAt"],
-            "coverage": payload.get("coverage", {}), "source": payload.get("source", {}),
+            "coverage": payload.get("coverage", {}),
+            # Full per-request evidence stays in each on-demand game snapshot.
+            # The navigation index must not duplicate thousands of article URLs.
+            "source": {key: value for key, value in payload.get("source", {}).items() if key in SOURCE_INDEX_FIELDS},
         })
     result = {
         "schemaVersion": 1, "updatedAt": max(entry["updatedAt"] for entry in entries),
