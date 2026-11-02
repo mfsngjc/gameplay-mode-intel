@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "game": "call-of-duty",
+  "updatedAt": "2026-11-02T15:20:50.608688+00:00",
+  "source": {
+    "name": "官方资料与经复核的原作者媒体选集",
+    "url": "https://www.callofduty.com/blog/2023/08/call-of-duty-modern-warfare-II-season-05-reloaded-multiplayer-DMZ-content-drop",
+    "reviewedAt": "2026-11-02"
+  },
+  "coverage": {
+    "status": "partial",
+    "catalogScope": "curated_featured",
+    "complete": false,
+    "entryCount": 1,
+    "entriesWithVideo": 0,
+    "liveMetadataRefreshed": true,
+    "note": "端游精选资料；手游 CODM 已迁移为独立目录，不代表全部历史皮肤。",
+    "remaining": [
+      "完整历史皮肤目录",
+      "动作片段起止与触发条件",
+      "精确首发日期与地区差异"
+    ]
+  },
+  "skins": [
+    {
+      "id": "cod-mwii-slaughter-king",
+      "game": "call-of-duty",
+      "name": "战斗刀 · Slaughter King",
+      "englishName": "Combat Knife — Slaughter King",
+      "weaponId": "cod-mwii-combat-knife",
+      "weaponName": "Combat Knife",
+      "weaponEnglishName": "Combat Knife",
+      "weaponType": "melee",
+      "category": "近战武器",
+      "rarity": {
+        "id": "",
+        "name": "",
+        "color": "#a24a40"
+      },
+      "description": "Modern Warfare II / Warzone 2 的 21 Savage 捆绑包近战蓝图。官方公告确认名称；目录图由 GamesAtlas 提供，专属检视录像尚待补齐。",
+      "sourceId": "cod-mwii-slaughter-king",
+      "sourceUrl": "https://www.callofduty.com/blog/2023/08/call-of-duty-modern-warfare-II-season-05-reloaded-multiplayer-DMZ-content-drop",
+      "sourceName": "Call of Duty 官方公告 / GamesAtlas",
+      "region": "国际服",
+      "gameTitle": "Modern Warfare II / Warzone 2",
+      "firstSeenAt": "2026-11-02",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "资料发现时间与官方投稿日期单列；未据此推定精确首发日期或当前可获取状态。",
+      "publicationStatus": "ready",
+      "reviewedAt": "2026-11-02",
+      "chromas": [],
+      "levels": [],
+      "media": [],
+      "tags": [
+        "端游",
+        "蓝图",
+        "21 Savage"
+      ],
+      "image": {
+        "url": "assets/weapon-skins/curated/cod-slaughter-king-render.webp",
+        "sourcePageUrl": "https://www.gamesatlas.com/cod-warzone-2-blueprints/modern-warfare-2/slaughter-king",
+        "assetSourceUrl": "https://www.gamesatlas.com/images/jch-optimize/ng/images_cod-modern-warfare-2_blueprints_Slaughter-King.webp",
+        "sourceType": "game_asset",
+        "provider": "GamesAtlas",
+        "kind": "render",
+        "caption": "Slaughter King 刀具游戏资源图，由社区目录 GamesAtlas 提供；未标为官方宣传图。",
+        "width": 1280,
+        "height": 720,
+        "sha256": "e5300aa8135a78327e0171acbffa70c5b291643f7d77d4ea215b63c10c6ef884",
+        "retrievedAt": "2026-11-02"
+      },
+      "publishedDate": "2023-08-28"
+    }
+  ]
+}

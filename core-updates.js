@@ -4,7 +4,7 @@ const coreUpdateCategories = {
   traversal: '移动与转点', economy_loot: '资源与经济', revive_teamplay: '救援与返场',
   combat_rules: '战斗规则', in_match_usability: '局内操作与信息'
 };
-const contentTypeLabels = { all: '全部资料', mode: '模式案例', core_update: '基础更新', item: '主题道具' };
+const contentTypeLabels = { all: '全部资料', mode: '模式案例', core_update: '基础更新', item: '主题道具', skin: '武器外观' };
 function isCoreUpdate(entry) { return entry.contentKind === 'core_update'; }
 function getContentTypeLabel(entry) { return isCoreUpdate(entry) ? '基础更新' : entry.kind === 'modes' ? '模式案例' : kindLabels[entry.kind]; }
 function getCoreUpdateTiming(entry) {
@@ -40,6 +40,7 @@ function summarizeLibrary(entries) {
   return entries.length + ' 份资料 · ' + (entries.length - updates) + ' 个模式案例 · ' + updates + ' 条基础更新';
 }
 function updateMatchesContentFilters(entry) {
+  if (state.contentFilter === 'skin' && !isWeaponSkin(entry)) return false;
   if (state.contentFilter === 'item' && !isTacticalItem(entry)) return false;
   if (state.contentFilter === 'core_update' && !isCoreUpdate(entry)) return false;
   if (state.contentFilter === 'mode' && (isCoreUpdate(entry) || entry.kind !== 'modes')) return false;
@@ -48,14 +49,18 @@ function updateMatchesContentFilters(entry) {
 }
 function renderSharedFilters() {
   const modeView = state.view === 'modes';
-  document.querySelector('#sharedFilters').hidden = ['maps', 'items'].includes(state.view) || (state.view === 'modes' && state.modeView === 'patches');
+  const objectCollection = state.view === 'collection' && ['skin', 'item'].includes(state.contentFilter);
+  document.querySelector('#sharedFilters').hidden = ['maps', 'items', 'skins'].includes(state.view) || (state.view === 'modes' && state.modeView === 'patches');
   document.querySelector('#itemContentOption').hidden = state.view !== 'collection';
+  document.querySelector('#skinContentOption').hidden = state.view !== 'collection';
   document.querySelector('#contentTypeField').hidden = !modeView && state.view !== 'collection';
   document.querySelector('#updateCategoryField').hidden = state.contentFilter !== 'core_update';
   document.querySelector('#contentTypeSelect').value = state.contentFilter;
   document.querySelector('#updateCategorySelect').value = state.updateCategory;
   document.querySelector('#libraryViewControls').hidden = modeView && state.modeView !== 'library';
-  document.querySelector('#typeField').hidden = state.view === 'mechanics' || state.contentFilter === 'core_update';
+  document.querySelector('#gameplayFilters').closest('.gameplay-filter-row').hidden = objectCollection;
+  document.querySelector('#topicSelect').closest('.select-field').hidden = objectCollection;
+  document.querySelector('#typeField').hidden = objectCollection || state.view === 'mechanics' || state.contentFilter === 'core_update';
   document.querySelectorAll('[data-feed]').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.feed === state.feedFilter)));
   renderGameplayFilters();
   renderGameFilters();

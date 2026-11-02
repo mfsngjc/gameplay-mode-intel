@@ -1,0 +1,586 @@
+{
+  "schemaVersion": 1,
+  "game": "delta-force",
+  "updatedAt": "2026-11-02T15:20:48.906015+00:00",
+  "source": {
+    "name": "官方资料与经复核的原作者媒体选集",
+    "url": "https://www.bilibili.com/video/BV11jdbB8EsB/",
+    "reviewedAt": "2026-11-02"
+  },
+  "coverage": {
+    "status": "partial",
+    "catalogScope": "curated_featured",
+    "complete": false,
+    "entryCount": 8,
+    "entriesWithVideo": 8,
+    "liveMetadataRefreshed": true,
+    "note": "首批精选资料，不代表本游戏全部历史皮肤。动作说明、视频身份与实际片段核验分别记录；未将首次采集时间或预告日期当作实际上线日期。",
+    "remaining": [
+      "完整历史皮肤目录",
+      "动作片段起止与触发条件",
+      "精确首发日期与地区差异"
+    ]
+  },
+  "skins": [
+    {
+      "id": "delta-create",
+      "game": "delta-force",
+      "name": "造物纪元",
+      "englishName": "",
+      "weaponId": "delta-枪械",
+      "weaponName": "枪械",
+      "weaponEnglishName": "枪械",
+      "weaponType": "gun",
+      "category": "枪械",
+      "rarity": {
+        "id": "典藏",
+        "name": "典藏",
+        "color": "#a24a40"
+      },
+      "description": "枪身内的打印机器人在常规检视时解构并生成枪身样式；官方说明该变化不改变配件效果。原稿未注明适配枪型。",
+      "sourceId": "BV11jdbB8EsB",
+      "sourceUrl": "https://www.bilibili.com/video/BV11jdbB8EsB/",
+      "sourceName": "三角洲行动官方 · 哔哩哔哩",
+      "region": "国服",
+      "gameTitle": "",
+      "firstSeenAt": "2026-11-02",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "资料发现时间与官方投稿日期单列；未据此推定精确首发日期或当前可获取状态。",
+      "publicationStatus": "ready",
+      "reviewedAt": "2026-11-02",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "bilibili-BV11jdbB8EsB",
+          "kind": "showcase",
+          "provider": "bilibili",
+          "url": "https://www.bilibili.com/video/BV11jdbB8EsB/",
+          "videoId": "BV11jdbB8EsB",
+          "title": "「造物纪元」全新典藏外观实录 | 以数据之源 铸森罗万象",
+          "sourcePageUrl": "https://www.bilibili.com/video/BV11jdbB8EsB/",
+          "sourceName": "三角洲行动官方",
+          "sourceType": "official",
+          "reviewStatus": "source_confirmed",
+          "reviewNote": "已核官方账号及原稿动作说明；尚未逐帧标注片段起止与触发条件。",
+          "contains": [
+            "inspect"
+          ],
+          "duration": 75,
+          "reviewedAt": "2026-11-02",
+          "rightsNote": "源稿标注未经作者授权禁止转载；通过原站播放器观看，保留作者与来源。"
+        }
+      ],
+      "tags": [
+        "典藏",
+        "inspect"
+      ],
+      "publishedDate": "2026-04-16",
+      "image": {
+        "url": "assets/weapon-skins/curated/delta-create.jpg",
+        "sourcePageUrl": "https://www.bilibili.com/video/BV11jdbB8EsB/",
+        "assetSourceUrl": "https://i1.hdslb.com/bfs/archive/e4a8c6b4c7641c436cac14e81de73b8d1da123b8.jpg",
+        "sourceType": "official",
+        "provider": "三角洲行动官方",
+        "kind": "poster",
+        "caption": "官方实录原始封面；不作为独立游戏内渲染图。",
+        "width": 1920,
+        "height": 1080,
+        "sha256": "90b22ab42e4516b867856cd436854d27ce5e737e02537e3b6cadc1de0fc5b9b3",
+        "retrievedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "delta-polaris",
+      "game": "delta-force",
+      "name": "北极星",
+      "englishName": "",
+      "weaponId": "delta-弹簧刀",
+      "weaponName": "弹簧刀",
+      "weaponEnglishName": "弹簧刀",
+      "weaponType": "melee",
+      "category": "近战武器",
+      "rarity": {
+        "id": "传说",
+        "name": "传说",
+        "color": "#a24a40"
+      },
+      "description": "弹簧刀外观；官方实录说明包括专属检视、挥刀与收刀动作。",
+      "sourceId": "BV1gkgSzPEvX",
+      "sourceUrl": "https://www.bilibili.com/video/BV1gkgSzPEvX/",
+      "sourceName": "三角洲行动官方 · 哔哩哔哩",
+      "region": "国服",
+      "gameTitle": "",
+      "firstSeenAt": "2026-11-02",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "资料发现时间与官方投稿日期单列；未据此推定精确首发日期或当前可获取状态。",
+      "publicationStatus": "ready",
+      "reviewedAt": "2026-11-02",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "bilibili-BV1gkgSzPEvX",
+          "kind": "showcase",
+          "provider": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1gkgSzPEvX/",
+          "videoId": "BV1gkgSzPEvX",
+          "title": "“我，即是哈夫克的利刃！” | 传说近战武器【北极星】实录",
+          "sourcePageUrl": "https://www.bilibili.com/video/BV1gkgSzPEvX/",
+          "sourceName": "三角洲行动官方",
+          "sourceType": "official",
+          "reviewStatus": "source_confirmed",
+          "reviewNote": "已核官方账号及原稿动作说明；尚未逐帧标注片段起止与触发条件。",
+          "contains": [
+            "inspect",
+            "attack",
+            "unequip"
+          ],
+          "duration": 59,
+          "reviewedAt": "2026-11-02",
+          "rightsNote": "源稿标注未经作者授权禁止转载；通过原站播放器观看，保留作者与来源。"
+        }
+      ],
+      "tags": [
+        "传说",
+        "inspect",
+        "attack",
+        "unequip"
+      ],
+      "publishedDate": "2025-07-02",
+      "image": {
+        "url": "assets/weapon-skins/curated/delta-polaris.jpg",
+        "sourcePageUrl": "https://www.bilibili.com/video/BV1gkgSzPEvX/",
+        "assetSourceUrl": "https://i1.hdslb.com/bfs/archive/9d55da3b9b1866426ee6c8b6d375baa831683de4.jpg",
+        "sourceType": "official",
+        "provider": "三角洲行动官方",
+        "kind": "poster",
+        "caption": "官方实录原始封面；不作为独立游戏内渲染图。",
+        "width": 1920,
+        "height": 1080,
+        "sha256": "85c182ab7f4db386ad8264f97b54a8fbfba60fde1eb0d05cfc21b47a29e5ab8e",
+        "retrievedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "delta-executioner",
+      "game": "delta-force",
+      "name": "处刑者",
+      "englishName": "",
+      "weaponId": "delta-近战武器",
+      "weaponName": "近战武器",
+      "weaponEnglishName": "近战武器",
+      "weaponType": "melee",
+      "category": "近战武器",
+      "rarity": {
+        "id": "",
+        "name": "",
+        "color": "#a24a40"
+      },
+      "description": "可分四阶段升级的近战外观；官方说明可逐步解锁切出、检视、攻击动作与外观形态。各阶段动作尚未逐段标注。",
+      "sourceId": "BV1DNzZBkEiv",
+      "sourceUrl": "https://www.bilibili.com/video/BV1DNzZBkEiv/",
+      "sourceName": "三角洲行动官方 · 哔哩哔哩",
+      "region": "国服",
+      "gameTitle": "",
+      "firstSeenAt": "2026-11-02",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "资料发现时间与官方投稿日期单列；未据此推定精确首发日期或当前可获取状态。",
+      "publicationStatus": "ready",
+      "reviewedAt": "2026-11-02",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "bilibili-BV1DNzZBkEiv",
+          "kind": "showcase",
+          "provider": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1DNzZBkEiv/",
+          "videoId": "BV1DNzZBkEiv",
+          "title": "【处刑者】全新近战武器实录",
+          "sourcePageUrl": "https://www.bilibili.com/video/BV1DNzZBkEiv/",
+          "sourceName": "三角洲行动官方",
+          "sourceType": "official",
+          "reviewStatus": "source_confirmed",
+          "reviewNote": "已核官方账号及原稿动作说明；尚未逐帧标注片段起止与触发条件。",
+          "contains": [
+            "equip",
+            "inspect",
+            "attack"
+          ],
+          "duration": 35,
+          "reviewedAt": "2026-11-02",
+          "rightsNote": "源稿标注未经作者授权禁止转载；通过原站播放器观看，保留作者与来源。"
+        }
+      ],
+      "tags": [
+        "equip",
+        "inspect",
+        "attack"
+      ],
+      "publishedDate": "2026-01-29",
+      "image": {
+        "url": "assets/weapon-skins/curated/delta-executioner.jpg",
+        "sourcePageUrl": "https://www.bilibili.com/video/BV1DNzZBkEiv/",
+        "assetSourceUrl": "https://i0.hdslb.com/bfs/archive/e7f2d22d9005b287f5185ef0b6eb2972572fb1bd.jpg",
+        "sourceType": "official",
+        "provider": "三角洲行动官方",
+        "kind": "poster",
+        "caption": "官方实录原始封面；不作为独立游戏内渲染图。",
+        "width": 1920,
+        "height": 1080,
+        "sha256": "9160d793f49c7e1b603b533efd1888545b9f1c962ee6c092492e04b04f79bd25",
+        "retrievedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "delta-dirge",
+      "game": "delta-force",
+      "name": "挽歌",
+      "englishName": "",
+      "weaponId": "delta-反曲刀",
+      "weaponName": "反曲刀",
+      "weaponEnglishName": "反曲刀",
+      "weaponType": "melee",
+      "category": "近战武器",
+      "rarity": {
+        "id": "传说",
+        "name": "传说",
+        "color": "#a24a40"
+      },
+      "description": "反曲刀外观；官方说明其具有独立的检视效果。",
+      "sourceId": "BV1xV7K6zEZS",
+      "sourceUrl": "https://www.bilibili.com/video/BV1xV7K6zEZS/",
+      "sourceName": "三角洲行动官方 · 哔哩哔哩",
+      "region": "国服",
+      "gameTitle": "",
+      "firstSeenAt": "2026-11-02",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "资料发现时间与官方投稿日期单列；未据此推定精确首发日期或当前可获取状态。",
+      "publicationStatus": "ready",
+      "reviewedAt": "2026-11-02",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "bilibili-BV1xV7K6zEZS",
+          "kind": "showcase",
+          "provider": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1xV7K6zEZS/",
+          "videoId": "BV1xV7K6zEZS",
+          "title": "【挽歌】传说近战武器实录 | 属于野兽的咏叹调，献给猎物的安魂曲。",
+          "sourcePageUrl": "https://www.bilibili.com/video/BV1xV7K6zEZS/",
+          "sourceName": "三角洲行动官方",
+          "sourceType": "official",
+          "reviewStatus": "source_confirmed",
+          "reviewNote": "已核官方账号及原稿动作说明；尚未逐帧标注片段起止与触发条件。",
+          "contains": [
+            "inspect"
+          ],
+          "duration": 72,
+          "reviewedAt": "2026-11-02",
+          "rightsNote": "源稿标注未经作者授权禁止转载；通过原站播放器观看，保留作者与来源。"
+        }
+      ],
+      "tags": [
+        "传说",
+        "inspect"
+      ],
+      "publishedDate": "2026-06-22",
+      "image": {
+        "url": "assets/weapon-skins/curated/delta-dirge.jpg",
+        "sourcePageUrl": "https://www.bilibili.com/video/BV1xV7K6zEZS/",
+        "assetSourceUrl": "https://i2.hdslb.com/bfs/archive/da83c15280c73c30cbd1b5aab6b37524695fc7ca.jpg",
+        "sourceType": "official",
+        "provider": "三角洲行动官方",
+        "kind": "poster",
+        "caption": "官方实录原始封面；不作为独立游戏内渲染图。",
+        "width": 1920,
+        "height": 1080,
+        "sha256": "247bfc4ece72ca2103a3eb7415f3606201d5ac3920c8eb5b409313d43751627e",
+        "retrievedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "delta-sea",
+      "game": "delta-force",
+      "name": "黑海",
+      "englishName": "",
+      "weaponId": "delta-战术斧",
+      "weaponName": "战术斧",
+      "weaponEnglishName": "战术斧",
+      "weaponType": "melee",
+      "category": "近战武器",
+      "rarity": {
+        "id": "传说",
+        "name": "传说",
+        "color": "#a24a40"
+      },
+      "description": "以深海为主题的战术斧；官方说明包括专属检视、多种攻击与收刀动作。",
+      "sourceId": "BV15pojYHE6i",
+      "sourceUrl": "https://www.bilibili.com/video/BV15pojYHE6i/",
+      "sourceName": "三角洲行动官方 · 哔哩哔哩",
+      "region": "国服",
+      "gameTitle": "",
+      "firstSeenAt": "2026-11-02",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "资料发现时间与官方投稿日期单列；未据此推定精确首发日期或当前可获取状态。",
+      "publicationStatus": "ready",
+      "reviewedAt": "2026-11-02",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "bilibili-BV15pojYHE6i",
+          "kind": "showcase",
+          "provider": "bilibili",
+          "url": "https://www.bilibili.com/video/BV15pojYHE6i/",
+          "videoId": "BV15pojYHE6i",
+          "title": "【黑海】传说近战武器实录 | 直面深海，直面恐惧",
+          "sourcePageUrl": "https://www.bilibili.com/video/BV15pojYHE6i/",
+          "sourceName": "三角洲行动官方",
+          "sourceType": "official",
+          "reviewStatus": "source_confirmed",
+          "reviewNote": "已核官方账号及原稿动作说明；尚未逐帧标注片段起止与触发条件。",
+          "contains": [
+            "inspect",
+            "attack",
+            "unequip"
+          ],
+          "duration": 43,
+          "reviewedAt": "2026-11-02",
+          "rightsNote": "源稿标注未经作者授权禁止转载；通过原站播放器观看，保留作者与来源。"
+        }
+      ],
+      "tags": [
+        "传说",
+        "inspect",
+        "attack",
+        "unequip"
+      ],
+      "publishedDate": "2025-04-14",
+      "image": {
+        "url": "assets/weapon-skins/curated/delta-sea.jpg",
+        "sourcePageUrl": "https://www.bilibili.com/video/BV15pojYHE6i/",
+        "assetSourceUrl": "https://i1.hdslb.com/bfs/archive/de844b12958bcde105ade882f7b61f9e38b5f594.jpg",
+        "sourceType": "official",
+        "provider": "三角洲行动官方",
+        "kind": "poster",
+        "caption": "官方实录原始封面；不作为独立游戏内渲染图。",
+        "width": 1920,
+        "height": 1080,
+        "sha256": "0ab979c5d7dcf607538bf93d616729f4c1f4cfea71fae8bd444810f29d223a08",
+        "retrievedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "delta-darkstar",
+      "game": "delta-force",
+      "name": "暗星",
+      "englishName": "",
+      "weaponId": "delta-排障刀",
+      "weaponName": "排障刀",
+      "weaponEnglishName": "排障刀",
+      "weaponType": "melee",
+      "category": "近战武器",
+      "rarity": {
+        "id": "传说",
+        "name": "传说",
+        "color": "#a24a40"
+      },
+      "description": "排障刀外观。官方实录与同名捆绑包资料已关联；原稿未逐项说明动作差异，未标为已核验检视。",
+      "sourceId": "BV1ywzSBkESs",
+      "sourceUrl": "https://www.bilibili.com/video/BV1ywzSBkESs/",
+      "sourceName": "三角洲行动官方 · 哔哩哔哩",
+      "region": "国服",
+      "gameTitle": "",
+      "firstSeenAt": "2026-11-02",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "资料发现时间与官方投稿日期单列；未据此推定精确首发日期或当前可获取状态。",
+      "publicationStatus": "ready",
+      "reviewedAt": "2026-11-02",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "bilibili-BV1ywzSBkESs",
+          "kind": "showcase",
+          "provider": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1ywzSBkESs/",
+          "videoId": "BV1ywzSBkESs",
+          "title": "【暗星】传说近战武器实录 | 始于暗星 归于湮灭",
+          "sourcePageUrl": "https://www.bilibili.com/video/BV1ywzSBkESs/",
+          "sourceName": "三角洲行动官方",
+          "sourceType": "official",
+          "reviewStatus": "metadata_only",
+          "reviewNote": "已核官方账号及原稿动作说明；尚未逐帧标注片段起止与触发条件。",
+          "contains": [],
+          "duration": 55,
+          "reviewedAt": "2026-11-02",
+          "rightsNote": "源稿标注未经作者授权禁止转载；通过原站播放器观看，保留作者与来源。"
+        }
+      ],
+      "tags": [
+        "传说"
+      ],
+      "publishedDate": "2026-01-25",
+      "image": {
+        "url": "assets/weapon-skins/curated/delta-darkstar.jpg",
+        "sourcePageUrl": "https://www.bilibili.com/video/BV1ywzSBkESs/",
+        "assetSourceUrl": "https://i2.hdslb.com/bfs/archive/454c587a8e9a637ad0f22d9894d6d6fa3a562704.jpg",
+        "sourceType": "official",
+        "provider": "三角洲行动官方",
+        "kind": "poster",
+        "caption": "官方实录原始封面；不作为独立游戏内渲染图。",
+        "width": 1920,
+        "height": 1080,
+        "sha256": "c0598c96cfb0d5eaae65a16836e9dafeee6d90233ceba503e51581ba134eb2f6",
+        "retrievedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "delta-starfall",
+      "game": "delta-force",
+      "name": "坠星者",
+      "englishName": "",
+      "weaponId": "delta-短刃",
+      "weaponName": "短刃",
+      "weaponEnglishName": "短刃",
+      "weaponType": "melee",
+      "category": "近战武器",
+      "rarity": {
+        "id": "传说",
+        "name": "传说",
+        "color": "#a24a40"
+      },
+      "description": "短刃外观。官方实录已关联；挥刀动作以原片为准，尚未单独标注检视时间段。",
+      "sourceId": "BV1btQGBVEbT",
+      "sourceUrl": "https://www.bilibili.com/video/BV1btQGBVEbT/",
+      "sourceName": "三角洲行动官方 · 哔哩哔哩",
+      "region": "国服",
+      "gameTitle": "",
+      "firstSeenAt": "2026-11-02",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "资料发现时间与官方投稿日期单列；未据此推定精确首发日期或当前可获取状态。",
+      "publicationStatus": "ready",
+      "reviewedAt": "2026-11-02",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "bilibili-BV1btQGBVEbT",
+          "kind": "showcase",
+          "provider": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1btQGBVEbT/",
+          "videoId": "BV1btQGBVEbT",
+          "title": "「坠星者」传说近战武器实录 | 坠星铸刃 锐不可当",
+          "sourcePageUrl": "https://www.bilibili.com/video/BV1btQGBVEbT/",
+          "sourceName": "三角洲行动官方",
+          "sourceType": "official",
+          "reviewStatus": "source_confirmed",
+          "reviewNote": "已核官方账号及原稿动作说明；尚未逐帧标注片段起止与触发条件。",
+          "contains": [
+            "attack"
+          ],
+          "duration": 66,
+          "reviewedAt": "2026-11-02",
+          "rightsNote": "源稿标注未经作者授权禁止转载；通过原站播放器观看，保留作者与来源。"
+        }
+      ],
+      "tags": [
+        "传说",
+        "attack"
+      ],
+      "publishedDate": "2026-04-14",
+      "image": {
+        "url": "assets/weapon-skins/curated/delta-starfall.jpg",
+        "sourcePageUrl": "https://www.bilibili.com/video/BV1btQGBVEbT/",
+        "assetSourceUrl": "https://i2.hdslb.com/bfs/archive/26ffbd917f2c144b634a9650bb2d5830e79c8e36.jpg",
+        "sourceType": "official",
+        "provider": "三角洲行动官方",
+        "kind": "poster",
+        "caption": "官方实录原始封面；不作为独立游戏内渲染图。",
+        "width": 1920,
+        "height": 1080,
+        "sha256": "fc6dd72d318d8456ae76cc25f251da65ca54ec8c026a1bce301394b64414c34c",
+        "retrievedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "delta-bounty",
+      "game": "delta-force",
+      "name": "AS Val · 悬赏令",
+      "englishName": "",
+      "weaponId": "delta-AS Val",
+      "weaponName": "AS Val",
+      "weaponEnglishName": "AS Val",
+      "weaponType": "gun",
+      "category": "突击步枪",
+      "rarity": {
+        "id": "典藏",
+        "name": "典藏",
+        "color": "#a24a40"
+      },
+      "description": "AS Val 典藏外观；官方说明有多套检视动作，检视图案随击败干员数量变化，具体阶段阈值未在源稿中给出。",
+      "sourceId": "BV1RPCCBDETf",
+      "sourceUrl": "https://www.bilibili.com/video/BV1RPCCBDETf/",
+      "sourceName": "三角洲行动官方 · 哔哩哔哩",
+      "region": "国服",
+      "gameTitle": "",
+      "firstSeenAt": "2026-11-02",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "资料发现时间与官方投稿日期单列；未据此推定精确首发日期或当前可获取状态。",
+      "publicationStatus": "ready",
+      "reviewedAt": "2026-11-02",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "bilibili-BV1RPCCBDETf",
+          "kind": "showcase",
+          "provider": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1RPCCBDETf/",
+          "videoId": "BV1RPCCBDETf",
+          "title": "【悬赏令】典藏外观实录 | 赏金终局，枪火为印！",
+          "sourcePageUrl": "https://www.bilibili.com/video/BV1RPCCBDETf/",
+          "sourceName": "三角洲行动官方",
+          "sourceType": "official",
+          "reviewStatus": "source_confirmed",
+          "reviewNote": "已核官方账号及原稿动作说明；尚未逐帧标注片段起止与触发条件。",
+          "contains": [
+            "inspect"
+          ],
+          "duration": 70,
+          "reviewedAt": "2026-11-02",
+          "rightsNote": "源稿标注未经作者授权禁止转载；通过原站播放器观看，保留作者与来源。"
+        }
+      ],
+      "tags": [
+        "典藏",
+        "inspect"
+      ],
+      "publishedDate": "2025-11-15",
+      "image": {
+        "url": "assets/weapon-skins/curated/delta-bounty.jpg",
+        "sourcePageUrl": "https://www.bilibili.com/video/BV1RPCCBDETf/",
+        "assetSourceUrl": "https://i1.hdslb.com/bfs/archive/1e897af1423ef65e78509a2848256a57ce7d0f10.jpg",
+        "sourceType": "official",
+        "provider": "三角洲行动官方",
+        "kind": "poster",
+        "caption": "官方实录原始封面；不作为独立游戏内渲染图。",
+        "width": 1920,
+        "height": 1080,
+        "sha256": "95bab81f81d748576ed7c0c4623e9bfe9e9b85903c26a3d9dbca862584094b22",
+        "retrievedAt": "2026-11-02"
+      }
+    }
+  ]
+}

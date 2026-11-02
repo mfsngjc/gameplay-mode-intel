@@ -124,7 +124,7 @@ function element(selector) {
 const context = vm.createContext({ assert, catalogue, updates, modes, URL, URLSearchParams,
   document: { querySelector: element, querySelectorAll: () => [], baseURI: 'http://127.0.0.1:4173/index.html' },
   localStorage: { getItem: () => '[]', setItem() {} }, location: { search: '' } });
-vm.runInContext(['item-demos.js', 'core-updates.js', 'tactical-items.js', 'app.js', 'ff-patches.js'].map(read).join('\n') +
+vm.runInContext(['item-demos.js', 'weapon-skins.js', 'core-updates.js', 'tactical-items.js', 'app.js', 'ff-patches.js'].map(read).join('\n') +
   '\n' + read('workspace.js').replace(/initWorkspace\(\);\s*$/, ''), context);
 vm.runInContext(String.raw`
   const legacy = catalogue.items.find((entry) => entry.legacyIds.length);

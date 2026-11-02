@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles.css?v=core-updates-20260919-r9">
   <link rel="stylesheet" href="workspace.css?v=20261021-card-size-r3">
   <link rel="stylesheet" href="tactical-items.css?v=20261025-demos-r2">
+  <link rel="stylesheet" href="weapon-skins.css?v=20261103-r2">
   <link rel="stylesheet" href="ugc.css?v=20261021-platform-nav-r2">
   <link rel="stylesheet" href="card-view.css?v=20261021-r3">
 </head>
@@ -153,6 +154,7 @@
       <a class="nav-item is-active" href="#modes" data-view="modes" aria-current="page"><svg><use href="#ui-layers"></use></svg><span>玩法模式</span><span class="nav-count" id="navModeCount">—</span></a>
       <a class="nav-item" href="#maps" data-view="maps"><svg><use href="#ui-map"></use></svg><span>地图</span><span class="nav-count" id="navMapCount">—</span></a>
       <a class="nav-item" href="#items" data-view="items"><svg><use href="#ui-scan-line"></use></svg><span>主题道具</span><span class="nav-count" id="navItemCount">—</span></a>
+      <a class="nav-item" href="#skins" data-view="skins"><svg><use href="#ui-layers"></use></svg><span>武器外观</span><span class="nav-count" id="navSkinCount">—</span></a>
       <a class="nav-item" href="#ugc" data-view="ugc"><svg><use href="#ui-radio"></use></svg><span>UGC 榜单</span><span class="nav-count" id="navUgcCount">—</span></a>
       <a class="nav-item local-preview-nav" href="#mechanics" data-view="mechanics" hidden><svg><use href="#ui-workflow"></use></svg><span>机制库预览</span><span class="nav-count" id="navMechanicsCount">—</span></a>
     </nav>
@@ -178,6 +180,7 @@
         <button class="button subtle" id="exportToggle" aria-label="导出资料" aria-expanded="false" aria-controls="exportOptions"><svg><use href="#ui-download"></use></svg><span>导出资料</span></button>
         <div class="dropdown-menu" id="exportOptions" hidden>
           <button id="exportItemsMarkdown" type="button" hidden>当前道具筛选 → Markdown</button>
+          <button id="exportSkinsMarkdown" type="button" hidden>当前外观筛选 → Markdown</button>
           <button id="exportCanvas" type="button">当前筛选 → Obsidian Canvas</button>
           <button id="exportCollected" type="button">我的收藏 → Markdown</button>
         </div>
@@ -207,7 +210,7 @@
           <div class="game-filters" id="gameFilters" aria-label="按游戏筛选"></div>
           <div class="filter-bottom">
             <div class="filter-fields">
-              <div class="select-field" id="contentTypeField"><label for="contentTypeSelect">资料类型</label><select id="contentTypeSelect"><option value="all">全部资料</option><option value="mode">模式案例</option><option value="core_update">基础更新</option><option value="item" id="itemContentOption" hidden>主题道具</option></select></div>
+              <div class="select-field" id="contentTypeField"><label for="contentTypeSelect">资料类型</label><select id="contentTypeSelect"><option value="all">全部资料</option><option value="mode">模式案例</option><option value="core_update">基础更新</option><option value="item" id="itemContentOption" hidden>主题道具</option><option value="skin" id="skinContentOption" hidden>武器外观</option></select></div>
               <div class="select-field" id="updateCategoryField" hidden><label for="updateCategorySelect">更新类别</label><select id="updateCategorySelect"><option value="all">全部更新类别</option></select></div>
               <div class="select-field"><label for="topicSelect">设计主题</label><select id="topicSelect" aria-label="设计主题"><option value="all">全部主题</option></select></div>
               <div class="select-field" id="typeField"><label for="typeSelect">模式标签</label><select id="typeSelect" aria-label="模式标签"><option value="all">全部标签</option></select></div>
@@ -259,6 +262,29 @@
         <p id="itemFilterSummary" class="item-filter-summary" hidden></p>
         <div id="itemGrid" class="item-grid"></div>
         <div class="results-footer"><span id="itemShownCount"></span><button type="button" class="button" id="loadMoreItems">加载更多 <svg><use href="#ui-arrow-right"></use></svg></button></div>
+      </section>
+
+      <section id="skinsSection" aria-label="武器外观与检视资料" hidden>
+        <div class="weapon-overview">
+          <div><small>WEAPON COSMETICS / 武器外观</small><h2>枪械、刀与第一人称动作</h2><p>查找外观、炫彩与升级效果，观看检视和动作预览。</p></div>
+          <dl id="skinStats" class="weapon-stats"></dl>
+        </div>
+        <div class="weapon-filter-panel">
+          <div id="skinGameFilters" class="weapon-game-filters" role="group" aria-label="按游戏筛选武器外观"></div>
+          <div class="weapon-controls">
+            <div class="select-field"><label for="skinTypeSelect">武器类型</label><select id="skinTypeSelect"><option value="all">枪械与近战</option></select></div>
+            <div class="select-field"><label for="skinWeaponSelect">基础武器</label><select id="skinWeaponSelect"><option value="all">全部武器</option></select></div>
+            <div class="select-field"><label for="skinRaritySelect">品质</label><select id="skinRaritySelect"><option value="all">全部品质</option></select></div>
+            <div class="select-field"><label for="skinMediaSelect">展示资料</label><select id="skinMediaSelect"><option value="all">全部资料</option><option value="video">含视频</option><option value="inspect">含检视资料</option><option value="image">外观图目录</option></select></div>
+            <div class="weapon-layout-controls"><label class="sr-only" for="skinSortSelect">外观排序</label><select id="skinSortSelect"><option value="featured">推荐浏览</option><option value="name">按名称排序</option><option value="weapon">按武器排序</option><option value="collected">收藏优先</option></select><div class="card-size-switch" role="group" aria-label="卡片大小"><button type="button" class="card-size-button" data-card-size="large" aria-pressed="false">大图</button><button type="button" class="card-size-button" data-card-size="small" aria-pressed="true">小图</button></div></div>
+          </div>
+        </div>
+        <p id="skinScopeNote" class="weapon-scope-note"></p>
+        <p id="skinLoadStatus" class="weapon-load-status" role="status" hidden></p>
+        <div class="results-heading weapon-results-heading"><div><h2>武器外观目录</h2><span id="skinResultCount" role="status" aria-live="polite"></span></div><div class="weapon-results-actions"><button type="button" class="button subtle" data-skin-reset>重置筛选</button><button type="button" class="button subtle" id="downloadSkinsList">导出清单 <svg><use href="#ui-download"></use></svg></button></div></div>
+        <p id="skinFilterSummary" class="weapon-filter-summary"></p>
+        <div id="skinGrid" class="weapon-grid" aria-busy="true"></div>
+        <div class="results-footer"><span id="skinShownCount"></span><button type="button" class="button" id="loadMoreSkins">加载更多 <svg><use href="#ui-arrow-right"></use></svg></button></div>
       </section>
 
       <section id="ugcSection" class="secondary-section" aria-label="UGC 创作榜单" hidden></section>
@@ -344,13 +370,14 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="card-view.js?v=20261021-r3"></script>
   <script src="item-demos.js?v=20261025-r2"></script>
-  <script src="core-updates.js?v=20261012-items"></script>
+  <script src="core-updates.js?v=20261102-skins-r1"></script>
   <script src="tactical-items.js?v=20261025-demos-r2"></script>
-  <script src="app.js?v=20261012-items"></script>
+  <script src="weapon-skins.js?v=20261103-r2"></script>
+  <script src="app.js?v=20261102-skins-r1"></script>
   <script src="maps.js?v=20261021-card-size-r3"></script>
   <script src="ff-patches.js?v=20261021-card-size-r3"></script>
   <script src="ugc.js?v=20261021-platform-nav-r2"></script>
   <script src="ugc-catalog.js?v=20261021-platform-nav-r2"></script>
-  <script src="workspace.js?v=20261025-demos-r2"></script>
+  <script src="workspace.js?v=20261103-skins-r2"></script>
 </body>
 </html>
