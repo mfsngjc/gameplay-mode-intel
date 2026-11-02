@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles.css?v=core-updates-20260919-r9">
   <link rel="stylesheet" href="workspace.css?v=20261021-card-size-r3">
   <link rel="stylesheet" href="tactical-items.css?v=20261025-demos-r2">
-  <link rel="stylesheet" href="weapon-skins.css?v=20261103-r3">
+  <link rel="stylesheet" href="weapon-skins.css?v=20261103-r4">
   <link rel="stylesheet" href="ugc.css?v=20261021-platform-nav-r2">
   <link rel="stylesheet" href="card-view.css?v=20261021-r3">
 </head>
@@ -273,6 +273,7 @@
           <div id="skinGameFilters" class="weapon-game-filters" role="group" aria-label="按游戏筛选武器外观"></div>
           <div class="weapon-controls">
             <div class="select-field"><label for="skinTypeSelect">武器类型</label><select id="skinTypeSelect"><option value="all">枪械与近战</option></select></div>
+            <div class="select-field" id="skinEditionField" hidden><label for="skinEditionSelect">所属作品</label><select id="skinEditionSelect"><option value="all">全部作品</option></select></div>
             <div class="select-field"><label for="skinWeaponSelect">基础武器</label><select id="skinWeaponSelect"><option value="all">全部武器</option></select></div>
             <div class="select-field"><label for="skinRaritySelect">品质</label><select id="skinRaritySelect"><option value="all">全部品质</option></select></div>
             <div class="select-field"><label for="skinMediaSelect">展示资料</label><select id="skinMediaSelect"><option value="all">全部资料</option><option value="video">含视频</option><option value="inspect">含检视资料</option><option value="image">外观图目录</option></select></div>
@@ -281,6 +282,7 @@
         </div>
         <p id="skinScopeNote" class="weapon-scope-note"></p>
         <p id="skinLoadStatus" class="weapon-load-status" role="status" hidden></p>
+        <div id="skinInspectionLibrary" hidden></div>
         <div class="results-heading weapon-results-heading"><div><h2>武器外观目录</h2><span id="skinResultCount" role="status" aria-live="polite"></span></div><div class="weapon-results-actions"><button type="button" class="button subtle" data-skin-reset>重置筛选</button><button type="button" class="button subtle" id="downloadSkinsList">导出清单 <svg><use href="#ui-download"></use></svg></button></div></div>
         <p id="skinFilterSummary" class="weapon-filter-summary"></p>
         <div id="skinGrid" class="weapon-grid" aria-busy="true"></div>
@@ -372,7 +374,7 @@
   <script src="item-demos.js?v=20261025-r2"></script>
   <script src="core-updates.js?v=20261102-skins-r1"></script>
   <script src="tactical-items.js?v=20261025-demos-r2"></script>
-  <script src="weapon-skins.js?v=20261103-r3"></script>
+  <script src="weapon-skins.js?v=20261103-r4"></script>
   <script src="app.js?v=20261102-skins-r1"></script>
   <script src="maps.js?v=20261021-card-size-r3"></script>
   <script src="ff-patches.js?v=20261021-card-size-r3"></script>

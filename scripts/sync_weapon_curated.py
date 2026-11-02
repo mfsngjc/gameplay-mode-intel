@@ -249,7 +249,6 @@ def main() -> int:
     CACHE.mkdir(parents=True, exist_ok=True)
     ASSETS.mkdir(parents=True, exist_ok=True)
     if args.game == "apex":
-        import subprocess
         command = [sys.executable, str(ROOT / "scripts/sync_weapon_apex.py")]
         if args.offline:
             command.append("--offline")
@@ -258,6 +257,14 @@ def main() -> int:
     failures = []
     for game, build in jobs.items():
         if args.game and args.game != game:
+            continue
+        if game == "call-of-duty":
+            command = [sys.executable, str(ROOT / "scripts/sync_weapon_cod_pc.py")]
+            if args.offline:
+                command.append("--offline")
+            result = subprocess.call(command)
+            if result:
+                failures.append({"game": game, "error": "Dedicated PC blueprint sync failed", "previousSnapshotPreserved": True})
             continue
         path = DATA / (game + ".json")
         try:

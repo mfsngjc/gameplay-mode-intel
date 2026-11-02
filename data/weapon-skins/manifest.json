@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-02T18:11:03.573970Z",
-  "total": 12934,
+  "updatedAt": "2026-11-02T19:06:32Z",
+  "total": 15276,
   "games": [
     {
       "id": "valorant",
@@ -74,28 +74,108 @@
       "id": "call-of-duty",
       "name": "使命召唤",
       "url": "data/weapon-skins/call-of-duty.json",
-      "count": 1,
-      "meleeCount": 1,
-      "withVideoCount": 0,
+      "count": 2343,
+      "meleeCount": 135,
+      "withVideoCount": 2,
       "withAnimationCount": 0,
-      "updatedAt": "2026-11-02T15:20:50.608688+00:00",
+      "updatedAt": "2026-11-02T19:06:32Z",
       "coverage": {
         "status": "partial",
-        "catalogScope": "curated_featured",
+        "catalogScope": "observed_gamesatlas_cod_pc_blueprint_index",
         "complete": false,
-        "entryCount": 1,
-        "entriesWithVideo": 0,
-        "liveMetadataRefreshed": true,
-        "note": "端游精选资料；手游 CODM 已迁移为独立目录，不代表全部历史皮肤。",
+        "entryCount": 2343,
+        "entriesWithVideo": 2,
+        "note": "逐件读取GamesAtlas公开端游蓝图目录；未混入CODM。作品和基础武器分开，不重复计入Warzone继承使用。该站内容和图像仍有缺漏，不代表COD全历史或官方完整资源。",
         "remaining": [
-          "完整历史皮肤目录",
-          "动作片段起止与触发条件",
-          "精确首发日期与地区差异"
-        ]
+          "源缺失的基础武器字段与复用图片",
+          "2019及更早作品、Cold War/Vanguard等其他独立历史目录",
+          "全部专属检视与触发条件",
+          "蓝图准确首发日、国服与地区差异"
+        ],
+        "cataloguedCount": 2369,
+        "sourceBlueprintRows": 2369,
+        "sourceConfigObjectsExcluded": 1,
+        "gunCount": 2208,
+        "meleeCount": 135,
+        "pendingCount": 26,
+        "uniqueRemoteImagesChecked": 2506,
+        "detailPagesChecked": 181,
+        "perEdition": [
+          {
+            "edition": "modern-warfare-2",
+            "title": "Modern Warfare II",
+            "sourceRows": 714,
+            "catalogued": 714,
+            "ready": 693,
+            "guns": 677,
+            "melee": 16,
+            "pending": 21
+          },
+          {
+            "edition": "modern-warfare-3",
+            "title": "Modern Warfare III",
+            "sourceRows": 639,
+            "catalogued": 639,
+            "ready": 636,
+            "guns": 598,
+            "melee": 38,
+            "pending": 3
+          },
+          {
+            "edition": "black-ops-6",
+            "title": "Black Ops 6",
+            "sourceRows": 580,
+            "catalogued": 580,
+            "ready": 579,
+            "guns": 525,
+            "melee": 54,
+            "pending": 1
+          },
+          {
+            "edition": "black-ops-7",
+            "title": "Black Ops 7",
+            "sourceRows": 406,
+            "catalogued": 406,
+            "ready": 405,
+            "guns": 380,
+            "melee": 25,
+            "pending": 1
+          },
+          {
+            "edition": "modern-warfare-4",
+            "title": "Modern Warfare IV",
+            "sourceRows": 30,
+            "catalogued": 30,
+            "ready": 30,
+            "guns": 28,
+            "melee": 2,
+            "pending": 0
+          }
+        ],
+        "decodedRemoteImages": 2506,
+        "imageVerificationNote": "格式解码成功不等于单件身份通过；Logo占位和错用其他蓝图的图片继续pending。",
+        "pendingReasonCounts": {
+          "source_picture_belongs_to_different_blueprint": 3,
+          "base_weapon_or_class_unresolved": 2,
+          "generic_game_logo_placeholder": 21
+        },
+        "inspectionLibraryCount": 63,
+        "inspectionLinkedVideoCount": 2,
+        "withVideoCount": 2,
+        "withInspectCount": 2,
+        "mediaScope": "原作者特殊检视合集单独展示；只有交叉核实对应蓝图者关联至详情，未匹配的视频不重复计入皮肤数量。",
+        "weaponClassificationAudit": {
+          "baseGroupsChecked": 315,
+          "authoritativeBasePages": 17,
+          "unresolvedTypeConflicts": 0,
+          "unresolvedCategoryConflicts": 0
+        }
       },
       "source": {
-        "name": "官方资料与经复核的原作者媒体选集",
-        "url": "https://www.callofduty.com/blog/2023/08/call-of-duty-modern-warfare-II-season-05-reloaded-multiplayer-DMZ-content-drop"
+        "name": "GamesAtlas public PC blueprint catalogue",
+        "url": "https://www.gamesatlas.com/cod-warzone-2-blueprints/",
+        "retrievedAt": "2026-11-02T18:40:55.517724+00:00",
+        "type": "community"
       }
     },
     {

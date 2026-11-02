@@ -13,7 +13,9 @@ const WeaponSkins = (() => {
     { id: 'apex', name: 'Apex Legends', aliases: 'apex 英雄 传家宝', file: 'apex.json' }
   ];
   const archive = { entries: [], snapshots: new Map(), manifest: null, manifestPromise: null, promise: null, status: 'idle',
-    failures: [], game: 'all', type: 'all', weapon: 'all', rarity: 'all', media: 'all', sort: 'featured', limit: 24 };
+    failures: [], game: 'all', type: 'all', edition: 'all', weapon: 'all', rarity: 'all', media: 'all', sort: 'featured', limit: 24, inspectionOpen: false };
+  const editionNames = { 'modern-warfare-2': '现代战争 II / MWII', 'modern-warfare-3': '现代战争 III / MWIII',
+    'black-ops-6': '黑色行动 6 / BO6', 'black-ops-7': '黑色行动 7 / BO7', 'modern-warfare-4': '现代战争 4 / MW4' };
   const mediaKinds = { preview: '动作预览', showcase: '外观展示', inspect: '检视',
     equip: '切出 / 收起', reload: '换弹', fire: '开火效果', ads: '瞄准展示', finisher: '终结 / 消灭特效' };
   let detailState = null;
@@ -93,6 +95,7 @@ const WeaponSkins = (() => {
   function filterEntries(entries = archive.entries, filters = archive, query = state.query) {
     return entries.filter(entry => matchesQuery(entry, query) &&
       (filters.game === 'all' || entry.skinGame === filters.game) &&
+      (!filters.edition || filters.edition === 'all' || entry.gameEdition === filters.edition) &&
       (filters.type === 'all' || entry.weaponType === filters.type) &&
       (filters.weapon === 'all' || entry.weaponId === filters.weapon) &&
       (filters.rarity === 'all' || (entry.rarity?.id || entry.rarity?.name) === filters.rarity) &&
@@ -111,18 +114,19 @@ const WeaponSkins = (() => {
   }
   function hash(id) {
     const params = new URLSearchParams();
-    for (const key of ['game', 'type', 'weapon', 'rarity', 'media']) if (archive[key] !== 'all') params.set(key, archive[key]);
+    for (const key of ['game', 'type', 'edition', 'weapon', 'rarity', 'media']) if (archive[key] !== 'all') params.set(key, archive[key]);
     if (archive.sort !== 'featured') params.set('sort', archive.sort);
     if (state.query) params.set('q', state.query);
     if (id) params.set('entry', id);
     return '#skins' + (params.size ? '?' + params.toString() : '');
   }
   function reset() {
-    Object.assign(archive, { game: 'all', type: 'all', weapon: 'all', rarity: 'all', media: 'all', sort: 'featured', limit: 24 });
+    Object.assign(archive, { game: 'all', type: 'all', edition: 'all', weapon: 'all', rarity: 'all', media: 'all', sort: 'featured', limit: 24 });
   }
   function readRoute(params) {
     archive.game = games.some(game => game.id === params.get('game')) ? params.get('game') : 'all';
     archive.type = ['gun', 'melee'].includes(params.get('type')) ? params.get('type') : 'all';
+    archive.edition = archive.game === 'call-of-duty' && editionNames[params.get('edition')] ? params.get('edition') : 'all';
     archive.weapon = params.get('weapon') || 'all';
     archive.rarity = params.get('rarity') || 'all';
     archive.media = ['video', 'inspect', 'image'].includes(params.get('media')) ? params.get('media') : 'all';
@@ -191,17 +195,24 @@ const WeaponSkins = (() => {
     document.getElementById('skinGameFilters').innerHTML = [{ id: 'all', name: '全部游戏' }, ...games].map(game =>
       '<button type="button" data-skin-game="' + game.id + '" aria-pressed="' + (archive.game === game.id) + '">' +
       esc(game.name) + '<span>' + archive.entries.filter(entry => game.id === 'all' || entry.skinGame === game.id).length + '</span></button>').join('');
-    const weaponScope = scoped.filter(entry => archive.type === 'all' || entry.weaponType === archive.type);
+    const editionScoped = scoped.filter(entry => archive.edition === 'all' || entry.gameEdition === archive.edition);
+    const weaponScope = editionScoped.filter(entry => archive.type === 'all' || entry.weaponType === archive.type);
     const weapons = [...new Map(weaponScope.map(entry => [entry.weaponId, entry.weaponName])).entries()].sort((a, b) => a[1].localeCompare(b[1], 'zh-CN'));
     const rarities = [...new Map(scoped.filter(entry => entry.rarity?.name).map(entry => [entry.rarity.id || entry.rarity.name, entry.rarity.name])).entries()];
     selectOptions('skinTypeSelect', [['all', '枪械与近战'], ['gun', '枪械皮肤'], ['melee', '刀与近战']], archive.type);
+    document.getElementById('skinEditionField').hidden = archive.game !== 'call-of-duty';
+    selectOptions('skinEditionSelect', [['all', '全部作品'], ...Object.entries(editionNames)], archive.edition);
     selectOptions('skinWeaponSelect', [['all', '全部武器'], ...weapons], archive.weapon);
     selectOptions('skinRaritySelect', [['all', '全部品质'], ...rarities], archive.rarity);
     document.getElementById('skinMediaSelect').value = archive.media;
     document.getElementById('skinSortSelect').value = archive.sort;
     const entries = filtered(), visible = entries.slice(0, archive.limit);
+    const hasCreatorResults = (archive.game === 'call-of-duty' || archive.game === 'all') && archive.media !== 'image' &&
+      inspectionEntries(archive.snapshots.get('call-of-duty')?.inspectionLibrary).length > 0;
     grid.innerHTML = loading ? '<div class="loading-state">正在读取武器外观与动作资料…</div>' : visible.length ? visible.map(card).join('') :
-      '<div class="empty-state">' + icon('search') + '<h3>没有找到匹配的武器外观</h3><p>可搜索皮肤、英文名、枪型或刀，例如“RGX”“狂徒”“蝴蝶”。</p><button type="button" class="button" data-skin-reset>清除筛选</button></div>';
+      '<div class="empty-state">' + icon('search') + '<h3>没有找到匹配的武器外观</h3><p>' +
+      (hasCreatorResults ? '上方的检视视频资料中可查看对应原作者投稿。' : '可搜索皮肤、英文名、枪型或刀，例如“RGX”“狂徒”“蝴蝶”。') +
+      '</p><button type="button" class="button" data-skin-reset>清除筛选</button></div>';
     grid.setAttribute('aria-busy', String(loading));
     const videos = entries.filter(entry => mediaList(entry).some(isVideo)).length;
     const animations = entries.filter(entry => mediaList(entry).some(media => media.provider === 'gif')).length;
@@ -222,11 +233,50 @@ const WeaponSkins = (() => {
     document.getElementById('skinScopeNote').textContent = coverageNote + (pendingImages > 0 ?
       ' 已对账 ' + Number(chosen.coverage.cataloguedCount).toLocaleString('zh-CN') + ' 款，其中 ' + scoped.length.toLocaleString('zh-CN') +
       ' 款有图可浏览，' + pendingImages.toLocaleString('zh-CN') + ' 款缺图待补。' : '');
+    renderInspectionLibrary();
     document.getElementById('skinFilterSummary').textContent = [state.query ? '搜索：' + state.query : '',
       archive.game !== 'all' ? gameInfo(archive.game).name : '',
+      archive.edition !== 'all' ? editionNames[archive.edition] : '',
       archive.type === 'melee' ? '刀与近战' : archive.type === 'gun' ? '枪械皮肤' : '',
       archive.media === 'inspect' ? '含检视资料' : archive.media === 'video' ? '含视频' : archive.media === 'image' ? '外观图目录' : ''
     ].filter(Boolean).join(' · ');
+  }
+  function inspectionEntries(items, filters = archive, query = state.query) {
+    const words = String(query || '').toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
+    return (items || []).filter(item => item.provider === 'bilibili' && providerId(item) && item.kind === 'inspect' &&
+      ['source_confirmed', 'sample_reviewed'].includes(item.reviewStatus) &&
+      item.publicationStatus === 'ready' && words.every(word => [item.title, item.name, item.gameTitle, item.sourceName,
+        ...(item.searchAliases || [])].join(' ').toLocaleLowerCase().includes(word)) &&
+      (!filters.edition || filters.edition === 'all' || item.gameEdition === filters.edition) &&
+      (filters.type === 'all' || item.weaponType === filters.type) &&
+      (filters.weapon === 'all' || item.weaponId === filters.weapon) &&
+      (filters.rarity === 'all' || archive.entries.some(skin => (item.associatedSkinIds || []).includes(skin.id) &&
+        (skin.rarity?.id || skin.rarity?.name) === filters.rarity)));
+  }
+  function inspectionCard(item) {
+    const original = link(item.url), thumbnail = link(item.thumbnailUrl);
+    const associated = (item.associatedSkinIds || []).map(id => archive.entries.find(skin => skin.id === id)).filter(Boolean);
+    return '<article class="weapon-inspection-card">' + (thumbnail ? '<a href="' + esc(original) +
+      '" target="_blank" rel="noopener noreferrer"><img src="' + esc(thumbnail) + '" alt="' + esc(item.title) +
+      '" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="320" height="180"></a>' : '') +
+      '<div><h3><a href="' + esc(original) + '" target="_blank" rel="noopener noreferrer">' + esc(item.title) +
+      '</a></h3><p>' + esc(item.gameTitle || '') + ' · ' + esc(item.sourceName || '原作者投稿') + '</p>' +
+      '<a href="' + esc(original) + '" target="_blank" rel="noopener noreferrer">在 B 站观看 ↗</a>' +
+      associated.map(skin => ' <button type="button" class="button subtle" data-action="open-skin" data-id="' + esc(skin.id) +
+        '">对应蓝图</button>').join('') + '</div></article>';
+  }
+  function renderInspectionLibrary() {
+    const target = document.getElementById('skinInspectionLibrary');
+    if (!target) return;
+    const items = inspectionEntries(archive.snapshots.get('call-of-duty')?.inspectionLibrary);
+    target.hidden = archive.media === 'image' || !items.length || !(archive.game === 'call-of-duty' ||
+      (archive.game === 'all' && String(state.query || '').trim()));
+    if (target.hidden) { target.innerHTML = ''; return; }
+    target.innerHTML = '<details id="skinInspectionDetails" class="weapon-inspection-library"' +
+      (archive.inspectionOpen || String(state.query || '').trim() ? ' open' : '') +
+      '><summary><strong>端游特殊检视视频</strong><span>' + items.length + ' 条 · B 站原作者投稿</span></summary>' +
+      '<p>按原作者的蓝图名称和所属作品查找。已核对对应关系的视频也可从蓝图详情观看；其余保留原片，视频数量不计为新增皮肤。</p>' +
+      '<div class="weapon-inspection-grid">' + items.map(inspectionCard).join('') + '</div></details>';
   }
   function card(entry) {
     const videos = mediaList(entry), inspection = videos.some(containsInspect), collected = state.collected.has(entry.id);
@@ -240,6 +290,7 @@ const WeaponSkins = (() => {
       '<h3><button type="button" data-action="open-skin" data-id="' + esc(entry.id) + '">' + esc(entry.name) + '</button></h3>' +
       '<p class="weapon-card-english" lang="en">' + esc(entry.englishName && entry.englishName !== entry.name ? entry.englishName : entry.weaponEnglishName || entry.weaponName) + '</p>' +
       '<div class="weapon-card-tags"><span>' + esc(entry.category || (entry.weaponType === 'melee' ? '近战武器' : '枪械')) + '</span>' +
+      (entry.skinGame === 'call-of-duty' && editionNames[entry.gameEdition] ? '<span>' + esc(editionNames[entry.gameEdition]) + '</span>' : '') +
       (videos.length ? '<span class="has-media">' + (inspection ? '含检视资料' : '动作预览') + '</span>' : '<span>外观图</span>') +
       ((entry.chromas || []).length > 1 && chromaCount(entry) ? '<span>' + chromaCount(entry) + ' 款炫彩</span>' : '') + '</div>' +
       '<div class="weapon-card-bottom"><span>' + esc(imageCredit(entry)) + '</span><div><button type="button" class="icon-button ' +
@@ -298,6 +349,7 @@ const WeaponSkins = (() => {
       '<div class="detail-meta"><span>' + esc(entry.weaponName) + '</span><span>' + esc(entry.rarity?.name || entry.category) +
       '</span><span>' + esc(entry.region || '适用地区待核实') + '</span></div>' +
       (entry.description ? '<p class="detail-summary">' + esc(cleanText(entry.description)) + '</p>' : '') +
+      (entry.mediaAssociationNote ? '<p class="weapon-source-note">' + esc(entry.mediaAssociationNote) + '</p>' : '') +
       (chromas.length > 1 ? '<section class="weapon-chromas"><h3>外观与炫彩</h3><div class="weapon-chroma-list">' + chromas.map((chroma, index) =>
         '<button type="button" data-skin-chroma="' + index + '" aria-pressed="' + (index === firstChroma) + '" title="' + esc(chroma.name) + '">' +
         '<img src="' + esc(link(chroma.swatchUrl) || link(chroma.imageUrl || chroma.fullRender)) + '" alt="" loading="lazy"><span>' +
@@ -389,18 +441,21 @@ const WeaponSkins = (() => {
   }
   function bind() {
     archive.manifestPromise = loadManifest();
+    document.getElementById('skinsSection').addEventListener('toggle', event => {
+      if (event.target.id === 'skinInspectionDetails') archive.inspectionOpen = event.target.open;
+    }, true);
     document.getElementById('skinsSection').addEventListener('click', event => {
       const target = event.target.closest('[data-skin-game], [data-skin-reset], [data-skin-retry]');
       if (!target) return;
       if (target.hasAttribute('data-skin-retry')) { ensure(true); render(); return; }
       if (target.hasAttribute('data-skin-reset')) { reset(); state.query = ''; document.getElementById('searchInput').value = ''; }
-      if (target.dataset.skinGame) { archive.game = target.dataset.skinGame; archive.weapon = archive.rarity = 'all'; }
+      if (target.dataset.skinGame) { archive.game = target.dataset.skinGame; archive.edition = archive.weapon = archive.rarity = 'all'; }
       archive.limit = 24; syncFilterRoute(); render();
     });
-    for (const [id, key] of [['skinTypeSelect', 'type'], ['skinWeaponSelect', 'weapon'], ['skinRaritySelect', 'rarity'], ['skinMediaSelect', 'media'], ['skinSortSelect', 'sort']]) {
+    for (const [id, key] of [['skinTypeSelect', 'type'], ['skinEditionSelect', 'edition'], ['skinWeaponSelect', 'weapon'], ['skinRaritySelect', 'rarity'], ['skinMediaSelect', 'media'], ['skinSortSelect', 'sort']]) {
       document.getElementById(id).addEventListener('change', event => {
         archive[key] = event.target.value;
-        if (key === 'type') archive.weapon = 'all';
+        if (key === 'type' || key === 'edition') archive.weapon = 'all';
         archive.limit = 24; syncFilterRoute(); render();
       });
     }
@@ -447,6 +502,7 @@ const WeaponSkins = (() => {
     });
     document.addEventListener('error', event => {
       const target = event.target;
+      if (target.tagName === 'IMG' && target.closest('.weapon-inspection-card')) { target.hidden = true; return; }
       if (target.id === 'skinVideo') { document.querySelector('.weapon-video-error')?.removeAttribute('hidden'); return; }
       if (target.id === 'skinAnimation') { target.hidden = true; document.querySelector('.weapon-animation-error')?.removeAttribute('hidden'); return; }
       if (target.tagName === 'IMG' && target.closest('.weapon-card-art, .weapon-detail-art')) {
@@ -456,5 +512,6 @@ const WeaponSkins = (() => {
     }, true);
   }
   return { archive, games, count, ensure, bind, render, reset, readRoute, hash, filtered, card, detail, stop, markdown,
-    matchesQuery, normalise, filterEntries, mediaList, containsInspect, isVideo, chromaCount, chromaImage, link, providerId, exportList };
+    matchesQuery, normalise, filterEntries, mediaList, containsInspect, isVideo, chromaCount, chromaImage, link, providerId,
+    inspectionEntries, inspectionCard, exportList };
 })();

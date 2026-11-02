@@ -1,6 +1,6 @@
 # 武器外观与检视资料
 
-2026-11-02 首批本地接入，2026-11-03 扩充八款游戏，并继续补采 APEX、CFM、CFHD 和 CODM 国服资料。入口为 `#skins`。资料独立于模式、基础体验更新及主题道具，不增加模式数，不复用玩法分类。只有 `publicationStatus: ready` 的皮肤进入页面和公开构建；构建成功不代表已经部署。
+2026-11-02 首批本地接入，2026-11-03 扩充八款游戏，并继续补采 APEX、CFM、CFHD、CODM 国服及使命召唤端游资料。入口为 `#skins`。资料独立于模式、基础体验更新及主题道具，不增加模式数，不复用玩法分类。只有 `publicationStatus: ready` 的皮肤进入页面和公开构建；构建成功不代表已经部署。
 
 ## 本轮可浏览资料
 
@@ -8,15 +8,15 @@
 |---|---:|---:|---:|---:|---:|
 | 无畏契约 | 1,391 | 1,215 | 176 | 585 | 0 |
 | 三角洲行动 | 8 | 2 | 6 | 8 | 0 |
-| 使命召唤 | 1 | 0 | 1 | 0 | 0 |
+| 使命召唤 | 2,343 | 2,208 | 135 | 2 | 0 |
 | 使命召唤手游 | 4,269 | 3,643 | 626 | 4 | 203 |
 | 穿越火线手游 | 831 | 699 | 132 | 3 | 406 |
 | CFHD | 1,560 | 1,376 | 184 | 14 | 17 |
 | CS2 | 2,025 | 1,449 | 576 | 0 | 0 |
 | Apex Legends | 2,849 | 2,813 | 36 | 17 | 0 |
-| 合计 | 12,934 | 11,197 | 1,737 | 631 | 626 |
+| 合计 | 15,276 | 13,405 | 1,871 | 633 | 626 |
 
-视频与 GIF 分别统计，同一皮肤可以同时有两类媒体。相较上一版 10,305 条，本轮净增 2,629 条可浏览记录。CODM 的国服与国际服资料分别记录，跨服同款尚未逐一对照合并，统计不是全服唯一外观数量。目录记录不代表当前在售、可获取或具备专属检视；未知首发日保持 null / unverified，首次收录时间和来源发布日期不充当上线日期。
+视频与 GIF 分别统计，同一皮肤可以同时有两类媒体。端游本次由 1 条扩为 2,343 条，新增 2,342 条；八款游戏合计 15,276 条。63 条 B 站检视视频另列资料区，不增加皮肤计数。CODM 的国服与国际服资料分别记录，跨服同款尚未逐一对照合并，统计不是全服唯一外观数量。目录记录不代表当前在售、可获取或具备专属检视；未知首发日保持 null / unverified，首次收录时间和来源发布日期不充当上线日期。
 
 ## 各游戏覆盖与来源
 
@@ -46,7 +46,7 @@ RGX 战刀二级视频已抽帧核对，包含切出、攻击和检视；2025 �
 
 [Zilliongamer 武器皮肤索引](https://zilliongamer.com/call-of-duty-mobile/c/skins-list/call-of-duty-mobile-skins-list)实际链接的 134 篇页面已遍历，127 篇含皮肤图，源图记录 4,471 条。合并同名和同图别名、排除 5 项裸近战武器后收录 3,885 款，125 个基础武器标签。124 种使用远程图的武器各抽查一图，全部为可访问图片；Fennec 使用归档官方封面。旧 Fennec 新闻链接 404，保留缺口说明。
 
-国际服社区资料中未核实的中文皮肤名保留英文。4 个旧 `codm-` ID、官方配图和视频保持；QQ9 的官方投稿标题明确为检视。端游 `call-of-duty.json` 仅保留 MWII / Warzone 2 的 Slaughter King 刀。
+国际服社区资料中未核实的中文皮肤名保留英文。4 个旧 `codm-` ID、官方配图和视频保持；QQ9 的官方投稿标题明确为检视。端游与手游采用独立目录，端游的蓝图及检视覆盖见下节。
 
 本轮沿[国服官网综合新闻索引](https://codm.qq.com/gicp/news/886/2/19485/1.html)实际“下一页”遍历 99 页、990 篇原稿，补入 384 条有明确命名小节和实图的蓝图资料。其中 203 条含多帧 GIF、6 条有明确检视说明。国服与国际服分列地区，不凭相似译名自动合并；该新闻索引闭合不等于国服完整图鉴。角色、投掷物、混合武器标题和宣传后缀不当成皮肤。原稿配图可能展示实战、升级或特效，图注明示范围。
 
@@ -66,9 +66,21 @@ GIF 经实际解码记录 MIME、帧数和 SHA-256；无扩展名的腾讯图片
 
 原 21 张官方图保留；新增原图 1,768 张、34.93 MB，逐图记录尺寸、原址和 SHA-256。14 段 MP4、17 段官方 GIF 覆盖 22 款，已抽帧核过检视，完整视频仍标混合展示。8 条媒体精确绑定炫彩 ID，7 条基础外观 MP4 绑定基础 ID；切换外观同步图注、图片出处与动作，不借用其他配色的专属资料。社区快照覆盖不等于官方全历史或所有检视动作齐全。
 
-### 三角洲行动与使命召唤端游
+### 使命召唤端游
 
-三角洲继续保留官方 B 站的 8 款精选原片，例如[造物纪元实录](https://www.bilibili.com/video/BV11jdbB8EsB/)，展示、检视与来源确认分别标记。端游保留 Slaughter King 官方公告及 [GamesAtlas 刀具条目](https://www.gamesatlas.com/cod-warzone-2-blueprints/modern-warfare-2/slaughter-king)对应的社区资源图，两者均为有限选集。
+本次把端游从 1 条精选扩展为多作品目录。沿 [GamesAtlas Warzone 蓝图图鉴](https://www.gamesatlas.com/cod-warzone-2-blueprints/)实际公开配置读取 2,369 条蓝图，配置对象不计皮肤。覆盖 Modern Warfare II、Modern Warfare III、Black Ops 6、Black Ops 7、Modern Warfare 4；Warzone 继承使用不重复算另一条蓝图。保留原 Slaughter King ID、收录时间与高清配图。2,343 条有图可浏览（2,208 枪械与远程武器、135 近战）；26 条待补，包括 21 个 Logo 占位、3 个错配图和 2 个基础武器待核。
+
+单件图逐 URL 获取并实际解码，游戏 Logo、错配图片和未确定基础武器的记录继续待补，不进入页面。图鉴多为 320×180 缩略图，已核实详情原图的条目使用较高清的单件截图；GamesAtlas 的截图与游戏资源图均标社区渠道，不冒充官方素材。没有把这份可枚举快照称为 COD 全历史，2019 及更早、Cold War、Vanguard 等独立历史目录仍待另行对账。
+
+用户提供的 [《COD21 特殊检视——打印命运》](https://www.bilibili.com/video/BV1cTWNz4Ey8/)引出了光辉者UNS-08 的 63 条 BO6 特殊检视合集。已通过公开 view 元数据逐条核实 BVID、作者、发表日、真实封面与 CID；页面提供独立检视视频区，按原作者标题查找并打开 B 站原片。它们不是 63 条新增皮肤，也未宣称全部逐帧审阅。8 条另外找到的组合包/合集投稿仅留研究候选，不纳入单件蓝图统计。
+
+13 张原作者封面及种子静态首帧已抽样核对。仅两条关联经过单件图和官方文字交叉确认：打印命运 → Printed End / KOMPAKT 92；瘟疫医生 → Plague Doctor / AMES 85。前者由[官方 Craftwork Recon 商城页](https://www.callofduty.com/en/store/bundles/5411)确认基础武器与蓝图名，后者由[官方 NEXT 武器公告](https://www.callofduty.com/blog/2024/08/call-of-duty-next-black-ops-6-reveal-multiplayer-map-modes-weapons-operators-intel)确认。中文名沿用作者标题，未称为已核实的官方本地化名称。基础武器不明的视频保持独立资料，不推断英文名称或具体蓝图。
+
+端游支持按所属作品筛选，卡片显示作品归属；“打印命运”等已确认中文别名可检索到对应蓝图。旧精选同步入口转调新端游同步器，静态刷新保留检视合集、已审媒体及中文检索别名。原作者投稿标题作为检视类型的来源依据，蓝图身份的静态图审阅与动作逐帧审阅分开记录。
+
+### 三角洲行动
+
+三角洲继续保留官方 B 站的 8 款精选原片，例如[造物纪元实录](https://www.bilibili.com/video/BV11jdbB8EsB/)，展示、检视与来源确认分别标记。
 
 ## 媒体、页面与公开构建
 
@@ -88,7 +100,9 @@ MP4 提供原生控制、半速、重播和循环。B 站 / YouTube 点击后才
 
 ```powershell
 python -X utf8 scripts/sync_weapon_catalogs.py
-python -X utf8 scripts/sync_weapon_curated.py
+python -X utf8 scripts/sync_weapon_curated.py --game delta-force
+python -X utf8 scripts/sync_weapon_cod_pc.py
+python -X utf8 scripts/enrich_weapon_cod_pc.py
 python -X utf8 scripts/sync_weapon_apex.py
 python -X utf8 scripts/sync_weapon_codm.py
 python -X utf8 scripts/sync_weapon_codm_cn.py
@@ -100,11 +114,13 @@ python -X utf8 scripts/test_weapon_codm_cn.py
 python scripts/build_public_site.py
 ```
 
-所有同步脚本支持 `--offline`；APEX 另支持 `--resume`，复用中断前 12 小时内的成功请求。CFM / CFHD / CODM 国服默认复用成功缓存，联网强制更新使用 `--refresh`。CFM `--index-only`、CODM 国服 `--discover-only` 只盘点索引；内容整理仍需读取正文。旧 `sync_weapon_crossfire.py` 入口转调两款独立脚本，不再覆盖扩充目录。旧精选脚本 `--game apex` 转调 APEX 同步器，默认只维护三角洲和使命召唤端游。
+所有同步脚本支持 `--offline`；APEX 另支持 `--resume`，复用中断前 12 小时内的成功请求。CFM / CFHD / CODM 国服默认复用成功缓存，联网强制更新使用 `--refresh`。CFM `--index-only`、CODM 国服 `--discover-only` 只盘点索引；内容整理仍需读取正文。旧 `sync_weapon_crossfire.py` 入口转调两款独立脚本，不再覆盖扩充目录。旧精选脚本 `--game apex` 转调 APEX 同步器，`--game call-of-duty` 及默认端游任务转调新端游同步器，不会恢复成 1 条精选。
 
 APEX 首次先运行主同步器联网建立基础目录，再运行 `sync_weapon_apex_art_indices.py` 采集 Wiki 文件、Item Store 附件与图库索引；其 `--refresh` 真正更新源站，`--offline --dry-run` 只验证既有缓存。各源有页数上限，完整遍历后才替换成功索引。
 
 补图工具 `enrich_weapon_apex.py --apply`、`sync_weapon_apex_official.py --apply` 写入已核实素材证据，再运行主同步器 `--offline` 生成 ready 状态；两项补图工具均支持 `--offline`。首次采集不能以 `--offline` 替代联网。`build_apex_remaining_report.py` 生成逐项缺口报告。保留的补图与原作者媒体不会被主同步覆盖。
+
+端游 `research_weapon_cod_bilibili.py` 只采集公开元数据，`enrich_weapon_cod_pc.py` 将已核合集及 `data/weapon-skins/cod-inspect-review.json` 中的审阅结论接入页面；两者支持 `--offline`。作者搜索接口返回 HTTP 412 后已停止该路径，未登录、签名绕行或转存平台原片。
 
 校验包括各游戏稳定 ID、来源、日期、图片哈希、动作类型、URL 安全、独立模式计数、筛选、收藏和导出。公开构建还须验证压缩内容、ready 过滤、配图引用和容量；页面验收分别检查 CFM 动图、CFHD 图片与 MP4、CODM 图鉴和 APEX 缺图说明。
 

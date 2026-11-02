@@ -17,7 +17,7 @@ function http(value, message) {
 const manifest = read('data/weapon-skins/manifest.json');
 assert.equal(manifest.schemaVersion, 1);
 assert.deepEqual(manifest.games.map(game => game.id), gameIds);
-const ids = new Set(), all = [], weaponTypes = new Map();
+const ids = new Set(), all = [], weaponTypes = new Map(), inspectionLibraries = [];
 for (const game of manifest.games) {
   assert.equal(game.url, 'data/weapon-skins/' + game.id + '.json');
   const data = read(game.url);
@@ -26,6 +26,40 @@ for (const game of manifest.games) {
   assert.ok(!Number.isNaN(Date.parse(data.updatedAt)), game.id + ' source timestamp');
   const ready = data.skins.filter(skin => skin.publicationStatus === 'ready');
   assert.equal(ready.length, game.count, game.id + ' manifest count');
+  if (game.id === 'call-of-duty') {
+    const categories = new Map();
+    for (const skin of ready) {
+      if (categories.has(skin.weaponId)) assert.equal(skin.category, categories.get(skin.weaponId), skin.id + ' base weapon category conflict');
+      else categories.set(skin.weaponId, skin.category);
+    }
+  }
+  const libraryIds = new Set(), libraryVideos = new Set();
+  for (const media of data.inspectionLibrary || []) {
+    assert.equal(game.id, 'call-of-duty', 'Standalone creator inspect library belongs to COD PC');
+    assert.ok(media.id && !libraryIds.has(media.id), 'Duplicate inspect-library identity'); libraryIds.add(media.id);
+    assert.equal(media.publicationStatus, 'ready');
+    assert.equal(media.provider, 'bilibili');
+    assert.equal(media.kind, 'inspect');
+    assert.ok(['source_confirmed', 'sample_reviewed'].includes(media.reviewStatus));
+    const url = http(media.url, 'Original Bilibili inspect video');
+    assert.equal(url.hostname, 'www.bilibili.com');
+    assert.match(media.videoId, /^BV[0-9A-Za-z]{10}$/);
+    assert.equal(url.pathname, '/video/' + media.videoId + '/');
+    assert.ok(!libraryVideos.has(media.videoId), 'Duplicate source video'); libraryVideos.add(media.videoId);
+    http(media.thumbnailUrl, 'Original creator video poster');
+    assert.ok(media.title && media.sourceName && media.gameTitle);
+    assert.match(media.publishedDate, /^\d{4}-\d{2}-\d{2}$/);
+    assert.ok(Number(media.cid) > 0 && Array.isArray(media.sourceEvidence) && media.sourceEvidence.length);
+    for (const id of media.associatedSkinIds || []) {
+      const skin = ready.find(item => item.id === id);
+      assert.ok(skin, 'Inspect library may only link an existing ready blueprint');
+      assert.equal(media.weaponId, skin.weaponId);
+      assert.equal(media.weaponType, skin.weaponType);
+      assert.ok(skin.media.some(item => item.url === media.url), 'Linked inspect is available in the blueprint detail');
+    }
+    inspectionLibraries.push(media);
+  }
+  if (data.inspectionLibrary) assert.equal(data.coverage.inspectionLibraryCount, data.inspectionLibrary.length);
   for (const skin of ready) {
     assert.match(skin.id, prefixes[game.id], skin.id + ' prefix');
     assert.ok(!ids.has(skin.id), skin.id + ' duplicate identity'); ids.add(skin.id);
@@ -148,6 +182,19 @@ const frameSample = api.normalise({ ...all[0], name: 'Beam Saber', image: {
   ...basePicture, url: 'https://example.com/frame.webp', assetSourceUrl: 'https://example.com/showcase.mp4',
   derivedFromVideoUrl: 'https://example.com/showcase.mp4' } }, 'apex');
 assert.ok(api.markdown(frameSample).includes('![Beam Saber](https://example.com/frame.webp)'), 'Frame exports render an image and retain the original video as provenance');
+const libraryExample = { id: 'cod-inspect-sample', provider: 'bilibili', kind: 'inspect', publicationStatus: 'ready',
+  reviewStatus: 'source_confirmed', url: 'https://www.bilibili.com/video/BV1cTWNz4Ey8/', title: 'COD21 特殊检视——打印命运',
+  gameTitle: 'Black Ops 6 / COD21', sourceName: '原作者', weaponType: 'gun' };
+const libraryFilters = { ...filters, game: 'call-of-duty', type: 'all' };
+assert.equal(api.inspectionEntries([libraryExample], libraryFilters, '打印命运').length, 1);
+assert.equal(api.inspectionEntries([libraryExample], { ...libraryFilters, type: 'melee' }, '').length, 0);
+assert.equal(api.inspectionEntries([{ ...libraryExample, gameEdition: 'black-ops-6' }], { ...libraryFilters, edition: 'modern-warfare-3' }, '').length, 0);
+assert.equal(api.inspectionEntries([{ ...libraryExample, reviewStatus: 'metadata_only' }], libraryFilters, '').length, 0);
+assert.ok(!api.inspectionCard(libraryExample).includes('<iframe'), 'Original creator videos are not loaded automatically');
+assert.ok(!api.inspectionCard({ ...libraryExample, title: '<img src=x onerror=alert(1)>' }).includes('<img src=x'), 'Creator title escaping');
+const bo6 = api.filterEntries(normal, { ...filters, game: 'call-of-duty', type: 'all', edition: 'black-ops-6' }, '');
+assert.ok(bo6.length && bo6.every(skin => skin.gameEdition === 'black-ops-6'), 'COD blueprint editions filter independently');
+assert.equal(api.filterEntries(normal, { ...filters, game: 'call-of-duty', type: 'all' }, '打印命运').length, 1, 'Reviewed Chinese creator title finds exactly the associated blueprint');
 assert.equal(api.link('javascript:alert(1)'), '');
 assert.equal(api.link('https://user:password@example.com/x'), '');
 assert.equal(api.providerId({ provider: 'youtube', url: 'https://youtube.com.evil.example/watch?v=abcdefghijk' }), '');

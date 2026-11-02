@@ -94,6 +94,20 @@ body[data-card-size="small"] .weapon-card-bottom { min-height:35px; }
 .weapon-level-list { display:flex; flex-wrap:wrap; gap:8px; color:#718466; font-size:11px; line-height:1.7; }
 .weapon-level-list span { padding:6px 9px; border:1px solid var(--line); border-radius:4px; background:#f7f9f3; }
 .weapon-source-links { display:flex; flex-wrap:wrap; gap:10px 18px; font-size:12px; line-height:1.8; }
+.weapon-inspection-library { margin:18px 0 24px; border:1px solid var(--line); border-radius:8px; background:white; padding:16px 18px; }
+.weapon-inspection-library summary { cursor:pointer; color:#3d6347; line-height:1.8; }
+.weapon-inspection-library summary strong { font-size:14px; }
+.weapon-inspection-library summary span { margin-left:12px; color:#7d8b72; font-size:11px; }
+.workspace .weapon-inspection-library > p { font-size:12px; color:#7b896f; line-height:1.9; }
+.weapon-inspection-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr)); gap:14px; }
+.weapon-inspection-card { min-width:0; border:1px solid var(--line); border-radius:5px; overflow:hidden; }
+.weapon-inspection-card > a { display:block; background:#edf2e7; }
+.weapon-inspection-card img { display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:contain; }
+.weapon-inspection-card > div { padding:12px; }
+.workspace .weapon-inspection-card h3 { margin:0; font-size:13px; line-height:1.7; overflow-wrap:anywhere; }
+.weapon-inspection-card a { color:#3d6347; text-decoration:none; }
+.workspace .weapon-inspection-card p { font-size:11px; line-height:1.7; color:#86917c; margin:6px 0; }
+.weapon-inspection-card > div > a { font-size:11px; text-decoration:underline; text-underline-offset:3px; }
 .workspace .weapon-source-note { font-size:11px; line-height:1.9; color:#87937b; margin:15px 0; }
 @media(min-width:1600px) { .weapon-grid { grid-template-columns:repeat(4,minmax(0,1fr)); } }
 @media(max-width:1100px) { .weapon-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } body[data-card-size="small"] .weapon-grid { grid-template-columns:minmax(0,1fr); } .weapon-stats { gap:20px; } .weapon-overview { flex-wrap:wrap; } }
