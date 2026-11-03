@@ -141,6 +141,7 @@ const WeaponSkins = (() => {
   }
   async function ensure(retry = false) {
     if (archive.promise && !retry) return archive.promise;
+    archive.manifestPromise ||= loadManifest();
     archive.status = 'loading';
     archive.promise = (async () => {
       if (archive.manifestPromise) await archive.manifestPromise;
@@ -440,7 +441,6 @@ const WeaponSkins = (() => {
     showToast('已导出 ' + entries.length + ' 款武器外观');
   }
   function bind() {
-    archive.manifestPromise = loadManifest();
     document.getElementById('skinsSection').addEventListener('toggle', event => {
       if (event.target.id === 'skinInspectionDetails') archive.inspectionOpen = event.target.open;
     }, true);

@@ -3,12 +3,41 @@
 from pathlib import Path
 import gzip
 import json
+import re
 import shutil
 import time
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / '_site'
+
+
+def ugc_entry_bucket(entry_id):
+    # Keep this in sync with UGCCatalog.entryBucket(). IDs are ASCII.
+    result = 0
+    for character in entry_id:
+        result = (31 * result + ord(character)) % 64
+    return f'{result:02x}'
+
+
+def write_ugc_entry_indexes(platforms):
+    for platform, shards in platforms.items():
+        if not re.fullmatch(r'[a-z0-9-]+', platform):
+            raise RuntimeError('Invalid UGC platform: ' + platform)
+        entries = {f'{number:02x}': {} for number in range(64)}
+        for filename, entry_ids in shards.items():
+            for entry_id in entry_ids:
+                if not re.fullmatch(r'[A-Za-z0-9_-]{1,80}', entry_id):
+                    raise RuntimeError('Invalid UGC entry ID: ' + entry_id)
+                bucket = entries[ugc_entry_bucket(entry_id)]
+                if entry_id in bucket:
+                    raise RuntimeError('Duplicate UGC entry ID: ' + platform + ':' + entry_id)
+                bucket[entry_id] = filename
+        base = OUTPUT / 'data/ugc/catalog/entry-index' / platform
+        base.mkdir(parents=True, exist_ok=True)
+        for name, bucket in entries.items():
+            encoded = json.dumps(bucket, separators=(',', ':')).encode('utf-8')
+            (base / (name + '.json.gz')).write_bytes(gzip.compress(encoded, mtime=0))
 
 
 def remove_output_with_retry():
@@ -126,12 +155,16 @@ def main():
     if catalog_manifest.exists():
         catalog = json.loads(catalog_manifest.read_text(encoding='utf-8'))
         public_catalog_files = set()
+        detail_paths = {}
+        lookup_shards = {platform: {} for platform in catalog.get('platforms', {})}
         if catalog.get('boardCoversUrl'):
             public_catalog_files.add(catalog['boardCoversUrl'])
-        for platform in catalog.get('platforms', {}).values():
+        for platform_id, platform in catalog.get('platforms', {}).items():
             for group in ('shards', 'searchShards'):
                 for shard in platform.get(group, []):
                     public_catalog_files.add(shard['url'])
+                    if group == 'shards':
+                        detail_paths[shard['url']] = platform_id
                     shard['url'] += '.gz'
         for name in sorted(public_catalog_files):
             relative = Path(name)
@@ -141,6 +174,8 @@ def main():
                 raise RuntimeError('Invalid public catalog reference: ' + name)
             payload = json.loads(source.read_text(encoding='utf-8'))
             entries = payload.get('entries', [])
+            if name in detail_paths:
+                lookup_shards[detail_paths[name]][relative.name + '.gz'] = [entry['id'] for entry in entries]
             if isinstance(entries, list):
                 for entry in entries:
                     if entry.get('detailShard'):
@@ -155,6 +190,7 @@ def main():
         manifest_destination = OUTPUT / 'data/ugc/catalog/manifest.json'
         manifest_destination.parent.mkdir(parents=True, exist_ok=True)
         manifest_destination.write_text(json.dumps(catalog, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+        write_ugc_entry_indexes(lookup_shards)
     shutil.copytree(ROOT / 'assets/maps', OUTPUT / 'assets/maps')
     # Cover paths are explicit in data/code. Do not publish abandoned covers or draft SVGs.
     reference_files = [path for path in OUTPUT.rglob('*') if path.is_file() and path.suffix in {'.json', '.js', '.html', '.css'}]

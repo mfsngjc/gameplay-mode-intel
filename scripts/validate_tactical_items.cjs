@@ -129,7 +129,9 @@ vm.runInContext(['item-demos.js', 'weapon-skins.js', 'core-updates.js', 'tactica
 vm.runInContext(String.raw`
   const legacy = catalogue.items.find((entry) => entry.legacyIds.length);
   state.collected.add(legacy.legacyIds[0]);
-  const remaining = loadTacticalCatalogue(catalogue, updates);
+  loadTacticalCatalogue(catalogue);
+  state.coreUpdates = updates.map(normalizeCoreUpdate);
+  const remaining = modeCoreUpdates();
   state.modes = [...modes.map((entry) => ({ ...entry, kind: 'modes' })), ...remaining];
   state.entries = [...state.modes, ...itemArchive.entries];
   assert.equal(remaining.length, updates.length - 8);

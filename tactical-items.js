@@ -20,13 +20,10 @@ function itemVersions(entry) {
 function resolveTacticalItem(id) {
   return itemArchive.entries.find((entry) => entry.id === id || entry.legacyIds.includes(id));
 }
-function loadTacticalCatalogue(data, updates) {
+function loadTacticalCatalogue(data) {
   if (!Array.isArray(data.items) || !Array.isArray(data.categories)) throw new Error('主题道具资料格式有误');
   itemArchive.categories = data.categories;
-  state.coreUpdates = updates.map(normalizeCoreUpdate);
   itemArchive.entries = data.items.filter((entry) => entry.publicationStatus === 'ready').map(normalizeTacticalItem);
-  // Keep source dossiers for evidence; their object cards live only in this catalogue.
-  const linkedIds = new Set(itemArchive.entries.flatMap((entry) => entry.coreUpdateIds));
   let migrated = false;
   for (const entry of itemArchive.entries) {
     for (const id of entry.legacyIds) {
@@ -34,7 +31,11 @@ function loadTacticalCatalogue(data, updates) {
     }
   }
   if (migrated) saveCollected();
-  return state.coreUpdates.filter((entry) => entry.publicationStatus === 'ready' && !linkedIds.has(entry.id));
+}
+function modeCoreUpdates() {
+  // Version evidence stays in the item dossier; do not duplicate it in the mode library.
+  const linkedIds = new Set(itemArchive.entries.flatMap(entry => entry.coreUpdateIds));
+  return state.coreUpdates.filter(entry => entry.publicationStatus === 'ready' && !linkedIds.has(entry.id));
 }
 function normalizedItemText(text) {
   return String(text || '').normalize('NFKC').toLocaleLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
@@ -95,7 +96,7 @@ function tacticalImage(entry, { detail = false } = {}) {
   const background = /^#[0-9a-f]{6}$/i.test(picture.background) ? picture.background : '#edf1e8';
   const label = tacticalImageLabel(entry);
   const media = '<span class="item-image-surface" style="--item-image-bg:' + background + '">' +
-    '<img data-item-image src="' + escapeHtml(safeUrl(picture.path)) + '" alt="' + escapeHtml(picture.alt) + '" width="' + picture.width + '" height="' + picture.height + '" loading="' + (detail ? 'eager' : 'lazy') + '" decoding="async">' +
+    '<img data-item-image src="' + escapeHtml(safeUrl(picture.path)) + '" alt="' + escapeHtml(picture.alt) + '" width="' + picture.width + '" height="' + picture.height + '" ' + (detail ? 'loading="eager"' : 'loading="lazy" fetchpriority="low"') + ' decoding="async">' +
     '<span class="item-image-unavailable" hidden>图片暂不可用</span></span>';
   if (!detail) return '<button type="button" class="item-card-image" data-action="open-item" data-id="' + escapeHtml(entry.id) + '" aria-label="查看 ' + escapeHtml(entry.name) + ' 的图片与资料">' +
     media + '<span class="item-image-label ' + (picture.sourceType === 'community' ? 'is-community' : '') + '">' + label + '</span>' +
@@ -118,6 +119,7 @@ function handleTacticalImageError(event) {
 function tacticalCard(entry) {
   const collected = state.collected.has(entry.id);
   const category = itemCategory(entry.category);
+  const documented = entry.researchStatus === 'documented';
   const versions = itemVersions(entry);
   const videos = versions.reduce((count, version) => count + (version.videos?.length || 0), 0);
   const shots = versions.reduce((count, version) => count + (version.screenshots?.length || 0), 0);
@@ -125,7 +127,7 @@ function tacticalCard(entry) {
   return '<article class="item-card" data-id="' + escapeHtml(entry.id) + '">' +
     tacticalImage(entry) +
     '<div class="item-card-top"><span class="item-category-label">' + icon(category.icon) + escapeHtml(category.label) + '</span>' +
-    '<span class="item-status ' + (versions.length ? 'has-dossier' : '') + '">' + itemStatusLabels[entry.researchStatus] + '</span></div>' +
+    '<span class="item-status ' + (documented ? 'has-dossier' : '') + '">' + itemStatusLabels[entry.researchStatus] + '</span></div>' +
     '<div class="item-card-content"><span class="item-index">' + String(entry.catalogOrder).padStart(3, '0') + '</span>' +
     '<div><h3><button type="button" data-action="open-item" data-id="' + escapeHtml(entry.id) + '">' + escapeHtml(entry.name) + '</button></h3>' +
     '<p class="item-english" lang="en">' + escapeHtml(entry.englishName) + '</p></div></div>' +
@@ -136,7 +138,7 @@ function tacticalCard(entry) {
     (videos ? '<span>' + videos + ' 视频' + (shots ? ' · ' + shots + ' 截图' : '') + '</span>' : '') + '</div>' +
     '<div class="item-card-footer"><span>' + escapeHtml(entry.game) + '</span><div>' +
     '<button type="button" class="icon-button ' + (collected ? 'is-collected' : '') + '" data-action="collect" data-id="' + escapeHtml(entry.id) + '" aria-label="' + (collected ? '取消收藏 ' : '收藏 ') + escapeHtml(entry.name) + '" aria-pressed="' + collected + '">' + icon('bookmark') + '</button>' +
-    '<button type="button" class="item-open" data-action="open-item" data-id="' + escapeHtml(entry.id) + '">' + (versions.length ? '看机制详录' : '查看条目') + icon('arrow-up-right') + '</button></div></div></article>';
+    '<button type="button" class="item-open" data-action="open-item" data-id="' + escapeHtml(entry.id) + '">' + (documented ? '看机制详录' : '查看条目') + icon('arrow-up-right') + '</button></div></div></article>';
 }
 function renderTacticalItems() {
   const entries = getFilteredTacticalItems();
@@ -166,24 +168,27 @@ function renderTacticalItems() {
   $('#itemFilterSummary').textContent = filters.join(' · ');
   $('#itemFilterSummary').hidden = !filters.length;
 }
-function tacticalItemDetail(entry) {
-  const versions = itemVersions(entry);
-  const category = itemCategory(entry.category);
-  const hasClips = typeof ItemDemos !== 'undefined' && ItemDemos.clips(entry).length > 0;
+function tacticalItemVersionDetail(entry) {
+  if (!entry.coreUpdateIds.length) return '<section class="item-pending"><h3>已收录目录，详录待补</h3><p>已收录外观配图、机制摘要与资料入口。具体数值、适用版本及生效日期仍待核对。</p><ul><li>操作、获取方式与限制：待逐版本整理</li><li>完整视频与版本对应：待逐版本核对</li><li>操作过程截图：待补</li></ul></section>';
+  if (!state.coreUpdates) return '<p class="item-detail-note" role="status">正在读取历史版本详录…</p>';
   const section = (title, text) => text ? '<section class="detail-section"><h3>' + title + '</h3><p>' + escapeHtml(text) + '</p></section>' : '';
-  const versionHtml = versions.map((version) => '<section class="item-version"><div class="item-version-heading"><h3>' + escapeHtml(version.versionLabel) + '</h3><span>' + escapeHtml(coreUpdateDateLabel(version)) + '</span></div>' +
+  return itemVersions(entry).map((version) => '<section class="item-version"><div class="item-version-heading"><h3>' + escapeHtml(version.versionLabel) + '</h3><span>' + escapeHtml(coreUpdateDateLabel(version)) + '</span></div>' +
     section('适用范围', [...version.affectedModes, ...version.mapNames].join(' · ')) + tacticalProfileDetail(version) +
     coreUpdateMediaDetail(version) + section('玩家行为变化 · 分析', version.playerImpact) + section('设计观察 · 分析', version.designObservation.replace(/^设计推断：/, '')) +
     section('版本与时间依据', version.launchNote) + coreUpdateEvidenceDetail(version) + '</section>').join('');
+}
+function tacticalItemDetail(entry) {
+  const category = itemCategory(entry.category);
+  const hasClips = typeof ItemDemos !== 'undefined' && ItemDemos.clips(entry).length > 0;
   return (hasClips ? '' : tacticalImage(entry, { detail: true })) +
     '<div class="detail-inner"><div class="detail-kicker">主题道具 / ' + escapeHtml(entry.game) + '</div>' +
     '<h2 id="detailTitle">' + escapeHtml(entry.name) + '</h2><p class="item-detail-english" lang="en">' + escapeHtml(entry.englishName) + '</p>' +
-    '<div class="detail-meta"><span>' + escapeHtml(category.label) + '</span><span>' + escapeHtml(entry.objectType) + '</span><span class="item-status ' + (versions.length ? 'has-dossier' : '') + '">' + itemStatusLabels[entry.researchStatus] + '</span></div>' +
+    '<div class="detail-meta"><span>' + escapeHtml(category.label) + '</span><span>' + escapeHtml(entry.objectType) + '</span><span class="item-status ' + (entry.researchStatus === 'documented' ? 'has-dossier' : '') + '">' + itemStatusLabels[entry.researchStatus] + '</span></div>' +
     '<p class="detail-summary">' + escapeHtml(entry.mechanic) + '</p>' +
     (hasClips ? ItemDemos.render(entry) + '<details class="item-appearance"><summary>道具外观与图片出处</summary>' + tacticalImage(entry, { detail: true }) + '</details>' : '') +
     (entry.objectGroup === 'creative' ? '<p class="item-detail-note">创意模式道具：本条描述创意模式中的伪装工具；不据此推定大逃杀中的获取方式或数值。</p>' : '') +
     (entry.englishName.includes(' / ') ? '<p class="item-detail-note">此条按道具族收录，英文名列出相关变体；各版本的参数和使用限制需分别核对。</p>' : '') +
-    (versions.length ? versionHtml : '<section class="item-pending"><h3>已收录目录，详录待补</h3><p>已收录外观配图、机制摘要与资料入口。具体数值、适用版本及生效日期仍待核对。</p><ul><li>操作、获取方式与限制：待逐版本整理</li><li>完整视频与版本对应：待逐版本核对</li><li>操作过程截图：待补</li></ul></section>') +
+    '<div id="itemVersionDetails">' + tacticalItemVersionDetail(entry) + '</div>' +
     '<section class="detail-section"><h3>资料入口</h3><p>' + (entry.sourceStatus === 'official_reference' ? '官方资料入口。目录条目的逐项参数与适用版本仍以详录中的依据为准。' : '社区资料入口，尚待官方来源交叉核对。') + '</p><a class="item-source-link" href="' + escapeHtml(safeUrl(entry.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(new URL(entry.sourceUrl).hostname) + ' ' + icon('external-link') + '</a></section>' +
     '<p class="item-detail-note">目录收录：' + escapeHtml(entry.cataloguedAt) + '。历史记录不代表当前赛季可用；中文名含说明性译法。</p>' +
     '<div class="detail-actions">' + detailButton(entry) + '<button type="button" class="button" data-action="copy" data-id="' + escapeHtml(entry.id) + '">' + icon('book-open') + '复制 Markdown</button><a class="button" href="' + escapeHtml(safeUrl(entry.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">' + icon('external-link') + '打开资料来源</a></div></div>';
@@ -209,7 +214,9 @@ function tacticalItemMarkdown(entry) {
       '### 设计观察（分析）', '', version.designObservation, '', '### 版本与时间依据', '', version.launchNote, ''])
       : ['## 待补资料', '', '操作、获取方式、限制、逐版本参数、生效日期、YouTube 演示与操作过程截图仍待整理。', ''])].join('\n');
 }
-function exportTacticalList() {
+async function exportTacticalList() {
+  try { await ensureCoreUpdates(); }
+  catch { showToast('版本详录暂时无法读取，请重试导出'); return; }
   const entries = getFilteredTacticalItems();
   if (!entries.length) { showToast('当前筛选没有可导出的道具'); return; }
   const header = ['# 主题与战术道具清单', '', entries.length + ' 项；历史目录，包含道具族，不代表当前赛季可用物资。', ''].join('\n');

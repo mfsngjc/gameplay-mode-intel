@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="workspace.css?v=20261021-card-size-r3">
   <link rel="stylesheet" href="tactical-items.css?v=20261025-demos-r2">
   <link rel="stylesheet" href="weapon-skins.css?v=20261103-r4">
-  <link rel="stylesheet" href="ugc.css?v=20261021-platform-nav-r2">
+  <link rel="stylesheet" href="ugc.css?v=20261103-share">
   <link rel="stylesheet" href="card-view.css?v=20261021-r3">
 </head>
 <body class="workspace">
@@ -221,7 +221,8 @@
         <div class="filter-summary" id="filterSummary" hidden><span id="filterSummaryText"></span><button data-reset-filters>清除筛选</button></div>
       </div>
 
-      <section class="library-section" id="librarySection" role="tabpanel" aria-labelledby="resultsTitle">
+      <div id="routeStatus" class="loading-state" role="status" hidden></div>
+      <section class="library-section" id="librarySection" role="tabpanel" aria-labelledby="resultsTitle" hidden>
         <section id="ffPatchLibrary" hidden></section>
         <div class="results-heading"><div><h2 id="resultsTitle">玩法模式资料</h2><span id="resultCount" aria-live="polite">加载中</span></div><span class="section-aside" id="sectionAside">模式案例与基础更新</span></div>
         <p class="context-note" id="contextNote" hidden></p>
@@ -317,6 +318,7 @@
       <button type="button" id="interactiveMapClose" class="button">← 返回地图</button>
       <h2 id="interactiveMapTitle">互动地图</h2>
       <span class="interactive-map-snapshot">本地快照 · 2026.09.06</span>
+      <span id="interactiveMapShare"></span>
       <a id="interactiveMapStandalone" target="_blank" rel="noopener">独立打开 ↗</a>
       <a id="interactiveMapSource" target="_blank" rel="noopener noreferrer">官方来源 ↗</a>
     </header>
@@ -326,7 +328,7 @@
     <div class="map-dialog-header"><div><h2 id="mapDetailTitle"></h2><p id="mapDetailSubtitle"></p><p id="mapDetailDescription" class="map-detail-description" hidden></p><p id="mapDetailCallouts" class="map-detail-callouts" hidden></p></div><button class="icon-button" id="mapDetailClose" aria-label="关闭地图"><svg><use href="#ui-x"></use></svg></button></div>
     <div class="map-viewer-controls"><div><button class="button" type="button" data-map-zoom="out" aria-label="缩小地图">−</button><span id="mapZoomValue">100%</span><button class="button" type="button" data-map-zoom="in" aria-label="放大地图">+</button><button class="button subtle" type="button" data-map-zoom="reset">适应窗口</button></div><span>放大后可滚动查看</span></div>
     <div class="map-viewport" id="mapViewport" tabindex="0" aria-label="地图预览，可滚动查看"><div class="map-image-stage" id="mapImageStage"><img id="mapDetailImage" alt=""><div class="map-callout-layer" id="mapCalloutLayer" aria-label="地图点位名称"></div></div><p id="mapImageError" hidden>图片暂时无法加载，请打开来源页面查看。</p></div>
-    <div class="map-dialog-footer"><span id="mapDetailCredit">图片来源：官方地图页 · 版本信息以官方页面为准</span><div><button class="button" id="mapDetailCollect" type="button" aria-pressed="false"><svg><use href="#ui-bookmark"></use></svg>收藏地图</button><a class="button" id="mapDetailDownload" download>下载图片</a><a class="button" id="mapDetailWiki" target="_blank" rel="noopener noreferrer" hidden>Wiki ↗</a><a class="button" id="mapDetailOfficial" target="_blank" rel="noopener noreferrer" hidden>官方介绍 ↗</a><a class="button primary" id="mapDetailSource" target="_blank" rel="noopener noreferrer">来源页面<svg><use href="#ui-external-link"></use></svg></a></div></div>
+    <div class="map-dialog-footer"><span id="mapDetailCredit">图片来源：官方地图页 · 版本信息以官方页面为准</span><div><button class="button" id="mapDetailCollect" type="button" aria-pressed="false"><svg><use href="#ui-bookmark"></use></svg>收藏地图</button><span id="mapDetailShare"></span><a class="button" id="mapDetailDownload" download>下载图片</a><a class="button" id="mapDetailWiki" target="_blank" rel="noopener noreferrer" hidden>Wiki ↗</a><a class="button" id="mapDetailOfficial" target="_blank" rel="noopener noreferrer" hidden>官方介绍 ↗</a><a class="button primary" id="mapDetailSource" target="_blank" rel="noopener noreferrer">来源页面<svg><use href="#ui-external-link"></use></svg></a></div></div>
   </dialog>
   <dialog class="detail-dialog" id="detailDialog" aria-labelledby="detailTitle"><button class="icon-button detail-close" id="detailClose" aria-label="关闭详情"><svg><use href="#ui-x"></use></svg></button><div id="detailContent"></div></dialog>
   <div class="share-modal" id="shareModal" hidden>
@@ -373,13 +375,13 @@
   <script src="card-view.js?v=20261021-r3"></script>
   <script src="item-demos.js?v=20261025-r2"></script>
   <script src="core-updates.js?v=20261102-skins-r1"></script>
-  <script src="tactical-items.js?v=20261025-demos-r2"></script>
-  <script src="weapon-skins.js?v=20261103-r4"></script>
+  <script src="tactical-items.js?v=20261103-item-list"></script>
+  <script src="weapon-skins.js?v=20261103-share"></script>
   <script src="app.js?v=20261102-skins-r1"></script>
-  <script src="maps.js?v=20261021-card-size-r3"></script>
+  <script src="maps.js?v=20261103-share"></script>
   <script src="ff-patches.js?v=20261021-card-size-r3"></script>
-  <script src="ugc.js?v=20261021-platform-nav-r2"></script>
-  <script src="ugc-catalog.js?v=20261021-platform-nav-r2"></script>
-  <script src="workspace.js?v=20261103-skins-r2"></script>
+  <script src="ugc.js?v=20261103-share"></script>
+  <script src="ugc-catalog.js?v=20261103-share"></script>
+  <script src="workspace.js?v=20261103-item-list"></script>
 </body>
 </html>

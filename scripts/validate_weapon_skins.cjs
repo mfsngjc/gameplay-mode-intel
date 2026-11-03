@@ -210,7 +210,8 @@ vm.runInContext(['weapon-skins.js', 'core-updates.js', 'tactical-items.js', 'app
   fs.readFileSync(path.join(root, file), 'utf8')).join('\n') + '\n' +
   fs.readFileSync(path.join(root, 'workspace.js'), 'utf8').replace(/initWorkspace\(\);\s*$/, ''), integration);
 vm.runInContext([
-  "state.modes = [...rawModes.map(mode => ({...mode, kind:'modes'})), ...loadTacticalCatalogue(catalogue, rawUpdates)];",
+  "loadTacticalCatalogue(catalogue); state.coreUpdates = rawUpdates.map(normalizeCoreUpdate);",
+  "state.modes = [...rawModes.map(mode => ({...mode, kind:'modes'})), ...modeCoreUpdates()];",
   "const baseline = state.modes.length;",
   "WeaponSkins.archive.entries = allSkins.map(skin => WeaponSkins.normalise(skin, skin.game));",
   "state.entries = [...state.modes, ...itemArchive.entries, ...WeaponSkins.archive.entries];",
