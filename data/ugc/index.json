@@ -1,7 +1,53 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T01:07:01+00:00",
+  "generatedAt": "2026-11-03T15:04:36+00:00",
   "dates": [
+    {
+      "date": "2026-11-03",
+      "platforms": [
+        "cs2",
+        "roblox",
+        "fortnite",
+        "minecraft",
+        "cs2_alltime",
+        "roblox_alltime",
+        "fortnite_alltime",
+        "minecraft_alltime"
+      ],
+      "counts": {
+        "cs2": 100,
+        "roblox": 100,
+        "fortnite": 100,
+        "minecraft": 100,
+        "cs2_alltime": 200,
+        "roblox_alltime": 200,
+        "fortnite_alltime": 200,
+        "minecraft_alltime": 200
+      }
+    },
+    {
+      "date": "2026-11-01",
+      "platforms": [
+        "cs2",
+        "roblox",
+        "fortnite",
+        "minecraft",
+        "cs2_alltime",
+        "roblox_alltime",
+        "fortnite_alltime",
+        "minecraft_alltime"
+      ],
+      "counts": {
+        "cs2": 100,
+        "roblox": 100,
+        "fortnite": 100,
+        "minecraft": 100,
+        "cs2_alltime": 200,
+        "roblox_alltime": 200,
+        "fortnite_alltime": 200,
+        "minecraft_alltime": 200
+      }
+    },
     {
       "date": "2026-10-21",
       "platforms": [
