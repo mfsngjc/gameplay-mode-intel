@@ -3,7 +3,8 @@ window.UGCMonitor = (() => {
   'use strict';
   const root = document.querySelector('#ugcSection');
   const platforms = [['cs2', 'CS2 创意工坊'], ['roblox', '罗布乐思'], ['fortnite', '堡垒之夜社区岛'], ['minecraft', '我的世界模组']];
-  const ui = { platform: 'cs2', board: 'hot', date: '', filter: 'all', sort: 'rank', limit: 25, query: '', loading: false, error: '', latest: null, historical: null, index: null, briefing: null, chinese: null, creators: null, boardCovers: null };
+  const ui = { platform: 'cs2', board: 'hot', date: '', entry: '', filter: 'all', sort: 'rank', limit: 25, query: '', loading: false, error: '', latest: null, historical: null, index: null, briefing: null, chinese: null, creators: null, boardCovers: null };
+  let entryRequest = 0;
   const categories = { Custom: '自定义', Classic: '经典对战', Wingman: '搭档模式', Deathmatch: '死斗', Armsrace: '军备竞赛', Training: '训练',
     optimization: '性能优化', utility: '实用工具', adventure: '冒险', technology: '科技', magic: '魔法', storage: '存储', worldgen: '世界生成',
     decoration: '装饰', equipment: '装备', food: '食物', transportation: '交通', management: '管理', social: '社交', mobs: '生物', game_mechanics: '游戏机制',
@@ -56,6 +57,7 @@ window.UGCMonitor = (() => {
   function syncRoute() { history.replaceState(null, '', hash()); }
 
   function readRoute(params) {
+    cancel();
     ui.platform = params.get('platform') === 'all' ? 'all' : platforms.some(([id]) => id === params.get('platform')) ? params.get('platform') : 'cs2';
     ui.board = ['alltime', 'catalog'].includes(params.get('board')) ? params.get('board') : 'hot';
     if (ui.board !== 'catalog' && ui.platform === 'all') ui.platform = 'cs2';
@@ -63,6 +65,7 @@ window.UGCMonitor = (() => {
     if (ui.date !== requestedDate) { ui.date = requestedDate; ui.historical = null; }
     ui.filter = ['risers', 'new', 'strong'].includes(params.get('signal')) ? params.get('signal') : 'all';
     ui.query = params.get('q') || '';
+    ui.entry = params.get('entry') || '';
     if (ui.board === 'catalog') { ui.date = ''; ui.filter = 'all'; }
     if (ui.board === 'catalog' && window.UGCCatalog) UGCCatalog.readRoute(params);
     ui.limit = 25;
@@ -77,7 +80,7 @@ window.UGCMonitor = (() => {
   }
 
   async function load(force = false) {
-    if (ui.loading) return;
+    if (ui.loading || ui.entry || ui.board === 'catalog') return;
     ui.loading = true;
     if (!ui.latest) paint();
     try {
@@ -168,6 +171,7 @@ window.UGCMonitor = (() => {
   }
 
   function paint(focusSelector = '') {
+    if (ui.entry || !document.body.classList.contains('ugc-view')) return;
     if (ui.board === 'catalog') { UGCCatalog.render({ platform: ui.platform, query: ui.query, focusSelector }); return; }
     window.UGCCatalog?.cancel();
     if (!root) return;
@@ -205,7 +209,7 @@ window.UGCMonitor = (() => {
       const cover = ui.boardCovers?.entries?.[board.platformId + ':' + row.id];
       const imageUrl = cover?.status === 'available' ? safe(cover.url) : '';
       const thumbnail = imageUrl ? '<img class="ugc-board-cover" loading="lazy" decoding="async" src="' + esc(imageUrl) + '" alt="" data-ugc-cover-fallback>' : '<span class="ugc-board-cover-missing">暂缺封面</span>';
-      return '<tr><td class="ugc-rank">' + row.rank + '</td><td class="ugc-work"><div class="ugc-work-heading">' + thumbnail + '<div class="ugc-work-info"><div class="ugc-work-titleline"><a href="' + esc(safe(row.url)) + '" target="_blank" rel="noopener noreferrer">' + workTitle(row, board) + ' ↗</a>' + signal(row, board) + '</div>' + workAuthor(row, board) + '</div></div><small>' + esc(labels) + '</small><p>' + esc(translated.intro) + '</p></td><td class="ugc-metric" title="' + esc(row.metricValue) + '">' + number(row.metricValue) + (row.metricGrowthPct == null ? '' : '<small class="' + (row.metricGrowthPct >= 0 ? 'ugc-up' : 'ugc-down') + '">' + (row.metricGrowthPct >= 0 ? '+' : '') + row.metricGrowthPct + '%</small>') + '</td><td>' + (row.isNewEntry ? '<span class="ugc-up">' + (row.isReturning ? '重返' : '新入') + '</span>' : rankChange(row.rankDelta)) + '</td><td>' + rankChange(row.rankDelta7d) + '</td><td>' + sparkline(row, board) + '</td></tr>';
+      return '<tr><td class="ugc-rank">' + row.rank + '</td><td class="ugc-work"><div class="ugc-work-heading">' + thumbnail + '<div class="ugc-work-info"><div class="ugc-work-titleline"><a href="' + esc(safe(row.url)) + '" target="_blank" rel="noopener noreferrer">' + workTitle(row, board) + ' ↗</a>' + signal(row, board) + '</div>' + workAuthor(row, board) + '</div></div><small>' + esc(labels) + '</small><p>' + esc(translated.intro) + '</p>' + shareLinkButton(row.title, rankedEntryHash(board, row)) + '</td><td class="ugc-metric" title="' + esc(row.metricValue) + '">' + number(row.metricValue) + (row.metricGrowthPct == null ? '' : '<small class="' + (row.metricGrowthPct >= 0 ? 'ugc-up' : 'ugc-down') + '">' + (row.metricGrowthPct >= 0 ? '+' : '') + row.metricGrowthPct + '%</small>') + '</td><td>' + (row.isNewEntry ? '<span class="ugc-up">' + (row.isReturning ? '重返' : '新入') + '</span>' : rankChange(row.rankDelta)) + '</td><td>' + rankChange(row.rankDelta7d) + '</td><td>' + sparkline(row, board) + '</td></tr>';
     }).join('');
     if (!visible.length) html += '<tr><td colspan="6" class="ugc-empty">' + (board.isBaseline && ui.filter !== 'all' ? '首日尚无跨日对比数据。' : '没有匹配内容，试试其他筛选或关键词。') + '</td></tr>';
     html += '</tbody></table></div><div class="ugc-footer"><span>已展示 ' + visible.length + ' / ' + rows.length + ' 条' + (board.comparisonDate ? ' · 对比 ' + board.comparisonDate : '') + '</span>' + (visible.length < rows.length ? '<button class="button" type="button" data-ugc-more>' + (board.boardType === 'alltime' ? '显示全部 ' + rows.length + ' 条' : '继续显示 25 条') + '</button>' : '') + '</div>';
@@ -215,10 +219,57 @@ window.UGCMonitor = (() => {
     root.querySelectorAll('[data-ugc-cover-fallback]').forEach(img => img.addEventListener('error', () => { img.replaceWith(Object.assign(document.createElement('span'), { className: 'ugc-board-cover-missing', textContent: '封面暂不可用' })); }, { once: true }));
   }
 
+  function rankedEntryHash(board, row) {
+    return entryHash('ugc', row.id, { platform: board.platformId, board: board.boardType === 'alltime' ? 'alltime' : 'hot', date: board.date });
+  }
+
+  function cancel() {
+    ++entryRequest;
+    window.UGCCatalog?.cancel();
+  }
+
+  async function paintEntry() {
+    const request = ++entryRequest;
+    const { platform, board, date, entry } = ui;
+    const catalog = board === 'catalog';
+    const back = '<div class="ugc-heading-line"><a class="button" href="' + esc(hash()) + '">← ' + (catalog ? '返回全部收录' : '返回榜单') + '</a></div>';
+    const currentRequest = () => request === entryRequest && document.body.classList.contains('ugc-view');
+    root.innerHTML = back + '<div class="ugc-catalog-loading" role="status">正在读取作品…</div>';
+    try {
+      const record = await UGCCatalog.findEntry(platform, entry);
+      if (!currentRequest()) return;
+      if (record) {
+        setEntryTitle(UGCCatalog.entryName(record) || record.id);
+        root.innerHTML = back + UGCCatalog.entryCard(platform, record);
+        root.querySelector('[data-cover-fallback]')?.addEventListener('error', event => {
+          event.target.replaceWith(Object.assign(document.createElement('span'), { className: 'ugc-catalog-cover-fallback', textContent: '作品图暂不可用' }));
+        }, { once: true });
+        return;
+      }
+      if (!catalog) {
+        const boardKey = platform + (board === 'alltime' ? '_alltime' : '');
+        const snapshot = (date ? ui.historical : ui.latest) || await getJSON(date ? 'data/ugc/history/' + date + '.json' : 'data/ugc/latest.json');
+        if (!currentRequest()) return;
+        const listing = snapshot.platforms?.[boardKey];
+        const row = listing?.entries?.find(item => item.id === entry);
+        if (row) {
+          setEntryTitle(row.title);
+          root.innerHTML = back + '<article class="ugc-catalog-card ugc-entry-card"><div class="ugc-catalog-body"><div class="ugc-catalog-kicker">' + esc(platformLabel(listing)) + ' · ' + esc(row.id) + '</div><h2>' + esc(row.title) + '</h2>' + workAuthor(row, listing) + (row.summary ? '<p>' + esc(row.summary) + '</p>' : '') + '<div class="ugc-catalog-links">' + shareLinkButton(row.title, rankedEntryHash(listing, row)) + (safe(row.url) ? '<a href="' + esc(safe(row.url)) + '" target="_blank" rel="noopener noreferrer">作品页面 ↗</a>' : '') + '</div></div></article>';
+          return;
+        }
+      }
+      root.innerHTML = back + '<p class="ugc-empty" role="status">没有找到该作品。</p>';
+    } catch {
+      if (currentRequest()) root.innerHTML = back + '<div class="ugc-warning" role="alert">作品暂时无法读取。 <button class="button" type="button" data-ugc-entry-retry>重试</button></div>';
+    }
+  }
+
   function render(query = '') {
     ui.query = query;
+    if (ui.entry && !new URLSearchParams(location.hash.split('?')[1]).has('entry')) { ui.entry = ''; cancel(); setEntryTitle(); }
+    if (ui.entry) { paintEntry(); return; }
     paint();
-    if (!ui.latest || (ui.date && !ui.historical)) load();
+    if (ui.board !== 'catalog' && (!ui.latest || (ui.date && !ui.historical))) load();
   }
 
   function exportCSV() {
@@ -235,6 +286,7 @@ window.UGCMonitor = (() => {
   root.addEventListener('click', event => {
     const target = event.target.closest('button');
     if (!target) return;
+    if (target.hasAttribute('data-ugc-entry-retry')) { paintEntry(); return; }
     if (target.hasAttribute('data-catalog-page') || target.hasAttribute('data-catalog-refresh')) return;
     if (!target.hasAttribute('data-ugc-refresh') && !target.hasAttribute('data-ugc-more') && !target.hasAttribute('data-ugc-export') && !target.dataset.ugcPlatform && !target.dataset.ugcBoard && !target.dataset.ugcFilter) return;
     if (target.hasAttribute('data-ugc-refresh')) { load(true); return; }
@@ -259,5 +311,5 @@ window.UGCMonitor = (() => {
     if (event.target.id === 'ugcSort') { ui.sort = event.target.value; paint(); root.querySelector('#ugcSort')?.focus({ preventScroll: true }); }
   });
   setInterval(() => { if (!document.hidden && document.body.classList.contains('ugc-view') && !ui.date) load(); }, 60000);
-  return { render, readRoute, hash, platformSwitch, refresh: () => load(true), isCatalog: () => ui.board === 'catalog' };
+  return { render, readRoute, hash, platformSwitch, cancel, refresh: () => load(true), isCatalog: () => ui.board === 'catalog', hasEntry: () => Boolean(ui.entry) };
 })();

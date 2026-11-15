@@ -5,8 +5,9 @@ const viewMeta = {
   modes: ['玩法模式', '玩法模式', '收录模式案例与基础局内体验更新，按核心玩法、游戏和更新类别查找资料。', '01 / GAME MODES'],
   maps: ['地图', '地图', '收集射击游戏的地图资料，查看空间布局，保存底图并追溯官方来源。', '02 / MAP LIBRARY'],
   items: ['主题道具', '主题与战术道具', '收集游戏内改变行动方式的道具、装备和场景交互物，按功能查找机制、视频与图片资料。', '03 / TACTICAL ITEMS'],
+  skins: ['武器外观', '武器外观与检视', '收集枪械与近战皮肤的外观、炫彩和动作视频，保留原始来源，按游戏与武器查找。', '05 / WEAPON COSMETICS'],
   mechanics: ['机制库预览', '地图机制与交互物', '本地预览区：先把局内交互、空间作用和设计观察放在一起试排，尚未发布到公开站点。', 'LOCAL PREVIEW · MECHANICS'],
-  collection: ['我的收藏', '我的研究收藏', '收藏值得继续研究的玩法、地图与主题道具。', 'YOUR FIELDNOTES']
+  collection: ['我的收藏', '我的研究收藏', '收藏值得继续研究的玩法、地图、主题道具与武器外观。', 'YOUR FIELDNOTES']
 };
 const modeViewMeta = {
   library: viewMeta.modes,
@@ -14,7 +15,7 @@ const modeViewMeta = {
   activity: ['玩法模式', '玩法动态', '按日期查看模式与基础更新；同一版本的基础更新集中展示，并保留官方来源。', '01 / GAME MODES · DYNAMIC'],
   timeline: ['玩法模式', '时间画板', '按游戏与核心玩法分轨，查看模式案例及基础更新的日期、版本和具体变化。', '01 / GAME MODES · TIMELINE']
 };
-const kindLabels = { modes: '玩法模式', items: '主题道具', mechanics: '玩法机制', levels: '关卡机制' };
+const kindLabels = { modes: '玩法模式', items: '主题道具', skins: '武器外观', mechanics: '玩法机制', levels: '关卡机制' };
 const gameplayDefinitions = [
   { id: 'br', label: 'BR（大逃杀）', shortLabel: 'BR', timelineClass: 'is-core' },
   { id: 'warfare', label: '大战场', shortLabel: '大战场', timelineClass: 'is-warfare' },
@@ -67,6 +68,41 @@ function syncCardSizeSurfaces() {
 const detailDialog = $('#detailDialog');
 let detailId = null;
 let detailTrigger = null;
+let entryTitle = '';
+
+function setEntryTitle(title = '') {
+  entryTitle = title;
+  document.title = title || '集成农业 · ' + $('#currentViewLabel').textContent;
+}
+
+function entryHash(view, id, extra = {}) {
+  return '#' + view + '?' + new URLSearchParams({ ...extra, entry: id }).toString();
+}
+
+function shareLinkButton(title, hash, label = '复制分享链接') {
+  return '<button class="button" type="button" data-share-hash="' + escapeHtml(hash) +
+    '" data-share-name="' + escapeHtml(title) + '" aria-label="复制 ' + escapeHtml(title) + ' 的分享链接">' +
+    icon('external-link') + escapeHtml(label) + '</button>';
+}
+
+async function copyEntryLink(title, hash) {
+  const url = new URL(location.href);
+  url.search = '';
+  url.hash = hash;
+  const plain = title + '\n' + url.href;
+  try {
+    if (!navigator.clipboard?.write || typeof ClipboardItem === 'undefined') throw new Error();
+    const link = '<a href="' + escapeHtml(url.href) + '">' + escapeHtml(title) + '</a>';
+    await navigator.clipboard.write([new ClipboardItem({
+      'text/html': new Blob([link], { type: 'text/html' }),
+      'text/plain': new Blob([plain], { type: 'text/plain' })
+    })]);
+  } catch {
+    try { await navigator.clipboard.writeText(plain); }
+    catch { window.prompt('复制分享链接', title + ' · ' + url.href); return; }
+  }
+  showToast('已复制「' + title + '」的分享链接');
+}
 
 function safeUrl(value) {
   if (!value) return '';
@@ -83,6 +119,7 @@ function topicIds(entry) {
 }
 
 function entryMatchesQuery(entry) {
+  if (isWeaponSkin(entry)) return WeaponSkins.matchesQuery(entry);
   if (isTacticalItem(entry)) return itemMatchesQuery(entry);
   const text = [entry.modeName, entry.game, entry.oneLineRule, entry.mechanicChange,
     entry.tempoImpact, entry.designObservation, entry.versionLabel, ...(entry.searchAliases || []), entry.tacticalProfile?.role, ...(entry.affectedModes || []), ...(entry.mapNames || []), getContentTypeLabel(entry), ...(entry.type || []),
@@ -92,6 +129,11 @@ function entryMatchesQuery(entry) {
 }
 
 function matchesLibraryEntry(entry, { ignoreGameplay = false, ignoreGame = false } = {}) {
+  if (isWeaponSkin(entry)) return state.view === 'collection' && state.collected.has(entry.id) &&
+    (ignoreGame || state.gameFilter === 'all' || entry.game === state.gameFilter) &&
+    (ignoreGameplay || state.gameplayFilter === 'all') && state.filter === 'all' &&
+    ['all', 'skin'].includes(state.contentFilter) && state.updateCategory === 'all' &&
+    state.topic === 'all' && WeaponSkins.matchesQuery(entry);
   if (isTacticalItem(entry)) return state.view === 'collection' && state.collected.has(entry.id) &&
     (ignoreGame || state.gameFilter === 'all' || entry.game === state.gameFilter) &&
     (ignoreGameplay || state.gameplayFilter === 'all') && state.filter === 'all' &&
@@ -109,6 +151,7 @@ function matchesLibraryEntry(entry, { ignoreGameplay = false, ignoreGame = false
 }
 
 function getFilteredEntries() {
+  if (state.view === 'skins') return WeaponSkins.filtered();
   if (state.view === 'items') return getFilteredTacticalItems();
   let entries = state.entries.filter((entry) => matchesLibraryEntry(entry));
   if (state.sort === 'name') return entries.sort((a, b) => a.modeName.localeCompare(b.modeName, 'zh-CN'));
@@ -123,6 +166,7 @@ function getFilteredEntries() {
 }
 
 function getGames() {
+  if (state.view === 'collection') return [...new Set(state.entries.map(entry => entry.game))];
   if (state.view === 'items') return [...new Set(itemArchive.entries.map((entry) => entry.game))];
   const source = localMechanicsPreview && state.view === 'mechanics'
     ? state.entries.filter((entry) => entry.kind === 'mechanics')
@@ -143,7 +187,7 @@ function renderGameFilters() {
 }
 
 function renderGameplayFilters() {
-  const scoped = state.entries.filter((entry) => matchesLibraryEntry(entry, { ignoreGameplay: true }));
+  const scoped = state.entries.filter((entry) => entry.kind === 'modes' && matchesLibraryEntry(entry, { ignoreGameplay: true }));
   $('#gameplayFilters').innerHTML = [{ id: 'all', label: '全部' }, ...currentGameplayDefinitions()].map((definition) => {
     const count = definition.id === 'all' ? scoped.length : scoped.filter((entry) => (state.gameFilter === 'Free Fire' ? getFFPlaylists(entry) : getGameplayTypes(entry)).includes(definition.id)).length;
     return '<button type="button" class="gameplay-filter" data-gameplay="' + definition.id + '" aria-pressed="' + (state.gameplayFilter === definition.id) + '">' +
@@ -152,6 +196,7 @@ function renderGameplayFilters() {
 }
 
 function workspaceHash(entryId) {
+  if (state.view === 'skins') return WeaponSkins.hash(entryId);
   if (state.view === 'ugc') return UGCMonitor.hash(state.query);
   if (state.view === 'items') return itemHash(entryId);
   const params = new URLSearchParams();
@@ -176,17 +221,23 @@ function syncFilterRoute() { history.replaceState(null, '', workspaceHash()); }
 
 function updateCounts() {
   const counts = Object.fromEntries(Object.keys(kindLabels).map((kind) => [kind, state.entries.filter((entry) => entry.kind === kind).length]));
-  $('#navModeCount').textContent = counts.modes;
+  $('#navModeCount').textContent = workspaceDataReady.has('modes') ? counts.modes : '—';
   $('#navMapCount').textContent = mapArchive.entries.length || '—';
-  $('#navItemCount').textContent = itemArchive.entries.length;
+  $('#navItemCount').textContent = workspaceDataReady.has('items') ? itemArchive.entries.length : '—';
+  $('#navSkinCount').textContent = WeaponSkins.count() || '—';
   $('#navMechanicsCount').textContent = counts.mechanics || '—';
   $('#navCollectedCount').textContent = state.entries.filter((entry) => state.collected.has(entry.id)).length + (mapArchive.mapCollected?.size || 0);
   if (state.view === 'ugc') {
-    $('#librarySummary').textContent = UGCMonitor.isCatalog() ? '正在读取目录收录数' : '4 个平台 · 热榜 100 / 历史榜 200';
+    $('#librarySummary').textContent = UGCMonitor.hasEntry() ? '作品资料' : UGCMonitor.isCatalog() ? '正在读取目录收录数' : '4 个平台 · 热榜 100 / 历史榜 200';
   } else if (state.view === 'maps') {
     $('#librarySummary').textContent = new Set(mapArchive.entries.map((entry) => entry.game)).size + ' 款游戏 · ' + mapArchive.entries.length + ' 张地图';
   } else if (state.view === 'items') {
     $('#librarySummary').textContent = itemArchive.entries.length + ' 项对象 · ' + itemArchive.categories.length + ' 个分类';
+  } else if (state.view === 'skins') {
+    $('#librarySummary').textContent = WeaponSkins.games.length + ' 款游戏 · ' + WeaponSkins.count().toLocaleString('zh-CN') + ' 款武器外观';
+  } else if (state.view === 'collection') {
+    $('#librarySummary').textContent = '已收藏 ' + (state.entries.filter(entry => state.collected.has(entry.id)).length +
+      (mapArchive.mapCollected?.size || 0)) + ' 份资料';
   } else if (state.view === 'mechanics') {
     $('#librarySummary').textContent = getGames().length + ' 款游戏 · ' + state.entries.filter((entry) => entry.kind === 'mechanics').length + ' 张机制卡';
   } else {
@@ -202,6 +253,7 @@ function fallbackCover(entry) {
 }
 
 function renderCard(entry) {
+  if (isWeaponSkin(entry)) return WeaponSkins.card(entry);
   if (isTacticalItem(entry)) return tacticalCard(entry);
   const collected = state.collected.has(entry.id);
   const isMode = entry.kind === 'modes';
@@ -230,6 +282,7 @@ function renderLibrary() {
   $('#resultCount').textContent = entries.length + collectedMaps.length + ' 份';
   $('#sectionAside').textContent = ['mechanics', 'levels'].includes(state.view)
     ? '按关联案例的核心玩法，查找可复用的设计'
+    : state.view === 'collection' ? '玩法、地图、道具与武器外观的个人资料夹'
     : state.gameplayFilter === 'all' ? '模式案例与基础更新共同归档，LTM 可独立筛选' : '按核心玩法归档模式案例与基础更新';
   $('#typeField').hidden = state.view === 'mechanics' || state.view === 'levels';
   $('#contextNote').hidden = !['mechanics', 'levels'].includes(state.view);
@@ -285,20 +338,21 @@ function currentMetricsRouteKey() {
   return state.view === 'modes' ? 'modes:' + state.modeView : state.view;
 }
 
-function renderWorkspace() {
+let workspaceRoutePending = false;
+function renderWorkspace({ pending = workspaceRoutePending, entryOnly = false } = {}) {
   if (!state.ready) return;
   syncCardSizeSurfaces();
   recordPageView(currentMetricsRouteKey());
   document.body.classList.toggle('items-view', state.view === 'items');
+  document.body.classList.toggle('skins-view', state.view === 'skins');
   document.body.classList.toggle('ugc-view', state.view === 'ugc');
   updateCounts();
-  renderGameFilters();
   const meta = state.view === 'modes' ? (modeViewMeta[state.modeView] || modeViewMeta.library) : (viewMeta[state.view] || viewMeta.modes);
   $('#currentViewLabel').textContent = meta[0];
   $('#pageTitle').innerHTML = escapeHtml(meta[1]);
   $('#pageDescription').textContent = meta[2];
   $('#pageEyeline').textContent = meta[3];
-  document.title = '集成农业 · ' + meta[0];
+  document.title = entryTitle || '集成农业 · ' + meta[0];
   document.querySelectorAll('[data-view]').forEach((link) => {
     const active = link.dataset.view === state.view;
     link.classList.toggle('is-active', active);
@@ -313,29 +367,36 @@ function renderWorkspace() {
     button.setAttribute('aria-selected', String(active));
     button.tabIndex = active ? 0 : -1;
   });
-  $('#librarySection').hidden = !library;
-  $('#activitySection').hidden = !showActivity;
-  $('#timelineSection').hidden = !showTimeline;
-  $('#mapsSection').hidden = state.view !== 'maps';
-  $('#itemsSection').hidden = state.view !== 'items';
-  $('#ugcSection').hidden = state.view !== 'ugc';
+  $('#librarySection').hidden = pending || !library;
+  $('#activitySection').hidden = pending || !showActivity;
+  $('#timelineSection').hidden = pending || !showTimeline;
+  $('#mapsSection').hidden = pending || entryOnly || state.view !== 'maps';
+  $('#itemsSection').hidden = pending || entryOnly || state.view !== 'items';
+  $('#skinsSection').hidden = pending || state.view !== 'skins';
+  $('#ugcSection').hidden = pending || state.view !== 'ugc';
   $('#exportItemsMarkdown').hidden = state.view !== 'items';
-  $('#searchInput').placeholder = state.view === 'ugc' ? '搜索创作内容、作者、岛屿代码…' : state.view === 'items' ? '搜索道具、英文名、作用…' : '搜索玩法、地图、游戏…';
-  $('#patchesSection').hidden = !(state.view === 'modes' && state.modeView === 'patches');
+  $('#exportSkinsMarkdown').hidden = state.view !== 'skins';
+  $('#searchInput').placeholder = state.view === 'skins' ? '搜索皮肤、英文名、枪型、刀…' : state.view === 'ugc' ? '搜索创作内容、作者、岛屿代码…' : state.view === 'items' ? '搜索道具、英文名、作用…' : '搜索玩法、地图、游戏…';
+  $('#patchesSection').hidden = pending || !(state.view === 'modes' && state.modeView === 'patches');
   $('.export-menu').hidden = ['maps', 'ugc'].includes(state.view) || (state.view === 'modes' && state.modeView === 'patches');
+  $('#routeStatus').hidden = !pending;
+  if (pending) { $('#sharedFilters').hidden = true; return; }
   if (library) renderLibrary();
   if (showActivity) renderActivityFeed();
   if (showTimeline) renderTimeline();
   if (state.view === 'modes' && state.modeView === 'patches') renderFFPatches();
   renderFFPatchLibrary();
-  if (state.view === 'maps') renderMapArchive();
-  if (state.view === 'items') renderTacticalItems();
-  renderSharedFilters();
-  if (state.view === 'ugc') { $('#sharedFilters').hidden = true; UGCMonitor.render(state.query); }
+  if (state.view === 'maps' && !entryOnly) renderMapArchive();
+  if (state.view === 'items' && !entryOnly) renderTacticalItems();
+  if (state.view === 'skins') WeaponSkins.render();
+  if (['maps', 'items', 'skins', 'ugc'].includes(state.view)) $('#sharedFilters').hidden = true;
+  else renderSharedFilters();
+  if (state.view === 'ugc') UGCMonitor.render(state.query);
 }
 
 function resetFilters() {
   resetItemFilters();
+  WeaponSkins.reset();
   state.patchId = ''; state.patchLane = 'all'; state.patchCategory = 'all'; state.query = ''; state.topic = 'all'; state.filter = 'all'; state.gameFilter = 'all'; state.gameplayFilter = 'all'; state.contentFilter = 'all'; state.updateCategory = 'all'; state.activityLimit = 24; state.limit = 12;
   $('#searchInput').value = ''; $('#topicSelect').value = 'all'; $('#typeSelect').value = 'all';
 }
@@ -353,14 +414,15 @@ function setNavOpen(open) {
   if (!open && wasOpen && mobile) $('#menuToggle').focus();
 }
 
-function readRoute() {
+function applyRoute() {
   if (!state.ready) return;
   let [route, query] = location.hash.slice(1).split('?');
   const routeParams = new URLSearchParams(query);
   const legacyItem = resolveTacticalItem(routeParams.get('entry'));
   const legacyTopic = route === 'modes' && routeParams.get('game') === 'Fortnite' &&
     routeParams.get('content') === 'core_update' && routeParams.get('q') === '战术道具';
-  if (legacyTopic || (legacyItem && (route === 'modes' || legacyItem.id !== routeParams.get('entry')))) {
+  if (legacyTopic || (route === 'modes' && routeParams.get('entry')?.startsWith('fortnite-item-')) ||
+      (legacyItem && (route === 'modes' || legacyItem.id !== routeParams.get('entry')))) {
     route = 'items';
     ['view', 'content', 'category', 'gameplay', 'topic', 'tag'].forEach((key) => routeParams.delete(key));
     if (legacyTopic) routeParams.delete('q');
@@ -391,7 +453,7 @@ function readRoute() {
   }
   state.gameFilter = getGames().includes(routeParams.get('game')) ? routeParams.get('game') : 'all';
   state.contentFilter = Object.hasOwn(contentTypeLabels, routeParams.get('content')) ? routeParams.get('content') : 'all';
-  if (view !== 'collection' && state.contentFilter === 'item') state.contentFilter = 'all';
+  if (view !== 'collection' && ['item', 'skin'].includes(state.contentFilter)) state.contentFilter = 'all';
   state.updateCategory = state.contentFilter === 'core_update' && Object.hasOwn(coreUpdateCategories, routeParams.get('category')) ? routeParams.get('category') : 'all';
   state.query = routeParams.get('q') || '';
   state.topic = topicDefs.some((t) => t.id === routeParams.get('topic')) ? routeParams.get('topic') : 'all';
@@ -403,14 +465,23 @@ function readRoute() {
   state.patchCategory = Object.hasOwn(ffPatchCategories, routeParams.get('pcategory')) ? routeParams.get('pcategory') : 'all';
   state.filter = routeParams.get('tag') === 'ltm' && view === 'modes' ? 'ltm' : 'all';
   if (view === 'items') readItemRoute(routeParams);
+  if (view === 'skins') WeaponSkins.readRoute(routeParams);
   if (view === 'ugc') UGCMonitor.readRoute(routeParams);
   $('#typeSelect').value = state.filter;
   setNavOpen(false);
-  renderWorkspace();
-  if (contentChanged) window.scrollTo({ top: 0, behavior: 'instant' });
   const requestedId = routeParams.get('entry');
-  if (requestedId && state.entries.some((entry) => entry.id === requestedId)) showDetail(requestedId);
+  const hasItem = view === 'items' && itemArchive.entries.some(entry => entry.id === requestedId);
+  const hasMap = view === 'maps' && mapArchive.entries.some(entry => entry.id === requestedId);
+  const detail = requestedId && state.entries.find(entry => entry.id === requestedId && (entry.kind === view || view === 'collection'));
+  renderWorkspace({ entryOnly: hasItem || hasMap });
+  if (['skins', 'collection'].includes(view)) WeaponSkins.ensure();
+  if (contentChanged) window.scrollTo({ top: 0, behavior: 'instant' });
+  if (detail) showDetail(detail.id);
   else if (detailDialog.open) closeDetail(false);
+  if (view === 'items') prepareItemList();
+  const mapId = view === 'maps' ? requestedId : view === 'collection' ? routeParams.get('map') : null;
+  if (mapId) showMapDetail(mapId, routeParams.get('mapView'));
+  if ((view === 'items' && requestedId && !hasItem) || (view === 'maps' && requestedId && !hasMap && !mapArchive.error)) showToast('没有找到该条目');
 }
 
 function detailButton(entry) {
@@ -423,6 +494,10 @@ function showDetail(id) {
   if (!entry) return;
   if (entry.kind === 'modes') recordModeView(entry.id);
   detailId = id;
+  setEntryTitle(entry.modeName);
+  const closeLabel = state.view === 'items' ? '返回道具清单' : '关闭详情';
+  $('#detailClose').setAttribute('aria-label', closeLabel);
+  $('#detailClose').title = closeLabel;
   const sourceIds = entry.sourceModeIds || [];
   const related = entry.kind === 'modes'
     ? state.entries.filter((item) => item.sourceModeIds?.includes(id))
@@ -430,7 +505,8 @@ function showDetail(id) {
   const imageUrl = safeUrl(entry.imageUrl);
   const derived = entry.kind !== 'modes';
   if (typeof ItemDemos !== 'undefined') ItemDemos.stop(detailDialog);
-  $('#detailContent').innerHTML = isTacticalItem(entry) ? tacticalItemDetail(entry) : isCoreUpdate(entry) ? coreUpdateDetail(entry) :
+  WeaponSkins.stop(detailDialog);
+  $('#detailContent').innerHTML = isWeaponSkin(entry) ? WeaponSkins.detail(entry) : isTacticalItem(entry) ? tacticalItemDetail(entry) : isCoreUpdate(entry) ? coreUpdateDetail(entry) :
     (imageUrl ? '<img class="detail-cover" src="' + escapeHtml(imageUrl) + '" alt="' + escapeHtml(entry.imageSource || '原案例配图') + '">' : '') +
     '<div class="detail-inner"><div class="detail-kicker">' + kindLabels[entry.kind] + ' / ' + escapeHtml(entry.game) + '</div>' +
     '<h2 id="detailTitle">' + escapeHtml(entry.modeName) + '</h2>' +
@@ -449,12 +525,16 @@ function showDetail(id) {
     '<button class="button" data-action="copy" data-id="' + escapeHtml(entry.id) + '">' + icon('book-open') + '复制 Markdown</button>' +
     '<button class="button" data-action="share" data-id="' + escapeHtml(entry.id) + '">' + icon('arrow-up-right') + '分享图片</button>' +
     (safeUrl(entry.sourceUrl) ? '<a class="button" href="' + escapeHtml(safeUrl(entry.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">' + icon('external-link') + '查看来源</a>' : '') + '</div></div>';
+  if (['modes', 'items', 'skins'].includes(entry.kind)) {
+    $('#detailContent .detail-actions')?.insertAdjacentHTML('beforeend', shareLinkButton(entry.modeName, entryHash(entry.kind, entry.id)));
+  }
   if (!detailDialog.open) {
     detailTrigger = document.activeElement;
     detailDialog.showModal();
     document.body.classList.add('modal-open');
   }
   detailDialog.scrollTop = 0;
+  if (isTacticalItem(entry) && entry.coreUpdateIds.length && !workspaceDataReady.has('coreUpdates')) loadItemDetailVersions(entry);
 }
 
 function openDetail(id) {
@@ -465,9 +545,14 @@ function openDetail(id) {
 
 function closeDetail(updateUrl = true) {
   if (typeof ItemDemos !== 'undefined') ItemDemos.stop(detailDialog);
+  WeaponSkins.stop(detailDialog);
   detailDialog.close(); detailId = null;
   document.body.classList.remove('modal-open');
-  if (updateUrl) history.replaceState(null, '', workspaceHash());
+  if (updateUrl) {
+    setEntryTitle();
+    history.replaceState(null, '', workspaceHash());
+    if (state.view === 'items') revealItemList();
+  }
   if (detailTrigger?.isConnected) detailTrigger.focus();
 }
 
@@ -496,6 +581,8 @@ function bindWorkspaceEvents() {
     });
   });
   document.addEventListener('click', (event) => {
+    const share = event.target.closest('[data-share-hash]');
+    if (share) { copyEntryLink(share.dataset.shareName, share.dataset.shareHash); return; }
     const target = event.target.closest('[data-action], [data-game], [data-gameplay], [data-mode-view], [data-reset-filters], [data-timeline-group], [data-load-activity]');
     if (!target) return;
     if (target.hasAttribute('data-load-activity')) { state.activityLimit += 24; renderActivityFeed(); return; }
@@ -527,31 +614,36 @@ function bindWorkspaceEvents() {
     }
     const entry = state.entries.find((item) => item.id === target.dataset.id);
     if (!entry) return;
-    if (target.dataset.action === 'open-mode' || target.dataset.action === 'open-item') openDetail(entry.id);
+    if (['open-mode', 'open-item', 'open-skin'].includes(target.dataset.action)) openDetail(entry.id);
     if (target.dataset.action === 'collect') {
       const restoreId = entry.id;
       const fromDetail = detailDialog.open;
       toggleCollect(entry.id);
       if (!fromDetail) {
-        const button = [...document.querySelectorAll('#modeGrid [data-action="collect"], #itemGrid [data-action="collect"]')].find((item) => item.dataset.id === restoreId);
+        const button = [...document.querySelectorAll('#modeGrid [data-action="collect"], #itemGrid [data-action="collect"], #skinGrid [data-action="collect"]')].find((item) => item.dataset.id === restoreId);
         button?.focus({ preventScroll: true });
       }
     }
-    if (target.dataset.action === 'copy') copyModeMarkdown(entry);
+    if (target.dataset.action === 'copy') copyDetailMarkdown(entry);
     if (target.dataset.action === 'share') {
       if (detailDialog.open) closeDetail();
       openShareModal(entry);
     }
   });
   $('#searchInput').addEventListener('input', (event) => {
-    state.query = event.target.value; state.limit = 12; itemArchive.limit = 24; syncFilterRoute();
-    if (!['modes', 'mechanics', 'levels', 'collection', 'maps', 'items', 'ugc'].includes(state.view)) {
+    state.query = event.target.value; state.limit = 12; itemArchive.limit = 24; WeaponSkins.archive.limit = 24; syncFilterRoute();
+    if (!['modes', 'mechanics', 'levels', 'collection', 'maps', 'items', 'skins', 'ugc'].includes(state.view)) {
       state.view = 'modes'; state.gameFilter = 'all';
       history.replaceState(null, '', '#modes');
     }
     renderWorkspace();
   });
-  $('#contentTypeSelect').addEventListener('change', (event) => { state.contentFilter = event.target.value; state.updateCategory = 'all'; if (state.contentFilter === 'core_update') { state.filter = 'all'; state.feedFilter = 'all'; $('#typeSelect').value = 'all'; } state.limit = 12; syncFilterRoute(); renderWorkspace(); });
+  $('#contentTypeSelect').addEventListener('change', (event) => {
+    state.contentFilter = event.target.value; state.updateCategory = 'all';
+    if (['core_update', 'item', 'skin'].includes(state.contentFilter)) { state.filter = 'all'; state.feedFilter = 'all'; $('#typeSelect').value = 'all'; }
+    if (['item', 'skin'].includes(state.contentFilter)) { state.gameplayFilter = 'all'; state.topic = 'all'; $('#topicSelect').value = 'all'; }
+    state.limit = 12; syncFilterRoute(); renderWorkspace();
+  });
   $('#updateCategorySelect').addEventListener('change', (event) => { state.updateCategory = event.target.value; state.limit = 12; syncFilterRoute(); renderWorkspace(); });
   $('#topicSelect').addEventListener('change', (event) => { state.topic = event.target.value; state.limit = 12; syncFilterRoute(); renderWorkspace(); });
   $('#typeSelect').addEventListener('change', (event) => { state.filter = event.target.value; state.limit = 12; syncFilterRoute(); renderWorkspace(); });
@@ -621,62 +713,186 @@ function bindWorkspaceEvents() {
     event.target.outerHTML = fallbackCover(entry);
   }, true);
   $('#detailContent').addEventListener('error', (event) => {
-    if (!handleTacticalImageError(event) && event.target.tagName === 'IMG') event.target.hidden = true;
+    if (!handleTacticalImageError(event) && event.target.tagName === 'IMG' && !event.target.closest('.weapon-detail-art')) event.target.hidden = true;
   }, true);
   window.addEventListener('hashchange', readRoute);
   window.matchMedia('(max-width: 760px)').addEventListener('change', () => setNavOpen(false));
 }
 
-async function initWorkspace() {
+const workspaceData = new Map();
+const workspaceDataReady = new Set();
+let routeSequence = 0;
+
+function loadWorkspaceData(key, load) {
+  if (!workspaceData.has(key)) {
+    const request = Promise.resolve().then(load).then(() => { workspaceDataReady.add(key); })
+      .catch(error => { workspaceData.delete(key); throw error; });
+    workspaceData.set(key, request);
+  }
+  return workspaceData.get(key);
+}
+
+async function workspaceJSON(path, label, array = true, priority = 'auto') {
+  const response = await fetch(path, { cache: 'no-cache', priority });
+  if (!response.ok) throw new Error(label + '暂时无法读取');
+  const data = await response.json();
+  if (array && !Array.isArray(data)) throw new Error(label + '格式有误');
+  return data;
+}
+
+function ensureItems() {
+  return loadWorkspaceData('items', async () => {
+    loadTacticalCatalogue(await workspaceJSON('data/tactical-items.json', '主题道具资料', false));
+    state.entries.push(...itemArchive.entries);
+  });
+}
+
+function ensureCoreUpdates(priority) {
+  return loadWorkspaceData('coreUpdates', async () => {
+    const updates = await workspaceJSON('data/core-updates.json', '基础更新资料', true, priority);
+    state.coreUpdates = updates.map(normalizeCoreUpdate);
+  });
+}
+
+function revealItemList() {
+  const section = $('#itemsSection');
+  if (!section.hidden) return;
+  renderTacticalItems();
+  section.hidden = false;
+}
+
+function prepareItemList() {
+  const request = routeSequence;
+  const isCurrent = () => request === routeSequence && state.view === 'items' && !workspaceRoutePending;
+  // Let the detail paint first. Its modal keeps the prepared list inert underneath.
+  requestAnimationFrame(() => setTimeout(async () => {
+    if (!isCurrent()) return;
+    revealItemList();
+    if (workspaceDataReady.has('coreUpdates')) return;
+    try { await ensureCoreUpdates('low'); } catch { return; }
+    const active = document.activeElement;
+    if (isCurrent() && (state.query || $('#itemGrid .has-dossier')) &&
+        !active?.closest('#itemGrid, #itemCategoryFilters')) renderTacticalItems();
+  }, 0));
+}
+
+async function loadItemDetailVersions(entry) {
+  const host = $('#itemVersionDetails');
+  if (!host) return;
+  host.innerHTML = tacticalItemVersionDetail(entry);
+  try {
+    await ensureCoreUpdates();
+    if (host.isConnected && detailDialog.open) host.innerHTML = tacticalItemVersionDetail(entry);
+  } catch {
+    if (!host.isConnected || !detailDialog.open) return;
+    host.innerHTML = '<p class="item-detail-note" role="status">历史版本详录暂时无法读取。</p><button type="button" class="button">重试</button>';
+    host.querySelector('button').addEventListener('click', () => loadItemDetailVersions(entry));
+  }
+}
+
+async function copyDetailMarkdown(entry) {
+  if (isTacticalItem(entry) && entry.coreUpdateIds.length) {
+    try { await ensureCoreUpdates(); }
+    catch { showToast('版本详录暂时无法读取，请重试复制'); return; }
+  }
+  copyModeMarkdown(entry);
+}
+
+function ensureModes() {
+  return loadWorkspaceData('modes', async () => {
+    const [modes, patches] = await Promise.all([
+      workspaceJSON('data/modes.json', '模式资料'),
+      workspaceJSON('data/free-fire-patches.json', '版本详录'),
+      ensureItems(), ensureCoreUpdates()
+    ]);
+    state.modes = modes.map(mode => ({ ...mode, kind: 'modes', type: Array.isArray(mode.type) ? mode.type : [], tags: Array.isArray(mode.tags) ? mode.tags : [] }));
+    state.modes.push(...modeCoreUpdates());
+    state.entries.unshift(...state.modes);
+    state.ffPatches = patches.filter(patch => patch.publicationStatus === 'ready');
+  });
+}
+
+function ensureMechanics() {
+  return loadWorkspaceData('mechanics', async () => {
+    const [mechanics] = await Promise.all([workspaceJSON('local-only/mechanics-preview.json', '本地机制预览资料'), ensureModes()]);
+    state.entries.push(...mechanics.map(entry => ({
+      ...entry, kind: 'mechanics', type: Array.isArray(entry.type) ? entry.type : [],
+      tags: Array.isArray(entry.tags) ? entry.tags : [], sourceModeIds: Array.isArray(entry.sourceModeIds) ? entry.sourceModeIds : []
+    })));
+  });
+}
+
+async function readRoute() {
+  const request = ++routeSequence;
+  const [route, query] = location.hash.slice(1).split('?');
+  const params = new URLSearchParams(query);
+  const id = params.get('entry') || '';
+  if (route === 'items' && !id && state.view === 'items' && !workspaceRoutePending && detailDialog.open && location.hash === itemHash()) {
+    setEntryTitle();
+    closeDetail(false);
+    revealItemList();
+    prepareItemList();
+    return;
+  }
+  const oldItemRoute = route === 'modes' && (id.startsWith('fortnite-item-') ||
+    (params.get('game') === 'Fortnite' && params.get('content') === 'core_update' && params.get('q') === '战术道具'));
+  const requestedView = oldItemRoute ? 'items' : route;
+  const view = Object.hasOwn(viewMeta, requestedView) && (requestedView !== 'mechanics' || localMechanicsPreview) ? requestedView : 'modes';
+  if (route === 'mechanics' && !localMechanicsPreview) history.replaceState(null, '', '#modes');
+  const requestedModeView = ['activity', 'timeline'].includes(route) ? route : params.get('view');
+  const modeView = view === 'modes' && ['activity', 'timeline', 'patches'].includes(requestedModeView) ? requestedModeView : 'library';
+  setEntryTitle();
+  closeOpenMap(false);
+  if (detailDialog.open && (!id || id !== detailId)) closeDetail(false);
+  if (state.view === 'ugc' && view !== 'ugc') UGCMonitor.cancel();
+  const loaded = view === 'maps' ? !mapArchive.loading : ['ugc', 'skins'].includes(view) || workspaceDataReady.has(view);
+  if (!loaded) {
+    if (state.view !== view || state.modeView !== modeView) {
+      resetFilters();
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+    state.view = view;
+    state.modeView = modeView;
+    setNavOpen(false);
+    workspaceRoutePending = true;
+    $('#routeStatus').textContent = '正在读取' + viewMeta[view][0] + '…';
+    renderWorkspace();
+  }
+  try {
+    if (view === 'items') await ensureItems();
+    if (view === 'modes') await ensureModes();
+    if (view === 'mechanics') await ensureMechanics();
+    if (view === 'maps') await loadMapArchive();
+    if (view === 'collection') await loadWorkspaceData('collection', () => Promise.all([ensureModes(), loadMapArchive()]));
+    if (request !== routeSequence) return;
+    workspaceRoutePending = false;
+    applyRoute();
+  } catch (error) {
+    if (request !== routeSequence) return;
+    const status = $('#routeStatus');
+    status.textContent = error.message + '。';
+    const retry = document.createElement('button');
+    retry.className = 'button'; retry.type = 'button'; retry.textContent = '重试';
+    retry.addEventListener('click', readRoute);
+    status.append(' ', retry);
+  }
+}
+
+function initWorkspace() {
   window.CardView?.subscribe?.(() => syncCardSizeSurfaces());
   syncCardSizeSurfaces();
   bindWorkspaceEvents();
   bindFFPatchEvents();
   bindTacticalItemEvents();
+  WeaponSkins.bind();
   if (typeof ItemDemos !== 'undefined') ItemDemos.bind(detailDialog);
   initMapArchive();
-  try {
-    const response = await fetch('data/modes.json', { cache: 'no-store' });
-    if (!response.ok) throw new Error('模式资料暂时无法读取');
-    const modes = await response.json();
-    if (!Array.isArray(modes)) throw new Error('模式资料格式有误');
-    state.modes = modes.map((mode) => ({ ...mode, kind: 'modes', type: Array.isArray(mode.type) ? mode.type : [], tags: Array.isArray(mode.tags) ? mode.tags : [] }));
-    const updateResponse = await fetch('data/core-updates.json', { cache: 'no-store' });
-    if (!updateResponse.ok) throw new Error('基础更新资料暂时无法读取');
-    const updates = await updateResponse.json();
-    if (!Array.isArray(updates)) throw new Error('基础更新资料格式有误');
-    const itemResponse = await fetch('data/tactical-items.json', { cache: 'no-store' });
-    if (!itemResponse.ok) throw new Error('主题道具资料暂时无法读取');
-    state.modes.push(...loadTacticalCatalogue(await itemResponse.json(), updates));
-    const patchResponse = await fetch('data/free-fire-patches.json', { cache: 'no-store' });
-    if (!patchResponse.ok) throw new Error('版本详录暂时无法读取');
-    state.ffPatches = (await patchResponse.json()).filter(patch => patch.publicationStatus === 'ready');
-    // Unpublished research is opt-in, local-only, and excluded by build_public_site.py.
-    if (localMechanicsPreview) {
-      const previewResponse = await fetch('local-only/mechanics-preview.json', { cache: 'no-store' });
-      if (!previewResponse.ok) throw new Error('本地机制预览资料暂时无法读取');
-      const mechanics = await previewResponse.json();
-      if (!Array.isArray(mechanics)) throw new Error('本地机制预览资料格式有误');
-      state.entries = [...state.modes, ...mechanics.map((entry) => ({
-        ...entry, kind: 'mechanics', type: Array.isArray(entry.type) ? entry.type : [],
-        tags: Array.isArray(entry.tags) ? entry.tags : [], sourceModeIds: Array.isArray(entry.sourceModeIds) ? entry.sourceModeIds : []
-      }))];
-      $('.local-preview-nav').hidden = false;
-    } else {
-      state.entries = [...state.modes];
-    }
-    state.entries.push(...itemArchive.entries);
-    seedCollectedAnalytics();
-    state.ready = true;
-    $('#topicSelect').insertAdjacentHTML('beforeend', topicDefs.map((topic) => '<option value="' + topic.id + '">' + topic.label + '</option>').join(''));
-    $('#typeSelect').insertAdjacentHTML('beforeend', ['ltm'].map((tag) => '<option value="' + tag + '">' + tagLabels[tag] + '</option>').join(''));
-    $('#updateCategorySelect').insertAdjacentHTML('beforeend', Object.entries(coreUpdateCategories).map(([id, label]) => '<option value="' + id + '">' + label + '</option>').join(''));
-    readRoute();
-  } catch (error) {
-    modeGrid.setAttribute('aria-busy', 'false');
-    modeGrid.innerHTML = '<div class="empty-state">' + icon('radio') + '<h3>资料暂时没有加载成功</h3><p>请通过本地服务器访问，或稍后重新加载。</p><button class="button" id="retryLoad">重新加载</button></div>';
-    statusLine.textContent = error.message;
-    $('#retryLoad').addEventListener('click', () => location.reload());
-  }
+  if (localMechanicsPreview) $('.local-preview-nav').hidden = false;
+  seedCollectedAnalytics();
+  state.ready = true;
+  $('#topicSelect').insertAdjacentHTML('beforeend', topicDefs.map((topic) => '<option value="' + topic.id + '">' + topic.label + '</option>').join(''));
+  $('#typeSelect').insertAdjacentHTML('beforeend', ['ltm'].map((tag) => '<option value="' + tag + '">' + tagLabels[tag] + '</option>').join(''));
+  $('#updateCategorySelect').insertAdjacentHTML('beforeend', Object.entries(coreUpdateCategories).map(([id, label]) => '<option value="' + id + '">' + label + '</option>').join(''));
+  readRoute();
 }
 initWorkspace();

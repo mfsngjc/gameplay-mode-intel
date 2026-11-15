@@ -89,6 +89,37 @@ window.UGCCatalog = (() => {
     return '来源更新失败，当前记录可能不完整。';
   }
   function recordLookup(records) { return new Map(records.map(record => [record.key, record])); }
+  function entryBucket(id) {
+    let result = 0;
+    for (const character of id) result = (31 * result + character.charCodeAt(0)) % 64;
+    return result.toString(16).padStart(2, '0');
+  }
+  async function findEntry(platform, id) {
+    if (!Object.hasOwn(labels, platform) || !/^[A-Za-z0-9_-]{1,80}$/.test(id)) return null;
+    const fromShard = async url => {
+      const doc = await fetchJSON(url);
+      if (doc.schemaVersion !== 1 || doc.platformId !== platform || !Array.isArray(doc.entries)) throw new Error('schema');
+      return doc.entries.find(record => record.id === id) || null;
+    };
+    let bucket;
+    try { bucket = await fetchJSON(catalogBase + 'entry-index/' + platform + '/' + entryBucket(id) + '.json.gz', true); }
+    catch (error) { if (error.status !== 404) throw error; }
+    if (bucket) {
+      if (!Object.hasOwn(bucket, id)) return null;
+      const filename = bucket[id];
+      if (!/^detail-\d+-[0-9a-f]+\.json\.gz$/.test(filename)) throw new Error('schema');
+      return fromShard(catalogBase + platform + '/' + filename);
+    }
+    // A server serving the source checkout has no generated entry index.
+    const manifest = await readManifest();
+    const shards = manifest.platforms[platform]?.shards || [];
+    for (let start = 0; start < shards.length; start += MAX_CONCURRENT) {
+      const records = await Promise.all(shards.slice(start, start + MAX_CONCURRENT).map(shard => fromShard(validPath(shard.url))));
+      const match = records.find(Boolean);
+      if (match) return match;
+    }
+    return null;
+  }
   async function detailRecords(platforms, entries, token, progress) {
     const groups = new Map();
     const direct = [];
@@ -189,10 +220,13 @@ window.UGCCatalog = (() => {
     return { known, unknown };
   }
   function sourceObjects(sources) { return (sources || []).map(source => typeof source === 'string' ? { url: source } : source && typeof source === 'object' ? source : null).filter(Boolean); }
-  function card(platformId, entry, record) {
+  function entryName(record, entry = record) {
+    return record.titleStatus === 'missing' ? '' : String(record.originalTitle || entry.originalTitle || '').trim();
+  }
+  function card(platformId, entry, record, single = false) {
     const image = record.image || {}, imageUrl = image.status === 'available' ? safe(image.url) : '';
     const titleZh = record.translationStatus === 'reviewed' ? record.titleZh : '';
-    const originalTitle = record.titleStatus === 'missing' || !String(record.originalTitle || entry.originalTitle || '').trim() ? '来源未提供名称' : (record.originalTitle || entry.originalTitle);
+    const originalTitle = entryName(record, entry) || '来源未提供名称';
     const title = esc(originalTitle) + (titleZh ? '<span class="ugc-title-translation">（' + esc(titleZh) + '）</span>' : '');
     const officialUrl = safe(record.url), host = (() => { try { return new URL(officialUrl).hostname.toLowerCase(); } catch { return ''; } })();
     const isRobloxOfficial = platformId === 'roblox' && (host === 'roblox.com' || host.endsWith('.roblox.com'));
@@ -209,13 +243,18 @@ window.UGCCatalog = (() => {
     const creator = record.creator || entry.creator || '';
     const creatorLabel = platformId === 'cs2' && /^\d{17}$/.test(creator) ? '作者编号：' : '作者：';
     const imageMarkup = imageUrl ? '<img loading="lazy" decoding="async" src="' + esc(imageUrl) + '" alt="' + esc(originalTitle) + ' 作品图" data-cover-fallback>' : '<span class="ugc-catalog-cover-fallback">' + imageFallback + '</span>';
-    const links = '<div class="ugc-catalog-links">' + (statsUrl ? '<a href="' + esc(statsUrl) + '" target="_blank" rel="noopener noreferrer">统计详情 ↗</a>' : '') + (isRobloxOfficial ? '<a href="' + esc(officialUrl) + '" target="_blank" rel="noopener noreferrer">作品官网 ↗</a>' : officialUrl ? '<a href="' + esc(officialUrl) + '" target="_blank" rel="noopener noreferrer">作品页面 ↗</a>' : '') + (safe(image.sourceUrl) ? '<a href="' + esc(safe(image.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">作品图来源 ↗</a>' : '') + '</div>';
+    const shareHash = entryHash('ugc', record.id, { platform: platformId, board: 'catalog' });
+    const links = '<div class="ugc-catalog-links">' + (single ? '' : '<a href="' + esc(shareHash) + '">查看条目</a>') +
+      shareLinkButton(entryName(record, entry) || record.id, shareHash) +
+      (statsUrl ? '<a href="' + esc(statsUrl) + '" target="_blank" rel="noopener noreferrer">统计详情 ↗</a>' : '') + (isRobloxOfficial ? '<a href="' + esc(officialUrl) + '" target="_blank" rel="noopener noreferrer">作品官网 ↗</a>' : officialUrl ? '<a href="' + esc(officialUrl) + '" target="_blank" rel="noopener noreferrer">作品页面 ↗</a>' : '') + (safe(image.sourceUrl) ? '<a href="' + esc(safe(image.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">作品图来源 ↗</a>' : '') + '</div>';
     const intro = '<p class="ugc-catalog-intro">' + (isReviewed && record.introZh ? esc(record.introZh) : '<span>中文介绍待补充。</span>') + '</p>';
     const meta = '<div class="ugc-catalog-meta">' + esc(knownCategories.join(' · ') || (unknownCategories.length ? '来源分类' : '分类暂缺')) + (unknownCategories.length ? ' <details class="ugc-catalog-raw-tags"><summary>查看来源分类</summary>' + esc(unknownCategories.join('、')) + '</details>' : '') + (metric ? ' · ' + metric : '') + '</div>';
-    const compact = window.CardView.get() === 'small';
-    const heading = '<div class="ugc-catalog-kicker">' + esc(labels[platformId]) + ' · ' + esc(record.id || entry.key || '') + '</div><h3>' + (isRobloxOfficial ? '<a href="' + esc(officialUrl) + '" target="_blank" rel="noopener noreferrer">' + title + '</a>' : title) + '</h3><p class="ugc-author">' + creatorLabel + esc(creator || '来源暂未提供') + '</p>';
+    const compact = !single && window.CardView.get() === 'small';
+    const level = single ? 'h2' : 'h3';
+    const heading = '<div class="ugc-catalog-kicker">' + esc(labels[platformId]) + ' · ' + esc(record.id || entry.key || '') + '</div><' + level + '>' + (isRobloxOfficial ? '<a href="' + esc(officialUrl) + '" target="_blank" rel="noopener noreferrer">' + title + '</a>' : title) + '</' + level + '><p class="ugc-author">' + creatorLabel + esc(creator || '来源暂未提供') + '</p>';
     if (compact) return '<article class="ugc-catalog-card ugc-catalog-card-compact ' + platformId + '"><div class="ugc-catalog-compact-head"><div class="ugc-catalog-image">' + imageMarkup + '</div><div class="ugc-catalog-compact-heading">' + heading + '</div></div><div class="ugc-catalog-body">' + intro + meta + links + rawDescription + '</div></article>';
-    return '<article class="ugc-catalog-card"><div class="ugc-catalog-image">' + imageMarkup + '</div><div class="ugc-catalog-body"><div class="ugc-catalog-kicker">' + esc(labels[platformId]) + ' · ' + esc(record.id || entry.key || '') + '</div><h3>' + (isRobloxOfficial ? '<a href="' + esc(officialUrl) + '" target="_blank" rel="noopener noreferrer">' + title + '</a>' : title) + '</h3><p class="ugc-author">' + creatorLabel + esc(creator || '来源暂未提供') + '</p>' + intro + meta + links + rawDescription + '</div></article>';
+    if (single) return '<article class="ugc-catalog-card ugc-entry-card"><div class="ugc-catalog-body">' + heading + '</div><div class="ugc-catalog-image">' + imageMarkup + '</div><div class="ugc-catalog-body">' + intro + meta + links + rawDescription + '</div></article>';
+    return '<article class="ugc-catalog-card"><div class="ugc-catalog-image">' + imageMarkup + '</div><div class="ugc-catalog-body">' + heading + intro + meta + links + rawDescription + '</div></article>';
   }
   function routeParams(query = state.query, page = state.page) {
     const params = new URLSearchParams({ platform: state.platform, board: 'catalog' });
@@ -343,7 +382,7 @@ window.UGCCatalog = (() => {
     focusNavigation = '';
   }
   window.CardView.subscribe(() => {
-    if (!document.body.classList.contains('ugc-view') || !window.UGCMonitor.isCatalog()) return;
+    if (!document.body.classList.contains('ugc-view') || !window.UGCMonitor.isCatalog() || window.UGCMonitor.hasEntry()) return;
     focusCardView = document.activeElement?.matches('[data-card-size]') || false;
     render(state);
   });
@@ -351,6 +390,9 @@ window.UGCCatalog = (() => {
     render,
     readRoute,
     routeParams,
+    findEntry,
+    entryName,
+    entryCard: (platform, record) => card(platform, record, record, true),
     cancel,
     refresh: refreshDirectory
   };

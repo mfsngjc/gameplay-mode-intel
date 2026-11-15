@@ -110,8 +110,11 @@
 .ugc-catalog-original summary { cursor:pointer; }
 .ugc-catalog-original p { white-space:pre-wrap; overflow-wrap:anywhere; max-height:240px; overflow:auto; }
 .ugc-catalog-image-source,.ugc-catalog-secondary { display:inline-block; margin:8px 12px 0 0; color:var(--accent); font-size:10px; }
-.ugc-catalog-links { display:flex; flex-wrap:wrap; gap:10px; margin:8px 0 3px; }
+.ugc-catalog-links { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin:8px 0 3px; }
 .ugc-catalog-links a { color:var(--accent); font-size:10px; }
+.ugc-entry-card { max-width:760px; }
+.ugc-entry-card h2 { margin:7px 0; font-size:clamp(19px, 3vw, 28px); line-height:1.4; overflow-wrap:anywhere; }
+.ugc-entry-card .ugc-catalog-image { max-height:320px; }
 .ugc-catalog-status details { margin-top:4px; }
 .ugc-catalog-status details summary,.ugc-catalog-raw-tags summary { cursor:pointer; }
 .ugc-catalog-status details span { display:block; padding:5px 0; }

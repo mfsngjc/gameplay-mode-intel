@@ -54,9 +54,11 @@ assert.equal(evidence.recordCount, updates.length);
 const context = vm.createContext({ assert, updates, modes, catalogue,
   document: { querySelector: () => ({}), baseURI: 'http://127.0.0.1:4173/' },
   localStorage: { getItem: () => '[]' }, location: { search: '' }, URL, URLSearchParams });
-vm.runInContext(read('core-updates.js') + '\n' + read('tactical-items.js') + '\n' + read('app.js') + '\n' + read('ff-patches.js') + '\n' + read('workspace.js').replace(/initWorkspace\(\);\s*$/, ''), context);
+vm.runInContext(read('weapon-skins.js') + '\n' + read('core-updates.js') + '\n' + read('tactical-items.js') + '\n' + read('app.js') + '\n' + read('ff-patches.js') + '\n' + read('workspace.js').replace(/initWorkspace\(\);\s*$/, ''), context);
 vm.runInContext(`
-  state.modes = [...modes.map((m) => ({...m, kind: 'modes'})), ...loadTacticalCatalogue(catalogue, updates)];
+  loadTacticalCatalogue(catalogue);
+  state.coreUpdates = updates.map(normalizeCoreUpdate);
+  state.modes = [...modes.map((m) => ({...m, kind: 'modes'})), ...modeCoreUpdates()];
   state.entries = [...state.modes];
   state.gameFilter = 'Free Fire';
   assert.equal(getFilteredEntries().length, modes.filter(m => m.game === 'Free Fire').length + updates.filter(r => r.game === 'Free Fire').length);

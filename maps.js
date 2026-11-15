@@ -103,6 +103,8 @@ function openMapPreview(id, kind = 'cover') {
   const entry = mapArchive.entries.find((item) => item.id === id);
   if (!entry) return;
   const isPlan = kind === 'plan' && entry.planImageUrl;
+  setEntryTitle(entry.name);
+  document.querySelector('#mapDetailShare').innerHTML = shareLinkButton(entry.name, entryHash('maps', id, { mapView: isPlan ? 'plan' : 'cover' }));
   const imageUrl = isPlan ? entry.planImageUrl : entry.imageUrl;
   const sourceUrl = isPlan ? (entry.planCalloutSourceUrl || entry.planSourceUrl) : entry.sourceUrl;
   const wiki = document.querySelector('#mapDetailWiki');
@@ -157,18 +159,26 @@ function openMapPreview(id, kind = 'cover') {
   resizeMapPreview(true);
 }
 
-function closeMapPreview() {
+function closeMapPreview(updateUrl = true) {
   mapPan = null;
   document.querySelector('#mapViewport').classList.remove('is-panning');
   document.querySelector('#mapDialog').close();
   document.body.classList.remove('modal-open');
+  if (updateUrl) clearMapRoute();
   if (mapTrigger?.isConnected) mapTrigger.focus();
 }
 
-async function loadMapArchive() {
+function loadMapArchive() {
+  if (mapArchive.request) return mapArchive.request;
+  if (!mapArchive.loading && !mapArchive.error) return;
+  mapArchive.request = fetchMapArchive().finally(() => { mapArchive.request = null; });
+  return mapArchive.request;
+}
+
+async function fetchMapArchive() {
   mapArchive.loading = true;
   mapArchive.error = false;
-  if (state.view === 'maps') renderMapArchive();
+  if (state.view === 'maps' && !workspaceRoutePending) renderMapArchive();
   try {
     const response = await fetch('data/maps.json', { cache: 'no-store' });
     if (!response.ok) throw new Error('Map archive unavailable');
@@ -182,18 +192,49 @@ async function loadMapArchive() {
   mapArchive.loading = false;
   document.querySelector('#navMapCount').textContent = mapArchive.entries.length || '—';
   if (state.ready) updateCounts();
-  if (state.view === 'maps') renderMapArchive();
-  if (state.view === 'collection') renderLibrary();
+  if (state.view === 'maps' && !workspaceRoutePending) renderMapArchive();
+  if (state.view === 'collection' && !workspaceRoutePending) renderLibrary();
+}
+
+function openMapDetail(id, kind = '') {
+  if (!mapArchive.entries.some(entry => entry.id === id)) return;
+  const [view, query] = workspaceHash().split('?');
+  const params = new URLSearchParams(query);
+  params.set(view === '#collection' ? 'map' : 'entry', id);
+  if (kind) params.set('mapView', kind);
+  history.pushState(null, '', view + '?' + params.toString());
+  showMapDetail(id, kind);
+}
+
+function showMapDetail(id, kind) {
+  if (kind === 'plan' || kind === 'cover') openMapPreview(id, kind);
+  else openInteractiveMap(id);
+}
+
+function clearMapRoute() {
+  setEntryTitle();
+  const [view, query] = location.hash.split('?');
+  if (view !== '#maps' && view !== '#collection') return;
+  const params = new URLSearchParams(query);
+  params.delete(view === '#maps' ? 'entry' : 'map');
+  params.delete('mapView');
+  history.replaceState(null, '', view + (params.size ? '?' + params.toString() : ''));
+  if (view === '#maps' && document.querySelector('#mapsSection').hidden) renderWorkspace();
+}
+
+function closeOpenMap(updateUrl) {
+  if (document.querySelector('#mapDialog').open) closeMapPreview(updateUrl);
+  if (document.querySelector('#interactiveMapDialog').open) closeInteractiveMap(updateUrl);
 }
 
 function initMapArchive() {
   document.addEventListener('click', (event) => {
     const interactive = event.target.closest('[data-map-interactive]');
-    if (interactive) openInteractiveMap(interactive.dataset.mapInteractive);
+    if (interactive) openMapDetail(interactive.dataset.mapInteractive);
     const plan = event.target.closest('[data-map-plan]');
-    if (plan) openMapPreview(plan.dataset.mapPlan, 'plan');
+    if (plan) openMapDetail(plan.dataset.mapPlan, 'plan');
     const open = event.target.closest('[data-map-open]');
-    if (open) openMapPreview(open.dataset.mapOpen);
+    if (open) openMapDetail(open.dataset.mapOpen, 'cover');
     const collect = event.target.closest('[data-map-collect]');
     if (collect) { toggleMapCollect(collect.dataset.mapCollect); return; }
     if (event.target.closest('#mapDetailCollect')) { toggleMapCollect(event.target.closest('#mapDetailCollect').dataset.mapCollect); return; }
@@ -203,7 +244,7 @@ function initMapArchive() {
       document.querySelectorAll('[data-map-game]').forEach((button) => button.setAttribute('aria-pressed', String(button === game)));
       renderMapArchive();
     }
-    if (event.target.closest('[data-map-retry]')) loadMapArchive();
+    if (event.target.closest('[data-map-retry]')) readRoute();
     const zoom = event.target.closest('[data-map-zoom]');
     if (zoom) {
       mapArchive.zoom = zoom.dataset.mapZoom === 'reset' ? 1 : Math.max(1, Math.min(MAP_ZOOM_MAX, mapArchive.zoom + (zoom.dataset.mapZoom === 'in' ? .5 : -.5)));
@@ -233,7 +274,7 @@ function initMapArchive() {
   viewport.addEventListener('pointerup', stopMapPan);
   viewport.addEventListener('pointercancel', stopMapPan);
   viewport.addEventListener('lostpointercapture', stopMapPan);
-  document.querySelector('#mapDetailClose').addEventListener('click', closeMapPreview);
+  document.querySelector('#mapDetailClose').addEventListener('click', () => closeMapPreview());
   dialog.addEventListener('cancel', (event) => { event.preventDefault(); closeMapPreview(); });
   dialog.addEventListener('click', (event) => { if (event.target === dialog) closeMapPreview(); });
   document.querySelector('#mapDetailImage').addEventListener('error', (event) => {
@@ -249,15 +290,12 @@ function initMapArchive() {
     event.target.replaceWith(fallback);
   }, true);
   window.addEventListener('resize', () => { if (dialog.open) resizeMapPreview(); });
-  window.addEventListener('hashchange', () => { if (dialog.open) closeMapPreview(); });
   const interactiveDialog = document.querySelector('#interactiveMapDialog');
-  document.querySelector('#interactiveMapClose').addEventListener('click', closeInteractiveMap);
+  document.querySelector('#interactiveMapClose').addEventListener('click', () => closeInteractiveMap());
   interactiveDialog.addEventListener('cancel', (event) => { event.preventDefault(); closeInteractiveMap(); });
   window.addEventListener('message', (event) => {
     if (event.origin === location.origin && event.source === document.querySelector('#interactiveMapFrame').contentWindow && event.data?.type === 'delta-map-close') closeInteractiveMap();
   });
-  window.addEventListener('hashchange', () => { if (interactiveDialog.open) closeInteractiveMap(); });
-  loadMapArchive();
 }
 
 
@@ -268,13 +306,15 @@ function openInteractiveMap(id) {
     openMapPreview(id, ['pubg', 'apex'].includes(mapGameKey(entry)) ? 'plan' : 'cover');
     return;
   }
+  setEntryTitle(entry.name);
+  document.querySelector('#interactiveMapShare').innerHTML = shareLinkButton(entry.name, entryHash('maps', id), '复制链接');
   mapTrigger = document.activeElement;
   const query = new URL(entry.sourceUrl).search;
   const base = 'assets/maps/delta-interactive/';
   const url = base + (window.innerWidth < 760 ? 'm/index.html' : 'index.html') + query;
   const frame = document.querySelector('#interactiveMapFrame');
   frame.title = entry.game + ' · ' + entry.name + '互动地图';
-  document.querySelector('#interactiveMapTitle').textContent = entry.game + ' · 互动地图';
+  document.querySelector('#interactiveMapTitle').textContent = entry.name + ' · 互动地图';
   document.querySelector('#interactiveMapSource').href = entry.sourceUrl;
   document.querySelector('#interactiveMapStandalone').href = url;
   document.querySelector('#interactiveMapDialog').showModal();
@@ -282,9 +322,10 @@ function openInteractiveMap(id) {
   frame.src = url;
 }
 
-function closeInteractiveMap() {
+function closeInteractiveMap(updateUrl = true) {
   document.querySelector('#interactiveMapDialog').close();
   document.querySelector('#interactiveMapFrame').src = 'about:blank';
   document.body.classList.remove('modal-open');
+  if (updateUrl) clearMapRoute();
   if (mapTrigger?.isConnected) mapTrigger.focus();
 }
