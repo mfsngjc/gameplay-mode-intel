@@ -4946,7 +4946,8 @@
     "tags": [
       "pve",
       "objective",
-      "power"
+      "power",
+      "needs_review"
     ],
     "type": [
       "限时刷怪",
@@ -16217,6 +16218,128 @@
     "launchDate": "2026-10-13",
     "launchLabel": "2026年10月13日至11月3日",
     "launchNote": "EA 官方公告于10月8日发布，明确活动在10月13日上线；本卡记录外卡父玩法的限时实质规则变化。阵营与能力名称采用说明性译法。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "pubg-slb-dawnbreakers-nightmare-2026",
+    "game": "PUBG",
+    "modeName": "被遗留的幸存者：隆都破晓·噩梦（HLB: Dawnbreakers of Rondo — Nightmare）",
+    "year": "2026",
+    "date": "2026-11-04",
+    "tags": [
+      "pve",
+      "objective"
+    ],
+    "type": [
+      "4 人合作 PVE",
+      "单一高难度",
+      "据点防守与撤离"
+    ],
+    "oneLineRule": "最多 4 人只在燃烧的嘉德纳城挑战噩梦难度，以更多油桶启动发电机，并在强化饥饿者的围攻下守住蓄电器完成撤离。",
+    "mechanicChange": "本次回归取消新手、老兵难度与六个场景投票，只保留嘉德纳城的噩梦难度。特殊饥饿者种类更多、出现更早且刷新更频繁，全部敌人的攻击力与生命值提高；启动发电机需要更多油桶，最终蓄电器防守也更难。\n\n玩法按四人小队平衡，不会随实际队伍人数缩放；玩家可以单人匹配进入。官方另设按最快通关时间排序的排行榜。",
+    "tempoImpact": "场景与难度选择被取消后，准备阶段更短，但搜集油桶和最终守点的资源压力更高；单人或缺员队伍仍面对四人标准，队伍分工和装置布置更重要。",
+    "designObservation": "回归玩法可以通过收窄场景、固定最高难度和加入竞速榜形成明确的新挑战层，而不必重写原有搜集、制作与防守循环。",
+    "sourceUrl": "https://pubg.com/en-asia/news/11338",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/common/content/news/20261028/3bbcMwyT.jpg",
+    "imageSource": "KRAFTON 官方 Update 44.1 公告主视觉",
+    "launchDate": "2026-11-04",
+    "launchLabel": "电脑端：2026年11月4日维护后至11月25日 07:00 UTC；主机端：11月12日维护后至12月3日 07:00 UTC",
+    "launchNote": "官方在 Update 44.1 中把本次回归称为单一“Nightmare”难度，并公布了与10月版不同的场景、敌人、油桶数量和队伍缩放规则，因此单独记录。中文副标题为说明性译法。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "pubg-xeno-point-hell-2026",
+    "game": "PUBG",
+    "modeName": "异种据点：地狱（Xeno Point: Hell）",
+    "year": "2026",
+    "date": "2026-11-18",
+    "tags": [
+      "pve",
+      "objective",
+      "power"
+    ],
+    "type": [
+      "合作 PVE",
+      "动态人数平衡",
+      "死亡装备惩罚"
+    ],
+    "oneLineRule": "预定开放后，1 至 4 人将挑战单一地狱难度；敌人按区域和当前人数动态调整，死亡会随机失去一件已装备武器或装备。",
+    "mechanicChange": "原来的普通、困难、不可能三档被合并为地狱难度：第一区沿用原普通强度，第二区对应原困难，第三区和母舰对应原不可能。敌人生命、攻击力和货币量会按当前 1 至 4 人队伍人数动态调整，成员加入或离开阶段时会重新平衡并提示。\n\n护甲原有的换弹无敌改为短时减伤；超级技能和治疗的无敌仍保留。玩家死亡或中途离开阶段时，随机失去一件已装备武器或装备，并清空背包；部分技能改为让下一次复活保留武器、保留装备或携带肾上腺素注射器。",
+    "tempoImpact": "动态人数平衡降低缺员带来的固定难度落差，但死亡会直接破坏构筑，队伍需要更早评估是否继续推进；越靠近母舰，敌人基准越高，保命技能和复活后的装备保留价值随之上升。",
+    "designObservation": "在合作副本中把难度曲线绑定区域、把敌人数值绑定实时人数，并让死亡损失构筑，可以同时维持小队规模弹性和高难度的长期代价。",
+    "sourceUrl": "https://pubg.com/en-asia/news/11338",
+    "imageUrl": "https://wstatic-prod-boc.krafton.com/common/content/news/20261028/3bbcMwyT.jpg",
+    "imageSource": "KRAFTON 官方 Update 44.1 公告主视觉",
+    "launchDate": "2026-11-18",
+    "launchLabel": "预定：电脑端2026年11月18日 07:00 UTC 至12月2日维护前；主机端11月26日 07:00 UTC 至12月10日维护前",
+    "launchNote": "公告日为2026年11月3日。电脑端在本轮执行日尚未开放，属于已公布且有明确排期的玩法；时间轴不得提前标为已上线。中文副标题为说明性译法。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "apex-godzilla-event-2026",
+    "game": "Apex Legends",
+    "modeName": "哥斯拉事件（Godzilla Event）",
+    "year": "2026",
+    "date": "2026-11-10",
+    "tags": [
+      "br-ltm",
+      "pve",
+      "objective",
+      "power"
+    ],
+    "type": [
+      "风暴点 BR 事件覆盖",
+      "动态危险区",
+      "特殊武器争夺"
+    ],
+    "oneLineRule": "在被哥斯拉袭击的风暴点继续与其他小队争夺生存，并冒险进入热射线轰击区抢夺补给舱中的追踪热射线专属武器。",
+    "mechanicChange": "哥斯拉会在风暴点上空活动并用热射线轰击地图。玩家可在轰击落下前进入危险区，等待该区域出现补给舱；其中的定制专注轻机枪可发射热射线，命中后会追踪敌人。\n\n地图同时出现受损建筑、烧毁树木、倒下标志等袭击痕迹。官方明确说明玩家无法击败哥斯拉，因此本玩法仍以小队之间的 BR 生存为目标，哥斯拉承担动态环境威胁与高价值装备投放者的作用。",
+    "tempoImpact": "热射线把高价值补给前置到可预判的危险窗口，小队必须决定是否在轰击前抢位；取得专属武器后又会提升追击能力，让事件热点从环境威胁转成玩家冲突。",
+    "designObservation": "不可击败的巨型首领不必成为独立 PVE 目标；将其攻击设计成危险区和装备投放信号，可以在保留 BR 胜负条件的同时集中路线与交战。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/godzilla-event",
+    "imageUrl": "https://drop-assets.ea.com/images/7mU99o3QpfjKpuEfVYMPBm/3186332abfe9d3eab2c70c8cc1ac5aae/ApexS31_Hopscotch_3840x2160.jpg?im=AspectCrop=(16,9),xPosition=0.6229166666666667,yPosition=0.47453703703703703",
+    "imageSource": "EA 官方《Apex Legends》哥斯拉事件主视觉",
+    "launchDate": "2026-11-10",
+    "launchLabel": "2026年11月10日至12月1日",
+    "launchNote": "EA 于11月5日发布公告，活动于11月10日正式上线。它没有独立击败哥斯拉的胜利目标，本卡记录的是对风暴点 BR 的限时实质规则覆盖。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true
+  },
+  {
+    "id": "pubgm-arctic-chronicles-2026",
+    "game": "PUBG Mobile",
+    "modeName": "极地纪事（Arctic Chronicles）",
+    "year": "2026",
+    "date": "2026-11-12",
+    "tags": [
+      "br-ltm",
+      "needs_review"
+    ],
+    "type": [
+      "主题玩法",
+      "完整规则待补"
+    ],
+    "oneLineRule": "4.7.0 版本上线新的极地主题玩法；当前公开更新通知只确认名称，地图、人数、目标、能力与胜负变化仍待官方完整补丁说明核对。",
+    "mechanicChange": "日本官方 4.7.0 更新通知把 Arctic Chronicles 列为本版主要内容，并确认旧的 Midnight Hunters、Ocean Odyssey 回归和 Metro Royale: Reunion 在更新前后关闭或重开。该页没有公布 Arctic Chronicles 的具体局内规则，因此本卡不沿用测试服或社区资料推测机制。",
+    "tempoImpact": "待确认：官方公开页尚未说明该主题玩法如何改变搜刮、转点、交战或返场。",
+    "designObservation": "资料整理上应把“官方已命名并随正式版本上线”与“机制已经公开”分开；名称足以建立待复核入口，但不能据此补造玩法效果。",
+    "sourceUrl": "https://pubgmobile.jp/version-4-7-0-update-notice-20261105/",
+    "imageUrl": "https://pubgmobile.jp/wp-content/uploads/Web_UPDATE-INFO.png",
+    "imageSource": "PUBG MOBILE 日本官方 4.7.0 更新通知封面",
+    "launchDate": "2026-11-12",
+    "launchLabel": "2026年11月12日随 Version 4.7.0 更新上线",
+    "launchNote": "公告发布于11月5日，11月11日更新正文并确认11月12日更新。当前只确认主题玩法名称，完整机制和活动期限待全球或地区官方补丁页补齐。中文名为说明性译法。",
     "gameplayTypes": [
       "br"
     ],
