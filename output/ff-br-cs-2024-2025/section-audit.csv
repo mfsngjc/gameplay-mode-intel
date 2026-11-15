@@ -1,0 +1,301 @@
+﻿year,articleId,publishedDate,sectionId,lane,scope,category,title,included,units,unitKind,sourceUrl
+2024,1306,2024-01-22,ff-patch-1306-01,shared,event_overlay,event,Chaos 投票事件,False,3,documented_items,https://ff.garena.com/en/article/1306/
+2024,1306,2024-01-22,ff-patch-1306-02,br,event_overlay,event,战斗特质：BR 五套升级奖励,False,7,documented_items,https://ff.garena.com/en/article/1306/
+2024,1306,2024-01-22,ff-patch-1306-03,cs,event_overlay,event,战斗特质：CS 五套升级奖励,False,7,documented_items,https://ff.garena.com/en/article/1306/
+2024,1306,2024-01-22,ff-patch-1306-04,br,core,map,新地平线整体及 BR 路线,True,3,documented_items,https://ff.garena.com/en/article/1306/
+2024,1306,2024-01-22,ff-patch-1306-05,cs,core,map,团竞点位重做,True,4,documented_items,https://ff.garena.com/en/article/1306/
+2024,1306,2024-01-22,ff-patch-1306-06,br,core,traversal,七类载具调整与状态提示,True,4,documented_items,https://ff.garena.com/en/article/1306/
+2024,1306,2024-01-22,ff-patch-1306-07,br,core,economy,战利品、怪物卡车空投与能量剂,True,3,documented_items,https://ff.garena.com/en/article/1306/
+2024,1306,2024-01-22,ff-patch-1306-08,br,core,equipment,BR 战备调整,True,2,documented_items,https://ff.garena.com/en/article/1306/
+2024,1306,2024-01-22,ff-patch-1306-09,cs,event_overlay,event,团竞任务与局内随机事件,False,2,documented_items,https://ff.garena.com/en/article/1306/
+2024,1306,2024-01-22,ff-patch-1306-10,cs,core,economy,撤销购买、商店及空投,True,4,documented_items,https://ff.garena.com/en/article/1306/
+2024,1306,2024-01-22,ff-patch-1306-11,shared,core,character,Ryden 与角色平衡,True,9,documented_items,https://ff.garena.com/en/article/1306/
+2024,1306,2024-01-22,ff-patch-1306-12,shared,core,weapon,武器平衡,True,2,documented_items,https://ff.garena.com/en/article/1306/
+2024,1306,2024-01-22,ff-patch-1306-13,shared,core,interface,战斗反馈、倒地和地图信息,True,5,documented_items,https://ff.garena.com/en/article/1306/
+2024,1306,2024-01-22,ff-patch-1306-14,shared,core,interface,投掷、拾取、冲刺和自定义 HUD,True,6,documented_items,https://ff.garena.com/en/article/1306/
+2024,1306,2024-01-22,ff-patch-1306-15,cs,core,rules,异常对局判定,True,1,documented_items,https://ff.garena.com/en/article/1306/
+2024,1306,2024-01-22,ff-patch-1306-16,shared,core,interface,观战与举报入口,True,2,documented_items,https://ff.garena.com/en/article/1306/
+2024,1332,2024-04-16,ff-patch-1332-villains,br,limited,event,BR：反派入侵与机甲龙试炼,False,4,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-skillcards,br,core,character,BR：同技能卡充能与冷却刷新,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-portal,br,core,traversal,BR：Portal Go传送与Energizer,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-gloo-attachment,br,core,equipment,BR：自动装备冰墙生成器附件,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-vending,br,core,economy,BR：Kalahari售货机与地面掉落,True,2,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-dragon-drop,cs,limited,event,CS：龙空投与四种道具,False,3,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-cs-other,cs,core,interface,CS：空投保留、物品详情与助攻判定,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-char-kairos,shared,unknown,character,角色：Kairos,False,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-char-tatsuya,shared,core,character,角色：Tatsuya,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-char-ryden,shared,core,character,角色：Ryden,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-char-santino,shared,core,character,角色：Santino,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-char-joseph,shared,core,character,角色：Joseph,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-char-nikita,shared,core,character,角色：Nikita,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-char-caroline,shared,core,character,角色：Caroline,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-char-kapella,shared,core,character,角色：Kapella,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-cs-skill,cs,core,rules,CS：购买阶段禁用主动技能,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-alok-audio,shared,core,interface,觉醒Alok：拾取音符音效,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-highlight,shared,core,interface,战斗高光即时提示,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-quickmsg,shared,core,interface,情境推荐与自动快捷消息,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-sensitivity,shared,core,interface,灵敏度与倒地标记,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-vehicle,shared,core,interface,载具交互与HUD设置,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-hangar,cs,core,map,CS：Hangar布局平衡,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-map-other,shared,core,map,地图涂鸦与Zipway经济设施,True,2,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-aug,shared,core,weapon,AUG：伤害驱动升级,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-plasma,br,core,weapon,PLASMA-X重做与分期开放,True,2,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-weapon-bizon,shared,core,weapon,Bizon平衡,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-weapon-trogon,shared,core,weapon,Trogon平衡,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-weapon-charge-buster,shared,core,weapon,Charge Buster平衡,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-weapon-double-vector,shared,core,weapon,Double Vector平衡,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-weapon-vector,shared,core,weapon,Vector平衡,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-weapon-mp5,shared,core,weapon,MP5平衡,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-weapon-parafal,shared,core,weapon,PARAFAL平衡,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-voice-report,shared,core,interface,举报语音即时屏蔽与反馈,True,2,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-finalshot,br,core,interface,BR：Evo枪Final Shot触发,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1332,2024-04-16,ff-patch-1332-graphics,shared,core,interface,推荐画质与40 FPS选项,True,1,documented_items,https://ff.garena.com/en/article/1332/
+2024,1357,2024-06-26,ff-patch-1357-br-1,br,limited,map,迷你山峰与荣誉大厅,False,2,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-br-2,br,limited,map,记忆传送门,False,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-br-3,br,limited,map,迷你山峰装备,False,2,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-br-4,br,limited,map,记忆点与荣誉大厅,False,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-br-5,br,core,revive,载具与复活提示,True,3,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-br-6,br,limited,equipment,周年礼盒,False,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-br-7,br,core,equipment,Gloo Melter,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-br-8,br,core,economy,BR：Pocket Market战备商店,True,2,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-br-9,br,core,economy,战备箱掉率,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-cs-mini,cs,limited,map,CS Mini Peak,False,3,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-map-rim,cs,core,map,Rim Nam Village,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-map-other,cs,core,map,Nurek Dam、Sentosa、Observatory,True,3,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-kassie,shared,core,character,Kassie：电疗,True,2,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-kapella,shared,core,character,Kapella：治疗弹,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-olivia,shared,core,character,Olivia：治愈之触,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-skyler,shared,core,character,Skyler：潮汐节奏,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-nairi,shared,core,character,Nairi：冰铁,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-alok,shared,core,character,Alok及觉醒,True,2,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-chrono,shared,core,character,Chrono：时间转换器,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-wukong,shared,core,character,Wukong：伪装,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-clu,shared,core,character,Clu：追踪步伐,True,2,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-ford,shared,core,character,Ford：钢铁意志,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-shirou,shared,core,character,Shirou：伤害传递,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-andrew,shared,core,character,Andrew与狂战安德鲁,True,2,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-biebs,shared,core,character,J. Biebs：寂静哨兵,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-shani,shared,core,character,Shani：装备回收,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-wolfrahh,shared,core,character,Wolfrahh：聚光灯,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-hayato,shared,core,character,Hayato火焰忍者：刀刃艺术,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-orion,shared,core,character,Orion技能音效优化,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-santino,shared,core,character,Santino传送冷却,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-shield,shared,core,character,护盾伤害提示与Chrono护盾,True,2,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-fgl24,shared,core,weapon,武器：FGL-24,True,3,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-healpistoly,shared,core,weapon,武器：Heal Pistol-Y,True,3,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-mac10,shared,core,weapon,武器：MAC10成长,True,2,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-ac80,shared,core,weapon,AC80,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-wood,shared,core,weapon,Woodpecker,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-sks,shared,core,weapon,SKS,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-svd,shared,core,weapon,SVD/SVD-Y,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-plasma,br,core,weapon,BR：PLASMA替代PLASMA-X,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-plasma-stats,shared,core,weapon,PLASMA热态属性,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-vehicle,shared,core,weapon,RGS-50：载具伤害与锁定,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-vsk94,shared,core,weapon,VSK94平衡,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-backpack,shared,core,interface,背包满载替换、排序与容量,True,5,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-highlights,shared,core,interface,BR/CS：战斗高光横幅,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-cs-trogon,cs,core,weapon,CS：Trogon仅霰弹模式,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-jump-reload,shared,core,interface,跳跃装填,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-custom,shared,core,rules,自定义房：双主动技能与特殊空投,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-bermuda,shared,core,map,Bermuda围栏纹理,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-gunsmith,shared,core,weapon,Gunsmith：外观与属性组合,True,2,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-settings,shared,core,interface,设置同步、音频平衡与特效开关,True,2,documented_items,https://ff.garena.com/en/article/1357/
+2024,1357,2024-06-26,ff-patch-1357-br-report,br,core,interface,BR：计分板举报队友,True,1,documented_items,https://ff.garena.com/en/article/1357/
+2024,1385,2024-09-01,ff-patch-1385-gadgets,shared,limited,equipment,BR/CS：四种限时冰墙装置,False,3,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-br-gloo,br,limited,event,BR：冰墙军械库、空投与生成器事件,False,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-landmine,br,core,equipment,BR：地雷与Portal Go,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-br-loot,br,core,economy,BR：武器掉落与防御军械库,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-br-vending,br,core,economy,BR：售货机武器与技能卡,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-revival,br,core,revive,BR：复活点时段和占领速度,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-loadout,br,core,equipment,BR：护甲箱与Pocket Market,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-airdrop-hit,br,core,rules,BR：空投撞击不再直接淘汰,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-cs-gloo,cs,limited,event,CS：Gloo空投与Gloo Surge,False,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-cs-objectives,cs,core,interface,CS：目标计划与路径指引,True,2,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-cs-cash,cs,core,economy,CS：首倒奖励与回合MVP,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-lila,shared,core,character,新角色Lila：步枪减速,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-andrew,shared,core,character,觉醒Andrew：附近队友减伤,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-xayne,shared,core,character,Xayne：临时护盾与连续击倒,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-luqueta,shared,core,character,Luqueta：最大护盾增加,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-shield,shared,core,equipment,护盾附件与回复速度,True,2,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-k,shared,core,character,K：EP回复与队友范围,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-orion,shared,core,character,Orion：保护状态移速,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-maro,shared,core,character,Maro：标记目标增伤,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-dbee,shared,core,character,D-bee：移动射击,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-factory,shared,limited,map,Factory：可破坏冰墙结构,False,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-minimap,shared,core,interface,Bermuda小地图视觉重做,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-window,shared,core,traversal,翻窗优化：除Kalahari,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-cs-map,cs,core,map,CS：Nurek Dam、Observatory、Sentosa高点,True,2,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-scythe,shared,limited,weapon,Scythe：蓄力冲刺挥砍,False,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-weapon-0,shared,core,weapon,AC80平衡,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-weapon-1,shared,core,weapon,Woodpecker平衡,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-weapon-2,shared,core,weapon,AK47平衡,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-weapon-3,shared,core,weapon,XM8平衡,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-weapon-4,shared,core,weapon,AUG平衡,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-weapon-5,shared,core,weapon,M4A1平衡,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-weapon-6,shared,core,weapon,M60平衡,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-weapon-7,shared,core,weapon,M249/M249-X平衡,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-weapon-8,shared,core,weapon,Charge Buster平衡,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-weapon-9,shared,core,weapon,Trogon平衡,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-weapon-10,shared,core,weapon,Double Vector/Vector平衡,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-weapon-11,shared,core,weapon,SVD-Y平衡,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-weapon-12,shared,core,weapon,M24平衡,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-cs-outline,cs,core,interface,CS：黄色敌人轮廓,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-otherplay,shared,core,interface,无人机颜色、烟雾弹与轮胎,True,3,documented_items,https://ff.garena.com/en/article/1385/
+2024,1385,2024-09-01,ff-patch-1385-role-msg,shared,core,interface,局内报告队伍定位,True,1,documented_items,https://ff.garena.com/en/article/1385/
+2024,1424,2024-12-02,ff-patch-1424-br-rails,br,limited,map,BR：Frosty Tracks与金币机,False,3,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-br-ice,br,limited,map,BR：Frosty Machines,False,3,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-br-loot,br,core,economy,BR：商店、物资与安全区,True,3,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-cs-rails,cs,limited,map,CS：Frosty Tracks与极光,False,2,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-cs-price,cs,core,economy,CS：商店价格,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-koda,shared,core,character,Koda：极光视野,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-alvaro,shared,core,character,Alvaro：分裂爆破,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-skyler,shared,core,character,Skyler：潮汐节奏,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-tatsuya,shared,core,character,Tatsuya：疾行冲刺,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-wukong,shared,core,character,Wukong：伪装,True,2,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-ryden,shared,core,character,Ryden：蜘蛛陷阱,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-kairos,shared,core,character,Kairos：防御破坏,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-hayato,shared,core,character,Hayato：刀刃艺术,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-lila,shared,core,character,Lila：Gloo打击,True,2,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-nairi,shared,core,character,Nairi：冰铁,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-m590,shared,core,weapon,M590,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-attachments,shared,core,weapon,配件调整,True,2,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-p90,shared,core,weapon,P90,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-m4a1,shared,core,weapon,M4A1,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-m14,shared,core,weapon,M14,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-trogon,shared,core,weapon,Trogon,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-m1014,shared,core,weapon,M1014,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-br-zone,br,core,zone,BR：末圈移动及圈外提示,True,2,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-br-tail,br,core,interface,BR：跳伞提示、蘑菇与军械库,True,3,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-cs-economy,cs,core,economy,CS：蘑菇购买限制和收益明细,True,2,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-awakening,shared,core,character,觉醒技能统一替换,True,2,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-homer,shared,core,character,Homer：优先站立敌人,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-wintermap,shared,limited,map,Winterlands：Bermuda雪景与Clock Tower,False,3,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-pochinok,cs,core,map,CS Pochinok：阳台栏杆射击修复,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-attachment-hud,shared,core,interface,配件槽图标与瞄准镜倍率,True,2,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-slot-ar,shared,core,weapon,步枪配件槽,True,2,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-slot-sniper,shared,core,weapon,狙击枪配件槽,True,2,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-slot-pistol,shared,core,weapon,手枪配件槽,True,2,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-slot-sg,shared,core,weapon,霰弹枪配件槽,True,2,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-slot-smg,shared,core,weapon,冲锋枪配件槽与4倍镜,True,2,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-br-attachments,br,core,equipment,BR：移除一级和专属配件掉落,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-replay,shared,core,interface,淘汰回放,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-zipline,shared,core,traversal,磁力滑索,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-finisher,shared,core,rules,终结技重做,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-input,shared,core,interface,准星、蓄力提示与输入预按,True,2,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-mute,shared,core,interface,行为评分与局内禁言,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-headshot-room,shared,core,rules,自定义房：仅爆头规则,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-performance,shared,core,interface,Ultra/MAX性能模式与特效,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2024,1424,2024-12-02,ff-patch-1424-travel-emote,shared,core,interface,Travel Emote与动作衔接,True,1,documented_items,https://ff.garena.com/en/article/1424/
+2025,1456,2025-02-19,ff-patch-1456-01,br,limited,map,BR：MyZone 创意区域,False,4,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-02,br,core,equipment,BR：装置物品逐项规则,True,7,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-03,br,core,equipment,BR：背包容量与重量,True,2,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-04,cs,limited,event,CS：MyZone 空投活动,False,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-06,shared,core,character,Oscar：Valiant Dash,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-07,shared,core,character,Ignis：Flame Mirage,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-08,shared,core,character,护盾点技能调整：Xayne,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-09,shared,core,character,护盾点技能调整：Shani,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-10,shared,core,character,护盾点技能调整：Luqueta,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-11,shared,core,character,护盾点技能调整：Antonio,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-12,shared,core,character,Koda：Aurora Vision,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-13,shared,core,character,Wolfrahh：Limelight,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-14,shared,core,character,Lila：Gloo Strike,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-15,shared,core,character,Nikita：Firearms Expert,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-16,br,core,map,BR：地图互动点重新分布,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-17,shared,limited,map,地图：Ramadan 与 Desert Bermuda（重复内容标记）,False,2,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-18,shared,core,weapon,武器：SKS,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-19,shared,core,weapon,武器：AC80,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-20,shared,core,weapon,武器：PLASMA,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-21,shared,core,weapon,武器：Shield Gun,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-22,shared,core,weapon,武器：AWM/AWM-Y,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-23,shared,core,weapon,武器：VSK94,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-24,shared,core,weapon,武器：M82B,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-25,shared,core,weapon,武器：Kar98K/Kar98K-I/II/III,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-26,shared,core,weapon,武器：Thompson,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-27,shared,core,weapon,武器：M1917,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-28,shared,core,weapon,武器：G18,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-29,shared,core,weapon,武器：Charge Buster,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-30,shared,core,weapon,武器：Grenade,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-31,shared,core,weapon,武器：M79,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-32,shared,core,weapon,武器：Trogon（榴弹）,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-33,shared,core,weapon,武器：M590,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-34,shared,core,weapon,BR/CS：特殊武器强化,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-35,shared,core,interface,淘汰回放与局内反馈,True,2,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-slope,shared,core,traversal,斜坡滑行：75°与85°阈值,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-santino,shared,core,character,Santino人偶与Paloma说明,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-armor,shared,core,equipment,二三级防弹衣爆炸减伤,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-sound,shared,core,interface,命中音效区分,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-guildcs,cs,core,rules,公会战增加CS,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-uav,shared,core,interface,无人机血条,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-br-feedback,br,core,interface,BR：FF币辨识,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-grenade-limit,br,core,equipment,BR：手雷携带上限,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-revive,br,core,revive,BR：复活默认枪改为P90,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-room,br,core,rules,BR自定义房：War Chest开关,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-loot,br,core,economy,BR：装置掉落与售货机,True,3,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-cs-supply,cs,core,economy,CS：补给装置直接交互,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-vehicle,shared,core,traversal,载具爆炸后的乘员处理,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-sp,shared,core,interface,护盾数字显示,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-charge,shared,core,interface,敌方蓄力提示,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-settings,shared,core,interface,局内设置归类及单步调节,True,3,documented_items,https://ff.garena.com/en/article/1456/
+2025,1456,2025-02-19,ff-patch-1456-voice,shared,core,interface,语音重连状态提示,True,1,documented_items,https://ff.garena.com/en/article/1456/
+2025,1473,2025-05-21,ff-patch-1473-01,shared,core,map,索拉拉地图与滑道,True,3,documented_items,https://ff.garena.com/en/article/1473/
+2025,1473,2025-05-21,ff-patch-1473-02,br,event_overlay,event,八周年列车、站台与无限之环,False,5,documented_items,https://ff.garena.com/en/article/1473/
+2025,1473,2025-05-21,ff-patch-1473-03,br,core,equipment,战备道具与口袋商店,True,5,documented_items,https://ff.garena.com/en/article/1473/
+2025,1473,2025-05-21,ff-patch-1473-04,br,core,zone,新地平线单排缩圈参数,True,3,table_rows,https://ff.garena.com/en/article/1473/
+2025,1473,2025-05-21,ff-patch-1473-05,br,core,zone,新地平线四排缩圈参数,True,3,table_rows,https://ff.garena.com/en/article/1473/
+2025,1473,2025-05-21,ff-patch-1473-06,br,core,zone,百慕大等四图单排缩圈参数,True,4,table_rows,https://ff.garena.com/en/article/1473/
+2025,1473,2025-05-21,ff-patch-1473-07,br,core,zone,百慕大等四图四排缩圈参数,True,3,table_rows,https://ff.garena.com/en/article/1473/
+2025,1473,2025-05-21,ff-patch-1473-08,br,core,economy,地图资源、售货机与返场资源,True,4,documented_items,https://ff.garena.com/en/article/1473/
+2025,1473,2025-05-21,ff-patch-1473-09,br,core,equipment,装置与圈外恢复,True,2,documented_items,https://ff.garena.com/en/article/1473/
+2025,1473,2025-05-21,ff-patch-1473-10,cs,event_overlay,event,八周年团竞强化,False,2,documented_items,https://ff.garena.com/en/article/1473/
+2025,1473,2025-05-21,ff-patch-1473-11,cs,core,economy,团竞商店,True,1,documented_items,https://ff.garena.com/en/article/1473/
+2025,1473,2025-05-21,ff-patch-1473-12,shared,core,character,角色重做与平衡,True,7,documented_items,https://ff.garena.com/en/article/1473/
+2025,1473,2025-05-21,ff-patch-1473-13,shared,core,weapon,武器和防具平衡,True,7,documented_items,https://ff.garena.com/en/article/1473/
+2025,1473,2025-05-21,ff-patch-1473-14,shared,core,interface,局内信息、操作和视听反馈,True,4,documented_items,https://ff.garena.com/en/article/1473/
+2025,1511,2025-07-30,ff-patch-1511-01,br,event_overlay,event,月读区域、晓信物与木叶村,False,5,documented_items,https://ff.garena.com/en/article/1511/
+2025,1511,2025-07-30,ff-patch-1511-02,br,event_overlay,equipment,晓信物的六种能力,False,6,documented_items,https://ff.garena.com/en/article/1511/
+2025,1511,2025-07-30,ff-patch-1511-03,cs,event_overlay,event,神树空投与赤月点数,False,3,documented_items,https://ff.garena.com/en/article/1511/
+2025,1511,2025-07-30,ff-patch-1511-04,shared,event_overlay,equipment,联动忍术与忍具功能,False,5,documented_items,https://ff.garena.com/en/article/1511/
+2025,1511,2025-07-30,ff-patch-1511-05,br,core,economy,冰墙生成器全等级参数,True,5,table_rows,https://ff.garena.com/en/article/1511/
+2025,1511,2025-07-30,ff-patch-1511-06,br,core,traversal,跳伞与地图交互,True,3,documented_items,https://ff.garena.com/en/article/1511/
+2025,1511,2025-07-30,ff-patch-1511-07,br,core,economy,售货机和悬赏名单,True,4,documented_items,https://ff.garena.com/en/article/1511/
+2025,1511,2025-07-30,ff-patch-1511-08,br,core,equipment,道具掉落、携带与炮塔参数,True,3,documented_items,https://ff.garena.com/en/article/1511/
+2025,1511,2025-07-30,ff-patch-1511-09,br,core,revive,单排返场、复活点与防御空投,True,4,documented_items,https://ff.garena.com/en/article/1511/
+2025,1511,2025-07-30,ff-patch-1511-10,shared,core,character,新角色 Rin 与六名角色平衡,True,7,documented_items,https://ff.garena.com/en/article/1511/
+2025,1511,2025-07-30,ff-patch-1511-11,shared,core,weapon,全部武器调整,True,5,documented_items,https://ff.garena.com/en/article/1511/
+2025,1511,2025-07-30,ff-patch-1511-12,cs,core,economy,团竞商店、空投与补给装置,True,3,documented_items,https://ff.garena.com/en/article/1511/
+2025,1511,2025-07-30,ff-patch-1511-13,cs,core,rules,CS 巅峰模式的匹配与局内规则,True,4,documented_items,https://ff.garena.com/en/article/1511/
+2025,1511,2025-07-30,ff-patch-1511-14,shared,core,interface,标记、姿态、瞄准与 HUD,True,4,documented_items,https://ff.garena.com/en/article/1511/
+2025,1549,2025-10-29,ff-patch-1549-01,br,event_overlay,event,烈焰竞技场：BR 覆盖规则,False,5,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-02,cs,event_overlay,event,烈焰竞技场：CS 覆盖规则,False,3,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-03,shared,event_overlay,weapon,烈焰活动武器,False,8,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-04,br,core,rules,队伍强化（BR）,True,10,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-05,cs,core,revive,队伍强化（CS）,True,3,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-06,br,core,equipment,强化锤（BR）,True,3,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-07,cs,core,economy,强化锤（CS）,True,2,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-08,br,core,equipment,战术市场与雷暴发生器（BR）,True,2,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-09,cs,core,equipment,战术面板装置（CS）,True,4,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-10,shared,core,equipment,超级腿包,True,3,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-11,br,core,economy,BR 空投与防御空投分配,True,7,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-12,br,core,economy,BR 战备箱、售货机与掉落池,True,10,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-13,br,core,revive,高级复活点,True,3,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-14,br,core,economy,可升级军械库,True,4,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-15,br,core,interface,路线标记,True,3,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-16,br,core,equipment,武器架、Gloo 蘑菇与 Gloo UAV-Lite,True,3,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-17,shared,core,character,新角色 Nero,True,5,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-18,shared,core,character,Ford、Kairos 与 Rin 平衡,True,4,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-19,shared,core,character,其他角色与冷却显示优化,True,4,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-20,shared,core,weapon,Winchester 新武器与升级,True,3,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-21,shared,core,weapon,可升级武器的升级规则,True,2,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-22,shared,core,revive,倒地后 HP 流失规则,True,3,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-23,shared,core,weapon,PARAFAL、Thompson 与可升级武器平衡,True,12,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-24,shared,core,map,Solara 地图调整,True,3,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-25,shared,core,interface,着陆、准星与击杀反馈,True,4,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-25b,cs,core,interface,CS 主要奖励显示,True,1,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-26,cs,core,economy,CS 商店武器与价格,True,6,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-27,shared,core,interface,其他局内优化,True,6,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-28,shared,core,interface,局内相机与 HUD 配置,True,3,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-thiva,cs,core,character,CS：回合间 Thiva 技能冷却,True,1,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-hub,cs,core,traversal,CS：Solara Hub 滑行速度,True,1,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-wealth,br,core,economy,BR：财富蘑菇,True,1,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-ground,br,core,economy,BR：可升级武器的地面等级,True,1,documented_items,https://ff.garena.com/en/article/1549/
+2025,1549,2025-10-29,ff-patch-1549-graphics,shared,core,interface,最高画质与 HD 纹理,True,1,documented_items,https://ff.garena.com/en/article/1549/

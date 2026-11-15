@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checked": [
+    "BR/CS/shared counts",
+    "2024/2025 filters",
+    "all 266 sections and 18 table rows",
+    "text search and empty state",
+    "conclusion-to-case navigation",
+    "expand/collapse",
+    "shared category drill-down",
+    "all curated evidence IDs",
+    "standalone HTML download and offline reload",
+    "390px responsive layout",
+    "no JavaScript errors"
+  ],
+  "errors": []
+}

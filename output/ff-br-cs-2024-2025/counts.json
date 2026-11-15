@@ -1,0 +1,590 @@
+{
+  "source_sha256": "d5c3787a87adfa2a7143f3580b02b64818de813114ab4ab74155aa8c59ba9d5f",
+  "method": "Existing dossier core sections only. Count each documented item once; table rows replace duplicative summaries in the five table-bearing sections. Preserve section-level lanes. Shared includes explicitly cross-mode and unspecified scope. Not an atomic source recoding, effort estimate or benefit allocation.",
+  "2024": {
+    "units": {
+      "br": 44,
+      "cs": 27,
+      "shared": 174
+    },
+    "total_units": 245,
+    "unit_shares_percent": {
+      "br": 17.96,
+      "cs": 11.02,
+      "shared": 71.02
+    },
+    "br_cs_only_unit_shares_percent": {
+      "br": 61.97,
+      "cs": 38.03
+    },
+    "sections": {
+      "br": 26,
+      "cs": 16,
+      "shared": 123
+    },
+    "br_cs_only_section_shares_percent": {
+      "br": 61.9,
+      "cs": 38.1
+    },
+    "categories": {
+      "br": {
+        "map": 3,
+        "traversal": 5,
+        "economy": 13,
+        "equipment": 7,
+        "character": 1,
+        "weapon": 3,
+        "interface": 5,
+        "revive": 4,
+        "rules": 1,
+        "zone": 2
+      },
+      "cs": {
+        "map": 12,
+        "economy": 8,
+        "rules": 2,
+        "interface": 4,
+        "weapon": 1
+      },
+      "shared": {
+        "character": 63,
+        "weapon": 58,
+        "interface": 43,
+        "map": 3,
+        "rules": 3,
+        "equipment": 2,
+        "traversal": 2
+      }
+    }
+  },
+  "2025": {
+    "units": {
+      "br": 107,
+      "shared": 131,
+      "cs": 28
+    },
+    "total_units": 266,
+    "unit_shares_percent": {
+      "br": 40.23,
+      "shared": 49.25,
+      "cs": 10.53
+    },
+    "br_cs_only_unit_shares_percent": {
+      "br": 79.26,
+      "cs": 20.74
+    },
+    "sections": {
+      "br": 31,
+      "shared": 58,
+      "cs": 12
+    },
+    "br_cs_only_section_shares_percent": {
+      "br": 72.09,
+      "cs": 27.91
+    },
+    "categories": {
+      "br": {
+        "equipment": 28,
+        "map": 1,
+        "interface": 4,
+        "revive": 8,
+        "rules": 11,
+        "economy": 39,
+        "zone": 13,
+        "traversal": 3
+      },
+      "cs": {
+        "rules": 5,
+        "economy": 13,
+        "revive": 3,
+        "equipment": 4,
+        "interface": 1,
+        "character": 1,
+        "traversal": 1
+      },
+      "shared": {
+        "character": 38,
+        "weapon": 46,
+        "interface": 32,
+        "traversal": 2,
+        "equipment": 4,
+        "map": 6,
+        "revive": 3
+      }
+    }
+  },
+  "combined": {
+    "units": {
+      "br": 151,
+      "cs": 55,
+      "shared": 305
+    },
+    "total_units": 511,
+    "unit_shares_percent": {
+      "br": 29.55,
+      "cs": 10.76,
+      "shared": 59.69
+    },
+    "br_cs_only_unit_shares_percent": {
+      "br": 73.3,
+      "cs": 26.7
+    },
+    "sections": {
+      "br": 57,
+      "cs": 28,
+      "shared": 181
+    },
+    "br_cs_only_section_shares_percent": {
+      "br": 67.06,
+      "cs": 32.94
+    },
+    "categories": {
+      "br": {
+        "map": 4,
+        "traversal": 8,
+        "economy": 52,
+        "equipment": 35,
+        "character": 1,
+        "weapon": 3,
+        "interface": 9,
+        "revive": 12,
+        "rules": 12,
+        "zone": 15
+      },
+      "cs": {
+        "map": 12,
+        "economy": 21,
+        "rules": 7,
+        "interface": 5,
+        "weapon": 1,
+        "revive": 3,
+        "equipment": 4,
+        "character": 1,
+        "traversal": 1
+      },
+      "shared": {
+        "character": 101,
+        "weapon": 104,
+        "interface": 75,
+        "map": 9,
+        "rules": 3,
+        "equipment": 6,
+        "traversal": 4,
+        "revive": 3
+      }
+    }
+  },
+  "patches": {
+    "1306": {
+      "units": {
+        "br": 12,
+        "cs": 9,
+        "shared": 24
+      },
+      "total_units": 45,
+      "unit_shares_percent": {
+        "br": 26.67,
+        "cs": 20.0,
+        "shared": 53.33
+      },
+      "br_cs_only_unit_shares_percent": {
+        "br": 57.14,
+        "cs": 42.86
+      },
+      "sections": {
+        "br": 4,
+        "cs": 3,
+        "shared": 5
+      },
+      "br_cs_only_section_shares_percent": {
+        "br": 57.14,
+        "cs": 42.86
+      },
+      "categories": {
+        "br": {
+          "map": 3,
+          "traversal": 4,
+          "economy": 3,
+          "equipment": 2
+        },
+        "cs": {
+          "map": 4,
+          "economy": 4,
+          "rules": 1
+        },
+        "shared": {
+          "character": 9,
+          "weapon": 2,
+          "interface": 13
+        }
+      }
+    },
+    "1332": {
+      "units": {
+        "br": 8,
+        "cs": 3,
+        "shared": 25
+      },
+      "total_units": 36,
+      "unit_shares_percent": {
+        "br": 22.22,
+        "cs": 8.33,
+        "shared": 69.44
+      },
+      "br_cs_only_unit_shares_percent": {
+        "br": 72.73,
+        "cs": 27.27
+      },
+      "sections": {
+        "br": 6,
+        "cs": 3,
+        "shared": 23
+      },
+      "br_cs_only_section_shares_percent": {
+        "br": 66.67,
+        "cs": 33.33
+      },
+      "categories": {
+        "br": {
+          "character": 1,
+          "traversal": 1,
+          "equipment": 1,
+          "economy": 2,
+          "weapon": 2,
+          "interface": 1
+        },
+        "cs": {
+          "interface": 1,
+          "rules": 1,
+          "map": 1
+        },
+        "shared": {
+          "character": 7,
+          "interface": 8,
+          "map": 2,
+          "weapon": 8
+        }
+      }
+    },
+    "1357": {
+      "units": {
+        "br": 9,
+        "cs": 5,
+        "shared": 52
+      },
+      "total_units": 66,
+      "unit_shares_percent": {
+        "br": 13.64,
+        "cs": 7.58,
+        "shared": 78.79
+      },
+      "br_cs_only_unit_shares_percent": {
+        "br": 64.29,
+        "cs": 35.71
+      },
+      "sections": {
+        "br": 6,
+        "cs": 3,
+        "shared": 36
+      },
+      "br_cs_only_section_shares_percent": {
+        "br": 66.67,
+        "cs": 33.33
+      },
+      "categories": {
+        "br": {
+          "revive": 3,
+          "equipment": 1,
+          "economy": 3,
+          "weapon": 1,
+          "interface": 1
+        },
+        "cs": {
+          "map": 4,
+          "weapon": 1
+        },
+        "shared": {
+          "character": 24,
+          "weapon": 17,
+          "interface": 9,
+          "rules": 1,
+          "map": 1
+        }
+      }
+    },
+    "1385": {
+      "units": {
+        "br": 6,
+        "cs": 6,
+        "shared": 29
+      },
+      "total_units": 41,
+      "unit_shares_percent": {
+        "br": 14.63,
+        "cs": 14.63,
+        "shared": 70.73
+      },
+      "br_cs_only_unit_shares_percent": {
+        "br": 50.0,
+        "cs": 50.0
+      },
+      "sections": {
+        "br": 6,
+        "cs": 4,
+        "shared": 26
+      },
+      "br_cs_only_section_shares_percent": {
+        "br": 60.0,
+        "cs": 40.0
+      },
+      "categories": {
+        "br": {
+          "equipment": 2,
+          "economy": 2,
+          "revive": 1,
+          "rules": 1
+        },
+        "cs": {
+          "interface": 3,
+          "economy": 1,
+          "map": 2
+        },
+        "shared": {
+          "character": 8,
+          "equipment": 2,
+          "interface": 5,
+          "traversal": 1,
+          "weapon": 13
+        }
+      }
+    },
+    "1424": {
+      "units": {
+        "br": 9,
+        "cs": 4,
+        "shared": 44
+      },
+      "total_units": 57,
+      "unit_shares_percent": {
+        "br": 15.79,
+        "cs": 7.02,
+        "shared": 77.19
+      },
+      "br_cs_only_unit_shares_percent": {
+        "br": 69.23,
+        "cs": 30.77
+      },
+      "sections": {
+        "br": 4,
+        "cs": 3,
+        "shared": 33
+      },
+      "br_cs_only_section_shares_percent": {
+        "br": 57.14,
+        "cs": 42.86
+      },
+      "categories": {
+        "br": {
+          "economy": 3,
+          "zone": 2,
+          "interface": 3,
+          "equipment": 1
+        },
+        "cs": {
+          "economy": 3,
+          "map": 1
+        },
+        "shared": {
+          "character": 15,
+          "weapon": 18,
+          "interface": 8,
+          "traversal": 1,
+          "rules": 2
+        }
+      }
+    },
+    "1456": {
+      "units": {
+        "br": 17,
+        "shared": 41,
+        "cs": 2
+      },
+      "total_units": 60,
+      "unit_shares_percent": {
+        "br": 28.33,
+        "shared": 68.33,
+        "cs": 3.33
+      },
+      "br_cs_only_unit_shares_percent": {
+        "br": 89.47,
+        "cs": 10.53
+      },
+      "sections": {
+        "br": 8,
+        "shared": 38,
+        "cs": 2
+      },
+      "br_cs_only_section_shares_percent": {
+        "br": 80.0,
+        "cs": 20.0
+      },
+      "categories": {
+        "br": {
+          "equipment": 10,
+          "map": 1,
+          "interface": 1,
+          "revive": 1,
+          "rules": 1,
+          "economy": 3
+        },
+        "cs": {
+          "rules": 1,
+          "economy": 1
+        },
+        "shared": {
+          "character": 11,
+          "weapon": 17,
+          "interface": 10,
+          "traversal": 2,
+          "equipment": 1
+        }
+      }
+    },
+    "1473": {
+      "units": {
+        "shared": 21,
+        "br": 24,
+        "cs": 1
+      },
+      "total_units": 46,
+      "unit_shares_percent": {
+        "shared": 45.65,
+        "br": 52.17,
+        "cs": 2.17
+      },
+      "br_cs_only_unit_shares_percent": {
+        "br": 96.0,
+        "cs": 4.0
+      },
+      "sections": {
+        "shared": 4,
+        "br": 7,
+        "cs": 1
+      },
+      "br_cs_only_section_shares_percent": {
+        "br": 87.5,
+        "cs": 12.5
+      },
+      "categories": {
+        "br": {
+          "equipment": 7,
+          "zone": 13,
+          "economy": 4
+        },
+        "cs": {
+          "economy": 1
+        },
+        "shared": {
+          "map": 3,
+          "character": 7,
+          "weapon": 7,
+          "interface": 4
+        }
+      }
+    },
+    "1511": {
+      "units": {
+        "br": 19,
+        "shared": 16,
+        "cs": 7
+      },
+      "total_units": 42,
+      "unit_shares_percent": {
+        "br": 45.24,
+        "shared": 38.1,
+        "cs": 16.67
+      },
+      "br_cs_only_unit_shares_percent": {
+        "br": 73.08,
+        "cs": 26.92
+      },
+      "sections": {
+        "br": 5,
+        "shared": 3,
+        "cs": 2
+      },
+      "br_cs_only_section_shares_percent": {
+        "br": 71.43,
+        "cs": 28.57
+      },
+      "categories": {
+        "br": {
+          "economy": 9,
+          "traversal": 3,
+          "equipment": 3,
+          "revive": 4
+        },
+        "cs": {
+          "economy": 3,
+          "rules": 4
+        },
+        "shared": {
+          "character": 7,
+          "weapon": 5,
+          "interface": 4
+        }
+      }
+    },
+    "1549": {
+      "units": {
+        "br": 47,
+        "cs": 18,
+        "shared": 53
+      },
+      "total_units": 118,
+      "unit_shares_percent": {
+        "br": 39.83,
+        "cs": 15.25,
+        "shared": 44.92
+      },
+      "br_cs_only_unit_shares_percent": {
+        "br": 72.31,
+        "cs": 27.69
+      },
+      "sections": {
+        "br": 11,
+        "cs": 7,
+        "shared": 13
+      },
+      "br_cs_only_section_shares_percent": {
+        "br": 61.11,
+        "cs": 38.89
+      },
+      "categories": {
+        "br": {
+          "rules": 10,
+          "equipment": 8,
+          "economy": 23,
+          "revive": 3,
+          "interface": 3
+        },
+        "cs": {
+          "revive": 3,
+          "economy": 8,
+          "equipment": 4,
+          "interface": 1,
+          "character": 1,
+          "traversal": 1
+        },
+        "shared": {
+          "equipment": 3,
+          "character": 13,
+          "weapon": 17,
+          "revive": 3,
+          "map": 3,
+          "interface": 14
+        }
+      }
+    }
+  }
+}
