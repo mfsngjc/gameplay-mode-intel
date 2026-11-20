@@ -97,6 +97,21 @@ vm.runInContext(`
   state.query = 'LTM';
   assert.ok(filteredIds().has(lava) && !filteredIds().has(reload), 'LTM is searchable');
   state.query = '';
+  const override = byId('fortnite-override-2026');
+  const ruleNames = override.globalRules.groups.flatMap(group => group.rules.map(rule => rule.english));
+  assert.equal(ruleNames.length, 30);
+  assert.equal(new Set(ruleNames).size, ruleNames.length);
+  assert.ok(!ruleNames.includes('Level Up') && !ruleNames.includes('Storm Override'));
+  const ruleHtml = renderGlobalRules(override.globalRules);
+  const markdown = modeToMarkdown(override);
+  for (const name of ruleNames) {
+    assert.ok(ruleHtml.includes(name) && markdown.includes(name), name + ' missing from mode details or export');
+  }
+  assert.equal(renderGlobalRules(byId(lava).globalRules), '');
+  assert.equal(buildCanvas([override]).nodes[0].text, markdown);
+  state.query = 'Sugar Rush';
+  assert.ok(filteredIds().has(override.id), 'A cartridge name should find the parent mode');
+  state.query = '';
   const scheduled = { ...byId(lava), launchDate: null, launchDateStatus: 'scheduled',
     scheduledLaunchDate: '2000-01-01', launchLabel: '官方预定 2000-01-01' };
   assert.equal(getModeDateValue(scheduled), '2000-01-01');

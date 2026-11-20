@@ -532,6 +532,23 @@
 .detail-insight small { display: block; color: #8a987a; font-size: 10px; margin-top: 12px; }
 .detail-section { padding: 5px 0 17px; }
 .detail-section p { color: #76806d; font-size: 14px; line-height: 1.9; margin: 0; overflow-wrap: anywhere; white-space: pre-line; }
+.global-rules { margin-top: 22px; }
+.global-rules > h3 { font-size: 19px; color: var(--ink); }
+.global-rules > p { color: var(--mode-copy, var(--ink)); margin: 8px 0; }
+.global-rule-group { margin: 22px 0; }
+.global-rule-group header { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; justify-content: space-between; border-bottom: 1px solid var(--line-strong, var(--line)); padding-bottom: 7px; }
+.global-rule-group h4 { margin: 0; color: var(--ink); font-size: 15px; }
+.global-rules a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; font-size: 13px; }
+.global-rule-group dl { margin: 0; }
+.global-rule-group dl > div { display: grid; grid-template-columns: minmax(130px, 29%) 1fr; gap: 6px 16px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.global-rule-group dt { font-weight: 650; color: var(--ink); }
+.global-rule-group dt span { display: block; font-size: 13px; font-weight: 400; color: var(--muted); }
+.global-rule-group dd { margin: 0; font-size: 14px; color: var(--mode-copy, var(--ink)); line-height: 1.65; }
+.global-rule-sources { margin: 8px 0 0; padding-left: 1.3em; }
+@media (max-width: 560px) {
+  .global-rule-group dl > div { grid-template-columns: 1fr; }
+  .global-rule-group dt span { display: inline; margin-left: 4px; }
+}
 .related-cases { display: flex; flex-direction: column; gap: 8px; }
 .related-cases button { display: flex; text-align: left; align-items: center; justify-content: space-between; background: #fafcf7; border: 1px solid #e4ebdb; color: #60734e; font-size: 13px; padding: 12px 14px; }
 .detail-actions { display: flex; gap: 8px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 20px; }

@@ -1937,11 +1937,12 @@
     ],
     "mapNames": [],
     "sourceModeIds": [
-      "fortnite-battle-royale-2017"
+      "fortnite-battle-royale-2017",
+      "fortnite-override-2026"
     ],
     "sourceMapIds": [],
     "before": "Override父玩法已有规则卡带；本条只列万圣节新增效果。",
-    "after": "诅咒卡带可提供冲刺隐身、血量越低伤害越高、全队伪装万圣节道具；另有护盾换生命、开火同时发射南瓜火箭等效果。未公布具体倍率。",
+    "after": "万圣节新增卡带包括冲刺隐身、低生命增伤、蹲伏伪装成节日道具、护盾换双倍生命、射击时发射南瓜火箭，以及吃糖后强化治疗与移动。全场版对所有玩家生效。",
     "playerImpact": "行为推断：卡带选择增加潜行、冒险压血和伪装接敌的取舍。",
     "designObservation": "设计推断：改变规则的增益应写清触发条件，避免将活动效果套用到常规BR。",
     "versionLabel": "v42.30 / Fortnitemares 2026",
@@ -1955,7 +1956,7 @@
     "previousUpdateIds": [],
     "reviewStatus": "source_verified",
     "publicationStatus": "ready",
-    "reviewedAt": "2026-11-01",
+    "reviewedAt": "2026-11-20",
     "imageUrl": "assets/core-updates/fortnite-halloween-2026-11-01.jpg",
     "imageSource": "官方公告版本配图，未展示本条全部改动",
     "imageStatus": "verified_official",

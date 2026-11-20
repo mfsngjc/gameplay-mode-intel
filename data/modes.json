@@ -4136,7 +4136,220 @@
   {
     "id": "fortnite-override-2026",
     "game": "Fortnite",
-    "modeName": "规则改写（Fortnite Override）",
+    "modeName": "颠覆重构（Fortnite Override）",
+    "searchAliases": [
+      "规则改写",
+      "堡垒之夜",
+      "全局规则",
+      "规则控制台",
+      "Match Overrides",
+      "Override Console"
+    ],
+    "publicationStatus": "ready",
+    "reviewedAt": "2026-11-20",
+    "globalRules": {
+      "intro": "第 7 章第 4 赛季大逃杀的历史规则。地图上的 Override 主机激活后，第一名与它交互的玩家从随机出现的三个选项中选一个。全场卡带对争夺者、队友和所有对手一同生效，已选效果可延续到本局结束。8 月下旬热修后，一局更容易出现两至三次选择机会。",
+      "groups": [
+        {
+          "title": "v42.00 · 8 月 20 日",
+          "sourceUrl": "https://communities.epicgames.com/thread/v42-00-fortnite-override-battle-royale-update-notes/L5R3/",
+          "rules": [
+            {
+              "name": "索尼克速度",
+              "english": "Sonic Speed",
+              "effect": "持续冲刺时，玩家的冲刺速度会逐渐提高。"
+            },
+            {
+              "name": "无限耐力",
+              "english": "Infinite Stamina",
+              "effect": "持续冲刺不再耗尽耐力，所有玩家都可以连续奔跑。"
+            },
+            {
+              "name": "额外生命",
+              "english": "Extra Life",
+              "effect": "每名玩家各有一次机会，在即将被淘汰时重生。全场版于 8 月 27 日停用，当晚重新开放的是小队版。"
+            },
+            {
+              "name": "脱战恢复",
+              "english": "Constant Heal",
+              "effect": "连续 5 秒没有受到伤害后开始回复，先恢复生命，再恢复护盾。10 月 1 日退出轮换。"
+            },
+            {
+              "name": "额外护盾",
+              "english": "Overshield",
+              "effect": "已有额外护盾的玩家获得更高上限，原本没有的玩家也会获得一层可再生的额外护盾。10 月 2 日，建造模式的额外护盾上限从 100 调至 75。"
+            },
+            {
+              "name": "爆头增伤",
+              "english": "Headshot",
+              "effect": "玩家命中头部时，原有爆头伤害乘以 1.5。10 月 1 日退出轮换。"
+            },
+            {
+              "name": "快速射手",
+              "english": "Speed Shooter",
+              "effect": "武器射得更快，换弹也更快。首发射速加成是 50%。10 月 1 日全场版退出轮换。"
+            },
+            {
+              "name": "强力镐",
+              "english": "Power Pickaxe",
+              "effect": "镐的打击伤害提高。对玩家和非玩家角色为原来的 20 倍，对场景物体为 10 倍。10 月 1 日退出轮换。"
+            },
+            {
+              "name": "优质战利品",
+              "english": "Big Loot",
+              "effect": "所有玩家开宝箱时，抽到史诗或传奇品质物品的概率提高。宝箱仍然可能开出其他品质。"
+            },
+            {
+              "name": "宝箱破解掉落",
+              "english": "Loot Hack",
+              "effect": "规则激活后，每名玩家下一次打开宝箱时都会获得一件破解战利品。这项收益只对应下一个宝箱。"
+            },
+            {
+              "name": "黄金钓点",
+              "english": "Big Fish",
+              "effect": "岛上所有钓点变为金色，玩家仍需前往钓点垂钓。"
+            },
+            {
+              "name": "额外经验",
+              "english": "More XP",
+              "effect": "淘汰对手、搜刮物资以及存活过风暴阶段，这三种行为给予更多经验值。"
+            }
+          ]
+        },
+        {
+          "title": "v42.10 · 9 月 3 日起",
+          "sourceUrl": "https://communities.epicgames.com/thread/v42-10-fortnite-override-battle-royale-update-notes/y3Ub/",
+          "rules": [
+            {
+              "name": "大头模式",
+              "english": "Big Head Mode",
+              "effect": "所有玩家角色的头部同时变大。Epic 的公告只说明外观变化。"
+            },
+            {
+              "name": "道具搜寻",
+              "english": "Prop Hunt",
+              "effect": "玩家蹲下并静止数秒，就会变成场景道具，可以藏在环境中。普通版于 10 月 2 日退出轮换。"
+            },
+            {
+              "name": "动作英雄",
+              "english": "Action Hero",
+              "effect": "身在空中时举枪瞄准会短暂滞空，同时提高空中伤害。武器记录的倍率为突击步枪、手枪及冲锋枪 1.2 倍，霰弹枪 1.15 倍，狙击枪 1.1 倍。10 月 15 日退出轮换。"
+            },
+            {
+              "name": "神射手",
+              "english": "Sharpshooter",
+              "effect": "9 月 3 日预告，9 月 10 日开放。武器后坐力和射击散布都减小，连续开火时弹着点更集中。"
+            }
+          ]
+        },
+        {
+          "title": "v42.20 · 9 月 17 日起",
+          "sourceUrl": "https://communities.epicgames.com/thread/v42-20-fortnite-override-battle-royale-update-notes/g1Wm/",
+          "rules": [
+            {
+              "name": "恢复",
+              "english": "Recovery",
+              "effect": "任何玩家用任意武器淘汰对手，目标所在位置都会生成可拾取的治疗球。"
+            },
+            {
+              "name": "动态风暴",
+              "english": "Dynamic Storm",
+              "effect": "风暴按照场上剩余人数调整等待和收缩时间。以 10 月 2 日热修后的参数为例，剩 20 人时两段时间各缩短 50%，剩 10 人或 5 人时等待缩短 40%、收缩缩短 60%。"
+            },
+            {
+              "name": "超级射击",
+              "english": "Super Shot",
+              "effect": "持续开火并消耗弹药会周期性打出火箭，游戏参数记录为每消耗 15 发弹药触发一次。10 月 15 日退出轮换。"
+            },
+            {
+              "name": "落地爆炸",
+              "english": "Big Boom",
+              "effect": "玩家从高处落下时免受坠落伤害，并在落点对周围敌人造成范围伤害。下落越久，爆炸越强，记录伤害为 120 至 150 点。10 月 15 日退出轮换。"
+            },
+            {
+              "name": "治疗过载",
+              "english": "Healing Overdrive",
+              "effect": "玩家每次触发治疗时，还会获得持续 12 秒的过载状态。10 月 15 日退出轮换。"
+            },
+            {
+              "name": "猎手追踪",
+              "english": "Hunter Scavenger",
+              "effect": "击伤敌人会给目标加上标记，敌人被淘汰后，其位置还会短暂显示在地图上。卡带记录为最多标记 3 人、持续 5 秒。"
+            },
+            {
+              "name": "压制火力",
+              "english": "Endless Shooter",
+              "effect": "9 月 24 日开放。远程武器弹匣容量翻倍，并获得无限备用弹药，仍需换弹。Epic 的 9 月 17 日预告使用了 Suppressing Fire 这一名称。"
+            },
+            {
+              "name": "伤害汲取",
+              "english": "Health Siphon",
+              "effect": "9 月 24 日开放。命中造成伤害就会恢复攻击者的生命值，无需完成淘汰。10 月 2 日，回复比例由所造成伤害的 10% 提高到 30%。"
+            }
+          ]
+        },
+        {
+          "title": "v42.30 · 10 月 1 日万圣节更新",
+          "sourceUrl": "https://communities.epicgames.com/thread/fortnitemares-2026-curses-battle-royale-reload-and-more/L4S8/",
+          "rules": [
+            {
+              "name": "诡影疾奔",
+              "english": "Spooky Sprinter",
+              "effect": "玩家冲刺时进入隐身状态。所有队伍都可以利用冲刺接近敌人或脱离视线。"
+            },
+            {
+              "name": "狂战",
+              "english": "Berserk",
+              "effect": "玩家剩余生命越低，造成的伤害越高。卡带记录以每损失 25 点生命为一个增伤档位。"
+            },
+            {
+              "name": "双倍生命",
+              "english": "More Health",
+              "effect": "移除玩家的护盾，将生命值上限翻倍。失血后需要用能恢复生命的物品治疗。"
+            },
+            {
+              "name": "南瓜火箭",
+              "english": "Pumpkin Launching",
+              "effect": "玩家用武器持续开火时会周期性发射南瓜火箭。卡带记录为每消耗 15 发弹药触发一次。"
+            },
+            {
+              "name": "诡异搜寻道具",
+              "english": "Spooky Prop Hunt",
+              "effect": "蹲下并静止数秒后，角色会伪装成万圣节主题道具。所有玩家都可以使用这项伪装。"
+            },
+            {
+              "name": "糖果加速",
+              "english": "Sugar Rush",
+              "effect": "吃下糖果后，玩家获得更多治疗，移动更快，冲刺起跳更高，耐力消耗也会减少。"
+            }
+          ]
+        }
+      ],
+      "note": "11 月 1 日切换到 v43.00「宝藏猎人」后，规则控制台退出大逃杀。小队专属的「升级」（Level Up）会在每位队员脚下生成一把神话品质王国之钥，只惠及占领队。",
+      "evidenceNote": "各组的 Epic 补丁说明记录规则效果和更新安排。精确数值、实际开启与停用日期，以及猎手追踪、糖果加速的完整卡带说明，另据 Fortnite Wiki 收录的游戏内文字和版本记录核对。热修日期沿用美东日期。",
+      "sources": [
+        {
+          "label": "Epic 简体中文赛季公告",
+          "url": "https://www.fortnite.com/news/fortnite-override-break-the-rules-change-the-game?lang=zh-Hans"
+        },
+        {
+          "label": "Epic v42.40 移出轮换的四项规则",
+          "url": "https://communities.epicgames.com/thread/v42-40-fortnite-override-battle-royale-update-notes/AKuW/"
+        },
+        {
+          "label": "Fortnite Wiki · 已上线卡带与热修历史",
+          "url": "https://fortnite.weirdgloop.org/w/Match_Overrides"
+        },
+        {
+          "label": "Fortnite Wiki · 控制台与选择流程",
+          "url": "https://fortnite.weirdgloop.org/w/Override_Console"
+        },
+        {
+          "label": "Epic · 11 月 1 日新赛季",
+          "url": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time"
+        }
+      ]
+    },
     "year": "2026",
     "date": "2026-08-20",
     "tags": [
@@ -4148,8 +4361,8 @@
       "全场规则变化",
       "联动能力"
     ],
-    "oneLineRule": "争夺地图上的规则控制台，可以改变本场对局的规则；抢先取得稀有的小队专属强化能提升战力，但会暴露小队位置。",
-    "mechanicChange": "第7章第4赛季加入规则控制台（Override Consoles），每局都会出现。抢先取得控制权后，玩家可以改变本场所有玩家适用的规则，自己的名字也会显示在控制台底座上。另一种稀有的小队专属强化（Squad Overrides）只增强第一个拿到它的小队，代价是该小队的位置会在地图上公开。\n\n武器方面，迈达斯的杰作手枪（Midas’ Masterpiece）可以一枪爆头淘汰敌人；洛克人臂炮（Mega Buster）则是另一种联动武器。本季还加入索尼克动力鞋（Power Sneakers）和俄罗斯方块裂隙（Tetris Rift）等联动道具，具体效果需结合对应规则说明查看。\n\n玩家还可以消耗精灵粉尘（Sprite Dust），使用宝箱掉落定制（Loot Hacks），为自己在大逃杀对局中打开的宝箱追加其他地方无法获得的专属物品。",
+    "oneLineRule": "先抢到控制台的玩家从三个随机选项中选一项。选到全场卡带，连对手也要按新规则行动，例如额外重生一次、让钓点变金色，或随存活人数改变缩圈速度。",
+    "mechanicChange": "地图会标出已激活的控制台。成功选择后，操作者的名字显示在主机底座上。全场卡带之外，还有只强化占领小队的卡带，多数会在地图上暴露队员的大致位置。\n\n赛季武器包括能一枪爆头淘汰对手的迈达斯杰作手枪（Midas’ Masterpiece）和洛克炮（Mega Buster）。联动道具还包括索尼克动力运动鞋和俄罗斯方块裂隙。\n\n玩家也可以在局外消耗精灵晶尘（Sprite Dust）定制自己的宝箱掉落。开箱时有机会获得自己配置的专属物品。局内同名的 Loot Hack 卡带则把下一次开箱的收益给到全场每名玩家。",
     "tempoImpact": "规则控制台把队伍从各自搜刮引向同一个争夺点，占领结果还会改变本场其他玩家适用的规则。小队专属强化则把额外战力与位置暴露绑定：拿到强化后，也更容易成为其他队伍追击的目标。",
     "designObservation": "让玩家争夺改变规则的权力，可以把一个控制点变成影响整场比赛的目标。若小队获得强化的同时必须公开位置，就能让领先者继续承担被追击的风险，为其他队伍创造反击机会。",
     "sourceUrl": "https://www.fortnite.com/news/fortnite-override-break-the-rules-change-the-game",
@@ -4158,7 +4371,7 @@
     "imageAssetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmt14h2ardvpq07o76t76zt0m",
     "launchDate": "2026-08-20",
     "launchLabel": "2026年8月20日上线",
-    "launchNote": "Epic 官方 2026年8月20日赛季公告确认，第7章第4赛季「规则改写」（Chapter 7 Season 4: Override）已上线，赛季后续还会追加联动武器。此卡中的中文专名采用说明性译法，括号保留英文原名，尚未核实官方中文译名。",
+    "launchNote": "Epic 于 2026 年 8 月 20 日推出大逃杀第 7 章第 4 赛季《颠覆重构》。11 月 1 日大逃杀进入下一赛季，Override 控制台随之退场。本站旧称“规则改写”。卡带列出英文名，中文采用可核实的译名或效果说明。",
     "gameplayTypes": [
       "br"
     ],

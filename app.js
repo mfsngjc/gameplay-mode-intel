@@ -454,6 +454,16 @@ function modeToMarkdown(mode) {
     "## " + (derived ? "原案例的机制依据" : "机制变化"), "", mode.mechanicChange, "",
     "## " + (derived ? "原案例的节奏影响" : "节奏影响"), "", mode.tempoImpact, "",
     "## 设计观察", "", mode.designObservation, "", "## 时间备注", "", mode.launchNote || "待确认");
+  if (mode.globalRules) {
+    const book = mode.globalRules;
+    lines.push("", "## 玩家可修改的全局规则", "", book.intro, "", book.note);
+    for (const group of book.groups) {
+      lines.push("", "### " + group.title, "",
+        ...group.rules.map(rule => "- **" + rule.name + "（" + rule.english + "）**　" + rule.effect),
+        "", "[Epic 版本说明](" + group.sourceUrl + ")");
+    }
+    lines.push("", book.evidenceNote, "", ...book.sources.map(source => "- [" + source.label + "](" + source.url + ")"));
+  }
   if (sourceModes.length) {
     lines.push("", "## 关联原案例", "", ...sourceModes.map((entry) => "- [" + entry.modeName + "](" + entry.sourceUrl + ")"));
   }
@@ -915,7 +925,9 @@ function buildCanvas(modes) {
     width: 460,
     height: 560,
     color: "4",
-    text: isWeaponSkin(mode) ? WeaponSkins.markdown(mode) : isTacticalItem(mode) ? tacticalItemMarkdown(mode) : isCoreUpdate(mode) ? coreUpdateMarkdown(mode) : [mode.modeName, (kindLabels[mode.kind] || "玩法模式") + " · " + mode.game, "核心玩法：" + getGameplayLabel(mode) + (isLtmMode(mode) ? " · LTM" : ""), "", "一句话规则：" + mode.oneLineRule, "", "设计观察：" + mode.designObservation, "", ...(mode.sourceModeIds ? ["基于已有案例的设计提炼", ""] : []), "来源：" + mode.sourceUrl].join("\n")
+    text: (mode.globalRules || isWeaponSkin(mode) || isTacticalItem(mode) || isCoreUpdate(mode))
+      ? modeToMarkdown(mode)
+      : [mode.modeName, (kindLabels[mode.kind] || "玩法模式") + " · " + mode.game, "核心玩法：" + getGameplayLabel(mode) + (isLtmMode(mode) ? " · LTM" : ""), "", "一句话规则：" + mode.oneLineRule, "", "设计观察：" + mode.designObservation, "", ...(mode.sourceModeIds ? ["基于已有案例的设计提炼", ""] : []), "来源：" + mode.sourceUrl].join("\n")
   }));
 
   return {

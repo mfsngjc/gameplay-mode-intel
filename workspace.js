@@ -135,6 +135,7 @@ function entryMatchesQuery(entry) {
   if (isWeaponSkin(entry)) return WeaponSkins.matchesQuery(entry);
   if (isTacticalItem(entry)) return itemMatchesQuery(entry);
   const text = [entry.modeName, entry.game, entry.oneLineRule, entry.mechanicChange,
+    ...(entry.globalRules?.groups || []).flatMap(group => group.rules.map(rule => [rule.name, rule.english, rule.effect].join(' '))),
     entry.tempoImpact, entry.designObservation, entry.versionLabel, ...(entry.searchAliases || []), entry.tacticalProfile?.role, ...(entry.affectedModes || []), ...(entry.mapNames || []), getContentTypeLabel(entry), ...(entry.type || []),
     kindLabels[entry.kind], getGameplayLabel(entry), isLtmMode(entry) ? 'LTM 限时模式' : '', ...topicIds(entry).map((id) => topicDefs.find((item) => item.id === id)?.label || '')
   ].join(' ').toLocaleLowerCase();
@@ -550,6 +551,23 @@ function showWorkspaceDetailDialog(trigger = document.activeElement) {
   detailDialog.scrollTop = 0;
 }
 
+function renderGlobalRules(book) {
+  if (!book) return '';
+  const link = (label, url) => '<a href="' + escapeHtml(safeUrl(url)) +
+    '" target="_blank" rel="noopener noreferrer">' + escapeHtml(label) + '</a>';
+  const groups = book.groups.map(group =>
+    '<section class="global-rule-group"><header><h4>' + escapeHtml(group.title) + '</h4>' +
+    link('Epic 版本说明', group.sourceUrl) + '</header><dl>' + group.rules.map(rule =>
+      '<div><dt>' + escapeHtml(rule.name) + ' <span lang="en">' + escapeHtml(rule.english) +
+      '</span></dt><dd>' + escapeHtml(rule.effect) + '</dd></div>').join('') + '</dl></section>').join('');
+  const count = book.groups.reduce((total, group) => total + group.rules.length, 0);
+  return '<section class="detail-section global-rules" aria-labelledby="globalRulesTitle">' +
+    '<h3 id="globalRulesTitle">玩家可修改的全局规则（' + count + ' 项）</h3><p>' + escapeHtml(book.intro) +
+    '</p><p>' + escapeHtml(book.note) + '</p>' + groups + '<p>' + escapeHtml(book.evidenceNote) +
+    '</p><ul class="global-rule-sources">' + book.sources.map(source =>
+      '<li>' + link(source.label, source.url) + '</li>').join('') + '</ul></section>';
+}
+
 function showDetail(id, trigger) {
   const gameDetail = state.view === 'games';
   const entry = gameDetail ? GameCatalog.find(id) : state.entries.find((item) => item.id === id);
@@ -578,6 +596,7 @@ function showDetail(id, trigger) {
     entryGameplayDefinitions(entry).map((d) => '<span class="gameplay-chip">' + escapeHtml(d.label) + '</span>').join('') +
     (isLtmMode(entry) ? '<span class="ltm-chip">LTM · 限时模式</span>' : '') + '</div>' +
     '<p class="detail-summary">' + escapeHtml(entry.oneLineRule) + '</p><div class="tag-row">' + entry.type.map((tag) => '<span class="tag">' + escapeHtml(tag) + '</span>').join('') + '</div>' +
+    renderGlobalRules(entry.globalRules) +
     '<div class="detail-insight"><h3>设计观察</h3><p>' + escapeHtml(entry.designObservation) + '</p><small>' + (derived ? '分析提炼，不代表官方结论' : escapeHtml(getAiCommentator(entry))) + '</small></div>' +
     '<div class="detail-section"><h3>' + (derived ? (entry.sourceModeIds?.length ? '原案例的机制依据' : '交互流程') : '机制变化') + '</h3><p>' + escapeHtml(entry.mechanicChange) + '</p></div>' +
     '<div class="detail-section"><h3>' + (derived ? '原案例的节奏影响' : '节奏影响') + '</h3><p>' + escapeHtml(entry.tempoImpact) + '</p></div>' +
