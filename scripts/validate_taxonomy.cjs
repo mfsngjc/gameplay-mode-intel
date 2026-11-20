@@ -104,8 +104,26 @@ vm.runInContext(`
   assert.ok(!ruleNames.includes('Level Up') && !ruleNames.includes('Storm Override'));
   const ruleHtml = renderGlobalRules(override.globalRules);
   const markdown = modeToMarkdown(override);
-  for (const name of ruleNames) {
-    assert.ok(ruleHtml.includes(name) && markdown.includes(name), name + ' missing from mode details or export');
+  const ruleRows = globalRuleRows(override.globalRules);
+  assert.equal(ruleHtml.split('<table ').length - 1, 1, 'All rules belong in one table');
+  assert.equal(ruleHtml.split('scope="row"').length - 1, ruleNames.length);
+  assert.ok(markdown.includes('| 规则名称 | 全场效果 | 首次开放 | 后续更新 |'));
+  for (const rule of ruleRows) {
+    assert.ok(rule.released && rule.version && rule.versionUrl, rule.english + ': missing release details');
+    assert.ok(ruleHtml.includes(rule.english) && markdown.includes(rule.english), rule.english + ': missing from details or export');
+    for (const update of rule.updates) {
+      assert.ok(update.date >= rule.released && update.url, rule.english + ': invalid update date or source');
+      assert.ok(ruleHtml.includes(update.detail) && markdown.includes(update.detail), rule.english + ': missing update');
+    }
+  }
+  for (const [name, announced, released] of [
+    ['Sharpshooter', '2026-09-03', '2026-09-10'],
+    ['Endless Shooter', '2026-09-17', '2026-09-24'],
+    ['Health Siphon', '2026-09-17', '2026-09-24']
+  ]) {
+    const rule = ruleRows.find(item => item.english === name);
+    assert.equal(rule.announced, announced);
+    assert.equal(rule.released, released);
   }
   assert.equal(renderGlobalRules(byId(lava).globalRules), '');
   assert.equal(buildCanvas([override]).nodes[0].text, markdown);

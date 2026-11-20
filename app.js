@@ -431,6 +431,20 @@ function renderTimeline() {
   TimelinePlayers.mount(gameTimeline.querySelector('.timeline-player-history'), state.gameFilter, entries);
 }
 
+function globalRuleRows(book) {
+  if (!book) return [];
+  const sources = new Map(book.sources.filter(source => source.id).map(source => [source.id, source.url]));
+  return book.groups.flatMap(group => group.rules.map(rule => ({
+    name: rule.name, english: rule.english, effect: rule.effect,
+    version: group.version || group.title, versionUrl: group.sourceUrl,
+    released: rule.releaseDate || group.date || '',
+    announced: rule.releaseDate && rule.releaseDate !== group.date ? group.date : '',
+    updates: (rule.updates || []).map(update => ({
+      date: update.date, detail: update.detail, url: sources.get(update.source)
+    }))
+  })));
+}
+
 function modeToMarkdown(mode) {
   if (isWeaponSkin(mode)) return WeaponSkins.markdown(mode);
   if (isTacticalItem(mode)) return tacticalItemMarkdown(mode);
@@ -456,13 +470,19 @@ function modeToMarkdown(mode) {
     "## 设计观察", "", mode.designObservation, "", "## 时间备注", "", mode.launchNote || "待确认");
   if (mode.globalRules) {
     const book = mode.globalRules;
-    lines.push("", "## 玩家可修改的全局规则", "", book.intro, "", book.note);
-    for (const group of book.groups) {
-      lines.push("", "### " + group.title, "",
-        ...group.rules.map(rule => "- **" + rule.name + "（" + rule.english + "）**　" + rule.effect),
-        "", "[Epic 版本说明](" + group.sourceUrl + ")");
+    const cell = value => String(value).replace(/\|/g, '\\|').replace(/\r?\n/g, '<br>');
+    lines.push("", "## 玩家可修改的全局规则", "", book.intro, "",
+      "| 规则名称 | 全场效果 | 首次开放 | 后续更新 |", "| --- | --- | --- | --- |");
+    for (const rule of globalRuleRows(book)) {
+      const version = "[" + cell(rule.version) + "](" + rule.versionUrl + ")";
+      const release = [rule.released, version, rule.announced && (rule.announced + " 预告")].filter(Boolean).join("<br>");
+      const updates = rule.updates.map(update =>
+        (update.url ? "[" + update.date + "](" + update.url + ")" : update.date) + " " + cell(update.detail));
+      lines.push("| " + cell(rule.name + "（" + rule.english + "）") + " | " + cell(rule.effect) +
+        " | " + release + " | " + (updates.join("<br>") || "—") + " |");
     }
-    lines.push("", book.evidenceNote, "", ...book.sources.map(source => "- [" + source.label + "](" + source.url + ")"));
+    lines.push("", "— 表示暂无单项后续更新记录。", "", book.note, "", book.evidenceNote, "",
+      ...book.sources.map(source => "- [" + source.label + "](" + source.url + ")"));
   }
   if (sourceModes.length) {
     lines.push("", "## 关联原案例", "", ...sourceModes.map((entry) => "- [" + entry.modeName + "](" + entry.sourceUrl + ")"));

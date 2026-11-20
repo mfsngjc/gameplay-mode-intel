@@ -135,7 +135,8 @@ function entryMatchesQuery(entry) {
   if (isWeaponSkin(entry)) return WeaponSkins.matchesQuery(entry);
   if (isTacticalItem(entry)) return itemMatchesQuery(entry);
   const text = [entry.modeName, entry.game, entry.oneLineRule, entry.mechanicChange,
-    ...(entry.globalRules?.groups || []).flatMap(group => group.rules.map(rule => [rule.name, rule.english, rule.effect].join(' '))),
+    ...globalRuleRows(entry.globalRules).map(rule => [rule.name, rule.english, rule.effect, rule.version, rule.released,
+      rule.announced, ...rule.updates.map(update => update.date + ' ' + update.detail)].join(' ')),
     entry.tempoImpact, entry.designObservation, entry.versionLabel, ...(entry.searchAliases || []), entry.tacticalProfile?.role, ...(entry.affectedModes || []), ...(entry.mapNames || []), getContentTypeLabel(entry), ...(entry.type || []),
     kindLabels[entry.kind], getGameplayLabel(entry), isLtmMode(entry) ? 'LTM 限时模式' : '', ...topicIds(entry).map((id) => topicDefs.find((item) => item.id === id)?.label || '')
   ].join(' ').toLocaleLowerCase();
@@ -553,19 +554,49 @@ function showWorkspaceDetailDialog(trigger = document.activeElement) {
 
 function renderGlobalRules(book) {
   if (!book) return '';
-  const link = (label, url) => '<a href="' + escapeHtml(safeUrl(url)) +
-    '" target="_blank" rel="noopener noreferrer">' + escapeHtml(label) + '</a>';
-  const groups = book.groups.map(group =>
-    '<section class="global-rule-group"><header><h4>' + escapeHtml(group.title) + '</h4>' +
-    link('Epic 版本说明', group.sourceUrl) + '</header><dl>' + group.rules.map(rule =>
-      '<div><dt>' + escapeHtml(rule.name) + ' <span lang="en">' + escapeHtml(rule.english) +
-      '</span></dt><dd>' + escapeHtml(rule.effect) + '</dd></div>').join('') + '</dl></section>').join('');
-  const count = book.groups.reduce((total, group) => total + group.rules.length, 0);
+  const link = (label, url) => {
+    const href = safeUrl(url);
+    return href ? '<a href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer">' +
+      escapeHtml(label) + '</a>' : escapeHtml(label);
+  };
+  const date = (value, url) => '<time datetime="' + escapeHtml(value) + '">' + link(value, url) + '</time>';
+  const rules = globalRuleRows(book);
+  const rows = rules.map(rule => {
+    const changes = rule.updates.map(update =>
+      '<li>' + date(update.date, update.url) + ' ' + escapeHtml(update.detail) + '</li>').join('');
+    return '<tr><th scope="row" class="rule-name">' + escapeHtml(rule.name) +
+      '<span lang="en">' + escapeHtml(rule.english) + '</span></th>' +
+      '<td class="rule-effect"><span class="rule-mobile-label" aria-hidden="true">全场效果</span>' + escapeHtml(rule.effect) + '</td>' +
+      '<td class="rule-release">' + (rule.released ? date(rule.released) : '') +
+      link(rule.version, rule.versionUrl) + (rule.announced ? '<small>' + date(rule.announced) + ' 预告</small>' : '') + '</td>' +
+      '<td class="rule-updates' + (changes ? '' : ' rule-updates-empty') + '">' + (changes
+        ? '<span class="rule-mobile-label" aria-hidden="true">后续更新</span><ul>' + changes + '</ul>'
+        : '—') + '</td></tr>';
+  }).join('');
   return '<section class="detail-section global-rules" aria-labelledby="globalRulesTitle">' +
-    '<h3 id="globalRulesTitle">玩家可修改的全局规则（' + count + ' 项）</h3><p>' + escapeHtml(book.intro) +
-    '</p><p>' + escapeHtml(book.note) + '</p>' + groups + '<p>' + escapeHtml(book.evidenceNote) +
-    '</p><ul class="global-rule-sources">' + book.sources.map(source =>
+    '<h3 id="globalRulesTitle">玩家可修改的全局规则 <small>' + rules.length + ' 项</small></h3>' +
+    '<p class="rule-table-key">热修按美东日期记录。「—」表示暂无单项更新记录。</p>' +
+    '<table class="global-rule-table" aria-labelledby="globalRulesTitle"><thead><tr>' +
+    '<th scope="col">规则名称</th><th scope="col">全场效果</th><th scope="col">首次开放</th><th scope="col">后续更新</th>' +
+    '</tr></thead><tbody>' + rows + '</tbody></table>' +
+    '<h4>赛季备注与来源</h4><p>' + escapeHtml(book.intro) + '</p><p>' + escapeHtml(book.note) +
+    '</p><p>' + escapeHtml(book.evidenceNote) + '</p><ul class="global-rule-sources">' + book.sources.map(source =>
       '<li>' + link(source.label, source.url) + '</li>').join('') + '</ul></section>';
+}
+
+function renderModeIntro(entry, derived, cover) {
+  const timing = entry.globalRules?.endDate && entry.launchDate
+    ? '赛季时间　' + entry.launchDate + ' 至 ' + entry.globalRules.endDate
+    : derived ? '提炼日期：' + entry.createdAt : getModeTimingLabel(entry) + '：' + (entry.launchLabel || entry.date || entry.year);
+  const heading = '<div class="detail-kicker">' + kindLabels[entry.kind] + ' / ' + escapeHtml(entry.game) + '</div>' +
+    '<h2 id="detailTitle">' + escapeHtml(entry.modeName) + '</h2>' +
+    '<div class="detail-meta"><span>' + escapeHtml(timing) + '</span>' +
+    (entry.globalRules ? '' : '<span>' + (derived ? (entry.sourceModeIds?.length ? '基于库内案例 · 分析提炼' : '本地预览 · 尚未关联模式卡') : '保留来源与时间备注') + '</span>') + '</div>' +
+    '<div class="detail-taxonomy"><span>' + (derived ? '关联玩法' : '核心玩法') + '</span>' +
+    entryGameplayDefinitions(entry).map((d) => '<span class="gameplay-chip">' + escapeHtml(d.label) + '</span>').join('') +
+    (isLtmMode(entry) ? '<span class="ltm-chip">LTM · 限时模式</span>' : '') + '</div>' +
+    '<p class="detail-summary">' + escapeHtml(entry.oneLineRule) + '</p><div class="tag-row">' + entry.type.map((tag) => '<span class="tag">' + escapeHtml(tag) + '</span>').join('') + '</div>';
+  return entry.globalRules ? '<div class="rulebook-overview">' + cover + heading + '</div>' : heading;
 }
 
 function showDetail(id, trigger) {
@@ -583,19 +614,13 @@ function showDetail(id, trigger) {
     ? state.entries.filter((item) => item.sourceModeIds?.includes(id))
     : sourceIds.map((sourceId) => state.entries.find((item) => item.id === sourceId)).filter(Boolean);
   const imageUrl = safeUrl(entry.imageUrl);
+  const cover = imageUrl ? '<img class="detail-cover" src="' + escapeHtml(imageUrl) + '" alt="' + escapeHtml(entry.imageSource || '原案例配图') + '">' : '';
   const derived = entry.kind !== 'modes';
   if (typeof ItemDemos !== 'undefined') ItemDemos.stop(detailDialog);
   WeaponSkins.stop(detailDialog);
   $('#detailContent').innerHTML = gameDetail ? GameCatalog.detail(entry) :
     isWeaponSkin(entry) ? WeaponSkins.detail(entry) : isTacticalItem(entry) ? tacticalItemDetail(entry) : isCoreUpdate(entry) ? coreUpdateDetail(entry) :
-    (imageUrl ? '<img class="detail-cover" src="' + escapeHtml(imageUrl) + '" alt="' + escapeHtml(entry.imageSource || '原案例配图') + '">' : '') +
-    '<div class="detail-inner"><div class="detail-kicker">' + kindLabels[entry.kind] + ' / ' + escapeHtml(entry.game) + '</div>' +
-    '<h2 id="detailTitle">' + escapeHtml(entry.modeName) + '</h2>' +
-    '<div class="detail-meta"><span>' + (derived ? '提炼日期：' + entry.createdAt : getModeTimingLabel(entry) + '：' + (entry.launchLabel || entry.date || entry.year)) + '</span><span>' + (derived ? (entry.sourceModeIds?.length ? '基于库内案例 · 分析提炼' : '本地预览 · 尚未关联模式卡') : '保留来源与时间备注') + '</span></div>' +
-    '<div class="detail-taxonomy"><span>' + (derived ? '关联玩法' : '核心玩法') + '</span>' +
-    entryGameplayDefinitions(entry).map((d) => '<span class="gameplay-chip">' + escapeHtml(d.label) + '</span>').join('') +
-    (isLtmMode(entry) ? '<span class="ltm-chip">LTM · 限时模式</span>' : '') + '</div>' +
-    '<p class="detail-summary">' + escapeHtml(entry.oneLineRule) + '</p><div class="tag-row">' + entry.type.map((tag) => '<span class="tag">' + escapeHtml(tag) + '</span>').join('') + '</div>' +
+    (entry.globalRules ? '' : cover) + '<div class="detail-inner">' + renderModeIntro(entry, derived, cover) +
     renderGlobalRules(entry.globalRules) +
     '<div class="detail-insight"><h3>设计观察</h3><p>' + escapeHtml(entry.designObservation) + '</p><small>' + (derived ? '分析提炼，不代表官方结论' : escapeHtml(getAiCommentator(entry))) + '</small></div>' +
     '<div class="detail-section"><h3>' + (derived ? (entry.sourceModeIds?.length ? '原案例的机制依据' : '交互流程') : '机制变化') + '</h3><p>' + escapeHtml(entry.mechanicChange) + '</p></div>' +
