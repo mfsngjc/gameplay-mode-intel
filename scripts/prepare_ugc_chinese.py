@@ -15,6 +15,7 @@ import xml.etree.ElementTree as ET
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
+from build_ugc_categories import build as build_board_categories
 from sync_ugc import ROOT, Tree, USER_AGENT, atomic_json, clean_text, request
 
 
@@ -147,7 +148,8 @@ def pending_entries(observed, evidence, catalog):
         source = evidence.get(key)
         source_hash = fingerprint(source['title'], source.get('description')) if source else None
         translated = catalog.get('entries', {}).get(key)
-        if translated and translated.get('sourceFingerprint') == source_hash and translated.get('originalTitle') == row['title']:
+        if (translated and translated.get('sourceStatus') != 'unavailable' and
+                translated.get('sourceFingerprint') == source_hash and translated.get('originalTitle') == row['title']):
             continue
         queue.append({'key': key, 'originalTitle': row['title'], **(source or {}),
                       'description': (source or {}).get('description') or '',
@@ -246,6 +248,7 @@ def prepare(root, refresh_sources=False):
                 print('已读取岛屿说明', index, '/', len(futures), flush=True)
     atomic_json(cache_path, cache)
 
+    build_board_categories(folder, latest, evidence)
     prepare_creators(folder, observed, evidence)
     queue = pending_entries(observed, evidence, catalog)
     errors.extend(row['key'] + ': ' + row['sourceError'] for row in queue if row['sourceError'])

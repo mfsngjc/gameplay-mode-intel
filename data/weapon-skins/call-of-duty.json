@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "game": "call-of-duty",
-  "updatedAt": "2026-11-02T19:06:32Z",
+  "updatedAt": "2026-11-15",
   "source": {
     "name": "GamesAtlas public PC blueprint catalogue",
     "url": "https://www.gamesatlas.com/cod-warzone-2-blueprints/",
@@ -27,7 +27,7 @@
     "status": "partial",
     "catalogScope": "observed_gamesatlas_cod_pc_blueprint_index",
     "complete": false,
-    "entryCount": 2343,
+    "entryCount": 2345,
     "entriesWithVideo": 2,
     "note": "逐件读取GamesAtlas公开端游蓝图目录；未混入CODM。作品和基础武器分开，不重复计入Warzone继承使用。该站内容和图像仍有缺漏，不代表COD全历史或官方完整资源。",
     "remaining": [
@@ -36,10 +36,10 @@
       "全部专属检视与触发条件",
       "蓝图准确首发日、国服与地区差异"
     ],
-    "cataloguedCount": 2369,
+    "cataloguedCount": 2371,
     "sourceBlueprintRows": 2369,
     "sourceConfigObjectsExcluded": 1,
-    "gunCount": 2208,
+    "gunCount": 2210,
     "meleeCount": 135,
     "pendingCount": 26,
     "uniqueRemoteImagesChecked": 2506,
@@ -113,7 +113,8 @@
       "authoritativeBasePages": 17,
       "unresolvedTypeConflicts": 0,
       "unresolvedCategoryConflicts": 0
-    }
+    },
+    "officialAdditions20261115": 2
   },
   "skins": [
     {
@@ -190418,6 +190419,107 @@
         "basis": "named_index_record_and_decoded_image",
         "sha256": "ecbdba7f998899867f733c1e248f96e9794da3ef62020b254baccb63c795d634",
         "format": "JPEG"
+      }
+    },
+    {
+      "id": "cod-mw4-mosin-bellum",
+      "game": "call-of-duty",
+      "name": "莫辛纳甘射手步枪·战火",
+      "englishName": "Mosin-Nagant · Bellum",
+      "weaponId": "cod-mw4-mosin-nagant",
+      "weaponName": "莫辛纳甘射手步枪",
+      "weaponEnglishName": "Mosin-Nagant",
+      "weaponType": "gun",
+      "category": "射手步枪",
+      "rarity": {
+        "id": "ultra",
+        "name": "超稀有",
+        "color": "#e57c43"
+      },
+      "description": "第 1 赛季通行证第 100 阶蓝图，配有 9 倍瞄准镜。「战火」为说明性译名。",
+      "sourceId": "cod-mw4-mosin-bellum",
+      "sourceUrl": "https://www.callofduty.com/blog/2026/11/call-of-duty-modern-warfare-4-season-1-battle-pass-blackcell-store-bundles",
+      "sourceName": "使命召唤官方",
+      "region": "国际服",
+      "gameTitle": "现代战争 4",
+      "firstSeenAt": "2026-11-15",
+      "publishedDate": "2026-11-05",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "记录官方公告日期；独立道具的实际首发时刻仍待核实。",
+      "publicationStatus": "ready",
+      "reviewedAt": "2026-11-15",
+      "chromas": [],
+      "levels": [],
+      "media": [],
+      "tags": [
+        "现代战争 4",
+        "蓝图",
+        "第 1 赛季"
+      ],
+      "image": {
+        "url": "assets/weapon-skins/curated/skin-cod-bellum.webp",
+        "sourcePageUrl": "https://www.callofduty.com/blog/2026/11/call-of-duty-modern-warfare-4-season-1-battle-pass-blackcell-store-bundles",
+        "assetSourceUrl": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/s1-bc-bp-mtx/MW4-SEASON-1-BP-BC-BUNDLES-049.webp",
+        "sourceType": "official",
+        "provider": "Call of Duty 官方",
+        "kind": "poster",
+        "caption": "官方双版本对照图。上方为常规版，下方为黑金版。",
+        "width": 1920,
+        "height": 1080,
+        "sha256": "3b2ae283811a65428fbd1a2e03c6e2fb5c3a933189e9030540999644caca3846",
+        "retrievedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "cod-mw4-mosin-bellum-blackcell",
+      "game": "call-of-duty",
+      "name": "莫辛纳甘射手步枪·战火黑金版",
+      "englishName": "Mosin-Nagant · Bellum BlackCell",
+      "weaponId": "cod-mw4-mosin-nagant",
+      "weaponName": "莫辛纳甘射手步枪",
+      "weaponEnglishName": "Mosin-Nagant",
+      "weaponType": "gun",
+      "category": "射手步枪",
+      "rarity": {
+        "id": "",
+        "name": "",
+        "color": "#666e67"
+      },
+      "description": "第 1 赛季黑金通行证第 100 阶蓝图。首次检视可卸下枪身护罩，再次检视可装回。「战火」为说明性译名。",
+      "sourceId": "cod-mw4-mosin-bellum-blackcell",
+      "sourceUrl": "https://www.callofduty.com/blog/2026/11/call-of-duty-modern-warfare-4-season-1-battle-pass-blackcell-store-bundles",
+      "sourceName": "使命召唤官方",
+      "region": "国际服",
+      "gameTitle": "现代战争 4",
+      "firstSeenAt": "2026-11-15",
+      "publishedDate": "2026-11-05",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "记录官方公告日期；独立道具的实际首发时刻仍待核实。",
+      "publicationStatus": "ready",
+      "reviewedAt": "2026-11-15",
+      "chromas": [],
+      "levels": [],
+      "media": [],
+      "tags": [
+        "现代战争 4",
+        "黑金",
+        "蓝图",
+        "第 1 赛季"
+      ],
+      "image": {
+        "url": "assets/weapon-skins/curated/skin-cod-bellum.webp",
+        "sourcePageUrl": "https://www.callofduty.com/blog/2026/11/call-of-duty-modern-warfare-4-season-1-battle-pass-blackcell-store-bundles",
+        "assetSourceUrl": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/s1-bc-bp-mtx/MW4-SEASON-1-BP-BC-BUNDLES-049.webp",
+        "sourceType": "official",
+        "provider": "Call of Duty 官方",
+        "kind": "poster",
+        "caption": "官方双版本对照图的下方展示黑金版。",
+        "width": 1920,
+        "height": 1080,
+        "sha256": "3b2ae283811a65428fbd1a2e03c6e2fb5c3a933189e9030540999644caca3846",
+        "retrievedAt": "2026-11-15"
       }
     }
   ],

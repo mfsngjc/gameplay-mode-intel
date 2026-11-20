@@ -1,0 +1,627 @@
+/* Shared surfaces for the site's catalogue pages and their detail views. */
+.workspace.archive-view {
+  --catalogue-positive: #386044;
+  --catalogue-negative: #a03c2d;
+  --catalogue-warm: #77541e;
+  --catalogue-warm-surface: #f4e7cc;
+}
+.workspace.archive-view[data-mode-theme="night"] {
+  --catalogue-positive: #b7d9b5;
+  --catalogue-negative: #f1a494;
+  --catalogue-warm: #efcd93;
+  --catalogue-warm-surface: #3e3224;
+}
+
+.workspace.archive-view::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: clamp(165px, 18vw, 250px);
+  pointer-events: none;
+  background:
+    linear-gradient(to bottom, transparent, var(--bg) 92%),
+    linear-gradient(to bottom, color-mix(in srgb, var(--bg) 20%, transparent), var(--bg)),
+    var(--wiki-banner) center 56% / cover no-repeat;
+}
+.workspace.archive-view { --wiki-banner: url("assets/maps/official-galleries/bf6-area-51-2026-11-01.jpg"); }
+.archive-view .page-intro {
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 7px 18px;
+  margin-bottom: 18px;
+}
+.archive-view #pageDescription:empty, .home-view .library-stamp { display: none; }
+.archive-view :is(.page-intro .eyeline, .library-stamp small, .library-stamp svg) { display: none; }
+.archive-view :is(.workspace-footer, .workspace-footer > span:first-child, .select-field label, .filter-row-label) {
+  color: var(--muted);
+}
+.workspace.archive-view button:focus-visible { outline-color: var(--accent); }
+.workspace.archive-view .icon-button:not(.mode-card-bookmark) { color: var(--muted); }
+.workspace.archive-view .icon-button:not(.mode-card-bookmark):hover { color: var(--ink); background: var(--surface-soft); }
+.archive-view :is(.empty-state, .loading-state) { background: var(--surface); border-color: var(--line); }
+.workspace.archive-view .mode-card {
+  background: var(--surface);
+  border-color: var(--line);
+  border-radius: 0;
+  box-shadow: none;
+}
+.workspace.archive-view .mode-card:hover { border-color: var(--line-strong); }
+.workspace.archive-view :is(.card-summary, .card-eyebrow, .card-image-source, .card-bottom > span, .filter-summary, .results-footer, .section-aside) {
+  color: var(--muted);
+}
+.workspace.archive-view :is(.card-eyebrow .category-name, .card-bottom .card-open, .card-title button:hover) { color: var(--accent); }
+.archive-view :is(.cover-fallback, .cover-fallback img) { background: var(--mode-cover); color: var(--muted); }
+.archive-view #resultCount { background: var(--surface-soft); color: var(--muted); }
+.archive-view:not(.mode-library-view) #sharedFilters :is(.filter-panel, .gameplay-filter-row) { background: var(--surface); border-color: var(--line); }
+.archive-view #sharedFilters :is(.game-filters, .filter-bottom) { border-color: var(--line); }
+
+.archive-view :is(.game-catalog .filter-panel, .items-filter-panel, .weapon-filter-panel,
+  .steam-chart-panel, .ugc-briefing, .ugc-stats, .ugc-category-stats, .ugc-table-wrap,
+  .game-catalog-card, .game-catalog-series, .game-catalog-edition-card, .map-archive-card, .item-card, .weapon-card, .ugc-catalog-card) {
+  background: var(--surface);
+  border-color: var(--line);
+  border-radius: 0;
+}
+.archive-view .game-catalog-results {
+  color: var(--muted);
+}
+.archive-view :is(.map-card-description, .item-mechanic, .ugc-work p, .ugc-catalog-intro) {
+  color: var(--mode-copy);
+  line-height: 1.7;
+}
+.archive-view :is(.game-catalog-filter-row, .game-catalog-facts > span, .game-catalog-series-row, .game-catalog-detail .game-catalog-intro,
+  .game-catalog-metric, .steam-chart-panel thead, .steam-history-selection, .steam-history-chart) {
+  background: var(--surface-soft);
+  border-color: var(--line);
+}
+.archive-view .game-catalog-filter-row { border-radius: 0; }
+.archive-view .steam-chart-panel tr.is-selected { background: var(--mode-selected); }
+.archive-view :is(.game-catalog-card.is-selected, .game-catalog-edition-card.is-selected, .game-catalog-series:has(.game-catalog-series-caption[aria-expanded="true"])) {
+  background: var(--surface);
+  border-color: var(--accent);
+  box-shadow: none;
+}
+
+.workspace.archive-view :is(#sharedFilters .gameplay-filter, #sharedFilters .game-filter, .game-catalog .gameplay-filter, #mapCategoryFilters button,
+  .weapon-chroma-list button, .weapon-video-tools button, .item-demo-tools button) {
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 0;
+}
+.workspace.archive-view :is(#sharedFilters .gameplay-filter, #sharedFilters .game-filter, .game-catalog .gameplay-filter, #mapCategoryFilters button,
+  .weapon-chroma-list button, .weapon-video-tools button, .item-demo-tools button):hover {
+  background: var(--surface-soft);
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+.workspace.archive-view :is(#sharedFilters .gameplay-filter, #sharedFilters .game-filter, .game-catalog .gameplay-filter, #mapCategoryFilters button,
+  .weapon-chroma-list button, .weapon-video-tools button, .item-demo-tools button,
+  .steam-history button, .card-size-button, .items-layout-controls .icon-button)[aria-pressed="true"],
+.workspace.archive-view .game-detail-tabs [aria-selected="true"] {
+  background: var(--mode-selected);
+  color: var(--mode-selected-ink);
+  border-color: var(--line-strong);
+}
+.workspace.archive-view .items-controls select { color: var(--ink); }
+
+.archive-view :is(.map-archive-grid, .item-grid, .weapon-grid, .game-catalog-grid) { gap: 20px; }
+.archive-view :is(.map-card-info h3, .item-card h3, .weapon-card h3) {
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.workspace.archive-view :is(.item-card, .weapon-card) h3 button { color: var(--ink); }
+.workspace.archive-view :is(.item-card:hover, .weapon-card:hover, .map-archive-card:hover) { border-color: var(--line-strong); box-shadow: none; }
+.archive-view :is(.item-card-image, .item-image-surface:not(:has(img)), .item-image-surface.has-image-error, .item-detail-figure,
+  .weapon-detail-art, .ugc-catalog-image, .ugc-board-cover, .ugc-board-cover-missing) { background: var(--mode-cover); }
+.workspace.archive-view .weapon-card-art { background: radial-gradient(ellipse, var(--mode-cover), var(--surface-soft)); }
+.archive-view :is(.item-image-hint, .item-status, .weapon-video-tools, .weapon-player, .weapon-level-list span, .item-version-heading,
+  .item-pending, .ugc-primary-category, .ugc-tag, .ugc-catalog-status, .ugc-category-bar, .gameplay-chip, .tag, .detail-insight) {
+  background: var(--surface-soft);
+  color: var(--muted);
+  border-color: var(--line);
+}
+.archive-view :is(.item-card-footer, .item-card-tags > span, .weapon-card-bottom, .weapon-card-tags > span, .map-card-actions) {
+  border-color: var(--line);
+}
+.workspace.archive-view :is(#itemResultCount, .item-image-unavailable, .item-category-label,
+  .item-english, .item-card-tags, .item-card-footer > span, .item-detail-english, .item-detail-note, .item-version-heading > span,
+  .item-pending p, .item-pending li, .weapon-art-kind, .weapon-art-fallback, .weapon-card-eyebrow,
+  .weapon-card-eyebrow > span, .weapon-card-english, .weapon-card-tags, .weapon-card-bottom > span, .weapon-detail-art > span,
+  .weapon-detail-english, .weapon-media-caption, .weapon-media-caption strong, .weapon-facts dt, .weapon-facts dd,
+  .weapon-level-list, .weapon-media-empty, .weapon-source-note, .map-results-heading,
+  .map-card-info p:not(.map-card-description), .map-collection-facts, .map-dialog-header p, .map-viewer-controls,
+  .map-detail-callouts, .map-dialog-footer, .collection-facts span, .ugc-neutral, .ugc-rank) {
+  color: var(--muted);
+}
+.workspace.archive-view :is(.item-open, .weapon-card-open, .map-card-actions a, .map-card-actions button,
+  .item-version-heading h3, .item-pending h3, .ugc-work a) { color: var(--accent); }
+.workspace.archive-view :is(.item-card-footer .is-collected, .weapon-card-tags .has-media, .item-status.has-dossier, .ugc-tag-new) {
+  color: var(--mode-selected-ink);
+  background: var(--mode-selected);
+  border-color: var(--line);
+}
+.workspace.archive-view .icon-button.is-collected { color: var(--mode-selected-ink); background: var(--mode-selected); }
+.archive-view .map-dialog { color: var(--ink); background: var(--surface); border-color: var(--line); box-shadow: none; border-radius: 5px; }
+.archive-view :is(.map-dialog, .ugc-versions-dialog)::backdrop { background: rgb(10 10 12 / 63%); }
+.archive-view .map-dialog .map-detail-description { color: var(--mode-copy) !important; }
+.archive-view .map-viewer-controls { border-color: var(--line); }
+.workspace.archive-view :is(#skinVideoSelect, .ugc-source-range input, .item-demo-tools select) {
+  color: var(--ink);
+  background: var(--bg);
+  border-color: var(--line);
+}
+.archive-view :is(.ugc-source-range input:disabled, .ugc-source-table thead th, .ugc-table th, .ugc-table tbody tr:hover,
+  .ugc-category-table button:hover, .ugc-category-table button[aria-pressed="true"]) { background: var(--surface-soft); }
+.archive-view .ugc-category-bar > span { background: var(--mode-signal); }
+.archive-view :is(.ugc-warning, .ugc-tag-strong, .weapon-load-status, .item-card-tags .item-source-pending) {
+  color: var(--catalogue-warm);
+  background: var(--catalogue-warm-surface);
+  border-color: var(--line);
+}
+.archive-view :is(.ugc-catalog-partial, .weapon-video-error, .weapon-embed-note, .item-image-community-note) { color: var(--catalogue-warm); }
+.archive-view .ugc-up { color: var(--catalogue-positive); }
+.archive-view :is(.ugc-down, .steam-history-date-error) { color: var(--catalogue-negative); }
+
+@media (max-width: 760px) {
+  .workspace.archive-view { --wiki-banner: url("assets/maps/official-galleries/bf6-area-51-2026-11-01-thumb.jpg"); }
+  .archive-view :is(.map-archive-grid, .item-grid, .weapon-grid, .game-catalog-grid) { gap: 14px; }
+}
+
+.topbar-content, .topbar-actions { display: contents; }
+html:has(.workspace.archive-view) { scrollbar-gutter: stable; }
+.workspace.archive-view .button:disabled { opacity: .55; cursor: default; }
+.workspace.archive-view .button:disabled:hover { color: var(--muted); background: transparent; border-color: transparent; }
+.workspace.archive-view #mainContent {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--directory-width) minmax(0, 1fr);
+  align-items: start;
+  column-gap: var(--directory-gap);
+}
+.catalogue-content { min-width: 0; }
+.archive-view .catalogue-paper {
+  min-width: 0;
+  padding: clamp(14px, 1.65vw, 27px);
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.archive-view :is(.global-search, select, .mode-filter-search, .mode-theme-switch, .mode-layout-switch, .mode-layout-switch button, .button) {
+  border-radius: 0;
+}
+.archive-view .mode-layout-switch button[aria-pressed="true"] {
+  color: var(--accent-ink);
+  background: var(--accent);
+}
+.archive-view.home-view .catalogue-paper { padding: 0; border: 0; background: transparent; }
+.home-view .workspace-footer { display: none; }
+.home-content:not([hidden]) { display: grid; gap: clamp(26px, 3vw, 40px); }
+.home-content .home-heading {
+  margin: 0 0 14px;
+  padding-inline-start: 10px;
+  border-inline-start: 4px solid var(--mode-signal);
+  color: var(--ink);
+  font-size: clamp(19px, 1.45vw, 23px);
+  line-height: 1.3;
+}
+.home-recent-grid, .home-info-grid { display: grid; gap: 12px; }
+.home-shortcuts {
+  --shortcut-columns: 7;
+  --shortcut-gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--shortcut-gap);
+}
+.home-content a { color: var(--accent); }
+.home-content a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.home-shortcuts a {
+  display: grid;
+  flex: 0 0 calc((100% + var(--shortcut-gap)) / var(--shortcut-columns) - var(--shortcut-gap));
+  min-width: 0;
+  justify-items: center;
+  align-content: center;
+  gap: 11px;
+  min-height: clamp(96px, 8.5vw, 124px);
+  padding: 10px 4px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: clamp(14px, 1.2vw, 18px);
+  font-weight: 700;
+  text-align: center;
+}
+.home-shortcuts a:hover, .home-shortcuts a:focus-visible {
+  border-color: var(--accent);
+  background: var(--mode-selected);
+  color: var(--mode-selected-ink);
+  text-decoration: none;
+}
+.home-shortcuts .home-mobile-shortcut { display: none; }
+.home-shortcuts svg {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.home-content .home-intro { margin: 14px 0 0; max-width: 82ch; color: var(--mode-copy); font-size: 14px; line-height: 1.75; }
+.home-recent-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.home-featured { margin-bottom: 12px; overflow: hidden; }
+.home-featured .home-panel-heading { align-items: center; padding-block: 7px; }
+.home-featured-controls { display: flex; align-items: center; gap: 9px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.home-featured-controls button {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  min-height: 34px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface);
+  color: var(--accent);
+  font-size: 22px;
+  line-height: 1;
+}
+.home-featured-controls button:hover { background: var(--mode-selected); }
+.home-featured-controls button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.home-featured-controls svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.65; stroke-linejoin: round; }
+#homeFeaturedToggle[data-playing="true"] .home-featured-play,
+#homeFeaturedToggle[data-playing="false"] .home-featured-pause { display: none; }
+.home-featured-slide { display: grid; align-items: stretch; min-width: 0; overflow: hidden; }
+.home-featured-slide:has(.home-featured-media) { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); }
+.home-featured-media { position: relative; min-height: 208px; aspect-ratio: 2.2; overflow: hidden; background: var(--surface-soft); }
+.home-featured-media:focus-visible { outline: 3px solid var(--mode-signal); outline-offset: -3px; z-index: 1; }
+.home-featured-media img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 38%; }
+.home-featured-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, transparent 55%, rgb(0 0 0 / 20%)); pointer-events: none; }
+.home-featured-copy {
+  display: grid;
+  align-content: center;
+  gap: 10px;
+  min-width: 0;
+  padding: clamp(18px, 2.8vw, 38px);
+  background: linear-gradient(135deg, var(--surface-soft), var(--surface) 70%);
+}
+.home-featured-meta { display: flex; flex-wrap: wrap; gap: 4px 12px; color: var(--muted); font-size: 13px; }
+.home-featured-meta span { font-weight: 700; color: var(--accent); }
+.home-featured-meta::before { content: ""; align-self: center; width: 16px; height: 2px; background: var(--mode-signal); }
+.home-featured-copy h4 { margin: 0; color: var(--ink); font-size: clamp(18px, 2.05vw, 27px); line-height: 1.35; }
+.home-featured-copy h4 a { color: inherit; }
+.home-featured-copy p { margin: 0; color: var(--mode-copy); font-size: 14px; line-height: 1.62; }
+.home-featured-link { width: fit-content; margin-top: 4px; padding: 5px 0; border-bottom: 1px solid var(--line); font-size: 13px; font-weight: 700; }
+.home-featured-progress { height: 3px; background: var(--line); }
+.home-featured-progress > span { display: block; width: 100%; height: 100%; background: var(--mode-signal); transform: scaleX(0); transform-origin: left; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-featured-slide[data-direction="next"] { --slide-offset: 14px; }
+  .home-featured-slide[data-direction="previous"] { --slide-offset: -14px; }
+  .home-featured-slide:is([data-direction="next"], [data-direction="previous"]) > * {
+    animation: home-featured-enter 360ms ease-out both;
+  }
+  @keyframes home-featured-enter {
+    from { opacity: .4; transform: translateX(var(--slide-offset)); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-featured-progress > span { visibility: hidden; }
+}
+.home-info-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); }
+.home-panel { min-width: 0; border: 1px solid var(--line); background: var(--surface); }
+.home-panel h3, .home-disclaimer h3 { margin: 0; color: var(--ink); font-size: 15px; }
+.home-panel-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface-soft);
+  font-size: 13px;
+}
+.home-panel time { font-variant-numeric: tabular-nums; }
+.home-panel-heading time, .home-feed-status { color: var(--muted); }
+.home-content .home-feed-status { margin: 14px 16px; font-size: 13px; }
+.home-feed-status:empty { display: none; }
+.home-update-list { margin: 0; padding: 0 16px; list-style: none; }
+.home-update-list li { padding: 9px 0; font-size: 14px; line-height: 1.55; }
+.home-update-list li + li { border-top: 1px solid var(--line); }
+.home-game-update { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 3px 12px; }
+.home-game-update a { font-weight: 600; }
+.home-update-timing { color: var(--muted); font-size: 12px; }
+.home-metadata, .home-sources { margin: 0; padding: 15px 16px; }
+.home-metadata { display: grid; align-content: start; gap: 14px; }
+.home-sources dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 22px; margin: 10px 0 0; }
+.home-info-grid dt { color: var(--ink); font-size: 13px; font-weight: 700; }
+.home-info-grid dd { margin: 3px 0 0; color: var(--mode-copy); font-size: 13px; line-height: 1.6; overflow-wrap: anywhere; }
+.home-site-info { padding: 0; }
+.home-disclaimer { margin-top: 18px; padding-top: 15px; border-top: 1px solid var(--line); }
+.home-content .home-disclaimer p { margin: 5px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+
+@media (max-width: 1280px) {
+  .home-shortcuts { --shortcut-columns: 4; }
+}
+@media (max-width: 760px) {
+  .home-featured-slide:has(.home-featured-media) { grid-template-columns: minmax(0, 1fr); }
+  .home-featured-media { min-height: 0; aspect-ratio: 16 / 9; }
+  .home-featured-controls button { width: 40px; min-height: 40px; }
+  .home-recent-grid, .home-info-grid { grid-template-columns: minmax(0, 1fr); }
+  .home-metadata { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .home-shortcuts { --shortcut-gap: 8px; }
+}
+@media (max-width: 560px) {
+  .home-shortcuts { --shortcut-columns: 3; }
+  .home-shortcuts .home-mobile-shortcut { display: grid; }
+}
+@media (max-width: 420px) {
+  .home-sources dl { grid-template-columns: minmax(0, 1fr); }
+}
+.site-navigation-home { display: contents; }
+.workspace.archive-view {
+  --directory-ink: var(--ink);
+  --directory-muted: var(--muted);
+  --directory-selected: var(--mode-selected);
+  --directory-signal: var(--mode-signal);
+}
+.catalogue-directory {
+  position: sticky;
+  top: 70px;
+  z-index: 43;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow-anchor: none;
+  color: var(--directory-ink);
+}
+.site-directory { flex: none; }
+.catalogue-directory #siteDirectoryTitle {
+  margin: 2px 0 8px;
+  padding: 0 10px;
+  border-inline-start: 2px solid var(--directory-signal);
+  color: var(--directory-muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+.site-directory .primary-nav { display: grid; gap: 2px; }
+.site-directory .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 35px;
+  margin: 0;
+  padding: 5px 8px;
+  border-left: 2px solid transparent;
+  border-radius: 0;
+  color: var(--directory-ink);
+  font-size: 14px;
+  font-weight: 600;
+}
+.site-directory .nav-item svg { width: 15px; height: 15px; }
+.site-directory .nav-item:hover { color: var(--mode-selected-ink); background: var(--directory-selected); }
+.site-directory .nav-item[aria-current="page"] {
+  border-left-color: var(--directory-signal);
+  color: var(--mode-selected-ink);
+  background: var(--directory-selected);
+  font-weight: 650;
+}
+.site-directory .nav-count { display: none; }
+.archive-view .catalogue-filter-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 7px 12px;
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  background: var(--surface-soft);
+  color: var(--muted);
+  font-size: 13px;
+}
+.archive-view .catalogue-filter-options { display: flex; flex-wrap: wrap; gap: 5px; }
+.workspace.archive-view .catalogue-filter-options button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 34px;
+  padding: 4px 9px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 13px;
+}
+.workspace.archive-view .catalogue-filter-options button:is(:hover, [aria-pressed="true"]) {
+  background: var(--mode-selected);
+  color: var(--mode-selected-ink);
+}
+.catalogue-filter-options button small { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.archive-view #gameCatalogPlatformLabel { white-space: nowrap; }
+.archive-view .game-catalog-filter-row.catalogue-filter-row { border: 0; border-bottom: 1px solid var(--line); }
+.archive-view :is(#mapsSection, #ugcSection) { margin-top: 0; }
+.archive-view #mapsSection > .catalogue-filter-row { margin-bottom: 12px; }
+.archive-view #modeDirectory { margin-bottom: 12px; }
+.archive-view #modeViewSwitcher { margin: 0; }
+.archive-view #modeCaseDirectory { margin-top: 10px; }
+.mode-library-view #sharedFilters .filter-fields {
+  grid-template-columns: repeat(2, minmax(110px, 1fr)) minmax(145px, 1.7fr) auto;
+}
+.mode-library-view #sharedFilters .filter-fields:has(#updateCategoryField:not([hidden])) {
+  grid-template-columns: repeat(3, minmax(95px, 1fr)) minmax(145px, 1.6fr) auto;
+}
+.mode-library-view #modeSearchField { order: 1; }
+.mode-library-view #modeResetFilters { order: 2; }
+
+.catalogue-notes {
+  margin-top: 18px;
+  padding-block: 8px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+.catalogue-notes summary { min-height: 32px; padding-block: 6px; cursor: pointer; color: var(--accent); }
+.catalogue-notes p { max-width: 76ch; margin: 4px 0 12px; line-height: 1.7; }
+
+.archive-view .game-catalog { margin-top: 0; }
+.archive-view .steam-chart-panel { margin-bottom: 16px; padding: 0 14px; }
+.archive-view #steamChartDisclosure { scroll-margin-top: 70px; }
+.steam-chart-panel > summary {
+  padding-block: 11px;
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+}
+.steam-chart-disclosure-note { margin-left: 9px; color: var(--muted); font-size: 12px; font-weight: 400; }
+.steam-chart-panel[open] { padding-bottom: 9px; }
+.steam-chart-panel .steam-chart-heading { justify-content: flex-end; }
+.game-catalog-filter-controls { align-items: center; }
+.game-catalog-filter-controls #gameCatalogReset { margin-left: auto; }
+.game-catalog-summary {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin: 0;
+  color: var(--mode-copy);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.archive-view :is(.items-filter-panel, .weapon-filter-panel) { padding: 0; margin-bottom: 20px; }
+.archive-view :is(.items-controls, .weapon-controls) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 10px 12px;
+  padding: 12px 14px;
+  border: 0;
+}
+.archive-view :is(.items-controls, .weapon-controls) .select-field {
+  display: grid;
+  flex: 1 1 116px;
+  min-width: 0;
+  max-width: none;
+  gap: 4px;
+}
+.archive-view :is(.items-controls, .weapon-controls) .select-field label { display: block; font-size: 12px; }
+.workspace.archive-view :is(.items-controls, .weapon-controls) select {
+  width: 100%;
+  max-width: none;
+  min-height: 38px;
+  padding: 5px 7px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 14px;
+}
+.archive-view :is(.items-results-heading, .weapon-results-heading) { gap: 8px 15px; flex-wrap: wrap; margin-bottom: 12px; }
+.archive-view :is(.items-results-heading, .weapon-results-heading) > div:first-child { align-items: baseline; }
+.archive-view :is(.items-layout-controls, .weapon-layout-controls) { flex-wrap: wrap; gap: 8px; width: auto; }
+.workspace.archive-view :is(#itemSortSelect, #skinSortSelect) { max-width: 100%; }
+
+.archive-view .map-results-heading { align-items: baseline; justify-content: flex-start; gap: 10px; margin: 16px 0 10px; }
+.archive-view .map-library-toolbar #mapFormatField { gap: 8px; }
+.map-results-heading h2 { margin: 0; font-size: 18px; }
+.map-card-info h3 { color: var(--ink); font-size: 17px; }
+.archive-view .map-card-info .map-card-description { font-size: 13px; }
+.archive-view .map-card-actions { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-content: start; gap: 2px 8px; }
+.workspace.archive-view .map-card-actions .map-card-primary {
+  min-height: 36px;
+  justify-self: start;
+  max-width: 100%;
+  text-align: start;
+  white-space: normal;
+  padding: 5px 8px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface-soft);
+  color: var(--accent);
+  font-weight: 600;
+}
+.workspace.archive-view .map-card-actions .map-card-primary:hover { border-color: var(--line-strong); }
+.workspace.archive-view .map-card-actions .map-collect-button { width: 36px; height: 36px; justify-content: center; }
+.map-card-options { grid-column: 1 / -1; font-size: 12px; color: var(--muted); }
+.map-card-options summary { min-height: 30px; padding-block: 6px; cursor: pointer; }
+.map-card-options > div { display: flex; flex-wrap: wrap; gap: 6px 10px; padding: 3px 0 5px; }
+.map-card-options > div :is(a, button) { min-height: 28px; text-align: left; }
+
+.archive-view :is(.item-card-footer, .weapon-card-bottom) .icon-button { width: 36px; height: 36px; }
+.archive-view :is(.item-open, .weapon-card-open):hover { text-decoration: underline; text-underline-offset: 3px; }
+
+@supports (grid-template-rows: subgrid) {
+  /* Share the image, label, title, copy, tags, and action tracks across a row of cards. */
+  .archive-view :is(#mapArchiveGrid, #itemGrid, #skinGrid) > article {
+    display: grid; grid-row: span 7; grid-template-rows: subgrid; row-gap: 0;
+  }
+  .archive-view #skinGrid > article,
+  .archive-view[data-card-size="small"] :is(#mapArchiveGrid, #itemGrid) > article { grid-row: span 6; }
+  .archive-view[data-card-size="small"] #skinGrid > article { grid-row: span 5; }
+  .archive-view :is(#mapArchiveGrid, #itemGrid, #skinGrid) > article > :is(.map-card-info, .item-card-body, .weapon-card-body) {
+    display: grid; grid-row: 2 / -1; grid-template-rows: subgrid;
+  }
+  .archive-view[data-card-size="small"] :is(#mapArchiveGrid, #itemGrid, #skinGrid) > article > button { grid-column: 1; grid-row: 1 / -1; }
+  .archive-view[data-card-size="small"] :is(#mapArchiveGrid, #itemGrid, #skinGrid) > article > :is(.map-card-info, .item-card-body, .weapon-card-body) {
+    grid-column: 2; grid-row: 1 / -1;
+  }
+  .archive-view :is(.map-card-info, .item-card-body, .weapon-card-body) > :is(.map-card-game, .item-card-top, .weapon-card-eyebrow) { grid-row: 1; }
+  .archive-view :is(.map-card-info, .item-card-body, .weapon-card-body) > h3 { grid-row: 2; }
+  .archive-view :is(.map-card-variant, .item-english, .weapon-card-english) { grid-row: 3; }
+  .archive-view :is(.map-card-description, .item-mechanic, .weapon-card-tags) { grid-row: 4; }
+  .archive-view :is(.map-card-facts, .item-card-tags) { grid-row: 5; }
+  .archive-view :is(.map-card-actions, .item-card-footer, .weapon-card-bottom) { grid-row: -2 / -1; margin-top: 0; }
+  .archive-view #skinGrid .weapon-card-tags { margin-top: 0; }
+}
+
+.archive-view .ugc-ranking-filters { margin-bottom: 16px; }
+.archive-view .ugc-analysis { margin-top: 14px; }
+.archive-view .ugc-table-tools { margin-top: 8px; }
+.archive-view .ugc-work-titleline a { text-decoration: underline; text-underline-offset: 3px; }
+.archive-view .ugc-work p { font-size: 13px; }
+.archive-view #ugcSection { scroll-margin-top: 65px; }
+
+.collection-view #sharedFilters .filter-panel { border: 0; border-radius: 0; background: none; }
+.collection-view #collectionDirectory {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.collection-view #collectionDirectoryTitle { margin: 0; color: var(--muted); font-size: 13px; }
+.collection-view #collectionDirectoryFilters { display: flex; flex-wrap: wrap; gap: 4px; }
+.collection-view #collectionDirectoryFilters button {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  min-height: 32px;
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 13px;
+}
+.collection-view #collectionDirectoryFilters button:is(:hover, [aria-pressed="true"]) {
+  background: var(--mode-selected);
+  color: var(--mode-selected-ink);
+}
+.collection-view #sharedFilters .filter-bottom { padding: 0; gap: 8px 12px; flex-wrap: wrap; }
+.collection-view #sharedFilters .filter-fields:not(:has(.select-field:not([hidden]))) { display: none; }
+.collection-view #sectionAside { display: none; }
+
+@media (max-width: 920px) {
+  .mode-library-view #sharedFilters .filter-fields,
+  .mode-library-view #sharedFilters .filter-fields:has(#updateCategoryField:not([hidden])) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .workspace.archive-view #mainContent { grid-template-columns: minmax(0, 1fr); }
+  .mode-library-view #sharedFilters .filter-fields,
+  .mode-library-view #sharedFilters .filter-fields:has(#updateCategoryField:not([hidden])) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mode-library-view #sharedFilters .filter-fields:has(#updateCategoryField:not([hidden])) #modeSearchField { grid-column: span 1; }
+  .mode-library-view #modeResetFilters { justify-self: end; }
+  .archive-view :is(.items-layout-controls, .weapon-layout-controls) { margin-left: 0; }
+}

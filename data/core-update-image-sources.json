@@ -1,8 +1,8 @@
 {
-  "reviewedAt": "2026-10-11",
-  "recordCount": 24,
-  "assetCount": 20,
-  "notes": "官方原图归档；5 条记录使用对应版本封面，卡片与详情明确标注。CS 新投掷物改用正文中实际展示它的 BR／CS 更新图。 2026-10-11 新增 8 张 Fortnite 官方道具图；6 张官方视频截图的时间点、来源和哈希另存于对应 core-updates 记录。第三方视频仅作链接，不以其画面作公开素材。",
+  "reviewedAt": "2026-11-16",
+  "recordCount": 256,
+  "assetCount": 82,
+  "notes": "全部为可追溯的官方原图；相同图片可关联多条记录。版本或通用章节图均在条目中明确说明其展示范围，不冒充具体机制实机图。2026-10-27新增3条基础更新，保留原有道具视频、截图与哈希证据。 2026-11-01新增记录沿用原图字节；Epic新CDN与Garena官网CDN均有公告直接引用证据。",
   "images": [
     {
       "recordId": "apex-update-midseason-loot-2026-09-15",
@@ -315,6 +315,3022 @@
       "sourcePageUrl": "https://www.fortnite.com/news/v6-21-patch-notes",
       "scope": "specific",
       "caption": "升空气球官方道具宣传图（非实机截图）"
+    },
+    {
+      "recordId": "fortnite-update-v11-31-controls-2019-12-18",
+      "path": "assets/modes/fortnite-battle-lab-2019.jpg",
+      "assetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fbattle-royale-update-whats-new-in-v11-31%2F11BR_BattleLabs_NewsHeader-1920x1080-f8f286d35adacd6f1de4cca4c30f0d8a6dfabe19.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/battle-royale-update-whats-new-in-v11-31",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "beb3168affa2726dd6919c868aac48b71982c04d6612d4fc12b06c6bd093effa",
+      "scope": "version",
+      "caption": "Epic 官方v11.31公告头图；版本配图，未展示本条操作修复（原图归档）"
+    },
+    {
+      "recordId": "pubg-update-arena-second-iteration-2021-01-13",
+      "path": "assets/modes/pubg-arena-second-iteration-2021.jpg",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/pubg-legacy/2021/05/1-1.jpg",
+      "sourcePageUrl": "https://pubg.com/en/news/1675",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "c24e5f55350de6e54f93dc89a59bc38d92013a162454cbcd6328cd4ef5db5a55",
+      "scope": "version",
+      "caption": "PUBG 官方Arena第二轮公告配图；版本配图，未展示本条全部数值与提示改动（原图归档）"
+    },
+    {
+      "recordId": "hpjy-update-pistol-input-1-37-10-2026",
+      "path": "assets/modes/hpjy-classic-official-reference.jpg",
+      "assetSourceUrl": "https://game.gtimg.cn/images/gp/cp/a202600825jqjz/m/p6-img1.jpg",
+      "sourcePageUrl": "https://gp.qq.com/",
+      "dimensions": [
+        750,
+        1100
+      ],
+      "sha256": "ec40b3d933289ede4f814e33f087af9b2268d15a41713332abed695e7b33aaa3",
+      "scope": "section",
+      "caption": "腾讯官网海岛地图章节参考图，未展示本条手枪操作改动（原图归档）"
+    },
+    {
+      "recordId": "fortnite-update-cursed-overrides-2026-10-01",
+      "path": "assets/core-updates/fortnite-halloween-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/the-corruption-spreads-in-fortnitemares-2026",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmuo6uhl37cav07obrctm0nn6",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "89bc1f595f9bb17e3e1b95389d67b2cd1451ba1bdea30e4c7d2c7e536813e2f5"
+    },
+    {
+      "recordId": "fortnite-update-animatronic-possession-2026-10-01",
+      "path": "assets/core-updates/fortnite-halloween-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/the-corruption-spreads-in-fortnitemares-2026",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmuo6uhl37cav07obrctm0nn6",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "89bc1f595f9bb17e3e1b95389d67b2cd1451ba1bdea30e4c7d2c7e536813e2f5"
+    },
+    {
+      "recordId": "fortnite-update-nightmare-weapons-2026-10-01",
+      "path": "assets/core-updates/fortnite-halloween-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/the-corruption-spreads-in-fortnitemares-2026",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmuo6uhl37cav07obrctm0nn6",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "89bc1f595f9bb17e3e1b95389d67b2cd1451ba1bdea30e4c7d2c7e536813e2f5"
+    },
+    {
+      "recordId": "fortnite-update-sprite-loot-2026-10-01",
+      "path": "assets/core-updates/fortnite-halloween-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/the-corruption-spreads-in-fortnitemares-2026",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmuo6uhl37cav07obrctm0nn6",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "89bc1f595f9bb17e3e1b95389d67b2cd1451ba1bdea30e4c7d2c7e536813e2f5"
+    },
+    {
+      "recordId": "fortnite-update-pickup-input-2026-10-01",
+      "path": "assets/core-updates/fortnite-halloween-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/the-corruption-spreads-in-fortnitemares-2026",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmuo6uhl37cav07obrctm0nn6",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "89bc1f595f9bb17e3e1b95389d67b2cd1451ba1bdea30e4c7d2c7e536813e2f5"
+    },
+    {
+      "recordId": "fortnite-update-stationary-reboot-2026-10-01",
+      "path": "assets/core-updates/fortnite-halloween-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/the-corruption-spreads-in-fortnitemares-2026",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmuo6uhl37cav07obrctm0nn6",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "89bc1f595f9bb17e3e1b95389d67b2cd1451ba1bdea30e4c7d2c7e536813e2f5"
+    },
+    {
+      "recordId": "fortnite-update-pc-assets-2026-10-01",
+      "path": "assets/core-updates/fortnite-halloween-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/the-corruption-spreads-in-fortnitemares-2026",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmuo6uhl37cav07obrctm0nn6",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "89bc1f595f9bb17e3e1b95389d67b2cd1451ba1bdea30e4c7d2c7e536813e2f5"
+    },
+    {
+      "recordId": "fortnite-update-treasure-crossbones-2026-11-01",
+      "path": "assets/core-updates/fortnite-treasure-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu0hsbnuwoc07mupelmtvva",
+      "scope": "version",
+      "caption": "Epic寻宝赛季版本配图，未展示本条地图结构与大炮操作",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b96f43fe3359de6406f821ec93539a6d3c1b59a928cba912d10cbc6f0eafc2e8"
+    },
+    {
+      "recordId": "fortnite-update-treasure-one-piece-2026-11-01",
+      "path": "assets/core-updates/fortnite-crossbones-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu0024clak508mx6f8yd3mx",
+      "scope": "section",
+      "caption": "Epic官方橡胶果实与三刀流章节原图",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "ff7282439f0f0bcc57c973c74f6a6feeebf1f6d8c1dcdbde63cdedc8d285af93"
+    },
+    {
+      "recordId": "fortnite-update-treasure-rocky-2026-11-01",
+      "path": "assets/core-updates/fortnite-rocky-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu1jrfvv4ar07muso8ngixm",
+      "scope": "section",
+      "caption": "官方公告对应章节原图",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "8d70823640dee0afcdbecf7990a576cff0030588a52bfaaecd991acd5a7d4f73"
+    },
+    {
+      "recordId": "fortnite-update-treasure-captain-days-2026-11-01",
+      "path": "assets/core-updates/fortnite-treasure-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu0hsbnuwoc07mupelmtvva",
+      "scope": "section",
+      "caption": "官方公告对应章节原图",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b96f43fe3359de6406f821ec93539a6d3c1b59a928cba912d10cbc6f0eafc2e8"
+    },
+    {
+      "recordId": "apex-update-cipher-strongholds-2026-11-03",
+      "path": "assets/core-updates/apex-stronghold-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-game-updates",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/482Rux3799ydqBtyUnc8BK/fe4c7f2307c599a087331d52ef170a72/Apex_S31-Season_Strongholds-16x9.jpg",
+      "scope": "section",
+      "caption": "官方公告对应章节原图",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "4ac39413d096246d3274d8ee68d52019e1d1152ee1e0d4f02d3691f92b7385bc"
+    },
+    {
+      "recordId": "apex-update-cipher-crypto-2026-11-03",
+      "path": "assets/core-updates/apex-crypto-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-game-updates",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/4JZSZYhNcauO6bysVQNEG7/e918ac130d826e30b96dbfc8295730e2/Apex_S31-Season_Crypto-Rewired-16x9.jpg",
+      "scope": "section",
+      "caption": "官方公告对应章节原图",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "1130247452e62c982da1289bd8b7e4574b6da1abfe505dfe8a56536d6ce8d213"
+    },
+    {
+      "recordId": "apex-update-cipher-wingman-2026-11-03",
+      "path": "assets/core-updates/apex-wingman-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-game-updates",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/6orWgSJiAERNRQ8zy9Jxwh/233653cd5d98be753b51ea9801c7fd63/Apex_S31-Season_Akimbo-Wingman-16x9.jpg",
+      "scope": "section",
+      "caption": "官方公告对应章节原图",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "ef49c6a2bb99c6049f753dcf3ac33ac181ff1cce2c229a7c0cb62b7459d62d7f"
+    },
+    {
+      "recordId": "apex-update-cipher-lifeline-2026-11-03",
+      "path": "assets/core-updates/apex-rev-lifeline-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-game-updates",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/1BQNj2M3lKrfHgKSyzQ0vB/d8e4847a59bee8863c98bb7a280deb23/Apex_S31-Season_Rev-Lifeline-16x9.jpg",
+      "scope": "section",
+      "caption": "官方公告对应章节原图",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "1874e4741a7b6b081d68578294677949758280cc93f47f9473b165ecbe667e5f"
+    },
+    {
+      "recordId": "apex-update-cipher-revenant-2026-11-03",
+      "path": "assets/core-updates/apex-rev-lifeline-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-game-updates",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/1BQNj2M3lKrfHgKSyzQ0vB/d8e4847a59bee8863c98bb7a280deb23/Apex_S31-Season_Rev-Lifeline-16x9.jpg",
+      "scope": "section",
+      "caption": "官方公告对应章节原图",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "1874e4741a7b6b081d68578294677949758280cc93f47f9473b165ecbe667e5f"
+    },
+    {
+      "recordId": "apex-update-cipher-legend-bans-2026-11-03",
+      "path": "assets/core-updates/apex-bans-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-game-updates",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/24wffkbrklZpvST96AqKBD/0675dbc5dbc98c100b3b1277da531434/APEX_Legends_S31_Screenshots_Launch_RankedUpdates_B_v03.png",
+      "scope": "section",
+      "caption": "官方公告对应章节原图",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "c28ef967cc8768862c3663588b1511085c666313e2fac493a2cd9f1ccf1038cc"
+    },
+    {
+      "recordId": "pubg-update-43-2-radial-2026-10-14",
+      "path": "assets/core-updates/pubg-43-2-2026-11-01.jpg",
+      "sourcePageUrl": "https://pubg.com/en/news/11136",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/content/news/20261012/7pZJbFRA.jpg",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "4bd629b0c66a184ac1ecfcc9a87a76beb84183488727ad0b93a00f046b65e958"
+    },
+    {
+      "recordId": "pubg-update-43-2-vehicles-2026-10-14",
+      "path": "assets/core-updates/pubg-43-2-2026-11-01.jpg",
+      "sourcePageUrl": "https://pubg.com/en/news/11136",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/content/news/20261012/7pZJbFRA.jpg",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "4bd629b0c66a184ac1ecfcc9a87a76beb84183488727ad0b93a00f046b65e958"
+    },
+    {
+      "recordId": "pubg-update-43-2-terrain-readability-2026-10-14",
+      "path": "assets/core-updates/pubg-43-2-2026-11-01.jpg",
+      "sourcePageUrl": "https://pubg.com/en/news/11136",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/content/news/20261012/7pZJbFRA.jpg",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "4bd629b0c66a184ac1ecfcc9a87a76beb84183488727ad0b93a00f046b65e958"
+    },
+    {
+      "recordId": "pubg-update-43-2-console-input-2026-10-14",
+      "path": "assets/core-updates/pubg-43-2-2026-11-01.jpg",
+      "sourcePageUrl": "https://pubg.com/en/news/11136",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/content/news/20261012/7pZJbFRA.jpg",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "4bd629b0c66a184ac1ecfcc9a87a76beb84183488727ad0b93a00f046b65e958"
+    },
+    {
+      "recordId": "pubg-update-43-2-fixes-2026-10-14",
+      "path": "assets/core-updates/pubg-43-2-2026-11-01.jpg",
+      "sourcePageUrl": "https://pubg.com/en/news/11136",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/content/news/20261012/7pZJbFRA.jpg",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "4bd629b0c66a184ac1ecfcc9a87a76beb84183488727ad0b93a00f046b65e958"
+    },
+    {
+      "recordId": "pubgm-update-inflatable-boat-2026-09-09",
+      "path": "assets/core-updates/pubgm-4-6-2026-11-01.jpg",
+      "sourcePageUrl": "https://pubgmobile.jp/version-4-6-0-patch-notes-20260909/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_4.6.0_パッチノートサムネイル_900×568.jpg",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "4b03e718b052b2088c4319bb4e5acf6f8809172f477d962700489735d9189b5a"
+    },
+    {
+      "recordId": "pubgm-update-classic-loot-2026-09-09",
+      "path": "assets/core-updates/pubgm-4-6-2026-11-01.jpg",
+      "sourcePageUrl": "https://pubgmobile.jp/version-4-6-0-patch-notes-20260909/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_4.6.0_パッチノートサムネイル_900×568.jpg",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "4b03e718b052b2088c4319bb4e5acf6f8809172f477d962700489735d9189b5a"
+    },
+    {
+      "recordId": "pubgm-update-match-missions-2026-09-09",
+      "path": "assets/core-updates/pubgm-4-6-2026-11-01.jpg",
+      "sourcePageUrl": "https://pubgmobile.jp/version-4-6-0-patch-notes-20260909/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_4.6.0_パッチノートサムネイル_900×568.jpg",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "4b03e718b052b2088c4319bb4e5acf6f8809172f477d962700489735d9189b5a"
+    },
+    {
+      "recordId": "pubgm-update-weapon-balance-2026-09-09",
+      "path": "assets/core-updates/pubgm-4-6-2026-11-01.jpg",
+      "sourcePageUrl": "https://pubgmobile.jp/version-4-6-0-patch-notes-20260909/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_4.6.0_パッチノートサムネイル_900×568.jpg",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "4b03e718b052b2088c4319bb4e5acf6f8809172f477d962700489735d9189b5a"
+    },
+    {
+      "recordId": "pubgm-update-auto-glide-2026-09-09",
+      "path": "assets/core-updates/pubgm-4-6-2026-11-01.jpg",
+      "sourcePageUrl": "https://pubgmobile.jp/version-4-6-0-patch-notes-20260909/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_4.6.0_パッチノートサムネイル_900×568.jpg",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "4b03e718b052b2088c4319bb4e5acf6f8809172f477d962700489735d9189b5a"
+    },
+    {
+      "recordId": "pubgm-update-metro-vampire-2026-09-10",
+      "path": "assets/core-updates/pubgm-4-6-2026-11-01.jpg",
+      "sourcePageUrl": "https://pubgmobile.jp/version-4-6-0-patch-notes-20260909/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_4.6.0_パッチノートサムネイル_900×568.jpg",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "4b03e718b052b2088c4319bb4e5acf6f8809172f477d962700489735d9189b5a"
+    },
+    {
+      "recordId": "pubgm-update-serpent-preview-2026-10-23",
+      "path": "assets/core-updates/pubgm-4-6-2026-11-01.jpg",
+      "sourcePageUrl": "https://pubgmobile.jp/version-4-6-0-patch-notes-20260909/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_4.6.0_パッチノートサムネイル_900×568.jpg",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "4b03e718b052b2088c4319bb4e5acf6f8809172f477d962700489735d9189b5a"
+    },
+    {
+      "recordId": "pubgm-update-minimap-fix-2026-10-27",
+      "path": "assets/core-updates/pubgm-fixes-2026-11-01.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-6-0-notice-20260909/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方公告版本配图，未展示本条全部改动",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "delta-update-vlindflower-2026-10-30",
+      "path": "assets/core-updates/delta-vlindflower-2026-11-01.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GEP8A6",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261029_update/image_2.png",
+      "scope": "section",
+      "caption": "官方公告对应章节原图",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "a0e7d956a45c839e5113e011f5e2d9f5c921c65a237ea1bfe7c10dbbdb1b1485"
+    },
+    {
+      "recordId": "hpjy-update-lee-enfield-1-38-12-2026",
+      "path": "assets/modes/hpjy-classic-official-reference.jpg",
+      "sourcePageUrl": "https://gp.qq.com/",
+      "assetSourceUrl": "https://game.gtimg.cn/images/gp/cp/a202600825jqjz/m/p6-img1.jpg",
+      "scope": "section",
+      "caption": "腾讯官网海岛章节参考图，未展示本条具体机制；不作为1.38.12实机证据",
+      "dimensions": [
+        750,
+        1100
+      ],
+      "sha256": "ec40b3d933289ede4f814e33f087af9b2268d15a41713332abed695e7b33aaa3"
+    },
+    {
+      "recordId": "hpjy-update-deer-cart-1-38-12-2026",
+      "path": "assets/modes/hpjy-classic-official-reference.jpg",
+      "sourcePageUrl": "https://gp.qq.com/",
+      "assetSourceUrl": "https://game.gtimg.cn/images/gp/cp/a202600825jqjz/m/p6-img1.jpg",
+      "scope": "section",
+      "caption": "腾讯官网海岛章节参考图，未展示本条具体机制；不作为1.38.12实机证据",
+      "dimensions": [
+        750,
+        1100
+      ],
+      "sha256": "ec40b3d933289ede4f814e33f087af9b2268d15a41713332abed695e7b33aaa3"
+    },
+    {
+      "recordId": "hpjy-update-metro-deathmatch-1-38-12-2026",
+      "path": "assets/modes/hpjy-classic-official-reference.jpg",
+      "sourcePageUrl": "https://gp.qq.com/",
+      "assetSourceUrl": "https://game.gtimg.cn/images/gp/cp/a202600825jqjz/m/p6-img1.jpg",
+      "scope": "section",
+      "caption": "腾讯官网海岛章节参考图，未展示本条具体机制；不作为1.38.12实机证据",
+      "dimensions": [
+        750,
+        1100
+      ],
+      "sha256": "ec40b3d933289ede4f814e33f087af9b2268d15a41713332abed695e7b33aaa3"
+    },
+    {
+      "recordId": "apex-update-cipher-wildcard-draft",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-care-package-rotation",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-burst-fire",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-map-readability",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-ranked-match-info",
+      "path": "assets/core-updates/apex-ranked-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/5q1BNMqsxfxb9nFu6gZz8N/39442163f8b38d0e330ffe29b60e6f53/11._Ranked_Tab.png",
+      "scope": "specific",
+      "caption": "官方对应对象原图",
+      "dimensions": [
+        2560,
+        1441
+      ],
+      "sha256": "6127d288b30234f4fea776bbe143bae91e387aece26d711f845f023cd779a4fc"
+    },
+    {
+      "recordId": "apex-update-cipher-crypto-recall",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-crypto-glass",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-godzilla-storm-point",
+      "path": "assets/core-updates/apex-storm-point-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/godzilla-event",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/7xtdgWFQ0In6UBdbWJbMl1/ce3e776d5a08d738d752a98359ddc86a/APEX_Legends_S31_Screenshots_Hopscotch_3P-EnvironmentShot-SingedTrees_16x9.jpg",
+      "scope": "specific",
+      "caption": "官方对应对象原图",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "8cdd3d701ebf45300ca878eb51f0ee0f454aafbeda5504e2caacc4f2dedd9b50"
+    },
+    {
+      "recordId": "apex-update-godzilla-devotion",
+      "path": "assets/core-updates/apex-godzilla-drop-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/godzilla-event",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/7oclBGVeBsgAhs2dDCVVBl/83c4a196c3c2cb55f49f79aeabc5afa1/APEX_Legends_S31_Screenshots_Hopscotch_MonsterShards_16x9.jpg",
+      "scope": "specific",
+      "caption": "官方对应对象原图",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "5d66c444b6e80a73d5d65b80b67fc8f378249c35d07a28f183b9c22bac686a6f"
+    },
+    {
+      "recordId": "pubg-update-441-hlb-nightmare",
+      "path": "assets/core-updates/pubg-hlb-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.pubg.com/en/news/11338",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261102/QiTjmDv8.jpg",
+      "scope": "specific",
+      "caption": "官方对应对象原图",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b8e9e239b791922d225b512b60e4fe285601c98b4ab49ec59edf67861016f3e0"
+    },
+    {
+      "recordId": "pubg-update-441-xeno-hell",
+      "path": "assets/core-updates/pubg-xeno-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.pubg.com/en/news/11338",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261102/Ve05MPeo.jpg",
+      "scope": "specific",
+      "caption": "官方对应对象原图",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "2b6dc1d51d00a4f6257c37e213e996685a89aa062a57f7903f33c717d0600d92"
+    },
+    {
+      "recordId": "pubg-update-441-lmg-rotation",
+      "path": "assets/core-updates/pubg-441-2026-11-15.png",
+      "sourcePageUrl": "https://www.pubg.com/en/news/11338",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261103/lY8P2d4v.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "f3c10d698c44f6a05386f0c6d6466a16d60e409a6d0db4909709edf15c692e22"
+    },
+    {
+      "recordId": "pubg-update-441-vehicle-balance",
+      "path": "assets/core-updates/pubg-441-vehicles-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.pubg.com/en/news/11338",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261102/ymYQbdvb.jpg",
+      "scope": "section",
+      "caption": "官方同一主题或章节配图，未必直接展示本条细节",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "25c714918c709f97d8642f8af5f18f5a6303134462aec9a6e030b55f1e4e0c7d"
+    },
+    {
+      "recordId": "pubg-update-441-item-placement",
+      "path": "assets/core-updates/pubg-441-2026-11-15.png",
+      "sourcePageUrl": "https://www.pubg.com/en/news/11338",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261103/lY8P2d4v.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "f3c10d698c44f6a05386f0c6d6466a16d60e409a6d0db4909709edf15c692e22"
+    },
+    {
+      "recordId": "pubg-update-441-rondo-terrain",
+      "path": "assets/core-updates/pubg-441-rondo-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.pubg.com/en/news/11338",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261102/r5O8cVwa.jpg",
+      "scope": "specific",
+      "caption": "官方对应对象原图",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "22f5068cced294b08169e78b1b87f0960fcb1278a6237da3b182bd2d6c46b545"
+    },
+    {
+      "recordId": "pubg-update-441-console-input",
+      "path": "assets/core-updates/pubg-441-2026-11-15.png",
+      "sourcePageUrl": "https://www.pubg.com/en/news/11338",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261103/lY8P2d4v.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "f3c10d698c44f6a05386f0c6d6466a16d60e409a6d0db4909709edf15c692e22"
+    },
+    {
+      "recordId": "pubg-update-441-match-fixes",
+      "path": "assets/core-updates/pubg-441-2026-11-15.png",
+      "sourcePageUrl": "https://www.pubg.com/en/news/11338",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261103/lY8P2d4v.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "f3c10d698c44f6a05386f0c6d6466a16d60e409a6d0db4909709edf15c692e22"
+    },
+    {
+      "recordId": "delta-update-aurora-zenith-riptide",
+      "path": "assets/core-updates/delta-zenith-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image3.png",
+      "scope": "specific",
+      "caption": "官方对应对象原图",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "a5d3a2fecbaabf260b02b998a16026eab070da200bc7732085c2d6d0a596b590"
+    },
+    {
+      "recordId": "delta-update-aurora-brakkesh",
+      "path": "assets/core-updates/delta-brakkesh-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image2.png",
+      "scope": "specific",
+      "caption": "官方对应对象原图",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "3c43d2cc36707abb149e643856724d0c326edf55f7fd351e439769c748626150"
+    },
+    {
+      "recordId": "delta-update-aurora-martelo",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "specific",
+      "caption": "官方对应对象原图",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-martelo-smoke",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "specific",
+      "caption": "官方对应对象原图",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-zenith-hotfix",
+      "path": "assets/core-updates/delta-zenith-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image3.png",
+      "scope": "specific",
+      "caption": "官方对应对象原图",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "a5d3a2fecbaabf260b02b998a16026eab070da200bc7732085c2d6d0a596b590"
+    },
+    {
+      "recordId": "delta-update-aurora-supply-stations",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-detonation",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-operations-load-plan",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-warfare-vehicles",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "fortnite-update-v4310-buggy",
+      "path": "assets/core-updates/fortnite-4310-2026-11-15.webp",
+      "sourcePageUrl": "https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG",
+      "assetSourceUrl": "https://fn-creator-community-cdn.qstv.on.epicgames.com/572066c0-98f4-4936-9072-3de8601a9737/thread-thumbnail_832x468.webp",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        832,
+        468
+      ],
+      "sha256": "ac199a7da9bac07b8c98f4b63c74095bb85797df9e86d33a3c15b203bf750ef6"
+    },
+    {
+      "recordId": "fortnite-update-v4310-loot",
+      "path": "assets/core-updates/fortnite-4310-2026-11-15.webp",
+      "sourcePageUrl": "https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG",
+      "assetSourceUrl": "https://fn-creator-community-cdn.qstv.on.epicgames.com/572066c0-98f4-4936-9072-3de8601a9737/thread-thumbnail_832x468.webp",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        832,
+        468
+      ],
+      "sha256": "ac199a7da9bac07b8c98f4b63c74095bb85797df9e86d33a3c15b203bf750ef6"
+    },
+    {
+      "recordId": "fortnite-update-v4310-sprites",
+      "path": "assets/core-updates/fortnite-4310-2026-11-15.webp",
+      "sourcePageUrl": "https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG",
+      "assetSourceUrl": "https://fn-creator-community-cdn.qstv.on.epicgames.com/572066c0-98f4-4936-9072-3de8601a9737/thread-thumbnail_832x468.webp",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        832,
+        468
+      ],
+      "sha256": "ac199a7da9bac07b8c98f4b63c74095bb85797df9e86d33a3c15b203bf750ef6"
+    },
+    {
+      "recordId": "fortnite-update-v4310-audio-ui",
+      "path": "assets/core-updates/fortnite-4310-2026-11-15.webp",
+      "sourcePageUrl": "https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG",
+      "assetSourceUrl": "https://fn-creator-community-cdn.qstv.on.epicgames.com/572066c0-98f4-4936-9072-3de8601a9737/thread-thumbnail_832x468.webp",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        832,
+        468
+      ],
+      "sha256": "ac199a7da9bac07b8c98f4b63c74095bb85797df9e86d33a3c15b203bf750ef6"
+    },
+    {
+      "recordId": "fortnite-update-v4310-controls",
+      "path": "assets/core-updates/fortnite-4310-2026-11-15.webp",
+      "sourcePageUrl": "https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG",
+      "assetSourceUrl": "https://fn-creator-community-cdn.qstv.on.epicgames.com/572066c0-98f4-4936-9072-3de8601a9737/thread-thumbnail_832x468.webp",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        832,
+        468
+      ],
+      "sha256": "ac199a7da9bac07b8c98f4b63c74095bb85797df9e86d33a3c15b203bf750ef6"
+    },
+    {
+      "recordId": "pubgm-update-47-ancient-beast",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-arctic-revival",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-arctic-glyphs",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-arctic-mount-ally",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-subzero-storm",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-classic-consumables",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-classic-combat-qol",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-metro-search",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-pve-seal-city",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-arctic-hotfix",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-network-rollback",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "hpjy-update-13913-altay-routes",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-altay-tools",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-metro-loadout",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-metro-armor",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-metro-drops",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-metro-spider",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-superbody-phantom",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-superbody-teleport",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "delta-update-aurora-an94",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-new-ammo",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-haavk-attachments",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-character-controls",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-warfare-hud-audio",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-brakkesh-factions",
+      "path": "assets/core-updates/delta-brakkesh-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image2.png",
+      "scope": "specific",
+      "caption": "官方对应对象原图",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "3c43d2cc36707abb149e643856724d0c326edf55f7fd351e439769c748626150"
+    },
+    {
+      "recordId": "delta-update-aurora-fate-contracts-expert-handler",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-detonation-hotfix",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-combat-input-fixes",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-weapons-crates-expired-attachments",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-haavk-mission-and-fishing-fixes",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "fortnite-update-v4310-cursed-treasure-hours",
+      "path": "assets/core-updates/fortnite-4310-2026-11-15.webp",
+      "sourcePageUrl": "https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG",
+      "assetSourceUrl": "https://fn-creator-community-cdn.qstv.on.epicgames.com/572066c0-98f4-4936-9072-3de8601a9737/thread-thumbnail_832x468.webp",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        832,
+        468
+      ],
+      "sha256": "ac199a7da9bac07b8c98f4b63c74095bb85797df9e86d33a3c15b203bf750ef6"
+    },
+    {
+      "recordId": "fortnite-update-v4310-miku-teto-captain-day",
+      "path": "assets/core-updates/fortnite-miku-teto-captain-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/@epic/battle-royale",
+      "assetSourceUrl": "https://fn-creator-community-cdn.qstv.on.epicgames.com/26af6f50-8834-4ab3-8c75-0f185be31fb4/fortnite-thumbnail_1920x1080.jpeg",
+      "scope": "section",
+      "caption": "Epic 船长日官方配图，展示迷你初音与大葱武器",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "29c73c37c169d71c9aa70b280afecce864fb9aa84b48c2eb5d38ea2476989bb1"
+    },
+    {
+      "recordId": "fortnite-update-v4310-pc-assets",
+      "path": "assets/core-updates/fortnite-4310-2026-11-15.webp",
+      "sourcePageUrl": "https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG",
+      "assetSourceUrl": "https://fn-creator-community-cdn.qstv.on.epicgames.com/572066c0-98f4-4936-9072-3de8601a9737/thread-thumbnail_832x468.webp",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        832,
+        468
+      ],
+      "sha256": "ac199a7da9bac07b8c98f4b63c74095bb85797df9e86d33a3c15b203bf750ef6"
+    },
+    {
+      "recordId": "fortnite-update-v4310-reload-map-rotation-fix",
+      "path": "assets/core-updates/fortnite-4310-2026-11-15.webp",
+      "sourcePageUrl": "https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG",
+      "assetSourceUrl": "https://fn-creator-community-cdn.qstv.on.epicgames.com/572066c0-98f4-4936-9072-3de8601a9737/thread-thumbnail_832x468.webp",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        832,
+        468
+      ],
+      "sha256": "ac199a7da9bac07b8c98f4b63c74095bb85797df9e86d33a3c15b203bf750ef6"
+    },
+    {
+      "recordId": "fortnite-update-v4310-og-saturation-fix",
+      "path": "assets/core-updates/fortnite-4310-2026-11-15.webp",
+      "sourcePageUrl": "https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG",
+      "assetSourceUrl": "https://fn-creator-community-cdn.qstv.on.epicgames.com/572066c0-98f4-4936-9072-3de8601a9737/thread-thumbnail_832x468.webp",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        832,
+        468
+      ],
+      "sha256": "ac199a7da9bac07b8c98f4b63c74095bb85797df9e86d33a3c15b203bf750ef6"
+    },
+    {
+      "recordId": "fortnite-update-v4310-stw-mission-fixes",
+      "path": "assets/core-updates/fortnite-4310-2026-11-15.webp",
+      "sourcePageUrl": "https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG",
+      "assetSourceUrl": "https://fn-creator-community-cdn.qstv.on.epicgames.com/572066c0-98f4-4936-9072-3de8601a9737/thread-thumbnail_832x468.webp",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        832,
+        468
+      ],
+      "sha256": "ac199a7da9bac07b8c98f4b63c74095bb85797df9e86d33a3c15b203bf750ef6"
+    },
+    {
+      "recordId": "delta-update-s11-drag-rescue",
+      "path": "assets/core-updates/delta-s11-rescue.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/6JW32E",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261012_update/image7.png",
+      "scope": "section",
+      "caption": "Garena 拖拽救援小节原图，画面表现协同救援。",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "de1c09582553143300bbfa025dcb6609b7827ffd3e81d5f35221260ff35b7ddf"
+    },
+    {
+      "recordId": "delta-update-s11-harmonica",
+      "path": "assets/core-updates/delta-s11-harmonica.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/6JW32E",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261012_update/image2.png",
+      "scope": "section",
+      "caption": "Garena 口琴小节原图，画面表现吹奏与钓鱼，领取地点以公告文字为准。",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "2e804f373e1cdf8881fd7c6e4c19973a906c114f2bf170f8bcdce9850319dbcb"
+    },
+    {
+      "recordId": "delta-update-s11-season-ammo",
+      "path": "assets/core-updates/delta-s11-ammo.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/6JW32E",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261012_update/image4.png",
+      "scope": "section",
+      "caption": "Garena 限时弹药投放小节原图，穿透等级与数值见公告文字。",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "ffbea62cc52a46eda5969ddc797f595c7780df8ceb2abf916de78b8eb8f262a7"
+    },
+    {
+      "recordId": "delta-update-s11-the-mog-routes",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条修复点位。画面为摩格旧城区。",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "apex-update-cipher-worlds-edge-vaults",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-legend-feedback-fixes",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-akimbo-wingman-fire-rate",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-dropship-path-crash",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "path": "assets/core-updates/delta-anniversary-clue.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/all/5ENTSR",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260922_update/03.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "cca5f5c5ddb71d53847a7ec0c7a9df692c62812030d9ff943ded3e05044a7ca3",
+      "recordId": "delta-update-s11-anniversary-field-clues",
+      "scope": "section",
+      "caption": "Garena 对应小节原图，表现活动鸟巢。"
+    },
+    {
+      "path": "assets/core-updates/delta-anniversary-on-haavk.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/all/5ENTSR",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260922_update/08.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "5f8ac6c44a817aae4ca237da166ab1246a7b29cddbb1d11b72483cb095a75701",
+      "recordId": "delta-update-s11-anniversary-haavk-investigation",
+      "scope": "section",
+      "caption": "Garena ON HAAVK 对应小节原图，画面为哈夫克终端。具体玩法以公告文字为准。"
+    },
+    {
+      "path": "assets/core-updates/delta-anniversary-insurance.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/all/5ENTSR",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260922_update/10.jpg",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "560b44a5b40b9617e05688fe9eb762be1da13b839cfd8067f26cc5359a4498d7",
+      "recordId": "delta-update-s11-anniversary-insurance-supply",
+      "scope": "section",
+      "caption": "Garena 对应小节原图，展示活动收藏品 ABSOLUTE CINEMA。投送和交战规则见公告正文。"
+    },
+    {
+      "recordId": "delta-update-aurora-weapons-all",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-weapons-operations",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-weapons-warfare",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-detonation-penetration",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-operator-cross-mode",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-operations-stealth-polaris",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-detonation-operators",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-operations-equipment-tickets",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-victory-unite",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-warfare-map-rotation",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-custom-room-play",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-operations-loot",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-operator-usability",
+      "path": "assets/core-updates/delta-martelo-2026-11-15.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261108_patchnotes/image1.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f15e575878cb8f058b253ea652451cc9e655123ff913aa066b6a8ac8226c27de"
+    },
+    {
+      "recordId": "delta-update-aurora-shades-bounty",
+      "path": "assets/core-updates/delta-s12-shades-bounty.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/all/STZAUY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261110_update/image12.png",
+      "scope": "section",
+      "caption": "Garena 公告中「墨镜悬赏令」小节配图",
+      "dimensions": [
+        2880,
+        1460
+      ],
+      "sha256": "07ede372037c849f2366e35f9cead0391348b5f897a1c3ece6b732d0393647bf"
+    },
+    {
+      "recordId": "delta-update-aurora-sleepy-zoya",
+      "path": "assets/core-updates/delta-s12-sleepy-zoya.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/all/STZAUY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261110_update/image16.png",
+      "scope": "specific",
+      "caption": "官方实物配图，展示该收藏品外观",
+      "dimensions": [
+        1859,
+        990
+      ],
+      "sha256": "04eb3bce398fc392f888a79fa521c989952c4933f2fd45c629f969fb8295990a"
+    },
+    {
+      "recordId": "delta-update-aurora-colorful-zoya",
+      "path": "assets/core-updates/delta-s12-colorful-zoya.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/all/STZAUY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261110_update/image17.png",
+      "scope": "specific",
+      "caption": "官方实物配图，展示该收藏品外观",
+      "dimensions": [
+        2852,
+        1782
+      ],
+      "sha256": "d54abe9c87c40042b606e08bb2d48c4792f77b27a27d880223e39898d4ab7294"
+    },
+    {
+      "recordId": "delta-update-aurora-roaming-blade-figurine",
+      "path": "assets/core-updates/delta-s12-roaming-blade-figurine.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/all/STZAUY",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261110_update/image18.png",
+      "scope": "specific",
+      "caption": "官方实物配图，展示该收藏品外观",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "e351ecc88b17f433ab68cc837e1fb44058a79223248f36030ef12a8378cc3049"
+    },
+    {
+      "recordId": "fortnite-update-treasure-flame-flame-fruit-2026-11-01",
+      "path": "assets/core-updates/fortnite-treasure-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu0hsbnuwoc07mupelmtvva",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b96f43fe3359de6406f821ec93539a6d3c1b59a928cba912d10cbc6f0eafc2e8"
+    },
+    {
+      "recordId": "fortnite-update-treasure-usopp-slingshot-2026-11-01",
+      "path": "assets/core-updates/fortnite-treasure-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu0hsbnuwoc07mupelmtvva",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b96f43fe3359de6406f821ec93539a6d3c1b59a928cba912d10cbc6f0eafc2e8"
+    },
+    {
+      "recordId": "fortnite-update-treasure-explosive-cannonball-2026-11-01",
+      "path": "assets/core-updates/fortnite-treasure-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu0hsbnuwoc07mupelmtvva",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b96f43fe3359de6406f821ec93539a6d3c1b59a928cba912d10cbc6f0eafc2e8"
+    },
+    {
+      "recordId": "fortnite-update-treasure-nami-tangerine-2026-11-01",
+      "path": "assets/core-updates/fortnite-treasure-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu0hsbnuwoc07mupelmtvva",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b96f43fe3359de6406f821ec93539a6d3c1b59a928cba912d10cbc6f0eafc2e8"
+    },
+    {
+      "recordId": "fortnite-update-treasure-meat-on-a-stick-2026-11-01",
+      "path": "assets/core-updates/fortnite-treasure-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu0hsbnuwoc07mupelmtvva",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b96f43fe3359de6406f821ec93539a6d3c1b59a928cba912d10cbc6f0eafc2e8"
+    },
+    {
+      "recordId": "fortnite-update-treasure-sprite-wanted-poster-2026-11-01",
+      "path": "assets/core-updates/fortnite-treasure-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu0hsbnuwoc07mupelmtvva",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b96f43fe3359de6406f821ec93539a6d3c1b59a928cba912d10cbc6f0eafc2e8"
+    },
+    {
+      "recordId": "fortnite-update-treasure-golden-apple-2026-11-01",
+      "path": "assets/core-updates/fortnite-treasure-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu0hsbnuwoc07mupelmtvva",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b96f43fe3359de6406f821ec93539a6d3c1b59a928cba912d10cbc6f0eafc2e8"
+    },
+    {
+      "recordId": "fortnite-update-treasure-chest-refill-2026-11-01",
+      "path": "assets/core-updates/fortnite-treasure-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu0hsbnuwoc07mupelmtvva",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b96f43fe3359de6406f821ec93539a6d3c1b59a928cba912d10cbc6f0eafc2e8"
+    },
+    {
+      "recordId": "fortnite-update-treasure-gold-bars-followers-2026-11-01",
+      "path": "assets/core-updates/fortnite-treasure-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu0hsbnuwoc07mupelmtvva",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b96f43fe3359de6406f821ec93539a6d3c1b59a928cba912d10cbc6f0eafc2e8"
+    },
+    {
+      "recordId": "fortnite-update-treasure-blitz-loot-2026-11-01",
+      "path": "assets/core-updates/fortnite-treasure-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu0hsbnuwoc07mupelmtvva",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b96f43fe3359de6406f821ec93539a6d3c1b59a928cba912d10cbc6f0eafc2e8"
+    },
+    {
+      "recordId": "fortnite-update-v4310-arenas-loot-pairing",
+      "path": "assets/core-updates/fortnite-4310-2026-11-15.webp",
+      "sourcePageUrl": "https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG",
+      "assetSourceUrl": "https://fn-creator-community-cdn.qstv.on.epicgames.com/572066c0-98f4-4936-9072-3de8601a9737/thread-thumbnail_832x468.webp",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        832,
+        468
+      ],
+      "sha256": "ac199a7da9bac07b8c98f4b63c74095bb85797df9e86d33a3c15b203bf750ef6"
+    },
+    {
+      "recordId": "fortnite-update-v4310-odyssey-interaction",
+      "path": "assets/core-updates/fortnite-4310-2026-11-15.webp",
+      "sourcePageUrl": "https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG",
+      "assetSourceUrl": "https://fn-creator-community-cdn.qstv.on.epicgames.com/572066c0-98f4-4936-9072-3de8601a9737/thread-thumbnail_832x468.webp",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        832,
+        468
+      ],
+      "sha256": "ac199a7da9bac07b8c98f4b63c74095bb85797df9e86d33a3c15b203bf750ef6"
+    },
+    {
+      "recordId": "fortnite-update-treasure-gum-gum-fruit-2026-11-01",
+      "path": "assets/core-updates/fortnite-treasure-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu0hsbnuwoc07mupelmtvva",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b96f43fe3359de6406f821ec93539a6d3c1b59a928cba912d10cbc6f0eafc2e8"
+    },
+    {
+      "recordId": "fortnite-update-treasure-zoro-three-sword-style-2026-11-01",
+      "path": "assets/core-updates/fortnite-treasure-2026-11-01.jpg",
+      "sourcePageUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+      "assetSourceUrl": "https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/resize=fit:clip,width:1920/quality=value:80/cmvu0hsbnuwoc07mupelmtvva",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b96f43fe3359de6406f821ec93539a6d3c1b59a928cba912d10cbc6f0eafc2e8"
+    },
+    {
+      "recordId": "fortnite-update-treasure-special-buggy-ball-2026-11-12",
+      "path": "assets/core-updates/fortnite-4310-2026-11-15.webp",
+      "sourcePageUrl": "https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG",
+      "assetSourceUrl": "https://fn-creator-community-cdn.qstv.on.epicgames.com/572066c0-98f4-4936-9072-3de8601a9737/thread-thumbnail_832x468.webp",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        832,
+        468
+      ],
+      "sha256": "ac199a7da9bac07b8c98f4b63c74095bb85797df9e86d33a3c15b203bf750ef6"
+    },
+    {
+      "recordId": "apex-update-cipher-loba-cooldowns",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-eva8-disruptor-rounds",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-peacekeeper-bolt-cycling",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-rapid-sniper-stock",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-olympus-poi-interactions",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-worlds-edge-poi-collision",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-legend-skill-interaction-fixes",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-deathbox-respawn-feedback",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-interaction-and-visibility-fixes",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-mixtape-map-rotation",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-edistrict-day-rotation",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "recordId": "apex-update-cipher-evac-tower-usage-fix",
+      "path": "assets/core-updates/apex-cipher-2026-11-15.jpg",
+      "sourcePageUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+      "assetSourceUrl": "https://drop-assets.ea.com/images/3y7UvygiXzw9jlo05Mn3I5/3d6885fa12103d27c410646df999b979/Apex_S31-Season-Page-16x9.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "632a8fb6442ccb3c370b8dad02f9b0a1bbabfe22710ced6de337c7b2a2133689"
+    },
+    {
+      "path": "assets/core-updates/pubg-observer-bluechip-2026-11-16.png",
+      "sourcePageUrl": "https://www.pubg.com/zh-cn/news/11338",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261103/GSHVXxvX.png",
+      "scope": "section",
+      "caption": "官方观战界面图，黄色框标示蓝色晶片总数。",
+      "dimensions": [
+        975,
+        548
+      ],
+      "sha256": "5c63d3b574fdb299243ab1897b699506b9fcfc5d186273df34fa872a89a16ae9",
+      "recordId": "pubg-update-441-observer-chip-count"
+    },
+    {
+      "path": "assets/core-updates/pubg-observer-inventory-2026-11-16.png",
+      "sourcePageUrl": "https://www.pubg.com/zh-cn/news/11338",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261103/XLRJj5yv.png",
+      "scope": "section",
+      "caption": "官方观战界面图，展示后备箱内的蓝色晶片及对应玩家名。",
+      "dimensions": [
+        975,
+        548
+      ],
+      "sha256": "3edc16e988cd77d7bdb65bcb3e14e03d56e1d52183acc4572fbca5a37f165c73",
+      "recordId": "pubg-update-441-observer-trunk-chip-owner"
+    },
+    {
+      "recordId": "pubg-update-441-vehicle-radial-crouch",
+      "path": "assets/core-updates/pubg-441-2026-11-15.png",
+      "sourcePageUrl": "https://www.pubg.com/en/news/11338",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261103/lY8P2d4v.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "f3c10d698c44f6a05386f0c6d6466a16d60e409a6d0db4909709edf15c692e22"
+    },
+    {
+      "recordId": "pubg-update-441-pre-match-kick",
+      "path": "assets/core-updates/pubg-441-2026-11-15.png",
+      "sourcePageUrl": "https://www.pubg.com/en/news/11338",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261103/lY8P2d4v.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "f3c10d698c44f6a05386f0c6d6466a16d60e409a6d0db4909709edf15c692e22"
+    },
+    {
+      "recordId": "pubg-update-441-hud-world-fixes",
+      "path": "assets/core-updates/pubg-441-2026-11-15.png",
+      "sourcePageUrl": "https://www.pubg.com/en/news/11338",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261103/lY8P2d4v.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "f3c10d698c44f6a05386f0c6d6466a16d60e409a6d0db4909709edf15c692e22"
+    },
+    {
+      "recordId": "pubg-update-441-voice-chat",
+      "path": "assets/core-updates/pubg-441-2026-11-15.png",
+      "sourcePageUrl": "https://www.pubg.com/en/news/11338",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261103/lY8P2d4v.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "f3c10d698c44f6a05386f0c6d6466a16d60e409a6d0db4909709edf15c692e22"
+    },
+    {
+      "recordId": "pubg-update-441-xeno-console-view",
+      "path": "assets/core-updates/pubg-441-2026-11-15.png",
+      "sourcePageUrl": "https://www.pubg.com/en/news/11338",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261103/lY8P2d4v.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "f3c10d698c44f6a05386f0c6d6466a16d60e409a6d0db4909709edf15c692e22"
+    },
+    {
+      "path": "assets/core-updates/pubg-ive-cupid-2026-11-16.png",
+      "sourcePageUrl": "https://www.pubg.com/zh-cn/news/11307",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261103/eyWegeqZ.png",
+      "scope": "section",
+      "caption": "官方配图，展示出生点的丘比特绝地侠及表情舞台。",
+      "dimensions": [
+        975,
+        549
+      ],
+      "sha256": "844641859ba7a2b372c134f760a81cd81e80e8fa8c3fff98bf37891f8302b581",
+      "recordId": "pubg-update-441-ive-cupid-egg"
+    },
+    {
+      "path": "assets/core-updates/pubg-ive-rondo-2026-11-16.png",
+      "sourcePageUrl": "https://www.pubg.com/zh-cn/news/11307",
+      "assetSourceUrl": "https://wstatic-prod-boc.krafton.com/common/news/20261103/y0Rjoc57.png",
+      "scope": "section",
+      "caption": "官方配图，展示荣都联动宅邸和 IVE 转盘。",
+      "dimensions": [
+        975,
+        549
+      ],
+      "sha256": "dda5d74f102413425f1bbdb319ba8021539649c1c14c0145828f496c85fd94f1",
+      "recordId": "pubg-update-441-ive-rondo-spots"
+    },
+    {
+      "recordId": "pubgm-update-47-fishing",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-frost-playground",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-frost-crystal-ball",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-new-year-fountain",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-wow-avalanche-escape",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-jp-endgame-voice-fixes",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-jp-backpack-icons",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "pubgm-update-47-pmgc-balloon",
+      "path": "assets/core-updates/pubgm-47-2026-11-15.png",
+      "sourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+      "assetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        900,
+        568
+      ],
+      "sha256": "85011b9949bad76dd1ed0cf64a683f0ed64dd1a7a5f742cc002b1896f3ae1d4d"
+    },
+    {
+      "recordId": "hpjy-update-13913-altay-smart-partner",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-metro-boss-loot",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-metro-gear-loan",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-metro-loot-protection",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-metro-wandering-trader",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-metro-season-crate",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-metro-season-equipment",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "path": "assets/mode-official/hpjy-icebound-train-2026-11-14.jpg",
+      "sourcePageUrl": "https://www.bilibili.com/video/BV1riW66VEC7/",
+      "assetSourceUrl": "https://i2.hdslb.com/bfs/archive/253397558caab507434e14d067bee5ef849a75c4.jpg",
+      "scope": "specific",
+      "caption": "《和平精英》官方冰封列车返场乘车指南海报",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "0e7f58b8db9f4afe20774397b506e8d1a4d2d2d279ed12a79822515c5c65f08c",
+      "recordId": "hpjy-update-13913-icebound-train-return"
+    },
+    {
+      "recordId": "hpjy-update-13913-classic-m1887",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-classic-duel-protocol",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-classic-giant-airdrop",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-classic-weapon-balance",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-classic-vehicle-balance",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-combat-feedback-input",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-superbody-dog-support",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-tomb-resource-cycle",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-superbody-operator-balance",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-superbody-black-blade",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-map-qol-launch",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-hotfix-nov11",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-hotfix-nov12",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-hotfix-nov13",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "delta-update-aurora-cn-elite-gear-tickets",
+      "path": "assets/core-updates/delta-s12-cn-patch-cover.jpg",
+      "sourcePageUrl": "https://steamcommunity.com/games/2507950/announcements/detail/676261964507253471?l=schinese",
+      "assetSourceUrl": "https://clan.akamai.steamstatic.com/images/45050610/65150dc703f18187fe06e7d6b0b3ab8ef7f3db8c.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        800,
+        450
+      ],
+      "sha256": "6b7a5f21fec7a8db945220b65a26f2b44e8e6843a52ff25e16ff6364d70d1f04"
+    },
+    {
+      "recordId": "delta-update-aurora-cn-red-brick-return",
+      "path": "assets/core-updates/delta-s12-cn-red-brick.png",
+      "sourcePageUrl": "https://steamcommunity.com/games/2507950/announcements/detail/672885536621330891?l=schinese",
+      "assetSourceUrl": "https://clan.akamai.steamstatic.com/images/45050610/3b87cd0f26a39304466153a281c1b0782e0b8fc4.png",
+      "scope": "specific",
+      "caption": "《三角洲行动》国服 11 月 12 日公告的大红砖专属配图",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "375091ae49202537e4602194a92a7bff89c69a791f1901fa60030f69fb6e5e3f"
+    },
+    {
+      "recordId": "delta-update-aurora-cn-detonation-seven-rounds",
+      "path": "assets/mode-official/delta-detonation-beta-2026.jpg",
+      "sourcePageUrl": "https://steamcommunity.com/games/2507950/announcements/detail/694271289525799608?l=english",
+      "assetSourceUrl": "https://clan.akamai.steamstatic.com/images/45050610/b4c90af0f152b631f59317097c0c0767271a8c19.jpg",
+      "scope": "section",
+      "caption": "发行商的黑潮爆破 Beta 官方玩法配图",
+      "dimensions": [
+        3847,
+        2167
+      ],
+      "sha256": "815340a011d16f3dc1e366d51021b2d2f73405e56c6f368236e60d2f3ec58fe7"
+    },
+    {
+      "recordId": "delta-update-aurora-cn-detonation-mandelbrick",
+      "path": "assets/mode-official/delta-detonation-beta-2026.jpg",
+      "sourcePageUrl": "https://steamcommunity.com/games/2507950/announcements/detail/694271289525799608?l=english",
+      "assetSourceUrl": "https://clan.akamai.steamstatic.com/images/45050610/b4c90af0f152b631f59317097c0c0767271a8c19.jpg",
+      "scope": "section",
+      "caption": "发行商的黑潮爆破 Beta 官方玩法配图",
+      "dimensions": [
+        3847,
+        2167
+      ],
+      "sha256": "815340a011d16f3dc1e366d51021b2d2f73405e56c6f368236e60d2f3ec58fe7"
+    },
+    {
+      "recordId": "delta-update-aurora-cn-win2-flight-case",
+      "path": "assets/core-updates/delta-s12-cn-win2.jpg",
+      "sourcePageUrl": "https://steamcommunity.com/games/2507950/announcements/detail/676262708841021924?l=schinese",
+      "assetSourceUrl": "https://clan.akamai.steamstatic.com/images/45050610/46884a5aac62377d14cc6598171734288c9fe109.jpg",
+      "scope": "specific",
+      "caption": "《三角洲行动》国服「把把好 WIN」小节官方藏品配图",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "73ea0e3309507d111c3837c6a7e6c3b66f4a57d16cac29bb7ee890a5f5168c8d"
+    },
+    {
+      "recordId": "delta-update-aurora-cn-brakkesh-ahsarah-pendant",
+      "path": "assets/core-updates/delta-s12-cn-ahsarah-pendant.png",
+      "sourcePageUrl": "https://news.17173.com/content/11162026/001205869.shtml",
+      "assetSourceUrl": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/IcIJaBbuhpFvsxl.png",
+      "scope": "specific",
+      "caption": "项目组攻略中的黄金挂坠奖励邮件及日期",
+      "dimensions": [
+        1080,
+        719
+      ],
+      "sha256": "fc1d8423463533070f6d8bf2795df4f876dacec858c687c2a7b043852c50c54e"
+    },
+    {
+      "recordId": "delta-update-s11-space-city-extraction",
+      "path": "assets/core-updates/delta-s11-space-city.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/NDH3YX",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260908_update/image6.png",
+      "scope": "section",
+      "caption": "Garena 航天基地撤离调整小节官方地图配图",
+      "dimensions": [
+        5338,
+        3003
+      ],
+      "sha256": "e3b4d6d8b93b784e642ffdc645f2e1b06a4a256bf33dfbaeeecb273377a61c9c"
+    },
+    {
+      "recordId": "delta-update-s11-signal-jamming-and-cover",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "delta-update-s11-mobile-movement-settings",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "delta-update-s11-victory-unite-vehicle-approval",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "delta-update-s11-the-mog-sep10-escort",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "section",
+      "caption": "Garena 摩格旧城区小节官方地图配图",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "delta-update-s11-fishing-line-and-dialogue",
+      "path": "assets/core-updates/delta-s11-fishing.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image4.jpg",
+      "scope": "section",
+      "caption": "Garena 钓鱼小节官方玩法配图",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "e4a31875164ecd4b5349508c4bfa0ff2a7c511ef775e7a182e12da8010825f94"
+    },
+    {
+      "recordId": "delta-update-s11-rover",
+      "path": "assets/core-updates/delta-s11-rover.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image1.jpg",
+      "scope": "section",
+      "caption": "Garena 旅人小节官方配图，展示旅人与军犬。",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "e835790434722f83a03572aa8ea2bd49c6fd89f9189020d548af503cb41620a5"
+    },
+    {
+      "recordId": "delta-update-s11-layali-loot-and-insertion",
+      "path": "assets/core-updates/delta-s11-layali.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image2.jpg",
+      "scope": "section",
+      "caption": "Garena 长弓溪谷 2.0 小节官方配图。",
+      "dimensions": [
+        4096,
+        2304
+      ],
+      "sha256": "f8e2dc89d37522232125b617703778207ef27304efc5d69a2f7574658b0bc9c0"
+    },
+    {
+      "recordId": "delta-update-s11-mdr-thompson",
+      "path": "assets/core-updates/delta-s11-arsenal.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image7.png",
+      "scope": "section",
+      "caption": "Garena 新武器小节官方配图，展示 MDR 与汤姆逊。",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "3c5cbf595b69c425ac2cec8f79575450cae4f8e76ef4ab00a694ff97101b5a22"
+    },
+    {
+      "recordId": "delta-update-s11-launch-ammo",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "delta-update-s11-haavk-feed-and-weasel",
+      "path": "assets/core-updates/delta-s11-haavk-kit.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/NDH3YX",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260908_update/image11.png",
+      "scope": "section",
+      "caption": "Garena 两款哈夫克限时配件小节官方配图。",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "bfb1b04f6b2f7b6b013c310b5d3bda41d72a2f6d1f9a6b293f3791288f5670fe"
+    },
+    {
+      "recordId": "delta-update-s11-amphibious-lsv",
+      "path": "assets/core-updates/delta-s11-lsv.png",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image8.png",
+      "scope": "section",
+      "caption": "Garena 新载具小节官方配图，展示 LSV 两栖全地形车。",
+      "dimensions": [
+        5000,
+        2813
+      ],
+      "sha256": "f90f7fff71039ddeb7b63e2024c46fff4a88f5f211b76a53374f690286544e35"
+    },
+    {
+      "recordId": "delta-update-s11-buildable-vulcan",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "delta-update-s11-warfare-deploy-and-quake",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "delta-update-s11-edc-toolkit",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "delta-update-s11-gear-tickets",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "delta-update-s11-sniper-and-crosshair",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "delta-update-s11-operator-balance",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "delta-update-s11-operations-collectibles",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "delta-update-s11-free-battlefield",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "delta-update-s11-vlindflower-september",
+      "path": "assets/core-updates/delta-s11-vlindflower.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/NDH3YX",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260908_update/image9.jpg",
+      "scope": "section",
+      "caption": "Garena 「寻找花小蝶」小节官方配图。",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "73fc146d13ebbd18a40e04ae443e0da45893dd7ace8584ff7d2824ad18d2040d"
+    },
+    {
+      "recordId": "delta-update-s11-colorful-vlindflower",
+      "path": "assets/core-updates/delta-s11-colorful-vlindflower.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/NDH3YX",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260908_update/image10.jpg",
+      "scope": "section",
+      "caption": "Garena 「炫彩花小蝶」小节官方配图。",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "7a6ccc9a60d8124aadacbca7703485475e96355a13fbd35e8f756a1925967103"
+    },
+    {
+      "recordId": "delta-update-s11-az3-permanent-rotation",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "delta-update-s11-hudson-ai",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "delta-update-s11-sep10-loot-and-controls",
+      "path": "assets/core-updates/delta-s11-mog.jpg",
+      "sourcePageUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image3.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        7680,
+        4320
+      ],
+      "sha256": "1136623ee16f098ad04dd244614742b07e6fd1322a7718bbd37083a5178e1d79"
+    },
+    {
+      "recordId": "hpjy-update-13913-hit-team-match-termination",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-hit-voice-filter",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
+    },
+    {
+      "recordId": "hpjy-update-13913-server-hit-validation",
+      "path": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+      "sourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+      "assetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+      "scope": "version",
+      "caption": "官方版本配图，未展示本条具体机制",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "d9686a77c47b36e7e509bc3b8bf5372b1eb645adf78fc2facaea42be5b148220"
     }
   ]
 }

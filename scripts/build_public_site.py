@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Create an explicit public-file allowlist; never publish local research drafts."""
+import argparse
+from html import escape
 from pathlib import Path
 import gzip
+from io import BytesIO
 import json
 import re
 import shutil
@@ -10,6 +13,11 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / '_site'
+PACKED_GAME_CATALOG = {
+    'data/shooter-game-media.json',
+    'data/shooter-game-metrics.json',
+    'data/steam-player-history.json',
+}
 
 
 def ugc_entry_bucket(entry_id):
@@ -59,11 +67,114 @@ def remove_output_with_retry():
         raise last_error
 
 
-def main():
+def prepare_game_catalog_covers(payload):
+    from PIL import Image, ImageOps
+
+    # Keep the official archive untouched and generate smaller public card images.
+    for record in payload['games'].values():
+        cover = Path(record['cover'])
+        if cover.parts[:2] != ('assets', 'game-catalog') or '..' in cover.parts:
+            raise RuntimeError('Unexpected game catalogue cover: ' + str(cover))
+        source = ROOT / cover
+        encoded = BytesIO()
+        with Image.open(source) as original:
+            if not getattr(original, 'is_animated', False):
+                image = ImageOps.exif_transpose(original)
+                image.thumbnail((800, 450), Image.Resampling.LANCZOS)
+                image.save(encoded, format='WEBP', quality=77, icc_profile=image.info.get('icc_profile'))
+        if 0 < encoded.tell() < source.stat().st_size:
+            cover = cover.with_name('public-cover.webp')
+            record['cover'] = cover.as_posix()
+            destination = OUTPUT / cover
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            destination.write_bytes(encoded.getvalue())
+        else:
+            destination = OUTPUT / cover
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, destination)
+
+
+def validate_game_update_notes(payload):
+    if payload.get('schemaVersion') != 1 or not isinstance(payload.get('updates'), dict):
+        raise RuntimeError('Invalid Chinese game announcement file')
+    images = set()
+    for source, note in payload['updates'].items():
+        details = note.get('details')
+        if urlsplit(source).scheme != 'https' or not isinstance(details, list) or not details:
+            raise RuntimeError('Missing game announcement details or source: ' + source)
+        for text in [note.get('title'), note.get('brief'), *details]:
+            # Chinese notes can include official model names and identifiers.
+            if not isinstance(text, str) or not re.search(r'[\u3400-\u9fff]', text):
+                raise RuntimeError('Game announcement must be written in Chinese: ' + source)
+        image = note.get('image')
+        if image is None:
+            continue
+        if not isinstance(image, dict) or image.get('kind') not in {'cover', 'body', 'version'}:
+            raise RuntimeError('Invalid announcement image type: ' + source)
+        for key in ('source', 'assetSource'):
+            url = urlsplit(image.get(key, ''))
+            if url.scheme != 'https' or not url.hostname:
+                raise RuntimeError('Missing official announcement image source: ' + source)
+        path = image.get('path', '')
+        if not re.fullmatch(r'assets/game-catalog/announcements/[a-f0-9]{24}\.webp', path) or not (ROOT / path).is_file():
+            raise RuntimeError('Missing local announcement image: ' + source)
+        images.add(path)
+    return images
+
+
+def optimize_published_update_covers():
+    from PIL import Image
+
+    for path in (OUTPUT / 'assets/core-updates').glob('*.png'):
+        original_size = path.stat().st_size
+        if original_size < 1_000_000:
+            continue
+        with Image.open(path) as image:
+            if image.is_animated or image.info.keys() - {'icc_profile', 'transparency', 'dpi'}:
+                continue
+            result = BytesIO()
+            image.save(result, format='PNG', optimize=True, **image.info)
+        if result.tell() < original_size:
+            path.write_bytes(result.getvalue())
+
+
+def write_site_metadata(site_url):
+    url = urlsplit(site_url)
+    if (url.scheme != 'https' or not url.hostname or url.username or url.password
+            or url.query or url.fragment or not re.fullmatch(r'(?:/[\w.-]+)*/', url.path)):
+        raise ValueError('The public site URL must be an HTTPS directory URL ending in /')
+
+    index = OUTPUT / 'index.html'
+    html = index.read_text(encoding='utf-8')
+    address = escape(site_url, quote=True)
+    metadata = (
+        f'  <link rel="canonical" href="{address}">\n'
+        f'  <meta property="og:url" content="{address}">\n'
+    )
+    html = html.replace('</head>', metadata + '</head>', 1)
+    html = html.replace(
+        '<a href="https://mfsngjc.github.io/gameplay-mode-intel/">mfsngjc.github.io</a>',
+        f'<a href="{address}">{escape(url.hostname)}</a>', 1)
+    index.write_text(html, encoding='utf-8')
+    (OUTPUT / 'sitemap.xml').write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f'  <url><loc>{address}</loc></url>\n'
+        '</urlset>\n',
+        encoding='utf-8',
+    )
+
+
+def main(site_url=None):
     remove_output_with_retry()
     OUTPUT.mkdir()
     files = ['index.html', 'card-view.js', 'card-view.css', 'app.js', 'workspace.js', 'maps.js', 'styles.css', 'ugc.js', 'ugc.css',
-             'workspace.css', 'tactical-items.css', 'tactical-items.js', 'item-demos.js', 'data/tactical-items.json',
+             'workspace.css', 'mode-library.css', 'catalogue-theme.css', 'catalogue-navigation.js', 'mode-library.js', 'game-catalog.js', 'steam-activity.js', 'data/shooter-games.json', 'data/shooter-game-media.json',
+             'data/shooter-game-metrics.json', 'data/steam-charts.json', 'data/steam-player-history.json',
+             'data/shooter-game-updates-zh.json', 'timeline-players.js', 'data/timeline-player-history.json',
+             'tactical-items.css', 'tactical-items.js', 'item-demos.js', 'data/tactical-items.json',
+             'gun-catalog.js', 'gun-viewer.js', 'gun-model-stage.js', 'gun-glb-viewer.js', 'gun-catalog.css',
+             'data/gun-catalog.json', 'data/gun-catalog-valorant.json', 'data/gun-catalog-cod-mw4.json',
              'weapon-skins.js', 'weapon-skins.css', 'data/weapon-skins/manifest.json',
              'data/weapon-skins/valorant.json', 'data/weapon-skins/cs2.json', 'data/weapon-skins/delta-force.json',
              'data/weapon-skins/call-of-duty.json', 'data/weapon-skins/apex.json',
@@ -77,6 +188,13 @@ def main():
         source = ROOT / name
         if source.suffix == '.json':
             payload = json.loads(source.read_text(encoding='utf-8'))
+            if name == 'data/shooter-game-media.json':
+                prepare_game_catalog_covers(payload)
+            if name == 'data/shooter-game-updates-zh.json':
+                for image in validate_game_update_notes(payload):
+                    picture = OUTPUT / image
+                    picture.parent.mkdir(parents=True, exist_ok=True)
+                    shutil.copy2(ROOT / image, picture)
             if name == 'data/weapon-skins/manifest.json':
                 for game in payload['games']:
                     expected = 'data/weapon-skins/' + game['id'] + '.json'
@@ -122,25 +240,40 @@ def main():
                             and original_url.scheme == 'https'
                             and original_url.hostname == 'web.df.garena.com'
                             and (ROOT / local_image).is_file()
-                            and (ROOT / local_image).stat().st_size > 8_000_000):
+                            and (ROOT / local_image).stat().st_size > 6_000_000):
                         record['imageUrl'] = original
                         record['imageSource'] = record.get('imageSource', '').replace('（本地归档）', '')
                     # Large existing cover PNGs can use their recorded official CDN.
                     # Keep originals in the checkout and retain complete FF body archives.
-                    if (local_image.startswith(('assets/mode-official/', 'assets/core-updates/'))
+                    official_cover_limits = {
+                        'media.contentapi.ea.com': 4_000_000,
+                        'cms-assets.unrealengine.com': 4_000_000,
+                        'clan.fastly.steamstatic.com': 2_800_000,
+                        'pubgmobile.jp': 4_000_000,
+                    }
+                    limit = official_cover_limits.get(original_url.hostname)
+                    if (limit is not None
+                            and local_image.startswith(('assets/mode-official/', 'assets/core-updates/'))
                             and original_url.scheme == 'https'
-                            and original_url.hostname in {'media.contentapi.ea.com', 'cms-assets.unrealengine.com', 'clan.fastly.steamstatic.com'}
                             and (ROOT / local_image).is_file()
-                            and (ROOT / local_image).stat().st_size > 4_000_000):
+                            and (ROOT / local_image).stat().st_size > limit):
                         record['imageUrl'] = original
                         record['imageSource'] = record.get('imageSource', '').replace('（本地归档）', '')
-            destination.write_text(json.dumps(payload, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+            encoded = json.dumps(payload, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
+            if name in PACKED_GAME_CATALOG:
+                destination.with_suffix('.json.gz').write_bytes(gzip.compress(encoded, mtime=0))
+            else:
+                destination.write_bytes(encoded)
+        elif name == 'index.html':
+            html = source.read_text(encoding='utf-8')
+            destination.write_text(html.replace('<html lang="zh-CN">', '<html lang="zh-CN" data-game-catalog-encoding="gzip">', 1),
+                                   encoding='utf-8')
         else:
             shutil.copy2(source, destination)
-    for name in ['ugc-catalog.js', 'ugc-catalog-worker.js']:
+    for name in ['ugc-catalog.js', 'ugc-catalog-worker.js', 'ugc-covers.js', 'ugc-source-boards.js']:
         if (ROOT / name).exists():
             shutil.copy2(ROOT / name, OUTPUT / name)
-    for name in ['latest.json', 'index.json', 'briefing.json', 'chinese.json', 'creators.json']:
+    for name in ['latest.json', 'index.json', 'briefing.json', 'chinese.json', 'creators.json', 'board-categories.json']:
         source = ROOT / 'data/ugc' / name
         if source.exists():
             destination = OUTPUT / 'data/ugc' / name
@@ -150,6 +283,13 @@ def main():
         destination = OUTPUT / 'data/ugc/history' / source.name
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_text(json.dumps(json.loads(source.read_text(encoding='utf-8')), ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    for platform in ('cs2', 'roblox', 'fortnite', 'minecraft'):
+        name = 'data/ugc/source-boards/' + platform + '.json'
+        source = ROOT / name
+        if source.is_file():
+            destination = OUTPUT / name
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            destination.write_text(json.dumps(json.loads(source.read_text(encoding='utf-8')), ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     catalog_root = (ROOT / 'data/ugc/catalog').resolve()
     catalog_manifest = catalog_root / 'manifest.json'
     if catalog_manifest.exists():
@@ -191,7 +331,19 @@ def main():
         manifest_destination.parent.mkdir(parents=True, exist_ok=True)
         manifest_destination.write_text(json.dumps(catalog, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
         write_ugc_entry_indexes(lookup_shards)
-    shutil.copytree(ROOT / 'assets/maps', OUTPUT / 'assets/maps')
+    map_plan_folder = 'assets/maps/2d-plans'
+    public_maps = json.loads((OUTPUT / 'data/maps.json').read_text(encoding='utf-8'))
+    published_map_plans = {
+        value for entry in public_maps for value in entry.values()
+        if isinstance(value, str) and value.startswith(map_plan_folder + '/')
+    }
+
+    def unused_map_plans(directory, names):
+        if Path(directory) != ROOT / map_plan_folder:
+            return []
+        return [name for name in names if map_plan_folder + '/' + name not in published_map_plans]
+
+    shutil.copytree(ROOT / 'assets/maps', OUTPUT / 'assets/maps', ignore=unused_map_plans)
     # Cover paths are explicit in data/code. Do not publish abandoned covers or draft SVGs.
     reference_files = [path for path in OUTPUT.rglob('*') if path.is_file() and path.suffix in {'.json', '.js', '.html', '.css'}]
     reference_files += list((ROOT / 'docs/free-fire-patches').glob('*.md'))
@@ -204,6 +356,7 @@ def main():
     for name in ['assets/modes', 'assets/mode-official', 'assets/core-updates']:
         if (ROOT / name).exists():
             shutil.copytree(ROOT / name, OUTPUT / name, ignore=unused_covers)
+    optimize_published_update_covers()
     shutil.copytree(ROOT / 'assets/tactical-items', OUTPUT / 'assets/tactical-items')
     if (ROOT / 'assets/weapon-skins').exists():
         shutil.copytree(ROOT / 'assets/weapon-skins', OUTPUT / 'assets/weapon-skins', ignore=unused_covers)
@@ -212,6 +365,8 @@ def main():
     shutil.copytree(ROOT / 'assets/ff-patches', OUTPUT / 'assets/ff-patches')
     shutil.copytree(ROOT / 'docs/free-fire-patches', OUTPUT / 'docs/free-fire-patches')
     (OUTPUT / '.nojekyll').touch()
+    if site_url:
+        write_site_metadata(site_url)
     assert not (OUTPUT / 'data/research.json').exists()
     assert not (OUTPUT / 'local-only').exists()
     assert not (OUTPUT / 'data/ugc/catalog-cache').exists()
@@ -222,4 +377,6 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--site-url', help='Canonical HTTPS directory URL for a custom deployment')
+    main(parser.parse_args().site_url)

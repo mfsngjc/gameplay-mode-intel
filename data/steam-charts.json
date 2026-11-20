@@ -1,0 +1,4137 @@
+{
+  "schemaVersion": 1,
+  "boards": {
+    "players": {
+      "source": "https://store.steampowered.com/charts/mostplayed",
+      "checkedAt": "2026-11-17T05:16:17+00:00",
+      "entries": [
+        {
+          "rank": 1,
+          "type": "app",
+          "id": 730,
+          "name": "Counter-Strike 2",
+          "players": 433256,
+          "peak": 1089270,
+          "releaseDate": "2012-08-21"
+        },
+        {
+          "rank": 2,
+          "type": "app",
+          "id": 570,
+          "name": "Dota 2",
+          "players": 387885,
+          "peak": 774257,
+          "releaseDate": "2013-07-09"
+        },
+        {
+          "rank": 3,
+          "type": "app",
+          "id": 4262460,
+          "name": "ROB RUN",
+          "players": 245625,
+          "peak": 527477,
+          "releaseDate": "2026-11-04"
+        },
+        {
+          "rank": 4,
+          "type": "app",
+          "id": 578080,
+          "name": "PUBG: BATTLEGROUNDS",
+          "players": 192797,
+          "peak": 707459,
+          "releaseDate": "2017-12-21"
+        },
+        {
+          "rank": 5,
+          "type": "app",
+          "id": 3419430,
+          "name": "Bongo Cat",
+          "players": 182000,
+          "peak": 207640,
+          "releaseDate": "2025-03-05"
+        },
+        {
+          "rank": 6,
+          "type": "app",
+          "id": 1422450,
+          "name": "Deadlock",
+          "players": 153478,
+          "peak": 195219,
+          "releaseUpcoming": true
+        },
+        {
+          "rank": 7,
+          "type": "app",
+          "id": 3393110,
+          "name": "AION 2",
+          "players": 106312,
+          "peak": 156636,
+          "releaseDate": "2026-10-05"
+        },
+        {
+          "rank": 8,
+          "type": "app",
+          "id": 2868840,
+          "name": "Slay the Spire 2",
+          "players": 106053,
+          "peak": 164877,
+          "releaseDate": "2026-03-05"
+        },
+        {
+          "rank": 9,
+          "type": "app",
+          "id": 1938090,
+          "name": "Call of Duty®",
+          "players": 98969,
+          "peak": 127539,
+          "releaseDate": "2022-10-27"
+        },
+        {
+          "rank": 10,
+          "type": "app",
+          "id": 4115450,
+          "name": "Phantom Blade Zero",
+          "players": 96407,
+          "peak": 280692,
+          "releaseDate": "2026-10-28"
+        },
+        {
+          "rank": 11,
+          "type": "app",
+          "id": 440,
+          "name": "Team Fortress 2",
+          "players": 84186,
+          "peak": 104779,
+          "releaseDate": "2007-10-10"
+        },
+        {
+          "rank": 12,
+          "type": "app",
+          "id": 1172470,
+          "name": "Apex Legends™",
+          "players": 71616,
+          "peak": 229343,
+          "releaseDate": "2020-11-04"
+        },
+        {
+          "rank": 13,
+          "type": "app",
+          "id": 431960,
+          "name": "Wallpaper Engine",
+          "players": 68153,
+          "peak": 109790,
+          "releaseDate": "2018-11-16"
+        },
+        {
+          "rank": 14,
+          "type": "app",
+          "id": 4348910,
+          "name": "Probably Stolen - Cyberpunk Shopkeeper Sim",
+          "players": 64029,
+          "peak": 121248,
+          "releaseDate": "2026-10-28"
+        },
+        {
+          "rank": 15,
+          "type": "app",
+          "id": 1091500,
+          "name": "Cyberpunk 2077",
+          "players": 58767,
+          "peak": 81146,
+          "releaseDate": "2020-12-09"
+        },
+        {
+          "rank": 16,
+          "type": "app",
+          "id": 3678970,
+          "name": "TBH: Task Bar Hero",
+          "players": 54819,
+          "peak": 66710,
+          "releaseDate": "2026-05-27"
+        },
+        {
+          "rank": 17,
+          "type": "app",
+          "id": 230410,
+          "name": "Warframe",
+          "players": 53007,
+          "peak": 71411,
+          "releaseDate": "2013-03-25"
+        },
+        {
+          "rank": 18,
+          "type": "app",
+          "id": 2767030,
+          "name": "Marvel Rivals",
+          "players": 51773,
+          "peak": 66301,
+          "releaseDate": "2024-12-05"
+        },
+        {
+          "rank": 19,
+          "type": "app",
+          "id": 1867240,
+          "name": "WARDOGS",
+          "players": 51643,
+          "peak": 100267,
+          "releaseDate": "2026-09-10"
+        },
+        {
+          "rank": 20,
+          "type": "app",
+          "id": 252490,
+          "name": "Rust",
+          "players": 50644,
+          "peak": 103211,
+          "releaseDate": "2018-02-08"
+        },
+        {
+          "rank": 21,
+          "type": "app",
+          "id": 2507950,
+          "name": "Delta Force",
+          "players": 44679,
+          "peak": 107172,
+          "releaseDate": "2024-12-04"
+        },
+        {
+          "rank": 22,
+          "type": "app",
+          "id": 359550,
+          "name": "Tom Clancy's Rainbow Six Siege",
+          "players": 44293,
+          "peak": 64673,
+          "releaseDate": "2015-12-01"
+        },
+        {
+          "rank": 23,
+          "type": "app",
+          "id": 438100,
+          "name": "VRChat",
+          "players": 43839,
+          "peak": 55310,
+          "releaseDate": "2017-02-01"
+        },
+        {
+          "rank": 24,
+          "type": "app",
+          "id": 238960,
+          "name": "Path of Exile",
+          "players": 42299,
+          "peak": 98848,
+          "releaseDate": "2013-10-23"
+        },
+        {
+          "rank": 25,
+          "type": "app",
+          "id": 413150,
+          "name": "Stardew Valley",
+          "players": 39124,
+          "peak": 73858,
+          "releaseDate": "2016-02-26"
+        },
+        {
+          "rank": 26,
+          "type": "app",
+          "id": 1973530,
+          "name": "Limbus Company",
+          "players": 37999,
+          "peak": 52517,
+          "releaseDate": "2023-02-26"
+        },
+        {
+          "rank": 27,
+          "type": "app",
+          "id": 2357570,
+          "name": "Overwatch®",
+          "players": 35947,
+          "peak": 44953,
+          "releaseDate": "2023-08-10"
+        },
+        {
+          "rank": 28,
+          "type": "app",
+          "id": 3240220,
+          "name": "Grand Theft Auto V Enhanced",
+          "players": 35745,
+          "peak": 66446,
+          "releaseDate": "2025-03-04"
+        },
+        {
+          "rank": 29,
+          "type": "app",
+          "id": 236390,
+          "name": "War Thunder",
+          "players": 34773,
+          "peak": 73283,
+          "releaseDate": "2013-08-15"
+        },
+        {
+          "rank": 30,
+          "type": "app",
+          "id": 5052450,
+          "name": "Desktop Wallet Heroes",
+          "players": 31995,
+          "peak": 37817,
+          "releaseDate": "2026-11-04"
+        },
+        {
+          "rank": 31,
+          "type": "app",
+          "id": 381210,
+          "name": "Dead by Daylight",
+          "players": 29596,
+          "peak": 47307,
+          "releaseDate": "2016-06-14"
+        },
+        {
+          "rank": 32,
+          "type": "app",
+          "id": 108600,
+          "name": "Project Zomboid",
+          "players": 28887,
+          "peak": 41211,
+          "releaseDate": "2013-11-08"
+        },
+        {
+          "rank": 33,
+          "type": "app",
+          "id": 1366800,
+          "name": "Crosshair X",
+          "players": 28797,
+          "peak": 46584,
+          "releaseDate": "2020-08-17"
+        },
+        {
+          "rank": 34,
+          "type": "app",
+          "id": 1808500,
+          "name": "ARC Raiders",
+          "players": 26662,
+          "peak": 47382,
+          "releaseDate": "2025-10-30"
+        },
+        {
+          "rank": 35,
+          "type": "app",
+          "id": 1086940,
+          "name": "Baldur's Gate 3",
+          "players": 25731,
+          "peak": 39866,
+          "releaseDate": "2023-08-03"
+        },
+        {
+          "rank": 36,
+          "type": "app",
+          "id": 250900,
+          "name": "The Binding of Isaac: Rebirth",
+          "players": 25729,
+          "peak": 42311,
+          "releaseDate": "2014-11-04"
+        },
+        {
+          "rank": 37,
+          "type": "app",
+          "id": 271590,
+          "name": "Grand Theft Auto V Legacy",
+          "players": 24943,
+          "peak": 62606,
+          "releaseDate": "2015-04-13"
+        },
+        {
+          "rank": 38,
+          "type": "app",
+          "id": 892970,
+          "name": "Valheim",
+          "players": 24701,
+          "peak": 51300,
+          "releaseDate": "2026-09-09"
+        },
+        {
+          "rank": 39,
+          "type": "app",
+          "id": 489830,
+          "name": "The Elder Scrolls V: Skyrim Special Edition",
+          "players": 24161,
+          "peak": 36791,
+          "releaseDate": "2016-10-27"
+        },
+        {
+          "rank": 40,
+          "type": "app",
+          "id": 550,
+          "name": "Left 4 Dead 2",
+          "players": 23822,
+          "peak": 29237,
+          "releaseDate": "2009-11-16"
+        },
+        {
+          "rank": 41,
+          "type": "app",
+          "id": 322170,
+          "name": "Geometry Dash",
+          "players": 23416,
+          "peak": 48453,
+          "releaseDate": "2014-12-22"
+        },
+        {
+          "rank": 42,
+          "type": "app",
+          "id": 216150,
+          "name": "MapleStory",
+          "players": 22924,
+          "peak": 23940,
+          "releaseDate": "2012-08-09"
+        },
+        {
+          "rank": 43,
+          "type": "app",
+          "id": 294100,
+          "name": "RimWorld",
+          "players": 21936,
+          "peak": 31302,
+          "releaseDate": "2018-10-17"
+        },
+        {
+          "rank": 44,
+          "type": "app",
+          "id": 4530370,
+          "name": "Football Manager 27",
+          "players": 21846,
+          "peak": 73875,
+          "releaseDate": "2026-11-10"
+        },
+        {
+          "rank": 45,
+          "type": "app",
+          "id": 394360,
+          "name": "Hearts of Iron IV",
+          "players": 21165,
+          "peak": 41245,
+          "releaseDate": "2016-06-06"
+        },
+        {
+          "rank": 46,
+          "type": "app",
+          "id": 5135440,
+          "name": "DPS: Desktop Pension Squad",
+          "players": 21135,
+          "peak": 23785,
+          "releaseDate": "2026-11-11"
+        },
+        {
+          "rank": 47,
+          "type": "app",
+          "id": 4623570,
+          "name": "Deskrawl: Idle ARPG",
+          "players": 20823,
+          "peak": 21483,
+          "releaseDate": "2026-09-28"
+        },
+        {
+          "rank": 48,
+          "type": "app",
+          "id": 289070,
+          "name": "Sid Meier’s Civilization® VI",
+          "players": 20140,
+          "peak": 32825,
+          "releaseDate": "2016-10-20"
+        },
+        {
+          "rank": 49,
+          "type": "app",
+          "id": 1623730,
+          "name": "Palworld",
+          "players": 19708,
+          "peak": 33440,
+          "releaseDate": "2026-07-09"
+        },
+        {
+          "rank": 50,
+          "type": "app",
+          "id": 1203620,
+          "name": "Enshrouded",
+          "players": 19691,
+          "peak": 44279,
+          "releaseDate": "2026-10-15"
+        }
+      ]
+    },
+    "sellers": {
+      "source": "https://store.steampowered.com/charts/topselling/global",
+      "checkedAt": "2026-11-16T16:44:14+00:00",
+      "entries": [
+        {
+          "rank": 1,
+          "type": "app",
+          "id": 730,
+          "name": "Counter-Strike 2",
+          "releaseDate": "2012-08-21"
+        },
+        {
+          "rank": 2,
+          "type": "app",
+          "id": 2406770,
+          "name": "Bodycam",
+          "releaseDate": "2024-06-07"
+        },
+        {
+          "rank": 3,
+          "type": "app",
+          "id": 570,
+          "name": "Dota 2",
+          "releaseDate": "2013-07-09"
+        },
+        {
+          "rank": 4,
+          "type": "app",
+          "id": 1172470,
+          "name": "Apex Legends™",
+          "releaseDate": "2020-11-04"
+        },
+        {
+          "rank": 5,
+          "type": "app",
+          "id": 227300,
+          "name": "Euro Truck Simulator 2",
+          "releaseDate": "2012-10-12"
+        },
+        {
+          "rank": 6,
+          "type": "app",
+          "id": 4435490,
+          "name": "Call of Duty®: Modern Warfare® 4",
+          "releaseDate": "2026-10-22"
+        },
+        {
+          "rank": 7,
+          "type": "app",
+          "id": 3393110,
+          "name": "AION 2",
+          "releaseDate": "2026-10-05"
+        },
+        {
+          "rank": 8,
+          "type": "app",
+          "id": 3321460,
+          "name": "Crimson Desert Enhanced",
+          "releaseDate": "2026-03-19"
+        },
+        {
+          "rank": 9,
+          "type": "app",
+          "id": 4115450,
+          "name": "Phantom Blade Zero",
+          "releaseDate": "2026-10-28"
+        },
+        {
+          "rank": 10,
+          "type": "app",
+          "id": 4262460,
+          "name": "ROB RUN",
+          "releaseDate": "2026-11-04"
+        },
+        {
+          "rank": 11,
+          "type": "app",
+          "id": 578080,
+          "name": "PUBG: BATTLEGROUNDS",
+          "releaseDate": "2017-12-21"
+        },
+        {
+          "rank": 12,
+          "type": "app",
+          "id": 4530370,
+          "name": "Football Manager 27",
+          "releaseDate": "2026-11-10"
+        },
+        {
+          "rank": 13,
+          "type": "app",
+          "id": 2767030,
+          "name": "Marvel Rivals",
+          "releaseDate": "2024-12-05"
+        },
+        {
+          "rank": 14,
+          "type": "app",
+          "id": 230410,
+          "name": "Warframe",
+          "releaseDate": "2013-03-25"
+        },
+        {
+          "rank": 15,
+          "type": "app",
+          "id": 3809270,
+          "name": "Euro Truck Simulator 2 - Coaches",
+          "releaseDate": "2026-11-12"
+        },
+        {
+          "rank": 16,
+          "type": "app",
+          "id": 5335510,
+          "name": "Moon Sweepers",
+          "releaseDate": "2026-10-23"
+        },
+        {
+          "rank": 17,
+          "type": "app",
+          "id": 3564740,
+          "name": "Where Winds Meet",
+          "releaseDate": "2025-11-14"
+        },
+        {
+          "rank": 18,
+          "type": "app",
+          "id": 2868840,
+          "name": "Slay the Spire 2",
+          "releaseDate": "2026-03-05"
+        },
+        {
+          "rank": 19,
+          "type": "app",
+          "id": 4459590,
+          "name": "Slotbound",
+          "releaseDate": "2026-11-12"
+        },
+        {
+          "rank": 20,
+          "type": "app",
+          "id": 4080220,
+          "name": "EA SPORTS FC™ 27",
+          "releaseDate": "2026-09-24"
+        },
+        {
+          "rank": 21,
+          "type": "app",
+          "id": 1962663,
+          "name": "Call of Duty®: Warzone™",
+          "releaseDate": "2022-11-16"
+        },
+        {
+          "rank": 22,
+          "type": "app",
+          "id": 4348910,
+          "name": "Probably Stolen - Cyberpunk Shopkeeper Sim",
+          "releaseDate": "2026-10-28"
+        },
+        {
+          "rank": 23,
+          "type": "app",
+          "id": 5175310,
+          "name": "Worst Class Ever",
+          "releaseDate": "2026-11-09"
+        },
+        {
+          "rank": 24,
+          "type": "app",
+          "id": 5185890,
+          "name": "Zombies Aren't Real",
+          "releaseDate": "2026-11-13"
+        },
+        {
+          "rank": 25,
+          "type": "app",
+          "id": 1973530,
+          "name": "Limbus Company",
+          "releaseDate": "2023-02-26"
+        },
+        {
+          "rank": 26,
+          "type": "app",
+          "id": 394360,
+          "name": "Hearts of Iron IV",
+          "releaseDate": "2016-06-06"
+        },
+        {
+          "rank": 27,
+          "type": "app",
+          "id": 216150,
+          "name": "MapleStory",
+          "releaseDate": "2012-08-09"
+        },
+        {
+          "rank": 28,
+          "type": "app",
+          "id": 381210,
+          "name": "Dead by Daylight",
+          "releaseDate": "2016-06-14"
+        },
+        {
+          "rank": 29,
+          "type": "app",
+          "id": 236390,
+          "name": "War Thunder",
+          "releaseDate": "2013-08-15"
+        },
+        {
+          "rank": 30,
+          "type": "app",
+          "id": 3240220,
+          "name": "Grand Theft Auto V Enhanced",
+          "releaseDate": "2025-03-04"
+        },
+        {
+          "rank": 31,
+          "type": "app",
+          "id": 1867240,
+          "name": "WARDOGS",
+          "releaseDate": "2026-09-10"
+        },
+        {
+          "rank": 32,
+          "type": "app",
+          "id": 949230,
+          "name": "Cities: Skylines II",
+          "releaseDate": "2023-10-24"
+        },
+        {
+          "rank": 33,
+          "type": "app",
+          "id": 4126040,
+          "name": "Aniimo",
+          "releaseDate": "2026-09-15"
+        },
+        {
+          "rank": 34,
+          "type": "app",
+          "id": 39210,
+          "name": "FINAL FANTASY XIV Online",
+          "releaseDate": "2014-02-18"
+        },
+        {
+          "rank": 35,
+          "type": "app",
+          "id": 2507950,
+          "name": "Delta Force",
+          "releaseDate": "2024-12-04"
+        },
+        {
+          "rank": 36,
+          "type": "app",
+          "id": 3932890,
+          "name": "Escape from Tarkov",
+          "releaseDate": "2025-11-15"
+        },
+        {
+          "rank": 37,
+          "type": "app",
+          "id": 5200620,
+          "name": "Dungeonbound",
+          "releaseDate": "2026-11-16"
+        },
+        {
+          "rank": 38,
+          "type": "app",
+          "id": 1091500,
+          "name": "Cyberpunk 2077",
+          "releaseDate": "2020-12-09"
+        },
+        {
+          "rank": 39,
+          "type": "app",
+          "id": 2584270,
+          "name": "Mortal Shell II",
+          "releaseDate": "2026-08-20"
+        },
+        {
+          "rank": 40,
+          "type": "app",
+          "id": 359550,
+          "name": "Tom Clancy's Rainbow Six Siege",
+          "releaseDate": "2015-12-01"
+        },
+        {
+          "rank": 41,
+          "type": "app",
+          "id": 1799840,
+          "name": "Queen's Domain",
+          "releaseDate": "2026-10-30"
+        },
+        {
+          "rank": 42,
+          "type": "app",
+          "id": 2694490,
+          "name": "Path of Exile 2",
+          "releaseDate": "2024-12-06"
+        },
+        {
+          "rank": 43,
+          "type": "app",
+          "id": 489830,
+          "name": "The Elder Scrolls V: Skyrim Special Edition",
+          "releaseDate": "2016-10-27"
+        },
+        {
+          "rank": 44,
+          "type": "app",
+          "id": 3796990,
+          "name": "Euro Truck Simulator 2 - Iceland",
+          "releaseDate": "2026-11-10"
+        },
+        {
+          "rank": 45,
+          "type": "app",
+          "id": 270880,
+          "name": "American Truck Simulator",
+          "releaseDate": "2016-02-02"
+        },
+        {
+          "rank": 46,
+          "type": "app",
+          "id": 2605790,
+          "name": "Deep Rock Galactic: Rogue Core",
+          "releaseDate": "2026-05-20"
+        },
+        {
+          "rank": 47,
+          "type": "app",
+          "id": 2357570,
+          "name": "Overwatch®",
+          "releaseDate": "2023-08-10"
+        },
+        {
+          "rank": 48,
+          "type": "app",
+          "id": 252490,
+          "name": "Rust",
+          "releaseDate": "2018-02-08"
+        },
+        {
+          "rank": 49,
+          "type": "app",
+          "id": 2272360,
+          "name": "Warhammer 40,000: Dawn of War IV",
+          "releaseDate": "2026-12-03",
+          "releaseUpcoming": true
+        },
+        {
+          "rank": 50,
+          "type": "app",
+          "id": 1203620,
+          "name": "Enshrouded",
+          "releaseDate": "2026-10-15"
+        }
+      ]
+    },
+    "latest": {
+      "source": "https://store.steampowered.com/search/?category1=998&sort_by=Released_DESC",
+      "checkedAt": "2026-11-15",
+      "entries": [
+        {
+          "rank": 1,
+          "type": "app",
+          "id": 5261050,
+          "name": "Fox Spirit Sweethearts: Complete Edition",
+          "releaseDate": "2026-11-15"
+        },
+        {
+          "rank": 2,
+          "type": "app",
+          "id": 5298050,
+          "name": "Scrapline",
+          "releaseDate": "2026-11-15"
+        },
+        {
+          "rank": 3,
+          "type": "app",
+          "id": 3325950,
+          "name": "Red Crucible Assault",
+          "releaseDate": "2026-11-15"
+        },
+        {
+          "rank": 4,
+          "type": "app",
+          "id": 2402620,
+          "name": "World Guesser",
+          "releaseDate": "2026-11-15"
+        },
+        {
+          "rank": 5,
+          "type": "app",
+          "id": 5052180,
+          "name": "Hanafuda",
+          "releaseDate": "2026-11-14"
+        },
+        {
+          "rank": 6,
+          "type": "app",
+          "id": 5106080,
+          "name": "Aetherlob",
+          "releaseDate": "2026-11-14"
+        },
+        {
+          "rank": 7,
+          "type": "app",
+          "id": 5451060,
+          "name": "Crowns & Colossi",
+          "releaseDate": "2026-11-14"
+        },
+        {
+          "rank": 8,
+          "type": "app",
+          "id": 5450860,
+          "name": "How Many Tickets Does It Take To Win The Lottery?",
+          "releaseDate": "2026-11-14"
+        },
+        {
+          "rank": 9,
+          "type": "app",
+          "id": 5478700,
+          "name": "Online Poly",
+          "releaseDate": "2026-11-14"
+        },
+        {
+          "rank": 10,
+          "type": "app",
+          "id": 4673230,
+          "name": "Breeze Of Adventure",
+          "releaseDate": "2026-11-14"
+        },
+        {
+          "rank": 11,
+          "type": "app",
+          "id": 5244010,
+          "name": "Velvet Rope: Nightlife Manager",
+          "releaseDate": "2026-11-14"
+        },
+        {
+          "rank": 12,
+          "type": "app",
+          "id": 4938490,
+          "name": "Black Pyramid",
+          "releaseDate": "2026-11-14"
+        },
+        {
+          "rank": 13,
+          "type": "app",
+          "id": 5445850,
+          "name": "Commander's Dilemma",
+          "releaseDate": "2026-11-14"
+        },
+        {
+          "rank": 14,
+          "type": "app",
+          "id": 5471970,
+          "name": "Rubber Stamp Legend",
+          "releaseDate": "2026-11-14"
+        },
+        {
+          "rank": 15,
+          "type": "app",
+          "id": 5354240,
+          "name": "THE BACKLOG",
+          "releaseDate": "2026-11-14"
+        },
+        {
+          "rank": 16,
+          "type": "app",
+          "id": 4736370,
+          "name": "UnderWorldMMORPG",
+          "releaseDate": "2026-11-14"
+        },
+        {
+          "rank": 17,
+          "type": "app",
+          "id": 5361340,
+          "name": "SPH: Neon Geometry Survivor",
+          "releaseDate": "2026-11-14"
+        },
+        {
+          "rank": 18,
+          "type": "app",
+          "id": 5455640,
+          "name": "RSP Ultimate Battle",
+          "releaseDate": "2026-11-14"
+        },
+        {
+          "rank": 19,
+          "type": "app",
+          "id": 5293350,
+          "name": "Hockey Coach Dynasty",
+          "releaseDate": "2026-11-14"
+        },
+        {
+          "rank": 20,
+          "type": "app",
+          "id": 4212960,
+          "name": "Tisuland",
+          "releaseDate": "2026-11-14"
+        }
+      ]
+    },
+    "trending": {
+      "source": "https://store.steampowered.com/search/?filter=popularnew",
+      "checkedAt": "2026-11-16T16:32:01+00:00",
+      "entries": [
+        {
+          "rank": 1,
+          "type": "app",
+          "id": 2406770,
+          "name": "Bodycam",
+          "releaseDate": "2024-06-07"
+        },
+        {
+          "rank": 2,
+          "type": "app",
+          "id": 4435490,
+          "name": "Call of Duty®: Modern Warfare® 4",
+          "releaseDate": "2026-10-22"
+        },
+        {
+          "rank": 3,
+          "type": "app",
+          "id": 230410,
+          "name": "Warframe",
+          "releaseDate": "2013-03-25"
+        },
+        {
+          "rank": 4,
+          "type": "app",
+          "id": 2767030,
+          "name": "Marvel Rivals",
+          "releaseDate": "2024-12-05"
+        },
+        {
+          "rank": 5,
+          "type": "app",
+          "id": 4115450,
+          "name": "Phantom Blade Zero",
+          "releaseDate": "2026-10-28"
+        },
+        {
+          "rank": 6,
+          "type": "app",
+          "id": 3393110,
+          "name": "AION 2",
+          "releaseDate": "2026-10-05"
+        },
+        {
+          "rank": 7,
+          "type": "app",
+          "id": 1172470,
+          "name": "Apex Legends™",
+          "releaseDate": "2020-11-04"
+        },
+        {
+          "rank": 8,
+          "type": "app",
+          "id": 3321460,
+          "name": "Crimson Desert Enhanced",
+          "releaseDate": "2026-03-19"
+        },
+        {
+          "rank": 9,
+          "type": "app",
+          "id": 1091500,
+          "name": "Cyberpunk 2077",
+          "releaseDate": "2020-12-09"
+        },
+        {
+          "rank": 10,
+          "type": "app",
+          "id": 216150,
+          "name": "MapleStory",
+          "releaseDate": "2012-08-09"
+        },
+        {
+          "rank": 11,
+          "type": "app",
+          "id": 4262460,
+          "name": "ROB RUN",
+          "releaseDate": "2026-11-04"
+        },
+        {
+          "rank": 12,
+          "type": "app",
+          "id": 570,
+          "name": "Dota 2",
+          "releaseDate": "2013-07-09"
+        },
+        {
+          "rank": 13,
+          "type": "app",
+          "id": 5335510,
+          "name": "Moon Sweepers",
+          "releaseDate": "2026-10-23"
+        },
+        {
+          "rank": 14,
+          "type": "app",
+          "id": 39210,
+          "name": "FINAL FANTASY XIV Online",
+          "releaseDate": "2014-02-18"
+        },
+        {
+          "rank": 15,
+          "type": "app",
+          "id": 4126040,
+          "name": "Aniimo",
+          "releaseDate": "2026-09-15"
+        },
+        {
+          "rank": 16,
+          "type": "app",
+          "id": 236390,
+          "name": "War Thunder",
+          "releaseDate": "2013-08-15"
+        },
+        {
+          "rank": 17,
+          "type": "app",
+          "id": 359550,
+          "name": "Tom Clancy's Rainbow Six Siege",
+          "releaseDate": "2015-12-01"
+        },
+        {
+          "rank": 18,
+          "type": "app",
+          "id": 381210,
+          "name": "Dead by Daylight",
+          "releaseDate": "2016-06-14"
+        },
+        {
+          "rank": 19,
+          "type": "app",
+          "id": 3564740,
+          "name": "Where Winds Meet",
+          "releaseDate": "2025-11-14"
+        },
+        {
+          "rank": 20,
+          "type": "app",
+          "id": 3240220,
+          "name": "Grand Theft Auto V Enhanced",
+          "releaseDate": "2025-03-04"
+        },
+        {
+          "rank": 21,
+          "type": "app",
+          "id": 4348910,
+          "name": "Probably Stolen - Cyberpunk Shopkeeper Sim",
+          "releaseDate": "2026-10-28"
+        },
+        {
+          "rank": 22,
+          "type": "app",
+          "id": 270880,
+          "name": "American Truck Simulator",
+          "releaseDate": "2016-02-02"
+        },
+        {
+          "rank": 23,
+          "type": "app",
+          "id": 1973530,
+          "name": "Limbus Company",
+          "releaseDate": "2023-02-26"
+        },
+        {
+          "rank": 24,
+          "type": "app",
+          "id": 1203620,
+          "name": "Enshrouded",
+          "releaseDate": "2026-10-15"
+        },
+        {
+          "rank": 25,
+          "type": "app",
+          "id": 3513350,
+          "name": "Wuthering Waves",
+          "releaseDate": "2025-04-28"
+        },
+        {
+          "rank": 26,
+          "type": "app",
+          "id": 1799840,
+          "name": "Queen's Domain",
+          "releaseDate": "2026-10-30"
+        },
+        {
+          "rank": 27,
+          "type": "app",
+          "id": 2868840,
+          "name": "Slay the Spire 2",
+          "releaseDate": "2026-03-05"
+        },
+        {
+          "rank": 28,
+          "type": "app",
+          "id": 2694490,
+          "name": "Path of Exile 2",
+          "releaseDate": "2024-12-06"
+        },
+        {
+          "rank": 29,
+          "type": "app",
+          "id": 252490,
+          "name": "Rust",
+          "releaseDate": "2018-02-08"
+        },
+        {
+          "rank": 30,
+          "type": "app",
+          "id": 489830,
+          "name": "The Elder Scrolls V: Skyrim Special Edition",
+          "releaseDate": "2016-10-27"
+        },
+        {
+          "rank": 31,
+          "type": "app",
+          "id": 553850,
+          "name": "HELLDIVERS™ 2",
+          "releaseDate": "2024-02-08"
+        },
+        {
+          "rank": 32,
+          "type": "app",
+          "id": 4019220,
+          "name": "Dressmaker",
+          "releaseDate": "2026-09-21"
+        },
+        {
+          "rank": 33,
+          "type": "app",
+          "id": 394360,
+          "name": "Hearts of Iron IV",
+          "releaseDate": "2016-06-06"
+        },
+        {
+          "rank": 34,
+          "type": "app",
+          "id": 2141910,
+          "name": "Magic: The Gathering Arena",
+          "releaseDate": "2023-05-23"
+        },
+        {
+          "rank": 35,
+          "type": "app",
+          "id": 1285190,
+          "name": "Borderlands 4",
+          "releaseDate": "2025-09-11"
+        },
+        {
+          "rank": 36,
+          "type": "app",
+          "id": 3259780,
+          "name": "FINAL FANTASY RESONANCE",
+          "releaseDate": "2026-10-22"
+        },
+        {
+          "rank": 37,
+          "type": "app",
+          "id": 1086940,
+          "name": "Baldur's Gate 3",
+          "releaseDate": "2023-08-03"
+        },
+        {
+          "rank": 38,
+          "type": "app",
+          "id": 306130,
+          "name": "The Elder Scrolls® Online",
+          "releaseDate": "2017-05-22"
+        },
+        {
+          "rank": 39,
+          "type": "app",
+          "id": 1245620,
+          "name": "ELDEN RING",
+          "releaseDate": "2022-02-24"
+        },
+        {
+          "rank": 40,
+          "type": "app",
+          "id": 1151340,
+          "name": "Fallout 76",
+          "releaseDate": "2020-04-14"
+        },
+        {
+          "rank": 41,
+          "type": "app",
+          "id": 4165890,
+          "name": "Steam Frame",
+          "releaseDate": "2026-09-14"
+        },
+        {
+          "rank": 42,
+          "type": "app",
+          "id": 1085660,
+          "name": "Destiny 2",
+          "releaseDate": "2019-10-01"
+        },
+        {
+          "rank": 43,
+          "type": "app",
+          "id": 4576490,
+          "name": "Casualties: Unknown",
+          "releaseDate": "2026-11-09"
+        },
+        {
+          "rank": 44,
+          "type": "app",
+          "id": 2288340,
+          "name": "ACE COMBAT 8: WINGS OF THEVE",
+          "releaseDate": "2026-10-01"
+        },
+        {
+          "rank": 45,
+          "type": "app",
+          "id": 4078430,
+          "name": "STAR WARS: Galactic Racer™",
+          "releaseDate": "2026-10-06"
+        },
+        {
+          "rank": 46,
+          "type": "app",
+          "id": 266410,
+          "name": "iRacing",
+          "releaseDate": "2015-01-12"
+        },
+        {
+          "rank": 47,
+          "type": "app",
+          "id": 1675200,
+          "name": "Steam Deck",
+          "releaseDate": "2025-01-17"
+        },
+        {
+          "rank": 48,
+          "type": "app",
+          "id": 2139460,
+          "name": "Once Human",
+          "releaseDate": "2024-07-09"
+        },
+        {
+          "rank": 49,
+          "type": "app",
+          "id": 440,
+          "name": "Team Fortress 2",
+          "releaseDate": "2007-10-10"
+        },
+        {
+          "rank": 50,
+          "type": "app",
+          "id": 949230,
+          "name": "Cities: Skylines II",
+          "releaseDate": "2023-10-24"
+        }
+      ]
+    }
+  },
+  "releaseStore": {
+    "10": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥35.00",
+      "review": {
+        "total": 170624,
+        "percent": 96,
+        "label": "好评如潮"
+      }
+    },
+    "20": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥19.00",
+      "review": {
+        "total": 7093,
+        "percent": 86,
+        "label": "特别好评"
+      }
+    },
+    "50": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥19.00",
+      "review": {
+        "total": 25746,
+        "percent": 95,
+        "label": "好评如潮"
+      }
+    },
+    "70": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥35.00",
+      "review": {
+        "total": 118647,
+        "percent": 96,
+        "label": "好评如潮"
+      }
+    },
+    "80": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥35.00",
+      "review": {
+        "total": 21575,
+        "percent": 90,
+        "label": "特别好评"
+      }
+    },
+    "130": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥19.00",
+      "review": {
+        "total": 18888,
+        "percent": 92,
+        "label": "特别好评"
+      }
+    },
+    "220": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥35.00",
+      "review": {
+        "total": 205311,
+        "percent": 97,
+        "label": "好评如潮"
+      }
+    },
+    "240": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥35.00",
+      "review": {
+        "total": 136194,
+        "percent": 96,
+        "label": "好评如潮"
+      }
+    },
+    "300": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥35.00",
+      "review": {
+        "total": 16075,
+        "percent": 90,
+        "label": "特别好评"
+      }
+    },
+    "320": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "review": {
+        "total": 10292,
+        "percent": 90,
+        "label": "特别好评"
+      }
+    },
+    "440": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "免费",
+      "review": {
+        "total": 1257999,
+        "percent": 91,
+        "label": "特别好评"
+      }
+    },
+    "500": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥35.00",
+      "review": {
+        "total": 58797,
+        "percent": 96,
+        "label": "好评如潮"
+      }
+    },
+    "550": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥35.00",
+      "review": {
+        "total": 826131,
+        "percent": 97,
+        "label": "好评如潮"
+      }
+    },
+    "570": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "免费",
+      "review": {
+        "total": 2817645,
+        "percent": 80,
+        "label": "特别好评"
+      }
+    },
+    "730": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "免费",
+      "review": {
+        "total": 9991732,
+        "percent": 85,
+        "label": "特别好评"
+      }
+    },
+    "1250": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥68.00",
+      "review": {
+        "total": 39968,
+        "percent": 95,
+        "label": "好评如潮"
+      }
+    },
+    "2280": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥49.99",
+      "review": {
+        "total": 25762,
+        "percent": 96,
+        "label": "好评如潮"
+      }
+    },
+    "2310": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥41.00",
+      "review": {
+        "total": 14133,
+        "percent": 96,
+        "label": "好评如潮"
+      }
+    },
+    "2320": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥49.00",
+      "review": {
+        "total": 8602,
+        "percent": 95,
+        "label": "好评如潮"
+      }
+    },
+    "2620": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥98.00",
+      "review": {
+        "total": 7438,
+        "percent": 94,
+        "label": "特别好评"
+      }
+    },
+    "2630": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥98.00",
+      "review": {
+        "total": 9320,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "6000": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥42.00",
+      "review": {
+        "total": 14761,
+        "percent": 95,
+        "label": "好评如潮"
+      }
+    },
+    "7940": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥98.00",
+      "review": {
+        "total": 22348,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "8870": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥95.00",
+      "review": {
+        "total": 110061,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "9050": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "review": {
+        "total": 8519,
+        "percent": 89,
+        "label": "特别好评"
+      }
+    },
+    "9200": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥41.00",
+      "review": {
+        "total": 12272,
+        "percent": 76,
+        "label": "多半好评"
+      }
+    },
+    "10090": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥98.00",
+      "review": {
+        "total": 46033,
+        "percent": 92,
+        "label": "特别好评"
+      }
+    },
+    "10180": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "review": {
+        "total": 36081,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "13520": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥48.00",
+      "review": {
+        "total": 11236,
+        "percent": 81,
+        "label": "特别好评"
+      }
+    },
+    "16450": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥98.00",
+      "review": {
+        "total": 5695,
+        "percent": 82,
+        "label": "特别好评"
+      }
+    },
+    "16900": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥72.00",
+      "review": {
+        "total": 22585,
+        "percent": 83,
+        "label": "特别好评"
+      }
+    },
+    "19900": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥48.00",
+      "review": {
+        "total": 17593,
+        "percent": 75,
+        "label": "多半好评"
+      }
+    },
+    "21090": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥68.00",
+      "review": {
+        "total": 14232,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "21100": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥128.00",
+      "review": {
+        "total": 7464,
+        "percent": 69,
+        "label": "褒贬不一"
+      }
+    },
+    "24240": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥35.00",
+      "review": {
+        "total": 21947,
+        "percent": 92,
+        "label": "特别好评"
+      }
+    },
+    "24840": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "review": {
+        "total": 5083,
+        "percent": 81,
+        "label": "特别好评"
+      }
+    },
+    "35450": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥6.80",
+      "review": {
+        "total": 24922,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "39210": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "review": {
+        "total": 79124,
+        "percent": 86,
+        "label": "特别好评"
+      }
+    },
+    "42680": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥198.00",
+      "review": {
+        "total": 15745,
+        "percent": 90,
+        "label": "特别好评"
+      }
+    },
+    "42700": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥198.00",
+      "review": {
+        "total": 22434,
+        "percent": 91,
+        "label": "特别好评"
+      }
+    },
+    "47790": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥99.00",
+      "review": {
+        "total": 7118,
+        "percent": 82,
+        "label": "特别好评"
+      }
+    },
+    "49520": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥64.00",
+      "review": {
+        "total": 211040,
+        "percent": 89,
+        "label": "特别好评"
+      }
+    },
+    "107410": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥139.00",
+      "review": {
+        "total": 229687,
+        "percent": 90,
+        "label": "特别好评"
+      }
+    },
+    "108600": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥93.00",
+      "review": {
+        "total": 374634,
+        "percent": 94,
+        "label": "特别好评"
+      }
+    },
+    "201810": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥83.00",
+      "review": {
+        "total": 46964,
+        "percent": 91,
+        "label": "特别好评"
+      }
+    },
+    "202970": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "review": {
+        "total": 23416,
+        "percent": 86,
+        "label": "特别好评"
+      }
+    },
+    "204100": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥99.00",
+      "review": {
+        "total": 55887,
+        "percent": 86,
+        "label": "特别好评"
+      }
+    },
+    "204450": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥50.00",
+      "review": {
+        "total": 21118,
+        "percent": 94,
+        "label": "特别好评"
+      }
+    },
+    "209160": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥198.00",
+      "review": {
+        "total": 13108,
+        "percent": 66,
+        "label": "褒贬不一"
+      }
+    },
+    "209650": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥198.00",
+      "review": {
+        "total": 11179,
+        "percent": 64,
+        "label": "褒贬不一"
+      }
+    },
+    "216150": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "review": {
+        "total": 16483,
+        "percent": 60,
+        "label": "褒贬不一"
+      }
+    },
+    "218620": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥35.00",
+      "review": {
+        "total": 446087,
+        "percent": 89,
+        "label": "特别好评"
+      }
+    },
+    "220240": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥98.00",
+      "review": {
+        "total": 124798,
+        "percent": 87,
+        "label": "特别好评"
+      }
+    },
+    "222880": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥50.00",
+      "review": {
+        "total": 86229,
+        "percent": 91,
+        "label": "特别好评"
+      }
+    },
+    "227300": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥23.24",
+      "review": {
+        "total": 768483,
+        "percent": 97,
+        "label": "好评如潮"
+      }
+    },
+    "230410": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "免费",
+      "review": {
+        "total": 683235,
+        "percent": 87,
+        "label": "特别好评"
+      }
+    },
+    "232090": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥88.00",
+      "review": {
+        "total": 87428,
+        "percent": 88,
+        "label": "特别好评"
+      }
+    },
+    "233130": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥108.00",
+      "review": {
+        "total": 16029,
+        "percent": 92,
+        "label": "特别好评"
+      }
+    },
+    "233270": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥75.00",
+      "review": {
+        "total": 18626,
+        "percent": 87,
+        "label": "特别好评"
+      }
+    },
+    "236390": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "免费",
+      "review": {
+        "total": 801141,
+        "percent": 71,
+        "label": "多半好评"
+      }
+    },
+    "238090": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥14.04",
+      "review": {
+        "total": 21583,
+        "percent": 82,
+        "label": "特别好评"
+      }
+    },
+    "238960": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "review": {
+        "total": 250841,
+        "percent": 89,
+        "label": "特别好评"
+      }
+    },
+    "242680": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥48.00",
+      "review": {
+        "total": 15131,
+        "percent": 96,
+        "label": "好评如潮"
+      }
+    },
+    "242860": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥49.50",
+      "review": {
+        "total": 28996,
+        "percent": 87,
+        "label": "特别好评"
+      }
+    },
+    "250900": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥48.00",
+      "review": {
+        "total": 426645,
+        "percent": 96,
+        "label": "好评如潮"
+      }
+    },
+    "252490": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥138.00",
+      "review": {
+        "total": 1181785,
+        "percent": 86,
+        "label": "特别好评"
+      }
+    },
+    "257420": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥136.00",
+      "review": {
+        "total": 15754,
+        "percent": 83,
+        "label": "特别好评"
+      }
+    },
+    "261640": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥127.00",
+      "review": {
+        "total": 31901,
+        "percent": 79,
+        "label": "多半好评"
+      }
+    },
+    "266410": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥46.40",
+      "review": {
+        "total": 6198,
+        "percent": 83,
+        "label": "特别好评"
+      }
+    },
+    "270880": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥23.24",
+      "review": {
+        "total": 168353,
+        "percent": 97,
+        "label": "好评如潮"
+      }
+    },
+    "271590": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "review": {
+        "total": 1901640,
+        "percent": 88,
+        "label": "特别好评"
+      }
+    },
+    "282440": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥41.00",
+      "review": {
+        "total": 4404,
+        "percent": 88,
+        "label": "特别好评"
+      }
+    },
+    "286690": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥98.00",
+      "review": {
+        "total": 96959,
+        "percent": 91,
+        "label": "特别好评"
+      }
+    },
+    "287390": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥98.00",
+      "review": {
+        "total": 72916,
+        "percent": 91,
+        "label": "特别好评"
+      }
+    },
+    "289070": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥220.00",
+      "review": {
+        "total": 277783,
+        "percent": 86,
+        "label": "特别好评"
+      }
+    },
+    "292000": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥108.00",
+      "review": {
+        "total": 17967,
+        "percent": 63,
+        "label": "褒贬不一"
+      }
+    },
+    "292730": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 17658,
+        "percent": 65,
+        "label": "褒贬不一"
+      }
+    },
+    "294100": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥128.00",
+      "review": {
+        "total": 211819,
+        "percent": 97,
+        "label": "好评如潮"
+      }
+    },
+    "298110": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥29.60",
+      "review": {
+        "total": 69952,
+        "percent": 84,
+        "label": "特别好评"
+      }
+    },
+    "306130": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥83.00",
+      "review": {
+        "total": 134807,
+        "percent": 82,
+        "label": "特别好评"
+      }
+    },
+    "311210": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 159150,
+        "percent": 88,
+        "label": "特别好评"
+      }
+    },
+    "311690": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥58.00",
+      "review": {
+        "total": 79728,
+        "percent": 95,
+        "label": "好评如潮"
+      }
+    },
+    "312660": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥15.80",
+      "review": {
+        "total": 54715,
+        "percent": 91,
+        "label": "特别好评"
+      }
+    },
+    "322170": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥22.00",
+      "review": {
+        "total": 615917,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "324800": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥108.00",
+      "review": {
+        "total": 24201,
+        "percent": 87,
+        "label": "特别好评"
+      }
+    },
+    "333930": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "免费",
+      "review": {
+        "total": 56772,
+        "percent": 81,
+        "label": "特别好评"
+      }
+    },
+    "350080": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥83.00",
+      "review": {
+        "total": 18377,
+        "percent": 90,
+        "label": "特别好评"
+      }
+    },
+    "359550": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "免费",
+      "review": {
+        "total": 1572566,
+        "percent": 82,
+        "label": "特别好评"
+      }
+    },
+    "362890": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥19.00",
+      "review": {
+        "total": 135633,
+        "percent": 94,
+        "label": "特别好评"
+      }
+    },
+    "365590": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥148.00",
+      "review": {
+        "total": 77472,
+        "percent": 72,
+        "label": "多半好评"
+      }
+    },
+    "379720": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥83.00",
+      "review": {
+        "total": 156206,
+        "percent": 95,
+        "label": "好评如潮"
+      }
+    },
+    "381210": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥93.75",
+      "review": {
+        "total": 689098,
+        "percent": 78,
+        "label": "多半好评"
+      }
+    },
+    "393380": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥170.00",
+      "review": {
+        "total": 182427,
+        "percent": 82,
+        "label": "特别好评"
+      }
+    },
+    "394360": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "review": {
+        "total": 264126,
+        "percent": 90,
+        "label": "特别好评"
+      }
+    },
+    "397540": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥199.00",
+      "review": {
+        "total": 128403,
+        "percent": 81,
+        "label": "特别好评"
+      }
+    },
+    "409710": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥64.00",
+      "review": {
+        "total": 53071,
+        "percent": 83,
+        "label": "特别好评"
+      }
+    },
+    "409720": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥64.00",
+      "review": {
+        "total": 24627,
+        "percent": 72,
+        "label": "多半好评"
+      }
+    },
+    "412020": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥148.00",
+      "review": {
+        "total": 119130,
+        "percent": 89,
+        "label": "特别好评"
+      }
+    },
+    "413150": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥48.00",
+      "review": {
+        "total": 905384,
+        "percent": 98,
+        "label": "好评如潮"
+      }
+    },
+    "418460": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥7.80",
+      "review": {
+        "total": 42486,
+        "percent": 87,
+        "label": "特别好评"
+      }
+    },
+    "431960": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥22.90",
+      "review": {
+        "total": 956554,
+        "percent": 97,
+        "label": "好评如潮"
+      }
+    },
+    "438100": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "免费",
+      "review": {
+        "total": 275756,
+        "percent": 73,
+        "label": "多半好评"
+      }
+    },
+    "447820": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥50.00",
+      "review": {
+        "total": 17507,
+        "percent": 83,
+        "label": "特别好评"
+      }
+    },
+    "460930": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥41.60",
+      "review": {
+        "total": 101373,
+        "percent": 78,
+        "label": "多半好评"
+      }
+    },
+    "476600": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 34011,
+        "percent": 71,
+        "label": "多半好评"
+      }
+    },
+    "489830": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥33.00",
+      "review": {
+        "total": 224324,
+        "percent": 94,
+        "label": "特别好评"
+      }
+    },
+    "493520": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥116.00",
+      "review": {
+        "total": 46495,
+        "percent": 86,
+        "label": "特别好评"
+      }
+    },
+    "501590": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥11.60",
+      "review": {
+        "total": 7971,
+        "percent": 89,
+        "label": "特别好评"
+      }
+    },
+    "519860": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥76.00",
+      "review": {
+        "total": 22205,
+        "percent": 97,
+        "label": "好评如潮"
+      }
+    },
+    "528230": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥70.00",
+      "review": {
+        "total": 10160,
+        "percent": 94,
+        "label": "特别好评"
+      }
+    },
+    "546560": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥208.00",
+      "review": {
+        "total": 93781,
+        "percent": 98,
+        "label": "好评如潮"
+      }
+    },
+    "548430": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥108.00",
+      "review": {
+        "total": 304647,
+        "percent": 97,
+        "label": "好评如潮"
+      }
+    },
+    "548570": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥165.00",
+      "review": {
+        "total": 14046,
+        "percent": 64,
+        "label": "褒贬不一"
+      }
+    },
+    "550650": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "免费",
+      "review": {
+        "total": 81157,
+        "percent": 75,
+        "label": "多半好评"
+      }
+    },
+    "552520": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 174858,
+        "percent": 81,
+        "label": "特别好评"
+      }
+    },
+    "553850": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥198.00",
+      "review": {
+        "total": 856548,
+        "percent": 74,
+        "label": "多半好评"
+      }
+    },
+    "555160": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥80.00",
+      "review": {
+        "total": 37863,
+        "percent": 88,
+        "label": "特别好评"
+      }
+    },
+    "562860": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥92.00",
+      "review": {
+        "total": 5670,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "563560": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "免费",
+      "review": {
+        "total": 23901,
+        "percent": 94,
+        "label": "特别好评"
+      }
+    },
+    "578080": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "免费",
+      "review": {
+        "total": 2746013,
+        "percent": 60,
+        "label": "褒贬不一"
+      }
+    },
+    "581320": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥129.00",
+      "review": {
+        "total": 104601,
+        "percent": 85,
+        "label": "特别好评"
+      }
+    },
+    "594650": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥128.00",
+      "review": {
+        "total": 214887,
+        "percent": 74,
+        "label": "多半好评"
+      }
+    },
+    "611500": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥54.00",
+      "review": {
+        "total": 6360,
+        "percent": 75,
+        "label": "多半好评"
+      }
+    },
+    "612880": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥165.00",
+      "review": {
+        "total": 35743,
+        "percent": 81,
+        "label": "特别好评"
+      }
+    },
+    "617290": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥140.00",
+      "review": {
+        "total": 47676,
+        "percent": 84,
+        "label": "特别好评"
+      }
+    },
+    "632360": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥80.00",
+      "review": {
+        "total": 242985,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "633460": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥76.00",
+      "review": {
+        "total": 7656,
+        "percent": 86,
+        "label": "特别好评"
+      }
+    },
+    "636480": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥68.00",
+      "review": {
+        "total": 76952,
+        "percent": 96,
+        "label": "好评如潮"
+      }
+    },
+    "671860": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥99.00",
+      "review": {
+        "total": 127694,
+        "percent": 81,
+        "label": "特别好评"
+      }
+    },
+    "673130": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥76.00",
+      "review": {
+        "total": 6690,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "686810": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥188.00",
+      "review": {
+        "total": 100173,
+        "percent": 83,
+        "label": "特别好评"
+      }
+    },
+    "692890": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥78.99",
+      "review": {
+        "total": 19344,
+        "percent": 95,
+        "label": "好评如潮"
+      }
+    },
+    "699130": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥125.00",
+      "review": {
+        "total": 25548,
+        "percent": 82,
+        "label": "特别好评"
+      }
+    },
+    "728740": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥25.60",
+      "review": {
+        "total": 3508,
+        "percent": 78,
+        "label": "多半好评"
+      }
+    },
+    "729040": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥99.00",
+      "review": {
+        "total": 18548,
+        "percent": 81,
+        "label": "特别好评"
+      }
+    },
+    "736220": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥76.00",
+      "review": {
+        "total": 19002,
+        "percent": 78,
+        "label": "多半好评"
+      }
+    },
+    "782330": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥159.00",
+      "review": {
+        "total": 188056,
+        "percent": 91,
+        "label": "特别好评"
+      }
+    },
+    "824600": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥30.40",
+      "review": {
+        "total": 5384,
+        "percent": 96,
+        "label": "好评如潮"
+      }
+    },
+    "843380": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "免费",
+      "review": {
+        "total": 44846,
+        "percent": 92,
+        "label": "特别好评"
+      }
+    },
+    "872670": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥76.00",
+      "review": {
+        "total": 12475,
+        "percent": 80,
+        "label": "特别好评"
+      }
+    },
+    "892970": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥89.00",
+      "review": {
+        "total": 477738,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "924970": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 55420,
+        "percent": 69,
+        "label": "褒贬不一"
+      }
+    },
+    "939960": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥43.60",
+      "review": {
+        "total": 32498,
+        "percent": 75,
+        "label": "多半好评"
+      }
+    },
+    "949230": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥138.60",
+      "review": {
+        "total": 65230,
+        "percent": 57,
+        "label": "褒贬不一"
+      }
+    },
+    "964800": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥108.00",
+      "review": {
+        "total": 5558,
+        "percent": 92,
+        "label": "特别好评"
+      }
+    },
+    "973580": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥98.00",
+      "review": {
+        "total": 11083,
+        "percent": 73,
+        "label": "多半好评"
+      }
+    },
+    "976730": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥269.00",
+      "review": {
+        "total": 241295,
+        "percent": 92,
+        "label": "特别好评"
+      }
+    },
+    "1029690": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥13.80",
+      "review": {
+        "total": 25632,
+        "percent": 83,
+        "label": "特别好评"
+      }
+    },
+    "1036890": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥136.00",
+      "review": {
+        "total": 4891,
+        "percent": 69,
+        "label": "褒贬不一"
+      }
+    },
+    "1056960": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥83.00",
+      "review": {
+        "total": 12845,
+        "percent": 43,
+        "label": "褒贬不一"
+      }
+    },
+    "1061910": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥109.00",
+      "review": {
+        "total": 14047,
+        "percent": 96,
+        "label": "好评如潮"
+      }
+    },
+    "1085660": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "免费",
+      "review": {
+        "total": 664886,
+        "percent": 78,
+        "label": "多半好评"
+      }
+    },
+    "1086940": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥268.00",
+      "review": {
+        "total": 761745,
+        "percent": 96,
+        "label": "好评如潮"
+      }
+    },
+    "1091500": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 907980,
+        "percent": 87,
+        "label": "特别好评"
+      }
+    },
+    "1144200": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥159.00",
+      "review": {
+        "total": 268959,
+        "percent": 79,
+        "label": "多半好评"
+      }
+    },
+    "1148590": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥20.00",
+      "review": {
+        "total": 8074,
+        "percent": 92,
+        "label": "特别好评"
+      }
+    },
+    "1151340": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥165.00",
+      "review": {
+        "total": 79074,
+        "percent": 74,
+        "label": "多半好评"
+      }
+    },
+    "1164940": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥38.50",
+      "review": {
+        "total": 16301,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "1172470": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "免费",
+      "review": {
+        "total": 1078449,
+        "percent": 67,
+        "label": "褒贬不一"
+      }
+    },
+    "1178830": {
+      "checkedAt": "2026-11-17T05:16:28+00:00",
+      "price": "¥19.20",
+      "review": {
+        "total": 36305,
+        "percent": 91,
+        "label": "特别好评"
+      }
+    },
+    "1203620": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥138.00",
+      "review": {
+        "total": 100864,
+        "percent": 86,
+        "label": "特别好评"
+      }
+    },
+    "1217060": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥68.00",
+      "review": {
+        "total": 88684,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "1227690": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥80.00",
+      "review": {
+        "total": 9222,
+        "percent": 95,
+        "label": "好评如潮"
+      }
+    },
+    "1229490": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥108.00",
+      "review": {
+        "total": 218297,
+        "percent": 97,
+        "label": "好评如潮"
+      }
+    },
+    "1237950": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥198.00",
+      "review": {
+        "total": 88302,
+        "percent": 88,
+        "label": "特别好评"
+      }
+    },
+    "1237970": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥158.00",
+      "review": {
+        "total": 258035,
+        "percent": 95,
+        "label": "好评如潮"
+      }
+    },
+    "1238810": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥228.00",
+      "review": {
+        "total": 238011,
+        "percent": 70,
+        "label": "多半好评"
+      }
+    },
+    "1238820": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥198.00",
+      "review": {
+        "total": 16692,
+        "percent": 71,
+        "label": "多半好评"
+      }
+    },
+    "1238840": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥198.00",
+      "review": {
+        "total": 203274,
+        "percent": 86,
+        "label": "特别好评"
+      }
+    },
+    "1238860": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "review": {
+        "total": 70048,
+        "percent": 84,
+        "label": "特别好评"
+      }
+    },
+    "1238880": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥198.00",
+      "review": {
+        "total": 4095,
+        "percent": 68,
+        "label": "褒贬不一"
+      }
+    },
+    "1240440": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "免费",
+      "review": {
+        "total": 181449,
+        "percent": 69,
+        "label": "褒贬不一"
+      }
+    },
+    "1245620": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 836246,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "1262240": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥158.00",
+      "review": {
+        "total": 15441,
+        "percent": 71,
+        "label": "多半好评"
+      }
+    },
+    "1268750": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥108.00",
+      "review": {
+        "total": 29808,
+        "percent": 80,
+        "label": "特别好评"
+      }
+    },
+    "1272080": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥102.00",
+      "review": {
+        "total": 50890,
+        "percent": 47,
+        "label": "褒贬不一"
+      }
+    },
+    "1282100": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥245.00",
+      "review": {
+        "total": 47197,
+        "percent": 82,
+        "label": "特别好评"
+      }
+    },
+    "1282270": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "免费",
+      "review": {
+        "total": 31139,
+        "percent": 74,
+        "label": "多半好评"
+      }
+    },
+    "1285190": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 59476,
+        "percent": 59,
+        "label": "褒贬不一"
+      }
+    },
+    "1286350": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥76.00",
+      "review": {
+        "total": 9613,
+        "percent": 91,
+        "label": "特别好评"
+      }
+    },
+    "1324780": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥36.00",
+      "review": {
+        "total": 15177,
+        "percent": 90,
+        "label": "特别好评"
+      }
+    },
+    "1328350": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥69.60",
+      "review": {
+        "total": 6503,
+        "percent": 94,
+        "label": "特别好评"
+      }
+    },
+    "1338770": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥119.00",
+      "review": {
+        "total": 12968,
+        "percent": 83,
+        "label": "特别好评"
+      }
+    },
+    "1359090": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥10.00",
+      "review": {
+        "total": 28609,
+        "percent": 78,
+        "label": "多半好评"
+      }
+    },
+    "1361210": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥188.00",
+      "review": {
+        "total": 110019,
+        "percent": 72,
+        "label": "多半好评"
+      }
+    },
+    "1366800": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥42.00",
+      "review": {
+        "total": 44314,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "1422450": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "1430190": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥136.00",
+      "review": {
+        "total": 16761,
+        "percent": 47,
+        "label": "褒贬不一"
+      }
+    },
+    "1517290": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥248.00",
+      "review": {
+        "total": 260541,
+        "percent": 49,
+        "label": "褒贬不一"
+      }
+    },
+    "1548850": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥129.00",
+      "review": {
+        "total": 13123,
+        "percent": 79,
+        "label": "多半好评"
+      }
+    },
+    "1549970": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥119.00",
+      "review": {
+        "total": 21786,
+        "percent": 80,
+        "label": "特别好评"
+      }
+    },
+    "1556790": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥41.58",
+      "review": {
+        "total": 14565,
+        "percent": 85,
+        "label": "特别好评"
+      }
+    },
+    "1592280": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥61.64",
+      "review": {
+        "total": 4911,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "1623730": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥108.00",
+      "review": {
+        "total": 418301,
+        "percent": 94,
+        "label": "特别好评"
+      }
+    },
+    "1643320": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥268.00",
+      "review": {
+        "total": 108956,
+        "percent": 81,
+        "label": "特别好评"
+      }
+    },
+    "1675200": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "1681430": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥136.00",
+      "review": {
+        "total": 29083,
+        "percent": 85,
+        "label": "特别好评"
+      }
+    },
+    "1684930": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥42.00",
+      "review": {
+        "total": 8137,
+        "percent": 97,
+        "label": "好评如潮"
+      }
+    },
+    "1715130": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥123.00",
+      "review": {
+        "total": 16995,
+        "percent": 77,
+        "label": "多半好评"
+      }
+    },
+    "1799840": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "price": "¥70.00",
+      "review": {
+        "total": 7018,
+        "percent": 95,
+        "label": "好评如潮"
+      }
+    },
+    "1808500": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "review": {
+        "total": 310230,
+        "percent": 82,
+        "label": "特别好评"
+      }
+    },
+    "1867240": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥149.00",
+      "review": {
+        "total": 176212,
+        "percent": 72,
+        "label": "多半好评"
+      }
+    },
+    "1874880": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥149.00",
+      "review": {
+        "total": 53621,
+        "percent": 80,
+        "label": "特别好评"
+      }
+    },
+    "1928420": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "免费",
+      "review": {
+        "total": 55720,
+        "percent": 75,
+        "label": "多半好评"
+      }
+    },
+    "1938090": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "review": {
+        "total": 433909,
+        "percent": 55,
+        "label": "褒贬不一"
+      }
+    },
+    "1957780": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥92.00",
+      "review": {
+        "total": 9182,
+        "percent": 70,
+        "label": "多半好评"
+      }
+    },
+    "1962663": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "免费",
+      "review": {
+        "total": 51851,
+        "percent": 30,
+        "label": "多半差评"
+      }
+    },
+    "1969870": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "免费",
+      "review": {
+        "total": 21513,
+        "percent": 56,
+        "label": "褒贬不一"
+      }
+    },
+    "1973530": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "免费",
+      "review": {
+        "total": 124952,
+        "percent": 88,
+        "label": "特别好评"
+      }
+    },
+    "1985810": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 22313,
+        "percent": 79,
+        "label": "多半好评"
+      }
+    },
+    "1985820": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 4254,
+        "percent": 67,
+        "label": "褒贬不一"
+      }
+    },
+    "2000950": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 44196,
+        "percent": 79,
+        "label": "多半好评"
+      }
+    },
+    "2005010": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥90.00",
+      "review": {
+        "total": 16047,
+        "percent": 90,
+        "label": "特别好评"
+      }
+    },
+    "2051620": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "review": {
+        "total": 49964,
+        "percent": 80,
+        "label": "特别好评"
+      }
+    },
+    "2073620": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "免费",
+      "review": {
+        "total": 89157,
+        "percent": 73,
+        "label": "多半好评"
+      }
+    },
+    "2073850": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "review": {
+        "total": 280921,
+        "percent": 78,
+        "label": "多半好评"
+      }
+    },
+    "2074920": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "免费",
+      "review": {
+        "total": 112865,
+        "percent": 57,
+        "label": "褒贬不一"
+      }
+    },
+    "2096600": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥123.00",
+      "review": {
+        "total": 9175,
+        "percent": 89,
+        "label": "特别好评"
+      }
+    },
+    "2096610": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥123.00",
+      "review": {
+        "total": 7862,
+        "percent": 88,
+        "label": "特别好评"
+      }
+    },
+    "2111190": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥76.00",
+      "review": {
+        "total": 8386,
+        "percent": 97,
+        "label": "好评如潮"
+      }
+    },
+    "2124120": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥99.00",
+      "review": {
+        "total": 11064,
+        "percent": 86,
+        "label": "特别好评"
+      }
+    },
+    "2139460": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "免费",
+      "review": {
+        "total": 195985,
+        "percent": 79,
+        "label": "多半好评"
+      }
+    },
+    "2141910": {
+      "checkedAt": "2026-11-17T05:16:30+00:00",
+      "review": {
+        "total": 33226,
+        "percent": 61,
+        "label": "褒贬不一"
+      }
+    },
+    "2169200": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥67.20",
+      "review": {
+        "total": 5205,
+        "percent": 75,
+        "label": "多半好评"
+      }
+    },
+    "2183900": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥249.00",
+      "review": {
+        "total": 174760,
+        "percent": 84,
+        "label": "特别好评"
+      }
+    },
+    "2221490": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥128.00",
+      "review": {
+        "total": 34149,
+        "percent": 78,
+        "label": "多半好评"
+      }
+    },
+    "2231380": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 45799,
+        "percent": 72,
+        "label": "多半好评"
+      }
+    },
+    "2272360": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥232.20",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "2281730": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "免费",
+      "review": {
+        "total": 56457,
+        "percent": 87,
+        "label": "特别好评"
+      }
+    },
+    "2288340": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 19845,
+        "percent": 85,
+        "label": "特别好评"
+      }
+    },
+    "2357570": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "免费",
+      "review": {
+        "total": 431188,
+        "percent": 32,
+        "label": "多半差评"
+      }
+    },
+    "2369390": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 37051,
+        "percent": 70,
+        "label": "多半好评"
+      }
+    },
+    "2402620": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥19.80",
+      "review": {
+        "total": 1,
+        "percent": 0
+      }
+    },
+    "2406770": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥102.40",
+      "review": {
+        "total": 72219,
+        "percent": 80,
+        "label": "特别好评"
+      }
+    },
+    "2416450": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥95.00",
+      "review": {
+        "total": 15193,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "2479810": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥188.00",
+      "review": {
+        "total": 71652,
+        "percent": 72,
+        "label": "多半好评"
+      }
+    },
+    "2507950": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "免费",
+      "review": {
+        "total": 201068,
+        "percent": 57,
+        "label": "褒贬不一"
+      }
+    },
+    "2523720": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥198.00",
+      "review": {
+        "total": 4166,
+        "percent": 62,
+        "label": "褒贬不一"
+      }
+    },
+    "2563090": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥28.00",
+      "review": {
+        "total": 2,
+        "percent": 100
+      }
+    },
+    "2584270": {
+      "checkedAt": "2026-11-17T05:16:29+00:00",
+      "price": "¥198.00",
+      "review": {
+        "total": 21146,
+        "percent": 80,
+        "label": "特别好评"
+      }
+    },
+    "2605790": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥43.00",
+      "review": {
+        "total": 14755,
+        "percent": 61,
+        "label": "褒贬不一"
+      }
+    },
+    "2692520": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥15.20",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "2694490": {
+      "checkedAt": "2026-11-17T05:16:32+00:00",
+      "review": {
+        "total": 169588,
+        "percent": 76,
+        "label": "多半好评"
+      }
+    },
+    "2719160": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥70.00",
+      "review": {
+        "total": 3422,
+        "percent": 67,
+        "label": "褒贬不一"
+      }
+    },
+    "2767030": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "免费",
+      "review": {
+        "total": 426299,
+        "percent": 74,
+        "label": "多半好评"
+      }
+    },
+    "2806050": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 13054,
+        "percent": 60,
+        "label": "褒贬不一"
+      }
+    },
+    "2807960": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥198.00",
+      "review": {
+        "total": 303591,
+        "percent": 62,
+        "label": "褒贬不一"
+      }
+    },
+    "2868840": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥70.40",
+      "review": {
+        "total": 191785,
+        "percent": 62,
+        "label": "褒贬不一"
+      }
+    },
+    "2887580": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥139.00",
+      "review": {
+        "total": 5079,
+        "percent": 78,
+        "label": "多半好评"
+      }
+    },
+    "2918300": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "免费",
+      "review": {
+        "total": 22253,
+        "percent": 63,
+        "label": "褒贬不一"
+      }
+    },
+    "2943650": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "免费",
+      "review": {
+        "total": 51177,
+        "percent": 74,
+        "label": "多半好评"
+      }
+    },
+    "3010850": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 11542,
+        "percent": 71,
+        "label": "多半好评"
+      }
+    },
+    "3017860": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥259.00",
+      "review": {
+        "total": 33127,
+        "percent": 88,
+        "label": "特别好评"
+      }
+    },
+    "3065800": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥168.00",
+      "review": {
+        "total": 45611,
+        "percent": 81,
+        "label": "特别好评"
+      }
+    },
+    "3079210": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥151.99",
+      "review": {
+        "total": 11641,
+        "percent": 61,
+        "label": "褒贬不一"
+      }
+    },
+    "3115160": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥93.00",
+      "review": {
+        "total": 1187,
+        "percent": 95,
+        "label": "好评如潮"
+      }
+    },
+    "3124540": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥72.00",
+      "review": {
+        "total": 33416,
+        "percent": 95,
+        "label": "好评如潮"
+      }
+    },
+    "3156770": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥139.00",
+      "review": {
+        "total": 17611,
+        "percent": 91,
+        "label": "特别好评"
+      }
+    },
+    "3167020": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥58.00",
+      "review": {
+        "total": 84635,
+        "percent": 85,
+        "label": "特别好评"
+      }
+    },
+    "3199170": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "免费",
+      "review": {
+        "total": 24220,
+        "percent": 80,
+        "label": "特别好评"
+      }
+    },
+    "3240220": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥149.00",
+      "review": {
+        "total": 226020,
+        "percent": 84,
+        "label": "特别好评"
+      }
+    },
+    "3259780": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥268.00",
+      "review": {
+        "total": 6304,
+        "percent": 95,
+        "label": "好评如潮"
+      }
+    },
+    "3321460": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥214.40",
+      "review": {
+        "total": 119748,
+        "percent": 83,
+        "label": "特别好评"
+      }
+    },
+    "3325950": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥49.30",
+      "review": {
+        "total": 8,
+        "percent": 100
+      }
+    },
+    "3393110": {
+      "checkedAt": "2026-11-17T05:16:32+00:00",
+      "review": {
+        "total": 48442,
+        "percent": 54,
+        "label": "褒贬不一"
+      }
+    },
+    "3419430": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "免费",
+      "review": {
+        "total": 115221,
+        "percent": 96,
+        "label": "好评如潮"
+      }
+    },
+    "3502460": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥15.20",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "3513350": {
+      "checkedAt": "2026-11-17T05:16:32+00:00",
+      "review": {
+        "total": 59208,
+        "percent": 85,
+        "label": "特别好评"
+      }
+    },
+    "3564740": {
+      "checkedAt": "2026-11-17T05:16:32+00:00",
+      "review": {
+        "total": 117711,
+        "percent": 86,
+        "label": "特别好评"
+      }
+    },
+    "3678970": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "免费",
+      "review": {
+        "total": 48643,
+        "percent": 53,
+        "label": "褒贬不一"
+      }
+    },
+    "3769420": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥22.00",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "3796990": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥58.00",
+      "review": {
+        "total": 587,
+        "percent": 93,
+        "label": "特别好评"
+      }
+    },
+    "3809270": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥75.39",
+      "review": {
+        "total": 2089,
+        "percent": 81,
+        "label": "特别好评"
+      }
+    },
+    "3810510": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥58.50",
+      "review": {
+        "total": 149,
+        "percent": 83,
+        "label": "特别好评"
+      }
+    },
+    "3932890": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥199.99",
+      "review": {
+        "total": 59733,
+        "percent": 50,
+        "label": "褒贬不一"
+      }
+    },
+    "4019220": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥59.00",
+      "review": {
+        "total": 20641,
+        "percent": 98,
+        "label": "好评如潮"
+      }
+    },
+    "4078430": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥228.00",
+      "review": {
+        "total": 7643,
+        "percent": 86,
+        "label": "特别好评"
+      }
+    },
+    "4080220": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥248.00",
+      "review": {
+        "total": 12847,
+        "percent": 47,
+        "label": "褒贬不一"
+      }
+    },
+    "4115450": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥268.00",
+      "review": {
+        "total": 118061,
+        "percent": 94,
+        "label": "特别好评"
+      }
+    },
+    "4126040": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "免费",
+      "review": {
+        "total": 30134,
+        "percent": 72,
+        "label": "多半好评"
+      }
+    },
+    "4165890": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "4212960": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥10.40",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "4262460": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "免费",
+      "review": {
+        "total": 51909,
+        "percent": 51,
+        "label": "褒贬不一"
+      }
+    },
+    "4348910": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥55.00",
+      "review": {
+        "total": 26168,
+        "percent": 81,
+        "label": "特别好评"
+      }
+    },
+    "4384550": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 14481,
+        "percent": 45,
+        "label": "褒贬不一"
+      }
+    },
+    "4408320": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥25.00",
+      "review": {
+        "total": 150,
+        "percent": 88,
+        "label": "特别好评"
+      }
+    },
+    "4435490": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥298.00",
+      "review": {
+        "total": 12446,
+        "percent": 69,
+        "label": "褒贬不一"
+      }
+    },
+    "4459590": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥37.80",
+      "review": {
+        "total": 836,
+        "percent": 79,
+        "label": "多半好评"
+      }
+    },
+    "4530370": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥268.00",
+      "review": {
+        "total": 1971,
+        "percent": 82,
+        "label": "特别好评"
+      }
+    },
+    "4576490": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥66.30",
+      "review": {
+        "total": 3836,
+        "percent": 97,
+        "label": "好评如潮"
+      }
+    },
+    "4623570": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥19.60",
+      "review": {
+        "total": 3565,
+        "percent": 51,
+        "label": "褒贬不一"
+      }
+    },
+    "4673230": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥35.00",
+      "review": {
+        "total": 2,
+        "percent": 50
+      }
+    },
+    "4692770": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥26.10",
+      "review": {
+        "total": 1,
+        "percent": 100
+      }
+    },
+    "4736370": {
+      "checkedAt": "2026-11-17T05:16:32+00:00",
+      "review": {
+        "total": 4,
+        "percent": 0
+      }
+    },
+    "4938490": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥15.99",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "4945780": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥21.00",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "5052180": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥59.50",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "5052450": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "免费",
+      "review": {
+        "total": 270,
+        "percent": 53,
+        "label": "褒贬不一"
+      }
+    },
+    "5067250": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "5106080": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥39.00",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "5135440": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "免费",
+      "review": {
+        "total": 1642,
+        "percent": 80,
+        "label": "特别好评"
+      }
+    },
+    "5155360": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥26.00",
+      "review": {
+        "total": 4125,
+        "percent": 78,
+        "label": "多半好评"
+      }
+    },
+    "5175310": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥18.20",
+      "review": {
+        "total": 643,
+        "percent": 86,
+        "label": "特别好评"
+      }
+    },
+    "5185890": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥31.50",
+      "review": {
+        "total": 1190,
+        "percent": 96,
+        "label": "好评如潮"
+      }
+    },
+    "5200620": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥37.80",
+      "review": {
+        "total": 184,
+        "percent": 90,
+        "label": "特别好评"
+      }
+    },
+    "5244010": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥31.00",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "5244680": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥59.50",
+      "review": {
+        "total": 17,
+        "percent": 100,
+        "label": "好评"
+      }
+    },
+    "5261050": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥57.00",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "5293350": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥37.80",
+      "review": {
+        "total": 1,
+        "percent": 100
+      }
+    },
+    "5298050": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥19.00",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "5335510": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥36.00",
+      "review": {
+        "total": 9443,
+        "percent": 77,
+        "label": "多半好评"
+      }
+    },
+    "5354240": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥26.40",
+      "review": {
+        "total": 1,
+        "percent": 100
+      }
+    },
+    "5361340": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥5.10",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "5445850": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥31.50",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "5450860": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥9.00",
+      "review": {
+        "total": 1,
+        "percent": 100
+      }
+    },
+    "5451060": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥19.12",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "5455640": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥13.00",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "5471970": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "¥12.00",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    },
+    "5478700": {
+      "checkedAt": "2026-11-17T05:16:31+00:00",
+      "price": "免费",
+      "review": {
+        "total": 0,
+        "percent": 0
+      }
+    }
+  }
+}

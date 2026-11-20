@@ -146,7 +146,10 @@ function getTodayStart() {
 }
 
 function getModeDateValue(mode) {
-  const value = isCoreUpdate(mode) ? getCoreUpdateTiming(mode).date : mode.launchDate || mode.date || mode.year || "";
+  const value = isCoreUpdate(mode) ? getCoreUpdateTiming(mode).date
+    : mode.launchDateStatus === "scheduled" ? mode.scheduledLaunchDate
+    : mode.launchDateStatus === "unverified" ? mode.publishedDate || mode.date || mode.year
+    : mode.launchDate || mode.date || mode.year || "";
   const match = String(value).match(/\d{4}(?:-\d{2}-\d{2})?/);
   return match ? match[0] : "";
 }
@@ -174,7 +177,14 @@ function getDayDelta(mode) {
 
 function getActivityState(mode) {
   if (isCoreUpdate(mode)) return coreUpdateActivityState(mode);
+  if (mode.launchDateStatus === "unverified") {
+    return { className: "is-unknown", label: "公告 · 上线待核实" };
+  }
   const delta = getDayDelta(mode);
+  if (mode.launchDateStatus === "scheduled") {
+    return delta > 0 ? { className: "is-upcoming", label: "预定上线" }
+      : { className: "is-unknown", label: "上线待核实" };
+  }
   if (delta === null) return { className: "is-unknown", label: "待确认" };
   if (delta > 0) return { className: "is-upcoming", label: "即将上线" };
   if (delta === 0) return { className: "is-today", label: "今天更新" };
@@ -184,6 +194,7 @@ function getActivityState(mode) {
 
 function formatActivityDate(mode) {
   if (isCoreUpdate(mode)) return coreUpdateDateLabel(mode);
+  if (["scheduled", "unverified"].includes(mode.launchDateStatus)) return mode.launchLabel || "上线待核实";
   const date = parseModeDate(mode);
   if (!date) return mode.launchLabel || mode.date || mode.year || "待确认";
   return `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, "0")}.${String(date.getDate()).padStart(2, "0")}`;
@@ -202,7 +213,7 @@ function getActivityModes() {
 
   if (state.feedFilter === "upcoming") {
     return modes
-      .filter((mode) => getDateSortValue(mode) > today)
+      .filter((mode) => mode.launchDateStatus !== "unverified" && getDateSortValue(mode) > today)
       .sort((a, b) => getDateSortValue(a) - getDateSortValue(b))
       .slice(0, 8);
   }
@@ -231,7 +242,7 @@ function getActivitySummary() {
     const delta = getDayDelta(mode);
     return delta !== null && delta <= 0 && delta >= -30;
   }).length;
-  const upcomingCount = state.modes.filter((mode) => getDateSortValue(mode) > today).length;
+  const upcomingCount = state.modes.filter((mode) => mode.launchDateStatus !== "unverified" && getDateSortValue(mode) > today).length;
   const gameTotal = new Set(state.modes.map((mode) => mode.game)).size;
   const newestPast = getSortedModesDescending().find((mode) => getDateSortValue(mode) <= today);
 
@@ -327,11 +338,15 @@ function getTimelineLaneLayout(game = state.gameFilter, entries = state.modes) {
 }
 
 function getModeTimingLabel(mode) {
-  return mode.launchDate ? "上线时间" : "时间说明";
+  return mode.launchDate && mode.launchDateStatus !== "unverified" ? "上线时间" : "时间说明";
 }
 
 function getTimelineDateLabel(mode) {
   if (isCoreUpdate(mode)) return coreUpdateDateLabel(mode);
+  if (mode.launchDateStatus === "unverified") {
+    const date = getModeDateValue(mode);
+    return date ? date + " · 公告" : mode.launchLabel || "上线待核实";
+  }
   if (mode.launchDate && /^\d{4}-\d{2}-\d{2}$/.test(mode.launchDate)) {
     const [year, month, day] = mode.launchDate.split("-");
     return `${Number(year)}年${Number(month)}月${Number(day)}日`;
@@ -351,6 +366,10 @@ function getTimelineMeta(mode) {
 
 function getTimelineShortDate(mode) {
   if (isCoreUpdate(mode)) { const timing = getCoreUpdateTiming(mode); return timing.date.slice(2).replaceAll("-", ".") + " · " + timing.label; }
+  if (mode.launchDateStatus === "unverified") {
+    const date = getModeDateValue(mode);
+    return date ? date.slice(2).replaceAll("-", ".") + " · 公告" : "待核实";
+  }
   if (mode.launchDate && /^\d{4}-\d{2}-\d{2}$/.test(mode.launchDate)) {
     const [year, month, day] = mode.launchDate.split("-");
     return `${year.slice(2)}.${Number(month)}.${Number(day)}`;
@@ -404,9 +423,12 @@ function renderTimeline() {
     return;
   }
   const groups = groupUpdateEntries(expandFFTimelineEntries(entries), true);
-  gameTimeline.innerHTML = `${renderFFPatchTimeline()}<div class="timeline-head"><div><span class="timeline-kicker">玩法时间画板</span><h3>${escapeHtml(state.gameFilter)}</h3></div><div class="timeline-stats"><span>${escapeHtml(summarizeLibrary(entries))}</span><span><b>${groups.length}</b> 个节点</span></div></div>
+  gameTimeline.innerHTML = `<div class="timeline-head"><div><span class="timeline-kicker">玩法时间画板</span><h3>${escapeHtml(state.gameFilter)}</h3></div><div class="timeline-stats"><span>${escapeHtml(summarizeLibrary(entries))}</span><span><b>${groups.length}</b> 个节点</span></div></div>
+    <div class="timeline-player-history"></div>
+    ${renderFFPatchTimeline()}
     <div class="timeline-board"><div class="timeline-board-head"><p>按记录日期排列，节点间距不代表实际时间跨度。公告与预定日期单独标注。</p><div class="timeline-legend"><span>○ 模式案例</span><span>▢ 基础更新</span></div></div>
     ${renderTimelineCanvas(groups)}<ol class="timeline-list">${groups.map(renderTimelineGroup).join('')}</ol></div>`;
+  TimelinePlayers.mount(gameTimeline.querySelector('.timeline-player-history'), state.gameFilter, entries);
 }
 
 function modeToMarkdown(mode) {

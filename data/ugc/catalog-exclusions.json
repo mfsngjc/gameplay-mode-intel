@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21T06:56:41.738657+00:00",
+  "updatedAt": "2026-11-12T12:53:39.938114+00:00",
   "scope": "仅排除已核实且指纹完全一致的非地图配套资源；来源变化重新核查。",
   "entries": {
     "cs2:3082174744": {
@@ -1549,18 +1549,18 @@
       }
     },
     "cs2:3490699807": {
-      "sourceFingerprint": "ca55d7e90863e1d9e6e2dfb002b77795909e9c13d8744842068e9966f870efdd",
-      "originalTitle": "War3CS2 - Warcraft Content Pack v2.30",
+      "sourceFingerprint": "1aec8e30aeb0d11c2d95343e4d7025abc30fe58ebbd6f20e1cdb1da51f943432",
+      "originalTitle": "War3CS2 - Warcraft Content Pack v2.33",
       "descriptionOriginal": "This is the War3CS2 Content Pack for all models, effects and sounds needed on the server This package is only useful for people on our Warcraft 3 CS2 server Join our discord: Join our server: play.war3cs2.com:27039 Our Website",
-      "reason": "原名或来源说明将该条明确标为配套资产、音频包或界面资源，或明确声明不提供地图；经两次独立审核，不纳入地图目录。",
+      "reason": "作者说明条目提供服务器所需的模型、特效和声音。",
       "sources": [
         "https://steamcommunity.com/sharedfiles/filedetails/?id=3490699807"
       ],
-      "reviewedAt": "2026-10-21T06:45:50.453666+00:00",
-      "reviewer": "gpt-6-luna",
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
       "approval": {
         "approvedBy": "primary-agent",
-        "approvedAt": "2026-10-21T06:51:48.726070+00:00"
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
       }
     },
     "cs2:3492767797": {
@@ -1609,18 +1609,18 @@
       }
     },
     "cs2:3497642975": {
-      "sourceFingerprint": "3d0dc3dc5597fdf588ce7d456ae104999b1dcf26c2c062bb7261f141ce793be2",
-      "originalTitle": "War3CS2 - Warcraft Content Pack v2.30.1",
+      "sourceFingerprint": "6b5419c3ef7f2f2154cb621d25e9e2d8505add00e740e0c58bc3571a6638f9da",
+      "originalTitle": "War3CS2 - Warcraft Content Pack v2.32.3",
       "descriptionOriginal": "This is the War3CS2 Content Pack for all models, effects and sounds needed on the server This package is only useful for people on our Warcraft 3 CS2 server Join our discord: Join our server: play.war3cs2.com:27039 Our Website",
-      "reason": "原名或来源说明将该条明确标为配套资产、音频包或界面资源，或明确声明不提供地图；经两次独立审核，不纳入地图目录。",
+      "reason": "作者说明条目提供服务器所需的模型、特效和声音。",
       "sources": [
         "https://steamcommunity.com/sharedfiles/filedetails/?id=3497642975"
       ],
-      "reviewedAt": "2026-10-21T06:45:50.453666+00:00",
-      "reviewer": "gpt-6-luna",
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
       "approval": {
         "approvedBy": "primary-agent",
-        "approvedAt": "2026-10-21T06:51:48.726070+00:00"
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
       }
     },
     "cs2:3498526038": {
@@ -6574,18 +6574,18 @@
       }
     },
     "cs2:3820683438": {
-      "sourceFingerprint": "02d1a32510e374d60eb7fae732f2368bc4d8bb098c105199c19697c86dd28335",
+      "sourceFingerprint": "0d433d7d5ba82f9358503abc0c8851629592d189fada95442b9e0f3d0c6f163c",
       "originalTitle": "ZMBIO MODELS ASSETS BIOHAZARD",
-      "descriptionOriginal": "Assets used on our CS2 BIOHAZARD mode. DNS Server: zm.zmbio.ro IP Server: 179.61.132.148:27015 ,Join our discord! ~ discord.gg/zmbio Experience the classic zombie gameplay rebuilt in CS2 with XP, levels, AP shop, zombie classes, lasermines, jetpack, respaw",
-      "reason": "原名或来源说明将该条明确标为配套资产、音频包或界面资源，或明确声明不提供地图；经两次独立审核，不纳入地图目录。",
+      "descriptionOriginal": "ZMBIO – BIOHAZARD ASSETS All the assets used on our CS2 BIOHAZARD mode. Subscribe to this item so models, sounds and materials load correctly when you join the server. 🧟 SERVER DNS: zm.zmbio.r",
+      "reason": "作者说明附件提供生化模式服务器所用的模型、音效和材质。",
       "sources": [
         "https://steamcommunity.com/sharedfiles/filedetails/?id=3820683438"
       ],
-      "reviewedAt": "2026-10-21T06:45:50.453666+00:00",
-      "reviewer": "gpt-6-luna",
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
       "approval": {
         "approvedBy": "primary-agent",
-        "approvedAt": "2026-10-21T06:51:48.726070+00:00"
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
       }
     },
     "cs2:3820714881": {
@@ -6799,18 +6799,18 @@
       }
     },
     "cs2:3823363089": {
-      "sourceFingerprint": "8c915884f87ba12a785ca7df8310a3ef8ccfdf9a9ef64e5105999c2fb95aee86",
+      "sourceFingerprint": "4585dc0bb9738c9d403c4cf2d8a011e36970349cce1d2e692916cfd6a3309e40",
       "originalTitle": "PanoramaMenuManager (PMM) — Panorama menus for CS2 servers",
-      "descriptionOriginal": "PanoramaMenuManager (PMM) 1.3.00 Все клиентские файлы PMM и его модулей в одном аддоне. Администратору сервера не нужно собирать свой аддон: достаточно вписать ID этого аддона в MultiAddonManager — игроки скачают его сами при входе. Что внутри MenuManagerC",
-      "reason": "原名或来源说明将该条明确标为配套资产、音频包或界面资源，或明确声明不提供地图；经两次独立审核，不纳入地图目录。",
+      "descriptionOriginal": "PanoramaMenuManager (PMM) 1.3.01 Все клиентские файлы PMM и его модулей в одном аддоне. Администратору сервера не нужно собирать свой аддон: достаточно вписать ID этого аддона в MultiAddonManager — игроки скачают его сами при входе. Что внутри MenuManagerC",
+      "reason": "说明将附件描述为服务器菜单管理器及其模块的客户端文件合集。",
       "sources": [
         "https://steamcommunity.com/sharedfiles/filedetails/?id=3823363089"
       ],
-      "reviewedAt": "2026-10-21T06:45:24.404224+00:00",
-      "reviewer": "gpt-6-luna",
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
       "approval": {
         "approvedBy": "primary-agent",
-        "approvedAt": "2026-10-21T06:51:48.726070+00:00"
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
       }
     },
     "cs2:3823542245": {
@@ -7156,6 +7156,1162 @@
       "approval": {
         "approvedBy": "primary-agent",
         "approvedAt": "2026-10-21T06:56:41.738657+00:00"
+      }
+    },
+    "cs2:3225244741": {
+      "sourceFingerprint": "432e157d23017c3a2d9e6559df8b0566083a3fd9de560c55f2dcd30684870ed2",
+      "originalTitle": "Ultimate Server-Side Player Pack",
+      "descriptionOriginal": "Custom Player Models for Servers! Old CS:GO ports don't have arms so they use default SAS arms and gloves. Nohitbox variants included (*_nohitbox.vmdl_c) Paths (Humans - CT Anims) characters/models/voikanaa/lee_everett_twd/lee_everett_twd.vmdl_c characters",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3225244741"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3536811852": {
+      "sourceFingerprint": "ade53d688cd6f74ff9673f5908e106b41a9ccfc040d8a1899baca755b5850c3f",
+      "originalTitle": "Kaynak Paketi",
+      "descriptionOriginal": "RunAway Retake Servers - Resource Pack This pack includes Runaway Join Sound and Faceit Level images.",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3536811852"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3276379063": {
+      "sourceFingerprint": "3c0a6710bd19e78f46edc19987e7146cba93e6b8b53ed1d7a6a64eebd15586b6",
+      "originalTitle": "BLADEPROJECT",
+      "descriptionOriginal": "Resource pack for bladeproject.net",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3276379063"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3157567996": {
+      "sourceFingerprint": "2aa0e3eed0da12ac7522f67df6648b7bfa1c9fd1414dff2f364428d26004783d",
+      "originalTitle": "Kolkazadrot Character pack",
+      "descriptionOriginal": "Kolkazadrot Character pack characters\\models\\kolka\\deadpool\\deadpool.vmdl_c characters\\models\\kolka\\deadpool\\deadpool_arms.vmdl_c characters\\models\\kolka\\master_chief\\master_chief.vmdl_c characters\\models\\kolka\\master_chief\\master_chief_arms.vmdl_c charact",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3157567996"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3496563394": {
+      "sourceFingerprint": "a5420c409e8e9d67447d50b8e570da2366d3684e196b81f0de51cd69fea2b2dd",
+      "originalTitle": "CS2 KZ Menu",
+      "descriptionOriginal": "Menu for CS2 KZ",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3496563394"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3801206653": {
+      "sourceFingerprint": "d3fe2c6fee60aa125b0daf7f98be8f71e679dbec6ff444e8f4733a0ac1da1555",
+      "originalTitle": "MPT-76 Weapon Model CS2",
+      "descriptionOriginal": "weapons\\models\\byplt\\weapon_rif_mpt76.vmdl_c Search tags: weaponmodel,weapon model, custom weapon, custom weapon model, weapon mod",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3801206653"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3443257648": {
+      "sourceFingerprint": "be60f40cccf844abcd03ca5cb0ae1fca4713cb2f052a0250be43753285de2259",
+      "originalTitle": "Skin Pack",
+      "descriptionOriginal": "Models for ZE Training Special thanks to Stepanof, MAKO, Kuroki // I love you, guys!",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3443257648"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3479297575": {
+      "sourceFingerprint": "3c0a6710bd19e78f46edc19987e7146cba93e6b8b53ed1d7a6a64eebd15586b6",
+      "originalTitle": "BLADEPROJECT",
+      "descriptionOriginal": "Resource pack for bladeproject.net",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3479297575"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3294483674": {
+      "sourceFingerprint": "13f7d945cbc4d7a6436d3537932482a192c3335835e6bf771b56c6b6185c5c5a",
+      "originalTitle": "93X/XNET/UPKK CS2 Zombie Escape Radio Menu System",
+      "descriptionOriginal": "A Radio Menu System specially made for 93X/XNET/UPKK CS2 Zombie Escape. Inspired by melon_girl99's KZ Menu.",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3294483674"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3352311901": {
+      "sourceFingerprint": "f4ba02ebf5de7a10cdad90c223619de15d1f5cd7bd61ad8fd442d9f26e930cf4",
+      "originalTitle": "SharpTimer Menu",
+      "descriptionOriginal": "Type radio or radio1 in console to see the menu Specifically made to run on SharpTimer servers (surf/bhop/mg) Menu 1 (main surf menu) // radio 1. Respawn 2. Bonus Respawn 3. Style 4. Maptop 5. Global Top 6. Noclip 7. Help Menu 2 (surf practice menu) // rad",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3352311901"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3446274800": {
+      "sourceFingerprint": "fb67d1d6bf81011dcd1e0c21caef1d81b00d7fa04824acd097aa0a4ab42ff980",
+      "originalTitle": "CS2KZ Menu",
+      "descriptionOriginal": "Menu for CS2KZ.",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3446274800"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3625988119": {
+      "sourceFingerprint": "c41c3bf12c740fddc87a33ea614dd6e20f1b3de3fb4c1224a5851b40b41e91ab",
+      "originalTitle": "CS2 FLICK GODS DEAGLE RES PACK",
+      "descriptionOriginal": "Sounds pack for FLICK GODS DEAGLE server",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3625988119"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3791517587": {
+      "sourceFingerprint": "7d30258a479ac6f318b83854b6e857ebed6d2281284a368e7e9bd6c32ec6af8e",
+      "originalTitle": "1sT.MN | UI Kit",
+      "descriptionOriginal": "UI Kit for 1sT.MN",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3791517587"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3766083407": {
+      "sourceFingerprint": "3f47b81fc2b69ec0141d7eb3091177b2feffa8b6a134d40ec10de77588cb43b3",
+      "originalTitle": "WProject Menu Buttons",
+      "descriptionOriginal": "Required menu resources for the WProject CS2 server. Contains menu button icons for Pisex Menu.",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3766083407"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3307901441": {
+      "sourceFingerprint": "32f272f1c1376278bbf7ea7825ca29fc7ad402216bc6c8f0a2493008c655048e",
+      "originalTitle": "ze_humans model pack",
+      "descriptionOriginal": "A pack of models for people designed for ZE mode Attention!!! Due to the peculiarities of the mode, there are no Hitboxes. Models in pack: • Big Teemo ( • Kafka (",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3307901441"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3592847150": {
+      "sourceFingerprint": "86f05cd453443e61ff717be874a4bbeff62f0a1b2e123e1061f75d2e9257fc39",
+      "originalTitle": "Crysis Nanosuit pack",
+      "descriptionOriginal": "Crysis 1 nanosuit characters\\models\\night_fighter\\crysis1\\crysis1.vmdl_c Crysis 3 nanosuit characters\\models\\night_fighter\\crysis3\\crysis3.vmdl_c",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3592847150"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3608549969": {
+      "sourceFingerprint": "63f67a008dc621cbebbf9fb98e1811ea6f6e4dfa04f04ecf7a946cba66975c72",
+      "originalTitle": "Titanfall 2 Kane cs2 palyer model",
+      "descriptionOriginal": "characters\\models\\night_fighter\\titanfall_2_kane\\titanfall_2_kane.vmdl_c",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3608549969"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3409911364": {
+      "sourceFingerprint": "d0657fb92ba5eca78560da24928e966889396db6790bb38576c4e04202bbffad",
+      "originalTitle": "RSRPCK",
+      "descriptionOriginal": "Resource pack",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3409911364"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3716739988": {
+      "sourceFingerprint": "54c1157b313dded9e306965f14daf95da692cd6fa491f1caee516f6629603e2a",
+      "originalTitle": "Brutal mans pack (Update AG2)",
+      "descriptionOriginal": "//Crysis characters\\models\\night_fighter\\crysis1\\crysis1.vmdl_c characters\\models\\night_fighter\\crysis3\\crysis3.vmdl_c //Doom Slayer characters\\models\\night_fighter\\doom_slayer\\doom_slayer.vmdl_c characters\\models\\night_fighter\\doom_slayer\\doom_slayer_blac",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3716739988"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3689173575": {
+      "sourceFingerprint": "26febbbcee05920a6b725ea30157c38d596cde23f59202259dbb57221b9c7094",
+      "originalTitle": "VIP.USP.PACK",
+      "descriptionOriginal": "Addon pack with skins and models",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3689173575"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3373217883": {
+      "sourceFingerprint": "649931b34f9c1f216194df34bb43cbaee23dab681bfdcd7c37f8c1c040ed63c2",
+      "originalTitle": "KS - Server Pack",
+      "descriptionOriginal": "Kifferstübchen - Server Pack Content: - MVP Sounds - Country Flags - Panorama Vote Colors",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3373217883"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3815743731": {
+      "sourceFingerprint": "abc428151a5cb400ab9c1ff174e72704ab2fe67d748e04b5867a9b5e6149eed8",
+      "originalTitle": "CS16VIBE",
+      "descriptionOriginal": "Resource Pack",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3815743731"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3665732047": {
+      "sourceFingerprint": "ea65779084aeed5b6005bd8ac541df4e83c39c4ec086b8f4c6d1051d08f6d5d7",
+      "originalTitle": "CS2Surf Menu EN",
+      "descriptionOriginal": "English radio menu support addon for CS2Surf",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3665732047"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3747528926": {
+      "sourceFingerprint": "734f6922956de7af4c88fdedf59e4910f6bf72817526a4bae9e80f537b814755",
+      "originalTitle": "CS2KZ Menu (Spanish)",
+      "descriptionOriginal": "Spanish radio menu support addon for CS2KZ plugin.",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3747528926"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3810702758": {
+      "sourceFingerprint": "de6e7a3d505bca7ef4b25029a18f9745d77068382bed3518d99406b6fcee7606",
+      "originalTitle": "Les Vieux de la Vieille - Menu",
+      "descriptionOriginal": "Menu Panorama pour les serveurs CS2 Les Vieux de la Vieille.",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3810702758"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3807926219": {
+      "sourceFingerprint": "be865c09f7b7d9a9d4658f5e53e4fa3bbaf196e8de879c9c3765ebff20e8b283",
+      "originalTitle": "WProject Menu UI",
+      "descriptionOriginal": "Panorama menu for WPROJECT Random Cheats servers",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3807926219"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3787028037": {
+      "sourceFingerprint": "4472674cf7de26ff098489b89e689418732ffde4e5651cec258addd2214fd419",
+      "originalTitle": "Zombie Model",
+      "descriptionOriginal": "Custom zombie player model for my CS2 Zombie Escape server.",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3787028037"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3694978461": {
+      "sourceFingerprint": "b9e529c5e5ced35453426ba6bf80088c227bb1cabb69af7b160ccf9e97951894",
+      "originalTitle": "Retro Weapons Pack",
+      "descriptionOriginal": "Custom weapon models for Retro CS2 server",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3694978461"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3811288006": {
+      "sourceFingerprint": "c1cb546b992a59b3f3e517e297fd9020e4b232aff62a34750fafcae524e65f35",
+      "originalTitle": "Homelab Server Menu",
+      "descriptionOriginal": "Clickable menus for CS2 server.",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3811288006"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3817773713": {
+      "sourceFingerprint": "870d7f83f29f82e2ababe81cba04ec1650a8820c9539aad852b365f0a9dfd426",
+      "originalTitle": "Zombie Plague CS2 - Killfeed Icons Pack",
+      "descriptionOriginal": "Custom killfeed icon resources for Counter-Strike 2 community servers, designed for Zombie Plague gameplay. Included Icons • zp_infection — Biohazard / Zombie Infection • zp_skull — Skull • zp_virus — Virus Technical Information Format: Compiled Source 2 S",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3817773713"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3808345068": {
+      "sourceFingerprint": "a7030dc8fed979603e450e872d7345cabfa56dbb9bd97f49e3d567b9377a6712",
+      "originalTitle": "Games-Town.eu | Menu",
+      "descriptionOriginal": "Custom Panorama assets for Games-Town.eu",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3808345068"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3775888158": {
+      "sourceFingerprint": "cd160acd77416ba2f138681a9cee4d0eb7e04a1d4be361cc6d5e55302a8cb763",
+      "originalTitle": "menu verdana bold",
+      "descriptionOriginal": "menu basado en particulas",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3775888158"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3759769662": {
+      "sourceFingerprint": "debc903eb9bf8ed0ee637cd26127a0cacfa9011e00e0bffc87e530a29a35c58a",
+      "originalTitle": "CS2Bhop Menu EN",
+      "descriptionOriginal": "English radio menu support addon for CS2Bhop",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3759769662"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3805041831": {
+      "sourceFingerprint": "b62c6e33200ec187350de65cebfac4e818d0ad8e503e299ca045c97f7ea3b2a0",
+      "originalTitle": "Furien Models Pack",
+      "descriptionOriginal": "Custom Player and Weapon models used by Furien CS2 Server",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3805041831"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3817800970": {
+      "sourceFingerprint": "0c30b3b6559f7ad9ac3eb2d4c48508aff632530f1cdefec1730aec646c5a6edc",
+      "originalTitle": "Porning - Server Menu",
+      "descriptionOriginal": "Porning - Server Menu Menu de serveur CS2, addon separe du hub Porning. Onglets Line-up, Surf, KZ, Settings et Game modes. Interface bleu, gris fonce et mauve. Line-up : miniatures des maps officielles de notre installation. Surf / KZ : collections de demo",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3817800970"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3664022800": {
+      "sourceFingerprint": "60f8b2fbe69efd2efdc35123752e697f41def3a3bba6d73b054414f51d8131ba",
+      "originalTitle": "WockstarsPack",
+      "descriptionOriginal": "Resource Pack For WockStars Jailbreak",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3664022800"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3815009824": {
+      "sourceFingerprint": "48480d8838fbf3cf1438e5047a954c4f55251728ece7704918dabae354a13ef0",
+      "originalTitle": "Workshop Manager Menu",
+      "descriptionOriginal": "Окно меню !menu для серверов Workshop Manager. Скачивается автоматически при входе на сервер",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3815009824"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3818641190": {
+      "sourceFingerprint": "31942c46cc1fc57f17c564f1720c9b02faf1c53969d32e49394a554646958d11",
+      "originalTitle": "JBlock Admin Menu",
+      "descriptionOriginal": "Panel resources for DTadminmenu. Requires the JBlock plugin",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3818641190"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3789074169": {
+      "sourceFingerprint": "8bb1e78631b1bf77169adfdae0106451cf8100978c0ea86a85099378e4e8d1ce",
+      "originalTitle": "KILL4U.PL - Particle Menu",
+      "descriptionOriginal": "Menu czasteczkowe dla serwera KILL4U.PL (AWP no-scope + JackPot). Paczka zawiera wylacznie zasoby graficzne menu - materialy i czasteczki. Wymagana do poprawnego wyswietlania menu na serwerze.",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3789074169"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3776927416": {
+      "sourceFingerprint": "3a3a445e501efa8bdac6ccd57d722d85eddcfde7d48a701fdea852a41a166520",
+      "originalTitle": "mvp_resource_pack",
+      "descriptionOriginal": "Resource pack for 28Server CS2 servers. Contains server-reviewed MVP music clips and sound events.",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3776927416"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3820238443": {
+      "sourceFingerprint": "682b4606ba411eb656f41d0a763a913fd5e240a4b499e5be03252c0fa34043a9",
+      "originalTitle": "Runaway z menu",
+      "descriptionOriginal": "Runaway timer radio menu",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3820238443"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3807641009": {
+      "sourceFingerprint": "b6b44bc643af57cc2e9d4f622c0dbe9adb21e3f91cdab5ccbacb2939271ca90c",
+      "originalTitle": "Svarog VIP Chest - Test",
+      "descriptionOriginal": "Private test resource addon for svarog-game.com. Static VIP chest R2 with materials and textures. Not a playable map. In-game validation pending. Preview image is an offline render.",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3807641009"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3822443048": {
+      "sourceFingerprint": "cdc40a38cc37668eb48acb6648b8d95c24a43e3079fb0c9335fca732d7d00316",
+      "originalTitle": "RAMYGALA-MIX First Blood",
+      "descriptionOriginal": "Custom first blood sound resource for the RAMYGALA-MIX community server. Sound event: Ramygala.FirstBlood. This addon is a sound resource package, not a playable map.",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3822443048"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3814376863": {
+      "sourceFingerprint": "7b8ed570f3b9746c4fb6c5ec9c8a37ab498bffed96f599b8f3197127a8d8accb",
+      "originalTitle": "4FUN Server Pack",
+      "descriptionOriginal": "4FUN player models for the 4FUN CS2 public server. Models rigged for CS2 by 4FUN. Credits (CC BY 4.0, Sketchfab): - Galaxia anime girl by Tatenashi - Astolfo in a Hoodie by Heckens - Taila | Original work by Partaevil - Rina Mandarina by Spellkaze - Reze т",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3814376863"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3823865517": {
+      "sourceFingerprint": "e571149e05fb16657268205f6c699e07d0ad2cdd200567ae892515b1ba69e1f0",
+      "originalTitle": "AWP LEGO 2 Skin Menu",
+      "descriptionOriginal": "AWP LEGO 2 Skin Menu for public server",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3823865517"
+      ],
+      "reason": "来源将本附件明确描述为服务器资源、角色或武器模型、菜单界面、音频或配套图像资产；未将其描述为可游玩地图。",
+      "reviewedAt": "2026-11-05T12:24:05.720296+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:24:05.720296+00:00"
+      }
+    },
+    "cs2:3157463861": {
+      "sourceFingerprint": "03fed02a5847c254e53c86ede16a6212bc9c3a7eb76009ef3bf524538171e753",
+      "originalTitle": "Custom Asset Pack",
+      "descriptionOriginal": "This addon is intended to be mounted/downloaded alongside our map uploads. You will need for this process. This is intended as a base-pack, servers should run their own versions of this for their assets.",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3157463861"
+      ],
+      "reason": "说明明确为地图配套资源包或人物模型等非地图附件。",
+      "reviewedAt": "2026-11-05T12:53:48.590330+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:53:48.590330+00:00"
+      }
+    },
+    "cs2:3322423072": {
+      "sourceFingerprint": "1cddaaec015b77801dc079df2eb42c6e75ebb621f8a26777c40bbf114a60d11e",
+      "originalTitle": "Rico PlayerModel",
+      "descriptionOriginal": "For vip skin",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3322423072"
+      ],
+      "reason": "说明明确为地图配套资源包或人物模型等非地图附件。",
+      "reviewedAt": "2026-11-05T12:53:48.590330+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:53:48.590330+00:00"
+      }
+    },
+    "cs2:3474829895": {
+      "sourceFingerprint": "e5bd74b066225978650b986ad59fbec85ed6084ab12a8c53bee657593aebeb95",
+      "originalTitle": "Brainrot Player Model",
+      "descriptionOriginal": "Include Bombardino Crocodillo, Tralalero Tralala, Tung Tung Tung Sahur Thanks for @nozbl for the model",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3474829895"
+      ],
+      "reason": "说明明确为地图配套资源包或人物模型等非地图附件。",
+      "reviewedAt": "2026-11-05T12:53:48.590330+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:53:48.590330+00:00"
+      }
+    },
+    "cs2:3157469866": {
+      "sourceFingerprint": "f9644cb4e0bd1ddbaf0144d0281f2c9de03bfaee14d0c1ab8c6af69696862120",
+      "originalTitle": "Mapeadores Asset Pack",
+      "descriptionOriginal": "Custom asset pack used on the Mapeadores ZE server. Join us at: 87.98.228.196:27040",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3157469866"
+      ],
+      "reason": "说明明确为地图配套资源包或人物模型等非地图附件。",
+      "reviewedAt": "2026-11-05T12:53:48.590330+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:53:48.590330+00:00"
+      }
+    },
+    "cs2:3355382489": {
+      "sourceFingerprint": "c744459f944466e58c238cbd0c920b14d15e56d1bf9a51b427ebc344bcfa6a83",
+      "originalTitle": "Kasumizawa Miyu from Blue Archive Server side player model with tutorial",
+      "descriptionOriginal": "Well after long time heres Kasumizawa Miyu 霞沢ミユ from Blue Archive ブルーアーカイブ RABBIT Platoon Server side player model. Arms fixed for CS2 animgraph2 update. CT and T models got diffrent jiggle bone config If you can type feedback",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3355382489"
+      ],
+      "reason": "说明明确为地图配套资源包或人物模型等非地图附件。",
+      "reviewedAt": "2026-11-05T12:53:48.590330+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:53:48.590330+00:00"
+      }
+    },
+    "cs2:3528170716": {
+      "sourceFingerprint": "6df574fa20644ef5c2fc4d65b5c05096665dfee7f8475073e5b13b1a3f311f8d",
+      "originalTitle": "Hatsune Miku Player model PDFT/Megamix+",
+      "descriptionOriginal": "Here is 01 vocaloid Hatsune Miku from Hatsune Miku Project diva future tone/Megamix+ yay! ----------------------------------------------------------------------------------------------- ----------------------------------------------------------------------",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3528170716"
+      ],
+      "reason": "说明明确为地图配套资源包或人物模型等非地图附件。",
+      "reviewedAt": "2026-11-05T12:53:48.590330+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:53:48.590330+00:00"
+      }
+    },
+    "cs2:3440101166": {
+      "sourceFingerprint": "e71384f2d9fe0c9b182f6b0585b694488965bf1e3a0505bdb24566d66b305faa",
+      "originalTitle": "Trump cs2 player model",
+      "descriptionOriginal": "characters/models/night_fighter/trump/trump.vmdl_c characters/models/night_fighter/trump/trump_arms.vmdl_c characters/models/night_fighter/trump/trump_shirt.vmdl_c characters/models/night_fighter/trump/trump_shirt_arms.vmdl_c",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3440101166"
+      ],
+      "reason": "说明明确为地图配套资源包或人物模型等非地图附件。",
+      "reviewedAt": "2026-11-05T12:53:48.590330+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:53:48.590330+00:00"
+      }
+    },
+    "cs2:3358108020": {
+      "sourceFingerprint": "3049b576f9d175926dd010507b5d3df992d376fbaaaa4eb3e3e867a1c4dc3bb6",
+      "originalTitle": "DXD-CS ASSET PACK",
+      "descriptionOriginal": "Проект игровых серверов DXD: Кастомные Модели, иконки, эффекты и др...",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3358108020"
+      ],
+      "reason": "说明明确为地图配套资源包或人物模型等非地图附件。",
+      "reviewedAt": "2026-11-05T12:53:48.590330+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:53:48.590330+00:00"
+      }
+    },
+    "cs2:3183751281": {
+      "sourceFingerprint": "37a51a5f7891ac9f1d061e084807022e957349d3952cff1fff33309feed2163a",
+      "originalTitle": "Batman Classic player model",
+      "descriptionOriginal": "characters/models/night_fighter/batman_classic/batman_classic_fix.vmdl_c characters/models/night_fighter/batman_classic/batman_classic_arms.vmdl_c",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3183751281"
+      ],
+      "reason": "说明明确为地图配套资源包或人物模型等非地图附件。",
+      "reviewedAt": "2026-11-05T12:53:48.590330+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:53:48.590330+00:00"
+      }
+    },
+    "cs2:3443892480": {
+      "sourceFingerprint": "0b373937208063bb9c4aae8dd8c51ad1cb05666cf3c738a1608fa3176d76509b",
+      "originalTitle": "Peacemaker cs2 player model",
+      "descriptionOriginal": "characters/models/night_fighter/peacemaker/peacemaker.vmdl_c characters/models/night_fighter/peacemaker/peacemaker_arms.vmdl_c characters/models/night_fighter/peacemaker/peacemaker_nohelmet.vmdl_c",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3443892480"
+      ],
+      "reason": "说明明确为地图配套资源包或人物模型等非地图附件。",
+      "reviewedAt": "2026-11-05T12:53:48.590330+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:53:48.590330+00:00"
+      }
+    },
+    "cs2:3384227334": {
+      "sourceFingerprint": "8aa04ca02cc959c92f723873c745982c64e7385472b44dd6cc3b9eecab6f43c9",
+      "originalTitle": "【cs2-model】 custom player model package",
+      "descriptionOriginal": "custom player model package cs2-mzlty cs2-cnyy cs2-bcsz",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3384227334"
+      ],
+      "reason": "说明明确为地图配套资源包或人物模型等非地图附件。",
+      "reviewedAt": "2026-11-05T12:53:48.590330+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:53:48.590330+00:00"
+      }
+    },
+    "cs2:3439159075": {
+      "sourceFingerprint": "2235fe082d359468ea033c2b1df51a21e7281777c683f8268cf804aae0af3a39",
+      "originalTitle": "Xenomorph cs2 player model",
+      "descriptionOriginal": "Xenomorph characters\\models\\night_fighter\\xenomorph\\xenomorph.vmdl_c characters\\models\\night_fighter\\xenomorph\\xenomorph_arms.vmdl_c",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3439159075"
+      ],
+      "reason": "说明明确为地图配套资源包或人物模型等非地图附件。",
+      "reviewedAt": "2026-11-05T12:53:48.590330+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:53:48.590330+00:00"
+      }
+    },
+    "cs2:3676696780": {
+      "sourceFingerprint": "980b07ddafef71bfaea70f6e54bf20193ba31b9ca9638db39a6c9cea0c1a7697",
+      "originalTitle": "Honkai: Star Rail Castorice Player model (PM)",
+      "descriptionOriginal": "Here Honkai: Star Rail Castorice Servant of the Afterlife yay! Usage: Can fully playable as Player model / Got HWM head for Source 2 Filmmaker S2FM - S2SFM / hammer for making map include her (do not reupload her add her as Required items ) / can be use as",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3676696780"
+      ],
+      "reason": "说明明确为地图配套资源包或人物模型等非地图附件。",
+      "reviewedAt": "2026-11-05T12:53:48.590330+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:53:48.590330+00:00"
+      }
+    },
+    "cs2:3439168030": {
+      "sourceFingerprint": "b7752d4cf490e91163b1735a193bec62fbee5e563e2f922fd3314f7a3f737713",
+      "originalTitle": "President Putin player model",
+      "descriptionOriginal": "President Putin characters\\models\\night_fighter\\putin\\putin.vmdl_c characters\\models\\night_fighter\\putin\\putin_arms.vmdl_c",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3439168030"
+      ],
+      "reason": "说明明确为地图配套资源包或人物模型等非地图附件。",
+      "reviewedAt": "2026-11-05T12:53:48.590330+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna audits)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:53:48.590330+00:00"
+      }
+    },
+    "minecraft:zfbCkvdZ": {
+      "sourceFingerprint": "0e2e20cb882a8b33260379f7970d60ef33ce5bff8862dca7387bb45e443b8567",
+      "originalTitle": "Kambrik",
+      "descriptionOriginal": "A Kotlin Library Mod",
+      "sources": [
+        "https://modrinth.com/mod/kambrik"
+      ],
+      "reason": "来源明确称为编程语言程序库，属于目录范围排除的开发辅助组件；未据此断言其他作品的具体依赖关系。",
+      "reviewedAt": "2026-11-05T12:53:48.590330+00:00",
+      "reviewer": "primary-agent (two independent gpt-6-luna reviews)",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-05T12:53:48.590330+00:00"
+      }
+    },
+    "cs2:3205460560": {
+      "sourceFingerprint": "2508f2cae6b7f64b515ced304543df2f61b5349405d4a1739a866b2c98972e14",
+      "originalTitle": "Avalon ZE Asset Pack",
+      "descriptionOriginal": "Avalon Zombie Escape Asset Pack",
+      "reason": "原名与说明均明确标为僵尸逃脱配套资源包。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3205460560"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "cs2:3232287131": {
+      "sourceFingerprint": "98966ba07235d1f615f951602929aa6b6066b3bbac71eb7098801425508ebd77",
+      "originalTitle": "Upkk AssetPack 资源包.1",
+      "descriptionOriginal": "Upkk AssetPack 资源包.1",
+      "reason": "原名和说明均标为工坊资源包。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3232287131"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "cs2:3241598899": {
+      "sourceFingerprint": "66797f2b437a64810a2a23a51a1da37a47248723e5f486ca0bdd0e6c451722fb",
+      "originalTitle": "wcs resource pack v 0.0.4",
+      "descriptionOriginal": "wcs resource pack v 0.0.4",
+      "reason": "原名和说明均明确标为版本化资源包。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3241598899"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "cs2:3264286036": {
+      "sourceFingerprint": "5a3eb32a4745ecec78afba7d891deb3c493a04e5c3759578de469a4df20da452",
+      "originalTitle": "cOLa General Asset Pack",
+      "descriptionOriginal": "cOLa custom asset pack for all server. Discord: Models, Quake Sound, MVP Kit Music",
+      "reason": "作者将条目列为服务器资源包，内容包括模型、音效与音乐。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3264286036"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "cs2:3264287763": {
+      "sourceFingerprint": "2bc81c30ae7abdea455b4b36f319cc152914e6abfac125aaca721bfe94b1197e",
+      "originalTitle": "cOLa Asset Pack Jail",
+      "descriptionOriginal": "cOLa Asset Pack Jail from Jail Serve. IP: 178.33.160.187:27020",
+      "reason": "作者说明这是越狱服务器的资源包。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3264287763"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "cs2:3348074583": {
+      "sourceFingerprint": "a223d3db94abd32a2243bce3e67fc315b85314b92ca40e01db8e9942a298d758",
+      "originalTitle": "STAR RESOURCE PACK",
+      "descriptionOriginal": "Weapons",
+      "reason": "作品标为资源包，说明将内容列为武器素材。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3348074583"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "cs2:3453142165": {
+      "sourceFingerprint": "14b0e08f1ec95c96027361e00e9c4663cb7050e53820e681335b81d69ba1a72b",
+      "originalTitle": "Thunder Resource Pack",
+      "descriptionOriginal": "Pack of skins: Among Us, Chibi Leonardo, Chibi Michel, Prisoner, Spider Man, SpongeBob, Batman, EmoSmile, Sonic",
+      "reason": "说明将附件描述为多种角色外观的皮肤包。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3453142165"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "cs2:3482336239": {
+      "sourceFingerprint": "35faff9f8f1a68501f761efa1b0ce33c4d4c7eca97ee2d223a1467b4d31da307",
+      "originalTitle": "BraintRot Asset Pack",
+      "descriptionOriginal": "italyan brainrot karakterleri ve fazlası discord.gg/K6RRfmu",
+      "reason": "作品标为资产包，说明列出网络梗角色等素材。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3482336239"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "cs2:3623294094": {
+      "sourceFingerprint": "ef9fc05d8cfe89769b04e57df145019ca1a96d2093a2e4d4986deeca4c70fa7e",
+      "originalTitle": "Addon",
+      "descriptionOriginal": "🛑 Обязательный ресурс-пак для серверов vibecs2 У нас есть все: бесплатные скины, много серверов, быстрая и адекватная администрация и многое другое! ❤️ Приятной игры на наших серверах ❤️",
+      "reason": "作者明确将条目称为服务器必需资源包。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3623294094"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "cs2:3658046927": {
+      "sourceFingerprint": "6515096012ef7940731ad2cbe4dfefdfe2db7f05f2d5e06e31683edf40e789c1",
+      "originalTitle": "Upkk AssetPack Asset",
+      "descriptionOriginal": "Upkk AssetPack Asset",
+      "reason": "原名和说明均明确标为工坊资源包。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3658046927"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "cs2:3743485221": {
+      "sourceFingerprint": "1e3f93417044e71c8b7f965ed5f9226bd88236a978e951f9e7531b5b2f665fff",
+      "originalTitle": "CSM Zombie Assets",
+      "descriptionOriginal": "☣ CSM ZOMBIE ASSETS — ZOMBIE PLAGUE Assets used on our CS2 ZOMBIE PLAGUE server. 🌐 DNS Server: ZM.STRIKEFORCE.RO 📡 IP Server: 81.18.48.199:27015 💬 Join our Discord: discord.gg/cg4THWVkYt Experience the classic Zombie Plague gameplay from CS 1.6, rebuilt fr",
+      "reason": "作者说明附件提供僵尸模式服务器使用的素材。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3743485221"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "cs2:3791366113": {
+      "sourceFingerprint": "36860356d6f8b4a421787c399dbffb62f8a0a620dce89e6e0e1b4274b8a64a83",
+      "originalTitle": "NovaZombie Custom Hud Resources",
+      "descriptionOriginal": "NovaZombie Server Custom HUD Resources This workshop item contains a collection of custom HUD resources created for NovaZombie Server, designed to bring a clean, familiar SourceMod vanilla menu-style interface to our custom plugins and server systems. You",
+      "reason": "作者说明这是服务器插件和菜单使用的自定义界面资源。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3791366113"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "cs2:3796871569": {
+      "sourceFingerprint": "7d30280a518ae0c0ca5562336108aa183d10f22d2ce69d865a13d3eb7e5cf9a2",
+      "originalTitle": "ARPSEL Server HUD Pack",
+      "descriptionOriginal": "HUD PACK FOR OUR SERVERS",
+      "reason": "原名和说明均明确是服务器界面资源包。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3796871569"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "cs2:3799763980": {
+      "sourceFingerprint": "c5de05f80e455ed268a60163b5c1e2ba9954715fd92768cd3cf1279824498c5c",
+      "originalTitle": "PROJECT ZERO — HUD & Sound",
+      "descriptionOriginal": "PROJECT ZERO — Zombie 0 для Counter-Strike 2 Знакомый город, первые заражённые и раунд, который нужно пережить вместе. Этот аддон содержит интерфейс и звуки сервера PROJECT ZERO. Играть на сервере PROJECT-Z0.RU — серверы, правила и сообщество Подключение ч",
+      "reason": "说明将附件内容列为服务器使用的界面与声音。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3799763980"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "cs2:3807024759": {
+      "sourceFingerprint": "29a3ed012a23955c2b1aeb2bd8045dd025596ad64078fdcf92a6d124444ce7fa",
+      "originalTitle": "CS2 UI Kit",
+      "descriptionOriginal": "CS2 UI Kit — ресурсы уведомлений Вспомогательный пакет Panorama для интерфейса CS2. Содержит ресурсы тостов CS2UIKit и используется в комплекте аддонов сервера PROJECT ZERO. Возможности тостов Карточки информационных сообщений, успеха, предупреждений и оши",
+      "reason": "作者说明这是服务器配套的界面通知资源包。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3807024759"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "cs2:3826755538": {
+      "sourceFingerprint": "55fcdb0761515912c5726971085cdd4de7207be35c451661744f3c8b5342a5fe",
+      "originalTitle": "Server Assets",
+      "descriptionOriginal": "All the client files these servers need, in one download instead of six. What's inside: - PanoramaMenuManager (PMM): menus, main menu, weapon selector, C4 timer, sounds and cameras - PMM Advertisement - CS2 Fortnite Emotes & Dances - Counter-Strike 2 Quake",
+      "reason": "作者说明附件是服务器客户端文件合集，含菜单、音效和动作等内容。",
+      "sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3826755538"
+      ],
+      "reviewedAt": "2026-11-12T12:27:57.105806+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
+      }
+    },
+    "minecraft:JjL1lujI": {
+      "sourceFingerprint": "e3f9b316c79a385b081720b44e7dd7020db35b19497f371a4614e627e741e545",
+      "originalTitle": "FFUtilities",
+      "descriptionOriginal": "A utilities library made for my FF mods, but feel free to benifit from it as well!",
+      "reason": "完整作品说明将它描述为供其他模组共享的配置、界面提示与兼容工具库。",
+      "sources": [
+        "https://modrinth.com/mod/ffutilities",
+        "https://api.modrinth.com/v2/project/JjL1lujI"
+      ],
+      "reviewedAt": "2026-11-12T12:49:15.453248+00:00",
+      "reviewer": "primary-agent",
+      "approval": {
+        "approvedBy": "primary-agent",
+        "approvedAt": "2026-11-12T12:53:39.938114+00:00"
       }
     }
   }

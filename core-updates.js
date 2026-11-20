@@ -4,7 +4,7 @@ const coreUpdateCategories = {
   traversal: '移动与转点', economy_loot: '资源与经济', revive_teamplay: '救援与返场',
   combat_rules: '战斗规则', in_match_usability: '局内操作与信息'
 };
-const contentTypeLabels = { all: '全部资料', mode: '模式案例', core_update: '基础更新', item: '主题道具', skin: '武器外观' };
+const contentTypeLabels = { all: '全部资料', mode: '模式案例', core_update: '基础更新', item: '主题道具', skin: '武器外观', map: '地图' };
 function isCoreUpdate(entry) { return entry.contentKind === 'core_update'; }
 function getContentTypeLabel(entry) { return isCoreUpdate(entry) ? '基础更新' : entry.kind === 'modes' ? '模式案例' : kindLabels[entry.kind]; }
 function getCoreUpdateTiming(entry) {
@@ -49,28 +49,44 @@ function updateMatchesContentFilters(entry) {
 }
 function renderSharedFilters() {
   const modeView = state.view === 'modes';
-  const objectCollection = state.view === 'collection' && ['skin', 'item'].includes(state.contentFilter);
+  const library = modeView && state.modeView === 'library';
+  const collection = state.view === 'collection';
   document.querySelector('#sharedFilters').hidden = ['maps', 'items', 'skins'].includes(state.view) || (state.view === 'modes' && state.modeView === 'patches');
-  document.querySelector('#itemContentOption').hidden = state.view !== 'collection';
-  document.querySelector('#skinContentOption').hidden = state.view !== 'collection';
-  document.querySelector('#contentTypeField').hidden = !modeView && state.view !== 'collection';
-  document.querySelector('#updateCategoryField').hidden = state.contentFilter !== 'core_update';
+  const collectionKinds = new Set(collection ? state.entries.filter(entry => state.collected.has(entry.id)).map(entry =>
+    isWeaponSkin(entry) ? 'skin' : isTacticalItem(entry) ? 'item' : isCoreUpdate(entry) ? 'core_update' : 'mode') : []);
+  if (collection && mapArchive.mapCollected.size) collectionKinds.add('map');
+  for (const option of document.querySelector('#contentTypeSelect').options) {
+    option.hidden = option.value !== 'all' && option.value !== state.contentFilter &&
+      (collection ? !collectionKinds.has(option.value) : ['item', 'skin', 'map'].includes(option.value));
+  }
+  if (collection) {
+    const options = Object.entries(contentTypeLabels).filter(([id]) => id === 'all' || collectionKinds.has(id) || state.contentFilter === id);
+    document.querySelector('#collectionDirectoryFilters').innerHTML = options.map(([id, label]) =>
+      '<button type="button" data-collection-kind="' + id + '" aria-pressed="' + (state.contentFilter === id) + '">' +
+      escapeHtml(label) + '</button>').join('');
+  }
+  document.querySelector('#contentTypeField').hidden = !modeView || library;
+  document.querySelector('#updateCategoryField').hidden = collection || state.contentFilter !== 'core_update';
   document.querySelector('#contentTypeSelect').value = state.contentFilter;
   document.querySelector('#updateCategorySelect').value = state.updateCategory;
   document.querySelector('#libraryViewControls').hidden = modeView && state.modeView !== 'library';
-  document.querySelector('#gameplayFilters').closest('.gameplay-filter-row').hidden = objectCollection;
-  document.querySelector('#topicSelect').closest('.select-field').hidden = objectCollection;
-  document.querySelector('#typeField').hidden = objectCollection || state.view === 'mechanics' || state.contentFilter === 'core_update';
+  document.querySelector('#gameplayFilters').closest('.gameplay-filter-row').hidden = collection;
+  document.querySelector('#gameFilters').hidden = collection;
+  document.querySelector('#topicSelect').closest('.select-field').hidden = modeView || collection;
+  document.querySelector('#typeField').hidden = modeView || collection || state.view === 'mechanics' || state.contentFilter === 'core_update';
   document.querySelectorAll('[data-feed]').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.feed === state.feedFilter)));
-  renderGameplayFilters();
-  renderGameFilters();
+  if (!collection && !library) {
+    renderGameplayFilters();
+    renderGameFilters();
+  }
   const filters = [state.query ? '搜索：' + state.query : '', state.gameFilter !== 'all' ? state.gameFilter : '',
     state.gameplayFilter !== 'all' ? currentGameplayDefinitions().find((d) => d.id === state.gameplayFilter)?.label : '',
     state.contentFilter !== 'all' ? contentTypeLabels[state.contentFilter] : '',
     state.updateCategory !== 'all' ? coreUpdateCategories[state.updateCategory] : '',
     state.topic !== 'all' ? topicDefs.find((d) => d.id === state.topic)?.label : '', state.filter === 'ltm' ? 'LTM' : ''].filter(Boolean);
-  document.querySelector('#filterSummary').hidden = !filters.length;
-  document.querySelector('#filterSummaryText').textContent = filters.join(' · ');
+  const legacyTopic = library && topicDefs.find((d) => d.id === state.topic)?.label;
+  document.querySelector('#filterSummary').hidden = library ? !legacyTopic : !filters.length;
+  document.querySelector('#filterSummaryText').textContent = library ? (legacyTopic ? '链接中的设计主题 · ' + legacyTopic : '') : filters.join(' · ');
 }
 function tacticalProfileDetail(entry) {
   const p = entry.tacticalProfile;
@@ -83,7 +99,7 @@ function tacticalProfileDetail(entry) {
 function coreUpdateMediaDetail(entry) {
   const videos = (entry.videos || []).filter((v) => safeUrl(v.url));
   const shots = (entry.screenshots || []).filter((s) => safeUrl(s.path));
-  return (videos.length ? '<section class="detail-section"><h3>YouTube 视频演示</h3><div class="tactical-videos">' + videos.map((v) =>
+  return (videos.length ? '<section class="detail-section"><h3>原始视频演示</h3><div class="tactical-videos">' + videos.map((v) =>
     '<a class="tactical-video" href="' + escapeHtml(safeUrl(v.url)) + '" target="_blank" rel="noopener noreferrer"><span class="tactical-video-label">' +
     (v.sourceType === 'official' ? '官方演示' : '第三方实机演示') + ' · ' + escapeHtml(v.publishedDate) + '</span><strong>' + escapeHtml(v.title) + ' ↗</strong><span>' + escapeHtml(v.channel) + ' · ' + escapeHtml(v.versionLabel) + '</span><p>' + escapeHtml(v.watchFor) + '</p></a>'
   ).join('') + '</div><p class="tactical-note">视频用于观察操作和表现；数值与适用范围以本条官方来源为准。</p></section>' : '') +
@@ -97,7 +113,7 @@ function tacticalProfileMarkdown(entry) {
   const p = entry.tacticalProfile;
   if (!p) return [];
   return ['## 战术道具机制', '', '- 英文原名：' + p.englishName, '- 定位：' + p.role, '', '### 操作方式', '', p.operation, '', '### 作用效果', '', p.effect, '', '### 获取方式', '', p.acquisition, '', '### 限制与版本差异', '', p.limits, '', ...p.parameters.map((r) => '- ' + r.label + '：' + r.value), '',
-    '## YouTube 视频演示', '', ...(entry.videos || []).flatMap((v) => ['- [' + v.title + '](' + v.url + ')', '  - ' + v.channel + ' · ' + v.publishedDate + ' · ' + (v.sourceType === 'official' ? '官方演示' : '第三方演示'), '  - ' + v.versionLabel + '；' + v.watchFor]), '',
+    '## 原始视频演示', '', ...(entry.videos || []).flatMap((v) => ['- [' + v.title + '](' + v.url + ')', '  - ' + v.channel + ' · ' + v.publishedDate + ' · ' + (v.sourceType === 'official' ? '官方演示' : '第三方演示'), '  - ' + v.versionLabel + ' · ' + v.watchFor]), '',
     ...((entry.screenshots || []).length ? ['## 视频截图', '', ...entry.screenshots.flatMap((s) => ['![' + s.caption + '](' + new URL(s.path, document.baseURI).href + ')', '', '[' + s.caption + '](' + s.sourceUrl + ')', ''])] : []),
     ...(entry.mediaNote ? [entry.mediaNote, ''] : []),
     '## 机制与日期依据', '', ...(entry.evidenceLinks || []).map((s) => '- [' + s.label + '](' + s.url + ')'), ''];
@@ -110,6 +126,7 @@ function coreUpdateDetail(entry) {
     '<div class="detail-inner"><div class="detail-kicker">基础更新 / ' + escapeHtml(entry.game) + '</div><h2 id="detailTitle">' + escapeHtml(entry.modeName) + '</h2>' +
     '<div class="detail-meta"><span>' + escapeHtml(coreUpdateDateLabel(entry)) + '</span><span>' + escapeHtml(entry.versionLabel) + '</span></div>' +
     '<div class="detail-taxonomy">' + entryGameplayDefinitions(entry).map((d) => '<span class="gameplay-chip">' + escapeHtml(d.label) + '</span>').join('') + '</div>' +
+    '<div class="tag-row" aria-label="更新类别">' + entry.type.map(tag => '<span class="tag">' + escapeHtml(tag) + '</span>').join('') + '</div>' +
     section('适用模式与地图', [...entry.affectedModes, ...entry.mapNames].join(' · ')) +
     section('改动前', entry.before || '该来源未明确说明改动前的完整状态。') + section('具体变化', entry.after) +
     tacticalProfileDetail(entry) + coreUpdateMediaDetail(entry) +
@@ -146,12 +163,59 @@ function groupUpdateEntries(entries, byLane = false) {
 function groupTitle(group) {
   return group.entries.length > 1 ? group.representative.versionLabel + ' · ' + group.entries.length + ' 条基础更新' : group.representative.modeName;
 }
-function renderUpdateGroupItems(group) {
-  return '<div class="update-group-items">' + group.entries.map((r) => '<button type="button" class="update-group-item" data-action="open-mode" data-id="' + escapeHtml(r.id) + '"><img src="' + escapeHtml(safeUrl(r.imageUrl)) + '" loading="lazy" alt=""><span><strong>' + escapeHtml(r.modeName) + '</strong><small>' + escapeHtml(r.type.join(' / ') + ' · ' + r.imageScopeLabel) + '</small></span>' + icon('arrow-up-right') + '</button>').join('') + '</div>';
+function activityThumbnail(url) {
+  return url ? '<img src="' + escapeHtml(url) + '" loading="lazy" decoding="async" alt="">' : '';
+}
+function renderUpdateGroupItems(group, sharedImage = '') {
+  const shownImages = new Set(sharedImage ? [sharedImage] : []);
+  return '<div class="update-group-items">' + group.entries.map((entry) => {
+    const url = safeUrl(entry.imageUrl);
+    const thumbnail = shownImages.has(url) ? '' : activityThumbnail(url);
+    if (thumbnail) shownImages.add(url);
+    const imageCredit = thumbnail && entry.imageScopeLabel ?
+      '<span class="activity-image-credit"> · ' + escapeHtml(entry.imageScopeLabel) + '</span>' : '';
+    return '<button type="button" class="update-group-item" data-action="open-mode" data-id="' + escapeHtml(entry.id) + '">' +
+      thumbnail + '<span><strong>' + escapeHtml(entry.modeName) + '</strong><small>' +
+      escapeHtml(entry.type.join(' · ')) + imageCredit + '</small></span>' +
+      icon('arrow-up-right') + '</button>';
+  }).join('') + '</div>';
+}
+function renderActivityTiming(entry, status) {
+  const date = getModeDateValue(entry);
+  const core = isCoreUpdate(entry);
+  const timing = core ? getCoreUpdateTiming(entry) : null;
+  const statusLabel = core && timing.label === '预定' ? (status.className === 'is-upcoming' ? '预定上线' : '预定已过 · 待核实') : status.label;
+  return '<div class="activity-date">' +
+    (date ? '<time datetime="' + escapeHtml(date) + '">' + escapeHtml(date) + '</time>' : '<strong>日期待核实</strong>') +
+    '<span>' + escapeHtml(statusLabel) + '</span></div>';
+}
+function renderActivityHeading(entry, title) {
+  return '<div class="activity-title-row"><span class="activity-game">' + escapeHtml(entry.game) + '</span><h3>' + escapeHtml(title) + '</h3></div>';
 }
 function renderRecordActivity(entry) {
   const status = getActivityState(entry);
-  return '<article class="activity-card ' + status.className + '"><div class="activity-date"><time datetime="' + escapeHtml(getModeDateValue(entry)) + '">' + escapeHtml(formatActivityDate(entry)) + '</time><span>' + escapeHtml(status.label) + '</span></div><div class="activity-main"><div class="activity-title-row"><span class="activity-game">' + escapeHtml(entry.game) + '</span><h3>' + escapeHtml(entry.modeName) + '</h3></div><p>' + escapeHtml(entry.oneLineRule) + '</p><div class="activity-tags">' + escapeHtml(getContentTypeLabel(entry) + ' · ' + getGameplayLabel(entry) + (isLtmMode(entry) ? ' · LTM' : '')) + '</div></div><div class="activity-actions"><button data-action="open-mode" data-id="' + escapeHtml(entry.id) + '">查看详情</button><a href="' + escapeHtml(safeUrl(entry.sourceUrl)) + '" target="_blank" rel="noopener noreferrer">来源</a></div></article>';
+  const thumbnail = activityThumbnail(safeUrl(entry.imageUrl));
+  const source = safeUrl(entry.sourceUrl);
+  const tags = [getContentTypeLabel(entry), getGameplayLabel(entry), isLtmMode(entry) ? 'LTM' : ''].filter(Boolean);
+  const media = thumbnail ? '<figure class="activity-media">' + thumbnail +
+    (entry.imageScopeLabel ? '<figcaption>' + escapeHtml(entry.imageScopeLabel) + '</figcaption>' : '') + '</figure>' : '';
+  return '<article class="activity-card ' + status.className + '">' + renderActivityTiming(entry, status) +
+    '<div class="activity-main">' + renderActivityHeading(entry, entry.modeName) + '<p>' + escapeHtml(entry.oneLineRule) + '</p>' +
+    '<div class="activity-footer"><div class="activity-tags">' + escapeHtml(tags.join(' · ')) + '</div>' +
+    '<div class="activity-actions"><button type="button" data-action="open-mode" data-id="' + escapeHtml(entry.id) + '">查看详情</button>' +
+    (source ? '<a href="' + escapeHtml(source) + '" target="_blank" rel="noopener noreferrer">来源 ' + icon('arrow-up-right') + '</a>' : '') +
+    '</div></div></div>' + media + '</article>';
+}
+function renderUpdateGroupActivity(group) {
+  const entry = group.representative;
+  const status = getActivityState(entry);
+  const versionCover = group.entries.find((item) => item.imageScope === 'version' && safeUrl(item.imageUrl));
+  const sharedImage = safeUrl(versionCover?.imageUrl);
+  const media = sharedImage ? '<figure class="activity-media">' + activityThumbnail(sharedImage) +
+    '<figcaption>官方版本配图</figcaption></figure>' : '';
+  return '<article class="activity-card update-activity-group ' + status.className + '">' + renderActivityTiming(entry, status) +
+    '<div class="activity-main">' + renderActivityHeading(entry, groupTitle(group)) + '</div>' + media +
+    renderUpdateGroupItems(group, sharedImage) + '</article>';
 }
 function renderUnifiedActivityFeed() {
   let entries = getSortedModesDescending(state.modes.filter((r) => matchesLibraryEntry(r)));
@@ -160,16 +224,14 @@ function renderUnifiedActivityFeed() {
     const days = date ? (date - getTodayStart()) / 86400000 : NaN;
     return days <= 0 && days >= -30;
   });
-  if (state.feedFilter === 'upcoming') entries = entries.filter((r) => getDayDelta(r) > 0).reverse();
+  if (state.feedFilter === 'upcoming') entries = entries.filter((r) => r.launchDateStatus !== 'unverified' && getDayDelta(r) > 0).reverse();
   if (state.feedFilter === 'ltm') entries = entries.filter(isLtmMode);
   const groups = groupUpdateEntries(entries);
   const shown = groups.slice(0, state.activityLimit || 24);
   document.querySelector('#activityStats').textContent = entries.length + ' 份资料 · ' + groups.length + ' 组动态';
-  activityFeed.innerHTML = shown.length ? shown.map((group) => {
-    if (!group.isUpdateGroup || group.entries.length === 1) return renderRecordActivity(group.representative);
-    const entry = group.representative;
-    return '<article class="activity-card update-activity-group"><div class="activity-date"><time>' + escapeHtml(coreUpdateDateLabel(entry)) + '</time><span>基础更新</span></div><div class="activity-main"><div class="activity-title-row"><span class="activity-game">' + escapeHtml(entry.game) + '</span><h3>' + escapeHtml(groupTitle(group)) + '</h3></div>' + renderUpdateGroupItems(group) + '</div></article>';
-  }).join('') : '<div class="empty-state"><h3>这个范围内暂无动态</h3><p>可切换全部动态，或清除筛选。</p></div>';
+  activityFeed.innerHTML = shown.length ? shown.map((group) => group.entries.length > 1 ?
+    renderUpdateGroupActivity(group) : renderRecordActivity(group.representative)).join('') :
+    '<div class="empty-state"><h3>这个范围内暂无动态</h3><p>可切换全部动态，或清除筛选。</p></div>';
   if (groups.length > shown.length) activityFeed.insertAdjacentHTML('beforeend', '<button class="button" type="button" data-load-activity>加载更多动态</button>');
 }
 function renderTimelineGroup(group, index) {

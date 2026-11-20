@@ -193,9 +193,7 @@ const WeaponSkins = (() => {
     if (archive.status === 'idle') ensure();
     const loading = archive.status === 'loading' && !archive.entries.length;
     const scoped = archive.entries.filter(entry => archive.game === 'all' || entry.skinGame === archive.game);
-    document.getElementById('skinGameFilters').innerHTML = [{ id: 'all', name: '全部游戏' }, ...games].map(game =>
-      '<button type="button" data-skin-game="' + game.id + '" aria-pressed="' + (archive.game === game.id) + '">' +
-      esc(game.name) + '<span>' + archive.entries.filter(entry => game.id === 'all' || entry.skinGame === game.id).length + '</span></button>').join('');
+    selectOptions('skinGameSelect', [['all', '全部游戏'], ...games.map(game => [game.id, game.name])], archive.game);
     const editionScoped = scoped.filter(entry => archive.edition === 'all' || entry.gameEdition === archive.edition);
     const weaponScope = editionScoped.filter(entry => archive.type === 'all' || entry.weaponType === archive.type);
     const weapons = [...new Map(weaponScope.map(entry => [entry.weaponId, entry.weaponName])).entries()].sort((a, b) => a[1].localeCompare(b[1], 'zh-CN'));
@@ -222,8 +220,9 @@ const WeaponSkins = (() => {
       (animations ? ' · ' + animations + ' 款含动图' : '') + ' · ' + inspections + ' 款含检视资料';
     document.getElementById('skinShownCount').textContent = '已展示 ' + visible.length + ' / ' + entries.length + ' 款';
     document.getElementById('loadMoreSkins').hidden = visible.length >= entries.length;
-    document.getElementById('skinStats').innerHTML = [[scoped.length, '皮肤目录'], [scoped.filter(entry => entry.weaponType === 'melee').length, '刀与近战'],
-      [scoped.filter(entry => mediaList(entry).length).length, '含动作资料']].map(([number, label]) => '<div><dd>' + number.toLocaleString('zh-CN') + '</dd><dt>' + label + '</dt></div>').join('');
+    document.getElementById('resetSkins').disabled = !(state.query || archive.game !== 'all' ||
+      archive.type !== 'all' || archive.edition !== 'all' || archive.media !== 'all' ||
+      archive.weapon !== 'all' || archive.rarity !== 'all' || archive.sort !== 'featured');
     const note = document.getElementById('skinLoadStatus');
     note.hidden = !archive.failures.length;
     note.innerHTML = archive.failures.length ? esc(archive.failures.join('、') + '资料暂时无法读取，已保留其余目录。') + ' <button type="button" data-skin-retry>重新加载</button>' : '';
@@ -445,11 +444,16 @@ const WeaponSkins = (() => {
       if (event.target.id === 'skinInspectionDetails') archive.inspectionOpen = event.target.open;
     }, true);
     document.getElementById('skinsSection').addEventListener('click', event => {
-      const target = event.target.closest('[data-skin-game], [data-skin-reset], [data-skin-retry]');
+      const target = event.target.closest('[data-skin-reset], [data-skin-retry]');
       if (!target) return;
       if (target.hasAttribute('data-skin-retry')) { ensure(true); render(); return; }
       if (target.hasAttribute('data-skin-reset')) { reset(); state.query = ''; document.getElementById('searchInput').value = ''; }
-      if (target.dataset.skinGame) { archive.game = target.dataset.skinGame; archive.edition = archive.weapon = archive.rarity = 'all'; }
+      archive.limit = 24; syncFilterRoute(); render();
+      document.getElementById('skinGameSelect').focus({ preventScroll: true });
+    });
+    document.getElementById('skinGameSelect').addEventListener('change', event => {
+      archive.game = event.target.value;
+      archive.edition = archive.weapon = archive.rarity = 'all';
       archive.limit = 24; syncFilterRoute(); render();
     });
     for (const [id, key] of [['skinTypeSelect', 'type'], ['skinEditionSelect', 'edition'], ['skinWeaponSelect', 'weapon'], ['skinRaritySelect', 'rarity'], ['skinMediaSelect', 'media'], ['skinSortSelect', 'sort']]) {

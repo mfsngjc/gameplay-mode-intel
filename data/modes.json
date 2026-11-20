@@ -1658,11 +1658,15 @@
     "imageSource": "df.qq.com 官方玩法区 — 胜者为王模式图",
     "launchDate": "2025-04-17",
     "launchLabel": "2025年4月17日（国服玩法资讯）；海外官方公告写明 2025年5月30日开放 胜者为王",
-    "launchNote": "官网收录胜者为王并介绍指挥官、策略部署和专属频道；Steam 官方全球上线公告以 胜者为王 名称介绍 20 对 20 限时模式，写明 2025年5月30日开放。",
+    "launchNote": "官网收录胜者为王并介绍指挥官、策略部署和专属频道；Steam 官方全球上线公告以 胜者为王 名称介绍 20 对 20 限时模式，写明 2025年5月30日开放。 本卡记录 2025 年初版。S11 起，晋升之路达到校官可永久解锁胜者为王。",
     "gameplayTypes": [
       "warfare"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "additionalSourceUrls": [
+      "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+      "https://apps.apple.com/cn/app/id1642894547?platform=vision"
+    ]
   },
   {
     "id": "delta-force-master-trace-2026",
@@ -3939,33 +3943,46 @@
   {
     "id": "delta-force-black-tide-bomb-2026",
     "game": "三角洲行动",
-    "modeName": "黑潮爆破",
+    "modeName": "黑潮爆破（Detonation）",
     "year": "2026",
     "date": "2026-07-14",
     "tags": [
       "casual"
     ],
     "type": [
-      "爆破模式",
-      "干员战术",
-      "测试招募"
+      "5v5 回合制",
+      "安放与拆除",
+      "局内购买与配装"
     ],
-    "oneLineRule": "黑潮爆破是三角洲行动的新爆破玩法测试，把经典“进点下包/防守拆包”嫁接到干员战术和三角洲武器手感上。",
-    "mechanicChange": "官方 7月6日新闻标题确认“全新玩法【黑潮爆破】测试招募开启”；官方新闻列表与社区同步描述其为“纯粹干员战术爽快的洲特色爆破”，核心围绕起枪对枪、进点下包，并加入三角洲行动自己的干员战术元素。首次测试公开信息指向 7月14日开启，招募期为 7月6日至7月16日。",
-    "tempoImpact": "爆破规则把三角洲的大地图/撤离压力压缩成短回合攻防，玩家注意力会从资源带出转向信息交换、道具执行、进点节奏和残局处理。干员技能若保留，会让传统爆破的烟闪雷协同扩展成更强的职业分工。",
-    "designObservation": "成熟射击项目做爆破变体时，难点不是复刻下包规则，而是决定哪些本作特色能进入短回合。保留干员战术可以形成差异化，但必须控制信息与技能爆发不要冲垮枪线博弈。",
-    "sourceUrl": "https://df.qq.com/cp/a20240906main/newsdetail.html?id=13274693571937570984",
-    "imageUrl": "assets/mode-official/07bfc5ce74151ae00303.jpg",
-    "imageSource": "Garena 三角洲行动官方玩法图（通用兜底，本地归档）",
-    "launchDate": "2026-07-14",
-    "launchLabel": "2026年7月14日首次测试",
-    "launchNote": "官方页为动态新闻详情，搜索摘要确认 2026年7月6日发布“黑潮爆破”测试招募；TapTap 先行服页面显示招募时间 7月6日-7月16日，测试时间/资格仍需后续复核。",
+    "oneLineRule": "两队各五名干员。进攻方争夺点位并安放炸弹，防守方阻止安放或在引爆前拆除。",
+    "mechanicChange": "每回合以安放、拆除与队伍交战为主。玩家可以购买武器、调整配装，并结合干员技能进攻或防守。国服「微光」补丁把电脑端匹配对局改为先赢 7 回合。黑潮爆破还可掉落曼德尔砖，同一周内与全面战场共享掉落上限。",
+    "tempoImpact": "回合间可根据双方的阵容、装备与点位信息重新分配购买和道具。国服电脑端普通匹配的取胜回合数改变了经济规划的时间范围。",
+    "designObservation": "把安放与拆除设为固定目标，可以让两边用不同干员能力争夺相同点位。回合购买和武器配装增加了资源分配的决策。",
+    "sourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/694271289525799608?l=english",
+    "imageUrl": "assets/mode-official/delta-detonation-beta-2026.jpg",
+    "imageSource": "Team Jade 两周年公告「New Mode — Detonation (Beta)」官方配图",
+    "launchDate": "2026-09-27",
+    "launchLabel": "2026 年 9 月 27 日开放公开 Beta",
+    "launchNote": "国服项目组 7 月 6 日发布首轮招募，列 7 月 14 日开测。9 月 27 日开放公开 Beta，项目组后续周报确认已上线。发行商两周年 Steam 公告列出国际服电脑和移动端于北京时间 9 月 27 日 09:00 开放公开 Beta。Steam 国际服「微光」主补丁列出 11 月 10 日加入主机与手柄支持。正式版首发日期尚待后续公告。",
     "gameplayTypes": [
       "bomb"
     ],
     "isLtm": false,
-    "imageSourceUrl": "https://deltaforce.garena.com/en/news/announcement/W9PGYU",
-    "imageOriginalUrl": "https://web.df.garena.com//03_news/news_banner/SMP/20250920_patch/9.jpg"
+    "imageSourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/694271289525799608?l=english",
+    "imageOriginalUrl": "https://clan.akamai.steamstatic.com/images/45050610/b4c90af0f152b631f59317097c0c0767271a8c19.jpg",
+    "additionalSourceUrls": [
+      "https://df.qq.com/cp/a20240906main/newsdetail.html?id=13274693571937570984",
+      "https://www.bilibili.com/opus/1221782476941164563",
+      "https://test-game.xiaomi.com/viewpoint/1543075652_1783783800048_16",
+      "https://www.taptap.cn/moment/852954974638836316?group_id=531928",
+      "https://www.taptap.cn/moment/854340285914681297?group_id=531928",
+      "https://steamcommunity.com/games/2507950/announcements/detail/676261964507253471?l=schinese",
+      "https://steamcommunity.com/games/2507950/announcements/detail/676261964507253471?l=english",
+      "https://deltaforce.garena.com/en/news/announcement/GWPGVY"
+    ],
+    "launchDateStatus": "confirmed",
+    "reviewedAt": "2026-11-16",
+    "publicationStatus": "ready"
   },
   {
     "id": "fortnite-runners-2026",
@@ -4641,16 +4658,20 @@
     "imageSource": "Garena 三角洲行动 第 11 赛季 官方 摩格旧城区 配图",
     "launchDate": "2026-09-08",
     "launchLabel": "2026年9月8日随 第 11 赛季转向 上线（国际服）",
-    "launchNote": "官方英文名为 摩格旧城区；国服对应地图名“摩格旧城区”及 9月4日排期来自国服官方预告，地区版本时间不同。",
+    "launchNote": "官方英文名为 The Mog。国服「群星」于 9 月 4 日上线，Garena 版本于 9 月 8 日开放，本卡的主体机制来自 Garena 正篇。",
     "gameplayTypes": [
       "warfare"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "additionalSourceUrls": [
+      "https://www.taptap.cn/moment/844904216680991730?group_id=531928",
+      "https://deltaforce.garena.com/en/news/announcement/NDH3YX"
+    ]
   },
   {
     "id": "delta-force-polaris-patrol-2026",
     "game": "三角洲行动",
-    "modeName": "极星守望（Polaris Patrol）",
+    "modeName": "极星守望",
     "year": "2026",
     "date": "2026-10-16",
     "tags": [
@@ -4676,14 +4697,17 @@
     "gameplayTypes": [
       "extraction"
     ],
-    "isLtm": true
+    "isLtm": true,
+    "searchAliases": [
+      "Polaris Patrol"
+    ]
   },
   {
     "id": "delta-force-fishing-2026",
     "game": "三角洲行动",
     "modeName": "钓鱼（Fishing）",
     "year": "2026",
-    "date": "2026-09-08",
+    "date": "2026-09-04",
     "tags": [
       "objective"
     ],
@@ -4693,26 +4717,42 @@
       "装备成长"
     ],
     "oneLineRule": "烽火地带达到 17 级后可解锁钓鱼，带钓具进入指定简单难度地图，操作收线捕获鱼类并积累等级与图鉴记录。",
-    "mechanicChange": "达到烽火地带 17 级后，在长弓溪谷的简单难度找到钓鱼爱好者乔·里德（Joe Reed）解锁。可钓鱼地图包括零号大坝、长弓溪谷，以及原公告标记为 AZ3 的地图，均限简单难度；AZ3 的中文对应名待核实。\n\n浮漂竿需等浮漂完全下沉后快速收线。路亚竿要逆着鱼挣扎的方向收线，观察白、黄、红三档张力；张力过高会断线，需要适时放松。\n\n钓获可增加经验，认证升级后解锁更高级的竿、线和饵。图鉴记录最高稀有度，以及尺寸、重量的最大和最小值；是否将鱼带出或出售不影响图鉴。系统还提供不占原扩容槽的专属仓库箱。",
+    "mechanicChange": "达到烽火地带 17 级后，在长弓溪谷的简单难度找到钓鱼爱好者乔·里德（Joe Reed）解锁。可钓鱼地图包括零号大坝、长弓溪谷，以及 AZ3 核电站。Garena 标为简单难度，国服标为普通行动。\n\n浮漂竿需等浮漂完全下沉后快速收线。路亚竿要逆着鱼挣扎的方向收线，观察白、黄、红三档张力；张力过高会断线，需要适时放松。\n\n钓获可增加经验，认证升级后解锁更高级的竿、线和饵。图鉴记录最高稀有度，以及尺寸、重量的最大和最小值；是否将鱼带出或出售不影响图鉴。系统还提供不占原扩容槽的专属仓库箱。",
     "tempoImpact": "钓鱼把低压收集循环嵌入高风险撤离局，使玩家在暴露水岸与继续搜刮之间权衡；长期认证、装备组装和图鉴记录又把单局鱼获连接成跨局成长。",
     "designObservation": "休闲目标可以沿用携装入局和水边停留的风险，同时让钓获立即留下图鉴记录。这样既保留撤离环境的紧张，也让未成功带出鱼的玩家获得收集进展。",
     "sourceUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
-    "imageUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image4.jpg",
-    "imageSource": "Garena 三角洲行动 第 11 赛季 官方 钓鱼 配图",
-    "launchDate": "2026-09-08",
-    "launchLabel": "2026年9月8日随 第 11 赛季转向 上线（国际服）",
-    "launchNote": "官方第 11 赛季补丁将钓鱼列为烽火地带新玩法；国服已在 9月4日群星版本预告中介绍。国际服公告的 AZ3 地图代号仍需与国服名称核对。",
+    "imageUrl": "assets/core-updates/delta-s11-fishing.jpg",
+    "imageSource": "Garena S11 钓鱼小节官方玩法配图",
+    "launchDate": "2026-09-04",
+    "launchLabel": "国服 2026 年 9 月 4 日开放，Garena 9 月 8 日开放",
+    "launchNote": "国服 9 月 4 日「群星」更新开放钓鱼，次日官方征集已可在三图普通行动中钓获的实物和点位。Garena 9 月 8 日版本上线，9 月 10 日已经为老乔补等级提示并修复鱼线。10 月 9 日至 11 月 9 日为 Garena 长弓溪谷钓鱼活动的奖励期。",
     "gameplayTypes": [
       "extraction"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "publishedDate": "2026-09-04",
+    "launchDateStatus": "confirmed",
+    "imageOriginalUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image4.jpg",
+    "imageSourceUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+    "additionalSourceUrls": [
+      "https://www.sina.cn/news/detail/5333339969162493.html",
+      "https://www.taptap.cn/moment/844959973610881795?group_id=531928",
+      "https://www.taptap.cn/moment/845289897227977912?group_id=531928",
+      "https://df.qq.com/cp/a20240729directory/?map=az3",
+      "https://deltaforce.garena.com/en/news/announcement/NDH3YX",
+      "https://deltaforce.garena.com/en/news/all/R7669X",
+      "https://deltaforce.garena.com/en/news/announcement/6JW32E",
+      "https://news.xbox.com/en-us/2026/09/25/delta-force-second-anniversary-interview/"
+    ],
+    "reviewedAt": "2026-11-16",
+    "publicationStatus": "ready"
   },
   {
     "id": "delta-force-operations-1v1-2026",
     "game": "三角洲行动",
     "modeName": "咱俩练练（Operations 1v1）",
     "year": "2026",
-    "date": "2026-09",
+    "date": "2026-09-04",
     "tags": [
       "objective"
     ],
@@ -4722,19 +4762,22 @@
       "零装备损耗"
     ],
     "oneLineRule": "两名玩家带自己的装备选择战场进行单挑，整场不产生装备损耗，以低成本方式验证枪法与配装。",
-    "mechanicChange": "第 11 赛季公告列出烽火地带单挑模式：两名玩家携带自己的装备，自选战场进行 1 对 1 对抗，全程不消耗装备。\n\n官方仅说明赛季中期更新后开放，尚未给出精确日期。",
+    "mechanicChange": "第 11 赛季先行公告列出烽火地带 1 对 1 决斗，自选战场、自带装备，装备无损耗。10 月 9 日更新确认，可选择干员、带入自定义配装并邀请好友进入决斗。",
     "tempoImpact": "取消装备损耗移除了撤离玩法常见的经济顾虑，让高价值配装也能用于短时、重复的纯对抗；自选战场则把练习目标从随机遭遇收束为可控距离与空间。",
     "designObservation": "为高风险经济系统配一个零损耗的对抗沙盒，可以让玩家验证装备并练习决斗，而不破坏主模式资产价值。关键是让玩家自带真实配装，使训练结果能迁移回正式对局。",
-    "sourceUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+    "sourceUrl": "https://deltaforce.garena.com/en/news/announcement/6JW32E",
     "imageUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260905_update/image6.png",
     "imageSource": "Garena 三角洲行动 第 11 赛季 官方 烽火地带单挑 配图",
-    "launchDate": "2026-09",
-    "launchLabel": "第 11 赛季 赛季中期更新后开放，具体日期待确认",
-    "launchNote": "官方只确认赛季中期更新后开放，具体日期待公布。中文名采用国服官方预告中的“咱俩练练”。",
+    "launchDate": "2026-10-09",
+    "launchLabel": "2026 年 10 月 9 日开放（国际服）",
+    "launchNote": "Garena 于 9 月 4 日预告，10 月 12 日公告回溯 10 月 9 日更新并明确单挑已开放。发行商的 Steam 更新说明发布于 10 月 9 日。中文名采用国服官方预告中的“咱俩练练”。",
     "gameplayTypes": [
       "casual"
     ],
-    "isLtm": false
+    "isLtm": false,
+    "launchDateStatus": "confirmed",
+    "announcementSourceUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+    "launchProofUrl": "https://deltaforce.garena.com/en/news/announcement/6JW32E"
   },
   {
     "id": "pubgm-metro-royale-2020",
@@ -4946,8 +4989,7 @@
     "tags": [
       "pve",
       "objective",
-      "power",
-      "needs_review"
+      "power"
     ],
     "type": [
       "限时刷怪",
@@ -13441,7 +13483,7 @@
       "首领挑战"
     ],
     "oneLineRule": "小队在雪地中搜集装备和燃料、应对严寒与敌人，驾驶可养成的列车沿途搜索和挑战首领，最终抵达终点并成功通关。",
-    "mechanicChange": "列车是可操控、可升级的移动平台，队伍可以自由前往沿线城镇，搜索并挑战随机首领，再在站点把战利品换成当局使用的冰封物资币。昼夜交替会触发怪物攻击，随机事件改变每局任务；除冰封列车物资礼箱外，其他装备只在本局使用，不能带出局外。",
+    "mechanicChange": "列车是可操控、可升级的移动平台，队伍可以自由前往沿线城镇，搜索并挑战随机首领，再在站点把战利品换成当局使用的冰封物资币。昼夜交替会触发怪物攻击，随机事件改变每局任务；除冰封列车物资礼箱外，其他装备只在本局使用，不能带出局外。 2026 年 11 月 14 日的返场版保留养成，默认路线改近路，增加滑索、驿站和车载补给。",
     "tempoImpact": "队伍必须同时管理列车耐久、燃料、沿线路线和夜间怪物压力；移动平台让“赶路”本身变成消耗资源与选择目标的阶段。",
     "designObservation": "把搜打撤的地图探索改成合作护送后，列车成为队伍共享的生命条和成长对象，沿线站点、随机首领与昼夜变化共同提供重复游玩的变量。",
     "launchDate": "2026-01-26",
@@ -13453,10 +13495,13 @@
     "isLtm": false,
     "game": "和平精英",
     "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-    "imageSource": "和平精英 App Store 官方图标（通用兜底，非玩法专图，本地归档）",
-    "imageUrl": "assets/mode-official/a83186a6500f001b629e.jpg",
-    "imageSourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
-    "imageOriginalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d6/c0/42d6c0bc-2f44-c894-f96f-e725e8a2e29c/Placeholder.mill/1200x630wa.jpg"
+    "imageSource": "和平精英官方 2026 年 11 月返场指南海报",
+    "imageUrl": "assets/mode-official/hpjy-icebound-train-2026-11-14.jpg",
+    "imageSourceUrl": "https://www.bilibili.com/video/BV1riW66VEC7/",
+    "imageOriginalUrl": "https://i2.hdslb.com/bfs/archive/253397558caab507434e14d067bee5ef849a75c4.jpg",
+    "imageSourcePageUrl": "https://www.bilibili.com/video/BV1riW66VEC7/",
+    "imageAssetSourceUrl": "https://i2.hdslb.com/bfs/archive/253397558caab507434e14d067bee5ef849a75c4.jpg",
+    "reviewedAt": "2026-11-16"
   },
   {
     "id": "hpjy-cowboy-revenge-2026",
@@ -16224,6 +16269,2500 @@
     "isLtm": true
   },
   {
+    "id": "fortnite-battle-royale-2017",
+    "game": "Fortnite",
+    "modeName": "经典大逃杀（Battle Royale）",
+    "year": "2017",
+    "date": "2017-09-12",
+    "tags": [
+      "br-core"
+    ],
+    "type": [
+      "100人",
+      "建造",
+      "大逃杀"
+    ],
+    "oneLineRule": "100名玩家乘巴士进入大型岛屿，搜集装备并建造防御，成为最后存活者。",
+    "mechanicChange": "100 人在同一张地图进行 PvP 生存竞争，结合可破坏环境与玩家建造，最后存活者获胜。2017-09-12 公告称该模式已公开测试；9月26日进一步免费开放并加入小队。",
+    "tempoImpact": "玩家需在安全区推进时同时搜刮、选路和建造掩体；建造把材料资源转化为即时防御与高地。",
+    "designObservation": "设计推断：在大逃杀生存循环中加入可即时改变地形的建造系统，会让资源管理和交战空间控制相互关联。",
+    "sourceUrl": "https://www.fortnite.com/news/announcing-fortnite-battle-royale",
+    "imageUrl": "assets/modes/fortnite-classic-br-2017.png",
+    "imageSource": "Epic 官方公告头图（原图归档）",
+    "launchDate": "2017-09-12",
+    "launchLabel": "2017年9月12日（公测）",
+    "launchNote": "2017-09-12 官方公告明确写明现已进入 Public Test；2017-09-19 的免费开放公告另确认 9月26日向所有玩家免费开放并加入小队。本卡按首次公开测试记录日期。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": false,
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fannouncing-fortnite-battle-royale%2FFortniteBattleRoyaleKeyArt_Header-1903x480-d1cf877134a574fa5d6004db7bbcca7f01df66d6.png",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/announcing-fortnite-battle-royale",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publishedDate": "2017-09-12",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "additionalSourceUrls": [
+      "https://www.fortnite.com/news/fortnite-battle-royale-goes-free?lang=en-US"
+    ],
+    "imageDimensions": [
+      1903,
+      480
+    ],
+    "imageSha256": "4fc08328e143f9e4f3c695b464d19380a2ad79208fe3d1af35e4560f099fe212"
+  },
+  {
+    "id": "fortnite-ballistic-2024",
+    "game": "Fortnite",
+    "modeName": "弹道（Ballistic）",
+    "year": "2024",
+    "date": "2024-12-07",
+    "tags": [
+      "bomb"
+    ],
+    "type": [
+      "5v5",
+      "第一人称",
+      "回合制爆破"
+    ],
+    "oneLineRule": "两支五人队伍轮流攻防：进攻方在两个目标点之一安放裂隙点装置，防守方阻止其被安放和引爆；先赢七回合者获胜。",
+    "mechanicChange": "整场开局时玩家获得Ranger Pistol和800 Credits；每回合开始时可购买装备。安放裂隙点装置后45秒引爆，经历六回合后双方换边，回合内没有复活。存活者下一回合保留装备与护盾（已使用的消耗品除外）。官方公告说明2024-12-11以抢先体验形式上线，初始包含Skyline 10地图。",
+    "tempoImpact": "回合经济与装备保留使存活、击杀和目标执行共同影响后续战力；无复活提高每次交火的代价。",
+    "designObservation": "设计推断：将爆破目标、回合经济和有限团队装备组合，能让每一回合形成准备、执行和结算的节奏。",
+    "sourceUrl": "https://www.fortnite.com/news/fortnite-goes-first-person-with-ballistic-a-tactical-5v5-shooter-launching-in-early-access-dec-11",
+    "imageUrl": "assets/modes/fortnite-ballistic-2024.jpg",
+    "imageSource": "Epic 官方 Ballistic 公告正文地图配图（原图归档）",
+    "launchDate": null,
+    "launchLabel": "2024-12-07公告；官方排期：2024年12月11日（抢先体验）",
+    "launchNote": "官方2024-12-07公告明确Ballistic于12月11日上线；此首发记录不表示当前仍开放。 本轮核对的是官方公布的服务/首发排期，尚未另行确认准确首次开服日，因此不填实际上线日期。",
+    "gameplayTypes": [
+      "bomb"
+    ],
+    "isLtm": false,
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/fortnite-ballistic-skyline-10-en-1920x1080-b9ebe3765f73.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/fortnite-goes-first-person-with-ballistic-a-tactical-5v5-shooter-launching-in-early-access-dec-11",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publishedDate": "2024-12-07",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "a86b5455030bfa9f7bc1301fef08404602e9d962a5fa39b7df75b72af187cf88",
+    "scheduledLaunchDate": "2024-12-11"
+  },
+  {
+    "id": "fortnite-rocket-racing-2023",
+    "game": "Fortnite",
+    "modeName": "火箭竞速（Rocket Racing）",
+    "year": "2023",
+    "date": "2023-12-08",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "竞速",
+      "12人",
+      "空中驾驶"
+    ],
+    "oneLineRule": "玩家驾驶火箭动力车辆在赛道竞速，通过漂移积攒加速、飞跃障碍并在墙面行驶争取先到终点。",
+    "mechanicChange": "Psyonix制作的街机竞速体验，首季包含26条赛道；公开竞速最多四人组队，私人比赛队伍最多12人。",
+    "tempoImpact": "漂移、涡轮加速、飞行和空中闪避构成连续驾驶决策；捷径与障碍要求玩家在速度和路线间取舍。",
+    "designObservation": "设计推断：将车辆竞速与可脱离路面的三维赛道结合，把路线选择和操作精度放进同一竞速循环。",
+    "sourceUrl": "https://www.fortnite.com/news/race-without-limits-with-rocket-racing-in-fortnite?lang=en-US",
+    "imageUrl": "assets/modes/fortnite-rocket-racing-2023.jpg",
+    "imageSource": "Epic 官方公告头图（原图归档）",
+    "launchDate": "2023-12-08",
+    "launchLabel": "2023年12月8日",
+    "launchNote": "Epic官方公告日期为2023-12-08，并称体验已上线；页面未说明限时期限。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/rocket-racing-1900x600-abb958af25cb.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/race-without-limits-with-rocket-racing-in-fortnite?lang=en-US",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publishedDate": "2023-12-08",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "imageDimensions": [
+      1900,
+      600
+    ],
+    "imageSha256": "6d9f809d5c3701b59266c452c786f9c6c317867b3f736e630929e16cf0ddef14"
+  },
+  {
+    "id": "fortnite-festival-2023",
+    "game": "Fortnite",
+    "modeName": "音乐节（Fortnite Festival）",
+    "year": "2023",
+    "date": "2023-12-09",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "节奏游戏",
+      "多人协作",
+      "主舞台/即兴舞台"
+    ],
+    "oneLineRule": "玩家在主舞台按节拍演奏选定曲目争取高分，也可在即兴舞台与其他玩家混音。",
+    "mechanicChange": "Harmonix 制作的节奏体验。主舞台最多四人，可分担主奏（吉他或肩背键盘）、鼓、人声和贝斯四个声部，歌单最多四首；即兴舞台可同时组合四首曲目的循环片段，调整速度、调性及大小调。",
+    "tempoImpact": "音符判定提供即时操作目标，曲目选择和乐器分工形成多人协作；即兴舞台以自由混音替代分数竞争。",
+    "designObservation": "设计推断：同一音乐主题下提供计分演奏和开放混音两种互动结构，可同时承接技巧挑战与社交表达。",
+    "sourceUrl": "https://www.fortnite.com/news/take-your-stage-in-fortnite-festival",
+    "imageUrl": "assets/modes/fortnite-festival-2023.jpg",
+    "imageSource": "Epic 官方公告头图（原图归档）",
+    "launchDate": "2023-12-09",
+    "launchLabel": "2023年12月9日",
+    "launchNote": "官方介绍公告于2023-12-09发布，正文称玩家可免费游玩。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/fortnite-festival-1900x600-4ead2cbd1b3e.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/take-your-stage-in-fortnite-festival",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publishedDate": "2023-12-09",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "imageDimensions": [
+      1900,
+      600
+    ],
+    "imageSha256": "9af462be33548624e92874f3af2ea900161563c5b30c52e2bdb6942279193708"
+  },
+  {
+    "id": "fortnite-lego-odyssey-2023",
+    "game": "Fortnite",
+    "modeName": "乐高生存建造（LEGO Fortnite / Odyssey）",
+    "year": "2023",
+    "date": "2023-12-07",
+    "tags": [
+      "pve"
+    ],
+    "type": [
+      "生存建造",
+      "合作PvE",
+      "程序生成世界"
+    ],
+    "oneLineRule": "玩家探索世界、采集资源、建造村庄、制作装备，并合作应对敌人、饥饿和温度。",
+    "mechanicChange": "生存模式需要采集制作并抵御环境与敌人；沙盒模式可直接生成建筑和物品，不必先找资源。一个世界最多八人游玩，可指定最多七名持钥者，使其在房主离线时仍能进入并编辑世界。",
+    "tempoImpact": "外出采集与据点建设交替进行，装备成长和环境威胁决定探索半径；合作可分担采集、建造和战斗任务。",
+    "designObservation": "设计推断：以共享世界和持续成长连接探索、制作与战斗，把单局交战延展为长期合作目标。",
+    "sourceUrl": "https://www.fortnite.com/news/welcome-to-lego-fortnite",
+    "imageUrl": "assets/modes/fortnite-lego-odyssey-2023.jpg",
+    "imageSource": "Epic 官方公告头图（原图归档）",
+    "launchDate": "2023-12-07",
+    "launchLabel": "2023年12月7日",
+    "launchNote": "2023-12-07 官方欢迎公告写明现在即可免费游玩。该文记录首发 LEGO Fortnite；Odyssey 为后续名称，本卡不把更名计为另一模式。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": false,
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/lego-fortnite-1900x600-1f65fff0da7f.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/welcome-to-lego-fortnite",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publishedDate": "2023-12-07",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "imageDimensions": [
+      1900,
+      600
+    ],
+    "imageSha256": "7be3428ac82f50f12ee152ef1735a4155d3d711f2832b1c31628b8afa0664e8c"
+  },
+  {
+    "id": "fortnite-brick-life-2024",
+    "game": "Fortnite",
+    "modeName": "乐高大城市生活（LEGO Fortnite Brick Life）",
+    "year": "2024",
+    "date": "2024-12-09",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "社交角色扮演",
+      "开放城市",
+      "多人互动"
+    ],
+    "oneLineRule": "玩家进入Brick Bay城市，与其他玩家探索街区、体验角色扮演和社交活动。",
+    "mechanicChange": "玩家在 Brick Bay 城市选择快递员、教师、保安、厨师等工作，工作可随时切换；购买并布置住所，与环境和其他居民互动。它以独立入口提供，区别于 LEGO Fortnite 的生存制作流程。",
+    "tempoImpact": "玩法重心从战斗与生存转向城市探索和玩家间社交，降低装备成长和淘汰压力。",
+    "designObservation": "设计推断：在同一客户端中以独立入口承载非战斗社交体验，可扩大用户动机并复用角色与内容资产。",
+    "sourceUrl": "https://www.fortnite.com/news/lego-fortnite-brick-life-build-your-life-in-the-big-city",
+    "imageUrl": "assets/modes/fortnite-brick-life-2024.jpg",
+    "imageSource": "Epic 官方公告头图（原图归档）",
+    "launchDate": null,
+    "launchLabel": "2024-12-09公告；官方排期：2024年12月12日",
+    "launchNote": "公告发布日2024-12-09；正文写明Brick Life城市于12月12日开放。 本轮核对的是官方公布的服务/首发排期，尚未另行确认准确首次开服日，因此不填实际上线日期。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/lego-fortnite-brick-life-1900x600-dddfbbad9d23.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/lego-fortnite-brick-life-build-your-life-in-the-big-city",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publishedDate": "2024-12-09",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "imageDimensions": [
+      1900,
+      600
+    ],
+    "imageSha256": "6650c00fde81a76b0e65e59f9bf0f24533b432cb788429889e04c8b13879dbee",
+    "scheduledLaunchDate": "2024-12-12"
+  },
+  {
+    "id": "fortnite-impostors-2021",
+    "game": "Fortnite",
+    "modeName": "卧底（Impostors）",
+    "year": "2021",
+    "date": "2021-08-17",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "最多10人",
+      "非对称社交推理",
+      "任务与投票"
+    ],
+    "oneLineRule": "最多10人分为特工与卧底：特工完成全部任务或投票淘汰全部卧底，卧底通过伪装和破坏消灭足够的特工。",
+    "mechanicChange": "满员时为8名特工与2名卧底；私人对局4至7人时只有1名卧底，8人及以上为2名。卧底可暂停任务、传送玩家或把所有人变成 Peely 外观。特工可报告淘汰者碎片或使用讨论面板召集投票；公共语音关闭，提供快捷聊天与动作沟通。",
+    "tempoImpact": "特工在分散完成任务与聚集投票之间切换；卧底可用破坏与伪装争取时间。",
+    "designObservation": "设计推断：把社交推理、任务进度和有限沟通工具放进同一空间，形成信息不对称的团队决策循环。",
+    "sourceUrl": "https://www.fortnite.com/news/trust-nobody-introducing-fortnite-impostors",
+    "imageUrl": "assets/modes/fortnite-impostors-2021.jpg",
+    "imageSource": "Epic 官方公告头图（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/17br-mole-newsheader-1900x600-1900x600-fd32dfd90000.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/trust-nobody-introducing-fortnite-impostors",
+    "launchDate": null,
+    "launchLabel": "2021年8月17日公告（首发日待核实）",
+    "launchNote": "官方在2021-08-17介绍已可排队的玩法，但本篇未明确首次开放日与结束日；本卡按公告日期归档。原文没有标为LTM，isLtm=false不表示今日仍开放。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publishedDate": "2021-08-17",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "imageDimensions": [
+      1900,
+      600
+    ],
+    "imageSha256": "7fad2390a0de762ec4c6af38b82bd875efc0667bc72dbab34a3f3165b59b5b7a"
+  },
+  {
+    "id": "fortnite-impossible-escape-pve-2021",
+    "game": "Fortnite",
+    "modeName": "不可能的逃脱：PvE（Impossible Escape PvE）",
+    "year": "2021",
+    "date": "2021-05-18",
+    "tags": [
+      "pve",
+      "br-ltm"
+    ],
+    "type": [
+      "16名幸存者",
+      "合作求生",
+      "修复直升机撤离"
+    ],
+    "oneLineRule": "玩家在岛屿上彼此分散落地，合作收集零件修好直升机，并在燃料耗尽前飞到撤离点；PvE版本中不同队伍不能互相伤害。",
+    "mechanicChange": "16名玩家分散落地，可临时组成最多4人队伍。地图有3架需用4种零件修好的直升机，不同队伍间不能互相伤害；野生动物、守卫和夜间威胁阻碍搜集，修好后须在燃料耗尽前飞抵撤离点。",
+    "tempoImpact": "分散开局迫使玩家先探索并建立合作，再分工搜集维修部件；夜间威胁与燃料时限共同推动撤离决策。",
+    "designObservation": "设计推断：以多人共享的修复目标将搜集、合作和撤离串成PvE大逃杀式体验，减少直接淘汰作为唯一胜利路径。",
+    "sourceUrl": "https://www.fortnite.com/news/fortnites-impossible-escape-ltm-escape-the-hostile-island",
+    "imageUrl": "assets/modes/fortnite-impossible-escape-2021.jpg",
+    "imageSource": "Epic 官方公告头图（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/16br-impossibleescape-blogheader-1900x627-8225dda66183.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/fortnites-impossible-escape-ltm-escape-the-hostile-island",
+    "launchDate": null,
+    "launchLabel": "2021年5月18日公告（首发日待核实）",
+    "launchNote": "2021-05-18官方正文确认该LTM的PvE/PvP规则；没有给出首次开放日、截止日或具体时刻，时间轴按公告日期归档。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publishedDate": "2021-05-18",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "imageDimensions": [
+      1900,
+      627
+    ],
+    "imageSha256": "58921decd50a1927b68e888a0c258cb4726fdcc930657949f96d65756d2e8118"
+  },
+  {
+    "id": "fortnite-impossible-escape-pvp-2021",
+    "game": "Fortnite",
+    "modeName": "不可能的逃脱：PvP（Impossible Escape PvP）",
+    "year": "2021",
+    "date": "2021-05-18",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "16名幸存者",
+      "队伍竞争",
+      "单架直升机撤离"
+    ],
+    "oneLineRule": "幸存者分散落地，搜集零件修复唯一一架直升机并撤离；PvP版本允许不同队伍互相攻击。",
+    "mechanicChange": "16名玩家分散落地，可临时组成最多4人队伍。地图只有1架需用4种零件修好的直升机，允许不同队伍相互伤害；成功乘该机飞抵撤离点的玩家获胜。",
+    "tempoImpact": "唯一撤离载具把合作维修和队伍间冲突集中在同一目标上；队伍须在对抗与搜集之间权衡。",
+    "designObservation": "设计推断：同一撤离目标在PvE与PvP规则间切换，可通过跨队伍敌对关系改变资源竞争强度，而无需重做地图流程。",
+    "sourceUrl": "https://www.fortnite.com/news/fortnites-impossible-escape-ltm-escape-the-hostile-island",
+    "imageUrl": "assets/modes/fortnite-impossible-escape-2021.jpg",
+    "imageSource": "Epic 官方公告头图（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/16br-impossibleescape-blogheader-1900x627-8225dda66183.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/fortnites-impossible-escape-ltm-escape-the-hostile-island",
+    "launchDate": null,
+    "launchLabel": "2021年5月18日公告（首发日待核实）",
+    "launchNote": "2021-05-18官方正文确认该LTM的PvE/PvP规则；没有给出首次开放日、截止日或具体时刻，时间轴按公告日期归档。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publishedDate": "2021-05-18",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "imageDimensions": [
+      1900,
+      627
+    ],
+    "imageSha256": "58921decd50a1927b68e888a0c258cb4726fdcc930657949f96d65756d2e8118"
+  },
+  {
+    "id": "fortnite-sneaky-silencers-2018",
+    "game": "Fortnite",
+    "modeName": "潜行消音战（Sneaky Silencers）",
+    "year": "2018",
+    "date": "2018-01-01",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "仅消音武器",
+      "陷阱禁用",
+      "灌木增率"
+    ],
+    "oneLineRule": "限时大逃杀仅提供消音冲锋枪与消音手枪，禁用陷阱并大幅提高灌木出现率。",
+    "mechanicChange": "官方公告明确该限时模式从2018-01-05开放至1月8日；可用武器仅限Suppressed SMG和Suppressed Pistols，陷阱关闭，Bush掉率大幅提高。公告标注日期为2018-01-01，并计划1月2日更新上线相关内容。",
+    "tempoImpact": "消音武器限制降低远距离枪声暴露，灌木增率鼓励隐蔽路线；陷阱禁用减少固定防守手段。",
+    "designObservation": "设计推断：通过缩减武器池并提高隐蔽道具供给，限时规则可把大逃杀对局的侦察与伏击权重推高。",
+    "sourceUrl": "https://www.fortnite.com/news/silenced-pistol-update",
+    "imageUrl": "assets/modes/fortnite-sneaky-silencers-2018.jpg",
+    "imageSource": "Epic 官方公告头图（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2FtempUpload%2FSilenced_Pistol_Header-1910x400-60d09043247f162f011c345031155727ff34d292.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/silenced-pistol-update",
+    "launchDate": null,
+    "launchLabel": "2018-01-01公告；官方排期：2018年1月5日至8日（实际开放待核实）",
+    "launchNote": "2018-01-01公告给出1月5日至8日的模式排期；1月2日是消音手枪更新的预定日，不能混作LTM上线日。本轮未取得实际开服确认，launchDate保留为空。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publishedDate": "2018-01-01",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "scheduledLaunchDate": "2018-01-05",
+    "scheduledEndDate": "2018-01-08",
+    "imageDimensions": [
+      1910,
+      400
+    ],
+    "imageSha256": "733dd532a856cf534c0ac7c17ea30aef5131a43c47ea7316bb31d0588ad15724"
+  },
+  {
+    "id": "fortnite-spy-games-payload-2020",
+    "game": "Fortnite",
+    "modeName": "间谍游戏：护送任务（Operation: Payload）",
+    "year": "2020",
+    "date": "2020-04-29",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "8人团队",
+      "攻防护送",
+      "情报科技"
+    ],
+    "oneLineRule": "八人团队轮流护送装有情报的卡车抵达终点，或阻止对方卡车前进。",
+    "mechanicChange": "每轮结束获得Intel解锁Spy Games Tech，胜轮或赢下整场可取得额外情报；科技可在该赛季其他Spy Games玩法间共用。官方公告日期2020-04-29，称其加入Chapter 2 Season 2轮换。",
+    "tempoImpact": "推车进度形成持续移动的攻防焦点，双方需在护送与阻截之间协调；轮间情报成长延续活动进度。",
+    "designObservation": "设计推断：移动目标能把团队攻防路线集中到逐段推进的战场空间。",
+    "sourceUrl": "https://www.fortnite.com/news/operation-payload-new-fortnite-spy-games-mode",
+    "imageUrl": "assets/modes/fortnite-spy-games-payload-2020.png",
+    "imageSource": "Epic 官方公告头图（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Foperation-payload-new-fortnite-spy-games-mode%2F12BR_Payload_NewsHeader-1920x1080-28d3d86bba74ff4d81c4c02513e4b06262a6b392.png",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/operation-payload-new-fortnite-spy-games-mode",
+    "launchDate": null,
+    "launchLabel": "2020年4月29日公告（首发日待核实）",
+    "launchNote": "2020-04-29官方公告称新模式加入Chapter 2 Season 2轮换，没有列出精确首次开放日期或结束日，按公告日期归档。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publishedDate": "2020-04-29",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "e76f5ff54aea9db31ee6f0f3e9faf27d01fe8691437fac77f43c868d958d573a"
+  },
+  {
+    "id": "fortnite-spy-games-infiltration-2020",
+    "game": "Fortnite",
+    "modeName": "间谍游戏：情报渗透（Operation: Infiltration）",
+    "year": "2020",
+    "date": "2020-05-20",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "8v8",
+      "情报箱攻防",
+      "四回合三胜"
+    ],
+    "oneLineRule": "两队轮流攻守情报箱：夺取对方据点的情报箱并运至目标点，或阻止对方带走己方情报。",
+    "mechanicChange": "8v8对局，每回合后攻守互换，官方规则为四回合中赢三回合获胜。每轮完成可获得Intel，获胜可取得更多；Intel解锁的Tech跨本赛季Spy Games共用。公告明确称2020-05-20当日开始。",
+    "tempoImpact": "攻守交换让队伍连续体验夺取与防守；情报箱运输路线成为双方争夺的主要空间。",
+    "designObservation": "设计推断：通过交换攻守角色和明确的运送目标，使同一地图在不同回合产生角色变化。",
+    "sourceUrl": "https://www.fortnite.com/news/operation-infiltration-arrives-in-fortnite-chapter-2-season-2",
+    "imageUrl": "assets/modes/fortnite-spy-games-infiltration-2020.jpg",
+    "imageSource": "Epic 官方公告头图（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Foperation-infiltration-arrives-in-fortnite-chapter-2-season-2%2F12BR_Infiltration_MOTD_1920x1080-1920x1080-4d83112f772b8525253e339161144569fe66d5bb.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/operation-infiltration-arrives-in-fortnite-chapter-2-season-2",
+    "launchDate": "2020-05-20",
+    "launchLabel": "2020年5月20日（官方称当日开始）",
+    "launchNote": "公告正文明确写明Beginning today，日期为2020-05-20；结束日期未列。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publishedDate": "2020-05-20",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "1ac65351bae4ee8077d09af83fda067f267ef33df34f92ed5fa9c20917243e10"
+  },
+  {
+    "id": "fortnite-battle-lab-2019",
+    "game": "Fortnite",
+    "modeName": "战斗实验室（Battle Lab）",
+    "year": "2019",
+    "date": "2019-12-18",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "自定义大逃杀岛屿",
+      "最多16人",
+      "规则编辑"
+    ],
+    "oneLineRule": "玩家在自有大逃杀岛屿设置规则、选用历史限时玩法物资池或Bot Grenades演练情境，也可在公开房间匹配。",
+    "mechanicChange": "Epic v11.31公告推出Battle Lab：私人岛屿可邀请最多15名好友，或使用默认设置进入公开Battle Lab；可调整重力与坠落伤害等规则。公告日期为2019-12-18，模式首发上线同日。",
+    "tempoImpact": "将大逃杀地图变为可调规则的练习/实验空间，允许玩家组织自定义交战情境而不按常规胜负循环进行。",
+    "designObservation": "设计推断：给玩家提供局内规则调节入口，可将核心地图复用为练习、社交与玩法试验场。",
+    "sourceUrl": "https://www.fortnite.com/news/battle-royale-update-whats-new-in-v11-31",
+    "imageUrl": "assets/modes/fortnite-battle-lab-2019.jpg",
+    "imageSource": "Epic 官方公告头图（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fbattle-royale-update-whats-new-in-v11-31%2F11BR_BattleLabs_NewsHeader-1920x1080-f8f286d35adacd6f1de4cca4c30f0d8a6dfabe19.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/battle-royale-update-whats-new-in-v11-31",
+    "launchDate": "2019-12-18",
+    "launchLabel": "2019年12月18日",
+    "launchNote": "v11.31官方公告称该版本上线并介绍Battle Lab；记录日期取公告日。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publishedDate": "2019-12-18",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "beb3168affa2726dd6919c868aac48b71982c04d6612d4fc12b06c6bd093effa"
+  },
+  {
+    "id": "pubg-respawn-royale-2021",
+    "game": "PUBG",
+    "modeName": "复活大逃杀（Respawn Royale）",
+    "year": "2021",
+    "date": "2021-04-20",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "Paramo小队",
+      "100秒复活",
+      "500%伤害"
+    ],
+    "oneLineRule": "Paramo小队高伤害大逃杀：淘汰后等待100秒，只要队伍尚未全灭即可重返战斗；整队被消灭则退出。",
+    "mechanicChange": "所有枪械、近战和投掷物伤害按公告增加500%，不启用倒地待救。淘汰后观战并选择三种出生套装之一，100秒计时结束时若仍有队友存活则复活。移除武器搜刮；地图仍可刷火箭筒与投掷物，不刷载具或密室钥匙。Paramo、FPP/TPP、小队20至32人，主机最低16人。",
+    "tempoImpact": "高伤害缩短单次交战，定时重生则使队伍保命成为再次投入战斗的条件；固定出生套装替代搜装，减少搜刮阶段。",
+    "designObservation": "设计推断：将极短击杀时间与队伍存活门槛下的定时重生并置，可让遭遇战保持高风险，同时降低个人淘汰带来的等待成本。",
+    "sourceUrl": "https://pubg.com/en/news/1696",
+    "imageUrl": "assets/modes/pubg-respawn-royale-2021.png",
+    "imageSource": "PUBG 官方模式公告配图（原图归档）",
+    "imageAssetSourceUrl": "https://wstatic-prod-boc.krafton.com/pubg-legacy/2021/05/1-2-1.png",
+    "imageSourcePageUrl": "https://pubg.com/en/news/1696",
+    "launchDate": null,
+    "launchLabel": "2021-04-20公告；官方排期：PC：2021年4月28日至5月3日；主机：5月6日至10日",
+    "launchNote": "官方页面分平台列出服务时段：PC为4月28日至5月3日；主机为5月6日维护后至5月10日。公告日另记为2021-04-20。 伤害百分比保留官方“increased by 500%”表述，不改写为原来的500%；没有DBNO待救阶段。 本轮核对的是官方公布的服务/首发排期，尚未另行确认准确首次开服日，因此不填实际上线日期。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageScope": "specific",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "700a496c5d0aaad325e82c0b47cb9a86e01c8780974733114540480aa9d7801a",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2021-04-20",
+    "scheduledLaunchDate": "2021-04-28"
+  },
+  {
+    "id": "pubg-challenger-battle-royale-2021",
+    "game": "PUBG",
+    "modeName": "挑战者大逃杀（Challenger Battle Royale）",
+    "year": "2021",
+    "date": "2021-03-09",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "Sanhok单人",
+      "黄昏天气",
+      "极简HUD"
+    ],
+    "oneLineRule": "Sanhok黄昏单人BR，移除大部分HUD信息，并将枪械、近战与投掷物伤害提高一倍。",
+    "mechanicChange": "泰国区PUBG官方公告日期2021-03-09，称LABS Challenger BR加入Sanhok黄昏天气；移除指南针、小地图、弹药显示、击杀动态与存活人数等UI，地图按M可开但无标记；使用子弹轨迹，血量与常规BR相同。枪械、近战与投掷物伤害翻倍。PC服务期为3月10日随10.3.1更新开放至3月15日；主机3月10日开放至3月15日。",
+    "tempoImpact": "信息缺失和黄昏照明提高听觉、视线侦察需求；伤害翻倍压缩交火时间，信号弹提示安全区变化。",
+    "designObservation": "设计推断：隐藏常用信息面板并使用明确的环境提示，可把部分决策从HUD读数转移到观察和听觉。",
+    "sourceUrl": "https://pubg.com/th/news/1293",
+    "imageUrl": "assets/modes/pubg-challenger-battle-royale-2021.jpg",
+    "imageSource": "PUBG 官方模式公告配图（原图归档）",
+    "imageAssetSourceUrl": "https://wstatic-prod-boc.krafton.com/pubg-legacy/sites/6/2021/03/1-1-1024x576-1.jpg",
+    "imageSourcePageUrl": "https://pubg.com/th/news/1293",
+    "launchDate": null,
+    "launchLabel": "2021-03-09公告；官方排期：PC及主机：2021年3月10日至15日（各地区开服时间有差异）",
+    "launchNote": "2021-03-09泰国地区官方公告列出PC随10.3.1于3月10日开放、主机3月10日开放，均至3月15日14:00；该页没有明确写KST，不把地区排期擅自转换为韩国时间。 本轮核对的是官方公布的服务/首发排期，尚未另行确认准确首次开服日，因此不填实际上线日期。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageScope": "specific",
+    "imageDimensions": [
+      1024,
+      576
+    ],
+    "imageSha256": "3c0d4c9c7ef966a048e996939b0f85933da64cf769dfee41c34e53d54a0bd1c2",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2021-03-09",
+    "scheduledLaunchDate": "2021-03-10"
+  },
+  {
+    "id": "pubg-bluehole-mode-2019",
+    "game": "PUBG",
+    "modeName": "蓝洞模式（Bluehole Mode）",
+    "year": "2019",
+    "date": "2019-12-05",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "Erangel四人小队",
+      "内蓝圈",
+      "快速救援"
+    ],
+    "oneLineRule": "Erangel四人小队实验玩法：安全区内同时出现与下一阶段位置、尺寸一致的内蓝圈，营地玩家会提前承受下一阶段蓝圈伤害。",
+    "mechanicChange": "PUBG官方Steam公告于2019-12-05发布。对局从开局至倒数第二阶段出现内蓝圈；其大小与位置对应下一阶段安全区，并按下一阶段蓝圈伤害持续伤害滞留玩家。物资刷新率比公开匹配高0.5倍（即提高50%）；倒地救援时间缩短为4秒。支持TPP/FPP、四人小队、Erangel，最多64人。PUBG Labs开放时间为12月5日23:00至12月8日23:00（PST）。",
+    "tempoImpact": "下一圈位置提前以危险区域形式显现，减少圈内静候的安全感；更快救援与增加的物资刷新分别影响队伍减员恢复速度和搜装备阶段。",
+    "designObservation": "设计推断：把下一阶段安全区同时呈现为可进入但会受伤的区域，将路线信息与位置风险绑定，促使队伍更早作出轮转选择。",
+    "sourceUrl": "https://store.steampowered.com/news/posts/?appids=578080%2C1046180&enddate=1576658464",
+    "imageUrl": "assets/modes/pubg-bluehole-mode-2019.png",
+    "imageSource": "PUBG 官方模式公告配图（原图归档）",
+    "imageAssetSourceUrl": "https://clan.akamai.steamstatic.com/images/27971017/2cc471a0a6066534aa3d5b44bc0af6a47602be99.png",
+    "imageSourcePageUrl": "https://store.steampowered.com/news/posts/?appids=578080%2C1046180&enddate=1576658464",
+    "launchDate": null,
+    "launchLabel": "2019-12-05公告；官方排期：PUBG Labs：2019年12月5日至8日（PST）",
+    "launchNote": "公告正文明确服务时段为12月5日23:00至12月8日23:00（PST）。 本轮核对的是官方公布的服务/首发排期，尚未另行确认准确首次开服日，因此不填实际上线日期。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageScope": "specific",
+    "imageDimensions": [
+      800,
+      450
+    ],
+    "imageSha256": "d4527395a77ba18c9e584e1b18484af2b5b05f5668d2f655a1f97e254ad0387e",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2019-12-05",
+    "scheduledLaunchDate": "2019-12-05"
+  },
+  {
+    "id": "pubg-faction-warmode-2020",
+    "game": "PUBG",
+    "modeName": "阵营战争（Faction Warmode）",
+    "year": "2020",
+    "date": "2020-09-04",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "Sanhok 8v8",
+      "出生套装",
+      "小型安全区"
+    ],
+    "oneLineRule": "Sanhok上的8v8队伍对抗：玩家选择预设装备套装，在小型安全区内通过击倒、淘汰与救援累积分数。",
+    "mechanicChange": "PUBG官方公告于2020-09-04发布。每队最多8人，TPP/FPP可选；地图为Sanhok，天气轮换，小型安全区被静止蓝圈包围。玩家从四种出生套装中选择武器、护甲和消耗品，死亡后从飞机重生；无红区、世界物资、载具、信号枪和空投。击杀+3、击倒+1、救援队友+1，误伤队友或自杀/坠落死亡-5；先到200分或15分钟结束时分高者获胜。",
+    "tempoImpact": "固定套装和死亡重生减少搜装、观战等待；高频重生与个人积分同时鼓励持续交战和队伍救援。",
+    "designObservation": "设计推断：把队伍规模、固定出生装备和多种得分行为结合，让交战贡献不只由最终击杀决定。",
+    "sourceUrl": "https://store.steampowered.com/news/posts/?appids=578080&enddate=1599650903",
+    "imageUrl": "assets/modes/pubg-faction-warmode-2020.jpg",
+    "imageSource": "PUBG 官方模式公告配图（原图归档）",
+    "imageAssetSourceUrl": "https://clan.fastly.steamstatic.com/images/27971017/13a73052299bb51c35768eaf90745b464c94a749.jpg",
+    "imageSourcePageUrl": "https://store.steampowered.com/news/posts/?appids=578080&enddate=1599650903",
+    "launchDate": null,
+    "launchLabel": "2020-09-04公告；官方排期：PUBG Labs：2020年9月4日至7日（KST）",
+    "launchNote": "公告正文列出9月4日16:00至9月7日16:00 KST。 本轮核对的是官方公布的服务/首发排期，尚未另行确认准确首次开服日，因此不填实际上线日期。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageScope": "specific",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "6a84316a5653d49ef29e181e07d07b9f2f6c3e978b870a795e3ec8bdd6162587",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2020-09-04",
+    "scheduledLaunchDate": "2020-09-04"
+  },
+  {
+    "id": "pubg-arena-mode-2020",
+    "game": "PUBG",
+    "modeName": "竞技场模式（Arena Mode，初版）",
+    "year": "2020",
+    "date": "2020-09-17",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "最多64人",
+      "小队淘汰赛",
+      "货币购买装备"
+    ],
+    "oneLineRule": "每轮2至3支小队进入封闭区域作战；每队有三次机会，使用击杀获得的点数购买武器，最终进入决胜轮。",
+    "mechanicChange": "PUBG官方公告于2020-09-17发布。每场最多64人、16队，队伍在Erangel、Miramar或Sanhok的随机分区交战。每队有三次机会，输掉一轮损失一次；剩余三队或更少时进入无视剩余机会数的Sudden Death。地图不刷新武器，玩家用每轮获得的点数从装备菜单购买；其他物品（配件、头盔、护甲）仍会刷新。队友救援用时5秒，获胜队伍有30秒搜刮。官方排期为9月24日至10月8日。",
+    "tempoImpact": "分区地图把大逃杀地图缩为多队遭遇场；购买武器让击杀资源直接支持下一轮配置，三次机会则给失利队伍留下有限回合空间。",
+    "designObservation": "设计推断：把BR枪战压缩进分轮淘汰赛，并以可累积购买点数连接各轮，可在保留团队枪法的同时增加装备决策和翻盘资源。",
+    "sourceUrl": "https://store.steampowered.com/news/posts/?appids=578080&enddate=1603721939",
+    "imageUrl": "assets/modes/pubg-arena-mode-2020.png",
+    "imageSource": "PUBG 官方模式公告配图（原图归档）",
+    "imageAssetSourceUrl": "https://clan.fastly.steamstatic.com/images/27971017/fc16cc4e2d37f0c63510d094c78b7116f3c91d1e.png",
+    "imageSourcePageUrl": "https://store.steampowered.com/news/posts/?appids=578080&enddate=1603721939",
+    "launchDate": null,
+    "launchLabel": "2020-09-17公告；官方排期：PUBG Labs：2020年9月24日至10月8日（KST）",
+    "launchNote": "公告日期为9月17日，正文排期后来扩展至9月24日至10月8日。 本卡描述2020年首轮规则；2021年第二轮的视角、商店与点数变化另列基础更新，避免混入首版。 本轮核对的是官方公布的服务/首发排期，尚未另行确认准确首次开服日，因此不填实际上线日期。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageScope": "specific",
+    "imageDimensions": [
+      800,
+      450
+    ],
+    "imageSha256": "ee526a248ce928cb0971abc61e0c8adee0661ab0976236c44e2f692accec1605",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2020-09-17",
+    "additionalSourceUrls": [
+      "https://pubg.com/en/news/1675"
+    ],
+    "scheduledLaunchDate": "2020-09-24"
+  },
+  {
+    "id": "free-fire-classic-br-2017",
+    "game": "Free Fire",
+    "modeName": "经典大逃杀（Battle Royale）",
+    "year": "2017",
+    "date": "2017-12-04",
+    "tags": [
+      "br-core"
+    ],
+    "type": [
+      "移动端大逃杀",
+      "小队生存"
+    ],
+    "oneLineRule": "玩家在移动端大逃杀中搜集装备并争取生存到最后；本卡记录2017年正式发布的经典父玩法。",
+    "mechanicChange": "Garena于2017-12-04宣布正式上线，本版明确包含小队模式、卧倒、瞄准镜、新载具与武器。官网FAQ将Free Fire定义为移动端大逃杀。本卡作为经典BR父玩法，早期封闭测试与后续BR版本详录分别保留。",
+    "tempoImpact": "小队和倒地救援增加了落单后继续恢复战力的机会；双人/小队作战也将队友位置与救援时机纳入生存决策。",
+    "designObservation": "设计推断：在面向移动端的短局BR中，倒地救援与小队人数为队伍失误留出恢复窗口，同时保留最后存活目标。",
+    "sourceUrl": "https://ff.garena.com/en/article/7/",
+    "imageUrl": "assets/modes/free-fire-classic-br-2017.jpg",
+    "imageSource": "Garena 官方2017年首发公告配图（原图归档）",
+    "imageAssetSourceUrl": "https://freefiremobile-a.akamaihd.net/ffwebsite/uploadfile/2017/1204/20171204090259813.jpg",
+    "imageSourcePageUrl": "https://ff.garena.com/en/article/7/",
+    "launchDate": "2017-12-04",
+    "launchLabel": "官方正式上线：2017年12月4日；更早地区封测日期待核",
+    "launchNote": "Garena公告直接写明于12月4日正式上线。此日期记录全球正式发布公告，而非封测最早开放时间。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "ffPlaylists": [
+      "br"
+    ],
+    "isLtm": false,
+    "imageScope": "specific",
+    "imageDimensions": [
+      1280,
+      720
+    ],
+    "imageSha256": "6d8a2421f6e14fab2cbe61c177b471d76d67c41d27024e5b1f8c98e7b1456442",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2017-12-04",
+    "additionalSourceUrls": [
+      "https://ff.garena.com/en/faq/"
+    ]
+  },
+  {
+    "id": "pubgm-classic-br-2018",
+    "game": "PUBG Mobile",
+    "modeName": "经典大逃杀（Classic Battle Royale）",
+    "year": "2018",
+    "date": "2018-03-19",
+    "tags": [
+      "br-core"
+    ],
+    "type": [
+      "100人",
+      "搜集物资",
+      "缩圈生存"
+    ],
+    "oneLineRule": "100名玩家降落战场，搜集装备并利用地形、载具和物资，在逐渐缩小的安全区内争取成为最后存活队伍。",
+    "mechanicChange": "PUBG MOBILE官网介绍其核心BR流程为100名玩家降落、搜集生存物资并利用地图地形、载具和物品，随着playzone缩小争取最后一队存活。官方新闻记载国际版于2018-03-19在App Store与Google Play发布。首发日期按国际发行记，未推断各地区软启动日期。",
+    "tempoImpact": "搜集、轮转与缩圈构成一局的阶段节奏；地图选择和载具/物资会影响队伍路线与生存方式。",
+    "designObservation": "设计推断：将逐步收缩的安全区与装备搜集结合，使玩家需要在资源成长和向安全区转移之间持续取舍。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/m20570/201805/720235.shtml",
+    "imageUrl": "assets/modes/pubgm-classic-br-2018.jpg",
+    "imageSource": "PUBG MOBILE 官方国际发行报道配图（原图归档）",
+    "imageAssetSourceUrl": "https://overseas-img.qq.com/upload/webplat/info/pubgmobile/20180517/282221243423442.jpg",
+    "imageSourcePageUrl": "https://www.pubgmobile.com/en-US/m/news_detail/webplat/info/news_version3/35372/35482/35483/35484/m20570/201805/720235.shtml",
+    "launchDate": "2018-03-19",
+    "launchLabel": "国际版上线：2018年3月19日",
+    "launchNote": "官方报道正文确认国际版于2018-03-19在App Store和Google Play发布；文内新闻电头为3月23日，官网页面标注2018-04-10 19:00，三者分别记录。不据URL中201805目录推断公告日。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": false,
+    "imageScope": "specific",
+    "imageDimensions": [
+      1200,
+      628
+    ],
+    "imageSha256": "59386c236a1bb5e1059a9280d58795590d460f11f7311628bec3d7b7a294e938",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2018-04-10",
+    "sourceContentDate": "2018-03-23",
+    "additionalSourceUrls": [
+      "https://www.pubgmobile.com/en-US/"
+    ]
+  },
+  {
+    "id": "apex-battle-armor-2020",
+    "game": "Apex Legends",
+    "modeName": "战斗护甲（Battle Armor）",
+    "year": "2020",
+    "date": "2020-04-28",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "World’s Edge",
+      "固定护甲",
+      "分阶段轮换"
+    ],
+    "oneLineRule": "World’s Edge限时BR中，玩家落地时已装备当期指定护甲并持有P2020；地面移除所有护甲，其余战利品与护盾补给仍可拾取。",
+    "mechanicChange": "Respawn官方公告说明该限时模式从2020-04-28开始，为期14天。活动轮换依次为白甲（4月28日至5月2日）、蓝甲（5月2日至6日）、紫甲（5月6日至9日）与进化护甲（5月9日至12日）。玩家出生即装备当期护甲并携带P2020；护甲不再出现在地面战利品池，小型与大型护盾补给及其他物资仍可拾取。",
+    "tempoImpact": "固定护甲的前三阶段减少了搜刮时的防护差异；最后的进化甲阶段仍可通过交战积累成长，不能笼统称作全程无法升级护甲。",
+    "designObservation": "设计推断：通过分阶段统一出生护甲并移除地面护甲，将搜刮中的防御成长变量转为活动阶段变量，方便观察不同护甲级别对交战节奏的影响。",
+    "sourceUrl": "https://www.ea.com/games/apex-legends/news/battle-armor-event",
+    "imageUrl": "assets/mode-official/4e8351874e27bd3868f1.jpg",
+    "imageSource": "EA 官方BR入口通用配图；未展示Battle Armor规则，模式专属图待补",
+    "imageAssetSourceUrl": "https://drop-assets.ea.com/images/3MenMJriVkwTbbUvbKfPVY/be1813ca014cbb4189ac3ae7197ee414/Apex-Legends_Tile-Battle-Royale.jpg",
+    "imageSourcePageUrl": "https://www.ea.com/en/games/apex-legends/apex-legends/apex-legends-modes-hub",
+    "launchDate": null,
+    "launchLabel": "官方排期：2020年4月28日至5月12日",
+    "launchNote": "公告正文给出首日和每阶段切换时间，并称活动为期14天。 本轮核对的是官方公布的服务/首发排期，尚未另行确认准确首次开服日，因此不填实际上线日期。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageScope": "game",
+    "imageDimensions": [
+      720,
+      720
+    ],
+    "imageSha256": "968fcd3901f84f41688295dedd2d85a2ef86d44bd2a9916ea4c40bc354c72e37",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "scheduledLaunchDate": "2020-04-28"
+  },
+  {
+    "id": "pubg-hardcore-br-2020",
+    "game": "PUBG",
+    "modeName": "硬核大逃杀（Hardcore BR）",
+    "year": "2020",
+    "date": "2020-11-04",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "Vikendi四人小队",
+      "HUD移除",
+      "最多100人"
+    ],
+    "oneLineRule": "Vikendi四人小队BR：移除准星、小地图、生命与增益状态、武器装备和载具界面、蓝圈提示及指南针，但保留队伍、击倒/击杀动态和剩余人数。",
+    "mechanicChange": "PUBG官方Steam公告2020-11-04发布。玩法在Vikendi进行，TPP/FPP、仅小队，禁用单人小队；最多100人，人数不足时由机器人补位。禁用准星、小地图、生命条、增益条、武器/装备/载具UI、蓝圈系统提示和罗盘；保留跳伞UI、剩余玩家、DBNO/击杀动态和队伍UI。PC及主机开放时间为2020-11-05 14:00至11月9日16:00 KST。LABS对局不提供BP/XP、不记录比赛历史，也不计入生存通行证任务。",
+    "tempoImpact": "缺少方向、状态和蓝圈提示后，队伍需要依赖环境观察、记忆与语音协作完成导航、交战判断和资源管理。",
+    "designObservation": "设计推断：移除多个提示层而保留队友与淘汰信息，使信息获取更依赖团队沟通，同时保留基本队伍状态。",
+    "sourceUrl": "https://store.steampowered.com/news/posts/?appids=578080&enddate=1605083783",
+    "imageUrl": "assets/modes/pubg-hardcore-br-2020.png",
+    "imageSource": "PUBG 官方模式公告配图（原图归档）",
+    "imageAssetSourceUrl": "https://clan.fastly.steamstatic.com/images/27971017/ea4f423e408969df0e3c8c94a70133df76006b27.png",
+    "imageSourcePageUrl": "https://store.steampowered.com/news/posts/?appids=578080&enddate=1605083783",
+    "launchDate": null,
+    "launchLabel": "2020-11-04公告；官方排期：PUBG Labs：2020年11月5日至9日（KST）",
+    "launchNote": "官方公告于11月4日发布，排期明确列为11月5日14:00至11月9日16:00 KST。 本轮核对的是官方公布的服务/首发排期，尚未另行确认准确首次开服日，因此不填实际上线日期。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageScope": "specific",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "4cb80646da0a6f9bc01d27ab4b88d9ca4ec2109d9fa0482b7a13bd718c16da30",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2020-11-04",
+    "scheduledLaunchDate": "2020-11-05"
+  },
+  {
+    "id": "fortnite-heavy-metal-squads-2019",
+    "game": "Fortnite",
+    "modeName": "重金属小队（Heavy Metal Squads）",
+    "year": "2019",
+    "date": "2019-06-24",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "仅重型武器",
+      "金属采集加速",
+      "风暴加速"
+    ],
+    "oneLineRule": "战利品箱只提供名称中带有“重型”的武器，同时加快金属采集和风暴节奏。",
+    "mechanicChange": "Epic《14 Days of Summer》公告将 Heavy Metal Squads 列为限时玩法：仅名称中含 heavy 的武器可获得；金属采集速度提高；风暴时间加快。公告未给出队伍人数、胜负分数或逐日开放日期。",
+    "tempoImpact": "武器池按名称筛选，金属采集加快而风暴更快推进，队伍须在更短轮转节奏中使用限定武器和建材。",
+    "designObservation": "设计推断：同时收窄武器选择并加快风暴推进，会将资源采集与转移时机置于同一局内约束。",
+    "sourceUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "imageUrl": "assets/modes/fortnite-14-days-of-summer-2019.jpg",
+    "imageSource": "Epic 官方活动总览图；未逐项展示本模式（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2F14-days-of-summer%2F09BR_14DoS_Announce_NewsHeader-1920x1080-fa5f73145b6d51533a6b0bd102a3202e329c4df8.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "launchDate": null,
+    "launchLabel": "公告日 2019年6月24日；轮换顺序和具体开放日未列",
+    "launchNote": "官方明确说明下列LTM展示顺序为随机、并非游戏内上线顺序；此处仅记录公告日。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageScope": "event",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "fe255f6b7c4d938392b30eb74f8f4d7b3aec604166d6479bb33e59b04405f6a4",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2019-06-24"
+  },
+  {
+    "id": "fortnite-storm-chasers-surfin-squads-2019",
+    "game": "Fortnite",
+    "modeName": "风暴追逐者：冲浪（Storm Chasers: Surfin'）",
+    "year": "2019",
+    "date": "2019-06-24",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "开局乘载具",
+      "脉冲手雷补充",
+      "生存胜出"
+    ],
+    "oneLineRule": "所有玩家开局部署到载具上，比赛过程中脉冲手雷会逐渐补入背包，最后存活者获胜。",
+    "mechanicChange": "Epic公告列出的规则为：所有人开局部署到载具；对局中脉冲手雷会逐步进入玩家背包；最后一名存活者获胜。公告未说明载具型号、人数或具体补充频率。",
+    "tempoImpact": "开局载具部署与持续补入的脉冲手雷改变移动和击退手段，胜负仍由最后存活者决定。",
+    "designObservation": "设计推断：将同一机动/位移道具持续补给到生存对局中，为接敌和脱离增加可重复使用的位移选择。",
+    "sourceUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "imageUrl": "assets/modes/fortnite-14-days-of-summer-2019.jpg",
+    "imageSource": "Epic 官方活动总览图；未逐项展示本模式（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2F14-days-of-summer%2F09BR_14DoS_Announce_NewsHeader-1920x1080-fa5f73145b6d51533a6b0bd102a3202e329c4df8.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "launchDate": null,
+    "launchLabel": "公告日 2019年6月24日；轮换顺序和具体开放日未列",
+    "launchNote": "官方明确说明下列LTM展示顺序为随机、并非游戏内上线顺序；此处仅记录公告日。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageScope": "event",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "fe255f6b7c4d938392b30eb74f8f4d7b3aec604166d6479bb33e59b04405f6a4",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2019-06-24"
+  },
+  {
+    "id": "fortnite-splashdown-squads-2019",
+    "game": "Fortnite",
+    "modeName": "水花四溅小队（Splashdown Squads）",
+    "year": "2019",
+    "date": "2019-06-24",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "可重生",
+      "水气球为主要伤害",
+      "目标分获胜"
+    ],
+    "oneLineRule": "玩家可重生，主要使用水气球道具对敌人造成伤害，率先达到目标分数者获胜。",
+    "mechanicChange": "Epic公告称本模式开启重生，玩家主要通过新水气球道具伤害对手，并以先达到目标分数取胜。公告未给出目标分数、人数或重生限制。",
+    "tempoImpact": "重生允许玩家持续投入对抗，水气球成为主要伤害来源，胜利条件由累计目标分决定。",
+    "designObservation": "设计推断：以可重生、限定主要伤害手段和目标分共同组织对抗，让模式目标集中在持续争分。",
+    "sourceUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "imageUrl": "assets/modes/fortnite-14-days-of-summer-2019.jpg",
+    "imageSource": "Epic 官方活动总览图；未逐项展示本模式（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2F14-days-of-summer%2F09BR_14DoS_Announce_NewsHeader-1920x1080-fa5f73145b6d51533a6b0bd102a3202e329c4df8.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "launchDate": null,
+    "launchLabel": "公告日 2019年6月24日；轮换顺序和具体开放日未列",
+    "launchNote": "官方明确说明下列LTM展示顺序为随机、并非游戏内上线顺序；此处仅记录公告日。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageScope": "event",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "fe255f6b7c4d938392b30eb74f8f4d7b3aec604166d6479bb33e59b04405f6a4",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2019-06-24"
+  },
+  {
+    "id": "fortnite-power-up-solos-2019",
+    "game": "Fortnite",
+    "modeName": "能量强化单人（Power Up Solos）",
+    "year": "2019",
+    "date": "2019-06-24",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "重生限时开启",
+      "护盾上限增长",
+      "空投护盾增加"
+    ],
+    "oneLineRule": "玩家消耗护盾物品可提高自身护盾上限；开局重生会在设定时间后关闭，最终争取成为最后存活者。",
+    "mechanicChange": "Epic公告称玩家每次消耗护盾物品都会提高护盾上限，补给空投中的护盾物品数量显著增加；开局时开启重生，经过一段时间后关闭；关闭重生时玩家护盾会补满。胜利目标为最后存活。具体时间和护盾数值未在公告列明。",
+    "tempoImpact": "早期重生阶段与之后的单命阶段形成节奏转换；额外护盾补给支持玩家提升护盾上限。",
+    "designObservation": "设计推断：将重生关闭时点与护盾成长绑定，使玩家需要在宽松的早期交战和后续生存阶段之间调整风险选择。",
+    "sourceUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "imageUrl": "assets/modes/fortnite-14-days-of-summer-2019.jpg",
+    "imageSource": "Epic 官方活动总览图；未逐项展示本模式（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2F14-days-of-summer%2F09BR_14DoS_Announce_NewsHeader-1920x1080-fa5f73145b6d51533a6b0bd102a3202e329c4df8.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "launchDate": null,
+    "launchLabel": "公告日 2019年6月24日；轮换顺序和具体开放日未列",
+    "launchNote": "官方明确说明下列LTM展示顺序为随机、并非游戏内上线顺序；此处仅记录公告日。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageScope": "event",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "fe255f6b7c4d938392b30eb74f8f4d7b3aec604166d6479bb33e59b04405f6a4",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2019-06-24"
+  },
+  {
+    "id": "fortnite-leave-none-behind-duos-2019",
+    "game": "Fortnite",
+    "modeName": "绝不抛下队友双人（Leave None Behind Duos）",
+    "year": "2019",
+    "date": "2019-06-24",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "队友未倒地时持续缓慢治疗",
+      "倒地队友免伤",
+      "队友倒地后持续掉血"
+    ],
+    "oneLineRule": "只要没有队友倒地，队伍持续获得持续恢复效果（Slurp）；队友倒地时其免受伤害，其他队友失去该效果并开始持续掉血。",
+    "mechanicChange": "Epic公告规则：只要没有队友被击倒，队伍始终处于持续恢复效果（原文称Slurp）；队友倒地后，该队友免疫伤害，而其他队友失去持续恢复效果（原文称Slurp）并开始随时间受伤。公告未说明Slurp具体数值或掉血速率。",
+    "tempoImpact": "队友倒地会同时触发倒地者保护与其余队员的持续压力，救援决策和队伍分散风险被直接绑定。",
+    "designObservation": "设计推断：以整队共享状态奖励无减员协作，同时在减员时制造救援优先级与剩余队员生存之间的即时取舍。",
+    "sourceUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "imageUrl": "assets/modes/fortnite-14-days-of-summer-2019.jpg",
+    "imageSource": "Epic 官方活动总览图；未逐项展示本模式（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2F14-days-of-summer%2F09BR_14DoS_Announce_NewsHeader-1920x1080-fa5f73145b6d51533a6b0bd102a3202e329c4df8.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "launchDate": null,
+    "launchLabel": "公告日 2019年6月24日；轮换顺序和具体开放日未列",
+    "launchNote": "官方明确说明下列LTM展示顺序为随机、并非游戏内上线顺序；此处仅记录公告日。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageScope": "event",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "fe255f6b7c4d938392b30eb74f8f4d7b3aec604166d6479bb33e59b04405f6a4",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2019-06-24"
+  },
+  {
+    "id": "fortnite-use-with-care-duos-2019",
+    "game": "Fortnite",
+    "modeName": "谨慎使用双人（Use With Care Duos）",
+    "year": "2019",
+    "date": "2019-06-24",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "开局建材",
+      "无法继续采集资源",
+      "生存胜出"
+    ],
+    "oneLineRule": "玩家以初始建筑材料开局，整场无法获取新资源，争取成为最后存活者。",
+    "mechanicChange": "Epic公告称资源稀缺：玩家开局获得一定数量的建筑材料，对局期间无法再获取新资源，胜利条件为最后存活。公告未给出初始材料数值。",
+    "tempoImpact": "建材储备变为固定预算，玩家需要在整个对局中分配建造用途。",
+    "designObservation": "设计推断：固定开局建材且禁止后续采集，使建造从可持续补充的资源循环转为有限库存管理。",
+    "sourceUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "imageUrl": "assets/modes/fortnite-14-days-of-summer-2019.jpg",
+    "imageSource": "Epic 官方活动总览图；未逐项展示本模式（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2F14-days-of-summer%2F09BR_14DoS_Announce_NewsHeader-1920x1080-fa5f73145b6d51533a6b0bd102a3202e329c4df8.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "launchDate": null,
+    "launchLabel": "公告日 2019年6月24日；轮换顺序和具体开放日未列",
+    "launchNote": "官方明确说明下列LTM展示顺序为随机、并非游戏内上线顺序；此处仅记录公告日。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageScope": "event",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "fe255f6b7c4d938392b30eb74f8f4d7b3aec604166d6479bb33e59b04405f6a4",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2019-06-24"
+  },
+  {
+    "id": "fortnite-headshots-duos-2019",
+    "game": "Fortnite",
+    "modeName": "爆头双人（Headshots Duos）",
+    "year": "2019",
+    "date": "2019-06-24",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "仅爆头伤害",
+      "移除霰弹枪"
+    ],
+    "oneLineRule": "只有爆头才能造成伤害，所有霰弹枪从模式中移除。",
+    "mechanicChange": "Epic公告仅列两项规则：玩家只能通过爆头造成伤害，霰弹枪全部移除。公告未说明其他武器限制、伤害倍率或队伍人数以外的参数。",
+    "tempoImpact": "伤害判定集中在爆头命中，移除霰弹枪后近距离交战仍需通过精准命中造成伤害。",
+    "designObservation": "设计推断：以命中部位限制伤害并移除霰弹枪，令瞄准精度成为主要对抗条件。",
+    "sourceUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "imageUrl": "assets/modes/fortnite-14-days-of-summer-2019.jpg",
+    "imageSource": "Epic 官方活动总览图；未逐项展示本模式（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2F14-days-of-summer%2F09BR_14DoS_Announce_NewsHeader-1920x1080-fa5f73145b6d51533a6b0bd102a3202e329c4df8.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "launchDate": null,
+    "launchLabel": "公告日 2019年6月24日；轮换顺序和具体开放日未列",
+    "launchNote": "官方明确说明下列LTM展示顺序为随机、并非游戏内上线顺序；此处仅记录公告日。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageScope": "event",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "fe255f6b7c4d938392b30eb74f8f4d7b3aec604166d6479bb33e59b04405f6a4",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2019-06-24"
+  },
+  {
+    "id": "fortnite-tank-battle-squads-2019",
+    "game": "Fortnite",
+    "modeName": "高耐久小队战（Tank Battle Squads）",
+    "year": "2019",
+    "date": "2019-06-24",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "开局高生命与护盾",
+      "强化Siphon",
+      "弹药增加",
+      "无治疗物品"
+    ],
+    "oneLineRule": "玩家以大幅提高的生命值和护盾开局，Siphon同步加强，弹药增加且移除治疗物品。",
+    "mechanicChange": "Epic公告将其描述为普通大逃杀的变体：开局生命值与护盾显著提高；Siphon开启并提高以匹配增加的生命值；弹药数量增加；没有治疗物品。公告未给出具体生命、护盾或弹药数值。",
+    "tempoImpact": "较高开局耐久与强化Siphon延长对抗承伤空间，移除治疗物品后玩家不能依靠常规治疗道具补充生命。",
+    "designObservation": "设计推断：把开局耐久、击杀回复和治疗物品可用性一起调整，集中测试高耐久交战下的资源消耗节奏。",
+    "sourceUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "imageUrl": "assets/modes/fortnite-14-days-of-summer-2019.jpg",
+    "imageSource": "Epic 官方活动总览图；未逐项展示本模式（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2F14-days-of-summer%2F09BR_14DoS_Announce_NewsHeader-1920x1080-fa5f73145b6d51533a6b0bd102a3202e329c4df8.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "launchDate": null,
+    "launchLabel": "公告日 2019年6月24日；轮换顺序和具体开放日未列",
+    "launchNote": "官方明确说明下列LTM展示顺序为随机、并非游戏内上线顺序；此处仅记录公告日。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageScope": "event",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "fe255f6b7c4d938392b30eb74f8f4d7b3aec604166d6479bb33e59b04405f6a4",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2019-06-24"
+  },
+  {
+    "id": "fortnite-builders-paradise-squads-2019",
+    "game": "Fortnite",
+    "modeName": "建造者乐园小队（Builders Paradise Squads）",
+    "year": "2019",
+    "date": "2019-06-24",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "建筑耐久大幅提高",
+      "资源采集加快",
+      "开放编辑"
+    ],
+    "oneLineRule": "建筑结构耐久大幅提高、资源采集速度提高，并开放玩家编辑任何玩家建造的墙体。",
+    "mechanicChange": "Epic公告列出建筑结构耐久大幅提高、资源采集速度提高，以及开启中立编辑（任何玩家都可编辑任何玩家建造的墙）。公告未说明材料分类差异或胜负规则改动。",
+    "tempoImpact": "结构更耐打、建材更快获取，且对手可编辑玩家墙体，改变了常规建造中防御结构的持续性与归属。",
+    "designObservation": "设计推断：加速建造资源循环并开放对手编辑，令建造量增加的同时降低单方对结构的控制权。",
+    "sourceUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "imageUrl": "assets/modes/fortnite-14-days-of-summer-2019.jpg",
+    "imageSource": "Epic 官方活动总览图；未逐项展示本模式（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2F14-days-of-summer%2F09BR_14DoS_Announce_NewsHeader-1920x1080-fa5f73145b6d51533a6b0bd102a3202e329c4df8.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "launchDate": null,
+    "launchLabel": "公告日 2019年6月24日；轮换顺序和具体开放日未列",
+    "launchNote": "官方明确说明下列LTM展示顺序为随机、并非游戏内上线顺序；此处仅记录公告日。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageScope": "event",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "fe255f6b7c4d938392b30eb74f8f4d7b3aec604166d6479bb33e59b04405f6a4",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2019-06-24"
+  },
+  {
+    "id": "fortnite-rumble-squads-2019",
+    "game": "Fortnite",
+    "modeName": "小队乱斗（Rumble Squads）",
+    "year": "2019",
+    "date": "2019-06-24",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "可重生",
+      "绿色或更高级武器",
+      "目标分获胜"
+    ],
+    "oneLineRule": "可重生的小队乱斗模式，武器品质为绿色或更好，率先达到目标分数的队伍获胜。",
+    "mechanicChange": "Epic公告称这是Team Rumble的新变体：开启重生、提供绿色或更高级武器，先达到目标分的队伍获胜。公告未说明队伍人数、目标分或地图参数。",
+    "tempoImpact": "重生与目标分制推动持续交战；限定武器最低品质，减少低品质武器对初期交火的影响。",
+    "designObservation": "设计推断：以重生维持参战人数、以目标分收束胜负，使对抗围绕持续争分而非单次淘汰。",
+    "sourceUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "imageUrl": "assets/modes/fortnite-14-days-of-summer-2019.jpg",
+    "imageSource": "Epic 官方活动总览图；未逐项展示本模式（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2F14-days-of-summer%2F09BR_14DoS_Announce_NewsHeader-1920x1080-fa5f73145b6d51533a6b0bd102a3202e329c4df8.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "launchDate": null,
+    "launchLabel": "公告日 2019年6月24日；轮换顺序和具体开放日未列",
+    "launchNote": "官方明确说明下列LTM展示顺序为随机、并非游戏内上线顺序；此处仅记录公告日。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageScope": "event",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "fe255f6b7c4d938392b30eb74f8f4d7b3aec604166d6479bb33e59b04405f6a4",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2019-06-24"
+  },
+  {
+    "id": "fortnite-loadout-swap-squads-2019",
+    "game": "Fortnite",
+    "modeName": "装备轮换小队（Loadout Swap Squads）",
+    "year": "2019",
+    "date": "2019-06-24",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "定时统一随机装备",
+      "可重生",
+      "目标分获胜"
+    ],
+    "oneLineRule": "全场玩家按固定计时获得相同的随机装备组合；开启重生，率先达到目标分者获胜。",
+    "mechanicChange": "Epic公告称全场玩家会按设定计时器同时获得相同的随机装备组合；开启重生，先达到目标分获胜。公告未提供计时周期、装备清单或目标分数。",
+    "tempoImpact": "全员同步换装会周期性改变交战工具，重生与目标分制维持持续对抗。",
+    "designObservation": "设计推断：同步随机发放装备，让双方在同一时刻面对相同装备变化，减少装备差异造成的比较偏差。",
+    "sourceUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "imageUrl": "assets/modes/fortnite-14-days-of-summer-2019.jpg",
+    "imageSource": "Epic 官方活动总览图；未逐项展示本模式（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2F14-days-of-summer%2F09BR_14DoS_Announce_NewsHeader-1920x1080-fa5f73145b6d51533a6b0bd102a3202e329c4df8.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "launchDate": null,
+    "launchLabel": "公告日 2019年6月24日；轮换顺序和具体开放日未列",
+    "launchNote": "官方明确说明下列LTM展示顺序为随机、并非游戏内上线顺序；此处仅记录公告日。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageScope": "event",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "fe255f6b7c4d938392b30eb74f8f4d7b3aec604166d6479bb33e59b04405f6a4",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2019-06-24"
+  },
+  {
+    "id": "fortnite-strategic-structures-squads-2019",
+    "game": "Fortnite",
+    "modeName": "策略建筑小队（Strategic Structures Squads）",
+    "year": "2019",
+    "date": "2019-06-24",
+    "tags": [
+      "br-ltm"
+    ],
+    "type": [
+      "石材与金属结构强化",
+      "石材与金属采集增加",
+      "材料上限降低"
+    ],
+    "oneLineRule": "石材和金属建造结构的耐久与采集率提高，但这两种材料的携带上限降低。",
+    "mechanicChange": "Epic公告称石材和金属结构耐久提高、石材和金属资源采集量提高，同时降低石材和金属材料上限。公告未列具体倍率或上限数值。",
+    "tempoImpact": "两种材料更快采集但库存上限更低，结构更耐打，玩家需要在采集频率和携带储备间重新安排。",
+    "designObservation": "设计推断：采集速度与库存上限反向调整，使建材更易补充但不易囤积，结构耐久则提高材料投入后的防御价值。",
+    "sourceUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "imageUrl": "assets/modes/fortnite-14-days-of-summer-2019.jpg",
+    "imageSource": "Epic 官方活动总览图；未逐项展示本模式（原图归档）",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2F14-days-of-summer%2F09BR_14DoS_Announce_NewsHeader-1920x1080-fa5f73145b6d51533a6b0bd102a3202e329c4df8.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/14-days-of-summer?lang=en-US",
+    "launchDate": null,
+    "launchLabel": "公告日 2019年6月24日；轮换顺序和具体开放日未列",
+    "launchNote": "官方明确说明下列LTM展示顺序为随机、并非游戏内上线顺序；此处仅记录公告日。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageScope": "event",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "fe255f6b7c4d938392b30eb74f8f4d7b3aec604166d6479bb33e59b04405f6a4",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "publishedDate": "2019-06-24"
+  },
+  {
+    "id": "fortnite-save-the-world-2017",
+    "game": "Fortnite",
+    "modeName": "守护家园（Save the World）",
+    "year": "2017",
+    "date": "2017-06-08",
+    "publishedDate": "2017-06-08",
+    "tags": [
+      "pve"
+    ],
+    "type": [
+      "合作PVE",
+      "堡垒防守",
+      "采集与制作"
+    ],
+    "oneLineRule": "玩家合作探索和采集资源，制作武器、陷阱与堡垒，抵御怪潮并完成任务。",
+    "mechanicChange": "原始Fortnite的合作PVE流程结合可破坏场景、资源采集、制作与防守。英雄分为探险家、士兵、忍者和建造师四个基础职业；玩家可招募防守者NPC，并利用木、石、金属和陷阱组织防线。",
+    "tempoImpact": "外出采集为制作与布防供给资源，怪潮进攻则要求队伍把资源转为掩体、火力和防线。",
+    "designObservation": "设计推断：把建造、制作和职业分工接入合作防守，可让探索资源与战斗准备形成循环。",
+    "sourceUrl": "https://www.fortnite.com/news/build-explore-craft-and-fight-on-july-25?lang=en-US",
+    "additionalSourceUrls": [
+      "https://blog.playstation.com/2017/06/13/fortnite-coming-july-25-with-playstation-exclusive-heroes/",
+      "https://www.fortnite.com/news/fortnite-save-the-world-update-state-of-development"
+    ],
+    "launchDate": null,
+    "scheduledLaunchDate": "2017-07-25",
+    "launchLabel": "2017-06-08公告；官方抢先体验发行排期：2017年7月25日",
+    "launchNote": "2017-06-08 Epic介绍及PlayStation官方发行公告列出7月25日抢先体验发行；2020开发状态文确认游戏此前已发行。首发排期与最早封测、预购抢先进入分开记录，本卡不把后续免费化当成首次上线。",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": false,
+    "imageSource": "Epic 官方公告头图（原图归档）",
+    "imageScope": "specific",
+    "imageUrl": "assets/modes/fortnite-save-the-world-2017.jpg",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Ffortnite-build-explore-craft-and-fight-on-july-25%2FKeyArt_Header-1903x480-bd49f1767d2dd78796c77d7806c9d21c41fb0b27.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/build-explore-craft-and-fight-on-july-25?lang=en-US",
+    "imageDimensions": [
+      1903,
+      480
+    ],
+    "imageSha256": "ed444ab97e5c7b2ca275ccb494b7545d9aa8defd90690c4e37b16116eb865643",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论"
+  },
+  {
+    "id": "fortnite-og-2024",
+    "game": "Fortnite",
+    "modeName": "经典回归（Fortnite OG）",
+    "year": "2024",
+    "date": "2024-12-05",
+    "publishedDate": "2024-12-05",
+    "tags": [
+      "br-core"
+    ],
+    "type": [
+      "第一章地图",
+      "历史物资池",
+      "独立播放列表"
+    ],
+    "oneLineRule": "在第一章地图和历史物资池中进行大逃杀，按缩短的赛季重新引入早期内容，并保留部分现代移动与操作。",
+    "mechanicChange": "2024版从第一章第一赛季开始，首发提供单人、小队及零建造。保留冲刺、滑行、攀越、破门、移动治疗和复活车；建筑材料上限为999，霰弹枪可双泵切换。零建造为部分地点增设滑索与升降索。",
+    "tempoImpact": "旧物资池与旧地形重新约束交战和搜刮，现代移动与返场机制则改变这些地点的进出路线和容错。",
+    "designObservation": "设计推断：怀旧规则可以保留时代特征，同时明确列出沿用的现代移动与救援系统，使复刻边界可理解。",
+    "sourceUrl": "https://www.fortnite.com/news/fortnite-og-is-back-and-here-to-stay?lang=en-US",
+    "additionalSourceUrls": [
+      "https://www.fortnite.com/news/fortnite-og-drop-back-into-battle-royale-chapter-1"
+    ],
+    "launchDate": null,
+    "scheduledLaunchDate": "2024-12-06",
+    "launchLabel": "2024-12-05公告；官方首发排期：2024年12月6日",
+    "launchNote": "2024-12-05公告明确12月6日开放，称播放列表将持续提供；2025年1月31日是其首赛季的结束时间，不是整个OG玩法下线日。本卡记录独立2024播放列表；2023 Season OG为早期赛季回顾，不再重复计为同一模式。实际首日按后续开服确认继续复核。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": false,
+    "imageSource": "Epic 官方公告头图（原图归档）",
+    "imageScope": "specific",
+    "imageUrl": "assets/modes/fortnite-og-2024.jpg",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/fortnite-og-header-1900x600-3f465b890b09.jpg",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/fortnite-og-is-back-and-here-to-stay?lang=en-US",
+    "imageDimensions": [
+      1900,
+      600
+    ],
+    "imageSha256": "b16c4d14829ecb99123f7e007c21409bfc1c336461ed2fc39e264a05706cc252",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论"
+  },
+  {
+    "id": "hpjy-xuanyuan-competition-2026",
+    "game": "和平精英",
+    "modeName": "轩辕禁地·角逐",
+    "year": "2026",
+    "date": "2026-06-29",
+    "publishedDate": "2026-06-29",
+    "tags": [
+      "extraction"
+    ],
+    "type": [
+      "多队争夺",
+      "阶段缩圈",
+      "物资送出"
+    ],
+    "oneLineRule": "多队玩家在轩辕禁地争夺并随阶段缩圈，可将物资送至大厅，被淘汰时装备不掉落。",
+    "mechanicChange": "腾讯在App Store的1.37.10版本说明将其列为古墓迷途中的新模式。已明确规则为多队角逐、分阶段缩圈、物资可送至大厅、被淘汰装备不掉落，胜利后获得奖励；人数、队伍规模、物资限制及完整胜负判定未公开，保留待补。",
+    "tempoImpact": "行为推断：缩圈推动队伍相遇，物资送出与装备不掉落分别改变积累收益和淘汰损失的结构。",
+    "designObservation": "设计推断：在搜集与带出流程中限制装备损失，可改变队伍选择继续争夺或提前兑现收益的权衡。",
+    "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+    "sourceHeading": "版本历史1.37.10 > 古墓迷途更新 > 全新模式——轩辕禁地·角逐",
+    "imageUrl": "assets/modes/hpjy-gumu-official-reference.jpg",
+    "imageAssetSourceUrl": "https://game.gtimg.cn/images/gp/cp/a202600825jqjz/m/p4-img1.jpg",
+    "imageSourcePageUrl": "https://gp.qq.com/",
+    "imageSource": "腾讯官网古墓迷途章节参考图；未展示轩辕禁地·角逐规则（原图归档）",
+    "imageScope": "game",
+    "imageStatus": "verified_official",
+    "imageDimensions": [
+      750,
+      1100
+    ],
+    "imageSha256": "67cf67dcc145d92c9a3cd67b74c7357e1b2f873d63b609453aa22dbabe0c486f",
+    "imageReviewedAt": "2026-10-27",
+    "launchDate": null,
+    "launchLabel": "2026年6月29日版本说明（首次开放日待核实）",
+    "launchNote": "App Store 1.37.10节点的HTML time明确为2026-06-29；这是该规则说明的版本日期，不认作首次开放日。另有4月开启的渠道预告，未取得官方身份及实际开服的完整确认，本卡不以其替代上线证据。",
+    "gameplayTypes": [
+      "extraction"
+    ],
+    "isLtm": false,
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论"
+  },
+  {
+    "id": "fortnite-party-royale-2020",
+    "game": "Fortnite",
+    "modeName": "派对空间（Party Royale）",
+    "year": "2020",
+    "date": "2020-05-06",
+    "publishedDate": "2020-05-06",
+    "launchDate": null,
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "无战斗社交空间",
+      "迷你游戏",
+      "现场演出"
+    ],
+    "oneLineRule": "玩家进入无武器、无建材的社交空间，与朋友闲逛、参加小游戏、观看演出或参与场景活动。",
+    "mechanicChange": "Epic将Party Royale描述为实验性、持续演进的空间：包含主舞台演出、空中障碍赛、Fishsticks船赛和The Plaza等活动；玩家选择Battle Royale内的Party Royale playlist进入。公告只写明Premiere演出于2020-05-08举行，未给该模式首次开放日，因此launchDate留空。",
+    "tempoImpact": "没有交战和淘汰压力，玩家按兴趣在社交、小游戏和演出间自由切换。",
+    "designObservation": "设计推断：在同一客户端提供不以战斗为目标的社交入口，可承载玩家聚会与同步观看活动。",
+    "sourceUrl": "https://www.fortnite.com/news/dillon-francis-steve-aoki-and-deadmau5-invite-you-to-the-party-royale-premiere?lang=en-US",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/dillon-francis-steve-aoki-and-deadmau5-invite-you-to-the-party-royale-premiere?lang=en-US",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/fortnite-party-royale-2020.png",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fdillon-francis-steve-aoki-and-deadmau5-invite-you-to-the-party-royale-premiere%2Ffortnite-party-royale-main-stage-1920x1080-1a5c6d2cbdf1cdef3223b29104975a67ce7b9093.png",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "4d6c1e0bb38d0f45991a85cace572e7a32cd620f75c5533f11e070a4ab267e84",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "imageSource": "Epic 官方对应玩法正文配图（原图归档）",
+    "imageScope": "specific",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "nameTranslationStatus": "descriptive",
+    "launchLabel": "2020-05-06 官方说明（首次开放日未单列）",
+    "launchNote": "本卡记录官方来源中公布的历史玩法规则；模式段落未单列精确首次开放日，按来源公告或版本日期归档。 不据本卡推断今天仍开放。"
+  },
+  {
+    "id": "fortnite-festival-battle-stage-2024",
+    "game": "Fortnite",
+    "modeName": "音乐节对决舞台（Festival Battle Stage）",
+    "year": "2024",
+    "date": "2024-06-12",
+    "publishedDate": "2024-06-12",
+    "launchDate": null,
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "最多16人",
+      "节奏竞技",
+      "逐轮淘汰"
+    ],
+    "oneLineRule": "最多16人参加四首歌的节奏淘汰赛，分轮淘汰低分玩家并决出一名胜者。",
+    "mechanicChange": "公开对局随机抽取Festival精选曲目，全员同曲但各自选择声部和难度，按轮淘汰低分者。Overdrive可攻击对手、降低其得分并打断连击，同时提高自己的分数；贝斯与人声最高倍率由6×调整为4×。私赛最多4人，可使用共享已拥有曲库。来源明确它会在第4赛季后保留，赛季通行证结束日不等于模式下线日。",
+    "tempoImpact": "每首曲目后淘汰低分者形成连续晋级压力，攻击技能可干扰对手得分节奏。",
+    "designObservation": "设计推断：把多人节奏分数赛改造成分轮淘汰，使个人演奏精度与攻击时机共同决定晋级。",
+    "sourceUrl": "https://www.fortnite.com/news/fortnite-festival-season-4-prepare-for-battle-with-metallica?lang=en-US",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/fortnite-festival-season-4-prepare-for-battle-with-metallica?lang=en-US",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/fortnite-festival-battle-stage-2024.jpg",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/fortnite-festival-battle-stage-1920x1080-46dc0b311856.jpg",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "13dfc184aea8d80bf1e98ff1ae14f2925232aa13edb5b980d5eaaae80b24d8d8",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "imageSource": "Epic 官方对应玩法正文配图（原图归档）",
+    "imageScope": "specific",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "nameTranslationStatus": "descriptive",
+    "scheduledLaunchDate": "2024-06-13",
+    "launchLabel": "2024-06-12公告；官方首发排期：2024-06-13",
+    "launchNote": "本卡记录官方来源中公布的历史玩法规则；来源列出2024-06-13的开放排期，未另取得准确首开当日确认，不将排期自动转为实际上线日。 不据本卡推断今天仍开放。"
+  },
+  {
+    "id": "fortnite-stw-frostnite-2018",
+    "game": "Fortnite",
+    "modeName": "冬夜生存（Frostnite）",
+    "year": "2018",
+    "date": "2018-12-18",
+    "publishedDate": "2018-12-18",
+    "launchDate": null,
+    "tags": [
+      "pve"
+    ],
+    "type": [
+      "合作生存",
+      "燃烧器防守",
+      "资源搜集"
+    ],
+    "oneLineRule": "玩家在冬夜中搜集BluGlo维持燃烧器与热量，并在装备受限的情况下尽可能抵御怪潮。",
+    "mechanicChange": "v7.10官方补丁称Frostnite为新生存体验：以搜集的BluGlo填充燃烧器；燃烧器生命下降时风暴护盾收缩；玩家仅带基础武器、图纸和生存能力开局，需尽可能坚持。7.10补丁发布日期作为首发版本日期依据，但未在该模式段落单列启用时刻，故launchDate留空。",
+    "tempoImpact": "外出搜集BluGlo与守护燃烧器形成往返循环，燃烧器衰减同时缩小安全活动区。",
+    "designObservation": "设计推断：把资源维护目标与渐进式风暴压力绑定，可迫使队伍在搜集和防守间持续取舍。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v7-10?lang=en-US",
+    "imageSourcePageUrl": "https://www.fortnite.com/patch-notes/v7-10?lang=en-US",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/fortnite-stw-frostnite-2018.jpg",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite/patch-notes/v7-10/stw-header-v7-10/StW07_Social_Frostnite_Faceoff-1920x1080-04b1f5c4928abbc9822b3f8d3cd6e79c6cb93442.jpg",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "11503f00728b5fa503f94b9d4df8db41091b49cd37fe8c50007691f2631e12fe",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "imageSource": "Epic 官方对应玩法正文配图（原图归档）",
+    "imageScope": "specific",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "nameTranslationStatus": "descriptive",
+    "launchLabel": "2018-12-18 官方说明（首次开放日未单列）",
+    "launchNote": "本卡记录官方来源中公布的历史玩法规则；模式段落未单列精确首次开放日，按来源公告或版本日期归档。 不据本卡推断今天仍开放。"
+  },
+  {
+    "id": "fortnite-stw-hit-the-road-2019",
+    "game": "Fortnite",
+    "modeName": "踏上旅途（Hit the Road）",
+    "year": "2019",
+    "date": "2019-08-01",
+    "publishedDate": "2019-08-01",
+    "launchDate": null,
+    "tags": [
+      "pve"
+    ],
+    "type": [
+      "最多4人合作",
+      "护送车辆",
+      "随机目标"
+    ],
+    "oneLineRule": "玩家协助Quinn驾驶悬浮卡车前往电台，沿路完成随机目标并守护车辆与最终广播。",
+    "mechanicChange": "v10.00官方补丁介绍Hit the Road：组三名其他玩家护送Quinn至电台；车辆带移动风暴防护盾，沿途有四个随机目标和升级；抵达后守住最终敌潮。车辆生命耗尽则旅程结束，奖励按完成目标数发放；开局不带个人装备/补给，需搜集资源，武器制作关闭。v10.00发布日为版本依据，正文未独立给首次开放时刻，launchDate留空。",
+    "tempoImpact": "护送路线、四个随机目标和车辆耐久共同控制队伍推进节奏，最终防守决定是否完成旅程。",
+    "designObservation": "设计推断：把移动护送、路途目标与终点防守串成一局任务，可让资源搜集服务于持续推进。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v10-00-patch-notes?lang=en-US",
+    "imageSourcePageUrl": "https://www.fortnite.com/patch-notes/v10-00-patch-notes?lang=en-US",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/fortnite-stw-hit-the-road-2019.jpg",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv10-00-patch-notes%2Fstw-header-v10-00-patch-notes%2F10StW_Mayday_Social-1920x1080-e592bd71cb1ffe7893e480e23bffab2c2b7fda56.jpg",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "0680229a471c269f893e55a464b7eaa426b51410a6f4ba82110d187d152632d4",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "imageSource": "Epic 官方对应玩法正文配图（原图归档）",
+    "imageScope": "specific",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "nameTranslationStatus": "descriptive",
+    "launchLabel": "2019-08-01 官方说明（首次开放日未单列）",
+    "launchNote": "本卡记录官方来源中公布的历史玩法规则；模式段落未单列精确首次开放日，按来源公告或版本日期归档。 不据本卡推断今天仍开放。"
+  },
+  {
+    "id": "fortnite-stw-dungeons-2019",
+    "game": "Fortnite",
+    "modeName": "地牢（Dungeons）",
+    "year": "2019",
+    "date": "2019-11-20",
+    "publishedDate": "2019-11-20",
+    "launchDate": null,
+    "tags": [
+      "pve"
+    ],
+    "type": [
+      "地牢探索",
+      "陷阱与怪物",
+      "钥匙和金币收集"
+    ],
+    "oneLineRule": "玩家深入Hexylvania地牢，搜寻魔法钥匙与金币，躲避陷阱并击败怪物。",
+    "mechanicChange": "官方2019-11-20 Homebase Status Report介绍Dungeons：深入Hexylvania地牢，寻找魔法钥匙与金币，躲避陷阱、搜集装备并击败怪物；正文未给首次开放时刻。招募英雄等任务奖励与局内探索分开理解。",
+    "tempoImpact": "探索、战斗和陷阱规避交替推进，地牢内搜集物可换取奖励与成长。",
+    "designObservation": "设计推断：将战役防守任务改为纵深探索，增加了路径风险与搜集回报的权衡。",
+    "sourceUrl": "https://www.fortnite.com/news/save-the-world-homebase-status-report-11-19-19?lang=en-US",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/save-the-world-homebase-status-report-11-19-19?lang=en-US",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/fortnite-stw-dungeons-2019.jpg",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fsave-the-world-homebase-status-report-11-19-19%2F11STW_DungeonsStarlight_Social-1920x1080-746d4c09f7bf6410ea758dedce6706933a1cd45d.jpg",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "036696ef9facd4bc26aea73a9a7579c4aea5e55a79fb05cb0745d590a3e0d7e6",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "imageSource": "Epic 官方对应玩法正文配图（原图归档）",
+    "imageScope": "specific",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "nameTranslationStatus": "descriptive",
+    "launchLabel": "2019-11-20 官方说明（首次开放日未单列）",
+    "launchNote": "本卡记录官方来源中公布的历史玩法规则；模式段落未单列精确首次开放日，按来源公告或版本日期归档。 不据本卡推断今天仍开放。 首发来源未标固定期限，本卡暂不标LTM，不代表永久开放。"
+  },
+  {
+    "id": "fortnite-stw-wargames-2019",
+    "game": "Fortnite",
+    "modeName": "风暴护盾演习（Wargames）",
+    "year": "2019",
+    "date": "2019-05-09",
+    "publishedDate": "2019-05-09",
+    "launchDate": null,
+    "tags": [
+      "pve"
+    ],
+    "type": [
+      "风暴护盾防守模拟",
+      "挑战修饰",
+      "多人合作"
+    ],
+    "oneLineRule": "玩家重返自己的风暴护盾基地，组合模拟规则与挑战条件，测试防御布局并抵御敌潮。",
+    "mechanicChange": "v9.00官方说明Wargames是在Storm Shield Mission中执行的模拟挑战，可在各生物群系进行并逐步增加模拟种类；第一批模拟改变战场环境/敌潮。敌人数量和强度会随加入玩家增加，完成模拟与挑战可获得任务奖励。v9.00版本日期作为公告依据，正文未明确单独开服日，launchDate留空。 健康值耗尽后需要其他玩家扶起，全队倒下即失败，单人只有一条命；任务开始前保存的建筑与陷阱耐久会在结束后恢复，开局后新增的建筑与陷阱则清除。",
+    "tempoImpact": "玩家在既有基地布防后面对模拟规则和敌潮组合，队伍规模也会提高敌人压力。",
+    "designObservation": "设计推断：复用玩家自建基地并叠加可组合模拟条件，可把建造验证转成重复挑战。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v9-00?lang=en-US",
+    "imageSourcePageUrl": "https://www.fortnite.com/patch-notes/v9-00?lang=en-US",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/fortnite-stw-wargames-2019.jpg",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv9-00%2Fstw-header-v9-00%2F09StW_Wargames_Social-1920x1080-34ca6a571a963b24e86cde4736013f0f60e603a1.jpg",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "ab43094a57f83b94a13870a3958c38927bc81ec211f45fb9ba985a0fd9b3411e",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "imageSource": "Epic 官方对应玩法正文配图（原图归档）",
+    "imageScope": "specific",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "nameTranslationStatus": "descriptive",
+    "launchLabel": "2019-05-09 官方说明（首次开放日未单列）",
+    "launchNote": "本卡记录官方来源中公布的历史玩法规则；模式段落未单列精确首次开放日，按来源公告或版本日期归档。 不据本卡推断今天仍开放。"
+  },
+  {
+    "id": "fortnite-stw-endurance-2019",
+    "game": "Fortnite",
+    "modeName": "风暴护盾耐久（Storm Shield Endurance）",
+    "year": "2019",
+    "date": "2019-06-18",
+    "publishedDate": "2019-06-18",
+    "launchDate": null,
+    "tags": [
+      "pve"
+    ],
+    "type": [
+      "30波生存",
+      "基地防守",
+      "递增敌潮"
+    ],
+    "oneLineRule": "玩家完成区域风暴护盾防御后解锁耐久任务，在基地连续抵御30波逐步升级的敌人。",
+    "mechanicChange": "v9.30官方补丁将Endurance列为新Storm Shield Defense任务：需完成任一地区全部SSD任务解锁；共30波递增敌潮，难度随地区变化，过程中Major偶尔加入Wargames模拟。该版本日期为排期依据，公告未写模式独立开放时刻，launchDate留空。",
+    "tempoImpact": "连续30波把基地布防能力置于长时压力测试中，敌潮逐步升级并夹入模拟变化。",
+    "designObservation": "设计推断：将单次基地防守扩展为多波耐久考验，会奖励长期稳定防线而非只应对单次突袭。",
+    "sourceUrl": "https://www.fortnite.com/patch-notes/v9-30?lang=en-US",
+    "imageSourcePageUrl": "https://www.fortnite.com/patch-notes/v9-30?lang=en-US",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/fortnite-stw-endurance-2019.jpg",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv9-30%2Fstw-header-v9-30%2F09StW_Wargames_Social_Endurance-1920x1080-fe89ae0c3162d7f6931dc55330423a117dac870d.jpg",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "877574054f8b2a5d4bacc7a9ac87cb131d5fa882700ecf35a3ffacb9f4c5943b",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "imageSource": "Epic 官方对应玩法正文配图（原图归档）",
+    "imageScope": "specific",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "nameTranslationStatus": "descriptive",
+    "launchLabel": "2019-06-18 官方说明（首次开放日未单列）",
+    "launchNote": "本卡记录官方来源中公布的历史玩法规则；模式段落未单列精确首次开放日，按来源公告或版本日期归档。 不据本卡推断今天仍开放。"
+  },
+  {
+    "id": "fortnite-stw-survive-the-storm-2017",
+    "game": "Fortnite",
+    "modeName": "风暴求生（Survive the Storm）",
+    "year": "2017",
+    "date": "2017-08-28",
+    "publishedDate": "2017-08-28",
+    "launchDate": null,
+    "tags": [
+      "pve"
+    ],
+    "type": [
+      "最多14夜生存",
+      "昼间搜集建造",
+      "夜间防守"
+    ],
+    "oneLineRule": "玩家白天搜集资源并建造防御，夜间抵御逐渐增强的怪潮，尝试坚持最多14个连续夜晚。",
+    "mechanicChange": "Epic官方说明该限时生存模式最多持续14夜；白天搜集资源并搭建防御，夜晚抵御不断增强的威胁，坚持更久获得更多奖励。官方补丁明确写明2017-08-29 live。",
+    "tempoImpact": "昼夜循环将准备阶段和战斗阶段交替，夜数推进提高压力并提升奖励。",
+    "designObservation": "设计推断：把昼间准备和逐夜升级的防守连成生存循环，可让队伍持续衡量资源投资与坚持时长。",
+    "sourceUrl": "https://www.fortnite.com/news/survive-the-storm---release-notes",
+    "imageSourcePageUrl": "https://www.fortnite.com/news/survive-the-storm---release-notes",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/fortnite-stw-survive-the-storm-2017.png",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fsurvive-the-storm---release-notes%2FENG_Survivor-Mode-Gameplay-1920x1080-c52f98e7ed16193e1f269300b5b76fe916c02dfc.png",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "c41761bc530e9a0108572d061ffb6eeeafde90cf74c0de9ad20f82e5fc377f1d",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "imageSource": "Epic 官方对应玩法正文配图（原图归档）",
+    "imageScope": "specific",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "nameTranslationStatus": "descriptive",
+    "scheduledLaunchDate": "2017-08-29",
+    "launchLabel": "2017-08-28公告；官方首发排期：2017-08-29",
+    "launchNote": "本卡记录官方来源中公布的历史玩法规则；来源列出2017-08-29的开放排期，未另取得准确首开当日确认，不将排期自动转为实际上线日。 不据本卡推断今天仍开放。"
+  },
+  {
+    "id": "fortnite-stw-challenge-the-horde-2017",
+    "game": "Fortnite",
+    "modeName": "挑战尸潮（Challenge the Horde）",
+    "year": "2017",
+    "date": "2017-10-02",
+    "publishedDate": "2017-10-02",
+    "launchDate": null,
+    "tags": [
+      "pve"
+    ],
+    "type": [
+      "便携基地建造",
+      "10波尸潮挑战",
+      "逐级难度"
+    ],
+    "oneLineRule": "玩家先在准备区用有限资源建造可携带基地，再带入战区抵御10波怪潮并完成逐级挑战。",
+    "mechanicChange": "Horde Bash公告称该模式于10月5日随更新加入。玩家在集结区不限时但使用有限资源建造便携防线；最多与三名好友组队进入战区，在资源受限下应对怪物波次，通关可获得资源和奖励。1.7补丁正文补充每区有3–5项逐级挑战、每项10波、波次逐步加难，采集关闭并按波次发放资源。",
+    "tempoImpact": "战前布防与战中波次防守分段进行，限量资源要同时支撑武器制作、陷阱与扩建。",
+    "designObservation": "设计推断：让基地可跨任务保留并随挑战推进成长，使建造规划成为连续战斗进度的一部分。",
+    "sourceUrl": "https://www.fortnite.com/news/horde-bash-announce?lang=en-US",
+    "additionalSourceUrls": [
+      "https://www.fortnite.com/news/ea-1-7-patch-notes"
+    ],
+    "imageSourcePageUrl": "https://www.fortnite.com/news/ea-1-7-patch-notes",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": true,
+    "imageUrl": "assets/modes/fortnite-stw-challenge-the-horde-2017.jpg",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fea-1-7-patch-notes%2FENG-HB-GamePlay-1920x1080-2ff0fdc9bfd0e66aa6f59e914bbf8155d8c337bb.jpg",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "7ad84c59aff9061f6e7ad41cd57cbdf48741073e22801919d7518002ef7de6bf",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "imageSource": "Epic 官方对应玩法正文配图（原图归档）",
+    "imageScope": "specific",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "nameTranslationStatus": "descriptive",
+    "scheduledLaunchDate": "2017-10-05",
+    "launchLabel": "2017-10-02公告；官方首发排期：2017-10-05",
+    "launchNote": "本卡记录官方来源中公布的历史玩法规则；来源列出2017-10-05的开放排期，未另取得准确首开当日确认，不将排期自动转为实际上线日。 不据本卡推断今天仍开放。"
+  },
+  {
+    "id": "fortnite-stw-ventures-2020",
+    "game": "Fortnite",
+    "modeName": "远征赛季（Ventures）",
+    "year": "2020",
+    "date": "2020-07-21",
+    "publishedDate": "2020-07-21",
+    "launchDate": null,
+    "tags": [
+      "pve"
+    ],
+    "type": [
+      "赛季区域任务",
+      "独立等级进度",
+      "装备搜集"
+    ],
+    "oneLineRule": "玩家进入季节性区域完成任务与挑战，提升独立Ventures等级，并逐步解锁高难度任务与赛季奖励。",
+    "mechanicChange": "Ventures是独立赛季区域：等级决定区内力量与F.O.R.T属性，完成任务、警报和任务线可获得Venture XP并解锁更高难任务；每季重置等级与背包并轮换修饰。不能制作武器，需拾取或用采集资源向售货机购买，并可在维修台修复；陷阱仍可制作。物品不可丢给他人，主战役资源不能带入购买，区内禁止交易。7月21日说明列出7月27日20:00 ET首季排期。",
+    "tempoImpact": "独立等级推进逐步开放高难内容，局内搜集装备取代常规制作，赛季重置形成阶段性目标。",
+    "designObservation": "设计推断：将长线成长与主战役库存隔离，可建立周期性重练与赛季奖励循环。",
+    "sourceUrl": "https://www.fortnite.com/news/save-the-worlds-newest-update-7-21-2020?lang=en-US",
+    "additionalSourceUrls": [
+      "https://www.fortnite.com/news/fortnite-save-the-world-update-state-of-development"
+    ],
+    "imageSourcePageUrl": "https://www.fortnite.com/news/save-the-worlds-newest-update-7-21-2020?lang=en-US",
+    "gameplayTypes": [
+      "pve"
+    ],
+    "isLtm": false,
+    "imageUrl": "assets/modes/fortnite-stw-ventures-2020.jpg",
+    "imageAssetSourceUrl": "https://cdn2.unrealengine.com/fortnite-vending-machine-1920x1080-483395200.jpg",
+    "imageDimensions": [
+      1920,
+      1080
+    ],
+    "imageSha256": "1d6b43ce208471bdbb4612da3e9dd2c87f467b89ca9101290159a7210a8ed8a8",
+    "imageStatus": "verified_official",
+    "imageReviewedAt": "2026-10-27",
+    "imageSource": "Epic 官方Ventures售货机机制图（原图归档）",
+    "imageScope": "section",
+    "publicationStatus": "ready",
+    "reviewStatus": "source_verified",
+    "reviewedAt": "2026-10-27",
+    "aiCommentator": "设计分析，不代表官方结论",
+    "nameTranslationStatus": "descriptive",
+    "scheduledLaunchDate": "2020-07-27",
+    "launchLabel": "2020-07-21公告；官方首发排期：2020-07-27",
+    "launchNote": "本卡记录官方来源中公布的历史玩法规则；来源列出2020-07-27的开放排期，未另取得准确首开当日确认，不将排期自动转为实际上线日。 不据本卡推断今天仍开放。"
+  },
+  {
+    "id": "pubgm-home-feast-of-shadows-2026",
+    "game": "PUBG Mobile",
+    "modeName": "家园：影之盛宴（Feast of Shadows）",
+    "year": "2026",
+    "date": "2026.09.13",
+    "tags": [
+      "casual",
+      "ltm"
+    ],
+    "type": [
+      "家园玩法",
+      "附身躲藏",
+      "搜寻计分"
+    ],
+    "oneLineRule": "家园内分猎人与幽灵：猎人寻找附身家具的幽灵得分，幽灵附身家具后惊吓猎人得分。",
+    "mechanicChange": "默认以猎人进入，可与管家对话或点专用按钮变幽灵；搜寻分与惊吓分在家园内显示。活动中心领奖不构成付费或排名规则。",
+    "tempoImpact": "行为推断：双方围绕家具与来访玩家进行寻找、附身和惊吓，行动目标与经典BR的淘汰生存不同。",
+    "designObservation": "设计推断：在家园空间加入可切换角色和独立计分循环，可形成短时社交对抗；效果尚未实测。",
+    "sourceUrl": "https://pubgmobile.jp/version-4-6-0-patch-notes-20260909/",
+    "imageUrl": "assets/core-updates/pubgm-4-6-2026-11-01.jpg",
+    "imageSource": "PUBG MOBILE 日本官方4.6版本配图，非本玩法专属实机图",
+    "launchDate": "2026-09-13",
+    "launchLabel": "2026年9月13日（日本服）",
+    "launchNote": "日本官方4.6完整补丁明确9月13日09:00至11月9日08:59 JST（北京时间08:00至07:59）。本条为地区活动，不推定全球同步。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageAssetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_4.6.0_パッチノートサムネイル_900×568.jpg",
+    "imageSourcePageUrl": "https://pubgmobile.jp/version-4-6-0-patch-notes-20260909/",
+    "reviewedAt": "2026-11-01"
+  },
+  {
+    "id": "pubgm-arctic-chronicles-2026",
+    "game": "PUBG Mobile",
+    "modeName": "极夜战纪",
+    "year": "2026",
+    "date": "2026.11.11",
+    "tags": [
+      "br",
+      "ltm"
+    ],
+    "type": [
+      "经典主题入口",
+      "地图机制",
+      "返场"
+    ],
+    "oneLineRule": "经典大逃杀的限时主题玩法。玩家可进入古兽口中搜集物资，在古兽身上借助滑轨转点，并在极光领域获得返场机会。",
+    "mechanicChange": "击落封印塔后可启动石台，进入古兽口中领取奖励。古兽身上有移动平台、掉落物资的鳞片、受阻洞穴和传送点。极光领域开启时，已被淘汰的玩家有机会重回对局。",
+    "tempoImpact": "古兽和封印塔让队伍有新的落点和转点选择。返场条件则影响队友被淘汰后的行动安排。",
+    "designObservation": "古兽同时承担地标、通路和物资点三种作用，各处机关会吸引队伍争夺不同部位。",
+    "sourceUrl": "https://www.pubgmobile.com/en-US/news-detail.shtml?from=news&gid=ibm7leu80voymsuz6tgsiv9u&pid=ibm7leu80voymsuz6tgsiv9u_en",
+    "imageUrl": "assets/core-updates/pubgm-47-2026-11-15.png",
+    "imageSource": "日本服4.7问题公告所用通用配图，未展示主题实机",
+    "launchDate": "2026-11-11",
+    "launchLabel": "2026-11-11",
+    "launchNote": "全球公告列出的活动时间为北京时间 11 月 11 日 10:00 至 2027 年 1 月 13 日 04:59。日服的问题公告确认玩法已开放。客户端于 11 月 11 日至 12 日分批推送。",
+    "gameplayTypes": [
+      "br"
+    ],
+    "isLtm": true,
+    "imageAssetSourceUrl": "https://pubgmobile.jp/wp-content/uploads/web_mobile_KV_900x568.png",
+    "imageSourcePageUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+    "reviewedAt": "2026-11-15",
+    "publishedDate": "2026-11-11",
+    "publicationStatus": "ready",
+    "eventStartAt": "2026-11-11T02:00:00Z",
+    "eventEndAt": "2027-01-12T20:59:00Z",
+    "searchAliases": [
+      "Arctic Chronicles"
+    ]
+  },
+  {
+    "id": "hpjy-metro-armor-duel-2026",
+    "game": "和平精英",
+    "modeName": "地铁逃生：装甲对决",
+    "year": "2026",
+    "date": "2026.11.10",
+    "tags": [
+      "casual",
+      "ltm"
+    ],
+    "type": [
+      "1对1",
+      "装甲选配",
+      "门票"
+    ],
+    "oneLineRule": "消耗地铁币门票，选动力装甲进行1对1对决。",
+    "mechanicChange": "胜者取得双方门票奖励；官方说明按周五、周六、周日开放。",
+    "tempoImpact": "行为推断：进场前的装甲选择与门票风险直接影响决斗策略。",
+    "designObservation": "设计推断：两人定员、固定胜负奖励与常规搜打撤属于不同循环。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/1134/18949560.html",
+    "imageUrl": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+    "imageSource": "官方活动总览配图",
+    "launchDate": null,
+    "launchLabel": "官方预定 2026-11-14",
+    "launchNote": "腾讯官网正式补丁列出此玩法与 11 月 14 日 CH.15 投放计划。官方 11 月 12 日发布预告，尚缺此入口首开记录。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageAssetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+    "imageSourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+    "reviewedAt": "2026-11-16",
+    "publishedDate": "2026-11-10",
+    "publicationStatus": "ready",
+    "launchDateStatus": "scheduled",
+    "scheduledLaunchDate": "2026-11-14"
+  },
+  {
+    "id": "hpjy-metro-deathmatch-practice-2026",
+    "game": "和平精英",
+    "modeName": "地铁逃生：死斗竞技·演练场",
+    "year": "2026",
+    "date": "2026.11.10",
+    "tags": [
+      "casual",
+      "ltm"
+    ],
+    "type": [
+      "限时练习",
+      "预约对战",
+      "房间"
+    ],
+    "oneLineRule": "无需门票，使用约战功能创建或加入死斗房间。",
+    "mechanicChange": "1.39.13称演练模式限时开放，提供自由建房、加入和约战，并未公布结束日与单房容量。",
+    "tempoImpact": "行为推断：消除门票门槛后可用同类对抗练习操作或切磋。",
+    "designObservation": "设计推断：将对抗练习的入场条件与正式竞赛资源分开。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/1134/18949560.html",
+    "imageUrl": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+    "imageSource": "官方活动总览配图",
+    "launchDate": null,
+    "launchLabel": "官方预定 2026-11-14",
+    "launchNote": "腾讯官网正式补丁列出此玩法与 11 月 14 日 CH.15 投放计划。官方 11 月 12 日发布预告，尚缺此入口首开记录。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "imageAssetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+    "imageSourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+    "reviewedAt": "2026-11-16",
+    "publishedDate": "2026-11-10",
+    "publicationStatus": "ready",
+    "launchDateStatus": "scheduled",
+    "scheduledLaunchDate": "2026-11-14"
+  },
+  {
+    "id": "delta-force-flagship-frenzy-2026",
+    "game": "三角洲行动",
+    "modeName": "乘锋破浪（Flagship Frenzy）",
+    "year": "2026",
+    "date": "2026-09-22",
+    "publishedDate": "2026-09-22",
+    "tags": [
+      "objective",
+      "space"
+    ],
+    "type": [
+      "全面战场",
+      "8v8",
+      "水下取旗"
+    ],
+    "oneLineRule": "两队各八人，在海面和岛屿间争夺旗帜，可以潜入水中取旗并用水上载具追赶。",
+    "mechanicChange": "两周年活动的独立海战夺旗入口支持 8 对 8。水下可取旗，玩家能乘水上载具拦截对手，也会围绕岛上目标交战。",
+    "tempoImpact": "潜水、岛屿和水上载具提供移动与追赶路径，护旗时需要同时注意水下靠近的对手和水面来向。",
+    "designObservation": "让旗帜可在水下取得，能把潜水和水上载具纳入同一场目标争夺。",
+    "sourceUrl": "https://deltaforce.garena.com/zh_tw/news/all/G3BUFT",
+    "imageUrl": "assets/mode-official/delta-anniversary-flagship.jpg",
+    "imageSource": "Garena 官方海上夺旗小节原图",
+    "imageSourceUrl": "https://deltaforce.garena.com/en/news/all/5ENTSR",
+    "imageOriginalUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20260922_update/15.jpg",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "launchDate": null,
+    "launchDateStatus": "scheduled",
+    "scheduledLaunchDate": "2026-09-24",
+    "launchLabel": "官方公布 2026 年 9 月 24 日至 10 月 15 日",
+    "launchNote": "Garena 中英文公告列 9 月 24 日至 10 月 15 日，中文名为「乘锋破浪」。官方两周年 Steam 后续公告也将该玩法列为已开放。准确首开时间仍待核实。",
+    "reviewedAt": "2026-11-16",
+    "publicationStatus": "ready"
+  },
+  {
+    "id": "delta-force-ultra-overload-2026",
+    "game": "三角洲行动",
+    "modeName": "无双超载（Ultra Overload）",
+    "year": "2026",
+    "date": "2026-09-22",
+    "publishedDate": "2026-09-22",
+    "tags": [
+      "combat"
+    ],
+    "type": [
+      "全面战场",
+      "局内增益"
+    ],
+    "oneLineRule": "进入两周年限时对局，收集局内增益获得强化。",
+    "mechanicChange": "两周年公告将无双超载列在全面战场活动下。对局里可以收集增益，参与可以获得周年代币。官方公告未列队伍人数、分数目标或增益的获取条件。",
+    "tempoImpact": "如果取得强化需要离开原位置，玩家会在继续交战与寻找下一份增益之间作选择。公告未公布强化的出现和持续时间。",
+    "designObservation": "局内增益可以让交战间隔产生额外目标，具体作用取决于增益出现位置和获取方式。",
+    "sourceUrl": "https://deltaforce.garena.com/zh_tw/news/all/G3BUFT",
+    "imageUrl": "assets/mode-official/delta-anniversary-ultra-overload.jpg",
+    "imageSource": "Delta Force 官方 Steam 公告无双超载小节原图",
+    "imageSourceUrl": "https://store.steampowered.com/news/app/2507950/view/694271289525799607",
+    "imageOriginalUrl": "https://clan.fastly.steamstatic.com/images/45050610/4380c051b0445835dc7dec15a0c89adf1725df1f.jpg",
+    "gameplayTypes": [
+      "warfare"
+    ],
+    "isLtm": true,
+    "launchDate": null,
+    "launchDateStatus": "scheduled",
+    "scheduledLaunchDate": "2026-09-24",
+    "launchLabel": "官方公布 2026 年 9 月 24 日至 10 月 15 日",
+    "launchNote": "Garena 中英文公告列 9 月 24 日至 10 月 15 日。官方两周年 Steam 后续公告将无双超载列为已开放，未给出准确首开时间。",
+    "reviewedAt": "2026-11-16",
+    "publicationStatus": "ready"
+  },
+  {
+    "id": "hpjy-ranked-harbor-annihilation-2026",
+    "game": "和平精英",
+    "modeName": "团竞排位：货港·歼灭对决",
+    "year": "2026",
+    "date": "2026-11-11",
+    "tags": [
+      "casual"
+    ],
+    "type": [
+      "回合制",
+      "团队竞技",
+      "限制武器"
+    ],
+    "oneLineRule": "两队在货港打最多 9 回合，先胜 5 回合的队伍赢下比赛。每轮信号区逐步缩小，淘汰对方全队即赢该轮。",
+    "mechanicChange": "双方随机分配区域，下半场换边，加时重新随机。回合前选枪械和投掷物，武器使用次数有限，下半场和加时重置。胜队存活者可保留当前枪械。药品逐回合重置。禁滑铲，血量和伤害沿用经典标准。",
+    "tempoImpact": "每轮选枪消耗有限次数，连打相同配置要考虑半场剩余回合。",
+    "designObservation": "按回合回收药品、允许胜局存活者保留枪械，使回合胜负和个人活到终场都会影响下一轮资源。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/1134/18949560.html",
+    "imageUrl": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+    "imageSource": "官方活动总览配图",
+    "imageSourceUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+    "imageSourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+    "imageAssetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+    "imageOriginalUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+    "launchDate": "2026-11-11",
+    "launchDateStatus": "confirmed",
+    "launchLabel": "2026-11-11 更新上线",
+    "launchNote": "11 月 9 日的货港预告明确上线为 11 月 11 日，腾讯 11 月 11 日正式公告确认版本生效并列入首批模式。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": false,
+    "reviewedAt": "2026-11-16",
+    "publishedDate": "2026-11-11",
+    "publicationStatus": "ready",
+    "effectiveDateEvidenceUrl": "https://gp.qq.com/gicp/news/1134/18949560.html",
+    "secondarySourceUrl": "https://community-cn.honor.com/cngm/game/topicdetail/topicid-3762764246384641"
+  },
+  {
+    "id": "hpjy-metro-deathmatch-diamond-2026",
+    "game": "和平精英",
+    "modeName": "地铁逃生：死斗竞技·钻石场",
+    "year": "2026",
+    "date": "2026-11-11",
+    "tags": [
+      "casual",
+      "ltm"
+    ],
+    "type": [
+      "回合制",
+      "4对4",
+      "1对1",
+      "入场消耗"
+    ],
+    "oneLineRule": "消耗苏尔南钻入局，参加 4 对 4 或 1 对 1 回合对战，连续获胜可得到绑定苏尔南钻。",
+    "mechanicChange": "官方补丁列为限时死斗变体，记录连胜场次。公告未列入场消耗量、连胜奖励档位与总回合数。",
+    "tempoImpact": "连续获胜影响奖励，入场资源和连胜阶段共同改变对局压力。",
+    "designObservation": "单独的入场资源与连胜奖励让变体区分于无门票约战。",
+    "sourceUrl": "https://gp.qq.com/gicp/news/1134/18949560.html",
+    "imageUrl": "assets/core-updates/hpjy-winter-2026-11-15.jpg",
+    "imageSource": "官方活动总览配图",
+    "imageSourceUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+    "imageSourcePageUrl": "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+    "imageAssetSourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+    "imageOriginalUrl": "https://is1-ssl.mzstatic.com/image/thumb/aOif_X-GnCeeP3elQeT8uA/1200x630fo.jpg",
+    "launchDate": null,
+    "launchDateStatus": "unverified",
+    "launchLabel": "开放时间待官方确认",
+    "launchNote": "11 月 12 日认证官博预告把钻石场和另外两项模式列为 CH.15 内容。腾讯正式补丁在钻石场小节单独注明具体上线时间以后续官方公告为准，实际开放仍待核实。",
+    "gameplayTypes": [
+      "casual"
+    ],
+    "isLtm": true,
+    "reviewedAt": "2026-11-16",
+    "publishedDate": "2026-11-11",
+    "publicationStatus": "ready",
+    "additionalSourceUrls": [
+      "https://www.sina.cn/news/detail/5364475131595057.html"
+    ]
+  },
+  {
+    "id": "delta-force-az3-supercritical-2026",
+    "game": "三角洲行动",
+    "modeName": "AZ3-超临界（Supercritical）",
+    "year": "2026",
+    "date": "2026-11-07",
+    "publishedDate": "2026-11-07",
+    "tags": [
+      "objective",
+      "space"
+    ],
+    "type": [
+      "限时绝密行动",
+      "辐射扩散",
+      "动态撤离点"
+    ],
+    "oneLineRule": "进入 AZ3 绝密行动后，辐射从两个候选位置之一逐步扩散。队伍可拉闸，从远离原点的反应堆一侧撤离。",
+    "mechanicChange": "国服烽火地带行动等级达到 30 级解锁，准入战备估值为 60 万哈夫币，支持极星守望。\n\n开局地图标出乏燃料处理厂和海水处理区两个候选辐射原点。约 1 分钟后确认原点，地图圆圈显示最大扩散范围，红色区域逐渐扩大，玩家在红区内快速累积辐射并承受负面效果。\n\n乏燃料处理厂为原点时可从反应堆东侧撤离，海水处理区为原点时改走西侧。核心反应堆控制室和员工餐厅有两个开关，任开一个即可启用该局的特殊撤离点。石棺后方由普通和机密难度的付费撤离改为丢包撤离，开局 10 分钟后开放，名额为 1 人。",
+    "tempoImpact": "原点揭晓后，搜刮路线和撤离方向都需要重算。单人丢包出口的名额和开门时间限制了队伍分散撤离的空间。",
+    "designObservation": "扩散原点同时决定危险区域和可用出口。队伍在开局就能预判两条路线，仍须等到原点确认后才能确定撤离方向。",
+    "sourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/676261964507253471?l=schinese",
+    "additionalSourceUrls": [
+      "https://www.taptap.cn/game-event/13464",
+      "https://news.17173.com/content/11142026/222531678.shtml",
+      "https://deltaforce.garena.com/en/news/announcement/GWPGVY"
+    ],
+    "imageUrl": "assets/mode-official/delta-az3-supercritical-cn.jpg",
+    "imageSource": "《三角洲行动》国服「微光」补丁的超临界专属配图",
+    "imageSourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/676261964507253471?l=schinese",
+    "imageOriginalUrl": "https://clan.akamai.steamstatic.com/images/45050610/7c6378e68b7c5b0a991a4ef02829544d9ac5d005.jpg",
+    "launchDate": "2026-11-05",
+    "launchDateStatus": "confirmed",
+    "launchLabel": "国服 2026 年 11 月 5 日开放",
+    "launchNote": "国服版本活动页标为已上线，官方后续攻略展示了实际局内规则。国服模式小节给出的开放期为 2026 年 11 月 5 日更新后至 2027 年 1 月 21 日 02:00（北京时间），同版活动页的任务期另计。Garena 公告预定 2026 年 12 月 18 日至 2027 年 1 月 25 日开放，待实开确认。局内撤离细节来自国服攻略。",
+    "searchAliases": [
+      "AZ3",
+      "超临界",
+      "Supercritical",
+      "核电站"
+    ],
+    "gameplayTypes": [
+      "extraction"
+    ],
+    "isLtm": true,
+    "reviewedAt": "2026-11-16",
+    "publicationStatus": "ready"
+  },
+  {
+    "id": "delta-force-operations-peak-2026",
+    "game": "三角洲行动",
+    "modeName": "纵横巅峰赛",
+    "year": "2026",
+    "date": "2026-11-07",
+    "publishedDate": "2026-11-07",
+    "tags": [
+      "objective"
+    ],
+    "type": [
+      "独立段位",
+      "战备上限",
+      "队伍计分"
+    ],
+    "oneLineRule": "烽火地带达到行动等级 60 解锁。队伍按撤离带出价值和击败数争夺当局名次，名次用于结算独立段位和奖励。",
+    "mechanicChange": "从低到高设士兵、骑士、主教、堡垒和纵横王权五档。前两档进入巅峰机密行动，后三档进入巅峰绝密行动。按队内最高段位匹配，成员相差超过一个大段位时无法自动补队。每队干员不能重复。部分特殊护具、消耗品及以往赛季限定弹药禁止带入。\n\n头盔、护甲、弹药最高 5 级，战备总值上限 250 万哈夫币。门票每人 50 万，单人或双人关闭补队时仍交三人份。入局发放可使用两次的万能钥匙卡。\n\n队伍带出价值等额计分，上限 1,500 万。击败第 1–3 名干员每人计 50 万，第 4–6 名每人计 100 万，第 7 名起每人计 200 万。全场结束才按名次结算段位分和奖励。等待结算达到 3 局会暂时限制新开局，中退额外扣段位分并取消奖励。所有队员撤离或淘汰后可观战并查看其他队伍积分，顶尖分段取消该功能。\n\n结算后恢复入场前的战备。局内物资不直接带走。移除非洲之心、海洋之泪等掉落，并加入巅峰赛专属收集品。符合条件的红色收藏品计入赛季带出记录，赛季末可用段位获得的纵横币额度预选，按格数通过邮件领取。",
+    "tempoImpact": "高击败数提高之后每次击败的分值。带出一旦接近计分上限，队伍需要权衡保住已有成绩、继续交战和退场时机。",
+    "designObservation": "入场费、装备上限和赛后恢复战备共同限定经济损失。单局计分用带出价值和击败数衡量队伍表现，收藏品奖励延至赛季结算。",
+    "sourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/676261964507253471?l=schinese",
+    "imageUrl": "assets/core-updates/delta-s12-cn-patch-cover.jpg",
+    "imageSource": "《三角洲行动》国服「微光」官方版本封面",
+    "imageSourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/676261964507253471?l=schinese",
+    "imageOriginalUrl": "https://clan.akamai.steamstatic.com/images/45050610/65150dc703f18187fe06e7d6b0b3ab8ef7f3db8c.jpg",
+    "launchDate": null,
+    "launchDateStatus": "scheduled",
+    "scheduledLaunchDate": "2026-12-11",
+    "launchLabel": "国服预定 2026 年 12 月 11 日",
+    "launchNote": "国服补丁列出 2026 年 12 月 11 日至 2027 年 1 月 11 日，每天北京时间 12:00 至次日 02:00。待正式服开启确认。",
+    "gameplayTypes": [
+      "extraction"
+    ],
+    "isLtm": true,
+    "reviewedAt": "2026-11-16",
+    "publicationStatus": "ready"
+  },
+  {
     "id": "pubg-slb-dawnbreakers-nightmare-2026",
     "game": "PUBG",
     "modeName": "被遗留的幸存者：隆都破晓·噩梦（HLB: Dawnbreakers of Rondo — Nightmare）",
@@ -16311,35 +18850,6 @@
     "launchDate": "2026-11-10",
     "launchLabel": "2026年11月10日至12月1日",
     "launchNote": "EA 于11月5日发布公告，活动于11月10日正式上线。它没有独立击败哥斯拉的胜利目标，本卡记录的是对风暴点 BR 的限时实质规则覆盖。",
-    "gameplayTypes": [
-      "br"
-    ],
-    "isLtm": true
-  },
-  {
-    "id": "pubgm-arctic-chronicles-2026",
-    "game": "PUBG Mobile",
-    "modeName": "极地纪事（Arctic Chronicles）",
-    "year": "2026",
-    "date": "2026-11-12",
-    "tags": [
-      "br-ltm",
-      "needs_review"
-    ],
-    "type": [
-      "主题玩法",
-      "完整规则待补"
-    ],
-    "oneLineRule": "4.7.0 版本上线新的极地主题玩法；当前公开更新通知只确认名称，地图、人数、目标、能力与胜负变化仍待官方完整补丁说明核对。",
-    "mechanicChange": "日本官方 4.7.0 更新通知把 Arctic Chronicles 列为本版主要内容，并确认旧的 Midnight Hunters、Ocean Odyssey 回归和 Metro Royale: Reunion 在更新前后关闭或重开。该页没有公布 Arctic Chronicles 的具体局内规则，因此本卡不沿用测试服或社区资料推测机制。",
-    "tempoImpact": "待确认：官方公开页尚未说明该主题玩法如何改变搜刮、转点、交战或返场。",
-    "designObservation": "资料整理上应把“官方已命名并随正式版本上线”与“机制已经公开”分开；名称足以建立待复核入口，但不能据此补造玩法效果。",
-    "sourceUrl": "https://pubgmobile.jp/version-4-7-0-update-notice-20261105/",
-    "imageUrl": "https://pubgmobile.jp/wp-content/uploads/Web_UPDATE-INFO.png",
-    "imageSource": "PUBG MOBILE 日本官方 4.7.0 更新通知封面",
-    "launchDate": "2026-11-12",
-    "launchLabel": "2026年11月12日随 Version 4.7.0 更新上线",
-    "launchNote": "公告发布于11月5日，11月11日更新正文并确认11月12日更新。当前只确认主题玩法名称，完整机制和活动期限待全球或地区官方补丁页补齐。中文名为说明性译法。",
     "gameplayTypes": [
       "br"
     ],

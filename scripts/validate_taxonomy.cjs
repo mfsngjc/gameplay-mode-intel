@@ -97,6 +97,19 @@ vm.runInContext(`
   state.query = 'LTM';
   assert.ok(filteredIds().has(lava) && !filteredIds().has(reload), 'LTM is searchable');
   state.query = '';
+  const scheduled = { ...byId(lava), launchDate: null, launchDateStatus: 'scheduled',
+    scheduledLaunchDate: '2000-01-01', launchLabel: '官方预定 2000-01-01' };
+  assert.equal(getModeDateValue(scheduled), '2000-01-01');
+  assert.equal(getActivityState(scheduled).label, '上线待核实');
+  assert.equal(formatActivityDate(scheduled), scheduled.launchLabel);
+  assert.match(modeToMarkdown(scheduled), /官方预定 2000-01-01/);
+  const diamond = byId('hpjy-metro-deathmatch-diamond-2026');
+  assert.equal(diamond.launchDate, null);
+  assert.equal(getActivityState(diamond).className, 'is-unknown');
+  assert.match(renderRecordActivity(diamond), /公告 · 上线待核实/);
+  assert.equal(getTimelineDateLabel(diamond), '2026-11-11 · 公告');
+  assert.match(getTimelineShortDate(diamond), /· 公告/);
+  assert.match(modeToMarkdown(diamond), /开放时间待官方确认/);
   const analysisCard = { ...byId(lava), id: 'test-analysis', kind: 'mechanics', isLtm: false, sourceModeIds: [lava] };
   state.entries.push(analysisCard);
   state.view = 'mechanics';

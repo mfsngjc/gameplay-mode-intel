@@ -10,7 +10,8 @@ const catalogue = JSON.parse(read('data/tactical-items.json'));
 const updates = JSON.parse(read('data/core-updates.json'));
 const modes = JSON.parse(read('data/modes.json'));
 const categories = new Set(catalogue.categories.map((entry) => entry.id));
-assert.equal(catalogue.items.length, 136);
+assert.ok(catalogue.items.length >= 136);
+assert.equal(catalogue.clipPolicy.coverage, catalogue.items.length);
 assert.equal(categories.size, 14);
 const ids = new Set(modes.map((entry) => entry.id));
 const linked = new Set();
@@ -22,6 +23,9 @@ const communityHosts = new Set(['www.everyeye.it', 'fortnite.gs', 'www.pcgamer.c
 const communityAssetHosts = new Set(['images.everyeye.it', 'cdn.source.gs', 'cdn.mos.cms.futurecdn.net',
   'assets.reedpopcdn.com', 'staticg.sportskeeda.com', 'static.invenglobal.com', 'static1-us.millenium.gg']);
 
+const officialReferenceHosts = new Set(['www.fortnite.com', 'dev.epicgames.com', 'communities.epicgames.com']);
+const isEpicPressFile = url => url.hostname === 'epicgames.ent.box.com' &&
+  /^\/s\/[a-z0-9]+\/file\/\d+$/.test(url.pathname);
 const clipPaths = new Set();
 function validateClip(entry) {
   assert.equal(entry.clips?.length, 1, entry.id + ': one reviewed excerpt');
@@ -30,8 +34,16 @@ function validateClip(entry) {
     assert.ok(['official', 'community'].includes(clip.sourceType));
     assert.ok(['gameplay', 'in_engine_demo'].includes(clip.footageKind));
     const source = new URL(clip.sourceUrl);
-    assert.equal(source.protocol, 'https:'); assert.equal(source.hostname, 'www.youtube.com');
-    assert.match(source.searchParams.get('v'), /^[a-zA-Z0-9_-]{11}$/);
+    assert.equal(source.protocol, 'https:');
+    const pressFootage = isEpicPressFile(source);
+    if (pressFootage) {
+      assert.equal(clip.sourceType, 'official');
+      assert.equal(clip.sourceName, 'Epic Games');
+      assert.equal(clip.footageKind, 'in_engine_demo');
+    } else {
+      assert.equal(source.hostname, 'www.youtube.com');
+      assert.match(source.searchParams.get('v'), /^[a-zA-Z0-9_-]{11}$/);
+    }
     if (updates.some(u => (u.videos || []).some(v => v.url === clip.sourceUrl && v.sourceType === 'official'))) assert.equal(clip.sourceType, 'official', entry.id + ': preserve verified official source');
     assert.match(clip.sourcePublishedAt, /^\d{4}-\d{2}-\d{2}$/);
     for (const key of ['capturedAt', 'reviewedAt']) {
@@ -39,7 +51,8 @@ function validateClip(entry) {
     }
     assert.equal(clip.reviewedBy, 'primary-agent');
     assert.ok(clip.sourceStartSeconds >= 0 && clip.sourceEndSeconds <= clip.sourceDurationSeconds + .5);
-    assert.ok(clip.durationSeconds >= 5 && clip.durationSeconds <= 20);
+    assert.ok(clip.durationSeconds > 0 && clip.durationSeconds <= 20);
+    if (!pressFootage) assert.ok(clip.durationSeconds >= 5);
     assert.ok(Math.abs(clip.sourceEndSeconds - clip.sourceStartSeconds - clip.durationSeconds) < .02);
     assert.equal(clip.width, 960); assert.equal(clip.height, 540); assert.equal(clip.frameRate, 24);
     assert.equal(clip.codec, 'h264'); assert.equal(clip.hasAudio, false);
@@ -78,7 +91,7 @@ for (const entry of catalogue.items) {
   assert.ok(['documented', 'catalogued'].includes(entry.researchStatus));
   const source = new URL(entry.sourceUrl);
   assert.equal(source.protocol, 'https:');
-  if (entry.sourceStatus === 'official_reference') assert.ok(['www.fortnite.com', 'dev.epicgames.com'].includes(source.hostname));
+  if (entry.sourceStatus === 'official_reference') assert.ok(officialReferenceHosts.has(source.hostname));
   else assert.equal(entry.sourceStatus, 'community_reference');
   validateClip(entry);
   const picture = entry.image;
@@ -91,8 +104,18 @@ for (const entry of catalogue.items) {
   const imageSource = new URL(picture.sourcePageUrl), asset = new URL(picture.assetSourceUrl);
   assert.equal(imageSource.protocol, 'https:'); assert.equal(asset.protocol, 'https:');
   if (picture.sourceType === 'official') {
-    assert.ok(['www.fortnite.com', 'dev.epicgames.com'].includes(imageSource.hostname));
-    assert.ok(['cdn2.unrealengine.com', 'd1iv7db44yhgxn.cloudfront.net'].includes(asset.hostname));
+    if (isEpicPressFile(asset)) {
+      assert.equal(imageSource.hostname, 'epic-games-france.prezly.com');
+      assert.equal(picture.kind, 'scene');
+      const clip = entry.clips.find(clip => clip.sourceUrl === picture.assetSourceUrl);
+      assert.ok(clip, entry.id + ': source footage for the image');
+      assert.ok(Number.isFinite(picture.sourceFrameSeconds) &&
+        picture.sourceFrameSeconds >= clip.sourceStartSeconds &&
+        picture.sourceFrameSeconds < clip.sourceEndSeconds);
+    } else {
+      assert.ok(['www.fortnite.com', 'dev.epicgames.com'].includes(imageSource.hostname));
+      assert.ok(['cdn2.unrealengine.com', 'd1iv7db44yhgxn.cloudfront.net'].includes(asset.hostname));
+    }
     assert.ok(!communityImageIds.has(entry.id));
   } else {
     assert.equal(picture.sourceType, 'community');
@@ -111,10 +134,11 @@ for (const entry of catalogue.items) {
     assert.ok(version?.tacticalProfile && version.publicationStatus === 'ready');
   }
 }
-assert.equal(linked.size, 8);
+assert.ok(linked.size >= 8);
+assert.equal(linked.size, updates.filter(entry => entry.tacticalProfile).length);
 assert.equal(catalogue.items.filter((entry) => entry.image.sourceType === 'community').length, communityImageIds.size);
 assert.equal(catalogue.items.filter((entry) => entry.sourceStatus === 'community_reference').length, 3);
-assert.equal(new Set(catalogue.items.map((entry) => entry.catalogOrder)).size, 136);
+assert.equal(new Set(catalogue.items.map((entry) => entry.catalogOrder)).size, catalogue.items.length);
 const dom = new Map();
 function element(selector) {
   if (!dom.has(selector)) dom.set(selector, { innerHTML: '', value: '', hidden: false, textContent: '',
@@ -134,7 +158,9 @@ vm.runInContext(String.raw`
   const remaining = modeCoreUpdates();
   state.modes = [...modes.map((entry) => ({ ...entry, kind: 'modes' })), ...remaining];
   state.entries = [...state.modes, ...itemArchive.entries];
-  assert.equal(remaining.length, updates.length - 8);
+  const dossierIds = new Set(catalogue.items.flatMap(entry => entry.coreUpdateIds));
+  assert.deepEqual(remaining.map(entry => entry.id),
+    updates.filter(entry => !dossierIds.has(entry.id)).map(entry => entry.id));
   assert.equal(state.modes.filter((entry) => !isCoreUpdate(entry)).length, modes.length);
   assert.ok(state.collected.has(legacy.id));
   assert.ok(!state.collected.has(legacy.legacyIds[0]), 'Legacy favorites migrate to the object');
@@ -145,7 +171,7 @@ vm.runInContext(String.raw`
   state.view = 'modes'; state.query = '战术道具';
   assert.equal(getFilteredEntries().length, 0);
   state.view = 'items'; state.query = '';
-  assert.equal(getFilteredEntries().length, 136);
+  assert.equal(getFilteredEntries().length, catalogue.items.length);
   for (const category of itemArchive.categories) {
     itemArchive.category = category.id;
     assert.equal(getFilteredEntries().length, catalogue.items.filter((entry) => entry.category === category.id).length);
@@ -156,9 +182,9 @@ vm.runInContext(String.raw`
     assert.equal(getFilteredEntries().length, catalogue.items.filter((entry) => entry.objectGroup === group).length);
   }
   resetItemFilters(); itemArchive.researchStatus = 'documented';
-  assert.equal(getFilteredEntries().length, 8);
+  assert.equal(getFilteredEntries().length, catalogue.items.filter(entry => entry.researchStatus === 'documented').length);
   itemArchive.researchStatus = 'catalogued';
-  assert.equal(getFilteredEntries().length, 128);
+  assert.equal(getFilteredEntries().length, catalogue.items.filter(entry => entry.researchStatus === 'catalogued').length);
   resetItemFilters();
   for (const query of ['Driftboard', 'dashboard', '漂移滑板']) {
     state.query = query; assert.equal(getFilteredEntries().length, 1); assert.equal(getFilteredEntries()[0].name, '漂移滑板');
@@ -170,8 +196,8 @@ vm.runInContext(String.raw`
   renderTacticalItems(); assert.match(document.querySelector('#itemGrid').innerHTML, /没有找到匹配的道具/);
   state.query = ''; renderTacticalItems();
   assert.equal((document.querySelector('#itemGrid').innerHTML.match(/<article /g) || []).length, 24);
-  itemArchive.limit = 144; renderTacticalItems();
-  assert.equal((document.querySelector('#itemGrid').innerHTML.match(/<article /g) || []).length, 136);
+  itemArchive.limit = catalogue.items.length; renderTacticalItems();
+  assert.equal((document.querySelector('#itemGrid').innerHTML.match(/<article /g) || []).length, catalogue.items.length);
   assert.equal(document.querySelector('#loadMoreItems').hidden, true);
   state.gameFilter = 'Fortnite'; state.query = '冲击波';
   itemArchive.category = 'launch'; itemArchive.objectGroup = 'equipment'; itemArchive.researchStatus = 'documented';
@@ -194,7 +220,9 @@ vm.runInContext(String.raw`
     assert.equal(buildCanvas([entry]).nodes[0].text, md);
     assert.ok(html.includes(entry.image.path) && card.includes(entry.image.path));
     assert.ok(html.includes(entry.image.sourcePageUrl.replace(/&/g, '&amp;')));
-    assert.ok(md.includes(entry.image.assetSourceUrl) && md.includes(entry.image.caption));
+    const imageLink = Number.isFinite(entry.image.sourceFrameSeconds) ?
+      new URL(entry.image.path, document.baseURI).href : entry.image.assetSourceUrl;
+    assert.ok(md.includes(imageLink) && md.includes(entry.image.caption));
     assert.match(card, /loading="lazy"/);
     assert.match(html, /<video [^>]*controls playsinline muted preload="none"/);
     assert.doesNotMatch(html, /<video [^>]*autoplay/);
@@ -220,10 +248,11 @@ vm.runInContext(String.raw`
   state.contentFilter = 'core_update'; assert.equal(getFilteredEntries().length, 0);
   state.contentFilter = 'all'; assert.equal(getFilteredEntries().length, 1);
 `, context);
-assert.equal(clipPaths.size, 272);
+assert.equal(clipPaths.size, catalogue.items.length * 2);
 for (const file of ['item-demos.js', 'tactical-items.js', 'tactical-items.css', 'data/tactical-items.json']) assert.ok(read('scripts/build_public_site.py').includes("'" + file + "'"));
 assert.ok(read('scripts/build_public_site.py').includes("'assets/tactical-items'"));
 assert.ok(read('scripts/build_public_site.py').includes("'assets/tactical-demos'"));
 assert.ok(read('index.html').includes('data-view="items"'));
 assert.ok(!read('index.html').includes('tactical-shortcut'));
-console.log('Tactical catalogue passed: 136 illustrated objects (124 official / 12 community) and 136 reviewed local video excerpts, 14 categories, 8 linked dossiers; image integrity, attribution, separation, search, filters, favorites, and exports.');
+console.log('Tactical catalogue passed: ' + catalogue.items.length + ' illustrated objects with local video excerpts, ' +
+  categories.size + ' categories and ' + linked.size + ' linked dossiers; image integrity, attribution, separation, search, filters, favorites, and exports.');

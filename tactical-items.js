@@ -98,7 +98,7 @@ function tacticalImage(entry, { detail = false } = {}) {
   const media = '<span class="item-image-surface" style="--item-image-bg:' + background + '">' +
     '<img data-item-image src="' + escapeHtml(safeUrl(picture.path)) + '" alt="' + escapeHtml(picture.alt) + '" width="' + picture.width + '" height="' + picture.height + '" ' + (detail ? 'loading="eager"' : 'loading="lazy" fetchpriority="low"') + ' decoding="async">' +
     '<span class="item-image-unavailable" hidden>图片暂不可用</span></span>';
-  if (!detail) return '<button type="button" class="item-card-image" data-action="open-item" data-id="' + escapeHtml(entry.id) + '" aria-label="查看 ' + escapeHtml(entry.name) + ' 的图片与资料">' +
+  if (!detail) return '<button type="button" class="item-card-image" tabindex="-1" data-action="open-item" data-id="' + escapeHtml(entry.id) + '" aria-label="查看 ' + escapeHtml(entry.name) + ' 的图片与资料">' +
     media + '<span class="item-image-label ' + (picture.sourceType === 'community' ? 'is-community' : '') + '">' + label + '</span>' +
     (picture.kind === 'group' ? '<span class="item-image-hint">' + escapeHtml(picture.caption) + '</span>' : '') + '</button>';
   return '<figure class="item-detail-figure"><a class="item-original-image" href="' + escapeHtml(safeUrl(picture.path)) + '" target="_blank" rel="noopener noreferrer" aria-label="打开 ' + escapeHtml(entry.name) + ' 原图">' + media + '</a>' +
@@ -125,12 +125,11 @@ function tacticalCard(entry) {
   const shots = versions.reduce((count, version) => count + (version.screenshots?.length || 0), 0);
   const clips = typeof ItemDemos === 'undefined' ? [] : ItemDemos.clips(entry);
   return '<article class="item-card" data-id="' + escapeHtml(entry.id) + '">' +
-    tacticalImage(entry) +
+    tacticalImage(entry) + '<div class="item-card-body">' +
     '<div class="item-card-top"><span class="item-category-label">' + icon(category.icon) + escapeHtml(category.label) + '</span>' +
-    '<span class="item-status ' + (documented ? 'has-dossier' : '') + '">' + itemStatusLabels[entry.researchStatus] + '</span></div>' +
-    '<div class="item-card-content"><span class="item-index">' + String(entry.catalogOrder).padStart(3, '0') + '</span>' +
-    '<div><h3><button type="button" data-action="open-item" data-id="' + escapeHtml(entry.id) + '">' + escapeHtml(entry.name) + '</button></h3>' +
-    '<p class="item-english" lang="en">' + escapeHtml(entry.englishName) + '</p></div></div>' +
+    (documented ? '<span class="item-status has-dossier">机制详录</span>' : '') + '</div>' +
+    '<h3><button type="button" data-action="open-item" data-id="' + escapeHtml(entry.id) + '">' + escapeHtml(entry.name) + '</button></h3>' +
+    '<p class="item-english" lang="en">' + escapeHtml(entry.englishName) + '</p>' +
     '<p class="item-mechanic">' + escapeHtml(entry.mechanic) + '</p>' +
     '<div class="item-card-tags"><span>' + escapeHtml(entry.objectType) + '</span>' +
     (entry.sourceStatus === 'community_reference' ? '<span class="item-source-pending">社区来源 · 待复核</span>' : '') +
@@ -138,35 +137,33 @@ function tacticalCard(entry) {
     (videos ? '<span>' + videos + ' 视频' + (shots ? ' · ' + shots + ' 截图' : '') + '</span>' : '') + '</div>' +
     '<div class="item-card-footer"><span>' + escapeHtml(entry.game) + '</span><div>' +
     '<button type="button" class="icon-button ' + (collected ? 'is-collected' : '') + '" data-action="collect" data-id="' + escapeHtml(entry.id) + '" aria-label="' + (collected ? '取消收藏 ' : '收藏 ') + escapeHtml(entry.name) + '" aria-pressed="' + collected + '">' + icon('bookmark') + '</button>' +
-    '<button type="button" class="item-open" data-action="open-item" data-id="' + escapeHtml(entry.id) + '">' + (documented ? '看机制详录' : '查看条目') + icon('arrow-up-right') + '</button></div></div></article>';
+    '<button type="button" class="item-open" data-action="open-item" data-id="' + escapeHtml(entry.id) + '" aria-label="查看道具：' + escapeHtml(entry.name) + '">查看道具' + icon('arrow-up-right') + '</button></div></div></div></article>';
 }
 function renderTacticalItems() {
   const entries = getFilteredTacticalItems();
   const scoped = itemArchive.entries.filter((entry) => matchesTacticalItem(entry, { ignoreCategory: true }));
-  $('#itemStats').innerHTML = [[itemArchive.entries.length, '收录对象'], [itemArchive.categories.length, '功能分类'],
-    [itemArchive.entries.filter((entry) => entry.researchStatus === 'documented').length, '机制详录']]
-    .map(([count, label]) => '<div><dt>' + label + '</dt><dd>' + count + '</dd></div>').join('');
-  $('#itemCategoryFilters').innerHTML = [{ id: 'all', label: '全部道具', icon: 'grid-2x2' }, ...itemArchive.categories].map((category) => {
+  const categorySelect = $('#itemCategorySelect');
+  categorySelect.innerHTML = [{ id: 'all', label: '全部道具' }, ...itemArchive.categories].map((category) => {
     const count = category.id === 'all' ? scoped.length : scoped.filter((entry) => entry.category === category.id).length;
-    return '<button type="button" data-item-category="' + category.id + '" aria-pressed="' + (itemArchive.category === category.id) + '">' +
-      icon(category.icon) + '<span>' + escapeHtml(category.label) + '</span><small>' + count + '</small></button>';
+    return '<option value="' + escapeHtml(category.id) + '">' + escapeHtml(category.label) + '（' + count + '）</option>';
   }).join('');
-  $('#itemGameSelect').innerHTML = '<option value="all">全部游戏</option>' + [...new Set(itemArchive.entries.map((entry) => entry.game))].map((game) => '<option value="' + escapeHtml(game) + '">' + escapeHtml(game === 'Fortnite' ? 'Fortnite · 堡垒之夜' : game) + '</option>').join('');
+  categorySelect.value = itemArchive.category;
+  const games = [...new Set(itemArchive.entries.map(entry => entry.game))];
+  $('#itemGameSelect').innerHTML = '<option value="all">全部游戏</option>' + games.map((game) => '<option value="' + escapeHtml(game) + '">' + escapeHtml(game === 'Fortnite' ? 'Fortnite · 堡垒之夜' : game) + '</option>').join('');
+  $('#itemGameField').hidden = games.length < 2 && state.gameFilter === 'all';
   $('#itemGameSelect').value = state.gameFilter;
   $('#itemObjectSelect').value = itemArchive.objectGroup;
   $('#itemStatusSelect').value = itemArchive.researchStatus;
   $('#itemSortSelect').value = itemArchive.sort;
+  $('#itemResultsTitle').textContent = itemArchive.category === 'all' ? '道具目录' : itemCategory(itemArchive.category).label;
   const visible = entries.slice(0, itemArchive.limit);
   $('#itemGrid').innerHTML = visible.length ? visible.map(tacticalCard).join('') :
     '<div class="empty-state">' + icon('search') + '<h3>没有找到匹配的道具</h3><p>可以搜索中英文名、作用或关键词，例如“躲猫猫”“位移”。</p><button class="button" type="button" data-reset-items>清除筛选</button></div>';
-  $('#itemResultsTitle').textContent = itemArchive.category === 'all' ? '全部道具' : itemCategory(itemArchive.category).label;
-  $('#itemResultCount').textContent = entries.length + ' 项 · ' + entries.filter((entry) => entry.image?.path).length + ' 项已配图 · ' + entries.filter((entry) => entry.clips?.length).length + ' 项含短片';
+  $('#itemResultCount').textContent = entries.length + ' 项';
   $('#itemShownCount').textContent = '已展示 ' + visible.length + ' / ' + entries.length + ' 项';
   $('#loadMoreItems').hidden = visible.length >= entries.length;
-  const filters = [state.query ? '搜索：' + state.query : '', state.gameFilter !== 'all' ? state.gameFilter : '',
-    itemGroupLabels[itemArchive.objectGroup], itemStatusLabels[itemArchive.researchStatus]].filter(Boolean);
-  $('#itemFilterSummary').textContent = filters.join(' · ');
-  $('#itemFilterSummary').hidden = !filters.length;
+  $('#resetItems').disabled = !(state.query || state.gameFilter !== 'all' || itemArchive.category !== 'all' ||
+    itemArchive.objectGroup !== 'all' || itemArchive.researchStatus !== 'all' || itemArchive.sort !== 'catalogue');
 }
 function tacticalItemVersionDetail(entry) {
   if (!entry.coreUpdateIds.length) return '<section class="item-pending"><h3>已收录目录，详录待补</h3><p>已收录外观配图、机制摘要与资料入口。具体数值、适用版本及生效日期仍待核对。</p><ul><li>操作、获取方式与限制：待逐版本整理</li><li>完整视频与版本对应：待逐版本核对</li><li>操作过程截图：待补</li></ul></section>';
@@ -200,7 +197,8 @@ function tacticalItemMarkdown(entry) {
     '- 功能分类：' + itemCategory(entry.category).label, '- 对象类型：' + entry.objectType,
     '- 资料进度：' + itemStatusLabels[entry.researchStatus], '- 目录收录：' + entry.cataloguedAt,
     '- 资料入口：' + entry.sourceUrl, '- 来源性质：' + (entry.sourceStatus === 'official_reference' ? '官方资料入口' : '社区资料，待官方复核'), '',
-    ...(picture ? ['## 道具图片', '', '![' + picture.alt.replace(/[\[\]]/g, '') + '](' + picture.assetSourceUrl + ')', '',
+    ...(picture ? ['## 道具图片', '', '![' + picture.alt.replace(/[\[\]]/g, '') + '](' +
+      (Number.isFinite(picture.sourceFrameSeconds) ? new URL(picture.path, document.baseURI).href : picture.assetSourceUrl) + ')', '',
       picture.caption, '', '- 图片性质：' + tacticalImageLabel(entry) + (picture.sourceType === 'community' ? '（官方缺图补充）' : ''),
       '- 图片出处：[' + picture.sourceName + '](' + picture.sourcePageUrl + ')', '- 图片归档日期：' + picture.retrievedAt, ''] : []),
     ...(typeof ItemDemos === 'undefined' ? [] : ItemDemos.markdown(entry)),
@@ -227,13 +225,16 @@ async function exportTacticalList() {
 function bindTacticalItemEvents() {
   $('#itemGrid').addEventListener('error', handleTacticalImageError, true);
   $('#itemsSection').addEventListener('click', (event) => {
-    const target = event.target.closest('[data-item-category], [data-reset-items]');
+    const target = event.target.closest('[data-reset-items]');
     if (!target) return;
-    if (target.hasAttribute('data-reset-items')) { resetItemFilters(); state.query = ''; state.gameFilter = 'all'; $('#searchInput').value = ''; }
-    if (target.dataset.itemCategory) itemArchive.category = target.dataset.itemCategory;
-    itemArchive.limit = 24;
+    resetItemFilters(); state.query = ''; state.gameFilter = 'all'; $('#searchInput').value = '';
     syncFilterRoute(); renderTacticalItems();
-    if (target.dataset.itemCategory) $('#itemCategoryFilters [aria-pressed="true"]')?.focus({ preventScroll: true });
+    $('#itemObjectSelect').focus({ preventScroll: true });
+  });
+  $('#itemCategorySelect').addEventListener('change', event => {
+    itemArchive.category = event.target.value;
+    itemArchive.objectGroup = itemArchive.researchStatus = 'all';
+    itemArchive.limit = 24; syncFilterRoute(); renderTacticalItems();
   });
   [['#itemGameSelect', 'game'], ['#itemObjectSelect', 'objectGroup'], ['#itemStatusSelect', 'researchStatus'], ['#itemSortSelect', 'sort']].forEach(([selector, key]) => {
     $(selector).addEventListener('change', (event) => {

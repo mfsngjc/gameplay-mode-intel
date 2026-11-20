@@ -416,7 +416,7 @@ def enrich_snapshot(platform_id, entries, day, collected_at, history):
         entered_at = day if new_entry else older.get('enteredAt') if older else None
         recent = bool(entered_at and 0 <= (day_value - date.fromisoformat(entered_at)).days <= 6)
         strong_reasons = []
-        if new_entry and rank <= 20 and baseline_days == 1:
+        if new_entry and rank <= 20:
             strong_reasons.append('新入榜即进入前 20')
         if recent and rank_delta is not None and rank_delta >= 10 and baseline_days == 1:
             strong_reasons.append(f'一天上升 {rank_delta} 名')
@@ -434,7 +434,13 @@ def enrich_snapshot(platform_id, entries, day, collected_at, history):
     risers = sorted([row for row in enriched if (row['rankDelta'] or 0) > 0], key=lambda row: (-row['rankDelta'], row['rank']))
     strong = sorted([row for row in enriched if row['isStrongNewEntry']], key=lambda row: row['rank'])
     newcomers = [row for row in enriched if row['isNewEntry']]
+    quality_notes = []
+    if config['metricKey'] in ('lifetime_subscribers', 'visits', 'minutes_played', 'downloads'):
+        lower = sum(row['metricDelta'] is not None and row['metricDelta'] < 0 for row in enriched)
+        if lower:
+            quality_notes.append(f'本次来源的{config["metricLabel"]}有 {lower} 项低于 {baseline_date} 的读数；保留真实来源值，回落原因待核。')
     return {**config, 'id': platform_id, 'date': day, 'collectedAt': collected_at, 'complete': True, 'status': 'ok',
+            'dataQualityNotes': quality_notes,
             'comparisonDate': baseline_date, 'comparisonDays': baseline_days, 'isBaseline': baseline is None,
             'entries': enriched, 'highlights': {'risers': [row['id'] for row in risers[:6]],
                                              'newEntries': [row['id'] for row in newcomers[:6]],
@@ -473,7 +479,7 @@ def sync_lock(folder):
         lock.unlink(missing_ok=True)
 
 
-def publish(root, fetched, errors, day, collected_at, selected=None):
+def publish(root, fetched, errors, day, collected_at, selected=None, *, observed_at=None):
     folder = root / 'data' / 'ugc'
     history = {}
     for path in sorted((folder / 'history').glob('????-??-??.json')):
@@ -487,7 +493,7 @@ def publish(root, fetched, errors, day, collected_at, selected=None):
             platforms[key] = old
             continue
         if key in fetched:
-            snapshot = enrich_snapshot(key, fetched[key], day, collected_at, history)
+            snapshot = enrich_snapshot(key, fetched[key], day, observed_at or collected_at, history)
             platforms[key] = snapshot
             today['platforms'][key] = snapshot
         else:
@@ -499,7 +505,7 @@ def publish(root, fetched, errors, day, collected_at, selected=None):
         atomic_json(folder / 'history' / (day + '.json'), today)
         history[day] = today
     latest = {'schemaVersion': 1, 'generatedAt': collected_at, 'timezone': 'Asia/Shanghai',
-              'scheduleLabel': '每天 09:00 · 北京时间', 'platforms': platforms,
+              'scheduleLabel': '每周四 20:00 · 北京时间', 'platforms': platforms,
               'runStatus': 'ok' if all(p['status'] == 'ok' for p in platforms.values()) else
                            'partial' if any(p['status'] == 'ok' for p in platforms.values()) else 'failed'}
     atomic_json(folder / 'latest.json', latest)
@@ -509,7 +515,7 @@ def publish(root, fetched, errors, day, collected_at, selected=None):
     atomic_json(folder / 'index.json', index)
     chinese = read_json(folder / 'chinese.json', {'entries': {}}).get('entries', {})
     platform_labels = {'cs2': 'CS2 创意工坊', 'roblox': '罗布乐思', 'fortnite': '堡垒之夜社区', 'minecraft': '我的世界模组'}
-    report = ['# UGC 每日榜单 · ' + day, '', '采集时间：' + collected_at, '',
+    report = ['# UGC 每日榜单 · ' + day, '', '报告生成于 ' + collected_at, '',
               '各平台独立比较。首日建立基线；新入榜不代表作品刚发布。', '']
     for key, snapshot in platforms.items():
         label = platform_labels[snapshot['platformId']] + ' · ' + snapshot['boardLabel']
@@ -518,7 +524,8 @@ def publish(root, fetched, errors, day, collected_at, selected=None):
         if key in errors or not snapshot.get('complete'):
             report.extend(['采集失败：' + errors.get(key, '尚无完整快照'), ''])
             continue
-        report.extend(['对比日期：' + (snapshot.get('comparisonDate') or '首日基线'), ''])
+        report.extend(['快照采集于 ' + snapshot['collectedAt'],
+                       '对比日期：' + (snapshot.get('comparisonDate') or '首日基线'), ''])
         lookup = {row['id']: row for row in snapshot['entries']}
         for title, ids in [('上涨', snapshot['highlights']['risers']), ('近期强势新进榜', snapshot['highlights']['strongNewEntries'])]:
             report.append('### ' + title)
@@ -546,6 +553,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
     now = datetime.now(timezone.utc)
     day, collected_at = now.astimezone(CST).date().isoformat(), now.isoformat(timespec='seconds')
+    observed_at = None
     fetched, errors = {}, {}
     selected = set(args.boards or PLATFORMS)
     collectors = {'cs2': collect_steam, 'roblox': collect_roblox, 'fortnite': collect_fortnite, 'minecraft': collect_minecraft,
@@ -556,6 +564,11 @@ def main(argv=None):
             imported = read_json(args.import_json)
             if imported.get('date') != day:
                 raise ValueError('Imported data must be from today; cached history cannot be relabeled as current')
+            if 'capturedAt' in imported:
+                timestamp = datetime.fromisoformat(imported['capturedAt'])
+                if timestamp.tzinfo is None or timestamp > now or timestamp.astimezone(CST).date().isoformat() != day:
+                    raise ValueError('Imported capture time must include a timezone and fall within the current collection day')
+                observed_at = timestamp.astimezone(timezone.utc).isoformat(timespec='seconds')
             for key, payload in imported.get('platforms', {}).items():
                 if key not in selected or payload.get('rankingKey') != PLATFORMS[key]['rankingKey'] or not payload.get('sourceUrl'):
                     raise ValueError('Imported source/ranking scope does not match')
@@ -574,8 +587,15 @@ def main(argv=None):
                     except Exception as error:
                         errors[key] = f'{type(error).__name__}: {error}'
                         print(f'{key}: {errors[key]}', file=sys.stderr, flush=True)
-        result = publish(args.root, fetched, errors, day, collected_at, selected)
+        result = publish(args.root, fetched, errors, day, collected_at, selected, observed_at=observed_at)
     print(json.dumps({'date': day, 'status': result['runStatus'], 'counts': {key: len(value['entries']) for key, value in result['platforms'].items()}}, ensure_ascii=True))
+    if not args.boards and not args.import_json:
+        from sync_ugc_source_boards import sync as sync_source_boards
+        try:
+            sources = sync_source_boards(args.root)
+            print(json.dumps({'sourceBoards': sources}, ensure_ascii=True), flush=True)
+        except (OSError, ValueError, RuntimeError) as error:
+            print(f'Source boards: {error}', file=sys.stderr, flush=True)
     return 0 if len(fetched) == len(selected) else 2
 
 

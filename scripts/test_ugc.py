@@ -9,6 +9,8 @@ import sys
 
 sys.dont_write_bytecode = True
 import sync_ugc as ugc
+from build_ugc_categories import UNKNOWN, build as build_categories, classify
+import sync_ugc_source_boards as source_boards
 
 
 def entries(prefix='item', count=100):
@@ -67,12 +69,35 @@ class RankChanges(unittest.TestCase):
         self.assertIsNone(later['entries'][0]['rankDelta7d'])
         self.assertFalse(later['entries'][0]['isStrongNewEntry'])
 
+    def test_weekly_high_new_entry_keeps_signal_without_daily_growth_claim(self):
+        newcomer = {**entries('new')[0], 'metricValue': 5000}
+        later = snapshot([newcomer, *self.rows[:99]], '2026-10-27', self.history)
+        new = later['entries'][0]
+        self.assertEqual(later['comparisonDays'], 7)
+        self.assertIsNone(new['previousRank'])
+        self.assertIsNone(new['rankDelta'])
+        self.assertIsNone(new['rankDelta7d'])
+        self.assertTrue(new['isStrongNewEntry'])
+        self.assertEqual(new['strongReasons'], ['新入榜即进入前 20'])
+
     def test_seven_day_change_uses_exact_date(self):
         rows = [self.rows[9], *self.rows[:9], *self.rows[10:]]
         later = snapshot(rows, '2026-10-27', self.history)
         self.assertEqual(later['entries'][0]['rankDelta7d'], 9)
         without_target = snapshot(rows, '2026-10-28', self.history)
         self.assertIsNone(without_target['entries'][0]['rankDelta7d'])
+
+    def test_cumulative_source_rollback_is_visible_without_rewriting_values(self):
+        first = snapshot(entries(count=200), '2026-10-20', key='minecraft_alltime')
+        rows = deepcopy(first['entries'])
+        rows[0]['metricValue'] = 500
+        later = snapshot(rows, '2026-10-27', historical(first), 'minecraft_alltime')
+        self.assertEqual(later['entries'][0]['metricValue'], 500)
+        self.assertEqual(later['entries'][0]['metricDelta'], -499)
+        self.assertEqual(later['entries'][0]['rankDelta'], 0)
+        self.assertIn('1 项低于 2026-10-20', later['dataQualityNotes'][0])
+        self.assertTrue(later['complete'])
+        self.assertEqual(first['entries'][0]['metricValue'], 999)
 
     def test_changed_source_scope_restarts_baseline(self):
         self.first['rankingKey'] = 'retired-source'
@@ -138,9 +163,11 @@ class RankChanges(unittest.TestCase):
             fetched = {key: entries(key, config['rankingLimit']) for key, config in ugc.PLATFORMS.items()}
             first = ugc.publish(root, fetched, {}, '2026-10-20', '2026-10-20T01:00:00Z')
             selected = {'cs2_alltime'}
-            second = ugc.publish(root, {'cs2_alltime': entries(count=200)}, {}, '2026-10-21', '2026-10-21T02:00:00Z', selected)
+            second = ugc.publish(root, {'cs2_alltime': entries(count=200)}, {}, '2026-10-21', '2026-10-21T02:00:00Z',
+                                 selected, observed_at='2026-10-21T01:55:00Z')
             self.assertEqual(first['platforms']['cs2'], second['platforms']['cs2'])
-            self.assertEqual(second['platforms']['cs2_alltime']['collectedAt'], '2026-10-21T02:00:00Z')
+            self.assertEqual(second['platforms']['cs2_alltime']['collectedAt'], '2026-10-21T01:55:00Z')
+            self.assertEqual(second['generatedAt'], '2026-10-21T02:00:00Z')
             self.assertEqual(second['runStatus'], 'ok')
 
     def test_failed_expansion_keeps_legacy_hundred_rows_and_time(self):
@@ -202,6 +229,144 @@ class Parsers(unittest.TestCase):
         self.assertIsNone(ugc.numeric('unknown'))
 
 
+class SourceBoards(unittest.TestCase):
+    def test_public_abbreviations_signed_growth_and_gated_fields(self):
+        self.assertEqual(source_boards.public_value('34.2B', 'count'), 34_200_000_000)
+        self.assertEqual(source_boards.public_value('755.7M h', 'count'), 755_700_000)
+        self.assertEqual(source_boards.public_value('−98.2%', 'percent'), -98.2)
+        self.assertEqual(source_boards.public_value('#3', 'rank'), 3)
+        self.assertIsNone(source_boards.public_value('Pro', 'count'))
+
+    def test_statroblox_preserves_column_order_source_rank_and_public_values(self):
+        table = '<table><thead><tr><th>#</th><th>Game</th><th>7d</th><th>Playing</th><th>Revenue 30d</th></tr></thead><tbody>'
+        for rank in range(1, 101):
+            table += (f'<tr><td>{rank}</td><td><a href="/games/{rank}/work"><span class="line-clamp-1">Work {rank}</span>'
+                      '<span class="line-clamp-1">Public author</span></a></td><td>-15.4%</td><td>1.3K</td><td>Pro</td></tr>')
+        columns, rows = source_boards.parse_statroblox(table + '</tbody></table>')
+        self.assertEqual([c[0] for c in columns], ['change7d', 'ccu'])
+        self.assertEqual(rows[0]['values'], {'change7d': -15.4, 'ccu': 1300})
+        self.assertEqual(rows[-1]['id'], '100')
+
+    def test_browser_capture_requires_community_scope_and_keeps_source_ranks(self):
+        pages = [{'url': source_boards.fortnite_url('peak', 1), 'capturedAt': '2020-01-01T00:00:00+00:00',
+                  'rows': [[f'1000-0000-{i:04d}', str(i), 'Island ' + str(i), '', '12K'] for i in range(1, 101)]}]
+        capture = {'fields': ['All-Time Peak'], 'boards': {'peak': pages}}
+        result = source_boards.fortnite_board('peak', source_boards.FORT_BOARDS['peak'], capture)
+        self.assertEqual(result['rows'][0]['values']['peak'], 12000)
+        self.assertEqual(result['rows'][-1]['rank'], 100)
+        pages[0]['url'] = pages[0]['url'].replace('hideepic=1', 'hideepic=0')
+        with self.assertRaisesRegex(ValueError, 'differs from its requested scope'):
+            source_boards.fortnite_board('peak', source_boards.FORT_BOARDS['peak'], capture)
+
+    def test_steam_browse_verifies_region_page_and_time_window(self):
+        params = {'appid': 730, 'required_tags': ['CS2'], 'section': 'readytouseitems', 'browse_sort': 'trend',
+                  'page': 2, 'trend_days': 90}
+        items = [{'consumer_appid': 730, 'tags': [{'tag': 'CS2'}, {'tag': 'Map'}], 'publishedfileid': '3',
+                  'title': 'Map fixture', 'star_rating': 5, 'total_votes': 120}]
+        data = {'queryKey': ['workshop_browse', params], 'state': {'data': {'results': items}}}
+        html = '<script id="valve-ssr-data">' + json.dumps(data) + '</script>'
+        rows = list(source_boards.steam_rows(html, 'trend', 90, page=2, base=source_boards.STEAM_CHINA))
+        self.assertEqual(rows[0]['url'], 'https://my.steamchina.com/sharedfiles/filedetails/?id=3')
+        self.assertEqual((rows[0]['values']['stars'], rows[0]['values']['votes']), (5, 120))
+        with self.assertRaisesRegex(ValueError, 'requested CS2 ranking'):
+            list(source_boards.steam_rows(html, 'trend', 180, page=2))
+        with self.assertRaisesRegex(ValueError, 'requested CS2 ranking'):
+            list(source_boards.steam_rows(html, 'trend', 90, page=1))
+        self.assertEqual(source_boards.unavailable('cs2', 'steam-trend-90'), [])
+
+    def test_published_sources_omit_paid_statroblox_and_empty_steam_dimensions(self):
+        root = Path(__file__).resolve().parents[1] / 'data/ugc/source-boards'
+        for platform in source_boards.PLATFORMS:
+            doc = json.loads((root / (platform + '.json')).read_text(encoding='utf-8'))
+            self.assertEqual((doc['schemaVersion'], doc['platformId']), (1, platform))
+            boards = {item['id']: item for item in doc['boards']}
+            self.assertEqual(len(doc['boards']), len(boards))
+            for item in boards.values():
+                with self.subTest(platform=platform, board=item['id']):
+                    self.assertTrue(item['sourceUrl'].startswith('https://'))
+                    rows = item['rows']
+                    self.assertEqual(len(rows), len({row['id'] for row in rows}))
+                    self.assertEqual([row['rank'] for row in rows], sorted({row['rank'] for row in rows}))
+                    self.assertTrue(all(row['category'] and row['url'].startswith('https://') for row in rows))
+                    if item['status'] == 'unavailable':
+                        self.assertFalse(item['capturedAt'] or rows)
+                    if item['status'] in ('ok', 'stale'):
+                        self.assertTrue(item['capturedAt'])
+                        self.assertEqual(len(rows), source_boards.LIMIT)
+            if platform == 'roblox':
+                self.assertEqual({bid.removeprefix('statroblox-') for bid in boards if bid.startswith('statroblox-')}, set(source_boards.STAT_BOARDS))
+                self.assertTrue({'statroblox-earning', 'statroblox-rpv'}.isdisjoint(boards))
+                self.assertTrue(all(c['id'] != 'revenue' for item in boards.values() for c in item['columns']))
+            if platform == 'fortnite':
+                self.assertEqual({bid.removeprefix('fortnitegg-') for bid in boards}, set(source_boards.FORT_BOARDS))
+            if platform == 'cs2':
+                self.assertTrue(all(item['rows'] for item in boards.values()))
+                for key in source_boards.STEAM_BOARDS.keys() - {'trend-week', 'subscribed'}:
+                    item = boards.get('steam-' + key)
+                    if item:
+                        self.assertTrue(item['sourceUrl'].startswith(source_boards.STEAM_CHINA))
+
+    def test_cs2_source_intros_reuse_only_localized_text_by_work_id(self):
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory)
+            (folder / 'catalog-cache').mkdir()
+            ugc.atomic_json(folder / 'catalog-cache/cs2.json', {'entries': {
+                'cs2:3': {'translationStatus': 'reviewed', 'introZh': '已审核目录介绍'},
+                'cs2:4': {'translationStatus': 'pending', 'introZh': '未审核目录介绍'},
+            }})
+            ugc.atomic_json(folder / 'cs2-source-board-intros.json', {'entries': {'2': '工坊补充介绍'}})
+            translations = {'cs2:1': {'intro': '每日榜介绍'}, 'roblox:4': {'intro': '其他平台同编号'}}
+            rows = [{'id': str(i), 'creator': '76561198432919856'} for i in range(1, 5)]
+            duplicate = deepcopy(rows[1])
+            source_boards.enrich_cs2_intros(folder, [{'rows': rows}, {'rows': [duplicate]}], translations)
+            self.assertEqual([row.get('introZh') for row in rows], ['每日榜介绍', '工坊补充介绍', '已审核目录介绍', None])
+            self.assertEqual(duplicate, rows[1])
+
+
+class BoardCategories(unittest.TestCase):
+    def test_focused_practice_and_unverified_workshop_listings(self):
+        row = {'id': '1', 'title': 'Mirage Prefire', 'categories': ['Classic', 'Custom']}
+        self.assertEqual(classify('cs2', row, {}), 'tactics')
+        self.assertEqual(classify('cs2', row, {'description': 'disable_workshop_command_filtering'}), UNKNOWN)
+        self.assertEqual(classify('cs2', row | {'title': 'Duel Arena 1v1'}, {}), 'arena')
+
+    def test_official_subgenre_and_verified_exceptions(self):
+        roblox = {'id': '1', 'title': 'Experience', 'categories': ['Adventure']}
+        self.assertEqual(classify('roblox', roblox, {'categories': ['Simulation', 'Tycoon']}), 'progression')
+        self.assertEqual(classify('roblox', roblox, {'categories': ['Simulation', 'Physics Sim']}), 'simulation')
+        fortnite = {'id': '6155-1398-4059', 'title': '1v1 With Every Gun', 'categories': ['1v1']}
+        self.assertEqual(classify('fortnite', fortnite, {}), 'combat')
+        minecraft = {'id': '1', 'title': 'Test Mod', 'categories': ['adventure', 'utility'], 'summary': 'Adds a world map'}
+        self.assertEqual(classify('minecraft', minecraft, {}), 'interface')
+
+    def test_assignments_cover_history_with_one_label_per_work(self):
+        row = {'id': '1', 'title': 'Sodium', 'categories': ['optimization']}
+        latest = {'platforms': {'minecraft': {'platformId': 'minecraft', 'entries': [row]}}}
+        historical = deepcopy(latest)
+        historical['platforms']['minecraft']['entries'] = [row | {'title': 'Old title', 'categories': []}, {'id': '2', 'title': 'Historic entry'}]
+        with tempfile.TemporaryDirectory() as folder:
+            folder = Path(folder)
+            (folder / 'history').mkdir()
+            (folder / 'history/2026-11-05.json').write_text(json.dumps(historical), encoding='utf-8')
+            result = build_categories(folder, latest, {})
+            self.assertEqual(result['platforms']['minecraft']['entries'], {'1': 'performance', '2': UNKNOWN})
+            self.assertEqual(json.loads((folder / 'board-categories.json').read_text(encoding='utf-8')), result)
+
+    def test_cs2_source_intros_classify_both_views_by_work_id(self):
+        latest_row = {'id': '1', 'title': 'Workshop map', 'categories': ['Custom']}
+        latest = {'platforms': {'cs2': {'platformId': 'cs2', 'entries': [latest_row]}}}
+        rows = [
+            {'id': '1', 'title': 'Workshop map', 'tags': ['自定义'], 'introZh': '5 对 5 人质救援地图。'},
+            {'id': '2', 'title': 'ZE Example', 'tags': ['自定义'], 'introZh': '包含僵尸逃脱路线。'},
+            {'id': '3', 'title': 'Server file', 'tags': ['经典'], 'introZh': '社区服务器的配套资源包。'},
+        ]
+        with tempfile.TemporaryDirectory() as folder:
+            folder = Path(folder)
+            ugc.atomic_json(folder / 'source-boards/cs2.json', {'boards': [{'rows': rows}]})
+            result = build_categories(folder, latest, {})
+            self.assertEqual(result['platforms']['cs2']['entries'], {'1': 'standard', '2': 'zombies', '3': 'assets'})
+
+
 class ChineseReview(unittest.TestCase):
     def test_fortnite_attribution_uses_island_author_not_navigation(self):
         from prepare_ugc_chinese import fetch_fortnite
@@ -237,6 +402,14 @@ class ChineseReview(unittest.TestCase):
         source = {'title': 'Work', 'description': 'Gameplay', 'canonicalId': '1', 'sources': ['https://example.com']}
         catalog = {'entries': {'roblox:1': {'originalTitle': 'Work', 'sourceFingerprint': fingerprint('Work', 'Gameplay')}}}
         self.assertEqual(pending_entries({'roblox:1': {'title': 'Work'}}, {'roblox:1': source}, catalog), [])
+
+    def test_source_availability_note_still_requires_a_ranked_review(self):
+        from prepare_ugc_chinese import pending_entries, fingerprint
+        source = {'title': 'Work', 'description': '', 'canonicalId': '1', 'sources': ['https://example.com']}
+        catalog = {'entries': {'roblox:1': {'originalTitle': 'Work', 'sourceStatus': 'unavailable',
+                                           'sourceFingerprint': fingerprint('Work', '')}}}
+        queue = pending_entries({'roblox:1': {'title': 'Work'}}, {'roblox:1': source}, catalog)
+        self.assertEqual([row['key'] for row in queue], ['roblox:1'])
 
     def test_changed_gameplay_or_name_requires_review_without_destroying_chinese(self):
         from prepare_ugc_chinese import pending_entries, fingerprint

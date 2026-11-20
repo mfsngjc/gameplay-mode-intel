@@ -5,6 +5,10 @@ on:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    # Beijing time: 06:17 also refreshes game update announcements.
+    - cron: '17 22 * * *'
+    - cron: '17 4,10,16 * * *'
 
 permissions:
   contents: read
@@ -26,7 +30,16 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Configure Pages
+        id: pages
         uses: actions/configure-pages@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install public image build dependency
+        run: python3 -m pip install 'Pillow~=12.1'
 
       - name: Validate gameplay records, UGC rankings and official assets
         run: |
@@ -40,9 +53,49 @@ jobs:
           node scripts/validate_ugc.cjs
           python3 scripts/test_ugc_catalog.py
           node scripts/validate_ugc_catalog.cjs
+          python3 scripts/refresh_steam_charts.py --check
+          python3 scripts/refresh_steam_player_history.py --check
+
+      - name: Restore last successful Steam snapshots
+        uses: actions/cache@v4
+        with:
+          path: local-only/steam-charts.json
+          key: steam-charts-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: steam-charts-v1-
+
+      - name: Refresh Steam charts
+        run: |
+          python3 scripts/refresh_steam_charts.py --output local-only/steam-charts.json --keep-on-error
+          cp local-only/steam-charts.json data/steam-charts.json
+
+      - name: Restore Steam player history
+        uses: actions/cache@v4
+        with:
+          path: local-only/steam-player-history.json
+          key: steam-player-history-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: steam-player-history-v1-
+
+      - name: Refresh daily Steam player counts
+        env:
+          RUN_SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          mkdir -p local-only
+          snapshot=local-only/steam-player-history.json
+          if [ ! -s "$snapshot" ]; then
+            cp data/steam-player-history.json "$snapshot"
+          fi
+          args=(--output "$snapshot")
+          if [ "$GITHUB_EVENT_NAME" != schedule ] || [ "$RUN_SCHEDULE" = '17 22 * * *' ]; then
+            args+=(--updates)
+          fi
+          python3 scripts/refresh_steam_player_history.py "${args[@]}" || echo "::warning::Using saved Steam player history"
+          python3 scripts/refresh_steam_player_history.py --check --output "$snapshot"
+          cp "$snapshot" data/steam-player-history.json
 
       - name: Prepare public files only
-        run: python3 scripts/build_public_site.py
+        env:
+          PAGES_URL: ${{ steps.pages.outputs.base_url }}
+        run: python3 scripts/build_public_site.py --site-url "${PAGES_URL%/}/"
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3

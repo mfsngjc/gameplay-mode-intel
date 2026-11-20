@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "game": "delta-force",
-  "updatedAt": "2026-11-02T15:20:48.906015+00:00",
+  "updatedAt": "2026-11-15",
   "source": {
     "name": "官方资料与经复核的原作者媒体选集",
     "url": "https://www.bilibili.com/video/BV11jdbB8EsB/",
@@ -11,15 +11,16 @@
     "status": "partial",
     "catalogScope": "curated_featured",
     "complete": false,
-    "entryCount": 8,
+    "entryCount": 9,
     "entriesWithVideo": 8,
     "liveMetadataRefreshed": true,
-    "note": "首批精选资料，不代表本游戏全部历史皮肤。动作说明、视频身份与实际片段核验分别记录；未将首次采集时间或预告日期当作实际上线日期。",
+    "note": "精选官方原图及原片。另增 Garena Aurora 的 K437 外观；覆盖与国服另行记录。",
     "remaining": [
       "完整历史皮肤目录",
       "动作片段起止与触发条件",
       "精确首发日期与地区差异"
-    ]
+    ],
+    "officialAdditions20261115": 1
   },
   "skins": [
     {
@@ -580,6 +581,56 @@
         "height": 1080,
         "sha256": "95bab81f81d748576ed7c0c4623e9bfe9e9b85903c26a3d9dbca862584094b22",
         "retrievedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "delta-k437-proto-blade",
+      "game": "delta-force",
+      "name": "K437 突击步枪·王者之剑",
+      "englishName": "K437 · Proto Blade",
+      "weaponId": "delta-k437",
+      "weaponName": "K437 突击步枪",
+      "weaponEnglishName": "K437",
+      "weaponType": "gun",
+      "category": "突击步枪",
+      "rarity": {
+        "id": "",
+        "name": "",
+        "color": "#666e67"
+      },
+      "description": "「微光」赛季的曼德尔砖外观。枪身浮雕以持剑骑士为主题。",
+      "sourceId": "delta-k437-proto-blade",
+      "sourceUrl": "https://deltaforce.garena.com/en/news/all/STZAUY",
+      "sourceName": "Garena 官方",
+      "region": "Garena 服",
+      "gameTitle": "三角洲行动",
+      "firstSeenAt": "2026-11-15",
+      "publishedDate": "2026-11-10",
+      "releaseDate": "2026-11-10",
+      "releaseDateStatus": "confirmed",
+      "timingNote": "发行商确认该系列于 11 月 10 日在其运营版本上线。",
+      "publicationStatus": "ready",
+      "reviewedAt": "2026-11-15",
+      "chromas": [],
+      "levels": [],
+      "media": [],
+      "tags": [
+        "K437",
+        "微光",
+        "曼德尔砖"
+      ],
+      "image": {
+        "url": "assets/weapon-skins/curated/skin-delta-proto.jpg",
+        "sourcePageUrl": "https://deltaforce.garena.com/en/news/all/STZAUY",
+        "assetSourceUrl": "https://web.df.garena.com/03_news/news_banner/SMP/20261110_update/image35.jpg",
+        "sourceType": "official",
+        "provider": "Garena 官方",
+        "kind": "poster",
+        "caption": "「王者之剑」系列的 K437 突击步枪官方外观图。",
+        "width": 3840,
+        "height": 2160,
+        "sha256": "8eb12539ac0cdff85756581912ee0b16849f8c1d099c9f269a2095f2c335bb4d",
+        "retrievedAt": "2026-11-15"
       }
     }
   ]

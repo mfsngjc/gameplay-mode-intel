@@ -21,6 +21,7 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'scripts'))
 import sync_ugc as board  # Reuse the established request/parser and source filters.
+from ugc_cover_records import apply_catalog_covers, available as cover_available, cover_url, modrinth_cover, repairs, source_board_covers
 
 CATALOG = ROOT / 'data/ugc/catalog'
 CACHE = ROOT / 'data/ugc/catalog-cache'
@@ -187,21 +188,7 @@ def https(value):
 
 
 def normalize_cover_url(value, base_url):
-    return https(urljoin(base_url, value)) if isinstance(value, str) and value else None
-
-
-def modrinth_cover(item):
-    icon = https(item.get('icon_url'))
-    if icon: return icon, 'icon'
-    featured = item.get('featured_gallery')
-    featured_values = [featured] if isinstance(featured, str) else (featured if isinstance(featured, list) else [])
-    gallery = item.get('gallery')
-    gallery_values = [gallery] if isinstance(gallery, str) else (gallery if isinstance(gallery, list) else [])
-    for value in [*featured_values, *gallery_values]:
-        candidate = value if isinstance(value, str) else (value.get('url') or value.get('raw_url') or value.get('src') if isinstance(value, dict) else None)
-        cover = https(candidate)
-        if cover: return cover, 'cover'
-    return None, None
+    return (cover_url(urljoin(base_url, value)) or None) if isinstance(value, str) and value else None
 
 
 def make_entry(platform, row, description='', image_url=None, image_kind='cover', canonical_id=None,
@@ -214,7 +201,7 @@ def make_entry(platform, row, description='', image_url=None, image_kind='cover'
     original = str(row.get('title') or '').strip()
     creator = str(row.get('creator') or '').strip()
     desc = str(description or row.get('summary') or '').strip()
-    img = https(image_url)
+    img = cover_url(image_url) or None
     stats_url = f'https://www.rolimons.com/game/{identifier}' if platform == 'roblox' else None
     sources = [x for x in dict.fromkeys([source_url, url, stats_url, *(row.get('sourceUrls') or [])]) if https(x)]
     return {
@@ -247,14 +234,38 @@ def normalize_existing(old, new):
     return new
 
 
+def withdrawn_review_keys():
+    review_dir = CACHE / 'reviews'
+    withdrawn = set()
+    for folder in ('needs-review', 'accepted'):
+        for file in (review_dir / folder).rglob('*.json'):
+            payload = read_json(file, {})
+            if not isinstance(payload, dict) or (folder == 'accepted' and payload.get('reviewStatus') != 'withdrawn'):
+                continue
+            for review in payload.get('entries') or []:
+                if isinstance(review, dict) and review.get('key') and review.get('sourceFingerprint'):
+                    withdrawn.add((review['key'], review['sourceFingerprint']))
+    return withdrawn
+
+
 def apply_accepted_reviews(entries):
+    withdrawn = withdrawn_review_keys()
+    for key, entry in entries.items():
+        if entry.get('reviewApproval') and (key, entry.get('sourceFingerprint')) in withdrawn:
+            entry.update(translationStatus='pending', titleZh='', introZh='')
+            for field in ('reviewedAt', 'reviewer', 'reviewSources', 'reviewApproval'):
+                entry.pop(field, None)
+            apply_reviewed(entry)
+
     accepted_dir = CACHE / 'reviews/accepted'
     if not accepted_dir.exists(): return
     index = {e['key']: e for e in entries.values()}
     for file in sorted(accepted_dir.glob('*.json')):
         payload = read_json(file, {})
-        batch = payload.get('entries', []) if isinstance(payload, dict) else []
-        acceptance = payload.get('acceptance', {}) if isinstance(payload, dict) else {}
+        if not isinstance(payload, dict) or payload.get('reviewStatus') == 'withdrawn':
+            continue
+        batch = payload.get('entries', [])
+        acceptance = payload.get('acceptance', {})
         approved_by, approved_at = acceptance.get('approvedBy'), acceptance.get('approvedAt')
         try: datetime.fromisoformat(str(approved_at).replace('Z', '+00:00'))
         except ValueError: continue
@@ -282,11 +293,15 @@ def apply_reviewed(entry):
     if TRANSLATIONS is None:
         TRANSLATIONS = read_json(ROOT / 'data/ugc/chinese.json', {'entries': {}}).get('entries', {})
         # Recover accepted translations from immutable public shards if local review cache is lost.
+        withdrawn = withdrawn_review_keys()
         manifest = read_json(CATALOG / 'manifest.json', {})
         for platform_data in (manifest.get('platforms') or {}).values():
             for shard in platform_data.get('shards', []):
                 data = read_json(ROOT / shard.get('url', ''), {})
                 for reviewed in data.get('entries', []):
+                    review_key = (reviewed.get('key'), reviewed.get('sourceFingerprint'))
+                    if reviewed.get('reviewApproval') and review_key in withdrawn:
+                        continue
                     approved_review = reviewed.get('reviewApproval', {}).get('status') == 'accepted'
                     legacy_review = reviewed.get('reviewer') == 'legacy-reviewed'
                     if (reviewed.get('translationStatus') == 'reviewed' and reviewed.get('key') and
@@ -474,9 +489,9 @@ def steam_page(page):
         item = by_id.get(row['id'], {})
         row['imageUrl'] = item.get('preview_url') or next((p.get('url') for p in item.get('previews', []) if p.get('url')), None)
         row['description'] = row.get('summary') or ''
-    excluded = [row for row in rows if is_non_map_work(row)]
-    rows = [row for row in rows if not is_non_map_work(row)]
-    return rows, data.get('total_count'), data.get('total_pages'), len(raw), [str(x.get('publishedfileid')) for x in raw], excluded
+    # Uploader labels and title keywords only nominate a type review. Keep
+    # these records until write_platform can match an approved source fingerprint.
+    return rows, data.get('total_count'), data.get('total_pages'), len(raw), [str(x.get('publishedfileid')) for x in raw], []
 
 
 def roblox_rows():
@@ -580,6 +595,9 @@ def merge_page(state, rows, platform):
 
 
 def write_platform(platform, state):
+    data_folder = ROOT / 'data/ugc'
+    image_evidence = {**source_board_covers(data_folder, platform), **repairs(data_folder, platform)}
+    apply_catalog_covers(state['entries'], image_evidence)
     evidence = read_json(ROOT / 'data/ugc/source-descriptions.json', {'entries': {}}).get('entries', {})
     if platform == 'minecraft':
         for key, rule in KNOWN_EXCLUSIONS.items():
@@ -636,11 +654,22 @@ def write_platform(platform, state):
             duplicate = normalized.get(old['key'])
             if duplicate:
                 first_times = [value for value in (duplicate.get('firstObservedAt'), old.get('firstObservedAt')) if value]
-                if first_times: old['firstObservedAt'] = min(first_times)
+                if first_times: duplicate['firstObservedAt'] = old['firstObservedAt'] = min(first_times)
                 duplicate['sources'] = list(dict.fromkeys([*duplicate['sources'], *old['sources']]))
                 duplicate['sourceIds'] = list(dict.fromkeys([*duplicate['sourceIds'], *old['sourceIds']]))
                 duplicate['categories'] = list(dict.fromkeys([*duplicate['categories'], *old['categories']]))
                 if str(old.get('lastObservedAt') or '') > str(duplicate.get('lastObservedAt') or ''):
+                    if (old['identityStatus'] == 'verified' and old['originalTitle'] == duplicate['originalTitle']
+                            and not old['descriptionOriginal'] and duplicate.get('descriptionOriginal')):
+                        old['descriptionOriginal'] = duplicate['descriptionOriginal']
+                        old['sourceFingerprint'] = duplicate['sourceFingerprint']
+                        normalize_existing(duplicate, old)
+                        for field in ('detailStatus', 'detailAttempts', 'detailLastAttemptAt', 'detailLastError', 'detailNextAttemptAt'):
+                            if field in duplicate:
+                                old.setdefault(field, duplicate[field])
+                    old['creator'] = old.get('creator') or duplicate.get('creator', '')
+                    if old['image']['status'] != 'available' and duplicate['image']['status'] == 'available':
+                        old['image'] = duplicate['image']
                     old['sources'] = duplicate['sources']
                     old['sourceIds'] = duplicate['sourceIds']
                     old['categories'] = duplicate['categories']
@@ -677,12 +706,6 @@ def write_platform(platform, state):
         apply_reviewed(entry)
     apply_accepted_reviews(state['entries'])
     apply_approved_type_exclusions(platform, state)
-    if platform == 'cs2':
-        for key, entry in list(state.get('entries', {}).items()):
-            row = {'id': key.rsplit(':', 1)[-1], 'title': entry.get('originalTitle'),
-                   'description': entry.get('descriptionOriginal'), 'url': entry.get('url')}
-            if is_non_map_work(row):
-                register_cs2_exclusion(state, key, row, entry)
     entries = catalog_order(state['entries'].values())
     platform_dir = CATALOG / platform
     platform_dir.mkdir(parents=True, exist_ok=True)
@@ -748,6 +771,12 @@ def collect_one(platform, deadline, max_pages, refresh=False):
     global NEXT_ATTEMPT_AT
     NEXT_ATTEMPT_AT = None
     state = load_state(platform)
+    if time.monotonic() >= deadline:
+        # Metadata work may have used this source's whole window. Exporting
+        # its cache is not a new enumeration attempt and must retain failures.
+        write_platform(platform, state)
+        save_state(state)
+        return state
     state['startedAt'] = state.get('startedAt') or now()
     if retry_time_is_future(state.get('nextAttemptAt')):
         state['status'] = 'limited'
@@ -786,7 +815,9 @@ def collect_one(platform, deadline, max_pages, refresh=False):
                 rows, page_total, url, raw_count, excluded, known_excluded = modrinth_page(offset)
                 state.pop('nextAttemptAt', None)
                 state['lastSuccessfulAt'] = now()
-                if total is None: total = page_total
+                # Resumed traversals must use the live total, which can grow
+                # between weekly windows, rather than an older checkpoint total.
+                total = page_total
                 merge_page(state, rows, platform)
                 add_exclusion_events(state, excluded)
                 for excluded_key in known_excluded:
@@ -885,6 +916,8 @@ def write_board_covers():
     """Publish only verified image URLs for IDs already present in real board snapshots."""
     latest = read_json(ROOT / 'data/ugc/latest.json', {'platforms': {}})
     previous_index = read_json(CATALOG / 'board-covers.json', {'entries': {}}).get('entries', {})
+    data_folder = ROOT / 'data/ugc'
+    source_images = {p: {**source_board_covers(data_folder, p), **repairs(data_folder, p)} for p in PLATFORMS}
     cache_entries = {}
     excluded_by_key = {}
     for platform in PLATFORMS:
@@ -910,20 +943,17 @@ def write_board_covers():
             entry = by_key[platform].get(catalog_key(platform, identifier))
             if entry is None and platform == 'roblox':
                 entry = by_canonical[platform].get(identifier) or by_source_id[platform].get(identifier)
+            key = catalog_key(platform, identifier)
             image = entry.get('image') if entry else None
-            if entry is None:
-                key = catalog_key(platform, identifier)
-                exclusion = excluded_by_key.get(key, {})
-                source_entry = exclusion.get('originalEntry') or exclusion.get('evidence') or {}
-                excluded_image = source_entry.get('image') if isinstance(source_entry, dict) else None
-                if isinstance(excluded_image, dict) and excluded_image.get('status') == 'available' and https(excluded_image.get('url')):
-                    image = excluded_image
-                old_image = previous_index.get(key)
-                if (not image and isinstance(old_image, dict) and old_image.get('status') == 'available' and
-                        https(old_image.get('url')) and https(old_image.get('sourceUrl')) and valid_iso_time(old_image.get('checkedAt'))):
-                    image = old_image
-            image = image or {'url': None, 'sourceUrl': https(row.get('url')), 'kind': None, 'status': 'missing', 'checkedAt': now()}
-            output[catalog_key(platform, identifier)] = image
+            exclusion = excluded_by_key.get(key, {})
+            source_entry = exclusion.get('originalEntry') or exclusion.get('evidence') or {}
+            excluded_image = source_entry.get('image') if isinstance(source_entry, dict) else None
+            candidates = [image, source_images[platform].get(key), excluded_image, previous_index.get(key)]
+            found = next((item for item in candidates if cover_available(item)), None)
+            if not found:
+                found = image if image and not image.get('url') else {
+                    'url': None, 'sourceUrl': https(row.get('url')), 'kind': None, 'status': 'missing', 'checkedAt': now()}
+            output[key] = found
     atomic_json(CATALOG / 'board-covers.json', {'schemaVersion': 1, 'updatedAt': now(), 'entries': output})
 
 

@@ -1,49 +1,59 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-03",
-  "note": "各榜与 11 月 1 日的同口径快照比较。11 月 2 日没有快照，以下变化跨两天，不能当作单日变化。",
+  "date": "2026-11-12",
+  "note": "以下案例介绍和设计推断基于 2026-11-12 榜单快照；排名变化仅指该期与 2026-11-05 同口径快照的比较。作品仍须出现在当前榜单中。",
   "entries": [
     {
       "boardId": "cs2",
-      "id": "3829020468",
-      "title": "意大利小镇的要员护送升至热榜第 1",
-      "observation": "在 Steam 近 7 天热门地图榜从第 2 升至第 1。作者说明，护送方要带要员到随机出现的直升机撤离点，对手则要拦截。",
-      "designInference": "撤离点不固定，护送方可能需要临场改线，拦截方也可能要重新分配守点人手。",
+      "id": "3835115004",
+      "title": "澳洲内陆俱乐部白天版新入第2名",
+      "observation": "对比2026-11-05同口径快照（间隔7天），本次新入第2名。地图设在澳大利亚中部的摩托车俱乐部，采用双人搭档对抗。作者说明守卫犬看见玩家会叫，也会被场内武器或投掷物惊扰。",
+      "designInference": "守卫犬的叫声给双方增加了判断动向的声音线索。惊扰它的互动也让玩家能主动改变这条线索。",
       "sources": [
-        "https://steamcommunity.com/sharedfiles/filedetails/?id=3829020468"
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3835115004"
       ]
     },
     {
       "boardId": "roblox",
-      "id": "10769957062",
-      "title": "昆虫进化上升 49 名",
-      "observation": "在 Statroblox 在线榜从第 87 升至第 38。官方作品说明写明，玩家从小蜘蛛开始，通过进食成长，并可沿进化树解锁不同虫类、与朋友组队狩猎。",
-      "designInference": "进化树把进食和狩猎积累的成长转成形态选择；组队是否能加快成长还需实玩验证。",
+      "id": "10769671316",
+      "title": "词语成真生存挑战新入第16名",
+      "observation": "对比2026-11-05同口径快照（间隔7天），本次新入第16名。官方说明每轮随机选一人输入词语，让对应事物出现在场上。效果逐轮叠加，最后存活者获胜。",
+      "designInference": "玩家输入会改变接下来的障碍组合，逐轮叠加让较早出现的事物也能影响后面的应对。",
       "sources": [
-        "https://statroblox.com/games/10769957062/bug-evolution",
-        "https://games.roblox.com/v1/games?universeIds=10769957062"
+        "https://games.roblox.com/v1/games?universeIds=10769671316"
       ]
     },
     {
-      "boardId": "fortnite",
-      "id": "7786-0958-2481",
-      "title": "高柱生存战升至社区在线榜第 1",
-      "observation": "在 Fortnite.GG 社区岛在线榜从第 3 升至第 1，采集时显示 16,973 人在线。岛屿说明为 12 人自由对抗，每 6 秒发一次随机道具，最后存活者获胜。",
-      "designInference": "定时发放随机道具提供了反复出现的进攻和保命机会；道具分布如何影响公平感仍需实玩。",
+      "boardId": "roblox",
+      "id": "10740316645",
+      "title": "动漫角色矿场升至第53名",
+      "observation": "对比2026-11-05同口径快照（间隔7天），由第96名升至第53名，上升43名。官方说明让动漫角色砸石取矿，通过升级、变异和附魔提高队伍伤害，研究解锁新区，交易在最后一个区域开放。",
+      "designInference": "研究负责推进区域，角色培养负责提高采矿能力。把交易安排在末区，可让前期进度由玩家自己的队伍和研究支撑。",
       "sources": [
-        "https://fortnite.gg/island/7786-0958-2481"
+        "https://games.roblox.com/v1/games?universeIds=10740316645"
       ]
     },
     {
       "boardId": "minecraft",
-      "id": "mzgtK8pY",
-      "title": "第三人称动作模组升至近 30 天新建榜第 3",
-      "observation": "在 Modrinth 近 30 天创建的单体模组下载榜从第 8 升至第 3。作者说明该模组增加了第三人称动画和动态镜头。",
-      "designInference": "可以分别体验角色动作的可读性和镜头移动的舒适度，榜单只反映该口径内的下载排序。",
+      "id": "R8r1wiW4",
+      "title": "飞船甲板角色倾斜模组升至第26名",
+      "observation": "对比2026-11-05同口径快照（间隔7天），由第96名升至第26名，上升70名。模组让角色身体和判定范围随飞船甲板一起倾斜，并可选择按世界重力方向或甲板方向下落。",
+      "designInference": "身体姿态与碰撞判定一起旋转，可让画面和交互采用同一个甲板参照。两种下落方向会改变斜面上的移动与落点。",
       "sources": [
-        "https://modrinth.com/mod/punchymoves"
+        "https://modrinth.com/mod/aero-player-tilt",
+        "https://api.modrinth.com/v2/project/R8r1wiW4"
+      ]
+    },
+    {
+      "boardId": "minecraft",
+      "id": "hbSfT032",
+      "title": "波利画面优化模组新入第8名",
+      "observation": "对比2026-11-05同口径快照（间隔7天），本次新入第8名。作者说明此客户端模组把新版图形渲染方式带到部分较早版本，还会合并粒子绘制、缓存光照及载入数据。",
+      "designInference": "渲染切换与减少重复处理是两类改动，分别影响版本适配和每帧开销。",
+      "sources": [
+        "https://modrinth.com/mod/polydium",
+        "https://api.modrinth.com/v2/project/hbSfT032"
       ]
     }
-  ],
-  "generatedAt": "2026-11-03T15:05:46+00:00"
+  ]
 }

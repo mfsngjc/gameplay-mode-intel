@@ -15,9 +15,76 @@ from unittest.mock import patch
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'scripts'))
 import sync_ugc_catalog as catalog
+from ugc_cover_records import apply_catalog_covers, apply_source_covers, source_board_covers
 
 
 class CatalogTests(unittest.TestCase):
+    def test_share_only_work_specific_images_between_catalogs_and_boards(self):
+        time = '2026-11-15T01:02:03Z'
+        placeholder = 'https://fortnite.gg/img/creative_placeholder_640x360.jpg'
+        work = 'https://fortnite.gg/island/1234-5678-9012'
+        alternate = 'https://cdn-0001.qstv.on.epicgames.com/work/image/landscape.jpeg'
+        rows = [
+            {'id': '1234-5678-9012', 'url': work, 'cover': alternate},
+            {'id': '1000-2000-3000', 'url': 'https://fortnite.gg/island/1000-2000-3000', 'cover': placeholder},
+        ]
+        boards = [{'capturedAt': time, 'rows': rows}]
+        with TemporaryDirectory() as temp:
+            folder = Path(temp)
+            (folder / 'source-boards').mkdir()
+            (folder / 'source-boards/fortnite.json').write_text(json.dumps({'boards': boards}), encoding='utf-8')
+            registered = source_board_covers(folder, 'fortnite')
+            self.assertEqual(set(registered), {'fortnite:1234-5678-9012'})
+            entries = {f"fortnite:{r['id']}": {'image': {'status': 'available', 'url': placeholder}} for r in rows}
+            apply_catalog_covers(entries, registered)
+            self.assertEqual(entries['fortnite:1234-5678-9012']['image']['url'], alternate)
+            self.assertEqual(entries['fortnite:1000-2000-3000']['image']['status'], 'missing')
+            rows[0]['cover'] = ''
+            apply_source_covers(folder, 'fortnite', boards)
+            self.assertEqual(rows[0]['cover'], alternate)
+            self.assertEqual(rows[0]['coverCheckedAt'], time)
+            self.assertEqual(rows[1]['cover'], '')
+
+    def test_spent_metadata_budget_preserves_source_attempt_and_failure(self):
+        state = {'platformId': 'fortnite', 'entries': {}, 'progress': {'nextPage': 288},
+                 'lastAttemptAt': '2026-11-03T01:00:00Z',
+                 'lastSuccessfulAt': '2026-11-01T01:00:00Z',
+                 'enumerationComplete': False, 'status': 'limited', 'errors': ['HTTP 403']}
+        old_deadline, old_next = catalog.CURRENT_DEADLINE, catalog.NEXT_ATTEMPT_AT
+        try:
+            with patch.object(catalog, 'load_state', return_value=state), \
+                 patch.object(catalog, 'save_state'), patch.object(catalog, 'write_platform'), \
+                 patch.object(catalog, 'fortnite_page') as source:
+                result = catalog.collect_one('fortnite', catalog.time.monotonic() - 1, 0, refresh=True)
+            source.assert_not_called()
+            self.assertEqual(result['lastAttemptAt'], '2026-11-03T01:00:00Z')
+            self.assertEqual(result['lastSuccessfulAt'], '2026-11-01T01:00:00Z')
+            self.assertEqual(result['progress'], {'nextPage': 288})
+            self.assertEqual(result['errors'], ['HTTP 403'])
+            self.assertEqual(result['status'], 'limited')
+        finally:
+            catalog.CURRENT_DEADLINE, catalog.NEXT_ATTEMPT_AT = old_deadline, old_next
+
+    def test_resumed_modrinth_traversal_checks_live_total_before_completion(self):
+        state = {'platformId': 'minecraft', 'entries': {}, 'progress': {'nextOffset': 100},
+                 'reportedTotal': 100, 'enumerationComplete': False, 'status': 'partial'}
+        pages = [([], 300, 'https://api.modrinth.com/v2/search?offset=100', 100, 0, []),
+                 ([], 300, 'https://api.modrinth.com/v2/search?offset=200', 100, 0, [])]
+        old_deadline, old_next = catalog.CURRENT_DEADLINE, catalog.NEXT_ATTEMPT_AT
+        try:
+            with patch.object(catalog, 'load_state', return_value=state), \
+                 patch.object(catalog, 'save_state'), patch.object(catalog, 'write_platform'), \
+                 patch.object(catalog, 'modrinth_page', side_effect=pages) as source, \
+                 patch.object(catalog.time, 'sleep'):
+                result = catalog.collect_one('minecraft', catalog.time.monotonic() + 10, 0)
+            self.assertEqual([call.args[0] for call in source.call_args_list], [100, 200])
+            self.assertEqual(result['reportedTotal'], 300)
+            self.assertEqual(result['progress']['nextOffset'], 300)
+            self.assertTrue(result['enumerationComplete'])
+            self.assertEqual(result['status'], 'complete')
+        finally:
+            catalog.CURRENT_DEADLINE, catalog.NEXT_ATTEMPT_AT = old_deadline, old_next
+
     def test_search_shard_path_tracks_its_own_content_hash(self):
         detail={'schemaVersion':1,'platformId':'cs2','entries':[{'key':'cs2:1','originalTitle':'Map'}]}
         search={'schemaVersion':1,'platformId':'cs2','entries':[{'key':'cs2:1','descriptionSearch':'short'}]}
@@ -103,13 +170,14 @@ class CatalogTests(unittest.TestCase):
         original_request, original_parse = catalog.public_request, catalog.board.parse_steam
         try:
             catalog.public_request = lambda *a, **k: source
-            catalog.board.parse_steam = lambda *a, **k: [{'id':'42','title':'Map','creator':'7656119','url':'https://steamcommunity.com/sharedfiles/filedetails/?id=42','categories':[],'summary':'desc','metricValue':9,'publishedAt':None}]
+            catalog.board.parse_steam = lambda *a, **k: [{'id':'42','title':'Workshop Resource Pack','creator':'7656119','url':'https://steamcommunity.com/sharedfiles/filedetails/?id=42','categories':[],'summary':'desc','metricValue':9,'publishedAt':None}]
             rows, total, pages, raw_count, raw_ids, excluded = catalog.steam_page(1)
         finally:
             catalog.public_request = original_request
             catalog.board.parse_steam = original_parse
         self.assertEqual((total, pages, raw_count), (1,1,1))
         self.assertEqual(rows[0]['imageUrl'], 'https://images.steamusercontent.com/a')
+        self.assertEqual(rows[0]['title'], 'Workshop Resource Pack')
         self.assertEqual(raw_ids, ['42'])
         self.assertEqual(excluded, [])
 
@@ -151,7 +219,7 @@ class CatalogTests(unittest.TestCase):
             with TemporaryDirectory() as temp:
                 root=Path(temp); catalog.ROOT=root; catalog.CACHE=root/'data/ugc/catalog-cache'; catalog.CATALOG=root/'data/ugc/catalog'
                 catalog.CACHE.mkdir(parents=True); catalog.CATALOG.mkdir(parents=True); catalog.TRANSLATIONS={}
-                key='cs2:4242'; title='Widget'; old_desc='This is a map'; full_desc='This is a map with two bombsites.'
+                key='cs2:4242'; title='Resource Pack'; old_desc='This is a map'; full_desc='This is a map with two bombsites.'
                 rule={'sourceFingerprint':catalog.fingerprint(title,old_desc),'originalTitle':title,
                     'descriptionOriginal':old_desc,'reason':'unapproved draft exclusion','sources':['https://example.test/item'],
                     'reviewedAt':'2026-01-01T00:00:00Z','reviewer':'reviewer'}
@@ -336,6 +404,49 @@ class CatalogTests(unittest.TestCase):
         finally:
             for name,value in original.items():setattr(catalog,name,value)
 
+    def test_withdrawn_review_is_not_recovered_from_a_public_shard_or_cache(self):
+        names = ('ROOT', 'CATALOG', 'CACHE', 'TRANSLATIONS')
+        original = {name: getattr(catalog, name) for name in names}
+        try:
+            with TemporaryDirectory() as temp:
+                catalog.ROOT = Path(temp)
+                catalog.CATALOG = catalog.ROOT / 'data/ugc/catalog'
+                catalog.CACHE = catalog.ROOT / 'data/ugc/catalog-cache'
+                catalog.TRANSLATIONS = None
+                url = 'https://steamcommunity.com/sharedfiles/filedetails/?id=42'
+                entry = catalog.make_entry('cs2', {'id': '42', 'title': 'Map', 'url': url}, 'source description')
+                review = {
+                    'key': entry['key'], 'sourceFingerprint': entry['sourceFingerprint'],
+                    'titleZh': '旧稿', 'introZh': '旧稿的玩法说明。', 'sources': [url],
+                    'reviewer': 'gpt-6-luna', 'reviewedAt': '2026-01-01T00:00:00Z',
+                }
+                approval = {'approvedBy': 'primary-agent', 'approvedAt': '2026-01-02T00:00:00Z'}
+                cached = dict(entry, **{field: review[field] for field in ('titleZh', 'introZh', 'reviewer', 'reviewedAt')},
+                              translationStatus='reviewed', reviewApproval={'status': 'accepted', **approval})
+                shard = 'data/ugc/catalog/cs2/old.json'
+                catalog.atomic_json(catalog.ROOT / shard, {'entries': [cached]})
+                catalog.atomic_json(catalog.CATALOG / 'manifest.json', {'platforms': {'cs2': {'shards': [{'url': shard}]}}})
+                catalog.atomic_json(catalog.CACHE / 'reviews/needs-review/withdrawn.json', {
+                    'schemaVersion': 1, 'reviewStatus': 'withdrawn', 'acceptance': approval, 'entries': [review],
+                })
+                catalog.apply_reviewed(entry)
+                self.assertEqual(entry['translationStatus'], 'pending')
+                catalog.apply_accepted_reviews({cached['key']: cached})
+                self.assertEqual(cached['translationStatus'], 'pending')
+                self.assertNotIn('reviewApproval', cached)
+
+                corrected = dict(review, introZh='独立核查后修订的玩法说明。')
+                new_approval = {'approvedBy': 'primary-agent', 'approvedAt': '2026-01-04T00:00:00Z'}
+                catalog.atomic_json(catalog.CACHE / 'reviews/accepted/revised.json', {
+                    'schemaVersion': 1, 'acceptance': new_approval, 'entries': [corrected],
+                })
+                catalog.apply_accepted_reviews({cached['key']: cached})
+                self.assertEqual(cached['introZh'], corrected['introZh'])
+                self.assertEqual(cached['reviewApproval'], {'status': 'accepted', **new_approval})
+        finally:
+            for name, value in original.items():
+                setattr(catalog, name, value)
+
     def test_roblox_refresh_prefers_latest_verified_content_and_keeps_first_seen(self):
         names = ('ROOT','CATALOG','CACHE','SOURCE_EVIDENCE','TRANSLATIONS')
         original = {name:getattr(catalog,name) for name in names}
@@ -362,6 +473,29 @@ class CatalogTests(unittest.TestCase):
                 self.assertEqual(entry['descriptionOriginal'],'New official description')
                 self.assertEqual(entry['firstObservedAt'],'2020-01-01T00:00:00Z')
                 self.assertEqual(entry['translationStatus'],'pending')
+
+                # A new Rolimon's listing can have no description at all.
+                # A separately verified description for the same title survives that refresh.
+                (evidence_dir/'source-descriptions.json').write_text('{"entries":{}}',encoding='utf-8')
+                entry.update({
+                    'creator': 'Studio', 'detailStatus': 'available', 'detailAttempts': 1,
+                    'detailLastAttemptAt': '2026-01-01T00:00:00Z',
+                })
+                listing = catalog.make_entry('roblox', {
+                    'id':'101', 'title':'Official New Name', 'url':'https://www.roblox.com/games/101', 'metricValue':30,
+                }, '', identity_status='pending')
+                listing.update({'placeId':'101', 'lastObservedAt':'2026-01-02T00:00:00Z'})
+                state['entries'][listing['key']] = listing
+                catalog.write_platform('roblox',state)
+                self.assertEqual(list(state['entries']), ['roblox:9001'])
+                retained = state['entries']['roblox:9001']
+                self.assertEqual(retained['descriptionOriginal'], 'New official description')
+                self.assertEqual(retained['sourceFingerprint'], entry['sourceFingerprint'])
+                self.assertEqual(retained['creator'], 'Studio')
+                self.assertEqual(retained['detailLastAttemptAt'], '2026-01-01T00:00:00Z')
+                self.assertEqual(retained['firstObservedAt'], '2020-01-01T00:00:00Z')
+                self.assertEqual(retained['metricValue'], 30)
+                self.assertEqual(retained['image'], entry['image'])
         finally:
             for name,value in original.items():setattr(catalog,name,value)
 

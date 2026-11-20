@@ -1,0 +1,684 @@
+{
+  "schemaVersion": 1,
+  "game": "使命召唤：现代战争 4",
+  "gameId": "cod-mw4",
+  "countUnit": "件",
+  "reviewedAt": "2026-11-16",
+  "sources": {
+    "launch": {
+      "label": "Call of Duty 首发武器指南",
+      "url": "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-launch-multiplayer-operators-weapons-equipment-create-a-class",
+      "publishedDate": "2026-10-19"
+    },
+    "season1": {
+      "label": "Call of Duty 第 1 赛季公告",
+      "url": "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-warzone-season-1-announcement",
+      "publishedDate": "2026-10-28"
+    },
+    "battlePass": {
+      "label": "Call of Duty 第 1 赛季通行证与 BlackCell",
+      "url": "https://www.callofduty.com/blog/2026/11/call-of-duty-modern-warfare-4-season-1-battle-pass-blackcell-store-bundles",
+      "publishedDate": "2026-11-05"
+    },
+    "officialApexDemo": {
+      "label": "Call of Duty 官方多人玩法详解 · Apex 配件",
+      "url": "https://www.callofduty.com/blog/2026/08/call-of-duty-modern-warfare-4-next-highlights-multiplayer-gameplay-systems",
+      "publishedDate": "2026-08-21",
+      "video": "https://www.callofduty.com/cdn/blog/blogs/MW4/Deep-Dive/MW4-MP-DEEP-DIVE-028.mp4"
+    },
+    "bilibiliReloads": {
+      "label": "火山坑 · 全武器换弹动画（哔哩哔哩，4K 原片）",
+      "url": "https://www.bilibili.com/video/BV1MJxu6rEpp/",
+      "publishedDate": "2026-10-27"
+    },
+    "bilibiliInspects": {
+      "label": "火山坑 · 全武器原装、满配及空仓检视（哔哩哔哩）",
+      "url": "https://www.bilibili.com/video/BV1hQnh6hEio/",
+      "publishedDate": "2026-10-24"
+    },
+    "bilibiliM4TacticalReload": {
+      "label": "AimlessPlayer · M4 两种换弹动画（哔哩哔哩）",
+      "url": "https://www.bilibili.com/video/BV1wC4H6qE8f/",
+      "publishedDate": "2026-11-08"
+    },
+    "bilibiliCronenOsprey": {
+      "label": "黑夜潜行 · 克洛南鱼鹰（哔哩哔哩）",
+      "url": "https://www.bilibili.com/video/BV1eP4i68Efq/",
+      "publishedDate": "2026-11-06"
+    },
+    "bilibiliCsg35": {
+      "label": "IW无限病房受害者 · 双持 CSG-35 交叉火力（哔哩哔哩）",
+      "url": "https://www.bilibili.com/video/BV1Pt4B6XEY7/",
+      "publishedDate": "2026-11-06"
+    },
+    "bilibiliSeason1Reloads": {
+      "label": "火山坑 · S1 新增武器与全换弹动画演示（哔哩哔哩，4K 原片）",
+      "url": "https://www.bilibili.com/video/BV1iw4B6zESu/",
+      "publishedDate": "2026-11-06"
+    }
+  },
+  "categories": [
+    {"id": "ar", "label": "突击步枪"},
+    {"id": "smg", "label": "冲锋枪"},
+    {"id": "shotgun", "label": "霰弹枪"},
+    {"id": "lmg", "label": "轻机枪"},
+    {"id": "dmr", "label": "射手步枪"},
+    {"id": "sniper", "label": "狙击步枪"},
+    {"id": "pistol", "label": "手枪"},
+    {"id": "launcher", "label": "发射器"},
+    {"id": "melee", "label": "近战武器"}
+  ],
+  "weapons": [
+    {
+      "id": "han-86",
+      "name": "Han 86",
+      "category": "ar",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-009.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 4",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 1174, "end": 1179, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 1251, "end": 1260, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 509, "end": 512, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 514, "end": 517, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "m4",
+      "name": "M4",
+      "category": "ar",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-010.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 14",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 924, "end": 931, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 1013, "end": 1022, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliM4TacticalReload", "start": 0, "end": 8, "playToEnd": true, "note": "短片展示 M4 有余弹时的两种换弹动画。"},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 275, "end": 278, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "hyeon-burst",
+      "name": "Hyeon Burst",
+      "category": "ar",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-011.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 21",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 1261, "end": 1272, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 1347, "end": 1356, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 463, "end": 466, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 468, "end": 472, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "patriot-xmr",
+      "name": "Patriot XMR",
+      "category": "ar",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-012.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 27",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 1358, "end": 1365, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 1433, "end": 1443, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 233, "end": 236, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 238, "end": 241, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "kastov-762",
+      "name": "Kastov 762",
+      "category": "ar",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-013.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 34",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 1023, "end": 1033, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 1096, "end": 1105, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 325, "end": 328, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 329, "end": 334, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "oden",
+      "name": "Oden",
+      "category": "ar",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-014.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 39",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 1106, "end": 1117, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 1167, "end": 1173, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 547, "end": 550, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 552, "end": 556, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "axion",
+      "name": "Axion",
+      "category": "ar",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-015.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 52",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 737, "end": 744, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 821, "end": 831, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 414, "end": 417, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 419, "end": 423, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "cronen-squall",
+      "name": "Cronen Squall",
+      "category": "ar",
+      "source": "launch",
+      "unlock": "玩家等级 55",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 832, "end": 839, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 914, "end": 923, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 376, "end": 379, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 382, "end": 385, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "cronen-osprey",
+      "name": "Cronen Osprey",
+      "category": "ar",
+      "source": "battlePass",
+      "unlock": "第 1 赛季通行证第 16 阶",
+      "releasedAt": "2026-11-06T13:00:00+08:00",
+      "releaseSource": "season1",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/s1-bc-bp-mtx/MW4-SEASON-1-BP-BC-BUNDLES-016.webp",
+      "cardLabel": "官方基础武器图",
+      "motionNotes": [
+        {"name": "靶场检视", "source": "bilibiliCronenOsprey", "start": 69, "end": 77, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliSeason1Reloads", "start": 370, "end": 373, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliSeason1Reloads", "start": 414, "end": 417, "playToEnd": true, "note": "选用合集片尾的配装演示。"},
+        {"name": "克洛南鱼鹰靶场检视与换弹", "source": "bilibiliCronenOsprey", "start": 69, "end": 119, "playToEnd": true},
+        {
+          "name": "Digital Drifter 外观变化",
+          "note": "在游戏内从全自动切换至点射时，蓝图外观随之变化。",
+          "source": "battlePass"
+        }
+      ]
+    },
+    {
+      "id": "iso-nightshade",
+      "name": "ISO Nightshade",
+      "category": "smg",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-017.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 4",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 430, "end": 435, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 482, "end": 488, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 673, "end": 676, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 677, "end": 681, "embedFromStart": true},
+        {"name": "ISO Trace 配件演示", "source": "officialApexDemo", "start": 0, "end": 10}
+      ]
+    },
+    {
+      "id": "vel-46",
+      "name": "VEL 46",
+      "category": "smg",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-018.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 594, "end": 603, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 644, "end": 649, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 650, "end": 653, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 655, "end": 657, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "wz-55-striga",
+      "name": "Wz.55 Striga",
+      "category": "smg",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-019.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 650, "end": 658, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 729, "end": 736, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 705, "end": 708, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 710, "end": 713, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "ppsh-41",
+      "name": "PPSh-41",
+      "category": "smg",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-020.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 489, "end": 499, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 584, "end": 593, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 584, "end": 587, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 590, "end": 594, "embedFromStart": true},
+        {"name": "PPSh-41 Ember 配件演示", "source": "officialApexDemo", "start": 38, "end": 47}
+      ]
+    },
+    {
+      "id": "x-58-nyx",
+      "name": "X-58 Nyx",
+      "category": "smg",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-021.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 364, "end": 373, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 420, "end": 429, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 624, "end": 627, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 618, "end": 623, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "csg-35",
+      "name": "CSG-35",
+      "category": "smg",
+      "source": "battlePass",
+      "unlock": "第 1 赛季通行证第 36 阶",
+      "releasedAt": "2026-11-06T13:00:00+08:00",
+      "releaseSource": "season1",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/s1-bc-bp-mtx/MW4-SEASON-1-BP-BC-BUNDLES-017.webp",
+      "cardLabel": "官方基础武器图",
+      "motionNotes": [
+        {"name": "双持交叉火力检视", "source": "bilibiliCsg35", "start": 18, "end": 24, "embedFromStart": true},
+        {"name": "双持交叉火力换弹", "source": "bilibiliSeason1Reloads", "start": 359, "end": 362, "embedFromStart": true},
+        {"name": "双持交叉火力靶场动作", "source": "bilibiliCsg35", "start": 15, "end": 58, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliSeason1Reloads", "start": 338, "end": 340, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliSeason1Reloads", "start": 342, "end": 345, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "rezi-12",
+      "name": "Rezi 12",
+      "category": "shotgun",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-022.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 4",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 1444, "end": 1454, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 1522, "end": 1531, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 140, "end": 143, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 152, "end": 162, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "warlord",
+      "name": "Warlord",
+      "category": "shotgun",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-023.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 32",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 1532, "end": 1540, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 1629, "end": 1638, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 199, "end": 203, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 205, "end": 217, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "finn-lmg",
+      "name": "FiNN LMG",
+      "category": "lmg",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-024.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 4",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 2399, "end": 2409, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 2503, "end": 2514, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 931, "end": 937, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 942, "end": 950, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "type-73",
+      "name": "Type 73",
+      "category": "lmg",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-025.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 9",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 2225, "end": 2234, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 2296, "end": 2307, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 861, "end": 868, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 874, "end": 881, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "apoc-338",
+      "name": "APOC-338",
+      "category": "lmg",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-026.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 44",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 2308, "end": 2317, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 2387, "end": 2398, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 985, "end": 992, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 998, "end": 1005, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "mar-9",
+      "name": "MAR-9",
+      "category": "dmr",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-027.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 4",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 1639, "end": 1647, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 1695, "end": 1705, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 807, "end": 810, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 812, "end": 817, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "oris-8-6",
+      "name": "Oris 8.6",
+      "category": "dmr",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-028.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 11",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 1706, "end": 1716, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 1791, "end": 1797, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 834, "end": 837, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 839, "end": 842, "embedFromStart": true},
+        {"name": "Oris Razor 配件演示", "source": "officialApexDemo", "start": 30, "end": 37}
+      ]
+    },
+    {
+      "id": "mosin-nagant",
+      "name": "Mosin-Nagant",
+      "category": "dmr",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-029.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 36",
+      "aliases": [
+        "莫辛-纳甘"
+      ],
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 1798, "end": 1808, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 1917, "end": 1926, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 755, "end": 758, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 762, "end": 768, "embedFromStart": true},
+        {
+          "name": "Bellum BlackCell 专属检视",
+          "note": "第一次检视卸下机匣护罩，再次检视装回护罩。",
+          "source": "battlePass",
+          "video": "https://www.callofduty.com/cdn/blog/blogs/MW4/MW4-SEASON-1-BP-BC-BUNDLES-050.mp4"
+        },
+        {"name": "Mosin Harpoon 配件演示", "source": "officialApexDemo", "start": 11, "end": 19}
+      ]
+    },
+    {
+      "id": "kg-7-vulcan",
+      "name": "KG-7 Vulcan",
+      "category": "sniper",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-030.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 4",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 2026, "end": 2036, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 2128, "end": 2139, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 1038, "end": 1042, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 1045, "end": 1050, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "astaroth-57",
+      "name": "Astaroth .57",
+      "category": "sniper",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-031.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 1928, "end": 1937, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 2015, "end": 2025, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 1081, "end": 1087, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 1091, "end": 1098, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "signal-50",
+      "name": "Signal 50",
+      "category": "sniper",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-032.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 2140, "end": 2149, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 2215, "end": 2224, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 1108, "end": 1112, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 1116, "end": 1121, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "sang-9mm",
+      "name": "SANG 9mm",
+      "category": "pistol",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-033.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 4",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 170, "end": 178, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 263, "end": 275, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 3, "end": 6, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 8, "end": 11, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "krait-p68",
+      "name": "Krait P68",
+      "category": "pistol",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-034.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 7",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 0, "end": 9, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 51, "end": 68, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 36, "end": 39, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 58, "end": 61, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "50-gs",
+      "name": ".50 GS",
+      "category": "pistol",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-035.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 41",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 100, "end": 108, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 158, "end": 169, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 61, "end": 64, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 64, "end": 68, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "mojave-357",
+      "name": "Mojave .357",
+      "category": "pistol",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-036.webp",
+      "cardLabel": "官方基础外观与 Apex 配件对照图",
+      "unlock": "玩家等级 48",
+      "motionNotes": [
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 276, "end": 281, "embedFromStart": true},
+        {"name": "空仓检视", "source": "bilibiliInspects", "start": 353, "end": 363, "embedFromStart": true},
+        {"name": "战术换弹", "source": "bilibiliReloads", "start": 92, "end": 94, "embedFromStart": true},
+        {"name": "空仓换弹", "source": "bilibiliReloads", "start": 108, "end": 112, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "pila",
+      "name": "PILA",
+      "category": "launcher",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-037.webp",
+      "cardLabel": "官方武器图",
+      "unlock": "玩家等级 4",
+      "motionNotes": [
+        {"name": "换弹演示", "source": "bilibiliReloads", "start": 1178, "end": 1188, "embedFromStart": true},
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 2571, "end": 2578, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "rpg-8",
+      "name": "RPG-8",
+      "category": "launcher",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-038.webp",
+      "cardLabel": "官方武器图",
+      "unlock": "玩家等级 23",
+      "motionNotes": [
+        {"name": "换弹演示", "source": "bilibiliReloads", "start": 1188, "end": 1193, "embedFromStart": true},
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 2596, "end": 2604, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "jokr",
+      "name": "JOKR",
+      "category": "launcher",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-039.webp",
+      "cardLabel": "官方武器图",
+      "unlock": "玩家等级 43",
+      "motionNotes": [
+        {"name": "换弹演示", "source": "bilibiliReloads", "start": 1193, "end": 1200, "playToEnd": true},
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 2619, "end": 2625, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "pm-40-anvil",
+      "name": "PM-40 Anvil",
+      "category": "launcher",
+      "source": "launch",
+      "unlock": "玩家等级 54",
+      "motionNotes": [
+        {"name": "换弹演示", "source": "bilibiliReloads", "start": 1147, "end": 1178, "embedFromStart": true},
+        {"name": "普通检视", "source": "bilibiliInspects", "start": 2534, "end": 2541, "embedFromStart": true}
+      ]
+    },
+    {
+      "id": "fss-carbon-edge-1095",
+      "name": "FSS Carbon Edge 1095",
+      "category": "melee",
+      "source": "launch",
+      "cardImage": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/rfl-ops-and-weapons/MW4-RFL-OPS-WEAPONS-041.webp",
+      "cardLabel": "官方武器图",
+      "unlock": "玩家等级 4",
+      "motionNotes": [
+        {"name": "战斗刀动作演示", "source": "bilibiliInspects", "start": 2653, "end": 2684, "playToEnd": true}
+      ]
+    }
+  ],
+  "attachments": [
+    {
+      "id": "han-x20-skybreaker",
+      "name": "Han X20 Skybreaker",
+      "weapons": [
+        "han-86"
+      ],
+      "note": "Apex 配件。占用瞄具、枪托和枪管槽位。",
+      "source": "launch"
+    },
+    {
+      "id": "m4-hurricane",
+      "name": "M4 Hurricane",
+      "weapons": [
+        "m4"
+      ],
+      "note": "M4 的 Apex 配件。",
+      "source": "launch",
+      "demo": {"source": "officialApexDemo", "start": 20, "end": 29}
+    },
+    {
+      "id": "mosin-harpoon",
+      "name": "Mosin Harpoon",
+      "weapons": [
+        "mosin-nagant"
+      ],
+      "note": "Apex 配件。占用枪口与枪管槽位。",
+      "source": "launch"
+    },
+    {
+      "id": "csg-crossfire",
+      "name": "CSG Crossfire",
+      "weapons": [
+        "csg-35"
+      ],
+      "note": "Apex 配件，在游戏中切换为双持。",
+      "source": "battlePass"
+    }
+  ],
+  "packages": [
+    {
+      "id": "mosin-nagant-bellum",
+      "weapon": "mosin-nagant",
+      "name": "Bellum",
+      "origin": "第 1 赛季通行证第 100 阶",
+      "source": "battlePass",
+      "image": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/s1-bc-bp-mtx/MW4-SEASON-1-BP-BC-BUNDLES-049.webp",
+      "imageLabel": "官方对照图上方"
+    },
+    {
+      "id": "mosin-nagant-bellum-blackcell",
+      "weapon": "mosin-nagant",
+      "name": "Bellum BlackCell",
+      "origin": "第 1 赛季 BlackCell 第 100 阶",
+      "source": "battlePass",
+      "image": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/s1-bc-bp-mtx/MW4-SEASON-1-BP-BC-BUNDLES-049.webp",
+      "imageLabel": "官方对照图下方"
+    },
+    {
+      "id": "cronen-osprey-kill-order",
+      "weapon": "cronen-osprey",
+      "name": "Kill Order",
+      "origin": "第 1 赛季通行证第 87 阶",
+      "source": "battlePass",
+      "image": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/s1-bc-bp-mtx/MW4-SEASON-1-BP-BC-BUNDLES-046.webp",
+      "imageLabel": "官方对照图"
+    },
+    {
+      "id": "cronen-osprey-digital-drifter",
+      "weapon": "cronen-osprey",
+      "name": "Digital Drifter",
+      "origin": "Glitched State Mastercraft 礼包",
+      "source": "battlePass"
+    },
+    {
+      "id": "csg-35-deathgrip",
+      "weapon": "csg-35",
+      "name": "Deathgrip",
+      "origin": "第 1 赛季通行证第 73 阶",
+      "source": "battlePass",
+      "image": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/s1-bc-bp-mtx/MW4-SEASON-1-BP-BC-BUNDLES-043.webp",
+      "imageLabel": "官方对照图"
+    }
+  ]
+}

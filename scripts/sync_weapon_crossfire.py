@@ -21,6 +21,8 @@ import subprocess
 import sys
 from io import BytesIO
 from datetime import datetime, timezone
+from threading import Lock
+from time import monotonic, sleep
 from urllib.parse import urlencode, urljoin, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -28,7 +30,43 @@ CACHE = ROOT / 'local-only/weapon-skins/crossfire/cache'
 OUTPUT = ROOT / 'data/weapon-skins'
 CFHD_BASE = 'https://www.crossfirehd.com/'
 CFHD_PAGE = CFHD_BASE + 'weapons.html'
+CFHD_IMAGE_ROOT = CFHD_BASE + 'CFHD/SGUI_Textures_Weapon/'
 CFHD_OFFICIAL = 'https://cfhd.cf.qq.com/cp/a20261101mact/index.html'
+CFHD_SHARED_IMAGE_REVIEW = {
+    CFHD_IMAGE_ROOT + 'Thompson_SKIN_Stealth.png': {
+        'id': 'cfhd-633175696',
+        'sha256': '37711f3ec5d66e2e68a2026c726fdf6cea15258bb8e5db4c28e68827a3804892',
+        'caption': '已对照活动截图和局内展示，确认该资源图对应汤姆逊冲锋枪 黑曜。',
+        'evidence': [
+            {'title': '2022 双区特惠活动截图（九游留档）',
+             'url': 'https://www.9game.cn/news/7126275.html'},
+            {'title': '繁星Z凡的黑曜局内展示',
+             'url': 'https://www.bilibili.com/video/BV1MjDeBMEfd/'},
+        ],
+    },
+    CFHD_IMAGE_ROOT + 'MK12_SPR_SKIN_SMOKE.png': {
+        'id': 'cfhd-540500329',
+        'sha256': 'af2704bb2b2e9b13b6268ba2638013d425d2c4e8569e77e60c0e33408efe3753',
+        'caption': '按资源键与同系列图核对。蓝白图案对应涂鸦 SMOKE35，图形布局与同武器的热血版吻合。',
+        'evidence': [
+            {'title': '对照 MK12 热血 SMOKE35',
+             'url': CFHD_IMAGE_ROOT + 'MK12_SPR_SKIN_SMOKE_RED.png'},
+            {'title': '对照 M4A1 涂鸦 SMOKE35',
+             'url': CFHD_IMAGE_ROOT + 'M4A1_SKIN_SMOKE.png'},
+        ],
+    },
+    CFHD_IMAGE_ROOT + 'GALIL_SKIN_TAIGA.png': {
+        'id': 'cfhd-552629237',
+        'sha256': '31f4ad5870c3a707c7a3d3ad9609848bf7b8e7985d7442ca10904081480a6d17',
+        'caption': '按资源键与纹样核对。浅色斜纹与热带雨林系列吻合，猛虎系列采用黑色与金黄色的虎纹。',
+        'evidence': [
+            {'title': '对照 MK12 热带雨林',
+             'url': CFHD_IMAGE_ROOT + 'MK12_SPR_SKIN_TAIGA.png'},
+            {'title': '对照双管猎枪 猛虎',
+             'url': CFHD_IMAGE_ROOT + 'DBSHOTGUN_SKIN_GOLDENTAIGA.png'},
+        ],
+    },
+}
 CFM_INDEX = 'https://news.4399.com/cfsy/'
 TODAY = datetime.now(timezone.utc).date().isoformat()
 
@@ -76,23 +114,38 @@ def atomically(path: Path, value):
 class Fetcher:
     def __init__(self, offline=False, refresh=False):
         self.offline, self.refresh = offline, refresh
+        self.image_request_lock = Lock()
+        self.last_image_request = 0.0
         self.curl = shutil.which('curl.exe') or shutil.which('curl')
         if not self.curl:
             raise RuntimeError('curl with operating-system certificate verification is required')
         CACHE.mkdir(parents=True, exist_ok=True)
 
-    def fetch(self, url, referer=None):
+    def cached(self, url):
         key = hashlib.sha256(url.encode()).hexdigest()
         path, meta_path = CACHE / (key + '.bin'), CACHE / (key + '.json')
-        if path.exists() and meta_path.exists() and (self.offline or not self.refresh):
+        if path.exists() and meta_path.exists():
             return path.read_bytes(), json.loads(meta_path.read_text(encoding='utf-8'))
+
+    def fetch(self, url, referer=None, *, image_batch=False):
+        if self.offline or not self.refresh:
+            snapshot = self.cached(url)
+            if snapshot:
+                return snapshot
         if self.offline:
             raise RuntimeError('No successful offline snapshot: ' + url)
+        key = hashlib.sha256(url.encode()).hexdigest()
+        path, meta_path = CACHE / (key + '.bin'), CACHE / (key + '.json')
         temporary = path.with_suffix('.download')
+        limits = (['--connect-timeout', '5', '--max-time', '12'] if image_batch else
+                  ['--connect-timeout', '10', '--max-time', '45', '--retry', '1'])
         command = [self.curl, '--fail', '--location', '--silent', '--show-error', '--compressed',
-            '--connect-timeout','10','--max-time','45','--retry','1',
-            '--output', str(temporary)]
+                   *limits, '--output', str(temporary)]
         if referer:command.extend(['--referer',referer])
+        if image_batch:
+            with self.image_request_lock:
+                sleep(max(0.0, 0.5 - (monotonic() - self.last_image_request)))
+                self.last_image_request = monotonic()
         response = subprocess.run(command+[url], capture_output=True)
         if response.returncode:
             temporary.unlink(missing_ok=True)
@@ -231,6 +284,12 @@ def get_cfhd(fetcher):
 
     attach_cfhd_media(fetcher, entries, requests)
     restore_cfhd_images(fetcher, entries, requests)
+    attach_cfhd_tianqi(fetcher, entries, requests)
+    base_icons = {weapon['itemid']: Path(weapon.get('imageurl', '')).stem.casefold()
+                  for _, weapon in categories}
+    image_review = archive_cfhd_community_images(fetcher, entries, base_icons, previous)
+    if image_review['retrievedAt']:
+        requests.append({'url': CFHD_PAGE, 'kind': 'image_review', **image_review})
     if len(entries) < 1400:
         raise RuntimeError('CFHD skin catalogue unexpectedly small')
     return document('cfhd',entries,previous,requests,{
@@ -238,7 +297,8 @@ def get_cfhd(fetcher):
         'sourceWeaponCount':len(categories), 'sourceResourceCount':resource_count,
         'cataloguedCount':len(entries),'chromaCount':chroma_count,
         'orphanChromaCount':orphan_chromas,
-        'scope':'已遍历本次 CFHD 数据中心公开主武器、副武器、近战列表和各武器皮肤页；炫彩归入母皮肤，排除投掷、C4、角色和配件。社区源站图片当前不可访问，仅原图已核验的条目进入公开展示，其余留待补图。',
+        'scope':'已遍历本次 CFHD 数据中心公开主武器、副武器、近战列表和各武器皮肤页。已核实的官方原图优先，社区对应资源保留来源标记。炫彩归入母皮肤；共用原型图、对象无法区分或不可读取的图片留待对账。',
+        'communityImageReview':image_review,
         'mediaScope':'部分皮肤关联官网直接公开的武器展示 MP4；未逐段核对的普通展示不标为检视。',
         'note':'全量指本次可枚举上游快照的枪械与近战资源，不包括未公开客户端资源与缺失历史皮肤。',
         'remaining':['官方全历史目录对账','多数皮肤第一人称视频','精确首发日期'],
@@ -292,13 +352,7 @@ def attach_cfhd_media(fetcher, entries, requests):
 
 
 def restore_cfhd_images(fetcher,entries,requests):
-    """Publish only pictures that can actually be served to users.
-
-    The community directory itself is enumerable but its image origin failed
-    TLS handshakes in both browser QA and native GET, including with Referer.
-    Do not ship hundreds of broken placeholders. Keep that full identity
-    inventory pending, and match official fallback resources by exact labels.
-    """
+    """Use exact official reward pictures before considering community resources."""
     body,meta=fetcher.fetch(CFHD_OFFICIAL)
     source=re.sub(r'<!--.*?-->','',body.decode('gb18030','replace'),flags=re.S)
     replacements={}
@@ -350,7 +404,7 @@ def restore_cfhd_images(fetcher,entries,requests):
             item['chromas']=[]
         if not replacement:
             item['publicationStatus']='pending_image'
-            item['publicationNote']='社区原图源站当前无法访问，待取得可核对图片后再公开。'
+            item['publicationNote']='尚无本条已核对的外观图。'
             continue
         url=replacement['url']
         picture,picture_meta=fetcher.fetch(url)
@@ -370,6 +424,195 @@ def restore_cfhd_images(fetcher,entries,requests):
             'caption':'官方页面中与该武器名称一一对应的原始配图，未裁切或改绘。',
             'width':width,'height':height,'sha256':hashlib.sha256(picture).hexdigest(),
             'retrievedAt':picture_meta['retrievedAt']}
+
+
+def attach_cfhd_tianqi(fetcher, entries, requests):
+    """Resolve shared CFHD data-center icons using the publisher's named illustrations."""
+    from PIL import Image
+
+    page = 'https://news.17173.com/content/09182026/152640272.shtml'
+    source = 'CFHD 高清大区官方公众号原稿 · 17173 转载'
+    body, meta = fetcher.fetch(page)
+    text = body.decode('utf-8')
+    if not re.search(r'class="article-author"[^>]*>\s*CFHD高清大区\s*</span>', text) or '来源：公众号' not in text:
+        raise RuntimeError('CFHD 传说天启稿件的来源标记已变化。')
+    requests.append(meta)
+    entries_by_id = {item['id']: item for item in entries}
+    regular = entries_by_id['cfhd-551752990']
+    engraved = entries_by_id['cfhd-565972632']
+    mythic = next(row for row in regular['pendingChromas'] if row['id'] == 'cfhd-chroma-546689622')
+    illustrations = [
+        (regular, 'zBRpPkbuczwrdDg.gif', 20, '竞技形态检视', '官方原动图中白金色竞技形态的检视帧。'),
+        (engraved, 'YwMaUBbuczwrdmq.png', None, '', '官方兑换页原图，展示有独立序列号定制的铭刻版。'),
+        (mythic, 'joudTRbuczwrqpe.gif', 16, '神话炫彩检视', '官方原动图中绿色半透明神话炫彩的检视帧。'),
+    ]
+    for row, filename, frame, action, caption in illustrations:
+        url = 'https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/' + filename
+        if url not in text:
+            raise RuntimeError('CFHD 传说天启稿件缺少已核对的配图：' + filename)
+        raw, asset_meta = fetcher.fetch(url, page)
+        requests.append(asset_meta)
+        destination = Path('assets/weapon-skins/crossfire') / (row['id'] + '.png')
+        with Image.open(BytesIO(raw)) as source_image:
+            width, height = source_image.size
+            if frame is None:
+                if source_image.format != 'PNG':
+                    raise RuntimeError('CFHD 传说天启铭刻版原图格式已变化。')
+                source_image.load()
+                (ROOT / destination).write_bytes(raw)
+            else:
+                if source_image.format != 'GIF' or not source_image.is_animated:
+                    raise RuntimeError('CFHD 传说天启原动图格式已变化。')
+                source_image.seek(frame)
+                source_image.convert('RGB').save(ROOT / destination, format='PNG')
+        image = {'url': destination.as_posix(), 'assetSourceUrl': url, 'sourcePageUrl': page,
+                 'sourceType': 'official', 'provider': source, 'kind': 'poster' if action else 'render',
+                 'caption': caption, 'width': width, 'height': height, 'retrievedAt': asset_meta['retrievedAt'],
+                 'sha256': hashlib.sha256((ROOT / destination).read_bytes()).hexdigest()}
+        row['image'] = image
+        if action:
+            media = {'id': row['id'] + '-inspect', 'kind': 'inspect', 'provider': 'gif', 'url': url,
+                     'title': row['name'] + ' · ' + action, 'sourcePageUrl': page, 'sourceName': source,
+                     'sourceType': 'official', 'reviewStatus': 'sample_reviewed', 'reviewNote': caption}
+            image.update(sourceFrame=frame, originalSha256=asset_meta['sha256'])
+            if row is mythic:
+                media['chromaId'] = row['id']
+            regular['media'].append(media)
+        if row is mythic:
+            row.update(imageUrl=image['url'], displayIcon=image['url'], fullRender=image['url'],
+                       sourceType='official', sourceUrl=page)
+            regular['pendingChromas'].remove(row)
+            regular['chromas'].append(row)
+        else:
+            row['publicationStatus'] = 'ready'
+            row.pop('publicationNote', None)
+
+
+def archive_cfhd_community_images(fetcher, entries, base_icons, previous):
+    from PIL import Image
+
+    identities = {}
+    candidates = []
+    blocked = {}
+    for item in entries:
+        original = item['communityImageCandidate']['assetSourceUrl']
+        base_icon = base_icons[item['sourceWeaponId']]
+        for row, url in [(item, original), *((chroma, chroma['displayIcon']) for chroma in item.get('pendingChromas', []))]:
+            identities.setdefault(url, set()).add((item['weaponId'], row['name']))
+            if row is item and item['publicationStatus'] == 'ready':
+                continue
+            if not url.startswith(CFHD_IMAGE_ROOT) or Path(urlparse(url).path).suffix.lower() != '.png':
+                blocked[row['id']] = '未取得目录中可识别的 PNG 资源地址。'
+            elif Path(urlparse(url).path).stem.casefold() == base_icon:
+                blocked[row['id']] = '数据中心引用的是武器原型图片。'
+            else:
+                candidates.append((item, row, url))
+
+    def check_picture(url, snapshot_only=False):
+        try:
+            if snapshot_only:
+                snapshot = fetcher.cached(url)
+                if not snapshot:
+                    raise RuntimeError('源站连接不稳定或限制请求，本轮从已取得的成功快照复核。')
+                raw, meta = snapshot
+            else:
+                raw, meta = fetcher.fetch(url, CFHD_PAGE, image_batch=True)
+            with Image.open(BytesIO(raw)) as image:
+                image.load()
+                if image.format != 'PNG' or image.width < 60 or image.height < 30:
+                    raise ValueError('不是可用的武器 PNG')
+                rgba = image.convert('RGBA')
+                bounds = rgba.getbbox()
+                if bounds is None or all(lo == hi for lo, hi in rgba.crop(bounds).getextrema()):
+                    raise ValueError('资源内容为空或纯色')
+                width, height = image.size
+            digest = hashlib.sha256(raw).hexdigest()
+            path = Path('assets/weapon-skins/crossfire') / ('cfhd-resource-' + digest[:24] + '.png')
+            (ROOT / path).parent.mkdir(parents=True, exist_ok=True)
+            # Different source URLs can contain the same original image.
+            (ROOT / path).write_bytes(raw)
+            return {'url':path.as_posix(), 'assetSourceUrl':url, 'sourcePageUrl':CFHD_PAGE,
+                    'sourceType':'game_asset', 'provider':'CFHD 数据中心 · 玩家整理的游戏资源',
+                    'kind':'render', 'caption':'数据中心对应外观的游戏资源原图。',
+                    'width':width, 'height':height, 'sha256':digest,
+                    'retrievedAt':meta['retrievedAt']}, None
+        except (OSError, RuntimeError, ValueError) as error:
+            return None, str(error)
+
+    def previous_picture(item, row, url):
+        old = previous.get(item['id'], {})
+        if row is not item:
+            old = next((chroma for chroma in old.get('chromas', []) if chroma['id'] == row['id']), {})
+        image = old.get('image') or {}
+        if image.get('sourceType') != 'game_asset' or image.get('assetSourceUrl') != url:
+            return None
+        digest = image.get('sha256', '')
+        if not re.fullmatch(r'[a-f0-9]{64}', digest):
+            return None
+        path = 'assets/weapon-skins/crossfire/cfhd-resource-' + digest[:24] + '.png'
+        if image.get('url') == path and (ROOT / path).is_file():
+            if hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == digest:
+                return image
+        return None
+
+    def matches_source(row, url):
+        review = CFHD_SHARED_IMAGE_REVIEW.get(url)
+        return row['id'] == review['id'] if review else len(identities[url]) == 1
+
+    distinct = {url for _, row, url in candidates if matches_source(row, url)}
+    urls = sorted(distinct)
+    results, snapshot_only = {}, False
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+        for offset in range(0, len(urls), 24):
+            batch = urls[offset:offset + 24]
+            checked = list(pool.map(check_picture, batch, [snapshot_only] * len(batch)))
+            errors = [error or '' for _, error in checked]
+            if not snapshot_only and (all('curl: (28)' in error for error in errors) or
+                                      any('returned error: 429' in error for error in errors)):
+                snapshot_only = True
+                checked = list(pool.map(check_picture, batch, [True] * len(batch)))
+            results.update(zip(batch, checked, strict=True))
+
+    ready = chromas = 0
+    verified_dates = []
+    for item, row, url in candidates:
+        if not matches_source(row, url):
+            blocked[row['id']] = '同一张资源图标对应多个不同外观，暂缺可区分配图。'
+            continue
+        picture, error = results[url]
+        picture = picture or previous_picture(item, row, url)
+        if not picture:
+            blocked[row['id']] = error or '缺少已核对的图片。'
+            continue
+        if review := CFHD_SHARED_IMAGE_REVIEW.get(url):
+            if picture['sha256'] != review['sha256']:
+                blocked[row['id']] = '资源图已变化，须重新与留档配图对照。'
+                continue
+            picture = dict(picture, identificationSources=review['evidence'],
+                           caption=review['caption'])
+        verified_dates.append(picture['retrievedAt'])
+        if row is item:
+            item.update(image=picture, publicationStatus='ready')
+            item.pop('publicationNote', None)
+            ready += 1
+        else:
+            item['chromas'].append(dict(row, imageUrl=picture['url'], displayIcon=picture['url'],
+                                      fullRender=picture['url'], image=picture))
+            chromas += 1
+    for item in entries:
+        pending = item.pop('pendingChromas', [])
+        if remaining := [chroma for chroma in pending if chroma['id'] in blocked]:
+            item['pendingChromas'] = remaining
+        if item['id'] in blocked:
+            item['publicationNote'] = '仍待与该外观明确对应的配图。'
+
+    latest = max(verified_dates, default=None)
+    atomically(CACHE.parent / 'cfhd-image-review.json',
+               {'retrievedAt':latest, 'checked':len(results), 'blocked':blocked})
+    return {'retrievedAt':latest, 'checked':len(results), 'verifiedSkinImages':ready,
+            'verifiedChromaImages':chromas, 'unavailableCount':len(blocked),
+            'publishedChromaImages':sum(len(item['chromas']) for item in entries
+                                       if item['publicationStatus'] == 'ready')}
 
 
 def get_cfm(fetcher):
@@ -442,14 +685,15 @@ def get_cfm(fetcher):
         item['tags'] = ['历史图鉴','枪战王者','武器变体']
         entries.append(item)
     attach_cfm_featured(fetcher,entries,previous,requests)
+    attach_cfm_articles(fetcher,entries,previous,requests)
     archive_cfm_images(fetcher,entries,requests)
     return document('cf-mobile',entries,previous,requests,{
         'status':'partial','complete':False,'catalogScope':'historical_community_catalogue',
         'sourceRecordCount':len(raw_items),'historicalCataloguedCount':len(details),
-        'featuredRecordCount':4,'cataloguedCount':len(entries),
+        'featuredRecordCount':len(entries)-len(details),'cataloguedCount':len(entries),
         'excluded':{k:len(v) for k,v in excluded.items()},'excludedNames':excluded,
-        'scope':'4399 CFM 历史武器图鉴首页 300 条入口中的非原型枪械与近战变体，加上 4 款官方资料精选；排除投掷和重名入口。历史图鉴主要为早期版本，并非当前全量。',
-        'mediaScope':'历史目录以静态图为主；精选补官方 B 站套装展示和原稿明确标注的检视 GIF。GIF 动图单独统计，不作为视频计数。',
+        'scope':'4399 CFM 历史图鉴首页的非原型枪械与近战变体，加上经核图的官方稿件选集。历史图鉴主要为早期版本。',
+        'mediaScope':'官方稿件选集含套装展示视频、检视、切出及换弹动图。动图与视频分别统计，体验服演示注明范围。',
         'note':'穿越火线：枪战王者（CFM）国服历史选集，不与 CF 端游或 CFHD 混用。',
         'remaining':['2019 年后大部分皮肤与新武器','大部分皮肤展示和检视视频','官方全历史目录对账','首发日期'],
     },'4399 CFM 历史图鉴与官方武器展示选集',CFM_INDEX)
@@ -532,6 +776,111 @@ def attach_cfm_featured(fetcher,entries,previous,requests):
             'duration':data.get('duration'),'mediaScope':'帝皇铠甲套装三款武器的合辑展示',
             'reviewNote':'已核官方频道和原稿列出的三款武器；套装合辑不标为单款专属检视。'})
     entries[:0]=featured
+
+
+def attach_cfm_articles(fetcher, entries, previous, requests):
+    from PIL import Image
+
+    sources = {
+        "cfm-ash": ("https://news.17173.com/content/01092026/082151490.shtml", "体验服"),
+        "cfm-ak47-thunder": ("https://news.17173.com/content/01132026/201927739.shtml", "体验服"),
+        "cfm-ak47-flash": ("https://news.17173.com/content/01222026/100249681.shtml", "体验服与春节版本预告"),
+        "cfm-p90-thunder": ("https://news.17173.com/content/02032026/145632931.shtml", "典藏飞行棋上架后"),
+        "cfm-kac-roar": ("https://news.17173.com/content/01242026/201027201.shtml", "体验服"),
+        "cfm-origin12-gummy": ("https://news.17173.com/content/12162025/225329754.shtml", "扭蛋机抢先展示"),
+        "cfm-m4a1-thunder": ("https://news.17173.com/content/01162026/111426249.shtml", "体验服"),
+        "cfm-fengchu-flash": ("https://news.17173.com/content/01012026/200737551.shtml", "扭蛋机官方鉴赏"),
+        "cfm-league-s1": ("https://news.17173.com/content/01242026/121512819.shtml", "2026 年 S1 赏金令"),
+    }
+    specimens = [
+        ("ash-mashanglaicai", "Ash-马上来财", "Ash", "步枪", "cfm-ash",
+         "xGPliPbtoqccDpu.png", [],
+         "体验服展示；淡蓝和红色枪身带金色马纹。"),
+        ("ash-mashanglaicai-season", "Ash-马上来财（赛季强化）", "Ash", "步枪", "cfm-ash",
+         "tHTnpRbtoqccDmz.png", [("amRggcbtoqccDwo.gif", "equip", "切出"), ("jwEypRbtoqccDuy.gif", "reload", "换弹"), ("amnvAebtoqccDvq.gif", "showcase", "局内展示")],
+         "体验服展示的赛季强化版；红色枪身带福字，切出和换弹有独立演出。"),
+        ("ak47-thunder-king", "AK47-雷暴王者", "AK47", "步枪", "cfm-ak47-thunder",
+         "ycWYtYbtoBuxzCq.png", [("oDFMmCbtoBuxAbB.gif", "showcase", "枪身外观")],
+         "体验服展示；金色兽首轮廓，枪身中部有旋转的机械眼。"),
+        ("ak47-thunder-king-flash", "炫闪·AK47-雷暴王者", "AK47", "步枪", "cfm-ak47-flash",
+         "siEjRwbtprxbflc.gif", [("OdGKoubtprxbfhE.gif", "inspect", "检视"), ("xKnObObtprxbfeA.gif", "reload", "换弹")],
+         "官方抢先展示；白紫色雾气沿枪身向外延伸，检视及换弹时效果收敛为描边。"),
+        ("p90-thunder-king", "P90-雷暴王者", "P90", "冲锋枪", "cfm-p90-thunder",
+         "GbLtOXbtqretrbE.png", [("CVRhNgbtqretrof.gif", "inspect", "检视")],
+         "官方评测记录该款已进入典藏飞行棋；枪身有蜂巢结构，检视演出取下并收回应急闪光弹。"),
+        ("kac-fury-roar", "KAC-狂怒咆哮", "KAC", "机枪", "cfm-kac-roar",
+         "jYpntRbtpxEthyb.png", [("HkIllMbtpxEthAj.gif", "inspect", "检视"), ("nEMYdNbtpxEthCC.gif", "reload", "换弹")],
+         "官方抢先展示；深绿配蓝色线条，醒目的弹鼓与枪身上方机械结构在检视时有独立动作。"),
+        ("origin12-gummy-bear", "Origin12-小熊软糖", "Origin12", "霰弹枪", "cfm-origin12-gummy",
+         "rlsYEObtmtAnxeg.jpg", [("EBOcblbtmtAnxnB.gif", "reload", "换弹")],
+         "扭蛋机抢先展示；半透明糖果弹鼓，换弹时出现掉落的软糖。"),
+        ("m4a1-thunder-king", "M4A1-雷暴王者", "M4A1", "步枪", "cfm-m4a1-thunder",
+         "mzQHdQbtpcmxDDo.jpg", [("HEkXYcbtpcmxEaA.gif", "equip", "切出")],
+         "体验服展示；金银枪身、前端兽首和应急闪光弹挂件。"),
+        ("m4a1-thunder-king-flash", "炫闪·M4A1-雷暴王者", "M4A1", "步枪", "cfm-m4a1-thunder",
+         "gknxJgbtpcmxDDA.jpg", [("mdfyWobtpcmxDFk.gif", "inspect", "检视"), ("IPmDYJbtpcmxEdg.gif", "equip", "切出")],
+         "体验服展示；相比普通版有白色雷电环绕和淡紫色核心光效。"),
+        ("g3a3-fengchu-flash", "炫闪·G3A3-凤雏", "G3A3", "步枪", "cfm-fengchu-flash",
+         "VxwUAKbtnCxjqrh.jpg", [("LjvLfGbtnCxjqqD.gif", "showcase", "外观展示")],
+         "官方武器介绍；墨蓝暗紫底色配金色凤凰描边。"),
+        ("usp-thunder-king", "USP-雷暴王者", "USP", "手枪", "cfm-league-s1",
+         "xHbWPrbtpxdnaCk.gif", [("xHbWPrbtpxdnaCk.gif", "showcase", "局内外观")],
+         "S1 赏金令首发阵容；兽纹枪体和橙色能量发光区域。"),
+        ("qsz92-gai", "QSZ92-盖", "QSZ92", "手枪", "cfm-league-s1",
+         "rhqQRXbtpxdnaAz.gif", [("rhqQRXbtpxdnaAz.gif", "showcase", "局内外观")],
+         "S1 赏金令首发阵容；暗紫底色、霓虹色线条和红色核心。"),
+        ("kurou-whip", "苦肉鞭", "鞭", "近战武器", "cfm-league-s1",
+         "BIoRyNbtpxdnbdh.gif", [("BIoRyNbtpxdnbdh.gif", "showcase", "局内外观")],
+         "S1 赏金令首发阵容；红粉色骨节外观，挥动时有红色烟雾。"),
+        ("royal-soul-gilded", "王者之魄-炫金万化", "M4A1", "步枪", "cfm-league-s1",
+         "sbkRBjbtpxdnbbB.gif", [("sbkRBjbtpxdnbbB.gif", "showcase", "局内外观")],
+         "S1 赏金令公布的王者之魄炫金皮肤；相较原枪增加金色覆盖。"),
+    ]
+    image_base = 'https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/'
+    articles = {}
+    for key, (page, scope) in sources.items():
+        document, meta = fetcher.fetch(page)
+        body = document.decode('utf-8')
+        author = re.search(r'class="article-author"[^>]*>\s*穿越火线手游\s*</span>', body)
+        origin = re.search(r'class="article-origin"[^>]*>[^<]*来源[：:]\s*(?:官网|官方)', body)
+        if not author or not origin or 'data-article="content"' not in body:
+            raise RuntimeError('CFM official article attribution changed: ' + page)
+        articles[key] = (body.split('data-article="content"', 1)[1], meta)
+        requests.append(meta)
+
+    names = {row['name'] for row in entries}
+    for slug, name, weapon, category, key, picture, animations, description in specimens:
+        page, scope = sources[key]
+        article, meta = articles[key]
+        assets = {picture, *(filename for filename, _, _ in animations)}
+        if name not in plain(article) or any(filename not in article for filename in assets):
+            raise RuntimeError('CFM official article lacks the reviewed target: ' + name)
+        if name in names:
+            raise RuntimeError('CFM official selection duplicates a catalogue name: ' + name)
+        names.add(name)
+        typ = 'melee' if category == '近战武器' else 'gun'
+        weapon_id = 'cfm-weapon-' + hashlib.sha256(weapon.encode()).hexdigest()[:12]
+        item = base_record('cf-mobile', 'cfm-' + slug, name, weapon, weapon_id, typ, page,
+                           '穿越火线手游官方稿件 · 17173 转载', slug, image_base + picture, meta['retrievedAt'], previous)
+        item.update(category=category, description=description, versionScope=scope, tags=['官方外观',scope])
+        item['image'].update(sourceType='official', kind='in_game', provider='穿越火线手游官方稿件',
+                             caption='原稿中与该武器外观对应的图。取自' + scope + '。')
+        for filename, action, title in animations:
+            url = image_base + filename
+            raw, animation_meta = fetcher.fetch(url, page)
+            with Image.open(BytesIO(raw)) as image:
+                if image.format != 'GIF' or not image.is_animated:
+                    raise RuntimeError('CFM source is not the reviewed animation: ' + url)
+                image.seek(image.n_frames - 1)
+                image.load()
+            requests.append(animation_meta)
+            item['media'].append(dict(
+                id='cfm-gif-' + filename.removesuffix('.gif'), kind=action, provider='gif', url=url,
+                title=name+' · '+title, sourcePageUrl=page, sourceName=item['sourceName'],
+                sourceType='official', reviewStatus='sample_reviewed', reviewedAt=animation_meta['retrievedAt'][:10],
+                reviewNote='已对照同一武器段落和动图抽帧核对动作。范围为'+scope+'。', versionScope=scope,
+                authorEvidence={'type':'publisher_attribution','pageUrl':page,'pageAuthor':'穿越火线手游'}))
+        entries.append(item)
 
 
 def archive_cfm_images(fetcher,entries,requests):

@@ -91,3 +91,9 @@
 下载原片、搜索候选、剪辑草稿和主代理验收回执保留在被忽略的 `local-only/item-demo-research/`，公开构建只复制已验收的 `assets/tactical-demos/` 与条目元数据。页面没有面向开发者的审核状态筛选。
 
 运行 `node scripts/validate_tactical_items.cjs` 检查 136 段元数据、来源、审核时间、272 个资源哈希、MP4 快速起播结构及页面/导出；运行 `python scripts/validate_tactical_clips.py`（需 ffmpeg、ffprobe 在 PATH 中，或用同名参数指定路径）逐段检查真实编码、时长、尺寸、无声轨并完整解码。浏览器另验播放、半速、循环、关闭暂停和手机布局。
+
+## 2026-11-16 夺宝猎人赛季道具
+
+主题道具目录加入橡胶果实、索隆的三刀流、烧烧果实、乌索普弹弓和特别巴基弹。各项详录分别记录大逃杀的动作、闪电战的掉落和日期。两种恶魔果实每局各一颗是闪电战的规则。该模式的三刀流可从三类金色容器取得，乌索普弹弓属于金色补给空投中的传说物资。[大逃杀首发说明](https://communities.epicgames.com/thread/set-sail-for-fortnite-treasure-hunters-the-greatest-adventure-of-all-time/Pmud) · [闪电战 43.00](https://communities.epicgames.com/thread/v43-00-blitz-royale-update-notes/RnOd) · [43.10 更新说明](https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG)
+
+五段演示来自 Epic 公开媒体包的游戏内镜头。按实际动作截取约 1.1 至 3.7 秒，保留公开原片和源画面时间。巴基弹镜头的归档日在道具开放前，机制与上线依据另指向 43.10 公告。伤害、冷却、半径或概率未获官方公布时在相应道具中明示。现有 141 项带图和可播放媒体，其中 13 项有关联版本详录。141 段视频和封面通过 FFmpeg 解码。[Epic 官方媒体包入口](https://epic-games-france.prezly.com/one-piece-aap-rocky-et-bien-dautres-rejoignent-la-chasse-aux-tresors-de-fortnite-pour-la-plus-grande-aventure-de-tous-les-temps)

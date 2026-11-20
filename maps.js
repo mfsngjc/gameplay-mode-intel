@@ -5,9 +5,10 @@ function readMapCollected() {
     return new Set(Array.isArray(value) ? value.filter((id) => typeof id === 'string') : []);
   } catch { return new Set(); }
 }
-const mapArchive = { entries: [], game: 'all', loading: true, error: false, zoom: 1, mapCollected: readMapCollected() };
+const mapArchive = { entries: [], game: 'all', format: 'all', loading: true, error: false, zoom: 1, mapCollected: readMapCollected() };
 const mapCategoryLabels = { operations: '烽火地带', warfare: '全面战场', campaign: '黑鹰坠落', 'battle-royale': '大逃杀' };
 const mapGameLabels = { all: '全部地图', delta: '三角洲行动', battlefield6: '战地风云 6', valorant: '无畏契约', pubg: 'PUBG', apex: 'Apex Legends' };
+const mapFormatLabels = { all: '全部资料', interactive: '互动地图', plan: '2D 平面图', image: '官方地图图像' };
 let mapTrigger = null;
 let mapPan = null;
 
@@ -41,41 +42,75 @@ function mapGameKey(entry) {
   return entry.gameKey || ({ '三角洲行动': 'delta', '战地风云 6': 'battlefield6', '无畏契约': 'valorant', PUBG: 'pubg', 'Apex Legends': 'apex' }[entry.game] || '');
 }
 
+function hasInteractiveMap(entry) {
+  return mapGameKey(entry) === 'delta' && Boolean(entry.tileBaseUrl);
+}
+
+function mapDescription(entry) {
+  const lines = (entry.description || '').trim().split(/(?<=。)\s*/).filter(Boolean);
+  return [...new Set(lines)].join('');
+}
+
+function mapPrimaryFormat(entry) {
+  return hasInteractiveMap(entry) ? 'interactive' : entry.planImageUrl ? 'plan' : 'image';
+}
+
 function renderMapArchive() {
   const grid = document.querySelector('#mapArchiveGrid');
+  document.querySelectorAll('[data-map-game]').forEach(button =>
+    button.setAttribute('aria-pressed', String(button.dataset.mapGame === mapArchive.game)));
   grid.classList.toggle('small-view', (window.CardView?.get?.() || document.body.dataset.cardSize || 'small') === 'small');
   window.CardView?.syncControls?.();
   const words = state.query.toLocaleLowerCase().trim().split(/\s+/);
-  const entries = mapArchive.entries.filter((entry) =>
-    (mapArchive.game === 'all' || mapGameKey(entry) === mapArchive.game) &&
-    words.every((word) => [entry.name, entry.id, entry.variant, entry.game, mapCategoryLabels[entry.category], mapGameLabels[mapGameKey(entry)]].join(' ').toLocaleLowerCase().includes(word)));
-  document.querySelector('#mapResultCount').textContent = mapArchive.loading ? '正在读取地图…' : `已显示 ${entries.length} / ${mapArchive.entries.length} 张地图`;
+  const scoped = mapArchive.entries.filter(entry => mapArchive.game === 'all' || mapGameKey(entry) === mapArchive.game);
+  const formats = new Set(scoped.map(mapPrimaryFormat));
+  const formatSelect = document.querySelector('#mapFormatSelect');
+  formatSelect.innerHTML = Object.entries(mapFormatLabels).filter(([id]) => id === 'all' || formats.has(id) || id === mapArchive.format)
+    .map(([id, label]) => '<option value="' + id + '">' + label + '</option>').join('');
+  formatSelect.value = mapArchive.format;
+  document.querySelector('#mapFormatField').hidden = formats.size < 2 && mapArchive.format === 'all';
+  const entries = scoped.filter((entry) =>
+    (mapArchive.format === 'all' || mapPrimaryFormat(entry) === mapArchive.format) &&
+    words.every((word) => [entry.name, entry.originalName, entry.id, entry.variant, entry.game, mapCategoryLabels[entry.category], mapGameLabels[mapGameKey(entry)]].join(' ').toLocaleLowerCase().includes(word)));
+  document.querySelector('#mapResultCount').textContent = mapArchive.loading ? '正在读取地图…' : `${entries.length} 张`;
   if (mapArchive.loading) { grid.innerHTML = '<p class="context-note">正在读取地图资料…</p>'; return; }
   if (mapArchive.error) {
     grid.innerHTML = '<div class="empty-state"><h3>地图资料暂时无法读取</h3><button class="button" data-map-retry>重新加载</button></div>'; return;
   }
   if (!entries.length) {
-    grid.innerHTML = '<div class="empty-state">' + icon('map') + '<h3>没有找到匹配的地图</h3><p>试试地图中文名，或清除搜索条件。</p></div>'; return;
+    grid.innerHTML = '<div class="empty-state">' + icon('map') + '<h3>没有找到匹配的地图</h3><p>可按地图名或游戏查找。</p><button class="button" type="button" data-map-reset>清除筛选</button></div>'; return;
   }
   grid.innerHTML = entries.map((entry) => {
-    const isDelta = mapGameKey(entry) === 'delta';
+    const isInteractive = hasInteractiveMap(entry);
     const isPlanCover = ['pubg', 'apex'].includes(mapGameKey(entry));
-    const coverLabel = mapCategoryLabels[entry.category] || mapGameLabels[mapGameKey(entry)] || '官方地图';
-    const coverHint = isDelta ? '打开互动地图' : (isPlanCover ? '查看 2D 平面图' : '查看官方地图视觉');
-    const downloadLabel = isDelta ? '下载底图' : '下载图片';
+    const primaryLabel = isInteractive ? '打开互动地图' : (entry.planImageUrl ? '查看 2D 平面图' : '查看地图');
+    const remoteImage = /^https?:/.test(entry.imageUrl);
     const imageAlt = isPlanCover ? '2D 游戏内平面图' : '官方地图视觉图';
     const wikiLink = entry.wikiUrl ? '<a href="' + escapeHtml(entry.wikiUrl) + '" target="_blank" rel="noopener noreferrer">Wiki ↗</a>' : '';
+    const sourceUrl = safeUrl(entry.sourceUrl);
+    const sourceLink = sourceUrl ? '<a href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noopener noreferrer">来源页面 ↗</a>' : '';
     const collected = mapArchive.mapCollected.has(entry.id);
+    const id = escapeHtml(entry.id), name = escapeHtml(entry.name);
+    const download = '<a href="' + escapeHtml(entry.imageUrl) + '"' + (remoteImage
+      ? ' target="_blank" rel="noopener noreferrer">打开原图 ↗'
+      : ' download="' + name + (entry.imageUrl.endsWith('.png') ? '.png' : '.jpg') + '">下载底图') + '</a>';
+    const description = mapDescription(entry);
+    const facts = [
+      entry.mapSize && '规模：' + escapeHtml(entry.mapSize),
+      entry.supportedModes && '支持：' + escapeHtml(entry.supportedModes)
+    ].filter(Boolean).join(' · ');
     return '<article class="map-archive-card">' +
-    '<button class="map-preview-button" type="button" data-map-interactive="' + escapeHtml(entry.id) + '" aria-label="查看' + escapeHtml(entry.name) + '地图">' +
-    '<img src="' + escapeHtml(entry.thumbnailUrl) + '" alt="' + escapeHtml(entry.name) + escapeHtml(imageAlt) + '" width="512" height="288" loading="lazy">' +
-    '<span class="map-cover-label">' + escapeHtml(coverLabel) + '</span><span class="map-preview-hint">' + icon('search') + escapeHtml(coverHint) + '</span></button>' +
-    '<div class="map-card-info"><p class="map-card-game">' + escapeHtml(entry.game) + '</p><h2>' + escapeHtml(entry.name) + '</h2><p>' + escapeHtml(entry.variant) + '</p>' +
-    (entry.description ? '<p class="map-card-description">' + escapeHtml(entry.description) + '</p>' : '') +
-    (entry.mapSize || entry.supportedModes ? '<p class="map-card-facts">' + (entry.mapSize ? '规模：' + escapeHtml(entry.mapSize) : '') + (entry.supportedModes ? ' · 支持：' + escapeHtml(entry.supportedModes) : '') + '</p>' : '') +
-    '<div class="map-card-actions"><button type="button" class="map-collect-button ' + (collected ? 'is-collected' : '') + '" data-map-collect="' + escapeHtml(entry.id) + '" aria-label="' + (collected ? '取消收藏 ' : '收藏 ') + escapeHtml(entry.name) + '" aria-pressed="' + collected + '">' + icon('bookmark') + (collected ? '已收藏' : '收藏') + '</button><a href="' + escapeHtml(entry.imageUrl) + '" download="' + escapeHtml(entry.name) + '.jpg">' + icon('download') + downloadLabel + '</a>' +
-    (entry.planImageUrl ? '<button type="button" data-map-plan="' + escapeHtml(entry.id) + '">查看 2D 平面图</button>' : '') +
-    ((!entry.planImageUrl || entry.planImageUrl !== entry.imageUrl) ? '<button type="button" data-map-open="' + escapeHtml(entry.id) + '">查看静态底图</button>' : '') + wikiLink + '</div></div></article>';
+    '<button class="map-preview-button" type="button" tabindex="-1" data-map-interactive="' + id + '" aria-label="' + primaryLabel + '：' + name + '">' +
+    '<img src="' + escapeHtml(entry.thumbnailUrl) + '" alt="' + name + escapeHtml(imageAlt) + '" width="512" height="288" loading="lazy"></button>' +
+    '<div class="map-card-info"><p class="map-card-game">' + escapeHtml(entry.game) + '</p><h3>' + name + '</h3><p class="map-card-variant">' + escapeHtml(entry.variant) + '</p>' +
+    (description ? '<p class="map-card-description">' + escapeHtml(description) + '</p>' : '') +
+    (facts ? '<p class="map-card-facts">' + facts + '</p>' : '') +
+    '<div class="map-card-actions"><button type="button" class="map-card-primary" data-map-interactive="' + id + '" aria-label="' + primaryLabel + '：' + name + '">' + primaryLabel + ' <span aria-hidden="true">→</span></button>' +
+    '<button type="button" class="map-collect-button ' + (collected ? 'is-collected' : '') + '" data-map-collect="' + id + '" aria-label="' + (collected ? '取消收藏 ' : '收藏 ') + name + '" aria-pressed="' + collected + '">' + icon('bookmark') + '</button>' +
+    '<details class="map-card-options"><summary>底图与来源</summary><div>' + download +
+    (isInteractive && entry.planImageUrl ? '<button type="button" data-map-plan="' + id + '">查看 2D 平面图</button>' : '') +
+    (isInteractive || (entry.planImageUrl && entry.planImageUrl !== entry.imageUrl) ? '<button type="button" data-map-open="' + id + '">查看静态底图</button>' : '') +
+    sourceLink + wikiLink + '</div></details></div></div></article>';
   }).join('');
 }
 
@@ -103,6 +138,7 @@ function openMapPreview(id, kind = 'cover') {
   const entry = mapArchive.entries.find((item) => item.id === id);
   if (!entry) return;
   const isPlan = kind === 'plan' && entry.planImageUrl;
+  const isTileMap = hasInteractiveMap(entry);
   setEntryTitle(entry.name);
   document.querySelector('#mapDetailShare').innerHTML = shareLinkButton(entry.name, entryHash('maps', id, { mapView: isPlan ? 'plan' : 'cover' }));
   const imageUrl = isPlan ? entry.planImageUrl : entry.imageUrl;
@@ -112,13 +148,13 @@ function openMapPreview(id, kind = 'cover') {
   document.querySelector('#mapDetailTitle').textContent = entry.name;
   document.querySelector('#mapDetailSubtitle').textContent = isPlan
     ? entry.variant + ' · ' + entry.planType
-    : entry.variant + ' · ' + (entry.gameKey === 'delta' ? '官方底图' : '官方地图视觉图');
+    : entry.variant + ' · ' + (isTileMap ? '官方底图' : '官方地图视觉图');
   const description = document.querySelector('#mapDetailDescription');
-  description.textContent = [entry.description, entry.mapSize ? '地图规模：' + entry.mapSize : '', entry.supportedModes ? '支持模式：' + entry.supportedModes : ''].filter(Boolean).join('  ');
-  description.hidden = !entry.description;
+  description.textContent = [mapDescription(entry), entry.mapSize ? '地图规模：' + entry.mapSize : '', entry.supportedModes ? '支持模式：' + entry.supportedModes : ''].filter(Boolean).join('  ');
+  description.hidden = !description.textContent;
   const image = document.querySelector('#mapDetailImage');
   image.src = imageUrl;
-  image.alt = entry.name + (isPlan ? '2D 游戏内平面图' : (entry.gameKey === 'delta' ? '官方俯视底图' : '官方地图视觉图'));
+  image.alt = entry.name + (isPlan ? '2D 游戏内平面图' : (isTileMap ? '官方俯视底图' : '官方地图视觉图'));
   image.hidden = false;
   document.querySelector('#mapImageError').hidden = true;
   document.querySelector('#mapDetailSource').href = sourceUrl;
@@ -128,7 +164,7 @@ function openMapPreview(id, kind = 'cover') {
   wiki.href = entry.wikiUrl || '#';
   wiki.hidden = !entry.wikiUrl;
   const descriptionCredit = entry.descriptionSource ? '介绍：' + entry.descriptionSource + ' · ' : '';
-  document.querySelector('#mapDetailCredit').textContent = entry.gameKey === 'delta'
+  document.querySelector('#mapDetailCredit').textContent = isTileMap
     ? '底图 © 腾讯 · 点位、楼层与版本信息以官方工具为准'
     : isPlan
       ? descriptionCredit + '平面图来源：' + entry.planSource + ' · 地图版本和点位名称以来源页面为准'
@@ -148,7 +184,7 @@ function openMapPreview(id, kind = 'cover') {
   }
   const download = document.querySelector('#mapDetailDownload');
   download.href = imageUrl;
-  download.download = entry.name + (isPlan ? '-2d-plan' : '') + (isPlan && imageUrl.endsWith('.png') ? '.png' : '.jpg');
+  download.download = entry.name + (isPlan ? '-2d-plan' : '') + (imageUrl.endsWith('.png') ? '.png' : '.jpg');
   document.querySelector('#mapDialog').showModal();
   const collectButton = document.querySelector('#mapDetailCollect');
   collectButton.innerHTML = icon('bookmark') + (mapArchive.mapCollected.has(entry.id) ? '已收藏地图' : '收藏地图');
@@ -228,6 +264,10 @@ function closeOpenMap(updateUrl) {
 }
 
 function initMapArchive() {
+  document.querySelector('#mapFormatSelect').addEventListener('change', event => {
+    mapArchive.format = event.target.value;
+    syncFilterRoute(); renderMapArchive();
+  });
   document.addEventListener('click', (event) => {
     const interactive = event.target.closest('[data-map-interactive]');
     if (interactive) openMapDetail(interactive.dataset.mapInteractive);
@@ -236,13 +276,23 @@ function initMapArchive() {
     const open = event.target.closest('[data-map-open]');
     if (open) openMapDetail(open.dataset.mapOpen, 'cover');
     const collect = event.target.closest('[data-map-collect]');
-    if (collect) { toggleMapCollect(collect.dataset.mapCollect); return; }
+    if (collect) {
+      toggleMapCollect(collect.dataset.mapCollect);
+      if (!collect.isConnected) document.querySelector('[data-map-collect="' + CSS.escape(collect.dataset.mapCollect) + '"]')?.focus({ preventScroll: true });
+      return;
+    }
     if (event.target.closest('#mapDetailCollect')) { toggleMapCollect(event.target.closest('#mapDetailCollect').dataset.mapCollect); return; }
     const game = event.target.closest('[data-map-game]');
     if (game) {
+      if (game.dataset.mapGame === mapArchive.game) return;
       mapArchive.game = game.dataset.mapGame;
-      document.querySelectorAll('[data-map-game]').forEach((button) => button.setAttribute('aria-pressed', String(button === game)));
-      renderMapArchive();
+      mapArchive.format = 'all';
+      syncFilterRoute(); renderMapArchive();
+    }
+    if (event.target.closest('[data-map-reset]')) {
+      mapArchive.game = mapArchive.format = 'all'; state.query = ''; document.querySelector('#searchInput').value = '';
+      syncFilterRoute(); renderMapArchive();
+      document.querySelector('[data-map-game="all"]').focus();
     }
     if (event.target.closest('[data-map-retry]')) readRoute();
     const zoom = event.target.closest('[data-map-zoom]');
@@ -302,8 +352,8 @@ function initMapArchive() {
 function openInteractiveMap(id) {
   const entry = mapArchive.entries.find(item => item.id === id);
   if (!entry) return;
-  if (mapGameKey(entry) !== 'delta') {
-    openMapPreview(id, ['pubg', 'apex'].includes(mapGameKey(entry)) ? 'plan' : 'cover');
+  if (!hasInteractiveMap(entry)) {
+    openMapPreview(id, entry.planImageUrl ? 'plan' : 'cover');
     return;
   }
   setEntryTitle(entry.name);

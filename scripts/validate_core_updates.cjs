@@ -11,13 +11,33 @@ const modes = JSON.parse(read('data/modes.json'));
 const catalogue = JSON.parse(read('data/tactical-items.json'));
 const evidence = JSON.parse(read('data/core-update-image-sources.json'));
 const coverageGames = JSON.parse(read('data/core-update-source-coverage.json')).games;
+const sourceHostsByGame = {
+  'Fortnite': ['www.fortnite.com', 'www.epicgames.com', 'communities.epicgames.com'],
+  'PUBG': ['pubg.com', 'www.pubg.com', 'store.steampowered.com', 'steamcommunity.com'],
+  'PUBG Mobile': ['www.pubgmobile.com', 'pubgmobile.jp', 'www.pubgmobile.jp'],
+  'Free Fire': ['ff.garena.com'],
+  '和平精英': ['gp.qq.com', 'apps.apple.com', 'www.taptap.cn'],
+  'Apex Legends': ['www.ea.com', 'forums.ea.com', 'store.steampowered.com'],
+  '三角洲行动': ['df.qq.com', 'www.playdeltaforce.com', 'playdeltaforce.com', 'deltaforce.garena.com', 'store.steampowered.com', 'steamcommunity.com', 'steamstore-a.akamaihd.net']
+};
+const categories = new Set(['map_poi', 'map_interactable', 'equipment', 'traversal',
+  'economy_loot', 'revive_teamplay', 'combat_rules', 'in_match_usability']);
+const imageHosts = new Set(['cdn.wildflamestudio.com', 'drop-assets.ea.com', 'cdn2.unrealengine.com', 'cms-assets.unrealengine.com', 'web.df.garena.com', 'i.ytimg.com',
+  'wstatic-prod-boc.krafton.com', 'shared.akamai.steamstatic.com', 'clan.akamai.steamstatic.com',
+  'clan.fastly.steamstatic.com', 'steamstore-a.akamaihd.net', 'game.gtimg.cn', 'static.gametalk.qq.com', 'gp.qq.com',
+  'freefiremobile-a.akamaihd.net', 'overseas-img.qq.com',
+  'www.pubgmobile.com', 'pubgmobile.jp', 'www.pubgmobile.jp']);
+const brakkeshPublisherGuide = 'https://news.17173.com/content/11162026/001205869.shtml';
+const brakkeshPublisherImage = 'https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/IcIJaBbuhpFvsxl.png';
 const ids = new Set(modes.map((r) => r.id));
 for (const record of updates) {
   assert.ok(!ids.has(record.id), 'Unique ID: ' + record.id); ids.add(record.id);
   assert.equal(record.contentKind, 'core_update');
   assert.equal(record.publicationStatus, 'ready');
   assert.ok(record.sourceModeIds.every((id) => modes.some((m) => m.id === id)), 'Related modes exist');
-  assert.ok(['ff.garena.com', 'www.ea.com', 'www.fortnite.com'].includes(new URL(record.sourceUrl).hostname), 'Approved official source host');
+  const isBrakkeshPublisherGuide = record.game === '三角洲行动' && record.sourceUrl === brakkeshPublisherGuide;
+  assert.ok(sourceHostsByGame[record.game]?.includes(new URL(record.sourceUrl).hostname) ||
+    isBrakkeshPublisherGuide, record.id + ': approved official source host for game');
   const asset = evidence.images.find((r) => r.recordId === record.id);
   assert.ok(asset, 'Image provenance for ' + record.id);
   assert.equal(asset.path, record.imageUrl);
@@ -25,7 +45,24 @@ for (const record of updates) {
   const bytes = fs.readFileSync(path.join(root, asset.path));
   assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), asset.sha256, 'Unmodified official image');
   assert.ok(asset.dimensions[0] >= 600 && asset.dimensions[1] >= 300);
-  assert.match(new URL(asset.assetSourceUrl).hostname, /^(cdn\.wildflamestudio\.com|lh[\w-]*\.googleusercontent\.com|drop-assets\.ea\.com|cdn2\.unrealengine\.com|i\.ytimg\.com)$/);
+  const imageHost = new URL(asset.assetSourceUrl).hostname;
+  const sourcePage = new URL(asset.sourcePageUrl);
+  const epicPublisherPage = sourcePage.hostname === 'www.fortnite.com' &&
+    /^\/(?:@|%40)epic\//i.test(sourcePage.pathname);
+  const epicCommunityImage = record.game === 'Fortnite' &&
+    (sourcePage.hostname === 'communities.epicgames.com' || epicPublisherPage) &&
+    imageHost === 'fn-creator-community-cdn.qstv.on.epicgames.com';
+  const peacekeeperStoreImage = record.game === '和平精英' && sourcePage.hostname === 'apps.apple.com' &&
+    sourcePage.pathname === '/cn/app/id1321803705' && sourcePage.searchParams.has('eventid') &&
+    imageHost === 'is1-ssl.mzstatic.com';
+  const iceboundTrainGuideImage = record.game === '和平精英' && sourcePage.hostname === 'www.bilibili.com' &&
+    sourcePage.pathname === '/video/BV1riW66VEC7/' && imageHost === 'i2.hdslb.com' &&
+    new URL(asset.assetSourceUrl).pathname === '/bfs/archive/253397558caab507434e14d067bee5ef849a75c4.jpg';
+  const isBrakkeshPublisherImage = isBrakkeshPublisherGuide &&
+    asset.sourcePageUrl === brakkeshPublisherGuide && asset.assetSourceUrl === brakkeshPublisherImage;
+  assert.ok(imageHosts.has(imageHost) || /^lh[\w-]*\.googleusercontent\.com$/.test(imageHost) ||
+    epicCommunityImage || peacekeeperStoreImage || iceboundTrainGuideImage ||
+    isBrakkeshPublisherImage, record.id + ': approved official image host');
   if (new URL(asset.assetSourceUrl).hostname === 'i.ytimg.com') {
     const id = new URL(asset.assetSourceUrl).pathname.split('/')[2];
     assert.ok(record.videos?.some(v => v.sourceType === 'official' && v.channel === 'Fortnite' && new URL(v.url).searchParams.get('v') === id), 'Video cover must belong to a verified official video');
@@ -35,8 +72,17 @@ for (const record of updates) {
     assert.ok(record.tacticalProfile.parameters.length);
     assert.ok(record.videos?.length);
     for (const video of record.videos) {
-      assert.equal(new URL(video.url).hostname, 'www.youtube.com');
-      assert.match(new URL(video.url).searchParams.get('v'), /^[\w-]{11}$/);
+      const media = new URL(video.url);
+      assert.equal(media.protocol, 'https:');
+      if (media.hostname === 'epicgames.ent.box.com') {
+        assert.equal(record.game, 'Fortnite');
+        assert.equal(video.sourceType, 'official');
+        assert.equal(video.channel, 'Epic Games');
+        assert.match(media.pathname, /^\/s\/[a-z0-9]+\/file\/\d+$/);
+      } else {
+        assert.equal(media.hostname, 'www.youtube.com');
+        assert.match(media.searchParams.get('v'), /^[\w-]{11}$/);
+      }
       assert.ok(video.title && video.channel && video.publishedDate && video.versionLabel && video.watchFor);
     }
     for (const shot of record.screenshots || []) {

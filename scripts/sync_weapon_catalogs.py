@@ -35,6 +35,8 @@ VAL_SOURCE = "https://valorant-api.com/"
 CS_SOURCE = "https://github.com/ByMykel/CSGO-API"
 RGX_BLADE_LEVEL = "d67af30b-4b2a-b1e6-3ac2-6aba74b885d4"
 RGX_BLADE_REVIEWED_URL = "https://valorant.dyn.riotcdn.net/x/videos/release-13.09/99d27d45-4e1f-75ba-df79-c18f1b610628_default_universal.mp4"
+# The 13.10 URL returned identical bytes to the reviewed 13.09 sample.
+RGX_BLADE_REVIEWED_URLS = {RGX_BLADE_REVIEWED_URL, RGX_BLADE_REVIEWED_URL.replace("release-13.09/", "release-13.10/")}
 # Curated official posts supplement the client catalogue. These are attached by
 # stable skin UUID so later catalogue refreshes retain the verified association.
 # source_confirmed describes the official post and metadata, not frame review.
@@ -254,7 +256,7 @@ def build_valorant(raw: dict, sources: list[dict], previous: dict, timestamp: st
                 level_name = clean(level.get("displayName")) or (name + " 等级 " + str(position))
                 effect_type = (level.get("levelItem") or "").split("::")[-1] or "base"
                 video = val_video("val-level-" + level["uuid"], level.get("streamedVideo"), level_name + " · 等级预览", page, levelId=level["uuid"])
-                if video and level["uuid"] == RGX_BLADE_LEVEL and video["url"] == RGX_BLADE_REVIEWED_URL:
+                if video and level["uuid"] == RGX_BLADE_LEVEL and video["url"] in RGX_BLADE_REVIEWED_URLS:
                     video["reviewStatus"] = "sample_reviewed"
                     video["containsActions"] = ["equip", "attack", "inspect"]
                     video["reviewedAt"] = "2026-11-02"

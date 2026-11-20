@@ -29,31 +29,27 @@
 .weapon-card-art img { display:block; width:100%; height:100%; object-fit:contain; }
 .weapon-art-kind { position:absolute; left:11px; top:9px; font-size:10px; color:#62755b; max-width:calc(100% - 22px); }
 .weapon-art-fallback { font-size:11px; color:#72816a; text-align:center; padding:12px; }
-.weapon-card-body { min-width:0; padding:16px 17px 0; flex:1; display:flex; flex-direction:column; }
-.weapon-card-eyebrow { display:flex; justify-content:space-between; flex-wrap:wrap; gap:4px; color:#69815d; font-size:10px; margin:0 0 9px; }
+.weapon-card-body { min-width:0; padding:14px 16px 0; flex:1; display:flex; flex-direction:column; gap:6px; }
+.weapon-card-eyebrow { display:flex; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; gap:2px 6px; color:#69815d; font-size:12px; margin:0; }
 .weapon-card-eyebrow > span { color:#7d8775; }
-.workspace .weapon-card h3 { margin:0 0 5px; font-size:16px; line-height:1.5; }
+.workspace .weapon-card h3 { margin:0; font-size:17px; line-height:1.5; }
 .workspace .weapon-card h3 button { background:none; border:0; padding:0; text-align:left; color:#2c4834; font:inherit; overflow-wrap:anywhere; }
-.weapon-card-english { font-size:11px; line-height:1.6; color:#8a9283; margin:0 0 12px; overflow-wrap:anywhere; }
-.weapon-card-tags { display:flex; align-items:center; gap:5px; flex-wrap:wrap; font-size:10px; margin-top:auto; padding-bottom:14px; color:#7b8770; }
+.weapon-card-english { font-size:11px; line-height:1.6; color:#8a9283; margin:0; overflow-wrap:anywhere; }
+.weapon-card-tags { display:flex; align-content:start; align-items:flex-start; gap:5px; flex-wrap:wrap; font-size:11px; margin-top:auto; padding-bottom:4px; color:#7b8770; }
 .weapon-card-tags > span { padding:3px 6px; border:1px solid #e6ebdf; border-radius:3px; line-height:1.4; }
 .weapon-card-tags .has-media { background:#edf4e5; color:#4b743d; border-color:#dfebd1; }
-.weapon-card-bottom { display:flex; align-items:center; justify-content:space-between; min-height:44px; gap:7px; border-top:1px solid #edf0e7; }
-.weapon-card-bottom > span { color:#8c9583; font-size:9px; line-height:1.5; }
-.weapon-card-bottom > div { display:flex; gap:2px; align-items:center; }
+.weapon-card-bottom { display:flex; align-items:center; justify-content:space-between; min-height:46px; gap:6px; border-top:1px solid #edf0e7; }
+.weapon-card-bottom > span { color:#8c9583; font-size:11px; line-height:1.5; overflow-wrap:anywhere; }
+.weapon-card-bottom > div { display:flex; gap:4px; flex:none; align-items:center; }
 .workspace .weapon-card-bottom .icon-button { width:30px; height:32px; border:0; }
 .workspace .weapon-card-bottom .icon-button svg { width:14px; height:14px; }
-.workspace .weapon-card-open { display:flex; align-items:center; gap:3px; background:none; border:0; color:#4f7043; font-size:11px; padding:7px 0 7px 6px; }
+.workspace .weapon-card-open { display:flex; align-items:center; gap:4px; min-height:36px; background:none; border:0; color:#4f7043; font-size:12px; padding:4px 0 4px 4px; }
 .weapon-card-open svg { width:13px; height:13px; }
 body[data-card-size="small"] .weapon-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:11px; }
 body[data-card-size="small"] .weapon-card { display:grid; grid-template-columns:136px minmax(0,1fr); align-items:stretch; }
 body[data-card-size="small"] .weapon-card-art { height:100%; min-height:139px; border-bottom:0; border-right:2px solid var(--skin-rarity); padding:28px 9px 18px; }
 body[data-card-size="small"] .weapon-card-body { padding:12px 13px 0; }
 body[data-card-size="small"] .workspace .weapon-card h3 { font-size:14px; }
-body[data-card-size="small"] .weapon-card-eyebrow { margin-bottom:5px; }
-body[data-card-size="small"] .weapon-card-english { font-size:10px; margin-bottom:8px; }
-body[data-card-size="small"] .weapon-card-tags { padding-bottom:9px; font-size:9px; }
-body[data-card-size="small"] .weapon-card-bottom { min-height:35px; }
 .weapon-detail-art { padding:35px 32px 18px; background:radial-gradient(ellipse at 50% 45%,#dce6d4,#f0f4ea 80%); }
 .weapon-detail-art > a { display:flex; justify-content:center; align-items:center; min-height:140px; }
 .weapon-detail-art img { display:block; width:100%; max-height:300px; object-fit:contain; }
@@ -123,7 +119,7 @@ body[data-card-size="small"] .weapon-card-bottom { min-height:35px; }
   body[data-card-size="small"] .weapon-card { grid-template-columns:100px minmax(0,1fr); }
   body[data-card-size="small"] .weapon-card-art { padding:29px 7px 16px; }
   body[data-card-size="small"] .weapon-card-body { padding:11px 10px 0; }
-  .weapon-card-bottom > span { font-size:8px; } .weapon-art-kind { left:7px; font-size:9px; }
+  .weapon-art-kind { left:7px; font-size:10px; }
   .weapon-detail-art { padding:30px 18px 16px; } .weapon-detail-art img { max-height:210px; }
   .weapon-facts { grid-template-columns:minmax(0,1fr); } .weapon-embed-cover { min-height:140px; }
 }

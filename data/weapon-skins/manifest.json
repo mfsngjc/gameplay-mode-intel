@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-02T19:06:32Z",
-  "total": 15276,
+  "updatedAt": "2026-11-15T19:36:25.078790Z",
+  "total": 15295,
   "games": [
     {
       "id": "valorant",
       "name": "无畏契约",
       "url": "data/weapon-skins/valorant.json",
-      "count": 1391,
-      "meleeCount": 176,
+      "count": 1396,
+      "meleeCount": 177,
       "withVideoCount": 585,
       "withAnimationCount": 0,
-      "updatedAt": "2026-11-02T16:56:35Z",
+      "updatedAt": "2026-11-15T07:55:48Z",
       "coverage": {
-        "sourceRecordCount": 1433,
-        "cataloguedCount": 1391,
+        "sourceRecordCount": 1438,
+        "cataloguedCount": 1396,
         "excluded": {
           "random_favorite": 21,
           "default": 21
         },
         "weaponCount": 21,
-        "gunCount": 1215,
-        "meleeCount": 176,
+        "gunCount": 1219,
+        "meleeCount": 177,
         "withVideoCount": 585,
         "videoCount": 2746,
         "reviewedVideoCount": 2,
@@ -39,31 +39,32 @@
         "name": "Valorant-API",
         "type": "community_catalogue",
         "url": "https://valorant-api.com/",
-        "retrievedAt": "2026-11-02T16:56:35Z"
+        "retrievedAt": "2026-11-15T07:55:48Z"
       }
     },
     {
       "id": "delta-force",
       "name": "三角洲行动",
       "url": "data/weapon-skins/delta-force.json",
-      "count": 8,
+      "count": 9,
       "meleeCount": 6,
       "withVideoCount": 8,
       "withAnimationCount": 0,
-      "updatedAt": "2026-11-02T15:20:48.906015+00:00",
+      "updatedAt": "2026-11-15",
       "coverage": {
         "status": "partial",
         "catalogScope": "curated_featured",
         "complete": false,
-        "entryCount": 8,
+        "entryCount": 9,
         "entriesWithVideo": 8,
         "liveMetadataRefreshed": true,
-        "note": "首批精选资料，不代表本游戏全部历史皮肤。动作说明、视频身份与实际片段核验分别记录；未将首次采集时间或预告日期当作实际上线日期。",
+        "note": "精选官方原图及原片。另增 Garena Aurora 的 K437 外观；覆盖与国服另行记录。",
         "remaining": [
           "完整历史皮肤目录",
           "动作片段起止与触发条件",
           "精确首发日期与地区差异"
-        ]
+        ],
+        "officialAdditions20261115": 1
       },
       "source": {
         "name": "官方资料与经复核的原作者媒体选集",
@@ -74,16 +75,16 @@
       "id": "call-of-duty",
       "name": "使命召唤",
       "url": "data/weapon-skins/call-of-duty.json",
-      "count": 2343,
+      "count": 2345,
       "meleeCount": 135,
       "withVideoCount": 2,
       "withAnimationCount": 0,
-      "updatedAt": "2026-11-02T19:06:32Z",
+      "updatedAt": "2026-11-15",
       "coverage": {
         "status": "partial",
         "catalogScope": "observed_gamesatlas_cod_pc_blueprint_index",
         "complete": false,
-        "entryCount": 2343,
+        "entryCount": 2345,
         "entriesWithVideo": 2,
         "note": "逐件读取GamesAtlas公开端游蓝图目录；未混入CODM。作品和基础武器分开，不重复计入Warzone继承使用。该站内容和图像仍有缺漏，不代表COD全历史或官方完整资源。",
         "remaining": [
@@ -92,10 +93,10 @@
           "全部专属检视与触发条件",
           "蓝图准确首发日、国服与地区差异"
         ],
-        "cataloguedCount": 2369,
+        "cataloguedCount": 2371,
         "sourceBlueprintRows": 2369,
         "sourceConfigObjectsExcluded": 1,
-        "gunCount": 2208,
+        "gunCount": 2210,
         "meleeCount": 135,
         "pendingCount": 26,
         "uniqueRemoteImagesChecked": 2506,
@@ -169,7 +170,8 @@
           "authoritativeBasePages": 17,
           "unresolvedTypeConflicts": 0,
           "unresolvedCategoryConflicts": 0
-        }
+        },
+        "officialAdditions20261115": 2
       },
       "source": {
         "name": "GamesAtlas public PC blueprint catalogue",
@@ -236,11 +238,11 @@
       "id": "cf-mobile",
       "name": "穿越火线手游",
       "url": "data/weapon-skins/cf-mobile.json",
-      "count": 831,
-      "meleeCount": 132,
+      "count": 841,
+      "meleeCount": 133,
       "withVideoCount": 3,
-      "withAnimationCount": 406,
-      "updatedAt": "2026-11-02T18:11:03.573970Z",
+      "withAnimationCount": 415,
+      "updatedAt": "2026-11-15T19:36:25.078790Z",
       "coverage": {
         "status": "partial",
         "complete": false,
@@ -366,7 +368,7 @@
         "officialOldestIndexedDate": "2018-06-11 18:04:20",
         "officialNewestIndexedDate": "2026-10-31 09:19:29",
         "categoryPageCount": 75,
-        "cataloguedCount": 831,
+        "cataloguedCount": 841,
         "excluded": {
           "legacyPrototypeThrowableOrUnresolved": 138,
           "legacyNameDuplicate": 2
@@ -380,15 +382,16 @@
           "精确首发日期与当前版本效果"
         ],
         "note": "CFM国服目录；不与CF端游或CFHD混用，武器变体与纯皮肤差异保留。",
-        "readyCount": 831,
+        "readyCount": 841,
         "pendingImageCount": 0,
         "pendingChromaImageCount": 0,
-        "gunCount": 699,
-        "meleeCount": 132,
+        "gunCount": 708,
+        "meleeCount": 133,
         "withVideoCount": 3,
         "withAnimationCount": 406,
         "withMediaCount": 406,
-        "retainedHistoricalCount": 0
+        "retainedHistoricalCount": 0,
+        "officialAdditions20261115": 10
       },
       "source": {
         "name": "CFM官网枪械道具栏目与4399全分类图鉴",
@@ -450,7 +453,7 @@
       "meleeCount": 576,
       "withVideoCount": 0,
       "withAnimationCount": 0,
-      "updatedAt": "2026-11-02T16:56:39Z",
+      "updatedAt": "2026-11-15T07:55:50Z",
       "coverage": {
         "sourceRecordCount": 2126,
         "cataloguedCount": 2025,
@@ -473,18 +476,18 @@
         "name": "ByMykel/CSGO-API",
         "type": "community_catalogue",
         "url": "https://github.com/ByMykel/CSGO-API",
-        "retrievedAt": "2026-11-02T16:56:39Z"
+        "retrievedAt": "2026-11-15T07:55:50Z"
       }
     },
     {
       "id": "apex",
       "name": "Apex Legends",
       "url": "data/weapon-skins/apex.json",
-      "count": 2849,
-      "meleeCount": 36,
+      "count": 2850,
+      "meleeCount": 37,
       "withVideoCount": 17,
       "withAnimationCount": 0,
-      "updatedAt": "2026-11-02T17:41:30+00:00",
+      "updatedAt": "2026-11-15",
       "coverage": {
         "status": "partial",
         "complete": false,
@@ -507,11 +510,11 @@
         "weaponVariantNote": "Hemlok Breach/Burst 与 RE-45 Burst/Auto 的同名同文件图库按武器家族去重，保留31页的逐页对账。",
         "wikiUniqueSkinCountIncludingDefaults": 2738,
         "wikiOnlyCount": 10,
-        "cataloguedCount": 3069,
-        "entryCount": 2849,
+        "cataloguedCount": 3070,
+        "entryCount": 2850,
         "pendingImageCount": 220,
         "gunCount": 2813,
-        "meleeCount": 36,
+        "meleeCount": 37,
         "withVideoCount": 17,
         "videoCount": 19,
         "wikiImageCount": 2731,
@@ -1175,7 +1178,8 @@
           "client_silhouette_without_color_art": 28,
           "melee_variant_material_missing": 24,
           "melee_color_art_missing": 2
-        }
+        },
+        "officialAdditions20261115": 1
       },
       "source": {
         "name": "Apex Legends Wiki + apex.source.gs",

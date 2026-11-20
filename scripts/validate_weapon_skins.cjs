@@ -14,6 +14,26 @@ function http(value, message) {
   assert.ok(['https:', 'http:'].includes(url.protocol) && !url.username && !url.password, message);
   return url;
 }
+function checkedImage(image, id) {
+  const picture = image?.url || image?.path;
+  if (picture?.startsWith('assets/weapon-skins/')) {
+    assert.ok(!picture.includes('..') && !picture.includes('\\'), id + ' image path');
+    const file = path.resolve(root, picture);
+    assert.ok(file.startsWith(path.join(root, 'assets', 'weapon-skins') + path.sep) && fs.statSync(file).isFile());
+    assert.equal(crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex'), image.sha256, id + ' archived image hash');
+  } else http(picture, id + ' image');
+  http(image?.sourcePageUrl, id + ' picture attribution');
+  const source = http(image?.assetSourceUrl, id + ' original image');
+  assert.ok(['official', 'game_asset', 'community'].includes(image.sourceType), id + ' image source type');
+  if (image.identificationSources) {
+    assert.ok(Array.isArray(image.identificationSources) && image.identificationSources.length > 0, id + ' evidence list');
+    for (const reference of image.identificationSources) {
+      assert.ok(reference.title?.trim(), id + ' picture evidence title');
+      http(reference.url, id + ' picture evidence URL');
+    }
+  }
+  return source;
+}
 const manifest = read('data/weapon-skins/manifest.json');
 assert.equal(manifest.schemaVersion, 1);
 assert.deepEqual(manifest.games.map(game => game.id), gameIds);
@@ -60,6 +80,30 @@ for (const game of manifest.games) {
     inspectionLibraries.push(media);
   }
   if (data.inspectionLibrary) assert.equal(data.coverage.inspectionLibraryCount, data.inspectionLibrary.length);
+  if (game.id === 'cfhd' && data.coverage.communityImageReview) {
+    const review = data.coverage.communityImageReview;
+    const published = ready.flatMap(skin => skin.chromas);
+    const verified = data.skins.flatMap(skin => skin.chromas);
+    const pending = data.skins.flatMap(skin => skin.pendingChromas || []);
+    assert.equal(ready.filter(skin => skin.image.sourceType === 'game_asset').length, review.verifiedSkinImages);
+    assert.equal(verified.filter(chroma => chroma.image.sourceType === 'game_asset').length, review.verifiedChromaImages);
+    assert.equal(published.length, review.publishedChromaImages);
+    assert.equal(pending.length, data.coverage.pendingChromaImageCount);
+    assert.equal(pending.length + verified.length, data.coverage.chromaCount);
+    assert.equal(data.skins.length - ready.length + pending.length, review.unavailableCount);
+    assert.equal(new Set([...verified, ...pending].map(chroma => chroma.id)).size, data.coverage.chromaCount);
+    for (const chroma of verified) {
+      const source = checkedImage(chroma.image, chroma.id);
+      const picture = chroma.image.url;
+      assert.ok(['official', 'game_asset'].includes(chroma.image.sourceType));
+      if (chroma.image.sourceType === 'game_asset') {
+        assert.equal(source.hostname, 'www.crossfirehd.com', chroma.id + ' CFHD resource host');
+      }
+      assert.equal(chroma.displayIcon, picture);
+      assert.equal(chroma.fullRender, picture);
+      assert.equal(chroma.imageUrl, picture);
+    }
+  }
   for (const skin of ready) {
     assert.match(skin.id, prefixes[game.id], skin.id + ' prefix');
     assert.ok(!ids.has(skin.id), skin.id + ' duplicate identity'); ids.add(skin.id);
@@ -79,16 +123,7 @@ for (const game of manifest.games) {
       assert.ok(skin.timingNote || skin.dateEvidence || skin.releaseDateEvidence, skin.id + ' date evidence');
     }
     http(skin.sourceUrl, skin.id + ' source');
-    const picture = skin.image?.url || skin.image?.path;
-    if (picture?.startsWith('assets/weapon-skins/')) {
-      assert.ok(!picture.includes('..') && !picture.includes('\\'), skin.id + ' image path');
-      const file = path.resolve(root, picture);
-      assert.ok(file.startsWith(path.join(root, 'assets', 'weapon-skins') + path.sep) && fs.statSync(file).isFile());
-      assert.equal(crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex'), skin.image.sha256, skin.id + ' archived image hash');
-    } else http(picture, skin.id + ' image');
-    http(skin.image?.sourcePageUrl, skin.id + ' picture attribution');
-    http(skin.image?.assetSourceUrl, skin.id + ' original image');
-    assert.ok(['official', 'game_asset', 'community'].includes(skin.image.sourceType), skin.id + ' image source type');
+    checkedImage(skin.image, skin.id);
     for (const field of ['chromas', 'levels', 'media']) assert.ok(Array.isArray(skin[field]), skin.id + ' ' + field);
     const levelIds = new Set(skin.levels.map(level => level.id)), chromaIds = new Set(skin.chromas.map(chroma => chroma.id));
     assert.equal(levelIds.size, skin.levels.length, skin.id + ' duplicate levels');
@@ -156,14 +191,14 @@ assert.equal(api.filterEntries(normal, filters, '').length, manifest.games[0].me
 assert.ok(api.filterEntries(normal, { ...filters, type: 'all' }, 'RGX 狂徒').length > 0, 'Chinese/English cross-field search');
 for (const alias of ['希尔', '恶灵', '动力小子']) assert.ok(api.filterEntries(normal,
   { ...filters, game: 'apex' }, alias).length > 0, 'Apex heirloom Chinese search: ' + alias);
-assert.ok(api.filterEntries(normal, { ...filters, media: 'inspect' }, '').length > 0, 'reviewed inspect sample discoverable');
+assert.ok(api.filterEntries(normal, filters, '').some(skin => api.mediaList(skin).some(api.containsInspect)), 'reviewed inspect sample available');
 assert.equal(api.containsInspect({ kind: 'preview', reviewStatus: 'metadata_only' }), false);
 assert.equal(api.isVideo({ provider: 'gif' }), false, 'GIF animations must not inflate video coverage');
 assert.equal(api.isVideo({ provider: 'mp4' }), true);
 const gifSample = api.normalise({ ...all[0], id: 'gif-sample', media: [{ id: 'gif', provider: 'gif', kind: 'inspect',
   url: 'https://example.com/inspect.gif', sourcePageUrl: 'https://example.com/article', reviewStatus: 'source_confirmed' }] }, 'cf-mobile');
-assert.equal(api.filterEntries([gifSample], { ...filters, game: 'cf-mobile', type: 'all', media: 'video' }, '').length, 0);
-assert.equal(api.filterEntries([gifSample], { ...filters, game: 'cf-mobile', type: 'all', media: 'inspect' }, '').length, 1);
+assert.equal(api.mediaList(gifSample).some(api.isVideo), false);
+assert.equal(api.mediaList(gifSample).some(api.containsInspect), true);
 assert.ok(api.detail(gifSample).includes('id="skinAnimation"'), 'Inspection GIF is displayed without a video iframe');
 assert.equal(api.mediaList({ media: [{ provider: 'gif', url: 'https://example.com/inspect.gif.js' }] }).length, 0);
 assert.equal(api.mediaList({ media: [{ provider: 'gif', url: 'https://example.com/resource/0', mimeType: 'image/gif', frameCount: 8 }] }).length, 1);

@@ -37,7 +37,7 @@ def main():
         return clip['byteSize']
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         sizes=list(pool.map(check,data['items']))
-    assert len(sizes)==136
+    assert len(sizes)==data['clipPolicy']['coverage']
     print(f'Passed: {len(sizes)} complete H.264 decodes and {len(sizes)} posters; metadata, duration, dimensions, frame rate, silent tracks and file integrity ({sum(sizes):,} video bytes).')
 
 if __name__=='__main__':main()

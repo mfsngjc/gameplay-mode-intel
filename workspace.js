@@ -1,10 +1,14 @@
 /* Public mode library and map archive; unpublished research remains local. */
+const siteName = document.title;
 const localMechanicsPreview = new URLSearchParams(location.search).get('preview') === 'mechanics';
 const viewMeta = {
-  ugc: ['UGC 榜单', 'UGC 创作榜单', '跟踪四个平台的每日热榜与历史最热门，查看上涨、新入榜及近期强势作品。', '04 / 社区创作榜单'],
+  home: ['首页', siteName, '', ''],
+  ugc: ['UGC 榜单', 'UGC 创作榜单', '查看四个社区的作品榜单、分类统计和收录目录。', '04 / 社区创作榜单'],
   modes: ['玩法模式', '玩法模式', '收录模式案例与基础局内体验更新，按核心玩法、游戏和更新类别查找资料。', '01 / GAME MODES'],
+  games: ['游戏图鉴', '游戏图鉴', '按平台和玩法查找射击游戏，查看玩法、世界观和官方介绍。', 'GAME CATALOG'],
   maps: ['地图', '地图', '收集射击游戏的地图资料，查看空间布局，保存底图并追溯官方来源。', '02 / MAP LIBRARY'],
   items: ['主题道具', '主题与战术道具', '收集游戏内改变行动方式的道具、装备和场景交互物，按功能查找机制、视频与图片资料。', '03 / TACTICAL ITEMS'],
+  guns: ['枪械图鉴', '枪械图鉴', '浏览游戏枪械、外观和 3D 模型。', 'WEAPON CATALOG'],
   skins: ['武器外观', '武器外观与检视', '收集枪械与近战皮肤的外观、炫彩和动作视频，保留原始来源，按游戏与武器查找。', '05 / WEAPON COSMETICS'],
   mechanics: ['机制库预览', '地图机制与交互物', '本地预览区：先把局内交互、空间作用和设计观察放在一起试排，尚未发布到公开站点。', 'LOCAL PREVIEW · MECHANICS'],
   collection: ['我的收藏', '我的研究收藏', '收藏值得继续研究的玩法、地图、主题道具与武器外观。', 'YOUR FIELDNOTES']
@@ -60,7 +64,7 @@ function getCardSize() {
 }
 function syncCardSizeSurfaces() {
   const small = getCardSize() === 'small';
-  modeGrid?.classList.toggle('small-view', small);
+  modeGrid?.classList.toggle('small-view', small && !ModeLibrary.isLibrary());
   document.querySelector('#mapArchiveGrid')?.classList.toggle('small-view', small);
   document.querySelector('#itemGrid')?.classList.toggle('small-view', small);
   window.CardView?.syncControls?.();
@@ -70,19 +74,28 @@ let detailId = null;
 let detailTrigger = null;
 let entryTitle = '';
 
+function syncDocumentTitle() {
+  if (entryTitle) {
+    document.title = `${entryTitle} · ${siteName}`;
+    return;
+  }
+  const viewLabel = viewMeta[state.view]?.[0];
+  document.title = viewLabel && state.view !== 'modes' ? `${siteName} · ${viewLabel}` : siteName;
+}
+
 function setEntryTitle(title = '') {
   entryTitle = title;
-  document.title = title || '集成农业 · ' + $('#currentViewLabel').textContent;
+  syncDocumentTitle();
 }
 
 function entryHash(view, id, extra = {}) {
   return '#' + view + '?' + new URLSearchParams({ ...extra, entry: id }).toString();
 }
 
-function shareLinkButton(title, hash, label = '复制分享链接') {
+function shareLinkButton(title, hash, label = '复制分享链接', glyph = 'external-link') {
   return '<button class="button" type="button" data-share-hash="' + escapeHtml(hash) +
     '" data-share-name="' + escapeHtml(title) + '" aria-label="复制 ' + escapeHtml(title) + ' 的分享链接">' +
-    icon('external-link') + escapeHtml(label) + '</button>';
+    icon(glyph) + escapeHtml(label) + '</button>';
 }
 
 async function copyEntryLink(title, hash) {
@@ -129,6 +142,7 @@ function entryMatchesQuery(entry) {
 }
 
 function matchesLibraryEntry(entry, { ignoreGameplay = false, ignoreGame = false } = {}) {
+  if (state.view === 'collection' && state.contentFilter === 'map') return false;
   if (isWeaponSkin(entry)) return state.view === 'collection' && state.collected.has(entry.id) &&
     (ignoreGame || state.gameFilter === 'all' || entry.game === state.gameFilter) &&
     (ignoreGameplay || state.gameplayFilter === 'all') && state.filter === 'all' &&
@@ -196,10 +210,14 @@ function renderGameplayFilters() {
 }
 
 function workspaceHash(entryId) {
+  if (state.view === 'games') return GameCatalog.hash(entryId);
+  if (state.view === 'guns') return GunCatalog.hash(entryId);
   if (state.view === 'skins') return WeaponSkins.hash(entryId);
   if (state.view === 'ugc') return UGCMonitor.hash(state.query);
   if (state.view === 'items') return itemHash(entryId);
   const params = new URLSearchParams();
+  if (state.view === 'maps' && mapArchive.game !== 'all') params.set('mapGame', mapArchive.game);
+  if (state.view === 'maps' && mapArchive.format !== 'all') params.set('mapFormat', mapArchive.format);
   if (state.view === 'modes' && state.modeView !== 'library') params.set('view', state.modeView);
   if (state.gameplayFilter !== 'all') params.set('gameplay', state.gameplayFilter);
   if (state.filter === 'ltm') params.set('tag', 'ltm');
@@ -222,17 +240,23 @@ function syncFilterRoute() { history.replaceState(null, '', workspaceHash()); }
 function updateCounts() {
   const counts = Object.fromEntries(Object.keys(kindLabels).map((kind) => [kind, state.entries.filter((entry) => entry.kind === kind).length]));
   $('#navModeCount').textContent = workspaceDataReady.has('modes') ? counts.modes : '—';
+  $('#navGameCatalogCount').textContent = workspaceDataReady.has('games') ? GameCatalog.count() : '—';
   $('#navMapCount').textContent = mapArchive.entries.length || '—';
   $('#navItemCount').textContent = workspaceDataReady.has('items') ? itemArchive.entries.length : '—';
+  $('#navGunCount').textContent = workspaceDataReady.has('guns') ? GunCatalog.totalCount() : '—';
   $('#navSkinCount').textContent = WeaponSkins.count() || '—';
   $('#navMechanicsCount').textContent = counts.mechanics || '—';
   $('#navCollectedCount').textContent = state.entries.filter((entry) => state.collected.has(entry.id)).length + (mapArchive.mapCollected?.size || 0);
   if (state.view === 'ugc') {
     $('#librarySummary').textContent = UGCMonitor.hasEntry() ? '作品资料' : UGCMonitor.isCatalog() ? '正在读取目录收录数' : '4 个平台 · 热榜 100 / 历史榜 200';
+  } else if (state.view === 'games') {
+    $('#librarySummary').textContent = workspaceDataReady.has('games') ? '收录 ' + GameCatalog.count() + ' 款游戏' : '正在读取图鉴';
   } else if (state.view === 'maps') {
     $('#librarySummary').textContent = new Set(mapArchive.entries.map((entry) => entry.game)).size + ' 款游戏 · ' + mapArchive.entries.length + ' 张地图';
   } else if (state.view === 'items') {
     $('#librarySummary').textContent = itemArchive.entries.length + ' 项对象 · ' + itemArchive.categories.length + ' 个分类';
+  } else if (state.view === 'guns') {
+    $('#librarySummary').textContent = workspaceDataReady.has('guns') ? '收录 ' + GunCatalog.countLabel() : '正在读取枪械图鉴';
   } else if (state.view === 'skins') {
     $('#librarySummary').textContent = WeaponSkins.games.length + ' 款游戏 · ' + WeaponSkins.count().toLocaleString('zh-CN') + ' 款武器外观';
   } else if (state.view === 'collection') {
@@ -258,7 +282,7 @@ function renderCard(entry) {
   const collected = state.collected.has(entry.id);
   const isMode = entry.kind === 'modes';
   const imageUrl = isMode || entry.kind === 'levels' || (localMechanicsPreview && entry.kind === 'mechanics') ? safeUrl(entry.imageUrl) : '';
-  const upcoming = isMode && getDayDelta(entry) > 0;
+  const upcoming = isMode && entry.launchDateStatus !== 'unverified' && getDayDelta(entry) > 0;
   const dateLabel = /^\d{4}-\d{2}-\d{2}$/.test(entry.launchDate || '') ? formatActivityDate(entry) : (entry.launchLabel || entry.year || '时间待确认');
   return '<article class="mode-card ' + entry.kind + '-card' + (isCoreUpdate(entry) ? ' core-update-card' : '') + '" data-id="' + escapeHtml(entry.id) + '">' +
     '<button class="card-cover ' + (isMode ? '' : 'knowledge-cover') + '" type="button" data-action="open-mode" data-id="' + escapeHtml(entry.id) + '" aria-label="查看 ' + escapeHtml(entry.modeName) + '">' +
@@ -274,10 +298,13 @@ function renderCard(entry) {
 }
 
 function renderLibrary() {
-  renderGameplayFilters();
-  renderGameFilters();
+  if (ModeLibrary.isLibrary()) {
+    ModeLibrary.render(getFilteredEntries());
+    return;
+  }
   const entries = getFilteredEntries();
-  const collectedMaps = state.view === 'collection' && state.contentFilter === 'all' && state.updateCategory === 'all' ? mapArchive.entries.filter((entry) => mapArchive.mapCollected?.has(entry.id) && mapEntryMatchesQuery(entry)) : [];
+  const collectedMaps = state.view === 'collection' && ['all', 'map'].includes(state.contentFilter) && state.updateCategory === 'all'
+    ? mapArchive.entries.filter(entry => mapArchive.mapCollected.has(entry.id) && mapEntryMatchesQuery(entry)) : [];
   $('#resultsTitle').textContent = state.view === 'collection' ? '已收藏资料' : state.view === 'mechanics' ? '机制卡片预览' : kindLabels[state.view] + '资料';
   $('#resultCount').textContent = entries.length + collectedMaps.length + ' 份';
   $('#sectionAside').textContent = ['mechanics', 'levels'].includes(state.view)
@@ -293,9 +320,9 @@ function renderLibrary() {
   modeGrid.classList.toggle('small-view', getCardSize() === 'small');
   modeGrid.classList.remove('list-view');
   modeGrid.setAttribute('aria-busy', 'false');
-  const emptyMessage = state.view === 'collection' && !state.entries.some((entry) => state.collected.has(entry.id)) && !collectedMaps.length
+  const emptyMessage = state.view === 'collection' && !state.collected.size && !mapArchive.mapCollected.size
     ? ['还没有收藏', '点选卡片上的书签，留下你想继续研究的玩法、地图和道具。', '<a class="button" href="#modes">浏览玩法模式</a>']
-    : ['没有找到匹配的资料', '试试更短的关键词，或放宽核心玩法、游戏和标签筛选。', '<button class="button" data-reset-filters>清除筛选</button>'];
+    : ['没有找到匹配的资料', '试试更短的关键词，或清除筛选。', '<button class="button" data-reset-filters>清除筛选</button>'];
   const visibleMaps = collectedMaps.slice(0, Math.max(0, state.limit - visible.length));
   modeGrid.innerHTML = (visible.length || visibleMaps.length) ? visible.map(renderCard).join('') + visibleMaps.map(renderMapCollectionCard).join('') :
     '<div class="empty-state">' + icon('search') + '<h3>' + emptyMessage[0] + '</h3><p>' + emptyMessage[1] + '</p>' + emptyMessage[2] + '</div>';
@@ -341,19 +368,23 @@ function currentMetricsRouteKey() {
 let workspaceRoutePending = false;
 function renderWorkspace({ pending = workspaceRoutePending, entryOnly = false } = {}) {
   if (!state.ready) return;
+  ModeLibrary.syncChrome(pending);
   syncCardSizeSurfaces();
   recordPageView(currentMetricsRouteKey());
   document.body.classList.toggle('items-view', state.view === 'items');
   document.body.classList.toggle('skins-view', state.view === 'skins');
   document.body.classList.toggle('ugc-view', state.view === 'ugc');
+  document.body.classList.toggle('collection-view', state.view === 'collection');
+  document.body.classList.toggle('home-view', state.view === 'home');
   updateCounts();
   const meta = state.view === 'modes' ? (modeViewMeta[state.modeView] || modeViewMeta.library) : (viewMeta[state.view] || viewMeta.modes);
   $('#currentViewLabel').textContent = meta[0];
   $('#pageTitle').innerHTML = escapeHtml(meta[1]);
   $('#pageDescription').textContent = meta[2];
   $('#pageEyeline').textContent = meta[3];
-  document.title = entryTitle || '集成农业 · ' + meta[0];
+  syncDocumentTitle();
   document.querySelectorAll('[data-view]').forEach((link) => {
+    if (pending && link.closest('#siteNavigation')) return;
     const active = link.dataset.view === state.view;
     link.classList.toggle('is-active', active);
     if (active) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
@@ -361,24 +392,32 @@ function renderWorkspace({ pending = workspaceRoutePending, entryOnly = false } 
   const library = ['mechanics', 'levels', 'collection'].includes(state.view) || (state.view === 'modes' && state.modeView === 'library');
   const showActivity = state.view === 'modes' && state.modeView === 'activity';
   const showTimeline = state.view === 'modes' && state.modeView === 'timeline';
-  $('#modeViewSwitcher').hidden = state.view !== 'modes';
-  document.querySelectorAll('[data-mode-view]').forEach((button) => {
+  if (!pending) document.querySelectorAll('[data-mode-view]').forEach((button) => {
     const active = state.view === 'modes' && button.dataset.modeView === state.modeView;
     button.setAttribute('aria-selected', String(active));
     button.tabIndex = active ? 0 : -1;
   });
   $('#librarySection').hidden = pending || !library;
+  $('#homeSection').hidden = pending || state.view !== 'home';
+  $('#collectionDirectory').hidden = pending || state.view !== 'collection';
   $('#activitySection').hidden = pending || !showActivity;
   $('#timelineSection').hidden = pending || !showTimeline;
+  $('#gamesSection').hidden = pending || state.view !== 'games';
   $('#mapsSection').hidden = pending || entryOnly || state.view !== 'maps';
   $('#itemsSection').hidden = pending || entryOnly || state.view !== 'items';
+  $('#gunsSection').hidden = pending || state.view !== 'guns';
+  if (state.view !== 'guns') GunCatalog.closeViewer();
   $('#skinsSection').hidden = pending || state.view !== 'skins';
   $('#ugcSection').hidden = pending || state.view !== 'ugc';
   $('#exportItemsMarkdown').hidden = state.view !== 'items';
   $('#exportSkinsMarkdown').hidden = state.view !== 'skins';
-  $('#searchInput').placeholder = state.view === 'skins' ? '搜索皮肤、英文名、枪型、刀…' : state.view === 'ugc' ? '搜索创作内容、作者、岛屿代码…' : state.view === 'items' ? '搜索道具、英文名、作用…' : '搜索玩法、地图、游戏…';
+  $('#searchInput').placeholder = ({
+    games: '搜索游戏、英文名、玩法…', maps: '搜索地图名、游戏…',
+    guns: '搜索枪名、配件、外观…', skins: '搜索外观、武器名…', ugc: '搜索作品、作者、岛屿代码…',
+    items: '搜索道具名称或作用…', collection: '搜索我的收藏…', home: '搜索玩法、游戏，按 Enter 查看结果'
+  })[state.view] || '搜索玩法、游戏…';
   $('#patchesSection').hidden = pending || !(state.view === 'modes' && state.modeView === 'patches');
-  $('.export-menu').hidden = ['maps', 'ugc'].includes(state.view) || (state.view === 'modes' && state.modeView === 'patches');
+  $('.export-menu').hidden = ['home', 'games', 'guns', 'maps', 'ugc'].includes(state.view) || (state.view === 'modes' && state.modeView === 'patches');
   $('#routeStatus').hidden = !pending;
   if (pending) { $('#sharedFilters').hidden = true; return; }
   if (library) renderLibrary();
@@ -386,15 +425,18 @@ function renderWorkspace({ pending = workspaceRoutePending, entryOnly = false } 
   if (showTimeline) renderTimeline();
   if (state.view === 'modes' && state.modeView === 'patches') renderFFPatches();
   renderFFPatchLibrary();
+  if (state.view === 'games') GameCatalog.render();
+  if (state.view === 'guns') GunCatalog.render();
   if (state.view === 'maps' && !entryOnly) renderMapArchive();
   if (state.view === 'items' && !entryOnly) renderTacticalItems();
   if (state.view === 'skins') WeaponSkins.render();
-  if (['maps', 'items', 'skins', 'ugc'].includes(state.view)) $('#sharedFilters').hidden = true;
+  if (['home', 'games', 'guns', 'maps', 'items', 'skins', 'ugc'].includes(state.view)) $('#sharedFilters').hidden = true;
   else renderSharedFilters();
   if (state.view === 'ugc') UGCMonitor.render(state.query);
 }
 
 function resetFilters() {
+  GameCatalog.reset();
   resetItemFilters();
   WeaponSkins.reset();
   state.patchId = ''; state.patchLane = 'all'; state.patchCategory = 'all'; state.query = ''; state.topic = 'all'; state.filter = 'all'; state.gameFilter = 'all'; state.gameplayFilter = 'all'; state.contentFilter = 'all'; state.updateCategory = 'all'; state.activityLimit = 24; state.limit = 12;
@@ -417,6 +459,7 @@ function setNavOpen(open) {
 function applyRoute() {
   if (!state.ready) return;
   let [route, query] = location.hash.slice(1).split('?');
+  route ||= 'home';
   const routeParams = new URLSearchParams(query);
   const legacyItem = resolveTacticalItem(routeParams.get('entry'));
   const legacyTopic = route === 'modes' && routeParams.get('game') === 'Fortnite' &&
@@ -453,7 +496,11 @@ function applyRoute() {
   }
   state.gameFilter = getGames().includes(routeParams.get('game')) ? routeParams.get('game') : 'all';
   state.contentFilter = Object.hasOwn(contentTypeLabels, routeParams.get('content')) ? routeParams.get('content') : 'all';
-  if (view !== 'collection' && ['item', 'skin'].includes(state.contentFilter)) state.contentFilter = 'all';
+  if (view !== 'collection' && ['item', 'skin', 'map'].includes(state.contentFilter)) state.contentFilter = 'all';
+  if (view === 'maps') {
+    mapArchive.game = Object.hasOwn(mapGameLabels, routeParams.get('mapGame')) ? routeParams.get('mapGame') : 'all';
+    mapArchive.format = Object.hasOwn(mapFormatLabels, routeParams.get('mapFormat')) ? routeParams.get('mapFormat') : 'all';
+  }
   state.updateCategory = state.contentFilter === 'core_update' && Object.hasOwn(coreUpdateCategories, routeParams.get('category')) ? routeParams.get('category') : 'all';
   state.query = routeParams.get('q') || '';
   state.topic = topicDefs.some((t) => t.id === routeParams.get('topic')) ? routeParams.get('topic') : 'all';
@@ -464,6 +511,8 @@ function applyRoute() {
   state.patchLane = Object.hasOwn(ffPatchLanes, routeParams.get('lane')) ? routeParams.get('lane') : 'all';
   state.patchCategory = Object.hasOwn(ffPatchCategories, routeParams.get('pcategory')) ? routeParams.get('pcategory') : 'all';
   state.filter = routeParams.get('tag') === 'ltm' && view === 'modes' ? 'ltm' : 'all';
+  if (view === 'games') GameCatalog.readRoute(routeParams);
+  if (view === 'guns') GunCatalog.readRoute(routeParams);
   if (view === 'items') readItemRoute(routeParams);
   if (view === 'skins') WeaponSkins.readRoute(routeParams);
   if (view === 'ugc') UGCMonitor.readRoute(routeParams);
@@ -472,16 +521,19 @@ function applyRoute() {
   const requestedId = routeParams.get('entry');
   const hasItem = view === 'items' && itemArchive.entries.some(entry => entry.id === requestedId);
   const hasMap = view === 'maps' && mapArchive.entries.some(entry => entry.id === requestedId);
-  const detail = requestedId && state.entries.find(entry => entry.id === requestedId && (entry.kind === view || view === 'collection'));
+  const detail = requestedId && (view === 'games' ? GameCatalog.find(requestedId) :
+    state.entries.find(entry => entry.id === requestedId && (entry.kind === view || view === 'collection')));
   renderWorkspace({ entryOnly: hasItem || hasMap });
   if (['skins', 'collection'].includes(view)) WeaponSkins.ensure();
   if (contentChanged) window.scrollTo({ top: 0, behavior: 'instant' });
+  if (view === 'guns') GunCatalog.focusRoute();
   if (detail) showDetail(detail.id);
   else if (detailDialog.open) closeDetail(false);
   if (view === 'items') prepareItemList();
   const mapId = view === 'maps' ? requestedId : view === 'collection' ? routeParams.get('map') : null;
   if (mapId) showMapDetail(mapId, routeParams.get('mapView'));
-  if ((view === 'items' && requestedId && !hasItem) || (view === 'maps' && requestedId && !hasMap && !mapArchive.error)) showToast('没有找到该条目');
+  if ((view === 'games' && requestedId && !detail) || (view === 'items' && requestedId && !hasItem) ||
+      (view === 'maps' && requestedId && !hasMap && !mapArchive.error)) showToast('没有找到该条目');
 }
 
 function detailButton(entry) {
@@ -489,12 +541,22 @@ function detailButton(entry) {
   return '<button class="button primary" type="button" data-action="collect" data-detail-collect data-id="' + escapeHtml(entry.id) + '" aria-pressed="' + collected + '">' + icon('bookmark') + (collected ? '已收藏' : '收藏资料') + '</button>';
 }
 
-function showDetail(id) {
-  const entry = state.entries.find((item) => item.id === id);
+function showWorkspaceDetailDialog(trigger = document.activeElement) {
+  if (!detailDialog.open) {
+    detailTrigger = trigger;
+    detailDialog.showModal();
+    document.body.classList.add('modal-open');
+  }
+  detailDialog.scrollTop = 0;
+}
+
+function showDetail(id, trigger) {
+  const gameDetail = state.view === 'games';
+  const entry = gameDetail ? GameCatalog.find(id) : state.entries.find((item) => item.id === id);
   if (!entry) return;
   if (entry.kind === 'modes') recordModeView(entry.id);
   detailId = id;
-  setEntryTitle(entry.modeName);
+  setEntryTitle(gameDetail ? entry.name : entry.modeName);
   const closeLabel = state.view === 'items' ? '返回道具清单' : '关闭详情';
   $('#detailClose').setAttribute('aria-label', closeLabel);
   $('#detailClose').title = closeLabel;
@@ -506,7 +568,8 @@ function showDetail(id) {
   const derived = entry.kind !== 'modes';
   if (typeof ItemDemos !== 'undefined') ItemDemos.stop(detailDialog);
   WeaponSkins.stop(detailDialog);
-  $('#detailContent').innerHTML = isWeaponSkin(entry) ? WeaponSkins.detail(entry) : isTacticalItem(entry) ? tacticalItemDetail(entry) : isCoreUpdate(entry) ? coreUpdateDetail(entry) :
+  $('#detailContent').innerHTML = gameDetail ? GameCatalog.detail(entry) :
+    isWeaponSkin(entry) ? WeaponSkins.detail(entry) : isTacticalItem(entry) ? tacticalItemDetail(entry) : isCoreUpdate(entry) ? coreUpdateDetail(entry) :
     (imageUrl ? '<img class="detail-cover" src="' + escapeHtml(imageUrl) + '" alt="' + escapeHtml(entry.imageSource || '原案例配图') + '">' : '') +
     '<div class="detail-inner"><div class="detail-kicker">' + kindLabels[entry.kind] + ' / ' + escapeHtml(entry.game) + '</div>' +
     '<h2 id="detailTitle">' + escapeHtml(entry.modeName) + '</h2>' +
@@ -528,32 +591,37 @@ function showDetail(id) {
   if (['modes', 'items', 'skins'].includes(entry.kind)) {
     $('#detailContent .detail-actions')?.insertAdjacentHTML('beforeend', shareLinkButton(entry.modeName, entryHash(entry.kind, entry.id)));
   }
-  if (!detailDialog.open) {
-    detailTrigger = document.activeElement;
-    detailDialog.showModal();
-    document.body.classList.add('modal-open');
+  ModeLibrary.addGroupBack();
+  showWorkspaceDetailDialog(trigger);
+  if (gameDetail) {
+    GameCatalog.mountDetail(entry);
+    GameCatalog.refreshOnline(entry);
   }
-  detailDialog.scrollTop = 0;
   if (isTacticalItem(entry) && entry.coreUpdateIds.length && !workspaceDataReady.has('coreUpdates')) loadItemDetailVersions(entry);
 }
 
-function openDetail(id) {
+function openDetail(id, trigger) {
   const url = workspaceHash(id);
-  if (detailDialog.open) history.replaceState(null, '', url); else history.pushState(null, '', url);
-  showDetail(id);
+  const fromDetail = detailDialog.open && detailDialog.contains(trigger || document.activeElement);
+  if (detailDialog.open && detailId) history.replaceState(null, '', url); else history.pushState(null, '', url);
+  showDetail(id, trigger);
+  if (fromDetail) $('#detailClose').focus({ preventScroll: true });
 }
 
 function closeDetail(updateUrl = true) {
   if (typeof ItemDemos !== 'undefined') ItemDemos.stop(detailDialog);
   WeaponSkins.stop(detailDialog);
+  if (state.view === 'games') GameCatalog.clearDetail();
   detailDialog.close(); detailId = null;
+  ModeLibrary.clearGroup();
   document.body.classList.remove('modal-open');
   if (updateUrl) {
     setEntryTitle();
     history.replaceState(null, '', workspaceHash());
     if (state.view === 'items') revealItemList();
   }
-  if (detailTrigger?.isConnected) detailTrigger.focus();
+  if (detailTrigger?.isConnected) detailTrigger.focus({ preventScroll: true });
+  detailTrigger = null;
 }
 
 function updateDetailCollection() {
@@ -567,6 +635,9 @@ function updateDetailCollection() {
 }
 
 function bindWorkspaceEvents() {
+  activityFeed.addEventListener('error', event => {
+    if (event.target.matches('img')) (event.target.closest('.activity-media') || event.target).remove();
+  }, true);
   $('.skip-link').addEventListener('click', (event) => {
     event.preventDefault();
     $('#mainContent').focus();
@@ -581,20 +652,29 @@ function bindWorkspaceEvents() {
     });
   });
   document.addEventListener('click', (event) => {
+    if (event.defaultPrevented) return;
     const share = event.target.closest('[data-share-hash]');
     if (share) { copyEntryLink(share.dataset.shareName, share.dataset.shareHash); return; }
-    const target = event.target.closest('[data-action], [data-game], [data-gameplay], [data-mode-view], [data-reset-filters], [data-timeline-group], [data-load-activity]');
+    const target = event.target.closest(
+      '[data-action], [data-game], [data-gameplay], [data-mode-view], [data-reset-filters], [data-timeline-group], [data-load-activity], ' +
+      'button:is([data-mode-theme], [data-mode-layout], [data-mode-kind], [data-mode-update-group], [data-mode-group-back], [data-mode-recent-index])'
+    ) || ModeLibrary.clickTarget(event);
     if (!target) return;
+    if (ModeLibrary.handleClick(target)) return;
     if (target.hasAttribute('data-load-activity')) { state.activityLimit += 24; renderActivityFeed(); return; }
     if (target.hasAttribute('data-timeline-group')) {
       const row = document.getElementById('timeline-group-' + target.dataset.timelineGroup);
       const details = row?.querySelector('details'); if (details) details.open = true;
       row?.scrollIntoView({ block: 'center', behavior: 'smooth' }); row?.querySelector('summary')?.focus({ preventScroll: true }); return;
     }
-    if (target.hasAttribute('data-reset-filters')) { resetFilters(); syncFilterRoute(); renderWorkspace(); return; }
+    if (target.hasAttribute('data-reset-filters')) {
+      resetFilters(); syncFilterRoute(); renderWorkspace();
+      if (ModeLibrary.isLibrary()) $('#modeGameSelect').focus({ preventScroll: true });
+      if (state.view === 'collection') $('#searchInput').focus({ preventScroll: true });
+      return;
+    }
     if (target.dataset.modeView) {
       state.modeView = target.dataset.modeView;
-      if (state.modeView === 'patches') { state.gameFilter = 'Free Fire'; state.gameplayFilter = 'all'; }
       state.limit = 12;
       syncFilterRoute();
       renderWorkspace();
@@ -614,7 +694,7 @@ function bindWorkspaceEvents() {
     }
     const entry = state.entries.find((item) => item.id === target.dataset.id);
     if (!entry) return;
-    if (['open-mode', 'open-item', 'open-skin'].includes(target.dataset.action)) openDetail(entry.id);
+    if (['open-mode', 'open-item', 'open-skin'].includes(target.dataset.action)) openDetail(entry.id, target);
     if (target.dataset.action === 'collect') {
       const restoreId = entry.id;
       const fromDetail = detailDialog.open;
@@ -630,19 +710,42 @@ function bindWorkspaceEvents() {
       openShareModal(entry);
     }
   });
-  $('#searchInput').addEventListener('input', (event) => {
+  function searchWorkspace(event) {
+    if (event.isComposing || state.view === 'home') return;
+    if ($('#searchInput').value !== event.target.value) $('#searchInput').value = event.target.value;
+    if (state.view === 'guns') GunCatalog.clearEntry();
     state.query = event.target.value; state.limit = 12; itemArchive.limit = 24; WeaponSkins.archive.limit = 24; syncFilterRoute();
-    if (!['modes', 'mechanics', 'levels', 'collection', 'maps', 'items', 'skins', 'ugc'].includes(state.view)) {
+    if (!['modes', 'mechanics', 'levels', 'collection', 'games', 'guns', 'maps', 'items', 'skins', 'ugc'].includes(state.view)) {
       state.view = 'modes'; state.gameFilter = 'all';
       history.replaceState(null, '', '#modes');
     }
     renderWorkspace();
+  }
+  for (const input of [$('#searchInput'), $('#modeSearchInput')]) {
+    input.addEventListener('input', searchWorkspace);
+    input.addEventListener('compositionend', searchWorkspace);
+  }
+  $('#searchInput').addEventListener('keydown', event => {
+    if (event.key !== 'Enter' || event.isComposing || state.view !== 'home') return;
+    const query = event.currentTarget.value.trim();
+    if (query) location.hash = '#modes?' + new URLSearchParams({ q: query });
   });
-  $('#contentTypeSelect').addEventListener('change', (event) => {
-    state.contentFilter = event.target.value; state.updateCategory = 'all';
-    if (['core_update', 'item', 'skin'].includes(state.contentFilter)) { state.filter = 'all'; state.feedFilter = 'all'; $('#typeSelect').value = 'all'; }
-    if (['item', 'skin'].includes(state.contentFilter)) { state.gameplayFilter = 'all'; state.topic = 'all'; $('#topicSelect').value = 'all'; }
+  function chooseContentType(value) {
+    state.contentFilter = value; state.updateCategory = 'all';
+    if (state.view === 'collection' || state.contentFilter === 'core_update') {
+      state.filter = 'all'; state.feedFilter = 'all'; $('#typeSelect').value = 'all';
+    }
+    if (state.view === 'collection') {
+      state.gameFilter = 'all'; state.gameplayFilter = 'all'; state.topic = 'all'; $('#topicSelect').value = 'all';
+    }
     state.limit = 12; syncFilterRoute(); renderWorkspace();
+  }
+  $('#contentTypeSelect').addEventListener('change', event => chooseContentType(event.target.value));
+  $('#collectionDirectoryFilters').addEventListener('click', event => {
+    const button = event.target.closest('[data-collection-kind]');
+    if (!button) return;
+    chooseContentType(button.dataset.collectionKind);
+    $('#collectionDirectoryFilters [aria-pressed="true"]')?.focus({ preventScroll: true });
   });
   $('#updateCategorySelect').addEventListener('change', (event) => { state.updateCategory = event.target.value; state.limit = 12; syncFilterRoute(); renderWorkspace(); });
   $('#topicSelect').addEventListener('change', (event) => { state.topic = event.target.value; state.limit = 12; syncFilterRoute(); renderWorkspace(); });
@@ -651,7 +754,7 @@ function bindWorkspaceEvents() {
   $('#loadMore').addEventListener('click', () => {
     const previousLimit = state.limit;
     state.limit += 12; renderLibrary();
-    const nextButton = modeGrid.querySelectorAll('.card-cover')[previousLimit];
+    const nextButton = modeGrid.querySelectorAll(ModeLibrary.isLibrary() ? '.mode-card-detail' : '.card-cover')[previousLimit];
     nextButton?.focus({ preventScroll: true });
   });
   $('#activityTabs').addEventListener('click', (event) => {
@@ -678,7 +781,23 @@ function bindWorkspaceEvents() {
   $('#exportCollected').addEventListener('click', exportCollectedMarkdown);
   $('#detailClose').addEventListener('click', () => closeDetail());
   detailDialog.addEventListener('cancel', (event) => { event.preventDefault(); closeDetail(); });
-  detailDialog.addEventListener('click', (event) => { if (event.target === detailDialog) closeDetail(); });
+  let pressedOnBackdrop = false;
+  function hitsBackdrop(event) {
+    if (event.target !== detailDialog) return false;
+    const { left, right, top, bottom } = detailDialog.getBoundingClientRect();
+    return event.clientX < left || event.clientX >= right || event.clientY < top || event.clientY >= bottom;
+  }
+  detailDialog.addEventListener('pointerdown', event => {
+    pressedOnBackdrop = event.isPrimary && event.button === 0 && hitsBackdrop(event);
+  });
+  for (const type of ['pointercancel', 'close']) {
+    detailDialog.addEventListener(type, () => { pressedOnBackdrop = false; });
+  }
+  detailDialog.addEventListener('click', event => {
+    const dismiss = pressedOnBackdrop && hitsBackdrop(event);
+    pressedOnBackdrop = false;
+    if (dismiss) closeDetail();
+  });
   $('#downloadShareImage').addEventListener('click', downloadActiveShareImage);
   $('#copyShareMarkdown').addEventListener('click', copyActiveShareMarkdown);
   $('#downloadShareMarkdown').addEventListener('click', downloadActiveShareMarkdown);
@@ -692,7 +811,7 @@ function bindWorkspaceEvents() {
       if (!shareModal.hidden) closeShareModal();
     }
     if (event.key === '/' && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName) && !detailDialog.open && !$('#mapDialog').open && !$('#interactiveMapDialog').open && shareModal.hidden) {
-      event.preventDefault(); $('#searchInput').focus();
+      event.preventDefault(); (ModeLibrary.isLibrary() ? $('#modeSearchInput') : $('#searchInput')).focus();
     }
     if (event.key === 'Tab' && !shareModal.hidden) {
       const nodes = [...shareModal.querySelectorAll('button, a[href]')].filter((node) => !node.closest('[hidden]') && !node.disabled);
@@ -705,6 +824,12 @@ function bindWorkspaceEvents() {
   modeGrid.addEventListener('error', (event) => {
     if (handleTacticalImageError(event)) return;
     if (event.target.tagName !== 'IMG') return;
+    const modeCover = event.target.closest('.mode-library-cover');
+    if (modeCover) {
+      modeCover.classList.remove('has-image');
+      event.target.hidden = true;
+      return;
+    }
     const entry = state.entries.find((item) => item.id === event.target.closest('[data-id]')?.dataset.id);
     if (!entry) return;
     const cover = event.target.parentElement;
@@ -740,11 +865,202 @@ async function workspaceJSON(path, label, array = true, priority = 'auto') {
   return data;
 }
 
+async function gameCatalogSnapshot(path, label) {
+  if (document.documentElement.dataset.gameCatalogEncoding !== 'gzip') {
+    return workspaceJSON(path, label, false);
+  }
+  const response = await fetch(path + '.gz', { cache: 'no-cache' });
+  if (!response.ok) throw new Error(label + '暂时无法读取');
+  const bytes = new Uint8Array(await response.arrayBuffer());
+  if (bytes[0] !== 0x1f || bytes[1] !== 0x8b) return JSON.parse(new TextDecoder().decode(bytes));
+  const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+  return new Response(stream).json();
+}
+
+let steamPlayerHistoryRequest;
+function loadSteamPlayerHistory() {
+  steamPlayerHistoryRequest ??= gameCatalogSnapshot('data/steam-player-history.json', 'Steam 在线历史').catch(error => {
+    steamPlayerHistoryRequest = undefined;
+    throw error;
+  });
+  return steamPlayerHistoryRequest;
+}
+
 function ensureItems() {
   return loadWorkspaceData('items', async () => {
     loadTacticalCatalogue(await workspaceJSON('data/tactical-items.json', '主题道具资料', false));
     state.entries.push(...itemArchive.entries);
   });
+}
+
+let modeRecordsRequest;
+function loadModeRecords(priority) {
+  modeRecordsRequest ||= workspaceJSON('data/modes.json', '模式资料', true, priority).catch(error => {
+    modeRecordsRequest = undefined;
+    throw error;
+  });
+  return modeRecordsRequest;
+}
+
+async function loadHomeFeatured(modes) {
+  const carousel = $('#homeFeatured');
+  if (!carousel.hidden) return;
+  await ensureCoreUpdates('low').catch(() => {});
+  if (!carousel.hidden) return;
+  const changes = modeCoreUpdates().filter(entry => ['addition', 'rework'].includes(entry.changeType) &&
+    entry.imageStatus === 'verified_official' && ['specific', 'section'].includes(entry.imageScope));
+  const candidates = [...modes, ...changes].filter(entry => {
+    const days = getDayDelta(entry);
+    return entry.publicationStatus === 'ready' &&
+      /^\d{4}-\d{2}-\d{2}$/.test(entry.launchDate || '') && !['scheduled', 'unverified'].includes(entry.launchDateStatus) &&
+      days >= -45 && days <= 0 && safeUrl(entry.imageUrl) &&
+      !/通用配图|未展示主题/.test(entry.imageSource || '') &&
+      !entry.imageUrl.includes('/generated/') && !entry.imageUrl.toLowerCase().endsWith('.svg');
+  }).sort((a, b) => b.launchDate.localeCompare(a.launchDate));
+  const slides = [...new Set(candidates.map(entry => entry.game))].slice(0, 4)
+    .map(game => candidates.find(entry => entry.game === game));
+  if (!slides.length) return;
+  const slide = $('#homeFeaturedSlide');
+  const home = $('#homeSection');
+  const controls = carousel.querySelector('.home-featured-controls');
+  const position = $('#homeFeaturedPosition');
+  const progress = carousel.querySelector('.home-featured-progress');
+  const toggle = $('#homeFeaturedToggle');
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const interval = 7000;
+  let selected = 0;
+  let autoplay = !reducedMotion.matches;
+  let inView = false;
+  let hovered = false;
+  let reading = false;
+  let countdown;
+
+  function renderSlide(step = 0) {
+    const entry = slides[selected];
+    const href = '#modes?entry=' + encodeURIComponent(entry.id);
+    slide.dataset.direction = step < 0 ? 'previous' : step > 0 ? 'next' : '';
+    slide.innerHTML = '<a class="home-featured-media" href="' + href + '" aria-label="' + escapeHtml(entry.modeName) + '">' +
+      '<img src="' + escapeHtml(safeUrl(entry.thumbnailUrl || entry.imageUrl)) + '" alt="" decoding="async"></a>' +
+      '<div class="home-featured-copy"><div class="home-featured-meta"><span>' + escapeHtml(entry.game) + '</span><time datetime="' +
+      entry.launchDate + '">' + entry.launchDate + '</time></div><h4><a href="' + href + '">' + escapeHtml(entry.modeName) +
+      '</a></h4><p>' + escapeHtml(entry.summary || entry.oneLineRule || '') + '</p><a class="home-featured-link" href="' + href + '">查看玩法详情 <span aria-hidden="true">→</span></a></div>';
+    slide.querySelector('img').addEventListener('error', event => event.target.remove(), { once: true });
+    position.textContent = (selected + 1) + ' / ' + slides.length;
+  }
+
+  function canPlay() {
+    return autoplay && inView && !hovered && !reading && !document.hidden && !home.hidden;
+  }
+
+  function syncPlayback() {
+    if (!canPlay()) {
+      countdown?.pause();
+      return;
+    }
+    if (!countdown) {
+      countdown = progress.firstElementChild.animate(
+        [{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }],
+        { duration: interval, fill: 'forwards' },
+      );
+      countdown.onfinish = () => {
+        if (canPlay()) advance(1);
+      };
+    }
+    countdown.play();
+  }
+
+  function advance(step, announce = false) {
+    countdown?.cancel();
+    countdown = undefined;
+    selected = (selected + step + slides.length) % slides.length;
+    renderSlide(step);
+    if (announce) $('#homeFeaturedStatus').textContent = '第 ' + (selected + 1) + ' 条，共 ' + slides.length + ' 条。' + slides[selected].modeName;
+    syncPlayback();
+  }
+
+  function updateToggle() {
+    const label = autoplay ? '暂停自动轮播' : '开启自动轮播';
+    toggle.dataset.playing = String(autoplay);
+    toggle.setAttribute('aria-label', label);
+    toggle.title = label;
+    syncPlayback();
+  }
+
+  controls.hidden = slides.length < 2;
+  progress.hidden = controls.hidden;
+  renderSlide();
+  carousel.hidden = false;
+  if (controls.hidden) return;
+
+  controls.querySelectorAll('[data-feature-step]').forEach(button => button.addEventListener('click', () => {
+    advance(Number(button.dataset.featureStep), true);
+  }));
+  toggle.addEventListener('click', () => {
+    autoplay = !autoplay;
+    updateToggle();
+  });
+  carousel.addEventListener('pointerenter', event => {
+    if (event.pointerType === 'touch') return;
+    hovered = true;
+    syncPlayback();
+  });
+  carousel.addEventListener('pointerleave', () => {
+    hovered = false;
+    syncPlayback();
+  });
+  carousel.addEventListener('focusin', event => {
+    reading = event.target !== toggle;
+    syncPlayback();
+  });
+  carousel.addEventListener('focusout', event => {
+    if (carousel.contains(event.relatedTarget)) return;
+    reading = false;
+    syncPlayback();
+  });
+  document.addEventListener('visibilitychange', syncPlayback);
+  reducedMotion.addEventListener('change', event => {
+    autoplay = !event.matches;
+    updateToggle();
+  });
+  const observer = new IntersectionObserver(([entry]) => {
+    inView = entry.intersectionRatio >= 0.25;
+    if (!inView) hovered = false;
+    syncPlayback();
+  }, { threshold: 0.25 });
+  observer.observe(carousel);
+  updateToggle();
+}
+
+async function loadHomeGameUpdates() {
+  const list = $('#homeGameUpdates');
+  if (!list.hidden) return;
+  const status = $('#homeGameUpdatesStatus');
+  status.textContent = '正在读取近期玩法…';
+  try {
+    const modes = await loadModeRecords('low');
+    loadHomeFeatured(modes);
+    const recent = modes.filter(mode => {
+      if ((mode.publicationStatus && mode.publicationStatus !== 'ready') || mode.launchDateStatus === 'unverified') return false;
+      const date = mode.launchDateStatus === 'scheduled' ? mode.scheduledLaunchDate : mode.launchDate;
+      return /^\d{4}-\d{2}-\d{2}$/.test(date || '');
+    }).sort((a, b) => getDateSortValue(b) - getDateSortValue(a)).slice(0, 4);
+    list.innerHTML = recent.map(mode => {
+      const date = getModeDateValue(mode);
+      const schedule = mode.launchDateStatus === 'scheduled';
+      const upcoming = getDayDelta(mode) > 0;
+      const timing = upcoming ? '预定开放' : schedule ? '开放待核实' : '上线';
+      const dateLabel = (schedule && !upcoming ? '原定 ' : '') + date.replaceAll('-', '.');
+      const href = '#modes?entry=' + encodeURIComponent(mode.id);
+      return `<li class="home-game-update">
+        <a href="${href}">${escapeHtml(mode.game)} · ${escapeHtml(mode.modeName)}</a>
+        <span class="home-update-timing"><time datetime="${date}">${dateLabel}</time> ${timing}</span>
+      </li>`;
+    }).join('');
+    status.textContent = recent.length ? '' : '暂无可展示的近期玩法。';
+    list.hidden = false;
+  } catch {
+    status.textContent = '近期玩法暂时无法读取。';
+  }
 }
 
 function ensureCoreUpdates(priority) {
@@ -772,7 +1088,7 @@ function prepareItemList() {
     try { await ensureCoreUpdates('low'); } catch { return; }
     const active = document.activeElement;
     if (isCurrent() && (state.query || $('#itemGrid .has-dossier')) &&
-        !active?.closest('#itemGrid, #itemCategoryFilters')) renderTacticalItems();
+        !active?.closest('#itemGrid, .items-filter-panel')) renderTacticalItems();
   }, 0));
 }
 
@@ -801,7 +1117,7 @@ async function copyDetailMarkdown(entry) {
 function ensureModes() {
   return loadWorkspaceData('modes', async () => {
     const [modes, patches] = await Promise.all([
-      workspaceJSON('data/modes.json', '模式资料'),
+      loadModeRecords(),
       workspaceJSON('data/free-fire-patches.json', '版本详录'),
       ensureItems(), ensureCoreUpdates()
     ]);
@@ -836,7 +1152,7 @@ async function readRoute() {
   }
   const oldItemRoute = route === 'modes' && (id.startsWith('fortnite-item-') ||
     (params.get('game') === 'Fortnite' && params.get('content') === 'core_update' && params.get('q') === '战术道具'));
-  const requestedView = oldItemRoute ? 'items' : route;
+  const requestedView = oldItemRoute ? 'items' : route || 'home';
   const view = Object.hasOwn(viewMeta, requestedView) && (requestedView !== 'mechanics' || localMechanicsPreview) ? requestedView : 'modes';
   if (route === 'mechanics' && !localMechanicsPreview) history.replaceState(null, '', '#modes');
   const requestedModeView = ['activity', 'timeline'].includes(route) ? route : params.get('view');
@@ -845,7 +1161,7 @@ async function readRoute() {
   closeOpenMap(false);
   if (detailDialog.open && (!id || id !== detailId)) closeDetail(false);
   if (state.view === 'ugc' && view !== 'ugc') UGCMonitor.cancel();
-  const loaded = view === 'maps' ? !mapArchive.loading : ['ugc', 'skins'].includes(view) || workspaceDataReady.has(view);
+  const loaded = view === 'maps' ? !mapArchive.loading : ['home', 'ugc', 'skins'].includes(view) || workspaceDataReady.has(view);
   if (!loaded) {
     if (state.view !== view || state.modeView !== modeView) {
       resetFilters();
@@ -859,6 +1175,26 @@ async function readRoute() {
     renderWorkspace();
   }
   try {
+    if (view === 'games') await loadWorkspaceData('games', async () => {
+      const [games, media, metrics, charts, activity, updatesZh] = await Promise.all([
+        workspaceJSON('data/shooter-games.json', '游戏图鉴资料', false),
+        gameCatalogSnapshot('data/shooter-game-media.json', '游戏宣传图').catch(() => ({})),
+        gameCatalogSnapshot('data/shooter-game-metrics.json', '游戏指标').catch(() => ({})),
+        workspaceJSON('data/steam-charts.json', 'Steam 榜单', false).catch(() => ({})),
+        loadSteamPlayerHistory().catch(() => ({})),
+        workspaceJSON('data/shooter-game-updates-zh.json', '中文更新公告', false).catch(() => ({}))
+      ]);
+      SteamActivity.setData(activity, updatesZh);
+      GameCatalog.setData(games, media.games, metrics.games, charts);
+    });
+    if (view === 'guns') await loadWorkspaceData('guns', async () => {
+      const catalogues = await Promise.all([
+        workspaceJSON('data/gun-catalog.json', '战地风云 6 枪械资料', false),
+        workspaceJSON('data/gun-catalog-valorant.json', '瓦洛兰特枪械资料', false),
+        workspaceJSON('data/gun-catalog-cod-mw4.json', '现代战争 4 武器资料', false)
+      ]);
+      GunCatalog.setData(catalogues);
+    });
     if (view === 'items') await ensureItems();
     if (view === 'modes') await ensureModes();
     if (view === 'mechanics') await ensureMechanics();
@@ -867,6 +1203,7 @@ async function readRoute() {
     if (request !== routeSequence) return;
     workspaceRoutePending = false;
     applyRoute();
+    if (view === 'home') loadHomeGameUpdates();
   } catch (error) {
     if (request !== routeSequence) return;
     const status = $('#routeStatus');
@@ -882,6 +1219,10 @@ function initWorkspace() {
   window.CardView?.subscribe?.(() => syncCardSizeSurfaces());
   syncCardSizeSurfaces();
   bindWorkspaceEvents();
+  CatalogueNavigation.bind();
+  ModeLibrary.bind();
+  GameCatalog.bind();
+  GunCatalog.bind();
   bindFFPatchEvents();
   bindTacticalItemEvents();
   WeaponSkins.bind();

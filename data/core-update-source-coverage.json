@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-11-16",
   "purpose": "基础局内体验更新的独立覆盖账本。mode-source-coverage.json 的旧模式扫描结果不可视为此类更新已经收全。",
   "policyDocument": "docs/core-experience-updates.md",
   "dataFile": "data/core-updates.json",
   "games": {
     "Apex Legends": {
       "coverageStatus": "ongoing_backfill",
-      "recordCount": 2,
+      "recordCount": 33,
       "checkedSources": [
         {
           "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/marked-midseason-patch-notes",
@@ -47,13 +47,241 @@
           },
           "timingReview": "公告发布于 2026-09-14，正文确认 Split 2 于 2026-09-15 开始。",
           "routingNotes": "新增两条基础体验更新，不计新增模式；Street Fighter 6 外卡接管另进 modes.json。"
+        },
+        {
+          "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/31-0-designers-notes",
+          "reviewedAt": "2026-11-01",
+          "reviewScope": "本轮通读可取得的官方正文；只将下列对象写为正式卡，未收齐项单列候选。",
+          "checkedSections": [
+            "NEW: STRONGHOLDS",
+            "LEGEND BUFFS > Crypto",
+            "INTRODUCING AKIMBO WINGMAN",
+            "LEGEND BUFFS > Lifeline",
+            "LEGEND BUFFS > Revenant"
+          ],
+          "recordIds": [
+            "apex-update-cipher-strongholds-2026-11-03",
+            "apex-update-cipher-crypto-2026-11-03",
+            "apex-update-cipher-wingman-2026-11-03",
+            "apex-update-cipher-lifeline-2026-11-03",
+            "apex-update-cipher-revenant-2026-11-03"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "11月2日完整补丁尚未发布，届时逐项核对。",
+            "Loba冷却、10月1日Axle热修、Prowler/Nemesis及Hemlok轮换；District昼夜图变化仍待拆分。"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-game-updates",
+          "reviewedAt": "2026-11-01",
+          "reviewScope": "本轮通读可取得的官方正文；只将下列对象写为正式卡，未收齐项单列候选。",
+          "checkedSections": [
+            "RANKED UPDATES"
+          ],
+          "recordIds": [
+            "apex-update-cipher-legend-bans-2026-11-03"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "11月2日完整补丁尚未发布，届时逐项核对。",
+            "Loba冷却、10月1日Axle热修、Prowler/Nemesis及Hemlok轮换；District昼夜图变化仍待拆分。"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "逐段核完首发公告局内章节。常规数值、配件、角色修复和明确的 POI 变化入库。活动、局外系统及旧热修按各自日期和边界处理。",
+          "checkedSections": [
+            "WILDCARD",
+            "WEAPONS & ATTACHMENTS > Care Package Rotation",
+            "WEAPONS & ATTACHMENTS > All Burst Fire Weapons; Hemlok Burst AR; Nemesis; Prowler",
+            "MAPS > E-District Night Adjustments; Global Rendering & Readability Updates",
+            "RANKED > Scoring Adjustments for Wide Matches; Ranked UI",
+            "STRONGHOLDS",
+            "LEGEND BUFFS > Crypto",
+            "AKIMBO WINGMAN",
+            "LEGEND BUFFS > Lifeline",
+            "LEGEND BUFFS > Revenant",
+            "RANKED > Legend Bans",
+            "LEGEND BUFFS > Loba",
+            "WEAPONS & ATTACHMENTS > EVA-8 Auto / LOCKED HOP-UPS",
+            "WEAPONS & ATTACHMENTS > Peacekeeper",
+            "WEAPONS & ATTACHMENTS > ATTACHMENTS > Rapid Sniper Stock [Corrupted]",
+            "BUG FIXES > LEGEND BUG FIXES / MAPS BUG FIXES",
+            "BUG FIXES > MAPS BUG FIXES / QUALITY OF LIFE",
+            "BUG FIXES > LEGEND BUG FIXES",
+            "BUG FIXES / QUALITY OF LIFE",
+            "QUALITY OF LIFE",
+            "MAPS > Mixtape"
+          ],
+          "recordIds": [
+            "apex-update-cipher-wildcard-draft",
+            "apex-update-cipher-care-package-rotation",
+            "apex-update-cipher-burst-fire",
+            "apex-update-cipher-map-readability",
+            "apex-update-cipher-ranked-match-info",
+            "apex-update-cipher-strongholds-2026-11-03",
+            "apex-update-cipher-crypto-2026-11-03",
+            "apex-update-cipher-wingman-2026-11-03",
+            "apex-update-cipher-lifeline-2026-11-03",
+            "apex-update-cipher-revenant-2026-11-03",
+            "apex-update-cipher-legend-bans-2026-11-03",
+            "apex-update-cipher-loba-cooldowns",
+            "apex-update-cipher-eva8-disruptor-rounds",
+            "apex-update-cipher-peacekeeper-bolt-cycling",
+            "apex-update-cipher-rapid-sniper-stock",
+            "apex-update-cipher-olympus-poi-interactions",
+            "apex-update-cipher-worlds-edge-poi-collision",
+            "apex-update-cipher-legend-skill-interaction-fixes",
+            "apex-update-cipher-deathbox-respawn-feedback",
+            "apex-update-cipher-interaction-and-visibility-fixes",
+            "apex-update-cipher-mixtape-map-rotation"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "EA 只给出 99 项地图改善的总量和部分定位。已收录公开的点位以及超过 35 处藏身点、超过 15 种变幻出界修复的计数。",
+            "孤轴小节是 10 月 1 日热修回顾，未计为 11 月 3 日新增。混合模式以公告时间窗登记，逐图实际首次轮到仍待核实。",
+            "未公布具体规则的变幻小修、外卡观测与各地区首发时刻没有推断为已核实。"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.ea.com/games/apex-legends/apex-legends/news/godzilla-event",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "本轮核对所列原文小节。剩余候选继续列在覆盖记录。",
+          "checkedSections": [
+            "SURVIVE THE MONSTER, OR BECOME A MONSTER"
+          ],
+          "recordIds": [
+            "apex-update-godzilla-storm-point",
+            "apex-update-godzilla-devotion"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "精确开服时刻未公布。"
+          ],
+          "dateEvidenceUrls": [
+            "https://xitter.cf/PlayApex/status/2120216184108843110",
+            "https://x.com/PlayApex/status/2120577301029261481",
+            "https://x.com/eajapan/status/2120441403436331118"
+          ],
+          "secondarySourceUrls": [
+            "https://steamcommunity.com/games/1172470/announcements/detail/680766308468392119"
+          ]
+        },
+        {
+          "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/apex-legends-latest-update---0411/13852139",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "本轮核对所列原文小节。剩余候选继续列在覆盖记录。",
+          "checkedSections": [
+            "Adjusted > Crypto",
+            "FIXED > Crypto",
+            "FIXED > Evac Towers"
+          ],
+          "recordIds": [
+            "apex-update-cipher-crypto-recall",
+            "apex-update-cipher-evac-tower-usage-fix"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": []
+        },
+        {
+          "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/apex-legends-latest-update-1011/13863420",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "通读热修全文，逐节核对密客机制、地图资源和其他局内修复。",
+          "checkedSections": [
+            "ADJUSTED",
+            "REMOVED",
+            "FIXED"
+          ],
+          "recordIds": [
+            "apex-update-cipher-crypto-glass",
+            "apex-update-cipher-worlds-edge-vaults",
+            "apex-update-cipher-legend-feedback-fixes"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": [
+            "EA 11 月 10 日确认私房已移除世界边缘宝库，首个生效日期仍未确认。夜间电流区的返回暂为官方月底预期。"
+          ],
+          "publishedDate": "2026-11-10",
+          "additionalSourceUrls": [
+            "https://store.steampowered.com/news/posts/?appids=1172470&feed=steam_community_announcements"
+          ]
+        },
+        {
+          "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/apex-legends-latest-update-12-11-2026/13869280",
+          "publishedDate": "2026-11-12",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "通读 EA 热修正文，记录双持枪械射速与运输船路径两项局内修复。",
+          "checkedSections": [
+            "FIXED"
+          ],
+          "recordIds": [
+            "apex-update-cipher-akimbo-wingman-fire-rate",
+            "apex-update-cipher-dropship-path-crash"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": []
+        },
+        {
+          "sourceUrl": "https://forums.ea.com/blog/apex-legends-game-info-hub-en/apex-legends---map-change-update/13858707",
+          "reviewedAt": "2026-11-16",
+          "checkedSections": [
+            "MAP CHANGE"
+          ],
+          "reviewScope": "核对 Steam 官方公告的 11 月 6 日日期与 EA 论坛的地图轮换更新。实际轮换替换已明确，未来夜版未到确认时间。",
+          "recordIds": [
+            "apex-update-cipher-edistrict-day-rotation"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": [
+            "继续核实 EA 确认的夜版重返轮换日期。"
+          ],
+          "effectiveDateEvidenceUrl": "https://steamcommunity.com/games/1172470/announcements/detail/680766308468392341"
         }
       ],
-      "nextRange": "继续拆分 Marked 中期补丁的英雄、武器与操作修复；随后回填 2026 年更早补丁。"
+      "nextRange": "世界边缘宝库首次移除日期待证。EA 于 11 月 10 日确认私房中已经移除。电流区夜版月底返场仍为官方预期。 首发补丁只公布部分地图修复点位。混合模式后续轮换按官方排期记录。",
+      "latestScan": {
+        "attemptedAt": "2026-11-16",
+        "status": "reviewed_with_remaining_candidates",
+        "sourceUrls": [
+          "https://www.ea.com/games/apex-legends/apex-legends/news",
+          "https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes",
+          "https://store.steampowered.com/app/1172470/Apex/",
+          "https://www.ea.com/games/apex-legends/apex-legends/news/godzilla-event",
+          "https://forums.ea.com/blog/apex-legends-game-info-hub-en/apex-legends---map-change-update/13858707",
+          "https://forums.ea.com/blog/apex-legends-game-info-hub-en/apex-legends-latest-update---0411/13852139",
+          "https://forums.ea.com/blog/apex-legends-game-info-hub-en/apex-legends-latest-update-1011/13863420",
+          "https://forums.ea.com/blog/apex-legends-game-info-hub-en/apex-legends-latest-update-12-11-2026/13869280",
+          "https://www.ea.com/zh-hant/games/apex-legends/apex-legends/news/cipher-patch-notes",
+          "https://steamcommunity.com/ogg/1172470/announcements/detail/680765564125187554",
+          "https://steamcommunity.com/games/1172470/announcements/detail/680766308468392341",
+          "https://forums.ea.com/blog/apex-legends-game-info-hub-en/apex-legends-latest-update---011026/13764756",
+          "https://steamcommunity.com/games/1172470/announcements/detail/680766308468392119",
+          "https://xitter.cf/PlayApex/status/2120216184108843110",
+          "https://x.com/PlayApex/status/2120577301029261481",
+          "https://x.com/eajapan/status/2120441403436331118",
+          "https://store.steampowered.com/news/posts/?appids=1172470&feed=steam_community_announcements"
+        ],
+        "summary": "复核「破译天机」首发与补丁章节，整理外卡、轮换、局内信息及密客热修。哥斯拉活动已确认为外卡中的限时地图与补给改动，按 EA 全球公告的 11 月 10 日开放日登记，保留 11 月 11 日官方确认来源。 续核 11 月 10 日与 12 日热修全文，补入宝库、提示与能力修复、双持射速和运输船路径。 深查首发常规角色、枪械、配件、复活及地图修复，另核实 11 月 6 日电流区日夜版替换和 11 月 4 日撤离塔修复。",
+        "remainingCandidates": [
+          "世界边缘宝库首次移除日期待证。EA 于 11 月 10 日确认私房中已经移除。电流区夜版月底返场仍为官方预期。",
+          "首发补丁只公布部分地图修复点位。混合模式后续轮换按官方排期记录。"
+        ],
+        "report": "docs/daily-update-2026-11-15.md"
+      }
     },
     "Fortnite": {
       "coverageStatus": "ongoing_backfill",
-      "recordCount": 8,
+      "recordCount": 46,
       "checkedSources": [
         {
           "sourceUrl": "https://www.fortnite.com/patch-notes/v7-40-content-update",
@@ -126,6 +354,690 @@
           "recordIds": [
             "fortnite-update-balloons-2018-11-01"
           ]
+        },
+        {
+          "sourceUrl": "https://www.fortnite.com/news/battle-royale-update-whats-new-in-v11-31",
+          "publishedDate": "2019-12-18",
+          "versionLabel": "v11.31",
+          "reviewedAt": "2026-10-27",
+          "reviewScope": "全文21行核对；Battle Lab独立归模式，余下渲染/操作/提示修复归本条版本摘要。",
+          "checkedSections": [
+            "Introducing Battle Lab",
+            "New home for Playground",
+            "DirectX 12 beta",
+            "Bug fixes"
+          ],
+          "recordIds": [
+            "fortnite-update-v11-31-controls-2019-12-18"
+          ],
+          "coreSectionsComplete": true,
+          "pageComplete": true,
+          "outsideCoreDisposition": [
+            {
+              "title": "Playground入口迁移、任务追踪、Join Party与商店倒计时",
+              "disposition": "outside_core_scope_indexed",
+              "summary": "分别属于入口组织、任务计数和局外操作，不合并为局内规则或操作改动。"
+            }
+          ],
+          "remainingCandidates": []
+        },
+        {
+          "sourceUrl": "https://www.fortnite.com/patch-notes/v7-10?lang=en-US",
+          "publishedDate": "2018-12-18",
+          "reviewedAt": "2026-10-27",
+          "reviewScope": "本轮官方命名模式回查，并扫描已列局内章节；所有未读完/未逐项入库内容保留候选，不声明完整历史或全文收齐。",
+          "checkedSections": [
+            "Battle Royale / What's New / Limited Time Modes: 14 Days of Fortnite (公告轮换频率及起始时间)",
+            "Battle Royale / Weapons + Items: Heavy Assault Rifle 数值、Balloon 控制、滑翔伞重部署高度、Dynamite 修复",
+            "Battle Royale / Gameplay: 冰面载具、Stormwing 撞击/坠毁伤害、Zipline 附着/动量/碰撞/声音与特效、Auto Pickup Weapons 修复",
+            "Battle Royale / Events: Explorer Pop-Up Cups 木材/石材/金属上限与淘汰资源、陷阱淘汰奖励",
+            "Creative / Prefabs、Devices、Weapons + Items、Social、Performance（已读部分编辑器和性能段；不等同全篇逐项审完）",
+            "Save The World / What's New 与 Missions + Systems: Frostnite 生存循环、BluGlo Burner、风暴护盾收缩、搜刮/空投、倒地后观战、Down Tier Crafting",
+            "Save The World / Heroes 与 Weapons + Items: Armor 替换 Damage Resistance 及数值、冬季武器与专属奖励枪、近战护甲/重击能效/生命偷取词条数值、Bowler/Quad Launcher 修复"
+          ],
+          "recordIds": [],
+          "modeRecordIds": [
+            "fortnite-stw-frostnite-2018"
+          ],
+          "remainingCandidates": [
+            {
+              "category": "equipment",
+              "objects": [
+                "Heavy Assault Rifle ADS/站立精度+10%、垂直后坐力-6%、基础精度-30%、跳跃/下落精度-60%",
+                "气球释放操作改为蹲伏键及 Alt-Fire",
+                "Medieval 武器组与 Ginger Blaster（注意限定 Winter Llama/任务获得，需判断是否模式限定）",
+                "武器近战词条：Armor 13/20/27/33/40；重击能效40/60/80/100/120%；Life Leech数值提升50%"
+              ]
+            },
+            {
+              "category": "traversal",
+              "objects": [
+                "滑翔伞重部署可用高度 1000→576 units（仅适用模式）",
+                "Zipline附着碰撞、动量、结构穿越音效/特效及脱离/弹飞修复",
+                "载具在冰面滑行；Stormwing撞击物伤害承受+50%，加速减伤50%（原先完全免疫）；被击落时乘员直伤25→50"
+              ]
+            },
+            {
+              "category": "economy_loot",
+              "objects": [
+                "Explorer Pop-Up Cups资源上限 木/石/金属700/500/300→500/500/500；淘汰资源100/50/50→50/50/50",
+                "Frostnite 搜索/采集资源双倍、波间空投；模式结束不保留武器/陷阱"
+              ]
+            },
+            {
+              "category": "revive_teamplay",
+              "objects": [
+                "Frostnite被击倒后进入观战，直到其余玩家完成当前波次"
+              ]
+            },
+            {
+              "category": "combat_rules",
+              "objects": [
+                "陷阱在 Explorer Pop-Up Cup 中授予淘汰奖励",
+                "角色 Armor 机制替代 Damage Resistance；逐职业、技能与数值需拆分核查"
+              ]
+            },
+            {
+              "category": "in_match_usability",
+              "objects": [
+                "更易拾取炮台附近掉落物；自动拾取武器回归修复",
+                "no-scope狙击淘汰显示于淘汰动态",
+                "PC/移动显示设置提示和设备性能支持需区分纯设置与对局可读性"
+              ]
+            }
+          ],
+          "outsideCoreDisposition": [
+            "Creative岛屿编辑器、prefab与编辑器设备配置（仅记录已读范围；若某设备成为公开岛内实际玩法机制需另审）",
+            "冬季羊驼、活动票券与纯奖励/商店安排",
+            "社交与赛事日期公告"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingReviewNote": "上列是待核对/拆分候选，不代表逐项完成去重或已写入 data/core-updates.json；后半补丁及所有普通修复仍需逐条继续阅读。"
+        },
+        {
+          "sourceUrl": "https://www.fortnite.com/patch-notes/v10-00-patch-notes?lang=en-US",
+          "publishedDate": "2019-08-01",
+          "reviewedAt": "2026-10-27",
+          "reviewScope": "本轮官方命名模式回查，并扫描已列局内章节；所有未读完/未逐项入库内容保留候选，不声明完整历史或全文收齐。",
+          "checkedSections": [
+            "Battle Royale / What's New / B.R.U.T.E. 与 Rift Zones",
+            "Battle Royale / Weapons + Items: B.R.U.T.E.武器/护盾、赛季Vault项目、篝火治疗载具、投掷物对载具碰撞修复",
+            "Battle Royale / Gameplay: Missions与Limited Time Missions规则（任务/奖励为局外进度，未作为core候选）",
+            "Battle Royale / Events: Arena Solo/Trios、Hype重置、计分结构及十个分段",
+            "Save The World / What's New、Missions + Systems: Hit the Road路线任务与资源/复活/匹配规则、任务奖励调整、Wargames/Endurance奖励",
+            "Save The World / UI、Heroes、Weapons + Items、Gameplay中已读取部分角色技能、世界掉落、Tar Pit物品与若干战斗修复",
+            "General: Locker、emote和前端导航/匹配设置（已识别局外项目，不作为核心更新）"
+          ],
+          "recordIds": [],
+          "modeRecordIds": [
+            "fortnite-stw-hit-the-road-2019"
+          ],
+          "remainingCandidates": [
+            {
+              "category": "map_poi",
+              "objects": [
+                "Rift Zones使旧地点回归并带有地点专属玩法变化；本公告未给具体地点机制，需结合后续对应公告逐地点确认，不能笼统猜测"
+              ]
+            },
+            {
+              "category": "map_interactable",
+              "objects": [
+                "Rift Zones后续确认的区域交互/规则对象（当前补丁只预告神秘玩法变化，细节待对应来源）"
+              ]
+            },
+            {
+              "category": "equipment",
+              "objects": [
+                "B.R.U.T.E.机甲：双人驾驶/炮手分工、冲刺/超级跳/踩踏采材、10发霰弹（50伤害/1.5倍爆头）、最多10枚导弹及装填发射、消耗200任一材料获得5秒个人护盾",
+                "全体篝火现可治疗载具",
+                "Vault载具/武器清单和大型团队重部署例外（需要判断是否作为版本摘要，而非每件拆条）",
+                "Save the World新增Vacuum Tube世界掉落；Tar Pit陷阱蓝图开始占用库存且可回收"
+              ]
+            },
+            {
+              "category": "traversal",
+              "objects": [
+                "B.R.U.T.E.冲刺、超级跳与双人操控移动；Rift Zone的移动机制待各后续来源具体核实",
+                "Ride the Pony变为可在各模式使用的移动表情（需审是否达到局内移动更新范围）"
+              ]
+            },
+            {
+              "category": "economy_loot",
+              "objects": [
+                "Hit the Road起始无装备/补给，靠沿途搜刮与采集；保留陷阱蓝图、手工武器制作禁用、宝箱提供匹配强度武器/陷阱/资源",
+                "Hit the Road载具生命归零即旅程结束，按完成目标数量结算奖励"
+              ]
+            },
+            {
+              "category": "revive_teamplay",
+              "objects": [
+                "Hit the Road四人组队；玩家倒地后等待到达/完成目标才可重生"
+              ]
+            },
+            {
+              "category": "combat_rules",
+              "objects": [
+                "Arena赛季Hype重置及Solo/Trios新计分和分段结构（竞技进度/匹配规则，是否收录按core口径进一步判断）",
+                "B.R.U.T.E.资源护盾与载具战斗能力；玩家在机甲内的保护条件"
+              ]
+            },
+            {
+              "category": "in_match_usability",
+              "objects": [
+                "关卡流送预载及低LOD改善；Chest音效距离/音量、远处枪声/滑翔音频；控制器Tap-to-Search/Interact、移动端自动射击重调；STW小地图掉落图标方向、Storm Shield地图居中与控制器导航等"
+              ]
+            }
+          ],
+          "outsideCoreDisposition": [
+            "Battle Pass、赠礼、任务线及Limited Time Missions的奖励/进度结构",
+            "Creative编辑器与自制内容工具",
+            "Locker、音乐包、装饰、前端和纯菜单导航",
+            "单纯商店英雄可获得信息；若其技能机制改变对局则只记录技能效果，获得途径排除"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingReviewNote": "Hit the Road的玩法卡与本页局内资源/复活变更应分开建档；候选尚未完成逐项入库。"
+        },
+        {
+          "sourceUrl": "https://www.fortnite.com/patch-notes/v9-00?lang=en-US",
+          "publishedDate": "2019-05-09",
+          "reviewedAt": "2026-10-27",
+          "reviewScope": "本轮官方命名模式回查，并扫描已列局内章节；所有未读完/未逐项入库内容保留候选，不声明完整历史或全文收齐。",
+          "checkedSections": [
+            "Battle Royale / What's New: Slipstreams、Neo Tilted与Mega Mall",
+            "Battle Royale / Weapons + Items: Combat Shotgun数值与投放、Tactical Shotgun加强、Drum Gun/Boom Bow概率、Grenade解封与物品Vault",
+            "Battle Royale / Gameplay: Slipstream、Air Vent、Fortbytes、断线玩家留在世界60秒且仍可受伤/计淘汰分",
+            "Battle Royale / UI、LTM rotation、操作与网络：颜色标记、Turbo Building网络容错、移动抖动修复、Trios/Solid Gold/One Shot规则",
+            "Creative / UI + Social、Performance部分",
+            "Save The World / Wargames、Missions + Systems、UI、Performance、Heroes等已读取部分"
+          ],
+          "recordIds": [],
+          "modeRecordIds": [
+            "fortnite-stw-wargames-2019"
+          ],
+          "remainingCandidates": [
+            {
+              "category": "map_poi",
+              "objects": [
+                "火山毁坏后出现Neo Tilted与Mega Mall（具体地形/路线及各自生效范围需对比前后官方图文）"
+              ]
+            },
+            {
+              "category": "map_interactable",
+              "objects": [
+                "Fortbytes收集芯片（仅限Season 9、每天开放进度，性质为季节进度目标；是否纳入局内交互待口径确认）",
+                "Wargames四种首发模拟：Torn Apart、Hot Spots、Denied、Safety Zone，各具环境威胁/防御目标机制"
+              ]
+            },
+            {
+              "category": "equipment",
+              "objects": [
+                "Combat Shotgun新增：10发、每发9弹丸、基础伤害73/77/81、爆头1.70倍、双发装填；稀有至传奇、地面/宝箱/补给/售卖机来源",
+                "Tactical Shotgun伤害66/70/74→71/75/79",
+                "手榴弹解封；Clinger、Buried Treasure、Pump、Poison Dart Trap、Scoped Revolver、Suppressed AR、Thermal AR、Balloons Vault；Drum Gun和Boom Bow出现概率下调"
+              ]
+            },
+            {
+              "category": "traversal",
+              "objects": [
+                "Slipstream风道被动输送；主动输入/上下摆动可加速，出口速度与角度决定弹出方向，投射物和载具也可进入",
+                "Air Vent短距离发射并免疫坠落伤害",
+                "Turbo Building在较差网络环境下更宽容"
+              ]
+            },
+            {
+              "category": "economy_loot",
+              "objects": [
+                "Drum Gun出现率16.732%→7.155%，Boom Bow 1.292%→0.755%",
+                "Wargames/任务奖励及任务区结构变更需与纯奖励分开核对"
+              ]
+            },
+            {
+              "category": "revive_teamplay",
+              "objects": [
+                "断线角色仍在世界保留60秒，可受伤且计入淘汰分；Reboot Van冷却期间的卡片提示音修复"
+              ]
+            },
+            {
+              "category": "combat_rules",
+              "objects": [
+                "Wargames需防守基地7分钟后再防守随机增幅器7分钟；不同模拟改变建筑破坏、熔岩/敌人火元素、异常裂隙伤害、便携护盾区与敌人目标优先级",
+                "Black Knight Garridan：正面减伤95%、持续16秒；Paleo Luna近战附加当前生命值5.5%/指挥官16.5%；Blast from the Past需2名恐龙英雄、移除护盾并增加最大生命200%",
+                "LTM Trios/Solid Gold/One Shot规则属于模式卡机制核对而非新增基础更新"
+              ]
+            },
+            {
+              "category": "in_match_usability",
+              "objects": [
+                "健康值回复UI显示、PS4队友标记灯颜色、Hold-to-Swap兼容、断线/复活音效；Wargames目标HUD友军蓝/敌军红、计分板淘汰命名与设备血条复活后显示修复",
+                "匹配时加载卡顿、Hoverboard/效果/音频区内加载、HUD帧率、任务物品交互耗时、Xbox渲染性能"
+              ]
+            }
+          ],
+          "outsideCoreDisposition": [
+            "Battle Pass/Fortbytes奖励解密进度和季节奖励（交互本身可另审）",
+            "Creative Phone、编辑器Prefab/设备等创作工具性能",
+            "英雄商城获取方式和纯奖励；英雄技能效果本身属于候选"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingReviewNote": "本文只读到BR、Creative局部和STW部分章节；剩余章节/修复尚未逐条扫描。"
+        },
+        {
+          "sourceUrl": "https://www.fortnite.com/patch-notes/v9-30?lang=en-US",
+          "publishedDate": "2019-06-18",
+          "reviewedAt": "2026-10-27",
+          "reviewScope": "本轮官方命名模式回查，并扫描已列局内章节；所有未读完/未逐项入库内容保留候选，不声明完整历史或全文收齐。",
+          "checkedSections": [
+            "Battle Royale / What's New、LTM Rotation、Weapons + Items、Bug Fixes and Adjustments",
+            "Battle Royale / Gameplay: Hold to Swap、Block西北压力板谜题、载具触发条件",
+            "Creative编辑器内容（已读部分，非公开局内玩法不纳入）",
+            "Save The World / Endurance、Retrieve the Data、Resupply、Wargames奖励与模拟、UI、Heroes、Performance等后段章节"
+          ],
+          "recordIds": [],
+          "modeRecordIds": [
+            "fortnite-stw-endurance-2019"
+          ],
+          "remainingCandidates": [
+            {
+              "category": "map_poi",
+              "objects": [
+                "Block西北Fortbyte压力板谜题被调整为更容易完成；解锁后开放最长15秒，除Hoverboard外车辆均可压住踏板"
+              ]
+            },
+            {
+              "category": "map_interactable",
+              "objects": [
+                "压力板/踏板机关触发规则与可用时间"
+              ]
+            },
+            {
+              "category": "equipment",
+              "objects": [
+                "Chug Splash：稀有，落地小范围，范围内所有玩家立即获20生命/护盾；可治疗队友与敌人、延长倒地状态；2个一叠、上限6，五类来源",
+                "Combat Shotgun中距伤害-10%、2.44–4.88 tiles；远距-20%、4.88–9.76 tiles；Boom Bow/Dual Pistols/Dynamite Vault",
+                "禁用乘坐Proximity Grenade Launcher弹体（仍可乘坐火箭）"
+              ]
+            },
+            {
+              "category": "economy_loot",
+              "objects": [
+                "Endurance完成30波后奖励按波次发放Gold/RE-PERK/PERK-UP；每区完成30波旗帜/羊驼奖励",
+                "Wargames各区活动票券数量统一；进化材料和PERK-UP奖励品质范围调整（需判断纯奖励是否排除）"
+              ]
+            },
+            {
+              "category": "revive_teamplay",
+              "objects": [
+                "Chug Splash可延长被击倒玩家状态持续时间",
+                "Wargames全队倒地时错误复活时序修复"
+              ]
+            },
+            {
+              "category": "combat_rules",
+              "objects": [
+                "Storm Flip进入风暴后开始造成伤害增加短延迟，以匹配常规风暴；加入音频可视器",
+                "Endurance解锁需完成任一区全部Storm Shield Defense；30波敌人渐增，偶尔插入Wargames模拟，难度按区域，敌人掉落更多弹药",
+                "Retrieve the Data变为Beta Storm：风暴收缩至1x1落点防守区，找到落点后可投票击落气球（Stonewood初次任务无风暴但仍为1x1）",
+                "Resupply回归永久主要任务：10分钟内采集清单物品并在风暴收缩中完成",
+                "Chromium Ramirez空弹匣换弹后3秒回复护盾；Diecast Jonesy Goin' Commando伤害增强（确切数值需核本页原文继续）"
+              ]
+            },
+            {
+              "category": "in_match_usability",
+              "objects": [
+                "Hold to Swap默认关闭；关闭时拾取在初次按键而非松开时触发",
+                "消耗品使用效果时序、补给无人机水域地下生成、重启卡不再掉落且计时结束移除、营火爆炸遮挡、投掷物/阴影弹等局内错误修复",
+                "Endurance Target Practice副任务移动至更开放区域；迷你地图/Storm Shield电脑界面更新；HUD等剩余项待全文复查",
+                "网络/加载/渲染/音频卡顿的局内影响需按设备与情境逐项筛选"
+              ]
+            }
+          ],
+          "outsideCoreDisposition": [
+            "LTM轮换名录与纯武器池组合（若卡片已有同名模式则只核其模式机制，不新建基础更新）",
+            "活动商店英雄获取日期、任务奖励、羊驼与纯进度奖励",
+            "Creative岛屿设备配置和创作界面"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingReviewNote": "候选未按对象+版本逐项去重或入库；页面中的其余技能、操作与性能段仍待续查。"
+        },
+        {
+          "sourceUrl": "https://www.fortnite.com/news/ea-1-7-patch-notes",
+          "publishedDate": "2017-10-04",
+          "reviewedAt": "2026-10-27",
+          "reviewScope": "本轮官方命名模式回查，并扫描已列局内章节；所有未读完/未逐项入库内容保留候选，不声明完整历史或全文收齐。",
+          "checkedSections": [
+            "EA 1.7 Release Notes / Horde Bash - Save the World: Challenge the Horde建造、10波遭遇、难度、技能树资源与建造循环",
+            "EA 1.7 / Scavenger武器/英雄/防御者简述和活动奖励安排",
+            "Battle Royale: 开窗拾取、纹理弹出、全队可见救援进度、击杀日志颜色、库存图标与结算按钮",
+            "Save the World / Major Known Issues、Abilities与Gameplay修复中已读部分"
+          ],
+          "recordIds": [],
+          "modeRecordIds": [
+            "fortnite-stw-challenge-the-horde-2017"
+          ],
+          "remainingCandidates": [
+            {
+              "category": "equipment",
+              "objects": [
+                "Scavenger武器组9件：制作成本较低、耐久较低；具体枪械数值尚未在已读段核完",
+                "新增英雄技能/专属perk：Raider Soldier近战/霰弹，Gunblazer弹药搜集，Machinist强化陷阱，Energy Thief近战回复能量；需要逐技能原文拆对象",
+                "Frag Grenade伤害/眩晕、Bull Rush不再伤害防御者、Wings of Dragon距离等修复待全文确认"
+              ]
+            },
+            {
+              "category": "economy_loot",
+              "objects": [
+                "Challenge the Horde关闭采集；战斗开始与每波成功结束时发放资源，技能树升级可提高木/石/金属、陷阱/武器材料和弹药每波数量",
+                "Scavenger武器较常规制作更便宜但耐久下降（局外商店解锁方式排除）"
+              ]
+            },
+            {
+              "category": "revive_teamplay",
+              "objects": [
+                "Challenge the Horde每名队员可携带一名防御者，并有若干免费防御者基座",
+                "BR救援进度对全队显示，大型进度标记在救援时显示"
+              ]
+            },
+            {
+              "category": "combat_rules",
+              "objects": [
+                "Challenge the Horde每个区域3–5个挑战、每挑战10波，逐波引入玩法修正/敌群构成，最终Power区域挑战更高",
+                "Slow Field范围起点512→384；升级额外范围加成256→64；减速40%基础/升级至60%；冷却300→180秒",
+                "Triple Tap弹药类型从重型改为中型；蓄力拳恢复200%完整伤害；Anti-Material Charge加成、Bull Rush与英雄技能/防御者互动需续读原文"
+              ]
+            },
+            {
+              "category": "in_match_usability",
+              "objects": [
+                "BR可隔着打开的窗户/其他开口拾取物品；团队成员可见救援进度；纹理远距离弹出修复；队友击杀日志颜色修复"
+              ]
+            },
+            {
+              "category": "map_poi",
+              "objects": [
+                "Horde Bash战斗区域可携带并逐局保留自建Portable Horde Fort；逐区域敌袭地点与最终hex安排需核查原文余段"
+              ]
+            }
+          ],
+          "outsideCoreDisposition": [
+            "Scavenger票券、活动商店羊驼、任务和英雄/武器获得奖励路线",
+            "Lobby胜负页按钮措辞及纯菜单/社交/聊天问题",
+            "本页标示的非局内已知问题，除非其描述直接影响遭遇公平/可操作性且可复核"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingReviewNote": "本文已读机制主段与若干技能/修复；武器/英雄/perk后续清单未逐条完整读完，数值和具体更改仍需继续核对。"
+        },
+        {
+          "sourceUrl": "https://www.fortnite.com/news/save-the-worlds-newest-update-7-21-2020?lang=en-US",
+          "publishedDate": "2020-07-21",
+          "reviewedAt": "2026-10-27",
+          "reviewScope": "本轮官方命名模式回查，并扫描已列局内章节；所有未读完/未逐项入库内容保留候选，不声明完整历史或全文收齐。",
+          "checkedSections": [
+            "Homebase Status Report / Venture to the Next Level: 首季Blasted Badlands、Venture等级与区域内Power/F.O.R.T.属性、开放日期",
+            "Venture Zone Missions and Modifiers: 任务开放、Venture XP、每季重置/新modifier、每年五个生物群系、Rage Meter规则",
+            "Venture Items and Backpack: 无武器制作、开局武器、世界搜刮/售卖机购买/Repair Bench耐久修理、陷阱降阶制作、独立季节背包与禁止掉落/交易",
+            "Venture Rewards与后续Blasted Badlands英雄/Hit the Road周事件章节（奖励进度与任务内容为局外范围，Cloaked Star modifier仍可能是玩法变体）"
+          ],
+          "recordIds": [],
+          "modeRecordIds": [
+            "fortnite-stw-ventures-2020"
+          ],
+          "remainingCandidates": [
+            {
+              "category": "map_poi",
+              "objects": [
+                "每季切换独特季节区域/生物群系；本次首季为Blasted Badlands。具体区域点位和路线改动未在本文提供"
+              ]
+            },
+            {
+              "category": "map_interactable",
+              "objects": [
+                "Venture Zone中的可搜刮售卖机，使用本局采集资源购买高稀有武器；Repair Bench用搜刮材料修复武器耐久"
+              ]
+            },
+            {
+              "category": "equipment",
+              "objects": [
+                "首季Rage Meter持续消耗能量；对敌造成武器伤害恢复能量，同时显著缩短技能冷却并提高技能伤害",
+                "Ventures开局提供基础武器且关闭武器制作；陷阱仍可用降阶方式制作"
+              ]
+            },
+            {
+              "category": "economy_loot",
+              "objects": [
+                "独立季节背包每季重置，不能调用主战役库存资源；物品不可丢弃、不可交易",
+                "售卖机用当前区域搜刮资源换高稀有度武器；修理台消耗搜刮材料恢复耐久"
+              ]
+            },
+            {
+              "category": "combat_rules",
+              "objects": [
+                "Venture Level决定该区域内Power Level与F.O.R.T属性；任务按Seasonal Venture Level逐步开放更高难区",
+                "每年轮换五个不同生物群系及专属modifier；赛季级别重置并更换modifier"
+              ]
+            }
+          ],
+          "outsideCoreDisposition": [
+            "Venture等级奖励、武器券、Gameplay Reperk、Superchargers及材料奖励目录",
+            "Impostor Questline/英雄获得途径与英雄perk（英雄技能机制可另按对象核查）",
+            "Hit the Road Cloaked Star角色奖励；该周modifier是否独立改变关卡机制需单独关联Hit the Road模式卡核对"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingReviewNote": "公告日期与排定开放时间已从原文分别记录；当前台账尚未逐项转成core更新记录，后续需核实实际生效/区域范围与对象去重。"
+        },
+        {
+          "sourceUrl": "https://communities.epicgames.com/thread/fortnitemares-2026-curses-battle-royale-reload-and-more/L4S8/",
+          "reviewedAt": "2026-11-01",
+          "reviewScope": "本轮通读可取得的官方正文；只将下列对象写为正式卡，未收齐项单列候选。",
+          "checkedSections": [
+            "The Nitemare Has Loaded",
+            "Freddy’s Animatronics",
+            "New & Returning Weapons",
+            "A Treat for Your Sprite Collection / Loot Pool Updates",
+            "Gameplay, Audio & Environment / Mobile",
+            "Gameplay, Audio & Environment",
+            "PC > Epic Quality Assets Option / Streaming Improvements"
+          ],
+          "recordIds": [
+            "fortnite-update-cursed-overrides-2026-10-01",
+            "fortnite-update-animatronic-possession-2026-10-01",
+            "fortnite-update-nightmare-weapons-2026-10-01",
+            "fortnite-update-sprite-loot-2026-10-01",
+            "fortnite-update-pickup-input-2026-10-01",
+            "fortnite-update-stationary-reboot-2026-10-01",
+            "fortnite-update-pc-assets-2026-10-01"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "Horde Rush无尽模式、诅咒神龛与跨局成长；Blitz的Ghost Face角色争夺；Reload更新地图与吸血物资，待进一步拆卡。",
+            "Fortnitemares后续Power Hours与10月15日精灵的正式生效补证。"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time",
+          "reviewedAt": "2026-11-01",
+          "reviewScope": "本轮通读可取得的官方正文；只将下列对象写为正式卡，未收齐项单列候选。",
+          "checkedSections": [
+            "New Shores to Explore",
+            "Captain Days: New Sprites, Weapons & More"
+          ],
+          "recordIds": [
+            "fortnite-update-treasure-crossbones-2026-11-01",
+            "fortnite-update-treasure-one-piece-2026-11-01",
+            "fortnite-update-treasure-rocky-2026-11-01",
+            "fortnite-update-treasure-captain-days-2026-11-01"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "Horde Rush无尽模式、诅咒神龛与跨局成长；Blitz的Ghost Face角色争夺；Reload更新地图与吸血物资，待进一步拆卡。",
+            "Fortnitemares后续Power Hours与10月15日精灵的正式生效补证。"
+          ]
+        },
+        {
+          "sourceUrl": "https://communities.epicgames.com/thread/set-sail-for-fortnite-treasure-hunters-the-greatest-adventure-of-all-time/Pmud",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "按首发全文复核海贼王道具、互动资源、精灵机制和物资，发售时间对照 Epic 状态页。",
+          "checkedSections": [
+            "New Shores to Explore",
+            "New Weapons and Items Worth Getting Your Hands On",
+            "Captain’s Day: A$AP Rocky Arrives; New Arrivals Every Week",
+            "Mastery Monday Returns; New Sprites on Deck; New & Returning Variants",
+            "Sprites Quality-of-Life Improvements; Sprite Mastery Track Is Back",
+            "Loot Pool Updates; Balance Adjustments & Quality-of-Life Updates",
+            "Bug Fixes, Improvements & Adjustments"
+          ],
+          "recordIds": [
+            "fortnite-update-treasure-crossbones-2026-11-01",
+            "fortnite-update-treasure-one-piece-2026-11-01",
+            "fortnite-update-treasure-rocky-2026-11-01",
+            "fortnite-update-treasure-captain-days-2026-11-01",
+            "fortnite-update-treasure-flame-flame-fruit-2026-11-01",
+            "fortnite-update-treasure-usopp-slingshot-2026-11-01",
+            "fortnite-update-treasure-explosive-cannonball-2026-11-01",
+            "fortnite-update-treasure-nami-tangerine-2026-11-01",
+            "fortnite-update-treasure-meat-on-a-stick-2026-11-01",
+            "fortnite-update-treasure-sprite-wanted-poster-2026-11-01",
+            "fortnite-update-treasure-golden-apple-2026-11-01",
+            "fortnite-update-treasure-chest-refill-2026-11-01",
+            "fortnite-update-treasure-gold-bars-followers-2026-11-01",
+            "fortnite-update-treasure-gum-gum-fruit-2026-11-01",
+            "fortnite-update-treasure-zoro-three-sword-style-2026-11-01"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": [
+            "未给出攻击数值、精灵检测距离或复开箱时间。道具采用本文的动作与获取范围，演示候选逐段核对。"
+          ],
+          "additionalSourceUrls": [
+            "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time?lang=zh-CN",
+            "https://status.epicgames.com/incidents/npy10q9x5m8d",
+            "https://www.toei-animation.com/one-piece-fortnite-2026/"
+          ],
+          "versionSummary": [
+            "武器首发包括中距离全自动 Bundlebuss 和单发高伤 Gilded Dragoon。官方列明当周及后续返场枪械，未提供具体掉率。",
+            "精灵涉及标记淘汰、装填和弹药返还、耗耐、水域恢复、搜宝、坠落免伤、采集速度及落地击退。具体数值未公开。美梦精灵升级给随机物品，满级给神话战利品。",
+            "新版精灵画面按编号排序，加上取得来源印记。修复队友重启车中断、近距弹着声、手柄低幅输入和移动端口袋道具 HUD。前端设置与外观按对局影响记录。"
+          ]
+        },
+        {
+          "sourceUrl": "https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "通读 BR 正文，复核 11 月 14–15 日活动、PC 素材和局内交互。独立玩法另见勘误页。",
+          "checkedSections": [
+            "Captain’s Day: Buggy Is Here | November 12",
+            "Gameplay Updates > Loot Pool",
+            "Sprite Updates",
+            "Quality-of-Life Improvements > Audio & UI",
+            "Bug Fixes & Adjustments > General; Gameplay; Mobile",
+            "Treasure Hours: Cursed | November 14",
+            "Captain’s Day: Miku and Teto | November 15; Sprite Updates > New Sprites Coming November 15"
+          ],
+          "recordIds": [
+            "fortnite-update-v4310-buggy",
+            "fortnite-update-v4310-loot",
+            "fortnite-update-v4310-sprites",
+            "fortnite-update-v4310-audio-ui",
+            "fortnite-update-v4310-controls",
+            "fortnite-update-v4310-cursed-treasure-hours",
+            "fortnite-update-v4310-miku-teto-captain-day",
+            "fortnite-update-treasure-special-buggy-ball-2026-11-12"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "初音未来与重音特托船长日的实际开放已获 Epic 官方活动页确认。首场诅咒寻宝延长已确认，第二场保留排期。"
+          ],
+          "additionalSourceUrls": [
+            "https://status.epicgames.com/incidents/mpp1cbb204zr",
+            "https://communities.epicgames.com/thread/captains-day-miku-and-teto-november-15/J6yA",
+            "https://www.fortnite.com/@epic/battle-royale"
+          ]
+        },
+        {
+          "sourceUrl": "https://communities.epicgames.com/thread/fixes-and-improvements-in-v43-10/gpbV/",
+          "versionLabel": "v43.10",
+          "publishedDate": "2026-11-12",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "通读总表，复核 PC 与 BR 重复条款，补入小队复活战、经典回归和守护家园局内修复。",
+          "checkedSections": [
+            "PC > High Quality Assets Option; PC Bug Fixes and Improvements",
+            "Reload",
+            "Fortnite OG",
+            "Save the World",
+            "Battle Royale & Zero Build",
+            "Mobile",
+            "Known Issues We’re Working On",
+            "Arenas",
+            "LEGO Fortnite"
+          ],
+          "recordIds": [
+            "fortnite-update-v4310-pc-assets",
+            "fortnite-update-v4310-reload-map-rotation-fix",
+            "fortnite-update-v4310-og-saturation-fix",
+            "fortnite-update-v4310-stw-mission-fixes",
+            "fortnite-update-v4310-controls",
+            "fortnite-update-v4310-sprites",
+            "fortnite-update-v4310-audio-ui",
+            "fortnite-update-v4310-arenas-loot-pairing",
+            "fortnite-update-v4310-odyssey-interaction"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "淘汰后观战黑屏仍列为已知问题。音乐节的局内操作与排行榜按玩法范围处理。"
+          ]
+        },
+        {
+          "sourceUrl": "https://communities.epicgames.com/thread/v43-00-blitz-royale-update-notes/RnOd",
+          "publishedDate": "2026-11-01",
+          "reviewedAt": "2026-11-16",
+          "checkedSections": [
+            "Blitz New Loot Pool Additions",
+            "Loot Locations",
+            "More Changes to Know"
+          ],
+          "recordIds": [
+            "fortnite-update-treasure-blitz-loot-2026-11-01"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": []
+        },
+        {
+          "sourceUrl": "https://communities.epicgames.com/thread/fortnite-arenas-43-10-update-notes/xeom",
+          "publishedDate": "2026-11-12",
+          "reviewedAt": "2026-11-16",
+          "checkedSections": [
+            "Arenas Loot Pool Updates",
+            "Arenas Bug Fixes & Quality of Life Improvements"
+          ],
+          "recordIds": [
+            "fortnite-update-v4310-arenas-loot-pairing"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": []
+        },
+        {
+          "sourceUrl": "https://communities.epicgames.com/thread/captains-day-miku-and-teto-november-15/J6yA",
+          "publishedDate": "2026-11-14",
+          "reviewedAt": "2026-11-16",
+          "checkedSections": [
+            "When & Where; live event; loot pool and map fragment"
+          ],
+          "recordIds": [
+            "fortnite-update-v4310-miku-teto-captain-day"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": []
         }
       ],
       "remainingCandidates": [
@@ -138,8 +1050,32 @@
         "v8.00：火山喷气口、熔岩、POI、标记、声音、移动端和物资池；STW 职业重做另待整理。",
         "v26.30：木桩霰弹枪、吸血刀、南瓜发射器、糖果、强化回归、Quick Weapon；皮肤和奖励属局外，Horde Rush 已有父卡。"
       ],
-      "nextRange": "继续战术道具历史版本：气球后续重做、抓钩充能调整、冲击波与脉冲手雷差异；补喷气背包、弹跳板、便携裂隙之外的伪装／控场／侦察道具。官方目录与整篇基础更新覆盖仍开放。",
-      "notes": "本轮新增 8 个历史道具／载具对象记录，不新增模式。直接 HTTP 抓取遇到官网校验页，机制通过可读取的官方页面核对；不把校验页当正文归档。"
+      "nextRange": "已核对 43.00 首发、闪电战物资及 43.10 竞技场、乐高和折叠屏条款。初音未来与重音特托活动已补证。43.10 诅咒寻宝第二场、道具未公告数值及后续轮换待证。",
+      "notes": "本轮新增 8 个历史道具／载具对象记录，不新增模式。直接 HTTP 抓取遇到官网校验页，机制通过可读取的官方页面核对；不把校验页当正文归档。",
+      "latestScan": {
+        "attemptedAt": "2026-11-16",
+        "status": "reviewed_with_remaining_candidates",
+        "sourceUrls": [
+          "https://www.fortnite.com/@epic/battle-royale",
+          "https://communities.epicgames.com/thread/set-sail-for-fortnite-treasure-hunters-the-greatest-adventure-of-all-time/Pmud",
+          "https://communities.epicgames.com/thread/v43-10-fortnite-treasure-hunters-update-notes/CoOG",
+          "https://communities.epicgames.com/thread/fixes-and-improvements-in-v43-10/gpbV/",
+          "https://www.fortnite.com/%40epic/battle-royale?lang=en-US",
+          "https://x.com/FortniteStatus/status/2121692137045852501",
+          "https://communities.epicgames.com/thread/v43-00-blitz-royale-update-notes/RnOd",
+          "https://communities.epicgames.com/thread/fortnite-arenas-43-10-update-notes/xeom",
+          "https://communities.epicgames.com/thread/captains-day-miku-and-teto-november-15/J6yA",
+          "https://status.epicgames.com/incidents/npy10q9x5m8d",
+          "https://status.epicgames.com/incidents/mpp1cbb204zr",
+          "https://www.toei-animation.com/one-piece-fortnite-2026/"
+        ],
+        "summary": "补核首发机制与闪电战物资、竞技场双排、乐高及折叠屏修复，确认初音未来和重音特托船长日。 同步核对五项联动道具的公开媒体包并接入主题道具页。",
+        "remainingCandidates": [
+          "已确认初音未来与重音特托活动期。诅咒寻宝第二场缺独立上线证据。",
+          "继续核实官方未公布的逐对象数值和媒体素材。"
+        ],
+        "report": "docs/daily-update-2026-11-15.md"
+      }
     },
     "Free Fire": {
       "coverageStatus": "ongoing_historical_backfill",
@@ -7182,7 +8118,7 @@
           }
         }
       ],
-      "nextRange": "先逐篇处理剩余官方候选与OB编号证据，不把已收录目录当作全历史闭合；12/365/804/1557正文或图片问题，以及336/220/228/1482图片缺口需保留。",
+      "nextRange": "恢复 AGENTS.md 指定 free-fire-patch-dossiers.md 后，继续 Storm Arena、后续补丁和历史双线；现有详录不改。",
       "coverageNote": "已收录各篇详录中的局内内容经逐篇复核；独立玩法与局外内容另列处置。仍有历史缺口，不代表连续或完整历史覆盖。",
       "imageReviewedAt": "2026-09-18",
       "coverCount": 14,
@@ -7516,11 +8452,23 @@
           },
           "unavailableImages": []
         }
-      ]
+      ],
+      "latestScan": {
+        "attemptedAt": "2026-11-15",
+        "status": "blocked_missing_required_reference",
+        "sourceUrls": [
+          "https://ff.garena.com/en/news/"
+        ],
+        "summary": "索引见11月4日 Storm Arena 活动。指定 Free Fire 采集参考在当前 Windows 主机不可读取，仅确认索引可见，未处理公告正文。",
+        "remainingCandidates": [
+          "恢复 AGENTS.md 指定 free-fire-patch-dossiers.md 后，继续 Storm Arena、后续补丁和历史双线；现有详录不改。"
+        ],
+        "report": "docs/daily-update-2026-11-15.md"
+      }
     },
     "PUBG": {
       "coverageStatus": "ongoing_backfill",
-      "recordCount": 0,
+      "recordCount": 23,
       "checkedSources": [
         {
           "sourceUrl": "https://pubg.com/en/news/11136",
@@ -7539,19 +8487,368 @@
           "remainingCandidates": [
             "逐项拆分标记系统和载具刷新规则；按对象回填 Update 43.2 的局内修复。"
           ]
+        },
+        {
+          "sourceUrl": "https://pubg.com/en/news/1675",
+          "publishedDate": "2021-01-13",
+          "versionLabel": "Arena Mode – 2nd Iteration",
+          "reviewedAt": "2026-10-27",
+          "reviewScope": "完整正文复核TPP、默认武器、商店、点数、UX、举报入口和双平台排期；首轮另归模式卡。",
+          "checkedSections": [
+            "Perspective",
+            "Changes in default pistol",
+            "Loadout store improvements",
+            "Loadout point balance adjustment",
+            "UX improvements",
+            "Addition of the reporting system",
+            "Schedule"
+          ],
+          "recordIds": [
+            "pubg-update-arena-second-iteration-2021-01-13"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": [],
+          "outsideCoreDisposition": [
+            {
+              "title": "观战举报入口",
+              "summary": "属于反作弊举报入口，索引保留，不作为对局核心规则变化。",
+              "disposition": "outside_core_scope_indexed"
+            }
+          ]
+        },
+        {
+          "sourceUrl": "https://pubg.com/en/news/11136",
+          "reviewedAt": "2026-11-01",
+          "reviewScope": "本轮通读可取得的官方正文；只将下列对象写为正式卡，未收齐项单列候选。",
+          "checkedSections": [
+            "Gameplay > Message Radial Improvement",
+            "Gameplay > Vehicle Spawn Balance Adjustments",
+            "World > Erangel",
+            "(Console) Controller Input Improvements",
+            "Bug Fixes > Gameplay / World / UX/UI"
+          ],
+          "recordIds": [
+            "pubg-update-43-2-radial-2026-10-14",
+            "pubg-update-43-2-vehicles-2026-10-14",
+            "pubg-update-43-2-terrain-readability-2026-10-14",
+            "pubg-update-43-2-console-input-2026-10-14",
+            "pubg-update-43-2-fixes-2026-10-14"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "43.2特殊车辆皮肤轮盘会影响局内输入，仍待按操作对象整理。",
+            "Playgrounds编辑与队伍配置归UGC/创作资料，未计官方新模式；修复摘要不等于地图逐坐标审计。"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.pubg.com/en/news/11338",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "核对官方中英文完整正文、地图轮换、发行商上线稿、主机维护完成帖和电脑热修。",
+          "checkedSections": [
+            "HLB: DAWNBREAKERS OF RONDO",
+            "Xeno Point: Hell",
+            "Gunplay > End of LMG Meta Rotation",
+            "Gameplay > Vehicle Balance",
+            "Gameplay > Item Spawn Improvements",
+            "World > Rondo",
+            "(Console) Controller Input Improvements",
+            "Bug Fixes > Gameplay",
+            "Gameplay > Kick Action Improvements",
+            "Gameplay > Observer Mode Improvements",
+            "Gameplay > Special Vehicle Skin Usability Improvements",
+            "Matchmaking",
+            "Performance",
+            "Bug Fixes > Gameplay / World / UX/UI / Items & Skins",
+            "Ranked",
+            "Map Service"
+          ],
+          "recordIds": [
+            "pubg-update-441-hlb-nightmare",
+            "pubg-update-441-xeno-hell",
+            "pubg-update-441-lmg-rotation",
+            "pubg-update-441-vehicle-balance",
+            "pubg-update-441-item-placement",
+            "pubg-update-441-rondo-terrain",
+            "pubg-update-441-console-input",
+            "pubg-update-441-match-fixes",
+            "pubg-update-441-observer-chip-count",
+            "pubg-update-441-observer-trunk-chip-owner",
+            "pubg-update-441-vehicle-radial-crouch",
+            "pubg-update-441-pre-match-kick",
+            "pubg-update-441-hud-world-fixes",
+            "pubg-update-441-voice-chat",
+            "pubg-update-441-xeno-console-view"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": [
+            "星际乱斗：地狱之战继续核对电脑端 11 月 18 日与主机 11 月 26 日的实际开放。",
+            "电脑 44.2 手柄改动仍待发版。43.2 载具轮盘的先前版本沿历史条目回填。"
+          ],
+          "publishedDate": "2026-11-03",
+          "versionLabel": "44.1",
+          "dateEvidenceUrls": [
+            "https://press.krafton.com/PUBG-BATTLEGROUNDS-SETS-THE-STAGE-FOR-K-POP-GROUP-IVE-IN-UPDATE-441",
+            "https://x.com/PUBG_Support/status/2120778656071262617",
+            "https://x.com/PUBG_Support/status/2120337653531107715",
+            "https://x.com/PUBG_Support/status/2119667229944111574"
+          ],
+          "outsideCoreDisposition": [
+            {
+              "title": "普通比赛地区时段与水平匹配",
+              "disposition": "outside_core_scope_indexed",
+              "summary": "依采集口径保留匹配入口索引。主机北美取消 FPP 单排/双排、亚太取消双排。UTC 日常时段：主机南美双排 17:00–次日 05:00、欧洲双排 08:00–次日 00:00、北美单排 13:00–次日 08:00、亚太单排 02:00–16:00。电脑南美 FPP 双排 12:00–次日 07:00、北美 FPP 双排 14:00–次日 09:00、KAKAO 双排 00:00–21:00。普通比赛调整水平匹配。官方提示部分时区和模式可能等候更久。"
+            },
+            {
+              "title": "地图服务、段位与预测",
+              "disposition": "outside_core_scope_indexed",
+              "summary": "例行地图轮换查 11336。排位四图各占 25%。留存段位奖励与 PGC 预测更新的来源。"
+            },
+            {
+              "title": "工坊、UI、装扮和创作地图",
+              "disposition": "outside_core_scope_indexed",
+              "summary": "通用 UX/UI 段所列确认快捷键和虚拟光标属局外界面描述。保留商店、工坊、派对大厅、回放文字、PGC 主题装饰和 CARNIVAL RUSH 创作关卡修复索引。"
+            }
+          ]
+        },
+        {
+          "sourceUrl": "https://www.pubg.com/zh-cn/news/11307",
+          "reviewedAt": "2026-11-16",
+          "publishedDate": "2026-11-03",
+          "versionLabel": "44.1",
+          "reviewScope": "扫描场景、商店、工坊与任务；官方英文版交叉核对主机范围。",
+          "checkedSections": [
+            "表情舞台",
+            "丘比特的十字弩",
+            "丘比特绝地侠",
+            "IVE 主题区",
+            "补给箱",
+            "其他调整",
+            "联动活动"
+          ],
+          "recordIds": [
+            "pubg-update-441-ive-cupid-egg",
+            "pubg-update-441-ive-rondo-spots"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": [],
+          "secondarySourceUrls": [
+            "https://www.pubg.com/en/news/11307",
+            "https://press.krafton.com/PUBG-BATTLEGROUNDS-SETS-THE-STAGE-FOR-K-POP-GROUP-IVE-IN-UPDATE-441",
+            "https://x.com/PUBG_Support/status/2120778656071262617"
+          ]
         }
       ],
-      "nextRange": "继续拆分 Update 43.2 的标记、载具刷新和局内修复；随后回填 2026 年更早补丁。"
+      "nextRange": "星际乱斗：地狱之战继续核对电脑端 11 月 18 日与主机 11 月 26 日的实际开放。 电脑 44.2 手柄改动仍待发版。43.2 载具轮盘的先前版本沿历史条目回填。",
+      "latestScan": {
+        "attemptedAt": "2026-11-16",
+        "status": "reviewed_with_remaining_candidates",
+        "sourceUrls": [
+          "https://pubg.com/en/news",
+          "https://www.pubg.com/en/news/11338",
+          "https://pubg.com/en/news/11337?category=dev_notes",
+          "https://pubg.com/en/news/11336?category=notice",
+          "https://pubg.com/en/events/notice/11328",
+          "https://www.pubg.com/zh-cn/news/11338",
+          "https://www.pubg.com/zh-cn/news/11307",
+          "https://www.pubg.com/en/news/11336?category=notice",
+          "https://press.krafton.com/PUBG-BATTLEGROUNDS-SETS-THE-STAGE-FOR-K-POP-GROUP-IVE-IN-UPDATE-441",
+          "https://x.com/PUBG_Support/status/2120778656071262617",
+          "https://x.com/PUBG_Support/status/2120337653531107715",
+          "https://x.com/PUBG_Support/status/2119667229944111574"
+        ],
+        "summary": "完成 44.1 局内正文复核及 IVE 联动交互，确认两平台版本上线与 PC 语音热修。地区匹配时段保留在覆盖索引。",
+        "remainingCandidates": [
+          "星际乱斗：地狱之战继续核对电脑端 11 月 18 日与主机 11 月 26 日的实际开放。",
+          "电脑 44.2 手柄改动仍待发版。43.2 载具轮盘的先前版本沿历史条目回填。"
+        ],
+        "report": "docs/daily-update-2026-11-15.md"
+      }
     },
     "PUBG Mobile": {
       "coverageStatus": "not_started",
-      "recordCount": 0,
-      "checkedSources": [],
-      "nextRange": "按最新官方补丁开始基础体验更新扫描，再制定历史回填批次。"
+      "recordCount": 27,
+      "checkedSources": [
+        {
+          "sourceUrl": "https://pubgmobile.jp/version-4-6-0-patch-notes-20260909/",
+          "reviewedAt": "2026-11-01",
+          "reviewScope": "本轮通读可取得的官方正文；只将下列对象写为正式卡，未收齐项单列候选。",
+          "checkedSections": [
+            "車両 > ゴムボート",
+            "CLASSICマップ > 補給ショップ / オブジェクト",
+            "CLASSICマップ > マッチ内ミッション",
+            "銃器 > 一部銃器の性能",
+            "ゲームプレイ > パラシュート降下時の自動滑空",
+            "Metro Royale > マッチ内に新要素",
+            "CLASSIC-RANKED/UNRANKED > 次回バージョンの要素"
+          ],
+          "recordIds": [
+            "pubgm-update-inflatable-boat-2026-09-09",
+            "pubgm-update-classic-loot-2026-09-09",
+            "pubgm-update-match-missions-2026-09-09",
+            "pubgm-update-weapon-balance-2026-09-09",
+            "pubgm-update-auto-glide-2026-09-09",
+            "pubgm-update-metro-vampire-2026-09-10",
+            "pubgm-update-serpent-preview-2026-10-23"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "4.6主题怪物与道具逐对象详录、全地形履带车自定义车库、9月至10月各批修复仍需拆分。",
+            "10月30日是问题清单编辑日，最近相关队友位置修复日为10月27日；未修复的iOS音频/延迟仍保留。",
+            "当前日本索引未见4.7正式完整补丁，不把Beta公告升为正式上线。"
+          ]
+        },
+        {
+          "sourceUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-6-0-notice-20260909/",
+          "reviewedAt": "2026-11-01",
+          "reviewScope": "本轮通读可取得的官方正文；只将下列对象写为正式卡，未收齐项单列候选。",
+          "checkedSections": [
+            "修正された現象 > 10月27日(火)18:30頃修正"
+          ],
+          "recordIds": [
+            "pubgm-update-minimap-fix-2026-10-27"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "4.6主题怪物与道具逐对象详录、全地形履带车自定义车库、9月至10月各批修复仍需拆分。",
+            "10月30日是问题清单编辑日，最近相关队友位置修复日为10月27日；未修复的iOS音频/延迟仍保留。",
+            "当前日本索引未见4.7正式完整补丁，不把Beta公告升为正式上线。"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.pubgmobile.com/en-US/news-detail.shtml?from=news&gid=ibm7leu80voymsuz6tgsiv9u&pid=ibm7leu80voymsuz6tgsiv9u_en",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "读取官网英文和简体中文完整正文，逐项对照首发、分批开放、限定活动和创作更新，交叉核对官方当日帖子与发行商通稿。",
+          "checkedSections": [
+            "Battle Royale Update > Arctic Chronicles > Scene Mechanics > Ancient Beast",
+            "Battle Royale Update > Arctic Chronicles > Scene Mechanics > Aurora Realm",
+            "Battle Royale Update > Arctic Chronicles > Gameplay Mechanics > Glyph Ability",
+            "Battle Royale Update > Arctic Chronicles > Themed Vehicle; AI Ally",
+            "Battle Royale Update > Erangel Subzero",
+            "Battle Royale Update > More Classic Updates > Consumables Update",
+            "Battle Royale Update > More Classic Updates > Vehicle Updates; Weapon Updates",
+            "Varied Gameplay Experience > Metro Royale Updates",
+            "Varied Gameplay Experience > New PvE Gameplay",
+            "Festival Event Gameplay > Frost Festival Gameplay",
+            "Festival Event Gameplay > New Year’s Gameplay",
+            "Festival Event Gameplay > PMGC",
+            "Varied Gameplay Experience > World of Wonder",
+            "Fishing Gameplay",
+            "Player Experience Optimizations",
+            "Lucky Egg System",
+            "Card Collection System",
+            "Home Updates"
+          ],
+          "recordIds": [
+            "pubgm-update-47-ancient-beast",
+            "pubgm-update-47-arctic-revival",
+            "pubgm-update-47-arctic-glyphs",
+            "pubgm-update-47-arctic-mount-ally",
+            "pubgm-update-47-subzero-storm",
+            "pubgm-update-47-classic-consumables",
+            "pubgm-update-47-classic-combat-qol",
+            "pubgm-update-47-metro-search",
+            "pubgm-update-47-pve-seal-city",
+            "pubgm-update-47-fishing",
+            "pubgm-update-47-frost-playground",
+            "pubgm-update-47-frost-crystal-ball",
+            "pubgm-update-47-new-year-fountain",
+            "pubgm-update-47-wow-avalanche-escape",
+            "pubgm-update-47-pmgc-balloon"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": [
+            "跟踪 12 月 3 日艾伦格零度计划、12 月 10 日逃离雪崩、12 月 17 日冰雪节游乐场及水晶球、12 月 31 日跨年活动的实际开放。",
+            "PMGC 热气球的单项开放日未公布。冰雪节游乐场通稿和版本公告的开始日期不同，待按实际入口复核。",
+            "发行商通稿提到经典局内任务投放与挖掘点、部分 Android 16 蓝牙耳机延迟和大厅语音入局，未公开足够的机型、适用范围或单项生效依据。"
+          ],
+          "publishedDate": "2026-11-11",
+          "versionLabel": "4.7",
+          "dateEvidenceUrls": [
+            "https://x.com/PUBGMOBILE/status/2120810348978843936",
+            "https://x.com/PUBGMOBILE/status/2121264316427182309",
+            "https://x.com/PUBGMOBILE/status/2121770156041130064",
+            "https://www.mynewsdesk.com/uk/swipe-right/pressreleases/pubg-mobile-brings-mythical-creatures-and-frozen-adventures-to-version-4-dot-7-3477708"
+          ],
+          "outsideCoreDisposition": [
+            {
+              "title": "WOW 创作能力及发布管理",
+              "disposition": "outside_core_scope_indexed",
+              "summary": "多人可共同编辑可视化编程。客户端可运行部分玩法逻辑。特效编辑器支持曲线和动态参数。Actor 编辑器增加全局 Actor、客户端脚本、特效组件和自定义变量。取消音频、图片和静态模型上传等级要求，自定义音频上限 100 次/月。通知、数据分析和推广管理为创作侧更新。"
+            },
+            {
+              "title": "招募、吉蛋、卡牌与家园",
+              "disposition": "outside_core_scope_indexed",
+              "summary": "局外招募与赛季奖励留章节索引。吉蛋各模式获取与带出规则指向活动主界面，官网未公布细则。"
+            }
+          ]
+        },
+        {
+          "sourceUrl": "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "扫描 11 月 15 日 10:05 日服公告完整正文，按款项区分调查及修复。",
+          "checkedSections": [
+            "修正された現象",
+            "修正された現象 > 11月15日 01:19",
+            "確認中の現象 > 11月13日 19:20",
+            "修正された現象 > 11月12日 19:14 / 21:03",
+            "修正された現象 > 11月13日 00:47 / 10:42"
+          ],
+          "recordIds": [
+            "pubgm-update-47-arctic-hotfix",
+            "pubgm-update-47-network-rollback",
+            "pubgm-update-47-jp-endgame-voice-fixes",
+            "pubgm-update-47-jp-backpack-icons"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": [
+            "11 月 13 日公布的日服射击陀螺仪灵敏度改动不即时生效仍列为调查中。"
+          ],
+          "publishedDate": "2026-11-12",
+          "versionLabel": "4.7.0",
+          "outsideCoreDisposition": [
+            {
+              "title": "登录、活动中心、赛季商店与外观显示",
+              "disposition": "outside_core_scope_indexed",
+              "summary": "纯活动或外观条目留在源文。经典局内部分招牌与车库模型重叠的修复缺点位，运营公告未指出是否改变通路。"
+            }
+          ]
+        }
+      ],
+      "nextRange": "跟踪 12 月 3 日艾伦格零度计划、12 月 10 日逃离雪崩、12 月 17 日冰雪节游乐场及水晶球、12 月 31 日跨年活动的实际开放。 PMGC 热气球的单项开放日未公布。冰雪节游乐场通稿和版本公告的开始日期不同，待按实际入口复核。 11 月 13 日公布的日服射击陀螺仪灵敏度改动不即时生效仍列为调查中。",
+      "latestScan": {
+        "attemptedAt": "2026-11-16",
+        "status": "reviewed_with_remaining_candidates",
+        "sourceUrls": [
+          "https://www.pubgmobile.com/en-US/home.shtml",
+          "https://www.pubgmobile.com/en-US/news-detail.shtml?from=news&gid=ibm7leu80voymsuz6tgsiv9u&pid=ibm7leu80voymsuz6tgsiv9u_en",
+          "https://pubgmobile.jp/version-4-7-0-update-notice-20261105/",
+          "https://pubgmobile.jp/https-pubgmobile-jp-version4-7-0-notice-20261112/",
+          "https://www.mynewsdesk.com/uk/swipe-right/pressreleases/pubg-mobile-brings-mythical-creatures-and-frozen-adventures-to-version-4-dot-7-3477708",
+          "https://x.com/PUBGMOBILE/status/2120810348978843936",
+          "https://x.com/PUBGMOBILE/status/2121264316427182309",
+          "https://x.com/PUBGMOBILE/status/2121770156041130064"
+        ],
+        "summary": "确认地铁逃生 U-Chapter 0、PvE 海豹市、首批经典规则和钓鱼。补冰雪节、跨年、WOW 局内预告及日服热修。",
+        "remainingCandidates": [
+          "跟踪 12 月 3 日艾伦格零度计划、12 月 10 日逃离雪崩、12 月 17 日冰雪节游乐场及水晶球、12 月 31 日跨年活动的实际开放。",
+          "PMGC 热气球的单项开放日未公布。冰雪节游乐场通稿和版本公告的开始日期不同，待按实际入口复核。",
+          "发行商通稿提到经典局内任务投放与挖掘点、部分 Android 16 蓝牙耳机延迟和大厅语音入局，未公开足够的机型、适用范围或单项生效依据。",
+          "11 月 13 日公布的日服射击陀螺仪灵敏度改动不即时生效仍列为调查中。"
+        ],
+        "report": "docs/daily-update-2026-11-15.md"
+      }
     },
     "三角洲行动": {
       "coverageStatus": "ongoing_backfill",
-      "recordCount": 0,
+      "recordCount": 76,
       "checkedSources": [
         {
           "sourceUrl": "https://www.playdeltaforce.com/zh-tw/detail.html?content_id=7e78fb0ea6a9ba447fa8d36aae3289b629a5&father_content_id=3b491764ae264a4be3a95e2ad3cb28263992",
@@ -7563,15 +8860,773 @@
             "问题修复与最佳化"
           ],
           "disposition": "FS-12 四肢、腹部与距离衰减倍率的小幅调整归入版本摘要；三个地图越界/炸弹交互修复记录于来源审计，不单拆基础更新卡。"
+        },
+        {
+          "sourceUrl": "https://deltaforce.garena.com/en/news/announcement/GEP8A6",
+          "reviewedAt": "2026-11-01",
+          "reviewScope": "本轮通读可取得的官方正文；只将下列对象写为正式卡，未收齐项单列候选。",
+          "checkedSections": [
+            "OPERATIONS EVENTS > FIND VLINDFLOWER"
+          ],
+          "recordIds": [
+            "delta-update-vlindflower-2026-10-30"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "Raven’s Deal正文仅说全新局内机制，须取得详细规则后再入库。",
+            "不把奖励任务、商店和武器外观单独计局内玩法。"
+          ]
+        },
+        {
+          "sourceUrl": "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "复核 Garena 英文正篇全部局内小节，采用繁中预告核对中文名及地区差异。按新机制和分模式版本摘要收录普通数值，区分场外设置和对局内功能。",
+          "checkedSections": [
+            "MAP UPDATE > NEW WARFARE MAP: ZENITH PORT",
+            "MAP UPDATE > OPERATIONS MAP UPDATE: BRAKKESH",
+            "NEW OPERATOR > NEW ASSAULT OPERATOR",
+            "IN-GAME COMBAT & LEVEL IMPROVEMENTS > DETONATION; SYSTEM OPTIMISATIONS > DETONATION",
+            "SYSTEM OPTIMISATIONS > OPERATIONS > Loading Plans",
+            "IN-GAME COMBAT & LEVEL IMPROVEMENTS > WARFARE; SYSTEM OPTIMISATIONS > WARFARE",
+            "NEW WEAPON: AN-94 ASSAULT RIFLE",
+            "NEW AMMO & NEW ATTACHMENTS > NEW AMMO",
+            "NEW AMMO & NEW ATTACHMENTS > NEW LIMITED-TIME HAAVK WEAPON ATTACHMENTS",
+            "IN-GAME COMBAT & LEVEL IMPROVEMENTS > ALL MODES > Character Perspective & Control Optimizations",
+            "SYSTEM OPTIMISATIONS > WARFARE > New Immersive Mode; Full Verity Mode; New audio mix option",
+            "IN-GAME COMBAT & LEVEL IMPROVEMENTS > ALL MODES; WARFARE; DETONATION",
+            "SYSTEM OPTIMISATIONS > ALL MODES; OPERATIONS; WARFARE; DETONATION",
+            "WEAPON BALANCE ADJUSTMENTS AND OPTIMISATIONS > ALL MODES; OPERATIONS; WARFARE; DETONATION",
+            "WEAPON & COMBAT BUG FIXES AND OPTIMISATIONS",
+            "OPERATOR BALANCE ADJUSTMENTS > ALL MODES; OPERATIONS; WARFARE; DETONATION",
+            "OPERATOR-RELATED BUG FIXES & OPTIMISATIONS; BUG FIXES & OPTIMISATIONS"
+          ],
+          "recordIds": [
+            "delta-update-aurora-zenith-riptide",
+            "delta-update-aurora-brakkesh",
+            "delta-update-aurora-martelo",
+            "delta-update-aurora-detonation",
+            "delta-update-aurora-operations-load-plan",
+            "delta-update-aurora-warfare-vehicles",
+            "delta-update-aurora-an94",
+            "delta-update-aurora-new-ammo",
+            "delta-update-aurora-haavk-attachments",
+            "delta-update-aurora-character-controls",
+            "delta-update-aurora-warfare-hud-audio",
+            "delta-update-aurora-weapons-all",
+            "delta-update-aurora-weapons-operations",
+            "delta-update-aurora-weapons-warfare",
+            "delta-update-aurora-detonation-penetration",
+            "delta-update-aurora-operator-cross-mode",
+            "delta-update-aurora-operations-stealth-polaris",
+            "delta-update-aurora-detonation-operators",
+            "delta-update-aurora-operations-equipment-tickets",
+            "delta-update-aurora-victory-unite",
+            "delta-update-aurora-warfare-map-rotation",
+            "delta-update-aurora-custom-room-play",
+            "delta-update-aurora-operations-loot",
+            "delta-update-aurora-operator-usability",
+            "delta-update-aurora-cn-detonation-mandelbrick"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": [
+            "AZ3 超临界按独立模式入库。国服 11 月 5 日已开放，配图与规则已归档。Garena 仍按 12 月 18 日至 1 月 25 日的排期记录。",
+            "官方已确认国服阿萨拉隐藏行动的水池撤离。哈夫克隐藏行动、常规撤离点及商人的完整改前改后仍待直接资料。",
+            "国服精锐制式装备券调整已归档，胜者为王地图禁用记入匹配说明。繁中 Garena 预告中的禁图、精锐券与轮换提示仍待繁中正式服证据。"
+          ],
+          "publishedDate": "2026-11-10",
+          "additionalSourceUrls": [
+            "https://deltaforce.garena.com/zh_tw/news/all/S88VMH"
+          ],
+          "versionSummary": [
+            "黑潮爆破可掉落曼德尔砖，和全面战场共享每周上限。排位组队、赛季段位与排行榜属于对局前后系统。",
+            "未解锁洗消舱的玩家需完成一局 AZ3，潜水中心改为行动等级 33 解锁，原先已解锁不受影响。设施入口本身在局外。",
+            "正篇另列语音接收音量调整和场景交互动作改进。装饰检视、举报上传、名片、表情、全局外观和载具音乐按局外或纯表现排除。"
+          ]
+        },
+        {
+          "sourceUrl": "https://deltaforce.garena.com/en/news/announcement/XZSNPX",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "全文复核，局内修复和影响配装的改枪权限、绑定显示已登记。",
+          "checkedSections": [
+            "ASSAULT OPERATOR - MARTELO BALANCE ADJUSTMENTS > SMOKE HALO",
+            "WARFARE BALANCE ADJUSTMENTS > ZENITH PORT BALANCE ADJUSTMENTS AND FIXES",
+            "WARFARE BALANCE ADJUSTMENTS > VEHICLE SUPPLY STATION ADJUSTMENTS",
+            "S12 FATE CONTRACTS: EXPERT HANDLER - RETURN DIFFICULTY ADJUSTMENTS",
+            "OPTIMIZATIONS AND BUG FIXES"
+          ],
+          "recordIds": [
+            "delta-update-aurora-martelo-smoke",
+            "delta-update-aurora-zenith-hotfix",
+            "delta-update-aurora-supply-stations",
+            "delta-update-aurora-fate-contracts-expert-handler",
+            "delta-update-aurora-detonation-hotfix",
+            "delta-update-aurora-combat-input-fixes",
+            "delta-update-aurora-weapons-crates-expired-attachments",
+            "delta-update-aurora-haavk-mission-and-fishing-fixes"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": [],
+          "versionSummary": [
+            "分享码是房间入场问题；靶场摄像机属于训练。专属入场动画、大厅音乐、展示和口琴检视没有新增常规局内规则。"
+          ]
+        },
+        {
+          "sourceUrl": "https://deltaforce.garena.com/en/news/all/STZAUY",
+          "publishedDate": "2026-11-10",
+          "versionLabel": "第 12 赛季「微光」",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "通读英文上线公告与繁中版本，登记改变局内掉落和交互的活动及各自时间。",
+          "checkedSections": [
+            "OPERATIONS EVENTS > NEW WEAPON; BRAKKESH RENEWED; FACTION BADGE; HAAVK MILITARY ATTACHMENTS",
+            "WARFARE EVENTS > NEW WEAPON; HAAVK MILITARY ATTACHMENTS",
+            "OPERATIONS EVENTS > WEEKEND SELECT; BRAKKESH ARSENAL; RENEWED RECON; WEAPON TRIAL; SHADES BOUNTY; FACTION FRONT; HUNTING HOUR",
+            "OPERATIONS EVENTS > FIND SLEEPY ZOYA; COLORFUL SLEEPY ZOYA; COLLAB LIMITED RED",
+            "ALL MODE EVENTS; WARFARE EVENTS; WEEKLY EVENTS; STORE UPDATES"
+          ],
+          "recordIds": [
+            "delta-update-aurora-brakkesh-factions",
+            "delta-update-aurora-shades-bounty",
+            "delta-update-aurora-sleepy-zoya",
+            "delta-update-aurora-colorful-zoya",
+            "delta-update-aurora-roaming-blade-figurine"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": [
+            "鸟窝联动物品的结束日期在英文和繁中公告分别为 2027-01-25 和 2026-12-10，保留地区差异。"
+          ],
+          "additionalSourceUrls": [
+            "https://deltaforce.garena.com/zh_tw/news/system/QYQ96V"
+          ],
+          "versionSummary": [
+            "巴克什活动中，「阵营前线」要求局内拾取阵营身份牌并完成任一阵营标杆任务。阵营玩法已有独立资料卡；巴克什军火库、焕新勘察、枪械试炼和猎杀时刻主要发放任务奖励。",
+            "周末精选覆盖 19 类武器，周二 00:00 随机刷新两套改装配装。也可用标准与精锐制式装备券兑换活动代币。属于局外的活动兑换，没有改动武器箱或其他局内掉落的描述。",
+            "往期曼德尔砖仍可掉落但概率降低，超过五个赛季的过往系列加入稀有掉落，本次为王者之剑。具体概率未公开。"
+          ]
+        },
+        {
+          "sourceUrl": "https://deltaforce.garena.com/en/news/announcement/6JW32E",
+          "additionalSourceUrls": [
+            "https://store.steampowered.com/news/app/2507950/view/672882996184876611",
+            "https://www.playdeltaforce.com/en/detail/news-1v1-mode-season-ammo-new-victory-unite-event-and-midseason-balance-adjustments.html",
+            "https://deltaforce.garena.com/en/news/announcement/PA6CZD"
+          ],
+          "publishedDate": "2026-10-12",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "核对 10 月 9 日更新全文。区分 1v1 开放、局内技能及设施、玩法入口、自定义房间、平衡与修复、活动奖励。",
+          "checkedSections": [
+            "OPERATIONS EVENTS > LET’S FIGHT; HARMONICA; GROVE ANGLER; SEASON-EXCLUSIVE AMMO",
+            "WARFARE EVENTS > FREE BATTLEFIELD; CHIEF COMMAND; DRAG & RESCUE; ARMORY",
+            "WEEKLY EVENTS; STORE UPDATES",
+            "NEW SEASON AMMO; MID-SEASON BALANCE ADJUSTMENTS; BUG FIXES AND OPTIMIZATIONS"
+          ],
+          "recordIds": [
+            "delta-update-s11-drag-rescue",
+            "delta-update-s11-harmonica",
+            "delta-update-s11-season-ammo",
+            "delta-update-s11-the-mog-routes"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "versionSummary": [
+            "烽火地带 K437 四肢伤害倍率 0.4 倍→0.3 倍。移动端全模式 QJB201 后坐力增大，M14 后坐力减小，公告未给幅度。",
+            "全面战场自由建造的 Vulcan 炮最小俯角由 -5° 改为 0°。",
+            "修复移动端爆破偶发触控失灵、Nox 旋风飞盘爆炸后的碰撞残留、Rover 趴姿激活机械犬时提示音缺失。赛季保险箱检视动画不同步未说明影响对局行为。",
+            "周常、活跃挑战、商城外观抽取和段位加成保留为活动背景。",
+            "训练界面可创建自由战场房间并自定人数和对局规则。S11 正篇注明它以胜者为王规则为基础。",
+            "前一正式补丁和 9 月 10 日热修均已涉及钓鱼。10 月 9 日至 11 月 9 日是长弓溪谷活动奖励期。"
+          ],
+          "remainingCandidates": [
+            "10 月 9 日胜者为王小节仅称优化并介绍奖励任务，S11 正篇已核实王牌标记和载具审批。"
+          ]
+        },
+        {
+          "sourceUrl": "https://deltaforce.garena.com/en/news/all/5ENTSR",
+          "additionalSourceUrls": [
+            "https://deltaforce.garena.com/th/news/all/7AG4FG",
+            "https://store.steampowered.com/news/app/2507950/view/679635858932893122"
+          ],
+          "publishedDate": "2026-09-22",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "通读两周年更新正文，区分局内探索、物资与新玩法、活动任务和商城。",
+          "checkedSections": [
+            "EVENT IN BOTH MODES",
+            "OPERATIONS EVENTS",
+            "WARFARE EVENTS",
+            "WEEKLY EVENTS",
+            "STORE UPDATES"
+          ],
+          "recordIds": [
+            "delta-update-s11-anniversary-field-clues",
+            "delta-update-s11-anniversary-haavk-investigation",
+            "delta-update-s11-anniversary-insurance-supply"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "乘锋破浪与无双超载按独立限时玩法收录。Steam 后续公告证实已开放，准确首开时刻未公布。",
+            "无双超载的计分、装备限制和增益触发方式继续补证。",
+            "口琴乐谱按小节记录为任务所得游戏内物品。获取口琴及吹奏规则已在 10 月 9 日记录，乐谱是否改变吹奏规则未明确。",
+            "马来西亚限定联动中击败哈夫克小队可换收藏品。先核对是否为同批投送小队与哪些区域可参与。"
+          ],
+          "versionSummary": [
+            "二周年代币、三角券、累计任务与商城奖励属于活动结算。局外动画漫画和解谜单独列为活动背景。"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.playdeltaforce.com/en/detail/news-dev-blog-brakkesh-20-once-more-across-the-line.html",
+          "publishedDate": "2026-11-13",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "通读开发日志与 Steam 官方全文，补首发既有记录。官网详页标 11 月 13 日，Steam 社区中文界面标 11 月 14 日。地图生效日仍用 11 月 10 日上线证据。",
+          "corroboratingSourceUrls": [
+            "https://steamcommunity.com/app/2507950/allnews/?l=schinese"
+          ],
+          "checkedSections": [
+            "Choose a side",
+            "Break through",
+            "Stay a step ahead"
+          ],
+          "recordIds": [
+            "delta-update-aurora-brakkesh",
+            "delta-update-aurora-brakkesh-factions"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": [
+            "未列警卫友好人数上限、追猎提示刷新间隔和具体撤离点变化。未加入数值推测。"
+          ]
+        },
+        {
+          "sourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/676261964507253471?l=schinese",
+          "additionalSourceUrls": [
+            "https://www.taptap.cn/game-event/13464",
+            "https://news.17173.com/content/11142026/222531678.shtml",
+            "https://deltaforce.garena.com/zh_tw/news/all/S88VMH",
+            "https://www.taptap.cn/moment/867442153855389618?group_id=531928",
+            "https://news.17173.com/content/11122026/222328120.shtml",
+            "https://news.17173.com/content/11112026/134809778.shtml",
+            "https://steamcommunity.com/games/2507950/announcements/detail/676261964507253471?l=english"
+          ],
+          "publishedDate": "2026-11-07",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "逐段核对 Steam 国服正篇与 Garena 正篇，跟踪地图、回合、武器、道具、载具、角色技能、局内声音和操作差异。共享改动沿用原有案例。",
+          "checkedSections": [
+            "玩法更新 > 野火、巴克什、天际港、纵横巅峰赛、AN94、AZ3 超临界、弹药和配件",
+            "玩法更新 > 赛季任务和安全箱权限、两模式重置",
+            "玩法调优 > 局内战斗&关卡优化 > 全模式、全面战场、黑潮爆破",
+            "玩法调优 > 系统优化 > 全模式、烽火地带、全面战场、黑潮爆破",
+            "玩法调优 > 武器平衡性调整和武器&战斗修复 > 各模式",
+            "玩法调优 > 干员平衡性调整 > 各模式、极星守望、干员相关优化"
+          ],
+          "recordIds": [
+            "delta-update-aurora-cn-elite-gear-tickets",
+            "delta-update-aurora-cn-detonation-seven-rounds",
+            "delta-update-aurora-cn-detonation-mandelbrick",
+            "delta-update-aurora-detonation"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": [
+            "仅凭国服「微光」补丁不能判定其余地区的普通匹配回合数、禁图与分区队列。"
+          ],
+          "versionSummary": [
+            "共用改动包括两栖与水面载具随浪起伏、局内配装、子弹贯穿、技能数值、观察与控制修复。国服精锐制式券与电脑端普通匹配七胜单独登记。",
+            "全模式语音收听音量改进、黑潮爆破的局内语音提醒与两种画质模式均已对照。人物、枪械及载具局内脏迹由累计游玩产生，官方作为外观效果说明。",
+            "出发配装的默认护具耐久已入库。安全箱赛季权限与体验卡随换季失效，公告按赛季任务权限归类。设施、排位解锁、匹配组队和大厅外观保存在本台账。",
+            "国服胜者为王新增地图禁用。公告未说明地图数量、资格与匹配细则。局外设定或纯表现如专属载具音乐归入版本背景。",
+            "地图状态、回防路径和局内规则变化随对应玩法登记。复制房间码、任务奖励和演出外观分别记在覆盖台账。"
+          ]
+        },
+        {
+          "sourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/672885536621330891?l=schinese",
+          "additionalSourceUrls": [
+            "https://news.17173.com/content/11132026/121621680.shtml"
+          ],
+          "publishedDate": "2026-11-12",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "逐段核对国服热修的活动、局内任务、地图部署、载具补给、技能、交互与反馈，与 Garena 同日条款去重。",
+          "checkedSections": [
+            "新活动一至十项、赛事与商店",
+            "野火 > 环形烟幕",
+            "全面战场 > 天际港与载具补给站",
+            "黑潮爆破段位预告",
+            "S12 命运契约：行家里手·再临难度调整",
+            "问题修复与优化"
+          ],
+          "recordIds": [
+            "delta-update-aurora-cn-red-brick-return",
+            "delta-update-aurora-martelo-smoke",
+            "delta-update-aurora-zenith-hotfix",
+            "delta-update-aurora-supply-stations",
+            "delta-update-aurora-fate-contracts-expert-handler",
+            "delta-update-aurora-combat-input-fixes",
+            "delta-update-aurora-weapons-crates-expired-attachments",
+            "delta-update-aurora-haavk-mission-and-fishing-fixes",
+            "delta-update-aurora-detonation-hotfix"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "remainingCandidates": [],
+          "versionSummary": [
+            "赛事中心与竞猜、臻选兑换、外观或奖励登录、段位与军械库解锁界面均按其适用范围登记。军械库已解锁武器显示与 Garena 改枪台解锁不是同一故障。",
+            "大红砖改变局内掉落和破译。液氮停堆条件、工卡简化与巴克什焕新任务修复合入原有同日条款。"
+          ]
+        },
+        {
+          "sourceUrl": "https://steamcommunity.com/games/2507950/announcements/detail/676262708841021924?l=schinese",
+          "additionalSourceUrls": [
+            "https://news.17173.com/content/11142026/215915082.shtml",
+            "https://www.taptap.cn/game-event/13464"
+          ],
+          "publishedDate": "2026-11-08",
+          "reviewedAt": "2026-11-16",
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "reviewScope": "逐项核对 19 项国服活动和赛季补丁的入局变化。",
+          "checkedSections": [
+            "新活动 1–9 通行证、曼德尔砖、商店、联动、签到与准入",
+            "新活动 10–16 烽火地带",
+            "新活动 17–19 全面战场"
+          ],
+          "recordIds": [
+            "delta-update-aurora-cn-win2-flight-case",
+            "delta-update-aurora-haavk-attachments",
+            "delta-update-aurora-sleepy-zoya",
+            "delta-update-aurora-colorful-zoya",
+            "delta-update-aurora-roaming-blade-figurine",
+            "delta-update-aurora-brakkesh-factions"
+          ],
+          "versionSummary": [
+            "佐小娅、炫彩佐小娅、影之刃零联动藏品与无托/双发套件各按既有条目记录地区周期。把把好 WIN 新增全地图航空箱藏品。",
+            "AZ3 超临界独立玩法已单列。登录、外观与任务总回报记为活动背景。AN94 解锁方式在既有武器条目维护。"
+          ],
+          "remainingCandidates": []
+        },
+        {
+          "sourceUrl": "https://news.17173.com/content/11162026/001205869.shtml",
+          "additionalSourceUrls": [
+            "https://steamcommunity.com/games/2507950/announcements/detail/676262708841021924?l=schinese"
+          ],
+          "publishedDate": "2026-11-16",
+          "reviewedAt": "2026-11-16",
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "reviewScope": "确认项目组署名攻略全文、巴别塔水池撤离条件和奖励邮件日期。",
+          "checkedSections": [
+            "蓝调山城联络和物资提交",
+            "巴别塔之前的追猎与驻守",
+            "中控权限、旗帜和水池撤离、奖励邮件"
+          ],
+          "recordIds": [
+            "delta-update-aurora-cn-brakkesh-ahsarah-pendant"
+          ],
+          "remainingCandidates": [
+            "项目组预告另有哈夫克隐藏行动攻略。当前两篇官方资料未列全普通撤离点及商人的改前改后。"
+          ]
+        },
+        {
+          "sourceUrl": "https://www.taptap.cn/moment/867448406811871439?group_id=531928",
+          "publishedDate": "2026-11-05",
+          "reviewedAt": "2026-11-16",
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "reviewScope": "核对项目组的国服 11 月 5 日异常清单。",
+          "checkedSections": [
+            "问题修复与优化 > 修复中"
+          ],
+          "recordIds": [],
+          "versionSummary": [
+            "晋升之路奖励、扩容箱背景及收藏柜奖杯属于奖励或界面问题。"
+          ],
+          "remainingCandidates": [
+            "被击败后观战、偶发高倍瞄具显示、保险柜任务开箱以及电脑端 HRTF 失效均标在「修复中」，待后续完成证据。"
+          ]
+        },
+        {
+          "sourceUrl": "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+          "additionalSourceUrls": [
+            "https://deltaforce.garena.com/en/news/announcement/NDH3YX",
+            "https://apps.apple.com/cn/app/id1642894547?platform=vision",
+            "https://www.taptap.cn/moment/844959973610881795?group_id=531928",
+            "https://www.taptap.cn/moment/845289897227977912?group_id=531928",
+            "https://df.qq.com/cp/a20240729directory/?map=az3",
+            "https://news.xbox.com/en-us/2026/09/25/delta-force-second-anniversary-interview/",
+            "https://deltaforce.garena.com/zh_tw/news/system/KX539B"
+          ],
+          "publishedDate": "2026-09-04",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "逐段复核 Garena S11 英文正篇，核对繁中各节用词和模式差异，并区分首发与后续活动。",
+          "checkedSections": [
+            "OPERATIONS NEW GAMEPLAY - FISHING",
+            "GAMEPLAY TUNING > ALL MODES; OPERATIONS; WARFARE",
+            "SYSTEM OPTIMIZATIONS > WARFARE > Victory Unite; Free Battlefield",
+            "NEW SUPPORT OPERATOR; MAP UPDATES; NEW MODES",
+            "NEW AMMO; NEW PERMANENT AND LIMITED-TIME ATTACHMENTS; NEW WEAPONS AND VEHICLES",
+            "SEASON MISSION UPDATE; GAMEPLAY TUNING > WARFARE > BUILD & VEHICLE DEPLOYMENT",
+            "SYSTEM OPTIMIZATION > ALL MODES; OPERATIONS; WARFARE",
+            "WEAPON BALANCE ADJUSTMENTS; OPERATOR BALANCE ADJUSTMENTS; HARDWARE SPECIFICATIONS"
+          ],
+          "recordIds": [
+            "delta-update-s11-space-city-extraction",
+            "delta-update-s11-signal-jamming-and-cover",
+            "delta-update-s11-mobile-movement-settings",
+            "delta-update-s11-victory-unite-vehicle-approval",
+            "delta-update-s11-drag-rescue",
+            "delta-update-s11-rover",
+            "delta-update-s11-layali-loot-and-insertion",
+            "delta-update-s11-mdr-thompson",
+            "delta-update-s11-launch-ammo",
+            "delta-update-s11-amphibious-lsv",
+            "delta-update-s11-buildable-vulcan",
+            "delta-update-s11-warfare-deploy-and-quake",
+            "delta-update-s11-edc-toolkit",
+            "delta-update-s11-gear-tickets",
+            "delta-update-s11-sniper-and-crosshair",
+            "delta-update-s11-operator-balance",
+            "delta-update-s11-operations-collectibles",
+            "delta-update-s11-free-battlefield"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "versionSummary": [
+            "钓鱼、极星守望与咱俩练练沿用原案例。已核对三图钓鱼、国服 9 月 4 日与 Garena 9 月 8 日的版本时间。",
+            "短赛季减少第二阶段星级和战斗任务，提前开放二、三阶段支线，第三阶段移除潮汐监狱任务。收藏家提交 1 次解锁赛季顶级安全箱，提交 5 次解锁其典藏外观。旧任务及临时安全箱资格随换季重置。",
+            "常规枪械平衡按版本归并。M250 移动端两模式后坐力上调。K437 长枪管射程和初速加成在烽火从 30%→50%、穿透专精 32→35，全面从 15%→25%。M14 在烽火的 30/50 发弹匣操控惩罚 −8→−4 与 −12→−6。M82 枪管与枪托操控分别在烽火 +8→+11、+4→+8，全面 +8→+10、+3→+7。M1911 与沙漠之鹰开火动画调整。",
+            "极星守望的开放日、阵营角色、身份条件、专属配装、成绩与撤离规则沿用既有案例。自由战场自定义规则另有基础更新。",
+            "常驻 APX 混合瞄具提供中等变倍、操控 −4。M700 旋风框架两模式均为控制 −4、稳定 +4、精准 −8，开启改装槽并可半自动连发。强化导气箍两模式控制 −4、操控 −2、稳定 +2，可全自动，降低四肢伤害，烽火另降腹部伤害、全面战场另降躯干伤害。M700 两件只记录参数和条件。正篇未给框架的具体投放日，强化导气箍在极星守望达到猎手阶段后可制作，每周限 10。",
+            "计分板的检举与加好友、对局成就和消耗品收藏界面归入版本背景。曼德尔砖每种持有上限 1,000。客户端更新节奏、教学、拍卖行和硬件要求无独立局内案例。",
+            "繁中另附地图轮换整图，使用繁中原公告查阅完整时段；9 月 10 日热修覆盖 AZ3 机密。英文独有或表述冲突的项目注明版本。"
+          ]
+        },
+        {
+          "sourceUrl": "https://deltaforce.garena.com/en/news/announcement/NDH3YX",
+          "additionalSourceUrls": [
+            "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+            "https://news.xbox.com/en-us/2026/09/25/delta-force-second-anniversary-interview/",
+            "https://deltaforce.garena.com/zh_tw/news/system/J5QSCB"
+          ],
+          "publishedDate": "2026-09-08",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "逐段复核 Garena S11 上线公告，区分局内掉落、任务奖励、商城和开放时间。",
+          "checkedSections": [
+            "OPERATIONS EVENTS > LAYALI GROVE; SPACE CITY EXTRACTION POINT ADJUSTMENT",
+            "WARFARE EVENTS > THE MOG",
+            "EVENTS IN BOTH MODES; OPERATIONS EVENTS; WARFARE EVENTS; WEEKLY EVENTS; STORE UPDATES"
+          ],
+          "recordIds": [
+            "delta-update-s11-space-city-extraction",
+            "delta-update-s11-haavk-feed-and-weasel",
+            "delta-update-s11-vlindflower-september",
+            "delta-update-s11-colorful-vlindflower",
+            "delta-update-s11-mdr-thompson",
+            "delta-update-s11-rover",
+            "delta-update-s11-layali-loot-and-insertion"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "versionSummary": [
+            "9 月 8 日至 10 月 8 日是航天基地挑战期。原文列出新的随机闸点及中心花园单向电梯。",
+            "新武器与新干员挑战均为 9 月 8 日至 10 月 8 日，任务奖励与机制发放分别核对。首页签到、活动里程碑、周末臻选兑换、周末段位加倍、通行证及抽奖作为局外或奖励背景。",
+            "曼德尔砖与旧赛季物品仍可能随对局掉落，旧批次概率调低，超过五个赛季进入稀有掉落。官方没有公布具体概率。已记录局内鸟巢和容器活动及大型武器箱定向掉落。"
+          ]
+        },
+        {
+          "sourceUrl": "https://deltaforce.garena.com/en/news/all/R7669X",
+          "additionalSourceUrls": [
+            "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+            "https://deltaforce.garena.com/zh_tw/news/system/QREXDC"
+          ],
+          "publishedDate": "2026-09-10",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "逐段复核 Garena 9 月 10 日英文和繁中更新，并保存地图难度和手柄修复的表述。",
+          "checkedSections": [
+            "WARFARE BALANCE ADJUSTMENTS > A/D - THE MOG",
+            "HUDSON'S SURGE SQUAD BALANCE ADJUSTMENTS",
+            "BUG FIXES & OPTIMIZATIONS",
+            "OPERATIONS MAP ROTATION ADJUSTMENTS"
+          ],
+          "recordIds": [
+            "delta-update-s11-the-mog-sep10-escort",
+            "delta-update-s11-fishing-line-and-dialogue",
+            "delta-update-s11-az3-permanent-rotation",
+            "delta-update-s11-hudson-ai",
+            "delta-update-s11-sep10-loot-and-controls"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "versionSummary": [
+            "装饰、周末兑换、活动提示和仓库展示按局外或版本背景记录。",
+            "唐吉首次任务次数、钓鱼实际任务条件和道具交互有局内影响。摩格团竞结算积分、弹出提示、装饰、周末兑换及军械库展示依各节归入版本背景。",
+            "AZ3 常驻写法为英文 Normal 与繁中机密。繁中额外列出手柄仓库和背包不能拖道具的修复。"
+          ]
         }
       ],
-      "nextRange": "继续扫描 Reorientation 后续补丁中的地图、装备、资源、复活与局内操作更新，并逐批回填更早赛季。"
+      "nextRange": "国服纵横巅峰赛和 Garena AZ3 超临界的正式开放等待到期核对。 官方已确认国服阿萨拉隐藏行动的水池撤离。哈夫克隐藏行动、常规撤离点及商人的完整改前改后仍待直接资料。 繁中 Garena 预告中的禁图、精锐券与轮换提示仍待繁中正式服证据。 国服 11 月 5 日列为「修复中」的观战、高倍瞄具、保险柜任务和 HRTF 等待完成公告。",
+      "latestScan": {
+        "attemptedAt": "2026-11-16",
+        "status": "reviewed_with_remaining_candidates",
+        "sourceUrls": [
+          "https://deltaforce.garena.com/en/news/announcement",
+          "https://deltaforce.garena.com/en/news/announcement/GWPGVY",
+          "https://deltaforce.garena.com/en/news/all/STZAUY",
+          "https://deltaforce.garena.com/en/news/announcement/XZSNPX",
+          "https://www.playdeltaforce.com/en/news/",
+          "https://www.playdeltaforce.com/en/detail/news-dev-blog-brakkesh-20-once-more-across-the-line.html",
+          "https://deltaforce.garena.com/zh_tw/news/all/S88VMH",
+          "https://deltaforce.garena.com/zh_tw/news/system/QYQ96V",
+          "https://steamcommunity.com/games/2507950/announcements/detail/676261964507253471?l=schinese",
+          "https://www.taptap.cn/game-event/13464",
+          "https://news.17173.com/content/11142026/222531678.shtml",
+          "https://steamcommunity.com/games/2507950/announcements/detail/672885536621330891?l=schinese",
+          "https://news.17173.com/content/11132026/121621680.shtml",
+          "https://news.17173.com/content/11162026/001205869.shtml",
+          "https://steamcommunity.com/games/2507950/announcements/detail/676262708841021924?l=schinese",
+          "https://news.17173.com/content/11142026/215915082.shtml",
+          "https://www.taptap.cn/moment/867448406811871439?group_id=531928",
+          "https://www.taptap.cn/moment/867442153855389618?group_id=531928",
+          "https://news.17173.com/content/11112026/134809778.shtml",
+          "https://news.17173.com/content/11122026/222328120.shtml",
+          "https://steamcommunity.com/games/2507950/announcements/detail/676261964507253471?l=english",
+          "https://deltaforce.garena.com/en/news/announcement/PA6CZD",
+          "https://deltaforce.garena.com/en/news/announcement/NDH3YX",
+          "https://deltaforce.garena.com/en/news/all/R7669X",
+          "https://deltaforce.garena.com/en/news/announcement/6JW32E",
+          "https://apps.apple.com/cn/app/id1642894547?platform=vision",
+          "https://www.taptap.cn/moment/845289897227977912?group_id=531928",
+          "https://www.taptap.cn/moment/844959973610881795?group_id=531928",
+          "https://news.xbox.com/en-us/2026/09/25/delta-force-second-anniversary-interview/",
+          "https://deltaforce.garena.com/zh_tw/news/system/KX539B",
+          "https://deltaforce.garena.com/zh_tw/news/system/J5QSCB",
+          "https://deltaforce.garena.com/zh_tw/news/system/QREXDC"
+        ],
+        "summary": "补齐 S12 主补丁的分模式武器与干员数值、胜者为王、全面战场地图、烽火配装和黑潮爆破输入，复查 11 月 12 日热修。 另补巴克什墨镜悬赏与三种烽火地带限时掉落。 国服补齐精锐制式装备券、大红砖返场，另核对胜者为王地图禁用。 国服正篇、活动篇和 11 月 12 日热修逐章复核完成。补黑潮爆破电脑端七胜、曼德尔砖共限、航空箱藏品、巴克什隐藏撤离，并核对任务和配件地区差异。 核对 S11 先行补丁、版本实装与 9 月 10 日热修，补六条地图、规则、移动端及钓鱼变化。 逐段复核 Garena S11 英文主补丁、上线公告和两版 9 月 10 日热修。首发装备、干员、地图和热修资料已接入。",
+        "remainingCandidates": [
+          "国服纵横巅峰赛和 Garena AZ3 超临界的正式开放等待到期核对。",
+          "官方已确认国服阿萨拉隐藏行动的水池撤离。哈夫克隐藏行动、常规撤离点及商人的完整改前改后仍待直接资料。",
+          "繁中 Garena 预告中的禁图、精锐券与轮换提示仍待繁中正式服证据。",
+          "国服 11 月 5 日列为「修复中」的观战、高倍瞄具、保险柜任务和 HRTF 等待完成公告。"
+        ],
+        "report": "docs/daily-update-2026-11-15.md"
+      }
     },
     "和平精英": {
-      "coverageStatus": "not_started",
-      "recordCount": 0,
-      "checkedSources": [],
-      "nextRange": "按最新官方补丁开始基础体验更新扫描，再制定历史回填批次。"
+      "coverageStatus": "ongoing_backfill",
+      "recordCount": 37,
+      "checkedSources": [
+        {
+          "sourceUrl": "https://apps.apple.com/cn/app/%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1/id1321803705?platform=vision",
+          "publishedDate": "2026-06-29",
+          "versionLabel": "1.37.10",
+          "reviewedAt": "2026-10-27",
+          "reviewScope": "核对App Store当前与历史版本中的经典、古墓迷途、地铁、超体和短局章节；先入库操作对象一条，不把版本说明当全部已收。",
+          "checkedSections": [
+            "古墓迷途更新",
+            "地铁逃生更新",
+            "超体对抗更新",
+            "吃鸡经典更新",
+            "枪战玩法更新"
+          ],
+          "recordIds": [
+            "hpjy-update-pistol-input-1-37-10-2026"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "CH.12地图/资源/身份牌兑换、古墓青铜门与见闻、97MG/LPVO、超体角色和返场奖励",
+            "后续版本的金秋龙狮城、死斗缩圈/默认消耗品、鼠鼠基地等对象尚待逐条整理"
+          ],
+          "timingReview": "页面标签与嵌入HTML日期已经核对；实际对象启用日期未单列。"
+        },
+        {
+          "sourceUrl": "https://apps.apple.com/cn/app/id1321803705",
+          "reviewedAt": "2026-11-01",
+          "reviewScope": "本轮通读可取得的官方正文；只将下列对象写为正式卡，未收齐项单列候选。",
+          "checkedSections": [
+            "版本历史1.38.12 > 吃鸡经典更新 > 新武器",
+            "版本历史1.38.12 > 吃鸡经典更新 > 新载具",
+            "版本历史1.38.12 > 地铁逃生更新 > 死斗竞技模式更新"
+          ],
+          "recordIds": [
+            "hpjy-update-lee-enfield-1-38-12-2026",
+            "hpjy-update-deer-cart-1-38-12-2026",
+            "hpjy-update-metro-deathmatch-1-38-12-2026"
+          ],
+          "pageComplete": false,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "金秋龙狮城的浮岛、祈福返场、收麦与载具；地铁鼠鼠基地/感染者/动力装甲；超体千歌与共鸣插件，仍待逐对象补图复核。"
+          ]
+        },
+        {
+          "sourceUrl": "https://apps.apple.com/cn/app/id1321803705",
+          "reviewedAt": "2026-11-16",
+          "reviewScope": "本轮核对所列原文小节。剩余候选继续列在覆盖记录。",
+          "checkedSections": [
+            "全新重磅内容 > 主题海岛 > 新场景、新机制",
+            "全新重磅内容 > 主题海岛 > 新载具、新道具",
+            "地铁逃生：钢铁之鸣 > 新战局事件、基础模式战备值限制",
+            "地铁逃生：钢铁之鸣 > 动力装甲更新",
+            "地铁逃生：钢铁之鸣 > 巨型空投：大金空投",
+            "地铁逃生：钢铁之鸣 > 新战局事件：战蛛失控",
+            "超体对抗更新 > 角色重置：时空魅影",
+            "超体对抗更新 > 地图机制更新：传送塔"
+          ],
+          "recordIds": [
+            "hpjy-update-13913-altay-routes",
+            "hpjy-update-13913-altay-tools",
+            "hpjy-update-13913-metro-loadout",
+            "hpjy-update-13913-metro-armor",
+            "hpjy-update-13913-metro-drops",
+            "hpjy-update-13913-metro-spider",
+            "hpjy-update-13913-superbody-phantom",
+            "hpjy-update-13913-superbody-teleport"
+          ],
+          "pageComplete": true,
+          "coreSectionsComplete": false,
+          "remainingCandidates": [
+            "腾讯完整正文与热更已在独立审阅记录归档。App Store 摘要保留时间与版本证据。"
+          ],
+          "disposition": "开发者商店版本摘要作为并行来源，保留与腾讯官网正文粒度不同的表述。"
+        },
+        {
+          "sourceUrl": "https://gp.qq.com/gicp/news/1134/18949560.html",
+          "reviewedAt": "2026-11-16",
+          "publishedDate": "2026-11-11",
+          "versionLabel": "1.39.13",
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "reviewScope": "扫描腾讯 388 行完整运营公告，按首包、CH.15、周末玩法和局内修复核对。含独立团竞货港及钻石场规则。",
+          "checkedSections": [
+            "全新重磅内容 > 阿勒泰 / 智能伙伴",
+            "地铁逃生：钢铁之鸣 > 首包及 CH.15",
+            "超体对抗更新",
+            "吃鸡经典更新",
+            "枪战玩法更新 > 货港 / 古墓迷途",
+            "绿洲启元更新",
+            "安全&性能&效果",
+            "HIT安全系统2.0 > 局内语音与团竞反挂终止",
+            "性能&效果 > 服务器射击校验、功耗和测试中的建筑显示"
+          ],
+          "recordIds": [
+            "hpjy-update-13913-altay-routes",
+            "hpjy-update-13913-altay-tools",
+            "hpjy-update-13913-metro-loadout",
+            "hpjy-update-13913-metro-armor",
+            "hpjy-update-13913-metro-drops",
+            "hpjy-update-13913-metro-spider",
+            "hpjy-update-13913-superbody-phantom",
+            "hpjy-update-13913-superbody-teleport",
+            "hpjy-update-13913-altay-smart-partner",
+            "hpjy-update-13913-metro-boss-loot",
+            "hpjy-update-13913-metro-gear-loan",
+            "hpjy-update-13913-metro-loot-protection",
+            "hpjy-update-13913-metro-wandering-trader",
+            "hpjy-update-13913-metro-season-crate",
+            "hpjy-update-13913-metro-season-equipment",
+            "hpjy-update-13913-icebound-train-return",
+            "hpjy-update-13913-classic-m1887",
+            "hpjy-update-13913-classic-duel-protocol",
+            "hpjy-update-13913-classic-giant-airdrop",
+            "hpjy-update-13913-classic-weapon-balance",
+            "hpjy-update-13913-classic-vehicle-balance",
+            "hpjy-update-13913-combat-feedback-input",
+            "hpjy-update-13913-superbody-dog-support",
+            "hpjy-update-13913-tomb-resource-cycle",
+            "hpjy-update-13913-superbody-operator-balance",
+            "hpjy-update-13913-superbody-black-blade",
+            "hpjy-update-13913-map-qol-launch",
+            "hpjy-update-13913-hit-team-match-termination",
+            "hpjy-update-13913-hit-voice-filter",
+            "hpjy-update-13913-server-hit-validation"
+          ],
+          "modeIds": [
+            "hpjy-ranked-harbor-annihilation-2026",
+            "hpjy-metro-deathmatch-diamond-2026",
+            "hpjy-metro-armor-duel-2026",
+            "hpjy-metro-deathmatch-practice-2026"
+          ],
+          "secondarySourceUrls": [
+            "https://gp.qq.com/gicp/news/1134/18946510.html",
+            "https://apps.apple.com/cn/app/id1321803705",
+            "https://gp.qq.com/gicp/news/1134/18942594.html",
+            "https://www.sina.cn/news/detail/5364475131595057.html",
+            "https://www.sina.cn/news/detail/5364837523655644.html",
+            "https://www.bilibili.com/video/BV1riW66VEC7/",
+            "https://community-cn.honor.com/cngm/game/topicdetail/topicid-3762764246384641",
+            "https://www.taptap.cn/app/70056/topic?type=official"
+          ],
+          "remainingCandidates": [
+            "装甲对决与死斗演练场有 11 月 14 日计划。仍待官方当日入口或正式服记录确认实际首开。",
+            "死斗竞技·钻石场的独立小节写明具体时间以后续官方公告为准，暂无确切首开窗口。",
+            "地铁常规场战蛛、CH.15 周期道具及暴富空投的首开和实装数值待核。已记录排期及 App Store 与官网对配额的差异。"
+          ],
+          "outsideCoreDisposition": [
+            {
+              "title": "地铁收藏、长期身份牌和外观",
+              "disposition": "outside_core_scope_indexed",
+              "summary": "留存付费外观、收藏馆或长期奖励。与搜刮直接相关的出入局和临时道具另有规则记录。"
+            },
+            {
+              "title": "模式菜单、训练、创作与账号治理",
+              "disposition": "outside_core_scope_indexed",
+              "summary": "保留匹配入口调整、编辑器爆破模板、训练场友伤、账号风险冻结和大厅防诈提醒索引。局内语音和团竞终止已单列。"
+            }
+          ],
+          "versionSummary": [
+            "CPU 线程负载与 185 Hz 设备功耗列为技术性能调整。海岛远距离建筑细节测试只覆盖部分设备，未公布机型与实装日期。"
+          ]
+        },
+        {
+          "sourceUrl": "https://gp.qq.com/gicp/news/1134/18950340.html",
+          "reviewedAt": "2026-11-16",
+          "publishedDate": "2026-11-11",
+          "versionLabel": "1.39.13 热更",
+          "pageComplete": true,
+          "coreSectionsComplete": true,
+          "reviewScope": "腾讯运营团队同页记录 11 月 11 日、12 日、13 日实际执行的正式服热更。",
+          "checkedSections": [
+            "11月11日热更",
+            "11月12日热更",
+            "11月13日热更"
+          ],
+          "recordIds": [
+            "hpjy-update-13913-hotfix-nov11",
+            "hpjy-update-13913-hotfix-nov12",
+            "hpjy-update-13913-hotfix-nov13"
+          ],
+          "remainingCandidates": []
+        }
+      ],
+      "nextRange": "装甲对决与死斗演练场有 11 月 14 日计划。仍待官方当日入口或正式服记录确认实际首开。 死斗竞技·钻石场的独立小节写明具体时间以后续官方公告为准，暂无确切首开窗口。 地铁常规场战蛛、CH.15 周期道具及暴富空投的首开和实装数值待核。已记录排期及 App Store 与官网对配额的差异。",
+      "latestScan": {
+        "attemptedAt": "2026-11-16",
+        "status": "reviewed_with_remaining_candidates",
+        "sourceUrls": [
+          "https://gp.qq.com/",
+          "https://apps.apple.com/cn/app/id1321803705",
+          "https://apps.apple.com/cn/app/id1321803705?eventid=6831071121",
+          "https://www.sina.cn/news/detail/5364077218235818.html",
+          "https://www.sina.cn/news/detail/5364475131595057.html",
+          "https://www.sina.cn/news/detail/5364837523655644.html",
+          "https://gp.qq.com/gicp/news/1134/18949560.html",
+          "https://gp.qq.com/gicp/news/1134/18946510.html",
+          "https://gp.qq.com/gicp/news/1134/18950340.html",
+          "https://www.bilibili.com/video/BV1riW66VEC7/",
+          "https://community-cn.honor.com/cngm/game/topicdetail/topicid-3762764246384641",
+          "https://gp.qq.com/gicp/news/1134/18942594.html",
+          "https://www.taptap.cn/app/70056/topic?type=official"
+        ],
+        "summary": "取得腾讯正式服完整补丁与三日热更。补智能伙伴、地铁、经典、古墓、超体和冰封列车。核对货港与钻石场，并保留地铁分批上线证据差异。 续核安全与性能章节，补团竞提前结束、局内语音拦截和弱网命中规则，并分来源写清暴富空投配额。",
+        "remainingCandidates": [
+          "装甲对决与死斗演练场有 11 月 14 日计划。仍待官方当日入口或正式服记录确认实际首开。",
+          "死斗竞技·钻石场的独立小节写明具体时间以后续官方公告为准，暂无确切首开窗口。",
+          "地铁常规场战蛛、CH.15 周期道具及暴富空投的首开和实装数值待核。已记录排期及 App Store 与官网对配额的差异。"
+        ],
+        "report": "docs/daily-update-2026-11-15.md"
+      }
     }
   }
 }

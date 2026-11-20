@@ -1,0 +1,176 @@
+#gunsSection { min-width: 0; }
+.gun-games { display: flex; flex-wrap: wrap; gap: 4px 16px; border-bottom: 1px solid var(--line); margin-bottom: 15px; }
+.gun-games a {
+  display: inline-flex; align-items: center; min-height: 42px; padding: 0 10px;
+  border-bottom: 2px solid transparent; color: var(--muted); font-weight: 650; text-decoration: none;
+}
+.gun-games a:is(:hover, [aria-current="true"]) { color: var(--mode-selected-ink); background: var(--mode-selected); }
+.gun-games a[aria-current="true"] { border-bottom-color: var(--accent); }
+.gun-list-heading {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
+  margin: 0 0 12px;
+}
+.gun-list-status { display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: .875rem; }
+.gun-list-heading h2, .gun-detail-heading h2, .gun-detail-block h3 { margin: 0; }
+.gun-note, .gun-detail-heading p,
+.gun-detail-block h3 span, .gun-facts dt, .gun-figure figcaption, .gun-packages li > span {
+  color: var(--muted); font-size: .875rem;
+}
+.gun-grid, .gun-packages, .gun-accessories { list-style: none; margin: 0; padding: 0; }
+.gun-categories {
+  display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 15px; padding: 5px;
+  background: var(--surface-soft); border: 1px solid var(--line);
+}
+.gun-categories button {
+  background: transparent; border: 0; border-radius: 0; border-bottom: 2px solid transparent;
+  padding: 8px 11px; min-height: 40px; color: var(--muted);
+  font: inherit; font-size: .875rem; font-weight: 600; cursor: pointer;
+}
+.gun-categories button:hover,
+.gun-categories button[aria-pressed="true"] {
+  background: var(--mode-selected); color: var(--mode-selected-ink);
+}
+.gun-categories button[aria-pressed="true"] { border-bottom-color: var(--accent); }
+.gun-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 180px), 1fr));
+  gap: 10px;
+}
+.gun-card {
+  display: flex; height: 100%; flex-direction: column; text-decoration: none;
+  color: var(--ink); background: var(--surface); border: 1px solid var(--line);
+  transition: border-color .15s;
+}
+.gun-card:is(:hover, :focus-visible) { border-color: var(--accent); }
+.gun-card-art {
+  position: relative; display: grid; place-items: center; overflow: hidden;
+  color: #bac9d1; font-size: .78rem; aspect-ratio: 1.85;
+  background: radial-gradient(ellipse at 50% 53%, #435665 0%, #23313d 59%, #1b2630 100%);
+  border-bottom: 2px solid transparent;
+}
+.gun-card:hover .gun-card-art { border-bottom-color: #e3ad6a; }
+.gun-card-art img {
+  position: absolute; inset: 9% 5%; width: 90%; height: 82%; object-fit: contain;
+  filter: drop-shadow(0 5px 7px rgb(0 0 0 / 45%));
+}
+.gun-card-caption {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  padding: 8px 11px; flex: 1;
+}
+.gun-card-caption strong { display: block; overflow-wrap: anywhere; font-size: .98rem; line-height: 1.25; }
+.gun-card-caption span { color: var(--muted); font-size: .75rem; }
+.gun-card-caption svg { width: 15px; height: 15px; flex: none; color: var(--muted); }
+.gun-credits { border-top: 1px solid var(--line); margin-top: 22px; padding-top: 10px; }
+.gun-credits p { margin: 0 0 6px; }
+#gunsSection :is(.gun-credits, .gun-detail) a {
+  color: inherit; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere;
+}
+.gun-note { line-height: 1.6; }
+.gun-detail-heading { display: flex; align-items: baseline; gap: 5px 12px; flex-wrap: wrap; padding: 9px 0 12px; }
+.gun-detail-heading p { margin: 0; }
+.gun-detail-facts { margin-top: 12px; }
+.gun-facts {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
+  gap: 1px; margin: 0; border: 1px solid var(--line); background: var(--line);
+}
+.gun-facts div { padding: 10px 12px; background: var(--surface); }
+.gun-facts dd { margin: 3px 0 0; }
+.gun-links { display: flex; gap: 8px 20px; flex-wrap: wrap; margin: 14px 0; }
+.gun-viewer { border: 1px solid var(--line); background: var(--surface); scroll-margin-top: 68px; }
+.gun-valorant-viewport { container-type: inline-size; overflow: hidden; background: #19232c; }
+.gun-valorant-frame {
+  display: block; border: 0; width: 100%; height: calc(45cqw + 120px);
+  margin-top: -64px;
+}
+@container (max-width: 1023px) {
+  .gun-valorant-frame { height: calc(45cqw + 166px); }
+  .has-default-only .gun-valorant-frame { height: calc(45cqw + 120px); }
+  /* A selected skin can add a row for the source viewer's variants. */
+  .has-skin-selected .gun-valorant-frame { height: calc(45cqw + 210px); }
+}
+.gun-viewer-tools {
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 5px 14px;
+  padding: 8px 12px; color: var(--muted); font-size: .875rem;
+}
+.gun-model-stage {
+  position: relative; display: grid; place-items: center; overflow: hidden;
+  height: clamp(270px, 45vw, 440px);
+  background: radial-gradient(ellipse at 48% 48%, #4b6171, #243443 61%, #1c2834 100%);
+}
+.gun-model-stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; cursor: grab; touch-action: none; }
+.gun-model-stage canvas:active { cursor: grabbing; }
+.gun-model-stage canvas.gun-first-person { cursor: default; touch-action: auto; }
+.gun-model-poster { width: min(68%, 620px); height: auto; opacity: .64; pointer-events: none; }
+.gun-model-still { max-height: 84%; object-fit: contain; opacity: 1; }
+.has-model .gun-model-poster { visibility: hidden; }
+.gun-model-status {
+  position: absolute; bottom: 10px; left: 10px; max-width: calc(100% - 20px);
+  color: #fff; background: #1c2834; padding: 6px 9px; font-size: .8rem; pointer-events: none;
+}
+.gun-model-stage-actions { position: absolute; right: 10px; top: 10px; display: flex; gap: 5px; }
+#gunsSection .gun-model-stage-actions button {
+  padding-inline: 9px; color: #f2f6f7; border-color: #8097a8; background: #273746;
+}
+.gun-model-controls { background: var(--surface-soft); padding: 10px 12px; }
+.gun-model-appearance { display: flex; align-items: end; flex-wrap: wrap; gap: 8px 12px; }
+.gun-model-appearance label { flex: 1; max-width: 280px; }
+.gun-model-controls label { display: grid; gap: 4px; min-width: 0; color: var(--muted); font-size: .82rem; }
+.gun-model-controls select { min-width: 0; width: 100%; }
+.gun-attachment-fields {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap: 8px 10px;
+}
+.gun-attachment-fields:not(:empty) { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); }
+.gun-local-tools { align-items: center; justify-content: flex-start; }
+.gun-local-tools label { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 10px; min-width: 0; }
+.gun-local-file { max-width: 100%; font: inherit; }
+.gun-local-tools a { margin-inline-start: auto; }
+.gun-motion {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end;
+  gap: 8px 16px; border-top: 1px solid var(--line);
+}
+.gun-motion-actions, .gun-motion-timeline { display: flex; align-items: end; gap: 10px; }
+.gun-motion-actions { flex-wrap: wrap; }
+.gun-motion-actions label:has([type="checkbox"]) { display: flex; align-items: center; align-self: center; white-space: nowrap; }
+.gun-motion-actions .gun-motion-sound-field[hidden] { display: none; }
+.gun-motion-timeline { grid-column: 1 / -1; align-items: center; }
+.gun-motion-timeline input { flex: 1; min-width: 0; accent-color: var(--accent); }
+.gun-motion-time { min-width: 7.5em; color: var(--muted); font-size: .82rem; font-variant-numeric: tabular-nums; }
+.gun-model-footnote { margin: 0; padding: 8px 12px; overflow-wrap: anywhere; }
+.gun-motion-section { width: min(100%, 960px); }
+.gun-motion-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 9px; }
+.gun-motion-heading > a { font-size: .875rem; }
+.workspace #gunMotionSelect {
+  width: 100%; min-height: 46px; padding: 8px 12px; margin-bottom: 10px;
+  color: var(--ink); background: var(--surface); border: 1px solid var(--line-strong); border-radius: 6px;
+  font: inherit; font-size: .9rem; text-overflow: ellipsis;
+}
+.gun-motion-result { border: 1px solid var(--line); border-radius: 7px; overflow: hidden; background: var(--surface); }
+.gun-motion-player iframe {
+  display: block; width: 100%; min-height: 200px; aspect-ratio: 16 / 9; border: 0; background: #1c2834;
+}
+.gun-motion-open { padding: 18px 14px; background: var(--surface-soft); font-weight: 650; }
+.gun-motion-credit { display: flex; gap: 3px 12px; flex-wrap: wrap; color: var(--muted); font-size: .85rem; margin: 0; padding: 10px 14px; }
+.gun-motion-result .gun-note { margin: 0; padding: 10px 14px 0; }
+.gun-detail-block { padding-top: 16px; margin-top: 18px; border-top: 1px solid var(--line); }
+.gun-detail-block h3 span { margin-left: 4px; font-weight: 400; }
+.gun-accessories li {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 14px; padding: 8px 0; border-top: 1px solid var(--line);
+}
+.gun-accessories li > a { margin-inline-start: auto; }
+.gun-packages {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 12px; margin-top: 12px;
+}
+.gun-packages li { display: grid; gap: 5px; padding: 10px; border: 1px solid var(--line); }
+.gun-figure { margin: 0 0 12px; }
+.gun-figure img { display: block; max-width: 100%; max-height: 260px; width: auto; height: auto; object-fit: contain; }
+.gun-figure img[hidden] { display: none; }
+.gun-figure figcaption { margin-top: 5px; }
+@media (max-width: 640px) {
+  .gun-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .gun-categories { flex-wrap: nowrap; overflow-x: auto; }
+  .gun-categories button { flex: none; }
+  .gun-card-caption { padding-inline: 8px; }
+  .gun-model-stage { height: 265px; }
+  .gun-attachment-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gun-motion { grid-template-columns: minmax(0, 1fr); }
+  .gun-local-tools a { margin-inline-start: 0; }
+}

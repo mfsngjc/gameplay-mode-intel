@@ -8,7 +8,9 @@ const ItemDemos = (() => {
   const clips = entry => (Array.isArray(entry.clips) ? entry.clips : []).filter(clip => localVideo(clip.path) && localPoster(clip.posterPath) && https(clip.sourceUrl));
   function sourceLink(clip) {
     const url = new URL(clip.sourceUrl);
-    if (Number.isFinite(clip.sourceStartSeconds)) url.searchParams.set('t', Math.floor(clip.sourceStartSeconds) + 's');
+    if (url.hostname === 'www.youtube.com' && Number.isFinite(clip.sourceStartSeconds)) {
+      url.searchParams.set('t', Math.floor(clip.sourceStartSeconds) + 's');
+    }
     return url.href;
   }
   function render(entry) {

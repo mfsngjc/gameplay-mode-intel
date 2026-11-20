@@ -66,7 +66,8 @@
       });
     };
     update();
-    new MutationObserver(update).observe(document.querySelector('.content'), {childList:true,subtree:true});
+    const content = document.querySelector('.content') || document.body;
+    new MutationObserver(update).observe(content, {childList:true,subtree:true});
     document.addEventListener('keydown', event => {
       if ((event.key === 'Enter' || event.key === ' ') && event.target.matches(selectors)) {event.preventDefault();event.target.click();}
     });

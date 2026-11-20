@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "game": "cf-mobile",
-  "updatedAt": "2026-11-02T18:11:03.573970Z",
+  "updatedAt": "2026-11-15T19:36:25.078790Z",
   "source": {
     "name": "CFM官网枪械道具栏目与4399全分类图鉴",
     "url": "https://cfm.qq.com/web201801/strategy.shtml?type=1",
@@ -12718,7 +12718,7 @@
     "officialOldestIndexedDate": "2018-06-11 18:04:20",
     "officialNewestIndexedDate": "2026-10-31 09:19:29",
     "categoryPageCount": 75,
-    "cataloguedCount": 831,
+    "cataloguedCount": 841,
     "excluded": {
       "legacyPrototypeThrowableOrUnresolved": 138,
       "legacyNameDuplicate": 2
@@ -12732,15 +12732,16 @@
       "精确首发日期与当前版本效果"
     ],
     "note": "CFM国服目录；不与CF端游或CFHD混用，武器变体与纯皮肤差异保留。",
-    "readyCount": 831,
+    "readyCount": 841,
     "pendingImageCount": 0,
     "pendingChromaImageCount": 0,
-    "gunCount": 699,
-    "meleeCount": 132,
+    "gunCount": 708,
+    "meleeCount": 133,
     "withVideoCount": 3,
     "withAnimationCount": 406,
     "withMediaCount": 406,
-    "retainedHistoricalCount": 0
+    "retainedHistoricalCount": 0,
+    "officialAdditions20261115": 10
   },
   "skins": [
     {
@@ -85359,6 +85360,723 @@
         "sha256": "c1dc91525b9ff6f940e1cd3e57a4b37ee08ce5698f95f96e5d67a2ad7f57c455"
       },
       "sourceCatalogueUrl": "https://news.4399.com/cfsy/"
+    },
+    {
+      "id": "cfm-ash-mashanglaicai",
+      "game": "cf-mobile",
+      "name": "Ash-马上来财",
+      "englishName": "",
+      "weaponId": "cfm-weapon-bda94d3dce78",
+      "weaponName": "Ash",
+      "weaponEnglishName": "",
+      "weaponType": "gun",
+      "category": "步枪",
+      "rarity": {
+        "id": "unknown",
+        "name": "未核品质",
+        "color": "#728782"
+      },
+      "description": "体验服展示；淡蓝和红色枪身带金色马纹。",
+      "sourceId": "ash-mashanglaicai",
+      "sourceUrl": "https://news.17173.com/content/01092026/082151490.shtml",
+      "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+      "region": "国服",
+      "gameTitle": "穿越火线：枪战王者",
+      "firstSeenAt": "2026-11-15",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "目录采集和原稿发表时间均不作为武器外观首发日期；未据此判断当前可获取状态。",
+      "publicationStatus": "ready",
+      "chromas": [],
+      "levels": [],
+      "media": [],
+      "tags": [
+        "官方外观",
+        "体验服"
+      ],
+      "image": {
+        "url": "assets/weapon-skins/crossfire/cfm-ash-mashanglaicai.png",
+        "sourcePageUrl": "https://news.17173.com/content/01092026/082151490.shtml",
+        "assetSourceUrl": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/xGPliPbtoqccDpu.png",
+        "sourceType": "official",
+        "provider": "穿越火线手游官方稿件",
+        "kind": "in_game",
+        "caption": "原稿中与该武器外观对应的图。取自体验服。",
+        "retrievedAt": "2026-11-15T19:36:23.417853Z",
+        "width": 844,
+        "height": 413,
+        "sha256": "6d2b0e4f4469cf45088635c428177f1adf6126a612ffa7b391efb3d122a055dc"
+      },
+      "versionScope": "体验服"
+    },
+    {
+      "id": "cfm-ash-mashanglaicai-season",
+      "game": "cf-mobile",
+      "name": "Ash-马上来财（赛季强化）",
+      "englishName": "",
+      "weaponId": "cfm-weapon-bda94d3dce78",
+      "weaponName": "Ash",
+      "weaponEnglishName": "",
+      "weaponType": "gun",
+      "category": "步枪",
+      "rarity": {
+        "id": "unknown",
+        "name": "未核品质",
+        "color": "#728782"
+      },
+      "description": "体验服展示的赛季强化版；红色枪身带福字，切出和换弹有独立演出。",
+      "sourceId": "ash-mashanglaicai-season",
+      "sourceUrl": "https://news.17173.com/content/01092026/082151490.shtml",
+      "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+      "region": "国服",
+      "gameTitle": "穿越火线：枪战王者",
+      "firstSeenAt": "2026-11-15",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "目录采集和原稿发表时间均不作为武器外观首发日期；未据此判断当前可获取状态。",
+      "publicationStatus": "ready",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "cfm-gif-amRggcbtoqccDwo",
+          "kind": "equip",
+          "provider": "gif",
+          "url": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/amRggcbtoqccDwo.gif",
+          "title": "Ash-马上来财（赛季强化） · 切出",
+          "sourcePageUrl": "https://news.17173.com/content/01092026/082151490.shtml",
+          "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+          "sourceType": "official",
+          "reviewStatus": "sample_reviewed",
+          "reviewedAt": "2026-11-15",
+          "reviewNote": "已对照同一武器段落和动图抽帧核对动作。范围为体验服。",
+          "versionScope": "体验服",
+          "authorEvidence": {
+            "type": "publisher_attribution",
+            "pageUrl": "https://news.17173.com/content/01092026/082151490.shtml",
+            "pageAuthor": "穿越火线手游"
+          }
+        },
+        {
+          "id": "cfm-gif-jwEypRbtoqccDuy",
+          "kind": "reload",
+          "provider": "gif",
+          "url": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/jwEypRbtoqccDuy.gif",
+          "title": "Ash-马上来财（赛季强化） · 换弹",
+          "sourcePageUrl": "https://news.17173.com/content/01092026/082151490.shtml",
+          "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+          "sourceType": "official",
+          "reviewStatus": "sample_reviewed",
+          "reviewedAt": "2026-11-15",
+          "reviewNote": "已对照同一武器段落和动图抽帧核对动作。范围为体验服。",
+          "versionScope": "体验服",
+          "authorEvidence": {
+            "type": "publisher_attribution",
+            "pageUrl": "https://news.17173.com/content/01092026/082151490.shtml",
+            "pageAuthor": "穿越火线手游"
+          }
+        },
+        {
+          "id": "cfm-gif-amnvAebtoqccDvq",
+          "kind": "showcase",
+          "provider": "gif",
+          "url": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/amnvAebtoqccDvq.gif",
+          "title": "Ash-马上来财（赛季强化） · 局内展示",
+          "sourcePageUrl": "https://news.17173.com/content/01092026/082151490.shtml",
+          "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+          "sourceType": "official",
+          "reviewStatus": "sample_reviewed",
+          "reviewedAt": "2026-11-15",
+          "reviewNote": "已对照同一武器段落和动图抽帧核对动作。范围为体验服。",
+          "versionScope": "体验服",
+          "authorEvidence": {
+            "type": "publisher_attribution",
+            "pageUrl": "https://news.17173.com/content/01092026/082151490.shtml",
+            "pageAuthor": "穿越火线手游"
+          }
+        }
+      ],
+      "tags": [
+        "官方外观",
+        "体验服"
+      ],
+      "image": {
+        "url": "assets/weapon-skins/crossfire/cfm-ash-mashanglaicai-season.png",
+        "sourcePageUrl": "https://news.17173.com/content/01092026/082151490.shtml",
+        "assetSourceUrl": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/tHTnpRbtoqccDmz.png",
+        "sourceType": "official",
+        "provider": "穿越火线手游官方稿件",
+        "kind": "in_game",
+        "caption": "原稿中与该武器外观对应的图。取自体验服。",
+        "retrievedAt": "2026-11-15T19:36:23.567941Z",
+        "width": 750,
+        "height": 359,
+        "sha256": "88943cf3c4c2d0c098606f23a92e6c8bef48e6a51cb37b1baf274a7b3f6df418"
+      },
+      "versionScope": "体验服"
+    },
+    {
+      "id": "cfm-origin12-gummy-bear",
+      "game": "cf-mobile",
+      "name": "Origin12-小熊软糖",
+      "englishName": "",
+      "weaponId": "cfm-weapon-c3b821ad6745",
+      "weaponName": "Origin12",
+      "weaponEnglishName": "",
+      "weaponType": "gun",
+      "category": "霰弹枪",
+      "rarity": {
+        "id": "unknown",
+        "name": "未核品质",
+        "color": "#728782"
+      },
+      "description": "扭蛋机抢先展示；半透明糖果弹鼓，换弹时出现掉落的软糖。",
+      "sourceId": "origin12-gummy-bear",
+      "sourceUrl": "https://news.17173.com/content/12162025/225329754.shtml",
+      "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+      "region": "国服",
+      "gameTitle": "穿越火线：枪战王者",
+      "firstSeenAt": "2026-11-15",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "目录采集和原稿发表时间均不作为武器外观首发日期；未据此判断当前可获取状态。",
+      "publicationStatus": "ready",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "cfm-gif-EBOcblbtmtAnxnB",
+          "kind": "reload",
+          "provider": "gif",
+          "url": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/EBOcblbtmtAnxnB.gif",
+          "title": "Origin12-小熊软糖 · 换弹",
+          "sourcePageUrl": "https://news.17173.com/content/12162025/225329754.shtml",
+          "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+          "sourceType": "official",
+          "reviewStatus": "sample_reviewed",
+          "reviewedAt": "2026-11-15",
+          "reviewNote": "已对照同一武器段落和动图抽帧核对动作。范围为扭蛋机抢先展示。",
+          "versionScope": "扭蛋机抢先展示",
+          "authorEvidence": {
+            "type": "publisher_attribution",
+            "pageUrl": "https://news.17173.com/content/12162025/225329754.shtml",
+            "pageAuthor": "穿越火线手游"
+          }
+        }
+      ],
+      "tags": [
+        "官方外观",
+        "扭蛋机抢先展示"
+      ],
+      "image": {
+        "url": "assets/weapon-skins/crossfire/cfm-origin12-gummy-bear.jpg",
+        "sourcePageUrl": "https://news.17173.com/content/12162025/225329754.shtml",
+        "assetSourceUrl": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/rlsYEObtmtAnxeg.jpg",
+        "sourceType": "official",
+        "provider": "穿越火线手游官方稿件",
+        "kind": "in_game",
+        "caption": "原稿中与该武器外观对应的图。取自扭蛋机抢先展示。",
+        "retrievedAt": "2026-11-15T19:36:24.471005Z",
+        "width": 2560,
+        "height": 1600,
+        "sha256": "4f79e6cf0d4f19797b96dfcdeec9632996f511259f173b85c402e339ee44b700"
+      },
+      "versionScope": "扭蛋机抢先展示"
+    },
+    {
+      "id": "cfm-m4a1-thunder-king",
+      "game": "cf-mobile",
+      "name": "M4A1-雷暴王者",
+      "englishName": "",
+      "weaponId": "cfm-weapon-946b59509833",
+      "weaponName": "M4A1",
+      "weaponEnglishName": "",
+      "weaponType": "gun",
+      "category": "步枪",
+      "rarity": {
+        "id": "unknown",
+        "name": "未核品质",
+        "color": "#728782"
+      },
+      "description": "体验服展示；金银枪身、前端兽首和应急闪光弹挂件。",
+      "sourceId": "m4a1-thunder-king",
+      "sourceUrl": "https://news.17173.com/content/01162026/111426249.shtml",
+      "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+      "region": "国服",
+      "gameTitle": "穿越火线：枪战王者",
+      "firstSeenAt": "2026-11-15",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "目录采集和原稿发表时间均不作为武器外观首发日期；未据此判断当前可获取状态。",
+      "publicationStatus": "ready",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "cfm-gif-HEkXYcbtpcmxEaA",
+          "kind": "equip",
+          "provider": "gif",
+          "url": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/HEkXYcbtpcmxEaA.gif",
+          "title": "M4A1-雷暴王者 · 切出",
+          "sourcePageUrl": "https://news.17173.com/content/01162026/111426249.shtml",
+          "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+          "sourceType": "official",
+          "reviewStatus": "sample_reviewed",
+          "reviewedAt": "2026-11-15",
+          "reviewNote": "已对照同一武器段落和动图抽帧核对动作。范围为体验服。",
+          "versionScope": "体验服",
+          "authorEvidence": {
+            "type": "publisher_attribution",
+            "pageUrl": "https://news.17173.com/content/01162026/111426249.shtml",
+            "pageAuthor": "穿越火线手游"
+          }
+        }
+      ],
+      "tags": [
+        "官方外观",
+        "体验服"
+      ],
+      "image": {
+        "url": "assets/weapon-skins/crossfire/cfm-m4a1-thunder-king.jpg",
+        "sourcePageUrl": "https://news.17173.com/content/01162026/111426249.shtml",
+        "assetSourceUrl": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/mzQHdQbtpcmxDDo.jpg",
+        "sourceType": "official",
+        "provider": "穿越火线手游官方稿件",
+        "kind": "in_game",
+        "caption": "原稿中与该武器外观对应的图。取自体验服。",
+        "retrievedAt": "2026-11-15T19:36:24.526707Z",
+        "width": 1920,
+        "height": 864,
+        "sha256": "b0f26586da5adb79b4a64bb3a92904acd597c6c7b47cf905dd1843ab3afe0ee1"
+      },
+      "versionScope": "体验服"
+    },
+    {
+      "id": "cfm-m4a1-thunder-king-flash",
+      "game": "cf-mobile",
+      "name": "炫闪·M4A1-雷暴王者",
+      "englishName": "",
+      "weaponId": "cfm-weapon-946b59509833",
+      "weaponName": "M4A1",
+      "weaponEnglishName": "",
+      "weaponType": "gun",
+      "category": "步枪",
+      "rarity": {
+        "id": "unknown",
+        "name": "未核品质",
+        "color": "#728782"
+      },
+      "description": "体验服展示；相比普通版有白色雷电环绕和淡紫色核心光效。",
+      "sourceId": "m4a1-thunder-king-flash",
+      "sourceUrl": "https://news.17173.com/content/01162026/111426249.shtml",
+      "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+      "region": "国服",
+      "gameTitle": "穿越火线：枪战王者",
+      "firstSeenAt": "2026-11-15",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "目录采集和原稿发表时间均不作为武器外观首发日期；未据此判断当前可获取状态。",
+      "publicationStatus": "ready",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "cfm-gif-mdfyWobtpcmxDFk",
+          "kind": "inspect",
+          "provider": "gif",
+          "url": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/mdfyWobtpcmxDFk.gif",
+          "title": "炫闪·M4A1-雷暴王者 · 检视",
+          "sourcePageUrl": "https://news.17173.com/content/01162026/111426249.shtml",
+          "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+          "sourceType": "official",
+          "reviewStatus": "sample_reviewed",
+          "reviewedAt": "2026-11-15",
+          "reviewNote": "已对照同一武器段落和动图抽帧核对动作。范围为体验服。",
+          "versionScope": "体验服",
+          "authorEvidence": {
+            "type": "publisher_attribution",
+            "pageUrl": "https://news.17173.com/content/01162026/111426249.shtml",
+            "pageAuthor": "穿越火线手游"
+          }
+        },
+        {
+          "id": "cfm-gif-IPmDYJbtpcmxEdg",
+          "kind": "equip",
+          "provider": "gif",
+          "url": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/IPmDYJbtpcmxEdg.gif",
+          "title": "炫闪·M4A1-雷暴王者 · 切出",
+          "sourcePageUrl": "https://news.17173.com/content/01162026/111426249.shtml",
+          "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+          "sourceType": "official",
+          "reviewStatus": "sample_reviewed",
+          "reviewedAt": "2026-11-15",
+          "reviewNote": "已对照同一武器段落和动图抽帧核对动作。范围为体验服。",
+          "versionScope": "体验服",
+          "authorEvidence": {
+            "type": "publisher_attribution",
+            "pageUrl": "https://news.17173.com/content/01162026/111426249.shtml",
+            "pageAuthor": "穿越火线手游"
+          }
+        }
+      ],
+      "tags": [
+        "官方外观",
+        "体验服"
+      ],
+      "image": {
+        "url": "assets/weapon-skins/crossfire/cfm-m4a1-thunder-king-flash.jpg",
+        "sourcePageUrl": "https://news.17173.com/content/01162026/111426249.shtml",
+        "assetSourceUrl": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/gknxJgbtpcmxDDA.jpg",
+        "sourceType": "official",
+        "provider": "穿越火线手游官方稿件",
+        "kind": "in_game",
+        "caption": "原稿中与该武器外观对应的图。取自体验服。",
+        "retrievedAt": "2026-11-15T19:36:24.616093Z",
+        "width": 1920,
+        "height": 864,
+        "sha256": "632c768dadaf868b8fc2166fcc155da5c42d289c14307472a6bfde7a30cffd9d"
+      },
+      "versionScope": "体验服"
+    },
+    {
+      "id": "cfm-g3a3-fengchu-flash",
+      "game": "cf-mobile",
+      "name": "炫闪·G3A3-凤雏",
+      "englishName": "",
+      "weaponId": "cfm-weapon-e67fcc6ff0f0",
+      "weaponName": "G3A3",
+      "weaponEnglishName": "",
+      "weaponType": "gun",
+      "category": "步枪",
+      "rarity": {
+        "id": "unknown",
+        "name": "未核品质",
+        "color": "#728782"
+      },
+      "description": "官方武器介绍；墨蓝暗紫底色配金色凤凰描边。",
+      "sourceId": "g3a3-fengchu-flash",
+      "sourceUrl": "https://news.17173.com/content/01012026/200737551.shtml",
+      "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+      "region": "国服",
+      "gameTitle": "穿越火线：枪战王者",
+      "firstSeenAt": "2026-11-15",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "目录采集和原稿发表时间均不作为武器外观首发日期；未据此判断当前可获取状态。",
+      "publicationStatus": "ready",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "cfm-gif-LjvLfGbtnCxjqqD",
+          "kind": "showcase",
+          "provider": "gif",
+          "url": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/LjvLfGbtnCxjqqD.gif",
+          "title": "炫闪·G3A3-凤雏 · 外观展示",
+          "sourcePageUrl": "https://news.17173.com/content/01012026/200737551.shtml",
+          "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+          "sourceType": "official",
+          "reviewStatus": "sample_reviewed",
+          "reviewedAt": "2026-11-15",
+          "reviewNote": "已对照同一武器段落和动图抽帧核对动作。范围为扭蛋机官方鉴赏。",
+          "versionScope": "扭蛋机官方鉴赏",
+          "authorEvidence": {
+            "type": "publisher_attribution",
+            "pageUrl": "https://news.17173.com/content/01012026/200737551.shtml",
+            "pageAuthor": "穿越火线手游"
+          }
+        }
+      ],
+      "tags": [
+        "官方外观",
+        "扭蛋机官方鉴赏"
+      ],
+      "image": {
+        "url": "assets/weapon-skins/crossfire/cfm-g3a3-fengchu-flash.jpg",
+        "sourcePageUrl": "https://news.17173.com/content/01012026/200737551.shtml",
+        "assetSourceUrl": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/VxwUAKbtnCxjqrh.jpg",
+        "sourceType": "official",
+        "provider": "穿越火线手游官方稿件",
+        "kind": "in_game",
+        "caption": "原稿中与该武器外观对应的图。取自扭蛋机官方鉴赏。",
+        "retrievedAt": "2026-11-15T19:36:24.802243Z",
+        "width": 2560,
+        "height": 1600,
+        "sha256": "0478944e7f77c108e64fca1ed8eaf778c49018043814698855482845efe8a83b"
+      },
+      "versionScope": "扭蛋机官方鉴赏"
+    },
+    {
+      "id": "cfm-usp-thunder-king",
+      "game": "cf-mobile",
+      "name": "USP-雷暴王者",
+      "englishName": "",
+      "weaponId": "cfm-weapon-6104e909531b",
+      "weaponName": "USP",
+      "weaponEnglishName": "",
+      "weaponType": "gun",
+      "category": "手枪",
+      "rarity": {
+        "id": "unknown",
+        "name": "未核品质",
+        "color": "#728782"
+      },
+      "description": "S1 赏金令首发阵容；兽纹枪体和橙色能量发光区域。",
+      "sourceId": "usp-thunder-king",
+      "sourceUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+      "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+      "region": "国服",
+      "gameTitle": "穿越火线：枪战王者",
+      "firstSeenAt": "2026-11-15",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "目录采集和原稿发表时间均不作为武器外观首发日期；未据此判断当前可获取状态。",
+      "publicationStatus": "ready",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "cfm-gif-xHbWPrbtpxdnaCk",
+          "kind": "showcase",
+          "provider": "gif",
+          "url": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/xHbWPrbtpxdnaCk.gif",
+          "title": "USP-雷暴王者 · 局内外观",
+          "sourcePageUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+          "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+          "sourceType": "official",
+          "reviewStatus": "sample_reviewed",
+          "reviewedAt": "2026-11-15",
+          "reviewNote": "已对照同一武器段落和动图抽帧核对动作。范围为2026 年 S1 赏金令。",
+          "versionScope": "2026 年 S1 赏金令",
+          "authorEvidence": {
+            "type": "publisher_attribution",
+            "pageUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+            "pageAuthor": "穿越火线手游"
+          }
+        }
+      ],
+      "tags": [
+        "官方外观",
+        "2026 年 S1 赏金令"
+      ],
+      "image": {
+        "url": "assets/weapon-skins/crossfire/cfm-usp-thunder-king.gif",
+        "sourcePageUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+        "assetSourceUrl": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/xHbWPrbtpxdnaCk.gif",
+        "sourceType": "official",
+        "provider": "穿越火线手游官方稿件",
+        "kind": "in_game",
+        "caption": "原稿中与该武器外观对应的图。取自2026 年 S1 赏金令。",
+        "retrievedAt": "2026-11-15T19:36:24.872244Z",
+        "width": 800,
+        "height": 500,
+        "sha256": "9d23313bcbc253e4bbb0bf233af76b03c05d651b9b0ddac03388e9a4426fa44b"
+      },
+      "versionScope": "2026 年 S1 赏金令"
+    },
+    {
+      "id": "cfm-qsz92-gai",
+      "game": "cf-mobile",
+      "name": "QSZ92-盖",
+      "englishName": "",
+      "weaponId": "cfm-weapon-3853ffd46793",
+      "weaponName": "QSZ92",
+      "weaponEnglishName": "",
+      "weaponType": "gun",
+      "category": "手枪",
+      "rarity": {
+        "id": "unknown",
+        "name": "未核品质",
+        "color": "#728782"
+      },
+      "description": "S1 赏金令首发阵容；暗紫底色、霓虹色线条和红色核心。",
+      "sourceId": "qsz92-gai",
+      "sourceUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+      "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+      "region": "国服",
+      "gameTitle": "穿越火线：枪战王者",
+      "firstSeenAt": "2026-11-15",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "目录采集和原稿发表时间均不作为武器外观首发日期；未据此判断当前可获取状态。",
+      "publicationStatus": "ready",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "cfm-gif-rhqQRXbtpxdnaAz",
+          "kind": "showcase",
+          "provider": "gif",
+          "url": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/rhqQRXbtpxdnaAz.gif",
+          "title": "QSZ92-盖 · 局内外观",
+          "sourcePageUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+          "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+          "sourceType": "official",
+          "reviewStatus": "sample_reviewed",
+          "reviewedAt": "2026-11-15",
+          "reviewNote": "已对照同一武器段落和动图抽帧核对动作。范围为2026 年 S1 赏金令。",
+          "versionScope": "2026 年 S1 赏金令",
+          "authorEvidence": {
+            "type": "publisher_attribution",
+            "pageUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+            "pageAuthor": "穿越火线手游"
+          }
+        }
+      ],
+      "tags": [
+        "官方外观",
+        "2026 年 S1 赏金令"
+      ],
+      "image": {
+        "url": "assets/weapon-skins/crossfire/cfm-qsz92-gai.gif",
+        "sourcePageUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+        "assetSourceUrl": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/rhqQRXbtpxdnaAz.gif",
+        "sourceType": "official",
+        "provider": "穿越火线手游官方稿件",
+        "kind": "in_game",
+        "caption": "原稿中与该武器外观对应的图。取自2026 年 S1 赏金令。",
+        "retrievedAt": "2026-11-15T19:36:24.882263Z",
+        "width": 800,
+        "height": 500,
+        "sha256": "2cce34d34db94da415c9188b87722b5e5ed772dcd0ca56353c6f31815937e579"
+      },
+      "versionScope": "2026 年 S1 赏金令"
+    },
+    {
+      "id": "cfm-kurou-whip",
+      "game": "cf-mobile",
+      "name": "苦肉鞭",
+      "englishName": "",
+      "weaponId": "cfm-weapon-b5648ff6faf9",
+      "weaponName": "鞭",
+      "weaponEnglishName": "",
+      "weaponType": "melee",
+      "category": "近战武器",
+      "rarity": {
+        "id": "unknown",
+        "name": "未核品质",
+        "color": "#728782"
+      },
+      "description": "S1 赏金令首发阵容；红粉色骨节外观，挥动时有红色烟雾。",
+      "sourceId": "kurou-whip",
+      "sourceUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+      "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+      "region": "国服",
+      "gameTitle": "穿越火线：枪战王者",
+      "firstSeenAt": "2026-11-15",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "目录采集和原稿发表时间均不作为武器外观首发日期；未据此判断当前可获取状态。",
+      "publicationStatus": "ready",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "cfm-gif-BIoRyNbtpxdnbdh",
+          "kind": "showcase",
+          "provider": "gif",
+          "url": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/BIoRyNbtpxdnbdh.gif",
+          "title": "苦肉鞭 · 局内外观",
+          "sourcePageUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+          "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+          "sourceType": "official",
+          "reviewStatus": "sample_reviewed",
+          "reviewedAt": "2026-11-15",
+          "reviewNote": "已对照同一武器段落和动图抽帧核对动作。范围为2026 年 S1 赏金令。",
+          "versionScope": "2026 年 S1 赏金令",
+          "authorEvidence": {
+            "type": "publisher_attribution",
+            "pageUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+            "pageAuthor": "穿越火线手游"
+          }
+        }
+      ],
+      "tags": [
+        "官方外观",
+        "2026 年 S1 赏金令"
+      ],
+      "image": {
+        "url": "assets/weapon-skins/crossfire/cfm-kurou-whip.gif",
+        "sourcePageUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+        "assetSourceUrl": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/BIoRyNbtpxdnbdh.gif",
+        "sourceType": "official",
+        "provider": "穿越火线手游官方稿件",
+        "kind": "in_game",
+        "caption": "原稿中与该武器外观对应的图。取自2026 年 S1 赏金令。",
+        "retrievedAt": "2026-11-15T19:36:25.006230Z",
+        "width": 800,
+        "height": 500,
+        "sha256": "c4cdbf9b44c24ea893da8e855dbc4ef93405c8272fad61ddc3b9775a54e6db56"
+      },
+      "versionScope": "2026 年 S1 赏金令"
+    },
+    {
+      "id": "cfm-royal-soul-gilded",
+      "game": "cf-mobile",
+      "name": "王者之魄-炫金万化",
+      "englishName": "",
+      "weaponId": "cfm-weapon-946b59509833",
+      "weaponName": "M4A1",
+      "weaponEnglishName": "",
+      "weaponType": "gun",
+      "category": "步枪",
+      "rarity": {
+        "id": "unknown",
+        "name": "未核品质",
+        "color": "#728782"
+      },
+      "description": "S1 赏金令公布的王者之魄炫金皮肤；相较原枪增加金色覆盖。",
+      "sourceId": "royal-soul-gilded",
+      "sourceUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+      "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+      "region": "国服",
+      "gameTitle": "穿越火线：枪战王者",
+      "firstSeenAt": "2026-11-15",
+      "releaseDate": null,
+      "releaseDateStatus": "unverified",
+      "timingNote": "目录采集和原稿发表时间均不作为武器外观首发日期；未据此判断当前可获取状态。",
+      "publicationStatus": "ready",
+      "chromas": [],
+      "levels": [],
+      "media": [
+        {
+          "id": "cfm-gif-sbkRBjbtpxdnbbB",
+          "kind": "showcase",
+          "provider": "gif",
+          "url": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/sbkRBjbtpxdnbbB.gif",
+          "title": "王者之魄-炫金万化 · 局内外观",
+          "sourcePageUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+          "sourceName": "穿越火线手游官方稿件 · 17173 转载",
+          "sourceType": "official",
+          "reviewStatus": "sample_reviewed",
+          "reviewedAt": "2026-11-15",
+          "reviewNote": "已对照同一武器段落和动图抽帧核对动作。范围为2026 年 S1 赏金令。",
+          "versionScope": "2026 年 S1 赏金令",
+          "authorEvidence": {
+            "type": "publisher_attribution",
+            "pageUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+            "pageAuthor": "穿越火线手游"
+          }
+        }
+      ],
+      "tags": [
+        "官方外观",
+        "2026 年 S1 赏金令"
+      ],
+      "image": {
+        "url": "assets/weapon-skins/crossfire/cfm-royal-soul-gilded.gif",
+        "sourcePageUrl": "https://news.17173.com/content/01242026/121512819.shtml",
+        "assetSourceUrl": "https://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/sbkRBjbtpxdnbbB.gif",
+        "sourceType": "official",
+        "provider": "穿越火线手游官方稿件",
+        "kind": "in_game",
+        "caption": "原稿中与该武器外观对应的图。取自2026 年 S1 赏金令。",
+        "retrievedAt": "2026-11-15T19:36:25.078790Z",
+        "width": 728,
+        "height": 320,
+        "sha256": "89286a798743e582c82289a76a273bf9d7b69055f03c399ff516d2f9161f8ae1"
+      },
+      "versionScope": "2026 年 S1 赏金令"
     }
   ],
   "historicalSkins": []
